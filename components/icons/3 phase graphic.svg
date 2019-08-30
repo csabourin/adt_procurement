@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="599.56" height="603.594" viewBox="0 0 599.56 603.594">
+  <defs>
+    <style>
+      .cls-1, .cls-5, .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        font-size: 54px;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        font-family: ArialMT, Arial;
+      }
+
+      .cls-6 {
+        font-size: 49px;
+      }
+
+      .cls-7 {
+        font-size: 55px;
+      }
+
+      .cls-8 {
+        filter: url(#Ellipse_259);
+      }
+    </style>
+    <filter id="Ellipse_259" x="0" y="0" width="599.56" height="603.594" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.96" y1="0.833" x2="0.244" y2="-0.006" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="0.007" stop-color="#000101"/>
+      <stop offset="0.19" stop-color="#101a22"/>
+      <stop offset="0.379" stop-color="#1d2d3c"/>
+      <stop offset="0.573" stop-color="#253b4e"/>
+      <stop offset="0.775" stop-color="#2b4459"/>
+      <stop offset="1" stop-color="#2d475d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.635" y1="-0.013" x2="0.235" y2="0.883" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="0.016" stop-color="#020404"/>
+      <stop offset="0.194" stop-color="#173036"/>
+      <stop offset="0.37" stop-color="#29555f"/>
+      <stop offset="0.542" stop-color="#37727e"/>
+      <stop offset="0.707" stop-color="#418695"/>
+      <stop offset="0.863" stop-color="#4792a3"/>
+      <stop offset="1" stop-color="#4a97a8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.02" y1="0.754" x2="0.998" y2="0.403" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b44141"/>
+      <stop offset="0.178" stop-color="#993737"/>
+      <stop offset="0.559" stop-color="#551e1e"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="_3_phase_graphic" data-name="3 phase graphic" transform="translate(-113.065 -231.241)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(120.565 238.741)">
+      <g id="Group_6879" data-name="Group 6879">
+        <g class="cls-8" transform="matrix(1, 0, 0, 1, -7.5, -7.5)">
+          <ellipse id="Ellipse_259-2" data-name="Ellipse 259" class="cls-1" cx="286.28" cy="288.297" rx="286.28" ry="288.297" transform="translate(7.5 7.5)"/>
+        </g>
+        <g id="Group_6878" data-name="Group 6878" transform="translate(8.842 10.86)">
+          <g id="Group_6877" data-name="Group 6877">
+            <path id="Path_13817" data-name="Path 13817" class="cls-2" d="M1285.793,561.572c47.184,10.246,71.71,56.171,71.71,56.171l156.838,271.651h0l0,0s52.036,1.722,84.5-34.018c37.924-41.752,33.331-95.7,33.331-95.7h0C1613.141,625,1497.43,521.406,1357.5,521.406a276.24,276.24,0,0,0-171.257,59.152h0S1230.675,549.6,1285.793,561.572Z" transform="translate(-1080.066 -521.406)"/>
+            <path id="Path_13818" data-name="Path 13818" class="cls-3" d="M1159.787,989.479c-14.72-45.985,12.79-90.187,12.79-90.187l0,0h0L1329.414,627.64s-24.526-45.925-71.709-56.17c-55.119-11.967-99.547,18.986-99.547,18.986h0a276.946,276.946,0,0,0-106.18,218.285c0,116.655,72,216.481,173.99,257.492l.035-.035S1176.982,1043.2,1159.787,989.479Z" transform="translate(-1051.977 -531.304)"/>
+            <path id="Path_13819" data-name="Path 13819" class="cls-4" d="M1631.458,822.7s4.592,53.953-33.331,95.7c-32.465,35.74-84.5,34.018-84.5,34.018l0,0H1199.953l0,0s-27.51,44.2-12.789,90.187c17.195,53.719,66.215,76.719,66.215,76.719l-.035.035a276.636,276.636,0,0,0,103.447,19.946c153.225,0,277.438-124.213,277.438-277.437a279.733,279.733,0,0,0-2.766-39.17Z" transform="translate(-1079.352 -584.437)"/>
+          </g>
+          <text id="PLAN" class="cls-5" transform="translate(92.773 282.788) rotate(-60.049)"><tspan x="0" y="0">PLAN</tspan></text>
+          <text id="SPEND" class="cls-6" transform="matrix(0.509, 0.861, -0.861, 0.509, 364.574, 98.274)"><tspan x="0" y="0">SPEND</tspan></text>
+          <text id="REPORT" class="cls-7" transform="translate(171.394 477.793)"><tspan x="0" y="0">REPORT</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

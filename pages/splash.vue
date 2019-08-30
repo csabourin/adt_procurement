@@ -1,23 +1,32 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col"></div>
-      <div class="col">
-        <courselogo />
+  <div>
+    <br>
+    <h1 class="mainHeader">{{$t("finRoles")}}</h1>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        </div>
       </div>
-      <div class="col"></div>
+      <div class="row intro">
+        <div class="col-6">
+          <div class="embed-responsive-item "><video class="introVideo" width="100%" src="https://youtu.be/rh334hJGNNw" controls></video></div>
+        </div>
+        <div class="col sideText">
+          <h2>{{$t('welcomeText')}}</h2>
+          <p></p>
+          <br>
+          <nuxt-link :to="localePath('index')"><button class="btn" id="Begin">{{$t("letsbegin")}}</button></nuxt-link>
+        </div>
+      </div>
     </div>
-  <nuxt-link class="NextIcon" :to="localePath('howto')">{{$t('HowTo')}}</nuxt-link>
+  </div>
   </div>
 </template>
 <script type="text/javascript">
-import courselogo from "~/components/three_phases";
-export default {
-  components: {
-    courselogo
+  export default {
+    layout:'splash'
   }
-}
-
 </script>
 <style>
 .introVideo {
@@ -62,13 +71,15 @@ export default {
 }
 
 .sideText:before {
-  content: "“";
+  content:"“";
   color: #fff;
-  float: left;
-  font-size: 60px;
+  float:left;
+  font-size:60px;
 }
 
-.intro {}
+.intro {
+  
+}
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
@@ -99,16 +110,14 @@ export default {
   "welcomeText": "Investing money is the process of committing resources in a strategic way to accomplish a specific objective.” ― Alan Gotthardt",
   "letsbegin": "Let's Begin",
   "finRoles":"Responsible Use of Public Funds",
-  "objectives":"Objectives",
-  "HowTo":"How to Navigate"
+  "objectives":"Objectives"
   },
   "fr":
   {
   "welcomeText": "Bienvenue",
   "letsbegin": "Commençons",
   "finRoles":"Rôles Financiers et Responsabilités",
-  "objectives":"Objectifs",
-  "HowTo":"Comment naviguer ce cours"
+  "objectives":"Objectifs"
   }
   }
 </i18n>

@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97" height="98.524" viewBox="0 0 97 98.524">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #5ca5b5;
+      }
+
+      .cls-4 {
+        fill: #317077;
+      }
+
+      .cls-5 {
+        fill: #494f5a;
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-7 {
+        fill: #505252;
+      }
+
+      .cls-8 {
+        fill: #2f3638;
+      }
+
+      .cls-9 {
+        fill: #b44141;
+      }
+
+      .cls-10 {
+        fill: #69707c;
+      }
+
+      .cls-11 {
+        fill: #383e47;
+      }
+
+      .cls-12 {
+        fill: #c1cac1;
+      }
+
+      .cls-13 {
+        filter: url(#Ellipse_364);
+      }
+    </style>
+    <filter id="Ellipse_364" x="0" y="1.524" width="97" height="97" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="20.324" y1="-35.675" x2="20.398" y2="-35.675" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e0e0e0"/>
+      <stop offset="0.65" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bababa"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8959" data-name="Group 8959" transform="translate(-926 -643.476)">
+    <g id="Plan_icon" data-name="Plan icon" transform="translate(431.836 417.134)">
+      <path id="Path_14304" data-name="Path 14304" class="cls-1" d="M165.421,380.205A46.011,46.011,0,1,1,211.433,334.2a46.016,46.016,0,0,1-46.012,46.009Z" transform="translate(377.732 -60.341)"/>
+    </g>
+    <g id="Test_icon" data-name="Test icon" transform="translate(934.863 650.526)">
+      <g class="cls-13" transform="matrix(1, 0, 0, 1, -8.86, -7.05)">
+        <circle id="Ellipse_364-2" data-name="Ellipse 364" class="cls-2" cx="39.5" cy="39.5" r="39.5" transform="translate(9 7.52)"/>
+      </g>
+      <g id="Group_8553" data-name="Group 8553" transform="translate(5.958 5.958)">
+        <ellipse id="Ellipse_315" data-name="Ellipse 315" class="cls-3" cx="33.609" cy="34.109" rx="33.609" ry="34.109" transform="translate(0 0)"/>
+        <path id="Path_18875" data-name="Path 18875" class="cls-4" d="M210.842-62.864a34.178,34.178,0,0,0,23.41-29.457L210-112.208l-15.472,8.7.808,15.359L186-87.231Z" transform="translate(-167.247 129.595)"/>
+        <g id="Group_8534" data-name="Group 8534" transform="translate(9.386 16.25)">
+          <rect id="Rectangle_4927" data-name="Rectangle 4927" class="cls-5" width="29.736" height="37.688" rx="3.918" transform="translate(0.514 23.627) rotate(-52.614)"/>
+          <path id="Path_18876" data-name="Path 18876" class="cls-6" d="M175.275-82.756l-.637-.486-.683.894-.436.571a.462.462,0,0,0,.086.646l29.212,22.324a.463.463,0,0,0,.646-.086l.437-.571.682-.894-.636-.487-.683.894-.606-.463.683-.894-.637-.486-.683.894-.667-.509.683-.894-.637-.486-.682.893-.652-.5.683-.894-.637-.486-.682.893-.607-.463.683-.894-.636-.486-.683.894-.667-.509.683-.894-.637-.486-.683.894-.652-.5.683-.894-.637-.486-.683.894-.606-.464.683-.893-.637-.487-.683.894-.667-.509.683-.894-.637-.486-.683.894-.652-.5.683-.894-.637-.486-.683.894-.606-.463.683-.894-.637-.486-.683.893-.667-.509.683-.894-.637-.486-.683.894-.568-.434.683-.894-.637-.486-.683.893-.606-.463.683-.894-.637-.486-.683.894-.667-.509.683-.894-.636-.486-.683.894-.652-.5.682-.894-.636-.486-.683.894L183.566-75l.683-.893-.637-.487-.683.894L182.262-76l.683-.894-.637-.486-.683.894-.652-.5.683-.894-.637-.486-.682.894-.607-.463.683-.894-.637-.486-.682.893-.667-.509.683-.894-.637-.486-.683.894-.652-.5.683-.894-.637-.486-.683.894-.606-.463.683-.894-.637-.486-.683.894-.667-.51Z" transform="translate(-173.424 105.953)"/>
+        </g>
+        <path id="Path_18877" data-name="Path 18877" class="cls-2" d="M224.26-94.046,204.026-80.468a1.363,1.363,0,0,1-1.878-.411L182.18-110.636l-.773-1.153,21.339-14.319a1.364,1.364,0,0,1,1.878.411L224.592-95.94A1.364,1.364,0,0,1,224.26-94.046Z" transform="translate(-166.075 132.197)"/>
+        <g id="Group_8543" data-name="Group 8543" transform="translate(16.422 21.934)">
+          <g id="Group_8535" data-name="Group 8535">
+            <circle id="Ellipse_316" data-name="Ellipse 316" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4928" data-name="Rectangle 4928" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_317" data-name="Ellipse 317" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8536" data-name="Group 8536" transform="translate(1.042 1.553)">
+            <circle id="Ellipse_318" data-name="Ellipse 318" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4929" data-name="Rectangle 4929" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_319" data-name="Ellipse 319" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8537" data-name="Group 8537" transform="translate(2.12 3.16)">
+            <circle id="Ellipse_320" data-name="Ellipse 320" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4930" data-name="Rectangle 4930" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_321" data-name="Ellipse 321" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8538" data-name="Group 8538" transform="translate(3.162 4.713)">
+            <circle id="Ellipse_322" data-name="Ellipse 322" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4931" data-name="Rectangle 4931" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_323" data-name="Ellipse 323" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8539" data-name="Group 8539" transform="translate(4.244 6.487)">
+            <circle id="Ellipse_324" data-name="Ellipse 324" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4932" data-name="Rectangle 4932" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_325" data-name="Ellipse 325" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8540" data-name="Group 8540" transform="translate(5.286 8.04)">
+            <circle id="Ellipse_326" data-name="Ellipse 326" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4933" data-name="Rectangle 4933" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_327" data-name="Ellipse 327" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8541" data-name="Group 8541" transform="translate(6.364 9.646)">
+            <circle id="Ellipse_328" data-name="Ellipse 328" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4934" data-name="Rectangle 4934" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_329" data-name="Ellipse 329" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8542" data-name="Group 8542" transform="translate(7.406 11.199)">
+            <circle id="Ellipse_330" data-name="Ellipse 330" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4935" data-name="Rectangle 4935" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_331" data-name="Ellipse 331" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+        </g>
+        <g id="Group_8552" data-name="Group 8552" transform="translate(26.436 37.137)">
+          <g id="Group_8544" data-name="Group 8544">
+            <circle id="Ellipse_332" data-name="Ellipse 332" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4936" data-name="Rectangle 4936" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_333" data-name="Ellipse 333" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8545" data-name="Group 8545" transform="translate(1.042 1.553)">
+            <circle id="Ellipse_334" data-name="Ellipse 334" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4937" data-name="Rectangle 4937" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_335" data-name="Ellipse 335" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8546" data-name="Group 8546" transform="translate(2.12 3.16)">
+            <circle id="Ellipse_336" data-name="Ellipse 336" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4938" data-name="Rectangle 4938" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_337" data-name="Ellipse 337" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8547" data-name="Group 8547" transform="translate(3.162 4.713)">
+            <circle id="Ellipse_338" data-name="Ellipse 338" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4939" data-name="Rectangle 4939" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_339" data-name="Ellipse 339" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8548" data-name="Group 8548" transform="translate(4.244 6.487)">
+            <circle id="Ellipse_340" data-name="Ellipse 340" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4940" data-name="Rectangle 4940" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_341" data-name="Ellipse 341" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8549" data-name="Group 8549" transform="translate(5.286 8.04)">
+            <circle id="Ellipse_342" data-name="Ellipse 342" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4941" data-name="Rectangle 4941" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_343" data-name="Ellipse 343" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8550" data-name="Group 8550" transform="translate(6.364 9.646)">
+            <circle id="Ellipse_344" data-name="Ellipse 344" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4942" data-name="Rectangle 4942" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_345" data-name="Ellipse 345" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+          <g id="Group_8551" data-name="Group 8551" transform="translate(7.406 11.199)">
+            <circle id="Ellipse_346" data-name="Ellipse 346" class="cls-7" cx="0.552" cy="0.552" r="0.552" transform="translate(2.316)"/>
+            <rect id="Rectangle_4943" data-name="Rectangle 4943" class="cls-8" width="3.163" height="0.684" transform="translate(0.179 1.944) rotate(-33.863)"/>
+            <ellipse id="Ellipse_347" data-name="Ellipse 347" class="cls-8" cx="0.322" cy="0.342" rx="0.322" ry="0.342" transform="translate(0 2.064) rotate(-33.863)"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_8569" data-name="Group 8569" transform="translate(34.261 18.131)">
+        <g id="Group_8568" data-name="Group 8568">
+          <path id="Path_18906" data-name="Path 18906" class="cls-9" d="M204.514-114.64a3.432,3.432,0,0,0-1.114.216c-.028-.189-.056-.378-.088-.566-.153-.924-.4-1.825-.579-2.742a.4.4,0,0,0-.054-.268.434.434,0,0,0-.592-.156,7.228,7.228,0,0,0-2.535,4.379c-.085.361-.156.725-.215,1.092a3.766,3.766,0,0,0-.932.684c-.377.41.234,1.024.613.612a1.857,1.857,0,0,1,.157-.149l.013-.01a27.9,27.9,0,0,0-.13,2.841.433.433,0,0,0,.865,0,25.305,25.305,0,0,1,.207-3.425c.525-.282,1.069-.531,1.617-.765.3-.129.615-.252.929-.368a25.311,25.311,0,0,1,.106,3.258c-.016.559.849.557.866,0a25.817,25.817,0,0,0-.138-3.544c.207-.066.416-.125.629-.174.072-.017.146-.031.22-.042-.016,0,.118-.009.156-.008C205.073-113.755,205.07-114.621,204.514-114.64Zm-3.049.93c-.389.163-.775.334-1.154.517.016-.078.032-.156.05-.234a7.329,7.329,0,0,1,1.649-3.537c.152.7.326,1.387.448,2.09.042.242.08.484.113.728C202.2-114.011,201.83-113.864,201.465-113.71Z" transform="translate(-198.286 118.223)"/>
+          <path id="Path_18907" data-name="Path 18907" class="cls-9" d="M211.342-116.878a10.841,10.841,0,0,0-1.35.325c-.012-.244-.015-.484-.016-.713a1.315,1.315,0,0,0-.418-.789c-.1-.1-.386-.313-.385-.027a10.1,10.1,0,0,0,.145,1.8,3.287,3.287,0,0,0-1.052.825.457.457,0,0,0,0,.591c.116.144.39.25.535.077a2.86,2.86,0,0,1,.737-.626,4.9,4.9,0,0,0,.32.743c.1.191.316.56.568.583s.022-.462-.016-.532a3.44,3.44,0,0,1-.333-1.054,8.5,8.5,0,0,1,1.451-.372C212.025-116.137,211.8-116.966,211.342-116.878Z" transform="translate(-200.806 118.224)"/>
+        </g>
+      </g>
+      <g id="Isolation_Mode" data-name="Isolation Mode" transform="translate(31.281 16.748)">
+        <rect id="Rectangle_4953" data-name="Rectangle 4953" class="cls-10" width="20.336" height="1.206" rx="0.603" transform="matrix(0.838, -0.546, 0.546, 0.838, 0, 17.146)"/>
+        <rect id="Rectangle_4954" data-name="Rectangle 4954" class="cls-10" width="20.341" height="1.206" rx="0.603" transform="matrix(0.838, -0.546, 0.546, 0.838, 1.75, 19.785)"/>
+        <rect id="Rectangle_4955" data-name="Rectangle 4955" class="cls-10" width="21.314" height="1.203" rx="0.601" transform="translate(3.479 22.438) rotate(-33.082)"/>
+        <rect id="Rectangle_4956" data-name="Rectangle 4956" class="cls-10" width="20.336" height="1.206" rx="0.603" transform="matrix(0.838, -0.546, 0.546, 0.838, 6.9, 27.684)"/>
+        <rect id="Rectangle_4957" data-name="Rectangle 4957" class="cls-10" width="20.341" height="1.206" rx="0.603" transform="matrix(0.838, -0.546, 0.546, 0.838, 8.579, 30.328)"/>
+        <rect id="Rectangle_4958" data-name="Rectangle 4958" class="cls-10" width="20.341" height="1.206" rx="0.603" transform="matrix(0.838, -0.546, 0.546, 0.838, 10.518, 33.067)"/>
+        <g id="Group_8570" data-name="Group 8570" transform="translate(18.724)">
+          <path id="Path_18908" data-name="Path 18908" class="cls-11" d="M221.823-116.5l1.574-.261s1.162,4.333,2.33,11.364,2.112,17.137,2.112,17.137l-1,.167s-2.24-9.05-3.544-16.9A110.758,110.758,0,0,1,221.823-116.5Z" transform="translate(-221.823 118.82)"/>
+          <path id="Path_18909" data-name="Path 18909" class="cls-12" d="M223.112-117.421l-.279-1.68a.509.509,0,0,0-.584-.418.51.51,0,0,0-.418.585l.279,1.68Z" transform="translate(-221.823 119.525)"/>
+          <rect id="Rectangle_4959" data-name="Rectangle 4959" class="cls-12" width="2.464" height="0.743" transform="matrix(-0.986, 0.164, -0.164, -0.986, 4.024, 14.155)"/>
+          <path id="Path_18910" data-name="Path 18910" class="cls-12" d="M228.413-79.779l.859-.143L229.2-77.7Z" transform="translate(-223.505 109.418)"/>
+          <rect id="Rectangle_4960" data-name="Rectangle 4960" class="cls-12" width="0.29" height="8.852" transform="translate(4.563 12.209) rotate(167.088)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

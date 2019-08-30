@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="100" viewBox="0 0 98 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        filter: url(#Ellipse_413);
+      }
+    </style>
+    <filter id="Ellipse_413" x="0" y="0" width="98" height="100" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.96" y1="0.833" x2="0.244" y2="-0.006" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="0.007" stop-color="#000101"/>
+      <stop offset="0.19" stop-color="#101a22"/>
+      <stop offset="0.379" stop-color="#1d2d3c"/>
+      <stop offset="0.573" stop-color="#253b4e"/>
+      <stop offset="0.775" stop-color="#2b4459"/>
+      <stop offset="1" stop-color="#2d475d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.635" y1="-0.013" x2="0.235" y2="0.883" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="0.016" stop-color="#020404"/>
+      <stop offset="0.194" stop-color="#173036"/>
+      <stop offset="0.37" stop-color="#29555f"/>
+      <stop offset="0.542" stop-color="#37727e"/>
+      <stop offset="0.707" stop-color="#418695"/>
+      <stop offset="0.863" stop-color="#4792a3"/>
+      <stop offset="1" stop-color="#4a97a8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.02" y1="0.754" x2="0.998" y2="0.403" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b44141"/>
+      <stop offset="0.178" stop-color="#993737"/>
+      <stop offset="0.559" stop-color="#551e1e"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Home_Icon" transform="translate(9 6)">
+    <g class="cls-5" transform="matrix(1, 0, 0, 1, -9, -6)">
+      <ellipse id="Ellipse_413-2" data-name="Ellipse 413" class="cls-1" cx="40" cy="41" rx="40" ry="41" transform="translate(9 6)"/>
+    </g>
+    <g id="Group_9940" data-name="Group 9940" transform="translate(3.779 5.933)">
+      <g id="_3_phase_graphic" data-name="3 phase graphic" transform="translate(0 0)">
+        <g id="Layer_1" data-name="Layer 1">
+          <g id="Group_6879" data-name="Group 6879">
+            <g id="Group_6878" data-name="Group 6878">
+              <g id="Group_6877" data-name="Group 6877">
+                <path id="Path_13817" data-name="Path 13817" class="cls-2" d="M1198.991,526.548c6.041,1.312,9.181,7.192,9.181,7.192l20.08,34.779h0s6.662.22,10.818-4.355a17.628,17.628,0,0,0,4.267-12.253h0a35.523,35.523,0,0,0-57.091-22.932h0A17.628,17.628,0,0,1,1198.991,526.548Z" transform="translate(-1172.155 -521.406)"/>
+                <path id="Path_13818" data-name="Path 13818" class="cls-3" d="M1065.78,623.008c-1.885-5.933,1.637-11.636,1.637-11.636h0l20.079-35.05s-3.14-5.926-9.181-7.248a17.522,17.522,0,0,0-12.745,2.45h0a35.938,35.938,0,0,0,8.682,61.388l0,0A17.706,17.706,0,0,1,1065.78,623.008Z" transform="translate(-1051.977 -563.928)"/>
+                <path id="Path_13819" data-name="Path 13819" class="cls-4" d="M1240.265,822.7A17.629,17.629,0,0,1,1236,834.957c-4.156,4.576-10.818,4.355-10.818,4.355h-40.159s-3.522,5.659-1.637,11.546a17.628,17.628,0,0,0,8.477,9.822l0,0a35.536,35.536,0,0,0,48.763-32.966,35.815,35.815,0,0,0-.354-5.015Z" transform="translate(-1169.083 -791.702)"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

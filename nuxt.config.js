@@ -1,9 +1,8 @@
-
 export default {
   mode: 'spa',
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -16,47 +15,82 @@ export default {
     ]
   },
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#fff' },
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
+   ** Global CSS
+   */
+  css: [],
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: [],
   /*
-  ** Nuxt.js dev-modules
-  */
-  devModules: [
-  ],
+   ** Nuxt.js dev-modules
+   */
+  devModules: [],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    'nuxt-i18n'
   ],
   /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
+  axios: {},
+  i18n: {
+    strategy: 'prefix',
+    vueI18nLoader: true,
+    locales: [{
+        code: 'en',
+        name: 'English'
+      },
+      {
+        code: 'fr',
+        name: 'Français'
+      }
+    ],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: "en",
+      messages: {
+        "en": {
+          "searchBar": "Search",
+          "homePage": "Home",
+          "plan": "Plan",
+          "spend": "Spend",
+          "report": "Report",
+          "previousPage": "Previous",
+          "backButton": "Back"
+        },
+        "fr": {
+          "searchBar": "Recherche",
+          "plan": "Planifier",
+          "spend": "Dépenser",
+          "report": "Rapports",
+          "homePage": "Accueil",
+          "previousPage": "Précédent",
+          "backButton": "Retour"
+
+        }
+      }
+    }
+
   },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-    }
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {}
   }
 }

@@ -10,7 +10,7 @@
       </div>
       <div class="row intro">
         <div class="col-6">
-          <div class="embed-responsive-item "><video class="introVideo" width="100%" src="https://youtu.be/rh334hJGNNw" controls></video></div>
+          <div class="embed-responsive-item "><iframe width="560" height="315" src="https://www.youtube.com/embed/rh334hJGNNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe></div>
         </div>
         <div class="col sideText">
           <h2>{{$t('welcomeText')}}</h2>

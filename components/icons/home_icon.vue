@@ -1,34 +1,4 @@
-<template>
-  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" :width="iconWidth">
-        <title>{{iconTitle}}</title>
-    <g id="Home_icon" data-name="Home icon">
-      <g id="Group_2798" data-name="Group 2798">
-        <g id="Group_2788" data-name="Group 2788">
-          <circle id="Ellipse_181-2" data-name="Ellipse 181-2" class="cls-1" cx="59.95" cy="60.12" r="45.12" />
-          <path id="Path_9829" data-name="Path 9829" class="cls-2" d="M76.34,41.91,54.88,49.22l1,18.48L36,76.34,77.4,101C92,96,102.93,80.77,104.65,64.91Z" />
-          <g id="Group_2772" data-name="Group 2772">
-            <rect id="Rectangle_4125" data-name="Rectangle 4125" class="cls-3" x="35.36" y="71.75" width="48.18" height="7.15" />
-            <path id="Path_9830" data-name="Path 9830" class="cls-3" d="M82.68,48.42,58.76,30.1,35.44,48.42V53H82.68Z" />
-            <rect id="Rectangle_4126" data-name="Rectangle 4126" class="cls-3" x="39.34" y="53" width="4.48" height="19.85" />
-            <rect id="Rectangle_4127" data-name="Rectangle 4127" class="cls-3" x="37.83" y="68.91" width="7.5" height="3.94" />
-            <rect id="Rectangle_4128" data-name="Rectangle 4128" class="cls-3" x="38.67" y="53" width="5.83" height="3.18" />
-            <rect id="Rectangle_4129" data-name="Rectangle 4129" class="cls-3" x="51.24" y="53" width="4.48" height="19.85" />
-            <rect id="Rectangle_4130" data-name="Rectangle 4130" class="cls-3" x="49.74" y="68.91" width="7.5" height="3.94" />
-            <rect id="Rectangle_4131" data-name="Rectangle 4131" class="cls-3" x="50.57" y="53" width="5.83" height="3.18" />
-            <rect id="Rectangle_4132" data-name="Rectangle 4132" class="cls-3" x="63.5" y="53" width="4.48" height="19.85" />
-            <rect id="Rectangle_4133" data-name="Rectangle 4133" class="cls-3" x="61.99" y="68.91" width="7.5" height="3.94" />
-            <rect id="Rectangle_4134" data-name="Rectangle 4134" class="cls-3" x="62.82" y="53" width="5.83" height="3.18" />
-            <rect id="Rectangle_4135" data-name="Rectangle 4135" class="cls-3" x="75.32" y="53" width="4.48" height="19.85" />
-            <rect id="Rectangle_4136" data-name="Rectangle 4136" class="cls-3" x="73.81" y="68.91" width="7.5" height="3.94" />
-            <rect id="Rectangle_4137" data-name="Rectangle 4137" class="cls-3" x="74.64" y="53" width="5.83" height="3.18" />
-            <path id="Path_9831" data-name="Path 9831" class="cls-4" d="M78.39,48.87,58.82,34.64,39.74,48.87v1.26H78.39Z" />
-            <rect id="Rectangle_4138" data-name="Rectangle 4138" class="cls-5" x="35.36" y="75.82" width="48.18" height="2.89" />
-          </g>
-        </g>
-      </g>
-    </g>
-  </svg>
-</template>
+<template><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 38 38" :width="iconWidth"><defs><linearGradient id="linear-gradient" x1="363.72" y1="972.09" x2="363.29" y2="972.6" gradientTransform="matrix(46.18, 0, 0, -38.1, -16760.78, 37059.51)" gradientUnits="userSpaceOnUse"><stop offset="0"/><stop offset="0.15" stop-color="#261f26"/><stop offset="0.3" stop-color="#473a46"/><stop offset="0.47" stop-color="#614f60"/><stop offset="0.63" stop-color="#735f72"/><stop offset="0.81" stop-color="#7e687d"/><stop offset="1" stop-color="#826b81"/></linearGradient><linearGradient id="linear-gradient-2" x1="358.59" y1="971.38" x2="358.35" y2="970.84" gradientTransform="matrix(28.72, 0, 0, -51.48, -10287.41, 50005.84)" gradientUnits="userSpaceOnUse"><stop offset="0"/><stop offset="0.08" stop-color="#121a1b"/><stop offset="0.25" stop-color="#32484d"/><stop offset="0.41" stop-color="#4d6e76"/><stop offset="0.57" stop-color="#628c95"/><stop offset="0.73" stop-color="#71a1ac"/><stop offset="0.87" stop-color="#7aaeba"/><stop offset="1" stop-color="#7eb3bf"/></linearGradient><linearGradient id="linear-gradient-3" x1="363.25" y1="973.21" x2="363.84" y2="973.43" gradientTransform="matrix(46.74, 0, 0, -32.79, -16968.43, 31939.21)" gradientUnits="userSpaceOnUse"><stop offset="0"/><stop offset="0.45" stop-color="#58403a"/><stop offset="0.82" stop-color="#9c7167"/><stop offset="1" stop-color="#b78579"/></linearGradient></defs><title>{{iconTitle}}</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Group_10898" data-name="Group 10898"><g id="Group_1" data-name="Group 1"><circle id="Ellipse_366-2" data-name="Ellipse 366-2" cx="19" cy="19" r="19" style="fill:#fff"/></g><g id="Group_10362" data-name="Group 10362"><g id="Group_10361" data-name="Group 10361"><path id="Path_19696" data-name="Path 19696" d="M14.66,4.32a7.47,7.47,0,0,1,4.47,3.5l9.8,17h0a7.43,7.43,0,0,0,5.27-2.13,8.59,8.59,0,0,0,2.09-6h0A17.33,17.33,0,0,0,8.44,5.5h0A8.61,8.61,0,0,1,14.66,4.32Z" style="fill:url(#linear-gradient)"/><path id="Path_19697" data-name="Path 19697" d="M8.54,30.42a7.47,7.47,0,0,1,.8-5.63h0l9.79-17a7.47,7.47,0,0,0-4.47-3.5A8.61,8.61,0,0,0,8.44,5.5h0a17.34,17.34,0,0,0,4.23,29.71h0A8.59,8.59,0,0,1,8.54,30.42Z" style="fill:url(#linear-gradient-2)"/><path id="Path_19698" data-name="Path 19698" d="M36.29,16.69a8.59,8.59,0,0,1-2.09,6,7.43,7.43,0,0,1-5.27,2.13H9.34a7.47,7.47,0,0,0-.8,5.63,8.57,8.57,0,0,0,4.14,4.79h0A17.32,17.32,0,0,0,36.46,19.13a18.08,18.08,0,0,0-.17-2.44Z" style="fill:url(#linear-gradient-3)"/></g></g></g></g></g></svg></template>
 <script type="text/javascript">
 export default {
   data() {

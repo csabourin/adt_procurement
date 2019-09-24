@@ -1,46 +1,35 @@
 <template>
   <div>
-    <div>
-      <b-navbar class="topBar" toggleable="lg" type="light">
-        
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-        <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav>
-          </b-navbar-nav>
-          <b-navbar-nav class="ml-auto">
-            <b-nav-form>
-              <b-form-input size="sm" class="mr-sm-2" :placeholder="$t('searchBar')"></b-form-input>
-              <b-button size="sm" class="my-2 my-sm-0" type="submit">{{$t('searchBar')}}</b-button>
-            </b-nav-form>
-            <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
-              <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" v-bind:iconTitle="locale.name"/>
-            </nuxt-link>
-          </b-navbar-nav>
-        </b-collapse>
-      </b-navbar>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <div class="navBar">
+        <nuxt-link class="isLeft" :to="localePath('index')" >
+          <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
+        </nuxt-link>
+<div class="rightSide">
+            <avatarIcon />
+            <!-- <b-form-input size="sm" class="mr-sm-2" :placeholder="$t('searchBar')"></b-form-input>
+              <b-button size="sm" class="my-2 my-sm-0" type="submit">{{$t('searchBar')}}</b-button> -->
+
+          <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
+            <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" v-bind:iconTitle="locale.name" />
+          </nuxt-link>
+          </div>
+
     </div>
     <nuxt />
-    <footer class="pageFooter">
-      <progressBar />
-      <button @click="goBack"><backbutton  v-bind:iconWidth="50" v-bind:iconTitle="$t('backButton')" /></button>
-      <nuxt-link class="" :to="localePath('index')">
-        <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')"/>
-      </nuxt-link>
-    </footer>
   </div>
 </template>
 <script type="text/javascript">
-import progressBar from "~/components/progressBar";
+import avatarIcon from "~/components/progressBar";
 import langswitch from "~/components/icons/language_icon";
 import homebutton from "~/components/icons/home_icon";
-import backbutton from "~/components/icons/back_btn";
 import changeavatar from "~/pages/setAvatars"
 export default {
   components: {
-    progressBar,
+    avatarIcon,
     langswitch,
     homebutton,
-    backbutton,
     changeavatar
 
   },
@@ -80,48 +69,30 @@ html {
   margin: 0;
 }
 
-.topBar {
-  background-color: #2D475D;
-  color: white;
+.navBar {
+  display:flex;
+  background-color: #fff;
+  color: #000;
   text-align: right;
-  box-shadow:rgb(29, 51, 66) 0px -13px 8px inset;
+  box-shadow: rgba(0, 0, 0, .5) 0px 3px 8px;
+  justify-content: flex-end;
 }
 
-.topBar>span {
+.isLeft{
+  position: absolute;
+  left: 0;
+}
+
+.navBar>span {
   padding: 1.5em;
 }
 
+.rightSide{
+  display:flex;
+}
+
 body {
-  background-color: #C6C6C6;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+  background-color: #fff;
 }
 
 .speech-bubble {
@@ -146,14 +117,13 @@ body {
   margin-bottom: -33px;
 }
 
-.avatarIcon {
-  display: inline-block;
-  border-radius: 50px;
+.avatarIcon>.btn {
+  
+  border-radius: 50%;
   background-color: white;
-  color: grey;
-  padding: 1em;
+  padding: 10px;
   overflow: hidden;
-  float: left;
+  
   margin: 0;
 }
 
@@ -166,44 +136,15 @@ footer.pageFooter {
   width: 100%;
 }
 
-.redBar:before{
-      width: 0px;
-    height: 0px;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 60px solid white;
-}
 
-a.NextIcon{
-  position:fixed;
-  bottom: 3px;
-  right:2em;
-  z-index: 2;
-  display: block;
-  background-color: #2D475D;
-  color:white;
-  box-shadow:rgb(29, 51, 66) 0px -13px 8px inset;
-  padding:1em;
-  border-radius: 20px;
-}
-
-footer.pageFooter:before{
-  content:"";
-  position:fixed;
-  bottom: 60px;
-  height:10px;
-  width:100%;
-  background: transparent linear-gradient(270deg, rgba(150, 64, 64, 1) 0%, rgba(87, 31, 31, 1) 100%) 0% 0% no-repeat padding-box;
-
-}
-
-.pageHeader{
-  width:100%;
+.pageHeader {
+  width: 100%;
   background-color: #4D4D4D;
-  color:white;
-  padding:2em;
+  color: white;
+  padding: 2em;
   display: block;
   vertical-align: center;
 
 }
+
 </style>

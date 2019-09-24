@@ -65,9 +65,9 @@ export default {
   "report":"Report"
   },
   "fr":{
-  "plan":"Planifier",
-  "spend":"Dépenser",
-  "report":"Rapporter"
+  "plan":"Planification",
+  "spend":"Dépenses",
+  "report":"Rapports"
   }
   }
 </i18n>

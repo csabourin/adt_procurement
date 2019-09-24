@@ -68,7 +68,17 @@ export default {
           "spend": "Spend",
           "report": "Report",
           "previousPage": "Previous",
-          "backButton": "Back"
+          "backButton": "Back",
+          "home": "Home",
+          "KeyMessages": "Key Messages",
+          "BuildWorkPlan": "Build a Work Plan",
+          "CreateBudget": "Create a Budget",
+          "InitiateAuthorizeSpending": "Initiate and Authorize Spending (S. 32)",
+          "ExerciseFinancialAuthority": "Exercise Financial Authority (S. 34)",
+          "MonitorControlFinances": "Monitor and Control Finances",
+          "ConductPeriodicVarianceReporting": "Conduct Periodic Variance Reporting",
+          "ContributeReporting": "Contribute in Reporting ",
+          "Test": "Test"
         },
         "fr": {
           "searchBar": "Recherche",
@@ -77,7 +87,16 @@ export default {
           "report": "Rapports",
           "homePage": "Accueil",
           "previousPage": "Précédent",
-          "backButton": "Retour"
+          "backButton": "Retour",
+          "KeyMessages": "Messages clés",
+          "BuildWorkPlan": "Élaborer un plan de travail",
+          "CreateBudget": "Établir un budget",
+          "InitiateAuthorizeSpending": "Engager et autoriser les dépenses (art. 32)",
+          "ExerciseFinancialAuthority": "Exercice des pouvoirs financiers (art. 34)",
+          "MonitorControlFinances": "Surveiller et contrôler les finances",
+          "ConductPeriodicVarianceReporting": "Rapports périodiques sur les écarts",
+          "ContributeReporting": "Contribuer à l'établissement de rapports",
+          "Test": "Test"
 
         }
       }

@@ -3,18 +3,18 @@
     <b-button v-b-modal.contentMap variant="light">
       <h1>&#69716;</h1>
     </b-button>
-    <b-modal id="contentMap" title="" hide-footer>
+    <b-modal id="contentMap" hide-footer>
       <div>
         <ul>
           <nuxt-link :to="localePath('index')">
-            <h3>{{$t('home')}}</h3>
+            <h3>{{$t('homePage')}}</h3>
           </nuxt-link>
           <h4>{{$t('Plan')}}</h4>
           <li>
             <nuxt-link :to="localePath('planKey')">{{$t('KeyMessages')}}</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="">{{$t('BuildWorkPlan')}}</nuxt-link>
+            <nuxt-link :to="localePath('buildWP')">{{$t('BuildWorkPlan')}}</nuxt-link>
           </li>
           <li>
             <nuxt-link to="">{{$t('CreateBudget')}}</nuxt-link>
@@ -64,49 +64,17 @@ h1 {
 
 .btn-light {
   background-color: transparent;
+  border-color: transparent;
 }
 
 .modal-dialog {
   margin: 5.75rem 1.75rem;
 }
-
+button.close{
+	border: 1px solid gray;
+	border-radius: 50px;
+}
 </style>
 <script type="text/javascript">
 export default {}
-
 </script>
-<i18n>
-  {
-  "en":{
-  "home":"Home",
-  "KeyMessages":"Key Messages",
-  "BuildWorkPlan":"Build a Work Plan",
-"CreateBudget":"Create a Budget",
-"InitiateAuthorizeSpending":"Initiate and Authorize Spending (S. 32)",
-"ExerciseFinancialAuthority":"Exercise Financial Authority (S. 34)",
-"MonitorControlFinances":"Monitor and Control Finances",
-"ConductPeriodicVarianceReporting":"Conduct Periodic Variance Reporting",
-"ContributeReporting":"Contribute in Reporting ",
-"Test":"Test"
-  },
-  "fr":{
-  "home":"Accueil",
-  "Plan":"Planification",
-  "Spend":"Dépenses",
-  "Report":"Rapports",
-  "KeyMessages":"Messages clés",
-  "BuildWorkPlan":"Élaborer un plan de travail",
-"CreateBudget":"Établir un budget",
-"InitiateAuthorizeSpending":"Engager et autoriser les dépenses (art. 32)",
-"ExerciseFinancialAuthority":"Exercice des pouvoirs financiers (art. 34)",
-"MonitorControlFinances":"Surveiller et contrôler les finances",
-"ConductPeriodicVarianceReporting":"Rapports périodiques sur les écarts",
-"ContributeReporting":"Contribuer à l'établissement de rapports",
-"Test":"Test"
-
-  }
-  }
-</i18n>
-
-
-

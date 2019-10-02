@@ -95,6 +95,17 @@ body {
   background-color: #fff;
 }
 
+.pageTitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 800;
+  display: block;
+  font-weight: 300;
+  font-size: 75px;
+  color: #35495e;
+  letter-spacing: -4px;
+  text-align: center;
+}
+
 .speech-bubble {
   position: relative;
   background: #ffffff;
@@ -144,6 +155,10 @@ footer.pageFooter {
   padding: 2em;
   display: block;
   vertical-align: center;
+
+}
+
+.bottomNav > .learningElement{
 
 }
 

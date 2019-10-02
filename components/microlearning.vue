@@ -1,22 +1,27 @@
 <template>
   <div class="learningElement">
-  	<nuxt-link :to="localePath(path)">
-    <div class="box">
-      <slot></slot>
-      <div class="completed" :style="completionBar" :percent="completion"></div>
-      <div class="timeEstimate">&#9201; {{time}} Minutes</div>
-    </div>
-</nuxt-link>
+    <nuxt-link :to="localePath(path)">
+      <div class="box" :style="boxSize">
+        <slot></slot>
+        <div class="completed" :style="completionBar" :percent="completion"></div>
+        <div class="timeEstimate"><span v-if="time">&#9201; {{time}} Minutes</span></div>
+      </div>
+    </nuxt-link>
   </div>
 </template>
 <script type="text/javascript">
 export default {
   props: {
+    size: {
+      type: String,
+      default: "big"
+    },
     time: String,
     completion: {
       type: String,
       default: "0"
-    },path: {
+    },
+    path: {
       type: String,
       default: "index"
     }
@@ -26,6 +31,19 @@ export default {
       return {
         width: `${this.completion}%`
       }
+    },
+    boxSize() {
+      if (this.size === "big") {
+        return {
+          width: "240px",
+          height: "240px"
+
+        }
+      } else { return {
+      	width: "140px",
+          height: "140px"
+      }}
+
     }
   }
 }
@@ -34,19 +52,20 @@ export default {
 <style type="text/css" scoped>
 .completed {
   position: absolute;
-  left:0;
+  left: 0;
   bottom: 1.7em;
   height: 10px;
   background-color: #000;
 }
-.completed:after{
-	color:#000;
-	background-color: rgba(255, 255, 255, .8);
-	position:absolute;
-	right:0em;
-	bottom:0em;
-	font-size: 12px;
-	content:attr(percent)"%";
+
+.completed:after {
+  color: #000;
+  background-color: rgba(255, 255, 255, .8);
+  position: absolute;
+  right: 0em;
+  bottom: 0em;
+  font-size: 12px;
+  content: attr(percent)"%";
 }
 
 .learningElement {
@@ -57,16 +76,14 @@ export default {
 }
 
 .box {
-	overflow: hidden;
-	background-color: #fff;
+  overflow: hidden;
+  background-color: #fff;
   display: flex;
   align-items: bottom;
   justify-content: center;
   border-radius: 2px;
   position: relative;
   border: 1px solid hsl(42, 10%, 74%);
-  width: 240px;
-  height: 240px;
 }
 
 .timeEstimate {

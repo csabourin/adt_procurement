@@ -9,10 +9,16 @@
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div id="bar" ref="linkBar">
-        <a href='javascript:void()' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="startTime[index]" @click="seek">
+        <a href='javascript:' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="startTime[index]" @click="seek">
           {{ item }}
         </a>
       </div>
+    </section>
+    <section>
+      <b-modal id="purpose">Purpose of a Work Plan</b-modal>
+      <b-modal id="partsofwp">Parts of a Work Plan</b-modal>
+      <b-modal id="alignworkplan">Align you Work Plan</b-modal>
+      <b-modal id="threesixty">Test 360</b-modal>
     </section>
     <div class="bottomNav planSection">
       <microlearning path="planKey" size="small" completion="100">
@@ -31,17 +37,16 @@
   </div>
 </template>
 <script type="text/javascript">
-import vttUrlen from '~/assets/en/chapters.vtt'
-import vttUrlfr from '~/assets/fr/chapters.vtt'
 import videoUrl from '~/assets/Slide_2_-_Gov_priorities.mp4'
 import hamburger from '~/components/hamburger'
 import microlearning from '~/components/microlearning'
 export default {
   data() {
     return {
-      vttUrlen,
-      vttUrlfr,
+      currentFrame:0,
+      oldFrame:0,
       videoUrl,
+      modalArray:["purpose","alignworkplan","partsofwp","threesixty"],
       startTime: [],
       endTime: [],
       navBarTracks: [],
@@ -53,9 +58,15 @@ export default {
     microlearning
   },
   methods: {
+    showModal(i) {
+       this.$refs.videoplayer.pause()
+        this.$bvModal.show(this.modalArray[i])
+      },
     seek(e) {
+      const videoPlayer=this.$refs.videoplayer
       this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
-      if (this.$refs.videoplayer.paused) { this.$refs.videoplayer.play() }
+      videoPlayer.pause()
+      if (this.$refs.videoplayer.paused) { setTimeout(function(){ videoPlayer.play(); }, 500); }
     },
     generate() {
       const c = this.$refs.videoplayer.textTracks[0].cues
@@ -66,14 +77,19 @@ export default {
       }
     },
     update(e) {
+      if (this.oldFrame!=this.currentFrame) this.showModal(this.currentFrame)
       this.isPlayingNow = e.target.currentTime
+      this.oldFrame=this.currentFrame
     },
     checkpoint(x) {
 
     },
     isItPlaying(i) {
       const isNow = this.isPlayingNow
-      if (i === this.endTime.findIndex(element => element > isNow)) return 'isPlaying'
+      if (i === this.endTime.findIndex(element => element > isNow)) {
+        this.currentFrame=i
+        return 'isPlaying'
+      }
     }
   }
 }

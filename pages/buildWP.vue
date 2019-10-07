@@ -2,24 +2,16 @@
   <div>
     <hamburger />
     <h1 class="pageTitle">
-      {{ $t('BuildWorkPlan') }}
+      {{ $t('BuildWorkPlan')}}
     </h1>
     <section>
-      <video
-        ref="videoplayer"
-        width="800"
-        height="600"
-        poster="/_nuxt/assets/sintel.jpg"
-        src="/_nuxt/assets/Slide_2_-_Gov_priorities.mp4"
-        controls
-        @timeupdate="update"
-      >
-        <track :src="vttUrl" kind="chapters" default="" @load="generate">
+      <video ref="videoplayer" width="800" height="600" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="videoUrl" controls @timeupdate="update">
+        <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div id="bar" ref="linkBar">
-        <span v-for="(item,index) in navBarTracks" :key="index" class="chaptersLink" :data-start="startTime[index]" @click="seek">
+        <a href='javascript:void()' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="startTime[index]" @click="seek">
           {{ item }}
-        </span>
+        </a>
       </div>
     </section>
     <div class="bottomNav planSection">
@@ -39,16 +31,21 @@
   </div>
 </template>
 <script type="text/javascript">
-import vttUrl from '~/assets/chapters.vtt'
+import vttUrlen from '~/assets/en/chapters.vtt'
+import vttUrlfr from '~/assets/fr/chapters.vtt'
+import videoUrl from '~/assets/Slide_2_-_Gov_priorities.mp4'
 import hamburger from '~/components/hamburger'
 import microlearning from '~/components/microlearning'
 export default {
-  data () {
+  data() {
     return {
-      vttUrl,
+      vttUrlen,
+      vttUrlfr,
+      videoUrl,
       startTime: [],
       endTime: [],
-      navBarTracks: []
+      navBarTracks: [],
+      isPlayingNow: 0
     }
   },
   components: {
@@ -56,11 +53,11 @@ export default {
     microlearning
   },
   methods: {
-    seek (e) {
+    seek(e) {
       this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
       if (this.$refs.videoplayer.paused) { this.$refs.videoplayer.play() }
     },
-    generate () {
+    generate() {
       const c = this.$refs.videoplayer.textTracks[0].cues
       for (let i = 0; i < c.length; i++) {
         this.navBarTracks.push(c[i].text)
@@ -68,11 +65,15 @@ export default {
         this.endTime[i] = c[i].endTime
       }
     },
-    update (e) {
-      // const p = e.target.currentTime / e.target.duration * 100
+    update(e) {
+      this.isPlayingNow = e.target.currentTime
     },
-    checkpoint (x) {
+    checkpoint(x) {
 
+    },
+    isItPlaying(i) {
+      const isNow = this.isPlayingNow
+      if (i === this.endTime.findIndex(element => element > isNow)) return 'isPlaying'
     }
   }
 }
@@ -122,14 +123,28 @@ video {
   counter-increment: episode;
   content: "0"counter(episode);
   position: absolute;
-  background-color: #b54142;
+  background-color: #608993;
   height: 2em;
   right: 0px;
   top: 0px;
   border-radius: 0 0 0 30px;
-  padding: .5em .5em 0 1em;
+  padding: .5em .25em 0 1em;
   color: white;
 
+}
+
+.chaptersLink.isPlaying:before {
+  background-color: #b54142;
+}
+
+.chaptersLink.isPlaying:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #b54142;
 }
 
 </style>

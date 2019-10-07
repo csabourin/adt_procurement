@@ -1,74 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="100" viewBox="0 0 98 100">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-
-      .cls-2 {
-        fill: url(#linear-gradient);
-      }
-
-      .cls-3 {
-        fill: url(#linear-gradient-2);
-      }
-
-      .cls-4 {
-        fill: url(#linear-gradient-3);
-      }
-
-      .cls-5 {
-        filter: url(#Ellipse_413);
-      }
-    </style>
-    <filter id="Ellipse_413" x="0" y="0" width="98" height="100" filterUnits="userSpaceOnUse">
-      <feOffset dy="3" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-opacity="0.302"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-    <linearGradient id="linear-gradient" x1="0.96" y1="0.833" x2="0.244" y2="-0.006" gradientUnits="objectBoundingBox">
-      <stop offset="0"/>
-      <stop offset="0.007" stop-color="#000101"/>
-      <stop offset="0.19" stop-color="#101a22"/>
-      <stop offset="0.379" stop-color="#1d2d3c"/>
-      <stop offset="0.573" stop-color="#253b4e"/>
-      <stop offset="0.775" stop-color="#2b4459"/>
-      <stop offset="1" stop-color="#2d475d"/>
+<svg data-v-c781368e="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 38 38" width="50">
+  <defs data-v-c781368e="">
+    <linearGradient data-v-c781368e="" id="linear-gradient" x1="363.72" y1="972.09" x2="363.29" y2="972.6" gradientTransform="matrix(46.18, 0, 0, -38.1, -16760.78, 37059.51)" gradientUnits="userSpaceOnUse">
+      <stop data-v-c781368e="" offset="0"></stop>
+      <stop data-v-c781368e="" offset="0.15" stop-color="#261f26"></stop>
+      <stop data-v-c781368e="" offset="0.3" stop-color="#473a46"></stop>
+      <stop data-v-c781368e="" offset="0.47" stop-color="#614f60"></stop>
+      <stop data-v-c781368e="" offset="0.63" stop-color="#735f72"></stop>
+      <stop data-v-c781368e="" offset="0.81" stop-color="#7e687d"></stop>
+      <stop data-v-c781368e="" offset="1" stop-color="#826b81"></stop>
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="0.635" y1="-0.013" x2="0.235" y2="0.883" gradientUnits="objectBoundingBox">
-      <stop offset="0"/>
-      <stop offset="0.016" stop-color="#020404"/>
-      <stop offset="0.194" stop-color="#173036"/>
-      <stop offset="0.37" stop-color="#29555f"/>
-      <stop offset="0.542" stop-color="#37727e"/>
-      <stop offset="0.707" stop-color="#418695"/>
-      <stop offset="0.863" stop-color="#4792a3"/>
-      <stop offset="1" stop-color="#4a97a8"/>
+    <linearGradient data-v-c781368e="" id="linear-gradient-2" x1="358.59" y1="971.38" x2="358.35" y2="970.84" gradientTransform="matrix(28.72, 0, 0, -51.48, -10287.41, 50005.84)" gradientUnits="userSpaceOnUse">
+      <stop data-v-c781368e="" offset="0"></stop>
+      <stop data-v-c781368e="" offset="0.08" stop-color="#121a1b"></stop>
+      <stop data-v-c781368e="" offset="0.25" stop-color="#32484d"></stop>
+      <stop data-v-c781368e="" offset="0.41" stop-color="#4d6e76"></stop>
+      <stop data-v-c781368e="" offset="0.57" stop-color="#628c95"></stop>
+      <stop data-v-c781368e="" offset="0.73" stop-color="#71a1ac"></stop>
+      <stop data-v-c781368e="" offset="0.87" stop-color="#7aaeba"></stop>
+      <stop data-v-c781368e="" offset="1" stop-color="#7eb3bf"></stop>
     </linearGradient>
-    <linearGradient id="linear-gradient-3" x1="0.02" y1="0.754" x2="0.998" y2="0.403" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#b44141"/>
-      <stop offset="0.178" stop-color="#993737"/>
-      <stop offset="0.559" stop-color="#551e1e"/>
-      <stop offset="1"/>
+    <linearGradient data-v-c781368e="" id="linear-gradient-3" x1="363.25" y1="973.21" x2="363.84" y2="973.43" gradientTransform="matrix(46.74, 0, 0, -32.79, -16968.43, 31939.21)" gradientUnits="userSpaceOnUse">
+      <stop data-v-c781368e="" offset="0"></stop>
+      <stop data-v-c781368e="" offset="0.45" stop-color="#58403a"></stop>
+      <stop data-v-c781368e="" offset="0.82" stop-color="#9c7167"></stop>
+      <stop data-v-c781368e="" offset="1" stop-color="#b78579"></stop>
     </linearGradient>
   </defs>
-  <g id="Home_Icon" transform="translate(9 6)">
-    <g class="cls-5" transform="matrix(1, 0, 0, 1, -9, -6)">
-      <ellipse id="Ellipse_413-2" data-name="Ellipse 413" class="cls-1" cx="40" cy="41" rx="40" ry="41" transform="translate(9 6)"/>
-    </g>
-    <g id="Group_9940" data-name="Group 9940" transform="translate(3.779 5.933)">
-      <g id="_3_phase_graphic" data-name="3 phase graphic" transform="translate(0 0)">
-        <g id="Layer_1" data-name="Layer 1">
-          <g id="Group_6879" data-name="Group 6879">
-            <g id="Group_6878" data-name="Group 6878">
-              <g id="Group_6877" data-name="Group 6877">
-                <path id="Path_13817" data-name="Path 13817" class="cls-2" d="M1198.991,526.548c6.041,1.312,9.181,7.192,9.181,7.192l20.08,34.779h0s6.662.22,10.818-4.355a17.628,17.628,0,0,0,4.267-12.253h0a35.523,35.523,0,0,0-57.091-22.932h0A17.628,17.628,0,0,1,1198.991,526.548Z" transform="translate(-1172.155 -521.406)"/>
-                <path id="Path_13818" data-name="Path 13818" class="cls-3" d="M1065.78,623.008c-1.885-5.933,1.637-11.636,1.637-11.636h0l20.079-35.05s-3.14-5.926-9.181-7.248a17.522,17.522,0,0,0-12.745,2.45h0a35.938,35.938,0,0,0,8.682,61.388l0,0A17.706,17.706,0,0,1,1065.78,623.008Z" transform="translate(-1051.977 -563.928)"/>
-                <path id="Path_13819" data-name="Path 13819" class="cls-4" d="M1240.265,822.7A17.629,17.629,0,0,1,1236,834.957c-4.156,4.576-10.818,4.355-10.818,4.355h-40.159s-3.522,5.659-1.637,11.546a17.628,17.628,0,0,0,8.477,9.822l0,0a35.536,35.536,0,0,0,48.763-32.966,35.815,35.815,0,0,0-.354-5.015Z" transform="translate(-1169.083 -791.702)"/>
-              </g>
-            </g>
+  <title data-v-c781368e="">Home</title>
+  <g data-v-c781368e="" id="Layer_2" data-name="Layer 2">
+    <g data-v-c781368e="" id="Layer_1-2" data-name="Layer 1">
+      <g data-v-c781368e="" id="Group_10898" data-name="Group 10898">
+        <g data-v-c781368e="" id="Group_1" data-name="Group 1">
+          <circle data-v-c781368e="" id="Ellipse_366-2" data-name="Ellipse 366-2" cx="19" cy="19" r="19" style="fill: rgb(255, 255, 255);"></circle>
+        </g>
+        <g data-v-c781368e="" id="Group_10362" data-name="Group 10362">
+          <g data-v-c781368e="" id="Group_10361" data-name="Group 10361">
+            <path data-v-c781368e="" id="Path_19696" data-name="Path 19696" d="M14.66,4.32a7.47,7.47,0,0,1,4.47,3.5l9.8,17h0a7.43,7.43,0,0,0,5.27-2.13,8.59,8.59,0,0,0,2.09-6h0A17.33,17.33,0,0,0,8.44,5.5h0A8.61,8.61,0,0,1,14.66,4.32Z" style="fill: url(&quot;#linear-gradient&quot;);"></path>
+            <path data-v-c781368e="" id="Path_19697" data-name="Path 19697" d="M8.54,30.42a7.47,7.47,0,0,1,.8-5.63h0l9.79-17a7.47,7.47,0,0,0-4.47-3.5A8.61,8.61,0,0,0,8.44,5.5h0a17.34,17.34,0,0,0,4.23,29.71h0A8.59,8.59,0,0,1,8.54,30.42Z" style="fill: url(&quot;#linear-gradient-2&quot;);"></path>
+            <path data-v-c781368e="" id="Path_19698" data-name="Path 19698" d="M36.29,16.69a8.59,8.59,0,0,1-2.09,6,7.43,7.43,0,0,1-5.27,2.13H9.34a7.47,7.47,0,0,0-.8,5.63,8.57,8.57,0,0,0,4.14,4.79h0A17.32,17.32,0,0,0,36.46,19.13a18.08,18.08,0,0,0-.17-2.44Z" style="fill: url(&quot;#linear-gradient-3&quot;);"></path>
           </g>
         </g>
       </g>

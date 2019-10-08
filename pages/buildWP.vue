@@ -5,9 +5,10 @@
       {{ $t('BuildWorkPlan')}}
     </h1>
     <section>
-      <video ref="videoplayer" width="800" height="600" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="videoUrl" controls @timeupdate="update">
+      <video ref="videoplayer" width="800" height="600" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update">
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
+      <div><span>oldFrame : {{ oldFrame }}</span> <span>currentFrame :{{currentFrame}}</span></div>
       <div id="bar" ref="linkBar">
         <a href='javascript:' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="startTime[index]" @click="seek">
           {{ item }}
@@ -15,10 +16,15 @@
       </div>
     </section>
     <section>
-      <b-modal id="purpose" @hide="resumePlay">Purpose of a Work Plan</b-modal>
-      <b-modal id="partsofwp" @hide="resumePlay">Parts of a Work Plan</b-modal>
-      <b-modal id="alignworkplan" @hide="resumePlay">Align you Work Plan</b-modal>
-      <b-modal id="threesixty" @hide="resumePlay">Test 360</b-modal>
+      <b-modal id="purpose" @hide="resumePlay()">Purpose of a Work Plan</b-modal>
+      <b-modal id="partsofwp" @hide="resumePlay()">Parts of a Work Plan</b-modal>
+      <b-modal id="alignworkplan" @hide="resumePlay()">Align you Work Plan</b-modal>
+      <b-modal id="threesixty" @hide="resumePlay()">Test 360</b-modal>
+      <b-modal id="completedraft" @hide="resumePlay()">Complete Draft</b-modal>
+      <b-modal id="completewp" @hide="resumePlay()">Complete WP</b-modal>
+      <b-modal id="adjustwp" @hide="resumePlay()">Adjust WP</b-modal>
+      <b-modal id="reallife" @hide="resumePlay()">In Real Life</b-modal>
+      <b-modal id="quiz" @hide="resumePlay()">Take the quiz</b-modal>
     </section>
     <div class="bottomNav planSection">
       <microlearning path="planKey" size="small" completion="100">
@@ -43,10 +49,10 @@ import microlearning from '~/components/microlearning'
 export default {
   data() {
     return {
-      currentFrame:0,
-      oldFrame:0,
+      currentFrame: 0,
+      oldFrame: -1,
       videoUrl,
-      modalArray:["purpose","alignworkplan","partsofwp","threesixty"],
+      modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty","completedraft","completewp","adjustwp","reallife","quiz"],
       startTime: [],
       endTime: [],
       navBarTracks: [],
@@ -58,16 +64,18 @@ export default {
     microlearning
   },
   methods: {
-    resumePlay(){this.$refs.videoplayer.play()},
+    resumePlay() {
+      const videoPlayer = this.$refs.videoplayer
+      setTimeout(function() { videoPlayer.play(); }, 500)
+    },
     showModal(i) {
-       this.$refs.videoplayer.pause()
-        this.$bvModal.show(this.modalArray[i])
-      },
+      this.$refs.videoplayer.pause()
+      this.$bvModal.show(this.modalArray[i])
+    },
     seek(e) {
-      const videoPlayer=this.$refs.videoplayer
+      const videoPlayer = this.$refs.videoplayer
       videoPlayer.pause()
       this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
-      if (this.$refs.videoplayer.paused) { setTimeout(function(){ videoPlayer.play(); }, 500); }
     },
     generate() {
       const c = this.$refs.videoplayer.textTracks[0].cues
@@ -78,9 +86,12 @@ export default {
       }
     },
     update(e) {
-      if (this.oldFrame!=this.currentFrame) this.showModal(this.currentFrame)
+      if (this.oldFrame != this.currentFrame) {
+        this.$refs.videoplayer.pause()
+        this.showModal(this.currentFrame)
+      }
       this.isPlayingNow = e.target.currentTime
-      this.oldFrame=this.currentFrame
+      this.oldFrame = this.currentFrame
     },
     checkpoint(x) {
 
@@ -88,7 +99,7 @@ export default {
     isItPlaying(i) {
       const isNow = this.isPlayingNow
       if (i === this.endTime.findIndex(element => element > isNow)) {
-        this.currentFrame=i
+        this.currentFrame = i
         return 'isPlaying'
       }
     }
@@ -121,7 +132,7 @@ video {
   position: relative;
   align-content: middle;
   text-align: center;
-  height: 7em;
+  height: 8em;
   overflow: hidden;
   padding: 2em;
   line-height: 14px;

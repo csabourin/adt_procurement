@@ -15,10 +15,10 @@
       </div>
     </section>
     <section>
-      <b-modal id="purpose">Purpose of a Work Plan</b-modal>
-      <b-modal id="partsofwp">Parts of a Work Plan</b-modal>
-      <b-modal id="alignworkplan">Align you Work Plan</b-modal>
-      <b-modal id="threesixty">Test 360</b-modal>
+      <b-modal id="purpose" @hide="resumePlay">Purpose of a Work Plan</b-modal>
+      <b-modal id="partsofwp" @hide="resumePlay">Parts of a Work Plan</b-modal>
+      <b-modal id="alignworkplan" @hide="resumePlay">Align you Work Plan</b-modal>
+      <b-modal id="threesixty" @hide="resumePlay">Test 360</b-modal>
     </section>
     <div class="bottomNav planSection">
       <microlearning path="planKey" size="small" completion="100">
@@ -58,14 +58,15 @@ export default {
     microlearning
   },
   methods: {
+    resumePlay(){this.$refs.videoplayer.play()},
     showModal(i) {
        this.$refs.videoplayer.pause()
         this.$bvModal.show(this.modalArray[i])
       },
     seek(e) {
       const videoPlayer=this.$refs.videoplayer
-      this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
       videoPlayer.pause()
+      this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
       if (this.$refs.videoplayer.paused) { setTimeout(function(){ videoPlayer.play(); }, 500); }
     },
     generate() {

@@ -8,7 +8,9 @@
       <video ref="videoplayer" width="800" height="600" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update">
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
-      <div><span>oldFrame : {{ oldFrame }}</span> <span>currentFrame :{{currentFrame}}</span></div>
+      <div><span>oldFrame : {{ oldFrame }}</span> <span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
+        <span>endTime : {{endTime}}</span><br>
+        <span>isPlayingNow : {{ isPlayingNow}}</span></div>
       <div id="bar" ref="linkBar">
         <a href='javascript:' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="startTime[index]" @click="seek">
           {{ item }}
@@ -52,11 +54,12 @@ export default {
       currentFrame: 0,
       oldFrame: -1,
       videoUrl,
-      modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty","completedraft","completewp","adjustwp","reallife","quiz"],
+      modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"],
       startTime: [],
       endTime: [],
       navBarTracks: [],
-      isPlayingNow: 0
+      isPlayingNow: 0,
+      isPlayingSoon: 0
     }
   },
   components: {
@@ -91,13 +94,14 @@ export default {
         this.showModal(this.currentFrame)
       }
       this.isPlayingNow = e.target.currentTime
+      this.isPlayingSoon = e.target.currentTime + .7
       this.oldFrame = this.currentFrame
     },
     checkpoint(x) {
 
     },
     isItPlaying(i) {
-      const isNow = this.isPlayingNow
+      const isNow = this.isPlayingSoon
       if (i === this.endTime.findIndex(element => element > isNow)) {
         this.currentFrame = i
         return 'isPlaying'

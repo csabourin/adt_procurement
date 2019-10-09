@@ -3,7 +3,7 @@
     <hamburger />
     <h1 class="pageTitle">{{$t('finRoles')}}</h1>
     <div style="width:490px;margin:auto">
-      <video src="~/assets/IntroVideoPrototype.mp4" controls poster="/_nuxt/assets/video_poster.PNG" width="600">
+      <video :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls poster="/_nuxt/assets/video_poster.PNG" width="600">
       </video>
       <details>
         <summary>{{$t('transcript')}}</summary>

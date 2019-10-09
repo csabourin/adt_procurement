@@ -1,5 +1,5 @@
 <template>
-  <div class="float-left">
+  <div>
     <b-button v-b-modal.contentMap variant="light">
       <h1>&#69716;</h1>
     </b-button>

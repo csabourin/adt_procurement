@@ -14,7 +14,7 @@
         </a>
         <span class="chaptersLink"><input type="checkbox" id="completion"><label for="completion">Mark as completed</label></span>
       </div>
-      <div><span>oldFrame : {{ oldFrame }}</span> <span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
+      <div><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
         <span>endTime : {{endTime}}</span><br>
         <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
         <span>{{ hasPlayed }}</span></div>
@@ -54,12 +54,11 @@ export default {
   data() {
     return {
       currentFrame: 0,
-      oldFrame: -1,
       videoUrl,
       modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"],
       startTime: [],
       endTime: [],
-      hasPlayed: [],
+      hasPlayed: {},
       navBarTracks: [],
       isPlayingNow: 0,
       isPlayingSoon: 0,
@@ -78,11 +77,13 @@ export default {
     showModal(i) {
       if (this.$refs.videoplayer.paused == false) {
         this.$refs.videoplayer.pause()
+        this.$refs.videoplayer.currentTime = this.startTime[i+1]
         this.$bvModal.show(this.modalArray[i])
       }
     },
     seek(e) {
       const videoPlayer = this.$refs.videoplayer
+      this.isPlayingSoon = e.target.getAttribute('data-start')
       this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
       videoPlayer.play()
     },
@@ -95,17 +96,13 @@ export default {
       }
     },
     update(e) {
-      // if (this.oldFrame != this.currentFrame) {
-      //   this.showModal(this.currentFrame)
-      // }
       this.isPlayingNow = e.target.currentTime
-      this.hasPlayed = e.target.played
       const isNow = this.isPlayingNow
+      this.hasPlayed = e.target.played
       this.currentFrame = this.endTime.findIndex(element => element > isNow)
       this.byFrame =  (this.isPlayingNow - this.isPlayingSoon)
       if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
       this.isPlayingSoon = e.target.currentTime
-      this.oldFrame = this.currentFrame
     },
     isItPlaying(i) {
       const isNow = this.isPlayingNow

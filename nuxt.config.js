@@ -71,7 +71,7 @@ export default {
           "backButton": "Back",
           "home": "Home",
           "KeyMessages": "Key Messages",
-          "BuildWorkPlan": "Build a Work Plan",
+          "BuildWorkPlan": 'Build a Work Plan',
           "CreateBudget": "Create a Budget",
           "InitiateAuthorizeSpending": "Initiate and Authorize Spending (S. 32)",
           "ExerciseFinancialAuthority": "Exercise Financial Authority (S. 34)",

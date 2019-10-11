@@ -5,7 +5,7 @@
       {{ $t('BuildWorkPlan')}}
     </h1>
     <section>
-      <video ref="videoplayer" id="mainPlayer" width="800" height="600" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update">
+      <video ref="videoplayer" id="mainPlayer" width="800" height="600" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update" @emptied="alert(me)">
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div id="bar" ref="linkBar">
@@ -17,7 +17,7 @@
       <div><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
         <span>endTime : {{endTime}}</span><br>
         <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
-        <span>{{ hasPlayed }}</span></div>
+        <span v-for="(segments, index) in hasPlayed.length">P: {{ segments + index }}</span></div>
     </section>
     <section>
       <b-modal id="purpose" @hide="resumePlay()">Purpose of a Work Plan</b-modal>
@@ -25,8 +25,8 @@
       <b-modal id="alignworkplan" @hide="resumePlay()">Align you Work Plan</b-modal>
       <b-modal id="threesixty" @hide="resumePlay()">Test 360</b-modal>
       <b-modal id="completedraft" @hide="resumePlay()">Complete Draft</b-modal>
-      <b-modal id="completewp" @hide="resumePlay()">Complete WP</b-modal>
-      <b-modal id="adjustwp" @hide="resumePlay()">Adjust WP</b-modal>
+      <b-modal id="completewp" @hide="resumePlay()" :title="$t('completewptitle')">Complete WP</b-modal>
+      <b-modal id="adjustwp" @hide="resumePlay()" title="Activity: Adjust the Work plan">Adjust WP</b-modal>
       <b-modal id="reallife" @hide="resumePlay()">In Real Life</b-modal>
       <b-modal id="quiz" @hide="resumePlay()">Take the quiz</b-modal>
     </section>
@@ -70,23 +70,6 @@ export default {
     microlearning
   },
   methods: {
-    resumePlay() {
-      const videoPlayer = this.$refs.videoplayer
-      setTimeout(function() { videoPlayer.play(); }, 500)
-    },
-    showModal(i) {
-      if (this.$refs.videoplayer.paused == false) {
-        this.$refs.videoplayer.pause()
-        this.$refs.videoplayer.currentTime = this.startTime[i+1]
-        this.$bvModal.show(this.modalArray[i])
-      }
-    },
-    seek(e) {
-      const videoPlayer = this.$refs.videoplayer
-      this.isPlayingSoon = e.target.getAttribute('data-start')
-      this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
-      videoPlayer.play()
-    },
     generate() {
       const c = this.$refs.videoplayer.textTracks[0].cues
       for (let i = 0; i < c.length; i++) {
@@ -95,12 +78,31 @@ export default {
         this.endTime[i] = c[i].endTime
       }
     },
+    resumePlay() {
+      const videoPlayer = this.$refs.videoplayer
+      setTimeout(function() { videoPlayer.play(); }, 500)
+    },
+    showModal(i) {
+      if (this.$refs.videoplayer) {
+        if (this.$refs.videoplayer.play) {
+          this.$refs.videoplayer.pause()
+          this.$refs.videoplayer.currentTime = this.startTime[i + 1]
+          this.$bvModal.show(this.modalArray[i])
+        }
+      }
+    },
+    seek(e) {
+      const videoPlayer = this.$refs.videoplayer
+      this.isPlayingSoon = e.target.getAttribute('data-start')
+      this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
+      videoPlayer.play()
+    },
     update(e) {
       this.isPlayingNow = e.target.currentTime
       const isNow = this.isPlayingNow
       this.hasPlayed = e.target.played
       this.currentFrame = this.endTime.findIndex(element => element > isNow)
-      this.byFrame =  (this.isPlayingNow - this.isPlayingSoon)
+      this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
       if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
       this.isPlayingSoon = e.target.currentTime
     },
@@ -133,7 +135,7 @@ video {
 #bar {
   display: flex;
   flex-wrap: wrap;
-  width:800px;
+  width: 800px;
   margin: auto;
   position: relative;
   cursor: pointer;
@@ -189,3 +191,7 @@ video {
 }
 
 </style>
+<i18n>{
+  "en":{"completewptitle":"Activity: Complete the Work plan"},
+  "fr":{"completewptitle":"Activité: Compléter le plan de travail"}
+  }</i18n>

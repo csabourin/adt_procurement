@@ -83,13 +83,13 @@ export default {
       setTimeout(function() { videoPlayer.play(); }, 500)
     },
     showModal(i) {
-      if (this.$refs.videoplayer) {
-        if (this.$refs.videoplayer.play) {
-          this.$refs.videoplayer.pause()
-          this.$refs.videoplayer.currentTime = this.startTime[i + 1]
-          this.$bvModal.show(this.modalArray[i])
-        }
+
+      if (!this.$refs.videoplayer.paused) {
+        this.$refs.videoplayer.pause()
+        this.$refs.videoplayer.currentTime = this.startTime[i + 1]
+        this.$bvModal.show(this.modalArray[i])
       }
+
     },
     seek(e) {
       const videoPlayer = this.$refs.videoplayer
@@ -110,7 +110,7 @@ export default {
       const isNow = this.isPlayingNow
       if (i === this.endTime.findIndex(element => element > isNow)) {
         return 'isPlaying'
-      }
+      } else {return ''}
     }
   }
 }

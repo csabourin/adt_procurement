@@ -21,7 +21,7 @@
     </section>
     <section>
       <b-modal id="purpose" @hide="resumePlay()">Purpose of a Work Plan</b-modal>
-      <b-modal id="partsofwp" @hide="resumePlay()">Parts of a Work Plan</b-modal>
+      <b-modal id="partsofwp" @hide="resumePlay()" size="xl" okOnly><partsOfWorkPlan /></b-modal>
       <b-modal id="alignworkplan" @hide="resumePlay()">Align you Work Plan</b-modal>
       <b-modal id="threesixty" @hide="resumePlay()">Test 360</b-modal>
       <b-modal id="completedraft" @hide="resumePlay()">Complete Draft</b-modal>
@@ -50,6 +50,7 @@
 import videoUrl from '~/assets/Slide_2_-_Gov_priorities.mp4'
 import hamburger from '~/components/hamburger'
 import microlearning from '~/components/microlearning'
+import partsOfWorkPlan from '~/assets/en/workplan/parts_workplan.vue'
 export default {
   data() {
     return {
@@ -67,7 +68,8 @@ export default {
   },
   components: {
     hamburger,
-    microlearning
+    microlearning,
+    partsOfWorkPlan
   },
   methods: {
     generate() {
@@ -149,7 +151,7 @@ video {
   text-align: center;
   height: 8em;
   overflow: hidden;
-  padding: 2em;
+  padding: 1.5em;
   line-height: 17px;
   color: #575757;
   background-color: #ebebeb;
@@ -186,7 +188,7 @@ video {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 15px;
   background-color: #b54142;
 }
 

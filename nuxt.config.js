@@ -14,6 +14,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  router:{
+    base:'/adt_finance-R1/'
+  },
   /*
    ** Customize the progress-bar color
    */

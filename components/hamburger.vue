@@ -1,8 +1,8 @@
 <template>
   <div>
-    <b-button v-b-modal.contentMap variant="light">
+    <a href="javascript:" v-b-modal.contentMap class="hamburger">
       <h1>&#69716;</h1>
-    </b-button>
+    </a>
     <b-modal id="contentMap" hide-footer>
       <div>
         <ul>
@@ -62,7 +62,7 @@ h1 {
   margin: .5em;
 }
 
-.btn-light {
+.hamburger {
   background-color: transparent;
   border-color: transparent;
 }

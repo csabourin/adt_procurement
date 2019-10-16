@@ -2,10 +2,10 @@
   <div class="learningElement">
     <nuxt-link :to="localePath(path)">
       <div class="box" :style="boxSize">
-        <slot></slot>
         <div class="completed" :style="completionBar" :percent="completion"></div>
         <div class="timeEstimate"><span v-if="time">&#9201; {{time}} Minutes</span></div>
       </div>
+      <slot></slot>
     </nuxt-link>
   </div>
 </template>

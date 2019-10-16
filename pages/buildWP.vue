@@ -14,7 +14,7 @@
         </a>
         <span class="chaptersLink"><input type="checkbox" id="completion"><label for="completion">Mark as completed</label></span>
       </div>
-      <div v-if="debug"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
+      <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
         <span>endTime : {{endTime}}</span><br>
         <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
         <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>

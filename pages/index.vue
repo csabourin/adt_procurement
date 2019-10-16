@@ -2,10 +2,10 @@
   <div class="mainWindow">
     <hamburger />
     <h1 class="pageTitle">{{$t('finRoles')}}</h1>
-    <div style="width:490px;margin:auto">
-      <video :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls poster="/_nuxt/assets/video_poster.PNG" width="600">
+    <div style="width:800px;margin:auto">
+      <video :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')" width="600">
       </video>
-      <details>
+      <details style="width:600px;margin:auto">
         <summary>{{$t('transcript')}}</summary>
         <span v-html="$t('transcriptText')"></span>
       </details>
@@ -60,6 +60,7 @@ export default {
 
 </script>
 <style>
+.pageTitle{ font-size: 50px }
 .planHr {
   border-top: 3px dashed #d1dfe1;
 }
@@ -74,8 +75,8 @@ export default {
 }
 
 .sideTitle {
-  font-size: 48px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 35px;
+  font-family: 'Roboto Medium', sans-serif;
   font-weight: 800;
   clear: both;
   text-transform: uppercase;
@@ -159,6 +160,10 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+details{
+  text-align: left
 }
 
 </style>

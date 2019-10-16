@@ -85,8 +85,8 @@ export default {
         },
         "fr": {
           "searchBar": "Recherche",
-          "plan": "Planifier",
-          "spend": "Dépenser",
+          "plan": "Planification",
+          "spend": "Dépenses",
           "report": "Rapports",
           "homePage": "Accueil",
           "transcript":"Transcription",

@@ -5,7 +5,7 @@
       {{ $t('BuildWorkPlan')}}
     </h1>
     <section>
-      <video ref="videoplayer" id="mainPlayer" width="800" height="600" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update" @emptied="alert(me)">
+      <video ref="videoplayer" id="mainPlayer" width="800" height="600" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update">
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div id="bar" ref="linkBar">
@@ -14,21 +14,23 @@
         </a>
         <span class="chaptersLink"><input type="checkbox" id="completion"><label for="completion">Mark as completed</label></span>
       </div>
-      <div><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
+      <div v-if="debug"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
         <span>endTime : {{endTime}}</span><br>
         <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
-        <span v-for="(segments, index) in hasPlayed.length">P: {{ segments + index }}</span></div>
+        <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>
     </section>
     <section>
-      <b-modal id="purpose" @hide="resumePlay()">Purpose of a Work Plan</b-modal>
-      <b-modal id="partsofwp" @hide="resumePlay()" size="xl" okOnly><partsOfWorkPlan /></b-modal>
-      <b-modal id="alignworkplan" @hide="resumePlay()">Align you Work Plan</b-modal>
+      <b-modal id="purpose" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
+      <b-modal id="alignworkplan" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
+      <b-modal id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
+        <partsOfWorkPlan />
+      </b-modal>
       <b-modal id="threesixty" @hide="resumePlay()">Test 360</b-modal>
       <b-modal id="completedraft" @hide="resumePlay()">Complete Draft</b-modal>
       <b-modal id="completewp" @hide="resumePlay()" :title="$t('completewptitle')">Complete WP</b-modal>
       <b-modal id="adjustwp" @hide="resumePlay()" title="Activity: Adjust the Work plan">Adjust WP</b-modal>
       <b-modal id="reallife" @hide="resumePlay()">In Real Life</b-modal>
-      <b-modal id="quiz" @hide="resumePlay()">Take the quiz</b-modal>
+      <b-modal id="quiz" @hide="">Take the quiz</b-modal>
     </section>
     <div class="bottomNav planSection">
       <microlearning path="planKey" size="small" completion="100">
@@ -50,7 +52,7 @@
 import videoUrl from '~/assets/Slide_2_-_Gov_priorities.mp4'
 import hamburger from '~/components/hamburger'
 import microlearning from '~/components/microlearning'
-import partsOfWorkPlan from '~/assets/en/workplan/parts_workplan.vue'
+import partsOfWorkPlan from '~/components/parts_workplan'
 export default {
   data() {
     return {
@@ -100,19 +102,20 @@ export default {
       videoPlayer.play()
     },
     update(e) {
-      this.isPlayingNow = e.target.currentTime
+      const v = e.target
+      this.isPlayingNow = v.currentTime
       const isNow = this.isPlayingNow
-      this.hasPlayed = e.target.played
+      this.hasPlayed = v.played.length
       this.currentFrame = this.endTime.findIndex(element => element > isNow)
       this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
       if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
-      this.isPlayingSoon = e.target.currentTime
+      this.isPlayingSoon = v.currentTime
     },
     isItPlaying(i) {
       const isNow = this.isPlayingNow
       if (i === this.endTime.findIndex(element => element > isNow)) {
         return 'isPlaying'
-      } else {return ''}
+      } else { return '' }
     }
   }
 }
@@ -194,6 +197,8 @@ video {
 
 </style>
 <i18n>{
-  "en":{"completewptitle":"Activity: Complete the Work plan"},
-  "fr":{"completewptitle":"Activité: Compléter le plan de travail"}
+  "en":{"completewptitle":"Activity: Complete the Work plan",
+  "gotIt":"Got it!"},
+  "fr":{"completewptitle":"Activité: Compléter le plan de travail",
+  "gotIt":"Bien compris!"}
   }</i18n>

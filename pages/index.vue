@@ -1,6 +1,5 @@
 <template>
   <div class="mainWindow">
-    <hamburger />
     <h1 class="pageTitle">{{$t('finRoles')}}</h1>
     <div style="width:800px;margin:auto">
       <video :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')" width="600">

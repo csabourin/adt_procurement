@@ -1,7 +1,6 @@
 <template>
   <div>
-    <hamburger />
-    <h1>{{$t('Plan')}}</h1>
+    <h1>{{$t('KeyMessages')}}</h1>
     <p><img src="~/assets/Plan.svg"></p>
     <blockquote>{{$t('keyPlanQuote')}}</blockquote>
     <b-container style="text-align: left">

@@ -1,10 +1,8 @@
 <template>
   <div class="progressBar">
-    <div>
       <span class="avatarIcon">
         <b-button variant="light" v-b-modal.modalone><img :src="avatarPic" width="32"></b-button>
       </span>
-    </div>
     <div>
       <b-modal id="modalone" title="Avatar">
         <changeavatar />

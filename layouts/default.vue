@@ -1,36 +1,55 @@
 <template>
-  <div>
+  <b-container fluid>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <div class="navBar">
-        <nuxt-link class="isLeft" :to="localePath('index')" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <b-row class="navBar">
+      <b-col>
+        <hamburger @menu-toggle="ShowMenu" /></b-col>
+        <b-col><nuxt-link :to="localePath('index')">
           <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
         </nuxt-link>
-<div class="rightSide">
-            <avatarIcon />
-            <!-- <b-form-input size="sm" class="mr-sm-2" :placeholder="$t('searchBar')"></b-form-input>
-              <b-button size="sm" class="my-2 my-sm-0" type="submit">{{$t('searchBar')}}</b-button> -->
-
-          <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
-            <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" v-bind:iconTitle="locale.name" />
-          </nuxt-link>
-          </div>
-
-    </div>
-    <nuxt />
-  </div>
+      </b-col>
+      <b-col cols="6" />
+      <b-col>
+        <avatarIcon />
+      </b-col>
+      <b-col>
+        <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
+          <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" v-bind:iconTitle="locale.name" />
+        </nuxt-link>
+      </b-col>
+    </b-row>
+    </b-row>
+    <b-row>
+      <b-col cols="2" v-if="MenuShowing" transition="expand">
+        <content-map />
+      </b-col>
+      <b-col>
+        <nuxt />
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 <script type="text/javascript">
-import avatarIcon from "~/components/progressBar";
-import langswitch from "~/components/icons/language_icon";
-import homebutton from "~/components/icons/home_icon";
+import avatarIcon from "~/components/progressBar"
+import langswitch from "~/components/icons/language_icon"
+import hamburger from "~/components/hamburger"
+import contentMap from "~/components/contentMap"
+import homebutton from "~/components/icons/home_icon"
 import changeavatar from "~/pages/setAvatars"
 export default {
+  data() {
+    return {
+      MenuShowing: false
+    }
+  },
   components: {
     avatarIcon,
     langswitch,
     homebutton,
-    changeavatar
+    hamburger,
+    changeavatar,
+    contentMap
 
   },
   computed: {
@@ -42,6 +61,9 @@ export default {
   methods: {
     goBack() {
       this.$router.go(-1)
+    },
+    ShowMenu() {
+      this.MenuShowing = !this.MenuShowing
     }
   }
 
@@ -49,7 +71,6 @@ export default {
 
 </script>
 <style>
-
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -70,7 +91,6 @@ html {
 }
 
 .navBar {
-  display:flex;
   background-color: #fff;
   color: #000;
   text-align: right;
@@ -78,17 +98,18 @@ html {
   justify-content: flex-end;
 }
 
-.isLeft{
-  position: absolute;
-  left: 0;
+.leftSide {
+  display: flex;
+  align-content: flex-start;
 }
 
 .navBar>span {
   padding: 1.5em;
 }
 
-.rightSide{
-  display:flex;
+.rightSide {
+  display: flex;
+  align-content: flex-end;
 }
 
 body {
@@ -106,35 +127,31 @@ body {
   text-align: center;
 }
 
-.speech-bubble {
-  position: relative;
-  background: #ffffff;
-  border-radius: .4em;
-  padding: 1em;
+/* always present */
+.expand-transition {
+  transition: all .3s ease;
+  height: 30px;
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
 }
 
-.speech-bubble:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 60%;
-  width: 0;
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.expand-enter,
+.expand-leave {
   height: 0;
-  border: 33px solid transparent;
-  border-top-color: #ffffff;
-  border-bottom: 0;
-  border-left: 0;
-  margin-left: -16.5px;
-  margin-bottom: -33px;
+  padding: 0 10px;
+  opacity: 0;
 }
 
 .avatarIcon>.btn {
-  
+
   border-radius: 50%;
   background-color: white;
   padding: 10px;
   overflow: hidden;
-  
+
   margin: 0;
 }
 
@@ -158,8 +175,6 @@ footer.pageFooter {
 
 }
 
-.bottomNav > .learningElement{
-
-}
+.bottomNav>.learningElement {}
 
 </style>

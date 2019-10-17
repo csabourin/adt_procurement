@@ -1,6 +1,5 @@
 <template>
   <div>
-    <hamburger />
     <h1 class="pageTitle">
       {{ $t('BuildWorkPlan')}}
     </h1>
@@ -50,7 +49,6 @@
 </template>
 <script type="text/javascript">
 import videoUrl from '~/assets/Slide_2_-_Gov_priorities.mp4'
-import hamburger from '~/components/hamburger'
 import microlearning from '~/components/microlearning'
 import partsOfWorkPlan from '~/components/parts_workplan'
 export default {
@@ -69,7 +67,6 @@ export default {
     }
   },
   components: {
-    hamburger,
     microlearning,
     partsOfWorkPlan
   },

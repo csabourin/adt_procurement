@@ -21,7 +21,7 @@
     </b-row>
     </b-row>
     <b-row>
-      <b-col cols="2" v-if="MenuShowing" transition="expand">
+      <b-col cols="2" v-if="MenuShowing" transition="fade">
         <content-map />
       </b-col>
       <b-col>

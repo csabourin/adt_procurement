@@ -3,7 +3,7 @@
     <nuxt-link :to="localePath(path)">
       <div class="box" :style="boxSize">
         <div class="completed" :style="completionBar" :percent="completion"></div>
-        <div class="timeEstimate"><span v-if="time">&#9201; {{time}} Minutes</span></div>
+        <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes</span></div>
       </div>
       <slot></slot>
     </nuxt-link>

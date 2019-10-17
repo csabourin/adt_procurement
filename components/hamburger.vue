@@ -1,11 +1,14 @@
 <template>
     <a href="javascript:" @click="ShowMenu" class="hamburger">
-      <h1>&#69716;</h1>
+      <img src="~assets/hamburger.png" >
     </a>
 </template>
 <style type="text/css" scoped>
 h1 {
   margin: .5em;
+}
+a{
+  color:#35495e;
 }
 
 .hamburger {

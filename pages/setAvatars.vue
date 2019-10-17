@@ -17,7 +17,6 @@
 <style type="text/css" scoped>
 .wallPaint {
   background-color: #41383D;
-  background-image: url('../assets/Seascape.png');
   background-size: cover;
   height: 90vh;
 }

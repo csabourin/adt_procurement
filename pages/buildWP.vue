@@ -48,14 +48,12 @@
   </div>
 </template>
 <script type="text/javascript">
-import videoUrl from '~/assets/Slide_2_-_Gov_priorities.mp4'
 import microlearning from '~/components/microlearning'
 import partsOfWorkPlan from '~/components/parts_workplan'
 export default {
   data() {
     return {
       currentFrame: 0,
-      videoUrl,
       modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"],
       startTime: [],
       endTime: [],

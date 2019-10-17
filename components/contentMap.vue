@@ -1,5 +1,5 @@
 <template>
-  <div id="contentMap">
+  <div class="contentMap">
     <ul>
       <nuxt-link :to="localePath('index')">
         <h3>{{$t('homePage')}}</h3>
@@ -51,6 +51,11 @@
 </template>
 <style type="text/css" scoped>
   .contentMap{
-    background-color: #848383;
+    background-color: #d8d7d7;
+    box-shadow: 4px 4px 8px #888;
+    padding: 0.5em
+  }
+  a{
+    color:#000;
   }
 </style>

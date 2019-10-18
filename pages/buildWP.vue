@@ -24,11 +24,11 @@
       <b-modal id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
         <partsOfWorkPlan />
       </b-modal>
-      <b-modal id="threesixty" @hide="resumePlay()">Test 360</b-modal>
+      <b-modal id="threesixty" @hide="resumePlay()"  size="lg" okOnly><test360 /></b-modal>
       <b-modal id="completedraft" @hide="resumePlay()">Complete Draft</b-modal>
       <b-modal id="completewp" @hide="resumePlay()" :title="$t('completewptitle')">Complete WP</b-modal>
       <b-modal id="adjustwp" @hide="resumePlay()" title="Activity: Adjust the Work plan">Adjust WP</b-modal>
-      <b-modal id="reallife" @hide="resumePlay()">In Real Life</b-modal>
+      <b-modal id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly><span v-html="$t('IRLText')"></span></b-modal>
       <b-modal id="quiz" @hide="">Take the quiz</b-modal>
     </section>
     <div class="bottomNav planSection">
@@ -50,6 +50,7 @@
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
 import partsOfWorkPlan from '~/components/parts_workplan'
+import test360 from '~/components/test360'
 export default {
   data() {
     return {
@@ -66,6 +67,7 @@ export default {
   },
   components: {
     microlearning,
+    test360,
     partsOfWorkPlan
   },
   methods: {
@@ -193,7 +195,13 @@ video {
 </style>
 <i18n>{
   "en":{"completewptitle":"Activity: Complete the Work plan",
-  "gotIt":"Got it!"},
+  "InRealLife":"In Real Life",
+  "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about work plans. Go <strong>now</strong>. ",
+  "gotIt":"Got it!"
+},
   "fr":{"completewptitle":"Activité: Compléter le plan de travail",
-  "gotIt":"Bien compris!"}
+  "InRealLife":"Dans la vraie vie",
+  "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues des plans de travail. Allez-y <strong>maintenant</strong>.",
+  "gotIt":"Bien compris!"
+}
   }</i18n>

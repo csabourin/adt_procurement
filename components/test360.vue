@@ -27,7 +27,7 @@
   "rExample":"Last years's Reports"
   },
   "fr":{
-  "Test360":"Apperçu 360",
+  "Test360":"Aperçu 360",
   "wpExample":"Plan de travail de l'année passée",
   "bExample":"Budget de l'année passée",
   "rExample":"Plan de travail de l'année passée"

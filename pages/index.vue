@@ -4,22 +4,30 @@
     <div style="width:800px;margin:auto">
       <video :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')" width="600">
       </video>
-      <details style="width:600px;margin:auto">
-        <summary>{{$t('transcript')}}</summary>
-        <span v-html="$t('transcriptText')"></span>
-      </details>
+       <div role="tablist">
+    <b-card no-body class="mb-1">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <b-button block href="#" v-b-toggle.accordion-1 variant="light">{{$t('transcript')}}</b-button>
+      </b-card-header>
+      <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <b-card-text><span v-html="$t('transcriptText')"></span></b-card-text>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+  </div>
     </div>
     <div class="sideTitle planTitle">{{$t('plan')}}</div>
     <section class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }">
-      <microlearning path="planKey" time="5" completion=100>{{$t('KeyMessages')}}</microlearning>
+      <microlearning path="planKey" time="5" completion=100 imagePath="KeyMessP.png">{{$t('KeyMessages')}}</microlearning>
       <microlearning path="buildWP" time="20" completion=80>{{$t('BuildWorkPlan')}}</microlearning>
-      <microlearning time="20" completion=10>{{$t('CreateBudget')}}</microlearning>
-      <microlearning time="15">Test</microlearning>
+      <microlearning time="20" completion=10 imagePath="CreateBud.png">{{$t('CreateBudget')}}</microlearning>
+      <microlearning time="15" imagePath="TestPlan.png">Test</microlearning>
     </section>
     <hr class="planHr">
     <div class="sideTitle spendTitle">{{$t('spend')}}</div>
     <section class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }">
-      <microlearning time="5">{{$t('KeyMessages')}}</microlearning>
+      <microlearning time="5" imagePath="KeyMessS.png">{{$t('KeyMessages')}}</microlearning>
       <microlearning time="20">{{$t('InitiateAuthorizeSpending')}}</microlearning>
       <microlearning time="20">{{$t('ExerciseFinancialAuthority')}}</microlearning>
       <microlearning time="15">Test</microlearning>
@@ -27,7 +35,7 @@
     <hr class="spendHr">
     <div class="sideTitle reportTitle">{{$t('report')}}</div>
     <section class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }">
-      <microlearning time="5">{{$t('KeyMessages')}}</microlearning>
+      <microlearning time="5" imagePath="KeyMessR.png">{{$t('KeyMessages')}}</microlearning>
       <microlearning time="20">{{$t('ConductPeriodicVarianceReporting')}}</microlearning>
       <microlearning time="20">{{$t('ContributeReporting')}}</microlearning>
       <microlearning time="15">Test</microlearning>
@@ -116,20 +124,6 @@ export default {
 
 .reportTitle {
   color: #986e65;
-}
-
-.planSection .timeEstimate {
-  background-color: #608a93;
-}
-
-
-.spendSection .timeEstimate {
-  background-color: #7d677d;
-}
-
-
-.reportSection .timeEstimate {
-  background-color: #986e65;
 }
 
 

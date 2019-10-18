@@ -10,13 +10,20 @@
       </b-row>
     </b-container>
 
-    <img src="~/assets/quickDirtyBottomKey.PNG" class="float-right">
-    <!-- <div class="bottomNav planSection">
-         <microlearning path="planKey" size="small" completion=100>{{$t('KeyMessages')}}</microlearning>
-      <microlearning path="buildWP" size="small" time="20" completion=80>{{$t('BuildWorkPlan')}}</microlearning>
-      <microlearning size="small" time="20" completion=10>{{$t('CreateBudget')}}</microlearning>
-      <microlearning size="small" time="15">Test</microlearning>
-    </div> -->
+<div class="bottomNav planSection">
+      <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.png">
+        {{ $t('KeyMessages') }}
+      </microlearning>
+      <microlearning path="buildWP" size="140" time="20" completion="80">
+        {{ $t('BuildWorkPlan') }}
+      </microlearning>
+      <microlearning size="140" time="20" completion="10" imagePath="CreateBud.png">
+        {{ $t('CreateBudget') }}
+      </microlearning>
+      <microlearning size="140" time="15" imagePath="TestPlan.png">
+        Test
+      </microlearning>
+    </div>
   </div>
 </template>
 <script type="text/javascript">

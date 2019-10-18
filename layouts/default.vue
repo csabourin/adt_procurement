@@ -3,17 +3,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <b-row class="navBar">
-      <b-col>
+      <b-col class="text-left">
         <hamburger @menu-toggle="ShowMenu" /></b-col>
-        <b-col><nuxt-link :to="localePath('index')">
+        <b-col class="text-left"><nuxt-link :to="localePath('index')">
           <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
         </nuxt-link>
       </b-col>
       <b-col cols="6" />
-      <b-col>
+      <b-col class="text-right">
         <avatarIcon />
       </b-col>
-      <b-col>
+      <b-col class="text-right">
         <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
           <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" v-bind:iconTitle="locale.name" />
         </nuxt-link>
@@ -95,7 +95,20 @@ html {
   color: #000;
   text-align: right;
   box-shadow: rgba(0, 0, 0, .5) 0px 3px 8px;
-  justify-content: flex-end;
+}
+
+.planSection .timeEstimate {
+  background-color: #608a93;
+}
+
+
+.spendSection .timeEstimate {
+  background-color: #7d677d;
+}
+
+
+.reportSection .timeEstimate {
+  background-color: #986e65;
 }
 
 .leftSide {
@@ -105,6 +118,12 @@ html {
 
 .navBar>span {
   padding: 1.5em;
+}
+
+.bottomNav {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .rightSide {
@@ -176,5 +195,9 @@ footer.pageFooter {
 }
 
 .bottomNav>.learningElement {}
+
+ .contentMap .nuxt-link-exact-active {
+  border-bottom: 2px solid #b54142;
+}
 
 </style>

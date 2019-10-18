@@ -55,7 +55,7 @@ export default {
   mounted: function() { return true },
   methods: {
     getImgUrl: function(pic) {
-      return require('../assets/' + pic)
+      return require('~/assets/' + pic)
     },
 
     isSame: function(isIt,avatar) {

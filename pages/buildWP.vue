@@ -24,7 +24,9 @@
       <b-modal id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
         <partsOfWorkPlan />
       </b-modal>
-      <b-modal id="threesixty" @hide="resumePlay()"  size="lg" okOnly><test360 /></b-modal>
+      <b-modal id="threesixty" @hide="resumePlay()" size="lg" okOnly>
+        <test360 />
+      </b-modal>
       <b-modal id="completedraft" @hide="resumePlay()">Complete Draft</b-modal>
       <b-modal id="completewp" @hide="resumePlay()" :title="$t('completewptitle')">Complete WP</b-modal>
       <b-modal id="adjustwp" @hide="resumePlay()" title="Activity: Adjust the Work plan">Adjust WP</b-modal>
@@ -32,16 +34,16 @@
       <b-modal id="quiz" @hide="">Take the quiz</b-modal>
     </section>
     <div class="bottomNav planSection">
-      <microlearning path="planKey" size="small" completion="100">
+      <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.png">
         {{ $t('KeyMessages') }}
       </microlearning>
-      <microlearning path="buildWP" size="small" time="20" completion="80">
+      <microlearning path="buildWP" size="140" time="20" completion="80">
         {{ $t('BuildWorkPlan') }}
       </microlearning>
-      <microlearning size="small" time="20" completion="10">
+      <microlearning size="140" time="20" completion="10" imagePath="CreateBud.png">
         {{ $t('CreateBudget') }}
       </microlearning>
-      <microlearning size="small" time="15">
+      <microlearning size="140" time="15" imagePath="TestPlan.png">
         Test
       </microlearning>
     </div>
@@ -198,10 +200,10 @@ video {
   "InRealLife":"In Real Life",
   "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about work plans. Go <strong>now</strong>. ",
   "gotIt":"Got it!"
-},
+  },
   "fr":{"completewptitle":"Activité: Compléter le plan de travail",
   "InRealLife":"Dans la vraie vie",
   "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues des plans de travail. Allez-y <strong>maintenant</strong>.",
   "gotIt":"Bien compris!"
-}
+  }
   }</i18n>

@@ -1,11 +1,12 @@
 <template>
   <div class="learningElement">
     <nuxt-link :to="localePath(path)">
-      <div class="box" :style="boxSize">
+      <div class="box" :style="boxSize" style="background-image:url('/adt_finance-R1/_nuxt/assets/KeyMessR.png')">
         <div class="completed" :style="completionBar" :percent="completion"></div>
         <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes</span></div>
       </div>
-      <slot></slot>
+      <p :style="'width:'+size+'px'">
+      <slot /></p>
     </nuxt-link>
   </div>
 </template>
@@ -14,7 +15,7 @@ export default {
   props: {
     size: {
       type: String,
-      default: "big"
+      default: "200"
     },
     time: String,
     completion: {
@@ -24,27 +25,32 @@ export default {
     path: {
       type: String,
       default: "index"
+    },
+    imagePath: {
+      type: String,
+      default: "KeyMessR.png"
     }
   },
   computed: {
+     getImgUrl(pic) {
+      return require('~/assets/' + pic)
+    },
     completionBar() {
       return {
         width: `${this.completion}%`
       }
     },
     boxSize() {
-      if (this.size === "big") {
-        return {
-          width: "240px",
-          height: "240px"
 
-        }
-      } else { return {
-      	width: "140px",
-          height: "140px"
-      }}
+      return {
+        width: this.size + "px",
+        height: this.size + "px",
+        backgroundImage: "url(" + require('~/assets/' + this.imagePath) + ")",
+        backgroundSize: "cover",
+      }
 
     }
+
   }
 }
 

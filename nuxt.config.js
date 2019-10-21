@@ -11,7 +11,9 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/adt_finance-R1/favicon.ico' },
+      { rel:'stylesheet', href:'https://fonts.googleapis.com/css?family=Roboto&display=swap' },
+      { rel:'stylesheet', href:'https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap' }
     ]
   },
   router:{
@@ -63,44 +65,46 @@ export default {
     defaultLocale: 'en',
     vueI18n: {
       messages: {
-        "en": {
-          "searchBar": "Search",
-          "homePage": "Home",
-          "transcript":"Transcript",
-          "plan": "Plan",
-          "spend": "Spend",
-          "report": "Report",
-          "previousPage": "Previous",
-          "backButton": "Back",
-          "home": "Home",
-          "KeyMessages": "Key Messages",
-          "BuildWorkPlan": 'Build a Work Plan',
-          "CreateBudget": "Create a Budget",
-          "InitiateAuthorizeSpending": "Initiate and Authorize Spending (S. 32)",
-          "ExerciseFinancialAuthority": "Exercise Financial Authority (S. 34)",
-          "MonitorControlFinances": "Monitor and Control Finances",
-          "ConductPeriodicVarianceReporting": "Conduct Periodic Variance Reporting",
-          "ContributeReporting": "Contribute in Reporting ",
-          "Test": "Test"
+        'en': {
+          'searchBar': 'Search',
+          'homePage': 'Home',
+          'transcript':'Transcript',
+          'plan': 'Plan',
+          'spend': 'Spend',
+          'report': 'Report',
+          'previousPage': 'Previous',
+          'backButton': 'Back',
+          'home': 'Home',
+          'KeyMessages': 'Key Messages',
+          'BuildWorkPlan': 'Build a Work Plan',
+          'CreateBudget': 'Create a Budget',
+          'InitiateAuthorizeSpending': 'Initiate and Authorize Spending (S. 32)',
+          'ExerciseFinancialAuthority': 'Exercise Financial Authority (S. 34)',
+          'MonitorControlFinances': 'Monitor and Control Finances',
+          'ConductPeriodicVarianceReporting': 'Conduct Periodic Variance Reporting',
+          'ContributeReporting': 'Contribute in Reporting ',
+          'Test': 'Test',
+          'MarkCompleted':'Mark as completed'
         },
-        "fr": {
-          "searchBar": "Recherche",
-          "plan": "Planification",
-          "spend": "Dépenses",
-          "report": "Rapports",
-          "homePage": "Accueil",
-          "transcript":"Transcription",
-          "previousPage": "Précédent",
-          "backButton": "Retour",
-          "KeyMessages": "Messages clés",
-          "BuildWorkPlan": "Élaborer un plan de travail",
-          "CreateBudget": "Établir un budget",
-          "InitiateAuthorizeSpending": "Engager et autoriser les dépenses (art. 32)",
-          "ExerciseFinancialAuthority": "Exercice des pouvoirs financiers (art. 34)",
-          "MonitorControlFinances": "Surveiller et contrôler les finances",
-          "ConductPeriodicVarianceReporting": "Rapports périodiques sur les écarts",
-          "ContributeReporting": "Contribuer à l'établissement de rapports",
-          "Test": "Test"
+        'fr': {
+          'searchBar': 'Recherche',
+          'plan': 'Planification',
+          'spend': 'Dépenses',
+          'report': 'Rapports',
+          'homePage': 'Accueil',
+          'transcript':'Transcription',
+          'previousPage': 'Précédent',
+          'backButton': 'Retour',
+          'KeyMessages': 'Messages clés',
+          'BuildWorkPlan': 'Élaborer un plan de travail',
+          'CreateBudget': 'Établir un budget',
+          'InitiateAuthorizeSpending': 'Engager et autoriser les dépenses (art. 32)',
+          'ExerciseFinancialAuthority': 'Exercice des pouvoirs financiers (art. 34)',
+          'MonitorControlFinances': 'Surveiller et contrôler les finances',
+          'ConductPeriodicVarianceReporting': 'Rapports périodiques sur les écarts',
+          'ContributeReporting': "Contribuer à l'établissement de rapports",
+          'Test': 'Test',
+          'MarkCompleted':'Visualisation complétée'
 
         }
       }

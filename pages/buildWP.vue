@@ -11,7 +11,7 @@
         <a href='javascript:' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="startTime[index]" @click="seek">
           {{ item }}
         </a>
-        <span class="chaptersLink"><input type="checkbox" id="completion"><label for="completion">Mark as completed</label></span>
+        <span class="chaptersLink"><input type="checkbox" id="completion"><label for="completion">{{$t('MarkCompleted')}}</label></span>
       </div>
       <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
         <span>endTime : {{endTime}}</span><br>

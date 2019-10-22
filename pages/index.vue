@@ -1,6 +1,5 @@
 <template>
   <div class="mainWindow">
-    <p>&nbsp;</p>
     <h1 class="pageTitle">{{$t('finRoles')}}</h1>
     <div style="width:800px;margin:auto">
       <video :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')" width="800">
@@ -69,7 +68,8 @@ export default {
 
 </script>
 <style>
-.pageTitle{ font-size: 50px }
+.pageTitle{ font-size: 50px;
+margin-top:1em; }
 .planHr {
   border-top: 3px dashed #d1dfe1;
 }

@@ -1,11 +1,11 @@
 <template>
   <b-container fluid>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <b-row class="navBar">
       <b-col class="text-left">
-        <hamburger @menu-toggle="ShowMenu" /></b-col>
-        <b-col class="text-left"><nuxt-link :to="localePath('index')">
+        <hamburger @menu-toggle="ShowMenu" />
+      </b-col>
+      <b-col class="text-left">
+        <nuxt-link :to="localePath('index')">
           <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
         </nuxt-link>
       </b-col>
@@ -95,6 +95,7 @@ html {
   color: #000;
   text-align: right;
   box-shadow: rgba(0, 0, 0, .5) 0px 3px 8px;
+  align-items: flex-start;
 }
 
 .planSection .timeEstimate {
@@ -196,7 +197,7 @@ footer.pageFooter {
 
 .bottomNav>.learningElement {}
 
- .contentMap .nuxt-link-exact-active {
+.contentMap .nuxt-link-exact-active {
   border-bottom: 2px solid #b54142;
 }
 

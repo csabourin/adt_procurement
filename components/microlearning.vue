@@ -5,7 +5,7 @@
         <div class="completed" :style="completionBar" :percent="completion"></div>
         <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes</span></div>
       </div>
-      <p :style="'width:'+size+'px'">
+      <p class="text-left" :style="'width:'+size+'px'">
       <slot /></p>
     </nuxt-link>
   </div>
@@ -56,6 +56,7 @@ export default {
 
 </script>
 <style type="text/css" scoped>
+a{color:black;}
 .completed {
   position: absolute;
   left: 0;
@@ -90,6 +91,7 @@ export default {
   border-radius: 2px;
   position: relative;
   border: 1px solid hsl(42, 10%, 74%);
+  margin-bottom: .5em;
 }
 
 .timeEstimate {

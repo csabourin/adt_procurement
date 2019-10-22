@@ -1,22 +1,24 @@
 <template>
   <div class="mainWindow">
+    <p>&nbsp;</p>
     <h1 class="pageTitle">{{$t('finRoles')}}</h1>
     <div style="width:800px;margin:auto">
-      <video :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')" width="600">
+      <video :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')" width="800">
       </video>
        <div role="tablist">
-    <b-card no-body class="mb-1">
+    <b-card no-body class="mb-1 text-left">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-1 variant="light">{{$t('transcript')}}</b-button>
+        <b-button block href="#" v-b-toggle.accordion-1 variant="light" class="text-left" >{{$t('transcript')}}</b-button>
       </b-card-header>
       <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
         <b-card-body>
-          <b-card-text><span v-html="$t('transcriptText')"></span></b-card-text>
+          <b-card-text ><span v-html="$t('transcriptText')"></span></b-card-text>
         </b-card-body>
       </b-collapse>
     </b-card>
   </div>
     </div>
+     <p>&nbsp;</p>
     <div class="sideTitle planTitle">{{$t('plan')}}</div>
     <section class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }">
       <microlearning path="planKey" time="5" completion=100 imagePath="KeyMessP.png">{{$t('KeyMessages')}}</microlearning>
@@ -112,19 +114,9 @@ export default {
   background-repeat: no-repeat;
 }
 
-.planTitle {
-  color: #608a93;
-}
-
-
-.spendTitle {
-  color: #7d677d;
-}
-
-
-.reportTitle {
-  color: #986e65;
-}
+.planTitle {  color: #608a93;}
+.spendTitle {  color: #7d677d;}
+.reportTitle {  color: #986e65;}
 
 
 .iconText {

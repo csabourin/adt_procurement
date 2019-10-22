@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="text-center">
     <h1>{{$t('KeyMessages')}}</h1>
     <p><img src="~/assets/Plan.svg"></p>
+    <p>&nbsp;</p>
     <blockquote>{{$t('keyPlanQuote')}}</blockquote>
     <b-container style="text-align: left">
       <b-row>

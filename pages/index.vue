@@ -107,7 +107,7 @@ export default {
 .courseSection {
   clear: left;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   background-position-y: 9em;
   background-position-x: 12em;

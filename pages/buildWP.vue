@@ -4,7 +4,7 @@
       {{ $t('BuildWorkPlan')}}
     </h1>
     <section>
-      <video ref="videoplayer" id="mainPlayer" width="800" height="600" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update">
+      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update">
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div id="bar" ref="linkBar">
@@ -32,7 +32,7 @@
       <b-modal id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly><span v-html="$t('IRLText')"></span></b-modal>
       <b-modal id="quiz" @hide="">Take the quiz</b-modal>
     </section>
-    <div role="tablist">
+    <div role="tablist" class="transcriptionBox">
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block href="#" v-b-toggle.accordion-1 variant="light">{{$t('transcript')}}</b-button>
@@ -40,7 +40,7 @@
       <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <b-card-text>
-            <button v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button>
+            <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button>
             <span v-html="$t('transcriptText')"></span>
             </b-card-text>
         </b-card-body>
@@ -112,7 +112,6 @@ export default {
       if (!this.$refs.videoplayer.paused) {
         this.$refs.videoplayer.pause()
         if (this.startTime[i + 1]) {
-          alert(this.startTime[i + 1])
           this.$refs.videoplayer.currentTime = this.startTime[i + 1]
         }
         this.$bvModal.show(this.modalArray[i])
@@ -158,6 +157,7 @@ video {
 }
 
 #mainPlayer {
+  width:70vw;
   margin: auto;
   display: block;
 }
@@ -165,21 +165,27 @@ video {
 #bar {
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
+  width: 70vw;
   margin: auto;
   position: relative;
   cursor: pointer;
   color: #CCC;
-  width: 800px;
 }
 
+.transcriptionBox {
+  width: 70vw;
+  margin:auto;
+}
+.transcriptionBox .btn{
+  text-align: left;
+}
 .chaptersLink {
   position: relative;
   align-content: middle;
   text-align: center;
   height: 8em;
   overflow: hidden;
-  padding: 1.5em;
+  padding: 2em 1.5em;
   line-height: 17px;
   color: #575757;
   background-color: #ebebeb;
@@ -218,6 +224,11 @@ video {
   width: 100%;
   height: 15px;
   background-color: #b54142;
+}
+
+button.accessibilityButton {
+    margin: 5px;
+    border-radius: 5px;
 }
 
 </style>

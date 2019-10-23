@@ -72,6 +72,7 @@ export default {
 </script>
 <style>
 html {
+  width:100%;
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -80,7 +81,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
 }
 
 *,
@@ -90,12 +90,28 @@ html {
   margin: 0;
 }
 
-.navBar {
+body {
+  background-color: #fff;
+  width: calc(100vw - (100vw - 100%));
+  margin:0;
+  padding: 0;
+}
+.row.navBar {
   background-color: #fff;
   color: #000;
   text-align: right;
   box-shadow: rgba(0, 0, 0, .5) 0px 3px 8px;
   align-items: flex-start;
+  width:100%;
+  margin:0;
+}
+
+.transcriptionBox {
+  width: 70vw;
+  margin:auto;
+}
+.transcriptionBox .btn{
+  text-align: left;
 }
 
 .planSection .timeEstimate {
@@ -132,10 +148,7 @@ html {
   align-content: flex-end;
 }
 
-body {
-  background-color: #fff;
-}
-
+.container-fluid{padding: 0;}
 .pageTitle {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 800;

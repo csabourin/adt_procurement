@@ -4,7 +4,7 @@
       {{ $t('BuildWorkPlan')}}
     </h1>
     <section>
-      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update">
+      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update" @loadeddata="resumePosition">
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div id="bar" ref="linkBar">
@@ -26,7 +26,7 @@
       <b-modal id="threesixty" @hide="resumePlay()" size="lg" okOnly>
         <test360 />
       </b-modal>
-      <b-modal id="completedraft" @hide="resumePlay()">Complete Draft</b-modal>
+      <b-modal id="completedraft" @hide="resumePlay()" size="xl" okOnly><prepareWorkPlan /></b-modal>
       <b-modal id="completewp" @hide="resumePlay()" :title="$t('completewptitle')">Complete WP</b-modal>
       <b-modal id="adjustwp" @hide="resumePlay()" title="Activity: Adjust the Work plan">Adjust WP</b-modal>
       <b-modal id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly><span v-html="$t('IRLText')"></span></b-modal>
@@ -66,6 +66,7 @@
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
 import partsOfWorkPlan from '~/components/parts_workplan'
+import prepareWorkPlan from '~/components/prepare_workplan'
 import test360 from '~/components/test360'
 export default {
   data() {
@@ -85,7 +86,8 @@ export default {
   components: {
     microlearning,
     test360,
-    partsOfWorkPlan
+    partsOfWorkPlan,
+    prepareWorkPlan
   },
   methods: {
     generate() {
@@ -125,12 +127,17 @@ export default {
       this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
       videoPlayer.play()
     },
+resumePosition(){
+  this.$refs.videoplayer.currentTime = this.startTime[localStorage.getItem("WPCurrentPlaying")]
+}
+    ,
     update(e) {
       const v = e.target
       this.isPlayingNow = v.currentTime
       const isNow = this.isPlayingNow
       this.hasPlayed = v.played.length
       this.currentFrame = this.endTime.findIndex(element => element > isNow)
+      localStorage.setItem("WPCurrentPlaying",this.currentFrame)
       this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
       if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
       this.isPlayingSoon = v.currentTime
@@ -172,13 +179,6 @@ video {
   color: #CCC;
 }
 
-.transcriptionBox {
-  width: 70vw;
-  margin:auto;
-}
-.transcriptionBox .btn{
-  text-align: left;
-}
 .chaptersLink {
   position: relative;
   align-content: middle;
@@ -238,7 +238,7 @@ button.accessibilityButton {
   "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about work plans. Go <strong>now</strong>. ",
   "gotIt":"Got it!",
   "jumpModalPartsWP":"Jump to ",
-  "transcriptText":"<p>A work plan is a living document in which you define and prioritize your unit&rsquo;s activities. Think of it as a to-do list for the upcoming year. It helps communicate how you assign resources and set timelines. It is the cornerstone of your planning process because it supports your budget and reporting activities.&nbsp;</p><p>Typically you wouldn&rsquo;t start from scratch. You would simply review last year's work plan, budget and reports to identify what needs to be kept, added or removed for the new year.</p><p>But even before putting together your work plan, it&rsquo;s useful to step out of your role and to look at the big picture.</p><p>&ldquo;It all starts with the Speech from the Throne, which outlines the government priorities.</p><p>These priorities will trickle down all the way to you as a Manager, and will need to be reflected in your work plan. Let&rsquo;s look at how that happens.<br /> <br />After the Speech from the Throne, the Prime Minister addresses a &ldquo;Mandate Letter&rdquo; to each department&rsquo;s Minister.</p><p>In it, the Prime Minister sets out their overall expectations and policy objectives for each department.</p><p>Every year, there is a Federal Budget, which sets the economic agenda for Canada for the year. Departments will have priorities and objectives which align to this agenda in addition to other core mandates.</p><p>The organization&rsquo;s objectives are outlined in a Departmental Results Framework &ndash; or &ldquo;DRF&rdquo;.</p><p>Then you have the Departmental Plan, which describes the core responsibilities of the department, the results the department wants to achieve, and indicators of those results.</p><p>Then you may have plans per Sector -&nbsp;Branch&nbsp;- and Directorate.</p><p>This is where your work plan comes in! You build your work plan around the activities for which you are responsible within your unit and this naturally ties back into the Departmental Plan.&rdquo;</p><p>At this point, you might be wondering what a work plan looks like. Not all units use the same model. By talking to your colleagues and to folks in corporate planning and finance, you can find out which one is used in your office. Here is a typical work plan structure. Have a look! Also, look in the Files section on the top right to find work plan examples.</p><p>To build a work plan, it helps to understand the historical and cultural context of your unit by asking yourself a series of questions. This is what we call the 360 Scan.<br />Here is a fictional example of last year&rsquo;s work plan, budget and report. Try to apply the questions in the 360 Scan document to this fictional example. <br />You may access the 360 Scan document at any time from the File icon at the top right.</p><p>At this point, you understand the context, both historically and culturally and are in a position to craft this year&rsquo;s work plan! Imagine that your director shares with you this coming year&rsquo;s priorities for your directorate: protect aquatic ecosystems, sustain fisheries and manage the issuing of licenses.</p><p>To help you wrap your mind around how to fill out the other sections of the work plan, let&rsquo;s continue with the fisheries scenario. Looking at your draft, you notice that some items may have been dropped into the wrong location or may be missing. Update your draft accordingly.</p><p>Alright. Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. Three things: new software implementation to speed up the issuing of licenses; new policy that now requires licenses to be issued in 15 days, not 30 days, starting November 1; a decision to not replace a retiring employee. The following exercise will help you adjust your work plan according to this new information.</p><p>Let&rsquo;s take what you have learned into real life. Your organization will have their own ways of doing things. Take a time out from the course to scan your intranet to see which templates are used. Connect with your colleagues, your director, or financial officer to have a chat about work plans.</p><p>So now that you know how to examine, prepare and adjust a work plan, let&rsquo;s see what you remember by taking this short quiz.</p>"
+  "transcriptText":"<p>A work plan is a living document in which you define and prioritize your unit&rsquo;s activities. Think of it as a to-do list for the upcoming year. It helps communicate how you assign resources and set timelines. It is the cornerstone of your planning process because it supports your budget and reporting activities.&nbsp;</p><p>Typically you wouldn&rsquo;t start from scratch. You would simply review last year's work plan, budget and reports to identify what needs to be kept, added or removed for the new year.</p><p>But even before putting together your work plan, it&rsquo;s useful to step out of your role and to look at the big picture.</p><hr><p>&ldquo;It all starts with the Speech from the Throne, which outlines the government priorities.</p><p>These priorities will trickle down all the way to you as a Manager, and will need to be reflected in your work plan. Let&rsquo;s look at how that happens.<br /> <br />After the Speech from the Throne, the Prime Minister addresses a &ldquo;Mandate Letter&rdquo; to each department&rsquo;s Minister.</p><p>In it, the Prime Minister sets out their overall expectations and policy objectives for each department.</p><p>Every year, there is a Federal Budget, which sets the economic agenda for Canada for the year. Departments will have priorities and objectives which align to this agenda in addition to other core mandates.</p><p>The organization&rsquo;s objectives are outlined in a Departmental Results Framework &ndash; or &ldquo;DRF&rdquo;.</p><p>Then you have the Departmental Plan, which describes the core responsibilities of the department, the results the department wants to achieve, and indicators of those results.</p><p>Then you may have plans per Sector -&nbsp;Branch&nbsp;- and Directorate.</p><p>This is where your work plan comes in! You build your work plan around the activities for which you are responsible within your unit and this naturally ties back into the Departmental Plan.&rdquo;</p><p>At this point, you might be wondering what a work plan looks like. Not all units use the same model. By talking to your colleagues and to folks in corporate planning and finance, you can find out which one is used in your office. Here is a typical work plan structure. Have a look! Also, look in the Files section on the top right to find work plan examples.</p><p>To build a work plan, it helps to understand the historical and cultural context of your unit by asking yourself a series of questions. This is what we call the 360 Scan.<br />Here is a fictional example of last year&rsquo;s work plan, budget and report. Try to apply the questions in the 360 Scan document to this fictional example. <br />You may access the 360 Scan document at any time from the File icon at the top right.</p><p>At this point, you understand the context, both historically and culturally and are in a position to craft this year&rsquo;s work plan! Imagine that your director shares with you this coming year&rsquo;s priorities for your directorate: protect aquatic ecosystems, sustain fisheries and manage the issuing of licenses.</p><p>To help you wrap your mind around how to fill out the other sections of the work plan, let&rsquo;s continue with the fisheries scenario. Looking at your draft, you notice that some items may have been dropped into the wrong location or may be missing. Update your draft accordingly.</p><p>Alright. Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. Three things: new software implementation to speed up the issuing of licenses; new policy that now requires licenses to be issued in 15 days, not 30 days, starting November 1; a decision to not replace a retiring employee. The following exercise will help you adjust your work plan according to this new information.</p><p>Let&rsquo;s take what you have learned into real life. Your organization will have their own ways of doing things. Take a time out from the course to scan your intranet to see which templates are used. Connect with your colleagues, your director, or financial officer to have a chat about work plans.</p><p>So now that you know how to examine, prepare and adjust a work plan, let&rsquo;s see what you remember by taking this short quiz.</p>"
   },
   "fr":{"completewptitle":"Activité: Compléter le plan de travail",
   "InRealLife":"Dans la vraie vie",

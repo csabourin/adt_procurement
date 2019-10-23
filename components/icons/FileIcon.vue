@@ -1,0 +1,24 @@
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -15 44.7 52.84" :width="iconWidth">
+    <title>{{ title }}</title>
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g id="Group_11031" data-name="Group 11031">
+          <path id="Path_20254" data-name="Path 20254" d="M30.64,6.67H15.49L14.3,1H1V31.84H38.32V6.67Z" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+          <path id="Path_20255" data-name="Path 20255" d="M6.38,10.56,1,31.84H38.32L43.7,10.25Z" fill="#e0e0e0" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+        </g>
+      </g>
+    </g>
+  </svg>
+</template>
+<script type="text/javascript">
+export default {
+  props: {
+
+    title: { type: String, default: "" },
+    iconWidth: { type: String, default: "50" }
+
+  }
+}
+
+</script>

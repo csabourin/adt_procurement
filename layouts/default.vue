@@ -11,7 +11,7 @@
       </b-col>
       <b-col cols="6" />
       <b-col class="text-right">
-        <avatarIcon />
+        <fileMenu />
       </b-col>
       <b-col class="text-right">
         <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
@@ -31,12 +31,11 @@
   </b-container>
 </template>
 <script type="text/javascript">
-import avatarIcon from "~/components/progressBar"
 import langswitch from "~/components/icons/language_icon"
 import hamburger from "~/components/hamburger"
 import contentMap from "~/components/contentMap"
 import homebutton from "~/components/icons/home_icon"
-import changeavatar from "~/pages/setAvatars"
+import fileMenu from "~/components/fileMenu"
 export default {
   data() {
     return {
@@ -44,16 +43,14 @@ export default {
     }
   },
   components: {
-    avatarIcon,
     langswitch,
     homebutton,
     hamburger,
-    changeavatar,
+    fileMenu,
     contentMap
 
   },
   computed: {
-    avatar() { return this.$store.state.avatar.name },
     availableLocales() {
       return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     }

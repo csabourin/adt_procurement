@@ -79,7 +79,7 @@ a{color:black;}
   display: inline-block;
   position: relative;
   float: left;
-  margin: 50px;
+  margin: 50px 25px;
 }
 
 .box {

@@ -123,6 +123,7 @@ export default {
     seek(e) {
       this.accessiblePopup = false
       const videoPlayer = this.$refs.videoplayer
+      videoPlayer.pause()
       this.isPlayingSoon = e.target.getAttribute('data-start')
       this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
       videoPlayer.play()

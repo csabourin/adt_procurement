@@ -1,8 +1,8 @@
 <template>
   <div class="mainWindow">
     <h1 class="pageTitle"><img src="~/static/symbolic_identifier.png" width=50px> {{$t('finRoles')}}</h1>
-    <div style="width:800px;margin:auto">
-      <video :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')" width="800">
+    <div class="videoContain">
+      <video id="introVideo" :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')">
       </video>
        <div role="tablist">
     <b-card no-body class="mb-1 text-left">
@@ -102,6 +102,12 @@ margin-top:1em; }
   border: 4px solid #1A2F3D;
   border-radius: 35px;
   box-shadow: 6px 6px 9px #000000;
+}
+
+#introVideo{width: 70vw}
+.videoContain{
+      width: 70vw;
+    margin: auto;
 }
 
 .courseSection {

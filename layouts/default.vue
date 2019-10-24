@@ -21,7 +21,7 @@
     </b-row>
     </b-row>
     <b-row>
-      <b-col cols="3" v-if="MenuShowing" transition="fade">
+      <b-col class="col-md-3" v-if="MenuShowing" transition="fade">
         <content-map />
       </b-col>
       <b-col>
@@ -138,6 +138,8 @@ body {
   text-align: right;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
+ margin-left: auto;
 }
 
 .rightSide {

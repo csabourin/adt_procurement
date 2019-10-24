@@ -4,7 +4,7 @@
       {{ $t('BuildWorkPlan')}}
     </h1>
     <section>
-      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls @timeupdate="update" @loadeddata="resumePosition">
+      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls playsinline @timeupdate="update" @loadeddata="resumePosition">
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div id="bar" ref="linkBar">
@@ -18,19 +18,19 @@
         <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>
     </section>
     <section>
-      <b-modal id="purpose" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
-      <b-modal id="alignworkplan" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
-      <b-modal id="partsofwp"  @hide="resumePlay()" size="xl" okOnly>
+      <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
+      <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
+      <b-modal no-stacking id="partsofwp"  @hide="resumePlay()" size="xl" okOnly>
         <partsOfWorkPlan />
       </b-modal>
-      <b-modal id="threesixty" @hide="resumePlay()" size="lg" okOnly>
+      <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly>
         <test360 />
       </b-modal>
-      <b-modal id="completedraft" @hide="resumePlay()" size="xl" okOnly><prepareWorkPlan /></b-modal>
-      <b-modal id="completewp" @hide="resumePlay()" :title="$t('completewptitle')">Complete WP</b-modal>
-      <b-modal id="adjustwp" @hide="resumePlay()" title="Activity: Adjust the Work plan">Adjust WP</b-modal>
-      <b-modal id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly><span v-html="$t('IRLText')"></span></b-modal>
-      <b-modal id="quiz" @hide="">Take the quiz</b-modal>
+      <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly><prepareWorkPlan /></b-modal>
+      <b-modal no-stacking id="completewp" @hide="resumePlay()" :title="$t('completewptitle')">Complete WP</b-modal>
+      <b-modal no-stacking id="adjustwp" @hide="resumePlay()" title="Activity: Adjust the Work plan">Adjust WP</b-modal>
+      <b-modal no-stacking id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly><span v-html="$t('IRLText')"></span></b-modal>
+      <b-modal no-stacking id="quiz" @hide="">Take the quiz</b-modal>
     </section>
     <div role="tablist" class="transcriptionBox">
     <b-card no-body class="mb-1">

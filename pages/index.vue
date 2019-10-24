@@ -31,6 +31,7 @@
       <microlearning time="5" imagePath="KeyMessS.png">{{$t('KeyMessages')}}</microlearning>
       <microlearning time="20">{{$t('InitiateAuthorizeSpending')}}</microlearning>
       <microlearning time="20">{{$t('ExerciseFinancialAuthority')}}</microlearning>
+      <microlearning time="20">{{$t('MonitorControlFinances')}}</microlearning>
       <microlearning time="15">Test</microlearning>
     </section>
     <hr class="spendHr">

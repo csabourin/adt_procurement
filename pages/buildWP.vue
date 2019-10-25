@@ -4,7 +4,7 @@
       {{ $t('BuildWorkPlan')}}
     </h1>
     <section>
-      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" >
+      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isReady">
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div id="bar" ref="linkBar">
@@ -83,7 +83,8 @@ export default {
       isPlayingNow: 0,
       isPlayingSoon: 0,
       byFrame: 0,
-      justSeeked:false
+      justSeeked:false,
+      isItReady:false
     }
   },
   components: {
@@ -93,6 +94,7 @@ export default {
     prepareWorkPlan
   },
   methods: {
+    isReady(){this.isItReady=true},
     generate() {
       const c = this.$refs.videoplayer.textTracks[0].cues
       for (let i = 0; i < c.length; i++) {
@@ -105,7 +107,7 @@ export default {
     resumePlay() {
       if (!this.accessiblePopup) {
         const videoPlayer = this.$refs.videoplayer
-        setTimeout(function() { videoPlayer.play(); }, 500)
+        setTimeout(function() { videoPlayer.play(); }, 250)
       }
     },
     accessibleModal(i) {
@@ -131,13 +133,14 @@ export default {
       const videoPlayer = this.$refs.videoplayer
       videoPlayer.pause()
       this.isPlayingSoon = e.target.getAttribute('data-start')
-      videoPlayer.currentTime = Math.ceil(e.target.getAttribute('data-start'))
+      if(this.isItReady) videoPlayer.currentTime = e.target.getAttribute('data-start')
+      
       this.isPlayingNow = videoPlayer.currentTime
       const isNow = this.isPlayingNow
       this.currentFrame = this.startTime.findIndex(element => element === isNow)
       localStorage.setItem("WPCurrentPlaying", this.currentFrame)
       this.$nextTick(function () {
-        setTimeout(function() { videoPlayer.play(); }, 500)
+        setTimeout(function() { videoPlayer.play(); }, 250)
         this.justSeeked=false
       })
     },

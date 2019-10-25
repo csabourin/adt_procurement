@@ -129,12 +129,13 @@ export default {
       this.accessiblePopup = false
       this.justSeeked = true
       const videoPlayer = this.$refs.videoplayer
-      const isNow = this.isPlayingNow
       videoPlayer.pause()
       this.isPlayingSoon = e.target.getAttribute('data-start')
-      this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')
-      this.currentFrame = this.endTime.findIndex(element => element > isNow)
+      videoPlayer.currentTime = e.target.getAttribute('data-start')
       this.isPlayingNow = videoPlayer.currentTime
+      const isNow = this.isPlayingNow
+      this.currentFrame = this.endTime.findIndex(element => element > isNow)
+      localStorage.setItem("WPCurrentPlaying", this.currentFrame)
       this.$nextTick(function () {
         videoPlayer.play()
         this.justSeeked=false
@@ -153,7 +154,8 @@ export default {
       localStorage.setItem("WPCurrentPlaying", this.currentFrame)
       this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
       if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
-      this.isPlayingSoon = v.currentTime}
+      this.isPlayingSoon = v.currentTime
+  } else {window.alert("seeking")}
     },
     isItPlaying(i) {
       const isNow = this.isPlayingNow

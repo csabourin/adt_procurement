@@ -28,7 +28,7 @@ export default {
     },
     imagePath: {
       type: String,
-      default: "KeyMessR.png"
+      default: "disabledTile.png"
     }
   },
   computed: {

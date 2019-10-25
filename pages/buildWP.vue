@@ -137,7 +137,7 @@ export default {
       this.currentFrame = this.startTime.findIndex(element => element === isNow)
       localStorage.setItem("WPCurrentPlaying", this.currentFrame)
       this.$nextTick(function () {
-        videoPlayer.play()
+        setTimeout(function() { videoPlayer.play(); }, 500)
         this.justSeeked=false
       })
     },

@@ -1,5 +1,5 @@
 <template>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" :width="iconWidth" viewBox="0 0 97 97">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" :width="iconWidth"  :height="iconWidth" viewBox="0 0 97 97">
   <defs>
     <filter id="Ellipse_363" x="0" y="0" width="97" height="97" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>

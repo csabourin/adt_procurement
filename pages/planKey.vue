@@ -12,16 +12,16 @@
     </b-container>
 
 <div class="bottomNav planSection">
-      <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.png">
+      <microlearning path="planKey" youAreHere size="140" completion="100" imagePath="KeyMessP.png">
         {{ $t('KeyMessages') }}
       </microlearning>
-      <microlearning path="buildWP" size="140" time="20" completion="80">
+      <microlearning path="buildWP" imagePath="KeyMessR.png" size="140" time="20" completion="80">
         {{ $t('BuildWorkPlan') }}
       </microlearning>
-      <microlearning size="140" time="20" completion="10" imagePath="CreateBud.png">
+      <microlearning size="140" time="20" completion="10" tmp_imagePath="CreateBud.png">
         {{ $t('CreateBudget') }}
       </microlearning>
-      <microlearning size="140" time="15" imagePath="TestPlan.png">
+      <microlearning size="140" time="15" tmp_imagePath="TestPlan.png">
         Test
       </microlearning>
     </div>

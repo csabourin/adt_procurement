@@ -1,12 +1,14 @@
 <template>
   <div class="learningElement">
     <nuxt-link :to="localePath(path)">
-      <div class="box" :style="boxSize" style="background-image:url('/adt_finance-R1/_nuxt/assets/KeyMessR.png')">
+      <div class="box" :style="boxSize">
         <div class="completed" :style="completionBar" :percent="completion"></div>
         <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes</span></div>
       </div>
       <p class="text-left" :style="'width:'+size+'px'">
-      <slot /></p>
+        <slot />
+      </p>
+         <div v-if="youAreHere" class="floatOver"><img :src="require('~/assets/YouAreHere.svg')"></div>
     </nuxt-link>
   </div>
 </template>
@@ -29,10 +31,14 @@ export default {
     imagePath: {
       type: String,
       default: "disabledTile.png"
+    },
+    youAreHere: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
-     getImgUrl(pic) {
+    getImgUrl(pic) {
       return require('~/assets/' + pic)
     },
     completionBar() {
@@ -56,7 +62,18 @@ export default {
 
 </script>
 <style type="text/css" scoped>
-a{color:black;}
+a {
+  color: black;
+}
+
+.floatOver{
+  position: absolute;
+  top:-36px;
+  left:40%;
+  margin: auto;
+  width:32px;
+}
+
 .completed {
   position: absolute;
   left: 0;

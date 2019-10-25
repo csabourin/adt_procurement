@@ -53,7 +53,7 @@
       <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.png">
         {{ $t('KeyMessages') }}
       </microlearning>
-      <microlearning path="buildWP" imagePath="KeyMessR.png" size="140" time="20" completion="80">
+      <microlearning path="buildWP" youAreHere imagePath="KeyMessR.png" size="140" time="20" completion="80">
         {{ $t('BuildWorkPlan') }}
       </microlearning>
       <microlearning size="140" time="20" completion="10" tmp_imagePath="CreateBud.png">

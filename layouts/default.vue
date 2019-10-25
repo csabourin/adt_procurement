@@ -21,14 +21,12 @@
     </b-row>
     </b-row>
     <b-row>
-      <transition name="expand">
       <b-col class="col-md-3" v-if="MenuShowing">
         <content-map />
       </b-col>
       <b-col>
         <nuxt />
       </b-col>
-  </transition>
     </b-row>
   </b-container>
 </template>

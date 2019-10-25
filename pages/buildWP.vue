@@ -131,7 +131,7 @@ export default {
       const videoPlayer = this.$refs.videoplayer
       videoPlayer.pause()
       this.isPlayingSoon = e.target.getAttribute('data-start')
-      videoPlayer.currentTime = e.target.getAttribute('data-start')
+      videoPlayer.currentTime = Math.ceil(e.target.getAttribute('data-start'))
       this.isPlayingNow = videoPlayer.currentTime
       const isNow = this.isPlayingNow
       this.currentFrame = this.startTime.findIndex(element => element === isNow)

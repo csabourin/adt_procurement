@@ -129,6 +129,7 @@ export default {
       this.accessiblePopup = false
       this.justSeeked = true
       const videoPlayer = this.$refs.videoplayer
+      const isNow = this.isPlayingNow
       videoPlayer.pause()
       this.isPlayingSoon = e.target.getAttribute('data-start')
       this.$refs.videoplayer.currentTime = e.target.getAttribute('data-start')

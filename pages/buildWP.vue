@@ -134,7 +134,7 @@ export default {
       videoPlayer.currentTime = e.target.getAttribute('data-start')
       this.isPlayingNow = videoPlayer.currentTime
       const isNow = this.isPlayingNow
-      this.currentFrame = this.endTime.findIndex(element => element > isNow)
+      this.currentFrame = this.startTime.findIndex(element => element === isNow)
       localStorage.setItem("WPCurrentPlaying", this.currentFrame)
       this.$nextTick(function () {
         videoPlayer.play()
@@ -142,7 +142,9 @@ export default {
       })
     },
     resumePosition() {
-      this.$refs.videoplayer.currentTime = this.startTime[localStorage.getItem("WPCurrentPlaying")]
+      const savedPosition = this.startTime[localStorage.getItem("WPCurrentPlaying")]
+      if (savedPosition){
+      this.$refs.videoplayer.currentTime = savedPosition}
     },
     update(e) {
       if (!this.justSeeked){

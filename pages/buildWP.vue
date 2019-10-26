@@ -128,20 +128,21 @@ export default {
 
     },
     seek(e) {
+      const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
       this.accessiblePopup = false
       this.justSeeked = true
       const videoPlayer = this.$refs.videoplayer
       const timeData = e.target.getAttribute('data-start')
       videoPlayer.pause()
       this.isPlayingSoon = timeData
-      videoPlayer.currentTime = timeData
+      if (!iOS) {videoPlayer.currentTime = timeData} else {videoPlayer.currentTime = timeData +2 }
       
       this.isPlayingNow = videoPlayer.currentTime
       const isNow = this.isPlayingNow
       this.currentFrame = this.startTime.findIndex(element => element === isNow)
       localStorage.setItem("WPCurrentPlaying", this.currentFrame)
       this.$nextTick(function () {
-        setTimeout(function() { videoPlayer.play();videoPlayer.currentTime = timeData }, 250)
+        setTimeout(function() { videoPlayer.play()}, 250)
         this.justSeeked=false
       })
     },

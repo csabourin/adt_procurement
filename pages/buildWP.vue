@@ -100,7 +100,7 @@ export default {
       for (let i = 0; i < c.length; i++) {
         this.navBarTracks.push(c[i].text)
         this.startTime[i] = c[i].startTime
-        this.endTime[i] = c[i].endTime
+        this.endTime[i] = Math.floor(c[i].endTime)
       }
       this.startTime.push(this.startTime[this.startTime.length - 1])
     },

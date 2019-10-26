@@ -8,7 +8,7 @@
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div id="bar" ref="linkBar">
-        <a href='javascript:' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="Math.ceil(startTime[index])+1" @click="seek">
+        <a href='javascript:' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="Math.ceil(startTime[index])+0.1" @click="seek">
           {{ item }}
         </a>
       </div>

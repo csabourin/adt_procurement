@@ -1,8 +1,8 @@
 <template>
   <div>
-    <b-button pill v-b-modal.fileFolder variant="light">
-      <fileIcon :title="$t('fileFolder')" width="32" />
-    </b-button>
+    <a href="javascript:" v-b-modal.fileFolder>
+      <fileIcon :title="$t('fileFolder')" width="50" />
+    </a>
     <b-modal id="fileFolder" :title="$t('fileFolder')" okOnly>
       <a href="ADT_Ressources_360.pdf" download target="_blank"><Scan360 /></a>
     </b-modal>

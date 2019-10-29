@@ -138,6 +138,25 @@ h3,.h3{
   background-color: #986e65;
 }
 
+.bottomNav:before {
+    content: " ";
+    height: 30px;
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 110px;
+}
+
+.bottomNav.planSection:before {
+  background-color: #d1dfe1;
+}
+.bottomNav.spendSection:before {
+  background-color: #cac1ca;
+}
+.bottomNav.reportSection:before {
+  background-color: #d6c5c1;
+}
+
 .leftSide {
   display: flex;
   align-content: flex-start;
@@ -167,7 +186,7 @@ h3,.h3{
   display: block;
   font-weight: 300;
   font-size: 75px;
-  color: #35495e;
+  color: #4D4D4D;
   letter-spacing: -4px;
   text-align: center;
 }

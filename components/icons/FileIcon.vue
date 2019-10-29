@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -15 53 53" :width="iconWidth" :height="iconWidth">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -15 55 55" :width="iconWidth" :height="iconWidth">
     <title>{{ title }}</title>
     <g id="Layer_2" data-name="Layer 2">
       <g id="Layer_1-2" data-name="Layer 1">

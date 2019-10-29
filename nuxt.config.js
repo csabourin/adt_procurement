@@ -45,6 +45,10 @@ export default {
     '@nuxtjs/axios',
     'nuxt-i18n'
   ],
+  layoutTransition: {
+    name: "layout",
+    mode: "in-out"
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

@@ -21,8 +21,10 @@
     </b-row>
     </b-row>
     <b-row>
-      <b-col class="col-md-3" v-if="MenuShowing">
-        <content-map />
+      <b-col class="col-md-3" v-if="MenuShowing" key="99">
+        <transition appear name="fade" mode="out-in" key="100">
+        <content-map v-if="MenuShowing"/>
+      </transition>
       </b-col>
       <b-col>
         <nuxt />
@@ -103,6 +105,17 @@ body {
   margin:0;
 }
 
+.row{
+  margin:0;
+}
+h2,.h2{
+  font-size: 1.6em;
+}
+
+h3,.h3{
+  font-size: 1.2em;
+}
+
 .transcriptionBox {
   width: 70vw;
   margin:auto;
@@ -177,25 +190,13 @@ body {
   opacity: 0;
 }
 
-.avatarIcon>.btn {
-
-  border-radius: 50%;
-  background-color: white;
-  padding: 10px;
-  overflow: hidden;
-
-  margin: 0;
-}
-
-footer.pageFooter {
-  background-color: white;
-  position: fixed;
-  bottom: 0px;
-  height: 60px;
-  display: flex;
-  width: 100%;
-}
-
+ /* Transitions using the page hook */
+    page-enter-active, .page-leave-active {
+      transition: all .30s ease-out;
+    }
+    .page-enter, .page-leave-active {
+      opacity: 0;
+    }
 
 .pageHeader {
   width: 100%;
@@ -206,8 +207,6 @@ footer.pageFooter {
   vertical-align: center;
 
 }
-
-.bottomNav>.learningElement {}
 
 .contentMap .nuxt-link-exact-active {
   border-bottom: 2px solid #b54142;

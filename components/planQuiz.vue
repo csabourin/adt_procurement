@@ -1,0 +1,11 @@
+<template>
+	<div>
+		<p v-html="$t('q1')"></p>
+	</div>
+</template>
+<i18n>
+	{
+		"en":{"q1":"<p><strong>Question 1</strong></p> <p>Match the following statements to the appropriate sections of the work plan. Each section can only be populated with one statement.</p> <ol type='a'> <li>High&nbsp;</li> <li>Work with Canadians in all areas of the economy and all parts of the country to improve conditions for investment</li> <li>Tablets</li> <li>Keep original computers until tablets are up and running for 3 months&nbsp;</li> <li>Give employees new digital tools to promote mobility&nbsp;</li> <li>Modernize and renew the public service to better serve Canadians and foster a healthy, productive workforce</li> <li>Buy tablets&nbsp;</li> <li>Technology is not compatible with existing network&nbsp;</li> <li>Low</li> <li>Workplace Modernization&nbsp;</li> <li>Give employees tablets</li> </ol>"},
+		"fr":{"q1":"<p><strong>Question 1</strong></p> <p>Faites correspondre les &eacute;nonc&eacute;s suivants aux sections appropri&eacute;es du plan de travail. Chaque section ne peut contenir qu'un seul &eacute;nonc&eacute;.</p> <ol type='1'> <li>&Eacute;lev&eacute;&nbsp;</li> <li>Travailler avec les Canadiens dans tous les secteurs de l'&eacute;conomie et dans toutes les r&eacute;gions du pays pour am&eacute;liorer les conditions d'investissement.</li> <li>Tablettes</li> <li>Conservez les ordinateurs d'origine jusqu'&agrave; ce que les tablettes soient pr&ecirc;tes et &agrave; l'emploi pendant 3 mois.&nbsp;</li> <li>Donner aux salari&eacute;s de nouveaux outils num&eacute;riques pour favoriser la mobilit&eacute;&nbsp;</li> <li>Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'&oelig;uvre saine et productive.</li> <li>Acheter des tablettes</li> <li>La technologie n'est pas compatible avec le r&eacute;seau existant&nbsp;</li> <li>Faible</li> <li>Modernisation du milieu de travail&nbsp;</li> <li>Donner des tablettes aux employ&eacute;s</li> </ol>"}
+	}
+</i18n>

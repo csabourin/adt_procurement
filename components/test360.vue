@@ -35,7 +35,7 @@
   }
 </i18n>
 <script type="text/javascript">
-	import Scan360 from "~/assets/360scan.vue"
+	import Scan360 from "~/components/icons/360scan"
 	export default {
 		data(){
 			return Scan360

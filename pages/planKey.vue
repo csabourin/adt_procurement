@@ -7,13 +7,13 @@
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
-        <b-col><span v-html="$t('keyPlanWork')" /><br><hr></b-col>
+        <b-col><span v-html="$t('keyPlanWork')" /></b-col>
         <b-col v-html="$t('keyPlanBudget')"></b-col>
       </b-row>
-      <b-row><b-col><h3>{{$t('fileSet')}}</h3><a href="ADT_Ressources_360.pdf" download><scan360 /></a></b-col></b-row>
+      <b-row><b-col><br><hr><h3>{{$t('fileSet')}}</h3><a href="ADT_Ressources_360.pdf" download><scan360 /></a></b-col></b-row>
     </b-container>
 
-<div class="bottomNav planSection">
+<div class="bottomNav planSection" :class="{'french':$i18n.locale=='fr'}">
       <microlearning path="planKey" youAreHere size="140" completion="100" imagePath="KeyMessP.png">
         {{ $t('KeyMessages') }}
       </microlearning>
@@ -32,7 +32,7 @@
 <script type="text/javascript">
 import hamburger from "~/components/hamburger"
 import microlearning from "~/components/microlearning"
-import scan360 from "~/assets/360scan.vue"
+import scan360 from "~/components/icons/360scan.vue"
 export default {
   components: {
     hamburger,
@@ -61,10 +61,11 @@ export default {
 span.plan:before {
 background-color: #d1dfe1;
 content: " ";
-width: 100%;
+width: 100vw;
 height:2em;
 display: block;
 position: absolute;
+left:0;
 z-index: -1;
 margin: 0;
 margin-top: 30px;
@@ -77,6 +78,10 @@ margin-top: 30px;
   background-color: white;
   quotes: "“" "”";
   padding:1em;
+}
+[lang=en] .bigQuote{
+  position: relative;
+    bottom: .75em;
 }
 .bigQuote:before,.bigQuote:after{
 font-size:72px;

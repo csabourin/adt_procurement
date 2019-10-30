@@ -71,11 +71,11 @@
   {
   "en":{
   "pwpTitle":"Take a moment now to explore the different sections.",
-  "pwpGovtPri":"<strong>Government priorities</strong> –<br> In the Speech from the throne, a new government sets out its agenda. This includes its broad goals and commitments and how it will reach them.",
-  "pwpDeptPri":"<strong>Departmental priorities</strong> –<br> What your department sets out to do to support the government’s priorities.",
-  "pwpDirPri":"<strong>Directorate priorities</strong> –<br> What your directorate sets out to do to support the departmental priorities.",
+  "pwpGovtPri":"<strong>Government priorities</strong>",
+  "pwpDeptPri":"<strong>Departmental priorities</strong>",
+  "pwpDirPri":"<strong>Directorate priorities</strong>",
   "titleActivities":"Activities",
-  "pwpPlanAct":"<strong>Activities</strong> –<br> The work tasks to be accomplished to support your directorate’s priorities. This includes performance indicators and service standards for each work task.",
+  "pwpPlanAct":"<strong>Activities</strong>",
   "titleSubActivities":"Sub-activities",
   "pwpPlanSubAct":"<strong>Sub-activities</strong> –<br> The work tasks broken down into smaller parts.",
   "titleDeliverables":"Deliverables",

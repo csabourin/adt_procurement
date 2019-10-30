@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid>
+  <b-container fluid style="overflow:hidden;">
     <b-row class="navBar">
       <b-col class="text-left">
         <hamburger @menu-toggle="ShowMenu" />
@@ -23,8 +23,8 @@
     <b-row>
       <b-col class="col-md-3" v-if="MenuShowing" key="99">
         <transition appear name="fade" mode="out-in" key="100">
-        <content-map v-if="MenuShowing"/>
-      </transition>
+          <content-map v-if="MenuShowing" />
+        </transition>
       </b-col>
       <b-col>
         <nuxt />
@@ -39,6 +39,11 @@ import contentMap from "~/components/contentMap"
 import homebutton from "~/components/icons/home_icon"
 import fileMenu from "~/components/fileMenu"
 export default {
+  head() {
+    return {
+      htmlAttrs: { lang: this.$i18n.locale }
+    }
+  },
   data() {
     return {
       MenuShowing: false
@@ -71,7 +76,7 @@ export default {
 </script>
 <style>
 html {
-  width:100%;
+  width: 100%;
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -92,35 +97,40 @@ html {
 body {
   background-color: #fff;
   width: calc(100vw - (100vw - 100%));
-  margin:0;
+  margin: 0;
   padding: 0;
 }
+
 .row.navBar {
   background-color: #fff;
   color: #000;
   text-align: right;
   box-shadow: rgba(0, 0, 0, .5) 0px 3px 8px;
   align-items: flex-start;
-  width:100%;
-  margin:0;
+  width: 100%;
+  margin: 0;
 }
 
-.row{
-  margin:0;
+.row {
+  margin: 0;
 }
-h2,.h2{
+
+h2,
+.h2 {
   font-size: 1.6em;
 }
 
-h3,.h3{
+h3,
+.h3 {
   font-size: 1.2em;
 }
 
 .transcriptionBox {
   width: 70vw;
-  margin:auto;
+  margin: auto;
 }
-.transcriptionBox .btn{
+
+.transcriptionBox .btn {
   text-align: left;
 }
 
@@ -139,22 +149,44 @@ h3,.h3{
 }
 
 .bottomNav:before {
-    content: " ";
-    height: 30px;
-    width: 50%;
-    position: absolute;
-    z-index: -1;
-    margin-top: 110px;
+  content: " ";
+  color: #4d4d4d;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 1.5em;
+  height: 30px;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  margin-top: 110px;
+  right: 0;
 }
 
 .bottomNav.planSection:before {
+  content: "PLAN";
   background-color: #d1dfe1;
 }
+
 .bottomNav.spendSection:before {
+  content: "SPEND";
   background-color: #cac1ca;
 }
+
 .bottomNav.reportSection:before {
+  content: "REPORT";
   background-color: #d6c5c1;
+}
+
+.bottomNav.planSection.french:before {
+  content: "PLANIFICATION";
+}
+
+.bottomNav.spendSection.french:before {
+  content: "DÉPENSES";
+}
+
+.bottomNav.reportSection.french:before {
+  content: "RAPPORTS";
 }
 
 .leftSide {
@@ -171,7 +203,7 @@ h3,.h3{
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
- margin-left: auto;
+  margin-left: auto;
 }
 
 .rightSide {
@@ -179,7 +211,10 @@ h3,.h3{
   align-content: flex-end;
 }
 
-.container-fluid{padding: 0;}
+.container-fluid {
+  padding: 0;
+}
+
 .pageTitle {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 800;
@@ -209,13 +244,16 @@ h3,.h3{
   opacity: 0;
 }
 
- /* Transitions using the page hook */
-    page-enter-active, .page-leave-active {
-      transition: all .30s ease-out;
-    }
-    .page-enter, .page-leave-active {
-      opacity: 0;
-    }
+/* Transitions using the page hook */
+page-enter-active,
+.page-leave-active {
+  transition: all .30s ease-out;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
 
 .pageHeader {
   width: 100%;

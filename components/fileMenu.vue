@@ -10,7 +10,7 @@
 </template>
 <script type="text/javascript">
 import fileIcon from '~/components/icons/fileIcon'
-import Scan360 from "~/assets/360scan.vue"
+import Scan360 from "~/components/icons/360scan.vue"
 export default {
   components: {
     fileIcon,

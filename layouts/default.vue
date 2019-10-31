@@ -177,15 +177,15 @@ h3,
   background-color: #d6c5c1;
 }
 
-.bottomNav.planSection.french:before {
+[lang="fr"] .bottomNav.planSection:before {
   content: "PLANIFICATION";
 }
 
-.bottomNav.spendSection.french:before {
+[lang="fr"] .bottomNav.spendSection:before {
   content: "DÉPENSES";
 }
 
-.bottomNav.reportSection.french:before {
+[lang="fr"] .bottomNav.reportSection:before {
   content: "RAPPORTS";
 }
 

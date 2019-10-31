@@ -1,76 +1,62 @@
 <template>
   <span>
-    <h2 v-html="$t('pwpTitle')"></h2>
-    
-    <table class='tableColoured'>
-      <tr>
-        <td colspan='8' class='govtPri'>
-          <p v-html="$t('pwpGovtPri')"></p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan='8' class='deptPri'>
-          <p v-html="$t('pwpDeptPri')"></p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan='8' class='dirPri'>
-          <p v-html="$t('pwpDirPri')"></p>
-        </td>
-      </tr>
-    </table>
-    <div>
-      <b-card no-body>
-        <b-tabs card fill>
-          <b-tab class='planAct' :title="$t('titleActivities')" active>
-            <b-card-text>
-              <p v-html="$t('pwpPlanAct')"></p>
-            </b-card-text>
-          </b-tab>
-          <b-tab class='planSubAct' :title="$t('titleSubActivities')">
-            <b-card-text>
-              <p v-html="$t('pwpPlanSubAct')"></p>
-            </b-card-text>
-          </b-tab>
+  <h2 v-html="$t('pwpTitle')"></h2>
+  <table class='tableColoured'>
+    <tr>
+      <td colspan='8' class='govtPri'>
+        <p><span v-html="$t('pwpGovtPri')" />
+          <select v-model='govtPri' @change="setQRight">
+            <option disabled value=''>Please select one</option>
+            <option value="0">To make Canada a leader of international efforts to combat climate change</option>
+            <option value="1">To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations</option>
+            <option value="2">To implement and further develop the Oceans Protection Plan</option>
+            <option value="3">To improve marine safety</option>
+            <option value="4">To restore annual federal funding for freshwater research</option>
+          </select>
+        </p>
+        <p v-if="govtPri">You have chosen : {{govtPri}} <span v-if="qright[1]">This is correct! Our priority is to protect the fisheries so they are still around in 40 years for our grandchildren!
+</span><span v-else> While this is a great priority for the government, our scope is more about fisheries. </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan='8' class='deptPri'>
+        <p v-html="$t('pwpDeptPri')"></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan='8' class='dirPri'>
+        <p v-html="$t('pwpDirPri')"></p>
+      </td>
+    </tr>
+  </table>
+  <div>
+    <b-card no-body>
+      <b-tabs card fill>
+        <b-tab class='planAct' :title="$t('titleActivities')" active>
+        </b-tab>
+        <b-tab class='planSubAct' :title="$t('titleSubActivities')">
+        </b-tab>
         <b-tab class='planDelivs' :title="$t('titleDeliverables')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanDelivs')"></p>
-          </b-card-text>
         </b-tab>
         <b-tab class='planRisk' :title="$t('titleRisk')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanRisk')"></p>
-          </b-card-text>
         </b-tab>
         <b-tab class='planLikely' :title="$t('titleLikelihood')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanLikely')"></p>
-          </b-card-text>
         </b-tab>
         <b-tab class='planImpact' :title="$t('titleImpact')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanImpact')"></p>
-          </b-card-text>
         </b-tab>
         <b-tab class='planMitigat' :title="$t('titleMitigation')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanMitigat')"></p>
-          </b-card-text>
         </b-tab>
         <b-tab class='planRes' :title="$t('titleResources')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanRes')"></p>
-          </b-card-text>
         </b-tab>
-        </b-tabs>
-      </b-card>
-    </div>
-  </span>
+      </b-tabs>
+    </b-card>
+  </div>
+</span>
 </template>
 <i18n>
   {
   "en":{
-  "pwpTitle":"Take a moment now to explore the different sections.",
+  "pwpTitle":"Choose the best option for each section of this work plan by using the pull down menus.",
   "pwpGovtPri":"<strong>Government priorities</strong>",
   "pwpDeptPri":"<strong>Departmental priorities</strong>",
   "pwpDirPri":"<strong>Directorate priorities</strong>",
@@ -92,7 +78,7 @@
   "pwpPlanRes":"<strong>Resources</strong> –<br> The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
   },
   "fr":{
-  "pwpTitle":"Prenez un moment pour explorer les différentes sections.",
+  "pwpTitle":"Choisissez la meilleure option pour chaque section de ce plan de travail en utilisant les menus déroulants.",
   "pwpGovtPri":"<strong>Priorités du gouvernement</strong> –<br> Dans le discours du Trône, un nouveau gouvernement présente son programme. Il s'agit notamment de ses objectifs généraux et de ses engagements et de la façon dont il les atteindra.",
   "pwpDeptPri":"<strong>Priorités ministérielles</strong> –<br> Ce que votre ministère entend faire pour appuyer les priorités du gouvernement.",
   "pwpDirPri":"<strong>Priorités de la direction</strong> –<br> Ce que votre direction générale entend faire pour appuyer les priorités ministérielles.","titleActivities":"Activités",
@@ -111,12 +97,18 @@
   export default {
   data() {
     return {
-      focusOn: 1
+      focusOn: 1,
+      govtPri: '',
+      qright:[false,false,false]
     }
   },
   methods: {
     makeLarge(e) {
       this.focusOn = 8
+    },
+    setQRight(e){
+      const whatQuestion= e.currentTarget.value
+      this.qright[1]=whatQuestion
     }
   }
 }

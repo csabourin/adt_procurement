@@ -4,7 +4,7 @@
     <div class="videoContain">
       <video id="introVideo" :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')">
       </video>
-       <div role="tablist">
+       <div role="tablist" class="transcriptionBox">
     <b-card no-body class="mb-1 text-left">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block href="#" v-b-toggle.accordion-1 variant="light" class="text-left" >{{$t('transcript')}}</b-button>
@@ -69,8 +69,11 @@ export default {
 
 </script>
 <style>
-.pageTitle{ font-size: 50px;
-margin-top:1em; }
+.pageTitle {
+  font-size: 50px;
+  margin-top: 1em;
+}
+
 .planHr {
   border-top: 3px dashed #d1dfe1;
 }
@@ -99,16 +102,13 @@ margin-top:1em; }
   text-align: center;
 }
 
-.introVideo {
-  border: 4px solid #1A2F3D;
-  border-radius: 35px;
-  box-shadow: 6px 6px 9px #000000;
+#introVideo {
+  width: 60vw;
 }
 
-#introVideo{width: 70vw}
-.videoContain{
-      width: 70vw;
-    margin: auto;
+.videoContain {
+  width: 60vw;
+  margin: auto;
 }
 
 .courseSection {
@@ -121,9 +121,17 @@ margin-top:1em; }
   background-repeat: no-repeat;
 }
 
-.planTitle {  color: #608a93;}
-.spendTitle {  color: #7d677d;}
-.reportTitle {  color: #986e65;}
+.planTitle {
+  color: #608a93;
+}
+
+.spendTitle {
+  color: #7d677d;
+}
+
+.reportTitle {
+  color: #986e65;
+}
 
 
 .iconText {
@@ -154,11 +162,12 @@ margin-top:1em; }
   padding-top: 15px;
 }
 
-details{
+details {
   text-align: left
 }
 
 </style>
+
 <i18n>
   {
   "en":{

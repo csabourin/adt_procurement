@@ -126,7 +126,7 @@ h3,
 }
 
 .transcriptionBox {
-  width: 70vw;
+  width: 60vw;
   margin: auto;
 }
 

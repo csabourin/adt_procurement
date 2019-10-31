@@ -7,9 +7,25 @@
       <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isReady">
         <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
+      <div role="tablist" class="transcriptionBox">
+      <b-card no-body class="mb-1">
+        <b-card-header header-tag="header" class="p-1" role="tab">
+          <b-button block href="#" v-b-toggle.accordion-1 variant="light">{{$t('transcript')}}</b-button>
+        </b-card-header>
+        <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+          <b-card-body>
+            <b-card-text>
+              <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button>
+              <span v-html="$t('transcriptText')"></span>
+            </b-card-text>
+          </b-card-body>
+        </b-collapse>
+      </b-card>
+    </div>
       <div id="bar" ref="linkBar">
         <a href='#mainPlayer' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek">
-          {{ item }}
+          {{ item }}<br>
+          <b-button class="plusButton" variant="light" pill @click.stop="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"> + </b-button>
         </a>
       </div>
       <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
@@ -34,21 +50,6 @@
       <b-modal no-stacking id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly><span v-html="$t('IRLText')"></span></b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" :title="$t('TakeTheQuiz')" size="xl" okOnly ><planQuiz /></b-modal>
     </section>
-    <div role="tablist" class="transcriptionBox">
-      <b-card no-body class="mb-1">
-        <b-card-header header-tag="header" class="p-1" role="tab">
-          <b-button block href="#" v-b-toggle.accordion-1 variant="light">{{$t('transcript')}}</b-button>
-        </b-card-header>
-        <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
-          <b-card-body>
-            <b-card-text>
-              <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button>
-              <span v-html="$t('transcriptText')"></span>
-            </b-card-text>
-          </b-card-body>
-        </b-collapse>
-      </b-card>
-    </div>
     <div class="bottomNav planSection">
       <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.png">
         {{ $t('KeyMessages') }}
@@ -116,7 +117,7 @@ export default {
       this.accessiblePopup = true
       this.$refs.videoplayer.pause()
       this.$bvModal.show(this.modalArray[i])
-      this.$refs.videoplayer.currentTime = this.startTime[i + 1]
+      // this.$refs.videoplayer.currentTime = this.startTime[i + 1]
     },
     showModal(i) {
 
@@ -188,7 +189,7 @@ video {
 }
 
 #mainPlayer {
-  width: 70vw;
+  width: 60vw;
   margin: auto;
   display: block;
 }
@@ -196,20 +197,21 @@ video {
 #bar {
   display: flex;
   flex-wrap: wrap;
-  width: 70vw;
+  width: 60vw;
   margin: auto;
   position: relative;
   cursor: pointer;
   color: #CCC;
+  justify-content: space-evenly;
 }
 
 .chaptersLink {
   position: relative;
-  align-content: middle;
+  align-content: flex-start;
   text-align: center;
-  height: 8em;
+  height: 150px;
   overflow: hidden;
-  padding: 2em 1.5em;
+  padding: 1.5em 1.5em;
   line-height: 17px;
   color: #575757;
   background-color: #ebebeb;
@@ -248,6 +250,13 @@ video {
   width: 100%;
   height: 15px;
   background-color: #b54142;
+}
+
+.plusButton{
+  position:absolute;
+  left:60px;
+  bottom:1.2em;
+  width: 36px;
 }
 
 button.accessibilityButton {

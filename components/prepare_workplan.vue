@@ -1,61 +1,80 @@
 <template>
   <span>
-  <h2 v-html="$t('pwpTitle')"></h2>
-  <table class='tableColoured'>
-    <tr>
-      <td colspan='8' class='govtPri'>
-        <p><span v-html="$t('pwpGovtPri')" />
-          <select v-model='govtPri' @change="setQRight">
-            <option disabled value=''>Please select one</option>
-            <option value="0">To make Canada a leader of international efforts to combat climate change</option>
-            <option value="1">To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations</option>
-            <option value="2">To implement and further develop the Oceans Protection Plan</option>
-            <option value="3">To improve marine safety</option>
-            <option value="4">To restore annual federal funding for freshwater research</option>
-          </select>
-        </p>
-        <p v-if="govtPri">You have chosen : {{govtPri}} <span v-if="qright[1]">This is correct! Our priority is to protect the fisheries so they are still around in 40 years for our grandchildren!
-</span><span v-else> While this is a great priority for the government, our scope is more about fisheries. </span></p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan='8' class='deptPri'>
-        <p v-html="$t('pwpDeptPri')"></p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan='8' class='dirPri'>
-        <p v-html="$t('pwpDirPri')"></p>
-      </td>
-    </tr>
-  </table>
-  <div>
-    <b-card no-body>
-      <b-tabs card fill>
-        <b-tab class='planAct' :title="$t('titleActivities')" active>
-        </b-tab>
-        <b-tab class='planSubAct' :title="$t('titleSubActivities')">
-        </b-tab>
-        <b-tab class='planDelivs' :title="$t('titleDeliverables')">
-        </b-tab>
-        <b-tab class='planRisk' :title="$t('titleRisk')">
-        </b-tab>
-        <b-tab class='planLikely' :title="$t('titleLikelihood')">
-        </b-tab>
-        <b-tab class='planImpact' :title="$t('titleImpact')">
-        </b-tab>
-        <b-tab class='planMitigat' :title="$t('titleMitigation')">
-        </b-tab>
-        <b-tab class='planRes' :title="$t('titleResources')">
-        </b-tab>
-      </b-tabs>
-    </b-card>
-  </div>
-</span>
+    <p>{{ $t('pwpInstructions') }}</p>
+    <p><strong v-html="$t('pwpTitle')"></strong></p>
+    <table class='tableColoured'>
+      <tr>
+        <td colspan='8' class='govtPri'>
+          <p><span v-html="$t('pwpGovtPri')" />
+            <select v-model='govtPri'>
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option value="1">{{$t('q1-1')}}</option>
+              <option value="2">{{$t('q1-2')}}</option>
+              <option value="3">{{$t('q1-3')}}</option>
+              <option value="4">{{$t('q1-4')}}</option>
+              <option value="5">{{$t('q1-5')}}</option>
+            </select>
+          </p>
+          <p v-if="govtPri"> <span v-html="$t('a1-'+govtPri)" /></p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='8' class='deptPri'>
+          <p><span v-html="$t('pwpDeptPri')" /><select v-model='deptPri'>
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option value="1">{{$t('q2-1')}}</option>
+              <option value="2">{{$t('q2-2')}}</option>
+              <option value="3">{{$t('q2-3')}}</option>
+              <option value="4">{{$t('q2-4')}}</option>
+              <option value="5">{{$t('q2-5')}}</option>
+            </select>
+          </p>
+          <p v-if="deptPri"> <span v-html="$t('a2-'+deptPri)" /></p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='8' class='dirPri'>
+          <p><span v-html="$t('pwpDirPri')" /> <select v-model='dirPri'>
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option value="1">{{$t('q3-1')}}</option>
+              <option value="2">{{$t('q3-2')}}</option>
+              <option value="3">{{$t('q3-3')}}</option>
+              <option value="4">{{$t('q3-4')}}</option>
+              <option value="5">{{$t('q3-5')}}</option>
+            </select>
+          </p>
+          <p v-if="dirPri"><span v-html="$t('a3-'+dirPri)" /></p>
+        </td>
+      </tr>
+    </table>
+    <div>
+      <b-card no-body >
+        <b-tabs card fill>
+          <b-tab class='planAct' :title="$t('titleActivities')">
+          </b-tab>
+          <b-tab class='planSubAct' :title="$t('titleSubActivities')">
+          </b-tab>
+          <b-tab class='planDelivs' :title="$t('titleDeliverables')">
+          </b-tab>
+          <b-tab class='planRisk' :title="$t('titleRisk')">
+          </b-tab>
+          <b-tab class='planLikely' :title="$t('titleLikelihood')">
+          </b-tab>
+          <b-tab class='planImpact' :title="$t('titleImpact')">
+          </b-tab>
+          <b-tab class='planMitigat' :title="$t('titleMitigation')">
+          </b-tab>
+          <b-tab class='planRes' :title="$t('titleResources')">
+          </b-tab>
+        </b-tabs>
+      </b-card>
+    </div>
+  </span>
 </template>
 <i18n>
   {
   "en":{
+  "pwpInstructions":"Your director shares with you this coming year’s priorities for your directorate: “Protect aquatic ecosystems, sustain fisheries and manage the issuing of licenses.”",
   "pwpTitle":"Choose the best option for each section of this work plan by using the pull down menus.",
   "pwpGovtPri":"<strong>Government priorities</strong>",
   "pwpDeptPri":"<strong>Departmental priorities</strong>",
@@ -63,33 +82,89 @@
   "titleActivities":"Activities",
   "pwpPlanAct":"<strong>Activities</strong>",
   "titleSubActivities":"Sub-activities",
-  "pwpPlanSubAct":"<strong>Sub-activities</strong> –<br> The work tasks broken down into smaller parts.",
   "titleDeliverables":"Deliverables",
-  "pwpPlanDelivs":"<strong>Deliverables</strong> –<br> Specific and tangible items you should be able to check off your list when you accomplish them.",
   "titleRisk":"Risk",
-  "pwpPlanRisk":"<strong>Risk</strong> –<br> Potential events that may affect the activity and its ability to meet and accomplish its objectives and expected results.",
   "titleLikelihood":"Likelihood",
-  "pwpPlanLikely":"<strong>Likelihood</strong> –<br> An educated guess at whether or not the risk will happen.",
   "titleImpact":"Impact",
-  "pwpPlanImpact":"<strong>Impact</strong> –<br> The potential loss associated with a risk.",
   "titleMitigation":"Mitigation",
-  "pwpPlanMitigat":"<strong>Mitigation</strong> – Actions to counteract the potential risks.",
   "titleResources":"Resources",
-  "pwpPlanRes":"<strong>Resources</strong> –<br> The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
+  "qDisabled":"Please select one",
+  "q1-1":"To make Canada a leader of international efforts to combat climate change",
+  "q1-2":"To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations",
+  "q1-3":"To implement and further develop the Oceans Protection Plan",
+  "q1-4":"To improve marine safety",
+  "q1-5":"To restore annual federal funding for freshwater research",
+  "a1-1":"You have chosen : “To make Canada a leader of international efforts to combat climate change” <br>- While this is a great priority for the government, our scope is more about fisheries, not climate change.",
+  "a1-2":"You have chosen : “To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations”.<br><strong>This is correct!</strong> Our priority is to protect the fisheries so they are still around in 40 years for our grandchildren!",
+  "a1-3":"You have chosen : “To implement and further develop the Oceans Protection Plan” <br>- While this is a great priority for the government, your unit’s scope is more about fisheries, not protecting the oceans.",
+  "a1-4":"You have chosen : “To improve marine safety” <br>- While this is a great priority for the government, our scope is more about fisheries, not improving marine safety.",
+  "a1-5":"You have chosen : “To restore annual federal funding for freshwater research” <br>- While this is a great priority for the government, our scope is more about fisheries, not freshwater research.",
+  "q2-1":"To sustainably manage Canadian aquaculture",
+  "q2-2":"To respond to on-water incidents",
+  "q2-3":"To support prosperous and sustainable commercial, Aboriginal and recreational fisheries, aquaculture and other oceans industries",
+  "q2-4":"To ensure access to safe harbors",
+  "q2-5":"To minimize or avoid negative impacts on Canada’s oceans",
+  "a2-1":"You have chosen : “To sustainably manage Canadian aquaculture”.<br>- While this is a great priority, our scope is more about fisheries.",
+  "a2-2":"You have chosen : “To respond to on-water incidents”. <br>- While this is a great priority, our scope is more about fisheries.",
+  "a2-3":"You have chosen : “To support prosperous and sustainable commercial, Aboriginal and recreational fisheries, aquaculture and other oceans industries”.<br><strong>This is the correct answer</strong>. Our scope is about fisheries",
+  "a2-4":"You have chosen : “To ensure access to safe harbors”.<br>- While this is a great priority, our scope is more about fisheries.",
+  "a2-5":"You have chosen : “To minimize or avoid negative impacts on Canada’s oceans”.<br>- While this is a great priority, our scope is more about fisheries.",
+  "q3-1":"To manage the commercial domestic fisheries",
+  "q3-2":"To protect endangered species in the great lakes",
+  "q3-3":"To eliminate the encroachment of invasive species",
+  "q3-4":"To reintroduce endangered fish to their native habitat",
+  "q3-5":"To repair large vessels",
+  "a3-1":"You have chosen : “To manage the commercial domestic fisheries”, this is great!",
+  "a3-2":"You have chosen : “To protect endangered species in the great lakes”. While this is a great priority, our scope is more about fisheries.",
+  "a3-3":"You have chosen : “To eliminate the encroachment of invasive species”. While this is a great priority, our scope is more about fisheries.",
+  "a3-4":"You have chosen : “To reintroduce endangered fish to their native habitat”. While this is a great priority, our scope is more about fisheries.",
+  "a3-5":"You have chosen : “To repair large vessels”. That is not us! While this is a great priority, our scope is more about fisheries."
   },
   "fr":{
+  "pwpInstructions":"Votre directeur partage avec vous les priorités de la prochaine année pour votre direction : « Protéger les écosystèmes aquatiques, soutenir les pêches et gérer la délivrance des permis. »",
   "pwpTitle":"Choisissez la meilleure option pour chaque section de ce plan de travail en utilisant les menus déroulants.",
-  "pwpGovtPri":"<strong>Priorités du gouvernement</strong> –<br> Dans le discours du Trône, un nouveau gouvernement présente son programme. Il s'agit notamment de ses objectifs généraux et de ses engagements et de la façon dont il les atteindra.",
-  "pwpDeptPri":"<strong>Priorités ministérielles</strong> –<br> Ce que votre ministère entend faire pour appuyer les priorités du gouvernement.",
-  "pwpDirPri":"<strong>Priorités de la direction</strong> –<br> Ce que votre direction générale entend faire pour appuyer les priorités ministérielles.","titleActivities":"Activités",
-  "pwpPlanAct":"<strong>Activités </strong> –<br> Les tâches de travail à accomplir pour appuyer les priorités de votre direction. Cela comprend des indicateurs de rendement et des normes de service pour chaque tâche de travail.","titleSubActivities":"Sous-activités",
-  "pwpPlanSubAct":"<strong>Sous-activités</strong> –<br> La tâche de travail est divisée en parties plus petites.","titleDeliverables":"Livrables",
-  "pwpPlanDelivs":"<strong>Livrables</strong> –<br>Les éléments spécifiques et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les accomplissez.","titleRisk":"Risque",
-  "pwpPlanRisk":"<strong>Risque </strong> –<br> Événements susceptibles d'influer sur l'activité et sur sa capacité d'atteindre et d'atteindre ses objectifs et les résultats escomptés.","titleLikelihood":"Probabilité",
-  "pwpPlanLikely":"<strong>Probabilité </strong> –<br> Déterminer si le risque se concrétisera ou non.","titleImpact":"Impact",
-  "pwpPlanImpact":"<strong>Impact</strong> –<br> La perte potentielle associée à un risque.","titleMitigation":"Atténuation",
-  "pwpPlanMitigat":"<strong>Atténuation </strong> – Actions pour contrer les risques potentiels.","titleResources":"Resources",
-  "pwpPlanRes":"<strong>Resources</strong> –<br> Le budget, le personnel (équivalent temps plein «&nbsp;ETP&nbsp;»), les consultants, les bâtiments et le matériel nécessaires à la réalisation des activités de la direction."
+  "pwpGovtPri":"<strong>Priorités du gouvernement</strong>",
+  "pwpDeptPri":"<strong>Priorités ministérielles</strong>",
+  "pwpDirPri":"<strong>Priorités de la direction</strong>",
+  "titleActivities":"Activités",
+  "titleSubActivities":"Sous-activités",
+  "titleDeliverables":"Livrables",
+  "titleRisk":"Risque",
+  "titleLikelihood":"Probabilité",
+  "titleImpact":"Impact",
+  "titleMitigation":"Atténuation",
+  "titleResources":"Resources",
+  "qDisabled":"Veuillez faire un choix",
+  "q1-1":"Faire du Canada un chef de file des efforts internationaux de lutte contre les changements climatiques.",
+  "q1-2":"Servir les Canadiens en assurant l'utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
+  "q1-3":"Mettre en œuvre et développer davantage le Plan de protection des océans.",
+  "q1-4":"Améliorer la sécurité maritime.",
+  "q1-5":"Rétablir le financement fédéral annuel de la recherche sur l'eau douce.",
+  "a1-1":"Vous avez choisi : « Faire du Canada un chef de file des efforts internationaux de lutte contre les changements climatiques » <br>- Bien qu'il s'agisse d'une grande priorité pour le gouvernement, notre portée porte davantage sur les pêches que sur les changements climatiques.",
+  "a1-2":"Vous avez choisi : « Servir les Canadiens en assurant l'utilisation prospère et durable des écosystèmes aquatiques pour les générations futures ». <br><strong>Ceci est correct!</strong> Notre priorité est de protéger les pêches pour qu'elles soient encore là dans 40 ans pour nos petits-enfants!",
+  "a1-3":"Vous avez choisi : « Mettre en œuvre et développer davantage le Plan de protection des océans&nbsp;» <br>- Bien qu'il s'agisse d'une grande priorité pour le gouvernement, votre unité s'occupe davantage des pêches que de la protection des océans.",
+  "a1-4":"Vous avez choisi : « Améliorer la sécurité maritime » <br>- Bien qu'il s'agisse d'une grande priorité pour le gouvernement, notre objectif est davantage la pêche que l'amélioration de la sécurité maritime.",
+  "a1-5":"Vous avez choisi : « Rétablir le financement fédéral annuel de la recherche sur l'eau douce » <br>- Bien qu'il s'agisse d'une grande priorité pour le gouvernement, notre portée concerne davantage les pêches que la recherche sur l'eau douce.",
+  "q2-1":"Gérer de façon durable l'aquaculture canadienne",
+  "q2-2":"Intervenir en cas d'incident sur l'eau ",
+  "q2-3":"Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l'aquaculture et d'autres industries océaniques.",
+  "q2-4":"Garantir l'accès aux ports sûrs ",
+  "q2-5":"Minimiser ou éviter les impacts négatifs sur les océans du Canada",
+  "a2-1":"Vous avez choisi : « Gérer de façon durable l'aquaculture canadienne ». <br>- Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches.",
+  "a2-2":"Vous avez choisi : « Intervenir en cas d'incident sur l'eau ». <br>- Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches.",
+  "a2-3":"Vous avez choisi : « Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l'aquaculture et d'autres industries maritimes ».<br>- <strong> Ceci est correct</strong>. Notre portée concerne les pêches.",
+  "a2-4":"Vous avez choisi : « Assurer l'accès aux ports sûrs ». <br>- Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches.",
+  "a2-5":"Vous avez choisi : « Minimiser ou éviter les impacts négatifs sur les océans du Canada ». <br>- Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches.",
+  "q3-1":"Gérer les pêches commerciales intérieures",
+  "q3-2":"Protéger les espèces en voie de disparition dans les Grands Lacs",
+  "q3-3":"Éliminer l'empiètement d'espèces envahissantes",
+  "q3-4":"Réintroduire les poissons en voie de disparition dans leur habitat d'origine",
+  "q3-5":"Réparer de grands navires",
+  "a3-1":"Vous avez choisi : « Gérer les pêches commerciales intérieures », <strong>c'est génial!</strong>",
+  "a3-2":"Vous avez choisi : « Protéger les espèces en voie de disparition dans les Grands Lacs ». Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches.",
+  "a3-3":"Vous avez choisi : « Éliminer l'empiètement des espèces envahissantes ». Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches.",
+  "a3-4":"Vous avez choisi : « Réintroduire les poissons en voie de disparition dans leur habitat d’origine ». Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches.",
+  "a3-5":"Vous avez choisi : « Réparer de grands navires ». Ce n'est pas nous! Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches."
   }
   }
 </i18n>
@@ -97,18 +172,9 @@
   export default {
   data() {
     return {
-      focusOn: 1,
       govtPri: '',
-      qright:[false,false,false]
-    }
-  },
-  methods: {
-    makeLarge(e) {
-      this.focusOn = 8
-    },
-    setQRight(e){
-      const whatQuestion= e.currentTarget.value
-      this.qright[1]=whatQuestion
+      deptPri: '',
+      dirPri: ''
     }
   }
 }
@@ -237,10 +303,14 @@
 .planRes:before {
   background-color: #c6957f;
 }
+
 </style>
 <style>
-.nav-item{position:relative;}
-.nav-item:before{
+.nav-item {
+  position: relative;
+}
+
+.nav-item:before {
   position: absolute;
   counter-increment: wpParts;
   content: counter(wpParts);
@@ -252,25 +322,72 @@
   color: white;
 }
 
-.nav-item:nth-of-type(1):before {background-color: #718EA0}
-.nav-item:nth-of-type(2):before {background-color: #7fc69a}
-.nav-item:nth-of-type(3):before {background-color: #7F8AC6;}
-.nav-item:nth-of-type(4):before {background-color: #C3C67F;}
-.nav-item:nth-of-type(5):before {background-color: #775F75;}
-.nav-item:nth-of-type(6):before {background-color: #607293;}
-.nav-item:nth-of-type(7):before {background-color: #c67fa3;}
-.nav-item:nth-of-type(8):before {background-color: #c6957f;}
-.nav-item:nth-of-type(1) {    background-color: #e2e8ec;}
-.nav-item:nth-of-type(2) {    background-color: #dcefe3;}
-.nav-item:nth-of-type(3) {    background-color: #dfe2f1;}
-.nav-item:nth-of-type(4) {    background-color: #f0f1df;}
-.nav-item:nth-of-type(5) {    background-color: #e1dce1;}
-.nav-item:nth-of-type(6) {    background-color: #e3e7ed;}
-.nav-item:nth-of-type(7) {    background-color: #f1dfe8;}
-.nav-item:nth-of-type(8) {    background-color: #f1e5df;}
+.nav-item:nth-of-type(1):before {
+  background-color: #718EA0
+}
+
+.nav-item:nth-of-type(2):before {
+  background-color: #7fc69a
+}
+
+.nav-item:nth-of-type(3):before {
+  background-color: #7F8AC6;
+}
+
+.nav-item:nth-of-type(4):before {
+  background-color: #C3C67F;
+}
+
+.nav-item:nth-of-type(5):before {
+  background-color: #775F75;
+}
+
+.nav-item:nth-of-type(6):before {
+  background-color: #607293;
+}
+
+.nav-item:nth-of-type(7):before {
+  background-color: #c67fa3;
+}
+
+.nav-item:nth-of-type(8):before {
+  background-color: #c6957f;
+}
+
+.nav-item:nth-of-type(1) {
+  background-color: #e2e8ec;
+}
+
+.nav-item:nth-of-type(2) {
+  background-color: #dcefe3;
+}
+
+.nav-item:nth-of-type(3) {
+  background-color: #dfe2f1;
+}
+
+.nav-item:nth-of-type(4) {
+  background-color: #f0f1df;
+}
+
+.nav-item:nth-of-type(5) {
+  background-color: #e1dce1;
+}
+
+.nav-item:nth-of-type(6) {
+  background-color: #e3e7ed;
+}
+
+.nav-item:nth-of-type(7) {
+  background-color: #f1dfe8;
+}
+
+.nav-item:nth-of-type(8) {
+  background-color: #f1e5df;
+}
 
 .card-header {
-    padding: 0px 9px;
+  padding: 0px 9px;
 }
 
 </style>

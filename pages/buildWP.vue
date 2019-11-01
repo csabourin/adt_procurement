@@ -25,7 +25,7 @@
       <div id="bar" ref="linkBar">
         <a href='#mainPlayer' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek">
           {{ item }}<br>
-          <b-button class="plusButton" variant="light" pill @click.stop="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"> + </b-button>
+          <a href="javascript:" class="plusButton" variant="light" pill @click.stop="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"> <plusIcon iconwidth="25px"/> </a>
         </a>
       </div>
       <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
@@ -72,6 +72,7 @@ import partsOfWorkPlan from '~/components/parts_workplan'
 import prepareWorkPlan from '~/components/prepare_workplan'
 import test360 from '~/components/test360'
 import planQuiz from '~/components/planQuiz'
+import plusIcon from '~/components/icons/PlusSign'
 export default {
   data() {
     return {
@@ -94,7 +95,8 @@ export default {
     test360,
     partsOfWorkPlan,
     prepareWorkPlan,
-    planQuiz
+    planQuiz,
+    plusIcon
   },
   methods: {
     isReady(){this.isItReady=true},
@@ -215,6 +217,10 @@ video {
   line-height: 17px;
   color: #575757;
   background-color: #ebebeb;
+  background-image: url('~assets/Film_strip.svg');
+  background-size: cover;
+  border-radius:2px;
+  border: 1px solid #c3bfb6;
   margin: 5px 5px 10px;
   font-weight: bolder;
   width: 150px;
@@ -248,14 +254,14 @@ video {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 15px;
+  height: 5px;
   background-color: #b54142;
 }
 
 .plusButton{
   position:absolute;
   left:60px;
-  bottom:1.2em;
+  bottom:1.6em;
   width: 36px;
 }
 

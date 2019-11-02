@@ -50,14 +50,14 @@
     <div class="scrollMe">      
       <table border="1" cellspacing="0" cellpadding="5" width="100%">
         <tr>
-          <th class='planAct thNumbered'><span class="vertical">{{$t('titleActivities')}}</span></th>
-          <th class='planSubAct thNumbered'><span class="vertical">{{$t('titleSubActivities')}}</span></th>
-          <th class='planDelivs thNumbered'><span class="vertical">{{$t('titleDeliverables')}}</span></th>
-          <th class='planRisk thNumbered'><span class="vertical">{{$t('titleRisk')}}</span></th>
-          <th class='planLikely thNumbered'><span class="vertical">{{$t('titleLikelihood')}}</span></th>
-          <th class='planImpact thNumbered'><span class="vertical">{{$t('titleImpact')}}</span></th>
-          <th class='planMitigat thNumbered'><span class="vertical">{{$t('titleMitigation')}}</span></th>
-          <th class='planRes thNumbered'><span class="vertical">{{$t('titleResources')}}</span></th>
+          <th class='planAct thNumbered'><span >{{$t('titleActivities')}}</span></th>
+          <th class='planSubAct thNumbered'><span >{{$t('titleSubActivities')}}</span></th>
+          <th class='planDelivs thNumbered'><span >{{$t('titleDeliverables')}}</span></th>
+          <th class='planRisk thNumbered'><span >{{$t('titleRisk')}}</span></th>
+          <th class='planLikely thNumbered'><span >{{$t('titleLikelihood')}}</span></th>
+          <th class='planImpact thNumbered'><span >{{$t('titleImpact')}}</span></th>
+          <th class='planMitigat thNumbered'><span >{{$t('titleMitigation')}}</span></th>
+          <th class='planRes thNumbered'><span >{{$t('titleResources')}}</span></th>
         </tr>
       </table>
     </div>

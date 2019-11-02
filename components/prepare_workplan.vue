@@ -47,17 +47,17 @@
         </td>
       </tr>
     </table>
-    <div>      
+    <div class="scrollMe">      
       <table border="1" cellspacing="0" cellpadding="5" width="100%">
         <tr>
-          <th class='planAct thNumbered'>{{$t('titleActivities')}}</th>
-          <th class='planSubAct thNumbered'>{{$t('titleSubActivities')}}</th>
-          <th class='planDelivs thNumbered'>{{$t('titleDeliverables')}}</th>
-          <th class='planRisk thNumbered'>{{$t('titleRisk')}}</th>
-          <th class='planLikely thNumbered'>{{$t('titleLikelihood')}}</th>
-          <th class='planImpact thNumbered'>{{$t('titleImpact')}}</th>
-          <th class='planMitigat thNumbered'>{{$t('titleMitigation')}}</th>
-          <th class='planRes thNumbered'>{{$t('titleResources')}}</th>
+          <th class='planAct thNumbered'><span class="vertical">{{$t('titleActivities')}}</span></th>
+          <th class='planSubAct thNumbered'><span class="vertical">{{$t('titleSubActivities')}}</span></th>
+          <th class='planDelivs thNumbered'><span class="vertical">{{$t('titleDeliverables')}}</span></th>
+          <th class='planRisk thNumbered'><span class="vertical">{{$t('titleRisk')}}</span></th>
+          <th class='planLikely thNumbered'><span class="vertical">{{$t('titleLikelihood')}}</span></th>
+          <th class='planImpact thNumbered'><span class="vertical">{{$t('titleImpact')}}</span></th>
+          <th class='planMitigat thNumbered'><span class="vertical">{{$t('titleMitigation')}}</span></th>
+          <th class='planRes thNumbered'><span class="vertical">{{$t('titleResources')}}</span></th>
         </tr>
       </table>
     </div>
@@ -173,6 +173,11 @@
 
 </script>
 <style type="text/css" scoped>
+.scrollMe {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
 .tableColoured {
   table-layout: fixed;
   width: 100%;
@@ -193,6 +198,13 @@
   vertical-align: top;
   position: relative;
   padding-left: 35px;
+}
+
+.tableColoured select{
+  max-width: 100%;
+}
+.vertical{
+  transform: rotate(90deg);
 }
 .deptPri:before {
   background-color: #167777;

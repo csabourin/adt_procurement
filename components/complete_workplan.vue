@@ -1,117 +1,154 @@
 <template>
   <span>
- <p>{{ $t('pwpInstructions') }}</p>
- <p><strong v-html="$t('pwpTitle')"></strong></p>
- <table class='tableColoured'>
-   <tr>
-  <td colspan='8' class='govtPri'>
-    <p><span v-html="$t('pwpGovtPri')" /> {{$t('q1-2')}}
-    </p>
-  </td>
-   </tr>
-   <tr>
-  <td colspan='8' class='deptPri'>
-    <p><span v-html="$t('pwpDeptPri')" /> {{$t('q2-3')}}
-    </p>
-  </td>
-   </tr>
-   <tr>
-  <td colspan='8' class='dirPri'>
-    <p><span v-html="$t('pwpDirPri')" /> {{$t('q3-1')}}
-    </p>
-
-  </td>
-   </tr>
- </table>
- <div class="scrollMe">
-   <table border="1" cellspacing="0" cellpadding="1">
-  <tr>
- <td class='planAct nav-item'><p align="center" ><strong>{{$t('titleActivities')}}</strong></p></td>
- <td class='planSubAct nav-item'><p align="center"><strong>{{$t('titleSubActivities')}}</strong></p></td>
- <td class='planDelivs nav-item'><p align="center"><strong>{{$t('titleDeliverables')}}</strong></p></td>
- <td class='planRisk nav-item'><p align="center"><strong>{{$t('titleRisk')}}</strong></p></td>
- <td class='planLikely nav-item'><p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>{{$t('titleLikelihood')}}</strong>&nbsp;</p></td>
- <td class='planImpact nav-item'><p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>{{$t('titleImpact')}}</strong>&nbsp;</p></td>
- <td class='planMitigat nav-item'><p align="center"><strong>{{$t('titleMitigation')}}</strong></p></td>
- <td class='planRes nav-item' ><p align="center"><strong>{{$t('titleResources')}}</strong></p></td>
-  </tr>
-  <tr>
- <td class='planAct'>Manage and administer the directorate</td>
- <td class='planSubAct'><ul>
-   <li>Supervise, monitor and train staff&nbsp;</li>
-   <li>Schedule work&nbsp;</li>
-   <li>Provide clerical support&nbsp;</li>
-   <li>Move office to new location </li>
- </ul></td>
- <td class='planDelivs'><ul>
-   <li>Management of licencing activities</li>
-   <li>Reception covered from 9 to 5</li>
- </ul></td>
- <td class='planRisk'><p>Staff turnover </p></td>
- <td class='planLikely'><p>Low </p></td>
- <td class='planImpact'><p>High </p></td>
- <td class='planMitigat'><ul>
-   <li>Establish succession plan</li>
-   <li>Establish collective staffing pools</li>
-   <li>Recognize excellent work</li>
-   <li>Celebrate successes</li>
-   <li>Involve employees in decision-making</li>
-   <li>Implement flexible work hours {should be here}</li>
- </ul></td>
- <td class='planRes' ><ul>
-   <li>1 Admin Assistant</li>
-   <li>Missing &ldquo;Manager&rdquo;</li>
- </ul></td>
-  </tr>
-  <tr>
- <td rowspan="2" class='planAct'><p>Issue commercial fishing licenses&nbsp; </p></td>
- <td rowspan="2" class='planSubAct'><ul>
-   <li>Review applicant requests</li>
-   <li>Check reliability</li>
-   <li>Issue licenses</li>
-   <li>Conduct inspections</li>
- </ul></td>
- <td rowspan="2" class='planDelivs'><ul><li>Issue license within 30 days of request </li>
-  <li>Missing &ldquo;Issue 500 licenses per year&rdquo;</li></ul></td>
- <td rowspan="4" class='planRisk'>
-   Overfishing
- </td>
- <td rowspan="4" class='planLikely'><p>Low </p></td>
- <td rowspan="4" class='planImpact'><p>High </p></td>
- <td rowspan="4" class='planMitigat'><ul>
-   <li>Protect habitat</li>
-   <li>Place catching limits</li>
-   <li>Implement fishing seasons</li>
- </ul>
-   <p>&nbsp;</p>
-   <ul>
-  <li>Implement flexible work hours {Is in wrong location}</li>
-   </ul></td>
- <td rowspan="2" class='planRes' ><ul>
-   <li>1 officer</li>
-   <li>2 analysts</li>
-   <li>1 junior officer</li>
- </ul></td>
-  </tr>
-  <tr></tr>
-  <tr>
- <td rowspan="2" class='planAct'><p>Renew commercial fishing licenses&nbsp; </p></td>
- <td rowspan="2" class='planSubAct'><ul>
-   <li>Review applicant renewal requests</li>
-   <li>Issue renewal license</li>
- </ul></td>
- <td rowspan="2" class='planDelivs'><ul>
-   <li>Issue license renewal within 30 days of request</li>
-   <li>Issue 300 license renewals per year </li>
- </ul></td>
- <td rowspan="2" class='planRes'><ul>
-   <li><strong>1 officer</strong></li>
-   <li><strong>1 junior analyst</strong></li>
- </ul></td>
-  </tr>
-  <tr> </tr>
-</table>
- </div>
+    <p>{{ $t('pwpInstructions') }}</p>
+    <p><strong v-html="$t('pwpTitle')"></strong></p>
+    <table class='tableColoured'>
+      <tr>
+        <td colspan='8' class='govtPri'>
+          <p><span v-html="$t('pwpGovtPri')" /> {{$t('q1-2')}}
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='8' class='deptPri'>
+          <p><span v-html="$t('pwpDeptPri')" /> {{$t('q2-3')}}
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='8' class='dirPri'>
+          <p><span v-html="$t('pwpDirPri')" /> {{$t('q3-1')}}
+          </p>
+        </td>
+      </tr>
+    </table>
+    <div class="scrollMe">
+      <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <th class='planAct thNumbered'>{{$t('titleActivities')}}</th>
+          <th class='planSubAct thNumbered'>{{$t('titleSubActivities')}}</th>
+          <th class='planDelivs thNumbered'>{{$t('titleDeliverables')}}</th>
+          <th class='planRisk thNumbered'>{{$t('titleRisk')}}</th>
+          <th class='planLikely thNumbered'>{{$t('titleLikelihood')}}</th>
+          <th class='planImpact thNumbered'>{{$t('titleImpact')}}</th>
+          <th class='planMitigat thNumbered'>{{$t('titleMitigation')}}</th>
+          <th class='planRes thNumbered'>{{$t('titleResources')}}</th>
+        </tr>
+        <tr>
+          <td class='planAct'>Manage and administer the directorate</td>
+          <td class='planSubAct'>
+            <ul>
+              <li>Supervise, monitor and train staff&nbsp;</li>
+              <li>Schedule work&nbsp;</li>
+              <li>Provide clerical support&nbsp;</li>
+              <li>Move office to new location </li>
+            </ul>
+          </td>
+          <td class='planDelivs'>
+            <ul>
+              <li>Management of licencing activities</li>
+              <li>Reception covered from 9 to 5</li>
+            </ul>
+          </td>
+          <td class='planRisk'>
+            <p>Staff turnover </p>
+          </td>
+          <td class='planLikely'>
+            <p>Low </p>
+          </td>
+          <td class='planImpact'>
+            <p>High </p>
+          </td>
+          <td class='planMitigat'>
+            <ul>
+              <li>Establish succession plan</li>
+              <li>Establish collective staffing pools</li>
+              <li>Recognize excellent work</li>
+              <li>Celebrate successes</li>
+              <li>Involve employees in decision-making</li>
+              <li>Implement flexible work hours {should be here}</li>
+            </ul>
+          </td>
+          <td class='planRes'>
+            <ul>
+              <li>1 Admin Assistant</li>
+              <li>Missing &ldquo;Manager&rdquo;</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" class='planAct'>
+            <p>Issue commercial fishing licenses&nbsp; </p>
+          </td>
+          <td rowspan="2" class='planSubAct'>
+            <ul>
+              <li>Review applicant requests</li>
+              <li>Check reliability</li>
+              <li>Issue licenses</li>
+              <li>Conduct inspections</li>
+            </ul>
+          </td>
+          <td rowspan="2" class='planDelivs'>
+            <ul>
+              <li>Issue license within 30 days of request </li>
+              <li>Missing &ldquo;Issue 500 licenses per year&rdquo;</li>
+            </ul>
+          </td>
+          <td rowspan="4" class='planRisk'>
+            Overfishing
+          </td>
+          <td rowspan="4" class='planLikely'>
+            <p>Low </p>
+          </td>
+          <td rowspan="4" class='planImpact'>
+            <p>High </p>
+          </td>
+          <td rowspan="4" class='planMitigat'>
+            <ul>
+              <li>Protect habitat</li>
+              <li>Place catching limits</li>
+              <li>Implement fishing seasons</li>
+            </ul>
+            <p>&nbsp;</p>
+            <ul>
+              <li>Implement flexible work hours {Is in wrong location}</li>
+            </ul>
+          </td>
+          <td rowspan="2" class='planRes'>
+            <ul>
+              <li>1 officer</li>
+              <li>2 analysts</li>
+              <li>1 junior officer</li>
+            </ul>
+          </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td rowspan="2" class='planAct'>
+            <p>Renew commercial fishing licenses&nbsp; </p>
+          </td>
+          <td rowspan="2" class='planSubAct'>
+            <ul>
+              <li>Review applicant renewal requests</li>
+              <li>Issue renewal license</li>
+            </ul>
+          </td>
+          <td rowspan="2" class='planDelivs'>
+            <ul>
+              <li>Issue license renewal within 30 days of request</li>
+              <li>Issue 300 license renewals per year </li>
+            </ul>
+          </td>
+          <td rowspan="2" class='planRes'>
+            <ul>
+              <li><strong>1 officer</strong></li>
+              <li><strong>1 junior analyst</strong></li>
+            </ul>
+          </td>
+        </tr>
+        <tr> </tr>
+      </table>
+    </div>
   </span>
 </template>
 <i18n>
@@ -171,9 +208,9 @@
 </script>
 <style type="text/css" scoped>
 .scrollMe {
- width: 100%;
- overflow-x: auto;
- white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .tableColoured {
@@ -182,12 +219,15 @@
   counter-reset: wpParts
 }
 
-td{ vertical-align: top }
+td {
+  vertical-align: top
+}
 
 .tableColoured td:before {
   counter-increment: wpParts;
   content: counter(wpParts);
   position: absolute;
+  font-weight: 400;
   height: 2em;
   left: 0px;
   top: 0px;
@@ -301,14 +341,15 @@ td{ vertical-align: top }
   background-color: #c6957f;
 }
 
-</style>
-<style>
-.nav-item {
+.thNumbered {
   position: relative;
+  text-align: center;
+  padding-left: 25px;
 }
 
-.nav-item:before {
+.thNumbered:before {
   position: absolute;
+  font-weight: 400;
   counter-increment: wpParts;
   content: counter(wpParts);
   height: 2em;
@@ -318,73 +359,4 @@ td{ vertical-align: top }
   padding: .1em .5em 0 .5em;
   color: white;
 }
-
-.nav-item:nth-of-type(1):before {
-  background-color: #718EA0
-}
-
-.nav-item:nth-of-type(2):before {
-  background-color: #7fc69a
-}
-
-.nav-item:nth-of-type(3):before {
-  background-color: #7F8AC6;
-}
-
-.nav-item:nth-of-type(4):before {
-  background-color: #C3C67F;
-}
-
-.nav-item:nth-of-type(5):before {
-  background-color: #775F75;
-}
-
-.nav-item:nth-of-type(6):before {
-  background-color: #607293;
-}
-
-.nav-item:nth-of-type(7):before {
-  background-color: #c67fa3;
-}
-
-.nav-item:nth-of-type(8):before {
-  background-color: #c6957f;
-}
-
-.nav-item:nth-of-type(1) {
-  background-color: #e2e8ec;
-}
-
-.nav-item:nth-of-type(2) {
-  background-color: #dcefe3;
-}
-
-.nav-item:nth-of-type(3) {
-  background-color: #dfe2f1;
-}
-
-.nav-item:nth-of-type(4) {
-  background-color: #f0f1df;
-}
-
-.nav-item:nth-of-type(5) {
-  background-color: #e1dce1;
-}
-
-.nav-item:nth-of-type(6) {
-  background-color: #e3e7ed;
-}
-
-.nav-item:nth-of-type(7) {
-  background-color: #f1dfe8;
-}
-
-.nav-item:nth-of-type(8) {
-  background-color: #f1e5df;
-}
-
-.card-header {
-  padding: 0px 9px;
-}
-
 </style>

@@ -47,27 +47,19 @@
         </td>
       </tr>
     </table>
-    <div>
-      <b-card no-body >
-        <b-tabs card fill>
-          <b-tab class='planAct' :title="$t('titleActivities')">
-          </b-tab>
-          <b-tab class='planSubAct' :title="$t('titleSubActivities')">
-          </b-tab>
-          <b-tab class='planDelivs' :title="$t('titleDeliverables')">
-          </b-tab>
-          <b-tab class='planRisk' :title="$t('titleRisk')">
-          </b-tab>
-          <b-tab class='planLikely' :title="$t('titleLikelihood')">
-          </b-tab>
-          <b-tab class='planImpact' :title="$t('titleImpact')">
-          </b-tab>
-          <b-tab class='planMitigat' :title="$t('titleMitigation')">
-          </b-tab>
-          <b-tab class='planRes' :title="$t('titleResources')">
-          </b-tab>
-        </b-tabs>
-      </b-card>
+    <div>      
+      <table border="1" cellspacing="0" cellpadding="5" width="100%">
+        <tr>
+          <th class='planAct thNumbered'>{{$t('titleActivities')}}</th>
+          <th class='planSubAct thNumbered'>{{$t('titleSubActivities')}}</th>
+          <th class='planDelivs thNumbered'>{{$t('titleDeliverables')}}</th>
+          <th class='planRisk thNumbered'>{{$t('titleRisk')}}</th>
+          <th class='planLikely thNumbered'>{{$t('titleLikelihood')}}</th>
+          <th class='planImpact thNumbered'>{{$t('titleImpact')}}</th>
+          <th class='planMitigat thNumbered'>{{$t('titleMitigation')}}</th>
+          <th class='planRes thNumbered'>{{$t('titleResources')}}</th>
+        </tr>
+      </table>
     </div>
   </span>
 </template>
@@ -186,7 +178,6 @@
   width: 100%;
   counter-reset: wpParts
 }
-
 .tableColoured td:before {
   counter-increment: wpParts;
   content: counter(wpParts);
@@ -198,119 +189,94 @@
   padding: .1em .5em 0 .5em;
   color: white;
 }
-
 .tableColoured td {
   vertical-align: top;
   position: relative;
   padding-left: 35px;
 }
-
 .deptPri:before {
   background-color: #167777;
 }
-
 .deptPri {
   border-top: 2px solid #167777;
   background-color: #c7e0e0
 }
-
 .govtPri {
   border-top: 2px solid #6C076C;
   background-color: #e1c8e1
 }
-
 .govtPri:before {
   background-color: #6C076C;
 }
-
 .dirPri {
   border-top: 2px solid #6F1E0D;
   background-color: #e2ceca
 }
-
 .dirPri:before {
   background-color: #6F1E0D;
 }
-
 .planAct {
   border-top: 2px solid #718EA0;
   background-color: #E2E8EC;
 }
-
 .planAct:before {
   background-color: #718EA0;
 }
-
 .planSubAct {
   border-top: 2px solid #7fc69a;
   background-color: #dcefe3;
 }
-
 .planSubAct:before {
   background-color: #7FC69A;
 }
-
 .planDelivs {
   border-top: 2px solid #7F8AC6;
   background-color: #dfe2f1;
 }
-
 .planDelivs:before {
   background-color: #7F8AC6;
 }
-
 .planRisk {
   border-top: 2px solid #C3C67F;
   background-color: #f0f1df;
 }
-
 .planRisk:before {
   background-color: #C3C67F;
 }
-
 .planLikely {
   border-top: 2px solid #775F75;
   background-color: #E1DCE1;
 }
-
 .planLikely:before {
   background-color: #775F75;
 }
-
 .planImpact {
   border-top: 2px solid #607293;
   background-color: hsl(219, 21%, 91%);
 }
-
 .planImpact:before {
   background-color: #607293;
 }
-
 .planMitigat {
   border-top: 2px solid #c67fa3;
   background-color: #f1dfe8;
 }
-
 .planMitigat:before {
   background-color: #c67fa3;
 }
-
 .planRes {
   border-top: 2px solid #c6957f;
   background-color: #f1e5df;
 }
-
 .planRes:before {
   background-color: #c6957f;
 }
-
-</style>
-<style>
-.nav-item {
+.thNumbered {
   position: relative;
+  text-align: center;
+  padding-left: 25px;
 }
-
-.nav-item:before {
+.thNumbered:before {
   position: absolute;
   counter-increment: wpParts;
   content: counter(wpParts);
@@ -320,74 +286,6 @@
   border-radius: 0 0 30px 0;
   padding: .1em .5em 0 .5em;
   color: white;
-}
-
-.nav-item:nth-of-type(1):before {
-  background-color: #718EA0
-}
-
-.nav-item:nth-of-type(2):before {
-  background-color: #7fc69a
-}
-
-.nav-item:nth-of-type(3):before {
-  background-color: #7F8AC6;
-}
-
-.nav-item:nth-of-type(4):before {
-  background-color: #C3C67F;
-}
-
-.nav-item:nth-of-type(5):before {
-  background-color: #775F75;
-}
-
-.nav-item:nth-of-type(6):before {
-  background-color: #607293;
-}
-
-.nav-item:nth-of-type(7):before {
-  background-color: #c67fa3;
-}
-
-.nav-item:nth-of-type(8):before {
-  background-color: #c6957f;
-}
-
-.nav-item:nth-of-type(1) {
-  background-color: #e2e8ec;
-}
-
-.nav-item:nth-of-type(2) {
-  background-color: #dcefe3;
-}
-
-.nav-item:nth-of-type(3) {
-  background-color: #dfe2f1;
-}
-
-.nav-item:nth-of-type(4) {
-  background-color: #f0f1df;
-}
-
-.nav-item:nth-of-type(5) {
-  background-color: #e1dce1;
-}
-
-.nav-item:nth-of-type(6) {
-  background-color: #e3e7ed;
-}
-
-.nav-item:nth-of-type(7) {
-  background-color: #f1dfe8;
-}
-
-.nav-item:nth-of-type(8) {
-  background-color: #f1e5df;
-}
-
-.card-header {
-  padding: 0px 9px;
 }
 
 </style>

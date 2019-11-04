@@ -5,19 +5,19 @@
     <table class='tableColoured'>
       <tr>
         <td colspan='8' class='govtPri'>
-          <p><span v-html="$t('pwpGovtPri')" /> {{$t('q1-2')}}
+          <p><span v-html="$t('pwpGovtPri')" /> {{$t('govtPriorities')}}
           </p>
         </td>
       </tr>
       <tr>
         <td colspan='8' class='deptPri'>
-          <p><span v-html="$t('pwpDeptPri')" /> {{$t('q2-3')}}
+          <p><span v-html="$t('pwpDeptPri')" /> {{$t('deptPriorities')}}
           </p>
         </td>
       </tr>
       <tr>
         <td colspan='8' class='dirPri'>
-          <p><span v-html="$t('pwpDirPri')" /> {{$t('q3-1')}}
+          <p><span v-html="$t('pwpDirPri')" /> {{$t('dirPriorities')}}
           </p>
         </td>
       </tr>
@@ -122,9 +122,9 @@
     <div><strong>Question 3</strong>
       <p>Looking under resources, you notice that the manager position is missing. Under which activity should you place it?</p>
       <ol type="a">
-        <li><input type="radio" name="q2" id="quest3-1" v-model="Q3" value="1"><label for="quest3-1">Manage and administer the directorate</label></li>
-        <li><input type="radio" name="q2" id="quest3-2" v-model="Q3" value="2"><label for="quest3-2">Issue commercial fishing licenses</label></li>
-        <li><input type="radio" name="q2" id="quest3-3" v-model="Q3" value="3"><label for="quest3-3">Renew commercial fishing licenses</label></li>
+        <li><input type="radio" name="q3" id="quest3-1" v-model="Q3" value="1"><label for="quest3-1">Manage and administer the directorate</label></li>
+        <li><input type="radio" name="q3" id="quest3-2" v-model="Q3" value="2"><label for="quest3-2">Issue commercial fishing licenses</label></li>
+        <li><input type="radio" name="q3" id="quest3-3" v-model="Q3" value="3"><label for="quest3-3">Renew commercial fishing licenses</label></li>
       </ol>
       <p v-if="Q3==1">{{ "You have chosen: “Manage and administer the directorate”. This is the best answer!" }}</p>
       <p v-if="Q3==2">{{ "You have chosen: “Issue commercial fishing licenses”. A manager position would be reflected under “Manage and administer the directorate”." }}</p>
@@ -150,9 +150,9 @@
   "titleMitigation":"Mitigation",
   "titleResources":"Resources",
   "qDisabled":"Please select one",
-  "q1-2":"To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations",
-  "q2-3":"To support prosperous and sustainable commercial, Aboriginal and recreational fisheries, aquaculture and other oceans industries",
-  "q3-1":"To manage the commercial domestic fisheries",
+  "govtPriorities":"To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations",
+  "deptPriorities":"To support prosperous and sustainable commercial, Aboriginal and recreational fisheries, aquaculture and other oceans industries",
+  "dirPriorities":"To manage the commercial domestic fisheries",
   "pA1":"Manage and administer the directorate",
 "psA1":"<ul><li>Supervise, monitor and train staff&nbsp;</li><li>Schedule work&nbsp;</li><li>Provide clerical support&nbsp;</li><li>Move office to new location </li></ul>",
 "pD1":"<ul><li>Management of licencing activities</li><li>Reception covered from 9 to 5</li></ul>",
@@ -190,9 +190,9 @@
   "titleMitigation":"Atténuation",
   "titleResources":"Resources",
   "qDisabled":"Veuillez faire un choix",
-  "q1-2":"Servir les Canadiens en assurant l'utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
-  "q2-3":"Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l'aquaculture et d'autres industries océaniques.",
-  "q3-1":"Gérer les pêches commerciales intérieures",
+  "govtPriorities":"Servir les Canadiens en assurant l'utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
+  "deptPriorities":"Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l'aquaculture et d'autres industries océaniques.",
+  "dirPriorities":"Gérer les pêches commerciales intérieures",
   "pA1":"G&eacute;rer et administrer la direction&nbsp;",
   "psA1":"<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir un soutien administratif&nbsp;</li><li> D&eacute;m&eacute;nagement des bureaux dans de nouveaux locaux</li></ul>",
   "pD1":"<ul><li> Gestion des activit&eacute;s de d&eacute;livrance de permis</li><li> R&eacute;ception ouverte de 9 h &agrave; 17 h</li></ul>",

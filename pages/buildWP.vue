@@ -49,7 +49,9 @@
         <completeWorkplan />
           
         </b-modal>
-      <b-modal no-stacking id="adjustwp" @hide="resumePlay()" okOnly title="Activity: Adjust the Work plan">Adjust WP</b-modal>
+      <b-modal no-stacking id="adjustwp" @hide="resumePlay()"  size="xl" okOnly :title="$t('adjustwptitle')">
+<adjustWorkplan />
+      </b-modal>
       <b-modal no-stacking id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly><span v-html="$t('IRLText')"></span></b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" :title="$t('TakeTheQuiz')" size="xl" okOnly ><planQuiz /></b-modal>
     </section>
@@ -74,6 +76,7 @@ import microlearning from '~/components/microlearning'
 import partsOfWorkPlan from '~/components/parts_workplan'
 import prepareWorkPlan from '~/components/prepare_workplan'
 import completeWorkplan from '~/components/complete_workplan'
+import adjustWorkplan from '~/components/adjust_workplan'
 import test360 from '~/components/test360'
 import planQuiz from '~/components/planQuiz'
 import plusIcon from '~/components/icons/PlusSign'
@@ -100,6 +103,7 @@ export default {
     partsOfWorkPlan,
     prepareWorkPlan,
     completeWorkplan,
+    adjustWorkplan,
     planQuiz,
     plusIcon
   },
@@ -280,6 +284,7 @@ button.accessibilityButton {
   "en":{
   "TakeTheQuiz":"Take the Quiz",
   "completewptitle":"Activity: Complete the Work plan",
+  "adjustwptitle":"Activity: Adjust the Work plan",
   "InRealLife":"In Real Life",
   "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about work plans. Go <strong>now</strong>. ",
   "gotIt":"Got it!",
@@ -289,6 +294,7 @@ button.accessibilityButton {
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité: Compléter le plan de travail",
+  "adjustwptitle":"Activité: Ajuster le plan de travail",
   "InRealLife":"Dans la vraie vie",
   "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues des plans de travail. Allez-y <strong>maintenant</strong>.",
   "gotIt":"Bien compris!",

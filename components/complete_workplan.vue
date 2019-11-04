@@ -111,7 +111,7 @@
             </ul>
             <p>&nbsp;</p>
             <ul>
-              <transition name="fade"><li v-if="Q1==''||Q1==1" :class="{striked:Q1=1}">Implement flexible work hours</li></transition>
+              <transition name="fade"><li v-if="Q1==''||Q1==1" :class="{striked:Q1==1}">Implement flexible work hours</li></transition>
             </ul>
           </td>
           <td rowspan="2" class='planRes'>
@@ -172,6 +172,17 @@
       <p v-if="Q2==2">{{ "You have chosen: “Issue commercial fishing licenses”. This is the best answer!" }}</p>
       <p v-if="Q2==3">{{ "You have chosen: “Renew commercial fishing licenses”. This deliverable relates to issuing commercial fishing licenses." }}</p>
     </div>
+    <div><strong>Question 3</strong>
+      <p>Looking under resources, you notice that the manager position is missing. Under which activity should you place it?</p>
+      <ol type="a">
+        <li><input type="radio" name="q2" id="quest3-1" v-model="Q3" value="1"><label for="quest3-1">Manage and administer the directorate</label></li>
+        <li><input type="radio" name="q2" id="quest3-2" v-model="Q3" value="2"><label for="quest3-2">Issue commercial fishing licenses</label></li>
+        <li><input type="radio" name="q2" id="quest3-3" v-model="Q3" value="3"><label for="quest3-3">Renew commercial fishing licenses</label></li>
+      </ol>
+      <p v-if="Q3==1">{{ "You have chosen: “Manage and administer the directorate”. This is the best answer!" }}</p>
+      <p v-if="Q3==2">{{ "You have chosen: “Issue commercial fishing licenses”. A manager position would be reflected under “Manage and administer the directorate”." }}</p>
+      <p v-if="Q3==3">{{ "You have chosen: “Renew commercial fishing licenses”. A manager position would be reflected under “Manage and administer the directorate”." }}</p>
+    </div>
   </span>
 </template>
 <i18n>
@@ -225,7 +236,8 @@
    deptPri: '',
    dirPri: '',
    Q1:'',
-   Q2:''
+   Q2:'',
+   Q3:''
  }
   }
 }

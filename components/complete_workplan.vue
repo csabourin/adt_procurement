@@ -49,6 +49,8 @@
           <td class='planRes nav-item'>
             <p align="center"><strong>{{$t('titleResources')}}</strong></p>
           </td>
+        </tr>
+      </table>
       <table border="1" cellspacing="0" cellpadding="5">
         <tr>
           <th class='planAct thNumbered'>{{$t('titleActivities')}}</th>

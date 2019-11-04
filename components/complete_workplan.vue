@@ -35,38 +35,16 @@
           <th class='planRes thNumbered'>{{$t('titleResources')}}</th>
         </tr>
         <tr>
-          <td class='planAct'>Manage and administer the directorate</td>
-          <td class='planSubAct'>
-            <ul>
-              <li>Supervise, monitor and train staff&nbsp;</li>
-              <li>Schedule work&nbsp;</li>
-              <li>Provide clerical support&nbsp;</li>
-              <li>Move office to new location </li>
-            </ul>
-          </td>
-          <td class='planDelivs'>
-            <ul>
-              <li>Management of licencing activities</li>
-              <li>Reception covered from 9 to 5</li>
-            </ul>
-          </td>
-          <td class='planRisk'>
-            <p>Staff turnover </p>
-          </td>
-          <td class='planLikely'>
-            <p>Low </p>
-          </td>
-          <td class='planImpact'>
-            <p>High </p>
-          </td>
+          <td class='planAct' v-html="$t('pA1')"></td>
+          <td class='planSubAct' v-html="$t('psA1')"></td>
+          <td class='planDelivs' v-html="$t('pD1')"></td>
+          <td class='planRisk' v-html="$t('pR1')"></td>
+          <td class='planLikely' v-html="$t('pL1')"></td>
+          <td class='planImpact' v-html="$t('pI1')"></td>
           <td class='planMitigat'>
             <ul>
-              <li>Establish succession plan</li>
-              <li>Establish collective staffing pools</li>
-              <li>Recognize excellent work</li>
-              <li>Celebrate successes</li>
-              <li>Involve employees in decision-making</li>
-             <transition name="fade"><li v-if="Q1==2">Implement flexible work hours</li></transition>
+              <li v-html="$t('pM1')"></li>
+             <transition name="fade"><li v-if="Q1==2" v-html="$t('pM1_1')" /></transition>
             </ul>
           </td>
           <td class='planRes'>
@@ -111,7 +89,7 @@
             </ul>
             <p>&nbsp;</p>
             <ul>
-              <transition name="fade"><li v-if="Q1==''||Q1==1" :class="{striked:Q1==1}">Implement flexible work hours</li></transition>
+              <transition name="fade"><li v-if="Q1==''||Q1==1" :class="{striked:Q1==1}" v-html="$t('pM1_1')" /></transition>
             </ul>
           </td>
           <td rowspan="2" class='planRes'>
@@ -205,7 +183,15 @@
   "qDisabled":"Please select one",
   "q1-2":"To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations",
   "q2-3":"To support prosperous and sustainable commercial, Aboriginal and recreational fisheries, aquaculture and other oceans industries",
-  "q3-1":"To manage the commercial domestic fisheries"
+  "q3-1":"To manage the commercial domestic fisheries",
+  "pA1":"Manage and administer the directorate",
+"psA1":"<ul><li>Supervise, monitor and train staff&nbsp;</li><li>Schedule work&nbsp;</li><li>Provide clerical support&nbsp;</li><li>Move office to new location </li></ul>",
+"pD1":"<ul><li>Management of licencing activities</li><li>Reception covered from 9 to 5</li></ul>",
+"pR1":"Staff turnover",
+"pL1":"Low",
+"pI1":"High",
+"pM1":" <li>Establish succession plan</li><li>Establish collective staffing pools</li><li>Recognize excellent work</li><li>Celebrate successes</li><li>Involve employees in decision-making</li>",
+"pM1_1":"Implement flexible work hours"
   },
   "fr":{
   "pwpInstructions":"En regardant votre brouillon, vous remarquez que certains items peuvent avoir été placés au mauvais endroit ou manquer. Mettez à jour votre brouillon en conséquence. ",
@@ -224,7 +210,15 @@
   "qDisabled":"Veuillez faire un choix",
   "q1-2":"Servir les Canadiens en assurant l'utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
   "q2-3":"Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l'aquaculture et d'autres industries océaniques.",
-  "q3-1":"Gérer les pêches commerciales intérieures"
+  "q3-1":"Gérer les pêches commerciales intérieures",
+  "pA1":"G&eacute;rer et administrer la direction&nbsp;",
+  "psA1":"<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir un soutien administratif&nbsp;</li><li> D&eacute;m&eacute;nagement des bureaux dans de nouveaux locaux</li></ul>",
+  "pD1":"<ul><li> Gestion des activit&eacute;s de d&eacute;livrance de permis</li><li> R&eacute;ception couverte de 9 h &agrave; 17 h</li></ul>",
+  "pR1":"Roulement du personnel",
+  "pL1":"Faible",
+  "pI1":"&Eacute;lev&eacute;",
+  "pM1":"<li>&Eacute;tablir un plan de rel&egrave;ve</li><li> Reconna&icirc;tre l'excellent travail</li><li> C&eacute;l&eacute;brer les succ&egrave;s</li><li> Impliquer les employ&eacute;s dans la prise de d&eacute;cision</li>",
+  "pM1_1":"Mettre en &oelig;uvre des horaires de travail flexibles"
   }
   }
 </i18n>

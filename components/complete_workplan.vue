@@ -23,34 +23,6 @@
       </tr>
     </table>
     <div class="scrollMe">
-      <table border="1" cellspacing="0" cellpadding="1">
-        <tr>
-          <td class='planAct nav-item'>
-            <p align="center"><strong>{{$t('titleActivities')}}</strong></p>
-          </td>
-          <td class='planSubAct nav-item'>
-            <p align="center"><strong>{{$t('titleSubActivities')}}</strong></p>
-          </td>
-          <td class='planDelivs nav-item'>
-            <p align="center"><strong>{{$t('titleDeliverables')}}</strong></p>
-          </td>
-          <td class='planRisk nav-item'>
-            <p align="center"><strong>{{$t('titleRisk')}}</strong></p>
-          </td>
-          <td class='planLikely nav-item'>
-            <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>{{$t('titleLikelihood')}}</strong>&nbsp;</p>
-          </td>
-          <td class='planImpact nav-item'>
-            <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>{{$t('titleImpact')}}</strong>&nbsp;</p>
-          </td>
-          <td class='planMitigat nav-item'>
-            <p align="center"><strong>{{$t('titleMitigation')}}</strong></p>
-          </td>
-          <td class='planRes nav-item'>
-            <p align="center"><strong>{{$t('titleResources')}}</strong></p>
-          </td>
-        </tr>
-      </table>
       <table border="1" cellspacing="0" cellpadding="5">
         <tr>
           <th class='planAct thNumbered'>{{$t('titleActivities')}}</th>
@@ -94,7 +66,7 @@
               <li>Recognize excellent work</li>
               <li>Celebrate successes</li>
               <li>Involve employees in decision-making</li>
-              <li>Implement flexible work hours {should be here}</li>
+             <transition name="fade"><li v-if="Q1==2">Implement flexible work hours</li></transition>
             </ul>
           </td>
           <td class='planRes'>
@@ -120,7 +92,6 @@
             <ul>
               <li>Issue license within 30 days of request </li>
               <transition name="fade">    <li v-if="Q2==2" >Issue 500 licenses per year</li></transition>
-              <li>Missing &ldquo;Issue 500 licenses per year&rdquo;</li>
             </ul>
           </td>
           <td rowspan="4" class='planRisk'>
@@ -140,7 +111,7 @@
             </ul>
             <p>&nbsp;</p>
             <ul>
-              <transition name="fade"><li v-if="Q1==''">Implement flexible work hours</li></transition>
+              <transition name="fade"><li v-if="Q1==''||Q1==1" :class="{striked:Q1=1}">Implement flexible work hours</li></transition>
             </ul>
           </td>
           <td rowspan="2" class='planRes'>
@@ -207,7 +178,7 @@
   {
   "en":{
   "pwpInstructions":"Looking at your draft, you notice that some items may have been dropped into the wrong location or may be missing. Update your draft accordingly.",
-  "pwpTitle":"Choose the best option for each section of this work plan by using the pull down menus.",
+  "pwpTitle":"Choose the best option for each section of this work plan by selecting the most appropriate answer. You can scroll horizontally to view the whole plan.",
   "pwpGovtPri":"<strong>Government priorities</strong>",
   "pwpDeptPri":"<strong>Departmental priorities</strong>",
   "pwpDirPri":"<strong>Directorate priorities</strong>",
@@ -295,6 +266,8 @@ td {
   position: relative;
   padding-left: 35px;
 }
+
+.striked{text-decoration: line-through}
 
 .deptPri:before {
   background-color: #167777;

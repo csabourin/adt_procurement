@@ -39,8 +39,8 @@
           <td class='planSubAct' v-html="$t('psA1')"></td>
           <td class='planDelivs' v-html="$t('pD1')"></td>
           <td class='planRisk' v-html="$t('pR1')"></td>
-          <td class='planLikely' v-html="$t('pL1')"></td>
-          <td class='planImpact' v-html="$t('pI1')"></td>
+          <td class='planLikely' v-html="$t('low')"></td>
+          <td class='planImpact' v-html="$t('high')"></td>
           <td class='planMitigat'>
             <ul>
               <li v-html="$t('pM1')"></li>
@@ -49,79 +49,48 @@
           </td>
           <td class='planRes'>
             <ul>
-              <li>1 Admin Assistant</li>
-              <li>Missing &ldquo;Manager&rdquo;</li>
+              <li>{{ $t('pR1_1')}}</li>
+              <li v-if="true">{{ $t('pR1_2')}}</li>
             </ul>
           </td>
         </tr>
         <tr>
-          <td rowspan="2" class='planAct'>
-            <p>Issue commercial fishing licenses&nbsp; </p>
-          </td>
-          <td rowspan="2" class='planSubAct'>
-            <ul>
-              <li>Review applicant requests</li>
-              <li>Check reliability</li>
-              <li>Issue licenses</li>
-              <li>Conduct inspections</li>
-            </ul>
+          <td rowspan="2" class='planAct' v-html="$t('pA2')"></td>
+          <td rowspan="2" class='planSubAct' v-html="$t('pSA2')">
           </td>
           <td rowspan="2" class='planDelivs'>
             <ul>
-              <li>Issue license within 30 days of request </li>
-              <transition name="fade">    <li v-if="Q2==2" >Issue 500 licenses per year</li></transition>
+              <li v-html="$t('pD2_1')"></li>
+              <transition name="fade">    <li v-if="Q2==2" v-html="$t('pD2_2')"></li></transition>
             </ul>
           </td>
-          <td rowspan="4" class='planRisk'>
-            Overfishing
-          </td>
-          <td rowspan="4" class='planLikely'>
-            <p>Low </p>
-          </td>
-          <td rowspan="4" class='planImpact'>
-            <p>High </p>
-          </td>
+          <td rowspan="4" class='planRisk' v-html="$t('pR2')"></td>
+          <td rowspan="4" class='planLikely' v-html="$t('low')"></td>
+          <td rowspan="4" class='planImpact'  v-html="$t('high')"></td>
           <td rowspan="4" class='planMitigat'>
-            <ul>
-              <li>Protect habitat</li>
-              <li>Place catching limits</li>
-              <li>Implement fishing seasons</li>
-            </ul>
+            <ul v-html="$t('pM2')" />
             <p>&nbsp;</p>
             <ul>
               <transition name="fade"><li v-if="Q1==''||Q1==1" :class="{striked:Q1==1}" v-html="$t('pM1_1')" /></transition>
             </ul>
           </td>
           <td rowspan="2" class='planRes'>
-            <ul>
-              <li>1 officer</li>
-              <li>2 analysts</li>
-              <li>1 junior officer</li>
-            </ul>
+            <ul v-html="$t('pRes2')" />
           </td>
         </tr>
         <tr></tr>
         <tr>
-          <td rowspan="2" class='planAct'>
-            <p>Renew commercial fishing licenses&nbsp; </p>
+          <td rowspan="2" class='planAct' v-html="$t('pA3')">
+            <p></p>
           </td>
           <td rowspan="2" class='planSubAct'>
-            <ul>
-              <li>Review applicant renewal requests</li>
-              <li>Issue renewal license</li>
-            </ul>
+            <ul v-html="$t('pSA3')"></ul>
           </td>
           <td rowspan="2" class='planDelivs'>
-            <ul>
-              <li>Issue license renewal within 30 days of request</li>
-              <li>Issue 300 license renewals per year </li>
-            </ul>
+            <ul  v-html="$t('pD3')"></ul>
           </td>
           <td rowspan="2" class='planRes'>
-            <ul>
-              <li><strong>1 officer</strong></li>
-              <li><strong>1 junior analyst</strong></li>
-            </ul>
+            <ul  v-html="$t('pRes3')" />
           </td>
         </tr>
         <tr> </tr>
@@ -188,10 +157,23 @@
 "psA1":"<ul><li>Supervise, monitor and train staff&nbsp;</li><li>Schedule work&nbsp;</li><li>Provide clerical support&nbsp;</li><li>Move office to new location </li></ul>",
 "pD1":"<ul><li>Management of licencing activities</li><li>Reception covered from 9 to 5</li></ul>",
 "pR1":"Staff turnover",
-"pL1":"Low",
-"pI1":"High",
+"low":"Low",
+"high":"High",
 "pM1":" <li>Establish succession plan</li><li>Establish collective staffing pools</li><li>Recognize excellent work</li><li>Celebrate successes</li><li>Involve employees in decision-making</li>",
-"pM1_1":"Implement flexible work hours"
+"pM1_1":"Implement flexible work hours",
+"pR1_1":"1 Admin Assistant",
+"pR1_2":"Manager",
+"pA2":"Issue commercial fishing licenses",
+"pSA2":"<ul><li>Review applicant requests</li><li>Check reliability</li><li>Issue licenses</li><li>Conduct inspections</li></ul>",
+"pD2_1":"Issue license within 30 days of request",
+"pD2_2":"Issue 500 licenses per year",
+"pR2":"Overfishing",
+"pM2":"<li>Protect habitat</li><li>Place catching limits</li><li>Implement fishing seasons</li>",
+"pRes2":"<li>1 officer</li><li>2 analysts</li><li>1 junior officer</li>",
+"pA3":"Renew commercial fishing licenses",
+"pSA3":"<li>Review applicant renewal requests</li><li>Issue renewal license</li>",
+"pD3":"<li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year </li>",
+"pRes3":"<li><strong>1 officer</strong></li><li><strong>1 junior analyst</strong></li>"
   },
   "fr":{
   "pwpInstructions":"En regardant votre brouillon, vous remarquez que certains items peuvent avoir été placés au mauvais endroit ou manquer. Mettez à jour votre brouillon en conséquence. ",
@@ -213,12 +195,25 @@
   "q3-1":"Gérer les pêches commerciales intérieures",
   "pA1":"G&eacute;rer et administrer la direction&nbsp;",
   "psA1":"<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir un soutien administratif&nbsp;</li><li> D&eacute;m&eacute;nagement des bureaux dans de nouveaux locaux</li></ul>",
-  "pD1":"<ul><li> Gestion des activit&eacute;s de d&eacute;livrance de permis</li><li> R&eacute;ception couverte de 9 h &agrave; 17 h</li></ul>",
+  "pD1":"<ul><li> Gestion des activit&eacute;s de d&eacute;livrance de permis</li><li> R&eacute;ception ouverte de 9 h &agrave; 17 h</li></ul>",
   "pR1":"Roulement du personnel",
-  "pL1":"Faible",
-  "pI1":"&Eacute;lev&eacute;",
+  "low":"Faible",
+  "high":"&Eacute;lev&eacute;",
   "pM1":"<li>&Eacute;tablir un plan de rel&egrave;ve</li><li> Reconna&icirc;tre l'excellent travail</li><li> C&eacute;l&eacute;brer les succ&egrave;s</li><li> Impliquer les employ&eacute;s dans la prise de d&eacute;cision</li>",
-  "pM1_1":"Mettre en &oelig;uvre des horaires de travail flexibles"
+  "pM1_1":"Mettre en &oelig;uvre des horaires de travail flexibles",
+  "pR1_1":"1 adjoint administratif",
+"pR1_2":"gestionnaire",
+"pA2":"D&eacute;livrer des permis de p&ecirc;che commerciale",
+"pSA2":"<ul><li>Examiner les demandes des requérants</li><li>V&eacute;rifier la fiabilit&eacute;</li><li>&Eacute;mettre des licences</li><li>Effectuer des inspections</li></ul>",
+"pD2_1":"D&eacute;livrer la licence dans les 30 jours suivant la demande",
+"pD2_2":"D&eacute;livrer 500 licences par an",
+"pR2":"Surp&ecirc;che",
+"pM2":"<li> Prot&eacute;ger l'habitat</li><li> Fixer des limites de capture</li><li> Mettre en &oelig;uvre les saisons de p&ecirc;che</li>",
+"pRes2":"<li> 1 agent</li><li> 2 analystes</li><li> 1 agent subalterne</li>",
+  "pA3":"Renouveler les permis de p&ecirc;che commerciale",
+"pSA3":"<li> Examiner les demandes de renouvellement des demandeurs</li><li> &Eacute;mettre des renouvellements de licenses&nbsp;</li></li>",
+"pD3":"<li> &Eacute;mettre les renouvellements de licences dans les 30 jours suivant la demande</li><li> &Eacute;mettre 300 renouvellements de licences par ann&eacute;e</li>",
+"pRes3":"<li> <strong>1 agent</strong></li><li> <strong>1 analyste subalterne</strong></li>"
   }
   }
 </i18n>

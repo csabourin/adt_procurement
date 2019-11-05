@@ -94,6 +94,15 @@ html {
   margin: 0;
 }
 
+.v-right:before{
+  content:"\1f600";
+  font-size: larger;
+}
+.v-wrong:before{
+  content:"\1f622";
+  font-size: larger;
+}
+
 body {
   background-color: #fff;
   width: calc(100vw - (100vw - 100%));

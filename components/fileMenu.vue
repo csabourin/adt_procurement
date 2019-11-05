@@ -4,7 +4,7 @@
       <fileIcon :title="$t('fileFolder')" width="50" />
     </a>
     <b-modal id="fileFolder" :title="$t('fileFolder')" okOnly>
-      <a href="ADT_Ressources_360.pdf" download target="_blank"><Scan360 /></a>
+      <a href="ADT_Ressources_360.pdf" download target="_blank"><genericFile iconWidth="64" title="Scan 360"/></a>
       <a href="WorkPlan_Template.docx" :title="$t('downloadPlan')">
       <genericFile iconWidth="64" :title="$t('downloadPlan')" /></a>
     </b-modal>

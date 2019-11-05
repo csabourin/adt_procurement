@@ -50,7 +50,7 @@
           <td class='planRes'>
             <ul>
               <li>{{ $t('pR1_1')}}</li>
-              <li v-if="true">{{ $t('pR1_2')}}</li>
+              <li v-if="Q3==1">{{ $t('pR1_2')}}</li>
             </ul>
           </td>
         </tr>
@@ -115,9 +115,9 @@
         <li><input type="radio" name="q2" id="quest2-2" v-model="Q2" value="2"> <label for="quest2-2" v-html="$t('q2b')"></label></li>
         <li><input type="radio" name="q2" id="quest2-3" v-model="Q2" value="3"> <label for="quest2-3" v-html="$t('q2c')"></label></li>
       </ol>
-      <p v-if="Q2==1"></p>
-      <p v-if="Q2==2"></p>
-      <p v-if="Q2==3"></p>
+      <p v-if="Q2==1 "v-html="$t('q2aF')"></p>
+      <p v-if="Q2==2 "v-html="$t('q2bF')"></p>
+      <p v-if="Q2==3 "v-html="$t('q2cF')"></p>
     </div>
     <div><strong>Question 3</strong>
       <p  v-html="$t('q3Text')"></p>
@@ -126,9 +126,9 @@
         <li><input type="radio" name="q3" id="quest3-2" v-model="Q3" value="2"> <label for="quest3-2" v-html="$t('q3b')"></label></li>
         <li><input type="radio" name="q3" id="quest3-3" v-model="Q3" value="3"> <label for="quest3-3" v-html="$t('q3c')"></label></li>
       </ol>
-      <p v-if="Q3==1"></p>
-      <p v-if="Q3==2"></p>
-      <p v-if="Q3==3"></p>
+      <p v-if="Q3==1" v-html="$t('q3aF')"></p>
+      <p v-if="Q3==2" v-html="$t('q3bF')"></p>
+      <p v-if="Q3==3" v-html="$t('q3cF')"></p>
     </div>
   </span>
 </template>
@@ -180,7 +180,7 @@
         "q1b": "No. It should be under the mitigation category for risk “Staff turnover”.",
         "q1c": "No. It should be removed completely.",
         "q1aF": "You have chosen: “Yes. Keep it there”. Actually, flexible work hours relates better to the “Management and administration of the directorate”.",
-        "q1bF": "You have chosen: “No. It should be under the mitigation category for risk “Staff turnover”. This is the best answer!",
+        "q1bF": "You have chosen: “No. It should be under the mitigation category for risk “Staff turnover”. <strong>This is the best answer!</strong>",
         "q1cF": "You have chosen: “No. It should be removed completely.” Actually, “Implement flexible work hours” is a valid strategy to attract and retain employees.",
         "q2Text": "The following deliverable is missing from your work plan: “Issue 500 licenses per year”. With which activity should you place it?",
         "q2a": "Manage and administer the directorate",
@@ -193,7 +193,7 @@
         "q3a": "Manage and administer the directorate",
         "q3b": "Issue commercial fishing licenses",
         "q3c": "Renew commercial fishing licenses",
-        "q3a3F": "You have chosen: “Manage and administer the directorate”. This is the best answer!",
+        "q3aF": "You have chosen: “Manage and administer the directorate”. This is the best answer!",
         "q3bF": "You have chosen: “Issue commercial fishing licenses”. A manager position would be reflected under “Manage and administer the directorate”.",
         "q3cF": "You have chosen: “Renew commercial fishing licenses”. A manager position would be reflected under “Manage and administer the directorate”."
     },
@@ -242,20 +242,20 @@
         "q1b": "Non. Il devrait faire partie de la cat&eacute;gorie d'att&eacute;nuation du risque &laquo; Roulement du personnel &raquo;.",
         "q1c": "Non. Il faut l'enlever compl&egrave;tement.",
         "q1aF": "Vous avez choisi : &laquo; Oui. Garde-le l&agrave; &raquo;. En fait, les heures de travail flexibles se rapportent mieux &agrave; la &laquo; Gestion et &agrave; l'administration de la direction &raquo;.",
-        "q1bF": "Vous avez choisi : &laquo; Non. &raquo; Il devrait faire partie de la cat&eacute;gorie d'att&eacute;nuation du risque &laquo; Roulement du personnel &raquo;. C'est la meilleure r&eacute;ponse!",
+        "q1bF": "Vous avez choisi : &laquo; Non. &raquo; Il devrait faire partie de la cat&eacute;gorie d'att&eacute;nuation du risque &laquo; Roulement du personnel &raquo;. <strong>C'est la meilleure r&eacute;ponse!</strong>",
         "q1cF": "Vous avez choisi : &laquo; Non. Il faut l'enlever compl&egrave;tement. &raquo; En fait, &laquo; Mettre en place des horaires de travail flexibles &raquo; est une strat&eacute;gie valable pour attirer et retenir les employ&eacute;s.",
         "q2Text": "Le livrable suivant ne figure pas dans votre plan de travail : &laquo; D&eacute;livrer 500 licences par an &raquo;. Avec quelle activit&eacute; devriez-vous le placer?",
         "q2a": "G&eacute;rer et administrer la direction",
         "q2b": "D&eacute;livrer des permis de p&ecirc;che commerciale",
         "q2c": "Renouveler les permis de p&ecirc;che commerciale",
         "q2aF": "Vous avez choisi : &laquo; G&eacute;rer et administrer la direction &raquo;. Ce livrable concerne la d&eacute;livrance de permis de p&ecirc;che commerciale.",
-        "q2bF": "Vous avez choisi : &laquo; D&eacute;livrer des permis de p&ecirc;che commerciale &raquo;. C'est la meilleure r&eacute;ponse!",
+        "q2bF": "Vous avez choisi : &laquo; D&eacute;livrer des permis de p&ecirc;che commerciale &raquo;. <strong>C'est la meilleure r&eacute;ponse!</strong>",
         "q2cF": "Vous avez choisi : &laquo; Renouveler les permis de p&ecirc;che commerciale &raquo;. Ce livrable concerne la d&eacute;livrance de permis de p&ecirc;che commerciale.",
         "q3Text": "En regardant sous les ressources, vous remarquez que le poste de gestionnaire est manquant. Sous quelle activit&eacute; devez-vous le placer?",
         "q3a": "G&eacute;rer et administrer la direction",
         "q3b": "D&eacute;livrer des permis de p&ecirc;che commerciale",
         "q3c": "Renouveler les permis de p&ecirc;che commerciale",
-        "q3a3F": "Vous avez choisi : &laquo; G&eacute;rer et administrer la direction &raquo;. C'est la meilleure r&eacute;ponse!",
+        "q3aF": "Vous avez choisi : &laquo; G&eacute;rer et administrer la direction &raquo;. <strong>C'est la meilleure r&eacute;ponse!</strong>",
         "q3bF": "Vous avez choisi : &laquo; D&eacute;livrer des permis de p&ecirc;che commerciale &raquo;. Un poste de gestionnaire serait refl&eacute;t&eacute; sous la rubrique &laquo; G&eacute;rer et administrer la direction &raquo;.",
         "q3cF": "Vous avez choisi : &laquo; Renouveler les permis de p&ecirc;che commerciale &raquo;. Un poste de gestionnaire serait refl&eacute;t&eacute; sous la rubrique &laquo; G&eacute;rer et administrer la direction &raquo;."
 

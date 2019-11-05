@@ -9,10 +9,10 @@
           <p><genericFile :title="$t('wpExample')" /><br>{{$t('wpExample')}}</p>
         </b-col>
         <b-col>
-          <p>{{$t('bExample')}}</p>
+          <p><genericFile :title="$t('bExample')" /><br>{{$t('bExample')}}</p>
         </b-col>
         <b-col>
-          <p>{{$t('rExample')}}</p>
+          <p><genericFile :title="$t('rExample')" /><br>{{$t('rExample')}}</p>
         </b-col>
       </b-row>
     </b-container>

@@ -1,25 +1,7 @@
 <template >
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.9 169.33" :width="iconWidth" :height="iconWidth">
   <defs>
-    <style>
-    .cls-1 {
-      fill: #608a93;
-      opacity: 0.7;
-    }
-
-    .cls-2 {
-      fill: none;
-      stroke: #666;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-width: 3.67px;
-    }
-
-    .cls-3 {
-      fill: #fff;
-    }
-
-    </style>
+    
   </defs>
   <title>{{title}}</title>
   <g id="Layer_2" data-name="Layer 2">
@@ -60,3 +42,22 @@
   }
 }
 </script>
+<style scoped>
+    .cls-1 {
+      fill: #608a93;
+      opacity: 0.7;
+    }
+
+    .cls-2 {
+      fill: none;
+      stroke: #666;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 3.67px;
+    }
+
+    .cls-3 {
+      fill: #fff;
+    }
+
+    </style>

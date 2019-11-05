@@ -44,13 +44,13 @@
           <td class='planMitigat'>
             <ul>
               <li v-html="$t('pM1')"></li>
-             <transition name="fade"><li v-if="Q1==2" v-html="'<strong>'+$t('pM1_1')+'</strong>'" /></transition>
+             <transition name="bounce"><li v-if="Q1==2" v-html="'<strong>'+$t('pM1_1')+'</strong>'" /></transition>
             </ul>
           </td>
           <td class='planRes'>
             <ul>
               <li>{{ $t('pR1_1')}}</li>
-              <transition name="fade"><li v-if="Q3==1"><strong>{{ $t('pR1_2')}}</strong></li></transition>
+              <transition name="bounce"><li v-if="Q3==1"><strong>{{ $t('pR1_2')}}</strong></li></transition>
             </ul>
           </td>
         </tr>
@@ -61,7 +61,7 @@
           <td rowspan="2" class='planDelivs'>
             <ul>
               <li v-html="$t('pD2_1')"></li>
-              <transition name="fade">    <li v-if="Q2==2" v-html="'<strong>'+$t('pD2_2')+'</strong>'"></li></transition>
+              <transition name="bounce">    <li v-if="Q2==2" v-html="'<strong>'+$t('pD2_2')+'</strong>'"></li></transition>
             </ul>
           </td>
           <td rowspan="4" class='planRisk' v-html="$t('pR2')"></td>

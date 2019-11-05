@@ -96,7 +96,9 @@
         <tr> </tr>
       </table>
     </div>
-    <div><strong>Question 1</strong>
+    <div>
+    <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold">
+    <b-tab title="Question 1">
       <p v-html="$t('q1Text')"></p>
       <ol type="a">
         <li><input type="radio" name="q1" id="quest1-1" v-model="Q1" value="1"> <label for="quest1-1" v-html="$t('q1a')"></label></li>
@@ -106,9 +108,8 @@
       <p v-if="Q1==1" v-html="$t('q1aF')"></p>
       <p v-if="Q1==2" v-html="$t('q1bF')"></p>
       <p v-if="Q1==3" v-html="$t('q1cF')"></p>
-    </div>
-    </div>
-    <div><strong>Question 2</strong>
+    </b-tab>
+    <b-tab title="Question 2">
       <p v-html="$t('q2Text')"></p>
       <ol type="a">
         <li><input type="radio" name="q2" id="quest2-1" v-model="Q2" value="1"> <label for="quest2-1" v-html="$t('q2a')"></label></li>
@@ -118,8 +119,8 @@
       <p v-if="Q2==1 "v-html="$t('q2aF')"></p>
       <p v-if="Q2==2 "v-html="$t('q2bF')"></p>
       <p v-if="Q2==3 "v-html="$t('q2cF')"></p>
-    </div>
-    <div><strong>Question 3</strong>
+    </b-tab>
+    <b-tab title="Question 3">
       <p  v-html="$t('q3Text')"></p>
       <ol type="a">
         <li><input type="radio" name="q3" id="quest3-1" v-model="Q3" value="1"> <label for="quest3-1" v-html="$t('q3a')"></label></li>
@@ -129,7 +130,9 @@
       <p v-if="Q3==1" v-html="$t('q3aF')"></p>
       <p v-if="Q3==2" v-html="$t('q3bF')"></p>
       <p v-if="Q3==3" v-html="$t('q3cF')"></p>
-    </div>
+    </b-tab>
+  </b-tabs>
+  </div>
   </span>
 </template>
 <i18n>

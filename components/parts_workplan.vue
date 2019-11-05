@@ -22,44 +22,44 @@
       </tr>
     </table>
     <div>
-      <b-card no-body>
-        <b-tabs card fill>
-          <b-tab class='planAct' :title="$t('titleActivities')" active>
+      <b-card no-body >
+        <b-tabs class="thNumbered" card fill>
+          <b-tab class='planAct thNumbered' :title="$t('titleActivities')" active>
             <b-card-text>
               <p v-html="$t('pwpPlanAct')"></p>
             </b-card-text>
           </b-tab>
-          <b-tab class='planSubAct' :title="$t('titleSubActivities')">
+          <b-tab class='planSubAct thNumbered' :title="$t('titleSubActivities')">
             <b-card-text>
               <p v-html="$t('pwpPlanSubAct')"></p>
             </b-card-text>
           </b-tab>
-        <b-tab class='planDelivs' :title="$t('titleDeliverables')">
+        <b-tab class='planDelivs thNumbered' :title="$t('titleDeliverables')">
           <b-card-text>
             <p v-html="$t('pwpPlanDelivs')"></p>
           </b-card-text>
         </b-tab>
-        <b-tab class='planRisk' :title="$t('titleRisk')">
+        <b-tab class='planRisk thNumbered' :title="$t('titleRisk')">
           <b-card-text>
             <p v-html="$t('pwpPlanRisk')"></p>
           </b-card-text>
         </b-tab>
-        <b-tab class='planLikely' :title="$t('titleLikelihood')">
+        <b-tab class='planLikely thNumbered' :title="$t('titleLikelihood')">
           <b-card-text>
             <p v-html="$t('pwpPlanLikely')"></p>
           </b-card-text>
         </b-tab>
-        <b-tab class='planImpact' :title="$t('titleImpact')">
+        <b-tab class='planImpact thNumbered' :title="$t('titleImpact')">
           <b-card-text>
             <p v-html="$t('pwpPlanImpact')"></p>
           </b-card-text>
         </b-tab>
-        <b-tab class='planMitigat' :title="$t('titleMitigation')">
+        <b-tab class='planMitigat thNumbered' :title="$t('titleMitigation')">
           <b-card-text>
             <p v-html="$t('pwpPlanMitigat')"></p>
           </b-card-text>
         </b-tab>
-        <b-tab class='planRes' :title="$t('titleResources')">
+        <b-tab class='planRes thNumbered' :title="$t('titleResources')">
           <b-card-text>
             <p v-html="$t('pwpPlanRes')"></p>
           </b-card-text>
@@ -255,8 +255,8 @@
 }
 </style>
 <style>
-.nav-item{position:relative;}
-.nav-item:before{
+.thNumbered .nav-item{position:relative;}
+.thNumbered .nav-item:before{
   position: absolute;
   counter-increment: wpParts;
   content: counter(wpParts);
@@ -268,24 +268,24 @@
   color: white;
 }
 
-.nav-item:nth-of-type(1):before {background-color: #718EA0}
-.nav-item:nth-of-type(2):before {background-color: #7fc69a}
-.nav-item:nth-of-type(3):before {background-color: #7F8AC6;}
-.nav-item:nth-of-type(4):before {background-color: #C3C67F;}
-.nav-item:nth-of-type(5):before {background-color: #775F75;}
-.nav-item:nth-of-type(6):before {background-color: #607293;}
-.nav-item:nth-of-type(7):before {background-color: #c67fa3;}
-.nav-item:nth-of-type(8):before {background-color: #c6957f;}
-.nav-item:nth-of-type(1) {    background-color: #e2e8ec;}
-.nav-item:nth-of-type(2) {    background-color: #dcefe3;}
-.nav-item:nth-of-type(3) {    background-color: #dfe2f1;}
-.nav-item:nth-of-type(4) {    background-color: #f0f1df;}
-.nav-item:nth-of-type(5) {    background-color: #e1dce1;}
-.nav-item:nth-of-type(6) {    background-color: #e3e7ed;}
-.nav-item:nth-of-type(7) {    background-color: #f1dfe8;}
-.nav-item:nth-of-type(8) {    background-color: #f1e5df;}
+.thNumbered .nav-item:nth-of-type(1):before {background-color: #718EA0}
+.thNumbered .nav-item:nth-of-type(2):before {background-color: #7fc69a}
+.thNumbered .nav-item:nth-of-type(3):before {background-color: #7F8AC6;}
+.thNumbered .nav-item:nth-of-type(4):before {background-color: #C3C67F;}
+.thNumbered .nav-item:nth-of-type(5):before {background-color: #775F75;}
+.thNumbered .nav-item:nth-of-type(6):before {background-color: #607293;}
+.thNumbered .nav-item:nth-of-type(7):before {background-color: #c67fa3;}
+.thNumbered .nav-item:nth-of-type(8):before {background-color: #c6957f;}
+.thNumbered .nav-item:nth-of-type(1) {    background-color: #e2e8ec;}
+.thNumbered .nav-item:nth-of-type(2) {    background-color: #dcefe3;}
+.thNumbered .nav-item:nth-of-type(3) {    background-color: #dfe2f1;}
+.thNumbered .nav-item:nth-of-type(4) {    background-color: #f0f1df;}
+.thNumbered .nav-item:nth-of-type(5) {    background-color: #e1dce1;}
+.thNumbered .nav-item:nth-of-type(6) {    background-color: #e3e7ed;}
+.thNumbered .nav-item:nth-of-type(7) {    background-color: #f1dfe8;}
+.thNumbered .nav-item:nth-of-type(8) {    background-color: #f1e5df;}
 
-.card-header {
+.thNumbered .card-header {
     padding: 0px 9px;
 }
 

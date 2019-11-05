@@ -9,6 +9,9 @@
         stroke-linejoin: round;
         stroke-width: 3px
       }
+      .cls-1:hover{
+        fill:#d4dfde;
+      }
 
       </style>
     </defs>

@@ -25,7 +25,7 @@
       <div id="bar" ref="linkBar">
         <a href='#mainPlayer' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek">
           {{ item }}<br>
-          <a href="javascript:" class="plusButton" variant="light" pill @click.stop="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"> <plusIcon /> </a>
+          <a href="javascript:" class="plusButton" variant="light" pill @click.stop="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"> <plusIcon iconWidth="28"/> </a>
         </a>
       </div>
       <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>

@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.9 169.33">
+<template >
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.9 169.33" :width="iconWidth" :height="iconWidth">
   <defs>
     <style>
     .cls-1 {
@@ -20,7 +21,7 @@
 
     </style>
   </defs>
-  <title>WPlan</title>
+  <title>{{title}}</title>
   <g id="Layer_2" data-name="Layer 2">
     <g id="Layer_1-2" data-name="Layer 1">
       <rect id="Rectangle_5194" data-name="Rectangle 5194" class="cls-1" y="12.42" width="131.57" height="156.9" />
@@ -48,3 +49,14 @@
     </g>
   </g>
 </svg>
+</template>
+<script type="text/javascript">
+     export default {
+  props: {
+
+    title: { type: String, default: "" },
+    iconWidth: { type: String, default: "25" }
+
+  }
+}
+</script>

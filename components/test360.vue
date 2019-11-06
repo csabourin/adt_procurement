@@ -5,18 +5,18 @@
     <b-container>
       <b-row>
         <b-col><a href="ADT_Ressources_360.pdf" download>
-            <genericFile :title="$t('Test360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" /></a><br>{{$t('Test360')}}</b-col>
+            <genericFile iconWidth="128" :title="$t('Test360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" /></a><br>{{$t('Test360')}}</b-col>
         <b-col>
           <p>
-            <genericFile :line1="$t('wpLine1')" :line2="$t('wpLine2')" iconStyle="planBackground" :title="$t('wpExample')" /><br>{{$t('wpExample')}}</p>
+            <genericFile iconWidth="128" :line1="$t('wpLine1')" :line2="$t('wpLine2')" iconStyle="planBackground" :title="$t('wpExample')" /><br>{{$t('wpExample')}}</p>
         </b-col>
         <b-col>
           <p>
-            <genericFile :line1="$t('bLine1')" :line2="$t('bLine2')" iconStyle="spendBackground" :title="$t('bExample')" /><br>{{$t('bExample')}}</p>
+            <genericFile iconWidth="128" :line1="$t('bLine1')" :line2="$t('bLine2')" iconStyle="spendBackground" :title="$t('bExample')" /><br>{{$t('bExample')}}</p>
         </b-col>
         <b-col>
           <p>
-            <genericFile :line1="$t('rLine1')" :line2="$t('rLine2')" iconStyle="reportBackground" :title="$t('rExample')" /><br>{{$t('rExample')}}</p>
+            <genericFile iconWidth="128" :line1="$t('rLine1')" :line2="$t('rLine2')" iconStyle="reportBackground" :title="$t('rExample')" /><br>{{$t('rExample')}}</p>
         </b-col>
       </b-row>
     </b-container>

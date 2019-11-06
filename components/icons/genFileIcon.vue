@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.24 169.33">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.24 169.33" :width="iconWidth" :height="iconWidth">
     <title>{{ title }}</title>
     <rect id="Rectangle_5194" data-name="Rectangle 5194" :class="iconStyle" y="12.42" width="131.57" height="156.9" />
     <rect fill="#fff" x="6.85" y="68.36" width="126.15" height="56" />

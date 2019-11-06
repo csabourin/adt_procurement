@@ -1,7 +1,9 @@
 <template>
   <span>
     <div style="float:right"><a href="WorkPlan_Template.docx" :title="$t('downloadPlan')">
-      <dwnWP iconWidth="64" :title="$t('downloadPlan')" /></a></div><h2 v-html="$t('pwpTitle')"></h2>
+      <genericFile       :line1="$t('dwnPlanLine1')"      :line2="$t('dwnPlanLine2')"      iconStyle="planBackground"      iconWidth="64"      :title="$t('downloadPlan')" />
+    </a>
+    </div><h2 v-html="$t('pwpTitle')"></h2>
       <p>&nbsp;</p>
     
     <table class='tableColoured'>
@@ -74,6 +76,8 @@
   "en":{
   "pwpTitle":"Take a moment now to explore the different sections.",
   "downloadPlan":"Download a Word template of the work plan",
+  "dwnPlanLine1":"Work Plan",
+  "dwnPlanLine2":"Template",
   "pwpGovtPri":"<strong>Government priorities</strong> –<br> In the Speech from the throne, a new government sets out its agenda. This includes its broad goals and commitments and how it will reach them.",
   "pwpDeptPri":"<strong>Departmental priorities</strong> –<br> What your department sets out to do to support the government’s priorities.",
   "pwpDirPri":"<strong>Directorate priorities</strong> –<br> What your directorate sets out to do to support the departmental priorities.",
@@ -97,6 +101,8 @@
   "fr":{
   "pwpTitle":"Prenez un moment pour explorer les différentes sections.",
   "downloadPlan":"Télécharger un modèle Word du plan de travail",
+  "dwnPlanLine1":"Plan de",
+  "dwnPlanLine2":"travail",
   "pwpGovtPri":"<strong>Priorités du gouvernement</strong> –<br> Dans le discours du Trône, un nouveau gouvernement présente son programme. Il s'agit notamment de ses objectifs généraux et de ses engagements et de la façon dont il les atteindra.",
   "pwpDeptPri":"<strong>Priorités ministérielles</strong> –<br> Ce que votre ministère entend faire pour appuyer les priorités du gouvernement.",
   "pwpDirPri":"<strong>Priorités de la direction</strong> –<br> Ce que votre direction générale entend faire pour appuyer les priorités ministérielles.","titleActivities":"Activités",
@@ -112,7 +118,7 @@
   }
 </i18n>
 <script>
-  import dwnWP from '~/components/icons/WPlan'
+  import genericFile from "~/components/icons/genFileIcon"
   export default {
   data() {
     return {
@@ -125,7 +131,7 @@
     }
   },
   components:{
-    dwnWP
+    genericFile
   }
 }
 

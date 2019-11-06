@@ -122,7 +122,7 @@ export default {
 }
 
 .planTitle {
-  color: #608a93;
+  color: #587C84;
 }
 
 .spendTitle {
@@ -130,7 +130,7 @@ export default {
 }
 
 .reportTitle {
-  color: #986e65;
+  color: #865F56;
 }
 
 

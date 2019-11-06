@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <span>
     <a href="javascript:" v-b-modal.fileFolder>
       <fileIcon :title="$t('fileFolder')" width="50" />
     </a>
@@ -8,7 +8,7 @@
       <a href="WorkPlan_Template.docx" :title="$t('downloadPlan')">
       <genericFile iconWidth="64" :title="$t('downloadPlan')" /></a>
     </b-modal>
-  </div>
+  </span>
 </template>
 <script type="text/javascript">
 import fileIcon from '~/components/icons/fileIcon'

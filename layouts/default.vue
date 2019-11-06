@@ -1,19 +1,15 @@
 <template>
   <b-container fluid style="overflow:hidden;">
     <b-row class="navBar">
-      <b-col class="text-left">
+      <b-col cols="5" sm="3" class="text-left">
         <hamburger @menu-toggle="ShowMenu" />
-      </b-col>
-      <b-col class="text-left">
         <nuxt-link :to="localePath('index')">
           <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
         </nuxt-link>
       </b-col>
-      <b-col cols="6" />
-      <b-col class="text-right">
+      <b-col cols="2" sm="6" />
+      <b-col cols="5" sm="3" class="text-right">
         <fileMenu />
-      </b-col>
-      <b-col class="text-right">
         <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
           <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" v-bind:iconTitle="locale.name" />
         </nuxt-link>
@@ -99,7 +95,7 @@ html {
   font-size: larger;
 }
 .v-wrong:before{
-  content:"\1f622";
+  content:"\1f61e";
   font-size: larger;
 }
 
@@ -162,7 +158,7 @@ h3,
 }
 
 .planSection .timeEstimate {
-  background-color: #608a93;
+  background-color: #587C84;
 }
 
 
@@ -172,7 +168,7 @@ h3,
 
 
 .reportSection .timeEstimate {
-  background-color: #986e65;
+  background-color: #865F56;
 }
 
 .bottomNav:before {

@@ -178,21 +178,21 @@
         "pSA3": "<li>Review applicant renewal requests</li><li>Issue renewal license</li>",
         "pD3": "<li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year </li>",
         "pRes3": "<li><strong>1 officer</strong></li><li><strong>1 junior analyst</strong></li>",
-        "q1Text": "Currently, “Implement flexible work hours” is a mitigation strategy for the following risks: overfishing, habitat degradation, environmental disaster, climate change. Is this the right location in the work plan?",
+        "q1Text": "Currently, “Implement flexible work hours” is a <strong>mitigation</strong> strategy for the following risks: overfishing, habitat degradation, environmental disaster, climate change. Is this the right location in the work plan?",
         "q1a": "Yes. Keep it there.",
         "q1b": "No. It should be under the mitigation category for risk “Staff turnover”.",
         "q1c": "No. It should be removed completely.",
         "q1aF": "<span class='v-wrong' /> You have chosen: “Yes. Keep it there”. Actually, flexible work hours relates better to the “Management and administration of the directorate”.",
         "q1bF": "<span class='v-right' /> You have chosen: “No. It should be under the mitigation category for risk “Staff turnover”. <strong>This is the best answer!</strong>",
         "q1cF": "<span class='v-wrong' />You have chosen: “No. It should be removed completely.” Actually, “Implement flexible work hours” is a valid strategy to attract and retain employees.",
-        "q2Text": "The following deliverable is missing from your work plan: “Issue 500 licenses per year”. With which activity should you place it?",
+        "q2Text": "The following <strong>deliverable</strong> is missing from your work plan: “Issue 500 licenses per year”. With which activity should you place it?",
         "q2a": "Manage and administer the directorate",
         "q2b": "Issue commercial fishing licenses",
         "q2c": "Renew commercial fishing licenses",
         "q2aF": "<span class='v-wrong' /> You have chosen: “Manage and administer the directorate”. This deliverable relates to issuing commercial fishing licenses.",
         "q2bF": "<span class='v-right' /> You have chosen: “Issue commercial fishing licenses”. <strong>This is the best answer!</strong>",
         "q2cF": "<span class='v-wrong' /> You have chosen: “Renew commercial fishing licenses”. This deliverable relates to issuing commercial fishing licenses.",
-        "q3Text": "Looking under resources, you notice that the manager position is missing. Under which activity should you place it?",
+        "q3Text": "Looking under the <strong>resources</strong> column, you notice that the manager position is missing. Under which activity should you place it?",
         "q3a": "Manage and administer the directorate",
         "q3b": "Issue commercial fishing licenses",
         "q3c": "Renew commercial fishing licenses",
@@ -240,21 +240,21 @@
         "pSA3": "<li> Examiner les demandes de renouvellement des demandeurs</li><li> &Eacute;mettre des renouvellements de licenses&nbsp;</li></li>",
         "pD3": "<li> &Eacute;mettre les renouvellements de licences dans les 30 jours suivant la demande</li><li> &Eacute;mettre 300 renouvellements de licences par ann&eacute;e</li>",
         "pRes3": "<li> <strong>1 agent</strong></li><li> <strong>1 analyste subalterne</strong></li>",
-        "q1Text": "Actuellement, &laquo; Mettre en &oelig;uvre des horaires de travail flexibles &raquo; est une strat&eacute;gie d'att&eacute;nuation des risques suivants : surp&ecirc;che, d&eacute;gradation de l'habitat, catastrophe environnementale, changement climatique. Est-ce le bon endroit dans le plan de travail?",
+        "q1Text": "Actuellement, &laquo; Mettre en &oelig;uvre des horaires de travail flexibles &raquo; est une strat&eacute;gie <strong>d'att&eacute;nuation</strong> des risques suivants : surp&ecirc;che, d&eacute;gradation de l'habitat, catastrophe environnementale, changement climatique. Est-ce le bon endroit dans le plan de travail?",
         "q1a": "Oui. Garde-le l&agrave;.",
         "q1b": "Non. Il devrait faire partie de la cat&eacute;gorie d'att&eacute;nuation du risque &laquo; Roulement du personnel &raquo;.",
         "q1c": "Non. Il faut l'enlever compl&egrave;tement.",
         "q1aF": "<span class='v-wrong' /> Vous avez choisi : &laquo; Oui. Garde-le l&agrave; &raquo;. En fait, les heures de travail flexibles se rapportent mieux &agrave; la &laquo; Gestion et &agrave; l'administration de la direction &raquo;.",
         "q1bF": "<span class='v-right' /> Vous avez choisi : &laquo; Non. &raquo; Il devrait faire partie de la cat&eacute;gorie d'att&eacute;nuation du risque &laquo; Roulement du personnel &raquo;. <strong>C'est la meilleure r&eacute;ponse!</strong>",
         "q1cF": "<span class='v-wrong' /> Vous avez choisi : &laquo; Non. Il faut l'enlever compl&egrave;tement. &raquo; En fait, &laquo; Mettre en place des horaires de travail flexibles &raquo; est une strat&eacute;gie valable pour attirer et retenir les employ&eacute;s.",
-        "q2Text": "Le livrable suivant ne figure pas dans votre plan de travail : &laquo; D&eacute;livrer 500 licences par an &raquo;. Avec quelle activit&eacute; devriez-vous le placer?",
+        "q2Text": "Le <strong>livrable</strong> suivant ne figure pas dans votre plan de travail : &laquo; D&eacute;livrer 500 licences par an &raquo;. Avec quelle activit&eacute; devriez-vous le placer?",
         "q2a": "G&eacute;rer et administrer la direction",
         "q2b": "D&eacute;livrer des permis de p&ecirc;che commerciale",
         "q2c": "Renouveler les permis de p&ecirc;che commerciale",
         "q2aF": "<span class='v-wrong' /> Vous avez choisi : &laquo; G&eacute;rer et administrer la direction &raquo;. Ce livrable concerne la d&eacute;livrance de permis de p&ecirc;che commerciale.",
         "q2bF": "<span class='v-right' /> Vous avez choisi : &laquo; D&eacute;livrer des permis de p&ecirc;che commerciale &raquo;. <strong>C'est la meilleure r&eacute;ponse!</strong>",
         "q2cF": "<span class='v-wrong' /> Vous avez choisi : &laquo; Renouveler les permis de p&ecirc;che commerciale &raquo;. Ce livrable concerne la d&eacute;livrance de permis de p&ecirc;che commerciale.",
-        "q3Text": "En regardant sous les ressources, vous remarquez que le poste de gestionnaire est manquant. Sous quelle activit&eacute; devez-vous le placer?",
+        "q3Text": "En regardant sous la colonne <strong>ressources</strong>, vous remarquez que le poste de gestionnaire est manquant. Sous quelle activit&eacute; devez-vous le placer?",
         "q3a": "G&eacute;rer et administrer la direction",
         "q3b": "D&eacute;livrer des permis de p&ecirc;che commerciale",
         "q3c": "Renouveler les permis de p&ecirc;che commerciale",
@@ -420,7 +420,7 @@ td {
 .thNumbered {
   position: relative;
   text-align: center;
-  padding-left: 25px;
+  padding-left: 32px;
 }
 
 .thNumbered:before {

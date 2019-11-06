@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h3>{{$t('Test360')}}</h3>
-    <p>{{ instructions }}</p>
+    <p>{{ $t('instructions') }}</p>
     <b-container>
       <b-row>
         <b-col><a href="ADT_Ressources_360.pdf" download>
@@ -25,7 +24,7 @@
 <i18n>
   {
   "en":{
-  "instructions":"Review the following documents and apply the questions of 360 Scan to them",
+  "instructions":"Review the following documents and apply the questions of the 360 Scan to them",
   "Test360":"360 Scan",
   "t360Line1":"360",
   "t360Line2":"Scan",

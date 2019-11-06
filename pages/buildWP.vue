@@ -71,6 +71,7 @@
     </div>
   </div>
 </template>
+
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
 import partsOfWorkPlan from '~/components/parts_workplan'

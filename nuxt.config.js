@@ -82,10 +82,24 @@ export default {
    ** Build configuration
    */
   build: {
+      loaders:{
+      rules:[{
+    test: /\.(pdf)(\?.*)?$/,
+    loader: 'url-loader'
+    }]
+
+    },
     /*
      ** You can extend webpack config here
      */
     extend(config, ctx) {
+      config.module.rules.push({
+          test: /\.(pdf|docx|xlsx)(\?.*)?$/,
+          loader: 'file-loader',
+          options: {
+          name: '[path][name].[ext]'
+        }
+        })
     }
   }
 }

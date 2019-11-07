@@ -4,14 +4,14 @@
       <fileIcon :title="$t('fileFolder')" width="50" />
     </a>
     <b-modal id="fileFolder" :title="$t('fileFolder')" okOnly size="lg">
-      <a href="ADT_Ressources_360.pdf" download target="_blank">
+      <a :href="require('~/assets/'+ $i18n.locale +'/ADT_Ressources_360.pdf')" download="ADT_Ressources_360.pdf" target="_blank">
         <genericFile
         iconWidth="128"
         :title="$t('download360')"
         :line1="$t('t360Line1')"
         :line2="$t('t360Line2')" />
         </a>
-      <a href="WorkPlan_Template.docx" :title="$t('downloadPlan')">
+      <a :href="require('~/assets/'+ $i18n.locale +'/WorkPlan_Template.docx')" download="WorkPlan_Template.docx" :title="$t('downloadPlan')" target="_blank">
       <genericFile
         :line1="$t('dwnPlanLine1')"      
       :line2="$t('dwnPlanLine2')"      

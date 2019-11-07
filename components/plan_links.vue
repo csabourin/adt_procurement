@@ -70,7 +70,6 @@
       </dl>
     </div>
     <div v-if="$i18n.locale=='en'">
-      <h2>More Links</h2>
       <h2>External Links and Descriptions</h2>
       <dl>
         <!-- <dt><a href="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_en.html" target="_blank">Delegation of Spending and Financial Signing Authorities Chart</a></dt>

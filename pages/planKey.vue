@@ -11,7 +11,7 @@
         <b-col v-html="$t('keyPlanBudget')"></b-col>
       </b-row>
       <b-row><b-col><br><hr><h3>{{$t('fileSet')}}</h3>
-          <a href="ADT_Ressources_360.pdf" download target="_blank">
+          <a :href="$rootDir+'/'+$i18n.locale+'/ADT_Ressources_360.pdf'" download target="_blank">
         <genericFile
         iconWidth="128"
         :line1="$t('t360Line1')"

@@ -57,25 +57,26 @@ export default {
   i18n: {
     strategy: 'prefix',
     vueI18nLoader: true,
-    fallbackLocale: 'en',
-    fallbackRoot: false,
-    silentTranslationWarn: true,
-    silentFallbackWarn: true,
     locales: [{
         code: 'en',
-        name: 'English'
+        name: 'English',
+        iso: 'en-CA',
+        file: 'en-CA.js'
       },
       {
         code: 'fr',
-        name: 'Français'
+        name: 'Français',
+        iso: 'fr-CA',
+        file: 'fr-CA.js'
       }
     ],
+    lazy: true,
+    langDir: 'lang/',
     defaultLocale: "en",
-    vueI18n: {
-      messages: 
-{"en":{"searchBar":"Search","homePage":"Home","transcript":"Transcript","plan":"Plan","spend":"Spend","report":"Report","previousPage":"Previous","backButton":"Back","home":"Home","KeyMessages":"Key Messages","BuildWorkPlan":"Build a Work Plan","CreateBudget":"Create a Budget","InitiateAuthorizeSpending":"Initiate and Authorize Spending (S. 32)","ExerciseFinancialAuthority":"Exercise Financial Authority (S. 34)","MonitorControlFinances":"Monitor and Control Finances","ConductPeriodicVarianceReporting":"Conduct Periodic Variance Reporting","ContributeReporting":"Contribute in Reporting ","Test":"Test","MarkCompleted":"Mark as completed"},"fr":{"searchBar":"Recherche","plan":"Planification","spend":"Dépenses","report":"Rapports","homePage":"Accueil","transcript":"Transcription","previousPage":"Précédent","backButton":"Retour","KeyMessages":"Messages clés","BuildWorkPlan":"Élaborer un plan de travail","CreateBudget":"Établir un budget","InitiateAuthorizeSpending":"Engager et autoriser les dépenses (art. 32)","ExerciseFinancialAuthority":"Exercice des pouvoirs financiers (art. 34)","MonitorControlFinances":"Surveiller et contrôler les finances","ConductPeriodicVarianceReporting":"Rapports périodiques sur les écarts","ContributeReporting":"Contribuer à l'établissement de rapports","Test":"Test","MarkCompleted":"Visualisation complétée"}}      
-    }
-
+    fallbackLocale: 'en',
+    fallbackRoot: false,
+    silentTranslationWarn: true,
+    silentFallbackWarn: true
   },
   /*
    ** Build configuration

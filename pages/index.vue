@@ -23,7 +23,7 @@
       <microlearning path="planKey" time="2" completion=100 imagePath="KeyMessP.png">{{$t('KeyMessages')}}</microlearning>
       <microlearning path="buildWP" time="20"  imagePath="KeyMessR.png" completion=80>{{$t('BuildWorkPlan')}}</microlearning>
       <microlearning time="20" completion=10 tmp_imagePath="CreateBud.png">{{$t('CreateBudget')}}</microlearning>
-      <microlearning time="15" tmp_imagePath="TestPlan.png">Test</microlearning>
+      <microlearning time="15" tmp_imagePath="TestPlan.png">{{$t('Test')}}</microlearning>
     </section>
     <hr class="planHr">
     <div class="sideTitle spendTitle">{{$t('spend')}}</div>
@@ -32,7 +32,7 @@
       <microlearning time="20">{{$t('InitiateAuthorizeSpending')}}</microlearning>
       <microlearning time="20">{{$t('ExerciseFinancialAuthority')}}</microlearning>
       <microlearning time="20">{{$t('MonitorControlFinances')}}</microlearning>
-      <microlearning time="15">Test</microlearning>
+      <microlearning time="15">{{$t('Test')}}</microlearning>
     </section>
     <hr class="spendHr">
     <div class="sideTitle reportTitle">{{$t('report')}}</div>
@@ -40,7 +40,7 @@
       <microlearning time="5">{{$t('KeyMessages')}}</microlearning>
       <microlearning time="20">{{$t('ConductPeriodicVarianceReporting')}}</microlearning>
       <microlearning time="20">{{$t('ContributeReporting')}}</microlearning>
-      <microlearning time="15">Test</microlearning>
+      <microlearning time="15">{{$t('Test')}}</microlearning>
     </section>
     <hr class="reportHr">
   </div>

@@ -1,6 +1,11 @@
 <template>
   <span>
     <p>{{ $t('pwpInstructions') }}</p>
+    <ul style="list-style: none">
+    <li><input type="checkbox" name="things" disabled id="things1" v-model="Q1"> <label for="things1">{{$t('thing1')}}</label></li>
+    <li><input type="checkbox" name="things" disabled id="things2" v-model="Q2"> <label for="things2">{{$t('thing2')}}</label></li>
+    <li><input type="checkbox" name="things" disabled id="things3" v-model="Q4"> <label for="things3">{{$t('thing3')}}</label></li>
+  </ul>
     <p><strong v-html="$t('pwpTitle')"></strong></p>
     <table class='tableColoured'>
       <tr>
@@ -157,7 +162,10 @@
   {
     "en":
     {
-        "pwpInstructions": "Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. Three things: new software implementation to speed up the issuing of licenses; new policy that now requires licenses to be issued in 15 days, not 30 days, starting November 1; a decision to not replace a retiring employee.",
+        "pwpInstructions": "Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. Three things:",
+        "thing1":"new software implementation to speed up the issuing of licenses;",
+        "thing2":"new policy that now requires licenses to be issued in 15 days, not 30 days, starting November 1;",
+        "thing3":"a decision to not replace a retiring employee.",
         "pwpTitle": "Adjust your work plan by selecting the best answer to the following questions. You can scroll horizontally to view the whole plan.",
         "pwpGovtPri": "<strong>Government priorities</strong>",
         "pwpDeptPri": "<strong>Departmental priorities</strong>",
@@ -239,7 +247,10 @@
     },
     "fr":
     {
-        "pwpInstructions": "Votre directeur vous dit qu'il a siégé à un comité directeur et qu'il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois choses : la mise en œuvre d'un nouveau logiciel pour accélérer l'émission de licences; une nouvelle politique qui exige maintenant que les licences soient émises en 15 jours, et non plus en 30 jours, à compter du 1er novembre; une décision de ne pas remplacer un employé qui prend sa retraite.",
+        "pwpInstructions": "Votre directeur vous dit qu'il a siégé à un comité directeur et qu'il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois choses :",
+        "thing1":" la mise en œuvre d'un nouveau logiciel pour accélérer l'émission de licences;",
+        "thing2":" une nouvelle politique qui exige maintenant que les licences soient émises en 15 jours, et non plus en 30 jours, à compter du 1er novembre;",
+        "thing3":" une décision de ne pas remplacer un employé qui prend sa retraite.",
         "pwpTitle": "Ajustez votre plan de travail en choisissant la meilleure réponse aux questions suivantes. Vous pouvez consulter le plan de travail en défilant horizontalement",
         "pwpGovtPri": "<strong>Priorités du gouvernement</strong>",
         "pwpDeptPri": "<strong>Priorités ministérielles</strong>",
@@ -324,9 +335,9 @@
   export default {
   data() {
  return {
-   govtPri: '',
-   deptPri: '',
-   dirPri: '',
+   thing1done: '',
+   thing2done: '',
+   thing3done: '',
    Q1:'',
    Q2:'',
    Q3:'',

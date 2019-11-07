@@ -19,6 +19,13 @@
       iconWidth="128"      
       :title="$t('downloadPlan')" />
     </a>
+    <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
+      Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
+      <span v-if="$i18n.locale=='fr'">
+      Jetez un coup d'oeil au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
+    
+    </span></p>
+  
     </b-modal>
   </span>
 </template>

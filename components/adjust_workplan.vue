@@ -2,9 +2,9 @@
   <span>
     <p>{{ $t('pwpInstructions') }}</p>
     <ul style="list-style: none">
-    <li><input type="checkbox" name="things" disabled id="things1" v-model="Q1"> <label for="things1">{{$t('thing1')}}</label></li>
+    <li><input type="checkbox" name="things" disabled id="things1" v-model="Q4"> <label for="things1">{{$t('thing1')}}</label></li>
     <li><input type="checkbox" name="things" disabled id="things2" v-model="Q2"> <label for="things2">{{$t('thing2')}}</label></li>
-    <li><input type="checkbox" name="things" disabled id="things3" v-model="Q4"> <label for="things3">{{$t('thing3')}}</label></li>
+    <li><input type="checkbox" name="things" disabled id="things3" v-model="Q3"> <label for="things3">{{$t('thing3')}}</label></li>
   </ul>
     <p><strong v-html="$t('pwpTitle')"></strong></p>
     <table class='tableColoured'>
@@ -210,40 +210,40 @@
         "q1c": "Yes, in the “Mitigation” column, next to the “Issue commercial fishing licenses” activity",
         "q1d": "Yes, in the “Sub-activities”, next to the “Renew commercial fishing licenses” activity",
         "q1e": "I don’t know",
-        "q1aF": "You have chosen: &ldquo;Yes, in the &ldquo;Deliverables&rdquo; column, next to the &ldquo;Manage and administer directorate&rdquo; activity&rdquo;. <strong>This is the best answer!</strong>",
-        "q1bF": "You have chosen: &ldquo;No, this is not needed in the work plan&rdquo;. &ldquo;Implementation of the new software&rdquo; is a deliverable.",
-        "q1cF": "You have chosen: &ldquo;Yes, in the &ldquo;Mitigation&rdquo; column, next to the &ldquo;Issue commercial fishing licenses&rdquo; activity&rdquo;. While &ldquo;Implementation of the new software&rdquo; could be a &ldquo;Mitigation&rdquo; strategy in certain cases, in this work plan, it is a &ldquo;Deliverable&rdquo;.",
-        "q1dF": "You have chosen: &ldquo;Yes, in the &ldquo;Sub-activities&rdquo;, next to the &ldquo;Renew commercial fishing licenses&rdquo; activity&rdquo;. While &ldquo;Implementation of the new software&rdquo; could be a &ldquo;Sub-activity&rdquo; in certain cases, in this work plan, it is a &ldquo;Deliverable&rdquo;.",
-        "q1eF": "You have chosen: &ldquo;I don&rsquo;t know&rdquo;. &ldquo;Implementation of the new software&rdquo; is a &ldquo;Deliverable&rdquo;.",
+        "q1aF": "<span class='v-right' /> You have chosen: &ldquo;Yes, in the &ldquo;Deliverables&rdquo; column, next to the &ldquo;Manage and administer directorate&rdquo; activity&rdquo;. <strong>This is the best answer!</strong>",
+        "q1bF": "<span class='v-wrong' /> You have chosen: &ldquo;No, this is not needed in the work plan&rdquo;. &ldquo;Implementation of the new software&rdquo; is a deliverable.",
+        "q1cF": "<span class='v-wrong' /> You have chosen: &ldquo;Yes, in the &ldquo;Mitigation&rdquo; column, next to the &ldquo;Issue commercial fishing licenses&rdquo; activity&rdquo;. While &ldquo;Implementation of the new software&rdquo; could be a &ldquo;Mitigation&rdquo; strategy in certain cases, in this work plan, it is a &ldquo;Deliverable&rdquo;.",
+        "q1dF": "<span class='v-wrong' /> You have chosen: &ldquo;Yes, in the &ldquo;Sub-activities&rdquo;, next to the &ldquo;Renew commercial fishing licenses&rdquo; activity&rdquo;. While &ldquo;Implementation of the new software&rdquo; could be a &ldquo;Sub-activity&rdquo; in certain cases, in this work plan, it is a &ldquo;Deliverable&rdquo;.",
+        "q1eF": "<span class='v-wrong' /> You have chosen: &ldquo;I don&rsquo;t know&rdquo;. &ldquo;Implementation of the new software&rdquo; is a &ldquo;Deliverable&rdquo;.",
         "q2Text": "What would you do with the following statement &ldquo;Issue license renewal within 30 days of request&rdquo; in your work plan?",
         "q2a": "Nothing, leave it as is",
         "q2b": "Remove it - it is no longer true",
         "q2c": "Change it to &ldquo;Issue license renewal within 15 days of request&rdquo;",
         "q2d": "I don&rsquo;t know",
-        "q2aF": "You have chosen: &ldquo;Nothing, leave it as is&rdquo;. With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
-        "q2bF": "You have chosen: &ldquo;Remove it - it is no longer true&rdquo;. With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
-        "q2cF": "You have chosen: &ldquo;Change it to &lsquo;Issue license renewal within 15 days of request&rsquo;&rdquo;. <strong>This is the best answer!</strong>",
-        "q2dF": "You have chosen: &ldquo;I don&rsquo;t know&rdquo;. With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
+        "q2aF": "<span class='v-wrong' /> You have chosen: &ldquo;Nothing, leave it as is&rdquo;. With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
+        "q2bF": "<span class='v-wrong' /> You have chosen: &ldquo;Remove it - it is no longer true&rdquo;. With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
+        "q2cF": "<span class='v-right' /> You have chosen: &ldquo;Change it to &lsquo;Issue license renewal within 15 days of request&rsquo;&rdquo;. <strong>This is the best answer!</strong>",
+        "q2dF": "<span class='v-wrong' /> You have chosen: &ldquo;I don&rsquo;t know&rdquo;. With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
         "q3Text": "Do you need to adjust your Resources?",
         "q3a": "Yes. I need to add more staff.",
         "q3b": "No. I can leave it as is.",
         "q3c": "Yes. I need to adjust my full time employees.",
         "q3d": "I don&rsquo;t know.",
-        "q3aF": "You have chosen: &ldquo;Yes. I need to add more staff.&rdquo; You have not received any additional full time employees so you cannot add more staff.",
-        "q3bF": "You have chosen: &ldquo;No. I can leave it as is.&rdquo; You have an employee that is retiring, so you will need to remove a full time employee from your work plan.",
-        "q3cF": "You have chosen: &ldquo;Yes. I need to remove one employee.&rdquo; <strong>That is the best answer.</strong>",
-        "q3dF": "You have chosen: &ldquo;I don&rsquo;t know.&rdquo; You have an employee that is retiring, so you will need to adjust a full time employee from your work plan.",
+        "q3aF": "<span class='v-wrong' /> You have chosen: &ldquo;Yes. I need to add more staff.&rdquo; You have not received any additional full time employees so you cannot add more staff.",
+        "q3bF": "<span class='v-wrong' /> You have chosen: &ldquo;No. I can leave it as is.&rdquo; You have an employee that is retiring, so you will need to remove a full time employee from your work plan.",
+        "q3cF": "<span class='v-right' /> You have chosen: &ldquo;Yes. I need to remove one employee.&rdquo; <strong>That is the best answer.</strong>",
+        "q3dF": "<span class='v-wrong' /> You have chosen: &ldquo;I don&rsquo;t know.&rdquo; You have an employee that is retiring, so you will need to adjust a full time employee from your work plan.",
         "q4Text": "Do you need to indicate the need for training for the officers?&nbsp;",
         "q4a": "Yes, with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;",
         "q4b": "No, this is not needed in the work plan",
         "q4c": "Yes, with the activity &ldquo;Issue commercial fishing licenses&rdquo; under &ldquo;Mitigation&rdquo;",
         "q4d": "Yes, with the activity &ldquo;Renew commercial fishing licenses&rdquo; under &ldquo;Sub-activities&rdquo;",
         "q4e": "I don&rsquo;t know.",
-        "q4aF": "You have chosen: &ldquo;Yes, with the activity &lsquo;Manage and administer directorate&rsquo; under &lsquo;Deliverables&rsquo;&rdquo;. <strong>This is correct.</strong>",
-        "q4bF": "You have chosen: &ldquo;No, this is not needed in the work plan&rdquo;. It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
-        "q4cF": "You have chosen: &ldquo;Yes, with the activity &lsquo;Issue commercial fishing licenses&rsquo; under &lsquo;Mitigation&rsquo;&rdquo;. It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
-        "q4dF": "You have chosen: &ldquo;Yes, with the activity &lsquo;Renew commercial fishing licenses&rsquo; under &lsquo;Sub-activities&rsquo;&rdquo;. It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
-        "q4eF": "You have chosen: &ldquo;I don&rsquo;t know&rdquo;. It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;."
+        "q4aF": "<span class='v-right' /> You have chosen: &ldquo;Yes, with the activity &lsquo;Manage and administer directorate&rsquo; under &lsquo;Deliverables&rsquo;&rdquo;. <strong>This is correct.</strong>",
+        "q4bF": "<span class='v-wrong' /> You have chosen: &ldquo;No, this is not needed in the work plan&rdquo;. It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
+        "q4cF": "<span class='v-wrong' /> You have chosen: &ldquo;Yes, with the activity &lsquo;Issue commercial fishing licenses&rsquo; under &lsquo;Mitigation&rsquo;&rdquo;. It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
+        "q4dF": "<span class='v-wrong' /> You have chosen: &ldquo;Yes, with the activity &lsquo;Renew commercial fishing licenses&rsquo; under &lsquo;Sub-activities&rsquo;&rdquo;. It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
+        "q4eF": "<span class='v-wrong' /> You have chosen: &ldquo;I don&rsquo;t know&rdquo;. It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;."
     },
     "fr":
     {
@@ -335,9 +335,6 @@
   export default {
   data() {
  return {
-   thing1done: '',
-   thing2done: '',
-   thing3done: '',
    Q1:'',
    Q2:'',
    Q3:'',

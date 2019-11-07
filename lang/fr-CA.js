@@ -16,7 +16,7 @@ export default {
   MonitorControlFinances: "Surveiller et contrôler les finances",
   ConductPeriodicVarianceReporting: "Faire un rapport périodique sur les écarts",
   ContributeReporting: "Contribuer à l'établissement de rapports",
-  Test: "Test",
+  Test: "Examen",
   MarkCompleted: "Visualisation complétée",
   downloadPlan:"Télécharger un modèle Word du plan de travail",
   download360:"Télécharger l'aperçu 360",

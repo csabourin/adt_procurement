@@ -127,7 +127,7 @@
         {{ $t('CreateBudget') }}
       </microlearning>
       <microlearning size="140" time="15" tmp_imagePath="TestPlan.png">
-        Test
+        {{$t('Test')}}
       </microlearning>
     </div>
   </div>

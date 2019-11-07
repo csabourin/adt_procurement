@@ -22,7 +22,7 @@
         </td>
       </tr>
     </table>
-    <div class="scrollMe">
+    <div class="scrollMe" id="scrollableElement">
       <table border="1" cellspacing="0" cellpadding="5">
         <tr>
           <th class='planAct thNumbered'>{{$t('titleActivities')}}</th>
@@ -268,14 +268,35 @@
 <script>
   export default {
   data() {
- return {
-   govtPri: '',
-   deptPri: '',
-   dirPri: '',
-   Q1:'',
-   Q2:'',
-   Q3:''
- }
+   return {
+     govtPri: '',
+     deptPri: '',
+     dirPri: '',
+     Q1:'',
+     Q2:'',
+     Q3:''
+   }
+  },
+  methods: {
+    fScrollEl: function(elementID,targetID,offset){
+      //elementID[STRING] (ex: #scrollableElement)
+      //targetID[STRING] (ex: #deliverable)
+      //offset[NUM] (ex: 500)
+
+      // Solution #1
+      /*
+      1. Get targetID position in table (px)
+      2. ScrollLeft by result
+      */
+
+      //Solution #2
+      /*
+      1. Get targetID previous sibblings widths
+      2. ScrollLeft by result
+      */
+
+      document.getElementById(elementID).scrollLeft(offset);
+    }
   }
 }
 

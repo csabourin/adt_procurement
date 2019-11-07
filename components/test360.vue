@@ -1,4 +1,5 @@
 <template>
+  
   <div>
     <p>{{ $t('instructions') }}</p>
     <b-container>

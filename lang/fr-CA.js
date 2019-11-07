@@ -17,5 +17,12 @@ export default {
   ConductPeriodicVarianceReporting: "Faire un rapport périodique sur les écarts",
   ContributeReporting: "Contribuer à l'établissement de rapports",
   Test: "Test",
-  MarkCompleted: "Visualisation complétée"
+  MarkCompleted: "Visualisation complétée",
+  downloadPlan:"Télécharger un modèle Word du plan de travail",
+  download360:"Télécharger l'aperçu 360",
+  // Texte pour icones
+  t360Line1:"Aperçu",
+  t360Line2:"360",
+  dwnPlanLine1:"Plan de",
+  dwnPlanLine2:"travail"
 }

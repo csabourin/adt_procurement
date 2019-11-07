@@ -100,7 +100,7 @@
       <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly :title="$t('scan360Title')">
         <test360 />
       </b-modal>
-      <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly :title="$t('completewpDrafttitle')">
         <prepareWorkPlan />
       </b-modal>
       <b-modal no-stacking id="completewp" @hide="resumePlay()" size="xl" okOnly :title="$t('completewptitle')">
@@ -109,7 +109,9 @@
       <b-modal no-stacking id="adjustwp" @hide="resumePlay()" size="xl" okOnly :title="$t('adjustwptitle')">
         <adjustWorkplan />
       </b-modal>
-      <b-modal no-stacking id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly><span v-html="$t('IRLText')"></span></b-modal>
+      <b-modal no-stacking id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly>
+        <span v-html="$t('IRLText')"></span>
+      </b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" :title="$t('TakeTheQuiz')" size="xl" okOnly>
         <planQuiz />
       </b-modal>
@@ -346,6 +348,7 @@ button.accessibilityButton {
   "completewptitle":"Activity: Complete the Work plan",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "scan360Title":"Activity: Apply the 360 scan",
+  "completewpDrafttitle":"Activity: Complete the Work Plan Draft",
   "InRealLife":"In Real Life",
   "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about work plans. Go <strong>now</strong>. ",
   "gotIt":"Continue to next segment",
@@ -357,6 +360,7 @@ button.accessibilityButton {
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
   "scan360Title":"Activité: Appliquez l'apperçu 360",
+  "completewpDrafttitle":"Activité: Compléter l'ébauche du plan de travail",
   "InRealLife":"Dans la vraie vie",
   "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues des plans de travail. Allez-y <strong>maintenant</strong>.",
   "gotIt":"Continuer au segment suivant.",

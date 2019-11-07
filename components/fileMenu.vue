@@ -5,7 +5,11 @@
     </a>
     <b-modal id="fileFolder" :title="$t('fileFolder')" okOnly size="lg">
       <a href="ADT_Ressources_360.pdf" download target="_blank">
-        <genericFile iconWidth="128" :title="$t('Test360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" />
+        <genericFile
+        iconWidth="128"
+        :title="$t('download360')"
+        :line1="$t('t360Line1')"
+        :line2="$t('t360Line2')" />
         </a>
       <a href="WorkPlan_Template.docx" :title="$t('downloadPlan')">
       <genericFile
@@ -13,7 +17,8 @@
       :line2="$t('dwnPlanLine2')"      
       iconStyle="planBackground"      
       iconWidth="128"      
-      :title="$t('downloadPlan')" /></a>
+      :title="$t('downloadPlan')" />
+    </a>
     </b-modal>
   </span>
 </template>
@@ -32,20 +37,11 @@ export default {
 </script>
 <i18n>{
   "en":{
-  "fileFolder":"Download files and tools",
-  "t360Line1":"360",
-  "t360Line2":"Scan",
-  "downloadPlan":"Download a Word template of the work plan",
-  "dwnPlanLine1":"Work Plan",
-  "dwnPlanLine2":"Template"
+  "fileFolder":"Download files and tools"
+
 
   },
   "fr":{
-  "fileFolder":"Fichiers et outils à télécharger",
-  "downloadPlan":"Télécharger un modèle Word du plan de travail",
-  "t360Line1":"Aperçu",
-  "t360Line2":"360",
-  "dwnPlanLine1":"Plan de",
-  "dwnPlanLine2":"travail"
+  "fileFolder":"Fichiers et outils à télécharger"
   }
   }</i18n>

@@ -25,5 +25,6 @@ export default {
   downloadPlan: "Download a Word template of the work plan",
   download360:"Download the 360 Scan",
   dwnPlanLine1: "Work Plan",
-  dwnPlanLine2: "Template"
+  dwnPlanLine2: "Template",
+  fileFolder:"Download files and tools"
 }

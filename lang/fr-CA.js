@@ -18,6 +18,7 @@ export default {
   ContributeReporting: "Contribuer à l'établissement de rapports",
   Test: "Examen",
   MarkCompleted: "Visualisation complétée",
+  fileFolder:"Fichiers et outils à télécharger",
   downloadPlan:"Télécharger un modèle Word du plan de travail",
   download360:"Télécharger l'aperçu 360",
   // Texte pour icones

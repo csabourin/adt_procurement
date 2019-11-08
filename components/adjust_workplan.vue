@@ -65,7 +65,8 @@
           </td>
           <td rowspan="2" class='planDelivs'>
             <ul>
-              <li v-html="$t('pD2_1')"></li>
+              <transition name="bounce"><li v-if="Q2==3" v-html="$t('pD2_1r')"></li></transition>
+              <li v-if="Q2!=3" v-html="$t('pD2_1w')"></li>
                <li v-html="$t('pD2_2')"></li>
             </ul>
           </td>
@@ -195,7 +196,8 @@
         "pR1_2": "Manager",
         "pA2": "Issue commercial fishing licenses",
         "pSA2": "<ul><li>Review applicant requests</li><li>Check reliability</li><li>Issue licenses</li><li>Conduct inspections</li></ul>",
-        "pD2_1": "Issue license within 30 days of request",
+        "pD2_1w": "Issue license within 30 days of request",
+        "pD2_1r": "Issue license within 15 days of request",
         "pD2_2": "Issue 500 licenses per year",
         "pR2": "Overfishing",
         "pM2": "<li>Protect habitat</li><li>Place catching limits</li><li>Implement fishing seasons</li>",
@@ -279,7 +281,8 @@
         "pR1_2": "gestionnaire",
         "pA2": "D&eacute;livrer des permis de p&ecirc;che commerciale",
         "pSA2": "<ul><li>Examiner les demandes des requérants</li><li>V&eacute;rifier la fiabilit&eacute;</li><li>&Eacute;mettre des licences</li><li>Effectuer des inspections</li></ul>",
-        "pD2_1": "D&eacute;livrer la licence dans les 30 jours suivant la demande",
+        "pD2_1w": "D&eacute;livrer la licence dans les 30 jours suivant la demande",
+        "pD2_1r": "D&eacute;livrer la licence dans les 15 jours suivant la demande",
         "pD2_2": "D&eacute;livrer 500 licences par an",
         "pR2": "Surp&ecirc;che",
         "pM2": "<li> Prot&eacute;ger l'habitat</li><li> Fixer des limites de capture</li><li> Mettre en &oelig;uvre les saisons de p&ecirc;che</li>",
@@ -294,40 +297,40 @@
         "q1c": "Oui, dans la colonne «&nbsp;Atténuation&nbsp;», à côté de l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» ",
         "q1d": "Oui, dans les «&nbsp;Sous-activités&nbsp;», à côté de l'activité «&nbsp;Renouvellement de permis de pêche commerciale&nbsp;». ",
         "q1e": "Je ne sais pas.",
-        "q1aF": "Vous avez choisi : «&nbsp;Oui, dans la colonne «&nbsp;Livrables&nbsp;», à côté de l'activité «&nbsp;Gérer et administrer la direction&nbsp;». <strong>C'est la meilleure réponse!</strong>",
-        "q1bF": "Vous avez choisi : «&nbsp;Non, ce n'est pas nécessaire dans le plan de travail&nbsp;». La «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» est un livrable.",
-        "q1cF": "Vous avez choisi : «&nbsp;Oui, dans la colonne «&nbsp;Atténuation&nbsp;», à côté de l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;». Bien que la    «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d'atténuation dans certains cas, dans le présent plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
-        "q1dF": "Vous avez choisi : «&nbsp;Oui, dans les «Sous-activités&nbsp;», à côté de l'activité    «&nbsp;Renouveler les permis de pêche commerciale&nbsp;». Alors que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» pourrait être une «&nbsp;Sous-activité&nbsp;» dans certains cas, dans ce plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
-        "q1eF": "Vous avez choisi : «&nbsp;Je ne sais pas&nbsp;». La «&nbsp;mise en œuvre du nouveau logiciel&nbsp;» est un «&nbsp;Livrable&nbsp;».",
+        "q1aF": "<span class='v-right' /> Vous avez choisi : «&nbsp;Oui, dans la colonne «&nbsp;Livrables&nbsp;», à côté de l'activité «&nbsp;Gérer et administrer la direction&nbsp;». <strong>C'est la meilleure réponse!</strong>",
+        "q1bF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Non, ce n'est pas nécessaire dans le plan de travail&nbsp;». La «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» est un livrable.",
+        "q1cF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Oui, dans la colonne «&nbsp;Atténuation&nbsp;», à côté de l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;». Bien que la    «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d'atténuation dans certains cas, dans le présent plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
+        "q1dF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Oui, dans les «Sous-activités&nbsp;», à côté de l'activité    «&nbsp;Renouveler les permis de pêche commerciale&nbsp;». Alors que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» pourrait être une «&nbsp;Sous-activité&nbsp;» dans certains cas, dans ce plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
+        "q1eF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Je ne sais pas&nbsp;». La «&nbsp;mise en œuvre du nouveau logiciel&nbsp;» est un «&nbsp;Livrable&nbsp;».",
         "q2Text": "Que feriez-vous de l'énoncé suivant dans votre plan de travail : «&nbsp;Renouveler le permis dans les 30 jours suivant la demande&nbsp;»?",
         "q2a": "Rien, laissez-le tel quel.",
         "q2b": "Enlevez-le - ce n'est plus vrai.",
         "q2c": "Changez-le à «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
         "q2d": "Je ne sais pas.",
-        "q2aF": "Vous avez choisi : «&nbsp;Rien, laissez-le tel quel&nbsp;». Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
-        "q2bF": "Vous avez choisi : «&nbsp;Enlevez-le, ce n'est plus vrai&nbsp;» Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
-        "q2cF": "Vous avez choisi : Changez-le à «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;». <strong>C'est la meilleure réponse !</strong>",
-        "q2dF": "Vous avez choisi : «&nbsp;Je ne sais pas&nbsp;». Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
+        "q2aF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Rien, laissez-le tel quel&nbsp;». Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
+        "q2bF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Enlevez-le, ce n'est plus vrai&nbsp;» Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
+        "q2cF": "<span class='v-right' /> Vous avez choisi : Changez-le à «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;». <strong>C'est la meilleure réponse !</strong>",
+        "q2dF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Je ne sais pas&nbsp;». Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
         "q3Text": "Avez-vous besoin d'ajuster vos Ressources ?",
         "q3a": "Oui. J'ai besoin de plus de personnel.",
         "q3b": "Non. Je peux le laisser tel quel.",
         "q3c": "Oui. J'ai besoin d'ajuster mes employés à plein temps.",
         "q3d": "Je ne sais pas.",
-        "q3aF": "Vous avez choisi : «&nbsp;Oui. Je dois ajouter du personnel.&nbsp;» Vous n'avez pas reçu d'employés à temps plein supplémentaires, vous ne pouvez donc pas ajouter d'employés supplémentaires.",
-        "q3bF": "Vous avez choisi : «&nbsp;Non. Je peux le laisser tel quel.&nbsp;» Vous avez un employé qui prend sa retraite, vous devrez donc ajuster un employé à temps plein de votre plan de travail.",
-        "q3cF": "Vous avez choisi : «&nbsp;Oui. J'ai besoin d'ajuster mes employés à plein temps.&nbsp;» <strong>C'est la meilleure réponse!</strong>",
-        "q3dF": "Vous avez choisi : «&nbsp;Je ne sais pas.&nbsp;» Vous avez un employé qui prend sa retraite, vous devrez donc ajuster un employé à temps plein de votre plan de travail.",
+        "q3aF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Oui. Je dois ajouter du personnel.&nbsp;» Vous n'avez pas reçu d'employés à temps plein supplémentaires, vous ne pouvez donc pas ajouter d'employés supplémentaires.",
+        "q3bF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Non. Je peux le laisser tel quel.&nbsp;» Vous avez un employé qui prend sa retraite, vous devrez donc ajuster un employé à temps plein de votre plan de travail.",
+        "q3cF": "<span class='v-right' /> Vous avez choisi : «&nbsp;Oui. J'ai besoin d'ajuster mes employés à plein temps.&nbsp;» <strong>C'est la meilleure réponse!</strong>",
+        "q3dF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Je ne sais pas.&nbsp;» Vous avez un employé qui prend sa retraite, vous devrez donc ajuster un employé à temps plein de votre plan de travail.",
         "q4Text": "Avez-vous besoin d'indiquer le besoin de formation pour les agents?",
         "q4a": "Oui, avec l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous«&nbsp;Livrables&nbsp;».",
         "q4b": "Non, ce n'est pas nécessaire dans le plan de travail.",
         "q4c": "Oui, avec l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» sous «&nbsp;Atténuation&nbsp;».",
         "q4d": "Oui, avec l'activité «&nbsp;Renouvellement de permis de pêche commerciale&nbsp;» sous «&nbsp;Sous-activités&nbsp;».",
         "q4e": "Je ne sais pas.",
-        "q4aF": "Vous avez choisi : Oui, avec l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;». <strong>Il s’agit de la bonne réponse</strong>",
-        "q4bF": "Vous avez choisi : «&nbsp;Non, ce n'est pas nécessaire dans le plan de travail&nbsp;». Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
-        "q4cF": "Vous avez choisi : «&nbsp;Oui, avec l'activité Délivrance de permis de pêche commerciale&nbsp;» sous «&nbsp;Atténuation&nbsp;». Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
-        "q4dF": "Vous avez choisi : Oui, avec l'activité «&nbsp;Renouvellement des permis de pêche commerciale&nbsp;» sous «&nbsp;Sous-activités&nbsp;». Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
-        "q4eF": "Vous avez choisi : «&nbsp;Je ne sais pas&nbsp;». Il devrait être inclus dans l'activité  «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;»."
+        "q4aF": "<span class='v-right' /> Vous avez choisi : Oui, avec l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;». <strong>Il s’agit de la bonne réponse</strong>",
+        "q4bF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Non, ce n'est pas nécessaire dans le plan de travail&nbsp;». Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
+        "q4cF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Oui, avec l'activité Délivrance de permis de pêche commerciale&nbsp;» sous «&nbsp;Atténuation&nbsp;». Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
+        "q4dF": "<span class='v-wrong' /> Vous avez choisi : Oui, avec l'activité «&nbsp;Renouvellement des permis de pêche commerciale&nbsp;» sous «&nbsp;Sous-activités&nbsp;». Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
+        "q4eF": "<span class='v-wrong' /> Vous avez choisi : «&nbsp;Je ne sais pas&nbsp;». Il devrait être inclus dans l'activité  «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;»."
     }
 }
 </i18n>

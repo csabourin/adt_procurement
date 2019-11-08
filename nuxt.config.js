@@ -12,12 +12,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/adt_finance-R1/favicon.ico' },
-      { rel:'stylesheet', href:'https://fonts.googleapis.com/css?family=Roboto&display=swap' },
-      { rel:'stylesheet', href:'https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap' }
     ]
   },
-  router:{
-    base:'/adt_finance-R1/'
+  router: {
+    base: '/adt_finance-R1/'
   },
   /*
    ** Customize the progress-bar color
@@ -82,24 +82,32 @@ export default {
    ** Build configuration
    */
   build: {
-      loaders:{
-      rules:[{
-    test: /\.(pdf)(\?.*)?$/,
-    loader: 'url-loader'
-    }]
+    loaders: {
+      rules: [{
+        test: /\.(ico)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          name: '[path][name].[ext]'
+      }
 
-    },
+    }]},
     /*
      ** You can extend webpack config here
      */
     extend(config, ctx) {
       config.module.rules.push({
-          test: /\.(pdf|docx|xlsx)(\?.*)?$/,
-          loader: 'file-loader',
-          options: {
+        test: /\.(pdf|docx|xlsx)(\?.*)?$/,
+        loader: 'file-loader',
+        options: {
           name: '[path][name].[ext]'
         }
-        })
+      },{
+        test: /\.(vtt)$/i,
+        use: [{
+          loader: 'file-loader'
+        }]
+      })
+
     }
   }
 }

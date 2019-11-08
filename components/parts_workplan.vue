@@ -1,11 +1,10 @@
 <template>
   <span>
-    <div style="float:right"><a href="WorkPlan_Template.docx" :title="$t('downloadPlan')">
-      <genericFile       :line1="$t('dwnPlanLine1')"      :line2="$t('dwnPlanLine2')"      iconStyle="planBackground"      iconWidth="64"      :title="$t('downloadPlan')" />
-    </a>
-    </div><h2 v-html="$t('pwpTitle')"></h2>
-      <p>&nbsp;</p>
-    
+    <div style="float:right">
+      <download filename="WorkPlan_Template.docx" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" iconStyle="planBackground" size="64" :title="$t('downloadPlan')" />
+    </div>
+    <h2 v-html="$t('pwpTitle')"></h2>
+    <p>&nbsp;</p>
     <table class='tableColoured'>
       <tr>
         <td colspan='8' class='govtPri'>
@@ -24,7 +23,7 @@
       </tr>
     </table>
     <div>
-      <b-card no-body >
+      <b-card no-body>
         <b-tabs class="thNumbered" card fill>
           <b-tab class='planAct thNumbered' :title="$t('titleActivities')" active>
             <b-card-text>
@@ -36,36 +35,36 @@
               <p v-html="$t('pwpPlanSubAct')"></p>
             </b-card-text>
           </b-tab>
-        <b-tab class='planDelivs thNumbered' :title="$t('titleDeliverables')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanDelivs')"></p>
-          </b-card-text>
-        </b-tab>
-        <b-tab class='planRisk thNumbered' :title="$t('titleRisk')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanRisk')"></p>
-          </b-card-text>
-        </b-tab>
-        <b-tab class='planLikely thNumbered' :title="$t('titleLikelihood')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanLikely')"></p>
-          </b-card-text>
-        </b-tab>
-        <b-tab class='planImpact thNumbered' :title="$t('titleImpact')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanImpact')"></p>
-          </b-card-text>
-        </b-tab>
-        <b-tab class='planMitigat thNumbered' :title="$t('titleMitigation')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanMitigat')"></p>
-          </b-card-text>
-        </b-tab>
-        <b-tab class='planRes thNumbered' :title="$t('titleResources')">
-          <b-card-text>
-            <p v-html="$t('pwpPlanRes')"></p>
-          </b-card-text>
-        </b-tab>
+          <b-tab class='planDelivs thNumbered' :title="$t('titleDeliverables')">
+            <b-card-text>
+              <p v-html="$t('pwpPlanDelivs')"></p>
+            </b-card-text>
+          </b-tab>
+          <b-tab class='planRisk thNumbered' :title="$t('titleRisk')">
+            <b-card-text>
+              <p v-html="$t('pwpPlanRisk')"></p>
+            </b-card-text>
+          </b-tab>
+          <b-tab class='planLikely thNumbered' :title="$t('titleLikelihood')">
+            <b-card-text>
+              <p v-html="$t('pwpPlanLikely')"></p>
+            </b-card-text>
+          </b-tab>
+          <b-tab class='planImpact thNumbered' :title="$t('titleImpact')">
+            <b-card-text>
+              <p v-html="$t('pwpPlanImpact')"></p>
+            </b-card-text>
+          </b-tab>
+          <b-tab class='planMitigat thNumbered' :title="$t('titleMitigation')">
+            <b-card-text>
+              <p v-html="$t('pwpPlanMitigat')"></p>
+            </b-card-text>
+          </b-tab>
+          <b-tab class='planRes thNumbered' :title="$t('titleResources')">
+            <b-card-text>
+              <p v-html="$t('pwpPlanRes')"></p>
+            </b-card-text>
+          </b-tab>
         </b-tabs>
       </b-card>
     </div>
@@ -118,20 +117,10 @@
   }
 </i18n>
 <script>
-  import genericFile from "~/components/icons/genFileIcon"
-  export default {
-  data() {
-    return {
-      focusOn: 1
-    }
-  },
-  methods: {
-    makeLarge(e) {
-      this.focusOn = 8
-    }
-  },
-  components:{
-    genericFile
+  import download from "~/components/fileDownload"
+export default {
+  components: {
+    download
   }
 }
 
@@ -259,10 +248,14 @@
 .planRes:before {
   background-color: #c6957f;
 }
+
 </style>
 <style>
-.thNumbered .nav-item{position:relative;}
-.thNumbered .nav-item:before{
+.thNumbered .nav-item {
+  position: relative;
+}
+
+.thNumbered .nav-item:before {
   position: absolute;
   counter-increment: wpParts;
   content: counter(wpParts);
@@ -274,25 +267,72 @@
   color: white;
 }
 
-.thNumbered .nav-item:nth-of-type(1):before {background-color: #718EA0}
-.thNumbered .nav-item:nth-of-type(2):before {background-color: #7fc69a}
-.thNumbered .nav-item:nth-of-type(3):before {background-color: #7F8AC6;}
-.thNumbered .nav-item:nth-of-type(4):before {background-color: #C3C67F;}
-.thNumbered .nav-item:nth-of-type(5):before {background-color: #775F75;}
-.thNumbered .nav-item:nth-of-type(6):before {background-color: #607293;}
-.thNumbered .nav-item:nth-of-type(7):before {background-color: #c67fa3;}
-.thNumbered .nav-item:nth-of-type(8):before {background-color: #c6957f;}
-.thNumbered .nav-item:nth-of-type(1) {    background-color: #e2e8ec;}
-.thNumbered .nav-item:nth-of-type(2) {    background-color: #dcefe3;}
-.thNumbered .nav-item:nth-of-type(3) {    background-color: #dfe2f1;}
-.thNumbered .nav-item:nth-of-type(4) {    background-color: #f0f1df;}
-.thNumbered .nav-item:nth-of-type(5) {    background-color: #e1dce1;}
-.thNumbered .nav-item:nth-of-type(6) {    background-color: #e3e7ed;}
-.thNumbered .nav-item:nth-of-type(7) {    background-color: #f1dfe8;}
-.thNumbered .nav-item:nth-of-type(8) {    background-color: #f1e5df;}
+.thNumbered .nav-item:nth-of-type(1):before {
+  background-color: #718EA0
+}
+
+.thNumbered .nav-item:nth-of-type(2):before {
+  background-color: #7fc69a
+}
+
+.thNumbered .nav-item:nth-of-type(3):before {
+  background-color: #7F8AC6;
+}
+
+.thNumbered .nav-item:nth-of-type(4):before {
+  background-color: #C3C67F;
+}
+
+.thNumbered .nav-item:nth-of-type(5):before {
+  background-color: #775F75;
+}
+
+.thNumbered .nav-item:nth-of-type(6):before {
+  background-color: #607293;
+}
+
+.thNumbered .nav-item:nth-of-type(7):before {
+  background-color: #c67fa3;
+}
+
+.thNumbered .nav-item:nth-of-type(8):before {
+  background-color: #c6957f;
+}
+
+.thNumbered .nav-item:nth-of-type(1) {
+  background-color: #e2e8ec;
+}
+
+.thNumbered .nav-item:nth-of-type(2) {
+  background-color: #dcefe3;
+}
+
+.thNumbered .nav-item:nth-of-type(3) {
+  background-color: #dfe2f1;
+}
+
+.thNumbered .nav-item:nth-of-type(4) {
+  background-color: #f0f1df;
+}
+
+.thNumbered .nav-item:nth-of-type(5) {
+  background-color: #e1dce1;
+}
+
+.thNumbered .nav-item:nth-of-type(6) {
+  background-color: #e3e7ed;
+}
+
+.thNumbered .nav-item:nth-of-type(7) {
+  background-color: #f1dfe8;
+}
+
+.thNumbered .nav-item:nth-of-type(8) {
+  background-color: #f1e5df;
+}
 
 .thNumbered .card-header {
-    padding: 0px 9px;
+  padding: 0px 9px;
 }
 
 </style>

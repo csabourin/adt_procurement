@@ -14,11 +14,11 @@ export default {
   props: {
     line1: {
       type: String,
-      default: "A"
+      default: "Download"
     },
     line2: {
       type: String,
-      default: "A"
+      default: "Télécharger"
     },
     iconStyle: {
       type: String,

@@ -1,23 +1,40 @@
 <template>
-  
   <div>
     <p>{{ $t('instructions') }}</p>
     <b-container>
       <b-row>
-        <b-col><a href="ADT_Ressources_360.pdf" download>
-            <genericFile iconWidth="128" :title="$t('Test360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" /></a><br>{{$t('Test360')}}</b-col>
         <b-col>
-          <p>
-            <genericFile iconWidth="128" :line1="$t('wpLine1')" :line2="$t('wpLine2')" iconStyle="planBackground" :title="$t('wpExample')" /><br>{{$t('wpExample')}}</p>
-        </b-col>
+          <download
+           filename="ADT_Ressources_360.pdf"
+           iconColor="planBackground"
+           size=128 :title="$t('Test360')"
+           :line1="$t('t360Line1')"
+           :line2="$t('t360Line2')" />
+          <br>{{$t('Test360')}}</b-col>
         <b-col>
-          <p>
-            <genericFile iconWidth="128" :line1="$t('bLine1')" :line2="$t('bLine2')" iconStyle="spendBackground" :title="$t('bExample')" /><br>{{$t('bExample')}}</p>
-        </b-col>
+          <download
+           filename="WorkPlan_lastYear.pdf"
+           iconColor="planBackground"
+           size=128 :title="$t('wpExample')"
+           :line1="$t('wpLine1')"
+           :line2="$t('wpLine2')" />
+          <br>{{$t('wpExample')}}</b-col>
         <b-col>
-          <p>
-            <genericFile iconWidth="128" :line1="$t('rLine1')" :line2="$t('rLine2')" iconStyle="reportBackground" :title="$t('rExample')" /><br>{{$t('rExample')}}</p>
-        </b-col>
+          <download
+           filename="ADT_Ressources_360.pdf"
+           iconColor="spendBackground"
+           size=128 :title="$t('bExample')"
+           :line1="$t('bLine1')"
+           :line2="$t('bLine2')" />
+          <br>{{$t('bExample')}}</b-col>
+        <b-col>
+          <download
+           filename="ADT_Ressources_360.pdf"
+           iconColor="reportBackground"
+           size=128 :title="$t('rExample')"
+           :line1="$t('rLine1')"
+           :line2="$t('rLine2')" />
+          <br>{{$t('rExample')}}</b-col>
       </b-row>
     </b-container>
   </div>
@@ -44,7 +61,7 @@
   "Test360":"Aperçu 360",
   "t360Line1":"Aperçu",
   "t360Line2":"360",
-  "wpExample":"Plan de travail",
+  "wpExample":"Plan de travail de l'année passée",
   "wpLine1":"Plan de",
   "wpLine2":"travail",
   "bExample":"Budget de l'année passée",
@@ -57,15 +74,10 @@
   }
 </i18n>
 <script type="text/javascript">
-import Scan360 from "~/components/icons/360scan"
-import genericFile from "~/components/icons/genFileIcon"
+import download from "~/components/fileDownload"
 export default {
-  data() {
-    return Scan360
-  },
   components: {
-    Scan360,
-    genericFile
+    download
   }
 }
 

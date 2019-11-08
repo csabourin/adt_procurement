@@ -32,6 +32,10 @@ export default {
 
 </script>
 <style scoped>
+.Scan360Background {
+  fill: #607293;
+  opacity: 0.7;
+}
 .planBackground {
   fill: #608a93;
   opacity: 0.7;

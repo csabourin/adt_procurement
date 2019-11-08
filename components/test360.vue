@@ -29,7 +29,7 @@
           <br>{{$t('bExample')}}</b-col>
         <b-col>
           <download
-           filename="ADT_Ressources_360.pdf"
+           filename="ReportLast.docx"
            iconColor="reportBackground"
            size=128 :title="$t('rExample')"
            :line1="$t('rLine1')"

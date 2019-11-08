@@ -13,7 +13,7 @@
         <nuxt-link :to="localePath('buildWP')">{{$t('BuildWorkPlan')}}</nuxt-link>
       </li>
       <li>
-        <nuxt-link isActive="false" to="null">{{$t('CreateBudget')}}</nuxt-link>
+        <nuxt-link isActive="false" :to="localePath('createBudget')">{{$t('CreateBudget')}}</nuxt-link>
       </li>
       <li>
         <nuxt-link to="/">{{$t('Test')}}</nuxt-link>

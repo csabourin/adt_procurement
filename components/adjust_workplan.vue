@@ -413,39 +413,39 @@ td {
 }
 
 .planAct {
-  border-top: 2px solid #718EA0;
+  border-top: 2px solid #577a90;
   background-color: #E2E8EC;
 }
 
 .planAct:before {
-  background-color: #718EA0;
+  background-color: #577a90;
 }
 
 .planSubAct {
-  border-top: 2px solid #7fc69a;
+  border-top: 2px solid #3A8251;
   background-color: #dcefe3;
 }
 
 .planSubAct:before {
-  background-color: #7FC69A;
+  background-color: #3A8251;
 }
 
 .planDelivs {
-  border-top: 2px solid #7F8AC6;
+  border-top: 2px solid #616EB8;
   background-color: #dfe2f1;
 }
 
 .planDelivs:before {
-  background-color: #7F8AC6;
+  background-color: #616EB8;
 }
 
 .planRisk {
-  border-top: 2px solid #C3C67F;
+  border-top: 2px solid #8D9245;
   background-color: #f0f1df;
 }
 
 .planRisk:before {
-  background-color: #C3C67F;
+  background-color: #8D9245;
 }
 
 .planLikely {
@@ -467,21 +467,21 @@ td {
 }
 
 .planMitigat {
-  border-top: 2px solid #c67fa3;
+  border-top: 2px solid #B35685;
   background-color: #f1dfe8;
 }
 
 .planMitigat:before {
-  background-color: #c67fa3;
+  background-color: #B35685;
 }
 
 .planRes {
-  border-top: 2px solid #c6957f;
+  border-top: 2px solid #C35522;
   background-color: #f1e5df;
 }
 
 .planRes:before {
-  background-color: #c6957f;
+  background-color: #C35522;
 }
 
 .thNumbered {

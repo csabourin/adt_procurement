@@ -22,7 +22,7 @@
     <section class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }">
       <microlearning path="planKey" time="2" completion=100 imagePath="KeyMessP.png">{{$t('KeyMessages')}}</microlearning>
       <microlearning path="buildWP" time="20"  imagePath="KeyMessR.png" completion=80>{{$t('BuildWorkPlan')}}</microlearning>
-      <microlearning time="20" completion=10 tmp_imagePath="CreateBud.png">{{$t('CreateBudget')}}</microlearning>
+      <microlearning time="20" path="createBudget" completion=10 tmp_imagePath="CreateBud.png">{{$t('CreateBudget')}}</microlearning>
       <microlearning time="15" tmp_imagePath="TestPlan.png">{{$t('Test')}}</microlearning>
     </section>
     <hr class="planHr">

@@ -41,7 +41,7 @@
         <planLinks /><!-- {{ $t('gotIt') }} -->
       </b-modal>
       <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
-        <partsOfWorkPlan />
+        <AnalyzeBudgetKT />
       </b-modal>
       <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly :title="$t('scan360Title')">
         <test360 />
@@ -82,7 +82,7 @@
 import microlearning from '~/components/microlearning'
 import partsOfWorkPlan from '~/components/parts_workplan'
 import planLinks from '~/components/plan_links'
-import prepareWorkPlan from '~/components/prepare_workplan'
+import AnalyzeBudgetKT from '~/components/AnalyzeBudgetKT'
 import completeWorkplan from '~/components/complete_workplan'
 import adjustWorkplan from '~/components/adjust_workplan'
 import test360 from '~/components/test360'
@@ -108,9 +108,8 @@ export default {
   components: {
     microlearning,
     planLinks,
-    test360,
+    AnalyzeBudgetKT,
     partsOfWorkPlan,
-    prepareWorkPlan,
     completeWorkplan,
     adjustWorkplan,
     planQuiz,

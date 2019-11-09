@@ -48,7 +48,7 @@ export default {
   ],
   layoutTransition: {
     name: "layout",
-    mode: "in-out"
+    mode: "out-in"
   },
   /*
    ** Axios module configuration

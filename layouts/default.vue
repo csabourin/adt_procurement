@@ -17,7 +17,7 @@
     </b-row>
     </b-row>
     <b-row>
-      <!-- <transition-group name="fade"> -->
+      <!-- <transition-group tag="div" name="fade" class="grid"> -->
       <b-col class="col-md-3" v-if="MenuShowing">
         <transition appear mode="in-out" name="fade">
           <content-map />

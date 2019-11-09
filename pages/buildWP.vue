@@ -253,7 +253,7 @@ export default {
 </script>
 <style scoped>
 body {
-  counter-reset: CBepisode;
+  
 }
 
 video {
@@ -269,6 +269,7 @@ video {
 }
 
 #bar {
+  counter-reset: WPepisode;
   display: flex;
   flex-wrap: wrap;
   width: 60vw;
@@ -303,8 +304,8 @@ video {
 }
 
 .chaptersLink:before {
-  counter-increment: CBepisode;
-  content: "0"counter(CBepisode);
+  counter-increment: WPepisode;
+  content: "0"counter(WPepisode);
   position: absolute;
   background-color: #587C84;
   height: 2em;

@@ -1,6 +1,5 @@
 <template>
-  <transition name="fade">
-  <div class="contentMap">
+    <div class="contentMap">
     <ul>
       <nuxt-link :to="localePath('index')">
         <h3>{{$t('homePage')}}</h3>
@@ -49,7 +48,6 @@
       </li>
     </ul>
   </div>
-</transition>
 </template>
 <style type="text/css" scoped>
 

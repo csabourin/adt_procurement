@@ -197,9 +197,6 @@ export default {
 }
 </script>
 <style scoped>
-body {
-  counter-reset: episode;
-}
 
 video {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -222,6 +219,7 @@ video {
   cursor: pointer;
   color: #CCC;
   justify-content: space-evenly;
+  counter-reset: episode;
 }
 
 .chaptersLink {

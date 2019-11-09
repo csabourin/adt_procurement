@@ -17,14 +17,16 @@
     </b-row>
     </b-row>
     <b-row>
-      <b-col class="col-md-3" v-if="MenuShowing" key="99">
-        <transition appear name="fade" mode="out-in" key="100">
-          <content-map v-if="MenuShowing" />
+      <!-- <transition-group name="fade"> -->
+      <b-col class="col-md-3" v-if="MenuShowing">
+        <transition appear mode="in-out" name="fade">
+          <content-map />
         </transition>
       </b-col>
       <b-col>
         <nuxt />
       </b-col>
+    <!-- </transition-group> -->
     </b-row>
   </b-container>
 </template>
@@ -125,12 +127,13 @@ body {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 1s;
+  transition: all .5s ease;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
-  height:0;
+  transform: translateX(-100%);
 }
+
 
 .row.navBar {
   background-color: #fff;

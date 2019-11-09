@@ -123,7 +123,7 @@
       <microlearning path="buildWP" youAreHere imagePath="KeyMessR.png" size="140" time="20" completion="80">
         {{ $t('BuildWorkPlan') }}
       </microlearning>
-      <microlearning size="140" path="createBudget" time="20" completion="10" tmp_imagePath="CreateBud.png">
+      <microlearning size="140" path="createBudget" time="20" completion="10" imagePath="CreateBud.png">
         {{ $t('CreateBudget') }}
       </microlearning>
       <microlearning size="140" time="15" tmp_imagePath="TestPlan.png">

@@ -162,14 +162,14 @@ export default {
       this.isPlayingNow = videoPlayer.currentTime
       const isNow = this.isPlayingNow
       this.currentFrame = this.startTime.findIndex(element => element === isNow)
-      localStorage.setItem("WPCurrentPlaying", this.currentFrame)
+      localStorage.setItem("CreateBudgetCurrentPlaying", this.currentFrame)
       this.$nextTick(function() {
         setTimeout(function() { videoPlayer.play() }, 250)
         this.justSeeked = false
       })
     },
     resumePosition() {
-      const savedPosition = this.startTime[localStorage.getItem("WPCurrentPlaying")]
+      const savedPosition = this.startTime[localStorage.getItem("CreateBudgetCurrentPlaying")]
       if (savedPosition) {
         this.$refs.videoplayer.currentTime = savedPosition
       }
@@ -181,7 +181,7 @@ export default {
         const isNow = this.isPlayingNow
         this.hasPlayed = v.played.length
         this.currentFrame = this.endTime.findIndex(element => element > isNow)
-        localStorage.setItem("WPCurrentPlaying", this.currentFrame)
+        localStorage.setItem("CreateBudgetCurrentPlaying", this.currentFrame)
         this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
         if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
         this.isPlayingSoon = v.currentTime

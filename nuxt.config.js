@@ -18,7 +18,7 @@ export default {
     ]
   },
   router: {
-    base: '/adt_finance-R1/'
+    // base: '/adt_finance-R1/'
   },
   /*
    ** Customize the progress-bar color

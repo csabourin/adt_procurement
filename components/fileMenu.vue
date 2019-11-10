@@ -15,7 +15,7 @@
   </span>
 </template>
 <script type="text/javascript">
-import fileIcon from '~/components/icons/fileIcon'
+import fileIcon from '~/components/icons/FileIcon'
 import download from "~/components/fileDownload"
 export default {
   components: {

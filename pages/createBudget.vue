@@ -43,7 +43,7 @@
       <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
         <AnalyzeBudgetKT />
       </b-modal>
-      <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly :title="$t('scan360Title')">
+      <b-modal id="threesixty" @hide="resumePlay()" size="xl" okOnly :title="$t('scan360Title')">
         <budgetAnalyzeActivity />
       </b-modal>
       <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly :title="$t('completewpDrafttitle')">

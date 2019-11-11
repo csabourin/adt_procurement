@@ -44,10 +44,10 @@
         <AnalyzeBudgetKT />
       </b-modal>
       <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly :title="$t('scan360Title')">
-        <test360 />
+        <budgetAnalyzeActivity />
       </b-modal>
       <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly :title="$t('completewpDrafttitle')">
-        <prepareWorkPlan />
+        <!--  -->
       </b-modal>
       <b-modal no-stacking id="completewp" @hide="resumePlay()" size="xl" okOnly :title="$t('completewptitle')">
         <completeWorkplan />
@@ -80,7 +80,7 @@
 </template>
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
-import partsOfWorkPlan from '~/components/parts_workplan'
+import budgetAnalyzeActivity from '~/components/budgetAnalyseActivity'
 import planLinks from '~/components/plan_links'
 import AnalyzeBudgetKT from '~/components/AnalyzeBudgetKT'
 import completeWorkplan from '~/components/complete_workplan'
@@ -109,7 +109,7 @@ export default {
     microlearning,
     planLinks,
     AnalyzeBudgetKT,
-    partsOfWorkPlan,
+    budgetAnalyzeActivity,
     completeWorkplan,
     adjustWorkplan,
     planQuiz,

@@ -2,8 +2,7 @@
   <span>
     <p><strong>Activity</strong></p>
     <p><span>Click on any question marks and answer the question that appears.&nbsp;</span></p>
-    <p><span>Salary</span></p><br>
-    <table dir="ltr" border="1" cellspacing="0" cellpadding="5">
+    <table dir="ltr" border="1" cellspacing="0" cellpadding="5" width="100%" class="AnalyzeBudgetTable">
       <colgroup>
         <col width="132" />
         <col width="70" />
@@ -36,7 +35,7 @@
           <td>&nbsp;</td>
           <td>&nbsp;</td>
         </tr>
-        <tr>
+        <tr style="background-color:#8e7cc3" >
           <td>Salary</td>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
@@ -57,7 +56,7 @@
           <td>$460,000</td>
           <td>$475,000</td>
           <td v-b-modal.question1>
-            <strong v-if="q1Answer">$430,000</strong><span class="questionMark" v-else></span>
+            <strong v-if="q1Answer">$430,000</strong><a href="javascript:" class="questionMark" v-else>?</a>
           </td>
           <td v-b-modal.question1><strong v-if="q1Answer">$13,333</strong><span v-else></span>
           </td>
@@ -79,7 +78,7 @@
           <td> </td>
           <td>&nbsp;</td>
         </tr>
-        <tr>
+        <tr style="background-color:#8e7cc3">
           <td>O&amp;M</td>
           <td> </td>
           <td> </td>
@@ -99,8 +98,8 @@
           <td>Software License</td>
           <td>$0</td>
           <td>$0</td>
-          <td>$3,000</td>
-          <td> </td>
+          <td v-b-modal.question2><strong v-if="q2Answer">$3,000</strong><a href="javascript:" class="questionMark" v-else>?</a></td>
+          <td v-b-modal.question2> </td>
           <td>new software, annual cost $1,000 X 3 FTEs</td>
         </tr>
         <tr>
@@ -145,7 +144,7 @@
         </tr>
       </tbody>
     </table>
-    <b-modal id="question1" okOnly>
+    <b-modal id="question1" okOnly title="Salary">
       <ul>
         <li><span>An employee&rsquo;s annual salary is $60,000 per year. You know that they will retire on July 1 of next year and won&rsquo;t be replaced, and&nbsp;</span></li>
         <li><span>You plan on getting a casual employee for 4 months for a total of $13,333.</span></li>
@@ -226,7 +225,7 @@
           <td>
             <p><span>Annual Forecast</span></p>
           </td>
-          <td v-b-modal.question2>?</td>
+          <td >?</td>
         </tr>
         <tr>
           <td>
@@ -241,7 +240,7 @@
           <td>
             <p><span>$1,500</span></p>
           </td>
-          <td v-b-modal.question2>?</td>
+          <td>?</td>
         </tr>
       </tbody>
     </table><br>
@@ -268,23 +267,23 @@ export default {
 
 </script>
 <style type="text/css">
-td{position: relative;}
-	.questionMark:after{
-		display: block;
-		font-family: Roboto Medium;
-		font-size: 48px;
-		position: absolute;
-		background-color: #d0d2ec;
-		border: 2px solid #eee;
-		border-radius: 50px;
-		text-align: center;
-		content:"?";
-		width:75px;
-		height:75px;
-		left:70%;
-		top:0;
-		z-index: 9999;
-		cursor: pointer;
-
-	}
+.AnalyzeBudgetTable td{position: relative;}
+	.questionMark {
+    display: block;
+    font-family: Roboto Medium;
+    font-size: 36px;
+    position: absolute;
+    background-color: #d0d2ec;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    text-align: center;
+    content: "?";
+    box-shadow: 3px 3px 3px rgba(50, 50, 51, .3);
+    width: 60px;
+    height: 60px;
+    left: 70%;
+    top: -.5em;
+    z-index: 9999;
+    cursor: pointer;
+}
 </style>

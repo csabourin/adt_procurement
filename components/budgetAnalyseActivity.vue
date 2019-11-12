@@ -57,9 +57,9 @@
           <td>$460,000</td>
           <td>$475,000</td>
           <td v-b-modal.question1>
-            <transition name="bounce"><span v-if="q1Answer">$430,000</span><span v-else>?</span></transition>
+            <strong v-if="q1Answer">$430,000</strong><span class="questionMark" v-else></span>
           </td>
-          <td v-b-modal.question1><transition name="bounce"><span v-if="q1Answer">$13,333</span><span v-else>?</span></transition>
+          <td v-b-modal.question1><strong v-if="q1Answer">$13,333</strong><span v-else></span>
           </td>
           <td>manager, 2 officers, 2 analysts, 1 jr. officer, 1 jr. analyst, admin, 1 officer retiring July 1, casual 4 months</td>
         </tr>
@@ -67,8 +67,8 @@
           <td>TOTAL</td>
           <td>$460,000</td>
           <td>$475,000</td>
-          <td>$430,000</td>
-          <td>$13,333</td>
+          <td><span v-if="q1Answer">$430,000</span></td>
+          <td><span v-if="q1Answer">$13,333</span></td>
           <td>&nbsp;</td>
         </tr>
         <tr>
@@ -159,8 +159,8 @@
         <option value=0>$475,000 Non-Discretionary&nbsp;</option>
       </select><br>
       <span v-if="q1Answer"><p>
-          <transition name="fade"><span v-if="q1Answer==2" class="v-right" /><span v-else class="v-wrong"></span></transition>
-          Feedback: The correct answer is b. $430,000 Non-Discretionary and $13,333 Discretionary. Your starting point is the current year&rsquo;s budget of $475,000. For the employee that is retiring and not being replaced, you need to subtract nine months (July to March) of the $60,000 in annual salary ($475,000-$45,000=$430,000). Since casual employees are not part of the org chart, they are considered discretionary.&nbsp;</p> <br>
+          <transition name="fade" mode="out-in"><span v-if="q1Answer==2" class="v-right" ><strong>Correct Answer!</strong></span><span v-else class="v-wrong"><strong>Wrong Answer!</strong></span></transition>
+          The correct answer is <strong>$430,000 Non-Discretionary</strong> and <strong>$13,333 Discretionary</strong>.</p><p> Your starting point is the current year&rsquo;s budget of $475,000. For the employee that is retiring and not being replaced, you need to subtract nine months (July to March) of the $60,000 in annual salary ($475,000-$45,000=$430,000). Since casual employees are not part of the org chart, they are considered discretionary.&nbsp;</p> <br>
             <p><span>It is important to analyze any variances so the figures in your proposed budget are accurate. To discover the reason for a variance, you could speak with the previous manager, your admin, or your director. A report from Finance may provide the variance explanation.&nbsp;</span></p>
 </span>
     </b-modal>
@@ -267,3 +267,24 @@ export default {
 }
 
 </script>
+<style type="text/css">
+td{position: relative;}
+	.questionMark:after{
+		display: block;
+		font-family: Roboto Medium;
+		font-size: 48px;
+		position: absolute;
+		background-color: #d0d2ec;
+		border: 2px solid #eee;
+		border-radius: 50px;
+		text-align: center;
+		content:"?";
+		width:75px;
+		height:75px;
+		left:70%;
+		top:0;
+		z-index: 9999;
+		cursor: pointer;
+
+	}
+</style>

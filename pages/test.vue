@@ -4,22 +4,24 @@
     <ol type="1">
       <li><input id="q1o1" type="radio" value="1" v-model="Quest1" name="Question1"> <label for="q1o1">{{$t('q1.o1')}}</label></li>
     </ol>
-  
     <p>{{$t('q2.text')}}</p>
     <ol type="1">
       <li><input id="q2o1" type="checkbox" value="1" v-model="Quest2" name="Question2"> <label for="q2o1">{{$t('q2.o1')}}</label></li>
       <li><input id="q2o2" type="checkbox" value="2" v-model="Quest2" name="Question2"> <label for="q2o2">{{$t('q2.o2')}}</label></li>
       <li><input id="q2o3" type="checkbox" value="3" v-model="Quest2" name="Question2"> <label for="q2o3">{{$t('q2.o3')}}</label></li>
     </ol>
-    <p v-if="checkIfHas(Quest2,[2,3])">{{$t('q2.f-right')}}</p>
-  
+    <span v-if="isAcceptable(Quest2)">
+      <p v-if="arraysMatch(Quest2,[2,3])"><span class="v-right" />{{$t('q2.f-right')}}</p>
+      <p v-else> <span class="v-wrong" />{{$t('q2.f-wrong')}}</p>
+    </span>
     <p>{{$t('q3.text')}}</p>
     <ol type="1">
       <li><input id="q3o1" type="radio" value="1" v-model="Quest3" name="Question3"> <label for="q3o1">{{$t('q3.o1')}}</label></li>
       <li><input id="q3o2" type="radio" value="2" v-model="Quest3" name="Question3"> <label for="q3o2">{{$t('q3.o2')}}</label></li>
       <li><input id="q3o3" type="radio" value="3" v-model="Quest3" name="Question3"> <label for="q3o3">{{$t('q3.o3')}}</label></li>
     </ol>
-  
+    <span v-if="Quest3"><p v-if="Quest3=='3'"><span class="v-right" />{{$t('q3.f-right')}}</p>
+      <p v-else> <span class="v-wrong" />{{$t('q3.f-wrong')}}</p></span>
     <p>{{$t('q4.text')}}</p>
     <ol type="1">
       <li><input id="q4o1" type="radio" value="1" v-model="Quest4" name="Question4"> <label for="q4o1">{{$t('q4.o1')}}</label></li>
@@ -27,7 +29,6 @@
       <li><input id="q4o3" type="radio" value="3" v-model="Quest4" name="Question4"> <label for="q4o3">{{$t('q4.o3')}}</label></li>
       <li><input id="q4o4" type="radio" value="4" v-model="Quest4" name="Question4"> <label for="q4o4">{{$t('q4.o4')}}</label></li>
     </ol>
-  
     <p>{{$t('q5.text')}}</p>
     <ol type="1">
       <li><input id="q5o1" type="radio" value="1" v-model="Quest5" name="Question5"> <label for="q5o1">{{$t('q5.o1')}}</label></li>
@@ -35,14 +36,12 @@
       <li><input id="q5o3" type="radio" value="3" v-model="Quest5" name="Question5"> <label for="q5o3">{{$t('q5.o3')}}</label></li>
       <li><input id="q5o4" type="radio" value="4" v-model="Quest5" name="Question5"> <label for="q5o4">{{$t('q5.o4')}}</label></li>
     </ol>
-  
     <p>{{$t('q6.text')}}</p>
     <ol type="1">
       <li><input id="q6o1" type="radio" value="1" v-model="Quest6" name="Question6"> <label for="q6o1">{{$t('q6.o1')}}</label></li>
       <li><input id="q6o2" type="radio" value="2" v-model="Quest6" name="Question6"> <label for="q6o2">{{$t('q6.o2')}}</label></li>
       <li><input id="q6o3" type="radio" value="3" v-model="Quest6" name="Question6"> <label for="q6o3">{{$t('q6.o3')}}</label></li>
     </ol>
-  
     <p>{{$t('q7.text')}}</p>
     <ol type="1">
       <li><input id="q7o1" type="radio" value="1" v-model="Quest7" name="Question7"> <label for="q7o1">{{$t('q7.o1')}}</label></li>
@@ -51,14 +50,12 @@
       <li><input id="q7o4" type="radio" value="4" v-model="Quest7" name="Question7"> <label for="q7o4">{{$t('q7.o4')}}</label></li>
       <li><input id="q7o5" type="radio" value="5" v-model="Quest7" name="Question7"> <label for="q7o5">{{$t('q7.o5')}}</label></li>
     </ol>
-  
     <p>{{$t('q8.text')}}</p>
     <ol type="1">
       <li><input id="q8o1" type="radio" value="1" v-model="Quest8" name="Question8"> <label for="q8o1">{{$t('q8.o1')}}</label></li>
       <li><input id="q8o2" type="radio" value="2" v-model="Quest8" name="Question8"> <label for="q8o2">{{$t('q8.o2')}}</label></li>
       <li><input id="q8o3" type="radio" value="3" v-model="Quest8" name="Question8"> <label for="q8o3">{{$t('q8.o3')}}</label></li>
     </ol>
-  
     <p>{{$t('q9.text')}}</p>
     <ol type="1">
       <li><input id="q9o1" type="radio" value="1" v-model="Quest9" name="Question9"> <label for="q9o1">{{$t('q9.o1')}}</label></li>
@@ -67,7 +64,6 @@
       <li><input id="q9o4" type="radio" value="4" v-model="Quest9" name="Question9"> <label for="q9o4">{{$t('q9.o4')}}</label></li>
       <li><input id="q9o5" type="radio" value="5" v-model="Quest9" name="Question9"> <label for="q9o5">{{$t('q9.o5')}}</label></li>
     </ol>
-  
     <p>{{$t('q10.text')}}</p>
     <ol type="1">
       <li><input id="q10o1" type="radio" value="1" v-model="Quest10" name="Question10"> <label for="q10o1">{{$t('q10.o1')}}</label></li>
@@ -75,7 +71,6 @@
       <li><input id="q10o3" type="radio" value="3" v-model="Quest10" name="Question10"> <label for="q10o3">{{$t('q10.o3')}}</label></li>
       <li><input id="q10o4" type="radio" value="4" v-model="Quest10" name="Question10"> <label for="q10o4">{{$t('q10.o4')}}</label></li>
     </ol>
-  
     <p>{{$t('q11.text')}}</p>
     <ol type="1">
       <li><input id="q11o1" type="radio" value="1" v-model="Quest11" name="Question11"> <label for="q11o1">{{$t('q11.o1')}}</label></li>
@@ -84,14 +79,12 @@
       <li><input id="q11o4" type="radio" value="4" v-model="Quest11" name="Question11"> <label for="q11o4">{{$t('q11.o4')}}</label></li>
       <li><input id="q11o5" type="radio" value="5" v-model="Quest11" name="Question11"> <label for="q11o5">{{$t('q11.o5')}}</label></li>
     </ol>
-  
     <p>{{$t('q12.text')}}</p>
     <ol type="1">
       <li><input id="q12o1" type="radio" value="1" v-model="Quest12" name="Question12"> <label for="q12o1">{{$t('q12.o1')}}</label></li>
       <li><input id="q12o2" type="radio" value="2" v-model="Quest12" name="Question12"> <label for="q12o2">{{$t('q12.o2')}}</label></li>
       <li><input id="q12o3" type="radio" value="3" v-model="Quest12" name="Question12"> <label for="q12o3">{{$t('q12.o3')}}</label></li>
     </ol>
-  
     <p>{{$t('q13.text')}}</p>
     <ol type="1">
       <li><input id="q13o1" type="radio" value="1" v-model="Quest13" name="Question13"> <label for="q13o1">{{$t('q13.o1')}}</label></li>
@@ -100,7 +93,6 @@
       <li><input id="q13o4" type="radio" value="4" v-model="Quest13" name="Question13"> <label for="q13o4">{{$t('q13.o4')}}</label></li>
       <li><input id="q13o5" type="radio" value="5" v-model="Quest13" name="Question13"> <label for="q13o5">{{$t('q13.o5')}}</label></li>
     </ol>
-  
     <p>{{$t('q14.text')}}</p>
     <ol type="1">
       <li><input id="q14o1" type="radio" value="1" v-model="Quest14" name="Question14"> <label for="q14o1">{{$t('q14.o1')}}</label></li>
@@ -108,37 +100,45 @@
       <li><input id="q14o3" type="radio" value="3" v-model="Quest14" name="Question14"> <label for="q14o3">{{$t('q14.o3')}}</label></li>
       <li><input id="q14o4" type="radio" value="4" v-model="Quest14" name="Question14"> <label for="q14o4">{{$t('q14.o4')}}</label></li>
     </ol>
-  
-    
   </span>
 </template>
 <script type="text/javascript">
-  export default{
-    data(){
-      return{
-        Quest1:'0',
-        Quest2:[],
-        Quest3:'0',
-        Quest4:'0',
-        Quest5:'0',
-        Quest6:'0',
-        Quest7:'0',
-        Quest8:'0',
-        Quest9:'0',
-        Quest10:'0',
-        Quest11:'0',
-        Quest12:'0',
-        Quest13:'0',
-        Quest14:'0'
-      }
-    },
-    methods:{
-      checkIfHas(model,checkArray){
-        if (model.includes("2") && model.includes("3")) return true
+export default {
+  data() {
+    return {
+      truth: false,
+      Quest1: '',
+      Quest2: [],
+      Quest3: '',
+      Quest4: '',
+      Quest5: '',
+      Quest6: '',
+      Quest7: '',
+      Quest8: '',
+      Quest9: '',
+      Quest10: '',
+      Quest11: '',
+      Quest12: '',
+      Quest13: '',
+      Quest14: ''
+    }
+  },
+  methods: {
 
+    arraysMatch(arr1, arr2) {
+      if (arr1.length !== arr2.length) return false
+      const arrayOne = arr1.concat().sort()
+      for (let i in arrayOne) {
+        if (Number(arrayOne[i]) !== Number(arr2[i])) return false
       }
+      return true
+    },
+    isAcceptable(arr1) {
+      return ((Array.isArray(arr1) && arr1.length))
     }
   }
+}
+
 </script>
 <i18n>
   {

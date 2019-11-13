@@ -1,462 +1,289 @@
 <template>
-  <!--container-->
-  <section class="container">
-    <!--questionBox-->
-    <div class="questionBox" id="app">
-      <!-- transition -->
-      <transition :duration="{ enter: 500, leave: 300 }" enter-active-class="animated zoomIn" leave-active-class="animated zoomOut" mode="out-in">
-        <!--qusetionContainer-->
-        <div class="questionContainer" v-if="questionIndex<quiz.questions.length" v-bind:key="questionIndex">
-          <header>
-            <h1 class="title is-6">Quiz test</h1>
-            <!--progress-->
-            <div class="progressContainer">
-              <progress class="progress is-info is-small" :value="(questionIndex/quiz.questions.length)*100" max="100">{{(questionIndex/quiz.questions.length)*100}}%</progress>
-              <p>{{(questionIndex/quiz.questions.length)*100}}% complete</p>
-            </div>
-            <!--/progress-->
-          </header>
-          <!-- questionTitle -->
-          <h3 class="titleContainer">{{ quiz.questions[questionIndex].text }}</h3>
-          <!-- quizOptions -->
-          <div class="optionContainer">
-            <div class="option" v-for="(response, index) in quiz.questions[questionIndex].responses" @click="selectOption(index)" :class="{ 'is-selected': userResponses[questionIndex] == index}" :key="index">
-              {{ index | charIndex }}. {{ response.text }}
-            </div>
-          </div>
-          <!--quizFooter: navigation and progress-->
-          <footer class="questionFooter">
-            <!--pagination-->
-            <nav class="pagination" role="navigation" aria-label="pagination">
-              <!-- back button -->
-              <a class="button" v-on:click="prev();" :disabled="questionIndex < 1">
-                Back
-              </a>
-              <!-- next button -->
-              <a class="button" :class="(userResponses[questionIndex]==null)?'':'is-active'" v-on:click="next();" :disabled="questionIndex>=quiz.questions.length">
-                {{ (userResponses[questionIndex]==null)?'Skip':'Next' }}
-              </a>
-            </nav>
-            <!--/pagination-->
-          </footer>
-          <!--/quizFooter-->
-        </div>
-        <!--/questionContainer-->
-        <!--quizCompletedResult-->
-        <div v-if="questionIndex >= quiz.questions.length" v-bind:key="questionIndex" class="quizCompleted has-text-centered">
-          <!-- quizCompletedIcon: Achievement Icon -->
-          <span class="icon">
-            <i class="fa" :class="score()>3?'fa-check-circle-o is-active':'fa-times-circle'"></i>
-          </span>
-          <!--resultTitleBlock-->
-          <h2 class="title">
-            You did {{ (score()>7?'an amazing':(score()<4?'a poor':'a good')) }} job! </h2> <p class="subtitle">
-              Total score: {{ score() }} / {{ quiz.questions.length }}
-              </p>
-              <br>
-              <a class="button" @click="restart()">restart <i class="fa fa-refresh"></i></a>
-              <!--/resultTitleBlock-->
-        </div>
-        <!--/quizCompetedResult-->
-      </transition>
-    </div>
-    <!--/questionBox-->
-  </section>
-  <!--/container-->
+  <span>
+    <p>{{$t('q1.text')}}</p>
+    <ol type="1">
+      <li><input id="q1o1" type="radio" value="1" v-model="Quest1" name="Question1"> <label for="q1o1">{{$t('q1.o1')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q2.text')}}</p>
+    <ol type="1">
+      <li><input id="q2o1" type="checkbox" value="1" v-model="Quest2" name="Question2"> <label for="q2o1">{{$t('q2.o1')}}</label></li>
+      <li><input id="q2o2" type="checkbox" value="2" v-model="Quest2" name="Question2"> <label for="q2o2">{{$t('q2.o2')}}</label></li>
+      <li><input id="q2o3" type="checkbox" value="3" v-model="Quest2" name="Question2"> <label for="q2o3">{{$t('q2.o3')}}</label></li>
+    </ol>
+    <p>{{Quest2}}</p>
+    <p v-if="checkIfHas(Quest2,[2,3])">{{$t('q2.f-right')}}</p>
+  
+    <p>{{$t('q3.text')}}</p>
+    <ol type="1">
+      <li><input id="q3o1" type="radio" value="1" v-model="Quest3" name="Question3"> <label for="q3o1">{{$t('q3.o1')}}</label></li>
+      <li><input id="q3o2" type="radio" value="2" v-model="Quest3" name="Question3"> <label for="q3o2">{{$t('q3.o2')}}</label></li>
+      <li><input id="q3o3" type="radio" value="3" v-model="Quest3" name="Question3"> <label for="q3o3">{{$t('q3.o3')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q4.text')}}</p>
+    <ol type="1">
+      <li><input id="q4o1" type="radio" value="1" v-model="Quest4" name="Question4"> <label for="q4o1">{{$t('q4.o1')}}</label></li>
+      <li><input id="q4o2" type="radio" value="2" v-model="Quest4" name="Question4"> <label for="q4o2">{{$t('q4.o2')}}</label></li>
+      <li><input id="q4o3" type="radio" value="3" v-model="Quest4" name="Question4"> <label for="q4o3">{{$t('q4.o3')}}</label></li>
+      <li><input id="q4o4" type="radio" value="4" v-model="Quest4" name="Question4"> <label for="q4o4">{{$t('q4.o4')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q5.text')}}</p>
+    <ol type="1">
+      <li><input id="q5o1" type="radio" value="1" v-model="Quest5" name="Question5"> <label for="q5o1">{{$t('q5.o1')}}</label></li>
+      <li><input id="q5o2" type="radio" value="2" v-model="Quest5" name="Question5"> <label for="q5o2">{{$t('q5.o2')}}</label></li>
+      <li><input id="q5o3" type="radio" value="3" v-model="Quest5" name="Question5"> <label for="q5o3">{{$t('q5.o3')}}</label></li>
+      <li><input id="q5o4" type="radio" value="4" v-model="Quest5" name="Question5"> <label for="q5o4">{{$t('q5.o4')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q6.text')}}</p>
+    <ol type="1">
+      <li><input id="q6o1" type="radio" value="1" v-model="Quest6" name="Question6"> <label for="q6o1">{{$t('q6.o1')}}</label></li>
+      <li><input id="q6o2" type="radio" value="2" v-model="Quest6" name="Question6"> <label for="q6o2">{{$t('q6.o2')}}</label></li>
+      <li><input id="q6o3" type="radio" value="3" v-model="Quest6" name="Question6"> <label for="q6o3">{{$t('q6.o3')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q7.text')}}</p>
+    <ol type="1">
+      <li><input id="q7o1" type="radio" value="1" v-model="Quest7" name="Question7"> <label for="q7o1">{{$t('q7.o1')}}</label></li>
+      <li><input id="q7o2" type="radio" value="2" v-model="Quest7" name="Question7"> <label for="q7o2">{{$t('q7.o2')}}</label></li>
+      <li><input id="q7o3" type="radio" value="3" v-model="Quest7" name="Question7"> <label for="q7o3">{{$t('q7.o3')}}</label></li>
+      <li><input id="q7o4" type="radio" value="4" v-model="Quest7" name="Question7"> <label for="q7o4">{{$t('q7.o4')}}</label></li>
+      <li><input id="q7o5" type="radio" value="5" v-model="Quest7" name="Question7"> <label for="q7o5">{{$t('q7.o5')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q8.text')}}</p>
+    <ol type="1">
+      <li><input id="q8o1" type="radio" value="1" v-model="Quest8" name="Question8"> <label for="q8o1">{{$t('q8.o1')}}</label></li>
+      <li><input id="q8o2" type="radio" value="2" v-model="Quest8" name="Question8"> <label for="q8o2">{{$t('q8.o2')}}</label></li>
+      <li><input id="q8o3" type="radio" value="3" v-model="Quest8" name="Question8"> <label for="q8o3">{{$t('q8.o3')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q9.text')}}</p>
+    <ol type="1">
+      <li><input id="q9o1" type="radio" value="1" v-model="Quest9" name="Question9"> <label for="q9o1">{{$t('q9.o1')}}</label></li>
+      <li><input id="q9o2" type="radio" value="2" v-model="Quest9" name="Question9"> <label for="q9o2">{{$t('q9.o2')}}</label></li>
+      <li><input id="q9o3" type="radio" value="3" v-model="Quest9" name="Question9"> <label for="q9o3">{{$t('q9.o3')}}</label></li>
+      <li><input id="q9o4" type="radio" value="4" v-model="Quest9" name="Question9"> <label for="q9o4">{{$t('q9.o4')}}</label></li>
+      <li><input id="q9o5" type="radio" value="5" v-model="Quest9" name="Question9"> <label for="q9o5">{{$t('q9.o5')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q10.text')}}</p>
+    <ol type="1">
+      <li><input id="q10o1" type="radio" value="1" v-model="Quest10" name="Question10"> <label for="q10o1">{{$t('q10.o1')}}</label></li>
+      <li><input id="q10o2" type="radio" value="2" v-model="Quest10" name="Question10"> <label for="q10o2">{{$t('q10.o2')}}</label></li>
+      <li><input id="q10o3" type="radio" value="3" v-model="Quest10" name="Question10"> <label for="q10o3">{{$t('q10.o3')}}</label></li>
+      <li><input id="q10o4" type="radio" value="4" v-model="Quest10" name="Question10"> <label for="q10o4">{{$t('q10.o4')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q11.text')}}</p>
+    <ol type="1">
+      <li><input id="q11o1" type="radio" value="1" v-model="Quest11" name="Question11"> <label for="q11o1">{{$t('q11.o1')}}</label></li>
+      <li><input id="q11o2" type="radio" value="2" v-model="Quest11" name="Question11"> <label for="q11o2">{{$t('q11.o2')}}</label></li>
+      <li><input id="q11o3" type="radio" value="3" v-model="Quest11" name="Question11"> <label for="q11o3">{{$t('q11.o3')}}</label></li>
+      <li><input id="q11o4" type="radio" value="4" v-model="Quest11" name="Question11"> <label for="q11o4">{{$t('q11.o4')}}</label></li>
+      <li><input id="q11o5" type="radio" value="5" v-model="Quest11" name="Question11"> <label for="q11o5">{{$t('q11.o5')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q12.text')}}</p>
+    <ol type="1">
+      <li><input id="q12o1" type="radio" value="1" v-model="Quest12" name="Question12"> <label for="q12o1">{{$t('q12.o1')}}</label></li>
+      <li><input id="q12o2" type="radio" value="2" v-model="Quest12" name="Question12"> <label for="q12o2">{{$t('q12.o2')}}</label></li>
+      <li><input id="q12o3" type="radio" value="3" v-model="Quest12" name="Question12"> <label for="q12o3">{{$t('q12.o3')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q13.text')}}</p>
+    <ol type="1">
+      <li><input id="q13o1" type="radio" value="1" v-model="Quest13" name="Question13"> <label for="q13o1">{{$t('q13.o1')}}</label></li>
+      <li><input id="q13o2" type="radio" value="2" v-model="Quest13" name="Question13"> <label for="q13o2">{{$t('q13.o2')}}</label></li>
+      <li><input id="q13o3" type="radio" value="3" v-model="Quest13" name="Question13"> <label for="q13o3">{{$t('q13.o3')}}</label></li>
+      <li><input id="q13o4" type="radio" value="4" v-model="Quest13" name="Question13"> <label for="q13o4">{{$t('q13.o4')}}</label></li>
+      <li><input id="q13o5" type="radio" value="5" v-model="Quest13" name="Question13"> <label for="q13o5">{{$t('q13.o5')}}</label></li>
+    </ol>
+  
+    <p>{{$t('q14.text')}}</p>
+    <ol type="1">
+      <li><input id="q14o1" type="radio" value="1" v-model="Quest14" name="Question14"> <label for="q14o1">{{$t('q14.o1')}}</label></li>
+      <li><input id="q14o2" type="radio" value="2" v-model="Quest14" name="Question14"> <label for="q14o2">{{$t('q14.o2')}}</label></li>
+      <li><input id="q14o3" type="radio" value="3" v-model="Quest14" name="Question14"> <label for="q14o3">{{$t('q14.o3')}}</label></li>
+      <li><input id="q14o4" type="radio" value="4" v-model="Quest14" name="Question14"> <label for="q14o4">{{$t('q14.o4')}}</label></li>
+    </ol>
+  
+    
+  </span>
 </template>
 <script type="text/javascript">
-const quiz = {
-  user: "Dave",
-  questions: [{
-      text: "What is the full form of HTTP?",
-      responses: [
-        { text: "Hyper text transfer package" },
-        { text: "Hyper text transfer protocol", correct: true },
-        { text: "Hyphenation text test program" },
-        { text: "None of the above" }
-      ]
-    },
-    {
-      text: "HTML document start and end with which tag pairs?",
-      responses: [
-        { text: "HTML", correct: true },
-        { text: "WEB" },
-        { text: "HEAD" },
-        { text: "BODY" }
-      ]
-    },
-    {
-      text: "Which tag is used to create body text in HTML?",
-      responses: [
-        { text: "HEAD" },
-        { text: "BODY", correct: true },
-        { text: "TITLE" },
-        { text: "TEXT" }
-      ]
-    },
-    {
-      text: "Outlook Express is _________",
-      responses: [
-        { text: "E-Mail Client", correct: true },
-        { text: "Browser" },
-        {
-          text: "Search Engine"
-        },
-        { text: "None of the above" }
-      ]
-    },
-    {
-      text: "What is a search engine?",
-      responses: [
-        { text: "A hardware component " },
-        {
-          text: "A machinery engine that search data"
-        },
-        { text: "A web site that searches anything", correct: true },
-        { text: "A program that searches engines" }
-      ]
-    },
-    {
-      text: "What does the .com domain represents?",
-      responses: [
-        { text: "Network" },
-        { text: "Education" },
-        { text: "Commercial", correct: true },
-        { text: "None of the above" }
-      ]
-    },
-    {
-      text: "In Satellite based communication, VSAT stands for? ",
-      responses: [
-        { text: " Very Small Aperture Terminal", correct: true },
-        { text: "Varying Size Aperture Terminal " },
-        {
-          text: "Very Small Analog Terminal"
-        },
-        { text: "None of the above" }
-      ]
-    },
-    {
-      text: "What is the full form of TCP/IP? ",
-      responses: [
-        { text: "Telephone call protocol / international protocol" },
-        { text: "Transmission control protocol / internet protocol", correct: true },
-        { text: "Transport control protocol / internet protocol " },
-        { text: "None of the above" }
-      ]
-    },
-    {
-      text: "What is the full form of HTML?",
-      responses: [{
-          text: "Hyper text marking language"
-        },
-        { text: "Hyphenation text markup language " },
-        { text: "Hyper text markup language", correct: true },
-        { text: "Hyphenation test marking language" }
-      ]
-    },
-    {
-      text: "\"Yahoo\", \"Infoseek\" and \"Lycos\" are _________?",
-      responses: [
-        { text: "Browsers " },
-        { text: "Search Engines", correct: true },
-        { text: "News Group" },
-        { text: "None of the above" }
-      ]
-    }
-  ]
-};
-let userResponseSkeleton = Array(quiz.questions.length).fill(null);
-
-export default {
-  data() {
-    return {
-      quiz: quiz,
-      questionIndex: 0,
-      userResponses: userResponseSkeleton,
-      isActive: false
-    }
-  },
-  filters: {
-    charIndex: function(i) {
-      return String.fromCharCode(97 + i);
-    }
-  },
-  methods: {
-    restart: function() {
-      this.questionIndex = 0;
-      this.userResponses = Array(this.quiz.questions.length).fill(null);
-    },
-    selectOption: function(index) {
-      this.$set(this.userResponses, this.questionIndex, index);
-      //console.log(this.userResponses);
-    },
-    next: function() {
-      if (this.questionIndex < this.quiz.questions.length)
-        this.questionIndex++;
-    },
-
-    prev: function() {
-      if (this.quiz.questions.length > 0) this.questionIndex--;
-    },
-    // Return "true" count in userResponses
-    score: function() {
-      var score = 0;
-      for (let i = 0; i < this.userResponses.length; i++) {
-        if (
-          typeof this.quiz.questions[i].responses[
-            this.userResponses[i]
-          ] !== "undefined" &&
-          this.quiz.questions[i].responses[this.userResponses[i]].correct
-        ) {
-          score = score + 1;
-        }
+  export default{
+    data(){
+      return{
+        Quest1:'0',
+        Quest2:[],
+        Quest3:'0',
+        Quest4:'0',
+        Quest5:'0',
+        Quest6:'0',
+        Quest7:'0',
+        Quest8:'0',
+        Quest9:'0',
+        Quest10:'0',
+        Quest11:'0',
+        Quest12:'0',
+        Quest13:'0',
+        Quest14:'0'
       }
-      return score;
+    },
+    methods:{
+      checkIfHas(model,checkArray){
+        if (this.Quest2.includes("2") && this.Quest2.includes("3")) return true
 
-      //return this.userResponses.filter(function(val) { return val }).length;
+      }
     }
   }
-};
-
 </script>
-<style type="text/css" scoped>
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
-$trans_duration: 0.3s;
-$primary_color: #3D5AFE;
-
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-
-  height: 100vh;
-
-  background: #CFD8DC;
-
-  /* mocking native UI */
-  cursor: default !important;
-  /* remove text selection cursor */
-  user-select: none;
-  /* remove text selection */
-  user-drag: none;
-  /* disbale element dragging */
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button {
-  transition: $trans_duration;
-}
-
-.title,
-.subtitle {
-  font-family: Montserrat, sans-serif;
-  font-weight: normal;
-}
-
-.animated {
-  transition-duration: $trans_duration/2;
-}
-
-.container {
-  margin: 0 0.5rem;
-}
-
-.questionBox {
-
-  max-width: 30rem;
-  width: 30rem;
-  min-height: 30rem;
-
-  background: #FAFAFA;
-  position: relative;
-  display: flex;
-
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
-  header {
-    background: rgba(0, 0, 0, 0.025);
-    padding: 1.5rem;
-    text-align: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-    h1 {
-      font-weight: bold;
-      margin-bottom: 1rem !important;
-    }
-
-    .progressContainer {
-      width: 60%;
-      margin: 0 auto;
-
-      >progress {
-        margin: 0;
-        border-radius: 5rem;
-        overflow: hidden;
-        border: none;
-
-        color: $primary_color;
-
-        &::-moz-progress-bar {
-          background: $primary_color;
-        }
-
-        &::-webkit-progress-value {
-          background: $primary_color;
-        }
-      }
-
-      >p {
-        margin: 0;
-        margin-top: 0.5rem;
-      }
-    }
+<i18n>
+  {
+  "en":{
+  "checkAll":"Check all that apply.",
+  "selectRight":"Select the correct answer.",
+  "q1":{
+  "text":"What",
+  "o1":"That",
+  "f-wrong":"",
+  "f-right":""
+  },
+  "q2":
+  {
+  "text": "Which elements should you consider when drafting your new work plan? ",
+  "o1": "Government priorities, departmental priorities and directorate priorities",
+  "o2": "Previous year’s work plan, budget, reports",
+  "o3": "Your fellow manager’s work plan from last year",
+  "f-right": "That is the best answer! ",
+  "f-wrong": "You should consider government priorities, departmental priorities and directorate priorities as well as the previous year’s work plan, budget, reports when drafting your new work plan. Unless the activities of your fellow manager have been transferred to your team, you would not take them into account. "
+  },
+  "q3":
+  {
+  "text": "A departmental priority in your work plan originates all the way back to:",
+  "o1": "The directorate’s plan",
+  "o2": "The Departmental plan",
+  "o3": "The Speech from the Throne",
+  "f-wrong": "Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
+  "f-right": "Yes! It’s a good idea to start your view of the big picture with the Speech from the Throne."},
+  "q4":
+  {
+  "text": "To find your department’s core responsibilities, expected results and indicators, you would look to:",
+  "o1": "The directorate’s plan",
+  "o2": "The Departmental plan",
+  "o3": "The Speech from the Throne",
+  "o4": "The sector’s plan",
+  "f-wrong": "Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
+  "f-right": "This is right! Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan."
+  },
+  "q5":
+  {
+  "text": "The Prime Minister sets out his expectations and objectives for your department in: ",
+  "o1": "The Speech from the Throne",
+  "o2": "The Departmental Results Framework",
+  "o3": "The Mandate Letter",
+  "o4": "The Departmental Plan",
+  "f-wrong": "The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
+  "f-right": "You got it! The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department."
+  },
+  "q6":
+  {
+  "text": "How often does a manager need to recertify in order to be able to continue to exercise their financial authority?",
+  "o1": "Every year",
+  "o2": "Every 2 years",
+  "o3": "Every 5 years",
+  "f-wrong": "Managers need to recertify every 5 years.",
+  "f-right": "This is the right answer!"
+  },
+  "q7":
+  {
+  "text": "To conduct a 360 scan, you must do the following.",
+  "o1": "Get a sense of the current situation by examining what was done in the recent past.",
+  "o2": "Look at previous work plans, budgets and reports.",
+  "o3": "Identify challenges from the previous years.",
+  "o4": "Get a sense of the cultural context in your department/branch/directorate.",
+  "o5": "All of the above.",
+  "f-right": "This is correct! You must do all these activities to conduct a 360 review.",
+  "f-wrong": "You must do all these activities to conduct a 360 review."
+  },
+  "q8":
+  {
+  "text": "Choose the priorities to which your work plan activities should link, starting with the top.",
+  "o1": "Departmental priorities, directorate priorities, government priorities",
+  "o2": "Government priorities, departmental priorities, directorate priorities",
+  "o3": "Directorate priorities, government priorities, departmental priorities",
+  "f-wrong": "The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities.",
+  "f-right": "This is correct!"
+  },
+  "q9":
+  {
+  "text": "Which situations would cause you to update your work plan?",
+  "o1": "A new director is nominated",
+  "o2": "An employee leaves ",
+  "o3": "Mandatory training is pushed to next year",
+  "o4": "Over 500 licenses have been issued ",
+  "o5": "Your software gets an update",
+  "f-right": "This is correct!",
+  "f-wrong": "The nomination of a new director, the departure of an employee and mandatory training being pushed back to the next year all require an update to the work plan."
+  },
+  "q10":
+  {
+  "text": "What is a work plan?.",
+  "o1": "A daily to-do list",
+  "o2": "The activities to be carried out over a fiscal year",
+  "o3": "The amounts of money to be spent ",
+  "o4": "A summary of what you have accomplished",
+  "f-wrong": "The work plan are activities to be carried out over a fiscal year.",
+  "f-right": "This is correct."
+  },
+  "q11":
+  {
+  "text": "What are a manager’s responsibilities?",
+  "o1": "To establish government wide priorities",
+  "o2": "To negotiate government contracts",
+  "o3": "To plan their unit’s activities",
+  "o4": "To use public funds to carry out their unit’s activities",
+  "o5": "To report on the status of their unit’s activities",
+  "f-right": "This is correct.",
+  "f-wrong": "A manager is responsible for planning their unit’s activities, using public funds to carry out their unit’s activities and reporting on the status of their unit’s activities."
+  },
+  "q12":
+  {
+  "text": "What are deliverables?",
+  "o1": "The work tasks to be accomplished to support your directorate’s priorities.",
+  "o2": "The specific and tangible items you should be able to check off your list when you accomplish them.",
+  "o3": "The budget, personnel, consultants, buildings and materials required to carry out the directorate activities.",
+  "f1": "Deliverables are more specific and tangible than the activities.",
+  "f2": "This is correct! ",
+  "f3": "These are the resources. Deliverables are specific and tangible items you should be able to check off your list when you accomplish them."
+  },
+  "q13":
+  {
+  "text": "Which activities should you include in your new work plan?",
+  "o1": "Ongoing activities, new activities, completed activities",
+  "o2": "Ongoing activities, new activities",
+  "o3": "New activities, completed activities",
+  "o4": "New activities, completed activities, project activities",
+  "o5": "Ongoing activities, completed activities, project activities",
+  "f-wrong": "Only ongoing activities and new activities should be included.",
+  "f-right": "This is correct."
+  },
+  "q14":
+  {
+  "text": "Which are considered risks?",
+  "o1": "A 15 minute power failure, minor software bugs",
+  "o2": "Licensing Fees, fisheries management",
+  "o3": "Power failures, well managed fish stocks",
+  "o4": "Overfishing, staff turnover",
+  "f1": "A 15 minute power failure should not be sufficient to be considered a risk. Overfishing and staff turnover are risks.",
+  "f2": "These are not risks. Overfishing and staff turnover are risks.",
+  "f3": "Well managed fish stocks are not risks. Overfishing and staff turnover are risks.",
+  "f4": "This is correct."
   }
-
-  .titleContainer {
-    text-align: center;
-    margin: 0 auto;
-    padding: 1.5rem;
-
+  },
+  "fr":{}
   }
-
-  .quizForm {
-    display: block;
-    white-space: normal;
-
-    height: 100%;
-    width: 100%;
-
-    .quizFormContainer {
-      height: 100%;
-      margin: 15px 18px;
-
-      .field-label {
-        text-align: left;
-        margin-bottom: 0.5rem;
-      }
-    }
-  }
-
-  .quizCompleted {
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
-
-    >.icon {
-      color: #FF5252;
-      font-size: 5rem;
-
-      .is-active {
-        color: #00E676;
-      }
-    }
-  }
-
-  .questionContainer {
-    white-space: normal;
-
-    height: 100%;
-    width: 100%;
-
-    .optionContainer {
-      margin-top: 12px;
-      flex-grow: 1;
-
-      .option {
-        border-radius: 290486px;
-        padding: 9px 18px;
-        margin: 0 18px;
-        margin-bottom: 12px;
-        transition: $trans_duration;
-        cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.05);
-        color: rgba(0, 0, 0, 0.85);
-        border: transparent 1px solid;
-
-        &.is-selected {
-          border-color: rgba(black, 0.25);
-          background-color: white;
-        }
-
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.1);
-        }
-
-        &:active {
-          transform: scaleX(0.9);
-        }
-      }
-    }
-
-    .questionFooter {
-      background: rgba(0, 0, 0, 0.025);
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
-      width: 100%;
-      align-self: flex-end;
-
-      .pagination {
-        //padding: 10px 15px;
-        margin: 15px 25px;
-      }
-    }
-  }
-}
-
-.pagination {
-  display: flex;
-  justify-content: space-between;
-}
-
-.button {
-  padding: 0.5rem 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 5rem;
-  margin: 0 0.25rem;
-
-  transition: 0.3s;
-
-  &:hover {
-    cursor: pointer;
-    background: #ECEFF1;
-    border-color: rgba(0, 0, 0, 0.25);
-  }
-
-  &.is-active {
-    background: $primary_color;
-    color: white;
-    border-color: transparent;
-
-    &:hover {
-      background: darken($primary_color, 10%);
-
-    }
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .questionBox {
-    align-items: center;
-    justify-content: center;
-
-    .questionContainer {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .sidebar {
-    height: auto !important;
-    border-radius: 6px 6px 0px 0px;
-  }
-}
-
-</style>
+</i18n>

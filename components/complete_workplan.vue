@@ -98,7 +98,7 @@
     </div>
     <div>
     <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold">
-    <b-tab title="Question 1">
+    <b-tab ref="cWTabA" @click="fScrollEl(this)" title="Question 1">
       <p v-html="$t('q1Text')"></p>
       <ol type="a">
         <li><input type="radio" name="q1" id="quest1-1" v-model="Q1" value="1"> <label for="quest1-1" v-html="$t('q1a')"></label></li>
@@ -109,7 +109,7 @@
       <p v-if="Q1==2" v-html="$t('q1bF')"></p>
       <p v-if="Q1==3" v-html="$t('q1cF')"></p>
     </b-tab>
-    <b-tab title="Question 2">
+    <b-tab ref="cWTabB" @click="fScrollEl(this)" title="Question 2">
       <p v-html="$t('q2Text')"></p>
       <ol type="a">
         <li><input type="radio" name="q2" id="quest2-1" v-model="Q2" value="1"> <label for="quest2-1" v-html="$t('q2a')"></label></li>
@@ -120,8 +120,8 @@
       <p v-if="Q2==2 "v-html="$t('q2bF')"></p>
       <p v-if="Q2==3 "v-html="$t('q2cF')"></p>
     </b-tab>
-    <b-tab title="Question 3">
-      <p  v-html="$t('q3Text')"></p>
+    <b-tab ref="cWTabC" @click="fScrollEl(this)" title="Question 3">
+      <p v-html="$t('q3Text')"></p>
       <ol type="a">
         <li><input type="radio" name="q3" id="quest3-1" v-model="Q3" value="1"> <label for="quest3-1" v-html="$t('q3a')"></label></li>
         <li><input type="radio" name="q3" id="quest3-2" v-model="Q3" value="2"> <label for="quest3-2" v-html="$t('q3b')"></label></li>
@@ -278,7 +278,15 @@
    }
   },
   methods: {
-    fScrollEl: function(elementID,targetID,offset){
+    fScrollEl(elementID,targetID,offset){
+      console.log('fScrollEl('+elementID+','+targetID+','+offset+')');
+      // console.log($('div#__BVID__64.tab-pane'));
+      // console.dir(evInfo);
+      
+      console.dir(this.$refs);
+
+      // console.log(document.querySelectorAll);
+
       //elementID[STRING] (ex: #scrollableElement)
       //targetID[STRING] (ex: #deliverable)
       //offset[NUM] (ex: 500)
@@ -295,7 +303,14 @@
       2. ScrollLeft by result
       */
 
-      document.getElementById(elementID).scrollLeft(offset);
+      //Solution #3
+      /*
+      1. Grab tabs -> this.$refs
+      2. Loop through tabs and find .active
+      3. 
+      */
+
+      //document.getElementById(elementID).scrollLeft(offset);
     }
   }
 }

@@ -11,6 +11,7 @@
       <li><input id="q2o2" type="checkbox" value="2" v-model="Quest2" name="Question2"> <label for="q2o2">{{$t('q2.o2')}}</label></li>
       <li><input id="q2o3" type="checkbox" value="3" v-model="Quest2" name="Question2"> <label for="q2o3">{{$t('q2.o3')}}</label></li>
     </ol>
+    <p>{{Quest2}}</p>
     <p v-if="checkIfHas(Quest2,[2,3])">{{$t('q2.f-right')}}</p>
   
     <p>{{$t('q3.text')}}</p>
@@ -134,7 +135,7 @@
     },
     methods:{
       checkIfHas(model,checkArray){
-        if (model.includes("2") && model.includes("3")) return true
+        if (this.Quest2.includes("2") && this.Quest2.includes("3")) return true
 
       }
     }

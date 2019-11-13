@@ -12,7 +12,7 @@
   {
   "en":{
   "qDisabled":"Please select one",
-  "q1"{"text":"Match the following statements to the appropriate sections of the work plan. Each section can only be populated with one statement.",
+  "q1":{"text":"Match the following statements to the appropriate sections of the work plan. Each section can only be populated with one statement.",
   "a11": "High",
   "a12": "Work with Canadians in all areas of the economy and all parts of the country to improve conditions for investment",
   "a13" : "Tablets",
@@ -28,7 +28,7 @@
   ,
   "fr":{
   "qDisabled":"Veuillez faire un choix",
-  "q1"{
+  "q1":{
   "text":"Faites correspondre les &eacute;nonc&eacute;s suivants aux sections appropri&eacute;es du plan de travail. Chaque section ne peut contenir qu'un seul &eacute;nonc&eacute;.",
   "a11": "Élevé ",
   "a12": "Travailler avec les Canadiens dans tous les secteurs de l'économie et dans toutes les régions du pays pour améliorer les conditions d'investissement.",

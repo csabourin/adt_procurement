@@ -83,6 +83,7 @@
           </b-tab>
           <b-tab title="Question 2">
             <p v-html="$t('q2.text')" />
+            <p v-html="$t('checkAll')" />
             <ol type="1">
               <li><input id="q2o1" @click="q2Submitted=false" type="checkbox" value="1" v-model="Quest2" name="Question2"> <label for="q2o1" v-html="$t('q2.o1')"></label></li>
               <li><input id="q2o2" @click="q2Submitted=false" type="checkbox" value="2" v-model="Quest2" name="Question2"> <label for="q2o2" v-html="$t('q2.o2')"></label></li>
@@ -116,7 +117,7 @@
               <li><input id="q4o4" @click="q4Submitted=false" type="radio" value="4" v-model="Quest4" name="Question4"> <label for="q4o4" v-html="$t('q4.o4')"></label></li>
             </ol>
             <span v-if="Quest4 && q4Submitted">
-              <p v-if="Quest4=='3'"><span class="v-right" />{{$t('q4.f-right')}}</p>
+              <p v-if="Quest4=='2'"><span class="v-right" />{{$t('q4.f-right')}}</p>
               <p v-else> <span class="v-wrong" />{{$t('q4.f-wrong')}}</p>
             </span>
             <b-button @click="q4Submitted=true">{{$t('submit')}}</b-button>
@@ -158,7 +159,7 @@
               <li><input id="q7o5" @click="q7Submitted=false" type="radio" value="5" v-model="Quest7" name="Question7"> <label for="q7o5" v-html="$t('q7.o5')"></label></li>
             </ol>
             <span v-if="Quest7 && q7Submitted">
-              <p v-if="Quest7=='3'"><span class="v-right" />{{$t('q7.f-right')}}</p>
+              <p v-if="Quest7=='5'"><span class="v-right" />{{$t('q7.f-right')}}</p>
               <p v-else> <span class="v-wrong" />{{$t('q7.f-wrong')}}</p>
             </span>
             <b-button @click="q7Submitted=true">{{$t('submit')}}</b-button>
@@ -171,22 +172,25 @@
               <li><input id="q8o3" @click="q8Submitted=false" type="radio" value="3" v-model="Quest8" name="Question8"> <label for="q8o3" v-html="$t('q8.o3')"></label></li>
             </ol>
             <span v-if="Quest8 && q8Submitted">
-              <p v-if="Quest8=='3'"><span class="v-right" />{{$t('q8.f-right')}}</p>
+              <p v-if="Quest8=='2'"><span class="v-right" />{{$t('q8.f-right')}}</p>
               <p v-else> <span class="v-wrong" />{{$t('q8.f-wrong')}}</p>
             </span>
             <b-button @click="q8Submitted=true">{{$t('submit')}}</b-button>
           </b-tab>
           <b-tab title="Question 9">
             <p v-html="$t('q9.text')" />
+            <p v-html="$t('checkAll')" />
+
             <ol type="1">
-              <li><input id="q9o1" @click="q9Submitted=false" type="radio" value="1" v-model="Quest9" name="Question9"> <label for="q9o1" v-html="$t('q9.o1')"></label></li>
-              <li><input id="q9o2" @click="q9Submitted=false" type="radio" value="2" v-model="Quest9" name="Question9"> <label for="q9o2" v-html="$t('q9.o2')"></label></li>
-              <li><input id="q9o3" @click="q9Submitted=false" type="radio" value="3" v-model="Quest9" name="Question9"> <label for="q9o3" v-html="$t('q9.o3')"></label></li>
-              <li><input id="q9o4" @click="q9Submitted=false" type="radio" value="4" v-model="Quest9" name="Question9"> <label for="q9o4" v-html="$t('q9.o4')"></label></li>
-              <li><input id="q9o5" @click="q9Submitted=false" type="radio" value="5" v-model="Quest9" name="Question9"> <label for="q9o5" v-html="$t('q9.o5')"></label></li>
+              <li><input id="q9o1" @click="q9Submitted=false" type="checkbox" value="1" v-model="Quest9" name="Question9"> <label for="q9o1" v-html="$t('q9.o1')"></label></li>
+              <li><input id="q9o2" @click="q9Submitted=false" type="checkbox" value="2" v-model="Quest9" name="Question9"> <label for="q9o2" v-html="$t('q9.o2')"></label></li>
+              <li><input id="q9o3" @click="q9Submitted=false" type="checkbox" value="3" v-model="Quest9" name="Question9"> <label for="q9o3" v-html="$t('q9.o3')"></label></li>
+              <li><input id="q9o4" @click="q9Submitted=false" type="checkbox" value="4" v-model="Quest9" name="Question9"> <label for="q9o4" v-html="$t('q9.o4')"></label></li>
+              <li><input id="q9o5" @click="q9Submitted=false" type="checkbox" value="5" v-model="Quest9" name="Question9"> <label for="q9o5" v-html="$t('q9.o5')"></label></li>
             </ol>
-            <span v-if="Quest9 && q9Submitted">
-              <p v-if="Quest9=='3'"><span class="v-right" /> {{$t('q9.f-right')}}</p>
+            <p v-if="!isAcceptable(Quest9) && q9Submitted" v-html="$t('pleaseAnswer')"></p>
+            <span v-if="isAcceptable(Quest9) && q9Submitted">
+              <p v-if="arraysMatch(Quest9,[1,2,3])"><span class="v-right" /> {{$t('q9.f-right')}}</p>
               <p v-else> <span class="v-wrong" /> {{$t('q9.f-wrong')}}</p>
             </span>
             <b-button @click="q9Submitted=true">{{$t('submit')}}</b-button>
@@ -200,13 +204,14 @@
               <li><input id="q10o4" @click="q10Submitted=false" type="radio" value="4" v-model="Quest10" name="Question10"> <label for="q10o4" v-html="$t('q10.o4')"></label></li>
             </ol>
             <span v-if="Quest10 && q10Submitted">
-              <p v-if="Quest10=='3'"><span class="v-right" />{{$t('q10.f-right')}}</p>
+              <p v-if="Quest10=='2'"><span class="v-right" />{{$t('q10.f-right')}}</p>
               <p v-else> <span class="v-wrong" />{{$t('q10.f-wrong')}}</p>
             </span>
             <b-button @click="q10Submitted=true">{{$t('submit')}}</b-button>
           </b-tab>
           <b-tab title="Question 11">
             <p>{{$t('q11.text')}}</p>
+            <p v-html="$t('checkAll')" />
             <ol type="1">
               <li><input id="q11o1" @click="q11Submitted=false" type="checkbox" value="1" v-model="Quest11" name="Question11"> <label for="q11o1" v-html="$t('q11.o1')"></label></li>
               <li><input id="q11o2" @click="q11Submitted=false" type="checkbox" value="2" v-model="Quest11" name="Question11"> <label for="q11o2" v-html="$t('q11.o2')"></label></li>
@@ -214,7 +219,7 @@
               <li><input id="q11o4" @click="q11Submitted=false" type="checkbox" value="4" v-model="Quest11" name="Question11"> <label for="q11o4" v-html="$t('q11.o4')"></label></li>
               <li><input id="q11o5" @click="q11Submitted=false" type="checkbox" value="5" v-model="Quest11" name="Question11"> <label for="q11o5" v-html="$t('q11.o5')"></label></li>
             </ol>
-            <p v-if="!isAcceptable(Quest11) && q11Submitted">Please answer the question!</p>
+            <p v-if="!isAcceptable(Quest11) && q11Submitted" v-html="$t('pleaseAnswer')"></p>
             <span v-if="isAcceptable(Quest11) && q11Submitted">
               <p v-if="arraysMatch(Quest11,[3,4,5])"><span class="v-right" /> {{$t('q11.f-right')}}</p>
               <p v-else> <span class="v-wrong" /> {{$t('q11.f-wrong')}}</p>
@@ -258,7 +263,7 @@
               <li><input id="q14o4" @click="q14Submitted=false" type="radio" value="4" v-model="Quest14" name="Question14"> <label for="q14o4" v-html="$t('q14.o4')"></label></li>
             </ol>
             <span v-if="Quest14 && q14Submitted">
-              <p v-if="Quest14=='3'"><span class="v-right" />{{$t('q14.f-right')}}</p>
+              <p v-if="Quest14=='4'"><span class="v-right" />{{$t('q14.f-right')}}</p>
               <p v-else> <span class="v-wrong" />{{$t('q14.f-wrong')}}</p>
             </span>
             <b-button @click="q14Submitted=true">{{$t('submit')}}</b-button>
@@ -314,7 +319,7 @@ export default {
       Quest6: '',
       Quest7: '',
       Quest8: '',
-      Quest9: '',
+      Quest9: [],
       Quest10: '',
       Quest11: [],
       Quest12: '',
@@ -344,6 +349,7 @@ export default {
   "qDisabled": "Choose",
   "checkAll": "Check all that apply.",
   "selectRight": "Select the correct answer.",
+  "pleaseAnswer":"Please answer the question!",
     "pwpGovtPri":"<strong>Government priorities</strong>",
   "pwpDeptPri":"<strong>Departmental priorities</strong>",
   "pwpDirPri":"<strong>Directorate priorities</strong>",
@@ -507,6 +513,9 @@ export default {
   "fr":
   {
   "qDisabled": "Choisissez",
+  "checkAll": "S&eacute;lectionnez toutes les bonnes r&eacute;ponses.",
+  "selectRight": "S&eacute;lectionnez la bonne r&eacute;ponse.",
+  "pleaseAnswer":"Veuillez r&eacute;pondre &agrave; la question!",
   "pwpGovtPri":"<strong>Priorités du gouvernement</strong>",
   "pwpDeptPri":"<strong>Priorités ministérielles</strong>",
   "pwpDirPri":"<strong>Priorités de la direction</strong>",

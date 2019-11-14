@@ -40,10 +40,10 @@
       <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
         <planLinks /><!-- {{ $t('gotIt') }} -->
       </b-modal>
-      <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal no-stacking id="partsofwp" @hide="resumePlay()" :title="$t('AnalyzeBudgetKT')" size="xl" okOnly>
         <AnalyzeBudgetKT />
       </b-modal>
-      <b-modal id="threesixty" @hide="resumePlay()" size="xl" okOnly :title="$t('scan360Title')">
+      <b-modal id="threesixty" @hide="resumePlay()" size="xl" okOnly :title="$t('budgetAnalyzeActivity')">
         <budgetAnalyzeActivity />
       </b-modal>
       <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly :title="$t('completewpDrafttitle')">
@@ -290,10 +290,11 @@ button.accessibilityButton {
   "TakeTheQuiz":"Take the Quiz",
   "completewptitle":"Activity: Complete the Work plan",
   "adjustwptitle":"Activity: Adjust the Work plan",
-  "scan360Title":"Activity: Apply the 360 scan",
+  "AnalyzeBudgetKT":"Activity: Analyze a Budget - Key Terms",
+  "budgetAnalyzeActivity":"Activity: Analyze Past And Current Year’s Budget",
   "completewpDrafttitle":"Activity: Complete the Work Plan Draft",
   "InRealLife":"In Real Life",
-  "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about work plans. Go <strong>now</strong>. ",
+  "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about your budget. Go <strong>now</strong>. ",
   "gotIt":"Continue to next segment",
   "jumpModalPartsWP":"Jump to activity",
   "transcriptText":""
@@ -302,10 +303,11 @@ button.accessibilityButton {
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
-  "scan360Title":"Activité: Appliquez l'apperçu 360",
+  "AnalyzeBudgetKT":"Activité: Analyser un budget - Termes clés",
+  "budgetAnalyzeActivity":"Activité: Analyser les budgets précédents et en cours",
   "completewpDrafttitle":"Activité: Compléter l'ébauche du plan de travail",
   "InRealLife":"Dans la vraie vie",
-  "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues des plans de travail. Allez-y <strong>maintenant</strong>.",
+  "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues de votre budget. Allez-y <strong>maintenant</strong>.",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalPartsWP":"Sauter à l'activité",
   "transcriptText":""

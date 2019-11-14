@@ -178,7 +178,6 @@ export default {
 }
 
 .planAct {
-  border-top: 2px solid #577a90;
   background-color: #E2E8EC;
 }
 
@@ -187,7 +186,6 @@ export default {
 }
 
 .planSubAct {
-  border-top: 2px solid #3A8251;
   background-color: #dcefe3;
 }
 
@@ -196,7 +194,6 @@ export default {
 }
 
 .planDelivs {
-  border-top: 2px solid #616EB8;
   background-color: #dfe2f1;
 }
 
@@ -205,7 +202,6 @@ export default {
 }
 
 .planRisk {
-  border-top: 2px solid #8D9245;
   background-color: #f0f1df;
 }
 
@@ -214,7 +210,6 @@ export default {
 }
 
 .planLikely {
-  border-top: 2px solid #775F75;
   background-color: #E1DCE1;
 }
 
@@ -223,7 +218,6 @@ export default {
 }
 
 .planImpact {
-  border-top: 2px solid #607293;
   background-color: hsl(219, 21%, 91%);
 }
 
@@ -232,7 +226,6 @@ export default {
 }
 
 .planMitigat {
-  border-top: 2px solid #B35685;
   background-color: #f1dfe8;
 }
 
@@ -241,7 +234,6 @@ export default {
 }
 
 .planRes {
-  border-top: 2px solid #C35522;
   background-color: #f1e5df;
 }
 

@@ -1,6 +1,6 @@
 <template>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.5 41.75" :width="iconWidth" :height="iconWidth">
-    <title>{{ title }}</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.5 41.75">
+  <title>Tool Box</title>
   <g id="Layer_2" data-name="Layer 2">
       <rect class="cls-1" x="1.1" y="8.05" width="52" height="33" />
       <rect class="cls-2" x="1" y="7.75" width="52.5" height="33" />
@@ -12,18 +12,7 @@
   </g>
 </svg>
 </template>
-<script type="text/javascript">
-export default {
-  props: {
-
-    title: { type: String, default: "" },
-    iconWidth: { type: String, default: "50" }
-
-  }
-}
-
-</script>
- <style scoped>
+    <style scoped>
     .cls-1 {
       fill: #e0e0e0;
     }

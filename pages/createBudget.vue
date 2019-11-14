@@ -36,14 +36,14 @@
         <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>
     </section>
     <section>
-      <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
+      <b-modal no-stacking id="intro" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
       <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
         <planLinks /><!-- {{ $t('gotIt') }} -->
       </b-modal>
       <b-modal no-stacking id="partsofwp" @hide="resumePlay()" :title="$t('AnalyzeBudgetKT')" size="xl" okOnly>
         <AnalyzeBudgetKT />
       </b-modal>
-      <b-modal id="threesixty" @hide="resumePlay()" size="xl" okOnly :title="$t('budgetAnalyzeActivity')">
+      <b-modal id="budgetAnalyze" @hide="resumePlay()" size="xl" okOnly :title="$t('budgetAnalyzeActivity')">
         <budgetAnalyzeActivity />
       </b-modal>
       <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly :title="$t('completewpDrafttitle')">
@@ -56,10 +56,9 @@
         <adjustWorkplan />
       </b-modal>
       <b-modal no-stacking id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly>
-        <span v-html="$t('IRLText')"></span>
       </b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" :title="$t('TakeTheQuiz')" size="xl" okOnly>
-        <planQuiz />
+      <span v-html="$t('IRLText')"></span>
       </b-modal>
     </section>
     <div class="bottomNav planSection">
@@ -93,7 +92,7 @@ export default {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"],
+      modalArray: ["intro", "alignworkplan", "partsofwp", "budgetAnalyze", "completedraft", "reallife", "quiz"],
       startTime: [],
       endTime: [],
       hasPlayed: {},

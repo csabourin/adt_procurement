@@ -6,7 +6,7 @@
         <b-col>
           <download
            filename="ADT_Ressources_360.pdf"
-           iconColor="planBackground"
+           iconColor="Scan360Background"
            size=128 :title="$t('Test360')"
            :line1="$t('t360Line1')"
            :line2="$t('t360Line2')" />

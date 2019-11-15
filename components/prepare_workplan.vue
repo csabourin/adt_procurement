@@ -166,6 +166,7 @@
 .tableColoured td:before {
   counter-increment: wpParts;
   content: counter(wpParts);
+  font-weight: bolder;
   position: absolute;
   height: 2em;
   left: 0px;

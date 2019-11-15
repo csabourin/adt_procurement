@@ -1,7 +1,7 @@
 <template>
   <span>
     <ul>
-      <li v-for="(item,index) in $t('q1')">{{ index +"<"+ item}}</li>
+      <li v-for="(item,index) in $t('q1')" >{{ index +"<"+ item}}</li>
     </ul>
   </span>
 </template>

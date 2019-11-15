@@ -1,2 +1,25 @@
 <template>
+  <span>
+    <ul>
+      <li v-for="(item,index) in $t('q1')">{{ index +"<"+ item}}</li>
+    </ul>
+  </span>
 </template>
+<i18n>
+  {
+  "en":{
+  "q1":{
+  "1":"One",
+  "2":"Two",
+  "3":"Three"
+  }
+  },
+  "fr":{
+  "q1":{
+  "1":"Un",
+  "2":"Deux",
+  "3":"Trois"
+  }
+  }
+  }
+</i18n>

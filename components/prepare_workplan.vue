@@ -94,7 +94,7 @@
         "q3-1": "To manage the commercial domestic fisheries",
         "q3-2": "To protect endangered species in the great lakes",
         "q3-3": "To eliminate the encroachment of invasive species",
-        "a3-1": "<span class='v-right' /> <strong>Correct!</strong>,
+        "a3-1": "<span class='v-right' /> <strong>Correct!</strong>",
         "a3-2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries.",
         "a3-3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries."
     },

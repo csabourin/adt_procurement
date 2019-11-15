@@ -368,25 +368,25 @@ button.accessibilityButton {
 </style>
 <i18n>{
   "en":{
-  "TakeTheQuiz":"Take the Quiz",
+  "gotIt":"Continue to next segment",
+  "completewpDrafttitle":"Activity: Complete the Work Plan Draft",
   "completewptitle":"Activity: Complete the Work plan",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "scan360Title":"Activity: Apply the 360 scan",
-  "completewpDrafttitle":"Activity: Complete the Work Plan Draft",
   "InRealLife":"In Real Life",
-  "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about work plans. Go <strong>now</strong>. ",
-  "gotIt":"Continue to next segment",
+  "IRLText":"<p>Take what you have learned into real life!</p><p>Your organization will have their own ways of doing things. Take a time out from the course to scan your intranet to see which templates are used.</p><p>Connect with your colleagues, your director, or financial officer to have a chat about work plans.</p> ",
+  "TakeTheQuiz":"Take the Quiz",
   "jumpModalPartsWP":"Jump to activity",
   "transcriptText":""
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
+  "completewpDrafttitle":"Activité: Faire l’ébauche du plan de travail ",
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
   "scan360Title":"Activité: Appliquez l'apperçu 360",
-  "completewpDrafttitle":"Activité: Compléter l'ébauche du plan de travail",
   "InRealLife":"Dans la vraie vie",
-  "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues des plans de travail. Allez-y <strong>maintenant</strong>.",
+  "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p><p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter votre intranet pour voir quels mod&egrave;les sont utilis&eacute;s.</p><p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalPartsWP":"Sauter à l'activité",
   "transcriptText":""

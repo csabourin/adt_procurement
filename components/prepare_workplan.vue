@@ -59,7 +59,7 @@
     "en":
     {
         "pwpInstructions": "Your director shares with you this coming year’s priorities for your directorate: “Protect aquatic ecosystems, sustain fisheries and manage the issuing of licenses.”",
-        "pwpTitle": "Using the dropdown menus, choose the best option for each section of this work plan.",
+        "pwpTitle": "Select the best answer.",
         "pwpGovtPri": "<strong>Government priorities</strong>",
         "pwpDeptPri": "<strong>Departmental priorities</strong>",
         "pwpDirPri": "<strong>Directorate priorities</strong>",
@@ -101,7 +101,7 @@
     "fr":
     {
         "pwpInstructions": "Votre directeur partage avec vous les priorités de la prochaine année pour votre direction : « Protéger les écosystèmes aquatiques, soutenir les pêches et gérer la délivrance des permis. »",
-        "pwpTitle": "Choisissez la meilleure option pour chaque section de ce plan de travail en utilisant les menus déroulants. ",
+        "pwpTitle": "Sélectionnez la meilleure réponse. ",
         "pwpGovtPri": "<strong>Priorités du gouvernement</strong>",
         "pwpDeptPri": "<strong>Priorités ministérielles</strong>",
         "pwpDirPri": "<strong>Priorités de la direction</strong>",

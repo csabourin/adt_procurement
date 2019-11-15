@@ -81,11 +81,9 @@
         },
         "q1a":
         {
-            "1": "<span class='v-wrong' /> While this is a great priority for the government, our scope is more about fisheries, not climate change.",
-            "2": "<span class='v-right' /> <strong>This is correct!</strong> Our priority is to protect the fisheries so they are still around in 40 years for our grandchildren!",
-            "3": "<span class='v-wrong' /> While this is a great priority for the government, your unit’s scope is more about fisheries, not protecting the oceans.",
-            "4": "<span class='v-wrong' /> While this is a great priority for the government, our scope is more about fisheries, not improving marine safety.",
-            "5": "<span class='v-wrong' /> While this is a great priority for the government, our scope is more about fisheries, not freshwater research."
+            "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority for the government, our scope is more about fisheries, not climate change.",
+            "2": "<span class='v-right' /> <strong>Correct!</strong> Our priority is to protect the fisheries so they are still around in 40 years for our grandchildren!",
+            "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority for the government, your unit’s scope is more about fisheries, not protecting the oceans."
         },
         "q2-1": "To contribute to an environmentally, economically and socially sustainable Canadian aquaculture sector by developing new federal legislation",
         "q2-2": "To ensure access to safe harbors, respond to on-water incidents and minimize or avoid negative impacts of environmental disasters on Canada’s oceans",
@@ -96,9 +94,9 @@
         "q3-1": "To manage the commercial domestic fisheries",
         "q3-2": "To protect endangered species in the great lakes",
         "q3-3": "To eliminate the encroachment of invasive species",
-        "a3-1": "<span class='v-right' /> You have chosen : “To manage the commercial domestic fisheries”, <strong>this is great!</strong>",
-        "a3-2": "<span class='v-wrong' /> You have chosen : “To protect endangered species in the great lakes”. While this is a great priority, our scope is more about fisheries.",
-        "a3-3": "<span class='v-wrong' /> You have chosen : “To eliminate the encroachment of invasive species”. While this is a great priority, our scope is more about fisheries."
+        "a3-1": "<span class='v-right' /> <strong>Correct!</strong>,
+        "a3-2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries.",
+        "a3-3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries."
     },
     "fr":
     {
@@ -124,22 +122,22 @@
         },
         "q1a":
         {
-            "1": "<span class='v-wrong' /> Ceci est inexact. Bien qu'il s'agisse d'une grande priorité pour le gouvernement, notre portée porte davantage sur les pêches que sur les changements climatiques.",
-            "2": "<span class='v-right' /> <strong>Ceci est la bonne réponse!</strong> Notre priorité est de protéger les pêches pour qu'elles soient encore là dans 40 ans pour nos petits-enfants!",
-            "3": "<span class='v-wrong' /> Ceci est inexact.  Bien qu'il s'agisse d'une grande priorité pour le gouvernement, votre unité s'occupe davantage des pêches que de la protection des océans."
+            "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une grande priorité pour le gouvernement, notre portée porte davantage sur les pêches que sur les changements climatiques.",
+            "2": "<span class='v-right' /> <strong>Correct!</strong> Notre priorité est de protéger les pêches pour qu'elles soient encore là dans 40 ans pour nos petits-enfants!",
+            "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Bien qu'il s'agisse d'une grande priorité pour le gouvernement, votre unité s'occupe davantage des pêches que de la protection des océans."
         },
         "q2-1": "Contribuer à la durabilité environnementale, économique et sociale du secteur de l’aquaculture canadien en élaborant de nouvelles mesures législatives fédérales",
         "q2-2": "Garantir l’accès aux ports sûrs, intervenir en cas d'incident sur l'eau et minimiser ou éviter les impacts négatifs de catastrophes environnementales sur les océans du Canada",
         "q2-3": "Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l'aquaculture et d'autres industries océaniques.",
-        "a2-1": "<span class='v-wrong' /> Ceci est inexact. Bien qu'il s'agisse d'une grande priorité, la portée de notre travail concerne davantage les pêches.",
-        "a2-2": "<span class='v-wrong' /> Ceci est inexact. Bien qu'il s'agisse d'une grande priorité, la portée de notre travail concerne davantage les pêches.",
-        "a2-3": "<span class='v-right' /> <strong> Ceci est correct</strong>. La portée de notre travail concerne les pêches.",
+        "a2-1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une grande priorité, la portée de notre travail concerne davantage les pêches.",
+        "a2-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une grande priorité, la portée de notre travail concerne davantage les pêches.",
+        "a2-3": "<span class='v-right' /> <strong>Correct!</strong> La portée de notre travail concerne les pêches.",
         "q3-1": "Gérer les pêches commerciales intérieures",
         "q3-2": "Protéger les espèces en voie de disparition dans les Grands Lacs",
         "q3-3": "Éliminer l'empiètement d'espèces envahissantes",
-        "a3-1": "<span class='v-right' /> <strong>C'est la bonne réponse!</strong>",
-        "a3-2": "<span class='v-wrong' /> Ceci est inexact. Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches.",
-        "a3-3": "<span class='v-wrong' /> Ceci est inexact. Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches."
+        "a3-1": "<span class='v-right' /> <strong>Correct!</strong>",
+        "a3-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches.",
+        "a3-3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches."
     }
 }</i18n>
 <script>

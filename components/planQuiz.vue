@@ -35,7 +35,7 @@
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select>
                     </p>
-                    <p v-if="dirPri"><span v-html="$t('a3-'+dirPri)" /></p>
+                    <p v-if="options3"><span v-html="$t('a3-'+options3)" /></p>
                   </td>
                 </tr>
               </table>
@@ -272,7 +272,7 @@ export default {
       }
     },
     "q10": {
-      "text": "What is a work plan?.",
+      "text": "What is a work plan?",
       "options": {
         "1": "A daily to-do list",
         "2": "The activities to be carried out over a fiscal year",
@@ -438,116 +438,116 @@ export default {
       }
     },
     "q7": {
-      "text": "To conduct a 360 scan, you must do the following.",
+      "text": "Pour effectuer un aperçu à 360 degrés, vous devez procéder comme suit.",
       "options": {
-        "1": "Get a sense of the current situation by examining what was done in the recent past.",
-        "2": "Look at previous work plans, budgets and reports.",
-        "3": "Identify challenges from the previous years.",
-        "4": "Get a sense of the cultural context in your department/branch/directorate.",
-        "5": "All of the above."
+        "1": "Se faire une idée de la situation actuelle en examinant ce qui a été fait dans un passé récent.",
+        "2": "Examinez les plans de travail, budgets et rapports antérieurs.",
+        "3": "Identifier les défis des années précédentes.",
+        "4": "Se faire une idée du contexte culturel de son ministère, de sa direction générale ou de sa direction.",
+        "5": "Toutes ces réponses."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "5": "<span class='v-right' /> <strong>Correct!</strong>  You must do all these activities to conduct a 360 review."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
+        "5": "<span class='v-right' /> <strong>Correct!</strong>  Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés."
       }
     },
     "q8": {
-      "text": "Choose the priorities to which your work plan activities should link, starting with the top.",
+      "text": "Choisissez les priorités auxquelles les activités de votre plan de travail devraient se rattacher, en commençant par le sommet.",
       "options": {
-        "1": "Departmental priorities, directorate priorities, government priorities",
-        "2": "Government priorities, departmental priorities, directorate priorities",
-        "3": "Directorate priorities, government priorities, departmental priorities"
+        "1": "Priorités ministérielles, priorités de la Direction, priorités du gouvernement",
+        "2": "Priorités gouvernementales, priorités ministérielles, priorités de la Direction",
+        "3": "Priorités de la Direction, priorités gouvernementales, priorités ministérielles"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du sommet sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du sommet sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction."
       }
     },
     "q9": {
-      "text": "Which situations would cause you to update your work plan?",
+      "text": "Quelles situations vous amèneraient à mettre à jour votre plan de travail?",
       "options": {
-        "1": "A new director is nominated",
-        "2": "An employee leaves ",
-        "3": "Mandatory training is pushed to next year",
-        "4": "Over 500 licenses have been issued ",
-        "5": "Your software gets an update"
+        "1": "Un nouvel administrateur est nommé",
+        "2": "Un employé quitte",
+        "3": "La formation obligatoire est reportée à l'année prochaine",
+        "4": "Plus de 500 licences ont été délivrées",
+        "5": "Votre logiciel reçoit une mise à jour"
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> The nomination of a new director, the departure of an employee and mandatory training being pushed back to the next year all require an update to the work plan."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> La nomination d'un nouvel administrateur, le départ d'un employé et le report de la formation obligatoire à l'année suivante exigent tous une mise à jour du plan de travail."
       }
     },
     "q10": {
-      "text": "What is a work plan?.",
+      "text": "Qu'est-ce qu'un plan de travail?",
       "options": {
-        "1": "A daily to-do list",
-        "2": "The activities to be carried out over a fiscal year",
-        "3": "The amounts of money to be spent ",
-        "4": "A summary of what you have accomplished"
+        "1": "Une liste quotidienne des tâches à accomplir",
+        "2": "Les activités à réaliser au cours d'un exercice comptable",
+        "3": "Les sommes d'argent à dépenser",
+        "4": "Un résumé de ce que vous avez accompli"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités à réaliser sur une période d'un an, et non de sommes d'argent à dépenser.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable."
       }
     },
     "q11": {
-      "text": "What are a manager’s responsibilities?",
+      "text": "Quelles sont les responsabilités d'un gestionnaire?",
       "options": {
-        "1": "To establish government wide priorities",
-        "2": "To negotiate government contracts",
-        "3": "To plan their unit’s activities",
-        "4": "To use public funds to carry out their unit’s activities",
-        "5": "To report on the status of their unit’s activities"
+        "1": "Établir des priorités à l'échelle du gouvernement",
+        "2": "Négocier les contrats gouvernementaux",
+        "3": "Planifier les activités de leur unité",
+        "4": "Utiliser les fonds publics pour mener à bien les activités de leur unité",
+        "5": "Faire rapport sur l'état d'avancement des activités de leur unité"
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager is responsible for planning their unit’s activities, using public funds to carry out their unit’s activities and reporting on the status of their unit’s activities."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un gestionnaire est responsable de la planification des activités de son unité, de l'utilisation des fonds publics pour mener à bien les activités de son unité et de la production de rapports sur l'état des activités de son unité."
       }
     },
     "q12": {
-      "text": "What are deliverables?",
+      "text": "Que sont les livrables?",
       "options": {
-        "1": "The work tasks to be accomplished to support your directorate’s priorities.",
-        "2": "The specific and tangible items you should be able to check off your list when you accomplish them.",
-        "3": "The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
+        "1": "Les tâches de travail à accomplir pour appuyer les priorités de votre direction.",
+        "2": "Les éléments spécifiques et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les réalisez.",
+        "3": "Le budget, le personnel, les consultants, les bâtiments et le matériel nécessaires à l'exécution des activités de la direction."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Deliverables are more specific and tangible than the activities.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les livrables sont plus précis et tangibles que les activités.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are the resources. Deliverables are specific and tangible items you should be able to check off your list when you accomplish them."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce sont les ressources. Les livrables sont des éléments précis et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les réalisez."
       }
     },
     "q13": {
-      "text": "Which activities should you include in your new work plan?",
+      "text": "Quelles activités devriez-vous inclure dans votre nouveau plan de travail?",
       "options": {
-        "1": "Ongoing activities",
-        "2": "New activities",
-        "3": "Completed activities",
-        "4": "Project activities"
+        "1": "Activités en cours",
+        "2": "Nouvelles activités",
+        "3": "Activités terminées",
+        "4": "Activités d'un projet"
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
         "right": "<span class='v-right' /> <strong>Correct!</strong> "
       }
     },
     "q14": {
-      "text": "Which are considered risks?",
+      "text": "Quels sont les risques considérés?",
       "options": {
-        "1": "A 15 minute power failure, minor software bugs",
-        "2": "Licensing Fees, fisheries management",
-        "3": "Power failures, well managed fish stocks",
-        "4": "Overfishing, staff turnover"
+        "1": "Panne d'électricité de 15 minutes, bogues logiciels mineurs",
+        "2": "Droits de permis, gestion des pêches",
+        "3": "Pannes d'électricité, stocks de poissons bien gérés",
+        "4": "Surpêche, rotation du personnel"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> A 15 minute power failure should not be sufficient to be considered a risk. Overfishing and staff turnover are risks.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are not risks. Overfishing and staff turnover are risks.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Well managed fish stocks are not risks. Overfishing and staff turnover are risks.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Une panne de courant de 15 minutes ne devrait pas être suffisante pour être considérée comme un risque. La surpêche et le roulement du personnel sont des risques.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce ne sont pas des risques. La surpêche et le roulement du personnel sont des risques.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les stocks de poissons bien gérés ne sont pas des risques. La surpêche et le roulement du personnel sont des risques.",
         "4": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     }

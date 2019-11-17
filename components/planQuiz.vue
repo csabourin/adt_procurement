@@ -130,425 +130,429 @@ export default {
   }
 }
 </script>
-<i18n>
-  {
-  "en":
-  {
-  "qDisabled": "Choose",
-  "pwpGovtPri":"<strong>Government priorities</strong>",
-  "pwpDeptPri":"<strong>Departmental priorities</strong>",
-  "pwpDirPri":"<strong>Directorate priorities</strong>",
-  "titleActivities":"Activities",
-  "pwpPlanAct":"<strong>Activities</strong>",
-  "titleSubActivities":"Sub-activities",
-  "titleDeliverables":"Deliverables",
-  "titleRisk":"Risk",
-  "titleLikelihood":"Likelihood",
-  "titleImpact":"Impact",
-  "titleMitigation":"Mitigation",
-  "titleResources":"Resources",
-  "q1":
- {
-   "text": "Match the following statements to the appropriate sections of the work plan. Each section can only be populated with one statement.",
-   "a1": "High",
-   "a2": "Work with Canadians in all areas of the economy and all parts of the country to improve conditions for investment",
-   "a3": "Tablets",
-   "a4": "Keep original computers until tablets are up and running for 3 months",
-   "a5": "Give employees new digital tools to promote mobility",
-   "a6": "Modernize and renew the public service to better serve Canadians and foster a healthy, productive workforce",
-   "a7": "Buy tablets ",
-   "a8": "Technology is not compatible with existing network ",
-   "a9": "Low",
-   "a10": "Workplace Modernization",
-   "a11": "Give employees tablets"
- },
- "q2":
- {
-   "text": "Which elements should you consider when drafting your new work plan? ",
-   "options":
-   {
-     "1": "Government priorities, departmental priorities and directorate priorities",
-     "2": "Previous year’s work plan, budget, reports",
-     "3": "Your fellow manager’s work plan from last year"
-   },
-   "feedback":
-   {
-     "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-     "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> You should consider government priorities, departmental priorities and directorate priorities as well as the previous year’s work plan, budget, reports when drafting your new work plan. Unless the activities of your fellow manager have been transferred to your team, you would not take them into account. "
-   }
- },
- "q3":
- {
-   "text": "A departmental priority in your work plan originates all the way back to:",
-   "options":
-   {
-     "1": "The Directorate’s plan",
-     "2": "The Departmental plan",
-     "3": "The Speech from the Throne"
-   },
-   "feedback":
-   {
-     "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
-     "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
-     "3": "<span class='v-right' /> <strong>Correct!</strong>  It’s a good idea to start your view of the big picture with the Speech from the Throne."
-   }
- },
- "q4":
- {
-   "text": "To find your department’s core responsibilities, expected results and indicators, you would look to:",
-   "options":
-   {
-     "1": "The directorate’s plan",
-     "2": "The Departmental plan",
-     "3": "The Speech from the Throne",
-     "4": "The sector’s plan"
-   },
-   "feedback":
-   {
-     "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-     "2": "<span class='v-right' /> <strong>Correct!</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-     "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-     "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan."
-   }
- },
- "q5":
- {
-   "text": "The Prime Minister sets out his expectations and objectives for your department in: ",
-   "options":
-   {
-     "1": "The Speech from the Throne",
-     "2": "The Departmental Results Framework",
-     "3": "The Mandate Letter",
-     "4": "The Departmental Plan"
-   },
-   "feedback":
-   {
-     "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-     "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-     "3": "<span class='v-right' /> <strong>Correct!</strong>  The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-     "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department."
-   }
- },
- "q6":
- {
-   "text": "How often does a manager need to recertify in order to be able to continue to exercise their financial authority?",
-   "options":
-   {
-     "1": "Every year",
-     "2": "Every 2 years",
-     "3": "Every 5 years"
-   },
-   "feedback":
-   {
-     "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
-     "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
-     "3": "<span class='v-right' /> <strong>Correct!</strong> "
-   }
- },
- "q7":
- {
-   "text": "To conduct a 360 scan, you must do the following.",
-
-   "options":
-   {
-     "1": "Get a sense of the current situation by examining what was done in the recent past.",
-     "2": "Look at previous work plans, budgets and reports.",
-     "3": "Identify challenges from the previous years.",
-     "4": "Get a sense of the cultural context in your department/branch/directorate.",
-     "5": "All of the above."
-   },
-   "feedback":
-   {
-     "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-     "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-     "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-     "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-     "5": "<span class='v-right' /> <strong>Correct!</strong>  You must do all these activities to conduct a 360 review."
-   }
- },
- "q8":
- {
-   "text": "Choose the priorities to which your work plan activities should link, starting with the top.",
-   "options":
-   {
-     "1": "Departmental priorities, directorate priorities, government priorities",
-     "2": "Government priorities, departmental priorities, directorate priorities",
-     "3": "Directorate priorities, government priorities, departmental priorities"
-   },
-   "feedback":
-   {
-     "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities.",
-     "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-     "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities."
-   }
- },
- "q9":
- {
-   "text": "Which situations would cause you to update your work plan?",
-   "options":
-   {
-     "1": "A new director is nominated",
-     "2": "An employee leaves ",
-     "3": "Mandatory training is pushed to next year",
-     "4": "Over 500 licenses have been issued ",
-     "5": "Your software gets an update"
-   },
-   "feedback":
-   {
-     "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-     "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> The nomination of a new director, the departure of an employee and mandatory training being pushed back to the next year all require an update to the work plan."
-   }
- },
- "q10":
- {
-   "text": "What is a work plan?.",
-   "options":
-   {
-     "1": "A daily to-do list",
-     "2": "The activities to be carried out over a fiscal year",
-     "3": "The amounts of money to be spent ",
-     "4": "A summary of what you have accomplished"
-   },
-   "feedback":
-   {
-     "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year.",
-     "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-     "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year.",
-     "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year."
-   }
- },
- "q11":
- {
-   "text": "What are a manager’s responsibilities?",
-   "options":
-   {
-     "1": "To establish government wide priorities",
-     "2": "To negotiate government contracts",
-     "3": "To plan their unit’s activities",
-     "4": "To use public funds to carry out their unit’s activities",
-     "5": "To report on the status of their unit’s activities"
-   },
-   "feedback":
-   {
-     "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-     "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager is responsible for planning their unit’s activities, using public funds to carry out their unit’s activities and reporting on the status of their unit’s activities."
-   }
- },
- "q12":
- {
-   "text": "What are deliverables?",
-   "options":
-   {
-     "1": "The work tasks to be accomplished to support your directorate’s priorities.",
-     "2": "The specific and tangible items you should be able to check off your list when you accomplish them.",
-     "3": "The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
-   },
-   "feedback":
-   {
-     "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Deliverables are more specific and tangible than the activities.",
-     "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-     "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are the resources. Deliverables are specific and tangible items you should be able to check off your list when you accomplish them."
-   }
- },
- "q13":
- {
-   "text": "Which activities should you include in your new work plan?",
-   "options":
-   {
-     "1": "Ongoing activities",
-     "2": "New activities",
-     "3": "Completed activities",
-     "4": "Project activities"
-   },
-   "feedback":
-   {
-     "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
-     "right": "<span class='v-right' /> <strong>Correct!</strong> "
-   }
- },
- "q14":
- {
-   "text": "Which are considered risks?",
-   "options":
-   {
-     "1": "A 15 minute power failure, minor software bugs",
-     "2": "Licensing Fees, fisheries management",
-     "3": "Power failures, well managed fish stocks",
-     "4": "Overfishing, staff turnover"
-   },
-   "feedback":
-   {
-     "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> A 15 minute power failure should not be sufficient to be considered a risk. Overfishing and staff turnover are risks.",
-     "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are not risks. Overfishing and staff turnover are risks.",
-     "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Well managed fish stocks are not risks. Overfishing and staff turnover are risks.",
-     "4": "<span class='v-right' /> <strong>Correct!</strong>"
-   }
- }
+<i18n>{
+  "en": {
+    "qDisabled": "Choose",
+    "pwpGovtPri": "<strong>Government priorities</strong>",
+    "pwpDeptPri": "<strong>Departmental priorities</strong>",
+    "pwpDirPri": "<strong>Directorate priorities</strong>",
+    "titleActivities": "Activities",
+    "pwpPlanAct": "<strong>Activities</strong>",
+    "titleSubActivities": "Sub-activities",
+    "titleDeliverables": "Deliverables",
+    "titleRisk": "Risk",
+    "titleLikelihood": "Likelihood",
+    "titleImpact": "Impact",
+    "titleMitigation": "Mitigation",
+    "titleResources": "Resources",
+    "q1": {
+      "text": "Match the following statements to the appropriate sections of the work plan. Each section can only be populated with one statement.",
+      "a1": "High",
+      "a2": "Work with Canadians in all areas of the economy and all parts of the country to improve conditions for investment",
+      "a3": "Tablets",
+      "a4": "Keep original computers until tablets are up and running for 3 months",
+      "a5": "Give employees new digital tools to promote mobility",
+      "a6": "Modernize and renew the public service to better serve Canadians and foster a healthy, productive workforce",
+      "a7": "Buy tablets ",
+      "a8": "Technology is not compatible with existing network ",
+      "a9": "Low",
+      "a10": "Workplace Modernization",
+      "a11": "Give employees tablets"
+    },
+    "q2": {
+      "text": "Which elements should you consider when drafting your new work plan? ",
+      "options": {
+        "1": "Government priorities, departmental priorities and directorate priorities",
+        "2": "Previous year’s work plan, budget, reports",
+        "3": "Your fellow manager’s work plan from last year"
+      },
+      "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> You should consider government priorities, departmental priorities and directorate priorities as well as the previous year’s work plan, budget, reports when drafting your new work plan. Unless the activities of your fellow manager have been transferred to your team, you would not take them into account. "
+      }
+    },
+    "q3": {
+      "text": "A departmental priority in your work plan originates all the way back to:",
+      "options": {
+        "1": "The Directorate’s plan",
+        "2": "The Departmental plan",
+        "3": "The Speech from the Throne"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  It’s a good idea to start your view of the big picture with the Speech from the Throne."
+      }
+    },
+    "q4": {
+      "text": "To find your department’s core responsibilities, expected results and indicators, you would look to:",
+      "options": {
+        "1": "The directorate’s plan",
+        "2": "The Departmental plan",
+        "3": "The Speech from the Throne",
+        "4": "The sector’s plan"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan."
+      }
+    },
+    "q5": {
+      "text": "The Prime Minister sets out his expectations and objectives for your department in: ",
+      "options": {
+        "1": "The Speech from the Throne",
+        "2": "The Departmental Results Framework",
+        "3": "The Mandate Letter",
+        "4": "The Departmental Plan"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department."
+      }
+    },
+    "q6": {
+      "text": "How often does a manager need to recertify in order to be able to continue to exercise their financial authority?",
+      "options": {
+        "1": "Every year",
+        "2": "Every 2 years",
+        "3": "Every 5 years"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> "
+      }
+    },
+    "q7": {
+      "text": "To conduct a 360 scan, you must do the following.",
+      "options": {
+        "1": "Get a sense of the current situation by examining what was done in the recent past.",
+        "2": "Look at previous work plans, budgets and reports.",
+        "3": "Identify challenges from the previous years.",
+        "4": "Get a sense of the cultural context in your department/branch/directorate.",
+        "5": "All of the above."
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
+        "5": "<span class='v-right' /> <strong>Correct!</strong>  You must do all these activities to conduct a 360 review."
+      }
+    },
+    "q8": {
+      "text": "Choose the priorities to which your work plan activities should link, starting with the top.",
+      "options": {
+        "1": "Departmental priorities, directorate priorities, government priorities",
+        "2": "Government priorities, departmental priorities, directorate priorities",
+        "3": "Directorate priorities, government priorities, departmental priorities"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities."
+      }
+    },
+    "q9": {
+      "text": "Which situations would cause you to update your work plan?",
+      "options": {
+        "1": "A new director is nominated",
+        "2": "An employee leaves ",
+        "3": "Mandatory training is pushed to next year",
+        "4": "Over 500 licenses have been issued ",
+        "5": "Your software gets an update"
+      },
+      "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> The nomination of a new director, the departure of an employee and mandatory training being pushed back to the next year all require an update to the work plan."
+      }
+    },
+    "q10": {
+      "text": "What is a work plan?.",
+      "options": {
+        "1": "A daily to-do list",
+        "2": "The activities to be carried out over a fiscal year",
+        "3": "The amounts of money to be spent ",
+        "4": "A summary of what you have accomplished"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year."
+      }
+    },
+    "q11": {
+      "text": "What are a manager’s responsibilities?",
+      "options": {
+        "1": "To establish government wide priorities",
+        "2": "To negotiate government contracts",
+        "3": "To plan their unit’s activities",
+        "4": "To use public funds to carry out their unit’s activities",
+        "5": "To report on the status of their unit’s activities"
+      },
+      "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager is responsible for planning their unit’s activities, using public funds to carry out their unit’s activities and reporting on the status of their unit’s activities."
+      }
+    },
+    "q12": {
+      "text": "What are deliverables?",
+      "options": {
+        "1": "The work tasks to be accomplished to support your directorate’s priorities.",
+        "2": "The specific and tangible items you should be able to check off your list when you accomplish them.",
+        "3": "The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Deliverables are more specific and tangible than the activities.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are the resources. Deliverables are specific and tangible items you should be able to check off your list when you accomplish them."
+      }
+    },
+    "q13": {
+      "text": "Which activities should you include in your new work plan?",
+      "options": {
+        "1": "Ongoing activities",
+        "2": "New activities",
+        "3": "Completed activities",
+        "4": "Project activities"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
+        "right": "<span class='v-right' /> <strong>Correct!</strong> "
+      }
+    },
+    "q14": {
+      "text": "Which are considered risks?",
+      "options": {
+        "1": "A 15 minute power failure, minor software bugs",
+        "2": "Licensing Fees, fisheries management",
+        "3": "Power failures, well managed fish stocks",
+        "4": "Overfishing, staff turnover"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> A 15 minute power failure should not be sufficient to be considered a risk. Overfishing and staff turnover are risks.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are not risks. Overfishing and staff turnover are risks.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Well managed fish stocks are not risks. Overfishing and staff turnover are risks.",
+        "4": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    }
   },
-  "fr":
-  {
-  "qDisabled": "Choisissez",
-  "pwpGovtPri":"<strong>Priorités du gouvernement</strong>",
-  "pwpDeptPri":"<strong>Priorités ministérielles</strong>",
-  "pwpDirPri":"<strong>Priorités de la direction</strong>",
-  "titleActivities":"Activités",
-  "titleSubActivities":"Sous-activités",
-  "titleDeliverables":"Livrables",
-  "titleRisk":"Risque",
-  "titleLikelihood":"Probabilité",
-  "titleImpact":"Impact",
-  "titleMitigation":"Atténuation",
-  "titleResources":"Resources",
-  "q1":
-  {
-  "text": "Faites correspondre les &eacute;nonc&eacute;s suivants aux sections appropri&eacute;es du plan de travail. Chaque section ne peut contenir qu'un seul &eacute;nonc&eacute;.",
-  "a1": "Élevé ",
-  "a2": "Travailler avec les Canadiens dans tous les secteurs de l'économie et dans toutes les régions du pays pour améliorer les conditions d'investissement.",
-  "a3": "Tablettes",
-  "a4": "Conservez les ordinateurs d'origine jusqu'à ce que les tablettes soient prêtes et à l'emploi pendant 3 mois. ",
-  "a5": "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité ",
-  "a6": "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'œuvre saine et productive.",
-  "a7": "Acheter des tablettes",
-  "a8": "La technologie n'est pas compatible avec le réseau existant ",
-  "a9": "Faible",
-  "a10": "Modernisation du milieu de travail ",
-  "a11": "Donner des tablettes aux employés"
-  },
-  "q2":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "f-right": "",
-  "f-wrong": ""
-  },
-  "q3":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "f-wrong": "",
-  "f-right": ""
-  },
-  "q4":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "o4": "",
-  "f-wrong": "",
-  "f-right": ""
-  },
-  "q5":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "o4": "",
-  "f-wrong": "",
-  "f-right": ""
-  },
-  "q6":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "f-wrong": "",
-  "f-right": ""
-  },
-  "q7":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "o4": "",
-  "o5": "",
-  "f-right": "",
-  "f-wrong": ""
-  },
-  "q8":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "f-wrong": "",
-  "f-right": ""
-  },
-  "q9":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "o4": "",
-  "o5": "",
-  "f-right": "",
-  "f-wrong": ""
-  },
-  "q10":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "o4": "",
-  "f-wrong": "",
-  "f-right": ""
-  },
-  "q11":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "o4": "",
-  "o5": "",
-  "f-right": "",
-  "f-wrong": ""
-  },
-  "q12":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "f1": "",
-  "f2": "",
-  "f3": ""
-  },
-  "q13":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "o4": "",
-  "o5": "",
-  "f-wrong": "",
-  "f-right": ""
-  },
-  "q14":
-  {
-  "text": "",
-  "o1": "",
-  "o2": "",
-  "o3": "",
-  "o4": "",
-  "f1": "",
-  "f2": "",
-  "f3": "",
-  "f4": ""
+  "fr": {
+    "qDisabled": "Choisissez",
+    "pwpGovtPri": "<strong>Priorités du gouvernement</strong>",
+    "pwpDeptPri": "<strong>Priorités ministérielles</strong>",
+    "pwpDirPri": "<strong>Priorités de la direction</strong>",
+    "titleActivities": "Activités",
+    "titleSubActivities": "Sous-activités",
+    "titleDeliverables": "Livrables",
+    "titleRisk": "Risque",
+    "titleLikelihood": "Probabilité",
+    "titleImpact": "Impact",
+    "titleMitigation": "Atténuation",
+    "titleResources": "Resources",
+    "q1": {
+      "text": "Faites correspondre les &eacute;nonc&eacute;s suivants aux sections appropri&eacute;es du plan de travail. Chaque section ne peut contenir qu'un seul &eacute;nonc&eacute;.",
+      "a1": "Élevé ",
+      "a2": "Travailler avec les Canadiens dans tous les secteurs de l'économie et dans toutes les régions du pays pour améliorer les conditions d'investissement.",
+      "a3": "Tablettes",
+      "a4": "Conservez les ordinateurs d'origine jusqu'à ce que les tablettes soient prêtes et à l'emploi pendant 3 mois. ",
+      "a5": "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité ",
+      "a6": "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'œuvre saine et productive.",
+      "a7": "Acheter des tablettes",
+      "a8": "La technologie n'est pas compatible avec le réseau existant ",
+      "a9": "Faible",
+      "a10": "Modernisation du milieu de travail ",
+      "a11": "Donner des tablettes aux employés"
+    },
+    "q2": {
+      "text": "Quels éléments devez-vous prendre en compte lors de l'élaboration de votre nouveau plan de travail? ",
+      "options": {
+        "1": "Priorités gouvernementales, priorités ministérielles et priorités de la Direction ",
+        "2": "Plan de travail, budget et rapports de l'année précédente",
+        "3": "Le plan de travail de votre collègue gestionnaire de l'année dernière"
+      },
+      "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devriez tenir compte des priorités gouvernementales, des priorités ministérielles et des priorités de la direction ainsi que du plan de travail, du budget et des rapports de l'année précédente lorsque vous rédigez votre nouveau plan de travail. À moins que les activités de votre collègue gestionnaire n'aient été transférées à votre équipe, vous ne les prendriez pas en compte. "
+      }
+    },
+    "q3": {
+      "text": "Une priorité ministérielle de votre plan de travail remonte à l'origine",
+      "options": {
+        "1": "Du plan de la Direction ",
+        "2": "Du plan ministériel",
+        "3": "Du discours du Trône"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  C'est une bonne idée de commencer votre vision d'ensemble avec le discours du Trône."
+      }
+    },
+    "q4": {
+      "text": "Pour trouver les principales responsabilités de votre ministère, les résultats escomptés et les indicateurs, vous devriez vous tourner vers :",
+      "options": {
+        "1": "Le plan de la Direction ",
+        "2": "Le Plan ministériel",
+        "3": "Le discours du Trône",
+        "4": "Le plan du secteur"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel. ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel. ",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel. "
+      }
+    },
+    "q5": {
+      "text": "Le premier ministre énonce ses attentes et ses objectifs pour votre ministère dans : ",
+      "options": {
+        "1": "Le discours du Trône",
+        "2": "Le Cadre ministériel des résultats ",
+        "3": "La lettre de mandat",
+        "4": "Le plan ministériel\n"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère."
+      }
+    },
+    "q6": {
+      "text": "À quelle fréquence un gestionnaire doit-il renouveler son attestation pour pouvoir continuer à exercer ses pouvoirs financiers ?",
+      "options": {
+        "1": "Chaque année",
+        "2": "Tous les 2 ans",
+        "3": "Tous les 5 ans"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les cinq ans.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les cinq ans.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> "
+      }
+    },
+    "q7": {
+      "text": "To conduct a 360 scan, you must do the following.",
+      "options": {
+        "1": "Get a sense of the current situation by examining what was done in the recent past.",
+        "2": "Look at previous work plans, budgets and reports.",
+        "3": "Identify challenges from the previous years.",
+        "4": "Get a sense of the cultural context in your department/branch/directorate.",
+        "5": "All of the above."
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
+        "5": "<span class='v-right' /> <strong>Correct!</strong>  You must do all these activities to conduct a 360 review."
+      }
+    },
+    "q8": {
+      "text": "Choose the priorities to which your work plan activities should link, starting with the top.",
+      "options": {
+        "1": "Departmental priorities, directorate priorities, government priorities",
+        "2": "Government priorities, departmental priorities, directorate priorities",
+        "3": "Directorate priorities, government priorities, departmental priorities"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities."
+      }
+    },
+    "q9": {
+      "text": "Which situations would cause you to update your work plan?",
+      "options": {
+        "1": "A new director is nominated",
+        "2": "An employee leaves ",
+        "3": "Mandatory training is pushed to next year",
+        "4": "Over 500 licenses have been issued ",
+        "5": "Your software gets an update"
+      },
+      "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> The nomination of a new director, the departure of an employee and mandatory training being pushed back to the next year all require an update to the work plan."
+      }
+    },
+    "q10": {
+      "text": "What is a work plan?.",
+      "options": {
+        "1": "A daily to-do list",
+        "2": "The activities to be carried out over a fiscal year",
+        "3": "The amounts of money to be spent ",
+        "4": "A summary of what you have accomplished"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year."
+      }
+    },
+    "q11": {
+      "text": "What are a manager’s responsibilities?",
+      "options": {
+        "1": "To establish government wide priorities",
+        "2": "To negotiate government contracts",
+        "3": "To plan their unit’s activities",
+        "4": "To use public funds to carry out their unit’s activities",
+        "5": "To report on the status of their unit’s activities"
+      },
+      "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager is responsible for planning their unit’s activities, using public funds to carry out their unit’s activities and reporting on the status of their unit’s activities."
+      }
+    },
+    "q12": {
+      "text": "What are deliverables?",
+      "options": {
+        "1": "The work tasks to be accomplished to support your directorate’s priorities.",
+        "2": "The specific and tangible items you should be able to check off your list when you accomplish them.",
+        "3": "The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Deliverables are more specific and tangible than the activities.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are the resources. Deliverables are specific and tangible items you should be able to check off your list when you accomplish them."
+      }
+    },
+    "q13": {
+      "text": "Which activities should you include in your new work plan?",
+      "options": {
+        "1": "Ongoing activities",
+        "2": "New activities",
+        "3": "Completed activities",
+        "4": "Project activities"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
+        "right": "<span class='v-right' /> <strong>Correct!</strong> "
+      }
+    },
+    "q14": {
+      "text": "Which are considered risks?",
+      "options": {
+        "1": "A 15 minute power failure, minor software bugs",
+        "2": "Licensing Fees, fisheries management",
+        "3": "Power failures, well managed fish stocks",
+        "4": "Overfishing, staff turnover"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> A 15 minute power failure should not be sufficient to be considered a risk. Overfishing and staff turnover are risks.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are not risks. Overfishing and staff turnover are risks.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Well managed fish stocks are not risks. Overfishing and staff turnover are risks.",
+        "4": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    }
   }
-  }
-  }
-</i18n>
+}</i18n>
 <style type="text/css" scoped>
 select {
   width: 100%;

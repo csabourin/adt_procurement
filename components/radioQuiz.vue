@@ -1,17 +1,21 @@
 <template>
 	<span>
 		<strong v-html="Question.text" />
-    <ul class="list-unstyled">
-      <li v-for="(item,index) in Question.options"><input type="radio" v-model="Quest1" :name="'q'+QNumber" :id="'radioq'+QNumber+index" :value="index"> <label :for="'radioq'+QNumber+index">{{item}}</label></li>
-    </ul>
-    <p v-if="Quest1" v-html="Question.feedback[Quest1]" />
+		<p v-html="$t('selectRight')" />
+    <ol type="1">
+      <li v-for="(item,index) in Question.options"><input @click="q1Submitted=false" type="radio" v-model="Quest1" :name="'q'+qId" :id="'radioq'+qId+index" :value="index"> <label :for="'radioq'+qId+index">{{item}}</label></li>
+    </ol>
+    <p v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>
+    <p v-if="Quest1 && q1Submitted" v-html="Question.feedback[Quest1]" />
+    <b-button @click="q1Submitted=true">{{$t('submit')}}</b-button>
 	</span>
 </template>
 <script type="text/javascript">
 	export default{
 		data(){
 			return{
-				Quest1:''
+				Quest1:'',
+				q1Submitted:false
 			}
 		},
 		props:{
@@ -23,7 +27,7 @@
 					feedback:{"1":"Feedback"}
 				}
 			},
-			QNumber:{
+			qId:{
 				type:String,
 				default:"0"
 			}

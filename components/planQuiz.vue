@@ -15,7 +15,6 @@
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select>
                     </p>
-                    <p v-if="govtPri"> <span v-html="$t('a1-'+govtPri)" /></p>
                   </td>
                 </tr>
                 <tr>
@@ -25,7 +24,6 @@
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select>
                     </p>
-                    <p v-if="deptPri"> <span v-html="$t('a2-'+deptPri)" /></p>
                   </td>
                 </tr>
                 <tr>

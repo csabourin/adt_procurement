@@ -7,9 +7,9 @@
        <div role="tablist" class="transcriptionBox">
     <b-card no-body class="mb-1 text-left">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-1 variant="light" class="text-left" >{{$t('transcript')}}</b-button>
+        <b-button block href="#" v-b-toggle.translationbox variant="light" class="text-left" >{{$t('transcript')}}</b-button>
       </b-card-header>
-      <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+      <b-collapse id="translationbox" accordion="translation-box" role="tabpanel">
         <b-card-body>
           <b-card-text ><span v-html="$t('transcriptText')"></span></b-card-text>
         </b-card-body>

@@ -7,9 +7,9 @@
       <div role="tablist">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.accordion-2 variant="light">{{$t('files')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-2 class="fileHead" variant="light"><img src="~/assets/FilesIcon.svg" width="50" height="50">{{$t('files')}}</b-button>
           </b-card-header>
-          <b-collapse id="accordion-2" visible accordion="my-accordion" role="tabpanel">
+          <b-collapse id="toolbox-2" visible accordion="my-toolbox" role="tabpanel">
             <b-card-body>
               <b-card-text>
                 <download filename="ADT_Ressources_360.pdf" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" />
@@ -20,9 +20,9 @@
         </b-card>
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.accordion-1 variant="light">{{$t('links')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-1 variant="light"><img src="~/assets/LinksIcon.svg" width="50" height="50"> {{$t('links')}}</b-button>
           </b-card-header>
-          <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+          <b-collapse id="toolbox-1" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
               <b-card-text><planLinks />
               <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
@@ -35,9 +35,9 @@
         </b-card>
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.accordion-3 variant="light">{{$t('glossary')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-3 variant="light"><img src="~/assets/GlossaryIcon.svg" width="50" height="50"> {{$t('glossary')}}</b-button>
           </b-card-header>
-          <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+          <b-collapse id="toolbox-3" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
               <b-card-text>{{ text }}</b-card-text>
             </b-card-body>
@@ -45,9 +45,9 @@
         </b-card>
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.accordion-3 variant="light">{{$t('help')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-3 variant="light"><img src="~/assets/HelpIcon.svg" width="50" height="50"> {{$t('help')}}</b-button>
           </b-card-header>
-          <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+          <b-collapse id="toolbox-3" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
               <b-card-text>{{ text }}</b-card-text>
             </b-card-body>
@@ -71,5 +71,5 @@ export default {
 
 </script>
 <style type="text/css" scoped>
-  .card-header {text-transform: uppercase; color:#707070;font-weight: 800;font-size:18px;}
+  .card-header a.btn-light {text-transform: uppercase; color:#707070;font-weight: 500;font-size:28px; text-align: left}
 </style>

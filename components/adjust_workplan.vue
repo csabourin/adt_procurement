@@ -42,7 +42,11 @@
         <tr>
           <td class='planAct' v-html="$t('pA1')"></td>
           <td class='planSubAct' v-html="$t('psA1')"></td>
-          <td class='planDelivs' ><ul><li v-html="$t('pD1')" /><transition name="bounce"><li v-if="Q4==1" v-html="$t('pD1add')"/></transition></ul></td>
+          <td class='planDelivs' ><ul>
+            <li v-html="$t('pD1')" />
+            <transition name="bounce"><li v-if="Q1==1" v-html="$t('pD2add')"/></transition>
+            <transition name="bounce"><li v-if="Q4==1" v-html="$t('pD1add')"/></transition>
+          </ul></td>
           <td class='planRisk' v-html="$t('pR1')"></td>
           <td class='planLikely' v-html="$t('low')"></td>
           <td class='planImpact' v-html="$t('high')"></td>
@@ -78,7 +82,11 @@
             <p>&nbsp;</p>
           </td>
           <td rowspan="2" class='planRes'>
-            <ul v-html="$t('pRes2')" />
+            <ul>
+              <transition name="bounce"><li v-if="Q3!=3" v-html="$t('pRes2.a')" /></transition>
+              <li v-html="$t('pRes2.b')" />
+              <li v-html="$t('pRes2.c')" />
+            </ul>
           </td>
         </tr>
         <tr></tr>
@@ -134,7 +142,8 @@
     "pA1": "Manage and administer the directorate",
     "psA1": "<ul><li>Supervise, monitor and train staff&nbsp;</li><li>Schedule work&nbsp;</li><li>Provide clerical support&nbsp;</li><li>Move office to new location </li></ul>",
     "pD1": "Management of licencing activities</li><li>Reception covered from 9 to 5",
-    "pD1add":"Training for agents",
+    "pD1add":"Training for all officers on the new fisheries software",
+    "pD2add":"Implementation of new fisheries software",
     "pR1": "Staff turnover",
     "low": "Low",
     "high": "High",
@@ -149,11 +158,13 @@
     "pD2_2": "Issue 500 licenses per year",
     "pR2": "Overfishing",
     "pM2": "<li>Protect habitat</li><li>Place catching limits</li><li>Implement fishing seasons</li>",
-    "pRes2": "<li>1 officer</li><li>2 analysts</li><li>1 junior officer</li>",
+    "pRes2.a": "1 officer",
+    "pRes2.b": "2 analysts",
+    "pRes2.c": "1 junior officer",
     "pA3": "Renew commercial fishing licenses",
     "pSA3": "<li>Review applicant renewal requests</li><li>Issue renewal license</li>",
     "pD3": "<li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year </li>",
-    "pRes3": "<li><strong>1 officer</strong></li><li><strong>1 junior analyst</strong></li>",
+    "pRes3": "<li>1 officer</li><li>1 junior analyst</li>",
     "q1":
     {
       "text": "Where should you add the “Implementation of the new software” to your work plan?",
@@ -246,7 +257,8 @@
     "pA1": "G&eacute;rer et administrer la direction&nbsp;",
     "psA1": "<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir un soutien administratif&nbsp;</li><li> D&eacute;m&eacute;nagement des bureaux dans de nouveaux locaux</li></ul>",
     "pD1": "Gestion des activit&eacute;s de d&eacute;livrance de permis</li><li> R&eacute;ception ouverte de 9&nbsp;h &agrave; 17&nbsp;h",
-    "pD1add":"Formation pour les agents",
+    "pD1add":"Formation de tous les agents sur le nouveau logiciel de gestion des pêches",
+    "pD2add":"Mise en œuvre d'un nouveau logiciel de gestion des pêches",
     "pR1": "Roulement du personnel",
     "low": "Faible",
     "high": "&Eacute;lev&eacute;",
@@ -261,11 +273,13 @@
     "pD2_2": "D&eacute;livrer 500 licences par an",
     "pR2": "Surp&ecirc;che",
     "pM2": "<li> Prot&eacute;ger l'habitat</li><li> Fixer des limites de capture</li><li> Mettre en &oelig;uvre les saisons de p&ecirc;che</li>",
-    "pRes2": "<li> 1 agent</li><li> 2 analystes</li><li> 1 agent subalterne</li>",
+    "pRes2.a": "1 agent",
+    "pRes2.b": "2 analystes",
+    "pRes2.c": "1 agent subalterne",
     "pA3": "Renouveler les permis de p&ecirc;che commerciale",
     "pSA3": "<li> Examiner les demandes de renouvellement des demandeurs</li><li> &Eacute;mettre des renouvellements de licenses&nbsp;</li></li>",
     "pD3": "<li> &Eacute;mettre les renouvellements de licences dans les 30 jours suivant la demande</li><li> &Eacute;mettre 300 renouvellements de licences par ann&eacute;e</li>",
-    "pRes3": "<li> <strong>1 agent</strong></li><li> <strong>1 analyste subalterne</strong></li>",
+    "pRes3": "<li>1 agent</li><li>1 analyste subalterne</li>",
     "q1":
     {
       "text": "Où ajouteriez-vous la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» dans votre plan de travail??",

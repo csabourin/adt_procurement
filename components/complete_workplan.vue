@@ -153,7 +153,7 @@
           "pA3": "Renew commercial fishing licenses",
           "pSA3": "<li>Review applicant renewal requests</li><li>Issue renewal license</li>",
           "pD3": "<li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year </li>",
-          "pRes3": "<li><strong>1 officer</strong></li><li><strong>1 junior analyst</strong></li>",
+          "pRes3": "<li>1 officer</li><li>1 junior analyst<</li>",
           "q1":
           {
               "text": "Currently, “Implement flexible work hours” is a <strong>mitigation</strong> strategy for the following risks: overfishing, habitat degradation, environmental disaster, climate change. Where should it appear in the work plan?",
@@ -242,7 +242,7 @@
           "pA3": "Renouveler les permis de p&ecirc;che commerciale",
           "pSA3": "<li> Examiner les demandes de renouvellement des demandeurs</li><li> &Eacute;mettre des renouvellements de licenses&nbsp;</li></li>",
           "pD3": "<li> &Eacute;mettre les renouvellements de licences dans les 30 jours suivant la demande</li><li> &Eacute;mettre 300 renouvellements de licences par ann&eacute;e</li>",
-          "pRes3": "<li> <strong>1 agent</strong></li><li> <strong>1 analyste subalterne</strong></li>",
+          "pRes3": "<li>1 agent</strong></li><li>1 analyste subalterne</li>",
           "q1":
           {
               "text": "Actuellement, &laquo;&nbsp;Mettre en &oelig;uvre des horaires de travail flexibles&nbsp;&raquo; est une strat&eacute;gie d'att&eacute;nuation de la surp&ecirc;che. O&ugrave; devrait-il appara&icirc;tre dans le plan de travail?",

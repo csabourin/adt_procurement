@@ -10,7 +10,7 @@
       <p v-if="arraysMatch(Quest2,Answer)"><span v-html="Question.feedback.right" /></p>
       <p v-else> <span v-html="Question.feedback.wrong" /></p>
     </span>
-    <b-button @click="q2Submitted=true">{{$t('submit')}}</b-button>
+    <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
   </span>
 </template>
 <script type="text/javascript">
@@ -53,6 +53,10 @@ export default {
     },
     isAcceptable(arr1) {
       return ((Array.isArray(arr1) && arr1.length))
+    },
+        submitAnswer(){
+      this.q2Submitted=true
+      this.$emit('response',this.Quest2)
     }
   }
 }

@@ -7,7 +7,7 @@
     </ol>
     <p v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>
     <p v-if="Quest1 && q1Submitted" v-html="Question.feedback[Quest1]" />
-    <b-button @click="q1Submitted=true">{{$t('submit')}}</b-button>
+    <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
 	</span>
 </template>
 <script type="text/javascript">
@@ -31,6 +31,12 @@
 				type:String,
 				default:"0"
 			}
+		},
+		methods:{
+        submitAnswer(){
+      this.q1Submitted=true
+      this.$emit('response',this.Quest1)
+    }
 		}
 	}
 </script>

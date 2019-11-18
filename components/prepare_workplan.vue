@@ -6,36 +6,38 @@
       <tr>
         <td colspan='8' class='govtPri'>
           <p><span v-html="$t('pwpGovtPri')" />
-            <select v-model='govtPri'>
+            <select v-model='govtPri' @change="q1Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(answer, index) in $t('q1')" :value="index">{{answer}}</option>
-            </select>
+            </select> <b-button @click="q1Submit=true">{{$t('submit')}}</b-button>
           </p>
-          <p v-if="govtPri"> <span v-html="$t('q1a.'+govtPri)" /></p>
+          <p v-if="govtPri && q1Submit"> <span v-html="$t('q1a.'+govtPri)" /></p>
         </td>
       </tr>
       <tr>
         <td colspan='8' class='deptPri'>
-          <p><span v-html="$t('pwpDeptPri')" /><select v-model='deptPri'>
+          <p><span v-html="$t('pwpDeptPri')" />
+            <select v-model='deptPri' @change="q2Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option value="1">{{$t('q2-1')}}</option>
               <option value="2">{{$t('q2-2')}}</option>
               <option value="3">{{$t('q2-3')}}</option>
-            </select>
+            </select> <b-button @click="q2Submit=true">{{$t('submit')}}</b-button>
           </p>
-          <p v-if="deptPri"> <span v-html="$t('a2-'+deptPri)" /></p>
+          <p v-if="deptPri && q2Submit"> <span v-html="$t('a2-'+deptPri)" /></p>
         </td>
       </tr>
       <tr>
         <td colspan='8' class='dirPri'>
-          <p><span v-html="$t('pwpDirPri')" /> <select v-model='dirPri'>
+          <p><span v-html="$t('pwpDirPri')" />
+            <select v-model='dirPri' @change="q3Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option value="1">{{$t('q3-1')}}</option>
               <option value="2">{{$t('q3-2')}}</option>
               <option value="3">{{$t('q3-3')}}</option>
-            </select>
+            </select> <b-button @click="q3Submit=true">{{$t('submit')}}</b-button>
           </p>
-          <p v-if="dirPri"><span v-html="$t('a3-'+dirPri)" /></p>
+          <p v-if="dirPri && q3Submit"><span v-html="$t('a3-'+dirPri)" /></p>
         </td>
       </tr>
     </table>
@@ -146,7 +148,8 @@
     return {
       govtPri: '',
       deptPri: '',
-      dirPri: ''
+      dirPri: '',
+      q1Submit:false,q2Submit:false,q3Submit:false
     }
   }
 }
@@ -182,7 +185,7 @@
 }
 
 .tableColoured select{
-  max-width: 100%;
+  max-width: 90%;
 }
 .vertical{
   transform: rotate(90deg);

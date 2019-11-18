@@ -40,35 +40,43 @@
               <div class="scrollMe">
                 <table border="1" cellspacing="0" cellpadding="5" width="100%">
                   <tr>
-                    <th class='planAct thNumbered'><span>{{$t('titleActivities')}}</span><br><select v-model="options4">
+                    <th class='planAct thNumbered'><span>{{$t('titleActivities')}}</span><br>
+                      <select v-model="options4">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
-                    <th class='planSubAct thNumbered'><span>{{$t('titleSubActivities')}}</span><br><select v-model="options5">
+                    <th class='planSubAct thNumbered'><span>{{$t('titleSubActivities')}}</span><br>
+                      <select v-model="options5">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
-                    <th class='planDelivs thNumbered'><span>{{$t('titleDeliverables')}}</span><br><select v-model="options6">
+                    <th class='planDelivs thNumbered'><span>{{$t('titleDeliverables')}}</span><br>
+                      <select v-model="options6">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
-                    <th class='planRisk thNumbered'><span>{{$t('titleRisk')}}</span><br><select v-model="options7">
+                    <th class='planRisk thNumbered'><span>{{$t('titleRisk')}}</span><br>
+                      <select v-model="options7">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
-                    <th class='planLikely thNumbered'><span>{{$t('titleLikelihood')}}</span><br><select v-model="options8">
+                    <th class='planLikely thNumbered'><span>{{$t('titleLikelihood')}}</span><br>
+                      <select v-model="options8">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
-                    <th class='planImpact thNumbered'><span>{{$t('titleImpact')}}</span><br><select v-model="options9">
+                    <th class='planImpact thNumbered'><span>{{$t('titleImpact')}}</span><br>
+                      <select v-model="options9">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
-                    <th class='planMitigat thNumbered'><span>{{$t('titleMitigation')}}</span><br><select v-model="options10">
+                    <th class='planMitigat thNumbered'><span>{{$t('titleMitigation')}}</span><br>
+                      <select v-model="options10">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
-                    <th class='planRes thNumbered'><span>{{$t('titleResources')}}</span><br><select v-model="options11">
+                    <th class='planRes thNumbered'><span>{{$t('titleResources')}}</span><br>
+                      <select v-model="options11">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
@@ -380,11 +388,11 @@ export default {
       }
     },
     "q3": {
-      "text": "Une priorité ministérielle de votre plan de travail remonte à l'origine",
+      "text": "Une priorité ministérielle de votre plan de travail remonte à l'origine:",
       "options": {
-        "1": "Du plan de la Direction ",
-        "2": "Du plan ministériel",
-        "3": "Du discours du Trône"
+        "1": "du plan de la direction ",
+        "2": "du plan ministériel",
+        "3": "du discours du Trône"
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",

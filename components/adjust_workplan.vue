@@ -100,61 +100,16 @@
       </table>
     </div>
     <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold">
-    <b-tab title="Question 1">
-      <p v-html="$t('q1Text')"></p>
-      <ol type="a">
-        <li><input type="radio" name="q1" id="quest1-1" v-model="Q1" value="1"> <label for="quest1-1" v-html="$t('q1a')"></label></li>
-        <li><input type="radio" name="q1" id="quest1-3" v-model="Q1" value="3"> <label for="quest1-3" v-html="$t('q1c')"></label></li>
-        <li><input type="radio" name="q1" id="quest1-4" v-model="Q1" value="4"> <label for="quest1-4" v-html="$t('q1d')"></label></li>
-      </ol>
-      <p v-if="Q1==1" v-html="$t('q1aF')"></p>
-      <p v-if="Q1==3" v-html="$t('q1cF')"></p>
-      <p v-if="Q1==4" v-html="$t('q1dF')"></p>
-      <p v-if="Q1==5" v-html="$t('q1eF')"></p>
-    </b-tab>
-    <b-tab title="Question 2">
-      <p v-html="$t('q2Text')"></p>
-      <ol type="a">
-        <li><input type="radio" name="q2" id="quest2-1" v-model="Q2" value="1"> <label for="quest2-1" v-html="$t('q2a')"></label></li>
-        <li><input type="radio" name="q2" id="quest2-2" v-model="Q2" value="2"> <label for="quest2-2" v-html="$t('q2b')"></label></li>
-        <li><input type="radio" name="q2" id="quest2-3" v-model="Q2" value="3"> <label for="quest2-3" v-html="$t('q2c')"></label></li>
-      </ol>
-      <p v-if="Q2==1" v-html="$t('q2aF')"></p>
-      <p v-if="Q2==2" v-html="$t('q2bF')"></p>
-      <p v-if="Q2==3" v-html="$t('q2cF')"></p>
-      <p v-if="Q2==4" v-html="$t('q2dF')"></p>
-    </b-tab>
-    <b-tab title="Question 3">
-      <p  v-html="$t('q3Text')"></p>
-      <ol type="a">
-        <li><input type="radio" name="q3" id="quest3-1" v-model="Q3" value="1"> <label for="quest3-1" v-html="$t('q3a')"></label></li>
-        <li><input type="radio" name="q3" id="quest3-2" v-model="Q3" value="2"> <label for="quest3-2" v-html="$t('q3b')"></label></li>
-        <li><input type="radio" name="q3" id="quest3-3" v-model="Q3" value="3"> <label for="quest3-3" v-html="$t('q3c')"></label></li>
-      </ol>
-      <p v-if="Q3==1" v-html="$t('q3aF')"></p>
-      <p v-if="Q3==2" v-html="$t('q3bF')"></p>
-      <p v-if="Q3==3" v-html="$t('q3cF')"></p>
-      <p v-if="Q3==4" v-html="$t('q3dF')"></p>
-    </b-tab>
-    <b-tab title="Question 4">    
-      <p  v-html="$t('q4Text')"></p>
-      <ol type="a">
-        <li><input type="radio" name="q4" id="quest4-1" v-model="Q4" value="1"> <label for="quest4-1" v-html="$t('q4a')"></label></li>
-        <li><input type="radio" name="q4" id="quest4-2" v-model="Q4" value="2"> <label for="quest4-2" v-html="$t('q4b')"></label></li>
-        <li><input type="radio" name="q4" id="quest4-3" v-model="Q4" value="3"> <label for="quest4-3" v-html="$t('q4c')"></label></li>
-        <li><input type="radio" name="q4" id="quest4-4" v-model="Q4" value="4"> <label for="quest4-4" v-html="$t('q4d')"></label></li>
-      </ol>
-      <p v-if="Q4==1" v-html="$t('q4aF')"></p>
-      <p v-if="Q4==2" v-html="$t('q4bF')"></p>
-      <p v-if="Q4==3" v-html="$t('q4cF')"></p>
-      <p v-if="Q4==4" v-html="$t('q4dF')"></p>
-      <p v-if="Q4==5" v-html="$t('q4eF')"></p>
-    </b-tab>
+    <b-tab title="Question 1"><radioQuiz :Question="$t('q1')" qId="1" /></b-tab>
+    <b-tab title="Question 2"><radioQuiz :Question="$t('q2')" qId="2" /></b-tab>
+    <b-tab title="Question 3"><radioQuiz :Question="$t('q3')" qId="3" /></b-tab>
+    <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" /></b-tab>
   </b-tabs>
   </span>
 </template>
 <i18n>{
-  "en": {
+  "en":
+  {
     "pwpInstructions": "Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. Three things:",
     "thing1": "new software implementation to speed up the issuing of licenses;",
     "thing2": "new policy that now requires licenses to be issued in 15 days, not 30 days, starting November 1;",
@@ -198,39 +153,75 @@
     "pSA3": "<li>Review applicant renewal requests</li><li>Issue renewal license</li>",
     "pD3": "<li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year </li>",
     "pRes3": "<li><strong>1 officer</strong></li><li><strong>1 junior analyst</strong></li>",
-    "q1Text": "Where should you add the “Implementation of the new software” to your work plan?",
-    "q1a": "In the “Deliverables” column, next to the “Manage and administer directorate” activity",
-    "q1c": "Yes, in the “Mitigation” column, next to the “Issue commercial fishing licenses” activity",
-    "q1d": "Yes, in the “Sub-activities”, next to the “Renew commercial fishing licenses” activity",
-    "q1aF": "<span class='v-right' /> <strong>Correct!</strong>",
-    "q1bF": "<span class='v-wrong' /> <strong>Incorrect.</strong> Implementation of the new software&rdquo; is a deliverable.",
-    "q1cF": "<span class='v-wrong' /> <strong>Incorrect.</strong> While &ldquo;Implementation of the new software&rdquo; could be a &ldquo;Mitigation&rdquo; strategy in certain cases, in this work plan, it is a &ldquo;Deliverable&rdquo;.",
-    "q2Text": "What would you do with the following statement &ldquo;Issue license renewal within 30 days of request&rdquo; in your work plan?",
-    "q2a": "Nothing, leave it as is",
-    "q2b": "Remove it - it is no longer true",
-    "q2c": "Change it to &ldquo;Issue license renewal within 15 days of request&rdquo;",
-    "q2aF": "<span class='v-wrong' /> <strong>Incorrect.</strong> With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
-    "q2bF": "<span class='v-wrong' /> <strong>Incorrect.</strong> With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
-    "q2cF": "<span class='v-right' /> <strong>Correct!</strong>",
-    "q3Text": "Do you need to adjust your Resources?",
-    "q3a": "Yes. I need to add more staff.",
-    "q3b": "No. I can leave it as is.",
-    "q3c": "Yes. I need to adjust my full time employees.",
-    "q3aF": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have not received any additional full time employees so you cannot add more staff.",
-    "q3bF": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have an employee that is retiring, so you will need to remove a full time employee from your work plan.",
-    "q3cF": "<span class='v-right' /> <strong>Correct!</strong>",
-    "q4Text": "Do you need to indicate the need for training for the officers? ",
-    "q4a": "Yes, with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;",
-    "q4b": "No, this is not needed in the work plan",
-    "q4c": "Yes, with the activity &ldquo;Issue commercial fishing licenses&rdquo; under &ldquo;Mitigation&rdquo;",
-    "q4d": "Yes, with the activity &ldquo;Renew commercial fishing licenses&rdquo; under &ldquo;Sub-activities&rdquo;",
-    "q4aF": "<span class='v-right' /> <strong>Correct!</strong>",
-    "q4bF": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
-    "q4cF": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
-    "q4dF": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
-    "q4eF": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;."
+    "q1":
+    {
+      "text": "Where should you add the “Implementation of the new software” to your work plan?",
+      "options":
+      {
+        "1": "In the “Deliverables” column, next to the “Manage and administer directorate” activity",
+        "2": "Yes, in the “Mitigation” column, next to the “Issue commercial fishing licenses” activity",
+        "3": "Yes, in the “Sub-activities”, next to the “Renew commercial fishing licenses” activity"
+      },
+      "feedback":
+      {
+        "1": "<span class='v-right' /> <strong>Correct!</strong>",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Implementation of the new software&rdquo; is a deliverable.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While &ldquo;Implementation of the new software&rdquo; could be a &ldquo;Mitigation&rdquo; strategy in certain cases, in this work plan, it is a &ldquo;Deliverable&rdquo;."
+      }
+    },
+    "q2":
+    {
+      "text": "What would you do with the following statement &ldquo;Issue license renewal within 30 days of request&rdquo; in your work plan?",
+      "options":
+      {
+        "1": "Nothing, leave it as is",
+        "2": "Remove it - it is no longer true",
+        "3": "Change it to &ldquo;Issue license renewal within 15 days of request&rdquo;"
+      },
+      "feedback":
+      {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q3":
+    {
+      "text": "Do you need to adjust your Resources?",
+      "options":
+      {
+        "1": "Yes. I need to add more staff.",
+        "2": "No. I can leave it as is.",
+        "3": "Yes. I need to adjust my full time employees."
+      },
+      "feedback":
+      {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have not received any additional full time employees so you cannot add more staff.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have an employee that is retiring, so you will need to remove a full time employee from your work plan.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>"
+      },
+      "q4":
+      {
+        "text": "Do you need to indicate the need for training for the officers? ",
+        "options":
+        {
+          "1": "Yes, with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;",
+          "2": "No, this is not needed in the work plan",
+          "3": "Yes, with the activity &ldquo;Issue commercial fishing licenses&rdquo; under &ldquo;Mitigation&rdquo;",
+          "4": "Yes, with the activity &ldquo;Renew commercial fishing licenses&rdquo; under &ldquo;Sub-activities&rdquo;"
+        },
+        "feedback":
+        {
+          "1": "<span class='v-right' /> <strong>Correct!</strong>",
+          "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
+          "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
+          "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;."
+        }
+      }
+    }
   },
-  "fr": {
+  "fr":
+  {
     "pwpInstructions": "Votre directeur vous dit qu'il a siégé à un comité directeur et qu'il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois choses :",
     "thing1": " la mise en œuvre d'un nouveau logiciel pour accélérer l'émission de licences;",
     "thing2": " une nouvelle politique qui exige maintenant que les licences soient émises en 15 jours, et non plus en 30 jours, à compter du 1er novembre;",
@@ -273,52 +264,82 @@
     "pSA3": "<li> Examiner les demandes de renouvellement des demandeurs</li><li> &Eacute;mettre des renouvellements de licenses&nbsp;</li></li>",
     "pD3": "<li> &Eacute;mettre les renouvellements de licences dans les 30 jours suivant la demande</li><li> &Eacute;mettre 300 renouvellements de licences par ann&eacute;e</li>",
     "pRes3": "<li> <strong>1 agent</strong></li><li> <strong>1 analyste subalterne</strong></li>",
-    "q1Text": "Devriez-vous ajouter la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» à votre plan de travail?",
-    "q1a": "Oui, dans la colonne «&nbsp;Livrables&nbsp;», à côté de l'activité «&nbsp;Gérer et administrer la direction&nbsp;». ",
-    "q1b": "Non, ce n'est pas nécessaire dans le plan de travail.",
-    "q1c": "Oui, dans la colonne «&nbsp;Atténuation&nbsp;», à côté de l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» ",
-    "q1aF": "<span class='v-right' /> <strong>C'est la meilleure réponse!</strong>",
-    "q1bF": "<span class='v-wrong' /> <strong>Incorrect.</strong> La «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» est un livrable.",
-    "q1cF": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d'atténuation dans certains cas, dans le présent plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
-    "q1dF": "<span class='v-wrong' /> <strong>Incorrect.</strong> Alors que la « Mise en œuvre du nouveau logiciel » pourrait être une « Sous-activité » dans certains cas, dans ce plan de travail, il s'agit d'un « Livrable ».",
-    "q2Text": "Que feriez-vous de l'énoncé suivant dans votre plan de travail : « Renouveler le permis dans les 30 jours suivant la demande »?",
-    "q2a": "Rien, laissez-le tel quel.",
-    "q2b": "Enlevez-le - ce n'est plus vrai.",
-    "q2c": "Changez-le à «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
-    "q2aF": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
-    "q2bF": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
-    "q2cF": "<span class='v-right' /> <strong>Correct!</strong>",
-    "q3Text": "Avez-vous besoin d'ajuster vos Ressources ?",
-    "q3a": "Oui. J'ai besoin de plus de personnel.",
-    "q3b": "Non. Je peux le laisser tel quel.",
-    "q3c": "Oui. J'ai besoin d'ajuster mes employés à plein temps.",
-    "q3aF": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous n'avez pas reçu d'employés à temps plein supplémentaires, vous ne pouvez donc pas ajouter d'employés supplémentaires.",
-    "q3bF": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous avez un employé qui prend sa retraite, vous devrez donc ajuster un employé à temps plein de votre plan de travail.",
-    "q3cF": "<span class='v-right' /> <strong>Correct!</strong>",
-    "q4Text": "Avez-vous besoin d'indiquer le besoin de formation pour les agents?",
-    "q4a": "Oui, avec l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous«&nbsp;Livrables&nbsp;».",
-    "q4b": "Non, ce n'est pas nécessaire dans le plan de travail.",
-    "q4c": "Oui, avec l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» sous «&nbsp;Atténuation&nbsp;».",
-    "q4d": "Oui, avec l'activité «&nbsp;Renouvellement de permis de pêche commerciale&nbsp;» sous «&nbsp;Sous-activités&nbsp;».",
-    "q4aF": "<span class='v-right' /> <strong>Correct!</strong>",
-    "q4bF": "<span class='v-wrong' />  Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
-    "q4cF": "<span class='v-wrong' /> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
-    "q4dF": "<span class='v-wrong' /> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;»."
+    "q1":
+    {
+      "text": "Devriez-vous ajouter la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» à votre plan de travail?",
+      "options":
+      {
+        "1": "Oui, dans la colonne «&nbsp;Livrables&nbsp;», à côté de l'activité «&nbsp;Gérer et administrer la direction&nbsp;». ",
+        "2": "Non, ce n'est pas nécessaire dans le plan de travail.",
+        "3": "Oui, dans la colonne «&nbsp;Atténuation&nbsp;», à côté de l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» "
+      },
+      "feedback":
+      {
+        "1": "<span class='v-right' /> <strong>Correct!</strong>",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» est un livrable.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d'atténuation dans certains cas, dans le présent plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
+        "": "<span class='v-wrong' /> <strong>Incorrect.</strong> Alors que la « Mise en œuvre du nouveau logiciel » pourrait être une « Sous-activité » dans certains cas, dans ce plan de travail, il s'agit d'un « Livrable »."
+      }
+    },
+    "q2":
+    {
+      "text": "Que feriez-vous de l'énoncé suivant dans votre plan de travail : « Renouveler le permis dans les 30 jours suivant la demande »?",
+      "options":
+      {
+        "1": "Rien, laissez-le tel quel.",
+        "2": "Enlevez-le - ce n'est plus vrai.",
+        "3": "Changez-le à «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;»."
+      },
+      "feedback":
+      {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q3":
+    {
+      "text": "Avez-vous besoin d'ajuster vos Ressources ?",
+      "options":
+      {
+        "1": "Oui. J'ai besoin de plus de personnel.",
+        "2": "Non. Je peux le laisser tel quel.",
+        "3": "Oui. J'ai besoin d'ajuster mes employés à plein temps."
+      },
+      "feedback":
+      {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous n'avez pas reçu d'employés à temps plein supplémentaires, vous ne pouvez donc pas ajouter d'employés supplémentaires.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous avez un employé qui prend sa retraite, vous devrez donc ajuster un employé à temps plein de votre plan de travail.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+
+    "q4":
+    {
+      "text": "Avez-vous besoin d'indiquer le besoin de formation pour les agents?",
+      "options":
+      {
+        "1": "Oui, avec l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous«&nbsp;Livrables&nbsp;».",
+        "2": "Non, ce n'est pas nécessaire dans le plan de travail.",
+        "3": "Oui, avec l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» sous «&nbsp;Atténuation&nbsp;».",
+        "4": "Oui, avec l'activité «&nbsp;Renouvellement de permis de pêche commerciale&nbsp;» sous «&nbsp;Sous-activités&nbsp;»."
+      },
+      "feedback":
+      {
+        "1": "<span class='v-right' /> <strong>Correct!</strong>",
+        "2": "<span class='v-wrong' />  Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
+        "3": "<span class='v-wrong' /> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
+        "4": "<span class='v-wrong' /> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;»."
+      }
+    }
   }
 }
 </i18n>
 <script>
-  export default {
-  data() {
- return {
-   Q1:'',
-   Q2:'',
-   Q3:'',
-   Q4:''
- }
-  }
+  import radioQuiz from "~/components/radioQuiz"
+export default {
+  components:{radioQuiz}
 }
-
 </script>
 <style type="text/css" scoped>
 .scrollMe {

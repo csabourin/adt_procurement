@@ -4,32 +4,40 @@
     <br>
     <checkboxQuiz :Question="$t('q2')" qId="2" :Answer='["1","2","3"]' @response="land = $event" />
     <br>
-    
     <b-container>
       <b-row>
         <b-col>Answer 1: {{ lala }}</b-col>
         <b-col>Answer 2: <span v-html="land"></span></b-col>
       </b-row>
     </b-container>
-    <transition name="fade" ><span v-if="lala==2" >Yay parent</span></transition>
-    <ul><transition name="bounce"><li v-if="lala==1">Bounce me in!</li></transition></ul>
+    <transition name="fade"><span v-if="lala==2">Yay parent</span></transition>
+    <ul>
+      <transition name="bounce">
+        <li v-if="lala==1">Bounce me in!</li>
+      </transition>
+    </ul>
+    <openDoor textInside="You get texted"/> &nbsp; <openDoor textInside="You get nothing!"/>
   </div>
 </template>
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
+import openDoor from "~/components/openDoor"
 export default {
-   components: {
+  components: {
     radioQuiz,
-    checkboxQuiz
+    checkboxQuiz,
+    openDoor
   },
-   data() {
+  data() {
     return {
       lala: "",
-      land: ""
+      land: "",
+      doorOpened: false
     }
   }
 }
+
 </script>
 <i18n>{
   "en":
@@ -101,3 +109,7 @@ export default {
   }
   }
   }</i18n>
+<style type="text/css">
+
+
+</style>

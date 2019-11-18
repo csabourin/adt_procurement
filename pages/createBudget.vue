@@ -10,9 +10,9 @@
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.accordion-1 variant="light">{{$t('transcript')}}</b-button>
+            <b-button block href="#" v-b-toggle.cbTranscript-1 variant="light">{{$t('transcript')}}</b-button>
           </b-card-header>
-          <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+          <b-collapse id="cbTranscript-1" role="tabpanel">
             <b-card-body>
               <b-card-text>
                 <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button>

@@ -33,7 +33,6 @@
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select>
                     </p>
-                    <p v-if="options3"><span v-html="$t('a3-'+options3)" /></p>
                   </td>
                 </tr>
               </table>

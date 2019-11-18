@@ -2,6 +2,10 @@
 export default {
   searchBar: "Search",
   homePage: "Home",
+  links: "Links",
+  files: "Files",
+  glossary: "Glossary",
+  help: "Help",
   transcript: "Transcript",
   plan: "Plan",
   spend: "Spend",
@@ -13,7 +17,7 @@ export default {
   home: "Home",
   checkAll: "Check all that apply.",
   selectRight: "Select the correct answer.",
-  pleaseAnswer:"Please answer the question!",
+  pleaseAnswer: "Please answer the question!",
   KeyMessages: "Key Messages",
   BuildWorkPlan: "Build a Work Plan",
   CreateBudget: "Create a Budget",
@@ -28,8 +32,8 @@ export default {
   t360Line1: "360",
   t360Line2: "Scan",
   downloadPlan: "Download a Word template of the work plan",
-  download360:"Download the 360 Scan",
+  download360: "Download the 360 Scan",
   dwnPlanLine1: "Work Plan",
   dwnPlanLine2: "Template",
-  fileFolder:"Download files and tools"
+  fileFolder: "Download files and tools"
 }

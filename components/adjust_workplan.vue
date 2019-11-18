@@ -42,7 +42,7 @@
         <tr>
           <td class='planAct' v-html="$t('pA1')"></td>
           <td class='planSubAct' v-html="$t('psA1')"></td>
-          <td class='planDelivs' v-html="$t('pD1')"></td>
+          <td class='planDelivs' ><ul><li v-html="$t('pD1')" /><transition name="bounce"><li v-if="Q4==1" v-html="$t('pD1add')"/></transition></ul></td>
           <td class='planRisk' v-html="$t('pR1')"></td>
           <td class='planLikely' v-html="$t('low')"></td>
           <td class='planImpact' v-html="$t('high')"></td>
@@ -100,10 +100,10 @@
       </table>
     </div>
     <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold">
-    <b-tab title="Question 1"><radioQuiz :Question="$t('q1')" qId="1" /></b-tab>
-    <b-tab title="Question 2"><radioQuiz :Question="$t('q2')" qId="2" /></b-tab>
-    <b-tab title="Question 3"><radioQuiz :Question="$t('q3')" qId="3" /></b-tab>
-    <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" /></b-tab>
+    <b-tab title="Question 1"><radioQuiz :Question="$t('q1')" qId="1" @response="Q1=$event"/></b-tab>
+    <b-tab title="Question 2"><radioQuiz :Question="$t('q2')" qId="2" @response="Q2=$event"/></b-tab>
+    <b-tab title="Question 3"><radioQuiz :Question="$t('q3')" qId="3" @response="Q3=$event"/></b-tab>
+    <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" @response="Q4=$event"/></b-tab>
   </b-tabs>
   </span>
 </template>
@@ -133,7 +133,8 @@
     "dirPriorities": "To manage the commercial domestic fisheries",
     "pA1": "Manage and administer the directorate",
     "psA1": "<ul><li>Supervise, monitor and train staff&nbsp;</li><li>Schedule work&nbsp;</li><li>Provide clerical support&nbsp;</li><li>Move office to new location </li></ul>",
-    "pD1": "<ul><li>Management of licencing activities</li><li>Reception covered from 9 to 5</li></ul>",
+    "pD1": "Management of licencing activities</li><li>Reception covered from 9 to 5",
+    "pD1add":"Training for agents",
     "pR1": "Staff turnover",
     "low": "Low",
     "high": "High",
@@ -244,7 +245,8 @@
     "dirPriorities": "Gérer les pêches commerciales intérieures",
     "pA1": "G&eacute;rer et administrer la direction&nbsp;",
     "psA1": "<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir un soutien administratif&nbsp;</li><li> D&eacute;m&eacute;nagement des bureaux dans de nouveaux locaux</li></ul>",
-    "pD1": "<ul><li> Gestion des activit&eacute;s de d&eacute;livrance de permis</li><li> R&eacute;ception ouverte de 9 h &agrave; 17 h</li></ul>",
+    "pD1": "Gestion des activit&eacute;s de d&eacute;livrance de permis</li><li> R&eacute;ception ouverte de 9&nbsp;h &agrave; 17&nbsp;h",
+    "pD1add":"Formation pour les agents",
     "pR1": "Roulement du personnel",
     "low": "Faible",
     "high": "&Eacute;lev&eacute;",
@@ -266,19 +268,18 @@
     "pRes3": "<li> <strong>1 agent</strong></li><li> <strong>1 analyste subalterne</strong></li>",
     "q1":
     {
-      "text": "Devriez-vous ajouter la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» à votre plan de travail?",
+      "text": "Où ajouteriez-vous la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» dans votre plan de travail??",
       "options":
       {
-        "1": "Oui, dans la colonne «&nbsp;Livrables&nbsp;», à côté de l'activité «&nbsp;Gérer et administrer la direction&nbsp;». ",
-        "2": "Non, ce n'est pas nécessaire dans le plan de travail.",
-        "3": "Oui, dans la colonne «&nbsp;Atténuation&nbsp;», à côté de l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» "
+        "1": "Dans la colonne «&nbsp;Livrables&nbsp;», à côté de l'activité «&nbsp;Gérer et administrer la direction&nbsp;». ",
+        "2": "Dans la colonne «&nbsp;Atténuation&nbsp;», à côté de l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» ",
+        "3": "Dans les « Sous-activités », à côté de l'activité « Renouvellement de permis de pêche commerciale »."
       },
       "feedback":
       {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» est un livrable.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d'atténuation dans certains cas, dans le présent plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
-        "": "<span class='v-wrong' /> <strong>Incorrect.</strong> Alors que la « Mise en œuvre du nouveau logiciel » pourrait être une « Sous-activité » dans certains cas, dans ce plan de travail, il s'agit d'un « Livrable »."
+        "1": "<span class='v-right' /> <strong>Correct!</strong>",        
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d'atténuation dans certains cas, dans le présent plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Alors que la « Mise en œuvre du nouveau logiciel » pourrait être une « Sous-activité » dans certains cas, dans ce plan de travail, il s'agit d'un « Livrable »."
       }
     },
     "q2":
@@ -286,8 +287,8 @@
       "text": "Que feriez-vous de l'énoncé suivant dans votre plan de travail : « Renouveler le permis dans les 30 jours suivant la demande »?",
       "options":
       {
-        "1": "Rien, laissez-le tel quel.",
-        "2": "Enlevez-le - ce n'est plus vrai.",
+        "1": "Laissez « Renouveler le permis dans les 30 jours suivant la demande » tel quel.",
+        "2": "Enlevez « Renouveler le permis dans les 30 jours suivant la demande ».",
         "3": "Changez-le à «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;»."
       },
       "feedback":
@@ -302,9 +303,9 @@
       "text": "Avez-vous besoin d'ajuster vos Ressources ?",
       "options":
       {
-        "1": "Oui. J'ai besoin de plus de personnel.",
-        "2": "Non. Je peux le laisser tel quel.",
-        "3": "Oui. J'ai besoin d'ajuster mes employés à plein temps."
+        "1": "Je dois ajouter du personnel.",
+        "2": "Je peux laisser les ressources tel quel.",
+        "3": "Je dois enlever un employé."
       },
       "feedback":
       {
@@ -320,16 +321,14 @@
       "options":
       {
         "1": "Oui, avec l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous«&nbsp;Livrables&nbsp;».",
-        "2": "Non, ce n'est pas nécessaire dans le plan de travail.",
-        "3": "Oui, avec l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» sous «&nbsp;Atténuation&nbsp;».",
-        "4": "Oui, avec l'activité «&nbsp;Renouvellement de permis de pêche commerciale&nbsp;» sous «&nbsp;Sous-activités&nbsp;»."
+        "2": "Oui, avec l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» sous «&nbsp;Atténuation&nbsp;».",
+        "3": "Oui, avec l'activité «&nbsp;Renouvellement de permis de pêche commerciale&nbsp;» sous «&nbsp;Sous-activités&nbsp;»."
       },
       "feedback":
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' />  <strong>Incorrect.</strong>  Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
-        "3": "<span class='v-wrong' />  <strong>Incorrect.</strong> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
-        "4": "<span class='v-wrong' />  <strong>Incorrect.</strong> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;»."
+        "2": "<span class='v-wrong' />  <strong>Incorrect.</strong> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
+        "3": "<span class='v-wrong' />  <strong>Incorrect.</strong> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;»."
       }
     }
   }
@@ -338,7 +337,10 @@
 <script>
   import radioQuiz from "~/components/radioQuiz"
 export default {
-  components:{radioQuiz}
+  components:{radioQuiz},
+  data(){
+    return{Q1:'',Q2:'',Q3:'',Q4:''}
+  }
 }
 </script>
 <style type="text/css" scoped>

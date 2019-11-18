@@ -327,9 +327,9 @@
       "feedback":
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' />  Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
-        "3": "<span class='v-wrong' /> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
-        "4": "<span class='v-wrong' /> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;»."
+        "2": "<span class='v-wrong' />  <strong>Incorrect.</strong>  Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
+        "3": "<span class='v-wrong' />  <strong>Incorrect.</strong> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
+        "4": "<span class='v-wrong' />  <strong>Incorrect.</strong> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;»."
       }
     }
   }

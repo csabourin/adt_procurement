@@ -355,11 +355,13 @@ console.log('----------------');
 // console.log(document.querySelectorAll(elementID.target.toString()).getAttribute('aria-posinset'));
 
 //SOMEWHAT SUCCESSFUL: GETTING NUMBER OF THE TAB (baby steps)
-      var tabSelected = elementID.srcElement.attributes['aria-posinset'].nodeValue;
-console.dir('Tab Selected: '+tabSelected);
 
-      //Totally hard coded below
-      document.getElementById('scrollableElement').scrollLeft = 20;
+
+//       var tabSelected = elementID.srcElement.attributes['aria-posinset'].nodeValue;
+// console.dir('Tab Selected: '+tabSelected);
+
+//       //Totally hard coded below
+//       document.getElementById('scrollableElement').scrollLeft = 20;
     }
   }
 }

@@ -6,7 +6,7 @@
         <b-col>
           <download
            filename="ADT_Ressources_360.pdf"
-           iconColor="planBackground"
+           iconColor="Scan360Background"
            size=128 :title="$t('Test360')"
            :line1="$t('t360Line1')"
            :line2="$t('t360Line2')" />
@@ -42,22 +42,22 @@
 <i18n>
   {
   "en":{
-  "instructions":"Review the following documents and apply the questions of the 360 Scan to them",
+  "instructions":"Examine each of the following documents.",
   "Test360":"360 Scan",
   "t360Line1":"360",
   "t360Line2":"Scan",
-  "wpExample":"Last year's Work Plan",
+  "wpExample":"Last Year's Work Plan",
   "wpLine1":"Work",
   "wpLine2":"Plan",
-  "bExample":"Last year's Budget",
+  "bExample":"Last Year's Budget",
   "bLine1":"Last year's",
   "bLine2":"Budget",
-  "rExample":"Last years's Reports",
+  "rExample":"Last Years's Reports",
   "rLine1":" ",
   "rLine2":"Reports"
   },
   "fr":{
-  "instructions":"Révisez les documents suivants et appliquez-y les questions de l'apperçu 360",
+  "instructions":"Examinez chacun des documents suivants.",
   "Test360":"Aperçu 360",
   "t360Line1":"Aperçu",
   "t360Line2":"360",

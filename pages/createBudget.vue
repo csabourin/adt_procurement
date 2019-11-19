@@ -4,15 +4,15 @@
       {{ $t('CreateBudget')}}
     </h1>
     <section>
-      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isReady">
+      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/CreateBudgetPoster.jpg')" :src="require('~/assets/'+ $i18n.locale +'/CreateBudget.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isReady">
         <track :src="require('~/assets/'+ $i18n.locale +'/BudgetChapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.accordion-1 variant="light">{{$t('transcript')}}</b-button>
+            <b-button block href="#" v-b-toggle.cbTranscript-1 variant="light">{{$t('transcript')}}</b-button>
           </b-card-header>
-          <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+          <b-collapse id="cbTranscript-1" role="tabpanel">
             <b-card-body>
               <b-card-text>
                 <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button>
@@ -23,27 +23,27 @@
           </b-collapse>
         </b-card>
       </div>
-      <div id="bar" ref="linkBar">
-        <a href='#mainPlayer' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek">
+      <ul id="bar" ref="linkBar">
+        <li href='#mainPlayer' v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
           {{ item }}<br>
-          <a href="javascript:" class="plusButton" variant="light" pill @click.stop="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]">
-            <plusIcon iconWidth="28" /> </a>
-        </a>
-      </div>
+          <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek" :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
+          <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="55" height="55"> </a>
+        </li>
+      </ul>
       <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
         <span>endTime : {{endTime}}</span><br>
         <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
         <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>
     </section>
     <section>
-      <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
+      <b-modal no-stacking id="intro" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
       <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
         <planLinks /><!-- {{ $t('gotIt') }} -->
       </b-modal>
-      <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal no-stacking id="partsofwp" @hide="resumePlay()" :title="$t('AnalyzeBudgetKT')" size="xl" okOnly>
         <AnalyzeBudgetKT />
       </b-modal>
-      <b-modal id="threesixty" @hide="resumePlay()" size="xl" okOnly :title="$t('scan360Title')">
+      <b-modal id="budgetAnalyze" @hide="resumePlay()" size="xl" okOnly :title="$t('budgetAnalyzeActivity')">
         <budgetAnalyzeActivity />
       </b-modal>
       <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly :title="$t('completewpDrafttitle')">
@@ -56,10 +56,9 @@
         <adjustWorkplan />
       </b-modal>
       <b-modal no-stacking id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly>
-        <span v-html="$t('IRLText')"></span>
       </b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" :title="$t('TakeTheQuiz')" size="xl" okOnly>
-        <planQuiz />
+      <span v-html="$t('IRLText')"></span>
       </b-modal>
     </section>
     <div class="bottomNav planSection">
@@ -69,7 +68,7 @@
       <microlearning path="buildWP" imagePath="KeyMessR.png" size="140" time="20" completion="80">
         {{ $t('BuildWorkPlan') }}
       </microlearning>
-      <microlearning size="140" youAreHere time="20" completion="10" imagePath="CreateBud.png">
+      <microlearning path="createBudget" size="140" youAreHere time="20" completion="10" imagePath="CreateBud.png">
         {{ $t('CreateBudget') }}
       </microlearning>
       <microlearning size="140" time="15" tmp_imagePath="TestPlan.png">
@@ -93,7 +92,7 @@ export default {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"],
+      modalArray: ["intro", "alignworkplan", "partsofwp", "budgetAnalyze", "completedraft", "reallife", "quiz"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -216,7 +215,6 @@ video {
   width: 60vw;
   margin: auto;
   position: relative;
-  cursor: pointer;
   color: #CCC;
   justify-content: space-evenly;
   counter-reset: episode;
@@ -226,6 +224,7 @@ video {
   position: relative;
   align-content: flex-start;
   text-align: center;
+  width: 175px;
   height: 150px;
   overflow: hidden;
   padding: 1.5em 1.5em;
@@ -238,12 +237,8 @@ video {
   border: 1px solid #c3bfb6;
   margin: 5px 5px 10px;
   font-weight: bolder;
-  width: 150px;
 }
 
-.chaptersLink:hover {
-  color: #06f;
-}
 
 .chaptersLink:before {
   counter-increment: episode;
@@ -273,11 +268,15 @@ video {
   background-color: #b54142;
 }
 
-.plusButton {
+.playButton, .activityButton {
   position: absolute;
-  left: 60px;
-  bottom: 1.6em;
-  width: 36px;
+  bottom: 0.3em;
+}
+
+.playButton{left: 20px;}
+.activityButton {
+    right: 5px;
+    transform:rotate(45deg);
 }
 
 button.accessibilityButton {
@@ -290,24 +289,28 @@ button.accessibilityButton {
   "TakeTheQuiz":"Take the Quiz",
   "completewptitle":"Activity: Complete the Work plan",
   "adjustwptitle":"Activity: Adjust the Work plan",
-  "scan360Title":"Activity: Apply the 360 scan",
+  "AnalyzeBudgetKT":"Activity: Analyze a Budget - Key Terms",
+  "budgetAnalyzeActivity":"Activity: Analyze Past And Current Year’s Budget",
   "completewpDrafttitle":"Activity: Complete the Work Plan Draft",
   "InRealLife":"In Real Life",
-  "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about work plans. Go <strong>now</strong>. ",
+  "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about your budget. Go <strong>now</strong>. ",
   "gotIt":"Continue to next segment",
   "jumpModalPartsWP":"Jump to activity",
+  "playSegment":"Play video segment",
   "transcriptText":""
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
-  "scan360Title":"Activité: Appliquez l'apperçu 360",
+  "AnalyzeBudgetKT":"Activité: Analyser un budget - Termes clés",
+  "budgetAnalyzeActivity":"Activité: Analyser les budgets précédents et en cours",
   "completewpDrafttitle":"Activité: Compléter l'ébauche du plan de travail",
   "InRealLife":"Dans la vraie vie",
-  "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues des plans de travail. Allez-y <strong>maintenant</strong>.",
+  "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues de votre budget. Allez-y <strong>maintenant</strong>.",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalPartsWP":"Sauter à l'activité",
+  "playSegmentP":"Faire jouer le segment vidéo",
   "transcriptText":""
   }
   }

@@ -7,7 +7,7 @@
 import genericFile from "~/components/icons/genFileIcon"
 export default {
   props: {
-    size: { type: Number, default: 64 },
+    size: { type: String, default: "64" },
     iconColor: { type: String, default: "planBackground" },
     filename: { type: String, default: "" },
     title: { type: String, default: "" },

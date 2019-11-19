@@ -25,7 +25,7 @@ export default {
       default: "planBackground"
     },
     title: { type: String, default: "" },
-    iconWidth: { type: Number, default: 50 }
+    iconWidth: { type: String, default: "50" }
 
   }
 }

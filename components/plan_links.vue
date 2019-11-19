@@ -19,6 +19,7 @@
         <dt><a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/rapports-ministeriels-rendement.html" target="_blank">Consulter votre Rapport sur les r&eacute;sultats minist&eacute;riels</a></dt>
         <dt><a href="https://ouvert.canada.ca/fr/divulgation-proactive" target="_blank">&Eacute;tablissement de rapports &agrave; l&rsquo;&eacute;chelle du gouvernement&nbsp;&ndash; Divulgation proactive</a></dt>
         <dt><a href="https://www.canada.ca/fr/secretariat-conseil-tresor/organisation/programmes.html" target="_blank">Cadre minist&eacute;riel des r&eacute;sultats et r&eacute;pertoire de programmes du SCT</a></dt>
+        <dt><a href="https://www.canada.ca/fr/secretariat-conseil-tresor/sujets/depenses-prevues.html" target="_blank">Dépenses prévues du gouvernement</a></dt>
       </dl>
     </div>
     <div v-if="$i18n.locale=='en'">
@@ -36,6 +37,7 @@
         <dt><a href="http://intranet.canada.ca/wg-tg/gf-fg/ems-sgd/cal-eng.asp" target="_blank">Expenditure Management Calendar of Events</a></dt>
         <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/services/departmental-performance-reports.html" target="_blank">Departmental Results Reports</a></dt>
         <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/services/reporting-government-spending/proactive-disclosure-department-agency.html" target="_blank">Government-wide Reporting&nbsp;&ndash; Proactive Disclosure</a></dt>
+        <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/topics/planned-government-spending.html" target="_blank">Planned government spending</a></dt>
       </dl>
     </div>
   </span>

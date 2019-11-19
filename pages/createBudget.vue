@@ -59,7 +59,7 @@
         <span v-html="$t('IRLText')"></span>
       </b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" :title="$t('TakeTheQuiz')" size="xl" okOnly>
-      
+      <budgetQuiz />
       </b-modal>
     </section>
     <div class="bottomNav planSection">
@@ -86,7 +86,7 @@ import AnalyzeBudgetKT from '~/components/AnalyzeBudgetKT'
 import submitBudget from '~/components/submitBudget'
 import adjustWorkplan from '~/components/adjust_workplan'
 import test360 from '~/components/test360'
-import planQuiz from '~/components/planQuiz'
+import budgetQuiz from '~/components/budgetQuiz'
 import plusIcon from '~/components/icons/PlusSign'
 export default {
   data() {
@@ -112,7 +112,7 @@ export default {
     budgetAnalyzeActivity,
     submitBudget,
     adjustWorkplan,
-    planQuiz,
+    budgetQuiz,
     plusIcon
   },
   methods: {

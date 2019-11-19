@@ -270,7 +270,7 @@ video {
 
 .playButton, .activityButton {
   position: absolute;
-  bottom: 0.3em;
+  bottom: 1em;
 }
 
 .playButton{left: 20px;}

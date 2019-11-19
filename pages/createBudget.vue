@@ -227,7 +227,7 @@ video {
   width: 175px;
   height: 150px;
   overflow: hidden;
-  padding: 1.5em 1.5em;
+  padding: 1.2em 1.5em;
   line-height: 17px;
   color: #575757;
   background-color: #ebebeb;

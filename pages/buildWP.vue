@@ -100,13 +100,13 @@
           </b-collapse>
         </b-card>
       </div>
-      <div id="bar" ref="linkBar">
-        <a href='#mainPlayer' v-for="(item,index) in navBarTracks" :key="index" :class="'chaptersLink '+ isItPlaying(index)" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek">
+      <ul id="bar" ref="linkBar">
+        <li href='#mainPlayer' v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
           {{ item }}<br>
-          <a href="javascript:" class="plusButton" variant="light" pill @click.stop="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]">
-            <plusIcon iconWidth="28" /> </a>
-        </a>
-      </div>
+          <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek"></a>
+          <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="55" height="55"> </a>
+        </li>
+      </ul>
       <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
         <span>endTime : {{endTime}}</span><br>
         <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
@@ -297,7 +297,6 @@ video {
   width: 60vw;
   margin: auto;
   position: relative;
-  cursor: pointer;
   color: #CCC;
   justify-content: space-evenly;
 }
@@ -319,10 +318,6 @@ video {
   margin: 5px 5px 10px;
   font-weight: bolder;
   width: 150px;
-}
-
-.chaptersLink:hover {
-  color: #06f;
 }
 
 .chaptersLink:before {
@@ -353,11 +348,16 @@ video {
   background-color: #b54142;
 }
 
-.plusButton {
+.playButton {
   position: absolute;
-  left: 60px;
+  left: 30px;
   bottom: 1.6em;
-  width: 36px;
+}
+.activityButton {
+  position: absolute;
+  right: 15px;
+  bottom: 1.6em;
+  transform:rotate(45deg);
 }
 
 button.accessibilityButton {

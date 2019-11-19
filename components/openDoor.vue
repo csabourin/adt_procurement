@@ -60,6 +60,7 @@
 	content:"\26ab";
 	top:50%;
 	right:10px;
+	text-shadow: 2px 2px 4px #4e4e4e;
 
 }
 

@@ -16,8 +16,10 @@
         <li v-if="lala==1">Bounce me in!</li>
       </transition>
     </ul>
-    <h3>What do you get?</h3>
-    <openDoor>You get texted</openDoor> &nbsp; <openDoor><span class="floatMiddle">You get nothing!</span></openDoor> &nbsp; <openDoor><img src='~/assets/Roz.png' width="200"></openDoor>
+    <h3>What do you get when you open the door?</h3>
+    <openDoor><span class="floatMiddle">You get texted</span></openDoor> &nbsp; 
+    <openDoor><span class="floatMiddle">You get nothing!</span></openDoor> &nbsp; 
+    <openDoor><img src='~/assets/Roz.png' width="200"></openDoor>
   </div>
 </template>
 <script type="text/javascript">
@@ -66,7 +68,8 @@ export default {
   {
   "1": "One",
   "2": "Two",
-  "3": "Three"
+  "3": "Three",
+  "4": "Four"
   },
   "feedback":
   {
@@ -100,7 +103,8 @@ export default {
   {
   "1": "Un",
   "2": "Deux",
-  "3": "Trois"
+  "3": "Trois",
+  "4": "Quatre"
   },
   "feedback":
   {

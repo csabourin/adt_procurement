@@ -1,8 +1,7 @@
 <template>
 	<div class="backDoor">
-      <span class="insideDoor">
-      <slot  /></span>
-      <a href="#" :class="[{'doorOpen':doorOpened},'door']" @click="doorOpened=!doorOpened">
+      <span class="insideDoor"><slot  /></span>
+      <a href="#" :class="[{'doorOpen':doorOpened},'door']" @click.prevent="doorOpened=!doorOpened">
       </a>
     </div>	
 </template>

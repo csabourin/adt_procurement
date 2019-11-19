@@ -46,19 +46,20 @@
       <b-modal id="budgetAnalyze" @hide="resumePlay()" size="xl" okOnly :title="$t('budgetAnalyzeActivity')">
         <budgetAnalyzeActivity />
       </b-modal>
-      <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly :title="$t('completewpDrafttitle')">
+      <b-modal no-stacking id="forecastBudget" @hide="resumePlay()" size="xl" okOnly :title="$t('forecastBudgetTitle')">
         <!--  -->
       </b-modal>
-      <b-modal no-stacking id="completewp" @hide="resumePlay()" size="xl" okOnly :title="$t('completewptitle')">
-        <completeWorkplan />
+      <b-modal no-stacking id="submitBudget" @hide="resumePlay()" size="xl" okOnly :title="$t('submitBudgetTitle')">
+        <submitBudget />
       </b-modal>
       <b-modal no-stacking id="adjustwp" @hide="resumePlay()" size="xl" okOnly :title="$t('adjustwptitle')">
         <adjustWorkplan />
       </b-modal>
       <b-modal no-stacking id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly>
+        <span v-html="$t('IRLText')"></span>
       </b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" :title="$t('TakeTheQuiz')" size="xl" okOnly>
-      <span v-html="$t('IRLText')"></span>
+      
       </b-modal>
     </section>
     <div class="bottomNav planSection">
@@ -82,7 +83,7 @@ import microlearning from '~/components/microlearning'
 import budgetAnalyzeActivity from '~/components/budgetAnalyseActivity'
 import planLinks from '~/components/plan_links'
 import AnalyzeBudgetKT from '~/components/AnalyzeBudgetKT'
-import completeWorkplan from '~/components/complete_workplan'
+import submitBudget from '~/components/submitBudget'
 import adjustWorkplan from '~/components/adjust_workplan'
 import test360 from '~/components/test360'
 import planQuiz from '~/components/planQuiz'
@@ -92,7 +93,7 @@ export default {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["intro", "alignworkplan", "partsofwp", "budgetAnalyze", "completedraft", "reallife", "quiz"],
+      modalArray: ["intro", "alignworkplan", "partsofwp", "budgetAnalyze", "completedraft","submitBudget", "reallife", "quiz"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -109,7 +110,7 @@ export default {
     planLinks,
     AnalyzeBudgetKT,
     budgetAnalyzeActivity,
-    completeWorkplan,
+    submitBudget,
     adjustWorkplan,
     planQuiz,
     plusIcon
@@ -287,13 +288,13 @@ button.accessibilityButton {
 <i18n>{
   "en":{
   "TakeTheQuiz":"Take the Quiz",
-  "completewptitle":"Activity: Complete the Work plan",
+  "submitBudgetTitle":"Activity: Submit and Adjust your Budget",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "AnalyzeBudgetKT":"Activity: Analyze a Budget - Key Terms",
   "budgetAnalyzeActivity":"Activity: Analyze Past And Current Year’s Budget",
-  "completewpDrafttitle":"Activity: Complete the Work Plan Draft",
+  "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
   "InRealLife":"In Real Life",
-  "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about your budget. Go <strong>now</strong>. ",
+  "IRLText":"<p>Your organization will have their own ways of doing budget requirements. Take time out from the course and talk to your financial management advisor and director. Ask them:&nbsp;</p><ul><li>Do we have a budget template?</li><li>What budgets do we have?</li><ul><li>Operating, which includes Salary and O&amp;M</li><li>Operating and Gs&amp;Cs</li><li>Operating and Capital</li></ul><li>Is the capital budget managed centrally or by each manager?</li></ul>",
   "gotIt":"Continue to next segment",
   "jumpModalPartsWP":"Jump to activity",
   "playSegment":"Play video segment",
@@ -305,9 +306,10 @@ button.accessibilityButton {
   "adjustwptitle":"Activité: Ajuster le plan de travail",
   "AnalyzeBudgetKT":"Activité: Analyser un budget - Termes clés",
   "budgetAnalyzeActivity":"Activité: Analyser les budgets précédents et en cours",
-  "completewpDrafttitle":"Activité: Compléter l'ébauche du plan de travail",
+  "submitBudgetTitle":"Activité: Soumettre et ajuster votre budget ",
+  "forecastBudgetTitle":"Activité: Prévoyez vos besoins budgétaires",
   "InRealLife":"Dans la vraie vie",
-  "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues de votre budget. Allez-y <strong>maintenant</strong>.",
+  "IRLText":"<p>Votre organisation aura sa propre fa&ccedil;on de faire les exigences budg&eacute;taires. Prenez cong&eacute; du cours et parlez &agrave; votre conseiller en gestion financi&egrave;re et &agrave; votre directeur. Demandez-leur :&nbsp;</p><ul><li>Avons-nous un mod&egrave;le de budget?</li><li>Quels sont nos budgets?</li><ul><li>Fonctionnement, inclus salaire et F&amp;E</li><li>Fonctionnement et subventions et contributions</li><li>Fonctionnement et immobilisations</li></ul><li>Le budget d'investissement est-il g&eacute;r&eacute; de fa&ccedil;on centralis&eacute;e ou par chaque gestionnaire?</li></ul>",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalPartsWP":"Sauter à l'activité",
   "playSegmentP":"Faire jouer le segment vidéo",

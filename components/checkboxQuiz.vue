@@ -39,7 +39,7 @@ export default {
     },
     Answer: {
       type: Array,
-      default: []
+      default: function () { return [] }
     }
   },
   methods: {

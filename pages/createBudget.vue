@@ -26,7 +26,7 @@
       <ul id="bar" ref="linkBar">
         <li href='#mainPlayer' v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
           {{ item }}<br>
-          <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek"></a>
+          <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek" :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
           <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="55" height="55"> </a>
         </li>
       </ul>
@@ -273,9 +273,9 @@ video {
   bottom: 0.3em;
 }
 
-.playButton{left: 30px;}
+.playButton{left: 20px;}
 .activityButton {
-    right: 15px;
+    right: 5px;
     transform:rotate(45deg);
 }
 
@@ -296,6 +296,7 @@ button.accessibilityButton {
   "IRLText":"<strong>Go ahead!</strong> Talk to your colleagues about your budget. Go <strong>now</strong>. ",
   "gotIt":"Continue to next segment",
   "jumpModalPartsWP":"Jump to activity",
+  "playSegment":"Play video segment",
   "transcriptText":""
   },
   "fr":{
@@ -309,6 +310,7 @@ button.accessibilityButton {
   "IRLText":"<strong>Allez-y!</strong> Parlez à vos collègues de votre budget. Allez-y <strong>maintenant</strong>.",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalPartsWP":"Sauter à l'activité",
+  "playSegmentP":"Faire jouer le segment vidéo",
   "transcriptText":""
   }
   }

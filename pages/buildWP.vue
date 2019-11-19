@@ -103,7 +103,7 @@
       <ul id="bar" ref="linkBar">
         <li href='#mainPlayer' v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
           {{ item }}<br>
-          <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek"></a>
+          <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek" :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
           <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="55" height="55"> </a>
         </li>
       </ul>
@@ -348,16 +348,15 @@ video {
   background-color: #b54142;
 }
 
-.playButton {
+.playButton, .activityButton {
   position: absolute;
-  left: 30px;
-  bottom: 1.6em;
+  bottom: 0.3em;
 }
+
+.playButton{left: 20px;}
 .activityButton {
-  position: absolute;
-  right: 15px;
-  bottom: 1.6em;
-  transform:rotate(45deg);
+    right: 5px;
+    transform:rotate(45deg);
 }
 
 button.accessibilityButton {
@@ -377,6 +376,7 @@ button.accessibilityButton {
   "IRLText":"<p>Take what you have learned into real life!</p><p>Your organization will have their own ways of doing things. Take a time out from the course to scan your intranet to see which templates are used.</p><p>Connect with your colleagues, your director, or financial officer to have a chat about work plans.</p> ",
   "TakeTheQuiz":"Take the Quiz",
   "jumpModalPartsWP":"Jump to activity",
+  "playSegment":"Play video segment",
   "transcriptText":""
   },
   "fr":{
@@ -389,6 +389,7 @@ button.accessibilityButton {
   "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p><p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter votre intranet pour voir quels mod&egrave;les sont utilis&eacute;s.</p><p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalPartsWP":"Sauter à l'activité",
+  "playSegmentP":"Faire jouer le segment vidéo",
   "transcriptText":""
   }
   }

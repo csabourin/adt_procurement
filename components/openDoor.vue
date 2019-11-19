@@ -54,7 +54,9 @@
   transition: all 0.5s ease-in-out;
 }
 
-.door:after{
+.door:after:hover,.door:after:active,.door:after:focus{text-decoration: none;}
+
+  .door:after{
 	position: absolute;
 	content:"\26ab";
 	top:50%;

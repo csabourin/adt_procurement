@@ -1,6 +1,7 @@
 <template>
 	<div class="backDoor">
-      <span class="insideDoor" v-html="textInside" />
+      <span class="insideDoor">
+      <slot  /></span>
       <a href="#" :class="[{'doorOpen':doorOpened},'door']" @click="doorOpened=!doorOpened">
       </a>
     </div>	
@@ -35,7 +36,9 @@
 }
 
 .insideDoor {
-  padding: 2em;
+	position:absolute;
+  bottom: 0;
+  left:0;
 }
 
 .door {
@@ -50,6 +53,14 @@
   transform-origin: left;
   /*Speed of the Door animation*/
   transition: all 0.5s ease-in-out;
+}
+
+.door:after{
+	position: absolute;
+	content:"\26ab";
+	top:50%;
+	right:10px;
+
 }
 
 .doorOpen {

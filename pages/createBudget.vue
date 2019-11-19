@@ -224,6 +224,7 @@ video {
   position: relative;
   align-content: flex-start;
   text-align: center;
+  width: 175px;
   height: 150px;
   overflow: hidden;
   padding: 1.5em 1.5em;
@@ -236,7 +237,6 @@ video {
   border: 1px solid #c3bfb6;
   margin: 5px 5px 10px;
   font-weight: bolder;
-  width: 150px;
 }
 
 

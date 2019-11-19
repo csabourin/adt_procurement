@@ -16,7 +16,8 @@
         <li v-if="lala==1">Bounce me in!</li>
       </transition>
     </ul>
-    <openDoor textInside="You get texted"/> &nbsp; <openDoor textInside="You get nothing!"/>
+    <h3>What do you get?</h3>
+    <openDoor>You get texted</openDoor> &nbsp; <openDoor>You get nothing!</openDoor> &nbsp; <openDoor ><img src='~/assets/Roz.png' width="200"></openDoor>
   </div>
 </template>
 <script type="text/javascript">

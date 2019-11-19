@@ -299,9 +299,13 @@ page-enter-active,
   vertical-align: center;
 
 }
+/*
+
+Assumed this will be dealt with in the contentMap.vue file from now on. Commented out.
+-TD
 
 .contentMap .nuxt-link-exact-active {
   border-bottom: 2px solid #b54142;
 }
-
+*/
 </style>

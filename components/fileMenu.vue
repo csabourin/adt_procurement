@@ -39,7 +39,7 @@
           </b-card-header>
           <b-collapse id="toolbox-3" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
-              <b-card-text>{{ text }}</b-card-text>
+              <b-card-text></b-card-text>
             </b-card-body>
           </b-collapse>
         </b-card>
@@ -49,7 +49,7 @@
           </b-card-header>
           <b-collapse id="toolbox-3" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
-              <b-card-text>{{ text }}</b-card-text>
+              <b-card-text></b-card-text>
             </b-card-body>
           </b-collapse>
         </b-card>

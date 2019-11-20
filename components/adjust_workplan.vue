@@ -1,6 +1,5 @@
 <template>
   <span>
-    <div>{{clicked}}</div>
     <p>{{ $t('pwpInstructions') }}</p>
     <ul style="list-style: none">
     <li><input type="checkbox" name="things" disabled id="things1" v-model="Q4"> <label for="things1">{{$t('thing1')}}</label></li>
@@ -353,7 +352,7 @@
 export default {
   components:{radioQuiz},
   data(){
-    return{clicked:'',tabIndex:0,Q1:'',Q2:'',Q3:'',Q4:''}
+    return{tabIndex:0,Q1:'',Q2:'',Q3:'',Q4:''}
   },
   watch:{
     tabIndex:function (tab){ 
@@ -361,7 +360,6 @@ export default {
       if (tab==2) this.$scrollTo('#resourcesTab')
       if (tab==1) this.$scrollTo('#deliverableTab')
       if (tab==0) this.$scrollTo('#subActTab')
-      return this.clicked=tab
     }
   }
   }

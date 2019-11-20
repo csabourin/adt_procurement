@@ -385,7 +385,7 @@ td {
   counter-increment: wpParts;
   content: counter(wpParts);
   position: absolute;
-  font-weight: 400;
+  font-weight: 600;
   height: 2em;
   left: 0px;
   top: 0px;
@@ -509,7 +509,7 @@ td {
 
 .thNumbered:before {
   position: absolute;
-  font-weight: 400;
+  font-weight: 600;
   counter-increment: wpParts;
   content: counter(wpParts);
   height: 2em;

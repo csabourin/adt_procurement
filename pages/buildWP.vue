@@ -301,6 +301,8 @@ video {
   justify-content: space-evenly;
 }
 
+#bar > li.chaptersLink:first-child > a.activityButton { display:none; }
+
 #bar > li:last-child > a {
   display:none;
 }

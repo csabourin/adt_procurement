@@ -221,6 +221,8 @@ video {
   counter-reset: episode;
 }
 
+#bar > li.chaptersLink:first-child > a.activityButton { display:none; }
+
 #bar > li:last-child > a {
   display:none;
 }

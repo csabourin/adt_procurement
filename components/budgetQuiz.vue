@@ -104,31 +104,31 @@ export default {
       }
     },
     "q3": {
-      "text": "A departmental priority in your work plan originates all the way back to:",
+      "text": "An employee will be retiring after 8 months next year, so you estimate their salary as:",
       "options": {
-        "1": "The Directorate’s plan",
-        "2": "The Departmental plan",
-        "3": "The Speech from the Throne"
+        "1": "Full salary",
+        "2": "¾ of their salary",
+        "3": "⅔ of their salary "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  It’s a good idea to start your view of the big picture with the Speech from the Throne."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is ⅔ of their salary. They will earn 8/12 of their salary or ⅔. ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is ⅔ of their salary. They will earn 8/12 of their salary or ⅔. ",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  They will earn 8/12 of their salary or ⅔."
       }
     },
     "q4": {
       "text": "To find your department’s core responsibilities, expected results and indicators, you would look to:",
       "options": {
-        "1": "The directorate’s plan",
-        "2": "The Departmental plan",
-        "3": "The Speech from the Throne",
-        "4": "The sector’s plan"
+        "1": "The budget for travel has increased year over year by a factor of 3%. ",
+        "2": "An activity related to renewing fishing licenses was delayed due to Arctic weather. ",
+        "3": "Less was spent on conferences last year because an employee left part way through the year, so they didn’t attend a conference as planned. ",
+        "4": "The training budget was overspent by $6,000 last year."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan."
+        "1": "<span class='v-right' /> <strong>Correct!</strong> This is a trend because the increase has been the same percentage for a few years",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is The budget for travel has increased year over year by a factor of 3%. This is a trend because the increase has been the same percentage for a few years.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is The budget for travel has increased year over year by a factor of 3%. This is a trend because the increase has been the same percentage for a few years.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is The budget for travel has increased year over year by a factor of 3%. This is a trend because the increase has been the same percentage for a few years."
       }
     },
     "q5": {
@@ -158,33 +158,27 @@ export default {
       }
     },
     "q7": {
-      "text": "To conduct a 360 scan, you must do the following.",
+      "text": "Last year’s travel variance was due to a new departmental priority to conduct a 3-year cross-Canada consultation which resulted in more trips. Will you put this in your budget requirements for next year?",
       "options": {
-        "1": "Get a sense of the current situation by examining what was done in the recent past.",
-        "2": "Look at previous work plans, budgets and reports.",
-        "3": "Identify challenges from the previous years.",
-        "4": "Get a sense of the cultural context in your department/branch/directorate.",
-        "5": "All of the above."
+        "1": "Yes.",
+        "2": "No."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "5": "<span class='v-right' /> <strong>Correct!</strong>  You must do all these activities to conduct a 360 review."
+        "1": "<span class='v-right' /> <strong>Correct!</strong>",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Yes. Consultations started last year, are continuing in the current year, and should end next year."
       }
     },
     "q8": {
-      "text": "Choose the priorities to which your work plan activities should link, starting with the top.",
+      "text": "Non-discretionary costs are: ",
       "options": {
-        "1": "Departmental priorities, directorate priorities, government priorities",
-        "2": "Government priorities, departmental priorities, directorate priorities",
-        "3": "Directorate priorities, government priorities, departmental priorities"
+        "1": "Costs that are not directly linked to your activities and therefore are less likely to have a negative impact on them.",
+        "2": "Costs you planned for at the beginning of the fiscal year and that were incurred over the year.",
+        "3": "Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them. Non-Discretionary costs, if reduced or cut, will seriously affect your ability to deliver your priorities. ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them. Non-Discretionary costs, if reduced or cut, will seriously affect your ability to deliver your priorities. ",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> "
       }
     }
   },
@@ -229,31 +223,31 @@ export default {
       }
     },
     "q3": {
-      "text": "Une priorité ministérielle de votre plan de travail remonte à l'origine:",
+      "text": "Un employé prendra sa retraite après 8 mois l'année prochaine, donc vous estimez son salaire comme :",
       "options": {
-        "1": "du plan de la direction ",
-        "2": "du plan ministériel",
-        "3": "du discours du Trône"
+        "1": "Salaire complet",
+        "2": "¾ de leur salaire",
+        "3": "⅔ de leur salaire"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  C'est une bonne idée de commencer votre vision d'ensemble avec le discours du Trône."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est ⅔ de leur salaire. Ils gagneront 8/12 de leur salaire ou ⅔.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est ⅔ de leur salaire. Ils gagneront 8/12 de leur salaire ou ⅔.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  Ils gagneront 8/12 de leur salaire ou ⅔."
       }
     },
     "q4": {
-      "text": "Pour trouver les principales responsabilités de votre ministère, les résultats escomptés et les indicateurs, vous devriez vous tourner vers :",
+      "text": "Un exemple de tendance est ...",
       "options": {
-        "1": "Le plan de la Direction ",
-        "2": "Le Plan ministériel",
-        "3": "Le discours du Trône",
-        "4": "Le plan du secteur"
+        "1": "Le budget des voyages a augmenté d'année en année d'un facteur de 3 %.",
+        "2": "Une activité liée au renouvellement des permis de pêche a été retardée en raison des conditions météorologiques dans l'Arctique.",
+        "3": "L'an dernier, on a consacré moins d'argent aux conférences parce qu'un employé est parti au milieu de l'année, de sorte qu'il n'a pas assisté à une conférence comme prévu.",
+        "4": "Le budget de formation a été dépassé de 6 000 $ l'an dernier."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel. ",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel. ",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel. "
+        "1": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Le budget des voyages a augmenté d'année en année d'un facteur de 3 %. Il s'agit d'une tendance parce que l'augmentation est la même depuis quelques années.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Le budget des voyages a augmenté d'année en année d'un facteur de 3 %. Il s'agit d'une tendance parce que l'augmentation est la même depuis quelques années.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Le budget des voyages a augmenté d'année en année d'un facteur de 3 %. Il s'agit d'une tendance parce que l'augmentation est la même depuis quelques années."
       }
     },
     "q5": {
@@ -270,46 +264,40 @@ export default {
       }
     },
     "q6": {
-      "text": "À quelle fréquence un gestionnaire doit-il renouveler son attestation pour pouvoir continuer à exercer ses pouvoirs financiers ?",
+      "text": "Un exemple d'écart est …",
       "options": {
-        "1": "Chaque année",
-        "2": "Tous les 2 ans",
-        "3": "Tous les 5 ans"
+        "1": "1 500 $ par employé est utilisé pour calculer le budget total de formation.",
+        "2": "Un surplus de 10 000 $ dans le budget de réinstallation.",
+        "3": "Délivrance des permis de pêche en 15 jours. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les cinq ans.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les cinq ans.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> "
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Un surplus de 10 000 $ dans le budget de réinstallation, car 10 000 $ est la différence entre le budget et les dépenses réelles.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Un surplus de 10 000 $ dans le budget de réinstallation, car 10 000 $ est la différence entre le budget et les dépenses réelles."
       }
     },
     "q7": {
-      "text": "Pour effectuer un aperçu à 360 degrés, vous devez procéder comme suit.",
+      "text": "L'écart par rapport à l'an dernier s'explique par une nouvelle priorité ministérielle, soit la tenue d'une consultation de trois ans à l'échelle du Canada, qui a entraîné un plus grand nombre de déplacements. En ferez-vous état dans votre budget de l'année prochaine ?",
       "options": {
-        "1": "Se faire une idée de la situation actuelle en examinant ce qui a été fait dans un passé récent.",
-        "2": "Examinez les plans de travail, budgets et rapports antérieurs.",
-        "3": "Identifier les défis des années précédentes.",
-        "4": "Se faire une idée du contexte culturel de son ministère, de sa direction générale ou de sa direction.",
-        "5": "Toutes ces réponses."
+        "1": "Oui",
+        "2": "Non"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
-        "5": "<span class='v-right' /> <strong>Correct!</strong>  Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés."
+        "1": "<span class='v-right' /> <strong>Correct!</strong>",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Oui. Les consultations ont commencé l'année dernière, se poursuivent pendant l'année en cours et devraient se terminer l'année prochaine."
       }
     },
     "q8": {
-      "text": "Choisissez les priorités auxquelles les activités de votre plan de travail devraient se rattacher, en commençant par le sommet.",
+      "text": "Les coûts non discrétionnaires sont :",
       "options": {
-        "1": "Priorités ministérielles, priorités de la Direction, priorités du gouvernement",
-        "2": "Priorités gouvernementales, priorités ministérielles, priorités de la Direction",
-        "3": "Priorités de la Direction, priorités gouvernementales, priorités ministérielles"
+        "1": "Les coûts qui ne sont pas directement liés à vos activités et qui sont donc moins susceptibles d'avoir un impact négatif sur celles-ci.",
+        "2": "Coûts que vous avez pré-budgétés au début de l'exercice et qui ont été induits au cours de l'exercice.",
+        "3": "Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du sommet sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du sommet sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser. Les coûts non discrétionnaires, s'ils sont réduits ou éliminés, affecteront sérieusement votre capacité à respecter vos priorités.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser. Les coûts non discrétionnaires, s'ils sont réduits ou éliminés, affecteront sérieusement votre capacité à respecter vos priorités.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> "
       }
     }
   }

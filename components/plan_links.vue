@@ -25,19 +25,53 @@
     <div v-if="$i18n.locale=='en'">
       <h2>External Links and Descriptions</h2>
       <dl>
-        <dt><a href="https://www.canada.ca/en/privy-council/campaigns/speech-throne.html" target="_blank">Speech from the Throne</a></dt>
-        <dt><a href="https://www.canada.ca/en/government/system/priorities.html" target="_blank">Government&rsquo;s current priorities</a></dt>
-        <dt><a href="https://www.fin.gc.ca/access/budinfo-eng.asp" target="_blank">Federal Budget</a></dt>
-        <dt><a href="https://pm.gc.ca/eng/mandate-letters" target="_blank">Ministerial Mandate Letters</a></dt>
-        <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/corporate/programs.html" target="_blank">DRF and PI of TBS</a></dt>
-        <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/services/management-accountability-framework.html" target="_blank">Management Accountability Framework (<abbr title="Management Accountability Framework">MAF</abbr>)</a></dt>
-        <dt><a href="http://laws-lois.justice.gc.ca/eng/acts/R-8/index.html" target="_blank">Revolving Funds Act</a></dt>
-        <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/services/treasury-board-submissions/guidance.html" target="_blank">Detailed Guidance for Writers</a></dt>
-        <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></dt>
-        <dt><a href="http://intranet.canada.ca/wg-tg/gf-fg/ems-sgd/cal-eng.asp" target="_blank">Expenditure Management Calendar of Events</a></dt>
-        <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/services/departmental-performance-reports.html" target="_blank">Departmental Results Reports</a></dt>
-        <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/services/reporting-government-spending/proactive-disclosure-department-agency.html" target="_blank">Government-wide Reporting&nbsp;&ndash; Proactive Disclosure</a></dt>
-        <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/topics/planned-government-spending.html" target="_blank">Planned government spending</a></dt>
+        <p><strong>PLAN</strong></p>
+        <ul class="list-unstyled">
+          <li><a href="http://laws-lois.justice.gc.ca/eng/acts/f-11/"><strong>Financial Administration Act</strong></a></li>
+          <li><a href="https://www.canada.ca/en/government/system/priorities.html"><strong>Government priorities</strong></a>
+            <ul>
+              <li><a href="https://pm.gc.ca/eng/mandate-letters"><strong>Ministerial Mandate Letters</strong></a></li>
+              <li><a href="https://www.canada.ca/en/privy-council/campaigns/speech-throne.html"><strong>Speech from the Throne</strong></a></li>
+              <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html"><strong>Departmental Plan (DP)</strong></a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.fin.gc.ca/access/budinfo-eng.asp"><strong>Federal Budget</strong></a></li>
+          <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/management-accountability-framework.html"><strong>Management Accountability Framework (MAF)</strong></a></li>
+          <li><a href="https://www.canada.ca/en/treasury-board-secretariat/topics/planned-government-spending.html"><strong>Planned government spending</strong></a></li>
+          <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/departmental-performance-reports.html"><strong>Departmental Results Reports (DRR)</strong></a></li>
+          <li><a href="https://open.canada.ca/en/proactive-disclosure"><strong>Proactive Disclosure</strong></a>
+            <ul>
+              <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/reporting-government-spending/proactive-disclosure-department-agency.html"><strong>Proactive Disclosure by Department or Agency</strong></a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/treasury-board-submissions/guidance.html"><strong>Detailed Guidance for Treasury Board Submission Writers</strong></a></li>
+          <li><a href="https://www.canada.ca/en/privy-council/services/publications/memoranda-cabinet.html"><strong>Guide and templates for Memoranda to Cabinet</strong></a></li>
+          <li><span style="font-weight: 400;">&nbsp;</span></li>
+        </ul>
+        <p><span style="font-weight: 400;">&nbsp;</span><strong>SPEND</strong></p>
+        <ul class="list-unstyled">
+          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32495"><strong>Policy on Financial Management</strong></a></li>
+          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32503"><strong>Directive on Delegation of Spending and Financial Authorities</strong></a>
+            <ul>
+              <li><a href="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_en.html"><strong>Delegation of Spending and Financial Signing Authorities Chart</strong></a> <span style="font-weight: 400;">(Link to a fictitious chart)</span></li>
+            </ul>
+          </li>
+          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228"><strong>Directive on Travel, Hospitality, Conference and Event Expenditures</strong></a>
+            <ul>
+              <li><a href="https://intranet.canada.ca/pol/doc-eng.aspx?id=32553"><strong>Guide to Travel, Hospitality, Conference and Event Expenditures</strong></a></li>
+              <li><a href="https://www.gcpedia.gc.ca/wiki/Financial_Management_Policy_Suite/Conference_versus_training"><strong>Determination of training vs. conferences for functional communities</strong></a></li>
+            </ul>
+          </li>
+          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32504"><strong>Directive on Payments</strong></a></li>
+          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32502"><strong>Directive on Charging and Special Financial Authorities</strong></a></li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32505"><strong>Directive on Public</strong></a></li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32505"><strong>Money and Receivables</strong></a></li>
+        </ul>
+        <p><strong>REPORT</strong></p>
+        <ul class="list-unstyled">
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=31300"><strong>Policy on Results</strong></a></li>
+          <li><a href="https://www.tbs-sct.gc.ca/ems-sgd/edb-bdd/index-eng.html#start"><strong>GC InfoBase</strong></a></li>
+        </ul>
       </dl>
     </div>
   </span>

@@ -7,7 +7,7 @@
           <b-tab title="Question 2"><selectMatching :Question="$t('q2')" :matches='["3","4","1","2"]' /></b-tab>
           <b-tab title="Question 3"><radioQuiz :Question="$t('q3')" qId="3" /></b-tab>
           <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" /></b-tab>
-          <b-tab title="Question 5"><radioQuiz :Question="$t('q5')" qId="5" /></b-tab>
+          <b-tab title="Question 5"><checkboxQuiz :Question="$t('q5')" qId="5" :Answer="['1','2','3']"/></b-tab>
           <b-tab title="Question 6"><radioQuiz :Question="$t('q6')" qId="6" /></b-tab>
           <b-tab title="Question 7"><radioQuiz :Question="$t('q7')" qId="7" /></b-tab>
           <b-tab title="Question 8"><radioQuiz :Question="$t('q8')" qId="8" /></b-tab>
@@ -16,8 +16,8 @@
       <!-- Control buttons-->
       <div class="text-center">
         <b-button-group class="mt-2">
-          <b-button @click="tabIndex--">{{$t('previousPage')}}</b-button>
-          <b-button @click="tabIndex++">{{$t('nextPage')}}</b-button>
+          <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+          <b-button @click="tabIndex++" :disabled="tabIndex>=7">{{$t('nextPage')}}</b-button>
         </b-button-group>
       </div>
     </div>
@@ -132,18 +132,16 @@ export default {
       }
     },
     "q5": {
-      "text": "The Prime Minister sets out his expectations and objectives for your department in: ",
+      "text": "How would you use the information from trends in your budget requirements?",
       "options": {
-        "1": "The Speech from the Throne",
-        "2": "The Departmental Results Framework",
-        "3": "The Mandate Letter",
-        "4": "The Departmental Plan"
+        "1": "Use last year’s actual expenditures as a starting point to create my budget requirements.",
+        "2": "Use last year’s budget as a starting point to create my budget requirements. ",
+        "3": "Add last year’s numbers plus the projected increase in next year’s budget requirements."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> All are correct. The trends you see may vary so how you use them in your budget requirements will differ.",
+        "right": "<span class='v-right' /> <strong>Correct!</strong> The trends you see may vary so how you use them in your budget requirements will differ."
+      
       }
     },
     "q6": {
@@ -259,18 +257,16 @@ export default {
       }
     },
     "q5": {
-      "text": "Le premier ministre énonce ses attentes et ses objectifs pour votre ministère dans : ",
+      "text": "Comment utiliseriez-vous l'information tirée des tendances de vos besoins budgétaires?",
       "options": {
-        "1": "Le discours du Trône",
-        "2": "Le Cadre ministériel des résultats ",
-        "3": "La lettre de mandat",
-        "4": "Le plan ministériel\n"
+        "1": "Utiliser les dépenses réelles de l'année dernière comme point de départ pour créer mes besoins budgétaires.",
+        "2": "Utiliser le budget de l'année dernière comme point de départ pour créer mes besoins budgétaires.",
+        "3": "Ajoutez les chiffres de l'an dernier et l'augmentation prévue des besoins budgétaires de l'an prochain."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Tous sont corrects. Les tendances que vous voyez peuvent varier, de sorte que la façon dont vous les utilisez dans vos besoins budgétaires peut varier. ",
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Les tendances que vous voyez peuvent varier, de sorte que la façon dont vous les utilisez dans vos besoins budgétaires peut varier."
+      
       }
     },
     "q6": {

@@ -89,7 +89,7 @@ margin-top: 30px;
   padding-bottom: 2em;
   font-family: Roboto Medium;
   color: #608a93;
-  background-color: white;
+  background-image: linear-gradient( transparent 15%, white 15%, white 85%, transparent 85%, transparent 100% );
   quotes: "“" "”";
   padding:1em;
 }

@@ -1,6 +1,6 @@
 <template>
   <span>
-    <div class="pure-checkbox">
+    <div>
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">
@@ -102,8 +102,8 @@
       <!-- Control buttons-->
       <div class="text-center">
         <b-button-group class="mt-2">
-          <b-button @click="tabIndex--">{{$t('previousPage')}}</b-button>
-          <b-button @click="tabIndex++">{{$t('nextPage')}}</b-button>
+          <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+          <b-button @click="tabIndex++" :disabled="tabIndex>=13">{{$t('nextPage')}}</b-button>
         </b-button-group>
       </div>
     </div>

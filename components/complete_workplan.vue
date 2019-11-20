@@ -22,7 +22,7 @@
         </td>
       </tr>
     </table>
-    <div class="scrollMe" id="scrollableElement">
+    <div class="scrollMe" id="scrollDiv">
       <table border="1" cellspacing="0" cellpadding="5">
         <tr>
           <th class='planAct thNumbered'>{{$t('titleActivities')}}</th>
@@ -31,7 +31,7 @@
           <th class='planRisk thNumbered'>{{$t('titleRisk')}}</th>
           <th class='planLikely thNumbered'>{{$t('titleLikelihood')}}</th>
           <th class='planImpact thNumbered'>{{$t('titleImpact')}}</th>
-          <th class='planMitigat thNumbered'>{{$t('titleMitigation')}}</th>
+          <th id="mitigationTab"class='planMitigat thNumbered'>{{$t('titleMitigation')}}</th>
           <th id="resources" class='planRes thNumbered'>{{$t('titleResources')}}</th>
         </tr>
         <tr>
@@ -97,14 +97,14 @@
       </table>
     </div>
     <div>
-    <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold">
-    <b-tab ref="cWTabA" @click="fScrollEl(this)" title="Question 1">
+    <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
+    <b-tab title="Question 1">
       <radioQuiz :Question="$t('q1')" qId="1" @response="Q1=$event"/>
     </b-tab>
-    <b-tab ref="cWTabB" @click="fScrollEl(this)" title="Question 2">
+    <b-tab title="Question 2">
       <radioQuiz :Question="$t('q2')" qId="2" @response="Q2=$event"/>
     </b-tab>
-    <b-tab ref="cWTabC" @click="fScrollEl(this)" title="Question 3">
+    <b-tab title="Question 3">
       <radioQuiz :Question="$t('q3')" qId="3" @response="Q3=$event"/>
     </b-tab>
   </b-tabs>
@@ -306,62 +306,17 @@
      govtPri: '',
      deptPri: '',
      dirPri: '',
+     tabIndex:0,
      Q1:'',
      Q2:'',
      Q3:''
    }
   },
-  methods: {
-    fScrollEl(elementID,targetID,offset){
-      console.log('fScrollEl('+elementID+','+targetID+','+offset+')');
-      // console.log($('div#__BVID__64.tab-pane'));
-      console.dir(elementID);
-      console.dir(this.$refs);
-      
-      // console.log(document.querySelectorAll);
-
-      //elementID[STRING] (ex: #scrollableElement)
-      //targetID[STRING] (ex: #deliverable)
-      //offset[NUM] (ex: 500)
-
-      // Solution #1
-      /*
-      1. Get targetID position in table (px)
-      2. ScrollLeft by result
-      */
-
-      //Solution #2
-      /*
-      1. Get targetID previous sibblings widths
-      2. ScrollLeft by result
-      */
-
-      //Solution #3
-      /*
-      1. Grab tabs -> this.$refs
-      2. Loop through tabs and find .active
-      3. 
-      */
-      //#3
-
-//       for(var i in this.$refs){
-// console.log(i);
-//       }
-
-console.log('----------------');
-// console.log(typeof elementID.srcElement);
-
-// console.log(elementID.srcElement.toString());
-// console.log(document.querySelectorAll(elementID.target.toString()).getAttribute('aria-posinset'));
-
-//SOMEWHAT SUCCESSFUL: GETTING NUMBER OF THE TAB (baby steps)
-
-
-//       var tabSelected = elementID.srcElement.attributes['aria-posinset'].nodeValue;
-// console.dir('Tab Selected: '+tabSelected);
-
-//       //Totally hard coded below
-//       document.getElementById('scrollableElement').scrollLeft = 20;
+  watch: {
+    tabIndex:function (tab){ 
+      if (tab==2) this.$scrollTo('#resources')
+      if (tab==1) this.$scrollTo('#deliverable')
+      if (tab==0) this.$scrollTo('#mitigationTab')
     }
   }
 }

@@ -252,12 +252,11 @@ h3,
 
 .pageTitle {
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   display: block;
-  font-weight: 300;
-  font-size: 75px;
+  font-size: 45px;
   color: #4D4D4D;
-  letter-spacing: -4px;
+  letter-spacing: -1px;
   text-align: center;
 }
 

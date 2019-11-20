@@ -1,6 +1,6 @@
 <template>
   <span>
-    <div>
+    <div class="pure-radiobutton pure-checkbox">
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1"><selectMatching :Question="$t('q1')" :matches="['2','3','1','4']"/></b-tab>

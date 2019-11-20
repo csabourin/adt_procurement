@@ -1,6 +1,6 @@
 <template>
   <span>
-    <div>
+    <div class="pure-radiobutton pure-checkbox">
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">

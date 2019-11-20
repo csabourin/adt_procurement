@@ -72,3 +72,8 @@ export default {
 <i18n>
   {"en":{"qDisabled":"Select matching value"},"fr":{"qDisabled":"Sélectionner la valeur correspondante"}}
 </i18n>
+<style type="text/css" scoped>
+  .row{
+    margin:1em;
+  }
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pure-radiobutton pure-checkbox"  >
     <radioQuiz :Question="$t('q1')" qId="1" @response="lala=$event" />
     <br>
     <checkboxQuiz :Question="$t('q2')" qId="2" :Answer='["1","2","3"]' @response="land = $event" />
@@ -144,7 +144,7 @@ export default {
     }
   }
 }</i18n>
-<style type="text/css" scoped>
+<style type="text/css" >
 .floatMiddle {
   display: flex;
   justify-content: center;

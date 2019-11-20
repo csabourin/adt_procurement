@@ -221,6 +221,10 @@ video {
   counter-reset: episode;
 }
 
+#bar > li:last-child > a {
+  display:none;
+}
+
 .chaptersLink {
   position: relative;
   align-content: flex-start;
@@ -284,6 +288,7 @@ button.accessibilityButton {
   margin: 5px;
   border-radius: 5px;
 }
+
 </style>
 <i18n>{
   "en":{

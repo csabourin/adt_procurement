@@ -88,6 +88,7 @@
   text-align:center;
   padding:10px 0 10px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .contentMap h4:nth-of-type(1){border-bottom:4px solid #b4c6ca;}
 .contentMap h4:nth-of-type(2){border-bottom:4px solid #d3cad2;}

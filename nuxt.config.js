@@ -44,7 +44,18 @@ export default {
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    ['vue-scrollto/nuxt', {container: "#scrollDiv",
+     duration: 750,
+     easing: "ease",
+     offset: -200,
+     force: true,
+     cancelable: true,
+     onStart: false,
+     onDone: false,
+     onCancel: false,
+     x: true,
+     y: false }]
   ],
   layoutTransition: {
     name: "layout",

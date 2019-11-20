@@ -1,5 +1,6 @@
 <template>
   <span>
+    <div>{{clicked}}</div>
     <p>{{ $t('pwpInstructions') }}</p>
     <ul style="list-style: none">
     <li><input type="checkbox" name="things" disabled id="things1" v-model="Q4"> <label for="things1">{{$t('thing1')}}</label></li>
@@ -27,17 +28,17 @@
         </td>
       </tr>
     </table>
-    <div class="scrollMe">
+    <div id="scrollDiv" class="scrollMe">
       <table border="1" cellspacing="0" cellpadding="5">
         <tr>
           <th class='planAct thNumbered'>{{$t('titleActivities')}}</th>
-          <th class='planSubAct thNumbered'>{{$t('titleSubActivities')}}</th>
-          <th class='planDelivs thNumbered'>{{$t('titleDeliverables')}}</th>
+          <th id="subActTab" class='planSubAct thNumbered'>{{$t('titleSubActivities')}}</th>
+          <th id="deliverableTab" class='planDelivs thNumbered'>{{$t('titleDeliverables')}}</th>
           <th class='planRisk thNumbered'>{{$t('titleRisk')}}</th>
           <th class='planLikely thNumbered'>{{$t('titleLikelihood')}}</th>
           <th class='planImpact thNumbered'>{{$t('titleImpact')}}</th>
           <th class='planMitigat thNumbered'>{{$t('titleMitigation')}}</th>
-          <th class='planRes thNumbered'>{{$t('titleResources')}}</th>
+          <th id="resourcesTab" class='planRes thNumbered'>{{$t('titleResources')}}</th>
         </tr>
         <tr>
           <td class='planAct' v-html="$t('pA1')"></td>
@@ -107,8 +108,8 @@
         <tr> </tr>
       </table>
     </div>
-    <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold">
-    <b-tab title="Question 1"><radioQuiz :Question="$t('q1')" qId="1" @response="Q1=$event"/></b-tab>
+    <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
+    <b-tab title="Question 1" ><radioQuiz :Question="$t('q1')" qId="1" @response="Q1=$event"/></b-tab>
     <b-tab title="Question 2"><radioQuiz :Question="$t('q2')" qId="2" @response="Q2=$event"/></b-tab>
     <b-tab title="Question 3"><radioQuiz :Question="$t('q3')" qId="3" @response="Q3=$event"/></b-tab>
     <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" @response="Q4=$event"/></b-tab>
@@ -352,9 +353,18 @@
 export default {
   components:{radioQuiz},
   data(){
-    return{Q1:'',Q2:'',Q3:'',Q4:''}
+    return{clicked:'',tabIndex:0,Q1:'',Q2:'',Q3:'',Q4:''}
+  },
+  watch:{
+    tabIndex:function (tab){ 
+      if (tab==3) this.$scrollTo('#deliverableTab')
+      if (tab==2) this.$scrollTo('#resourcesTab')
+      if (tab==1) this.$scrollTo('#deliverableTab')
+      if (tab==0) this.$scrollTo('#subActTab')
+      return this.clicked=tab
+    }
   }
-}
+  }
 </script>
 <style type="text/css" scoped>
 .scrollMe {

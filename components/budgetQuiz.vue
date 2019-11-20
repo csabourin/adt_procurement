@@ -145,16 +145,16 @@ export default {
       }
     },
     "q6": {
-      "text": "How often does a manager need to recertify in order to be able to continue to exercise their financial authority?",
+      "text": "An example of a financial variance is …",
       "options": {
-        "1": "Every year",
-        "2": "Every 2 years",
-        "3": "Every 5 years"
+        "1": "$1,500 per employee used to calculate total training budget.",
+        "2": "A surplus in the relocation budget of $10,000.",
+        "3": "Issuing fishing licenses in 15 days."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> "
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is a surplus in the relocation budget of $10,000, as $10,000 is the difference between budget and actual expenditures. ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is a surplus in the relocation budget of $10,000, as $10,000 is the difference between budget and actual expenditures."
       }
     },
     "q7": {
@@ -224,7 +224,7 @@ export default {
         "4": "Nouvelle"
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <p>Les bonnes r&eacute;ponses sont :&nbsp;</p> <table border='1'> <tbody> <tr> <td> <p>D&eacute;livrance des permis de p&ecirc;che.</p> </td> <td> <p>Se poursuivant</p> </td> </tr> <tr> <td> <p>L'ann&eacute;e prochaine, vous allez acheter un logiciel pour remplacer un processus papier.</p> </td> <td> <p>Nouvelle</p> </td> </tr> <tr> <td> <p>Les co&ucirc;ts d&rsquo;un d&eacute;m&eacute;nagement de bureaux a &eacute;t&eacute; termin&eacute; l'an dernier.</p> </td> <td> <p>Retir&eacute;e</p> </td> </tr> <tr> <td> <p>Les consultations &agrave; l'&eacute;chelle du Canada ont &eacute;t&eacute; interrompues plus t&ocirc;t cette ann&eacute;e.</p> </td> <td> <p>Annul&eacute;e</p> </td> </tr> </tbody> </table>",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> <p>Les bonnes r&eacute;ponses sont :&nbsp;</p> <table border='1'> <tbody> <tr> <td> <p>D&eacute;livrance des permis de p&ecirc;che.</p> </td> <td> <p>Se poursuivant</p> </td> </tr> <tr> <td> <p>L'ann&eacute;e prochaine, vous allez acheter un logiciel pour remplacer un processus papier.</p> </td> <td> <p>Nouvelle</p> </td> </tr> <tr> <td> <p>Les co&ucirc;ts d&rsquo;un d&eacute;m&eacute;nagement de bureaux a &eacute;t&eacute; termin&eacute; l'an dernier.</p> </td> <td> <p>Retir&eacute;e</p> </td> </tr> <tr> <td> <p>Les consultations &agrave; l'&eacute;chelle du Canada ont &eacute;t&eacute; interrompues plus t&ocirc;t cette ann&eacute;e.</p> </td> <td> <p>Annul&eacute;e</p> </td> </tr> </tbody> </table>",
         "right": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },

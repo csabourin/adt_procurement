@@ -2,7 +2,7 @@
   <span>
   	<p><strong>{{Question.text}}</strong></p>
     <b-container>
-      <b-row v-for="(option,index) in Question.options">
+      <b-row v-for="(option,index) in Question.options" :key="index">
         <b-col v-html="option" />
         <b-col><select v-model="form.selectId[index]" @change="submitted=false">
             <option disabled value="">{{$t('qDisabled')}}</option>

@@ -19,7 +19,8 @@
     "jquery": "^3.4.1",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.0.0",
-    "vue-i18n": "^8.12.0"
+    "vue-i18n": "^8.12.0",
+    "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",

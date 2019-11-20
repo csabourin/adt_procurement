@@ -1,9 +1,9 @@
 <template>
-	<span>
+	<span class="pure-radiobutton">
 		<strong v-html="Question.text" />
 		<p v-html="$t('selectRight')" />
     <ol type="1">
-      <li v-for="(item,index) in Question.options"><input @click="q1Submitted=false" type="radio" v-model="Quest1" :name="'q'+qId" :id="'radioq'+qId+index" :value="index">&nbsp;<label :for="'radioq'+qId+index" v-html="item" /></li>
+      <li v-for="(item,index) in Question.options" :key="index"><input @click="q1Submitted=false" type="radio" v-model="Quest1" :name="'q'+qId" :id="'radioq'+qId+index" :value="index">&nbsp;<label :for="'radioq'+qId+index" v-html="item" /></li>
     </ol>
     <p v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>
     <p v-if="Quest1 && q1Submitted" v-html="Question.feedback[Quest1]" />

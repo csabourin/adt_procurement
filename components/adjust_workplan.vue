@@ -211,10 +211,10 @@
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have not received any additional full time employees so you cannot add more staff.",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have an employee that is retiring, so you will need to remove a full time employee from your work plan.",
         "3": "<span class='v-right' /> <strong>Correct!</strong>"
-      },
+      }},
       "q4":
       {
-        "text": "Do you need to indicate the need for training for the officers? ",
+        "text": "Do you need to indicate the need for training for the officers?",
         "options":
         {
           "1": "Yes, with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;",
@@ -229,7 +229,6 @@
           "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
           "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;."
         }
-      }
     }
   },
   "fr":

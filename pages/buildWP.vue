@@ -394,7 +394,7 @@ button.accessibilityButton {
   "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p><p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter votre intranet pour voir quels mod&egrave;les sont utilis&eacute;s.</p><p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalPartsWP":"Sauter à l'activité",
-  "playSegmentP":"Faire jouer le segment vidéo",
+  "playSegment":"Faire jouer le segment vidéo",
   "transcriptText":""
   }
   }

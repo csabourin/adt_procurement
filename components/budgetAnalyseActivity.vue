@@ -1,6 +1,5 @@
 <template>
   <span>
-    <p><strong>Activity</strong></p>
     <p><span>Click on any question marks and answer the question that appears.&nbsp;</span></p>
     <table dir="ltr" border="1" cellspacing="0" cellpadding="5" width="100%" class="AnalyzeBudgetTable">
       <colgroup>
@@ -98,7 +97,7 @@
           <td>Software License</td>
           <td>$0</td>
           <td>$0</td>
-          <td v-b-modal.question2><strong v-if="q2Answer">$3,000</strong><a href="javascript:" class="questionMark" v-else>?</a></td>
+          <td v-b-modal.question2><strong v-if="q2Answer">$3,000</strong><a v-else href="javascript:" class="questionMark" >?</a></td>
           <td v-b-modal.question2> </td>
           <td>new software, annual cost $1,000 X 3 FTEs</td>
         </tr>
@@ -273,7 +272,8 @@ export default {
     font-family: Roboto Medium;
     font-size: 36px;
     position: absolute;
-    background-color: #d0d2ec;
+    background-color: #dfe49e;
+    color:#4d4d4d;
     border: 2px solid #eee;
     border-radius: 50px;
     text-align: center;

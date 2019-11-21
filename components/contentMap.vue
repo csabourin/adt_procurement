@@ -6,49 +6,49 @@
     <h4>{{$t('plan')}}</h4>
     <ul style="list-style: none">
       <li>
-        <nuxt-link :to="localePath('planKey')">{{$t('KeyMessages')}}</nuxt-link>
+        <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessages')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('buildWP')">{{$t('BuildWorkPlan')}}</nuxt-link>
+        <nuxt-link :to="localePath('buildWP')" v-html="$t('BuildWorkPlan')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('createBudget')">{{$t('CreateBudget')}}</nuxt-link>
+        <nuxt-link :to="localePath('createBudget')" v-html="$t('CreateBudget')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')">{{$t('Test')}}</nuxt-link>
+        <nuxt-link :to="localePath('null')" v-html="$t('Test')" />
       </li>
     </ul>
     <h4>{{$t('spend')}}</h4>
     <ul style="list-style: none">
       <li>
-        <nuxt-link :to="localePath('null')">{{$t('KeyMessages')}}</nuxt-link>
+        <nuxt-link :to="localePath('null')" v-html="$t('KeyMessages')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')">{{$t('InitiateAuthorizeSpending')}}</nuxt-link>
+        <nuxt-link :to="localePath('null')" v-html="$t('InitiateAuthorizeSpending')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')">{{$t('ExerciseFinancialAuthority')}}</nuxt-link>
+        <nuxt-link :to="localePath('null')" v-html="$t('ExerciseFinancialAuthority')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')">{{$t('MonitorControlFinances')}}</nuxt-link>
+        <nuxt-link :to="localePath('null')" v-html="$t('MonitorControlFinances')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')">{{$t('Test')}}</nuxt-link>
+        <nuxt-link :to="localePath('null')" v-html="$t('Test')" />
       </li>
     </ul>
     <h4>{{$t('report')}}</h4>
     <ul style="list-style: none">
       <li>
-        <nuxt-link :to="localePath('null')">{{$t('KeyMessages')}}</nuxt-link>
+        <nuxt-link :to="localePath('null')" v-html="$t('KeyMessages')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')">{{$t('ConductPeriodicVarianceReporting')}}</nuxt-link>
+        <nuxt-link :to="localePath('null')" v-html="$t('ConductPeriodicVarianceReporting')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')">{{$t('ContributeReporting')}}</nuxt-link>
+        <nuxt-link :to="localePath('null')" v-html="$t('ContributeReporting')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')">{{$t('Test')}}</nuxt-link>
+        <nuxt-link :to="localePath('null')" v-html="$t('Test')" />
       </li>
     </ul>
   </div>

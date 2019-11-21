@@ -20,27 +20,27 @@
      <p>&nbsp;</p>
     <div class="sideTitle planTitle">{{$t('plan')}}</div>
     <section class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }">
-      <microlearning path="planKey" time="2" completion=100 imagePath="KeyMessP.png">{{$t('KeyMessages')}}</microlearning>
-      <microlearning path="buildWP" time="20"  imagePath="KeyMessR.png" completion=80>{{$t('BuildWorkPlan')}}</microlearning>
-      <microlearning time="20" path="createBudget" completion=10 imagePath="CreateBud.png">{{$t('CreateBudget')}}</microlearning>
-      <microlearning time="15" tmp_imagePath="TestPlan.png">{{$t('Test')}}</microlearning>
+      <microlearning path="planKey" time="2" completion=100 imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
+      <microlearning path="buildWP" time="20"  imagePath="KeyMessR.png" completion=80 :text="$t('BuildWorkPlan')" />
+      <microlearning time="20" path="createBudget" completion=10 imagePath="CreateBud.png" :text="$t('CreateBudget')" />
+      <microlearning time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
     </section>
     <hr class="planHr">
     <div class="sideTitle spendTitle">{{$t('spend')}}</div>
     <section class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }">
-      <microlearning time="5" tmp_imagePath="KeyMessS.png">{{$t('KeyMessages')}}</microlearning>
-      <microlearning time="20">{{$t('InitiateAuthorizeSpending')}}</microlearning>
-      <microlearning time="20">{{$t('ExerciseFinancialAuthority')}}</microlearning>
-      <microlearning time="20">{{$t('MonitorControlFinances')}}</microlearning>
-      <microlearning time="15">{{$t('Test')}}</microlearning>
+      <microlearning time="5" tmp_imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
+      <microlearning time="20" :text="$t('InitiateAuthorizeSpending')" />
+      <microlearning time="20" :text="$t('ExerciseFinancialAuthority')" />
+      <microlearning time="20" :text="$t('MonitorControlFinances')" />
+      <microlearning time="15" :text="$t('Test')" />
     </section>
     <hr class="spendHr">
     <div class="sideTitle reportTitle">{{$t('report')}}</div>
     <section class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }">
-      <microlearning time="5">{{$t('KeyMessages')}}</microlearning>
-      <microlearning time="20">{{$t('ConductPeriodicVarianceReporting')}}</microlearning>
-      <microlearning time="20">{{$t('ContributeReporting')}}</microlearning>
-      <microlearning time="15">{{$t('Test')}}</microlearning>
+      <microlearning time="5" :text="$t('KeyMessages')" />
+      <microlearning time="20" :text="$t('ConductPeriodicVarianceReporting')" />
+      <microlearning time="20" :text="$t('ContributeReporting')" />
+      <microlearning time="15" :text="$t('Test')" />
     </section>
     <hr class="reportHr">
   </div>

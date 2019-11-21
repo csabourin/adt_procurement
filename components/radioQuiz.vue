@@ -7,6 +7,7 @@
     </ol>
     <p v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>
     <p v-if="Quest1 && q1Submitted" v-html="Question.feedback[Quest1]" />
+    <p v-if="Quest1 && q1Submitted && Question.conclusion" v-html="Question.conclusion" />
     <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
 	</span>
 </template>
@@ -24,7 +25,8 @@
 				default:{
 					text:"Question",
 					options:{"1":"Option"},
-					feedback:{"1":"Feedback"}
+					feedback:{"1":"Feedback"},
+					conclusion:""
 				}
 			},
 			qId:{

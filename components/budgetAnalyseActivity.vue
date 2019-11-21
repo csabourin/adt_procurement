@@ -97,8 +97,8 @@
           <td v-html="$t('budgetTableFill60')"></td>
           <td v-html="$t('budgetTableFill61')"></td>
           <td v-html="$t('budgetTableFill62')"></td>
-          <td v-b-modal.question2 ><strong v-if="q2Answer" v-html="$t('budgetTableFill63')">$3,000</strong><a v-else href="javascript:" class="questionMark">?</a></td>
-          <td v-b-modal.question2 v-html="$t('budgetTableFill64')"></td>
+          <td v-b-modal.question2 ><strong v-if="q2Answer" v-html="$t('budgetTableFill63')">$3,000</strong></td>
+          <td v-b-modal.question2 ><strong v-if="q2Answer" v-html="$t('budgetTableFill64')"></strong><a v-else href="javascript:" class="questionMark">?</a></td>
           <td v-html="$t('budgetTableFill65')"></td>
         </tr>
         <tr>
@@ -134,11 +134,11 @@
           <td v-html="$t('budgetTableFill89')"></td>
         </tr>
         <tr>
-          <td v-html="$t('budgetTableFill90')"></td>
+          <td ><strong v-html="$t('budgetTableFill90')"></strong></td>
           <td v-html="$t('budgetTableFill91')"></td>
           <td v-html="$t('budgetTableFill92')"></td>
-          <td v-html="$t('budgetTableFill93')"></td>
-          <td v-html="$t('budgetTableFill94')"></td>
+          <td ><p v-if="q1Answer && q2Answer" v-html="$t('budgetTableFill93')" /></td>
+          <td ><p v-if="q1Answer && q2Answer" v-html="$t('budgetTableFill94')" /></td>
           <td v-html="$t('budgetTableFill95')"></td>
         </tr>
       </tbody>
@@ -553,6 +553,39 @@ export default {
     "4":"<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is <strong>$430,000 Non-Discretionary</strong> and <strong>$13,333 Discretionary</strong>."
   },
   "conclusion":"<p> Your starting point is the current year&rsquo;s budget of $475,000. For the employee that is retiring and not being replaced, you need to subtract nine months (July to March) of the $60,000 in annual salary ($475,000-$45,000=$430,000). Since casual employees are not part of the org chart, they are considered discretionary.&nbsp;</p><p><span>It is important to analyze any variances so the figures in your proposed budget are accurate. To discover the reason for a variance, you could speak with the previous manager, your admin, or your director. A report from Finance may provide the variance explanation.&nbsp;</span></p>"
+},
+
+"q2":
+{
+    "text": "<p>You will have to estimate costs for new activities for your budget requirements. If an activity was completed last year, it won&rsquo;t appear. Look for cancelled or delayed activities as well, to be sure your budget requirements are complete.</p><p>You did not have software in last year&rsquo;s or the current year&rsquo;s budget. Looking at your work plan, you know that your plan is to purchase new software next year for issuing fishing licenses. You do some research and find out that the software license costs $1,000 annually per officer (you will have 3 officers using it). Online training will cost $800.00 per officer.<strong> What budget for new software will you propose for the next fiscal year?&nbsp;</p>",
+    "options":
+    {
+        "1": "$1,000",
+        "2": "$3,000",
+        "3": "$5,400"
+    },
+    "feedback":
+    {
+        "1": "<span class='v-wrong'/> <strong>Incorrect.</strong> The correct answer is $3,000. The new software will cost $1,000 per officer for 3 officers (3 X $1,000=$3,000). Training would be covered in a separate line item.",
+        "2": "<span class='v-right'/> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong'/> <strong>Incorrect.</strong> The correct answer is $3,000. The new software will cost $1,000 per officer for 3 officers (3 X $1,000=$3,000). Training would be covered in a separate line item."
+    }
+},
+"q3":
+{
+    "text": "If you do not plan a significant change in your spending patterns for Material and Supplies, what should you budget for?",
+    "options":
+    {
+        "1": "$1,500",
+        "2": "$2,000",
+        "3": "$2,040"
+    },
+    "feedback":
+    {
+      "1":"<span class='v-right' /> <strong>Correct!</strong> ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is a. $1,500. This amount was spent last year, and also forecasted for the current year; therefore, you would request a budget equal to your spending patterns.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is a. $1,500. This amount was spent last year, and also forecasted for the current year; therefore, you would request a budget equal to your spending patterns."
+    }
 }
 }
 }</i18n>

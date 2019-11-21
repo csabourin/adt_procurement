@@ -320,7 +320,8 @@ video {
 
 .chaptersLink:before {
   counter-increment: WPepisode;
-  content: "0"counter(WPepisode);
+  /*content: "0"counter(WPepisode);*/
+  content: counter(WPepisode);
   position: absolute;
   background-color: #587C84;
   height: 2em;
@@ -329,7 +330,9 @@ video {
   border-radius: 0 0 0 30px;
   padding: .5em .25em 0 1em;
   color: white;
-
+}
+.chaptersLink:nth-child(-n+9):before {
+  content: "0"counter(WPepisode);
 }
 
 .chaptersLink.isPlaying:before {
@@ -349,6 +352,9 @@ video {
 .playButton, .activityButton {
   position: absolute;
   bottom: 1em;
+  /*
+  Comment out ↑
+  vertical-align:bottom;*/
 }
 
 .playButton{left: 20px;}

@@ -6,7 +6,7 @@
         <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes</span></div>
       </div>
       <p class="text-left" :style="'width:'+size+'px'">
-        <slot />
+        <span v-html="text" />
       </p>
          <div v-if="youAreHere" class="floatOver"><img :src="require('~/assets/YouAreHere.svg')"></div>
     </nuxt-link>
@@ -15,6 +15,7 @@
 <script type="text/javascript">
 export default {
   props: {
+    text:{type:String,default:"Tile Name"},
     size: {
       type: String,
       default: "200"

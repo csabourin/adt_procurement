@@ -24,12 +24,11 @@
           </b-card-header>
           <b-collapse id="toolbox-1" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
-              <b-card-text><planLinks />
-              <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
-        Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
-      <span v-if="$i18n.locale=='fr'">
-        Jetez un coup d'oeil au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
-      </span></p></b-card-text>
+              <b-card-text>
+                <planLinks />
+                <spendLinks />
+                <reportLinks />
+              </b-card-text>
             </b-card-body>
           </b-collapse>
         </b-card>
@@ -61,15 +60,26 @@
 import fileIcon from '~/components/icons/FileIcon'
 import download from "~/components/fileDownload"
 import planLinks from "~/components/plan_links"
+import spendLinks from "~/components/spend_links"
+import reportLinks from "~/components/report_links"
 export default {
   components: {
     fileIcon,
     download,
-    planLinks
+    planLinks,
+    spendLinks,
+    reportLinks
   }
 }
 
 </script>
 <style type="text/css" scoped>
-  .card-header a.btn-light {text-transform: uppercase; color:#707070;font-weight: 500;font-size:28px; text-align: left}
+.card-header a.btn-light {
+  text-transform: uppercase;
+  color: #707070;
+  font-weight: 500;
+  font-size: 28px;
+  text-align: left
+}
+
 </style>

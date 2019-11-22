@@ -368,7 +368,6 @@ button.accessibilityButton {
   border-radius: 5px;
 }
 
-
 </style>
 <i18n>{
   "en":{

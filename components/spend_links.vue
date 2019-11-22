@@ -1,50 +1,56 @@
 <template>
-	<span>
-		<div v-if="1i18n.locale=='fr'">
-			<h2>Liens externes et descriptions</h2>
-			<dl>
-				<dt><a href="http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32503" target="_blank">Directive sur la d&eacute;l&eacute;gation des pouvoirs de d&eacute;penser et des pouvoirs financiers</a></dt>
-		        <dd>Lien vers la Directive sur la d&eacute;l&eacute;gation des pouvoirs de d&eacute;penser et des pouvoirs financiers</dd>
-		        
-				<dt><a href="http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32504" target="_blank">Directive sur les paiements</a></dt>
-		        <dd>Lien vers la Directive sur les paiements</dd>
-		        
-		        <dt><a href="http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32502" target="_blank">Directive sur l&rsquo;imputation et les autorisations financi&egrave;res sp&eacute;ciales</a></dt>
-		        <dd>Lien vers la Directive sur l&rsquo;imputation et les autorisations financi&egrave;res sp&eacute;ciales</dd>
-		        
-		        <dt><a href="http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228" target="_blank">Directive sur l&rsquo;engagement des d&eacute;penses et le contr&ocirc;le des engagements</a></dt>
-		        <dd>Lien vers la directive sur l&rsquo;engagement des d&eacute;penses et le contr&ocirc;le des engagements</dd>
-		        
-		        <!-- <dt><a href="https://ouvert.canada.ca/fr/divulgation-proactive" target="_blank">&Eacute;tablissement de rapports &agrave; l&rsquo;&eacute;chelle du gouvernement&nbsp;&ndash; Divulgation proactive</a></dt>
-		        <dd>Lien vers la &eacute;tablissement de rapports &agrave; l&rsquo;&eacute;chelle du gouvernement&nbsp;&ndash; divulgation proactive</dd> -->
-		        
-		        <dt><a href="http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32495" target="_blank">Politique sur la gestion financi&egrave;re</a></dt>
-		        <dd>Lien vers la Politique sur la gestion financi&egrave;re</dd>
-		        
-			</dl>
-		</div>
-		<div v-if="1i18n.locale=='en'">
-			<h2>External Links and Descriptions</h2>
-			<dl>
-				<dt><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32503" target="_blank">The Directive on Delegation of Spending and Financial Authorities</a></dt>
-		        <dd>Link to The Directive on Delegation of Spending and Financial Authorities</dd>
-		        
-				<dt><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32504" target="_blank">The Directive on Payments</a></dt>
-		        <dd>Link to The Directive on Payments</dd>
-		        
-		        <dt><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32502" target="_blank">The Directive on Charging and Special Financial Authorities</a></dt>
-		        <dd>Link to The Directive on Charging and Special Financial Authorities</dd>
-		        
-		        <dt><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228" target="_blank">The Directive on Travel, Hospitality, Conference and Event Expenditures</a></dt>
-		        <dd>Link to The Directive on Travel, Hospitality, Conference and Event Expenditures</dd>
-		        
-		        <!-- <dt><a href="https://www.canada.ca/en/treasury-board-secretariat/services/reporting-government-spending/proactive-disclosure-department-agency.html" target="_blank">Government-wide Reporting&nbsp;&ndash; Proactive Disclosure</a></dt>
-		        <dd>Link to the Government-wide Reporting&nbsp;&ndash; Proactive Disclosure</dd> -->
-		        
-		        <dt><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32495" target="_blank">Policy on Financial Management</a></dt>
-		        <dd>Link to the Policy on Financial Management</dd>
-		        
-			</dl>	
-		</div>
-	</span>
+  <span>
+    <div v-if="$i18n.locale=='fr'">
+      <div>
+        <p>D&Eacute;PENSES</p>
+        <ul>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32495">Politique sur la gestion financi&egrave;re</a></li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32503">Directive sur la d&eacute;l&eacute;gation des pouvoirs de d&eacute;penser et des pouvoirs financiers</a>
+            <ul>
+              <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584&amp;section=html">Guide de d&eacute;l&eacute;gation</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584&amp;section=html">et de mise en &oelig;uvre des pouvoirs de d&eacute;penser et des pouvoirs financiers</a>
+            <ul>
+              <li><a href="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_fr.html">Tableau de d&eacute;l&eacute;gation des pouvoirs de d&eacute;penser et de signer des documents financiers</a> (Lien vers un graphique fictif)&nbsp;</li>
+            </ul>
+          </li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228">Directive sur les d&eacute;penses de voyages, d&rsquo;accueil, de conf&eacute;rences et d&rsquo;&eacute;v&eacute;nements</a>
+            <ul>
+              <li><a href="https://intranet.canada.ca/pol/doc-fra.aspx?id=32553">Guide sur les d&eacute;penses de voyages, d&rsquo;accueil, de conf&eacute;rences et d&rsquo;&eacute;v&eacute;nements</a></li>
+              <li><a href="https://www.njc-cnm.gc.ca/directive/d10/fr">Directive sur les voyages du Conseil national mixte (CNM)</a></li>
+              <li><a href="https://www.gcpedia.gc.ca/wiki/Ensemble_de_politiques_sur_la_gestion_financi%C3%A8re/Conf%C3%A9rence_par_opposition_%C3%A0_formation">Conf&eacute;rence par opposition &agrave; formation</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32504">Directive sur les paiements</a></li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14662">Directive sur la r&eacute;installation du CNM</a></li>
+          <li>Directive sur l&rsquo;imputation et les autorisations financi&egrave;res sp&eacute;ciales</li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32505">Directive sur la gestion des fonds publics et des comptes d&eacute;biteurs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div v-if="$i18n.locale=='en'">
+      <div>
+        <p>SPEND</p>
+        <ul class="list-unstyled">
+          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32495">Policy on Financial Management</a></li>
+          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32503">Directive on Delegation of Spending and Financial Authorities</a>
+            <ul>
+              <li><a href="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_en.html">Delegation of Spending and Financial Signing Authorities Chart</a> (Link to a fictitious chart)</li>
+            </ul>
+          </li>
+          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228">Directive on Travel, Hospitality, Conference and Event Expenditures</a>
+            <ul>
+              <li><a href="https://intranet.canada.ca/pol/doc-eng.aspx?id=32553">Guide to Travel, Hospitality, Conference and Event Expenditures</a></li>
+              <li><a href="https://www.gcpedia.gc.ca/wiki/Financial_Management_Policy_Suite/Conference_versus_training">Determination of training vs. conferences for functional communities</a></li>
+            </ul>
+          </li>
+          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32504">Directive on Payments</a></li>
+          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32502">Directive on Charging and Special Financial Authorities</a></li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32505">Directive on Public</a></li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32505">Money and Receivables</a></li>
+        </ul>
+      </div>
+    </div>
+  </span>
 </template>

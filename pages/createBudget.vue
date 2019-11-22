@@ -40,8 +40,12 @@
       <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
         <planLinks /><!-- {{ $t('gotIt') }} -->
       </b-modal>
-      <b-modal no-stacking id="partsofwp" @hide="resumePlay()" :title="$t('AnalyzeBudgetKT')" size="xl" okOnly>
-        <AnalyzeBudgetKT />
+      <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title>
+      <img src="~/assets/ActivityIcon.svg" width="32"> {{$t('AnalyzeBudgetKT')}}
+    </template>
+    <AnalyzeBudgetKT />
+        </b-modal>
       </b-modal>
       <b-modal id="budgetAnalyze" @hide="resumePlay()" size="xl" okOnly :title="$t('budgetAnalyzeActivity')">
         <budgetAnalyzeActivity />

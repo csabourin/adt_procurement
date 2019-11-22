@@ -230,7 +230,7 @@ export default {
       "options": {
         "1": "The budget for travel has increased year over year by a factor of 3%. ",
         "2": "An activity related to renewing fishing licenses was delayed due to Arctic weather. ",
-        "3": "Less was spent on conferences last year because an employee left part way through the year, so they didn’t attend a conference as planned. ",
+        "3": "Less was spent on conferences last year because an employee didn’t attend a conference as planned. ",
         "4": "The training budget was overspent by $6,000 last year."
       },
       "feedback": {
@@ -442,7 +442,7 @@ export default {
       "options": {
         "1": "Le budget des voyages a augmenté d'année en année d'un facteur de 3 %.",
         "2": "Une activité liée au renouvellement des permis de pêche a été retardée en raison des conditions météorologiques dans l'Arctique.",
-        "3": "L'an dernier, on a consacré moins d'argent aux conférences parce qu'un employé est parti au milieu de l'année, de sorte qu'il n'a pas assisté à une conférence comme prévu.",
+        "3": "L'an dernier, on a consacré moins d'argent aux conférences parce qu'un employé n'a pas assisté à une conférence comme prévu.",
         "4": "Le budget de formation a été dépassé de 6 000 $ l'an dernier."
       },
       "feedback": {

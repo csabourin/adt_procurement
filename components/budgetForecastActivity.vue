@@ -54,10 +54,10 @@
           <td v-html="$t('budgetTableFill30')"></td>
           <td v-html="$t('budgetTableFill31')"></td>
           <td v-html="$t('budgetTableFill32')"></td>
-          <td v-b-modal.question1>
-            <strong v-if="q1Answer" v-html="$t('budgetTableFill33')"></strong><a v-else href="javascript:" class="questionMark">?</a>
+          <td>
+            <span v-html="$t('budgetTableFill33')" />
           </td>
-          <td v-b-modal.question1><strong v-if="q1Answer" v-html="$t('budgetTableFill34')"></strong><span v-else></span>
+          <td><span v-html="$t('budgetTableFill34')" />
           </td>
           <td v-html="$t('budgetTableFill35')"></td>
         </tr>
@@ -65,8 +65,8 @@
           <td v-html="$t('budgetTableFill36')"></td>
           <td v-html="$t('budgetTableFill37')"></td>
           <td v-html="$t('budgetTableFill38')"></td>
-          <td><span v-if="q1Answer" v-html="$t('budgetTableFill39')"></span></td>
-          <td><span v-if="q1Answer" v-html="$t('budgetTableFill40')"></span></td>
+          <td><span v-html="$t('budgetTableFill39')" /></td>
+          <td><span v-html="$t('budgetTableFill40')" /></td>
           <td v-html="$t('budgetTableFill41')"></td>
         </tr>
         <tr>
@@ -97,32 +97,32 @@
           <td v-html="$t('budgetTableFill60')"></td>
           <td v-html="$t('budgetTableFill61')"></td>
           <td v-html="$t('budgetTableFill62')"></td>
-          <td v-b-modal.question2><strong v-if="q2Answer" v-html="$t('budgetTableFill63')">$3,000</strong></td>
-          <td v-b-modal.question2><strong v-if="q2Answer" v-html="$t('budgetTableFill64')"></strong><a v-else href="javascript:" class="questionMark">?</a></td>
+          <td><span v-html="$t('budgetTableFill63')">$3,000</span></td>
+          <td><span v-html="$t('budgetTableFill64')" /></td>
           <td v-html="$t('budgetTableFill65')"></td>
         </tr>
         <tr>
           <td v-html="$t('budgetTableFill66')"></td>
           <td v-html="$t('budgetTableFill67')"></td>
           <td v-html="$t('budgetTableFill68')"></td>
-          <td v-b-modal.question3><strong v-if="q3Answer" v-html="$t('budgetTableFill69')" /><a v-else href="javascript:" class="questionMark">?</a></td>
-          <td v-b-modal.question3 v-html="$t('budgetTableFill70')"></td>
+          <td><span v-html="$t('budgetTableFill69')" /></td>
+          <td v-html="$t('budgetTableFill70')"></td>
           <td v-html="$t('budgetTableFill71')"></td>
         </tr>
         <tr>
           <td v-html="$t('budgetTableFill72')"></td>
           <td v-html="$t('budgetTableFill73')"></td>
           <td v-html="$t('budgetTableFill74')"></td>
-          <td v-html="$t('budgetTableFill75')"></td>
-          <td v-html="$t('budgetTableFill76')"></td>
+          <td v-b-modal.question4><span v-if="q1Answer" v-html="$t('budgetTableFill75')"></span><a v-else href="javascript:" class="questionMark">?</a></td>
+          <td v-b-modal.question4><span v-if="q1Answer" v-html="$t('budgetTableFill76')"></span></td>
           <td v-html="$t('budgetTableFill77')"></td>
         </tr>
         <tr>
           <td v-html="$t('budgetTableFill78')"></td>
           <td v-html="$t('budgetTableFill79')"></td>
           <td v-html="$t('budgetTableFill80')"></td>
-          <td v-html="$t('budgetTableFill81')"></td>
-          <td v-html="$t('budgetTableFill82')"></td>
+          <td v-b-modal.question5><span v-if="q2Answer" v-html="$t('budgetTableFill81')"></span></td>
+          <td v-b-modal.question5><span v-if="q2Answer" v-html="$t('budgetTableFill82')"></span><a v-else href="javascript:" class="questionMark">?</a></td>
           <td v-html="$t('budgetTableFill83')"></td>
         </tr>
         <tr>
@@ -147,31 +147,28 @@
         </tr>
       </tbody>
     </table>
-    <b-modal id="question1" okOnly size="lg" :title="$t('q1.title')">
+    <b-modal id="question4" okOnly size="lg" :title="$t('q1.title')">
       <p v-html="$t('q1.introduction')"></p>
       <radioQuiz :Question="$t('q1')" @response="q1Answer=$event" qId="1" />
     </b-modal>
-    <b-modal id="question2" :title="$t('q2.title')" size="lg" okOnly>
+    <b-modal id="question5" :title="$t('q2.title')" size="lg" okOnly>
       <p v-html="$t('q2.introduction')"></p>
-      <radioQuiz :Question="$t('q2')" qId="2" @response="q2Answer=$event" />
-    </b-modal>
-    <b-modal id="question3" okOnly size="lg" :title="$t('q3.title')">
-      <p v-html="$t('q3.introduction')" />
-      <radioQuiz :Question="$t('q3')" qId="3" @response="q3Answer=$event" />
+      <checkboxQuiz :Question="$t('q2')" qId="2" @response="q2Answer=$event" :Answer="['3','4']" />
     </b-modal>
   </span>
 </template>
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
+import checkboxQuiz from "~/components/checkboxQuiz"
 export default {
   components: {
-    radioQuiz
+    radioQuiz,
+    checkboxQuiz
   },
   data() {
     return {
       q1Answer: "",
-      q2Answer: "",
-      q3Answer: ""
+      q2Answer: ""
     }
   }
 }
@@ -207,52 +204,36 @@ export default {
   {
   "en": {
     "q1": {
-    "title":"Salary",
-      "introduction": "<table border='1'> <tbody> <tr> <td> <p>Salary</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$460,000</p> </td> <td> <p>$450,000</p> </td> <td> <p><span style='color: #ff0000;'>($10,000)</span></p> </td> <td> <p>An employee was on leave without pay.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td></td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$475,000</p> </td> <td> <p>$237,500</p> </td> <td> <p>$475,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table><br><ul> <li>An employee&rsquo;s annual salary is $60,000 per year. You know that they will retire on July 1 of next year and won&rsquo;t be replaced, and&nbsp;</li> <li>You plan on getting a casual employee for 4 months for a total of $13,333.</li> </ul>",
-      "text": "What budget will you propose for the next fiscal year?",
+      "introduction": "You have three employees that need training to implement the new software at $800 per employee. It has been common practice to send four employees on training of their choice at $500 per employee. ",
+      "text": "What will your budget requirements be?",
       "options": {
-        "1": "$415,000 Non-Discretionary and $13,333 Discretionary",
-        "2": "$430,000 Non-Discretionary and $13,333 Discretionary",
-        "3": "$445,000 Non-Discretionary and $13,333 Discretionary",
-        "4": "$475,000 Non-Discretionary&nbsp;"
+        "1": "$4,400 Non-Discretionary ",
+        "2": "$2,400 Non-Discretionary and $2,000 Discretionary",
+        "3": "$2,000 Non-Discretionary and $2,400 Discretionary"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is <strong>$430,000 Non-Discretionary</strong> and <strong>$13,333 Discretionary</strong>.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is $2,400 Non-Discretionary and $2,000 Discretionary.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is <strong>$430,000 Non-Discretionary</strong> and <strong>$13,333 Discretionary</strong>.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is <strong>$430,000 Non-Discretionary</strong> and <strong>$13,333 Discretionary</strong>."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is $2,400 Non-Discretionary and $2,000 Discretionary."
       },
-      "conclusion": "<p> Your starting point is the current year&rsquo;s budget of $475,000. For the employee that is retiring and not being replaced, you need to subtract nine months (July to March) of the $60,000 in annual salary ($475,000-$45,000=$430,000). Since casual employees are not part of the org chart, they are considered discretionary.&nbsp;</p><p><span>It is important to analyze any variances so the figures in your proposed budget are accurate. To discover the reason for a variance, you could speak with the previous manager, your admin, or your director. A report from Finance may provide the variance explanation.&nbsp;</span></p>"
+      "conclusion": "<p>Training to implement the new software is non-discretionary and the other employee training is discretionary.</p>",
+      "title": "Training"
     },
     "q2": {
-    "title":"Software License",
-    "introduction":"<p>You will have to estimate costs for new activities for your budget requirements. If an activity was completed last year, it won&rsquo;t appear. Look for cancelled or delayed activities as well, to be sure your budget requirements are complete.</p><p>You did not have software in last year&rsquo;s or the current year&rsquo;s budget. Looking at your work plan, you know that your plan is to purchase new software next year for issuing fishing licenses. You do some research and find out that the software license costs $1,000 annually per officer (you will have 3 officers using it). Online training will cost $800.00 per officer.</p>",
-      "text": "What budget for new software will you propose for the next fiscal year?",
+      "text": "What will your budget requirements be?",
       "options": {
-        "1": "$1,000",
-        "2": "$3,000",
-        "3": "$5,400"
+        "1": "$18,000 Discretionary ",
+        "2": "$10,000 Non-Discretionary and $8,000 Discretionary",
+        "3": "$10,000 Non-Discretionary and $1,600 Discretionary",
+        "4": "$11,600 Non-Discretionary"
       },
       "feedback": {
-        "1": "<span class='v-wrong'/> <strong>Incorrect.</strong> The correct answer is $3,000. The new software will cost $1,000 per officer for 3 officers (3&nbsp;X&nbsp;$1,000=$3,000). Training would be covered in a separate line item.",
-        "2": "<span class='v-right'/> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong'/> <strong>Incorrect.</strong> The correct answer is $3,000. The new software will cost $1,000 per officer for 3 officers (3&nbsp;X&nbsp;$1,000=$3,000). Training would be covered in a separate line item."
-      }
-    },
-    "q3": {
-    "title":"Material and Supplies",
-    "introduction":"<p><strong>Trends </strong>are costs in your budget that are either constant, or show a similar pattern year after year.&nbsp;</p> <table border='1'> <tbody> <tr> <td> <p>Office Supplies</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year</p> </td> <td> <p>$1,961</p> </td> <td> <p>$1,500</p> </td> <td> <p>($461)</p> </td> <td> <p>Prices were lower than planned.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget&nbsp;</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$2,000</p> </td> <td> <p>$100</p> </td> <td> <p>$1,500</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
-      "text": "If you do not plan a significant change in your spending patterns for Material and Supplies, what should you budget for?",
-      "options": {
-        "1": "$1,500",
-        "2": "$2,000",
-        "3": "$2,040"
+        "right": "<span class='v-right'/> <strong>Correct!</strong> ",
+        "wrong": "<span class='v-wrong'/> <strong>Incorrect.</strong> The correct answers are $10,000 Non-Discretionary and $1,600 Discretionary or $11,600 Non-Discretionary."
       },
-      "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is $1,500. This amount was spent last year, and also forecasted for the current year; therefore, you would request a budget equal to your spending patterns.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is $1,500. This amount was spent last year, and also forecasted for the current year; therefore, you would request a budget equal to your spending patterns."
-      }
+      "title": "Travel ",
+      "introduction": "<table border='1'> <tbody> <tr> <td> <p>Travel</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$18,000</p> </td> <td> <p>$16,000</p> </td> <td> <p>($2,000)</p> </td> <td> <p>Employee on leave without pay, and another did not travel.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$18,000</p> </td> <td> <p>$9,000</p> </td> <td> <p>$18,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Historically, you have&nbsp;</p> <ul> <li>spent $10,000 on travel to conduct inspections, and</li> <li>budgeted a total of $8,000 for general travel. However, you know that 80% of work can now be done virtually.</li> </ul>",
+      "conclusion": "<p>We need to conduct inspections as part of our business, hence $10,000 is non-discretionary. As per the Directive on Travel, Hospitality, Conference, and Event Expenditures, travel should be avoided where appropriate. We will not request a budget for the 80% that can be done virtually. Since there is no indication of what the remaining general travel is for, it could be non-discretionary or discretionary.&nbsp;</p> <p><a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228'></a></p>"
     },
     "actInstructions": "Select any question marks and answer the question that appears",
     "budgetTableFill1": "Line Item",
@@ -353,52 +334,36 @@ export default {
   },
   "fr": {
     "q1": {
-    "title":"Salaire",
-      "conclusion": "<p> Votre point de départ est le budget de 475 000 $ de l'année en cours. Pour l'employé qui prend sa retraite et qui n'est pas remplacé, vous devez soustraire neuf mois (de juillet à mars) du salaire annuel de 60 000 $ (475 000 $ à 45 000 $ = 430 000 $). Comme les employés occasionnels ne font pas partie de l'organigramme, ils sont considérés comme discrétionnaires.</p><p><span>Il est important d'analyser tout écart afin que les chiffres du budget proposé soient exacts. Pour connaître la raison d'un écart, vous pouvez parler avec l'ancien gestionnaire, votre administrateur ou votre directeur. Un rapport du ministère des Finances peut fournir l'explication de l'écart. </span></p>",
-      "introduction": "<table border='1'> <tbody> <tr> <td> <p>Salaire</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explication de Variance&nbsp;</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>460 000 $</p> </td> <td> <p>450 000 $</p> </td> <td> <p><span style='color: #ff0000;'>(10 000 $)</span></p> </td> <td> <p>Un employ&eacute; &eacute;tait en cong&eacute; non pay&eacute;.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>475 000 $</p> </td> <td> <p>237 500 $</p> </td> <td> <p>475 000 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <br> <ul> <li>Le salaire annuel d'un employ&eacute; est de 60 000 $ par ann&eacute;e. Vous savez qu'ils prendront leur retraite le 1er juillet de l'ann&eacute;e prochaine et qu'ils ne seront pas remplac&eacute;s.&nbsp;</li> <li>Vous pr&eacute;voyez embaucher un employ&eacute; occasionnel pendant 4 mois pour un total de 13 333 $.</li> </ul>",
-      "text": "Quel budget proposez-vous pour le prochain exercice financier ?",
+      "conclusion": "La formation pour la mise en œuvre du nouveau logiciel est non discrétionnaire et la formation des autres employés est discrétionnaire.",
+      "introduction": "Vous avez trois employés qui ont besoin de formation pour mettre en œuvre le nouveau logiciel à 800 $ par employé. Il est courant d'envoyer quatre employés suivre la formation de leur choix au coût de 500 $ par employé.",
+      "text": "Quels seront vos besoins budgétaires ?",
       "options": {
-        "1": "$415 000 $ non discrétionnaire et 13 333 $ discrétionnaire",
-        "2": "430 000 $ non discrétionnaire et 13 333 $ discrétionnaire",
-        "3": "445 000 $ non discrétionnaire et 13 333 $ discrétionnaire",
-        "4": "475 000 $ Non discrétionnaire "
+        "1": "4 400 $ Non discrétionnaire",
+        "2": "2 400 $ non discrétionnaire et 2 000 $ discrétionnaire",
+        "3": "2 000 $ non discrétionnaire et 2 400 $ discrétionnaire"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 430 000 $ non discrétionnaire et 13 333 $ discrétionnaire.</strong>.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 2 400 $ non discrétionnaire et 2 000 $ discrétionnaire.</strong>.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 430 000 $ non discrétionnaire et 13 333 $ discrétionnaire.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 430 000 $ non discrétionnaire et 13 333 $ discrétionnaire.</strong>."
-      }
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 2 400 $ non discrétionnaire et 2 000 $ discrétionnaire."
+      },
+      "title": "Formation"
     },
     "q2": {
-      "title":"License logiciel",
-      "introduction": "<p>Vous devrez estimer les coûts des nouvelles activités en fonction de vos besoins budgétaires. Si une activité a été complétée l'an dernier, elle n'apparaîtra pas. Recherchez également les activités annulées ou retardées pour vous assurer que vos besoins budgétaires sont comblés.</p><p>Vous n'aviez pas de logiciel dans le budget de l'année dernière ou de l'année en cours. En examinant votre plan de travail, vous savez que vous avez l'intention d'acheter un nouveau logiciel l'an prochain pour la délivrance des permis de pêche. Vous faites des recherches et découvrez que la licence du logiciel coûte 1 000 $ par an par officier (vous aurez 3 officiers qui l'utiliseront). La formation en ligne coûtera 800 $ par agent.</p>",
-      "text": "Quel budget proposez-vous pour le nouveau logiciel pour le prochain exercice financier ?",
+      "introduction": "<table border='1'> <tbody> <tr> <td> <p>Voyage</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explication</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>18 000 $</p> </td> <td> <p>16 000 $</p> </td> <td> <p>(2 000 $)</p> </td> <td> <p>en cong&eacute; non pay&eacute;, et un autre n'a pas voyag&eacute;.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>18 000 $</p> </td> <td> <p>9 000 $</p> </td> <td> <p>18 000 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Historiquement, vous avez&nbsp;</p> <ul> <li>d&eacute;pens&eacute; 10 000 $ en frais de d&eacute;placement pour effectuer des inspections, et</li> <li>a pr&eacute;vu au budget un montant total de 8 000 dollars pour les voyages g&eacute;n&eacute;raux. Cependant, vous savez que 80 % des d&eacute;placements g&eacute;n&eacute;raux peuvent se faire virtuellement.</li> </ul>",
+      "text": "Quels seront vos besoins budgétaires ?",
       "options": {
-        "1": "1000$",
-        "2": "3000$",
-        "3": "5400$"
+        "1": "18 000 $ Pouvoir discrétionnaire ",
+        "2": "10 000 $ non discrétionnaire et 8 000 $ discrétionnaire",
+        "3": "10 000 $ non discrétionnaire et 1 600 $ discrétionnaire",
+        "4": "11 600 $ Non discrétionnaire"
       },
       "feedback": {
-        "1": "<span class='v-wrong'/> <strong>Incorrect.</strong>  La bonne réponse est 3 000 $. Le nouveau logiciel coûtera 1&nbsp;000 $ par agent pour 3 agents (3&nbsp;X&nbsp;1&nbsp;000&nbsp;$&nbsp;=&nbsp;3&nbsp;000 $). La formation ferait l'objet d'un poste distinct. ",
-        "2": "<span class='v-right'/> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong'/> <strong>Incorrect.</strong>  La bonne réponse est 3 000 $. Le nouveau logiciel coûtera 1&nbsp;000 $ par agent pour 3 agents (3&nbsp;X&nbsp;1&nbsp;000&nbsp;$&nbsp;=&nbsp;3&nbsp;000 $). La formation ferait l'objet d'un poste distinct. "
-      }
-    },
-    "q3": {
-    "title":"Fournitures de bureau",
-      "introduction": "<p>Les <strong>tendances</strong> sont des co&ucirc;ts dans votre budget qui sont soit constants, soit semblables d'ann&eacute;e en ann&eacute;e.</p> <table border='1'> <tbody> <tr> <td> <p>Fournitures de bureau</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explication</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>1 961 $</p> </td> <td> <p>1 500 $</p> </td> <td> <p>(461 $)</p> </td> <td> <p>Les prix ont &eacute;t&eacute; inf&eacute;rieurs aux pr&eacute;visions.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>2 000 $</p> </td> <td> <p>100 $</p> </td> <td> <p>1 500 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
-      "text": "Si vous ne prévoyez pas de changement important dans vos habitudes de dépenses pour le matériel et les fournitures, que devriez-vous prévoir dans votre budget ? ",
-      "options": {
-        "1": "1500$",
-        "2": "2000$",
-        "3": "2040$"
+        "wrong": "<span class='v-wrong'/> <strong>Incorrect.</strong> Les bonnes réponses sont 10 000 $ non discrétionnaire et 1 600 $ discrétionnaire ou 11 600 $ non discrétionnaire. ",
+        "right": "<span class='v-right'/> <strong>Correct!</strong> "
       },
-      "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 1 500 $. Ce montant a été dépensé l'an dernier et a également été prévu pour l'année en cours ; par conséquent, vous demandez un budget égal à vos habitudes de dépenses.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 1 500 $. Ce montant a été dépensé l'an dernier et a également été prévu pour l'année en cours ; par conséquent, vous demandez un budget égal à vos habitudes de dépenses. "
-      }
+      "title": "Voyage",
+      "conclusion": "<p>Nous devons effectuer des inspections dans le cadre de nos activités, de sorte que 10 000 $ ne sont pas discrétionnaires. Conformément à la Directive sur les dépenses de voyage, d'accueil, de conférence et d'événement, les déplacements devraient être évités au besoin. Nous ne demanderons pas un budget pour les 80 p. 100 qui peuvent être réalisés virtuellement. Étant donné qu'il n'y a aucune indication de la raison pour laquelle les déplacements généraux restants sont effectués, ils pourraient être non discrétionnaires ou discrétionnaires.</p> <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive</a>"
     },
     "actInstructions": "Sélectionnez les points d'interrogation et répondez à la question qui apparaît. ",
     "budgetTableFill1": "Poste individuel",

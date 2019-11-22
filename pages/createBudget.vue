@@ -46,8 +46,8 @@
       <b-modal id="budgetAnalyze" @hide="resumePlay()" size="xl" okOnly :title="$t('budgetAnalyzeActivity')">
         <budgetAnalyzeActivity />
       </b-modal>
-      <b-modal no-stacking id="forecastBudget" @hide="resumePlay()" size="xl" okOnly :title="$t('forecastBudgetTitle')">
-        <!--  -->
+      <b-modal id="forecastBudget" @hide="resumePlay()" size="xl" okOnly :title="$t('forecastBudgetTitle')">
+        <budgetForecastActivity />
       </b-modal>
       <b-modal no-stacking id="submitBudget" @hide="resumePlay()" size="xl" okOnly :title="$t('submitBudgetTitle')">
         <submitBudget />
@@ -73,6 +73,7 @@
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
 import budgetAnalyzeActivity from '~/components/budgetAnalyseActivity'
+import budgetForecastActivity from '~/components/budgetForecastActivity'
 import planLinks from '~/components/plan_links'
 import AnalyzeBudgetKT from '~/components/AnalyzeBudgetKT'
 import submitBudget from '~/components/submitBudget'
@@ -85,7 +86,7 @@ export default {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["intro", "alignworkplan", "partsofwp", "budgetAnalyze", "completedraft","submitBudget", "reallife", "quiz"],
+      modalArray: ["intro", "alignworkplan", "partsofwp", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -102,6 +103,7 @@ export default {
     planLinks,
     AnalyzeBudgetKT,
     budgetAnalyzeActivity,
+    budgetForecastActivity,
     submitBudget,
     adjustWorkplan,
     budgetQuiz,

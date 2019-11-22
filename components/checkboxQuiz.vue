@@ -9,6 +9,7 @@
     <span v-if="isAcceptable(Quest2) && q2Submitted">
       <p v-if="arraysMatch(Quest2,Answer)"><span v-html="Question.feedback.right" /></p>
       <p v-else> <span v-html="Question.feedback.wrong" /></p>
+      <p v-if="Quest2 && q2Submitted && Question.conclusion" v-html="Question.conclusion" />
     </span>
     <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
   </span>

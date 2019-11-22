@@ -36,33 +36,28 @@
         <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>
     </section>
     <section>
-      <b-modal no-stacking id="intro" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
-      <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
-        <planLinks /><!-- {{ $t('gotIt') }} -->
-      </b-modal>
-      <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title>
-      <img src="~/assets/ActivityIcon.svg" width="32"> {{$t('AnalyzeBudgetKT')}}
-    </template>
+      <b-modal no-stacking id="budgetKeyTerms" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('AnalyzeBudgetKT')}}</template>
     <AnalyzeBudgetKT />
         </b-modal>
-      </b-modal>
-      <b-modal id="budgetAnalyze" @hide="resumePlay()" size="xl" okOnly :title="$t('budgetAnalyzeActivity')">
+      <b-modal id="budgetAnalyze" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('budgetAnalyzeActivity')}}</template>
         <budgetAnalyzeActivity />
       </b-modal>
-      <b-modal id="forecastBudget" @hide="resumePlay()" size="xl" okOnly :title="$t('forecastBudgetTitle')">
+      <b-modal id="forecastBudget" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('forecastBudgetTitle')}}</template>
         <budgetForecastActivity />
       </b-modal>
-      <b-modal no-stacking id="submitBudget" @hide="resumePlay()" size="xl" okOnly :title="$t('submitBudgetTitle')">
+      <b-modal no-stacking id="submitBudget" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('submitBudgetTitle')}}</template>
         <submitBudget />
       </b-modal>
-      <b-modal no-stacking id="adjustwp" @hide="resumePlay()" size="xl" okOnly :title="$t('adjustwptitle')">
-        <adjustWorkplan />
-      </b-modal>
-      <b-modal no-stacking id="reallife" @hide="resumePlay()" :title="$t('InRealLife')" okOnly>
+      <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('InRealLife')}}</template>
         <span v-html="$t('IRLText')"></span>
       </b-modal>
-      <b-modal no-stacking id="quiz" @hide="resumePlay()" :title="$t('TakeTheQuiz')" size="xl" okOnly>
+      <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('TakeTheQuiz')}}</template>
       <budgetQuiz />
       </b-modal>
     </section>
@@ -78,11 +73,8 @@
 import microlearning from '~/components/microlearning'
 import budgetAnalyzeActivity from '~/components/budgetAnalyseActivity'
 import budgetForecastActivity from '~/components/budgetForecastActivity'
-import planLinks from '~/components/plan_links'
 import AnalyzeBudgetKT from '~/components/AnalyzeBudgetKT'
 import submitBudget from '~/components/submitBudget'
-import adjustWorkplan from '~/components/adjust_workplan'
-import test360 from '~/components/test360'
 import budgetQuiz from '~/components/budgetQuiz'
 import plusIcon from '~/components/icons/PlusSign'
 export default {
@@ -90,7 +82,7 @@ export default {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["intro", "alignworkplan", "partsofwp", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"],
+      modalArray: ["", "", "budgetKeyTerms", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -104,12 +96,10 @@ export default {
   },
   components: {
     microlearning,
-    planLinks,
     AnalyzeBudgetKT,
     budgetAnalyzeActivity,
     budgetForecastActivity,
     submitBudget,
-    adjustWorkplan,
     budgetQuiz,
     plusIcon
   },
@@ -220,6 +210,7 @@ video {
 }
 
 #bar > li.chaptersLink:first-child > a.activityButton { display:none; }
+#bar > li.chaptersLink:nth-child(2) > a.activityButton { display:none; }
 
 #bar > li:last-child > a {
   display:none;

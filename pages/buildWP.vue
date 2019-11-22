@@ -115,7 +115,8 @@
     <section>
       <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
       <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"></template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('activityLinks')}}</template>
+        <p>{{$t('gotoLinks')}}</p>
         <planLinks /><!-- {{ $t('gotIt') }} -->
       </b-modal>
       <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
@@ -380,6 +381,8 @@ button.accessibilityButton {
 <i18n>{
   "en":{
   "gotIt":"Continue to next segment",
+  "activityLinks":"Activity: External Links",
+  "gotoLinks":"These links are also available in the Toolbox",
   "partsofWPTitle":"Activity: Parts of a Work Plan",
   "completewpDrafttitle":"Activity: Complete the Work Plan Draft",
   "completewptitle":"Activity: Complete the Work plan",
@@ -394,6 +397,8 @@ button.accessibilityButton {
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
+  "activityLinks":"Activity: Liens externes",
+  "gotoLinks":"Ces liens se retrouvent aussi dans la boite à outils",
   "partsofWPTitle":"Activité: Parties d'un plan de travail",
   "completewpDrafttitle":"Activité: Faire l’ébauche du plan de travail ",
   "completewptitle":"Activité: Compléter le plan de travail",

@@ -1,27 +1,52 @@
 <template>
   <span>
     <div class="pure-radiobutton pure-checkbox">
-      <b-card>
-        <b-tabs v-model="tabIndex">
-          <b-tab title="Question 1"><selectMatching :Question="$t('q1')" :matches="['2','3','1','4']"/></b-tab>
-          <b-tab title="Question 2"><selectMatching :Question="$t('q2')" :matches='["3","4","1","2"]' /></b-tab>
-          <b-tab title="Question 3"><radioQuiz :Question="$t('q3')" qId="3" /></b-tab>
-          <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" /></b-tab>
-          <b-tab title="Question 5"><checkboxQuiz :Question="$t('q5')" qId="5" :Answer="['1','2','3']"/></b-tab>
-          <b-tab title="Question 6"><radioQuiz :Question="$t('q6')" qId="6" /></b-tab>
-          <b-tab title="Question 7"><radioQuiz :Question="$t('q7')" qId="7" /></b-tab>
-          <b-tab title="Question 8"><radioQuiz :Question="$t('q8')" qId="8" /></b-tab>
-        </b-tabs>
-      </b-card>
-      <!-- Control buttons-->
-      <div class="text-center">
-        <b-button-group class="mt-2">
-          <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-          <b-button @click="tabIndex++" :disabled="tabIndex>=7">{{$t('nextPage')}}</b-button>
-        </b-button-group>
-      </div>
-    </div>
-  </span>
+  <b-card>
+    <b-tabs v-model="tabIndex">
+      <b-tab title="Question 1">
+        <!-- <p><strong v-html="$t('q1a.text')" /></p> -->
+        <selectMatching :Question="$t('q1a')" match="2" @response="Q1a=$event" />
+        <selectMatching :Question="$t('q1b')" match="3" @response="Q1b=$event" />
+        <selectMatching :Question="$t('q1c')" match="1" @response="Q1c=$event" />
+        <selectMatching :Question="$t('q1d')" match="4" @response="Q1d=$event" />
+        <p v-if="Q1a && Q1b && Q1c && Q1d" v-html="$t('q1.conclusion')" />
+      </b-tab>
+      <b-tab title="Question 2">
+        <selectMatching :Question="$t('q2a')" match='3' @response="Q2a=$event" />
+        <selectMatching :Question="$t('q2b')" match='4' @response="Q2b=$event" />
+        <selectMatching :Question="$t('q2c')" match='1' @response="Q2c=$event" />
+        <selectMatching :Question="$t('q2d')" match='2' @response="Q2d=$event" />
+        <p v-if="Q2a && Q2b && Q2c && Q2d" v-html="$t('q2.conclusion')" />
+      </b-tab>
+      <b-tab title="Question 3">
+        <radioQuiz :Question="$t('q3')" qId="3" />
+      </b-tab>
+      <b-tab title="Question 4">
+        <radioQuiz :Question="$t('q4')" qId="4" />
+      </b-tab>
+      <b-tab title="Question 5">
+        <checkboxQuiz :Question="$t('q5')" qId="5" :Answer="['1','2','3']" />
+      </b-tab>
+      <b-tab title="Question 6">
+        <radioQuiz :Question="$t('q6')" qId="6" />
+      </b-tab>
+      <b-tab title="Question 7">
+        <radioQuiz :Question="$t('q7')" qId="7" />
+      </b-tab>
+      <b-tab title="Question 8">
+        <radioQuiz :Question="$t('q8')" qId="8" />
+      </b-tab>
+    </b-tabs>
+  </b-card>
+  <!-- Control buttons-->
+  <div class="text-center">
+    <b-button-group class="mt-2">
+      <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+      <b-button @click="tabIndex++" :disabled="tabIndex>=7">{{$t('nextPage')}}</b-button>
+    </b-button-group>
+  </div>
+</div>
+</span>
 </template>
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
@@ -32,20 +57,8 @@ export default {
   data() {
     return {
       tabIndex: 0,
-      Quest1: '',
-      answers1: ['q1.a1', 'q1.a2', 'q1.a3', 'q1.a4', 'q1.a5', 'q1.a6', 'q1.a7', 'q1.a8', 'q1.a9', 'q1.a10', 'q1.a11'],
-      options1: '',
-      options2: '',
-      options3: '',
-      options4: '',
-      options5: '',
-      options6: '',
-      options7: '',
-      options8: '',
-      options9: '',
-      options10: '',
-      options11: '',
-
+      Q1a:false,Q1b:false,Q1c:false,Q1d:false,
+      Q2a:false,Q2b:false,Q2c:false,Q2d:false
     }
   }
 }
@@ -65,12 +78,57 @@ export default {
     "titleImpact": "Impact",
     "titleMitigation": "Mitigation",
     "titleResources": "Resources",
-    "q1": {
+    "q1a": {
       "text": "Match the item to the budget in which it belongs. ",
       "options": {
-        "1": "A contract with an agency for temp staff",
-        "2": "Funds provided to a university to study fish habitat",
-        "3": "Casual positions or leave cash-outs",
+        "1": "A contract with an agency for temp staff"
+      },
+      "matching": {
+        "1": "Operating - Salary ",
+        "2": "Operating - O&M ",
+        "3": "Grants & Contributions",
+        "4": "Capital "
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q1b": {
+      "text": " ",
+      "options": {
+        "2": "Funds provided to a university to study fish habitat"
+      },
+      "matching": {
+        "1": "Operating - Salary ",
+        "2": "Operating - O&M ",
+        "3": "Grants & Contributions",
+        "4": "Capital "
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q1c": {
+      "text": " ",
+      "options": {
+        "3": "Casual positions or leave cash-outs"
+      },
+      "matching": {
+        "1": "Operating - Salary ",
+        "2": "Operating - O&M ",
+        "3": "Grants & Contributions",
+        "4": "Capital "
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q1d": {
+      "text": " ",
+      "options": {
         "4": "Purchase a new fleet of trucks"
       },
       "matching": {
@@ -80,16 +138,64 @@ export default {
         "4": "Capital "
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answers are: <table border='1'> <tbody> <tr> <td> <p>A contract with an agency for temp staff</p> </td> <td> <p>Operating - O&amp;M</p> </td> </tr> <tr> <td> <p>Funds provided to a university to study fish habitat</p> </td> <td> <p>Gs&amp;Cs</p> </td> </tr> <tr> <td> <p>Casual positions or leave cash-outs&nbsp;</p> </td> <td> <p>Operating - Salary</p> </td> </tr> <tr> <td> <p>Purchase a new fleet of trucks&nbsp;</p> </td> <td> <p>Capital</p> </td> </tr> </tbody> </table>",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
         "right": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },
-     "q2": {
+    "q1": {
+      "conclusion": "<p><strong>A contract with an agency for temp staff</strong> would be in <strong>Operating - O&amp;M</strong>, and not Operating - Salary, because temp staff are not employees, and contracts are not paid out of Salary.&nbsp;</p><p><strong>Funds provided to a university to study fish habitat </strong>would be in <strong>Grants and Contributions</strong>. The nature of this transaction is such that it is a one-way payment of money for which the government will not receive any good or service.</p><p><strong>Casual positions or leave cash-outs</strong> would be in <strong>Operating - Salary</strong> because they concern employees.&nbsp;</p><p><strong>Purchase a new fleet of trucks</strong> would be in <strong>Capital </strong>because they are assets that would depreciate over time.</p>"
+    },
+    "q2a": {
       "text": "Match the activity to it’s status. ",
       "options": {
-        "1": "Issuing fishing licenses.",
-        "2": "Next year, you are going to purchase software to replace a paper process.",
-        "3": "Costs for an office move that was completed last year.",
+        "1": "Issuing fishing licenses."
+      },
+      "matching": {
+        "1": "Sunsetted",
+        "2": "Cancelled",
+        "3": "Continuing",
+        "4": "New"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q2b": {
+      "text": " ",
+      "options": {
+        "2": "Next year, you are going to purchase software to replace a paper process."
+      },
+      "matching": {
+        "1": "Sunsetted",
+        "2": "Cancelled",
+        "3": "Continuing",
+        "4": "New"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q2c": {
+      "text": " ",
+      "options": {
+        "3": "Costs for an office move that was completed last year."
+      },
+      "matching": {
+        "1": "Sunsetted",
+        "2": "Cancelled",
+        "3": "Continuing",
+        "4": "New"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q2d": {
+      "text": " ",
+      "options": {
         "4": "Consultations across Canada were stopped earlier this year."
       },
       "matching": {
@@ -99,9 +205,12 @@ export default {
         "4": "New"
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <p>The correct answers are:&nbsp;</p> <table border='1'> <tbody> <tr> <td> <p>Issuing fishing licenses.</p> </td> <td> <p>Continuing</p> </td> </tr> <tr> <td> <p>Next year, you are going to purchase software to replace a paper process.</p> </td> <td> <p>New</p> </td> </tr> <tr> <td> <p>Costs for an office move that was completed last year.</p> </td> <td> <p>Sunsetted</p> </td> </tr> <tr> <td> <p>Consultations across Canada were stopped earlier this year.</p> </td> <td> <p>Cancelled</p> </td> </tr> </tbody> </table>",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
         "right": "<span class='v-right' /> <strong>Correct!</strong>"
       }
+    },
+    "q2": {
+      "conclusion": "<p><strong>Issuing fishing licenses</strong> is a <strong>Continuing </strong>activity; it&rsquo;s one of your main activities each year.&nbsp;</p><p><strong>Next year, you are going to purchase software to replace a paper process</strong> is a <strong>New </strong>activity, as you did not have this activity in previous plans.</p><p><strong>Costs for an office move that was completed last year</strong> is a <strong>Sunsetted </strong>activity because it finished last year.&nbsp;</p><p><strong>Consultations across Canada were stopped earlier this year</strong> is a <strong>Cancelled </strong>activity as the consultations were stopped and not completed.</p>"
     },
     "q3": {
       "text": "An employee will be retiring after 8 months next year, so you estimate their salary as:",
@@ -141,7 +250,6 @@ export default {
       "feedback": {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> All are correct. The trends you see may vary so how you use them in your budget requirements will differ.",
         "right": "<span class='v-right' /> <strong>Correct!</strong> The trends you see may vary so how you use them in your budget requirements will differ."
-      
       }
     },
     "q6": {
@@ -184,12 +292,57 @@ export default {
   },
   "fr": {
     "qDisabled": "Choisissez",
-   "q1": {
+    "q1a": {
       "text": "Faites correspondre le poste au budget auquel il appartient.",
       "options": {
-        "1": "Un contrat avec une agence d'intérim",
-        "2": "Fonds versés à une université pour étudier l'habitat du poisson",
-        "3": "Les postes occasionnels ou les encaissements de congés",
+        "1": "Un contrat avec une agence d'intérim"
+      },
+      "matching": {
+        "1": "Fonctionnement - Salaire",
+        "2": "Exploitation - F et E",
+        "3": "Subventions et contributions",
+        "4": "Capital"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q1b": {
+      "text": " ",
+      "options": {
+        "2": "Fonds versés à une université pour étudier l'habitat du poisson"
+      },
+      "matching": {
+        "1": "Fonctionnement - Salaire",
+        "2": "Exploitation - F et E",
+        "3": "Subventions et contributions",
+        "4": "Capital"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q1c": {
+      "text": " ",
+      "options": {
+        "3": "Les postes occasionnels ou les encaissements de congés"
+      },
+      "matching": {
+        "1": "Fonctionnement - Salaire",
+        "2": "Exploitation - F et E",
+        "3": "Subventions et contributions",
+        "4": "Capital"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q1d": {
+      "text": " ",
+      "options": {
         "4": "Achat d’une nouvelle flotte de camions"
       },
       "matching": {
@@ -199,16 +352,64 @@ export default {
         "4": "Capital"
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> <p>&nbsp;Les bonnes r&eacute;ponses sont :&nbsp;</p> <table border='1'> <tbody> <tr> <td> <p>Un contrat avec une agence d'int&eacute;rim</p> </td> <td> <p>Exploitation - F et E</p> </td> </tr> <tr> <td> <p>Fonds vers&eacute;s &agrave; une universit&eacute; pour &eacute;tudier l'habitat du poisson</p> </td> <td> <p>Subventions et contribution</p> </td> </tr> <tr> <td> <p>Les postes occasionnels ou les encaissements de cong&eacute;s&nbsp;</p> </td> <td> <p>Fonctionnement - Salaire</p> </td> </tr> <tr> <td> <p>Achat d&rsquo;une nouvelle flotte de camions</p> </td> <td> <p>Capitale</p> </td> </tr> </tbody> </table>",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
         "right": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },
-    "q2": {
+    "q1": {
+      "conclusion": "<p><strong>Un contrat avec une agence pour le personnel temporaire</strong> serait en <strong>Fonctionnement - F&amp;E</strong>, et non en Fonctionnement - Salaire, parce que le personnel temporaire n'est pas un employ&eacute; et que les contrats ne sont pas pay&eacute;s &agrave; m&ecirc;me le salaire.&nbsp;</p><p><strong>Les fonds fournis &agrave; une universit&eacute; pour &eacute;tudier l'habitat du poisson</strong> seraient sous forme de <strong>subventions et de contributions</strong>. La nature de cette transaction est telle qu'il s'agit d'un paiement &agrave; sens unique pour lequel le gouvernement ne recevra aucun bien ou service.</p><p><strong>Les postes occasionnels ou les encaissements de cong&eacute;s</strong> seraient dans la cat&eacute;gorie <strong>Fonctionnement - Salaire</strong> parce qu'ils concernent des employ&eacute;s.&nbsp;</p><p><strong>L'achat d'une nouvelle flotte de camions</strong> serait dans le <strong>Capital </strong>parce que ce sont des biens qui se d&eacute;pr&eacute;cieraient avec le temps.</p>"
+    },
+    "q2a": {
       "text": "Faites correspondre l'activité à son statut.",
       "options": {
-        "1": "Délivrance des permis de pêche.",
-        "2": "L'année prochaine, vous allez acheter un logiciel pour remplacer un processus papier.",
-        "3": "Les coûts d’un déménagement de bureaux a été terminé l'an dernier.",
+        "1": "Délivrance des permis de pêche."
+      },
+      "matching": {
+        "1": "Caduque",
+        "2": "Annulée",
+        "3": "Se poursuivant",
+        "4": "Nouvelle"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q2b": {
+      "text": " ",
+      "options": {
+        "2": "L'année prochaine, vous allez acheter un logiciel pour remplacer un processus papier."
+      },
+      "matching": {
+        "1": "Caduque",
+        "2": "Annulée",
+        "3": "Se poursuivant",
+        "4": "Nouvelle"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q2c": {
+      "text": " ",
+      "options": {
+        "3": "Les coûts d’un déménagement de bureaux a été terminé l'an dernier."
+      },
+      "matching": {
+        "1": "Caduque",
+        "2": "Annulée",
+        "3": "Se poursuivant",
+        "4": "Nouvelle"
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q2d": {
+      "text": " ",
+      "options": {
         "4": "Les consultations à l'échelle du Canada ont été interrompues plus tôt cette année"
       },
       "matching": {
@@ -218,10 +419,11 @@ export default {
         "4": "Nouvelle"
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> <p>Les bonnes r&eacute;ponses sont :&nbsp;</p> <table border='1'> <tbody> <tr> <td> <p>D&eacute;livrance des permis de p&ecirc;che.</p> </td> <td> <p>Se poursuivant</p> </td> </tr> <tr> <td> <p>L'ann&eacute;e prochaine, vous allez acheter un logiciel pour remplacer un processus papier.</p> </td> <td> <p>Nouvelle</p> </td> </tr> <tr> <td> <p>Les co&ucirc;ts d&rsquo;un d&eacute;m&eacute;nagement de bureaux a &eacute;t&eacute; termin&eacute; l'an dernier.</p> </td> <td> <p>Retir&eacute;e</p> </td> </tr> <tr> <td> <p>Les consultations &agrave; l'&eacute;chelle du Canada ont &eacute;t&eacute; interrompues plus t&ocirc;t cette ann&eacute;e.</p> </td> <td> <p>Annul&eacute;e</p> </td> </tr> </tbody> </table>",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
         "right": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },
+    "q2":{"conclusion":"<p><strong>L'&eacute;mission de permis de p&ecirc;che</strong> est une activit&eacute; se&nbsp;<strong>Poursuivant</strong>; c'est l'une de vos principales activit&eacute;s chaque ann&eacute;e.&nbsp;</p><p><strong>L'ann&eacute;e prochaine, vous allez acheter un logiciel pour remplacer un processus papier</strong> est une <strong>Nouvelle </strong>activit&eacute;, car vous n'aviez pas cette activit&eacute; dans les plans pr&eacute;c&eacute;dents.</p><p><strong>Les co&ucirc;ts d'un d&eacute;m&eacute;nagement de bureau qui a &eacute;t&eacute; effectu&eacute; l'an dernier</strong> sont des activit&eacute;s&nbsp;<strong>Caduques </strong>parce qu'elles se sont termin&eacute;es l'an dernier.&nbsp;</p><p><strong>Les consultations &agrave; travers le Canada ont &eacute;t&eacute; interrompues plus t&ocirc;t cette ann&eacute;e</strong> est une activit&eacute; <strong>Annul&eacute;e </strong>car les consultations ont &eacute;t&eacute; interrompues et non termin&eacute;es.</p>"},
     "q3": {
       "text": "Un employé prendra sa retraite après 8 mois l'année prochaine, donc vous estimez son salaire comme :",
       "options": {
@@ -260,7 +462,6 @@ export default {
       "feedback": {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Tous sont corrects. Les tendances que vous voyez peuvent varier, de sorte que la façon dont vous les utilisez dans vos besoins budgétaires peut varier. ",
         "right": "<span class='v-right' /> <strong>Correct!</strong> Les tendances que vous voyez peuvent varier, de sorte que la façon dont vous les utilisez dans vos besoins budgétaires peut varier."
-      
       }
     },
     "q6": {

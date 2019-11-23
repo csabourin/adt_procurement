@@ -37,27 +37,27 @@
     </section>
     <section>
       <b-modal no-stacking id="budgetKeyTerms" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('AnalyzeBudgetKT')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('AnalyzeBudgetKT')}}</template>
     <AnalyzeBudgetKT />
         </b-modal>
       <b-modal id="budgetAnalyze" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('budgetAnalyzeActivity')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('budgetAnalyzeActivity')}}</template>
         <budgetAnalyzeActivity />
       </b-modal>
       <b-modal id="forecastBudget" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('forecastBudgetTitle')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
         <budgetForecastActivity />
       </b-modal>
       <b-modal no-stacking id="submitBudget" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('submitBudgetTitle')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('submitBudgetTitle')}}</template>
         <submitBudget />
       </b-modal>
       <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('InRealLife')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('InRealLife')}}</template>
         <span v-html="$t('IRLText')"></span>
       </b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('TakeTheQuiz')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('TakeTheQuiz')}}</template>
       <budgetQuiz />
       </b-modal>
     </section>

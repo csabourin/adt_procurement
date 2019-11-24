@@ -10,13 +10,9 @@
   <defs
      id="defs6859">
     <filter
-       style="color-interpolation-filters:sRGB"
-       id="filter8221"
-       inkscape:label="filter0" />
-    <filter
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Drop Shadow"
-       id="filter8317">
+       id="DropShadow">
       <feFlood
          flood-opacity="0.498039"
          flood-color="rgb(0,0,0)"
@@ -34,8 +30,8 @@
          result="blur"
          id="feGaussianBlur8311" />
       <feOffset
-         dx="6.3"
-         dy="5.46875"
+         dx="7"
+         dy="7"
          result="offset"
          id="feOffset8313" />
       <feComposite
@@ -122,10 +118,10 @@
     </g>
       <g
        id="g8219"
-       style="filter:url(#filter8317)"><path
+       style="filter:url(#DropShadow)"><path
     style="fill:#4d4d4d;"
-       d="m 355,175 -20.85,68.43 17.48,-16.88 -2.74,156.6 c -3.97,1.01 -6.95,4.57 -7.02,8.87 -0.1,5.14 4.01,9.39 9.16,9.48 5.15,0.1 9.39,-4.02 9.48,-9.16 0.1,-4.29 -2.77,-7.95 -6.7,-9.1 l 2.73,-156.61 16.9,17.49 z"
-       :transform="'rotate('+angle+',351,393)'"
+       d="m 360,150 -20.85,68.43 17.48,-16.88 -2.74,156.6 c -3.97,1.01 -6.95,4.57 -7.02,8.87 -0.1,5.14 4.01,9.39 9.16,9.48 5.15,0.1 9.39,-4.02 9.48,-9.16 0.1,-4.29 -2.77,-7.95 -6.7,-9.1 l 2.73,-156.61 16.9,17.49 z"
+       :transform="'rotate('+angle+',356,368)'"
        id="gaugeArrow"
         />
       </g>

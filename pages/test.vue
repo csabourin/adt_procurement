@@ -23,26 +23,31 @@
     <openDoor><span class="floatMiddle">You get texted</span></openDoor> &nbsp; 
     <openDoor><span class="floatMiddle">You get nothing!</span></openDoor> &nbsp; 
     <openDoor><img src='~/assets/Roz.png' width="200"></openDoor>
-    
+    <hr>
+    <gauge :angle="gaugeRange"/>
+    <input type="range" v-model="gaugeRange"  min="-52" max="52" >
   </div>
 </template>
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
 import openDoor from "~/components/openDoor"
+import gauge from "~/components/gauge"
 import selectMatching from "~/components/selectMatching"
 export default {
   components: {
     radioQuiz,
     checkboxQuiz,
     openDoor,
+    gauge,
     selectMatching
   },
   data() {
     return {
       lala: "",
       land: "",
-      doorOpened: false
+      doorOpened: false,
+      gaugeRange:0
     }
   }
 }

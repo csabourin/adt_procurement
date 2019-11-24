@@ -33,7 +33,7 @@ export default {
       },
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
-        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> The correct answer is Add their activities to your work plan and Add their salaries and O&M to your budget requirements. Converting funds from O&M to Salary is not a solution as your resource requirement is increasing for which you need the funding."
+        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> The correct answers are Add their activities to your work plan and Add their salaries and O&M to your budget requirements. Converting funds from O&M to Salary is not a solution as your resource requirement is increasing for which you need the funding."
       }
     }
   },
@@ -59,7 +59,7 @@ export default {
       },
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
-        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> La bonne réponse est d'ajouter leurs activités à votre plan de travail et d'ajouter leurs salaires et F&E à votre budget. La conversion des fonds de F&E en salaires n'est pas une solution, car vos besoins en ressources augmentent et vous avez besoin de ces fonds."
+        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> Les bonnes réponses sont d'ajouter leurs activités à votre plan de travail et d'ajouter leurs salaires et F&E à votre budget. La conversion des fonds de F&E en salaires n'est pas une solution, car vos besoins en ressources augmentent et vous avez besoin de ces fonds."
       }
     }
   }

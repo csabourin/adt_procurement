@@ -240,9 +240,9 @@ export default {
       }
     },
     "q3": {
-    "title":"Material and Supplies",
+    "title":"Office Supplies",
     "introduction":"<p><strong>Trends </strong>are costs in your budget that are either constant, or show a similar pattern year after year.&nbsp;</p> <table border='1'> <tbody> <tr> <td> <p>Office Supplies</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year</p> </td> <td> <p>$1,961</p> </td> <td> <p>$1,500</p> </td> <td> <p>($461)</p> </td> <td> <p>Prices were lower than planned.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget&nbsp;</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$2,000</p> </td> <td> <p>$100</p> </td> <td> <p>$1,500</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
-      "text": "If you do not plan a significant change in your spending patterns for Material and Supplies, what should you budget for?",
+      "text": "If you do not plan a significant change in your spending patterns for Office Supplies, what should you budget for?",
       "options": {
         "1": "$1,500",
         "2": "$2,000",
@@ -320,7 +320,7 @@ export default {
     "budgetTableFill63": "$3,000",
     "budgetTableFill64": " ",
     "budgetTableFill65": "new software, annual cost $1,000 X 3 FTEs",
-    "budgetTableFill66": "Material and Supplies",
+    "budgetTableFill66": "Office Supplies",
     "budgetTableFill67": "$1,961",
     "budgetTableFill68": "$2,000",
     "budgetTableFill69": "$1,500",

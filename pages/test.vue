@@ -96,7 +96,7 @@ export default {
         "4": "Capital "
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answers are: <table border='1'> <tbody> <tr> <td> <p>A contract with an agency for temp staff</p> </td> <td> <p>Operating - O&amp;M</p> </td> </tr> <tr> <td> <p>Funds provided to a university to study fish habitat</p> </td> <td> <p>Gs&amp;Cs</p> </td> </tr> <tr> <td> <p>Casual positions or leave cash-outs&nbsp;</p> </td> <td> <p>Operating - Salary</p> </td> </tr> <tr> <td> <p>Purchase a new fleet of trucks&nbsp;</p> </td> <td> <p>Capital</p> </td> </tr> </tbody> </table>",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
         "right": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     }
@@ -143,7 +143,7 @@ export default {
         "4": "Capital"
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> <p>&nbsp;Les bonnes r&eacute;ponses sont :&nbsp;</p> <table border='1'> <tbody> <tr> <td> <p>Un contrat avec une agence d'int&eacute;rim</p> </td> <td> <p>Fonctionnement - F&amp;E</p> </td> </tr> <tr> <td> <p>Fonds vers&eacute;s &agrave; une universit&eacute; pour &eacute;tudier l'habitat du poisson</p> </td> <td> <p>Subventions et contribution</p> </td> </tr> <tr> <td> <p>Les postes occasionnels ou les encaissements de cong&eacute;s&nbsp;</p> </td> <td> <p>Fonctionnement - Salaire</p> </td> </tr> <tr> <td> <p>Achat d&rsquo;une nouvelle flotte de camions</p> </td> <td> <p>Capitale</p> </td> </tr> </tbody> </table>",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
         "right": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     }

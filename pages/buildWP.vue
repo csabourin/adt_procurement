@@ -115,36 +115,36 @@
     <section>
       <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
       <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('activityLinks')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('activityLinks')}}</template>
         <p>{{$t('gotoLinks')}}</p>
         <planLinks /><!-- {{ $t('gotIt') }} -->
       </b-modal>
       <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('partsofWPTitle')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('partsofWPTitle')}}</template>
         <partsOfWorkPlan />
       </b-modal>
       <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('scan360Title')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('scan360Title')}}</template>
         <test360 />
       </b-modal>
       <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('completewpDrafttitle')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('completewpDrafttitle')}}</template>
         <prepareWorkPlan />
       </b-modal>
       <b-modal no-stacking id="completewp" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('completewptitle')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('completewptitle')}}</template>
         <completeWorkplan />
       </b-modal>
       <b-modal no-stacking id="adjustwp" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('adjustwptitle')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('adjustwptitle')}}</template>
         <adjustWorkplan />
       </b-modal>
       <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('InRealLife')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('InRealLife')}}</template>
         <span v-html="$t('IRLText')"></span>
       </b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32"> {{$t('TakeTheQuiz')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('TakeTheQuiz')}}</template>
         <planQuiz />
       </b-modal>
     </section>

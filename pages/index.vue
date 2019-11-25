@@ -29,7 +29,7 @@
     <div class="sideTitle spendTitle">{{$t('spend')}}</div>
     <section class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }">
       <microlearning path="spendKey" time="5" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
-      <microlearning time="20" :text="$t('InitiateAuthorizeSpending')" />
+      <microlearning path="spendPart1" time="20" :text="$t('InitiateAuthorizeSpending')" />
       <microlearning time="20" :text="$t('ExerciseFinancialAuthority')" />
       <microlearning time="20" :text="$t('MonitorControlFinances')" />
       <microlearning time="15" :text="$t('Test')" />

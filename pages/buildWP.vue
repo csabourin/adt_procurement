@@ -104,7 +104,7 @@
         <li href='#mainPlayer' v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
           {{ item }}<br>
           <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek" :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
-          <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="55" height="55"> </a>
+          <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="48" height="48"> </a>
         </li>
       </ul>
       <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
@@ -360,16 +360,18 @@ video {
 
 .playButton, .activityButton {
   position: absolute;
-  bottom: 1em;
+  bottom: 1.5em;
   /*
   Comment out ↑
   vertical-align:bottom;*/
 }
 
-.playButton{left: 20px;}
+.playButton{
+  left: 20px;
+}
 .activityButton {
-    right: 5px;
-    transform:rotate(45deg);
+    right: 20px;
+    /*transform:rotate(45deg);*/
 }
 
 button.accessibilityButton {

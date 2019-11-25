@@ -61,7 +61,7 @@
       </b-modal>
     </section>
     <div class="bottomNav spendSection">
-      <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
+      <microlearning path="spendKey" size="140" completion="100" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
       <microlearning path="spendPart1"  youAreHere imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
       <microlearning path="buildWP"  imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
       <microlearning size="140" path="createBudget" time="20" completion="10" imagePath="CreateBud.png" :text="$t('MonitorControlFinances')" />

@@ -3,7 +3,7 @@
     <h1 class="pageTitle">{{$t('KeyMessages')}}</h1>
     <p><img src="~/assets/KeyMessS.png"></p>
     <p>&nbsp;</p>
-    <span class="plan"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></span>
+    <span class="spend"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></span>
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
@@ -15,7 +15,18 @@
               <li>A delegation of financial authority chart shows your organization&rsquo;s official spending and financial authorities.&nbsp;</li>
               <li>To learn what you can initiate and commit, consult your own signed delegation form. For those expenditures for which you do not have authority, consult your organization&rsquo;s delegation of financial authority chart.&nbsp;</li>
             </ul>
-          </span></b-col>
+          </span>
+          <span v-if="$i18n.locale=='fr'">
+            <p>
+              <p><strong>Engager et autoriser les d&eacute;penses</strong></p>
+              <ul>
+                <li>Lorsque vous d&eacute;cidez d'obtenir des biens ou des services qui entra&icirc;neront la d&eacute;pense &eacute;ventuelle de fonds, comme l'embauche de personnel, la commande de fournitures ou l'autorisation de voyager, vous engagez une d&eacute;pense.</li>
+                <li>Lorsque vous engagez une d&eacute;pense, vous certifiez que l'argent est disponible. C'est ce qu'on appelle l'article 32 de la LGFP.</li>
+                <li>Un tableau de d&eacute;l&eacute;gation des pouvoirs financiers indique les pouvoirs de d&eacute;penser et les pouvoirs financiers officiels de votre organisation.</li>
+                <li>Pour savoir ce que vous pouvez initier et engager, consultez votre propre formulaire de d&eacute;l&eacute;gation sign&eacute;. Pour les d&eacute;penses pour lesquelles vous n'avez pas d'autorisation, consultez le tableau de d&eacute;l&eacute;gation des pouvoirs financiers de votre organisation.</li>
+              </ul>
+          </span>
+        </b-col>
         <b-col><span v-if="$i18n.locale=='en'">
             <p><strong>Exercise financial authority&nbsp;</strong></p>
             <ul>
@@ -26,6 +37,17 @@
             <ul>
               <li>To help you track your work plan and budget, you will continually monitor your spending and manage your risks.</li>
             </ul>
+          </span><span v-if="$i18n.locale=='fr'">
+            <p>
+              <p><strong>Exercer son pouvoir financier</strong></p>
+              <ul>
+                <li>Lorsque vous attestez que les travaux ont &eacute;t&eacute; ex&eacute;cut&eacute;s conform&eacute;ment aux exigences et que les services et les fournitures ont &eacute;t&eacute; rendus de fa&ccedil;on satisfaisante, il s'agit de l'article 34.</li>
+                <li>Lorsque votre service financier s'assure que le paiement est conforme aux exigences de la politique, il s'agit de l'article 33.</li>
+              </ul>
+              <p><strong>Surveiller et contr&ocirc;ler les finances</strong></p>
+              <ul>
+                <li>Pour vous aider &agrave; suivre votre plan de travail et votre budget, vous surveillerez continuellement vos d&eacute;penses et g&eacute;rerez vos risques.</li>
+              </ul>
           </span></b-col>
       </b-row>
       <b-row>
@@ -48,8 +70,8 @@
     </b-container>
     <div class="bottomNav spendSection">
       <microlearning path="spendKey" youAreHere size="140" completion="100" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
-      <microlearning  imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
-      <microlearning  imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
+      <microlearning path="spendPart1" imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
+      <microlearning imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
       <microlearning size="140" time="20" completion="10" imagePath="CreateBud.png" :text="$t('MonitorControlFinances')" />
       <microlearning size="140" time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
     </div>
@@ -81,8 +103,8 @@ export default {
   }
   }</i18n>
 <style type="text/css" scoped>
-span.plan:before {
-  background-color: #d1dfe1;
+span.spend:before {
+  background-color: #cac1ca;
   content: " ";
   width: 100vw;
   height: 2em;
@@ -98,7 +120,7 @@ span.plan:before {
   font-size: 36px;
   padding-bottom: 2em;
   font-family: Roboto Medium;
-  color: #608a93;
+  color: #7d677d;
   background-image: linear-gradient(transparent 40%, white 40%, white 85%, transparent 85%, transparent 100%);
   quotes: "“""”";
   padding: 1em;
@@ -114,7 +136,7 @@ span.plan:before {
   font-size: 72px;
   font-family: Times;
   font-weight: bold;
-  color: #d1dfe1;
+  color: #cac1ca;
   margin-top: -60px;
 }
 

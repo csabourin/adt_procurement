@@ -258,6 +258,7 @@ h3,
   color: #4D4D4D;
   letter-spacing: -1px;
   text-align: center;
+  padding-top:20px;
 }
 
 /* always present */

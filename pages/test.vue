@@ -47,7 +47,7 @@ export default {
       lala: "",
       land: "",
       doorOpened: false,
-      gaugeRange: 0
+      gaugeRange: "0"
     }
   }
 }

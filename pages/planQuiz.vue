@@ -3,7 +3,8 @@
     <div>
       <b-card>
         <b-tabs v-model="tabIndex">
-          <b-tab title="Question 1">
+          <b-tab title="Question 1"><checkboxQuiz :Question="$t('q2')" qId="2" :Answer='["2","3"]' /></b-tab>
+          <b-tab title="Question 2">
             <p v-html="$t('q1.text')" />
             <span>
               <table class='tableColoured'>
@@ -37,54 +38,53 @@
                 </tr>
               </table>
               <div class="scrollMe">
-                <table border="1" cellspacing="0" cellpadding="5" width="100%">
+                <table border="1" cellspacing="0" cellpadding="5" style="width: max-content;">
                   <tr>
                     <th class='planAct thNumbered'><span>{{$t('titleActivities')}}</span><br>
                       <select v-model="options4">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+                        <option v-for="(statement,index) in $t('q1.options[2]')" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
                     <th class='planSubAct thNumbered'><span>{{$t('titleSubActivities')}}</span><br>
                       <select v-model="options5">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+                        <option v-for="(statement,index) in $t('q1.options[2]')" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
                     <th class='planDelivs thNumbered'><span>{{$t('titleDeliverables')}}</span><br>
                       <select v-model="options6">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+                        <option v-for="(statement,index) in $t('q1.options[2]')" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
                     <th class='planRisk thNumbered'><span>{{$t('titleRisk')}}</span><br>
                       <select v-model="options7">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+                        <option v-for="(statement,index) in $t('q1.options[1]')" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
                     <th class='planLikely thNumbered'><span>{{$t('titleLikelihood')}}</span><br>
                       <select v-model="options8">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+                        <option v-for="(statement,index) in $t('q1.options[1]')" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
                     <th class='planImpact thNumbered'><span>{{$t('titleImpact')}}</span><br>
                       <select v-model="options9">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+                        <option v-for="(statement,index) in $t('q1.options[2]')" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
                     <th class='planMitigat thNumbered'><span>{{$t('titleMitigation')}}</span><br>
                       <select v-model="options10">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+                        <option v-for="(statement,index) in $t('q1.options[2]')" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
                     <th class='planRes thNumbered'><span>{{$t('titleResources')}}</span><br>
                       <select v-model="options11">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+                        <option v-for="(statement,index) in $t('q1.options[1]')" :value="index" :key="index">{{$t(statement)}}</option>
                       </select></th>
                   </tr>
                 </table>
               </div>
             </span>
           </b-tab>
-          <b-tab title="Question 2"><checkboxQuiz :Question="$t('q2')" qId="2" :Answer='["2","3"]' /></b-tab>
           <b-tab title="Question 3"><radioQuiz :Question="$t('q3')" qId="3" /></b-tab>
           <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" /></b-tab>
           <b-tab title="Question 5"><radioQuiz :Question="$t('q5')" qId="5" /></b-tab>
@@ -152,19 +152,19 @@ export default {
     "q1": {
       "text": "Match the following statements to the appropriate sections of the work plan. Each section can only be populated with one statement.",
       "options":[{
-      "a2": "Work with Canadians in all areas of the economy and all parts of the country to improve conditions for investment",
-      "a6": "Modernize and renew the public service to better serve Canadians and foster a healthy, productive workforce",
-      "a10": "Workplace Modernization"
+      "a1": "Work with Canadians in all areas of the economy and all parts of the country to improve conditions for investment",
+      "a2": "Modernize and renew the public service to better serve Canadians and foster a healthy, productive workforce",
+      "a3": "Workplace Modernization"
       },{
-      "a1": "High",
-      "a9": "Low",
-      "a3": "Tablets"
+      "b1": "High",
+      "b2": "Low",
+      "b3": "Tablets"
     },{
-      "a4": "Keep original computers until tablets are up and running for 3 months",
-      "a5": "Give employees new digital tools to promote mobility",
-      "a7": "Buy tablets ",
-      "a8": "Technology is not compatible with existing network ",
-      "a11": "Give employees tablets"}
+      "c1": "Keep original computers until tablets are up and running for 3 months",
+      "c2": "Give employees new digital tools to promote mobility",
+      "c3": "Buy tablets ",
+      "c4": "Technology is not compatible with existing network ",
+      "c5": "Give employees tablets"}
       ]
     },
     "q2": {
@@ -365,17 +365,21 @@ export default {
     "titleResources": "Resources",
     "q1": {
       "text": "Faites correspondre les &eacute;nonc&eacute;s suivants aux sections appropri&eacute;es du plan de travail. Chaque section ne peut contenir qu'un seul &eacute;nonc&eacute;.",
-      "a1": "Élevé ",
+      "options":[{
       "a2": "Travailler avec les Canadiens dans tous les secteurs de l'économie et dans toutes les régions du pays pour améliorer les conditions d'investissement.",
-      "a3": "Tablettes",
+      "a6": "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'œuvre saine et productive.",
+      "a10": "Modernisation du milieu de travail "
+      },{
+      "a1": "Élevé ",
+      "a9": "Faible",
+      "a3": "Tablettes"},{
       "a4": "Conservez les ordinateurs d'origine jusqu'à ce que les tablettes soient prêtes et à l'emploi pendant 3 mois. ",
       "a5": "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité ",
-      "a6": "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'œuvre saine et productive.",
       "a7": "Acheter des tablettes",
       "a8": "La technologie n'est pas compatible avec le réseau existant ",
-      "a9": "Faible",
-      "a10": "Modernisation du milieu de travail ",
       "a11": "Donner des tablettes aux employés"
+    }
+      ]
     },
     "q2": {
       "text": "Quels éléments devez-vous prendre en compte lors de l'élaboration de votre nouveau plan de travail? ",

@@ -272,7 +272,7 @@ video {
 .playButton{left: 20px;}
 .activityButton {
     right: 5px;
-    transform:rotate(45deg);
+    /*transform:rotate(45deg);*/
 }
 
 button.accessibilityButton {

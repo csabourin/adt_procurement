@@ -365,7 +365,10 @@ video {
   Comment out ↑
   vertical-align:bottom;*/
 }
-
+.playButton:hover, .activityButton:hover,.playButton:focus, .activityButton:focus {
+  /*Insert hover animation here, placeholder for now*/
+  opacity:0.8;
+}
 .playButton{
   left: 20px;
 }

@@ -25,7 +25,7 @@
     <openDoor><img src='~/assets/Roz.png' width="200"></openDoor>
     <hr>
     <gauge :angle="gaugeRange" />
-    <input type="range" v-model="gaugeRange" min="-60" max="60">
+    <input type="range" v-model="gaugeRange" min="-120" max="120">
   </div>
 </template>
 <script type="text/javascript">

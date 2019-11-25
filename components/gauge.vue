@@ -1,130 +1,23 @@
 <template>
-<svg
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   viewBox="0 0 658 655"
-   :width="size"
-   :height="size"
-   id="svg6855"
->
-  <defs
-     id="defs6859">
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Drop Shadow"
-       id="DropShadow">
-      <feFlood
-         flood-opacity="0.498039"
-         flood-color="rgb(0,0,0)"
-         result="flood"
-         id="feFlood8307" />
-      <feComposite
-         in="flood"
-         in2="SourceGraphic"
-         operator="in"
-         result="composite1"
-         id="feComposite8309" />
-      <feGaussianBlur
-         in="composite1"
-         stdDeviation="4"
-         result="blur"
-         id="feGaussianBlur8311" />
-      <feOffset
-         dx="7"
-         dy="7"
-         result="offset"
-         id="feOffset8313" />
-      <feComposite
-         in="SourceGraphic"
-         in2="offset"
-         operator="over"
-         result="composite2"
-         id="feComposite8315" />
-    </filter>
-      <filter
-       inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       inkscape:menu="Shadows and Glows"
-       inkscape:label="Cutout Glow"
-       style="color-interpolation-filters:sRGB;"
-       id="InsetFilter">
-      <feOffset
-         dy="3"
-         dx="3"
-         id="feOffset8355" />
-      <feGaussianBlur
-         stdDeviation="3"
-         result="blur"
-         id="feGaussianBlur8357" />
-      <feFlood
-         flood-color="rgb(0,0,0)"
-         flood-opacity="1"
-         result="flood"
-         id="feFlood8359" />
-      <feComposite
-         in="flood"
-         in2="SourceGraphic"
-         operator="in"
-         result="composite"
-         id="feComposite8361" />
-      <feBlend
-         in="blur"
-         in2="composite"
-         mode="normal"
-         id="feBlend8363" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 677.36 677.36" :width="size" :height="size">
+  <defs>
+    <filter id="a" color-interpolation-filters="sRGB">
+      <feFlood result="flood" flood-color="#000" flood-opacity=".498"/>
+      <feComposite result="composite1" operator="in" in2="SourceGraphic" in="flood"/>
+      <feGaussianBlur result="blur" stdDeviation="4" in="composite1"/>
+      <feOffset result="offset" dy="5.469" dx="6.3"/>
+      <feComposite result="composite2" in2="offset" in="SourceGraphic"/>
     </filter>
   </defs>
-
-  <circle
-     style="fill:#f4f4f4;"
-     id="path8010"
-     cx="327.7"
-     cy="327.69"
-     r="328.68" />
-  <path
-     d="M -1,-1 H 2157 V 1397 H -1 Z"
-     id="path6839"
-     inkscape:connector-curvature="0"
-     style="fill:none"
-     transform="translate(-28.317,-22.931)" />
-  <g
-     id="g6853"
-     transform="translate(-28.317,-22.931)">
-    <g
-       id="g8008">
-      <path
-         style="fill:#ff0000;filter:url(#InsetFilter)"
-         d="M 216.83,66.111 C 149.43,99.627 96.124,156.04 66.473,225.23 l 84.297,36.12 c 21.09,-49.2 58.96,-89.29 106.9,-113.12 z"
-         id="path6841"
-         inkscape:connector-curvature="0"
-         transform="rotate(3.9858,358.09,350.6)" />
-      <path
-         style="fill:#ffcc00;filter:url(#InsetFilter)"
-         d="m 364.03,32.984 c -48.44,-0.903 -96.85,9.29 -141.36,30.297 l 39.14,82.939 C 312.46,122.31 370.15,118.1 423.74,134.4 L 450.42,46.656 C 422.17,38.063 393.09,33.527 364.03,32.984 Z"
-         id="path6843"
-         inkscape:connector-curvature="0"
-         transform="rotate(3.9858,358.09,350.6)" />
-      <path
-         style="fill:#44aa00;filter:url(#InsetFilter)"
-         d="M 455.16,48.129 427.1,135.44 c 51.52,16.56 95.35,51.05 123.54,97.24 L 628.92,184.9 C 589.28,119.96 527.6,71.404 455.16,48.129 Z"
-         id="path6845"
-         inkscape:connector-curvature="0"
-         transform="rotate(3.9858,358.09,350.6)" />
-      <path
-         style="fill:none;stroke:#4d4d4d;stroke-width:3.78;stroke-linejoin:round"
-         transform="rotate(3.4681,357.63,337.77)"
-         inkscape:connector-curvature="0"
-         id="path6847"
-         d="M 65.825,225.76 C 8.203,362.18 52.989,520.98 173.39,607.19 a 316.68,316.68 0 0 0 47.05,27.89 c 113.71,54.73 251.95,37.24 348.71,-48.95 110.58,-98.5 138.26,-261.16 66.49,-390.7" />
-    </g>
-      <g
-       id="g8219"
-       style="filter:url(#DropShadow)"><path
-    style="fill:#4d4d4d;"
-       d="m 360,150 -20.85,68.43 17.48,-16.88 -2.74,156.6 c -3.97,1.01 -6.95,4.57 -7.02,8.87 -0.1,5.14 4.01,9.39 9.16,9.48 5.15,0.1 9.39,-4.02 9.48,-9.16 0.1,-4.29 -2.77,-7.95 -6.7,-9.1 l 2.73,-156.61 16.9,17.49 z"
-       :transform="'rotate('+angle+',356,368)'"
-       id="gaugeArrow"
-        />
-      </g>
+  <circle transform="translate(10.98 -19.01)" r="328.68" cy="357.69" cx="327.7" fill="#f4f4f4" paint-order="markers fill stroke"/>
+  <path d="M-19.737-12.921h2158v1398h-2158v-1398" fill="none"/>
+  <path d="M160.56 93.588C27.372 190.39-4.639 378.61 89.06 514l164.46-113.81c-33.12-47.86-22.45-110.6 24.62-144.82L160.56 93.588" style="text-decoration-color:#000;font-variant-numeric:normal;text-orientation:mixed;text-decoration-line:none;solid-opacity:1;font-variant-position:normal;mix-blend-mode:normal;solid-color:#000;font-feature-settings:normal;shape-padding:0;font-variant-alternates:normal;text-indent:0;font-variant-caps:normal;white-space:normal;text-decoration-style:solid;text-align:start;font-variant-ligatures:normal;isolation:auto;text-transform:none;line-height:normal" color="#000" fill="#a00" font-weight="400" overflow="visible" font-family="sans-serif" paint-order="markers fill stroke" enable-background="accumulate"/>
+  <path d="M347.87 35.6c-64.85-1.691-130.23 17.119-185.53 56.703L278.76 254.93c38.59-27.63 89.61-26.3 126.71 3.3L530.2 101.891C477.04 59.48 412.73 37.29 347.87 35.6" style="text-decoration-color:#000;font-variant-numeric:normal;text-orientation:mixed;text-decoration-line:none;solid-opacity:1;font-variant-position:normal;mix-blend-mode:normal;solid-color:#000;font-feature-settings:normal;shape-padding:0;font-variant-alternates:normal;text-indent:0;font-variant-caps:normal;white-space:normal;text-decoration-style:solid;text-align:start;font-variant-ligatures:normal;isolation:auto;text-transform:none;line-height:normal" color="#000" fill="#fc0" font-weight="400" overflow="visible" font-family="sans-serif" paint-order="markers fill stroke" enable-background="accumulate"/>
+  <circle transform="translate(9.58 11.01)" r="307.79" cy="329.37" cx="330.35" fill="none" stroke="#000" stroke-width="4.535" stroke-linecap="round" paint-order="markers fill stroke"/>
+  <path d="M531.3 102.77L405.85 258.53c43.59 35.11 52.36 95.5 20.56 141.56l164.58 113.63c90.25-130.71 64.02-311.32-59.69-410.95" style="text-decoration-color:#000;font-variant-numeric:normal;text-orientation:mixed;text-decoration-line:none;solid-opacity:1;font-variant-position:normal;mix-blend-mode:normal;solid-color:#000;font-feature-settings:normal;shape-padding:0;font-variant-alternates:normal;text-indent:0;font-variant-caps:normal;white-space:normal;text-decoration-style:solid;text-align:start;font-variant-ligatures:normal;isolation:auto;text-transform:none;line-height:normal" color="#000" fill="#4a0" font-weight="400" overflow="visible" font-family="sans-serif" paint-order="markers fill stroke" enable-background="accumulate"/>
+  <path d="M345.474 60.248l-.09-.006-6.997-.086-.107-.008-4.999.066.113 8.64 4.999-.065 6.81.086 3.387.105.271-8.635-3.387-.097m48.122 14.186l6.292 1.372 6.517 1.594 1.943.528 2.26-8.339-1.988-.54-.105-.025-6.675-1.633-.105-.026-6.31-1.376-1.83 8.445m-110.61-8.71l-.1.02-6.603 1.43-.11.027-4.769 1.161 2.034 8.395 4.678-1.135 6.486-1.406v-.009l3.618-.69-1.616-8.488-3.618.695m168.083 27.534l5.34 2.504 5.852 2.93v.008l2.396 1.272 4.054-7.63-2.49-1.323-.094-.052-5.982-2.99-.095-.044-5.332-2.503-3.65 7.828M224.89 84.42l-.101.046-6.01 2.786-.093.046-5.754 2.838 3.825 7.749 5.653-2.792.002-.026 5.87-2.725.002-.018 2.125-.92-3.446-7.926-2.073.942m277.991 40.079l3.224 2.493 5.04 4.094 3.516 2.995 5.6-6.576-3.59-3.06-.085-.07-5.125-4.16-.084-.06-3.224-2.494-5.272 6.838m-329.965-9.636l-.094.064-5.243 3.979-.095.082-5.136 4.104-.096.082-1.573 1.31 5.554 6.622 1.565-1.311 4.983-3.973 5.186-3.939.095-.082-5.061-6.997-.085.059m373.538 51.627l1.073 1.279 4.08 5.107 3.857 5.082.243.33 6.995-5.06-.266-.378-.082-.096-3.98-5.243-.082-.095-4.103-5.145-.082-.095-1.139-1.355-6.514 5.67m-422.01-5.806l-.068.084-4.16 5.125-.06.085-2.661 3.443 6.837 5.28 2.597-3.367 4.089-5.04 2.881-3.383-6.577-5.6-2.877 3.373m455.152 56.314l2.671 5.411 2.726 5.871 1.035 2.375 7.926-3.436-1.05-2.412.007-.098-2.795-6.01-.082-.095-2.718-5.505-7.72 3.9m-488.572-5.892l-.052.094-2.988 5.983-.052.094-2.62 5.581 7.82 3.667 2.575-5.477h.009l2.964-5.93h.009l1.144-2.155-7.632-4.046-1.177 2.19m509.64 62.594l1.088 4.487 1.396 6.449.742 3.87 8.485-1.615-.747-3.934.008-.098-1.429-6.603.008-.098-1.087-4.514-8.464 2.056M69.05 268.716l-.025.106-1.633 6.674-.026.106-1.435 6.582 8.443 1.838 1.41-6.468 1.616-6.605.453-1.672-8.338-2.259-.465 1.698m539.444 64.956l.06 4.614-.082 6.962-.104 3.37-.006.088-.008.098 8.637.379.012-.151.007-.09.105-3.511.007-.089.085-6.998.008-.106-.062-4.722-8.66.156M60.346 328.77l-.099 3.11-.007.09-.088 6.997.001.107.067 5.276 8.638-.112-.065-5.17.083-6.88.097-3.111-8.627-.307m542.663 64.45l-1.437 6.582-1.619 6.604-.31 1.138 8.334 2.268.332-1.2.008-.106 1.632-6.674.008-.107 1.469-6.75.008-.106.028-.373-8.48-1.627.027.35m-537.932-2.24l.646 3.39.02.1 1.428 6.603.028.1 1.223 5.052 8.396-2.043-1.217-5.015h-.01l-1.396-6.45-.634-3.336-8.484 1.599m516.562 65.326l-2.96 5.931-.886 1.666 7.634 4.055.938-1.76.007-.098 2.991-5.982.008-.098 2.854-6.064.008-.097-4.496-1.976-3.372-1.588-2.726 6.011m-498.047-5.743l.827 1.903.046.102 2.788 6.01.047.092 2.927 5.94.046.093.029.091 6.334-3.316 1.334-.658-.017-.001-.018-.001-2.853-5.783-.011-.09-2.766-5.963-.785-1.811-7.928 3.392" style="text-decoration-color:#000;font-variant-numeric:normal;text-orientation:mixed;text-decoration-line:none;solid-opacity:1;font-variant-position:normal;mix-blend-mode:normal;solid-color:#000;font-feature-settings:normal;shape-padding:0;font-variant-alternates:normal;text-indent:0;font-variant-caps:normal;white-space:normal;text-decoration-style:solid;text-align:start;font-variant-ligatures:normal;isolation:auto;text-transform:none;line-height:normal" color="#000" font-weight="400" overflow="visible" font-family="sans-serif" paint-order="markers fill stroke" enable-background="accumulate"/>
+  <g filter="url(#a)">
+    <path :transform="'rotate('+angle+',337,343)'" d="M325.935 331.989c-6.04 7.42-2.8 19.7 5.91 23.43 8.64 4.32 20.27-1.59 21.8-11.17.97-4.27-.14-8.87-2.77-12.35l-12.37-222.26-12.54 222.35h-.03"/>
   </g>
 </svg>
 </template>

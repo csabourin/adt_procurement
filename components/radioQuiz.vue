@@ -22,12 +22,12 @@
 		props:{
 			Question:{
 				type:Object,
-				default:{
+				default: function(){ return{
 					text:"Question",
 					options:{"1":"Option"},
 					feedback:{"1":"Feedback"},
 					conclusion:""
-				}
+				}}
 			},
 			qId:{
 				type:String,

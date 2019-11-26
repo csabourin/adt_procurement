@@ -3,7 +3,7 @@
     <h1 class="pageTitle" v-html="$t('InitiateAuthorizeSpending')" />
     
     <section>
-      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/CreateBudgetPoster.jpg')" :src="require('~/assets/'+ $i18n.locale +'/CreateBudget.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isReady">
+      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/S32Part1Poster.jpg')" :src="require('~/assets/'+ $i18n.locale +'/S32Part1.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isReady">
         <track :src="require('~/assets/'+ $i18n.locale +'/SpendPart1.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div role="tablist" class="transcriptionBox">

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div class="scrollMe">
     <table border=1>
       <colgroup>
         <col />
@@ -128,6 +129,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
     <br>
     <b-card>
     <b-tabs content>
@@ -192,7 +194,7 @@
         "$240,139",
         "$203,194",
         "$443,333",
-        "manager, 2 officers, 2 analysts, 1 jr. officer, 1 jr. analyst, admin, 1 officer retiring July 1, casual 4 months"
+        "manager,<br>2 officers,<br>2 analysts,<br>1 jr. officer,<br>1 jr. analyst,<br>admin,<br>1 officer retiring July 1,<br>casual 4 months"
       ],
       [
         "TOTAL",
@@ -240,7 +242,7 @@
         "$0",
         "$2,400",
         "$4,400",
-        "3 FTEs at $800 each for training, 4 FTEs at $500 each for general training"
+        "3 FTEs at $800 each for training,<br>4 FTEs at $500 each for general training"
       ],
       [
         "Translation Services",
@@ -330,7 +332,7 @@
         "240&nbsp;139&nbsp;$",
         "203&nbsp;194&nbsp;$",
         "443&nbsp;333&nbsp;$",
-        "gestionnaire, 2 agents, 2 analystes, 1 agent jr., 1 analyste jr., 1 administrateur, 1 agent prenant sa retraite le 1er juillet, occasionnel 4 mois"
+        "gestionnaire,<br>2 agents,<br>2 analystes,<br>1 agent jr.,<br>1 analyste jr.,<br>1 administrateur,<br>1 agent prenant sa retraite le 1er juillet,<br>occasionnel 4 mois"
       ],
       [
         "TOTAL",
@@ -378,7 +380,7 @@
         "0&nbsp;$",
         "2&nbsp;400&nbsp;$",
         "4&nbsp;400&nbsp;$",
-        "3 ETP à 800&nbsp;$ chacun pour la formation, 4 ETP à 500&nbsp;$ chacun pour la formation générale"
+        "3 ETP à 800&nbsp;$ chacun pour la formation,<br>4 ETP à 500&nbsp;$ chacun pour la formation générale"
       ],
       [
         "Services de traduction",
@@ -427,3 +429,14 @@
 		}
 	}
 </script>
+<style type="text/css" scoped>
+  .scrollMe{ 
+display: block;
+position:relative;
+    width:100%;
+  overflow-x: auto;
+  white-space: nowrap; }
+  table{
+    width:100%;
+  }
+</style>

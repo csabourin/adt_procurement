@@ -1,6 +1,6 @@
 <template>
 	<span class="pure-radiobutton">
-		<strong v-html="Question.text" />
+		<strong class="question" v-html="Question.text" />
 		<p v-html="$t('selectRight')" />
     <ol type="1">
       <li v-for="(item,index) in Question.options" :key="index"><input @click="q1Submitted=false" type="radio" v-model="Quest1" :name="'q'+qId" :id="'radioq'+qId+index" :value="index">&nbsp;<label :for="'radioq'+qId+index" v-html="item" /></li>
@@ -42,3 +42,10 @@
 		}
 	}
 </script>
+<style type="text/css" scoped>
+  .question{
+    margin-top:1em;
+    position:relative;
+    display:inline-block;
+  }
+</style>

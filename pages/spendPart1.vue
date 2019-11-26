@@ -36,12 +36,12 @@
     </section>
     <section>
       <b-modal no-stacking id="checkYourBudget" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('AnalyzeBudgetKT')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('checkBudget')}}</template>
     <checkBudget />
         </b-modal>
-      <b-modal id="budgetAnalyze" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('checkBudget')}}</template>
-        <checkBudget />
+      <b-modal id="delegAuth" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('delegateAuthority')}}</template>
+        <delegAuthority />
       </b-modal>
       <b-modal id="forecastBudget" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
@@ -73,7 +73,7 @@
 import microlearning from '~/components/microlearning'
 import checkBudget from '~/components/checkBudget'
 import budgetForecastActivity from '~/components/budgetForecastActivity'
-import AnalyzeBudgetKT from '~/components/AnalyzeBudgetKT'
+import delegAuthority from '~/components/delegAuthority'
 import submitBudget from '~/components/submitBudget'
 import budgetQuiz from '~/components/budgetQuiz'
 import plusIcon from '~/components/icons/PlusSign'
@@ -82,7 +82,7 @@ export default {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["checkYourBudget", "", "budgetKeyTerms", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"],
+      modalArray: ["checkYourBudget", "delegAuth", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -96,7 +96,7 @@ export default {
   },
   components: {
     microlearning,
-    AnalyzeBudgetKT,
+    delegAuthority,
     checkBudget,
     budgetForecastActivity,
     submitBudget,
@@ -286,7 +286,7 @@ button.accessibilityButton {
   "TakeTheQuiz":"Take the Quiz",
   "submitBudgetTitle":"Activity: Submit and Adjust your Budget",
   "adjustwptitle":"Activity: Adjust the Work plan",
-  "AnalyzeBudgetKT":"Activity: Analyze a Budget - Key Terms",
+  "delegateAuthority":"Activity: Delegation of Authority",
   "checkBudget":"Activity: Analyze Past And Current Year’s Budget",
   "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
   "InRealLife":"In Real Life",
@@ -300,7 +300,7 @@ button.accessibilityButton {
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
-  "AnalyzeBudgetKT":"Activité: Analyser un budget - Termes clés",
+  "delegateAuthority":"Activité: Délégation des pouvoirs",
   "checkBudget":"Activité: Analyser les budgets précédents et en cours",
   "submitBudgetTitle":"Activité: Soumettre et ajuster votre budget ",
   "forecastBudgetTitle":"Activité: Prévoyez vos besoins budgétaires",

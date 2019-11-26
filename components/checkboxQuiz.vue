@@ -1,6 +1,6 @@
 <template>
   <span class="pure-checkbox">
-    <strong v-html="Question.text" />
+    <strong class="question" v-html="Question.text" />
     <p v-html="$t('checkAll')" />
     <ol type="1">
       <li v-for="(item,index) in Question.options" :key="index"><input @click="q2Submitted=false" type="checkbox" v-model="Quest2" :name="'q'+qId" :id="'checkboxq'+qId+index" :value="index"> <label :for="'checkboxq'+qId+index" v-html="item" /></li>
@@ -62,3 +62,10 @@ export default {
   }
 }
 </script>
+<style type="text/css" scoped>
+  .question{
+    margin-top:1em;
+    position:relative;
+    display:inline-block;
+  }
+</style>

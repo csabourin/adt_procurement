@@ -138,7 +138,8 @@
 </b-card>
   </div>
 </template>
-<i18n>{
+<i18n>
+  {
   "en": {
     "q1": {
       "text": "Looking at the provided budget, do you have enough funds to cover a $500 translation request?",
@@ -152,29 +153,30 @@
       },
       "conclusion": "There is $2,500 in your budget for translations, so you have enough money for the translation request."
     },
-     "q2": {
-    "text": "Do you have enough money in your budget to hire a consultant whose fee is $90,000?",
-    "options": {
-      "1": "Yes. I just need to add a row for the consultant fee amount to my approved budget.",
-      "2": "No. There is not enough money in your approved budget."
+    "q2": {
+      "text": "Do you have enough money in your budget to hire a consultant whose fee is $90,000?",
+      "options": {
+        "1": "Yes. I just need to add a row for the consultant fee amount to my approved budget.",
+        "2": "No. There is not enough money in your approved budget."
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong>."
+      },
+      "conclusion": "There is not enough money in your approved budget. Unless you are given more money, you cannot hire the consultant."
     },
-    "feedback": {
-      "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
-      "2": "<span class='v-right' /> <strong>Correct!</strong>."
+    "q3": {
+      "text": "You have purchased all the furniture that you will need for the year that costs $900. You would like to buy an extra $100 in office supplies. Can you use the money initially allocated in furniture?",
+      "options": {
+        "1": "Yes - Funds can be moved between line items. ",
+        "2": "No - Once they are allocated to furniture, the funds cannot be moved."
+      },
+      "feedback": {
+        "1": "<span class='v-right' /> <strong>Correct!</strong>.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
+      },
+      "conclusion": " Funds can be moved between line items."
     },
-    "conclusion": "There is not enough money in your approved budget. Unless you are given more money, you cannot hire the consultant."
-  }, "q3": {
-    "text": "You have purchased all the furniture that you will need for the year that costs $900. You would like to buy an extra $100 in office supplies. Can you use the money initially allocated in furniture?",
-    "options": {
-      "1": "Yes - Funds can be moved between line items. ",
-      "2": "No - Once they are allocated to furniture, the funds cannot be moved."
-    },
-    "feedback": {
-      "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
-      "2": "<span class='v-right' /> <strong>Correct!</strong>."
-    },
-    "conclusion": " Funds can be moved between line items."
-  },
     "lines": [
       [
         "Line Item",
@@ -277,7 +279,6 @@
     "oAndm": "O&M"
   },
   "fr": {
-
     "q1": {
       "text": "En regardant le budget au dessus, avez-vous assez de fonds pour couvrir une demande de traduction de 500 $?",
       "options": {
@@ -289,6 +290,30 @@
         "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
       "conclusion": "Il y a 2 500 $ dans votre budget pour les traductions, donc vous avez assez d'argent pour la demande de traduction."
+    },
+    "q2": {
+      "text": "Avez-vous assez d'argent dans votre budget pour embaucher un consultant dont les honoraires sont de         90 000 $?",
+      "options": {
+        "1": "Oui, j'ai juste besoin d'ajouter une ligne pour le montant des honoraires du consultant à mon budget approuvé.",
+        "2": "Non. Il n'y a pas assez d'argent dans votre budget approuvé."
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong>."
+      },
+      "conclusion": "Il n'y a pas assez d'argent dans votre budget approuvé. Si on ne vous donne pas plus d'argent, vous ne pouvez pas embaucher le consultant."
+    },
+    "q3": {
+      "text": "Vous avez acheté tous les meubles dont vous aurez besoin pour l'année et qui coûtent 900 $. Vous aimeriez acheter 100 $ de plus en fournitures de bureau. Pouvez-vous utiliser l'argent initialement alloué pour l'ameublement?",
+      "options": {
+        "1": "Oui - Les fonds peuvent être transférés d'un objet de dépenses à l'autre.",
+        "2": "Non - Une fois qu'ils sont affectés au mobilier, les fonds ne peuvent plus être déplacés."
+      },
+      "feedback": {
+        "1": "<span class='v-right' /> <strong>Correct!</strong>.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
+      },
+      "conclusion": "Les fonds peuvent être déplacés entre les objets de dépenses. "
     },
     "lines": [
       [

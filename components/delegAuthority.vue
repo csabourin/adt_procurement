@@ -1,0 +1,140 @@
+<template>
+	<div>
+		 <b-card>
+    <b-tabs content>
+      <b-tab title="Question 1"><radioQuiz :Question="$t('q1')" qId="1"/></b-tab>
+      <b-tab title="Question 2"><radioQuiz :Question="$t('q2')" qId="2" /></b-tab>
+      <b-tab title="Question 3"><checkboxQuiz :Question="$t('q3')" qId="3" :Answer="['3']"/></b-tab>
+      <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" /></b-tab>
+    </b-tabs>
+</b-card>
+	</div>
+</template>
+<script type="text/javascript">
+	import checkboxQuiz from "~/components/checkboxQuiz"
+	import radioQuiz from "~/components/radioQuiz"
+	export default{
+		components:{
+			checkboxQuiz,
+			radioQuiz
+		}
+	}
+</script>
+<i18n>{
+  "en": {
+    "q1": {
+      "text": "After looking at the following delegation of authority chart, what is the maximum amount that a manager could approve to initiate hospitality (section 32)?",
+      "options": {
+        "1": "$0",
+        "2": "$300",
+        "3": "$3,000",
+        "4": "$10,000"
+      },
+      "feedback": {
+        "1": "<span class='v-right' /><strong>Correct!</strong>",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+      },
+      "conclusion": "As per the signed delegation of authority chart, the manager does not have authority to initiate hospitality, so the correct answer is $0. For more information on hospitality, visit https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228."
+    },
+    "q2": {
+      "text": "What is the lowest position that could approve the hospitality?",
+      "options": {
+        "1": "Director",
+        "2": "Director General",
+        "3": "Assistant Deputy Minister",
+        "4": "Deputy Minister"
+      },
+      "feedback": {
+        "1": "<span class='v-right' /> <strong>Correct!</strong>. The lowest position that could approve the hospitality is the Director.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>. The Director is the lowest position who has the authority to approve hospitality according to this delegation chart.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect</strong>. The Director is the lowest position who has the authority to approve hospitality according to this delegation chart.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect</strong>. The Director is the lowest position who has the authority to approve hospitality according to this delegation chart."
+      },
+      "conclusion": ""
+    },
+    "q3": {
+      "text": "Multiple departmental employees are travelling to an event. Consulting the following departmental financial delegation chart, who would you ask to approve (section 32) a $23,000 amount made up of travel and event registration costs?",
+      "options": {
+        "1": "Director",
+        "2": "Director General",
+        "3": "Assistant Deputy Minister ",
+        "4": "Deputy Head"
+      },
+      "feedback": {
+        "1": "<span class='v-right' /> <strong>Correct!</strong>.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
+      },
+      "conclusion": "You would need to consult the Assistant Deputy Minister (ADM). Only the ADM has the authority to approve departmental costs for an event of more than $20,000 and up to $25,000. Don’t forget to consult with your Director and your Director General before approaching your ADM!"
+    },
+    "q4": {
+      "text": "What does “F” or “Full” in the following chart mean?",
+      "options": {
+        "1": "The sky's the limit! You may approve any amount you wish.",
+        "2": "You can only approve a predefined amount. "
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong>."
+      },
+      "conclusion": "You are limited to the extent of your allocated budget. For more information on the authorities, visit the <a target='_blank' href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32584#'>Guide to Delegating and Applying Spending and Financial Authorities</a>."
+    }
+  },
+  "fr": {
+    "q1": {
+      "text": "Après avoir examiné le tableau de délégation de pouvoirs suivant, quel est le montant maximal qu'un gestionnaire pourrait approuver pour entreprendre des activités d'accueil (article 32)?",
+      "options": {
+        "1": "0$",
+        "2": "300$",
+        "3": "3 000$",
+        "4": "10 000$"
+      },
+      "feedback": {
+        "1": "<span class='v-right' /><strong>Correct!</strong>",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+      },
+      "conclusion": " Selon le tableau de délégation signé, le gestionnaire n'a pas le pouvoir d'entreprendre des activités d'accueil; la bonne réponse est donc 0 $. Pour de plus amples renseignements sur l'accueil, visitez le site https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228."
+    },
+    "q2": {
+      "text": "Quel est le poste le plus bas qui pourrait approuver l'accueil?",
+      "options": {
+        "1": "Directeur",
+        "2": "Directeur général",
+        "3": "Sous-ministre adjoint",
+        "4": "Sous-ministre"
+      },
+      "feedback": {
+        "1": "<span class='v-right' /> <strong>Correct!</strong>.  Le poste le plus bas qui pourrait approuver l'accueil est celui de directeur. ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>.  Le directeur est le poste le plus bas qui a le pouvoir d'approuver l'accueil conformément à ce tableau de délégation. ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.  Le directeur est le poste le plus bas qui a le pouvoir d'approuver l'accueil conformément à ce tableau de délégation. ",
+        "4": "<span class='v-wrong' /> <strong>Incorrect</strong>.  Le directeur est le poste le plus bas qui a le pouvoir d'approuver l'accueil conformément à ce tableau de délégation. "
+      },
+      "conclusion": ""
+    },
+    "q3": {
+      "text": "Plusieurs employés du Ministère se déplacent pour assister à un événement. En consultant le tableau de délégation financière ministériel suivant, à qui demanderiez-vous d'approuver (article 32) un montant de 23 000 $ composé des frais de déplacement et d'inscription aux événements?",
+      "options": {
+        "1": "Directeur",
+        "2": "Directeur général",
+        "3": "Sous-ministre adjoint ",
+        "4": "Administrateur général"
+      },
+      "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong>.",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect</strong>."
+      },
+      "conclusion": "Vous devriez consulter le sous-ministre adjoint (SMA). Seul le SMA a le pouvoir d'approuver les coûts ministériels pour un événement de plus de 20&nbsp;000&nbsp;$ et jusqu'à 25&nbsp;000&nbsp;$. N'oubliez pas de consulter votre directeur et votre directeur général avant d'approcher votre SMA! Pour plus d’information sur les événements, visiter le site https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228."
+    },
+    "q4": {
+      "text": "Que signifie 'P' ou 'Plein' dans le tableau suivant ?",
+      "options": {
+        "1": "Tout est possible Vous pouvez approuver le montant de votre choix.",
+        "2": "Vous ne pouvez approuver qu'un montant prédéfini. "
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong>."
+      },
+      "conclusion": "Vous êtes limité dans la mesure de votre budget alloué. Pour plus d'informations sur les autorités, visitez le <a target='_blank' href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584'>Guide de délégation et de mise en œuvre des pouvoirs de dépenser et des pouvoirs financiers</a>"
+    }
+  }
+}</i18n>

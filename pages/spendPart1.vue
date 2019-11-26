@@ -47,9 +47,9 @@
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
         <budgetForecastActivity />
       </b-modal>
-      <b-modal no-stacking id="submitBudget" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('submitBudgetTitle')}}</template>
-        <submitBudget />
+      <b-modal no-stacking id="spendS32tryIt" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('tryItTitle')}}</template>
+        <spendS32tryIt />
       </b-modal>
       <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('InRealLife')}}</template>
@@ -74,7 +74,7 @@ import microlearning from '~/components/microlearning'
 import checkBudget from '~/components/checkBudget'
 import budgetForecastActivity from '~/components/budgetForecastActivity'
 import delegAuthority from '~/components/delegAuthority'
-import submitBudget from '~/components/submitBudget'
+import spendS32tryIt from '~/components/spendS32tryIt'
 import budgetQuiz from '~/components/budgetQuiz'
 import plusIcon from '~/components/icons/PlusSign'
 export default {
@@ -82,7 +82,7 @@ export default {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["checkYourBudget", "delegAuth", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"],
+      modalArray: ["checkYourBudget", "delegAuth", "", "","spendS32tryIt"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -99,7 +99,7 @@ export default {
     delegAuthority,
     checkBudget,
     budgetForecastActivity,
-    submitBudget,
+    spendS32tryIt,
     budgetQuiz,
     plusIcon
   },
@@ -284,7 +284,7 @@ button.accessibilityButton {
 <i18n>{
   "en":{
   "TakeTheQuiz":"Take the Quiz",
-  "submitBudgetTitle":"Activity: Submit and Adjust your Budget",
+  "tryItTitle":"Activity: Try it!",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "delegateAuthority":"Activity: Delegation of Authority",
   "checkBudget":"Activity: Analyze Past And Current Year’s Budget",
@@ -302,7 +302,7 @@ button.accessibilityButton {
   "adjustwptitle":"Activité: Ajuster le plan de travail",
   "delegateAuthority":"Activité: Délégation des pouvoirs",
   "checkBudget":"Activité: Analyser les budgets précédents et en cours",
-  "submitBudgetTitle":"Activité: Soumettre et ajuster votre budget ",
+  "tryItTitle":"Activité: Soumettre et ajuster votre budget ",
   "forecastBudgetTitle":"Activité: Prévoyez vos besoins budgétaires",
   "InRealLife":"Dans la vraie vie",
   "IRLText":"<p>Votre organisation aura sa propre fa&ccedil;on de faire les exigences budg&eacute;taires. Prenez cong&eacute; du cours et parlez &agrave; votre conseiller en gestion financi&egrave;re et &agrave; votre directeur. Demandez-leur :&nbsp;</p><ul><li>Avons-nous un mod&egrave;le de budget?</li><li>Quels sont nos budgets?</li><ul><li>Fonctionnement, inclus salaire et F&amp;E</li><li>Fonctionnement et subventions et contributions</li><li>Fonctionnement et immobilisations</li></ul><li>Le budget d'investissement est-il g&eacute;r&eacute; de fa&ccedil;on centralis&eacute;e ou par chaque gestionnaire?</li></ul>",

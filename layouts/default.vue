@@ -107,7 +107,6 @@ body {
   padding: 0;
 }
 
-label{display:inline;}
 
 .bounce-enter-active {
   animation: bounce-in .5s;

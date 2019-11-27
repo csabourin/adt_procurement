@@ -151,4 +151,5 @@ export default {
   text-align: center;
   width: 200px;
 }
+
 </style>

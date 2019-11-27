@@ -205,7 +205,7 @@ video {
   margin: auto;
   position: relative;
   color: #CCC;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   counter-reset: episode;
 }
 

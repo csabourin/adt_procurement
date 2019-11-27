@@ -299,7 +299,7 @@ video {
   margin: auto;
   position: relative;
   color: #CCC;
-  justify-content: space-evenly;
+justify-content: flex-start
 }
 
 #bar > li.chaptersLink:first-child > a.activityButton { display:none; }

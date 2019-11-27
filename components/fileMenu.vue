@@ -1,7 +1,7 @@
 <template functionnal>
   <span>
     <a href="javascript:" v-b-modal.fileFolder>
-      <fileIcon :title="$t('fileFolder')" width="50" />
+      <fileIcon :title="$t('fileFolder')" width="44" />
     </a>
     <b-modal id="fileFolder" :title="$t('fileFolder')" okOnly size="xl">
       <div role="tablist">

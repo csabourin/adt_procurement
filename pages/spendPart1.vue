@@ -63,8 +63,8 @@
     <div class="bottomNav spendSection">
       <microlearning path="spendKey" size="140" completion="100" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
       <microlearning path="spendPart1"  youAreHere imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
-      <microlearning path="buildWP"  imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
-      <microlearning size="140" path="createBudget" time="20" completion="10" imagePath="CreateBud.png" :text="$t('MonitorControlFinances')" />
+      <microlearning imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
+      <microlearning size="140" ime="20" completion="10" imagePath="CreateBud.png" :text="$t('MonitorControlFinances')" />
       <microlearning size="140" time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
     </div>
   </div>
@@ -287,7 +287,7 @@ button.accessibilityButton {
   "tryItTitle":"Activity: Try it!",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "delegateAuthority":"Activity: Delegation of Authority",
-  "checkBudget":"Activity: Analyze Past And Current Year’s Budget",
+  "checkBudget":"Activity: Check your Budget",
   "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
   "InRealLife":"In Real Life",
   "IRLText":"<p>Your organization will have their own ways of doing budget requirements. Take time out from the course and talk to your financial management advisor and director. Ask them:&nbsp;</p><ul><li>Do we have a budget template?</li><li>What budgets do we have?</li><ul><li>Operating, which includes Salary and O&amp;M</li><li>Operating and Gs&amp;Cs</li><li>Operating and Capital</li></ul><li>Is the capital budget managed centrally or by each manager?</li></ul>",
@@ -301,8 +301,8 @@ button.accessibilityButton {
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
   "delegateAuthority":"Activité: Délégation des pouvoirs",
-  "checkBudget":"Activité: Analyser les budgets précédents et en cours",
-  "tryItTitle":"Activité: Soumettre et ajuster votre budget ",
+  "checkBudget":"Activité: Vérifiez votre budget",
+  "tryItTitle":"Activité: Essayons-le!",
   "forecastBudgetTitle":"Activité: Prévoyez vos besoins budgétaires",
   "InRealLife":"Dans la vraie vie",
   "IRLText":"<p>Votre organisation aura sa propre fa&ccedil;on de faire les exigences budg&eacute;taires. Prenez cong&eacute; du cours et parlez &agrave; votre conseiller en gestion financi&egrave;re et &agrave; votre directeur. Demandez-leur :&nbsp;</p><ul><li>Avons-nous un mod&egrave;le de budget?</li><li>Quels sont nos budgets?</li><ul><li>Fonctionnement, inclus salaire et F&amp;E</li><li>Fonctionnement et subventions et contributions</li><li>Fonctionnement et immobilisations</li></ul><li>Le budget d'investissement est-il g&eacute;r&eacute; de fa&ccedil;on centralis&eacute;e ou par chaque gestionnaire?</li></ul>",

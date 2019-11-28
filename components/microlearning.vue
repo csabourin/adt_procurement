@@ -8,14 +8,14 @@
       <p class="text-left" :style="'width:'+size+'px'">
         <span v-html="text" />
       </p>
-         <div v-if="youAreHere" class="floatOver"><img :src="require('~/assets/YouAreHere.svg')"></div>
+      <div v-if="youAreHere" class="floatOver"><img :src="require('~/assets/YouAreHere.svg')"></div>
     </nuxt-link>
   </div>
 </template>
 <script type="text/javascript">
 export default {
   props: {
-    text:{type:String,default:"Tile Name"},
+    text: { type: String, default: "Tile Name" },
     size: {
       type: String,
       default: "200"
@@ -52,8 +52,7 @@ export default {
       return {
         width: this.size + "px",
         height: this.size + "px",
-        backgroundImage: "url(" + require('~/assets/' + this.imagePath) + ")",
-        backgroundSize: "cover",
+        backgroundImage: "url(" + require('~/assets/' + this.imagePath) + ")"
       }
 
     }
@@ -67,12 +66,12 @@ a {
   color: black;
 }
 
-.floatOver{
+.floatOver {
   position: absolute;
-  top:-36px;
-  left:40%;
+  top: -36px;
+  left: 40%;
   margin: auto;
-  width:32px;
+  width: 32px;
 }
 
 .completed {
@@ -110,6 +109,9 @@ a {
   position: relative;
   border: 1px solid hsl(42, 10%, 74%);
   margin-bottom: .5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 .timeEstimate {

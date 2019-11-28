@@ -14,7 +14,7 @@
           <b-collapse id="cbTranscript-1" role="tabpanel">
             <b-card-body>
               <b-card-text>
-                <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button>
+                <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalParts') + ' - ' +navBarTracks[index]}}</button>
                 <span v-if="$i18n.locale=='en'"></span>
                 <span v-if="$i18n.locale=='fr'"></span>
               </b-card-text>
@@ -26,7 +26,7 @@
         <li href='#mainPlayer' v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
           {{ item }}<br>
           <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek" :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
-          <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="48" height="48"> </a>
+          <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalParts') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="48" height="48"> </a>
         </li>
       </ul>
       <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
@@ -292,7 +292,7 @@ button.accessibilityButton {
   "InRealLife":"In Real Life",
   "IRLText":"<p>Your organization will have their own ways of doing budget requirements. Take time out from the course and talk to your financial management advisor and director. Ask them:&nbsp;</p><ul><li>Do we have a budget template?</li><li>What budgets do we have?</li><ul><li>Operating, which includes Salary and O&amp;M</li><li>Operating and Gs&amp;Cs</li><li>Operating and Capital</li></ul><li>Is the capital budget managed centrally or by each manager?</li></ul>",
   "gotIt":"Continue to next segment",
-  "jumpModalPartsWP":"Jump to activity",
+  "jumpModalParts":"Jump to activity",
   "playSegment":"Play video segment",
   "transcriptText":""
   },
@@ -307,7 +307,7 @@ button.accessibilityButton {
   "InRealLife":"Dans la vraie vie",
   "IRLText":"<p>Votre organisation aura sa propre fa&ccedil;on de faire les exigences budg&eacute;taires. Prenez cong&eacute; du cours et parlez &agrave; votre conseiller en gestion financi&egrave;re et &agrave; votre directeur. Demandez-leur :&nbsp;</p><ul><li>Avons-nous un mod&egrave;le de budget?</li><li>Quels sont nos budgets?</li><ul><li>Fonctionnement, inclus salaire et F&amp;E</li><li>Fonctionnement et subventions et contributions</li><li>Fonctionnement et immobilisations</li></ul><li>Le budget d'investissement est-il g&eacute;r&eacute; de fa&ccedil;on centralis&eacute;e ou par chaque gestionnaire?</li></ul>",
   "gotIt":"Continuer au segment suivant.",
-  "jumpModalPartsWP":"Sauter à l'activité",
+  "jumpModalParts":"Sauter à l'activité",
   "playSegment":"Faire jouer le segment vidéo",
   "transcriptText":""
   }

@@ -150,8 +150,8 @@
     </section>
     <div class="bottomNav planSection">
       <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
-      <microlearning path="buildWP" youAreHere imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('BuildWorkPlan')" />
-      <microlearning size="140" path="createBudget" time="20" completion="10" imagePath="CreateBud.png" :text="$t('CreateBudget')" />
+      <microlearning path="buildWP" youAreHere imagePath="BuildWP.svg" size="140" time="20" completion="80" :text="$t('BuildWorkPlan')" />
+      <microlearning size="140" path="createBudget" time="20" completion="10" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
       <microlearning size="140" time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
     </div>
   </div>

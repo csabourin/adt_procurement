@@ -1,0 +1,87 @@
+<template>
+  <div>
+    <b-card>
+      <b-tabs content>
+        <b-tab title="Question 1">
+          <radioQuiz :Question="$t('q1')" qId="1" />
+        </b-tab>
+        <b-tab title="Question 2">
+          <radioQuiz :Question="$t('q2')" qId="2" />
+        </b-tab>
+      </b-tabs>
+    </b-card>
+  </div>
+</template>
+<script type="text/javascript">
+import checkboxQuiz from "~/components/checkboxQuiz"
+import radioQuiz from "~/components/radioQuiz"
+export default {
+  components: {
+    checkboxQuiz,
+    radioQuiz
+  }
+}
+
+</script>
+<i18n>{
+  "en": {
+    "q1": {
+      "text": "This is what is used to obtain goods and/or services at prearranged prices.",
+      "options": {
+        "1": "Soft Commitment",
+        "2": "Hard Commitment"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+        "2": "<span class='v-right' /><strong>Correct!</strong>"
+      },
+      "conclusion": "This is a soft commitment because you have not yet made an arrangement with a supplier."
+    },
+    "q2": {
+      "text": "You have now bought the two dry erase boards. What is the nature of this financial transaction?",
+      "options": {
+        "1": "Revenue",
+        "2": "Expenditure",
+        "3": "Asset",
+        "4": "Liability"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong>",
+        "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
+      },
+      "conclusion": "Given that you have only bought two dry erase boards, it is an expenditure.<br>Don’t forget, your organisation may use a different financial structure, so go find out how your coding works!"
+    }
+  },
+  "fr": {
+    "q1": {
+      "text": "Vous voulez acheter deux tableaux effaçables à sec. S'agit-il d'un engagement préalable ou d’un engagement ferme?",
+      "options": {
+        "1": "Engagement préalable",
+        "2": "Engagement ferme"
+      },
+      "feedback": {
+        "1": "<span class='v-right' /><strong>Correct!</strong>",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+      },
+      "conclusion": " Il s'agit d'un engagement préalable parce que vous n'avez pas encore conclu d'entente avec un fournisseur."
+    },
+    "q2": {
+      "text": "Vous avez maintenant acheté les deux tableaux effaçables à sec. Quelle est la nature de cette transaction financière?",
+      "options": {
+        "1": "Revenu",
+        "2": "Dépense",
+        "3": "Actif",
+        "4": "Passif"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+        "2": "<span class='v-right' /><strong>Correct!</strong>",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+        "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+      },
+      "conclusion": "Étant donné que vous n'avez acheté que deux tableaux effaçables à sec, c'est une dépense.<br>N'oubliez pas que votre organisation peut utiliser une structure financière différente, alors allez voir comment fonctionne votre codage!"
+    }
+  }
+}</i18n>

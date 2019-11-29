@@ -30,6 +30,36 @@
         </tbody>
       </table>
     </span>
+    <span v-if="$i18n.locale=='fr'">
+      <p>Pour réaliser votre plan de travail, l'une de vos activités exige que vous achetiez dix microscopes pour votre équipe. Chaque microscope coûte 200 $.</p>
+      <p>D'abord, vérifions votre budget.</p>
+      <table border='1'>
+        <tbody>
+          <tr>
+            <td>
+              <p>Budget</p>
+            </td>
+            <td>
+              <p>Engagements </p>
+            </td>
+            <td>
+              <p>Dépenses réelles à ce jour</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>44&nbsp;900$</p>
+            </td>
+            <td>
+              <p>15&nbsp;000$</p>
+            </td>
+            <td>
+              <p>29&nbsp;000$</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </span>
     <b-card>
       <b-tabs content>
         <b-tab title="Question 1">
@@ -119,60 +149,60 @@ export default {
   },
   "fr": {
   "q1": {
-  "text": "Après avoir examiné le tableau de délégation de pouvoirs suivant, quel est le montant maximal qu'un gestionnaire pourrait approuver pour entreprendre des activités d'accueil (article 32)?",
+  "text": "Avez-vous assez d'argent pour couvrir le coût des microscopes?",
   "options": {
-  "1": "0$",
-  "2": "300$",
-  "3": "3 000$",
-  "4": "10 000$"
+  "1": "Oui",
+  "2": "Non"
+  },
+  "feedback": {
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+  "2": "<span class='v-right' /><strong>Correct!</strong>"
+  },
+  "conclusion": "De votre budget de 44 900 $, vous avez déjà engagé 15 000 $ et dépensé 29 000 $. Donc, 44 000 $ sont déjà comptabilisés, ce qui signifie qu'il ne reste que 900 $ dans votre budget."
+  },
+  "q2": {
+  "text": "S'il y avait eu suffisamment de fonds dans le budget, en examinant la carte de signature fournie, le gestionnaire a-t-il le pouvoir délégué nécessaire pour engager les fonds?",
+ "options": {
+  "1": "Oui",
+  "2": "Non"
   },
   "feedback": {
   "1": "<span class='v-right' /><strong>Correct!</strong>",
   "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
-  "conclusion": " Selon le tableau de délégation signé, le gestionnaire n'a pas le pouvoir d'entreprendre des activités d'accueil; la bonne réponse est donc 0 $. Pour de plus amples renseignements sur l'accueil, visitez le site https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228."
-  },
-  "q2": {
-  "text": "Quel est le poste le plus bas qui pourrait approuver l'accueil?",
-  "options": {
-  "1": "Directeur",
-  "2": "Directeur général",
-  "3": "Sous-ministre adjoint",
-  "4": "Sous-ministre"
-  },
-  "feedback": {
-  "1": "<span class='v-right' /> <strong>Correct!</strong>. Le poste le plus bas qui pourrait approuver l'accueil est celui de directeur. ",
-  "2": "<span class='v-wrong' /> <strong>Incorrect</strong>. Le directeur est le poste le plus bas qui a le pouvoir d'approuver l'accueil conformément à ce tableau de délégation. ",
-  "3": "<span class='v-wrong' /> <strong>Incorrect</strong>. Le directeur est le poste le plus bas qui a le pouvoir d'approuver l'accueil conformément à ce tableau de délégation. ",
-  "4": "<span class='v-wrong' /> <strong>Incorrect</strong>. Le directeur est le poste le plus bas qui a le pouvoir d'approuver l'accueil conformément à ce tableau de délégation. "
-  },
-  "conclusion": ""
+  "conclusion": "Le gestionnaire a l'autorité d'initier et d'engager les fonds nécessaires pour les microscopes."
   },
   "q3": {
-  "text": "Plusieurs employés du Ministère se déplacent pour assister à un événement. En consultant le tableau de délégation financière ministériel suivant, à qui demanderiez-vous d'approuver (article 32) un montant de 23 000 $ composé des frais de déplacement et d'inscription aux événements?",
+  "text": "Quel est le meilleur mécanisme de dépense à utiliser pour acheter les microscopes ?",
   "options": {
-  "1": "Directeur",
-  "2": "Directeur général",
-  "3": "Sous-ministre adjoint ",
-  "4": "Administrateur général"
-  },
-  "feedback": {
-  "right": "<span class='v-right' /> <strong>Correct!</strong>.",
-  "wrong": "<span class='v-wrong' /> <strong>Incorrect</strong>."
-  },
-  "conclusion": "Vous devriez consulter le sous-ministre adjoint (SMA). Seul le SMA a le pouvoir d'approuver les coûts ministériels pour un événement de plus de 20&nbsp;000&nbsp;$ et jusqu'à 25&nbsp;000&nbsp;$. N'oubliez pas de consulter votre directeur et votre directeur général avant d'approcher votre SMA! Pour plus d’information sur les événements, visiter le site https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228."
-  },
-  "q4": {
-  "text": "Que signifie 'P' ou 'Plein' dans le tableau suivant ?",
-  "options": {
-  "1": "Tout est possible Vous pouvez approuver le montant de votre choix.",
-  "2": "Vous ne pouvez approuver qu'un montant prédéfini. "
+  "1": "Carte d'achat",
+  "2": "Contrat concurrentiel",
+  "3": "Offre à commandes",
+  "4": "Arrangement en matière d'approvisionnement"
   },
   "feedback": {
   "1": "<span class='v-right' /> <strong>Correct!</strong>.",
-  "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
+  "2": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+  "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+  "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
   },
-  "conclusion": "Vous êtes limité dans la mesure de votre budget alloué. Pour plus d'informations sur les autorités, visitez https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584"
+  "conclusion": "Étant donné qu'il ne s'agit que de 2 000 $ pour 10 microscopes, la carte d'achat est le meilleur mécanisme de dépense."
+  },
+  "q4": {
+  "text": "Quelle est la nature de cette transaction financière (microscopes)?",
+  "options": {
+  "1": "Revenu",
+  "2": "Dépense",
+  "3": "Actif",
+  "4": "Passif"
+  },
+  "feedback": {
+  "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+  "2": "<span class='v-right' /> <strong>Correct!</strong>.",
+  "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+  "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
+  },
+  "conclusion": "Étant donné qu'il ne s'agit que de 2 000 $ pour 10 microscopes, c'est une dépense. Si vous aviez acheté plus de microscopes et/ou à un prix unitaire plus élevé, cela pourrait être considéré comme un actif. Consultez votre ministère pour connaître vos limites."
   }
   }
   }</i18n>

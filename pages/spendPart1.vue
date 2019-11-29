@@ -51,9 +51,9 @@
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('tryItTitle')}}</template>
         <spendS32tryIt />
       </b-modal>
-      <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('InRealLife')}}</template>
-        <span v-html="$t('IRLText')"></span>
+      <b-modal no-stacking id="RecordingFinancialSystem" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('RecordingTitle')}}</template>
+        <RecordingFinancialSystem />
       </b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('TakeTheQuiz')}}</template>
@@ -76,13 +76,13 @@ import spendMechanisms from '~/components/spendMechanisms'
 import delegAuthority from '~/components/delegAuthority'
 import spendS32tryIt from '~/components/spendS32tryIt'
 import budgetQuiz from '~/components/budgetQuiz'
-import plusIcon from '~/components/icons/PlusSign'
+import RecordingFinancialSystem from '~/components/RecordingFinancialSystem'
 export default {
   data() {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["checkYourBudget", "delegAuth", "spendMechanisms", "","spendS32tryIt"],
+      modalArray: ["checkYourBudget", "delegAuth", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -101,7 +101,7 @@ export default {
     spendMechanisms,
     spendS32tryIt,
     budgetQuiz,
-    plusIcon
+    RecordingFinancialSystem
   },
   methods: {
     isReady() { this.isItReady = true },
@@ -289,8 +289,7 @@ button.accessibilityButton {
   "delegateAuthority":"Activity: Delegation of Authority",
   "checkBudget":"Activity: Check your Budget",
   "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
-  "InRealLife":"In Real Life",
-  "IRLText":"<p>Your organization will have their own ways of doing budget requirements. Take time out from the course and talk to your financial management advisor and director. Ask them:&nbsp;</p><ul><li>Do we have a budget template?</li><li>What budgets do we have?</li><ul><li>Operating, which includes Salary and O&amp;M</li><li>Operating and Gs&amp;Cs</li><li>Operating and Capital</li></ul><li>Is the capital budget managed centrally or by each manager?</li></ul>",
+  "RecordingTitle":"Activity: Recording in the Financial System",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
   "playSegment":"Play video segment",
@@ -304,8 +303,7 @@ button.accessibilityButton {
   "checkBudget":"Activité: Vérifiez votre budget",
   "tryItTitle":"Activité: Essayons-le!",
   "forecastBudgetTitle":"Activité: Prévoyez vos besoins budgétaires",
-  "InRealLife":"Dans la vraie vie",
-  "IRLText":"<p>Votre organisation aura sa propre fa&ccedil;on de faire les exigences budg&eacute;taires. Prenez cong&eacute; du cours et parlez &agrave; votre conseiller en gestion financi&egrave;re et &agrave; votre directeur. Demandez-leur :&nbsp;</p><ul><li>Avons-nous un mod&egrave;le de budget?</li><li>Quels sont nos budgets?</li><ul><li>Fonctionnement, inclus salaire et F&amp;E</li><li>Fonctionnement et subventions et contributions</li><li>Fonctionnement et immobilisations</li></ul><li>Le budget d'investissement est-il g&eacute;r&eacute; de fa&ccedil;on centralis&eacute;e ou par chaque gestionnaire?</li></ul>",
+  "RecordingTitle":"Activité: Enregistrement dans le système financier",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l'activité",
   "playSegment":"Faire jouer le segment vidéo",

@@ -15,250 +15,249 @@
     <tbody>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl182" colspan="4" rowspan="3"><span v-html="$t('tableLine[1]')"> Formulaire de délégation<br>Acceptation de pouvoirs financiers délégués par le ministre et la sous-ministre/présidente</span></td>
+        <td class="xl182" colspan="4" rowspan="3"><span v-html="$t('tableLine[1]')"></span></td>
         </td>
-        <td colspan="4" class="xl182" v-html="$t('tableLine[2]')">Niveau</td>
+        <td colspan="4" class="xl182" v-html="$t('tableLine[2]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td colspan="4" class="xl182" v-html="$t('tableLine[3]')">V</td>
+        <td colspan="4" class="xl182" v-html="$t('tableLine[3]')"></td>
       </tr>
       <tr>
         <td></td>
-        <td colspan="4" class="xl182" v-html="$t('tableLine[4]')">Gestionnaire de centre de coût</td>
+        <td colspan="4" class="xl182" v-html="$t('tableLine[4]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td colspan="4" class="xl184" v-html="$t('tableLine[5]')">A - Pouvoir d'engagement des dépenses</td>
-        <td class="xl92" v-html="$t('tableLine[6]')">&nbsp;</td>
-        <td class="xl89" colspan="2" v-html="$t('tableLine[7]')">C - Pouvoir d'exécuter une opération</td>
-        <td class="xl107" v-html="$t('tableLine[8]')">&nbsp;</td>
+        <td colspan="4" class="xl184" v-html="$t('tableLine[5]')"></td>
+        <td class="xl92" v-html="$t('tableLine[6]')"></td>
+        <td class="xl89" colspan="2" v-html="$t('tableLine[7]')"></td>
+        <td class="xl107" v-html="$t('tableLine[8]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl85" v-html="$t('tableLine[9]')">A1</td>
-        <td colspan="3" class="xl170" v-html="$t('tableLine[10]')">Ententes intergouvernementales</td>
-        <td class="xl95" v-html="$t('tableLine[11]')">&nbsp;</td>
-        <td class="xl97" v-html="$t('tableLine[12]')">C10</td>
-        <td class="xl94" v-html="$t('tableLine[13]')">Demande de biens et services à TPSGC</td>
-        <td class="xl118" v-html="$t('tableLine[14]')">&nbsp;</td>
+        <td class="xl85" v-html="$t('tableLine[9]')"></td>
+        <td colspan="3" class="xl170" v-html="$t('tableLine[10]')"></td>
+        <td class="xl95" v-html="$t('tableLine[11]')"></td>
+        <td class="xl97" v-html="$t('tableLine[12]')"></td>
+        <td class="xl94" v-html="$t('tableLine[13]')"></td>
+        <td class="xl118" v-html="$t('tableLine[14]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl85" v-html="$t('tableLine[15]')">A2</td>
-        <td colspan="3" class="xl170" v-html="$t('tableLine[16]')">Parrainage de conférences</td>
-        <td class="xl95" v-html="$t('tableLine[17]')">&nbsp;</td>
-        <td class="xl97" v-html="$t('tableLine[18]')">C11</td>
-        <td class="xl94" v-html="$t('tableLine[19]')">Marchés de services de travail temporaire / AMA</td>
-        <td class="xl118" v-html="$t('tableLine[20]')">&nbsp;</td>
+        <td class="xl85" v-html="$t('tableLine[15]')"></td>
+        <td colspan="3" class="xl170" v-html="$t('tableLine[16]')"></td>
+        <td class="xl95" v-html="$t('tableLine[17]')"></td>
+        <td class="xl97" v-html="$t('tableLine[18]')"></td>
+        <td class="xl94" v-html="$t('tableLine[19]')"></td>
+        <td class="xl118" v-html="$t('tableLine[20]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl85" v-html="$t('tableLine[21]')">A3</td>
-        <td colspan="3" class="xl170" v-html="$t('tableLine[22]')">Participation à des conférences**</td>
-        <td class="xl95" v-html="$t('tableLine[23]')">&nbsp;</td>
-        <td class="xl97" v-html="$t('tableLine[24]')">C12</td>
-        <td class="xl93" v-html="$t('tableLine[25]')">Marchés exceptionnels</td>
-        <td class="xl118" v-html="$t('tableLine[26]')">&nbsp;</td>
+        <td class="xl85" v-html="$t('tableLine[21]')"></td>
+        <td colspan="3" class="xl170" v-html="$t('tableLine[22]')"></td>
+        <td class="xl95" v-html="$t('tableLine[23]')"></td>
+        <td class="xl97" v-html="$t('tableLine[24]')"></td>
+        <td class="xl93" v-html="$t('tableLine[25]')"></td>
+        <td class="xl118" v-html="$t('tableLine[26]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl85" v-html="$t('tableLine[27]')">A4</td>
-        <td colspan="3" class="xl170" v-html="$t('tableLine[28]')">Cotisations et droits d'inscription</td>
-        <td class="xl95" v-html="$t('tableLine[29]')">&nbsp;</td>
-        <td colspan="2" rowspan="2" class="xl98" v-html="$t('tableLine[30]')">D - Autre pouvoirs</td>
-        <td rowspan="2" class="xl187" v-html="$t('tableLine[31]')">&nbsp;</td>
+        <td class="xl85" v-html="$t('tableLine[27]')"></td>
+        <td colspan="3" class="xl170" v-html="$t('tableLine[28]')"></td>
+        <td class="xl95" v-html="$t('tableLine[29]')"></td>
+        <td colspan="2" rowspan="2" class="xl98" v-html="$t('tableLine[30]')"></td>
+        <td rowspan="2" class="xl187" v-html="$t('tableLine[31]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl85" v-html="$t('tableLine[32]')">A5</td>
-        <td colspan="3" class="xl170" v-html="$t('tableLine[33]')">Voyages au Canada**</td>
-        <td class="xl95" v-html="$t('tableLine[34]')">&nbsp;</td>
+        <td class="xl85" v-html="$t('tableLine[32]')"></td>
+        <td colspan="3" class="xl170" v-html="$t('tableLine[33]')"></td>
+        <td class="xl95" v-html="$t('tableLine[34]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl85" v-html="$t('tableLine[35]')">A6</td>
-        <td colspan="3" class="xl170" v-html="$t('tableLine[36]')">Voyages dans la zone continentales des É.U.**</td>
-        <td class="xl96" v-html="$t('tableLine[37]')">&nbsp;</td>
-        <td class="xl98" v-html="$t('tableLine[38]')">D1</td>
-        <td class="xl94" v-html="$t('tableLine[39]')">Mise en place de petites caisses et avances permanentes</td>
-        <td class="xl118" v-html="$t('tableLine[40]')">&nbsp;</td>
+        <td class="xl85" v-html="$t('tableLine[35]')"></td>
+        <td colspan="3" class="xl170" v-html="$t('tableLine[36]')"></td>
+        <td class="xl96" v-html="$t('tableLine[37]')"></td>
+        <td class="xl98" v-html="$t('tableLine[38]')"></td>
+        <td class="xl94" v-html="$t('tableLine[39]')"></td>
+        <td class="xl118" v-html="$t('tableLine[40]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl85" v-html="$t('tableLine[41]')">A7</td>
-        <td colspan="3" class="xl188" v-html="$t('tableLine[42]')">Voyages à l'extérieur du Can.incluant É.U. non continental**</td>
-        <td class="xl96" v-html="$t('tableLine[43]')">&nbsp;</td>
-        <td class="xl98" v-html="$t('tableLine[44]')">D2</td>
-        <td class="xl94" v-html="$t('tableLine[45]')">Comptes à fins déterminées</td>
-        <td class="xl118" v-html="$t('tableLine[46]')">&nbsp;</td>
+        <td class="xl85" v-html="$t('tableLine[41]')"></td>
+        <td colspan="3" class="xl188" v-html="$t('tableLine[42]')"></td>
+        <td class="xl96" v-html="$t('tableLine[43]')"></td>
+        <td class="xl98" v-html="$t('tableLine[44]')"></td>
+        <td class="xl94" v-html="$t('tableLine[45]')"></td>
+        <td class="xl118" v-html="$t('tableLine[46]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl85" v-html="$t('tableLine[47]')">A8</td>
-        <td colspan="3" class="xl188" v-html="$t('tableLine[48]')">Accueil**</td>
-        <td class="xl96" v-html="$t('tableLine[49]')">&nbsp;</td>
-        <td class="xl98" v-html="$t('tableLine[50]')">D3</td>
-        <td class="xl94" v-html="$t('tableLine[51]')">Radiation d'éléments d'actifs</td>
-        <td class="xl118" v-html="$t('tableLine[52]')">&nbsp;</td>
+        <td class="xl85" v-html="$t('tableLine[47]')"></td>
+        <td colspan="3" class="xl188" v-html="$t('tableLine[48]')"></td>
+        <td class="xl96" v-html="$t('tableLine[49]')"></td>
+        <td class="xl98" v-html="$t('tableLine[50]')"></td>
+        <td class="xl94" v-html="$t('tableLine[51]')"></td>
+        <td class="xl118" v-html="$t('tableLine[52]')"></td>
         <td class="xl100"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl85" v-html="$t('tableLine[53]')">A9</td>
-        <td colspan="3" class="xl170" v-html="$t('tableLine[54]')">Réinstallation</td>
-        <td class="xl96" v-html="$t('tableLine[55]')">&nbsp;</td>
-        <td class="xl98" v-html="$t('tableLine[56]')">D4</td>
-        <td class="xl94" v-html="$t('tableLine[57]')">Pertes d'argent</td>
-        <td class="xl118" v-html="$t('tableLine[58]')">&nbsp;</td>
+        <td class="xl85" v-html="$t('tableLine[53]')"></td>
+        <td colspan="3" class="xl170" v-html="$t('tableLine[54]')"></td>
+        <td class="xl96" v-html="$t('tableLine[55]')"></td>
+        <td class="xl98" v-html="$t('tableLine[56]')"></td>
+        <td class="xl94" v-html="$t('tableLine[57]')"></td>
+        <td class="xl118" v-html="$t('tableLine[58]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl86" v-html="$t('tableLine[59]')">A10</td>
-        <td colspan="3" class="xl188" v-html="$t('tableLine[60]')">Subventions et contributions</td>
-        <td class="xl96" v-html="$t('tableLine[61]')">&nbsp;</td>
-        <td class="xl98" v-html="$t('tableLine[62]')">D5</td>
-        <td class="xl93" v-html="$t('tableLine[63]')">Radiation de créances</td>
-        <td class="xl118" v-html="$t('tableLine[64]')">&nbsp;</td>
+        <td class="xl86" v-html="$t('tableLine[59]')"></td>
+        <td colspan="3" class="xl188" v-html="$t('tableLine[60]')"></td>
+        <td class="xl96" v-html="$t('tableLine[61]')"></td>
+        <td class="xl98" v-html="$t('tableLine[62]')"></td>
+        <td class="xl93" v-html="$t('tableLine[63]')"></td>
+        <td class="xl118" v-html="$t('tableLine[64]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl87" v-html="$t('tableLine[65]')">A11</td>
-        <td colspan="3" class="xl188" v-html="$t('tableLine[66]')">Apprentissage et perfectionnement**</td>
-        <td class="xl96" v-html="$t('tableLine[67]')">P*</td>
-        <td class="xl98" v-html="$t('tableLine[68]')">D6</td>
-        <td class="xl93" v-html="$t('tableLine[69]')">Demande de renvoi de chèques</td>
-        <td class="xl118" v-html="$t('tableLine[70]')">&nbsp;</td>
+        <td class="xl87" v-html="$t('tableLine[65]')"></td>
+        <td colspan="3" class="xl188" v-html="$t('tableLine[66]')"></td>
+        <td class="xl96" v-html="$t('tableLine[67]')"></td>
+        <td class="xl98" v-html="$t('tableLine[68]')"></td>
+        <td class="xl93" v-html="$t('tableLine[69]')"></td>
+        <td class="xl118" v-html="$t('tableLine[70]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl87" v-html="$t('tableLine[71]')">A12</td>
-        <td colspan="3" class="xl188" v-html="$t('tableLine[72]')">Prix</td>
-        <td class="xl96" v-html="$t('tableLine[73]')">&nbsp;</td>
-        <td class="xl98" v-html="$t('tableLine[74]')">D7</td>
-        <td class="xl93" v-html="$t('tableLine[75]')">Distribution recettes provenant aliénation biens de la Couronne</td>
-        <td class="xl118" v-html="$t('tableLine[76]')">&nbsp;</td>
+        <td class="xl87" v-html="$t('tableLine[71]')"></td>
+        <td colspan="3" class="xl188" v-html="$t('tableLine[72]')"></td>
+        <td class="xl96" v-html="$t('tableLine[73]')"></td>
+        <td class="xl98" v-html="$t('tableLine[74]')"></td>
+        <td class="xl93" v-html="$t('tableLine[75]')"></td>
+        <td class="xl118" v-html="$t('tableLine[76]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl87" v-html="$t('tableLine[77]')">A13</td>
-        <td colspan="3" class="xl188" v-html="$t('tableLine[78]')">Honoraires</td>
-        <td class="xl96" v-html="$t('tableLine[79]')">&nbsp;</td>
-        <td class="xl98" v-html="$t('tableLine[80]')">D8</td>
-        <td class="xl93" v-html="$t('tableLine[81]')">Protocole d'entente (PE) - revenu</td>
-        <td class="xl118" v-html="$t('tableLine[82]')">&nbsp;</td>
+        <td class="xl87" v-html="$t('tableLine[77]')"></td>
+        <td colspan="3" class="xl188" v-html="$t('tableLine[78]')"></td>
+        <td class="xl96" v-html="$t('tableLine[79]')"></td>
+        <td class="xl98" v-html="$t('tableLine[80]')"></td>
+        <td class="xl93" v-html="$t('tableLine[81]')"></td>
+        <td class="xl118" v-html="$t('tableLine[82]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl87" v-html="$t('tableLine[83]')">A14</td>
-        <td colspan="3" class="xl188" v-html="$t('tableLine[84]')">Rémunération et avantages sociaux</td>
-        <td class="xl95" v-html="$t('tableLine[85]')">&nbsp;</td>
-        <td class="xl98" v-html="$t('tableLine[86]')">D9</td>
-        <td class="xl93" v-html="$t('tableLine[87]')">Facturation pour revenu</td>
-        <td class="xl118" v-html="$t('tableLine[88]')">P</td>
+        <td class="xl87" v-html="$t('tableLine[83]')"></td>
+        <td colspan="3" class="xl188" v-html="$t('tableLine[84]')"></td>
+        <td class="xl95" v-html="$t('tableLine[85]')"></td>
+        <td class="xl98" v-html="$t('tableLine[86]')"></td>
+        <td class="xl93" v-html="$t('tableLine[87]')"></td>
+        <td class="xl118" v-html="$t('tableLine[88]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl88" v-html="$t('tableLine[89]')">A15</td>
-        <td colspan="3" class="xl188" v-html="$t('tableLine[90]')">Tous les autres biens et services</td>
-        <td class="xl95" v-html="$t('tableLine[91]')">P</td>
-        <td class="xl98" v-html="$t('tableLine[92]')">D10</td>
-        <td class="xl93" v-html="$t('tableLine[93]')">Remboursement des recettes (Note de crédit)</td>
-        <td class="xl118" v-html="$t('tableLine[94]')">&nbsp;</td>
+        <td class="xl88" v-html="$t('tableLine[89]')"></td>
+        <td colspan="3" class="xl188" v-html="$t('tableLine[90]')"></td>
+        <td class="xl95" v-html="$t('tableLine[91]')"></td>
+        <td class="xl98" v-html="$t('tableLine[92]')"></td>
+        <td class="xl93" v-html="$t('tableLine[93]')"></td>
+        <td class="xl118" v-html="$t('tableLine[94]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td colspan="4" class="xl195" v-html="$t('tableLine[95]')">B - Pouvoir d'engager des fonds (art. 32 LGFP)</td>
-        <td class="xl112" v-html="$t('tableLine[96]')">P</td>
-        <td class="xl98" v-html="$t('tableLine[97]')">D11</td>
-        <td class="xl93" v-html="$t('tableLine[98]')">Paiements à titre gracieux et réclamat. contre la Couronne</td>
-        <td class="xl118" v-html="$t('tableLine[99]')">&nbsp;</td>
+        <td colspan="4" class="xl195" v-html="$t('tableLine[95]')"></td>
+        <td class="xl112" v-html="$t('tableLine[96]')"></td>
+        <td class="xl98" v-html="$t('tableLine[97]')"></td>
+        <td class="xl93" v-html="$t('tableLine[98]')"></td>
+        <td class="xl118" v-html="$t('tableLine[99]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td colspan="4" class="xl89">C - Pouvoir d'exécuter une opération<font class="font22"><sup>1,2</sup></font>
-        </td>
-        <td class="xl107" v-html="$t('tableLine[100]')">&nbsp;</td>
-        <td class="xl98" v-html="$t('tableLine[101]')">D12</td>
-        <td class="xl93" v-html="$t('tableLine[102]')">Présentations au Conseil du Trésor</td>
-        <td class="xl118" v-html="$t('tableLine[103]')">&nbsp;</td>
+        <td colspan="4" class="xl89" v-html="$t('tableLine[100]')"></td>
+        <td class="xl107" v-html="$t('tableLine[101]')"></td>
+        <td class="xl98" v-html="$t('tableLine[102]')"></td>
+        <td class="xl93" v-html="$t('tableLine[103]')"></td>
+        <td class="xl118" v-html="$t('tableLine[104]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl90" v-html="$t('tableLine[104]')">C1</td>
-        <td colspan="3" class="xl192" v-html="$t('tableLine[105]')">Acquisitions avec une carte d'achat</td>
-        <td class="xl81" v-html="$t('tableLine[106]')">P*</td>
-        <td class="xl98" v-html="$t('tableLine[107]')">D13</td>
-        <td class="xl106" v-html="$t('tableLine[108]')">Dispense du paiement des frais d'intérêts &amp; administratifs</td>
-        <td class="xl118" v-html="$t('tableLine[109]')">&nbsp;</td>
+        <td class="xl90" v-html="$t('tableLine[105]')"></td>
+        <td colspan="3" class="xl192" v-html="$t('tableLine[106]')"></td>
+        <td class="xl81" v-html="$t('tableLine[107]')"></td>
+        <td class="xl98" v-html="$t('tableLine[108]')"></td>
+        <td class="xl106" v-html="$t('tableLine[109]')"></td>
+        <td class="xl118" v-html="$t('tableLine[110]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl91" v-html="$t('tableLine[110]')">C2</td>
-        <td colspan="3" class="xl192" v-html="$t('tableLine[111]')">Demande de marché d'urgence</td>
-        <td class="xl81" v-html="$t('tableLine[112]')">&nbsp;</td>
-        <td class="xl98" v-html="$t('tableLine[113]')">D14</td>
-        <td class="xl93" v-html="$t('tableLine[114]')">Remise de taxe provinciale percue</td>
-        <td class="xl118" v-html="$t('tableLine[115]')">&nbsp;</td>
+        <td class="xl91" v-html="$t('tableLine[111]')"></td>
+        <td colspan="3" class="xl192" v-html="$t('tableLine[112]')"></td>
+        <td class="xl81" v-html="$t('tableLine[113]')"></td>
+        <td class="xl98" v-html="$t('tableLine[114]')"></td>
+        <td class="xl93" v-html="$t('tableLine[115]')"></td>
+        <td class="xl118" v-html="$t('tableLine[116]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl90" v-html="$t('tableLine[116]')">C3</td>
-        <td colspan="3" class="xl192" v-html="$t('tableLine[117]')">Biens et services reliés aux biens</td>
-        <td class="xl81" v-html="$t('tableLine[118]')">&nbsp;</td>
-        <td colspan="2" rowspan="2" class="xl99" v-html="$t('tableLine[119]')">E - Pouvoir d'attestation (art. 34 LGFP)</td>
-        <td rowspan="2" class="xl191" v-html="$t('tableLine[120]')">&nbsp;</td>
+        <td class="xl90" v-html="$t('tableLine[117]')"></td>
+        <td colspan="3" class="xl192" v-html="$t('tableLine[118]')"></td>
+        <td class="xl81" v-html="$t('tableLine[119]')"></td>
+        <td colspan="2" rowspan="2" class="xl99" v-html="$t('tableLine[120]')"></td>
+        <td rowspan="2" class="xl191" v-html="$t('tableLine[121]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl90" v-html="$t('tableLine[121]')">C4</td>
-        <td colspan="3" class="xl192" v-html="$t('tableLine[122]')">Concurrence par appel d'offres électronique - Services</td>
-        <td class="xl81" v-html="$t('tableLine[123]')">&nbsp;</td>
+        <td class="xl90" v-html="$t('tableLine[122]')"></td>
+        <td colspan="3" class="xl192" v-html="$t('tableLine[123]')"></td>
+        <td class="xl81" v-html="$t('tableLine[124]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl90" v-html="$t('tableLine[124]')">C5</td>
-        <td colspan="3" class="xl192" v-html="$t('tableLine[125]')">Concurrence par appel d'offres électronique - Impression</td>
-        <td class="xl81" v-html="$t('tableLine[126]')">&nbsp;</td>
-        <td class="xl99" v-html="$t('tableLine[127]')">E1</td>
-        <td class="xl106" v-html="$t('tableLine[128]')">Rémunération et avantages sociaux</td>
-        <td class="xl118" v-html="$t('tableLine[129]')">P</td>
+        <td class="xl90" v-html="$t('tableLine[125]')"></td>
+        <td colspan="3" class="xl192" v-html="$t('tableLine[126]')"></td>
+        <td class="xl81" v-html="$t('tableLine[127]')"></td>
+        <td class="xl99" v-html="$t('tableLine[128]')"></td>
+        <td class="xl106" v-html="$t('tableLine[129]')"></td>
+        <td class="xl118" v-html="$t('tableLine[130]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl91" v-html="$t('tableLine[130]')">C6</td>
-        <td colspan="3" class="xl192" v-html="$t('tableLine[131]')">Concurrence traditionnelle - Services</td>
-        <td class="xl101" v-html="$t('tableLine[132]')">&nbsp;</td>
-        <td class="xl99" v-html="$t('tableLine[133]')">E2</td>
-        <td class="xl106" v-html="$t('tableLine[134]')">Remboursement de petite caisse</td>
-        <td class="xl118" v-html="$t('tableLine[135]')">0.2K</td>
+        <td class="xl91" v-html="$t('tableLine[131]')"></td>
+        <td colspan="3" class="xl192" v-html="$t('tableLine[132]')"></td>
+        <td class="xl101" v-html="$t('tableLine[133]')"></td>
+        <td class="xl99" v-html="$t('tableLine[134]')"></td>
+        <td class="xl106" v-html="$t('tableLine[135]')"></td>
+        <td class="xl118" v-html="$t('tableLine[136]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl90" v-html="$t('tableLine[136]')">C7</td>
-        <td colspan="3" class="xl192" v-html="$t('tableLine[137]')">Marché non concurrentiel - Services</td>
-        <td class="xl101" v-html="$t('tableLine[138]')">&nbsp;</td>
-        <td class="xl99" v-html="$t('tableLine[139]')">E3</td>
-        <td class="xl93" v-html="$t('tableLine[140]')">Tous les autres paiements</td>
-        <td class="xl118" v-html="$t('tableLine[141]')">P</td>
+        <td class="xl90" v-html="$t('tableLine[137]')"></td>
+        <td colspan="3" class="xl192" v-html="$t('tableLine[138]')"></td>
+        <td class="xl101" v-html="$t('tableLine[139]')"></td>
+        <td class="xl99" v-html="$t('tableLine[140]')"></td>
+        <td class="xl93" v-html="$t('tableLine[141]')"></td>
+        <td class="xl118" v-html="$t('tableLine[142]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl90" v-html="$t('tableLine[142]')">C8</td>
-        <td colspan="3" class="xl192" v-html="$t('tableLine[143]')">Marché non concurrentiel - Impression</td>
-        <td class="xl101" v-html="$t('tableLine[144]')">&nbsp;</td>
-        <td colspan="2" rowspan="2" class="xl203" style="   border-bottom:.5pt solid black" v-html="$t('tableLine[145]')">F - Pouvoir de payer (art. 33 LGFP)</td>
-        <td rowspan="2" class="xl207" style="border-bottom:.5pt solid black;border-top:   none" v-html="$t('tableLine[146]')">&nbsp;</td>
+        <td class="xl90" v-html="$t('tableLine[143]')"></td>
+        <td colspan="3" class="xl192" v-html="$t('tableLine[144]')"></td>
+        <td class="xl101" v-html="$t('tableLine[145]')"></td>
+        <td colspan="2" rowspan="2" class="xl203" style=" border-bottom:.5pt solid black" v-html="$t('tableLine[146]')"></td>
+        <td rowspan="2" class="xl207" style="border-bottom:.5pt solid black;border-top: none" v-html="$t('tableLine[147]')"></td>
       </tr>
       <tr class="xl68">
         <td class="xl68"></td>
-        <td class="xl90" v-html="$t('tableLine[147]')">C9</td>
-        <td colspan="3" class="xl200" v-html="$t('tableLine[148]')">Commande subséquente - Biens et services</td>
-        <td class="xl101" v-html="$t('tableLine[149]')">&nbsp;</td>
+        <td class="xl90" v-html="$t('tableLine[148]')"></td>
+        <td colspan="3" class="xl200" v-html="$t('tableLine[149]')"></td>
+        <td class="xl101" v-html="$t('tableLine[150]')"></td>
       </tr>
       <tr>
         <td></td>
-        <td class="xl104" colspan="3" v-html="$t('tableLine[150]')">Légende:</td>
+        <td class="xl104" colspan="3" v-html="$t('tableLine[151]')"></td>
         <td colspan="4"></td>
         <td></td>
         <td class="xl72"></td>
@@ -267,17 +266,17 @@
       </tr>
       <tr>
         <td></td>
-        <td class="xl161" v-html="$t('tableLine[151]')">P</td>
-        <td colspan="4" class="xl105" v-html="$t('tableLine[152]')">Plein pouvoir à l'intérieur des limites budgétaires et assujettie aux autorités ministérielles déléguées.<br> <br> Tous les montants indiqués sont le maximum alloué par transaction, y compris les taxes. Ces montants sont en milliers (k) ou en millions (M) de dollars.</td>
-        <td class="xl160" v-html="$t('tableLine[153]')">**<br> <br> <br> 1</td>
-        <td colspan="2" class="xl209" v-html="$t('tableLine[154]')">Consulter le manuel sur la délégation des pouvoirs de signer des documents financiers - article 6B (niveaux I &amp; II seulement)<br> <br> Le pouvoir de conclure des marchés avec d'anciens fonctionnaires qui touchent une pension n'a pas été délégué et conséquemment l'approbation ministérielle est requise pour de tels contrats<br> <br> </td>
+        <td class="xl161" v-html="$t('tableLine[152]')"></td>
+        <td colspan="4" class="xl105" v-html="$t('tableLine[153]')"></td>
+        <td class="xl160" v-html="$t('tableLine[154]')"></td>
+        <td colspan="2" class="xl209" v-html="$t('tableLine[155]')"></td>
       </tr>
       <tr>
         <td></td>
-        <td class="xl102" v-html="$t('tableLine[155]')">*</td>
-        <td colspan="4" class="xl105" v-html="$t('tableLine[156]')">Consulter le manuel sur la délégation des pouvoirs de signer des documents financiers</td>
-        <td class="xl160" v-html="$t('tableLine[157]')">2</td>
-        <td class="xl159" v-html="$t('tableLine[158]')">Les modifications aux contrats excédant 50% de l'engagement initial requiert la signature du niveau II</td>
+        <td class="xl102" v-html="$t('tableLine[156]')"></td>
+        <td colspan="4" class="xl105" v-html="$t('tableLine[157]')"></td>
+        <td class="xl160" v-html="$t('tableLine[158]')"></td>
+        <td class="xl159" v-html="$t('tableLine[159]')"></td>
         <td class="xl105"></td>
       </tr>
       <tr>
@@ -291,46 +290,214 @@
         <td colspan="23"></td>
       </tr>
       <tr>
-        <td></td>
-        <td colspan="8" class="xl213" v-html="$t('tableLine[159]')">J'accepte d'assumer mes responsabilités et de m'assurer de bien comprendre les limites de mes pouvoirs et de ma responsabilité financière, pour veiller à ce que les ressources financières soient utilisées judicieusement, selon les pouvoirs qui m'ont été délégués, et à ce que les pertes dues au gaspillage, aux abus, à la mauvaise gestion, aux erreurs, à la fraude, aux omissions et à toute forme d’irrégularité soient réduites au minimum.<br> <br> J'accepte de ne pas exercer :<br> 1. le pouvoir de dépenser, d'attester ou de payer pour une dépense dont je peux tirer profit directement ou indirectement;<br> 2. le pouvoir d'attester en vertu de l'article 34 de la Loi sur la gestion des finances publiques&nbsp;(LGFP) et le pouvoir de payer en vertu de l'article&nbsp;33 de la LGFP pour une même transaction.<br> <br> Je reconnais que les articles 76 à 81 (Responsabilité civile et infractions) de la LGFP ainsi que les articles&nbsp;121 (Fraudes envers le gouvernement), 122 (Abus de confiance par un fonctionnaire public), 322 (Vol) et 380 (Fraude) du Code criminel sont susceptibles de s'appliquer.</td>
+        <td ></td>
+        <td colspan="8" class="xl213" v-html="$t('tableLine[160]')"></td>
         <td class="xl72"></td>
         <td class="xl72"></td>
         <td colspan="23"></td>
       </tr>
       <tr>
         <td></td>
-        <td colspan="6" class="xl216" v-html="$t('tableLine[160]')">Nom du titulaire:<br> <br> Titre du poste:</td>
-        <td colspan="2" class="xl219">Autorisé par<br>
-          <font class="font16">(il doit s'agir d'un niveau opéerationnel supérieur au niveau indiqué au debut du formulaire)</font>
-        </td>
+        <td colspan="6" class="xl216" v-html="$t('tableLine[161]')"></td>
+        <td colspan="2" class="xl219" v-html="$t('tableLine[162]')"></td>
       </tr>
       <tr>
         <td></td>
-        <td colspan="6" class="xl221" v-html="$t('tableLine[161]')">Signature:</td>
-        <td colspan="2" class="xl224" v-html="$t('tableLine[162]')">Nom: <br> <br> Titre du poste:</td>
+        <td colspan="6" class="xl221" v-html="$t('tableLine[163]')"></td>
+        <td colspan="2" class="xl224" v-html="$t('tableLine[164]')"></td>
       </tr>
       <tr>
         <td></td>
-        <td colspan="6" class="xl221" v-html="$t('tableLine[163]')">Centres financiers:</td>
-        <td colspan="2" class="xl230" v-html="$t('tableLine[164]')">Signature:</td>
+        <td colspan="6" class="xl221" v-html="$t('tableLine[165]')"></td>
+        <td colspan="2" class="xl230" v-html="$t('tableLine[166]')"></td>
       </tr>
       <tr>
         <td></td>
-        <td align="left" valign="top"> <span>
-          </span> <span>
-          </span></td>
-        <td colspan="5" class="xl232" v-html="$t('tableLine[165]')">Indéterminée Intérimaire ou temporaire</td>
-        <td colspan="2" class="xl234" v-html="$t('tableLine[166]')">Date:</td>
+        <td align="left" valign="top"> <span> </span> <span> </span></td>
+        <td colspan="5" class="xl232" v-html="$t('tableLine[167]')"></td>
+        <td colspan="2" class="xl234" v-html="$t('tableLine[168]')"></td>
         <td colspan="25"></td>
       </tr>
     </tbody>
   </table>
 </template>
 <i18n>{
-  "en": {},
+  "en": {
+    "tableLine": [
+      "",
+      "Delegation Form<br>Acceptance Of Financial Authorities Delegated By The Minister And The Deputy Minister/president",
+      "Level",
+      "V",
+      "Cost Centre Manager",
+      "A - EXPENDITURE INITIATION ",
+      "&nbsp;",
+      "C - TRANSACTION AUTHORITY (Sect 41 FAA)",
+      "&nbsp;",
+      "A1",
+      "Intergovernmental Agreements",
+      "&nbsp;",
+      "C10",
+      "Requisition to PWGSC - Goods and Services",
+      "&nbsp;",
+      "A2",
+      "Conference - Sponsorships",
+      "&nbsp;",
+      "C11",
+      "Temporary Help Service Contracts / SA",
+      "&nbsp;",
+      "A3",
+      "Conference - Attendance**",
+      "&nbsp;",
+      "C12",
+      "Exceptional Contracts",
+      "&nbsp;",
+      "A4",
+      "Membership and Registration Fees",
+      "&nbsp;",
+      "D - OTHER AUTHORITIES",
+      "&nbsp;",
+      "A5",
+      "Travel within Canada**",
+      "&nbsp;",
+      "A6",
+      "Travel within Continental USA**",
+      "&nbsp;",
+      "D1",
+      "Petty Cash and Standing Advances Establishment",
+      "&nbsp;",
+      "A7",
+      "Travel Abroad including Non-Continental USA**",
+      "&nbsp;",
+      "D2",
+      "Specified Purpose Accounts",
+      "&nbsp;",
+      "A8",
+      "Hospitality**",
+      "&nbsp;",
+      "D3",
+      "Write-off of Assets",
+      "&nbsp;",
+      "A9",
+      "Relocation",
+      "&nbsp;",
+      "D4",
+      "Losses of Money",
+      "&nbsp;",
+      "A10",
+      "Grants and Contributions",
+      "&nbsp;",
+      "D5",
+      "Debt Write-off",
+      "&nbsp;",
+      "A11",
+      "Learning and Development**",
+      "F*",
+      "D6",
+      "Request for return of Cheques",
+      "&nbsp;",
+      "A12",
+      "Awards ",
+      "&nbsp;",
+      "D7",
+      "Distribution Of Crown Assets Disposal Receipts",
+      "&nbsp;",
+      "A13",
+      "Honorarium",
+      "&nbsp;",
+      "D8",
+      "Memorandum of Understanding (MOU) - Revenue",
+      "&nbsp;",
+      "A14",
+      "Salaries and Social Benefits",
+      "&nbsp;",
+      "D9",
+      "Revenue Invoicing",
+      "F",
+      "A15",
+      "All other Goods and Services",
+      "F",
+      "D10",
+      "Refund of Revenue (Credit Note)",
+      "&nbsp;",
+      "B - COMMITMENT AUTHORITY (Sect 32 FAA)",
+      "F",
+      "D11",
+      "Ex Gratia Payments &amp; Claims Against the Crown",
+      "&nbsp;",
+      "C - TRANSACTION AUTHORITY (Sect 41 FAA)1,2",
+      "&nbsp;",
+      "D12",
+      "Treasury Board Submissions",
+      "&nbsp;",
+      "C1",
+      "Acquisition Card Purchases",
+      "F*",
+      "D13",
+      "Waiving Payment of Interest and Administrative Charges",
+      "&nbsp;",
+      "C2",
+      "Emergency Contract Request",
+      "&nbsp;",
+      "D14",
+      "Provincial Sales Tax Remittance",
+      "&nbsp;",
+      "C3",
+      "Goods and Associated Services",
+      "&nbsp;",
+      "E - CERTIFICATION AUTHORITY (Sect 34 FAA)",
+      "&nbsp;",
+      "C4",
+      "Electronic Tendering Competition - Services",
+      "&nbsp;",
+      "C5",
+      "Electronic Tendering Competition - Printing",
+      "&nbsp;",
+      "E1",
+      "Salaries and Social Benefits",
+      "F",
+      "C6",
+      "Traditional Competition - Services",
+      "&nbsp;",
+      "E2",
+      "Petty Cash Reimbursement",
+      "0.2K",
+      "C7",
+      "Non-Competitive Contracts - Services",
+      "&nbsp;",
+      "E3",
+      "All Other payments",
+      "F",
+      "C8",
+      "Non-Competitive Contracts - Printing",
+      "&nbsp;",
+      "F - PAYMENT AUTHORITY (Sect 33 FAA)",
+      "&nbsp;",
+      "C9",
+      "Call-up - Goods and Services",
+      "&nbsp;",
+      "Legend:",
+      "F",
+      "Plein pouvoir à l'intérieur des limites budgétaires et assujettie aux autorités ministérielles déléguées.<br> <br> Tous les montants indiqués sont le maximum alloué par transaction, y compris les taxes. Ces montants sont en milliers (k) ou en millions (M) de dollars.",
+      "**<br> <br> <br> 1",
+      "Consulter le manuel sur la délégation des pouvoirs de signer des documents financiers - article 6B (niveaux I &amp; II seulement)<br> <br> Le pouvoir de conclure des marchés avec d'anciens fonctionnaires qui touchent une pension n'a pas été délégué et conséquemment l'approbation ministérielle est requise pour de tels contrats<br> <br>",
+      "*",
+      "Consulter le manuel sur la délégation des pouvoirs de signer des documents financiers",
+      "2",
+      "Les modifications aux contrats excédant 50% de l'engagement initial requiert la signature du niveau II",
+      "I accept to assume my responsibilities and understand the limits of my authorities and my financial responsibility to ensure that financial resources are used appropriately, based on my delegated authority, and loses due to waste, abuse, mismanagement, errors, frauds, omissions and other irregularities are minimized.<br> <br> I agree not to exercise either:<br> 1. Spending, certification or payment authority for an expenditure from which I can directly or indirectly benefit.<br> 2. Certification authority under section 34 of the Financial Administration Act (FAA) and payment authority under section 33 of the FAA on the same payment.<br> <br> I acknowledge that sections 76 to 81 (Civil Liabilities and Offences) of the Financial Administration Act as well as sections 121 (Frauds against the Government), 122 (Breach of Trust), 322 (Theft) and 380 (Fraud) of the Criminal Code may apply.",
+      "Name of Incumbent:<br><br>Position Title:",
+      "Authorized by <br> <span class='font22'>(Must be an Operational Level higher than the Level indicated at the top of this form)</span>",
+      "Signature:",
+      "Nom: <br> <br> Titre du poste:",
+      "Fund Centers / Cost Centre:",
+      "Signature:",
+      "Indeterminate Acting or Temporary basis*",
+      "Date:"
+    ]
+  },
   "fr": {
     "tableLine": [
-    "",
+      "",
       "Formulaire de délégation<br>Acceptation de pouvoirs financiers délégués par le ministre et la sous-ministre/présidente",
       "Niveau",
       "V",
@@ -430,6 +597,7 @@
       "D11",
       "Paiements à titre gracieux et réclamat. contre la Couronne",
       "&nbsp;",
+      "C - Pouvoir d'exécuter une opération<font class='font22'><sup>1,2</sup></font>",
       "&nbsp;",
       "D12",
       "Présentations au Conseil du Trésor",
@@ -491,6 +659,7 @@
       "Les modifications aux contrats excédant 50% de l'engagement initial requiert la signature du niveau II",
       "J'accepte d'assumer mes responsabilités et de m'assurer de bien comprendre les limites de mes pouvoirs et de ma responsabilité financière, pour veiller à ce que les ressources financières soient utilisées judicieusement, selon les pouvoirs qui m'ont été délégués, et à ce que les pertes dues au gaspillage, aux abus, à la mauvaise gestion, aux erreurs, à la fraude, aux omissions et à toute forme d’irrégularité soient réduites au minimum.<br> <br> J'accepte de ne pas exercer :<br> 1. le pouvoir de dépenser, d'attester ou de payer pour une dépense dont je peux tirer profit directement ou indirectement;<br> 2. le pouvoir d'attester en vertu de l'article 34 de la Loi sur la gestion des finances publiques&nbsp;(LGFP) et le pouvoir de payer en vertu de l'article&nbsp;33 de la LGFP pour une même transaction.<br> <br> Je reconnais que les articles 76 à 81 (Responsabilité civile et infractions) de la LGFP ainsi que les articles&nbsp;121 (Fraudes envers le gouvernement), 122 (Abus de confiance par un fonctionnaire public), 322 (Vol) et 380 (Fraude) du Code criminel sont susceptibles de s'appliquer.",
       "Nom du titulaire:<br> <br> Titre du poste:",
+      "Autorisé par<br><font class='font16'>(il doit s'agir d'un niveau opéerationnel supérieur au niveau indiqué au debut du formulaire)</font>",
       "Signature:",
       "Nom: <br> <br> Titre du poste:",
       "Centres financiers:",

@@ -1,7 +1,6 @@
 <template>
-	<span>
-		<span v-if="$i18n.locale=='fr'"><frenchSignatureCard /></span>
-		<span v-if="$i18n.locale=='en'"><englishSignatureCard /></span>
+	<span><frenchSignatureCard />
+	
 	</span>
 </template>
 <script type="text/javascript">

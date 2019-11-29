@@ -32,7 +32,9 @@
       },
       "feedback": {
         "1": "<span class='v-right' /><strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+        "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
       "conclusion": "As per the signed delegation of authority chart, the manager does not have authority to initiate hospitality, so the correct answer is $0. For more information on hospitality, visit https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228."
     },
@@ -90,7 +92,9 @@
       },
       "feedback": {
         "1": "<span class='v-right' /><strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+        "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
       "conclusion": " Selon le tableau de délégation signé, le gestionnaire n'a pas le pouvoir d'entreprendre des activités d'accueil; la bonne réponse est donc 0 $. Pour de plus amples renseignements sur l'accueil, visitez le site https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228."
     },

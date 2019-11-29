@@ -43,9 +43,9 @@
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('delegateAuthority')}}</template>
         <delegAuthority />
       </b-modal>
-      <b-modal id="forecastBudget" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal id="spendMechanisms" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
-        <budgetForecastActivity />
+        <spendMechanisms />
       </b-modal>
       <b-modal no-stacking id="spendS32tryIt" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('tryItTitle')}}</template>
@@ -62,9 +62,9 @@
     </section>
     <div class="bottomNav spendSection">
       <microlearning path="spendKey" size="140" completion="100" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
-      <microlearning path="spendPart1"  youAreHere imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
+      <microlearning path="spendPart1"  youAreHere  imagePath="InitiateAuthSpending.svg" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
       <microlearning imagePath="KeyMessR.png" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
-      <microlearning size="140" ime="20" completion="10" imagePath="CreateBud.png" :text="$t('MonitorControlFinances')" />
+      <microlearning size="140" ime="20" completion="10" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
       <microlearning size="140" time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
     </div>
   </div>
@@ -72,7 +72,7 @@
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
 import checkBudget from '~/components/checkBudget'
-import budgetForecastActivity from '~/components/budgetForecastActivity'
+import spendMechanisms from '~/components/spendMechanisms'
 import delegAuthority from '~/components/delegAuthority'
 import spendS32tryIt from '~/components/spendS32tryIt'
 import budgetQuiz from '~/components/budgetQuiz'
@@ -82,7 +82,7 @@ export default {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["checkYourBudget", "delegAuth", "", "","spendS32tryIt"],
+      modalArray: ["checkYourBudget", "delegAuth", "spendMechanisms", "","spendS32tryIt"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -98,7 +98,7 @@ export default {
     microlearning,
     delegAuthority,
     checkBudget,
-    budgetForecastActivity,
+    spendMechanisms,
     spendS32tryIt,
     budgetQuiz,
     plusIcon

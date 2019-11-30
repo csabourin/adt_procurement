@@ -67,6 +67,9 @@
         </b-tab>
         <b-tab title="Question 2">
           <radioQuiz :Question="$t('q2')" qId="2" />
+          <br>
+          <br>
+          <SignatureCard />
         </b-tab>
         <b-tab title="Question 3">
           <radioQuiz :Question="$t('q3')" qId="3" />
@@ -81,10 +84,12 @@
 <script type="text/javascript">
 import checkboxQuiz from "~/components/checkboxQuiz"
 import radioQuiz from "~/components/radioQuiz"
+import SignatureCard from "~/components/delegationChart/signatureCard"
 export default {
   components: {
     checkboxQuiz,
-    radioQuiz
+    radioQuiz,
+    SignatureCard
   }
 }
 </script>

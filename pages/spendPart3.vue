@@ -56,7 +56,7 @@
       <microlearning path="spendKey" size="140" completion="100" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
       <microlearning path="spendPart1"  imagePath="InitiateAuthSpending.svg" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
       <microlearning path="spendPart2" imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
-      <microlearning youAreHere size="140" ime="20" completion="10" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
+      <microlearning path="spendPart3" youAreHere size="140" ime="20" completion="10" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
       <microlearning size="140" time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
     </div>
   </div>

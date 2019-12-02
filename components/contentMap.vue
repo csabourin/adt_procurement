@@ -27,10 +27,10 @@
         <nuxt-link :to="localePath('spendPart1')" v-html="$t('InitiateAuthorizeSpending')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')" v-html="$t('ExerciseFinancialAuthority')" />
+        <nuxt-link :to="localePath('spendPart2')" v-html="$t('ExerciseFinancialAuthority')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')" v-html="$t('MonitorControlFinances')" />
+        <nuxt-link :to="localePath('spendPart3')" v-html="$t('MonitorControlFinances')" />
       </li>
       <li>
         <nuxt-link :to="localePath('null')" v-html="$t('Test')" />

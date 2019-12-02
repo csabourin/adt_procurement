@@ -4,7 +4,7 @@
     
     <section>
       <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/S32Part1Poster.jpg')" :src="require('~/assets/'+ $i18n.locale +'/S32Part1.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isReady">
-        <track :src="require('~/assets/'+ $i18n.locale +'/SpendPart2.vtt')" kind="chapters" default="" @load="generate">
+        <track :src="require('~/assets/'+ $i18n.locale +'/SpendPart3.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
@@ -35,17 +35,21 @@
         <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>
     </section>
     <section>
-      <b-modal no-stacking id="CertificationAuthority" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('CertAuthorityTitle')}}</template>
-    <CertificationAuthority />
+      <b-modal no-stacking id="ContinuousMonitoring" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('ContinuousMonitoringTitle')}}</template>
+    <ContinuousMonitoring />
         </b-modal>
-      <b-modal id="AccuracyOfInvoice" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('delegateAuthority')}}</template>
-        <AccuracyInvoice />
+      <b-modal id="DataComparison" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('DataComparisonTitle')}}</template>
+        <DataComparison />
       </b-modal>
-      <b-modal id="ProcessingInvoice" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
-        <spendMechanisms />
+      <b-modal id="YearEndProcedures" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('YearEndProceduresTitle')}}</template>
+        <YearEndProcedures />
+      </b-modal>
+      <b-modal id="spendQuizModal" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('TakeTheQuiz')}}</template>
+        <spendQuiz />
       </b-modal>
     </section>
     <div class="bottomNav spendSection">
@@ -59,19 +63,16 @@
 </template>
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
-import CertificationAuthority from '~/components/Spend2CertificationAuthority'
-import spendMechanisms from '~/components/spendMechanisms'
-import delegAuthority from '~/components/delegAuthority'
-import spendS32tryIt from '~/components/spendS32tryIt'
-import AccuracyInvoice from '~/components/Spend2AccuracyInvoice'
-import budgetQuiz from '~/components/budgetQuiz'
-import RecordingFinancialSystem from '~/components/RecordingFinancialSystem'
+import ContinuousMonitoring from '~/components/spendPart3ContinuousMonitoring'
+import DataComparison from '~/components/spendPart3DataComparison'
+import YearEndProcedures from '~/components/SpendPart3YearEnd'
+import spendQuiz from '~/components/spendPart3Quiz'
 export default {
   data() {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["CertificationAuthority", "AccuracyOfInvoice", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"],
+      modalArray: ["ContinuousMonitoring", "DataComparison", "YearEndProcedures","spendQuizModal"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -85,11 +86,10 @@ export default {
   },
   components: {
     microlearning,
-    AccuracyInvoice,
-    CertificationAuthority,
-    spendMechanisms,
-    budgetQuiz,
-    RecordingFinancialSystem
+    ContinuousMonitoring,
+    DataComparison,
+    YearEndProcedures,
+    spendQuiz
   },
   methods: {
     isReady() { this.isItReady = true },
@@ -138,14 +138,14 @@ export default {
       this.isPlayingNow = videoPlayer.currentTime
       const isNow = this.isPlayingNow
       this.currentFrame = this.startTime.findIndex(element => element === isNow)
-      localStorage.setItem("CreateBudgetCurrentPlaying", this.currentFrame)
+      localStorage.setItem("SpendPart3CurrentPlaying", this.currentFrame)
       this.$nextTick(function() {
         setTimeout(function() { videoPlayer.play() }, 250)
         this.justSeeked = false
       })
     },
     resumePosition() {
-      const savedPosition = this.startTime[localStorage.getItem("CreateBudgetCurrentPlaying")]
+      const savedPosition = this.startTime[localStorage.getItem("SpendPart3CurrentPlaying")]
       if (savedPosition) {
         this.$refs.videoplayer.currentTime = savedPosition
       }
@@ -157,7 +157,7 @@ export default {
         const isNow = this.isPlayingNow
         this.hasPlayed = v.played.length
         this.currentFrame = this.endTime.findIndex(element => element > isNow)
-        localStorage.setItem("CreateBudgetCurrentPlaying", this.currentFrame)
+        localStorage.setItem("SpendPart3CurrentPlaying", this.currentFrame)
         this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
         if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
         this.isPlayingSoon = v.currentTime
@@ -274,9 +274,9 @@ button.accessibilityButton {
   "TakeTheQuiz":"Take the Quiz",
   "tryItTitle":"Activity: Try it!",
   "adjustwptitle":"Activity: Adjust the Work plan",
-  "delegateAuthority":"Activity: Delegation of Authority",
-  "CertAuthorityTitle":"Activity: Certification Authority",
-  "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
+  "DataComparisonTitle":"Activity: Data Comparison",
+  "ContinuousMonitoringTitle":"Activity: Continuous Monitoring",
+  "YearEndProceduresTitle":"Activity: Year-End Procedures",
   "RecordingTitle":"Activity: Recording in the Financial System",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
@@ -287,10 +287,10 @@ button.accessibilityButton {
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
-  "delegateAuthority":"Activité: Délégation des pouvoirs",
-  "CertAuthorityTitle":"Activité: Autorité de certification",
+  "DataComparisonTitle":"Activité: Délégation des pouvoirs",
+  "ContinuousMonitoringTitle":"Activité: Autorité de certification",
   "tryItTitle":"Activité: Essayons-le!",
-  "forecastBudgetTitle":"Activité: Prévoyez vos besoins budgétaires",
+  "YearEndProceduresTitle":"Activité: Prévoyez vos besoins budgétaires",
   "RecordingTitle":"Activité: Enregistrement dans le système financier",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l'activité",

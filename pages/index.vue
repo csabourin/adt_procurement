@@ -31,7 +31,7 @@
       <microlearning path="spendKey" time="5" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
       <microlearning imagePath="InitiateAuthSpending.svg" path="spendPart1" time="20" :text="$t('InitiateAuthorizeSpending')" />
       <microlearning imagePath="ExerciseFinancialAuthority.svg" path="spendPart2" time="20" :text="$t('ExerciseFinancialAuthority')" />
-      <microlearning time="20" :text="$t('MonitorControlFinances')" />
+      <microlearning time="20" path="spendPart3" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
       <microlearning time="15" :text="$t('Test')" />
     </section>
     <hr class="spendHr">

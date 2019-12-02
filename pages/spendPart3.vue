@@ -272,12 +272,9 @@ button.accessibilityButton {
 <i18n>{
   "en":{
   "TakeTheQuiz":"Take the Quiz",
-  "tryItTitle":"Activity: Try it!",
-  "adjustwptitle":"Activity: Adjust the Work plan",
   "DataComparisonTitle":"Activity: Data Comparison",
   "ContinuousMonitoringTitle":"Activity: Continuous Monitoring",
   "YearEndProceduresTitle":"Activity: Year-End Procedures",
-  "RecordingTitle":"Activity: Recording in the Financial System",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
   "playSegment":"Play video segment",
@@ -285,13 +282,9 @@ button.accessibilityButton {
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
-  "completewptitle":"Activité: Compléter le plan de travail",
-  "adjustwptitle":"Activité: Ajuster le plan de travail",
-  "DataComparisonTitle":"Activité: Délégation des pouvoirs",
-  "ContinuousMonitoringTitle":"Activité: Autorité de certification",
-  "tryItTitle":"Activité: Essayons-le!",
-  "YearEndProceduresTitle":"Activité: Prévoyez vos besoins budgétaires",
-  "RecordingTitle":"Activité: Enregistrement dans le système financier",
+  "DataComparisonTitle":"Activité: Comparaison des données",
+  "ContinuousMonitoringTitle":"Activité: Suivi continu",
+  "YearEndProceduresTitle":"Activité: Procédures de fin d’année",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l'activité",
   "playSegment":"Faire jouer le segment vidéo",
@@ -299,3 +292,6 @@ button.accessibilityButton {
   }
   }
 </i18n>
+
+
+

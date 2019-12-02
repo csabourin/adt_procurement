@@ -30,7 +30,7 @@
     <section class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }">
       <microlearning path="spendKey" time="5" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
       <microlearning imagePath="InitiateAuthSpending.svg" path="spendPart1" time="20" :text="$t('InitiateAuthorizeSpending')" />
-      <microlearning time="20" :text="$t('ExerciseFinancialAuthority')" />
+      <microlearning imagePath="ExerciseFinancialAuthority.svg" path="spendPart2" time="20" :text="$t('ExerciseFinancialAuthority')" />
       <microlearning time="20" :text="$t('MonitorControlFinances')" />
       <microlearning time="15" :text="$t('Test')" />
     </section>

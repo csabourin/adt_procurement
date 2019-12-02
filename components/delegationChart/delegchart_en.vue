@@ -1,14 +1,14 @@
 <template>
   <span>
     <main role="main" property="mainContentOfPage">
-      <div id="dynamic_content" data-ajax-replace="content/jobaid.html" class="wb-init wb-data-ajax-replace-inited">
+      <div>
         <div id="auth_matrix" class="container-fluid">
           <h1>Delegation of Spending and Financial Signing Authorities Chart</h1>
           <p>Please note that this partial delegation of authorities chart for a fictitious department has been developed strictly for the purposes of this course. It does not necessarily contain all of the elements and information that would normally be included in a complete or actual chart. Consult your organizational delegation of authorities chart and related documentation in order to obtain the complete and exact delegation information for your organization.</p>
           <table class="DelegChart c49" border="1">
             <tbody>
               <tr>
-                <td class="c41-noright text-left" colspan="2"><img alt="Canada Flag" id="ui-id-2" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/drapeauCanada.png" title="Canada Flag">&nbsp;</td>
+                <td class="c41-noright text-left" colspan="2"><img alt="Canada Flag" id="ui-id-2" src="~/assets/drapeauCanada.png" title="Canada Flag">&nbsp;</td>
                 <td class="c41-noleft text-left" colspan="37">
                   <p><strong>Department Name:</strong> Department of Public Infrastructure</p>
                 </td>
@@ -1197,12 +1197,12 @@
               </tr>
               <tr>
                 <td class="c35-noright text-left" colspan="19">
-                  <p><strong>Approved by Mr. Arthur Vandale</strong></p><img alt="Signature of Arthur Vandale" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/signature_DM.png">
+                  <p><strong>Approved by Mr. Arthur Vandale</strong></p><img alt="Signature of Arthur Vandale" src="~/assets/signature_DM.png">
                   <p style="text-decoration: overline;line-height: 1.2em">Arthur Vandale, Deputy Minister</p>
                   <p class="pull-right">&nbsp;</p>
                 </td>
                 <td class="c35-noleft text-left" colspan="20">
-                  <p><strong>Approved by Hon. Mary Ann Russell</strong></p><img alt="Signature of Honorable Mary Ann Russell" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/signature_M.png">
+                  <p><strong>Approved by Hon. Mary Ann Russell</strong></p><img alt="Signature of Honorable Mary Ann Russell" src="~/assets/signature_M.png">
                   <p style="text-decoration: overline;line-height: 1.2em">Hon. Mary Ann Russell , Minister</p>
                   <p class="pull-right">Effective date: Dec. 10, 2019</p>
                 </td>

@@ -65,7 +65,7 @@
 import microlearning from '~/components/microlearning'
 import ContinuousMonitoring from '~/components/spendPart3ContinuousMonitoring'
 import DataComparison from '~/components/spendPart3DataComparison'
-import YearEndProcedures from '~/components/SpendPart3YearEnd'
+import YearEndProcedures from '~/components/spendPart3YearEnd'
 import spendQuiz from '~/components/spendPart3Quiz'
 export default {
   data() {

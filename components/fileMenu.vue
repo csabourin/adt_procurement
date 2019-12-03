@@ -20,7 +20,7 @@
         </b-card>
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.toolbox-1 variant="light"><img src="~/assets/LinksIcon.svg" width="50" height="50"> {{$t('links')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-1 variant="light"><img alt="" src="~/assets/LinksIcon.svg" width="50" height="50"> {{$t('links')}}</b-button>
           </b-card-header>
           <b-collapse id="toolbox-1" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
@@ -34,7 +34,7 @@
         </b-card>
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.toolbox-3 variant="light"><img src="~/assets/GlossaryIcon.svg" width="50" height="50"> {{$t('glossary')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-3 variant="light"><img alt="" src="~/assets/GlossaryIcon.svg" width="50" height="50"> {{$t('glossary')}}</b-button>
           </b-card-header>
           <b-collapse id="toolbox-3" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
@@ -44,7 +44,7 @@
         </b-card>
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.toolbox-3 variant="light"><img src="~/assets/HelpIcon.svg" width="50" height="50"> {{$t('help')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-3 variant="light"><img alt=""  src="~/assets/HelpIcon.svg" width="50" height="50"> {{$t('help')}}</b-button>
           </b-card-header>
           <b-collapse id="toolbox-3" accordion="my-toolbox" role="tabpanel">
             <b-card-body>

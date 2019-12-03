@@ -102,7 +102,7 @@
       </div>
       <ul id="bar" ref="linkBar">
         <li href='#mainPlayer' v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
-          {{ item }}<br>
+          <p>{{ item }}</p><br>
           <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek" :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
           <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="48" height="48"> </a>
         </li>
@@ -301,7 +301,10 @@ video {
   color: #CCC;
 justify-content: flex-start
 }
-
+#bar > li > p {
+  display: inline-block;
+  height:2em;
+}
 #bar > li.chaptersLink:first-child > a.activityButton { display:none; }
 
 #bar > li:last-child > a {
@@ -359,8 +362,10 @@ justify-content: flex-start
 }
 
 .playButton, .activityButton {
-  position: absolute;
-  bottom: 1.5em;
+  display: inline-block;
+  width:58px;
+  /*position: relative;*/
+  /*bottom: 1.5em;*/
   /*
   Comment out ↑
   vertical-align:bottom;*/

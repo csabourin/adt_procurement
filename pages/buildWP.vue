@@ -303,7 +303,7 @@ justify-content: flex-start
 }
 #bar > li > p {
   display: inline-block;
-  height:2em;
+  height:2.6em;
 }
 #bar > li.chaptersLink:first-child > a.activityButton { display:none; }
 
@@ -372,7 +372,7 @@ justify-content: flex-start
   left: 20px;
 }
 .activityButton {
-    right: 20px;
+  right: 20px;
 }
 
 button.accessibilityButton {

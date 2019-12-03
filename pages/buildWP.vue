@@ -332,7 +332,6 @@ justify-content: flex-start
 
 .chaptersLink:before {
   counter-increment: WPepisode;
-  /*content: "0"counter(WPepisode);*/
   content: counter(WPepisode);
   position: absolute;
   background-color: #587C84;
@@ -364,11 +363,6 @@ justify-content: flex-start
 .playButton, .activityButton {
   display: inline-block;
   width:58px;
-  /*position: relative;*/
-  /*bottom: 1.5em;*/
-  /*
-  Comment out ↑
-  vertical-align:bottom;*/
 }
 .playButton:hover, .activityButton:hover,.playButton:focus, .activityButton:focus {
   /*Insert hover animation here, placeholder for now*/
@@ -379,7 +373,6 @@ justify-content: flex-start
 }
 .activityButton {
     right: 20px;
-    /*transform:rotate(45deg);*/
 }
 
 button.accessibilityButton {

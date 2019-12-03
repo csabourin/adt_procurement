@@ -8,7 +8,7 @@
       <p class="text-left" :style="'width:'+size+'px'">
         <span v-html="text" />
       </p>
-      <div v-if="youAreHere" class="floatOver"><img :src="require('~/assets/YouAreHere.svg')"></div>
+      <div v-if="youAreHere" class="floatOver"><img alt="" :src="require('~/assets/YouAreHere.svg')"></div>
     </nuxt-link>
   </div>
 </template>

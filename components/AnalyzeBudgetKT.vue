@@ -10,14 +10,12 @@
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
             </select> {{$t('sentences[0]')}}</p>
           <p v-if="Q1"><span class="v-right" v-if="Q1=='2'"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
-          <b-button pill variant='warning'>{{$t('submit')}}</b-button>
           <hr>
           <p><select v-model="Q2">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
             </select> {{$t('sentences[1]')}}</p>
           <p v-if="Q2"><span class="v-right" v-if="Q2=='1'"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
-          <b-button pill variant='info'>{{$t('submit')}}</b-button>
           <hr>
           <i18n path="sentences[2]" tag="p"><select v-model="Q3">
               <option disabled value=''>{{$t('qDisabled')}}</option>
@@ -92,6 +90,13 @@
           </p>
         </b-tab>
       </b-tabs>
+      <!-- Control buttons-->
+      <div class="text-center">
+        <b-button-group class="mt-2">
+          <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+          <b-button @click="tabIndex++" :disabled="tabIndex>=2">{{$t('nextPage')}}</b-button>
+        </b-button-group>
+      </div>
     </b-card>
   </span>
 </template>

@@ -240,7 +240,7 @@ video {
   counter-increment: episode;
   content: "0"counter(episode);
   position: absolute;
-  background-color: #587C84;
+  background-color: #7d677d;
   height: 2em;
   right: 0px;
   top: 0px;

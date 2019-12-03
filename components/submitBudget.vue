@@ -21,8 +21,9 @@ export default {
       },
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
-        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> All of these are possible adjustments you could make. Solutions can be diverse - it depends on your situation."
-      }
+        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong>"
+      },
+      "conclusion":"All of these are possible adjustments you could make. Solutions can be diverse - it depends on your situation."
     },
     "q2": {
       "text": "You find out during the proposed budget review meeting that you’re getting three employees and their workload from another team that is being split up among a few managers. What would you do?",
@@ -33,8 +34,9 @@ export default {
       },
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
-        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> The correct answers are Add their activities to your work plan and Add their salaries and O&M to your budget requirements. Converting funds from O&M to Salary is not a solution as your resource requirement is increasing for which you need the funding."
-      }
+        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong>"
+      },
+      "conclusion":"The correct answers are Add their activities to your work plan and Add their salaries and O&M to your budget requirements. Converting funds from O&M to Salary is not a solution as your resource requirement is increasing for which you need the funding."
     }
   },
   "fr": {
@@ -47,8 +49,9 @@ export default {
       },
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
-        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong>  Ce sont tous des ajustements possibles que vous pourriez faire. Les solutions peuvent être diverses - cela dépend de votre situation."
-      }
+        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong>"
+      },
+      "conclusion":"Ce sont tous des ajustements possibles que vous pourriez faire. Les solutions peuvent être diverses - cela dépend de votre situation."
     },
     "q2": {
       "text": "Au cours de la réunion d'examen du budget proposé, vous découvrez que vous obtenez trois employés et leur charge de travail d'une autre équipe qui est répartie entre quelques gestionnaires. Qu'est-ce que vous feriez?",
@@ -59,8 +62,8 @@ export default {
       },
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
-        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> Les bonnes réponses sont d'ajouter leurs activités à votre plan de travail et d'ajouter leurs salaires et F&E à votre budget. La conversion des fonds de F&E en salaires n'est pas une solution, car vos besoins en ressources augmentent et vous avez besoin de ces fonds."
-      }
+        "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> "
+      },"conclusion":"Les bonnes réponses sont d'ajouter leurs activités à votre plan de travail et d'ajouter leurs salaires et F&E à votre budget. La conversion des fonds de F&E en salaires n'est pas une solution, car vos besoins en ressources augmentent et vous avez besoin de ces fonds."
     }
   }
 }</i18n>

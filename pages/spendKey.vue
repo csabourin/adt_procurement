@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
     <h1 class="pageTitle">{{$t('KeyMessages')}}</h1>
-    <p><img src="~/assets/KeyMessS.png"></p>
+    <p><img src="~/assets/KeyMessS.png" alt=""></p>
     <p>&nbsp;</p>
     <span class="spend"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></span>
     <p>&nbsp;</p>

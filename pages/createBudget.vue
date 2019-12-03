@@ -25,7 +25,7 @@
       </div>
       <ul id="bar" ref="linkBar">
         <li href='#mainPlayer' v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
-          {{ item }}<br>
+          <p>{{ item }}</p><br>
           <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek" :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
           <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="48" height="48"> </a>
         </li>
@@ -208,7 +208,10 @@ video {
   justify-content: flex-start;
   counter-reset: episode;
 }
-
+#bar > li > p {
+  display: inline-block;
+  height:2.6em;
+}
 #bar > li.chaptersLink:first-child > a.activityButton { display:none; }
 #bar > li.chaptersLink:nth-child(2) > a.activityButton { display:none; }
 
@@ -247,7 +250,9 @@ video {
   border-radius: 0 0 0 30px;
   padding: .5em .25em 0 1em;
   color: white;
-
+}
+.chaptersLink:nth-child(-n+9):before {
+  content: "0"counter(episode);
 }
 
 .chaptersLink.isPlaying:before {
@@ -265,14 +270,18 @@ video {
 }
 
 .playButton, .activityButton {
-  position: absolute;
-  bottom: 1em;
+  display: inline-block;
+  width:58px;
 }
-
-.playButton{left: 20px;}
+.playButton:hover, .activityButton:hover,.playButton:focus, .activityButton:focus {
+  /*Insert hover animation here, placeholder for now*/
+  opacity:0.8;
+}
+.playButton{
+  left: 20px;
+}
 .activityButton {
-    right: 5px;
-    /*transform:rotate(45deg);*/
+  right: 20px;
 }
 
 button.accessibilityButton {

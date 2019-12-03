@@ -15,7 +15,7 @@ export default {
   backButton: "Back",
   submit: "Submit",
   home: "Home",
-  checkAll: "Check all that apply.",
+  checkAll: "Check all that could apply.",
   selectRight: "Select the correct answer.",
   pleaseAnswer: "Please answer the question!",
   KeyMessages: "Key Messages",

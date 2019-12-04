@@ -21,7 +21,7 @@
           <br>{{$t('wpExample')}}</b-col>
         <b-col>
           <download
-           filename="ADT_Ressources_360.pdf"
+           filename="Budget.xlsx"
            iconColor="spendBackground"
            size=128 :title="$t('bExample')"
            :line1="$t('bLine1')"

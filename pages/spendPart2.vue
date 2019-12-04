@@ -44,8 +44,8 @@
         <AccuracyInvoice />
       </b-modal>
       <b-modal id="ProcessingInvoice" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
-        <spendMechanisms />
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('ProcessInvoiceTitle')}}</template>
+        <ProcessInvoice />
       </b-modal>
     </section>
     <div class="bottomNav spendSection">
@@ -61,18 +61,15 @@
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
 import CertificationAuthority from '~/components/Spend2CertificationAuthority'
-import spendMechanisms from '~/components/spendMechanisms'
 import delegAuthority from '~/components/delegAuthority'
-import spendS32tryIt from '~/components/spendS32tryIt'
 import AccuracyInvoice from '~/components/Spend2AccuracyInvoice'
-import budgetQuiz from '~/components/budgetQuiz'
-import RecordingFinancialSystem from '~/components/RecordingFinancialSystem'
+import ProcessInvoice from '~/components/spendPart2ProcessInvoice'
 export default {
   data() {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["CertificationAuthority", "AccuracyOfInvoice", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"],
+      modalArray: ["CertificationAuthority", "AccuracyOfInvoice", "ProcessingInvoice"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -88,9 +85,7 @@ export default {
     microlearning,
     AccuracyInvoice,
     CertificationAuthority,
-    spendMechanisms,
-    budgetQuiz,
-    RecordingFinancialSystem
+    ProcessInvoice
   },
   methods: {
     isReady() { this.isItReady = true },
@@ -139,14 +134,14 @@ export default {
       this.isPlayingNow = videoPlayer.currentTime
       const isNow = this.isPlayingNow
       this.currentFrame = this.startTime.findIndex(element => element === isNow)
-      localStorage.setItem("CreateBudgetCurrentPlaying", this.currentFrame)
+      localStorage.setItem("SpendPart2CurrentPlaying", this.currentFrame)
       this.$nextTick(function() {
         setTimeout(function() { videoPlayer.play() }, 250)
         this.justSeeked = false
       })
     },
     resumePosition() {
-      const savedPosition = this.startTime[localStorage.getItem("CreateBudgetCurrentPlaying")]
+      const savedPosition = this.startTime[localStorage.getItem("SpendPart2CurrentPlaying")]
       if (savedPosition) {
         this.$refs.videoplayer.currentTime = savedPosition
       }
@@ -158,7 +153,7 @@ export default {
         const isNow = this.isPlayingNow
         this.hasPlayed = v.played.length
         this.currentFrame = this.endTime.findIndex(element => element > isNow)
-        localStorage.setItem("CreateBudgetCurrentPlaying", this.currentFrame)
+        localStorage.setItem("SpendPart2CurrentPlaying", this.currentFrame)
         this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
         if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
         this.isPlayingSoon = v.currentTime
@@ -305,11 +300,9 @@ button.accessibilityButton {
 <i18n>{
   "en":{
   "TakeTheQuiz":"Take the Quiz",
-  "tryItTitle":"Activity: Try it!",
-  "adjustwptitle":"Activity: Adjust the Work plan",
   "delegateAuthority":"Activity: Delegation of Authority",
   "CertAuthorityTitle":"Activity: Certification Authority",
-  "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
+  "ProcessInvoiceTitle":"Activity: Processing the Invoice",
   "RecordingTitle":"Activity: Recording in the Financial System",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
@@ -320,11 +313,8 @@ button.accessibilityButton {
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité: Compléter le plan de travail",
-  "adjustwptitle":"Activité: Ajuster le plan de travail",
-  "delegateAuthority":"Activité: Délégation des pouvoirs",
   "CertAuthorityTitle":"Activité: Autorité de certification",
-  "tryItTitle":"Activité: Essayons-le!",
-  "forecastBudgetTitle":"Activité: Prévoyez vos besoins budgétaires",
+  "ProcessInvoiceTitle":"Activité: Traitement de la facture",
   "RecordingTitle":"Activité: Enregistrement dans le système financier",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l'activité",

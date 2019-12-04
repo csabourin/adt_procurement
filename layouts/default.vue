@@ -211,10 +211,10 @@ img {
   background-color: #cac1ca;
 }*/
 
-.bottomNav.reportSection:before {
+/*.bottomNav.reportSection:before {
   content: "REPORT";
   background-color: #d6c5c1;
-}
+}*/
 
 /*[lang="fr"] .bottomNav.planSection:before {
   content: "PLANIFICATION";
@@ -224,9 +224,9 @@ img {
   content: "DÉPENSES";
 }*/
 
-[lang="fr"] .bottomNav.reportSection:before {
+/*[lang="fr"] .bottomNav.reportSection:before {
   content: "RAPPORTS";
-}
+}*/
 
 .leftSide {
   display: flex;

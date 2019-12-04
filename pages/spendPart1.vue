@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="pageTitle" v-html="$t('InitiateAuthorizeSpending')" />
+    <h2 class="pageTitle" v-html="$t('InitiateAuthorizeSpending')" />
     
     <section>
       <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/S32Part1Poster.jpg')" :src="require('~/assets/'+ $i18n.locale +'/S32Part1.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isReady">

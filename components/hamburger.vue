@@ -34,7 +34,7 @@
 }
 .ui-hamburger-02:after {
   bottom: 0;
-  transform-origin: 91% -50%;
+  transform-origin: 85% -50%;
 }
 .ui-hamburger-02.is-active {
   background-size: 0 20%;

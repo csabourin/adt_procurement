@@ -62,6 +62,7 @@
       </b-modal>
     </section>
     <div class="bottomNav planSection">
+      <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
       <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
       <microlearning path="buildWP"  imagePath="BuildWP.svg" size="140" time="20" completion="80" :text="$t('BuildWorkPlan')" />
       <microlearning size="140" path="createBudget" youAreHere time="20" completion="10" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
@@ -251,7 +252,7 @@ video {
   right: 0px;
   top: 0px;
   border-radius: 0 0 0 30px;
-  padding: .5em .25em 0 1em;
+  padding: .1em .25em 0 .5em;
   color: white;
 }
 .chaptersLink:nth-child(-n+9):before {
@@ -291,7 +292,27 @@ button.accessibilityButton {
   margin: 5px;
   border-radius: 5px;
 }
-
+.planSection {
+  position: relative;
+}
+.planSectionBar {
+  position: absolute;
+  background-color: #d1dfe1;
+  width: 100vw;
+  height: 30px;
+  text-align: left;
+  left:-15px;
+  top:38%;
+}
+.planSectionBar span {
+  padding:2px 10px 0;
+  color: #4d4d4d;
+  font-weight: bold;
+  background-color: #fff;
+  display: inline-block;
+  height:100%;
+  margin-left:15px;
+}
 </style>
 <i18n>{
   "en":{
@@ -306,7 +327,8 @@ button.accessibilityButton {
   "gotIt":"Continue to next segment",
   "jumpModalPartsWP":"Jump to activity",
   "playSegment":"Play video segment",
-  "transcriptText":""
+  "transcriptText":"",
+  "planSectionBar": "PLAN"
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
@@ -321,7 +343,8 @@ button.accessibilityButton {
   "gotIt":"Continuer au segment suivant.",
   "jumpModalPartsWP":"Sauter à l'activité",
   "playSegment":"Faire jouer le segment vidéo",
-  "transcriptText":""
+  "transcriptText":"",
+  "planSectionBar": "PLANIFICATION"
   }
   }
 </i18n>

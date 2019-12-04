@@ -117,7 +117,7 @@ quotes: "« " " »";
   top:38%;
 }
 .planSectionBar span {
-  padding-top:2px;
+  padding:2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;
   background-color: #fff;

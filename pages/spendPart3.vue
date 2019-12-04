@@ -53,6 +53,7 @@
       </b-modal>
     </section>
     <div class="bottomNav spendSection">
+      <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
       <microlearning path="spendKey" size="140" completion="100" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
       <microlearning path="spendPart1"  imagePath="InitiateAuthSpending.svg" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
       <microlearning path="spendPart2" imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
@@ -239,7 +240,7 @@ video {
   right: 0px;
   top: 0px;
   border-radius: 0 0 0 30px;
-  padding: .5em .25em 0 1em;
+  padding: .1em .25em 0 .5em;
   color: white;
 }
 .chaptersLink:nth-child(-n+9):before {
@@ -279,7 +280,27 @@ button.accessibilityButton {
   margin: 5px;
   border-radius: 5px;
 }
-
+.spendSection {
+  position: relative;
+}
+.spendSectionBar {
+  position: absolute;
+  background-color: #cac1ca;
+  width: 100vw;
+  height: 30px;
+  text-align: left;
+  left:-15px;
+  top:38%;
+}
+.spendSectionBar span {
+  padding:2px 10px 0;
+  color: #4d4d4d;
+  font-weight: bold;
+  background-color: #fff;
+  display: inline-block;
+  height:100%;
+  margin-left:15px;
+}
 </style>
 <i18n>{
   "en":{
@@ -290,7 +311,8 @@ button.accessibilityButton {
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
   "playSegment":"Play video segment",
-  "transcriptText":""
+  "transcriptText":"",
+  "spendSectionBar": "SPEND"
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
@@ -300,7 +322,8 @@ button.accessibilityButton {
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l'activité",
   "playSegment":"Faire jouer le segment vidéo",
-  "transcriptText":""
+  "transcriptText":"",
+  "spendSectionBar": "DÉPENSES"
   }
   }
 </i18n>

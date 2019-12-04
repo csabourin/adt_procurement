@@ -1,6 +1,6 @@
 <template>
   <div class="mainWindow">
-    <h1 class="pageTitle"><img src="~/static/symbolic_identifier.png" width=50px> {{$t('finRoles')}}</h1>
+    <h1 class="pageTitle"><img src="../components/SymbolicIdentifier.svg" width="80" alt="Logo"> {{$t('finRoles')}}</h1>
     <div class="videoContain">
       <video id="introVideo" :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')">
       </video>

@@ -1,5 +1,6 @@
 // English translation
 export default {
+  finRoles:"Responsible Use of Public Funds",
   searchBar: "Search",
   homePage: "Home",
   links: "Links",

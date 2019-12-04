@@ -1,6 +1,7 @@
 // Traduction française
 export default {
   searchBar: "Recherche",
+  finRoles:"Utilisation responsable des fonds publics",
   plan: "Planification",
   spend: "Dépenses",
   report: "Rapports",

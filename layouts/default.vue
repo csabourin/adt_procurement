@@ -1,4 +1,5 @@
 <template>
+<div>
   <b-container fluid style="overflow:hidden;">
     <b-row class="navBar">
       <b-col cols="5" sm="3" class="text-left">
@@ -7,7 +8,7 @@
           <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
         </nuxt-link>
       </b-col>
-      <b-col cols="2" sm="6" />
+      <b-col cols="2" sm="6" ><h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" alt="Logo"> {{$t('finRoles')}}</h1></b-col>
       <b-col cols="5" sm="3" class="text-right">
         <fileMenu />
         <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
@@ -29,6 +30,7 @@
     <!-- </transition-group> -->
     </b-row>
   </b-container>
+  </div>
 </template>
 <script type="text/javascript">
 import langswitch from "~/components/icons/language_icon"
@@ -159,6 +161,9 @@ h3,
   font-size: 1.2em;
 }
 
+img {
+    vertical-align: text-top;}
+
 .transcriptionBox {
   width: 60vw;
   margin: auto;
@@ -249,9 +254,9 @@ h3,
   padding: 0;
 }
 
-.pageTitle {
+.pageTitle,.mainTitle {
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   display: block;
   font-size: 45px;
   color: #4D4D4D;
@@ -259,6 +264,8 @@ h3,
   text-align: center;
   padding-top:20px;
 }
+.mainTitle{  font-size: 30px;
+margin-top:-0.15em}
 
 /* always present */
 .expand-transition {

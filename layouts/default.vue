@@ -201,10 +201,10 @@ img {
   right: 0;
 }
 
-.bottomNav.planSection:before {
+/*.bottomNav.planSection:before {
   content: "PLAN";
   background-color: #d1dfe1;
-}
+}*/
 
 .bottomNav.spendSection:before {
   content: "SPEND";
@@ -216,9 +216,9 @@ img {
   background-color: #d6c5c1;
 }
 
-[lang="fr"] .bottomNav.planSection:before {
+/*[lang="fr"] .bottomNav.planSection:before {
   content: "PLANIFICATION";
-}
+}*/
 
 [lang="fr"] .bottomNav.spendSection:before {
   content: "DÉPENSES";

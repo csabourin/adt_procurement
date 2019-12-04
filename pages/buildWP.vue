@@ -343,7 +343,7 @@ justify-content: flex-start
   right: 0px;
   top: 0px;
   border-radius: 0 0 0 30px;
-  padding: .5em .25em 0 1em;
+  padding: .1em .25em 0 .5em;
   color: white;
 }
 .chaptersLink:nth-child(-n+9):before {

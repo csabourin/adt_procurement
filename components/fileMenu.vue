@@ -38,7 +38,60 @@
           </b-card-header>
           <b-collapse id="toolbox-3" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
-              <b-card-text></b-card-text>
+              <b-card-text>
+                <span v-if="$i18n.locale=='en'">
+                  <dl>
+                    <dt>Coding Structure</dt>
+                    <dd>It’s a method of classifying transactions that allows an organization to capture financial information. It is the common language that permits accounting and financial data to be identified, aggregated, and reported for planning, resource allocation, management control, reporting, and evaluation purposes.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Responsibility Center</dt>
+                    <dd>It’s an identifier associated with a manager or unit within an organization to which budget commitments and expenditures can be recorded. </dd>
+                  </dl>
+                  <dl>
+                    <dt>General Ledger</dt>
+                    <dd>It’s the lowest level to which expenditures get coded to. </dd>
+                  </dl>
+                  <dl>
+                    <dt>Fund</dt>
+                    <dd>A budget made available for a particular purpose. For example: salary, operating, capital.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Internal Order</dt>
+                    <dd>It’s a self-contained mini project in which you can track expenditures.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Program Inventory</dt>
+                    <dd>Identifies the programs that contribute to the department’s Core Responsibilities and Results.</dd>
+                  </dl>
+                </span>
+                <span v-if="$i18n.locale=='fr'">
+                  <dl>
+                    <dt>Structure de codage</dt>
+                    <dd>Il s'agit d'une méthode de classification des transactions qui permet à une organisation de saisir l'information financière. C'est le langage commun qui permet d'identifier, d'agréger et de rapporter les données comptables et financières à des fins de planification, d'affectation des ressources, de contrôle de gestion, de reporting et d'évaluation.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Centre de responsabilité</dt>
+                    <dd>Il s'agit d'un identificateur associé à un gestionnaire ou à une unité au sein d'une organisation pour lequel des engagements et des dépenses budgétaires peuvent être enregistrés.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Grand livre général</dt>
+                    <dd>C'est le niveau le plus bas auquel les dépenses sont codées. </dd>
+                  </dl>
+                  <dl>
+                    <dt>Fonds</dt>
+                    <dd>Un budget mis à disposition à des fins particulières. Par exemple : salaire, fonctionnement, capital.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Ordre interne</dt>
+                    <dd>Il s'agit d'un mini projet autonome dans lequel vous pouvez suivre les dépenses.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Inventaire des programmes</dt>
+                    <dd>Détermine les programmes qui contribuent aux responsabilités essentielles et aux résultats du Ministère.</dd>
+                  </dl>
+                </span>
+              </b-card-text>
             </b-card-body>
           </b-collapse>
         </b-card>

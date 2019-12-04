@@ -201,32 +201,32 @@ img {
   right: 0;
 }
 
-.bottomNav.planSection:before {
+/*.bottomNav.planSection:before {
   content: "PLAN";
   background-color: #d1dfe1;
-}
+}*/
 
-.bottomNav.spendSection:before {
+/*.bottomNav.spendSection:before {
   content: "SPEND";
   background-color: #cac1ca;
-}
+}*/
 
-.bottomNav.reportSection:before {
+/*.bottomNav.reportSection:before {
   content: "REPORT";
   background-color: #d6c5c1;
-}
+}*/
 
-[lang="fr"] .bottomNav.planSection:before {
+/*[lang="fr"] .bottomNav.planSection:before {
   content: "PLANIFICATION";
-}
+}*/
 
-[lang="fr"] .bottomNav.spendSection:before {
+/*[lang="fr"] .bottomNav.spendSection:before {
   content: "DÉPENSES";
-}
+}*/
 
-[lang="fr"] .bottomNav.reportSection:before {
+/*[lang="fr"] .bottomNav.reportSection:before {
   content: "RAPPORTS";
-}
+}*/
 
 .leftSide {
   display: flex;

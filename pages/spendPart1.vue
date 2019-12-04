@@ -208,6 +208,9 @@ video {
   justify-content: flex-start;
   counter-reset: episode;
 }
+#bar > li {
+  list-style-type:none;
+}
 #bar > li > p {
   display: inline-block;
   height:2.6em;

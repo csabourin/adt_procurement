@@ -301,6 +301,9 @@ video {
   color: #CCC;
 justify-content: flex-start
 }
+#bar > li {
+  list-style-type:none;
+}
 #bar > li > p {
   display: inline-block;
   height:2.6em;

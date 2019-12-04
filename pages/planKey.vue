@@ -104,7 +104,6 @@ font-size: 50px;
 .french-quote {
 quotes: "« " " »";
 }
-/*Replace bottom bar*/
 .planSection {
   position: relative;
 }
@@ -114,8 +113,6 @@ quotes: "« " " »";
   width: 100vw;
   height: 30px;
   text-align: left;
-  /*margin-left: -15px;
-  margin-right: -15px;*/
   left:-15px;
   top:38%;
 }

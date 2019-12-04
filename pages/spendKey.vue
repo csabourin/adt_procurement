@@ -69,6 +69,7 @@
       </b-row>
     </b-container>
     <div class="bottomNav spendSection">
+      <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
       <microlearning youAreHere path="spendKey" size="140" completion="100" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
       <microlearning path="spendPart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
       <microlearning path="spendPart2"  imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
@@ -93,13 +94,15 @@ export default {
   {
   "keyPlanQuote": " Accountability breeds response-ability ",
   "fileSet": "Files in this section",
-  "downloadPlan": "Download a Word template of the work plan"
+  "downloadPlan": "Download a Word template of the work plan",
+  "spendSectionBar": "SPEND"
   },
   "fr":
   {
   "keyPlanQuote": " Une bonne planification mène à une bonne performance. ",
   "fileSet": "Fichiers dans cette section",
-  "downloadPlan": "Télécharger un modèle Word du plan de travail"
+  "downloadPlan": "Télécharger un modèle Word du plan de travail",
+  "spendSectionBar": "DÉPENSES"
   }
   }</i18n>
 <style type="text/css" scoped>
@@ -148,5 +151,25 @@ span.spend:before {
 .french-quote {
   quotes: "« "" »";
 }
-
+.spendSection {
+  position: relative;
+}
+.spendSectionBar {
+  position: absolute;
+  background-color: #cac1ca;
+  width: 100vw;
+  height: 30px;
+  text-align: left;
+  left:-15px;
+  top:38%;
+}
+.spendSectionBar span {
+  padding-top:2px;
+  color: #4d4d4d;
+  font-weight: bold;
+  background-color: #fff;
+  display: inline-block;
+  height:100%;
+  margin-left:15px;
+}
 </style>

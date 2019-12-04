@@ -206,10 +206,10 @@ img {
   background-color: #d1dfe1;
 }*/
 
-.bottomNav.spendSection:before {
+/*.bottomNav.spendSection:before {
   content: "SPEND";
   background-color: #cac1ca;
-}
+}*/
 
 .bottomNav.reportSection:before {
   content: "REPORT";
@@ -220,9 +220,9 @@ img {
   content: "PLANIFICATION";
 }*/
 
-[lang="fr"] .bottomNav.spendSection:before {
+/*[lang="fr"] .bottomNav.spendSection:before {
   content: "DÉPENSES";
-}
+}*/
 
 [lang="fr"] .bottomNav.reportSection:before {
   content: "RAPPORTS";

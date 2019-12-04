@@ -215,8 +215,8 @@ video {
   position: relative;
   align-content: flex-start;
   text-align: center;
-  width: 175px;
-  height: 150px;
+  width: 200px;
+  height: 171px;
   overflow: hidden;
   padding: 1.2em 1.5em;
   line-height: 17px;

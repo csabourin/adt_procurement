@@ -30,7 +30,7 @@
       <p>PLAN</p>
       <ul class="list-unstyled">
         <li><a target="_blank" href="http://laws-lois.justice.gc.ca/eng/acts/f-11/">Financial Administration Act</a></li>
-        <li><a target="_blank" href="https://www.canada.ca/en/government/system/priorities.html">Government priorities</a>
+        <li><a target="_blank" href="https://www.canada.ca/en/government/system/priorities.html">Government Priorities</a>
           <ul>
             <li><a target="_blank" href="https://pm.gc.ca/eng/mandate-letters">Ministerial Mandate Letters</a></li>
             <li><a target="_blank" href="https://www.canada.ca/en/privy-council/campaigns/speech-throne.html">Speech from the Throne</a></li>
@@ -39,7 +39,7 @@
         </li>
         <li><a target="_blank" href="https://www.fin.gc.ca/access/budinfo-eng.asp">Federal Budget</a></li>
         <li><a target="_blank" href="https://www.canada.ca/en/treasury-board-secretariat/services/management-accountability-framework.html">Management Accountability Framework (MAF)</a></li>
-        <li><a target="_blank" href="https://www.canada.ca/en/treasury-board-secretariat/topics/planned-government-spending.html">Planned government spending</a></li>
+        <li><a target="_blank" href="https://www.canada.ca/en/treasury-board-secretariat/topics/planned-government-spending.html">Planned Government Spending</a></li>
         <li><a target="_blank" href="https://www.canada.ca/en/treasury-board-secretariat/services/departmental-performance-reports.html">Departmental Results Reports (DRR)</a></li>
         <li><a target="_blank" href="https://open.canada.ca/en/proactive-disclosure">Proactive Disclosure</a>
           <ul>

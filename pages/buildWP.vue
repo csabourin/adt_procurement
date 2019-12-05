@@ -37,7 +37,7 @@
                   <h2>Make a 360 Scan</h2>
                   <p>To build a work plan, it helps to understand the historical and cultural context of your unit by asking yourself a series of questions. This is what we call the 360 Scan.<br />Here is a fictional example of last year&rsquo;s work plan, budget and report. Try to apply the questions in the 360 Scan document to this fictional example. <br />You may access the 360 Scan document at any time from the File icon at the top right.</p>
                   <hr>
-                  <h2>Complete the Work Plan Draft</h2>
+                  <h2>Prepare a Work Plan</h2>
                   <p>At this point, you understand the context, both historically and culturally and are in a position to craft this year&rsquo;s work plan! Imagine that your director shares with you this coming year&rsquo;s priorities for your directorate: protect aquatic ecosystems, sustain fisheries and manage the issuing of licenses.</p>
                   <hr>
                   <h2>Complete the Work Plan</h2>
@@ -52,7 +52,9 @@
                   <h2>Take a Quiz</h2>
                   <p>So now that you know how to examine, prepare and adjust a work plan, let&rsquo;s see what you remember by taking this short quiz.</p>
                   <h2>Section Completed</h2>
-                  <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button>
+                  <!-- Used to generate buttons to jump to activity
+
+                   <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->
                 </span>
                 <span v-if="$i18n.locale=='fr'">
                   <h2>Le but d'un plan de travail</h2>
@@ -79,7 +81,7 @@
                   <p>Voici un exemple fictif du plan de travail, du budget et du rapport de l'an dernier. Essayez d'appliquer les questions du document d&rsquo;aper&ccedil;u &agrave; 360 degr&eacute;s &agrave; cet exemple fictif.&nbsp;</p>
                   <p>Vous pouvez acc&eacute;der au document d&rsquo;aper&ccedil;u &agrave; 360 degr&eacute;s &agrave; tout moment &agrave; partir de l'ic&ocirc;ne Fichier en haut &agrave; droite. &raquo;</p>
                   <hr>
-                  <h2>Compléter l'ébauche du plan de travail</h2>
+                  <h2>Préparer un plan de travail</h2>
                   <p>&laquo; &Agrave; ce stade, vous comprenez le contexte, tant historique que culturel, et vous &ecirc;tes en mesure d'&eacute;laborer le plan de travail de cette ann&eacute;e! Imaginez que votre directeur partage avec vous les priorit&eacute;s de la prochaine ann&eacute;e pour votre direction : prot&eacute;ger les &eacute;cosyst&egrave;mes aquatiques, soutenir les p&ecirc;ches et g&eacute;rer la d&eacute;livrance des permis. &raquo;</p>
                   <hr>
                   <h2>Compléter le plan de travail</h2>
@@ -107,7 +109,9 @@
           <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="48" height="48"> </a>
         </li>
       </ul>
-      <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
+      <div v-if="false">
+      <!-- Used for troublehooting video -->
+        <span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
         <span>endTime : {{endTime}}</span><br>
         <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
         <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>
@@ -278,7 +282,6 @@ export default {
 
 </script>
 <style scoped>
-body {}
 
 video {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -411,7 +414,7 @@ button.accessibilityButton {
   "activityLinks":"Activity: External Links",
   "gotoLinks":"These links are also available in the Toolbox",
   "partsofWPTitle":"Activity: Parts of a Work Plan",
-  "completewpDrafttitle":"Activity: Complete the Work Plan Draft",
+  "completewpDrafttitle":"Activity: Prepare a Work Plan",
   "completewptitle":"Activity: Complete the Work plan",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "scan360Title":"Activity: Apply the 360 scan",
@@ -428,7 +431,7 @@ button.accessibilityButton {
   "activityLinks":"Activity: Liens externes",
   "gotoLinks":"Ces liens se retrouvent aussi dans la boite à outils",
   "partsofWPTitle":"Activité: Parties d'un plan de travail",
-  "completewpDrafttitle":"Activité: Faire l’ébauche du plan de travail ",
+  "completewpDrafttitle":"Activité: Préparer un plan de travail",
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
   "scan360Title":"Activité: Appliquez l'apperçu 360",

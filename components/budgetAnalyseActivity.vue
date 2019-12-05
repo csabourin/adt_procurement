@@ -203,12 +203,11 @@ export default {
 }
 
 </style>
-<i18n>
-  {
+<i18n>{
   "en": {
     "q1": {
-    "title":"Salary",
-      "introduction": "<table border='1'> <tbody> <tr> <td> <p>Salary</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$460,000</p> </td> <td> <p>$450,000</p> </td> <td> <p><span style='color: #ff0000;'>($10,000)</span></p> </td> <td> <p>An employee was on leave without pay.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td></td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$475,000</p> </td> <td> <p>$237,500</p> </td> <td> <p>$475,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table><br><ul> <li>An employee&rsquo;s annual salary is $60,000 per year. You know that they will retire on July 1 of next year and won&rsquo;t be replaced, and&nbsp;</li> <li>You plan on getting a casual employee for 4 months for a total of $13,333.</li> </ul>",
+      "title": "Salary",
+      "introduction": "<table border='1' style='text-align: center' cellpadding='4'> <tbody> <tr style='background:#8e7cc3; color:white;'> <th> <p>Salary</p> </th> <th> <p>Budget (A)</p> </th> <th> <p>Actual (B)</p> </th> <th> <p>Variance (C=B-A)</p> </th> <th> <p>Variance Explanation</p> </th> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$460,000</p> </td> <td> <p>$450,000</p> </td> <td> <p><span style='color: #ff0000;'>($10,000)</span></p> </td> <td> <p>An employee was on leave without pay.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td></td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$475,000</p> </td> <td> <p>$237,500</p> </td> <td> <p>$475,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table><br><ul> <li>An employee&rsquo;s annual salary is $60,000 per year. You know that they will retire on July 1 of next year and won&rsquo;t be replaced, and&nbsp;</li> <li>You plan on getting a casual employee for 4 months for a total of $13,333.</li> </ul>",
       "text": "What budget will you propose for the next fiscal year?",
       "options": {
         "1": "$415,000 Non-Discretionary and $13,333 Discretionary",
@@ -225,8 +224,8 @@ export default {
       "conclusion": "<p> Your starting point is the current year&rsquo;s budget of $475,000. For the employee that is retiring and not being replaced, you need to subtract nine months (July to March) of the $60,000 in annual salary ($475,000-$45,000=$430,000). Since casual employees are not part of the org chart, they are considered discretionary.&nbsp;</p><p><span>It is important to analyze any variances so the figures in your proposed budget are accurate. To discover the reason for a variance, you could speak with the previous manager, your admin, or your director. A report from Finance may provide the variance explanation.&nbsp;</span></p>"
     },
     "q2": {
-    "title":"Software License",
-    "introduction":"<p>You will have to estimate costs for new activities for your budget requirements. If an activity was completed last year, it won&rsquo;t appear. Look for cancelled or delayed activities as well, to be sure your budget requirements are complete.</p><p>You did not have software in last year&rsquo;s or the current year&rsquo;s budget. Looking at your work plan, you know that your plan is to purchase new software next year for issuing fishing licenses. You do some research and find out that the software license costs $1,000 annually per officer (you will have 3 officers using it). Online training will cost $800.00 per officer.</p>",
+      "title": "Software License",
+      "introduction": "<p>You will have to estimate costs for new activities for your budget requirements. If an activity was completed last year, it won&rsquo;t appear. Look for cancelled or delayed activities as well, to be sure your budget requirements are complete.</p><p>You did not have software in last year&rsquo;s or the current year&rsquo;s budget. Looking at your work plan, you know that your plan is to purchase new software next year for issuing fishing licenses. You do some research and find out that the software license costs $1,000 annually per officer (you will have 3 officers using it). Online training will cost $800.00 per officer.</p>",
       "text": "What budget for new software will you propose for the next fiscal year?",
       "options": {
         "1": "$1,000",
@@ -240,8 +239,8 @@ export default {
       }
     },
     "q3": {
-    "title":"Office Supplies",
-    "introduction":"<p><strong>Trends </strong>are costs in your budget that are either constant, or show a similar pattern year after year.&nbsp;</p> <table border='1'> <tbody> <tr> <td> <p>Office Supplies</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year</p> </td> <td> <p>$1,961</p> </td> <td> <p>$1,500</p> </td> <td> <p>($461)</p> </td> <td> <p>Prices were lower than planned.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget&nbsp;</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$2,000</p> </td> <td> <p>$100</p> </td> <td> <p>$1,500</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
+      "title": "Office Supplies",
+      "introduction": "<p><strong>Trends </strong>are costs in your budget that are either constant, or show a similar pattern year after year.&nbsp;</p> <table border='1' style='text-align: center' cellpadding='4'> <tbody> <tr style='background:#8e7cc3; color:white;'> <td> <p>Office Supplies</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year</p> </td> <td> <p>$1,961</p> </td> <td> <p>$1,500</p> </td> <td> <p>($461)</p> </td> <td> <p>Prices were lower than planned.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget&nbsp;</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$2,000</p> </td> <td> <p>$100</p> </td> <td> <p>$1,500</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
       "text": "If you do not plan a significant change in your spending patterns for Office Supplies, what should you budget for?",
       "options": {
         "1": "$1,500",
@@ -254,7 +253,7 @@ export default {
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is $1,500. This amount was spent last year, and also forecasted for the current year; therefore, you would request a budget equal to your spending patterns."
       }
     },
-    "actInstructions": "Select any question marks and answer the question that appears",
+    "actInstructions": "Select any question mark and answer the question that appears",
     "budgetTableFill1": "Line Item",
     "budgetTableFill2": "Previous Budget",
     "budgetTableFill3": "Current Budget",
@@ -353,9 +352,9 @@ export default {
   },
   "fr": {
     "q1": {
-    "title":"Salaire",
+      "title": "Salaire",
       "conclusion": "<p> Votre point de départ est le budget de 475 000 $ de l'année en cours. Pour l'employé qui prend sa retraite et qui n'est pas remplacé, vous devez soustraire neuf mois (de juillet à mars) du salaire annuel de 60 000 $ (475 000 $ à 45 000 $ = 430 000 $). Comme les employés occasionnels ne font pas partie de l'organigramme, ils sont considérés comme discrétionnaires.</p><p><span>Il est important d'analyser tout écart afin que les chiffres du budget proposé soient exacts. Pour connaître la raison d'un écart, vous pouvez parler avec l'ancien gestionnaire, votre administrateur ou votre directeur. Un rapport du ministère des Finances peut fournir l'explication de l'écart. </span></p>",
-      "introduction": "<table border='1'> <tbody> <tr> <td> <p>Salaire</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explication de Variance&nbsp;</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>460 000 $</p> </td> <td> <p>450 000 $</p> </td> <td> <p><span style='color: #ff0000;'>(10 000 $)</span></p> </td> <td> <p>Un employ&eacute; &eacute;tait en cong&eacute; non pay&eacute;.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>475 000 $</p> </td> <td> <p>237 500 $</p> </td> <td> <p>475 000 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <br> <ul> <li>Le salaire annuel d'un employ&eacute; est de 60 000 $ par ann&eacute;e. Vous savez qu'ils prendront leur retraite le 1er juillet de l'ann&eacute;e prochaine et qu'ils ne seront pas remplac&eacute;s.&nbsp;</li> <li>Vous pr&eacute;voyez embaucher un employ&eacute; occasionnel pendant 4 mois pour un total de 13 333 $.</li> </ul>",
+      "introduction": "<table border='1'> <tbody> <tr style='background:#8e7cc3; color:white;'> <td> <p>Salaire</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explication de Variance&nbsp;</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>460 000 $</p> </td> <td> <p>450 000 $</p> </td> <td> <p><span style='color: #ff0000;'>(10 000 $)</span></p> </td> <td> <p>Un employ&eacute; &eacute;tait en cong&eacute; non pay&eacute;.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>475 000 $</p> </td> <td> <p>237 500 $</p> </td> <td> <p>475 000 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <br> <ul> <li>Le salaire annuel d'un employ&eacute; est de 60 000 $ par ann&eacute;e. Vous savez qu'ils prendront leur retraite le 1er juillet de l'ann&eacute;e prochaine et qu'ils ne seront pas remplac&eacute;s.&nbsp;</li> <li>Vous pr&eacute;voyez embaucher un employ&eacute; occasionnel pendant 4 mois pour un total de 13 333 $.</li> </ul>",
       "text": "Quel budget proposez-vous pour le prochain exercice financier ?",
       "options": {
         "1": "$415 000 $ non discrétionnaire et 13 333 $ discrétionnaire",
@@ -371,7 +370,7 @@ export default {
       }
     },
     "q2": {
-      "title":"License logiciel",
+      "title": "License logiciel",
       "introduction": "<p>Vous devrez estimer les coûts des nouvelles activités en fonction de vos besoins budgétaires. Si une activité a été complétée l'an dernier, elle n'apparaîtra pas. Recherchez également les activités annulées ou retardées pour vous assurer que vos besoins budgétaires sont comblés.</p><p>Vous n'aviez pas de logiciel dans le budget de l'année dernière ou de l'année en cours. En examinant votre plan de travail, vous savez que vous avez l'intention d'acheter un nouveau logiciel l'an prochain pour la délivrance des permis de pêche. Vous faites des recherches et découvrez que la licence du logiciel coûte 1 000 $ par an par officier (vous aurez 3 officiers qui l'utiliseront). La formation en ligne coûtera 800 $ par agent.</p>",
       "text": "Quel budget proposez-vous pour le nouveau logiciel pour le prochain exercice financier ?",
       "options": {
@@ -386,7 +385,7 @@ export default {
       }
     },
     "q3": {
-    "title":"Fournitures de bureau",
+      "title": "Fournitures de bureau",
       "introduction": "<p>Les <strong>tendances</strong> sont des co&ucirc;ts dans votre budget qui sont soit constants, soit semblables d'ann&eacute;e en ann&eacute;e.</p> <table border='1'> <tbody> <tr> <td> <p>Fournitures de bureau</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explication</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>1 961 $</p> </td> <td> <p>1 500 $</p> </td> <td> <p>(461 $)</p> </td> <td> <p>Les prix ont &eacute;t&eacute; inf&eacute;rieurs aux pr&eacute;visions.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>2 000 $</p> </td> <td> <p>100 $</p> </td> <td> <p>1 500 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
       "text": "Si vous ne prévoyez pas de changement important dans vos habitudes de dépenses pour le matériel et les fournitures, que devriez-vous prévoir dans votre budget ? ",
       "options": {

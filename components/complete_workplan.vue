@@ -323,11 +323,6 @@
 
 </script>
 <style type="text/css" scoped>
-.scrollMe {
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-}
 
 .tableColoured {
   table-layout: fixed;

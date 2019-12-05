@@ -15,7 +15,7 @@
           <b-collapse id="cbTranscript-1" role="tabpanel">
             <b-card-body>
               <b-card-text>
-                <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button>
+                <!-- Used to jump to activities<button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->
                 <span v-if="$i18n.locale=='en'"></span>
                 <span v-if="$i18n.locale=='fr'"></span>
               </b-card-text>

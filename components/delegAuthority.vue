@@ -1,6 +1,8 @@
 <template>
 	<div>
 		 <b-card>
+<p class="scrollMe" v-if="$i18n.locale=='en'"><delegAutorityEn /></p>
+<p class="scrollMe" v-if="$i18n.locale=='fr'"><delegAutorityFr /></p>
     <b-tabs content>
       <b-tab title="Question 1"><radioQuiz :Question="$t('q1')" qId="1"/></b-tab>
       <b-tab title="Question 2"><radioQuiz :Question="$t('q2')" qId="2" /></b-tab>
@@ -13,10 +15,14 @@
 <script type="text/javascript">
 	import checkboxQuiz from "~/components/checkboxQuiz"
 	import radioQuiz from "~/components/radioQuiz"
+  import delegAutorityEn from "~/components/delegationChart/delegchart_en"
+  import delegAutorityFr from "~/components/delegationChart/delegchart_fr"
 	export default{
 		components:{
 			checkboxQuiz,
-			radioQuiz
+			radioQuiz,
+      delegAutorityEn,
+      delegAutorityFr
 		}
 	}
 </script>

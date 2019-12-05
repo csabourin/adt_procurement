@@ -267,6 +267,12 @@ img {
 .mainTitle{  font-size: 30px;
 margin-top:-0.15em}
 
+.scrollMe {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 @media only screen and (max-width: 720px) {
   .mainTitle{  font-size: 18px;
 margin-top:-0.15em}

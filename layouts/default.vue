@@ -267,6 +267,14 @@ img {
 .mainTitle{  font-size: 30px;
 margin-top:-0.15em}
 
+@media only screen and (max-width: 720px) {
+  .mainTitle{  font-size: 18px;
+margin-top:-0.15em}
+h1 img {
+  vertical-align: middle;
+}
+}
+
 /* always present */
 .expand-transition {
   transition: all .3s ease;

@@ -233,10 +233,11 @@ export default {
         "3": "$5,400"
       },
       "feedback": {
-        "1": "<span class='v-wrong'/> <strong>Incorrect.</strong> The correct answer is $3,000. The new software will cost $1,000 per officer for 3 officers (3&nbsp;X&nbsp;$1,000=$3,000). Training would be covered in a separate line item.",
+        "1": "<span class='v-wrong'/> <strong>Incorrect.</strong>",
         "2": "<span class='v-right'/> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong'/> <strong>Incorrect.</strong> The correct answer is $3,000. The new software will cost $1,000 per officer for 3 officers (3&nbsp;X&nbsp;$1,000=$3,000). Training would be covered in a separate line item."
-      }
+        "3": "<span class='v-wrong'/> <strong>Incorrect.</strong> "
+      },
+      "conclusion": "The correct answer is $3,000. The new software will cost $1,000 per officer for 3 officers (3 X $1,000=$3,000). Training would be covered in a separate line item."
     },
     "q3": {
       "title": "Office Supplies",
@@ -249,9 +250,10 @@ export default {
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is $1,500. This amount was spent last year, and also forecasted for the current year; therefore, you would request a budget equal to your spending patterns.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is $1,500. This amount was spent last year, and also forecasted for the current year; therefore, you would request a budget equal to your spending patterns."
-      }
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>"
+      },
+      "conclusion": "The correct answer is $1,500. This amount was spent last year, and also forecasted for the current year; therefore, you would request a budget equal to your spending patterns."
     },
     "actInstructions": "Select any question mark and answer the question that appears",
     "budgetTableFill1": "Line Item",
@@ -353,7 +355,6 @@ export default {
   "fr": {
     "q1": {
       "title": "Salaire",
-      "conclusion": "<p> Votre point de départ est le budget de 475 000 $ de l'année en cours. Pour l'employé qui prend sa retraite et qui n'est pas remplacé, vous devez soustraire neuf mois (de juillet à mars) du salaire annuel de 60 000 $ (475 000 $ à 45 000 $ = 430 000 $). Comme les employés occasionnels ne font pas partie de l'organigramme, ils sont considérés comme discrétionnaires.</p><p><span>Il est important d'analyser tout écart afin que les chiffres du budget proposé soient exacts. Pour connaître la raison d'un écart, vous pouvez parler avec l'ancien gestionnaire, votre administrateur ou votre directeur. Un rapport du ministère des Finances peut fournir l'explication de l'écart. </span></p>",
       "introduction": "<table border='1'> <tbody> <tr style='background:#8e7cc3; color:white;'> <td> <p>Salaire</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explication de Variance&nbsp;</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>460 000 $</p> </td> <td> <p>450 000 $</p> </td> <td> <p><span style='color: #ff0000;'>(10 000 $)</span></p> </td> <td> <p>Un employ&eacute; &eacute;tait en cong&eacute; non pay&eacute;.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>475 000 $</p> </td> <td> <p>237 500 $</p> </td> <td> <p>475 000 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <br> <ul> <li>Le salaire annuel d'un employ&eacute; est de 60 000 $ par ann&eacute;e. Vous savez qu'ils prendront leur retraite le 1er juillet de l'ann&eacute;e prochaine et qu'ils ne seront pas remplac&eacute;s.&nbsp;</li> <li>Vous pr&eacute;voyez embaucher un employ&eacute; occasionnel pendant 4 mois pour un total de 13 333 $.</li> </ul>",
       "text": "Quel budget proposez-vous pour le prochain exercice financier ?",
       "options": {
@@ -367,21 +368,23 @@ export default {
         "2": "<span class='v-right' /> <strong>Correct!</strong>",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 430 000 $ non discrétionnaire et 13 333 $ discrétionnaire.",
         "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 430 000 $ non discrétionnaire et 13 333 $ discrétionnaire.</strong>."
-      }
+      },
+      "conclusion": "<p> Votre point de départ est le budget de 475 000 $ de l'année en cours. Pour l'employé qui prend sa retraite et qui n'est pas remplacé, vous devez soustraire neuf mois (de juillet à mars) du salaire annuel de 60 000 $ (475 000 $ à 45 000 $ = 430 000 $). Comme les employés occasionnels ne font pas partie de l'organigramme, ils sont considérés comme discrétionnaires.</p><p><span>Il est important d'analyser tout écart afin que les chiffres du budget proposé soient exacts. Pour connaître la raison d'un écart, vous pouvez parler avec l'ancien gestionnaire, votre administrateur ou votre directeur. Un rapport du ministère des Finances peut fournir l'explication de l'écart. </span></p>"
     },
     "q2": {
       "title": "License logiciel",
       "introduction": "<p>Vous devrez estimer les coûts des nouvelles activités en fonction de vos besoins budgétaires. Si une activité a été complétée l'an dernier, elle n'apparaîtra pas. Recherchez également les activités annulées ou retardées pour vous assurer que vos besoins budgétaires sont comblés.</p><p>Vous n'aviez pas de logiciel dans le budget de l'année dernière ou de l'année en cours. En examinant votre plan de travail, vous savez que vous avez l'intention d'acheter un nouveau logiciel l'an prochain pour la délivrance des permis de pêche. Vous faites des recherches et découvrez que la licence du logiciel coûte 1 000 $ par an par officier (vous aurez 3 officiers qui l'utiliseront). La formation en ligne coûtera 800 $ par agent.</p>",
       "text": "Quel budget proposez-vous pour le nouveau logiciel pour le prochain exercice financier ?",
+      "conclusion": " La bonne réponse est 3 000 $. Le nouveau logiciel coûtera 1 000 $ par agent pour 3 agents (3 X 1 000 $ = 3 000 $). La formation ferait l'objet d'un poste distinct. ",
       "options": {
         "1": "1000$",
         "2": "3000$",
         "3": "5400$"
       },
       "feedback": {
-        "1": "<span class='v-wrong'/> <strong>Incorrect.</strong>  La bonne réponse est 3 000 $. Le nouveau logiciel coûtera 1&nbsp;000 $ par agent pour 3 agents (3&nbsp;X&nbsp;1&nbsp;000&nbsp;$&nbsp;=&nbsp;3&nbsp;000 $). La formation ferait l'objet d'un poste distinct. ",
+        "1": "<span class='v-wrong'/> <strong>Incorrect.</strong>",
         "2": "<span class='v-right'/> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong'/> <strong>Incorrect.</strong>  La bonne réponse est 3 000 $. Le nouveau logiciel coûtera 1&nbsp;000 $ par agent pour 3 agents (3&nbsp;X&nbsp;1&nbsp;000&nbsp;$&nbsp;=&nbsp;3&nbsp;000 $). La formation ferait l'objet d'un poste distinct. "
+        "3": "<span class='v-wrong'/> <strong>Incorrect.</strong>"
       }
     },
     "q3": {
@@ -395,9 +398,10 @@ export default {
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 1 500 $. Ce montant a été dépensé l'an dernier et a également été prévu pour l'année en cours ; par conséquent, vous demandez un budget égal à vos habitudes de dépenses.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 1 500 $. Ce montant a été dépensé l'an dernier et a également été prévu pour l'année en cours ; par conséquent, vous demandez un budget égal à vos habitudes de dépenses. "
-      }
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>"
+      },
+      "conclusion": "La bonne réponse est 1 500 $. Ce montant a été dépensé l'an dernier et a également été prévu pour l'année en cours ; par conséquent, vous demandez un budget égal à vos habitudes de dépenses. "
     },
     "actInstructions": "Sélectionnez les points d'interrogation et répondez à la question qui apparaît. ",
     "budgetTableFill1": "Poste individuel",

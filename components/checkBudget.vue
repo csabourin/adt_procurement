@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="scrollMe">
-    <table border=1>
+    <table border=1 style="text-align: right">
       <colgroup>
         <col />
         <col />
@@ -11,13 +11,13 @@
         <col />
       </colgroup>
       <tbody>
-        <tr>
-          <td v-html="$t('lines[0][0]')" />
-          <td v-html="$t('lines[0][1]')" />
-          <td v-html="$t('lines[0][2]')" />
-          <td v-html="$t('lines[0][3]')" />
-          <td v-html="$t('lines[0][4]')" />
-          <td v-html="$t('lines[0][5]')" />
+        <tr style="background-color: #7d677d; color: white; padding:.5em; ">
+          <th v-html="$t('lines[0][0]')" />
+          <th v-html="$t('lines[0][1]')" />
+          <th v-html="$t('lines[0][2]')" />
+          <th v-html="$t('lines[0][3]')" />
+          <th v-html="$t('lines[0][4]')" />
+          <th v-html="$t('lines[0][5]')" />
         </tr>
         <tr>
           <td v-for="i in 6">&nbsp;</td>
@@ -37,7 +37,7 @@
           <td v-html="$t('lines[1][4]')" />
           <td v-html="$t('lines[1][5]')" />
         </tr>
-        <tr>
+        <tr style="font-weight: bold">
           <td v-html="$t('lines[2][0]')" />
           <td v-html="$t('lines[2][1]')" />
           <td v-html="$t('lines[2][2]')" />
@@ -119,7 +119,7 @@
           <td v-html="$t('lines[10][4]')" />
           <td v-html="$t('lines[10][5]')" />
         </tr>
-        <tr>
+        <tr style="font-weight: bold">
           <td v-html="$t('lines[11][0]')" />
           <td v-html="$t('lines[11][1]')" />
           <td v-html="$t('lines[11][2]')" />

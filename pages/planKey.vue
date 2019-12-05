@@ -9,7 +9,7 @@
       <b-row>
         <b-col>
           <span v-if="$i18n.locale=='en'">
-            <h2>Work Plan</h2>
+            <h3>Work Plan</h3>
             <ul>
               <li>A work plan is a detailed schedule of the activities to be carried out, resources to be consumed, and results to be achieved over a one-year period, usually a fiscal year for a responsibility center.</li>
               <li>To build a work plan, you review the activities from the previous year's work plan, budget and reports to identify lessons learned and what needs to be carried over in order to identify possible trends..&nbsp;</li>
@@ -17,7 +17,7 @@
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
-            <h2>Plan de travail</h2>
+            <h3>Plan de travail</h3>
             <ul>
               <li>Un plan de travail est un compte rendu d&eacute;taill&eacute; des activit&eacute;s &agrave; exercer, des ressources &agrave; utiliser et des r&eacute;sultats &agrave; atteindre au cours d&rsquo;une p&eacute;riode d&rsquo;un an, laquelle correspond habituellement &agrave; un exercice financier pour un centre de responsabilit&eacute;.</li>
               <li>Pour &eacute;laborer un plan de travail, vous passez en revue les activit&eacute;s inscrites dans le plan de travail, le budget et les rapports de l&rsquo;ann&eacute;e pr&eacute;c&eacute;dente afin de d&eacute;terminer les le&ccedil;ons apprises et les mesures &agrave; reporter afin d’identifier les tendances possibles.&nbsp;</li>
@@ -27,14 +27,14 @@
         </b-col>
         <b-col>
           <span v-if="$i18n.locale=='en'">
-            <h2>Create a Budget</h2>
+            <h3>Create a Budget</h3>
             <ul>
               <li>Budgets are essentially the conversion of the work plans into financial terms. In other words, the budget represents how much you will spend to achieve your work plan activities.</li>
               <li>Typically, budgets will include Operating and Maintenance (O&amp;M) and Salary costs. Some budgets may also include Capital and Grants and Contributions amounts.</li>
               <li>To create your budget, you must analyze information, forecast your new budget requirements and submit your new budget for approval.</li>
             </ul>          </span>
           <span v-if="$i18n.locale=='fr'">
-            <h2>&Eacute;tablir un budget</h2>
+            <h3>&Eacute;tablir un budget</h3>
             <ul>
               <li>Les budgets sont essentiellement la conversion des plans de travail en termes financiers. En d'autres mots, le budget repr&eacute;sente le montant que vous d&eacute;penserez pour r&eacute;aliser les activit&eacute;s de votre plan de travail.</li>
               <li>Habituellement, les budgets comprennent les co&ucirc;ts de fonctionnement et d'entretien (F et E) et les co&ucirc;ts salariaux. Certains budgets peuvent &eacute;galement inclure des montants d'immobilisations et de subventions et contributions.</li>
@@ -107,6 +107,10 @@ left:0;
 z-index: -1;
 margin: 0;
 margin-top: 30px;
+}
+h3 {
+  font-family: "Roboto Condensed";
+  font-size: 1.5em;
 }
 .bigQuote{
   font-size: 36px;

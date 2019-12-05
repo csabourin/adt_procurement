@@ -8,7 +8,7 @@
     <b-container style="text-align: left">
       <b-row>
         <b-col><span v-if="$i18n.locale=='en'">
-            <p><strong>Initiate Expenditures and Authorize Commitments&nbsp;</strong></p>
+            <h3>Initiate Expenditures and Authorize Commitments&nbsp;</h3>
             <ul>
               <li>When you decide to obtain goods or services that will result in the eventual spending of funds, such as the decision to hire staff, order supplies, or authorize travel, you are initiating an expenditure.</li>
               <li>When you commit an expenditure, you are certifying that the money is available. This is known as section 32 of the FAA<em>.&nbsp;</em></li>
@@ -18,7 +18,7 @@
           </span>
           <span v-if="$i18n.locale=='fr'">
             <p>
-              <p><strong>Engager et autoriser les d&eacute;penses</strong></p>
+              <h3>Engager et autoriser les d&eacute;penses</h3>
               <ul>
                 <li>Lorsque vous d&eacute;cidez d'obtenir des biens ou des services qui entra&icirc;neront la d&eacute;pense &eacute;ventuelle de fonds, comme l'embauche de personnel, la commande de fournitures ou l'autorisation de voyager, vous engagez une d&eacute;pense.</li>
                 <li>Lorsque vous engagez une d&eacute;pense, vous certifiez que l'argent est disponible. C'est ce qu'on appelle l'article 32 de la LGFP.</li>
@@ -28,23 +28,23 @@
           </span>
         </b-col>
         <b-col><span v-if="$i18n.locale=='en'">
-            <p><strong>Exercise financial authority&nbsp;</strong></p>
+            <h3>Exercise financial authority&nbsp;</h3>
             <ul>
               <li>When you certify that the work has been performed as required, and services and supplies have been satisfactorily rendered, this is known as section 34.</li>
               <li>When your financial department ensures that the payment complies with policy requirements, this is section 33.</li>
             </ul>
-            <p><strong>Monitor and control finances</strong></p>
+            <h3>Monitor and control finances</h3>
             <ul>
               <li>To help you track your work plan and budget, you will continually monitor your spending and manage your risks.</li>
             </ul>
           </span><span v-if="$i18n.locale=='fr'">
             <p>
-              <p><strong>Exercer son pouvoir financier</strong></p>
+              <h3>Exercer son pouvoir financier</h3>
               <ul>
                 <li>Lorsque vous attestez que les travaux ont &eacute;t&eacute; ex&eacute;cut&eacute;s conform&eacute;ment aux exigences et que les services et les fournitures ont &eacute;t&eacute; rendus de fa&ccedil;on satisfaisante, il s'agit de l'article 34.</li>
                 <li>Lorsque votre service financier s'assure que le paiement est conforme aux exigences de la politique, il s'agit de l'article 33.</li>
               </ul>
-              <p><strong>Surveiller et contr&ocirc;ler les finances</strong></p>
+              <h3>Surveiller et contr&ocirc;ler les finances</h3>
               <ul>
                 <li>Pour vous aider &agrave; suivre votre plan de travail et votre budget, vous surveillerez continuellement vos d&eacute;penses et g&eacute;rerez vos risques.</li>
               </ul>
@@ -118,7 +118,10 @@ span.spend:before {
   margin: 0;
   margin-top: 30px;
 }
-
+h3 {
+  font-family: "Roboto Condensed";
+  font-size: 1.5em;
+}
 .bigQuote {
   font-size: 36px;
   padding-bottom: 2em;

@@ -1270,6 +1270,7 @@ footer,
 header,
 main {
   display: block;
+  font-size:.5em;
 }
 
 a {

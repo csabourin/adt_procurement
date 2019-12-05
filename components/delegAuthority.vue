@@ -1,14 +1,14 @@
 <template>
 	<div>
 		 <b-card>
-<p class="scrollMe" v-if="$i18n.locale=='en'"><delegAutorityEn /></p>
-<p class="scrollMe" v-if="$i18n.locale=='fr'"><delegAutorityFr /></p>
     <b-tabs content>
       <b-tab title="Question 1"><radioQuiz :Question="$t('q1')" qId="1"/></b-tab>
       <b-tab title="Question 2"><radioQuiz :Question="$t('q2')" qId="2" /></b-tab>
       <b-tab title="Question 3"><checkboxQuiz :Question="$t('q3')" qId="3" :Answer="['3']"/></b-tab>
       <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" /></b-tab>
     </b-tabs>
+    <p class="scrollMe" v-if="$i18n.locale=='en'"><delegAutorityEn /></p>
+<p class="scrollMe" v-if="$i18n.locale=='fr'"><delegAutorityFr /></p>
 </b-card>
 	</div>
 </template>

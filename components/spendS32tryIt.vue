@@ -61,7 +61,7 @@
       </table>
     </span>
     <b-card>
-      <b-tabs content>
+      <b-tabs content v-model="tabIndex">
         <b-tab title="Question 1">
           <radioQuiz :Question="$t('q1')" qId="1" />
         </b-tab>
@@ -78,6 +78,13 @@
           <radioQuiz :Question="$t('q4')" qId="4" />
         </b-tab>
       </b-tabs>
+        <!-- Control buttons-->
+      <div class="text-center">
+        <b-button-group class="mt-2">
+          <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+          <b-button @click="tabIndex++" :disabled="tabIndex>=3">{{$t('nextPage')}}</b-button>
+        </b-button-group>
+      </div>
     </b-card>
   </div>
 </template>
@@ -90,6 +97,11 @@ export default {
     checkboxQuiz,
     radioQuiz,
     SignatureCard
+  },
+  data(){
+    return {
+      tabIndex:0
+    }
   }
 }
 </script>

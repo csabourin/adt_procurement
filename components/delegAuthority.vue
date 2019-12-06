@@ -1,15 +1,23 @@
 <template>
 	<div>
 		 <b-card>
-    <b-tabs content>
+    <b-tabs content v-model="tabIndex">
       <b-tab title="Question 1"><radioQuiz :Question="$t('q1')" qId="1"/></b-tab>
       <b-tab title="Question 2"><radioQuiz :Question="$t('q2')" qId="2" /></b-tab>
       <b-tab title="Question 3"><checkboxQuiz :Question="$t('q3')" qId="3" :Answer="['3']"/></b-tab>
       <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" /></b-tab>
     </b-tabs>
+      <!-- Control buttons-->
+      <div class="text-center">
+        <b-button-group class="mt-2">
+          <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+          <b-button @click="tabIndex++" :disabled="tabIndex>=3">{{$t('nextPage')}}</b-button>
+        </b-button-group>
+      </div>
+  </b-card>
     <p class="scrollMe" v-if="$i18n.locale=='en'"><delegAutorityEn /></p>
 <p class="scrollMe" v-if="$i18n.locale=='fr'"><delegAutorityFr /></p>
-</b-card>
+
 	</div>
 </template>
 <script type="text/javascript">
@@ -23,7 +31,12 @@
 			radioQuiz,
       delegAutorityEn,
       delegAutorityFr
-		}
+		},
+    data(){
+      return{
+        tabIndex:0
+      }
+    }
 	}
 </script>
 <i18n>{

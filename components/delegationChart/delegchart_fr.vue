@@ -1445,26 +1445,12 @@
   </span>
 </template>
 <style scoped>
-/*! CSS Used from: https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/WET/css/theme.css */
-.wb-inv,
-.wb-sl {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: 0;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-}
-
-body {
-  margin: 0;
-}
 
 footer,
 header,
 main {
   display: block;
-  font-size: .5em;
+  font-size: .7em;
 }
 
 a {

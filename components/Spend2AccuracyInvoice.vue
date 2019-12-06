@@ -5,11 +5,18 @@
         <b-col><SalesInvoice /></b-col>
         <b-col>
 		 <b-card>
-    <b-tabs content>
+    <b-tabs content v-model="tabIndex">
       <b-tab title="Question 1"><radioQuiz :Question="$t('q1')" qId="1"/></b-tab>
       <b-tab title="Question 2"><radioQuiz :Question="$t('q2')" qId="2" /></b-tab>
       <b-tab title="Question 3"><radioQuiz :Question="$t('q3')" qId="3" /></b-tab>
     </b-tabs>
+          <!-- Control buttons-->
+      <div class="text-center">
+        <b-button-group class="mt-2">
+          <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+          <b-button @click="tabIndex++" :disabled="tabIndex>=2">{{$t('nextPage')}}</b-button>
+        </b-button-group>
+      </div>
 </b-card>
 </b-col>
 
@@ -26,7 +33,12 @@
 			checkboxQuiz,
 			radioQuiz,
       SalesInvoice
-		}
+		},
+    data(){
+      return{
+        tabIndex:0
+      }
+    }
 	}
 </script>
 <i18n>{

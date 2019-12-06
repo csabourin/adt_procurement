@@ -226,7 +226,7 @@ export default {
       }
     },
     "q4": {
-      "text": "To find your department’s core responsibilities, expected results and indicators, you would look to:",
+      "text": "An example of a trend is …",
       "options": {
         "1": "The budget for travel has increased year over year by a factor of 3%. ",
         "2": "An activity related to renewing fishing licenses was delayed due to Arctic weather. ",
@@ -261,7 +261,7 @@ export default {
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is a surplus in the relocation budget of $10,000, as $10,000 is the difference between budget and actual expenditures. ",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> $10,000 is the difference between budget and actual expenditures.",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is a surplus in the relocation budget of $10,000, as $10,000 is the difference between budget and actual expenditures."
       }
     },
@@ -273,8 +273,9 @@ export default {
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Yes. Consultations started last year, are continuing in the current year, and should end next year."
-      }
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Yes."
+      },
+      "conclusion":" Consultations started last year, are continuing in the current year, and should end next year."
     },
     "q8": {
       "text": "Non-discretionary costs are: ",
@@ -284,10 +285,11 @@ export default {
         "3": "Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them. Non-Discretionary costs, if reduced or cut, will seriously affect your ability to deliver your priorities. ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them. Non-Discretionary costs, if reduced or cut, will seriously affect your ability to deliver your priorities. ",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them. ",
         "3": "<span class='v-right' /> <strong>Correct!</strong> "
-      }
+      },
+      "conclusion":"Non-Discretionary costs, if reduced or cut, will seriously affect your ability to deliver your priorities."
     }
   },
   "fr": {
@@ -473,7 +475,7 @@ export default {
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Un surplus de 10 000 $ dans le budget de réinstallation, car 10 000 $ est la différence entre le budget et les dépenses réelles.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> 10 000 $ est la différence entre le budget et les dépenses réelles. ",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Un surplus de 10 000 $ dans le budget de réinstallation, car 10 000 $ est la différence entre le budget et les dépenses réelles."
       }
     },
@@ -485,8 +487,9 @@ export default {
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Oui. Les consultations ont commencé l'année dernière, se poursuivent pendant l'année en cours et devraient se terminer l'année prochaine."
-      }
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Oui. "
+      },
+      "conclusion":"Les consultations ont commencé l'année dernière, se poursuivent pendant l'année en cours et devraient se terminer l'année prochaine."
     },
     "q8": {
       "text": "Les coûts non discrétionnaires sont :",
@@ -496,10 +499,11 @@ export default {
         "3": "Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser. Les coûts non discrétionnaires, s'ils sont réduits ou éliminés, affecteront sérieusement votre capacité à respecter vos priorités.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser. Les coûts non discrétionnaires, s'ils sont réduits ou éliminés, affecteront sérieusement votre capacité à respecter vos priorités.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser.",
         "3": "<span class='v-right' /> <strong>Correct!</strong> "
-      }
+      },
+      "conclusion":" Les coûts non discrétionnaires, s'ils sont réduits ou éliminés, affecteront sérieusement votre capacité à respecter vos priorités."
     }
   }
 }</i18n>

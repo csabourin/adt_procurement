@@ -42,7 +42,7 @@
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": "As per the signed delegation of authority chart, the manager does not have authority to initiate hospitality, so the correct answer is $0. For more information on hospitality, visit https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228."
+      "conclusion": "As per the signed delegation of authority chart, the manager does not have authority to initiate hospitality, so the correct answer is $0. For more information on hospitality, visit the <a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228' target='_blank'>Directive on Travel, Hospitality, Conference and Event Expenditures</a>."
     },
     "q2": {
       "text": "What is the lowest position that could approve the hospitality?",
@@ -61,7 +61,7 @@
       "conclusion": ""
     },
     "q3": {
-      "text": "Multiple departmental employees are travelling to an event. Consulting the following departmental financial delegation chart, who would you ask to approve (section 32) a $23,000 amount made up of travel and event registration costs?",
+      "text": "Multiple departmental employees are travelling to an event. Consulting the provided departmental financial delegation chart, who would you ask to approve (section 32) a $23,000 amount made up of travel and event registration costs?",
       "options": {
         "1": "Director",
         "2": "Director General",
@@ -72,7 +72,7 @@
         "1": "<span class='v-right' /> <strong>Correct!</strong>.",
         "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
-      "conclusion": "You would need to consult the Assistant Deputy Minister (ADM). Only the ADM has the authority to approve departmental costs for an event of more than $20,000 and up to $25,000. Don’t forget to consult with your Director and your Director General before approaching your ADM!"
+      "conclusion": "You would need to consult the Assistant Deputy Minister (ADM). Only the ADM has the authority to approve departmental costs for an event of more than $20,000 and up to $25,000. Don’t forget to consult with your Director and your Director General before approaching your ADM!<p>For more information on events, visit the <a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228'>Directive on Travel, Hospitality, Conference and Event Expenditures</a>.</p>"
     },
     "q4": {
       "text": "What does “F” or “Full” in the following chart mean?",
@@ -102,7 +102,7 @@
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Selon le tableau de délégation signé, le gestionnaire n'a pas le pouvoir d'entreprendre des activités d'accueil; la bonne réponse est donc 0 $. Pour de plus amples renseignements sur l'accueil, visitez le site https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228."
+      "conclusion": " Selon le tableau de délégation signé, le gestionnaire n'a pas le pouvoir d'entreprendre des activités d'accueil; la bonne réponse est donc 0 $. Pour de plus amples renseignements sur l'accueil, visitez la <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive sur les dépenses de voyages, d’accueil, de conférences et d’événements</a>."
     },
     "q2": {
       "text": "Quel est le poste le plus bas qui pourrait approuver l'accueil?",
@@ -121,7 +121,7 @@
       "conclusion": ""
     },
     "q3": {
-      "text": "Plusieurs employés du Ministère se déplacent pour assister à un événement. En consultant le tableau de délégation financière ministériel suivant, à qui demanderiez-vous d'approuver (article 32) un montant de 23 000 $ composé des frais de déplacement et d'inscription aux événements?",
+      "text": "Plusieurs employés du Ministère se déplacent pour assister à un événement. En consultant le tableau de délégation financière ministériel fourni, à qui demanderiez-vous d'approuver (article 32) un montant de 23 000 $ composé des frais de déplacement et d'inscription aux événements?",
       "options": {
         "1": "Directeur",
         "2": "Directeur général",
@@ -132,7 +132,7 @@
         "right": "<span class='v-right' /> <strong>Correct!</strong>.",
         "wrong": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
-      "conclusion": "Vous devriez consulter le sous-ministre adjoint (SMA). Seul le SMA a le pouvoir d'approuver les coûts ministériels pour un événement de plus de 20&nbsp;000&nbsp;$ et jusqu'à 25&nbsp;000&nbsp;$. N'oubliez pas de consulter votre directeur et votre directeur général avant d'approcher votre SMA! Pour plus d’information sur les événements, visiter le site https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228."
+      "conclusion": "Vous devriez consulter le sous-ministre adjoint (SMA). Seul le SMA a le pouvoir d'approuver les coûts ministériels pour un événement de plus de 20&nbsp;000&nbsp;$ et jusqu'à 25&nbsp;000&nbsp;$. N'oubliez pas de consulter votre directeur et votre directeur général avant d'approcher votre SMA! <p> Pour plus d’information sur les événements, visiter la <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive sur les dépenses de voyages, d’accueil, de conférences et d’événements.</a>.</p>"
     },
     "q4": {
       "text": "Que signifie 'P' ou 'Plein' dans le tableau suivant ?",

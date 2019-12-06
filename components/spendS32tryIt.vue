@@ -5,16 +5,16 @@
       <p>First, let&rsquo;s check your budget.</p>
       <table border='1'>
         <tbody>
-          <tr>
-            <td>
+          <tr style="background-color: #d9d2e9;">
+            <th>
               <p>Budget</p>
-            </td>
-            <td>
+            </th>
+            <th>
               <p>Commitment</p>
-            </td>
-            <td>
+            </th>
+            <th>
               <p>Year to Date Actuals</p>
-            </td>
+            </th>
           </tr>
           <tr>
             <td>
@@ -35,16 +35,16 @@
       <p>D'abord, vérifions votre budget.</p>
       <table border='1'>
         <tbody>
-          <tr>
-            <td>
+          <tr style="background-color: #d9d2e9;">
+            <th>
               <p>Budget</p>
-            </td>
-            <td>
+            </th>
+            <th>
               <p>Engagements </p>
-            </td>
-            <td>
+            </th>
+            <th>
               <p>Dépenses réelles à ce jour</p>
-            </td>
+            </th>
           </tr>
           <tr>
             <td>

@@ -4,7 +4,7 @@
       <b-card>
         <p><strong>Question</strong></p>
         <p v-if="$i18n.locale=='fr'">
-          <table>
+          <table border="1">
             <tbody>
               <tr>
                 <td>&nbsp;</td>
@@ -42,7 +42,7 @@
           </table>
         </p>
         <p v-if="$i18n.locale=='en'">
-          <table>
+          <table border="1">
             <tbody>
               <tr>
                 <td>&nbsp;</td>

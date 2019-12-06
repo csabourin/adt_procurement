@@ -3,10 +3,11 @@
     <!-- <nuxt-link :to="localePath('index')">
       <h3>{{$t('homePage')}}</h3>
     </nuxt-link> -->
-    <h4>{{$t('plan')}}</h4>
+    
+    <a href="#" ref="item"><h4 >{{$t('plan')}}</h4></a>    
     <ul style="list-style: none">
       <li>
-        <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessages')" />
+        <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessages')"     />
       </li>
       <li>
         <nuxt-link :to="localePath('buildWP')" v-html="$t('BuildWorkPlan')" />
@@ -53,6 +54,23 @@
     </ul>
   </div>
 </template>
+<script type="text/javascript">
+  export default{
+    methods:{
+      setFocus(){
+        this.$nextTick(() => {
+        this.$refs.item.focus()
+      });
+        
+
+      
+      }
+    },
+    mounted(){
+      this.setFocus()
+    }
+  }
+</script>
 <style type="text/css" scoped>
 .contentMap {
   background-color: #fff;

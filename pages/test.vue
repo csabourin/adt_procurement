@@ -26,6 +26,8 @@
     <hr>
     <gauge :angle="gaugeRange" />
     <input type="range" v-model="gaugeRange" min="-120" max="120">
+    <hr style="clear:both">
+<connectDots />
   </div>
 </template>
 <script type="text/javascript">
@@ -33,6 +35,7 @@ import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
 import openDoor from "~/components/openDoor"
 import gauge from "~/components/gauge"
+import connectDots from "~/components/interface/connectDots"
 import selectMatching from "~/components/selectMatching"
 export default {
   components: {
@@ -40,7 +43,8 @@ export default {
     checkboxQuiz,
     openDoor,
     gauge,
-    selectMatching
+    selectMatching,
+    connectDots
   },
   data() {
     return {
@@ -142,7 +146,7 @@ export default {
   }
   }
   }</i18n>
-<style type="text/css">
+<style type="text/css" scoped="">
 .floatMiddle {
   display: flex;
   justify-content: center;
@@ -151,5 +155,6 @@ export default {
   text-align: center;
   width: 200px;
 }
+/**{border:1px solid red;}*/
 
 </style>

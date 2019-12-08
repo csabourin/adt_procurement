@@ -8,7 +8,7 @@
       </li>
     </ul>
     <span >
-    <svg  :key="$i18n.locale" ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" viewBox="0 0 180 180" width="180" height="180">
+    <svg :key="$i18n.locale" ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" viewBox="0 0 180 180" width="180" height="180">
       <path ref="svgPath" v-for="(item, index) in 5" :d="'M'+left.x+','+left.y+' '+right.x+','+right.y" stroke-width="10" stroke="#4d4d4d" fill="" />
     </svg>
     </span>

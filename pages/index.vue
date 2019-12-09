@@ -21,7 +21,7 @@
     <div class="sideTitle planTitle">{{$t('plan')}}</div>
     <section class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }">
       <microlearning path="planKey" time="2" completion=100 imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
-      <microlearning path="buildWP" time="20"  imagePath="KeyMessR.png" completion=80 :text="$t('BuildWorkPlan')" />
+      <microlearning path="buildWP" time="20"  imagePath="BuildWP.svg" completion=80 :text="$t('BuildWorkPlan')" />
       <microlearning time="20" path="createBudget" completion=10 imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
       <microlearning time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
     </section>

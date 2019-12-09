@@ -87,7 +87,7 @@
     </b-container>
     <div class="bottomNav reportSection">
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
-      <microlearning youAreHere path="spendKey" size="140" completion="100" imagePath="KeyMessR.png" :text="$t('KeyMessages')" />
+      <microlearning youAreHere path="reportKey" size="140" completion="100" imagePath="KeyMessR.png" :text="$t('KeyMessages')" />
       <microlearning path="spendPart1" tmp_imagePath="InitiateAuthSpending.svg" size="140" time="20" completion="80" :text="$t('ConductPeriodicVarianceReporting')" />
       <microlearning path="spendPart2" tmp_imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" completion="80" :text="$t('ContributeReporting')" />
       <microlearning size="140" time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />

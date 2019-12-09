@@ -108,14 +108,14 @@ export default {
 <i18n>{
   "en":
   {
-  "keyPlanQuote": " Reports should tell the public the story of how we are doing. ",
+  "keyPlanQuote": " Reports should tell the public the story of our performance. ",
   "fileSet": "Files in this section",
   "downloadPlan": "Download a Word template of the work plan",
   "reportSectionBar": "SPEND"
   },
   "fr":
   {
-  "keyPlanQuote": " Les rapports devraient témoigner au public l'histoire de nos accomplissements. ",
+  "keyPlanQuote": " Les rapports devraient communiquer au public l'histoire de notre performance. ",
   "fileSet": "Fichiers dans cette section",
   "downloadPlan": "Télécharger un modèle Word du plan de travail",
   "reportSectionBar": "DÉPENSES"

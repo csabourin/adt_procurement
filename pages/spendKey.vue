@@ -99,7 +99,7 @@ export default {
   },
   "fr":
   {
-  "keyPlanQuote": " Une bonne planification mène à une bonne performance. ",
+  "keyPlanQuote": " L'imputabilité favorise la responsabilité ",
   "fileSet": "Fichiers dans cette section",
   "downloadPlan": "Télécharger un modèle Word du plan de travail",
   "spendSectionBar": "DÉPENSES"

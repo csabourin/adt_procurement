@@ -40,7 +40,7 @@
     <h4>{{$t('report')}}</h4>
     <ul style="list-style: none">
       <li>
-        <nuxt-link :to="localePath('null')" v-html="$t('KeyMessages')" />
+        <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessages')" />
       </li>
       <li>
         <nuxt-link :to="localePath('null')" v-html="$t('ConductPeriodicVarianceReporting')" />

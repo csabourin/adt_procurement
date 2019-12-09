@@ -37,7 +37,7 @@
     <hr class="spendHr">
     <div class="sideTitle reportTitle">{{$t('report')}}</div>
     <section class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }">
-      <microlearning time="5" :text="$t('KeyMessages')" />
+      <microlearning imagePath="KeyMessR.png" path="reportKey" time="5" :text="$t('KeyMessages')" />
       <microlearning time="20" :text="$t('ConductPeriodicVarianceReporting')" />
       <microlearning time="20" :text="$t('ContributeReporting')" />
       <microlearning time="15" :text="$t('Test')" />

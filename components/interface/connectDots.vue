@@ -60,7 +60,7 @@ export default {
       this.left.x = left - this.svgPosx + 20
       this.left.y = top - this.svgPosy + 16
       if (this.activeRight && this.activeLeft) {
-        this.coordinates.push([
+        this.$set(this.coordinates, this.activeRight, [
           [this.left.x, this.left.y],
           [this.right.x, this.right.y]
         ])

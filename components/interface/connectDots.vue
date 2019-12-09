@@ -2,31 +2,32 @@
   <div>
     <ul style="float:left;list-style:none">
       <li v-for="(item,index) in $t('dotsRight')">
-        <input @focus="whereSvg" type="radio" name="left" :id="'left'+index" :value="index" @click="findLeft" v-model="activePath">
+        <input @focus="whereSvg" type="radio" name="left" :id="'left'+index" :value="index" @click="findLeft" v-model="activeRight">
         <label :for="'left'+index">{{item}}</label>
       </li>
     </ul>
     <span>
       <svg :key="$i18n.locale" ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 180 '+svgSize" width="180" :height="svgSize">
-        <path ref="svgPath" v-for="(item, index) in numItems" :d="'M'+left.x+','+left.y+' '+right.x+','+right.y" stroke-width="2" stroke="#4d4d4d" fill="" stroke-linecap='round' />
+        <path ref="svgPath" v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" stroke="#4d4d4d" fill="" stroke-linecap='round' />
       </svg>
     </span>
     <ul style="float:left;list-style:none">
-      <li v-for="(item,index) in $t('dotsLeft')"><input @focus="whereSvg" type="radio" @click="findRight" ref="thatis" name="right" :id="'name2'+index" :value="index"><label :for="'name2'+index">{{item}}</label></li>
+      <li v-for="(item,index) in $t('dotsLeft')"><input @focus="whereSvg" type="radio" @click="findRight" ref="thatis" name="right" :id="'name2'+index" :value="index" v-model="activeLeft"><label :for="'name2'+index">{{item}}</label></li>
     </ul>
     <br style="clear:both">
     <p>SVG Position: {{svgPosx}} , {{svgPosy}}</p>
-    <p>Left {{left.x}} {{left.y}}</p>
-    <p>Right {{right.x}} {{right.y}}</p>
-    <p>Active {{activePath}}</p>
-    <p>{{svgSize}}</p>
+    <p>Left {{left.x}} {{left.y}} Right {{right.x}} {{right.y}}</p>
+    <p>Active Left {{activeLeft}} Active Right {{activeRight}}</p>
+    <p>{{coordinates}}</p>
   </div>
 </template>
 <script type="text/javascript">
 export default {
   data() {
     return {
-      activePath: 0,
+      coordinates: [],
+      activeRight: 0,
+      activeLeft: 0,
       left: { x: 0, y: 0 },
       right: { x: 0, y: 0 },
       svgPosx: 0,
@@ -40,6 +41,14 @@ export default {
       const top = event.target.parentNode.getBoundingClientRect().top
       this.right.x = left - this.svgPosx - 45
       this.right.y = top - this.svgPosy + 16
+      if (this.activeRight && this.activeLeft) {
+        this.coordinates.push([
+          [this.left.x, this.left.y],
+          [this.right.x, this.right.y]
+        ])
+        this.activeRight = ""
+        this.activeLeft = ""
+      }
     },
     findLeft(event) {
 
@@ -47,6 +56,14 @@ export default {
       const top = event.target.parentNode.getBoundingClientRect().top
       this.left.x = left - this.svgPosx + 20
       this.left.y = top - this.svgPosy + 16
+      if (this.activeRight && this.activeLeft) {
+        this.coordinates.push([
+          [this.left.x, this.left.y],
+          [this.right.x, this.right.y]
+        ])
+        this.activeRight = ""
+        this.activeLeft = ""
+      }
     },
     whereSvg() {
       this.$nextTick(() => {
@@ -79,7 +96,7 @@ export default {
   "Six"
   ],
   "dotsLeft":[
- "Un",
+  "Un",
   "Deux",
   "Trois",
   "Quatre",

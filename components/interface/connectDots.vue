@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>{{svgPosx}} , {{svgPosy}}</p>
     <ul style="float:left;list-style:none">
       <li v-for="(item,index) in $t('dotsRight')">
         <input @focus="whereSvg" type="radio" name="left" :id="'left'+index" :value="index" @click="findLeft" v-model="activePath">
@@ -9,13 +8,14 @@
     </ul>
     <span >
     <svg :key="$i18n.locale" ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" viewBox="0 0 180 180" width="180" height="180">
-      <path ref="svgPath" v-for="(item, index) in 5" :d="'M'+left.x+','+left.y+' '+right.x+','+right.y" stroke-width="8" stroke="#4d4d4d" fill="" stroke-linecap='round' />
+      <path ref="svgPath" v-for="(item, index) in 5" :d="'M'+left.x+','+left.y+' '+right.x+','+right.y" stroke-width="2" stroke="#4d4d4d" fill="" stroke-linecap='round' />
     </svg>
     </span>
     <ul style="float:left;list-style:none">
       <li v-for="(item,index) in 5"><input @focus="whereSvg" type="radio" @click="findRight" ref="thatis" name="right" :id="'name2'+index" :value="index"><label :for="'name2'+index">{{item}}</label></li>
     </ul>
     <br style="clear:both">
+    <p>SVG Position: {{svgPosx}} , {{svgPosy}}</p>
     <p>Left {{left.x}} {{left.y}}</p>
     <p>Right {{right.x}} {{right.y}}</p>
     <p>Active {{activePath}}</p>

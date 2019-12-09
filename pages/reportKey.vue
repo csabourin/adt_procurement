@@ -115,7 +115,7 @@ export default {
   },
   "fr":
   {
-  "keyPlanQuote": " Les rapports devraient témoigner au public comment nous nous portons. ",
+  "keyPlanQuote": " Les rapports devraient témoigner au public l'histoire de nos accomplissements. ",
   "fileSet": "Fichiers dans cette section",
   "downloadPlan": "Télécharger un modèle Word du plan de travail",
   "reportSectionBar": "DÉPENSES"

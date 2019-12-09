@@ -12,7 +12,7 @@
       </svg>
     </span>
     <ul style="float:left;list-style:none">
-      <li v-for="(item,index) in numItems"><input @focus="whereSvg" type="radio" @click="findRight" ref="thatis" name="right" :id="'name2'+index" :value="index"><label :for="'name2'+index">{{item}}</label></li>
+      <li v-for="(item,index) in $t('dotsLeft')"><input @focus="whereSvg" type="radio" @click="findRight" ref="thatis" name="right" :id="'name2'+index" :value="index"><label :for="'name2'+index">{{item}}</label></li>
     </ul>
     <br style="clear:both">
     <p>SVG Position: {{svgPosx}} , {{svgPosy}}</p>
@@ -77,6 +77,14 @@ export default {
   "Four",
   "Five",
   "Six"
+  ],
+  "dotsLeft":[
+ "Un",
+  "Deux",
+  "Trois",
+  "Quatre",
+  "Cinq",
+  "Six"
   ]
   },
   "fr":{
@@ -86,6 +94,14 @@ export default {
   "Trois",
   "Quatre",
   "Cinq",
+  "Six"
+  ],
+  "dotsLeft":[
+  "One",
+  "Two",
+  "Three",
+  "Four",
+  "Five",
   "Six"
   ]
   }

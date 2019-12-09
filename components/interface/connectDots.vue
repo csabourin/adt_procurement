@@ -2,7 +2,7 @@
   <div>
     <ul style="float:left;list-style:none">
       <li v-for="(item,index) in $t('dotsRight')">
-        <input @focus="whereSvg" type="radio" name="left" :id="'left'+index" :value="index" @click="findLeft" v-model="activeRight">
+        <input @focus="whereSvg" type="radio" name="left" :id="'left'+index" :value="index" @change="findLeft" v-model="activeRight">
         <label :for="'left'+index">{{item}}</label>
       </li>
     </ul>
@@ -12,7 +12,7 @@
       </svg>
     </span>
     <ul style="float:left;list-style:none">
-      <li v-for="(item,index) in $t('dotsLeft')"><input @focus="whereSvg" type="radio" @click="findRight" ref="thatis" name="right" :id="'name2'+index" :value="index" v-model="activeLeft"><label :for="'name2'+index">{{item}}</label></li>
+      <li v-for="(item,index) in $t('dotsLeft')"><input @focus="whereSvg" type="radio" @change="findRight" ref="thatis" name="right" :id="'name2'+index" :value="index" v-model="activeLeft"><label :for="'name2'+index">{{item}}</label></li>
     </ul>
     <br style="clear:both">
     <p>SVG Position: {{svgPosx}} , {{svgPosy}}</p>
@@ -25,9 +25,9 @@
 export default {
   data() {
     return {
-      coordinates: [],
-      activeRight: 0,
-      activeLeft: 0,
+      coordinates: {},
+      activeRight: undefined,
+      activeLeft: undefined,
       left: { x: 0, y: 0 },
       right: { x: 0, y: 0 },
       svgPosx: 0,
@@ -42,13 +42,16 @@ export default {
       this.right.x = left - this.svgPosx - 45
       this.right.y = top - this.svgPosy + 16
       if (this.activeRight && this.activeLeft) {
-        this.coordinates.push([
+
+        this.$set(this.coordinates, this.activeRight, [
           [this.left.x, this.left.y],
           [this.right.x, this.right.y]
         ])
+
         this.activeRight = ""
         this.activeLeft = ""
       }
+
     },
     findLeft(event) {
 

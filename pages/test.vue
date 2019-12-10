@@ -27,7 +27,7 @@
     <gauge :angle="gaugeRange" />
     <input type="range" v-model="gaugeRange" min="-120" max="120">
     <hr style="clear:both">
-<connectDots />
+    <connectDots :question="$t('q4')" :correctAnswer='[["0","0"],["1","1"],["2","2"],["3","3"],["4","4"],["5","5"],["6","6"]]' />
   </div>
 </template>
 <script type="text/javascript">
@@ -55,6 +55,7 @@ export default {
     }
   }
 }
+
 </script>
 <i18n>{
   "en": {
@@ -99,7 +100,26 @@ export default {
   "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
   "right": "<span class='v-right' /> <strong>Correct!</strong>"
   }
-  }
+  },
+  "q4":{
+  "dotsRight":[
+  "Budget",
+  "Commitments",
+  "Year-To-Date Actuals",
+  "Annual Forecast",
+  "Surplus/Deficit",
+  "Surplus/Deficit Notes",
+  "Notes on Risks"
+  ],
+  "dotsLeft":[
+  "Funds allocated for the fiscal year. ",
+  "Funds set aside for a specific purpose.",
+  "What you have spent up to now.",
+  "What you plan on spending for the full fiscal year.",
+  "Budget leftover or shortfall. ",
+  "Provides details on the budget leftover or shortfall",
+  "Situations that may change the results you’ve reported. "
+  ]}
   },
   "fr": {
   "q1": {
@@ -143,9 +163,28 @@ export default {
   "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
   "right": "<span class='v-right' /> <strong>Correct!</strong>"
   }
+  },
+  "q4":{"dotsRight":[
+  "Budget",
+  "Engagements",
+  "Dépenses réelles depuis le début de l'année",
+  "Prévisions annuelles",
+  "Excédent/déficit",
+  "Notes sur les excédents ou déficits",
+  "Notes sur les risques"
+  ],
+  "dotsLeft":[
+  "Fonds alloués pour l'exercice financier. ",
+  "Fonds mis de côté à des fins précises.",
+  "Ce que vous avez dépensé jusqu'à présent.",
+  "Ce que vous prévoyez dépenser pour l'ensemble de l'exercice financier.",
+  "Reste ou manque à gagner dans le budget. ",
+  "Fournit des détails sur le reliquat ou le manque à gagner du budget. ",
+  "Les situations qui peuvent changer les résultats que vous avez rapportés. "
+  ]}
   }
   }
-  }</i18n>
+</i18n>
 <style type="text/css" scoped="">
 .floatMiddle {
   display: flex;
@@ -155,6 +194,7 @@ export default {
   text-align: center;
   width: 200px;
 }
+
 /**{border:1px solid red;}*/
 
 </style>

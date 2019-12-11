@@ -97,7 +97,7 @@ export default {
     findRight(event) {
       this.isSubmitted = false
       const right = event.target.parentNode.getBoundingClientRect().left
-      const top = event.target.parentNode.getBoundingClientRect().top + window.scrollY
+      const top = event.target.parentNode.getBoundingClientRect().top +(window.scrollY||window.pageYOffset)
       this.right.x = right - this.svgPosx-8
       this.right.y = top - this.svgPosy+8
       if (this.activeRight && this.activeLeft) {
@@ -118,7 +118,7 @@ export default {
     findLeft(event) {
       this.isSubmitted = false
       const left = event.target.parentNode.getBoundingClientRect().right
-      const top = event.target.parentNode.getBoundingClientRect().top + window.scrollY
+      const top = event.target.parentNode.getBoundingClientRect().top +(window.scrollY||window.pageYOffset)
       this.left.x = left - this.svgPosx + 8
       this.left.y = top - this.svgPosy+6
       if (this.activeRight && this.activeLeft) {

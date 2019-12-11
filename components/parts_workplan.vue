@@ -77,42 +77,42 @@
   "downloadPlan":"Download a Word template of the work plan",
   "dwnPlanLine1":"Work Plan",
   "dwnPlanLine2":"Template",
-  "pwpGovtPri":"<strong>Government priorities</strong> <br> In the Speech from the throne, a new government sets out its agenda. This includes its broad goals and commitments and how it will reach them.",
-  "pwpDeptPri":"<strong>Departmental priorities</strong> <br> What your department sets out to do to support the government’s priorities.",
-  "pwpDirPri":"<strong>Directorate priorities</strong> <br> What your directorate sets out to do to support the departmental priorities.",
+  "pwpGovtPri":"<strong>Government priorities -</strong> In the Speech from the throne, a new government sets out its agenda. This includes its broad goals and commitments and how it will reach them.",
+  "pwpDeptPri":"<strong>Departmental priorities -</strong> What your department sets out to do to support the government’s priorities.",
+  "pwpDirPri":"<strong>Directorate priorities -</strong> What your directorate sets out to do to support the departmental priorities.",
   "titleActivities":"Activities",
-  "pwpPlanAct":"<strong>Activities</strong> <br> The work tasks to be accomplished to support your directorate’s priorities. This includes performance indicators and service standards for each work task.",
+  "pwpPlanAct":"<strong>Activities -</strong> The work tasks to be accomplished to support your directorate’s priorities. This includes performance indicators and service standards for each work task.",
   "titleSubActivities":"Sub-activities",
-  "pwpPlanSubAct":"<strong>Sub-activities</strong> <br> The work tasks broken down into smaller parts.",
+  "pwpPlanSubAct":"<strong>Sub-activities -</strong> The work tasks broken down into smaller parts.",
   "titleDeliverables":"Deliverables",
-  "pwpPlanDelivs":"<strong>Deliverables</strong> <br> Specific and tangible items you should be able to check off your list when you accomplish them.",
+  "pwpPlanDelivs":"<strong>Deliverables -</strong> Specific and tangible items you should be able to check off your list when you accomplish them.",
   "titleRisk":"Risk",
-  "pwpPlanRisk":"<strong>Risk</strong> <br> Potential events that may affect the activity and its ability to meet and accomplish its objectives and expected results.",
+  "pwpPlanRisk":"<strong>Risk -</strong> Potential events that may affect the activity and its ability to meet and accomplish its objectives and expected results.",
   "titleLikelihood":"Likelihood",
-  "pwpPlanLikely":"<strong>Likelihood</strong> <br> An educated guess at whether or not the risk will happen.",
+  "pwpPlanLikely":"<strong>Likelihood -</strong> An educated guess at whether or not the risk will happen.",
   "titleImpact":"Impact",
-  "pwpPlanImpact":"<strong>Impact</strong> <br> The potential loss associated with a risk.",
+  "pwpPlanImpact":"<strong>Impact -</strong> The potential loss associated with a risk.",
   "titleMitigation":"Mitigation",
-  "pwpPlanMitigat":"<strong>Mitigation</strong> Actions to counteract the potential risks.",
+  "pwpPlanMitigat":"<strong>Mitigation -</strong> Actions to counteract the potential risks.",
   "titleResources":"Resources",
-  "pwpPlanRes":"<strong>Resources</strong> <br> The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
+  "pwpPlanRes":"<strong>Resources -</strong> The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
   },
   "fr":{
   "pwpTitle":"Prenez un moment pour explorer les différentes sections d'un plan de travail.",
   "downloadPlan":"Télécharger un modèle Word du plan de travail",
   "dwnPlanLine1":"Plan de",
   "dwnPlanLine2":"travail",
-  "pwpGovtPri":"<strong>Priorités du gouvernement</strong> <br> Dans le discours du Trône, un nouveau gouvernement présente son programme. Il s'agit notamment de ses objectifs généraux et de ses engagements et de la façon dont il les atteindra.",
-  "pwpDeptPri":"<strong>Priorités ministérielles</strong> <br> Ce que votre ministère entend faire pour appuyer les priorités du gouvernement.",
-  "pwpDirPri":"<strong>Priorités de la direction</strong> <br> Ce que votre direction générale entend faire pour appuyer les priorités ministérielles.","titleActivities":"Activités",
-  "pwpPlanAct":"<strong>Activités </strong> <br> Les tâches de travail à accomplir pour appuyer les priorités de votre direction. Cela comprend des indicateurs de rendement et des normes de service pour chaque tâche de travail.","titleSubActivities":"Sous-activités",
-  "pwpPlanSubAct":"<strong>Sous-activités</strong> <br> La tâche de travail est divisée en parties plus petites.","titleDeliverables":"Livrables",
-  "pwpPlanDelivs":"<strong>Livrables</strong> <br>Les éléments spécifiques et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les accomplissez.","titleRisk":"Risque",
-  "pwpPlanRisk":"<strong>Risque </strong> <br> Événements susceptibles d'influer sur l'activité et sur sa capacité d'atteindre et d'atteindre ses objectifs et les résultats escomptés.","titleLikelihood":"Probabilité",
-  "pwpPlanLikely":"<strong>Probabilité </strong> <br> Un jugement approximatif permettant de déterminer si le risque se concrétisera ou non.","titleImpact":"Impact",
-  "pwpPlanImpact":"<strong>Impact</strong> <br> La perte potentielle associée à un risque.","titleMitigation":"Atténuation",
-  "pwpPlanMitigat":"<strong>Atténuation </strong> Actions pour contrer les risques potentiels.","titleResources":"Resources",
-  "pwpPlanRes":"<strong>Resources</strong> <br> Le budget, le personnel (équivalent temps plein «&nbsp;ETP&nbsp;»), les consultants, les bâtiments et le matériel nécessaires à la réalisation des activités de la direction."
+  "pwpGovtPri":"<strong>Priorités du gouvernement -</strong> Dans le discours du Trône, un nouveau gouvernement présente son programme. Il s'agit notamment de ses objectifs généraux et de ses engagements et de la façon dont il les atteindra.",
+  "pwpDeptPri":"<strong>Priorités ministérielles -</strong> Ce que votre ministère entend faire pour appuyer les priorités du gouvernement.",
+  "pwpDirPri":"<strong>Priorités de la direction -</strong> Ce que votre direction générale entend faire pour appuyer les priorités ministérielles.","titleActivities":"Activités",
+  "pwpPlanAct":"<strong>Activités -</strong> Les tâches de travail à accomplir pour appuyer les priorités de votre direction. Cela comprend des indicateurs de rendement et des normes de service pour chaque tâche de travail.","titleSubActivities":"Sous-activités",
+  "pwpPlanSubAct":"<strong>Sous-activités -</strong> La tâche de travail est divisée en parties plus petites.","titleDeliverables":"Livrables",
+  "pwpPlanDelivs":"<strong>Livrables -</strong>Les éléments spécifiques et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les accomplissez.","titleRisk":"Risque",
+  "pwpPlanRisk":"<strong>Risque  -</strong> Événements susceptibles d'influer sur l'activité et sur sa capacité d'atteindre et d'atteindre ses objectifs et les résultats escomptés.","titleLikelihood":"Probabilité",
+  "pwpPlanLikely":"<strong>Probabilité  -</strong> Un jugement approximatif permettant de déterminer si le risque se concrétisera ou non.","titleImpact":"Impact",
+  "pwpPlanImpact":"<strong>Impact -</strong> La perte potentielle associée à un risque.","titleMitigation":"Atténuation",
+  "pwpPlanMitigat":"<strong>Atténuation -</strong> Actions pour contrer les risques potentiels.","titleResources":"Resources",
+  "pwpPlanRes":"<strong>Resources -</strong> Le budget, le personnel (équivalent temps plein «&nbsp;ETP&nbsp;»), les consultants, les bâtiments et le matériel nécessaires à la réalisation des activités de la direction."
   }
   }
 </i18n>
@@ -131,8 +131,14 @@ export default {
   width: 100%;
   counter-reset: wpParts
 }
-
+.tableColoured td {
+  vertical-align: top;
+  position: relative;
+  padding: 5px 15px 8px 55px;
+  height:60px;
+}
 .tableColoured td:before {
+  font-family:"Roboto";
   counter-increment: wpParts;
   content: counter(wpParts);
   position: absolute;
@@ -140,27 +146,28 @@ export default {
   left: 0px;
   top: 0px;
   border-radius: 0 0 30px 0;
-  padding: .1em .5em 0 .5em;
+  /*padding: .1em .5em 0 .5em;*/
+  padding: 0em .5em 0 .3em;
   color: white;
+  font-weight: bold;
 }
-
-.tableColoured td {
-  vertical-align: top;
-  position: relative;
-  padding-left: 35px;
+.tableColoured td:nth-of-type(-n+6):before {
+  content: "0"counter(wpParts);
 }
-
+.tableColoured td p{
+  margin-bottom:0;
+}
 .deptPri:before {
   background-color: #167777;
 }
 
 .deptPri {
-  border-top: 2px solid #167777;
+  border-top: 4px solid #167777;
   background-color: #c7e0e0
 }
 
 .govtPri {
-  border-top: 2px solid #6C076C;
+  border-top: 4px solid #6C076C;
   background-color: #e1c8e1
 }
 
@@ -169,7 +176,7 @@ export default {
 }
 
 .dirPri {
-  border-top: 2px solid #6F1E0D;
+  border-top: 4px solid #6F1E0D;
   background-color: #e2ceca
 }
 
@@ -178,6 +185,7 @@ export default {
 }
 
 .planAct {
+  border-left:2px solid #577a90;
   background-color: #E2E8EC;
 }
 
@@ -186,6 +194,7 @@ export default {
 }
 
 .planSubAct {
+  border-left:2px solid #3A8251;
   background-color: #dcefe3;
 }
 
@@ -194,6 +203,7 @@ export default {
 }
 
 .planDelivs {
+  border-left:2px solid #616EB8;
   background-color: #dfe2f1;
 }
 
@@ -202,6 +212,7 @@ export default {
 }
 
 .planRisk {
+  border-left:2px solid #8D9245;
   background-color: #f0f1df;
 }
 
@@ -210,6 +221,7 @@ export default {
 }
 
 .planLikely {
+  border-left:2px solid #775F75;
   background-color: #E1DCE1;
 }
 
@@ -218,6 +230,7 @@ export default {
 }
 
 .planImpact {
+  border-left:2px solid #607293;
   background-color: hsl(219, 21%, 91%);
 }
 
@@ -226,6 +239,7 @@ export default {
 }
 
 .planMitigat {
+  border-left:2px solid #B35685;
   background-color: #f1dfe8;
 }
 
@@ -234,6 +248,7 @@ export default {
 }
 
 .planRes {
+  border-left:2px solid #C35522;
   background-color: #f1e5df;
 }
 
@@ -245,27 +260,37 @@ export default {
 <style>
 .thNumbered .nav-item {
   position: relative;
-  padding-left: 30px;
+  /*padding-left: 30px;*/
+  border-top:4px solid #fff;
+  border-left:2px solid #fff;
+  margin-right:4px;
+  margin-left:1px;
+  min-height:45px;
 }
 
 .thNumbered .nav-item:before {
+  font-family:"Roboto";
   position: absolute;
   counter-increment: wpParts;
   content: counter(wpParts);
   height: 2em;
-  left: 0px;
+  right: 0px;
   top: 0px;
-  border-radius: 0 0 30px 0;
-  padding: .1em .5em 0 .5em;
+  border-radius: 0 0 0 30px;
+  /*padding: .1em .5em 0 .5em;*/
+  padding: 0em .3em 0 .5em;
   color: white;
+  font-weight: bold;
 }
-
+.thNumbered .nav-item:nth-of-type(-n+6):before {
+  content: "0"counter(wpParts);
+}
 .thNumbered .nav-item:nth-of-type(1):before {
-  background-color: #577a90
+  background-color: #577a90;
 }
 
 .thNumbered .nav-item:nth-of-type(2):before {
-  background-color: #3A8251
+  background-color: #3A8251;
 }
 
 .thNumbered .nav-item:nth-of-type(3):before {
@@ -293,39 +318,66 @@ export default {
 }
 
 .thNumbered .nav-item:nth-of-type(1) {
+  border-color:#577a90;
   background-color: #e2e8ec;
 }
 
 .thNumbered .nav-item:nth-of-type(2) {
+  border-color:#3A8251;
   background-color: #dcefe3;
 }
 
 .thNumbered .nav-item:nth-of-type(3) {
+  border-color:#616EB8;
   background-color: #dfe2f1;
 }
 
 .thNumbered .nav-item:nth-of-type(4) {
+  border-color:#8D9245;
   background-color: #f0f1df;
 }
 
 .thNumbered .nav-item:nth-of-type(5) {
+  border-color:#775F75;
   background-color: #e1dce1;
 }
 
 .thNumbered .nav-item:nth-of-type(6) {
+  border-color:#607293;
   background-color: #e3e7ed;
 }
 
 .thNumbered .nav-item:nth-of-type(7) {
+  border-color:#B35685;
   background-color: #f1dfe8;
 }
 
 .thNumbered .nav-item:nth-of-type(8) {
+  border-color:#C35522;
   background-color: #f1e5df;
 }
 
 .thNumbered .card-header {
   padding: 0px 9px;
+  border:0;
 }
-
+.thNumbered .card-header a {
+  padding-left:6px;
+  text-align:left;
+  font-weight:bold;
+  /*min-height:45px;*/
+  height:100%;
+  vertical-align: middle;
+}
+.tabs.thNumbered {
+  border-top:4px solid #fff;
+}
+/*Overriding BSVue (to centralize once tested & approved)*/
+.tab-pane.thNumbered.card-body {
+padding:15px;
+  margin-top:12px;
+}
+.card {
+  border:0
+}
 </style>

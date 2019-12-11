@@ -55,9 +55,9 @@ export default {
     }
   },
   props: {
-    qId:{
-      type:String,
-      default:Math.random()*10
+    qId: {
+      type: String,
+      default: Math.random() * 10
     },
     question: {
       type: Object,
@@ -74,8 +74,7 @@ export default {
       }
     }
   },
-  ready: function() {
-  },
+
   beforeDestroy: function() {
     window.removeEventListener('resize', this.updateOffsets)
   },
@@ -153,12 +152,14 @@ export default {
     }
   },
   mounted() {
-    const svgPos = this.offset(this.$refs.refSVG)
-    this.ulSize = this.$refs.questionHeight.offsetHeight
-    this.answers = this.question.dotsLeft
-    this.svgPosx = svgPos.x
-    this.svgPosy = svgPos.y
     window.addEventListener('resize', this.updateOffsets)
+    this.answers = this.question.dotsLeft
+    this.$nextTick(() => {
+      const svgPos = this.offset(this.$refs.refSVG)
+      this.ulSize = this.$refs.questionHeight.offsetHeight
+      this.svgPosx = svgPos.x
+      this.svgPosy = svgPos.y
+    })
 
   },
   computed: {

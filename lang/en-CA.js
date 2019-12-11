@@ -15,6 +15,7 @@ export default {
   nextPage: "Next",
   backButton: "Back",
   submit: "Submit",
+  reset: "Reset",
   home: "Home",
   checkAll: "Check all that could apply.",
   selectRight: "Select the correct answer.",

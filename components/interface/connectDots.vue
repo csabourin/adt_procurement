@@ -1,17 +1,17 @@
 <template>
   <div @scroll="updateOffsets">
     <p><strong v-html="$t('instructions')"></strong></p>
-    <ul ref="questionHeight" style="float:left;list-style:none">
+    <ul ref="questionHeight" style="float:left;list-style:none;text-align: right;">
       <li v-for="(item,index) in question.dotsRight" :key="item">
+        <label style='text-align:right' :for="'left'+index">{{item}}</label>
         <input type="radio" name="left" :id="'left'+index" :value="index" @change="findLeft" v-model="activeRight">
-        <label :for="'left'+index">{{item}}</label>
       </li>
     </ul>
     <svg :key="$i18n.locale" ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 120 '+ulSize" width="120" :height="ulSize">
       <path v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' />
     </svg>
     <!-- <transition-group name="flip-list" tag="ul" style="float:left;list-style:none"> -->
-    <ul style="float:left;list-style:none">
+    <ul style="float:left;list-style:none;    padding-left: 0">
       <li v-for="(item,index) in answers" :key="item" ref="leftItems">
         <input type="radio" @change="findRight" ref="thatIs" name="right" :id="'name2'+index" :value="index" v-model="activeLeft"><label :for="'name2'+index">{{item}}</label></li>
     </ul>
@@ -22,6 +22,7 @@
       <span v-else class="v-wrong">Incorrect.</span>
     </div>
     <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
+    <b-button @click="resetAnswer">{{$t('reset')}}</b-button>
     <span v-if="debugging">
       <p>SVG Position: {{svgPosx}} , {{svgPosy}}</p>
       <p>Left {{left.x}} {{left.y}} Right {{right.x}} {{right.y}}</p>
@@ -38,7 +39,7 @@ export default {
   data() {
     return {
       debugging: false,
-      colorChoices: ['#A5955F', '#92C3D0', '#AE9FFF', '#429924', '#A652B4', '#952929', '#B7B94F', '#D07733', '#FF58F0', '#623434', '#100065', '#78957F'],
+      colorsChoices: ['#A5955F', '#92C3D0', '#AE9FFF', '#429924', '#A652B4', '#952929', '#B7B94F', '#D07733', '#FF58F0', '#623434', '#100065', '#78957F'],
       coordinates: {},
       activeRight: undefined,
       activeLeft: undefined,
@@ -70,6 +71,9 @@ export default {
   },
 
   methods: {
+  	resetAnswer(){
+  		this.coordinates={}
+  	},
     offset(el) {
       var rect = el.getBoundingClientRect(),
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -92,10 +96,10 @@ export default {
     },
     findRight(event) {
       this.isSubmitted = false
-      const left = event.target.parentNode.getBoundingClientRect().left
+      const right = event.target.parentNode.getBoundingClientRect().left
       const top = event.target.parentNode.getBoundingClientRect().top + window.scrollY
-      this.right.x = left - this.svgPosx - 45
-      this.right.y = top - this.svgPosy + 16
+      this.right.x = right - this.svgPosx-8
+      this.right.y = top - this.svgPosy+8
       if (this.activeRight && this.activeLeft) {
 
         this.$set(this.coordinates, this.activeRight, [
@@ -115,8 +119,8 @@ export default {
       this.isSubmitted = false
       const left = event.target.parentNode.getBoundingClientRect().right
       const top = event.target.parentNode.getBoundingClientRect().top + window.scrollY
-      this.left.x = left - this.svgPosx + 20
-      this.left.y = top - this.svgPosy + 16
+      this.left.x = left - this.svgPosx + 8
+      this.left.y = top - this.svgPosy+6
       if (this.activeRight && this.activeLeft) {
         this.$set(this.coordinates, this.activeRight, [
           [this.left.x, this.left.y],
@@ -145,6 +149,7 @@ export default {
 
   },
   computed: {
+  	colorChoices(){return this.colorsChoices.sort(() => Math.random() - 0.5)},
     finalAnswer() {
       const answers = Object.keys(this.coordinates).length
       var final = []
@@ -155,13 +160,15 @@ export default {
     },
     randomOrder() {
       var posArray = []
+      var randomizer
       this.$nextTick(() => {
           for (let i in this.question.dotsLeft) {
             let j = this.offset(this.$refs.leftItems[i])
             posArray.push([j.x-this.svgPosx, j.y-this.svgPosy])
           }
+          randomizer=posArray.sort(() => Math.random() - 0.5)
         })
-        return posArray
+        return randomizer
       }
     }
   }
@@ -177,9 +184,12 @@ export default {
   }
   }
 </i18n>
-<style type="text/css">
+<style type="text/css" scoped>
 .flip-list-move {
   transition: transform 1s;
 }
-
-</style>
+label:focus,label:active	{
+	outline:1px solid blue;
+}
+/**{outline:1px solid red};*/
+</style>		

@@ -1,5 +1,5 @@
 <template>
-  <div class="pure-radiobutton pure-checkbox">
+  <div>
     <b-container>
       <b-row>
         <b-col>

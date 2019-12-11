@@ -1,19 +1,19 @@
 <template>
-  <div @scroll="updateOffsets">
+  <div>
     <p><strong v-html="$t('instructions')"></strong></p>
     <ul ref="questionHeight" style="float:left;list-style:none;text-align: right;">
       <li v-for="(item,index) in question.dotsRight" :key="item">
-        <label style='text-align:right' :for="'left'+index">{{item}}</label>
-        <input type="radio" name="left" :id="'left'+index" :value="index" @change="findLeft" v-model="activeRight">
+        <label style='text-align:right' :for="'left'+qId+index">{{item}}</label>
+        <input type="radio" name="left" :id="'left'+qId+index" :value="index" @change="findLeft" v-model="activeRight">
       </li>
     </ul>
     <svg :key="$i18n.locale" ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 120 '+ulSize" width="120" :height="ulSize">
-      <path v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' />
+      <path v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
     </svg>
     <!-- <transition-group name="flip-list" tag="ul" style="float:left;list-style:none"> -->
     <ul style="float:left;list-style:none;    padding-left: 0">
       <li v-for="(item,index) in answers" :key="item" ref="leftItems">
-        <input type="radio" @change="findRight" ref="thatIs" name="right" :id="'name2'+index" :value="index" v-model="activeLeft"><label :for="'name2'+index">{{item}}</label></li>
+        <input type="radio" @change="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index" v-model="activeLeft"><label :for="'name2'+qId+index">{{item}}</label></li>
     </ul>
     <!-- </transition-group> -->
     <br style="clear:both">
@@ -32,6 +32,12 @@
         <p>{{correctAnswer}}</p>
         <p>{{randomOrder}}</p>
     </span>
+    <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p>
+    <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p>
+    <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p>
+    <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p>
+    <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p>
+    <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p>
   </div>
 </template>
 <script type="text/javascript">
@@ -54,6 +60,10 @@ export default {
     }
   },
   props: {
+    qId:{
+      type:String,
+      default:Math.random()*10
+    },
     question: {
       type: Object,
       default: function() { return { "dotsLeft": ["1", "2", "3"], "dotsRight": ["3", "1", "2"] } }
@@ -69,11 +79,18 @@ export default {
       }
     }
   },
+  ready: function() {
+  },
+  beforeDestroy: function() {
+    window.removeEventListener('resize', this.updateOffsets)
+  },
 
   methods: {
-  	resetAnswer(){
-  		this.coordinates={}
-  	},
+    resetAnswer() {
+      this.isSubmitted = false
+      this.coordinates = {}
+      this.$forceUpdate(this.colorChoices)
+    },
     offset(el) {
       var rect = el.getBoundingClientRect(),
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -97,9 +114,9 @@ export default {
     findRight(event) {
       this.isSubmitted = false
       const right = event.target.parentNode.getBoundingClientRect().left
-      const top = event.target.parentNode.getBoundingClientRect().top +(window.scrollY||window.pageYOffset)
-      this.right.x = right - this.svgPosx-8
-      this.right.y = top - this.svgPosy+8
+      const top = event.target.parentNode.getBoundingClientRect().top
+      this.right.x = right - this.svgPosx - 8
+      this.right.y = top - this.svgPosy + 10
       if (this.activeRight && this.activeLeft) {
 
         this.$set(this.coordinates, this.activeRight, [
@@ -118,9 +135,9 @@ export default {
     findLeft(event) {
       this.isSubmitted = false
       const left = event.target.parentNode.getBoundingClientRect().right
-      const top = event.target.parentNode.getBoundingClientRect().top +(window.scrollY||window.pageYOffset)
+      const top = event.target.parentNode.getBoundingClientRect().top
       this.left.x = left - this.svgPosx + 8
-      this.left.y = top - this.svgPosy+6
+      this.left.y = top - this.svgPosy + 10
       if (this.activeRight && this.activeLeft) {
         this.$set(this.coordinates, this.activeRight, [
           [this.left.x, this.left.y],
@@ -146,10 +163,11 @@ export default {
     this.answers = this.question.dotsLeft
     this.svgPosx = svgPos.x
     this.svgPosy = svgPos.y
+    window.addEventListener('resize', this.updateOffsets)
 
   },
   computed: {
-  	colorChoices(){return this.colorsChoices.sort(() => Math.random() - 0.5)},
+    colorChoices(seed = 1) { return this.colorsChoices.sort(() => Math.random(seed) - 0.5) },
     finalAnswer() {
       const answers = Object.keys(this.coordinates).length
       var final = []
@@ -162,16 +180,16 @@ export default {
       var posArray = []
       var randomizer
       this.$nextTick(() => {
-          for (let i in this.question.dotsLeft) {
-            let j = this.offset(this.$refs.leftItems[i])
-            posArray.push([j.x-this.svgPosx, j.y-this.svgPosy])
-          }
-          randomizer=posArray.sort(() => Math.random() - 0.5)
-        })
-        return randomizer
-      }
+        for (let i in this.question.dotsLeft) {
+          let j = this.offset(this.$refs.leftItems[i])
+          posArray.push([j.x - this.svgPosx, j.y - this.svgPosy])
+        }
+        randomizer = posArray.sort(() => Math.random() - 0.5)
+      })
+      return randomizer
     }
   }
+}
 
 </script>
 <i18n>
@@ -188,8 +206,12 @@ export default {
 .flip-list-move {
   transition: transform 1s;
 }
-label:focus,label:active	{
-	outline:1px solid blue;
+
+label:focus,
+label:active {
+  outline: 1px solid blue;
 }
+
 /**{outline:1px solid red};*/
-</style>		
+
+</style>

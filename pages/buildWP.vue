@@ -5,7 +5,7 @@
     </h2>
     <section>
       <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/buildwp.jpg')" :src="require('~/assets/'+ $i18n.locale +'/buildworkplan.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isItReady=true">
-        <track :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
+        <track   :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">

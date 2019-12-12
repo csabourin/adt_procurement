@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h2 class="pageTitle" v-html="$t('InitiateAuthorizeSpending')" />
+    <h2 class="pageTitle" v-html="$t('ConductPeriodicVarianceReporting')" />
     
     <section>
       <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/S32Part1Poster.jpg')" :src="require('~/assets/'+ $i18n.locale +'/S32Part1.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isReady">
-        <track :src="require('~/assets/'+ $i18n.locale +'/SpendPart1.vtt')" kind="chapters" default="" @load="generate">
+        <track :src="require('~/assets/'+ $i18n.locale +'/ReportPart1.vtt')" kind="chapters" default="" @load="generate">
       </video>
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
@@ -25,8 +25,8 @@
       <ul id="bar" ref="linkBar">
         <li href='#mainPlayer' v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
           <p>{{ item }}</p><br>
-          <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek" :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
-          <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalParts') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" width="48" height="48"> </a>
+          <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  alt="Play video icon" width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek" :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
+          <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalParts') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" alt="" width="48" height="48"> </a>
         </li>
       </ul>
       <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
@@ -35,49 +35,50 @@
         <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>
     </section>
     <section>
-      <b-modal no-stacking id="checkYourBudget" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('checkBudget')}}</template>
-    <checkBudget />
+      <b-modal no-stacking id="whatIsFSR" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('whatIsFSR')}}</template>
+    <whatIsFSR />
         </b-modal>
-      <b-modal id="delegAuth" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('delegateAuthority')}}</template>
-        <delegAuthority />
+      <b-modal id="keyPeriods" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('delegateAuthority')}}</template>
+        <keyPeriods />
       </b-modal>
       <b-modal id="spendMechanisms" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
         <spendMechanisms />
       </b-modal>
       <b-modal no-stacking id="spendS32tryIt" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('tryItTitle')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('tryItTitle')}}</template>
         <spendS32tryIt />
       </b-modal>
       <b-modal no-stacking id="RecordingFinancialSystem" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('RecordingTitle')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('RecordingTitle')}}</template>
         <RecordingFinancialSystem />
       </b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" width="32" height="32"> {{$t('TakeTheQuiz')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('TakeTheQuiz')}}</template>
       <budgetQuiz />
       </b-modal>
     </section>
-    <div class="bottomNav spendSection">
-      <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
-      <microlearning path="spendKey" size="140" completion="100" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
-      <microlearning path="spendPart1"  youAreHere  imagePath="InitiateAuthSpending.svg" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
-      <microlearning path="spendPart2" imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
-      <microlearning path="spendPart3" size="140" ime="20" completion="10" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
-      <microlearning size="140" time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
+    <div class="bottomNav reportSection">
+      <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
+      <microlearning path="reportKey" size="140" completion="100" imagePath="KeyMessR.png" :text="$t('KeyMessages')" />
+      <microlearning path="reportPart1"  youAreHere imagePath="R-Conduct.svg" size="140" time="20" completion="80" :text="$t('ConductPeriodicVarianceReporting')" />
+      <microlearning path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" completion="80" :text="$t('ContributeReporting')" />
+      <microlearning size="140" time="15" tmp_imagePath="ReportPlan.png" :text="$t('Test')" />
     </div>
   </div>
 </template>
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
+import whatIsFSR from '~/components/slides/report/whatIsFSR'
+import keyPeriods from '~/components/slides/report/keyPeriods'
 export default {
   data() {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["checkYourBudget", "delegAuth", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"],
+      modalArray: ["whatIsFSR", "keyPeriods", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -91,6 +92,8 @@ export default {
   },
   components: {
     microlearning,
+    whatIsFSR,
+    keyPeriods
   },
   methods: {
     isReady() { this.isItReady = true },
@@ -225,7 +228,7 @@ video {
   background-image: url('~assets/Film_strip.svg');
   background-size: cover;
   border-radius: 2px;
-  border: 1px solid #c3bfb6;
+  border: 1px solid #e5dddc;
   margin: 5px 5px 10px;
   font-weight: bolder;
 }
@@ -235,7 +238,7 @@ video {
   counter-increment: episode;
   content: "0"counter(episode);
   position: absolute;
-  background-color: #7d677d;
+  background-color: #865F56;
   height: 2em;
   right: 0px;
   top: 0px;
@@ -280,19 +283,19 @@ button.accessibilityButton {
   margin: 5px;
   border-radius: 5px;
 }
-.spendSection {
+.reportSection {
   position: relative;
 }
-.spendSectionBar {
+.reportSectionBar {
   position: absolute;
-  background-color: #cac1ca;
+  background-color: #e5dddc;
   width: 100vw;
   height: 30px;
   text-align: left;
   left:-15px;
   top:38%;
 }
-.spendSectionBar span {
+.reportSectionBar span {
   padding:2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;
@@ -308,21 +311,21 @@ button.accessibilityButton {
   "tryItTitle":"Activity: Try it!",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "delegateAuthority":"Activity: Delegation of Authority",
-  "checkBudget":"Activity: Check your Budget",
+  "whatIsFSR":"Activity: What is a Financial Situation Report?",
   "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
   "RecordingTitle":"Activity: Recording in the Financial System",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
   "playSegment":"Play video segment",
   "transcriptText":"",
-  "spendSectionBar": "SPEND"
+  "reportSectionBar": "REPORT"
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
   "delegateAuthority":"Activité: Délégation des pouvoirs",
-  "checkBudget":"Activité: Vérifiez votre budget",
+  "whatIsFSR":"Activité: Vérifiez votre budget",
   "tryItTitle":"Activité: Essayons-le!",
   "forecastBudgetTitle":"Activité: Prévoyez vos besoins budgétaires",
   "RecordingTitle":"Activité: Enregistrement dans le système financier",
@@ -330,7 +333,7 @@ button.accessibilityButton {
   "jumpModalParts":"Sauter à l'activité",
   "playSegment":"Faire jouer le segment vidéo",
   "transcriptText":"",
-  "spendSectionBar": "DÉPENSES"
+  "reportSectionBar": "RAPPORTS"
   }
   }
 </i18n>

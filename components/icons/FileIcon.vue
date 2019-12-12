@@ -1,7 +1,7 @@
 <template>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.5 41.75" :width="iconWidth" :height="iconWidth">
     <title>{{ title }}</title>
-  <g id="Layer_2" data-name="Layer 2">
+  <g >
       <rect class="cls-1" x="1.1" y="8.05" width="52" height="33" />
       <rect class="cls-2" x="1" y="7.75" width="52.5" height="33" />
       <path class="cls-2" d="M17.5,5.5V3.13A2.14,2.14,0,0,1,19.63,1H34.87A2.14,2.14,0,0,1,37,3.13V5.5" />

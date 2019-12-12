@@ -4,7 +4,7 @@
     
   </defs>
   <title>{{title}}</title>
-  <g id="Layer_2" data-name="Layer 2">
+  <g >
     <g id="Layer_1-2" data-name="Layer 1">
       <rect id="Rectangle_5194" data-name="Rectangle 5194" class="cls-1" y="12.42" width="131.57" height="156.9" />
       <polyline class="cls-2" points="96.19 1.84 96.19 50.25 138.02 50.25" />

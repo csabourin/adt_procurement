@@ -1,6 +1,7 @@
 <template>
-    <a href="javascript:" @click="ShowMenu" :class="[{'is-active':MenuShowing},'ui-hamburger-02']">
+    <a href="javascript:" :title="$t('navMenu')" @click="ShowMenu" :class="[{'is-active':MenuShowing},'ui-hamburger-02']">
       &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="v-inv">{{$t('navMenu')}}</span>
     </a>
 </template>
 <style type="text/css" scoped>
@@ -67,3 +68,13 @@ export default {
   }
 }
 </script>
+<i18n>
+  {
+    "en":{
+    "navMenu":"Navigation Menu"
+  },
+    "fr":{
+    "navMenu":"Menu de navigation"
+  }
+  }
+</i18n>

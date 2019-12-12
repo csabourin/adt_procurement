@@ -25,7 +25,7 @@
         </transition>
       </b-col>
       <b-col>
-        <nuxt />
+        <nuxt role="main"/>
       </b-col>
     <!-- </transition-group> -->
     </b-row>
@@ -109,7 +109,9 @@ body {
   padding: 0;
 }
 
-
+legend{
+  font-size: 1em;
+}
 .bounce-enter-active {
   animation: bounce-in .5s;
 }
@@ -227,6 +229,13 @@ img {
 /*[lang="fr"] .bottomNav.reportSection:before {
   content: "RAPPORTS";
 }*/
+
+.v-inv{    clip: rect(1px,1px,1px,1px);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;}
 
 .leftSide {
   display: flex;

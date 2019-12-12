@@ -1,19 +1,19 @@
 <template>
-  <div>
+  <div @mousemove="updateOffsets">
     <p><strong v-html="$t('instructions')"></strong></p>
-    <ul ref="questionHeight" style="float:left;list-style:none;text-align: right;">
+    <ul :key="" ref="questionHeight" style="float:left;list-style:none;text-align: right;">
       <li v-for="(item,index) in question.dotsRight" :key="item">
         <label style='text-align:right' :for="'left'+qId+index">{{item}}</label>
         <input @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index" @change="findLeft" v-model="activeRight">
       </li>
     </ul>
-    <svg :key="$i18n.locale" ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 120 '+ulSize" width="120" :height="ulSize">
+    <svg ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 120 '+ulSize" width="120" :height="ulSize">
       <path v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
     </svg>
     <!-- <transition-group name="flip-list" tag="ul" style="float:left;list-style:none"> -->
     <ul style="float:left;list-style:none;    padding-left: 0">
       <li v-for="(item,index) in answers" :key="item" ref="leftItems">
-        <input @focus="updateOffsets"  type="radio" @change="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index" v-model="activeLeft"><label :for="'name2'+qId+index">{{item}}</label></li>
+        <input @focus="updateOffsets" type="radio" @change="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index" v-model="activeLeft"><label :for="'name2'+qId+index">{{item}}</label></li>
     </ul>
     <!-- </transition-group> -->
     <br style="clear:both">
@@ -25,13 +25,13 @@
     <b-button @click="resetAnswer">{{$t('reset')}}</b-button>
     <span v-if="debugging">
       <p>SVG Position: {{svgPosx}} , {{svgPosy}}</p>
-      <p>Left {{left.x}} {{left.y}} Right {{right.x}} {{right.y}}</p>
       <p>Active Left {{activeLeft}} Active Right {{activeRight}}</p>
+      <p>Left {{left.x}} {{left.y}} Right {{right.x}} {{right.y}}</p>
       <p>coordinates: {{coordinates}}</p>
-      <p>finalAnswer: {{finalAnswer}}
-        <p>correctAnswer: {{correctAnswer}}</p>
-        <p>randomOrder: {{randomOrder}}</p>
-        <p>&nbsp;</p>
+      <p>finalAnswer: {{finalAnswer}}</p>
+      <p>correctAnswer: {{correctAnswer}}</p>
+      <p>randomOrder: {{randomOrder}}</p>
+      <p>&nbsp;</p>
     </span>
   </div>
 </template>
@@ -48,7 +48,7 @@ export default {
       right: { x: 0, y: 0 },
       svgPosx: 0,
       svgPosy: 18,
-      ulSize: 0,
+      ulSize: 1,
       response: "",
       isSubmitted: false,
       answers: []
@@ -81,9 +81,9 @@ export default {
 
   methods: {
     resetAnswer() {
+      this.updateOffsets()
       this.isSubmitted = false
       this.coordinates = {}
-      this.$forceUpdate(this.colorChoices)
     },
     offset(el) {
       var rect = el.getBoundingClientRect(),
@@ -145,6 +145,7 @@ export default {
       }
     },
     updateOffsets() {
+      this.ulSize = 1 + this.$refs.questionHeight.offsetHeight
       const svgPos = this.offset(this.$refs.refSVG)
       this.answers = this.question.dotsLeft
       this.svgPosx = svgPos.x
@@ -155,10 +156,9 @@ export default {
     window.addEventListener('resize', this.updateOffsets)
     this.answers = this.question.dotsLeft
     this.$nextTick(() => {
-      const svgPos = this.offset(this.$refs.refSVG)
-      this.ulSize = this.$refs.questionHeight.offsetHeight
-      this.svgPosx = svgPos.x
-      this.svgPosy = svgPos.y
+      this.updateOffsets()
+
+
     })
 
   },

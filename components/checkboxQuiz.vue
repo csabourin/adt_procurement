@@ -1,17 +1,20 @@
 <template>
   <span class="pure-checkbox">
     <strong class="question" v-html="Question.text" />
-    <p v-html="$t('checkAll')" />
+    <fieldset>
+    <legend v-html="$t('checkAll')" />
     <ol type="1">
       <li v-for="(item,index) in Question.options" :key="index"><input @click="q2Submitted=false" type="checkbox" v-model="Quest2" :name="'q'+qId" :id="'checkboxq'+qId+index" :value="index"> <label :for="'checkboxq'+qId+index" v-html="item" /></li>
     </ol>
+    <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
+    </fieldset>
+    <p>&nbsp;</p>
     <p v-if="!isAcceptable(Quest2) && q2Submitted" v-html="$t('pleaseAnswer')"></p>
     <span v-if="isAcceptable(Quest2) && q2Submitted">
       <p v-if="arraysMatch(Quest2,Answer)"><span v-html="Question.feedback.right" /></p>
       <p v-else> <span v-html="Question.feedback.wrong" /></p>
       <p v-if="Quest2 && q2Submitted && Question.conclusion" v-html="Question.conclusion" />
     </span>
-    <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
   </span>
 </template>
 <script type="text/javascript">

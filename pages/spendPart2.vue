@@ -105,10 +105,9 @@
 </template>
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
-import CertificationAuthority from '~/components/Spend2CertificationAuthority'
-import delegAuthority from '~/components/delegAuthority'
-import AccuracyInvoice from '~/components/Spend2AccuracyInvoice'
-import ProcessInvoice from '~/components/spendPart2ProcessInvoice'
+import CertificationAuthority from '~/components/slides/spend/Spend2CertificationAuthority'
+import AccuracyInvoice from '~/components/slides/spend/Spend2AccuracyInvoice'
+import ProcessInvoice from '~/components/slides/spend/spendPart2ProcessInvoice'
 export default {
   data() {
     return {

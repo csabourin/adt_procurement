@@ -27,10 +27,10 @@
       <p>SVG Position: {{svgPosx}} , {{svgPosy}}</p>
       <p>Left {{left.x}} {{left.y}} Right {{right.x}} {{right.y}}</p>
       <p>Active Left {{activeLeft}} Active Right {{activeRight}}</p>
-      <p>{{coordinates}}</p>
-      <p>{{finalAnswer}}
-        <p>{{correctAnswer}}</p>
-        <p>{{randomOrder}}</p>
+      <p>coordinates: {{coordinates}}</p>
+      <p>finalAnswer: {{finalAnswer}}
+        <p>correctAnswer: {{correctAnswer}}</p>
+        <p>randomOrder: {{randomOrder}}</p>
         <p>&nbsp;</p>
     </span>
   </div>

@@ -163,13 +163,13 @@
 </template>
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
-import partsOfWorkPlan from '~/components/parts_workplan'
+import partsOfWorkPlan from '~/components/slides/plan/parts_workplan'
 import planLinks from '~/components/plan_links'
-import prepareWorkPlan from '~/components/prepare_workplan'
-import completeWorkplan from '~/components/complete_workplan'
-import adjustWorkplan from '~/components/adjust_workplan'
-import test360 from '~/components/test360'
-import planQuiz from '~/components/planQuiz'
+import prepareWorkPlan from '~/components/slides/plan/prepare_workplan'
+import completeWorkplan from '~/components/slides/plan/complete_workplan'
+import adjustWorkplan from '~/components/slides/plan/adjust_workplan'
+import test360 from '~/components/slides/plan/test360'
+import planQuiz from '~/components/slides/plan/planQuiz'
 import plusIcon from '~/components/icons/PlusSign'
 export default {
   data() {

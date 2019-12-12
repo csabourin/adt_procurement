@@ -73,12 +73,11 @@
 </template>
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
-import budgetAnalyzeActivity from '~/components/budgetAnalyseActivity'
-import budgetForecastActivity from '~/components/budgetForecastActivity'
-import AnalyzeBudgetKT from '~/components/AnalyzeBudgetKT'
-import submitBudget from '~/components/submitBudget'
-import budgetQuiz from '~/components/budgetQuiz'
-import plusIcon from '~/components/icons/PlusSign'
+import budgetAnalyzeActivity from '~/components/slides/plan/budgetAnalyseActivity'
+import budgetForecastActivity from '~/components/slides/plan/budgetForecastActivity'
+import AnalyzeBudgetKT from '~/components/slides/plan/AnalyzeBudgetKT'
+import submitBudget from '~/components/slides/plan/submitBudget'
+import budgetQuiz from '~/components/slides/plan/budgetQuiz'
 export default {
   data() {
     return {
@@ -103,7 +102,6 @@ export default {
     budgetForecastActivity,
     submitBudget,
     budgetQuiz,
-    plusIcon
   },
   methods: {
     isReady() { this.isItReady = true },

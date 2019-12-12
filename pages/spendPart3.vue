@@ -64,10 +64,10 @@
 </template>
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
-import ContinuousMonitoring from '~/components/spendPart3ContinuousMonitoring'
-import DataComparison from '~/components/spendPart3DataComparison'
-import YearEndProcedures from '~/components/spendPart3YearEnd'
-import spendQuiz from '~/components/spendPart3Quiz'
+import ContinuousMonitoring from '~/components/slides/spend/spendPart3ContinuousMonitoring'
+import DataComparison from '~/components/slides/spend/spendPart3DataComparison'
+import YearEndProcedures from '~/components/slides/spend/spendPart3YearEnd'
+import spendQuiz from '~/components/slides/spend/spendPart3Quiz'
 export default {
   data() {
     return {

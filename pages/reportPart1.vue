@@ -72,11 +72,6 @@
 </template>
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
-import checkBudget from '~/components/slides/spend/checkBudget'
-import delegAuthority from '~/components/slides/spend/delegAuthority'
-import spendMechanisms from '~/components/slides/spend/spendMechanisms'
-import RecordingFinancialSystem from '~/components/slides/spend/RecordingFinancialSystem'
-import spendS32tryIt from '~/components/slides/spend/spendS32tryIt'
 export default {
   data() {
     return {
@@ -96,11 +91,6 @@ export default {
   },
   components: {
     microlearning,
-    delegAuthority,
-    checkBudget,
-    spendMechanisms,
-    spendS32tryIt,
-    RecordingFinancialSystem
   },
   methods: {
     isReady() { this.isItReady = true },

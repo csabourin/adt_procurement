@@ -27,7 +27,7 @@
 <script type="text/javascript">
 	import checkboxQuiz from "~/components/checkboxQuiz"
 	import radioQuiz from "~/components/radioQuiz"
-  import SalesInvoice from "~/components/SalesInvoice"
+  import SalesInvoice from "~/components/slides/spend/SalesInvoice"
 	export default{
 		components:{
 			checkboxQuiz,

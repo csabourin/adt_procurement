@@ -25,7 +25,7 @@
       <ul id="bar" ref="linkBar">
         <li  v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
           <p>{{ item }}</p><br>
-          <a href="#mainPlayer" class="playButton" :key="index"  ><img src="~/assets/VideoIcon.svg"  alt="Play video icon" width="48" height="48" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" @click="seek" :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
+          <a href="#mainPlayer" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"  alt="Play video icon"  width="48" height="48"   :title="$t('playSegment') + ' - ' +navBarTracks[index]"></a>
           <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalParts') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" alt="" width="48" height="48"> </a>
         </li>
       </ul>

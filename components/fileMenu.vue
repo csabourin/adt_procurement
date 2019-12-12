@@ -129,7 +129,7 @@ export default {
 <style type="text/css" scoped>
 .card-header a.btn-light {
   text-transform: uppercase;
-  color: #707070;
+  color: #4d4d4d;
   font-weight: 500;
   font-size: 28px;
   text-align: left

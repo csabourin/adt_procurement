@@ -5,7 +5,7 @@
     </nuxt-link> -->
     
     <a href="#" ref="item"><h4 >{{$t('plan')}}</h4></a>    
-    <ul style="list-style: none">
+    <menu style="list-style: none">
       <li>
         <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessages')"     />
       </li>
@@ -18,9 +18,9 @@
       <li>
         <nuxt-link :to="localePath('null')" v-html="$t('Test')" />
       </li>
-    </ul>
+    </menu>
     <h4>{{$t('spend')}}</h4>
-    <ul style="list-style: none">
+    <menu style="list-style: none">
       <li>
         <nuxt-link :to="localePath('spendKey')" v-html="$t('KeyMessages')" />
       </li>
@@ -36,9 +36,9 @@
       <li>
         <nuxt-link :to="localePath('null')" v-html="$t('Test')" />
       </li>
-    </ul>
+    </menu>
     <h4>{{$t('report')}}</h4>
-    <ul style="list-style: none">
+    <menu style="list-style: none">
       <li>
         <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessages')" />
       </li>
@@ -51,7 +51,7 @@
       <li>
         <nuxt-link :to="localePath('null')" v-html="$t('Test')" />
       </li>
-    </ul>
+    </menu>
   </div>
 </template>
 <script type="text/javascript">

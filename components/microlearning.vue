@@ -1,8 +1,8 @@
 <template>
-  <div class="learningElement">
+  <div class="learningElement" role="navigation">
     <nuxt-link :to="localePath(path)">
       <div class="box" :style="boxSize">
-        <div class="completed" :style="completionBar" :percent="completion"></div>
+        <div class="completed" :style="completionBar" :data-percent="completion"></div>
         <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes</span></div>
       </div>
       <p class="text-left" :style="'width:'+size+'px'">
@@ -89,7 +89,7 @@ a {
   right: 0em;
   bottom: 0em;
   font-size: 12px;
-  content: attr(percent)"%";
+  content: attr(data-percent)"%";
 }
 
 .learningElement {

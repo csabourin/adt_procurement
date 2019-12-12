@@ -4,7 +4,7 @@
     <ul :key="" ref="questionHeight" style="float:left;list-style:none;text-align: right;">
       <li v-for="(item,index) in question.dotsRight" :key="item">
         <label style='text-align:right' :for="'left'+qId+index">{{item}}</label>
-        <input @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index" @change="findLeft" v-model="activeRight">
+        <input @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
       </li>
     </ul>
     <svg ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 120 '+ulSize" width="120" :height="ulSize">
@@ -13,7 +13,7 @@
     <!-- <transition-group name="flip-list" tag="ul" style="float:left;list-style:none"> -->
     <ul style="float:left;list-style:none;    padding-left: 0">
       <li v-for="(item,index) in answers" :key="item" ref="leftItems">
-        <input @focus="updateOffsets" type="radio" @change="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index" v-model="activeLeft"><label :for="'name2'+qId+index">{{item}}</label></li>
+        <input @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index" v-model="activeLeft"><label :for="'name2'+qId+index">{{item}}</label></li>
     </ul>
     <!-- </transition-group> -->
     <br style="clear:both">
@@ -191,10 +191,10 @@ export default {
 <i18n>
   {
   "en":{
-  "instructions":"Match the items on the left with the corresponding answer to the right"
+  "instructions":"Match the items on the left with the corresponding answer to the right. Double-click or select with the keyboard"
   },
   "fr":{
-  "instructions":"Associez les items à la gauche avec leur réponse correspondante à droite"
+  "instructions":"Associez les items à la gauche avec leur réponse correspondante à droite. Double-cliquez ou sélectionnez avec le clavier."
   }
   }
 </i18n>

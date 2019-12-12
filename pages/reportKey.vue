@@ -36,7 +36,7 @@
           </span>
         </b-col>
         <b-col><span v-if="$i18n.locale=='en'">
-            <h3>Provide Input to Government Reports</h3>
+            <h3>Contribute to External Reporting</h3>
             <ul>
               <li>The finances and results of government services and programs are reported regularly to Parliament and Canadians through a variety of reports:&nbsp;</li>
               <ul>
@@ -49,7 +49,7 @@
               <li>Managers contribute to these government reports by providing information on the performance outcomes and results of their activities.</li>
             </ul>
           </span><span v-if="$i18n.locale=='fr'">
-            <h3><strong>Contribuer &agrave; l'&eacute;laboration des rapports gouvernementaux</strong></h3>
+            <h3><strong>Contribuer à l'établissement de rapports externes</strong></h3>
             <ul>
               <li>Les finances et les r&eacute;sultats des services et des programmes gouvernementaux font l'objet de rapports r&eacute;guliers au Parlement et &agrave; la population canadienne dans divers rapports :&nbsp;</li>
               <ul>

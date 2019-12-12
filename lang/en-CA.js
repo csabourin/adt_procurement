@@ -27,8 +27,8 @@ export default {
   InitiateAuthorizeSpending: "Initiate and Authorize Spending (S.&nbsp;32)",
   ExerciseFinancialAuthority: "Exercise Financial Authority (S.&nbsp;34)",
   MonitorControlFinances: "Monitor and Control Finances",
-  ConductPeriodicVarianceReporting: "Conduct Periodic Variance Reporting",
-  ContributeReporting: "Contribute in Reporting ",
+  ConductPeriodicVarianceReporting: "Prepare the Financial Situation Report",
+  ContributeReporting: "Contribute to External Reporting",
   Test: "Test",
   MarkCompleted: "Mark as completed",
   // Text for icons

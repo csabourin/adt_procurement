@@ -16,6 +16,7 @@ export default {
   backButton: "Retour",
   submit: "Vérifier",
   reset: "Effacer",
+  playIcon: "Jouer la vidéo",
   checkAll: "S&eacute;lectionnez tout ce qui s'applique.",
   selectRight: "S&eacute;lectionnez la bonne r&eacute;ponse.",
   pleaseAnswer:"Veuillez r&eacute;pondre &agrave; la question!",

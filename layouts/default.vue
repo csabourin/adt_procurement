@@ -12,7 +12,7 @@
       <b-col cols="5" sm="3" class="text-right">
         <fileMenu />
         <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
-          <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" v-bind:iconTitle="locale.name" />
+          <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" :lang="locale.code" v-bind:iconTitle="locale.name" />
         </nuxt-link>
       </b-col>
     </b-row>
@@ -111,6 +111,10 @@ body {
 
 legend{
   font-size: 1em;
+}
+
+a{
+  color:#1000ff;
 }
 .bounce-enter-active {
   animation: bounce-in .5s;

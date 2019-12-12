@@ -16,6 +16,7 @@ export default {
   backButton: "Back",
   submit: "Submit",
   reset: "Reset",
+  playIcon: "Play icon",
   home: "Home",
   checkAll: "Check all that could apply.",
   selectRight: "Select the correct answer.",

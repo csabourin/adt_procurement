@@ -4,16 +4,16 @@
     <ul ref="questionHeight" style="float:left;list-style:none;text-align: right;">
       <li v-for="(item,index) in question.dotsRight" :key="item">
         <label style='text-align:right' :for="'left'+qId+index">{{item}}</label>
-        <input type="radio" name="left" :id="'left'+qId+index" :value="index" @change="findLeft" v-model="activeRight">
+        <input @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index" @change="findLeft" v-model="activeRight">
       </li>
     </ul>
-    <svg :key="$i18n.locale" ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 120 '+ulSize" width="120" :height="ulSize">
+    <svg :key="svgPosy" ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 120 '+ulSize" width="120" :height="ulSize">
       <path v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
     </svg>
     <!-- <transition-group name="flip-list" tag="ul" style="float:left;list-style:none"> -->
     <ul style="float:left;list-style:none;    padding-left: 0">
       <li v-for="(item,index) in answers" :key="item" ref="leftItems">
-        <input type="radio" @change="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index" v-model="activeLeft"><label :for="'name2'+qId+index">{{item}}</label></li>
+        <input @focus="updateOffsets"  type="radio" @change="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index" v-model="activeLeft"><label :for="'name2'+qId+index">{{item}}</label></li>
     </ul>
     <!-- </transition-group> -->
     <br style="clear:both">
@@ -47,7 +47,7 @@ export default {
       left: { x: 0, y: 0 },
       right: { x: 0, y: 0 },
       svgPosx: 0,
-      svgPosy: 0,
+      svgPosy: 18,
       ulSize: 0,
       response: "",
       isSubmitted: false,

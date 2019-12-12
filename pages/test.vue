@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <b-container>
+    <b-container>
       <b-row>
         <b-col>
           <radioQuiz :Question="$t('q1')" qId="1" @response="lala=$event" />
@@ -25,7 +25,7 @@
     <openDoor><img src='~/assets/Roz.png' width="200"></openDoor>
     <hr>
     <gauge :angle="gaugeRange" />
-    <input type="range" v-model="gaugeRange" min="-120" max="120"> -->
+    <input type="range" v-model="gaugeRange" min="-120" max="120">
     <hr style="clear:both">
        <connectDots :question="$t('q4')" qId="1" :correctAnswer='[["0","0"],["1","1"],["2","2"],["3","3"],["4","4"],["5","5"],["6","6"]]' />
        <connectDots :question="$t('q4')" qId="2" :correctAnswer='[["0","0"],["1","1"],["2","2"],["3","3"],["4","4"],["5","5"],["6","6"]]' />

@@ -44,7 +44,7 @@
 export default {
   data() {
     return {
-      debugging: false,
+      debugging: true,
       colorsChoices: ['#A5955F', '#92C3D0', '#AE9FFF', '#429924', '#A652B4', '#952929', '#B7B94F', '#D07733', '#FF58F0', '#623434', '#100065', '#78957F'],
       coordinates: {},
       activeRight: undefined,
@@ -115,8 +115,8 @@ export default {
     },
     arraysMatch(arr1, arr2) {
       if (arr1.length !== arr2.length) return false
-      var arrayOne = arr1.concat()
-      var arrayTwo = arr2.concat()
+      var arrayOne = arr1
+      var arrayTwo = arr2
       for (let i in arrayOne) {
         if (arrayOne[i] !== arrayTwo[i]) return false
       }
@@ -190,7 +190,7 @@ export default {
       for (let i in this.coordinates) {
         final.push(this.coordinates[i][2][0])
       }
-      return final
+      return final.concat()
     }
   }
 }

@@ -1,28 +1,30 @@
 <template>
   <div @mousemove="updateOffsets">
-    <p><strong v-html="$t('instructions')"></strong></p>
-    <ul :key="" ref="questionHeight" style="float:left;list-style:none;text-align: right;">
-      <li v-for="(item,index) in question.dotsRight" :key="item">
-        <label style='text-align:right' :for="'left'+qId+index">{{item}}</label>
-        <input @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
+  	<fieldset>
+    <legend><strong v-html="$t('instructions')"></strong></legend>
+    <ul :key="" ref="questionHeight" style="float:left;list-style:none;text-align: right;padding-left: 0">
+      <li v-for="(item,index) in questions" :key="index">
+        <label @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" style='text-align:right' :for="'left'+qId+index">{{item}}</label>
+        <input @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
       </li>
     </ul>
-    <svg ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 120 '+ulSize" width="120" :height="ulSize">
+    <svg ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 70 '+ulSize" width="70" :height="ulSize">
       <path v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
     </svg>
-    <!-- <transition-group name="flip-list" tag="ul" style="float:left;list-style:none"> -->
-    <ul style="float:left;list-style:none;    padding-left: 0">
+    <transition-group name="flip-list" tag="ul" style="float:left;list-style:none;padding-left: 0">
+    <!-- <ul style="float:left;list-style:none;    padding-left: 0"> -->
       <li v-for="(item,index) in answers" :key="item" ref="leftItems">
-        <input @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index" v-model="activeLeft"><label :for="'name2'+qId+index">{{item}}</label></li>
-    </ul>
-    <!-- </transition-group> -->
+        <input @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index+1" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item}}</label></li>
+    </<!-- ul -->>
+    </transition-group>
     <br style="clear:both">
+    <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
+    <b-button @click="resetAnswer">{{$t('reset')}}</b-button>
+    </fieldset>
     <div v-if="isSubmitted">
       <span v-if="arraysMatch(finalAnswer,correctAnswer)" class="v-right">Correct!</span>
       <span v-else class="v-wrong">Incorrect.</span>
     </div>
-    <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
-    <b-button @click="resetAnswer">{{$t('reset')}}</b-button>
     <span v-if="debugging">
       <p>SVG Position: {{svgPosx}} , {{svgPosy}}</p>
       <p>Active Left {{activeLeft}} Active Right {{activeRight}}</p>
@@ -30,7 +32,6 @@
       <p>coordinates: {{coordinates}}</p>
       <p>finalAnswer: {{finalAnswer}}</p>
       <p>correctAnswer: {{correctAnswer}}</p>
-      <p>randomOrder: {{randomOrder}}</p>
       <p>&nbsp;</p>
     </span>
   </div>
@@ -51,7 +52,8 @@ export default {
       ulSize: 1,
       response: "",
       isSubmitted: false,
-      answers: []
+      answers: [],
+      questionss: []
     }
   },
   props: {
@@ -82,8 +84,8 @@ export default {
   methods: {
     resetAnswer() {
       this.updateOffsets()
+      this.answers = Object.values(this.question.dotsLeft).sort(() => Math.random() - 0.5)
       this.isSubmitted = false
-      this.coordinates = {}
     },
     offset(el) {
       var rect = el.getBoundingClientRect(),
@@ -93,8 +95,9 @@ export default {
     },
     submitAnswer() {
       this.isSubmitted = true
+      this.coordinates = {}
+      this.answers = this.question.dotsLeft
       this.$emit('response', this.arraysMatch(this.finalAnswer, this.correctAnswer))
-      // this.answers = Object.values(this.question.dotsLeft).sort(() => Math.random() - 0.5)
     },
     arraysMatch(arr1, arr2) {
       if (arr1.length !== arr2.length) return false
@@ -113,10 +116,10 @@ export default {
       this.right.y = top - this.svgPosy + 10
       if (this.activeRight && this.activeLeft) {
 
-        this.$set(this.coordinates, this.activeRight, [
+        this.$set(this.coordinates, this.activeRight.toString(), [
           [this.left.x, this.left.y],
           [this.right.x, this.right.y],
-          [this.activeLeft, this.activeRight]
+          [this.activeLeft.toString(), this.activeRight.toString()]
         ])
         this.$nextTick(() => {
           this.activeRight = undefined
@@ -133,10 +136,10 @@ export default {
       this.left.x = left - this.svgPosx + 8
       this.left.y = top - this.svgPosy + 10
       if (this.activeRight && this.activeLeft) {
-        this.$set(this.coordinates, this.activeRight, [
+        this.$set(this.coordinates, this.activeRight.toString(), [
           [this.left.x, this.left.y],
           [this.right.x, this.right.y],
-          [this.activeLeft, this.activeRight]
+          [this.activeLeft.toString(), this.activeRight.toString()]
         ])
         this.$nextTick(() => {
           this.activeRight = undefined
@@ -147,14 +150,14 @@ export default {
     updateOffsets() {
       this.ulSize = 1 + this.$refs.questionHeight.offsetHeight
       const svgPos = this.offset(this.$refs.refSVG)
-      this.answers = this.question.dotsLeft
       this.svgPosx = svgPos.x
       this.svgPosy = svgPos.y
     }
   },
   mounted() {
     window.addEventListener('resize', this.updateOffsets)
-    this.answers = this.question.dotsLeft
+      this.answers = Object.values(this.question.dotsLeft).sort(() => Math.random() - 0.5)
+      this.questions = Object.values(this.question.dotsRight)
     this.$nextTick(() => {
       this.updateOffsets()
 
@@ -163,7 +166,7 @@ export default {
 
   },
   computed: {
-    colorChoices(seed = 1) { return this.colorsChoices.sort(() => Math.random(seed) - 0.5) },
+    colorChoices() { return this.colorsChoices.sort(() => Math.random() - 0.5) },
     finalAnswer() {
       const answers = Object.keys(this.coordinates).length
       var final = []
@@ -171,18 +174,6 @@ export default {
         final.push(this.coordinates[i][2])
       }
       return final
-    },
-    randomOrder() {
-      var posArray = []
-      var randomizer
-      this.$nextTick(() => {
-        for (let i in this.question.dotsLeft) {
-          let j = this.offset(this.$refs.leftItems[i])
-          posArray.push([j.x - this.svgPosx, j.y - this.svgPosy])
-        }
-        randomizer = posArray.sort(() => Math.random() - 0.5)
-      })
-      return randomizer
     }
   }
 }
@@ -191,16 +182,16 @@ export default {
 <i18n>
   {
   "en":{
-  "instructions":"Match the items on the left with the corresponding answer to the right. Double-click or select with the keyboard"
+  "instructions":"Match the items on the left with the corresponding answer to the right. Double-click on each side or select with the keyboard"
   },
   "fr":{
-  "instructions":"Associez les items à la gauche avec leur réponse correspondante à droite. Double-cliquez ou sélectionnez avec le clavier."
+  "instructions":"Associez les items à la gauche avec leur réponse correspondante à droite. Double-cliquez chaque côté ou sélectionnez avec le clavier."
   }
   }
 </i18n>
 <style type="text/css" scoped>
 .flip-list-move {
-  transition: transform 1s;
+  transition: transform 2s;
 }
 
 label:focus,

@@ -2,6 +2,7 @@
   <div @mousemove="updateOffsets">
   	<fieldset>
     <legend><strong v-html="$t('instructions')"></strong></legend>
+    <p>&nbsp;</p>
     <ul :key="" ref="questionHeight" style="float:left;list-style:none;text-align: right;padding-left: 0">
       <li v-for="(item,index) in questions" :key="index">
         <label @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" style='text-align:right' :for="'left'+qId+index">{{item}}</label>
@@ -9,12 +10,15 @@
       </li>
     </ul>
     <svg ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 70 '+ulSize" width="70" :height="ulSize">
-      <path v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
+      <path :class="{'isHidden':isSubmitted}" v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
+      <style>
+      .isHidden{visibility: hidden}
+    </style>
     </svg>
     <transition-group name="flip-list" tag="ul" style="float:left;list-style:none;padding-left: 0">
     <!-- <ul style="float:left;list-style:none;    padding-left: 0"> -->
-      <li v-for="(item,index) in answers" :key="item" ref="leftItems">
-        <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index+1" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item}}</label></li>
+      <li v-for="(item,index) in answers" :key="item[0]" ref="leftItems">
+        <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="item[0]" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item[1]}}</label></li>
     </<!-- ul -->>
     </transition-group>
     <br style="clear:both">
@@ -32,8 +36,8 @@
       <p>coordinates: {{coordinates}}</p>
       <p>finalAnswer: {{finalAnswer}}</p>
       <p>correctAnswer: {{correctAnswer}}</p>
-      <p>&nbsp;</p>
     </span>
+      <p>&nbsp;</p>
   </div>
 </template>
 <script type="text/javascript">
@@ -53,7 +57,7 @@ export default {
       response: "",
       isSubmitted: false,
       answers: [],
-      questionss: []
+      questions: []
     }
   },
   props: {
@@ -67,12 +71,12 @@ export default {
     },
     correctAnswer: {
       type: Array,
-      default: function() {
-        return [
-          ["0", "1"],
-          ["1", "2"],
-          ["2", "1"]
-        ]
+      default: function() { var tmpArray=[]
+      for (let i in this.question.dotsLeft){
+        let j=String(Number(i)+1)
+        tmpArray.push([j,j])
+      }
+      return tmpArray
       }
     }
   },
@@ -82,10 +86,19 @@ export default {
   },
 
   methods: {
+    generateAnswers(){
+      var tmpArray=[]
+      for (let i in this.question.dotsLeft){
+        let j=String(Number(i)+1)
+        tmpArray.push([j,this.question.dotsLeft[i]])
+      }
+      return tmpArray
+    }
+    ,
     resetAnswer() {
       this.updateOffsets()
       this.coordinates = {}
-      this.answers = Object.values(this.question.dotsLeft).sort(() => Math.random() - 0.5)
+      this.answers = this.answers.sort(() => Math.random() - 0.5)
       this.isSubmitted = false
     },
     offset(el) {
@@ -96,9 +109,9 @@ export default {
     },
     submitAnswer() {
       this.isSubmitted = true
-      this.coordinates = {}
-      this.answers = this.question.dotsLeft
       this.$emit('response', this.arraysMatch(this.finalAnswer, this.correctAnswer))
+      // this.coordinates = {}
+      this.answers = this.generateAnswers()
     },
     arraysMatch(arr1, arr2) {
       if (arr1.length !== arr2.length) return false
@@ -158,10 +171,12 @@ export default {
   },
   mounted() {
     window.addEventListener('resize', this.updateOffsets)
-      this.answers = Object.values(this.question.dotsLeft).sort(() => Math.random() - 0.5)
+      this.generateAnswers()
+      this.answers = this.generateAnswers().sort(() => Math.random() - 0.5)
       this.questions = Object.values(this.question.dotsRight)
     this.$nextTick(() => {
       this.updateOffsets()
+
 
 
     })
@@ -187,7 +202,7 @@ export default {
   "instructions":"Match the items on the left with the corresponding answer to the right. Double-click to confirm or select with the keyboard"
   },
   "fr":{
-  "instructions":"Associez les items à la gauche avec leur réponse correspondante à droite. Double-cliquez pour confirmer ou sélectionnez avec le clavier."
+  "instructions":"Associez les items de gauche avec leur réponse correspondante à droite. Double-cliquez pour confirmer ou sélectionnez avec le clavier."
   }
   }
 </i18n>

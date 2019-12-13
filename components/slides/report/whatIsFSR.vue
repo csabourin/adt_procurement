@@ -1,5 +1,5 @@
 <template>
-	<connectDots :question="$t('q1')" qId="1" :correctAnswer='[["0","0"],["1","1"],["2","2"],["3","3"],["4","4"],["5","5"],["6","6"]]' />
+	<connectDots :question="$t('q1')" qId="1" />
 </template>
 <script type="text/javascript">
 import connectDots from "~/components/interface/connectDots"

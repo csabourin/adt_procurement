@@ -18,16 +18,16 @@
   </div>
     </div>
      <p>&nbsp;</p>
-    <div class="sideTitle planTitle">{{$t('plan')}}</div>
-    <section class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }">
+    <h2 class="sideTitle planTitle">{{$t('plan')}}</h2>
+    <section role="navigation" class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }">
       <microlearning path="planKey" time="2" completion=100 imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
       <microlearning path="buildWP" time="20"  imagePath="BuildWP.svg" completion=80 :text="$t('BuildWorkPlan')" />
       <microlearning time="20" path="createBudget" completion=10 imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
       <microlearning time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
     </section>
     <hr class="planHr">
-    <div class="sideTitle spendTitle">{{$t('spend')}}</div>
-    <section class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }">
+    <h2 class="sideTitle spendTitle">{{$t('spend')}}</h2>
+    <section role="navigation" class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }">
       <microlearning path="spendKey" time="5" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
       <microlearning imagePath="InitiateAuthSpending.svg" path="spendPart1" time="20" :text="$t('InitiateAuthorizeSpending')" />
       <microlearning imagePath="ExerciseFinancialAuthority.svg" path="spendPart2" time="20" :text="$t('ExerciseFinancialAuthority')" />
@@ -35,11 +35,11 @@
       <microlearning time="15" :text="$t('Test')" />
     </section>
     <hr class="spendHr">
-    <div class="sideTitle reportTitle">{{$t('report')}}</div>
-    <section class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }">
+    <h2 class="sideTitle reportTitle">{{$t('report')}}</h2>
+    <section role="navigation" class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }">
       <microlearning imagePath="KeyMessR.png" path="reportKey" time="5" :text="$t('KeyMessages')" />
       <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
-      <microlearning imagePath="R-Contribute.svg" time="20" :text="$t('ContributeReporting')" />
+      <microlearning imagePath="R-Contribute.svg"  path="reportPart2" time="20" :text="$t('ContributeReporting')" />
       <microlearning time="15" :text="$t('Test')" />
     </section>
     <hr class="reportHr">

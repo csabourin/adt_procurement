@@ -3,24 +3,34 @@
   	<fieldset>
     <legend><strong v-html="$t('instructions')"></strong></legend>
     <p>&nbsp;</p>
-    <ul :key="" ref="questionHeight" style="float:left;list-style:none;text-align: right;padding-left: 0">
+    <b-container>
+      <b-row>
+        <b-col>
+    <ul :key="" ref="questionHeight" style="list-style:none;text-align: right;padding-left: 0">
       <li v-for="(item,index) in questions" :key="index">
         <label @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" style='text-align:right' :for="'left'+qId+index">{{item}}</label>
         <input @click="getLeft" @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
       </li>
     </ul>
-    <svg ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 70 '+ulSize" width="70" :height="ulSize">
+  </b-col>
+    <b-col ref="centerCol">
+    <svg ref="refSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 70 '+ulSize" width="70" :height="ulSize">
       <path :class="{'isHidden':isSubmitted}" v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
       <style>
       .isHidden{visibility: hidden}
     </style>
     </svg>
-    <transition-group name="flip-list" tag="ul" style="float:left;list-style:none;padding-left: 0">
+  </b-col>
+    <b-col>
+    <transition-group name="flip-list" tag="ul" style="list-style:none;padding-left: 0">
     <!-- <ul style="float:left;list-style:none;    padding-left: 0"> -->
       <li v-for="(item,index) in answers" :key="item[0]" ref="leftItems">
         <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="item[0]" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item[1]}}</label></li>
     </<!-- ul -->>
     </transition-group>
+  </b-col>
+  </b-row>
+  </b-container>
     <br style="clear:both">
     <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
     <b-button @click="resetAnswer">{{$t('reset')}}</b-button>

@@ -46,7 +46,7 @@
         <nuxt-link :to="localePath('reportPart1')" v-html="$t('ConductPeriodicVarianceReporting')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')" v-html="$t('ContributeReporting')" />
+        <nuxt-link :to="localePath('reportPart2')" v-html="$t('ContributeReporting')" />
       </li>
       <li>
         <nuxt-link :to="localePath('null')" v-html="$t('Test')" />

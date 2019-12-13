@@ -1,5 +1,5 @@
 <template>
-  <div class="learningElement" role="navigation">
+  <div class="learningElement">
     <nuxt-link :to="localePath(path)">
       <div class="box" :style="boxSize">
         <div class="completed" :style="completionBar" :data-percent="completion"></div>

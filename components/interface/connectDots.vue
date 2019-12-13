@@ -44,7 +44,7 @@
 export default {
   data() {
     return {
-      debugging: true,
+      debugging: false,
       colorsChoices: ['#A5955F', '#92C3D0', '#AE9FFF', '#429924', '#A652B4', '#952929', '#B7B94F', '#D07733', '#FF58F0', '#623434', '#100065', '#78957F'],
       coordinates: {},
       activeRight: undefined,

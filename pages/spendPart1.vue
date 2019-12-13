@@ -14,7 +14,7 @@
           <b-collapse id="cbTranscript-1" role="tabpanel">
             <b-card-body>
               <b-card-text>
-                <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalParts') + ' - ' +navBarTracks[index]}}</button>
+                <!-- <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalParts') + ' - ' +navBarTracks[index]}}</button> -->
                 <span v-if="$i18n.locale=='en'">
 
                   <h2>Check your Budget</h2>

@@ -115,11 +115,7 @@ export default {
     },
     arraysMatch(arr1, arr2) {
       if (arr1.length !== arr2.length) return false
-      var arrayOne = arr1
-      var arrayTwo = arr2
-      for (let i in arrayOne) {
-        if (arrayOne[i] !== arrayTwo[i]) return false
-      }
+      for (let i in arr1) { if (arr1[i] !== arr2[i]) return false }
       return true
     },
     getRight(event){this.isSubmitted = false

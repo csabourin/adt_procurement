@@ -15,8 +15,10 @@
             <b-card-body>
               <b-card-text>
                 <!-- <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalParts') + ' - ' +navBarTracks[index]}}</button> -->
-                <span v-if="$i18n.locale=='en'"><p>Slide 1: Certification Authority <br />***</p>
-                  <!-- <p>&ldquo;In general, no invoice should be paid until all goods are received or services performed.</p>
+                <span v-if="$i18n.locale=='en'">
+                  <!-- 
+                  <p>Slide 1: Certification Authority <br />***</p>
+                  <p>&ldquo;In general, no invoice should be paid until all goods are received or services performed.</p>
                   <p>Exercising your certification authority under Section 34 essentially means that you pause to attest that the goods and services that you received match the invoice to be paid.</p>
                   <p>While perhaps other people on your team may be able to make that assessment, it is you, as the delegated manager, who bears the weight of the accountability. As such, you need to make sure that the invoice is accurate, that the financial coding is also accurate.</p>
                   <p>Of course, you can only do this if you have the proper authority to make that assessment so be sure to check that too!</p>

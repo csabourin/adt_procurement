@@ -74,7 +74,7 @@ export default {
       default: function() { var tmpArray=[]
       for (let i in this.question.dotsLeft){
         let j=String(Number(i)+1)
-        tmpArray.push([j,j])
+        tmpArray.push(j)
       }
       return tmpArray
       }
@@ -115,8 +115,8 @@ export default {
     },
     arraysMatch(arr1, arr2) {
       if (arr1.length !== arr2.length) return false
-      const arrayOne = arr1.concat().flat()
-      const arrayTwo = arr2.concat().flat()
+      var arrayOne = arr1.concat()
+      var arrayTwo = arr2.concat()
       for (let i in arrayOne) {
         if (arrayOne[i] !== arrayTwo[i]) return false
       }
@@ -188,7 +188,7 @@ export default {
       const answers = Object.keys(this.coordinates).length
       var final = []
       for (let i in this.coordinates) {
-        final.push(this.coordinates[i][2])
+        final.push(this.coordinates[i][2][0])
       }
       return final
     }

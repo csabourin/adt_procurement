@@ -84,6 +84,7 @@ export default {
   methods: {
     resetAnswer() {
       this.updateOffsets()
+      this.coordinates = {}
       this.answers = Object.values(this.question.dotsLeft).sort(() => Math.random() - 0.5)
       this.isSubmitted = false
     },

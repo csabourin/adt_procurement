@@ -1,44 +1,44 @@
 <template>
   <div @mousemove="updateOffsets">
-  	<fieldset>
-    <legend><strong v-html="$t('instructions')"></strong></legend>
-    <p>&nbsp;</p>
-    <b-container>
-      <b-row>
-        <b-col>
-    <ul :key="" ref="questionHeight" style="list-style:none;text-align: right;padding-left: 0">
-      <li v-for="(item,index) in questions" :key="index">
-        <label @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" style='text-align:right' :for="'left'+qId+index">{{item}}</label>
-        <input @click="getLeft" @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
-      </li>
-    </ul>
-  </b-col>
-    <b-col ref="centerCol">
-    <svg ref="refSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 70 '+ulSize" width="70" :height="ulSize">
-      <path :class="{'isHidden':isSubmitted}" v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
-      <style>
-      .isHidden{visibility: hidden}
+    <fieldset>
+      <legend><strong v-html="$t('instructions')"></strong></legend>
+      <p>&nbsp;</p>
+      <b-container>
+        <b-row>
+          <b-col class="col-4">
+            <ul style="list-style:none;text-align: right;padding-left: 0">
+              <li v-for="(item,index) in questions" :key="index">
+                <label @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" style='text-align:right' :for="'left'+qId+index">{{item}}</label>
+                <input @click="getLeft" @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
+              </li>
+            </ul>
+          </b-col>
+          <b-col class="col-4" ref="centerCol">
+            <svg ref="refSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 '+colWidth+' 70 '+ulSize" :width="colWidth" :height="ulSize">
+              <path :class="{'isHidden':isSubmitted}" v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
+              <style>
+                .isHidden{visibility: hidden}
     </style>
-    </svg>
-  </b-col>
-    <b-col>
-    <transition-group name="flip-list" tag="ul" style="list-style:none;padding-left: 0">
-    <!-- <ul style="float:left;list-style:none;    padding-left: 0"> -->
-      <li v-for="(item,index) in answers" :key="item[0]" ref="leftItems">
-        <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="item[0]" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item[1]}}</label></li>
-    </<!-- ul -->>
-    </transition-group>
-  </b-col>
-  </b-row>
-  </b-container>
-    <br style="clear:both">
-    <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
-    <b-button @click="resetAnswer">{{$t('reset')}}</b-button>
-    </fieldset>
+            </svg>
+          </b-col>
+          <b-col class="col-4">
+            <transition-group name="flip-list" tag="ul" style="list-style:none;padding-left: 0" ref="questionHeight">
+              <!-- <ul style="float:left;list-style:none;    padding-left: 0"> -->
+              <li v-for="(item,index) in answers" :key="item[0]" ref="leftItems">
+                <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="item[0]" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item[1]}}</label></li>
+              </<!-- ul -->>
+            </transition-group>
+          </b-col>
+        </b-row>
+      </b-container>
     <div v-if="isSubmitted">
       <span v-if="arraysMatch(finalAnswer,correctAnswer)" class="v-right">Correct!</span>
       <span v-else class="v-wrong">Incorrect.</span>
     </div>
+      <br style="clear:both">
+      <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
+      <b-button @click="resetAnswer">{{$t('reset')}}</b-button>
+    </fieldset>
     <span v-if="debugging">
       <p>SVG Position: {{svgPosx}} , {{svgPosy}}</p>
       <p>Active Left {{activeLeft}} Active Right {{activeRight}}</p>
@@ -47,7 +47,7 @@
       <p>finalAnswer: {{finalAnswer}}</p>
       <p>correctAnswer: {{correctAnswer}}</p>
     </span>
-      <p>&nbsp;</p>
+    <p>&nbsp;</p>
   </div>
 </template>
 <script type="text/javascript">
@@ -55,7 +55,7 @@ export default {
   data() {
     return {
       debugging: false,
-      colorsChoices: ['#A5955F', '#92C3D0', '#AE9FFF', '#429924', '#A652B4', '#952929', '#B7B94F', '#D07733', '#FF58F0', '#623434', '#100065', '#78957F'],
+      colorsChoices: ['#167777', '#6C076C', '#6F1E0D', '#577a90', '#3A8251', '#616EB8', '#8D9245', '#775F75', '#607293', '#B35685', '#C35522'],
       coordinates: {},
       activeRight: undefined,
       activeLeft: undefined,
@@ -64,6 +64,8 @@ export default {
       svgPosx: 0,
       svgPosy: 18,
       ulSize: 1,
+      colWidth: 1,
+
       response: "",
       isSubmitted: false,
       answers: [],
@@ -81,12 +83,13 @@ export default {
     },
     correctAnswer: {
       type: Array,
-      default: function() { var tmpArray=[]
-      for (let i in this.question.dotsLeft){
-        let j=String(Number(i)+1)
-        tmpArray.push(j)
-      }
-      return tmpArray
+      default: function() {
+        var tmpArray = []
+        for (let i in this.question.dotsLeft) {
+          let j = String(Number(i) + 1)
+          tmpArray.push(j)
+        }
+        return tmpArray
       }
     }
   },
@@ -96,15 +99,14 @@ export default {
   },
 
   methods: {
-    generateAnswers(){
-      var tmpArray=[]
-      for (let i in this.question.dotsLeft){
-        let j=String(Number(i)+1)
-        tmpArray.push([j,this.question.dotsLeft[i]])
+    generateAnswers() {
+      var tmpArray = []
+      for (let i in this.question.dotsLeft) {
+        let j = String(Number(i) + 1)
+        tmpArray.push([j, this.question.dotsLeft[i]])
       }
       return tmpArray
-    }
-    ,
+    },
     resetAnswer() {
       this.updateOffsets()
       this.coordinates = {}
@@ -128,18 +130,22 @@ export default {
       for (let i in arr1) { if (arr1[i] !== arr2[i]) return false }
       return true
     },
-    getRight(event){this.isSubmitted = false
+    getRight(event) {
+      this.isSubmitted = false
       const right = event.target.parentNode.getBoundingClientRect().left
       const top = event.target.parentNode.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
       this.right.x = right - this.svgPosx - 8
-      this.right.y = top - this.svgPosy + 10},
-    getLeft(event){this.isSubmitted = false
+      this.right.y = top - this.svgPosy + 10
+    },
+    getLeft(event) {
+      this.isSubmitted = false
       const left = event.target.parentNode.getBoundingClientRect().right
-      const top = event.target.parentNode.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
+      const top = ((event.target.parentNode.getBoundingClientRect().top + event.target.parentNode.getBoundingClientRect().bottom )/2)+ (window.pageYOffset || document.documentElement.scrollTop)
       this.left.x = left - this.svgPosx + 8
-      this.left.y = top - this.svgPosy + 10},
+      this.left.y = top - this.svgPosy + 10
+    },
     findRight(event) {
-      
+
       if (this.activeRight && this.activeLeft) {
 
         this.$set(this.coordinates, this.activeRight.toString(), [
@@ -170,6 +176,7 @@ export default {
     },
     updateOffsets() {
       this.ulSize = 1 + this.$refs.questionHeight.offsetHeight
+      this.colWidth = 30 + this.$refs.centerCol.offsetWidth - 30
       const svgPos = this.offset(this.$refs.refSVG)
       this.svgPosx = svgPos.x
       this.svgPosy = svgPos.y
@@ -177,9 +184,9 @@ export default {
   },
   mounted() {
     window.addEventListener('resize', this.updateOffsets)
-      this.generateAnswers()
-      this.answers = this.generateAnswers().sort(() => Math.random() - 0.5)
-      this.questions = Object.values(this.question.dotsRight)
+    this.generateAnswers()
+    this.answers = this.generateAnswers().sort(() => Math.random() - 0.5)
+    this.questions = Object.values(this.question.dotsRight)
     this.$nextTick(() => {
       this.updateOffsets()
 
@@ -215,6 +222,16 @@ export default {
 <style type="text/css" scoped>
 .flip-list-move {
   transition: transform 2s;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+label {
+  display: inline;
+  padding: .5em;
+  padding-bottom: 1.5em
 }
 
 label:focus,

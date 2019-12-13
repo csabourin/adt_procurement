@@ -5,7 +5,7 @@
     <ul :key="" ref="questionHeight" style="float:left;list-style:none;text-align: right;padding-left: 0">
       <li v-for="(item,index) in questions" :key="index">
         <label @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" style='text-align:right' :for="'left'+qId+index">{{item}}</label>
-        <input @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
+        <input @click="getLeft" @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
       </li>
     </ul>
     <svg ref="refSVG" style="float:left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 0 70 '+ulSize" width="70" :height="ulSize">
@@ -14,7 +14,7 @@
     <transition-group name="flip-list" tag="ul" style="float:left;list-style:none;padding-left: 0">
     <!-- <ul style="float:left;list-style:none;    padding-left: 0"> -->
       <li v-for="(item,index) in answers" :key="item" ref="leftItems">
-        <input @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index+1" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item}}</label></li>
+        <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="index+1" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item}}</label></li>
     </<!-- ul -->>
     </transition-group>
     <br style="clear:both">
@@ -108,12 +108,18 @@ export default {
       }
       return true
     },
-    findRight(event) {
-      this.isSubmitted = false
+    getRight(event){this.isSubmitted = false
       const right = event.target.parentNode.getBoundingClientRect().left
       const top = event.target.parentNode.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
       this.right.x = right - this.svgPosx - 8
-      this.right.y = top - this.svgPosy + 10
+      this.right.y = top - this.svgPosy + 10},
+    getLeft(event){this.isSubmitted = false
+      const left = event.target.parentNode.getBoundingClientRect().right
+      const top = event.target.parentNode.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
+      this.left.x = left - this.svgPosx + 8
+      this.left.y = top - this.svgPosy + 10},
+    findRight(event) {
+      
       if (this.activeRight && this.activeLeft) {
 
         this.$set(this.coordinates, this.activeRight.toString(), [
@@ -130,11 +136,6 @@ export default {
 
     },
     findLeft(event) {
-      this.isSubmitted = false
-      const left = event.target.parentNode.getBoundingClientRect().right
-      const top = event.target.parentNode.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
-      this.left.x = left - this.svgPosx + 8
-      this.left.y = top - this.svgPosy + 10
       if (this.activeRight && this.activeLeft) {
         this.$set(this.coordinates, this.activeRight.toString(), [
           [this.left.x, this.left.y],
@@ -182,10 +183,10 @@ export default {
 <i18n>
   {
   "en":{
-  "instructions":"Match the items on the left with the corresponding answer to the right. Double-click on each side or select with the keyboard"
+  "instructions":"Match the items on the left with the corresponding answer to the right. Double-click to confirm or select with the keyboard"
   },
   "fr":{
-  "instructions":"Associez les items à la gauche avec leur réponse correspondante à droite. Double-cliquez chaque côté ou sélectionnez avec le clavier."
+  "instructions":"Associez les items à la gauche avec leur réponse correspondante à droite. Double-cliquez pour confirmer ou sélectionnez avec le clavier."
   }
   }
 </i18n>

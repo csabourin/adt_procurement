@@ -8,8 +8,8 @@
           <b-col class="col-4">
             <ul style="list-style:none;text-align: right;padding-left: 0">
               <li v-for="(item,index) in questions" :key="index">
-                <label @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" style='text-align:right' :for="'left'+qId+index">{{item}}</label>
-                <input @click="getLeft" @focus="updateOffsets" type="radio" name="left" ref="leftInput" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
+                <label @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" ref="leftInput" style='text-align:right' :for="'left'+qId+index">{{item}}</label>
+                <input @click="getLeft" @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
               </li>
             </ul>
           </b-col>
@@ -21,18 +21,23 @@
             </svg>
           </b-col>
           <b-col class="col-4">
-            <transition-group name="flip-list" tag="ul" style="list-style:none;padding-left: 0" ref="questionHeight">
-              <!-- <ul key="uniqueUl" ref="questionHeight" style="list-style:none; padding-left: 0"> -->
-              <li v-for="(item,index) in answers" :key="item[0]" ref="leftItems">
-                <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="item[0]" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index" ref="rightInput">{{item[1]}}</label></li>
-              <!-- </ul> -->
-            </transition-group>
+            <div style="position:static">
+              <transition-group name="flip-list" tag="ul" style="list-style:none;padding-left: 0" ref="questionHeight">
+                <li v-for="(item,index) in answers" :key="item[0]">
+                  <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" name="right" :id="'name2'+qId+index" :value="item[0]" v-model="activeLeft">
+                  <label ref="rightInput" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item[1]}}</label>
+                </li>
+              </transition-group>
+            </div>
           </b-col>
         </b-row>
       </b-container>
       <div v-if="isSubmitted">
-        <span v-if="arraysMatch(finalAnswer,correctAnswer)" class="v-right">Correct!</span>
-        <span v-else class="v-wrong">Incorrect.</span>
+        <p v-if="incomplete">{{$t('incomplete')}}</p>
+        <p v-else>
+          <span v-if="arraysMatch(finalAnswer,correctAnswer)" class="v-right">Correct!</span>
+          <span v-else class="v-wrong">Incorrect.</span>
+        </p>
       </div>
       <br style="clear:both">
       <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
@@ -69,9 +74,9 @@ export default {
       svgPosy: 18,
       ulSize: 1,
       colWidth: 1,
-
       response: "",
       isSubmitted: false,
+      incomplete: true,
       answers: [],
       questions: []
     }
@@ -104,16 +109,16 @@ export default {
 
   methods: {
     generateCorrect() {
-      var leftx, lefty, rightx, righty,right,topright,left,topleft
+      var leftx, lefty, rightx, righty, right, topright, left, topleft
       for (let i in this.question.dotsRight) {
         right = this.$refs.rightInput[i].parentNode.getBoundingClientRect().left
-        topright = this.$refs.rightInput[i].parentNode.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
+        topright = ((this.$refs.rightInput[i].getBoundingClientRect().top + this.$refs.rightInput[i].getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
         left = this.$refs.leftInput[i].parentNode.getBoundingClientRect().right
         topleft = ((this.$refs.leftInput[i].parentNode.getBoundingClientRect().top + this.$refs.leftInput[i].parentNode.getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
         rightx = right - this.svgPosx - 8
         righty = topright - this.svgPosy + 10
         leftx = left - this.svgPosx + 8
-        lefty = topleft - this.svgPosy 
+        lefty = topleft - this.svgPosy
         this.$set(this.correctCoordinates, (Number(i) + 1).toString(), [
           [leftx, lefty],
           [rightx, righty]
@@ -144,10 +149,13 @@ export default {
     },
     submitAnswer() {
       this.isSubmitted = true
-      this.$emit('response', this.arraysMatch(this.finalAnswer, this.correctAnswer))
-      this.answers = this.generateAnswers()
-      if (!this.isGenerated) { this.generateCorrect() }
-      this.coordinates = Object.assign({}, this.coordinates, this.correctCoordinates)
+      if (this.finalAnswer.length == this.correctAnswer.length) {
+        this.incomplete = false
+        this.$emit('response', this.arraysMatch(this.finalAnswer, this.correctAnswer))
+        this.answers = this.generateAnswers()
+        if (!this.isGenerated) { this.generateCorrect() }
+        this.coordinates = Object.assign({}, this.coordinates, this.correctCoordinates)
+      } else { this.incomplete = true }
     },
     arraysMatch(arr1, arr2) {
       if (arr1.length !== arr2.length) return false
@@ -231,10 +239,12 @@ export default {
 <i18n>
   {
   "en":{
-  "instructions":"Match the items on the left with the corresponding answer to the right. Double-click to confirm or select with the keyboard"
+  "instructions":"Match the items on the left with the corresponding answer to the right. Double-click to confirm or select with the keyboard",
+  "incomplete":"Please answer every questions"
   },
   "fr":{
-  "instructions":"Associez les items de gauche avec leur réponse correspondante à droite. Double-cliquez pour confirmer ou sélectionnez avec le clavier."
+  "instructions":"Associez les items de gauche avec leur réponse correspondante à droite. Double-cliquez pour confirmer ou sélectionnez avec le clavier.",
+  "incomplete":"Veuillez répondre à chaque question."
   }
   }
 </i18n>

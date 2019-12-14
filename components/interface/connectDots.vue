@@ -44,6 +44,7 @@
       <p>Left {{left.x}} {{left.y}} Right {{right.x}} {{right.y}}</p>
       <p>coordinates: {{coordinates}}</p>
       <p>Correctcoordinates: {{correctCoordinates}}</p>
+      <p>givenlAnswer: {{givenAnswer}}</p>
       <p>finalAnswer: {{finalAnswer}}</p>
       <p>correctAnswer: {{correctAnswer}}</p>
     </span>
@@ -55,10 +56,11 @@ export default {
   data() {
     return {
       debugging: false,
-      generated: false,
+      isGenerated: false,
       colorsChoices: ['#167777', '#6C076C', '#6F1E0D', '#577a90', '#3A8251', '#616EB8', '#8D9245', '#775F75', '#607293', '#B35685', '#C35522'],
       coordinates: {},
       correctCoordinates: {},
+      givenAnswer: {},
       activeRight: undefined,
       activeLeft: undefined,
       left: { x: 0, y: 0 },
@@ -102,19 +104,22 @@ export default {
 
   methods: {
     generateCorrect() {
-      var leftx, lefty, rightx, righty
+      var leftx, lefty, rightx, righty,right,topright,left,topleft
       for (let i in this.question.dotsRight) {
-        leftx = this.$refs.leftInput[i].parentNode.getBoundingClientRect().right - this.svgPosx - 8
-        lefty = ((this.$refs.leftInput[i].parentNode.getBoundingClientRect().top + this.$refs.leftInput[i].parentNode.getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop) - this.svgPosy
-        rightx = this.$refs.rightInput[i].parentNode.getBoundingClientRect().left - this.svgPosx + 8
-        righty = ((this.$refs.rightInput[i].getBoundingClientRect().top + this.$refs.rightInput[i].getBoundingClientRect().top) / 2) + (window.pageYOffset || document.documentElement.scrollTop) - this.svgPosy + 8
+        right = this.$refs.rightInput[i].parentNode.getBoundingClientRect().left
+        topright = this.$refs.rightInput[i].parentNode.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
+        left = this.$refs.leftInput[i].parentNode.getBoundingClientRect().right
+        topleft = ((this.$refs.leftInput[i].parentNode.getBoundingClientRect().top + this.$refs.leftInput[i].parentNode.getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
+        rightx = right - this.svgPosx - 8
+        righty = topright - this.svgPosy + 10
+        leftx = left - this.svgPosx + 8
+        lefty = topleft - this.svgPosy 
         this.$set(this.correctCoordinates, (Number(i) + 1).toString(), [
           [leftx, lefty],
-          [rightx, righty],
-          [(Number(i) + 1).toString(), (Number(i) + 1).toString()]
+          [rightx, righty]
         ])
       }
-      this.generated = true
+      this.isGenerated = true
     },
     generateAnswers() {
       var tmpArray = []
@@ -127,6 +132,7 @@ export default {
     resetAnswer() {
       this.updateOffsets()
       this.coordinates = {}
+      this.givenAnswer = {}
       this.answers = this.answers.sort(() => Math.random() - 0.5)
       this.isSubmitted = false
     },
@@ -140,7 +146,7 @@ export default {
       this.isSubmitted = true
       this.$emit('response', this.arraysMatch(this.finalAnswer, this.correctAnswer))
       this.answers = this.generateAnswers()
-      if (!this.generated) { this.generateCorrect() }
+      if (!this.isGenerated) { this.generateCorrect() }
       this.coordinates = Object.assign({}, this.coordinates, this.correctCoordinates)
     },
     arraysMatch(arr1, arr2) {
@@ -168,9 +174,9 @@ export default {
 
         this.$set(this.coordinates, this.activeRight.toString(), [
           [this.left.x, this.left.y],
-          [this.right.x, this.right.y],
-          [this.activeLeft.toString(), this.activeRight.toString()]
+          [this.right.x, this.right.y]
         ])
+        this.$set(this.givenAnswer, this.activeRight.toString(), this.activeLeft.toString())
         this.$nextTick(() => {
           this.activeRight = undefined
           this.activeLeft = undefined
@@ -183,9 +189,9 @@ export default {
       if (this.activeRight && this.activeLeft) {
         this.$set(this.coordinates, this.activeRight.toString(), [
           [this.left.x, this.left.y],
-          [this.right.x, this.right.y],
-          [this.activeLeft.toString(), this.activeRight.toString()]
+          [this.right.x, this.right.y]
         ])
+        this.$set(this.givenAnswer, this.activeRight.toString(), this.activeLeft.toString())
         this.$nextTick(() => {
           this.activeRight = undefined
           this.activeLeft = undefined
@@ -212,10 +218,10 @@ export default {
   computed: {
     colorChoices() { return this.colorsChoices.sort(() => Math.random() - 0.5) },
     finalAnswer() {
-      const answers = Object.keys(this.coordinates).length
+      const answers = Object.keys(this.givenAnswer).length
       var final = []
-      for (let i in this.coordinates) {
-        final.push(this.coordinates[i][2][0])
+      for (let i in this.givenAnswer) {
+        final.push(this.givenAnswer[i])
       }
       return final
     }

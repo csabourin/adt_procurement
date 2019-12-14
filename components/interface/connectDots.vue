@@ -9,32 +9,34 @@
             <ul style="list-style:none;text-align: right;padding-left: 0">
               <li v-for="(item,index) in questions" :key="index">
                 <label @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" style='text-align:right' :for="'left'+qId+index">{{item}}</label>
-                <input @click="getLeft" @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
+                <input @click="getLeft" @focus="updateOffsets" type="radio" name="left" ref="leftInput" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
               </li>
             </ul>
           </b-col>
           <b-col class="col-4" ref="centerCol">
             <svg ref="refSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 '+colWidth+' 70 '+ulSize" :width="colWidth" :height="ulSize">
-              <path :class="{'isHidden':isSubmitted}" v-for="(item, index) in coordinates" :d="'M'+coordinates[index][0][0]+','+coordinates[index][0][1]+' '+coordinates[index][1][0]+','+coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
+              <transition-group name="fade" tag="g" ref="pathGroup">
+                <line :class="{'isHidden':isSubmitted}" v-for="(item, index) in coordinates" :x1="coordinates[index][0][0]" :y1="coordinates[index][0][1]" :x2="coordinates[index][1][0]" :y2="coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
+              </transition-group>
               <style>
-                .isHidden{visibility: hidden}
+                /*.isHidden{visibility: hidden}*/
     </style>
             </svg>
           </b-col>
           <b-col class="col-4">
             <transition-group name="flip-list" tag="ul" style="list-style:none;padding-left: 0" ref="questionHeight">
-              <!-- <ul style="float:left;list-style:none;    padding-left: 0"> -->
+              <!-- <ul key="uniqueUl" ref="questionHeight" style="list-style:none; padding-left: 0"> -->
               <li v-for="(item,index) in answers" :key="item[0]" ref="leftItems">
-                <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="item[0]" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item[1]}}</label></li>
-              </<!-- ul -->>
+                <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" ref="thatIs" name="right" :id="'name2'+qId+index" :value="item[0]" v-model="activeLeft"><label @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index" ref="rightInput">{{item[1]}}</label></li>
+              <!-- </ul> -->
             </transition-group>
           </b-col>
         </b-row>
       </b-container>
-    <div v-if="isSubmitted">
-      <span v-if="arraysMatch(finalAnswer,correctAnswer)" class="v-right">Correct!</span>
-      <span v-else class="v-wrong">Incorrect.</span>
-    </div>
+      <div v-if="isSubmitted">
+        <span v-if="arraysMatch(finalAnswer,correctAnswer)" class="v-right">Correct!</span>
+        <span v-else class="v-wrong">Incorrect.</span>
+      </div>
       <br style="clear:both">
       <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
       <b-button @click="resetAnswer">{{$t('reset')}}</b-button>
@@ -44,6 +46,7 @@
       <p>Active Left {{activeLeft}} Active Right {{activeRight}}</p>
       <p>Left {{left.x}} {{left.y}} Right {{right.x}} {{right.y}}</p>
       <p>coordinates: {{coordinates}}</p>
+      <p>Correctcoordinates: {{correctCoordinates}}</p>
       <p>finalAnswer: {{finalAnswer}}</p>
       <p>correctAnswer: {{correctAnswer}}</p>
     </span>
@@ -55,8 +58,10 @@ export default {
   data() {
     return {
       debugging: false,
+      generated: false,
       colorsChoices: ['#167777', '#6C076C', '#6F1E0D', '#577a90', '#3A8251', '#616EB8', '#8D9245', '#775F75', '#607293', '#B35685', '#C35522'],
       coordinates: {},
+      correctCoordinates: {},
       activeRight: undefined,
       activeLeft: undefined,
       left: { x: 0, y: 0 },
@@ -99,6 +104,21 @@ export default {
   },
 
   methods: {
+    generateCorrect() {
+      var leftx, lefty, rightx, righty
+      for (let i in this.question.dotsRight) {
+        leftx = this.$refs.leftInput[i].parentNode.getBoundingClientRect().right - this.svgPosx - 8
+        lefty = ((this.$refs.leftInput[i].parentNode.getBoundingClientRect().top + this.$refs.leftInput[i].parentNode.getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop) - this.svgPosy
+        rightx = this.$refs.rightInput[i].parentNode.getBoundingClientRect().left - this.svgPosx + 8
+        righty = ((this.$refs.rightInput[i].getBoundingClientRect().top + this.$refs.rightInput[i].getBoundingClientRect().top) / 2) + (window.pageYOffset || document.documentElement.scrollTop) - this.svgPosy + 8
+        this.$set(this.correctCoordinates, (Number(i) + 1).toString(), [
+          [leftx, lefty],
+          [rightx, righty],
+          [(Number(i) + 1).toString(), (Number(i) + 1).toString()]
+        ])
+      }
+      this.generated = true
+    },
     generateAnswers() {
       var tmpArray = []
       for (let i in this.question.dotsLeft) {
@@ -122,8 +142,9 @@ export default {
     submitAnswer() {
       this.isSubmitted = true
       this.$emit('response', this.arraysMatch(this.finalAnswer, this.correctAnswer))
-      // this.coordinates = {}
       this.answers = this.generateAnswers()
+      if (!this.generated) { this.generateCorrect() }
+      this.coordinates = Object.assign({}, this.coordinates, this.correctCoordinates)
     },
     arraysMatch(arr1, arr2) {
       if (arr1.length !== arr2.length) return false
@@ -140,9 +161,9 @@ export default {
     getLeft(event) {
       this.isSubmitted = false
       const left = event.target.parentNode.getBoundingClientRect().right
-      const top = ((event.target.parentNode.getBoundingClientRect().top + event.target.parentNode.getBoundingClientRect().bottom )/2)+ (window.pageYOffset || document.documentElement.scrollTop)
+      const top = ((event.target.parentNode.getBoundingClientRect().top + event.target.parentNode.getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
       this.left.x = left - this.svgPosx + 8
-      this.left.y = top - this.svgPosy + 10
+      this.left.y = top - this.svgPosy
     },
     findRight(event) {
 
@@ -184,16 +205,12 @@ export default {
   },
   mounted() {
     window.addEventListener('resize', this.updateOffsets)
-    this.generateAnswers()
+    // this.generateAnswers()
     this.answers = this.generateAnswers().sort(() => Math.random() - 0.5)
     this.questions = Object.values(this.question.dotsRight)
     this.$nextTick(() => {
       this.updateOffsets()
-
-
-
     })
-
   },
   computed: {
     colorChoices() { return this.colorsChoices.sort(() => Math.random() - 0.5) },
@@ -203,11 +220,10 @@ export default {
       for (let i in this.coordinates) {
         final.push(this.coordinates[i][2][0])
       }
-      return final.concat()
+      return final
     }
   }
 }
-
 </script>
 <i18n>
   {
@@ -220,6 +236,19 @@ export default {
   }
 </i18n>
 <style type="text/css" scoped>
+.fade-enter-active-move,
+.fade-leave-active-move {
+  transition: opacity .5s;
+}
+
+.fade-enter-move,
+.fade-leave-to-move
+
+/* .fade-leave-active below version 2.1.8 */
+  {
+  opacity: 0;
+}
+
 .flip-list-move {
   transition: transform 2s;
 }
@@ -240,5 +269,4 @@ label:active {
 }
 
 /**{outline:1px solid red};*/
-
 </style>

@@ -16,11 +16,8 @@
           <b-col class="col-4" ref="centerCol">
             <svg ref="refSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 '+colWidth+' 70 '+ulSize" :width="colWidth" :height="ulSize">
               <transition-group name="fade" tag="g" ref="pathGroup">
-                <line :class="{'isHidden':isSubmitted}" v-for="(item, index) in coordinates" :x1="coordinates[index][0][0]" :y1="coordinates[index][0][1]" :x2="coordinates[index][1][0]" :y2="coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
+                <line v-for="(item, index) in coordinates" :x1="coordinates[index][0][0]" :y1="coordinates[index][0][1]" :x2="coordinates[index][1][0]" :y2="coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
               </transition-group>
-              <style>
-                /*.isHidden{visibility: hidden}*/
-    </style>
             </svg>
           </b-col>
           <b-col class="col-4">

@@ -24,8 +24,8 @@
             <div style="position:static">
               <transition-group name="flip-list" tag="ul" style="list-style:none;padding-left: 0" ref="questionHeight">
                 <li v-for="(item,index) in answers" :key="item[0]">
-                  <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" name="right" :id="'name2'+qId+index" :value="item[0]" v-model="activeLeft">
-                  <label ref="rightInput" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'name2'+qId+index">{{item[1]}}</label>
+                  <input  @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" name="right" :id="'right'+qId+index" :value="item[0]" v-model="activeLeft">
+                  <label ref="rightInput" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'right'+qId+index">{{item[1]}}</label>
                 </li>
               </transition-group>
             </div>
@@ -109,14 +109,16 @@ export default {
 
   methods: {
     generateCorrect() {
-      var leftx, lefty, rightx, righty, right, topright, left, topleft
+      var leftx, lefty, rightx, righty, right, topright, left, topleft,rightInput
       for (let i in this.question.dotsRight) {
+        // var rightInput=document.querySelector('#right'+this.qId+i)
+        // topright = rightInput.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
         right = this.$refs.rightInput[i].parentNode.getBoundingClientRect().left
-        topright = ((this.$refs.rightInput[i].getBoundingClientRect().top + this.$refs.rightInput[i].getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
         left = this.$refs.leftInput[i].parentNode.getBoundingClientRect().right
         topleft = ((this.$refs.leftInput[i].parentNode.getBoundingClientRect().top + this.$refs.leftInput[i].parentNode.getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
+        topright = ((this.$refs.rightInput[i].getBoundingClientRect().top + this.$refs.rightInput[i].getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
         rightx = right - this.svgPosx - 8
-        righty = topright - this.svgPosy + 10
+        righty = topright - this.svgPosy
         leftx = left - this.svgPosx + 8
         lefty = topleft - this.svgPosy
         this.$set(this.correctCoordinates, (Number(i) + 1).toString(), [
@@ -177,9 +179,7 @@ export default {
       this.left.y = top - this.svgPosy
     },
     findRight(event) {
-
       if (this.activeRight && this.activeLeft) {
-
         this.$set(this.coordinates, this.activeRight.toString(), [
           [this.left.x, this.left.y],
           [this.right.x, this.right.y]
@@ -189,9 +189,7 @@ export default {
           this.activeRight = undefined
           this.activeLeft = undefined
         })
-
       }
-
     },
     findLeft(event) {
       if (this.activeRight && this.activeLeft) {
@@ -272,7 +270,6 @@ li {
 
 label {
   display: inline;
-  padding: .5em;
   padding-bottom: 1.5em
 }
 
@@ -281,5 +278,14 @@ label:active {
   outline: 1px solid blue;
 }
 
-/**{outline:1px solid red};*/
+/** {
+  outline: 1px solid red
+}
+
+input:after{
+  position: absolute;
+  content:attr(id);
+}*/
+
+;
 </style>

@@ -118,7 +118,7 @@ export default {
         topleft = ((this.$refs.leftInput[i].parentNode.getBoundingClientRect().top + this.$refs.leftInput[i].parentNode.getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
         topright = ((this.$refs.rightInput[i].getBoundingClientRect().top + this.$refs.rightInput[i].getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
         rightx = right - this.svgPosx - 8
-        righty = topright - this.svgPosy
+        righty = topright - this.svgPosy -16
         leftx = left - this.svgPosx + 8
         lefty = topleft - this.svgPosy
         this.$set(this.correctCoordinates, (Number(i) + 1).toString(), [
@@ -138,6 +138,7 @@ export default {
     },
     resetAnswer() {
       this.updateOffsets()
+      this.isGenerated = true
       this.coordinates = {}
       this.givenAnswer = {}
       this.answers = this.answers.sort(() => Math.random() - 0.5)

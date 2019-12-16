@@ -47,7 +47,7 @@
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('FSRActivitiesTitle')}}</template>
         <FSRActivities />
       </b-modal>
-      <b-modal no-stacking id="UpdatingAnnualForecast" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal id="UpdatingAnnualForecast" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('UpdatingAnnualForecastTitle')}}</template>
         <UpdatingAnnualForecast />
       </b-modal>

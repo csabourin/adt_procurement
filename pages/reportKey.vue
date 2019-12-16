@@ -27,8 +27,8 @@
               <ul>
                 <ul>
                   <li>Fournissent le portrait financier le plus r&eacute;cent des finances de l'organisme.</li>
-                  <li>sont des outils permettant aux gestionnaires d'identifier r&eacute;guli&egrave;rement les finances courantes, les risques, les exc&eacute;dents et/ou les d&eacute;ficits potentiels dans leurs budgets.</li>
-                  <li>sont lanc&eacute;s et dirig&eacute;s par le chef de la direction financi&egrave;re.&nbsp;</li>
+                  <li>Sont des outils permettant aux gestionnaires d'identifier r&eacute;guli&egrave;rement les finances courantes, les risques, les exc&eacute;dents et/ou les d&eacute;ficits potentiels dans leurs budgets.</li>
+                  <li>Sont lanc&eacute;s et dirig&eacute;s par le chef de la direction financi&egrave;re.&nbsp;</li>
                   <li>Permettent au dirigeant principal des finances de faire des recommandations aux cadres sup&eacute;rieurs sur les ressources financi&egrave;res n&eacute;cessaires pour obtenir des r&eacute;sultats.</li>
                 </ul>
               </ul>

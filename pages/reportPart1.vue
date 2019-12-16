@@ -44,8 +44,8 @@
         <keyPeriods />
       </b-modal>
       <b-modal id="spendMechanisms" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
-        <spendMechanisms />
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('FSRActivitiesTitle')}}</template>
+        <FSRActivities />
       </b-modal>
       <b-modal no-stacking id="spendS32tryIt" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('tryItTitle')}}</template>
@@ -72,6 +72,7 @@
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
 import whatIsFSR from '~/components/slides/report/whatIsFSR'
+import FSRActivities from '~/components/slides/report/FSR_Table'
 import keyPeriods from '~/components/slides/report/keyPeriods'
 export default {
   data() {
@@ -93,6 +94,7 @@ export default {
   components: {
     microlearning,
     whatIsFSR,
+    FSRActivities,
     keyPeriods
   },
   methods: {
@@ -312,7 +314,7 @@ button.accessibilityButton {
   "adjustwptitle":"Activity: Adjust the Work plan",
   "delegateAuthority":"Activity: Delegation of Authority",
   "whatIsFSR":"Activity: What is a Financial Situation Report?",
-  "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
+  "FSRActivitiesTitle":"Activity: Forecast Budget Requirements",
   "RecordingTitle":"Activity: Recording in the Financial System",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
@@ -327,7 +329,7 @@ button.accessibilityButton {
   "delegateAuthority":"Activité: Délégation des pouvoirs",
   "whatIsFSR":"Activité: Vérifiez votre budget",
   "tryItTitle":"Activité: Essayons-le!",
-  "forecastBudgetTitle":"Activité: Prévoyez vos besoins budgétaires",
+  "FSRActivitiesTitle":"Activité: Prévoyez vos besoins budgétaires",
   "RecordingTitle":"Activité: Enregistrement dans le système financier",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l'activité",

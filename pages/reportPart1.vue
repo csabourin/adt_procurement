@@ -40,19 +40,19 @@
     <whatIsFSR />
         </b-modal>
       <b-modal id="keyPeriods" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('delegateAuthority')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('KeyPeriodsFSRTitle')}}</template>
         <keyPeriods />
       </b-modal>
-      <b-modal id="spendMechanisms" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal id="FSRActivities" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('FSRActivitiesTitle')}}</template>
         <FSRActivities />
       </b-modal>
-      <b-modal no-stacking id="spendS32tryIt" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('tryItTitle')}}</template>
-        <spendS32tryIt />
+      <b-modal no-stacking id="UpdatingAnnualForecast" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('UpdatingAnnualForecastTitle')}}</template>
+        <UpdatingAnnualForecast />
       </b-modal>
       <b-modal no-stacking id="RecordingFinancialSystem" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('RecordingTitle')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('UpdatingAnnualForecast')}}</template>
         <RecordingFinancialSystem />
       </b-modal>
       <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
@@ -72,14 +72,15 @@
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
 import whatIsFSR from '~/components/slides/report/whatIsFSR'
-import FSRActivities from '~/components/slides/report/FSR_Table'
+import UpdatingAnnualForecast from '~/components/slides/report/UpdatingAnnualForecast'
+import FSRActivities from '~/components/slides/report/FSRActivities'
 import keyPeriods from '~/components/slides/report/keyPeriods'
 export default {
   data() {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["whatIsFSR", "keyPeriods", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"],
+      modalArray: ["whatIsFSR", "keyPeriods", "FSRActivities", "UpdatingAnnualForecast",""],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -95,7 +96,8 @@ export default {
     microlearning,
     whatIsFSR,
     FSRActivities,
-    keyPeriods
+    keyPeriods,
+    UpdatingAnnualForecast
   },
   methods: {
     isReady() { this.isItReady = true },
@@ -312,10 +314,10 @@ button.accessibilityButton {
   "TakeTheQuiz":"Take the Quiz",
   "tryItTitle":"Activity: Try it!",
   "adjustwptitle":"Activity: Adjust the Work plan",
-  "delegateAuthority":"Activity: Delegation of Authority",
+  "KeyPeriodsFSRTitle":"Activity: Key Periods for Financial Situation Reports",
   "whatIsFSR":"Activity: What is a Financial Situation Report?",
   "FSRActivitiesTitle":"Activity: Forecast Budget Requirements",
-  "RecordingTitle":"Activity: Recording in the Financial System",
+  "UpdatingAnnualForecastTitle":"Activity: Updating the Annual Forecast",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
   "playSegment":"Play video segment",
@@ -326,11 +328,11 @@ button.accessibilityButton {
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
-  "delegateAuthority":"Activité: Délégation des pouvoirs",
+  "KeyPeriodsFSRTitle":"Activité: Périodes clés pour les rapports sur la situation financière",
   "whatIsFSR":"Activité: Vérifiez votre budget",
   "tryItTitle":"Activité: Essayons-le!",
   "FSRActivitiesTitle":"Activité: Prévoyez vos besoins budgétaires",
-  "RecordingTitle":"Activité: Enregistrement dans le système financier",
+  "UpdatingAnnualForecastTitle":"Activité: Mise à jour des prévisions annuelles",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l'activité",
   "playSegment":"Faire jouer le segment vidéo",

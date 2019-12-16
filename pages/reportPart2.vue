@@ -39,9 +39,9 @@
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('externalGovtReports')}}</template>
     <externalGovtReports />
         </b-modal>
-      <b-modal id="keyPeriods" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal id="identifyResults" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('delegateAuthority')}}</template>
-        <keyPeriods />
+        <identifyResults />
       </b-modal>
       <b-modal id="spendMechanisms" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" alt="" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
@@ -72,13 +72,13 @@
 <script type="text/javascript">
 import microlearning from '~/components/microlearning'
 import externalGovtReports from '~/components/slides/report/externalGovtReports'
-import keyPeriods from '~/components/slides/report/keyPeriods'
+import identifyResults from '~/components/slides/report/identifyResults'
 export default {
   data() {
     return {
       currentFrame: 0,
       accessiblePopup: false,
-      modalArray: ["externalGovtReports", "keyPeriods", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"],
+      modalArray: ["externalGovtReports", "identifyResults", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"],
       startTime: [],
       endTime: [],
       hasPlayed: {},
@@ -93,7 +93,7 @@ export default {
   components: {
     microlearning,
     externalGovtReports,
-    keyPeriods
+    identifyResults
   },
   methods: {
     isReady() { this.isItReady = true },

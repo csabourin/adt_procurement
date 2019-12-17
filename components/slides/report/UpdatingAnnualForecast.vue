@@ -7,7 +7,7 @@
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
-import FSRTable from "~/components/slides/Report/FSR_Table"
+import FSRTable from "~/components/slides/report/FSR_Table"
 export default {
 	data(){
 		return{

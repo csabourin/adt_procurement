@@ -18,7 +18,7 @@ export default {
     ]
   },
   router: {
-    // base: '/adt_finance-R1/'
+    // base: '/ProdContent/cninv000000000016461/'
   },
   /*
    ** Customize the progress-bar color
@@ -31,7 +31,8 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+   { src: '~plugins/ga.js', mode: 'client' }],
   /*
    ** Nuxt.js dev-modules
    */

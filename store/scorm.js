@@ -558,7 +558,8 @@ function evalObjective(id,score){
 }
 
 export const state = () => ({
-  name: doLMSGetValue("name"),
+	init:doLMSInitialize(),
+	name: doLMSGetValue("cmi.core.student_name"),
   pic: localStorage.getItem("avatarPic")
 })
 

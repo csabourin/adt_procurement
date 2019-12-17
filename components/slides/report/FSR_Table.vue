@@ -35,7 +35,7 @@
           <td v-html="$t('tableData[17]')" />
           <td v-html="$t('tableData[18]')" />
           <td v-html="$t('tableData[19]')" />
-          <td><input v-b-popover.focus.bottom="$t('salaryPop')" type="number" v-model="salary" name="salary"><input type="checkbox" v-model="salaryGo" name="salaryGo" @change="$bvModal.show('salaryFeedback')"></td>
+          <td><input @key.enter="salaryGo='checked'" v-b-popover.focus.bottom="$t('salaryPop')" type="number" v-model="salary" name="salary"><input type="checkbox" v-model="salaryGo" name="salaryGo" @change="$bvModal.show('salaryFeedback')"></td>
           <td>{{443333-salary}}</td>
         </tr>
         <tr>
@@ -62,7 +62,7 @@
           <td v-html="$t('tableData[38]')" />
           <td v-html="$t('tableData[39]')" />
           <td v-html="$t('tableData[40]')" />
-          <td v-html="$t('tableData[41]')" />
+          <td><input v-b-popover.focus.bottom="$t('softwarePop')" type="number" v-model="software" name="software"><input type="checkbox" v-model="softwareGo" name="salaryGo" @change="$bvModal.show('softwareFeedback')"></td>
           <td v-html="$t('tableData[42]')" />
         </tr>
         <tr>
@@ -71,7 +71,7 @@
           <td v-html="$t('tableData[45]')" />
           <td v-html="$t('tableData[46]')" />
           <td v-html="$t('tableData[47]')" />
-          <td v-html="$t('tableData[48]')" />
+          <td><input v-b-popover.focus.bottom="$t('hospitalityPop')" type="number" v-model="hospitality" name="hospitality"><input type="checkbox" v-model="hospitalityGo" name="hospitalityGo" @change="showHospitality"></td>
           <td v-html="$t('tableData[49]')" />
         </tr>
         <tr>
@@ -80,7 +80,7 @@
           <td v-html="$t('tableData[52]')" />
           <td v-html="$t('tableData[53]')" />
           <td v-html="$t('tableData[54]')" />
-          <td v-html="$t('tableData[55]')" />
+          <td><input v-b-popover.focus.bottom="$t('furniturePop')" type="number" v-model="furniture" name="furniture"><input type="checkbox" v-model="furnitureGo" name="furnitureGo" @change="$bvModal.show('furnitureFeedback')"></td>
           <td v-html="$t('tableData[56]')" />
         </tr>
         <tr>
@@ -89,7 +89,7 @@
           <td v-html="$t('tableData[59]')" />
           <td v-html="$t('tableData[60]')" />
           <td v-html="$t('tableData[61]')" />
-          <td v-html="$t('tableData[62]')" />
+          <td><input v-b-popover.focus.bottom="$t('trainingPop')" type="number" v-model="training" name="training"><input type="checkbox" v-model="trainingGo" name="trainingGo" @change="$bvModal.show('trainingFeedback')"></td>
           <td v-html="$t('tableData[63]')" />
         </tr>
         <tr>
@@ -139,14 +139,34 @@
         </tr>
         <tr>
           <td v-html="$t('tableData[99]')" />
-          <td colspan="6" rowspan="1">&nbsp;</td>
+          <td colspan="6" rowspan="1">{{showRisks}}</td>
         </tr>
       </tbody>
     </table>
      <b-modal @hide="salaryGo=''" id="salaryFeedback" okOnly>
         <p v-if="salary==423333"><span class="v-right" /> Correct!</span></p>
         <p v-else><span class="v-wrong" /> Incorrect.</span></p>
-         <p v-html="$t('salaryFeedback')" />
+         <div v-html="$t('salaryFeedback')" />
+     </b-modal>
+     <b-modal @hide="softwareGo=''" id="softwareFeedback" okOnly>
+        <p v-if="software==4500"><span class="v-right" /> Correct!</span></p>
+        <p v-else><span class="v-wrong" /> Incorrect.</span></p>
+         <div v-html="$t('softwareFeedback')" />
+     </b-modal>
+     <b-modal @hide="hospitalityGo=''" id="hospitalityFeedback" okOnly>
+        <p v-if="hospitality==11500"><span class="v-right" /> Correct!</span></p>
+        <p v-else><span class="v-wrong" /> Incorrect.</span></p>
+         <div v-html="$t('hospitalityFeedback')" />
+     </b-modal>
+     <b-modal @hide="furnitureGo=''" id="furnitureFeedback" okOnly>
+        <p v-if="furniture==3900"><span class="v-right" /> Correct!</span></p>
+        <p v-else><span class="v-wrong" /> Incorrect.</span></p>
+         <div v-html="$t('furnitureFeedback')" />
+     </b-modal>
+     <b-modal @hide="trainingGo=''" id="trainingFeedback" okOnly>
+        <p v-if="training==2400"><span class="v-right" /> Correct!</span></p>
+        <p v-else><span class="v-wrong" /> Incorrect.</span></p>
+         <div v-html="$t('trainingFeedback')" />
      </b-modal>
   </div>
 </template>
@@ -155,8 +175,24 @@ export default {
 data(){
     return{
         salary:"",
-        salaryGo:""
-    }
+        salaryGo:"",
+        software:"",
+        softwareGo:"",
+        hospitality:"",
+        hospitalityGo:"",
+        furnitureGo:"",
+        furniture:"",
+        trainingGo:"",
+        training:"",
+        showRisks:""
+            }
+},
+methods:{
+  showHospitality(){
+    this.$bvModal.show('hospitalityFeedback')
+    this.showRisks=this.$i18n.t('showRisk')
+
+  }
 }
 }
 
@@ -170,214 +206,234 @@ data(){
 </style>
 <i18n>{
   "en": {
-   "salaryPop":"An officer earning $70,000 is using their sick leave and will not be back for at least 6 months. A junior analyst earning $40,000 is resigning as of October 1. You will not have time to replace them in this fiscal year.",
-   "salaryFeedback":"<p>The P6 annual forecast will change to $423,333.</p><ul><li>An employee using their sick leave doesn&rsquo;t impact the annual forecast as you still need to pay their salary.</li><li>Since your junior analyst will be gone the last six months (October to March) of the fiscal year, the P6 Annual Forecast for Salary will decrease by $20,000 ($443,333-$20,000=$423,333).You&rsquo;ll also need to update your Salary Commitments in the financial system.</li></ul>",
-  "tableData": [
-  "&nbsp;",
-  "&nbsp;",
-  "P6 Budget<br /><br />A",
-  "P6 Commitments<br /><br />B",
-  "P6 Year-To-Date Actuals<br />C",
-  "P5 Annual Forecast<br /><br />D",
-  "P6 Annual Forecast<br /><br />E",
-  "Surplus / Deficit<br /><br />F=E-A",
-  "Salary",
-  "&nbsp;",
-  "&nbsp;",
-  "&nbsp;",
-  "&nbsp;",
-  "&nbsp;",
-  "&nbsp;",
-  "Salary",
-  "$443,333",
-  "$240,139",
-  "$203,194",
-  "$443,333",
-  "&nbsp;",
-  "$443,333",
-  "TOTAL",
-  "$443,333",
-  "$240,139",
-  "$203,194",
-  "$443,333",
-  "$0",
-  "$443,333",
-  "O&amp;M",
-  "&nbsp;",
-  "&nbsp;",
-  "&nbsp;",
-  "&nbsp;",
-  "&nbsp;",
-  "&nbsp;",
-  "Software License",
-  "$3,000",
-  "$1,500",
-  "$1,500",
-  "$3,000",
-  "&nbsp;",
-  "$3,000",
-  "Hospitality &amp; Conferences",
-  "$15,000",
-  "$2,500",
-  "$8,000",
-  "$15,000",
-  "&nbsp;",
-  "$15,000",
-  "Furniture",
-  "$1,000",
-  "$0",
-  "$900",
-  "$900",
-  "&nbsp;",
-  "$1,000",
-  "Training",
-  "$4,400",
-  "$0",
-  "$2,400",
-  "$4,400",
-  "&nbsp;",
-  "$4,400",
-  "Office Supplies",
-  "$6,000",
-  "$4,553",
-  "$1,100",
-  "$6,000",
-  "&nbsp;",
-  "$6,000",
-  "Translation Services",
-  "$2,500",
-  "$500",
-  "$1,200",
-  "$2,000",
-  "&nbsp;",
-  "$2,500",
-  "Travel",
-  "$8,000",
-  "$4,000",
-  "$1,700",
-  "$7,800",
-  "&nbsp;",
-  "$8,000",
-  "Temp Help",
-  "$5,000",
-  "$2,000",
-  "$1,000",
-  "$5,000",
-  "&nbsp;",
-  "$5,000",
-  "TOTAL",
-  "$44,900",
-  "$15,053",
-  "$17,800",
-  "$44,100",
-  "$0",
-  "$44,900",
-  "Notes on Risks"
-  ]
-  },"fr":{
-  "salaryPop":"- Un officier qui gagne 70 000 $ utilise ses congés de maladie et ne reviendra pas avant au moins six mois. -Un analyste subalterne gagnant 40 000 $ démissionne à compter du 1er octobre. Vous n'aurez pas le temps de les remplacer au cours du présent exercice financier.",
-  "salaryFeedback":"<p>&nbsp;Les pr&eacute;visions annuelles de P6 passeront &agrave; 423 333 dollars.</p><ul><li>Un employ&eacute; qui utilise ses cong&eacute;s de maladie n'a pas d'incidence sur les pr&eacute;visions annuelles puisque vous devez quand m&ecirc;me payer son salaire.</li><li>&Eacute;tant donn&eacute; que votre analyste subalterne sera absent au cours des six derniers mois (d'octobre &agrave; mars) de l'exercice, les pr&eacute;visions salariales annuelles de P6 diminueront de 20 000 $ (443 333 $ - 20 000 $ = 423 333 $) et vous devrez &eacute;galement mettre &agrave; jour vos engagements salariaux dans le syst&egrave;me financier.</li></ul>",
-  "tableData":[
-  "&nbsp;",
-  "&nbsp;",
-"P6 Budget<br /><br /><br />A",
-"P6 Engagements<br /><br /><br />B",
-"P6 D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'ann&eacute;e<br />C",
-"P5 Pr&eacute;visions annuelles<br /><br />D",
-"P6 Pr&eacute;visions annuelles<br /><br />E",
-"Exc&eacute;dent/d&eacute;ficit<br /><br /><br />F=E-A",
-"Salaire",
-"&nbsp;",
-"&nbsp;",
-"&nbsp;",
-"&nbsp;",
-"&nbsp;",
-"&nbsp;",
-"Salaire",
-"443&nbsp;333&nbsp;$",
-"240&nbsp;139&nbsp;$",
-"203&nbsp;194&nbsp;$",
-"443&nbsp;333&nbsp;$",
-"&nbsp;",
-"443&nbsp;333&nbsp;$",
-"TOTAL",
-"443&nbsp;333&nbsp;$",
-"240&nbsp;139&nbsp;$",
-"203&nbsp;194&nbsp;$",
-"443&nbsp;333&nbsp;$",
-"0&nbsp;$",
-"443&nbsp;333&nbsp;$",
-"F&amp;E",
-"&nbsp;",
-"&nbsp;",
-"&nbsp;",
-"&nbsp;",
-"&nbsp;",
-"&nbsp;",
-"Licence de logiciel",
-"3&nbsp;000&nbsp;$",
-"1&nbsp;500&nbsp;$",
-"1&nbsp;500&nbsp;$",
-"3&nbsp;000&nbsp;$",
-"&nbsp;",
-"3&nbsp;000&nbsp;$",
-"Accueil et conf&eacute;rences",
-"15&nbsp;000&nbsp;$",
-"2&nbsp;500&nbsp;$",
-"8&nbsp;000&nbsp;$",
-"15&nbsp;000&nbsp;$",
-"&nbsp;",
-"15&nbsp;000&nbsp;$",
-"Meubles",
-"1&nbsp;000&nbsp;$",
-"0&nbsp;$",
-"900&nbsp;$",
-"900&nbsp;$",
-"&nbsp;",
-"1&nbsp;000&nbsp;$",
-"Formation",
-"4&nbsp;400&nbsp;$",
-"0&nbsp;$",
-"2&nbsp;400&nbsp;$",
-"4&nbsp;400&nbsp;$",
-"&nbsp;",
-"4&nbsp;400&nbsp;$",
-"Fournitures de bureau",
-"6&nbsp;000&nbsp;$",
-"4&nbsp;553&nbsp;$",
-"1&nbsp;100&nbsp;$",
-"6&nbsp;000&nbsp;$",
-"&nbsp;",
-"6&nbsp;000&nbsp;$",
-"Services de traduction",
-"2&nbsp;500&nbsp;$",
-"500&nbsp;$",
-"1&nbsp;200&nbsp;$",
-"2&nbsp;000&nbsp;$",
-"&nbsp;",
-"2&nbsp;500&nbsp;$",
-"Voyage",
-"8&nbsp;000&nbsp;$",
-"4&nbsp;000&nbsp;$",
-"1&nbsp;700&nbsp;$",
-"7&nbsp;800&nbsp;$",
-"&nbsp;",
-"8&nbsp;000&nbsp;$",
-"Aide temporaire",
-"5&nbsp;000&nbsp;$",
-"2&nbsp;000&nbsp;$",
-"1&nbsp;000&nbsp;$",
-"5&nbsp;000&nbsp;$",
-"&nbsp;",
-"5&nbsp;000&nbsp;$",
-"TOTAL",
-"44&nbsp;900&nbsp;$",
-"15&nbsp;053&nbsp;$",
-"17&nbsp;800&nbsp;$",
-"44&nbsp;100&nbsp;$",
-"0&nbsp;$",
-"44&nbsp;900&nbsp;$",
-"Notes sur les risques",
-"&nbsp;"]
-}
-  }</i18n>
+    "salaryPop": "An officer earning $70,000 is using their sick leave and will not be back for at least 6 months. A junior analyst earning $40,000 is resigning as of October 1. You will not have time to replace them in this fiscal year.",
+    "salaryFeedback": "<p>The P6 annual forecast will change to $423,333.</p><ul><li>An employee using their sick leave doesn&rsquo;t impact the annual forecast as you still need to pay their salary.</li><li>Since your junior analyst will be gone the last six months (October to March) of the fiscal year, the P6 Annual Forecast for Salary will decrease by $20,000 ($443,333-$20,000=$423,333).You&rsquo;ll also need to update your Salary Commitments in the financial system.</li></ul>",
+    "softwarePop": "You found out that the company providing the new software was bought out, and will be charging twice as much starting October 1. You are currently paying $1,000 per year per license; you have three licenses.",
+    "softwareFeedback": "<p>The P6 annual forecast will change to $4,500.</p><ul><li>First 6 months: $1,000 X 3 licenses for &frac12; year = $1,500.&nbsp;</li><li>Second 6 months: $2,000 X 3 licenses for &frac12; year = $3,000.</li></ul>",
+    "hospitalityPop": "You and your colleague are planning an event for which you will be covering up to $4,500 in hospitality. So far the registration is lower than expected and the event risks being cancelled. Your $3,500 hospitality request was denied by your ADM.",
+    "hospitalityFeedback": "<p>The P6 annual forecast will change to $11,500.&nbsp;</p><ul><li>Since there is no indication that the event is being cancelled, this doesn&rsquo;t affect the forecast. However, you should flag this as a potential risk in your notes to finance.</li><li>Since the request was denied, you&rsquo;ll need to decrease your forecast by $3,500 ($15,000 - $3,500 = $11,500).</li></ul>",
+    "furniturePop": "A $3,000 specialized office chair broke and you need to replace it immediately.",
+    "furnitureFeedback": "<p>The P6 annual forecast will change to $3,900 ($900 + $3,000).</p>",
+    "trainingPop": "$2,000 worth of training has been postponed to next May. ",
+    "trainingFeedback": "<p>The P6 annual forecast will change to $2,400 ($4,400 - $2,000).</p>",
+    "showRisk":"There is a risk that an event may not happen, given low registration. As a result, the surplus would increase by $4,500.",
+    "tableData": [
+      "&nbsp;",
+      "&nbsp;",
+      "P6 Budget<br /><br />A",
+      "P6 Commitments<br /><br />B",
+      "P6 Year-To-Date Actuals<br />C",
+      "P5 Annual Forecast<br /><br />D",
+      "P6 Annual Forecast<br /><br />E",
+      "Surplus / Deficit<br /><br />F=E-A",
+      "Salary",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "Salary",
+      "$443,333",
+      "$240,139",
+      "$203,194",
+      "$443,333",
+      "&nbsp;",
+      "$443,333",
+      "TOTAL",
+      "$443,333",
+      "$240,139",
+      "$203,194",
+      "$443,333",
+      "$0",
+      "$443,333",
+      "O&amp;M",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "Software License",
+      "$3,000",
+      "$1,500",
+      "$1,500",
+      "$3,000",
+      "&nbsp;",
+      "$3,000",
+      "Hospitality &amp; Conferences",
+      "$15,000",
+      "$2,500",
+      "$8,000",
+      "$15,000",
+      "&nbsp;",
+      "$15,000",
+      "Furniture",
+      "$1,000",
+      "$0",
+      "$900",
+      "$900",
+      "&nbsp;",
+      "$1,000",
+      "Training",
+      "$4,400",
+      "$0",
+      "$2,400",
+      "$4,400",
+      "&nbsp;",
+      "$4,400",
+      "Office Supplies",
+      "$6,000",
+      "$4,553",
+      "$1,100",
+      "$6,000",
+      "$6,000",
+      "$6,000",
+      "Translation Services",
+      "$2,500",
+      "$500",
+      "$1,200",
+      "$2,000",
+      "$2,000",
+      "$2,500",
+      "Travel",
+      "$8,000",
+      "$4,000",
+      "$1,700",
+      "$7,800",
+      "$7,800",
+      "$8,000",
+      "Temp Help",
+      "$5,000",
+      "$2,000",
+      "$1,000",
+      "$5,000",
+      "$5,000",
+      "$5,000",
+      "TOTAL",
+      "$44,900",
+      "$15,053",
+      "$17,800",
+      "$44,100",
+      "$0",
+      "$44,900",
+      "Notes on Risks"
+    ]
+  },
+  "fr": {
+    "salaryPop": "- Un officier qui gagne 70 000 $ utilise ses congés de maladie et ne reviendra pas avant au moins six mois. -Un analyste subalterne gagnant 40 000 $ démissionne à compter du 1er octobre. Vous n'aurez pas le temps de les remplacer au cours du présent exercice financier.",
+    "salaryFeedback": "<p>&nbsp;Les pr&eacute;visions annuelles de P6 passeront &agrave; 423 333 dollars.</p><ul><li>Un employ&eacute; qui utilise ses cong&eacute;s de maladie n'a pas d'incidence sur les pr&eacute;visions annuelles puisque vous devez quand m&ecirc;me payer son salaire.</li><li>&Eacute;tant donn&eacute; que votre analyste subalterne sera absent au cours des six derniers mois (d'octobre &agrave; mars) de l'exercice, les pr&eacute;visions salariales annuelles de P6 diminueront de 20 000 $ (443 333 $ - 20 000 $ = 423 333 $) et vous devrez &eacute;galement mettre &agrave; jour vos engagements salariaux dans le syst&egrave;me financier.</li></ul>",
+    "softwarePop": "Vous avez découvert que l'entreprise qui fournit le nouveau logiciel a été rachetée et qu'elle facturera deux fois plus cher à partir du 1er octobre. Vous payez actuellement 1 000 $ par année par licence ; vous avez trois licences.",
+    "softwareFeedback": "<pLes pr&eacute;visions annuelles de P6 passeront &agrave; 4 500 dollars.</p><ul><li>Les 6 premiers mois : 1 000 $ X 3 licences pour l'ann&eacute;e &frac12; = 1 500 $. </li><li>Deuxi&egrave;me 6 mois : 2 000 $ X 3 licences pour l'ann&eacute;e &frac12; = 3 000 $. </li></ul>",
+    "hospitalityPop": "Vous et votre collègue planifiez un événement pour lequel vous couvrirez jusqu'à 4 500 $ en frais d'accueil. Jusqu'à présent, l'inscription est inférieure aux prévisions et l'événement risque d'être annulé. Votre demande de 3 500 $ a été refusée par votre SMA.",
+    "hospitalityFeedback": "<p>Les pr&eacute;visions annuelles de P6 passeront &agrave; 11 500 dollars. </p><ul><li>Comme rien n'indique que l'&eacute;v&eacute;nement est annul&eacute;, cela n'a pas d'incidence sur les pr&eacute;visions. Toutefois, vous devriez le signaler comme un risque potentiel dans vos notes &agrave; financer.</li><li>Puisque la demande a &eacute;t&eacute; refus&eacute;e, vous devrez diminuer votre pr&eacute;vision de 3 500 $ (1&nbsp;000 $ - 3&nbsp;500 $ = 11&nbsp;500 $).</li></ul>",
+    "furniturePop": "Une chaise de bureau spécialisée de 3000 $ s'est brisée et vous devez la remplacer immédiatement.",
+    "furnitureFeedback": "<p>Les prévisions annuelles de P6 passeront à 3&nbsp;900 dollars (900 $ + 3&nbsp;000 $). </p>",
+    "trainingPop": "Une formation d'une valeur de 2&nbsp;000 $ a été reportée à mai prochain. ",
+    "trainingFeedback": "<p>Les prévisions annuelles de P6 passeront à 2&nbsp;400 dollars (4&nbsp;00 - 2&nbsp;000 $).</p>",
+    "showRisk":"Il y a un risque qu'un événement ne se produise pas, étant donné le faible nombre d'inscriptions. Par conséquent, l'excédent augmenterait de 4 500 $.",
+    "tableData": [
+      "&nbsp;",
+      "&nbsp;",
+      "P6 Budget<br /><br /><br />A",
+      "P6 Engagements<br /><br /><br />B",
+      "P6 D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'ann&eacute;e<br />C",
+      "P5 Pr&eacute;visions annuelles<br /><br />D",
+      "P6 Pr&eacute;visions annuelles<br /><br />E",
+      "Exc&eacute;dent/d&eacute;ficit<br /><br /><br />F=E-A",
+      "Salaire",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "Salaire",
+      "443&nbsp;333&nbsp;$",
+      "240&nbsp;139&nbsp;$",
+      "203&nbsp;194&nbsp;$",
+      "443&nbsp;333&nbsp;$",
+      "&nbsp;",
+      "443&nbsp;333&nbsp;$",
+      "TOTAL",
+      "443&nbsp;333&nbsp;$",
+      "240&nbsp;139&nbsp;$",
+      "203&nbsp;194&nbsp;$",
+      "443&nbsp;333&nbsp;$",
+      "0&nbsp;$",
+      "443&nbsp;333&nbsp;$",
+      "F&amp;E",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "&nbsp;",
+      "Licence de logiciel",
+      "3&nbsp;000&nbsp;$",
+      "1&nbsp;500&nbsp;$",
+      "1&nbsp;500&nbsp;$",
+      "3&nbsp;000&nbsp;$",
+      "&nbsp;",
+      "3&nbsp;000&nbsp;$",
+      "Accueil et conf&eacute;rences",
+      "15&nbsp;000&nbsp;$",
+      "2&nbsp;500&nbsp;$",
+      "8&nbsp;000&nbsp;$",
+      "15&nbsp;000&nbsp;$",
+      "&nbsp;",
+      "15&nbsp;000&nbsp;$",
+      "Meubles",
+      "1&nbsp;000&nbsp;$",
+      "0&nbsp;$",
+      "900&nbsp;$",
+      "900&nbsp;$",
+      "&nbsp;",
+      "1&nbsp;000&nbsp;$",
+      "Formation",
+      "4&nbsp;400&nbsp;$",
+      "0&nbsp;$",
+      "2&nbsp;400&nbsp;$",
+      "4&nbsp;400&nbsp;$",
+      "&nbsp;",
+      "4&nbsp;400&nbsp;$",
+      "Fournitures de bureau",
+      "6&nbsp;000&nbsp;$",
+      "4&nbsp;553&nbsp;$",
+      "1&nbsp;100&nbsp;$",
+      "6&nbsp;000&nbsp;$",
+      "6&nbsp;000&nbsp;$",
+      "6&nbsp;000&nbsp;$",
+      "Services de traduction",
+      "2&nbsp;500&nbsp;$",
+      "500&nbsp;$",
+      "1&nbsp;200&nbsp;$",
+      "2&nbsp;000&nbsp;$",
+      "2&nbsp;000&nbsp;$",
+      "2&nbsp;500&nbsp;$",
+      "Voyage",
+      "8&nbsp;000&nbsp;$",
+      "4&nbsp;000&nbsp;$",
+      "1&nbsp;700&nbsp;$",
+      "7&nbsp;800&nbsp;$",
+      "7&nbsp;800&nbsp;$",
+      "8&nbsp;000&nbsp;$",
+      "Aide temporaire",
+      "5&nbsp;000&nbsp;$",
+      "2&nbsp;000&nbsp;$",
+      "1&nbsp;000&nbsp;$",
+      "5&nbsp;000&nbsp;$",
+      "5&nbsp;000&nbsp;$",
+      "5&nbsp;000&nbsp;$",
+      "TOTAL",
+      "44&nbsp;900&nbsp;$",
+      "15&nbsp;053&nbsp;$",
+      "17&nbsp;800&nbsp;$",
+      "44&nbsp;100&nbsp;$",
+      "0&nbsp;$",
+      "44&nbsp;900&nbsp;$",
+      "Notes sur les risques",
+      "&nbsp;"
+    ]
+  }
+}</i18n>

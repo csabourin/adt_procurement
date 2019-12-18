@@ -2,7 +2,7 @@
   <div>
   <h2 class="pageTitle">{{$t('Test')}}</h2>
   <p>Question {{tabIndex+1}} / 21</p>
-    <b-container >
+    <b-container fluid>
       <b-row>
         <b-col class="col"></b-col>
           <b-col class="col-11">
@@ -33,42 +33,39 @@
         <radioQuiz :question="$t('q9')" qId="8" @response="calculateAnswer($event,2,7)" />
       </b-tab>
       <b-tab title="09">
-        <radioQuiz :question="$t('q10')" qId="9" @response="calculateAnswer($event,3,8)" />
-      </b-tab>
-      <b-tab title="10">
         <radioQuiz :question="$t('q11')" qId="10" @response="calculateAnswer($event,1,9)" />
       </b-tab>
-      <b-tab title="11">
+      <b-tab title="10">
         <radioQuiz :question="$t('q12')" qId="11" @response="calculateAnswer($event,1,10)" />
       </b-tab>
-      <b-tab title="12">
+      <b-tab title="11">
         <radioQuiz :question="$t('q13')" qId="12" @response="calculateAnswer($event,2,11)" />
       </b-tab>
-      <b-tab title="13">
+      <b-tab title="12">
         <radioQuiz :question="$t('q14')" qId="13" @response="calculateAnswer($event,1,12)" />
       </b-tab>
-      <b-tab title="14">
+      <b-tab title="13">
         <checkboxQuiz :question="$t('q15')" qId="14" @response="arraysMatch($event,['2','3'],13)" />
       </b-tab>
-      <b-tab title="15">
+      <b-tab title="14">
         <radioQuiz :question="$t('q16')" qId="15" @response="calculateAnswer($event,2,14)" />
       </b-tab>
-      <b-tab title="16">
+      <b-tab title="15">
         <radioQuiz :question="$t('q17')" qId="16" @response="calculateAnswer($event,2,15)" />
       </b-tab>
-      <b-tab title="17">
+      <b-tab title="16">
         <radioQuiz :question="$t('q18')" qId="17" @response="calculateAnswer($event,2,16)" />
       </b-tab>
-      <b-tab title="18">
+      <b-tab title="17">
         <radioQuiz :question="$t('q19')" qId="18" @response="calculateAnswer($event,2,17)" />
       </b-tab>
-      <b-tab title="19">
+      <b-tab title="18">
         <radioQuiz :question="$t('q20')" qId="19" @response="calculateAnswer($event,2,18)" />
       </b-tab>
-      <b-tab title="20">
+      <b-tab title="19">
         <radioQuiz :question="$t('q21')" qId="20" @response="calculateAnswer($event,2,19)" />
       </b-tab>
-      <b-tab title="21">
+      <b-tab title="20">
         <radioQuiz :question="$t('q22')" qId="21" @response="calculateAnswer($event,2,20)" />
       </b-tab>
     </b-tabs>
@@ -85,7 +82,7 @@
       </b-button-group>
     </div>
     <div class="progressBar">
-      <span @click="tabIndex=index"v-for="(square,index) in 21" :class="['square',{'filled':answers[index],'Qactive':tabIndex==index}]" />
+      <span @click="tabIndex=index"v-for="(square,index) in 20" :class="['square',{'filled':answers[index],'Qactive':tabIndex==index}]" />
     </div>
     <p v-if="debugging==true">{{answers}}</p>
     <div class="bottomNav planSection">
@@ -172,6 +169,7 @@ export default {
     width:1em;
     height:1em;
     background-color: #DDD;
+    cursor: pointer;
   }
 
   .filled{ background-color: #587C84; }

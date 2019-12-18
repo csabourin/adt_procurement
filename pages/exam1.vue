@@ -1,7 +1,7 @@
 <template>
   <div>
   <h2 class="pageTitle">{{$t('Test')}}</h2>
-  <p>Question {{tabIndex+1}} / 21</p>
+  <p>Question {{tabIndex+1}} / 20</p>
     <b-container fluid>
       <b-row>
         <b-col class="col"></b-col>
@@ -9,7 +9,7 @@
     <b-card no-body>
     <b-tabs card v-model="tabIndex">
       <b-tab title="01">
-        <radioQuiz :question="$t('q1')" qId="0" @response="calculateAnswer($event,2,0)" />
+        <radioQuiz :question="$t('q1')" qId="0" @response="calculateAnswer($event,3,0)" />
       </b-tab>
       <b-tab title="02">
         <radioQuiz :question="$t('q2')" qId="1" @response="calculateAnswer($event,3,1)" />
@@ -83,12 +83,12 @@
       </b-button-group>
     </div>
     <div class="progressBar">
-      <span @click="tabIndex=index"v-for="(square,index) in 20" :class="['square',{'filled':answers[index],'Qactive':tabIndex==index}]" />
+      <span @click="tabIndex=index"v-for="(square,index) in 20" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" />
     </div>
     <div class="bottomNav planSection">
     <div class="planSectionBar"><span>{{$t('plan')}}</span></div>
     </div>
-    <p v-if="debugging==true">{{answers}}</p>
+    <p v-if="debugging==true">{{answerScore}}</p>
   </div>
 </template>
 <script type="text/javascript">
@@ -109,29 +109,34 @@ export default {
   methods: {
     calculateAnswer(answer, correct, qId) {
       if (answer == correct) {
-        this.$set(this.answers, qId.toString(), 1)
-      } else { this.$set(this.answers, qId.toString(), 2) }
+        this.$store.commit('plan/setScore',[qId.toString(), "'right'",answer])
+      } else { this.$store.commit('plan/setScore',[qId.toString(), "'wrong'",answer]) }
     },
     arraysMatch(arr1, arr2, qId) {
       if (arr1.length !== arr2.length) {
-        this.$set(this.answers, qId.toString(), 2)
+        $store.commit('plan/setScore',qId.toString(), 'wrong')
         return false
       }
       const arrayOne = arr1.concat().sort()
       for (let i in arrayOne) {
         if (arrayOne[i] !== arr2[i]){
-          this.$set(this.answers, qId.toString(), 2)
+          $store.commit('plan/setScore',qId.toString(), 'wrong')
           return false
         }
       }
-      this.$set(this.answers, qId.toString(), 1)
+      $store.commit('plan/setScore',qId.toString(), 'right')
 
+    }
+  },
+  computed:{
+    answerScore(){
+      return this.$store.state.plan.score
     }
   }
 }
 </script>
 <style type="text/css" scoped>
-.Qactive{box-shadow: 2px 2px 6px #00000088;
+.Qactive{box-shadow: 0px 5px 5px #00000088;
 /*outline: 2px solid #1000ff33;*/
 }
 .planSection {
@@ -178,6 +183,20 @@ export default {
 <i18n>{
   "en": {
     "q1": {
+      "text": "Which of the following is <strong style='text-transform: uppercase;'>not</strong> included in a work plan?",
+      "options": {
+        "1": "Activity",
+        "2": "Deliverable",
+        "3": "Results",
+        "4": "Risk"
+      },
+      "feedback": {
+        "1": "",
+        "2": "",
+        "3": ""
+      }
+    },
+    "q2": {
       "text": "Where are government priorities first announced?",
       "options": {
         "1": "In the Federal Budget",
@@ -190,7 +209,7 @@ export default {
         "3": ""
       }
     },
-    "q2": {
+    "q3": {
       "text": "Who is responsible for building work plans and creating budgets for your organization?",
       "options": {
         "1": "Deputy Heads",
@@ -203,7 +222,7 @@ export default {
         "3": ""
       }
     },
-    "q3": {
+    "q4": {
       "text": "Where would you find detailed information on what your organization does and what it plans to do over the next three years?",
       "options": {
         "1": "Mandate Letter",
@@ -216,7 +235,7 @@ export default {
         "3": ""
       }
     },
-    "q4": {
+    "q5": {
       "text": "Your 360 Scan reiterates for you that your organization has a low risk tolerance. At the same time, the Deputy Minister wants to see more innovation. What is the best course of action to take as these opposing forces impact your work plan? ",
       "options": {
         "1": "Wait until others have successfully implemented an innovation project ",
@@ -229,7 +248,7 @@ export default {
         "3": ""
       }
     },
-    "q5": {
+    "q6": {
       "text": "Call centers tend to have high turnover. In addition, your department has a high attrition rate. For these reasons, it is hard to staff positions in the organization. Which of the following mitigation strategies could help address this risk? ",
       "options": {
         "1": "Train staff",
@@ -243,7 +262,7 @@ export default {
         "3": ""
       }
     },
-    "q6": {
+    "q7": {
       "text": "Last year, you did not meet your target of answering calls within 30 seconds. Call centers are becoming more automated, an approach favored by senior management. Which activity is the most appropriate to take as you draft your work plan?",
       "options": {
         "1": "Incorporate digital solutions",
@@ -256,7 +275,7 @@ export default {
         "3": ""
       }
     },
-    "q7": {
+    "q8": {
       "text": "You’d like to find out if clients are satisfied with the live support provided by the call center. What deliverable would be added to the activity to address this? ",
       "options": {
         "1": "Resolve call, text or chat within 2 minutes ",
@@ -269,25 +288,12 @@ export default {
         "3": ""
       }
     },
-    "q8": {
+    "q9": {
       "text": "You have added a new activity to your work plan about offering support to clients through automated means. This would be accomplished by implementing a chatbot system available 24 hours a day. The chatbot would respond to customer requests online without involving an agent. What deliverable would be added to the work plan for this activity? ",
       "options": {
         "1": "Change call center operational hours to 24/7",
         "2": "30% of online requests would be resolved by chatbot",
         "3": "Chatbot interactions will be monitored by a call center agent "
-      },
-      "feedback": {
-        "1": "",
-        "2": "",
-        "3": ""
-      }
-    },
-    "q9": {
-      "text": "With any online technology, like the chatbot system, there is the risk of a privacy breach. What mitigation strategy would be added to the work plan for this risk? ",
-      "options": {
-        "1": "Secure firewall and encryption",
-        "2": "User license agreement",
-        "3": "Train staff on how to support the chatbot"
       },
       "feedback": {
         "1": "",
@@ -440,11 +446,12 @@ export default {
   },
   "fr": {
     "q1": {
-      "text": "Où les priorités du gouvernement sont-elles d'abord annoncées ?",
+      "text": "Lequel des éléments suivants n'est <strong style='text-transform:uppercase'>pas</strong> inclus dans un plan de travail?",
       "options": {
-        "1": "Dans le budget fédéral",
-        "2": "Dans le discours du Trône",
-        "3": "Dans une lettre de mandat"
+        "1": "Activité",
+        "2": "Produit livrable",
+        "3": "Résultats",
+        "4": "Risque"
       },
       "feedback": {
         "1": "",
@@ -453,7 +460,21 @@ export default {
       }
     },
     "q2": {
-      "text": "Qui est responsable de l'élaboration des plans de travail et des budgets de votre organisation ?",
+      "text": "Où les priorités du gouvernement sont-elles d'abord annoncées?",
+      "options": {
+        "1": "Dans le budget fédéral",
+        "2": "Dans le discours du Trône",
+        "3": "Dans une lettre de mandat",
+        "4": "Dans une directive du Conseil du Trésor"
+      },
+      "feedback": {
+        "1": "",
+        "2": "",
+        "3": ""
+      }
+    },
+    "q3": {
+      "text": "Qui est responsable de l'élaboration des plans de travail et des budgets de votre organisation?",
       "options": {
         "1": "Administrateurs généraux",
         "2": "Adjoints administratifs",
@@ -465,7 +486,7 @@ export default {
         "3": ""
       }
     },
-    "q3": {
+    "q4": {
       "text": "Où trouveriez-vous des renseignements détaillés sur ce que votre organisation fait et ce qu'elle prévoit faire au cours des trois prochaines années?",
       "options": {
         "1": "Lettre de mandat",
@@ -478,7 +499,7 @@ export default {
         "3": ""
       }
     },
-    "q4": {
+    "q5": {
       "text": "Votre analyse à 360° réitère pour vous que votre organisation a une faible tolérance au risque. En même temps, le sous-ministre veut voir plus d'innovation. Quelle est la meilleure ligne de conduite à adopter, car ces forces opposées ont une incidence sur votre plan de travail?",
       "options": {
         "1": "Attendre que d'autres aient mis en œuvre avec succès un projet d'innovation",
@@ -491,7 +512,7 @@ export default {
         "3": ""
       }
     },
-    "q5": {
+    "q6": {
       "text": "Vous dirigez un centre d'appels qui a connu un taux de roulement élevé. De plus, votre ministère a un taux d'attrition élevé. Pour ces raisons, il est difficile de doter des postes dans l'organisation. Laquelle des stratégies d'atténuation suivantes pourrait aider à atténuer ce risque?",
       "options": {
         "1": "Former le personnel",
@@ -505,8 +526,8 @@ export default {
         "3": ""
       }
     },
-    "q6": {
-      "text": "L'an dernier, vous n'avez pas atteint votre objectif de répondre aux appels dans les 30 secondes. Les centres d'appels sont de plus en plus automatisés, une approche privilégiée par la haute direction. Quelle est l'activité la plus appropriée lorsque vous rédigez votre plan de travail ?",
+    "q7": {
+      "text": "L'an dernier, vous n'avez pas atteint votre objectif de répondre aux appels dans les 30 secondes. Les centres d'appels sont de plus en plus automatisés, une approche privilégiée par la haute direction. Quelle est l'activité la plus appropriée lorsque vous rédigez votre plan de travail?",
       "options": {
         "1": "Incorporer des solutions numériques",
         "2": "Changer la cible",
@@ -518,7 +539,7 @@ export default {
         "3": ""
       }
     },
-    "q7": {
+    "q8": {
       "text": "Vous aimeriez savoir si les clients sont satisfaits de l'assistance en direct fournie par le centre d'appels. Quel produit livrable serait ajouté à l'activité pour y remédier?",
       "options": {
         "1": "Résoudre un appel, un SMS ou un chat en moins de 2 minutes",
@@ -531,25 +552,12 @@ export default {
         "3": ""
       }
     },
-    "q8": {
+    "q9": {
       "text": "Vous avez ajouté une nouvelle activité à votre plan de travail concernant l'offre de soutien aux clients par des moyens automatisés. Pour ce faire, il faudrait mettre en place un système de chatbot disponible 24 heures sur 24. Le chatbot répondrait aux demandes des clients en ligne sans l'intervention d'un agent. Quel produit livrable serait ajouté au plan de travail pour cette activité?",
       "options": {
         "1": "Changer les heures d'ouverture du centre d'appels à 24 heures sur 24, 7 jours sur 7.",
         "2": "30% des demandes en ligne seraient résolues par chatbot",
         "3": "Les interactions Chatbot seront surveillées par un agent du centre d'appels."
-      },
-      "feedback": {
-        "1": "",
-        "2": "",
-        "3": ""
-      }
-    },
-    "q9": {
-      "text": "Avec n'importe quelle technologie en ligne, comme le système de chatbot, il y a le risque d'une atteinte à la vie privée. Quelle stratégie d'atténuation serait ajoutée au plan de travail pour ce risque? ",
-      "options": {
-        "1": "Pare-feu sécurisé et cryptage",
-        "2": "Contrat de licence d'utilisation",
-        "3": "Former le personnel sur la façon de soutenir le chatbot"
       },
       "feedback": {
         "1": "",
@@ -571,7 +579,7 @@ export default {
       }
     },
     "q11": {
-      "text": "L'argent donné à un organisme pour le soutien à l'apprentissage proviendrait de quel budget ?",
+      "text": "L'argent donné à un organisme pour le soutien à l'apprentissage proviendrait de quel budget?",
       "options": {
         "1": "Salaire",
         "2": "Subventions et contributions (S et C)",
@@ -596,7 +604,7 @@ export default {
       }
     },
     "q13": {
-      "text": "Quels rapports fournissent des renseignements pour un cycle financier complet ?",
+      "text": "Quels rapports fournissent des renseignements pour un cycle financier complet?",
       "options": {
         "1": "Approvisionnement complet",
         "2": "Comptes publics",
@@ -609,7 +617,7 @@ export default {
       }
     },
     "q14": {
-      "text": "Pour les fournitures de bureau de l'an dernier, vous avez mis de côté 3 000 $, et 2 500 $ ont été dépensés. Pour l'année en cours, vous prévoyez dépenser 2 500 $. Quel montant allez-vous mettre dans votre budget pour l'année prochaine ? ",
+      "text": "Pour les fournitures de bureau de l'an dernier, vous avez mis de côté 3 000 $, et 2 500 $ ont été dépensés. Pour l'année en cours, vous prévoyez dépenser 2 500 $. Quel montant allez-vous mettre dans votre budget pour l'année prochaine? ",
       "options": {
         "1": "2 500$",
         "2": "3 000$",
@@ -622,7 +630,7 @@ export default {
       }
     },
     "q15": {
-      "text": "Vous avez toujours mis de côté 8 000 $ année après année pour la formation des agents de centre d'appels. L'an dernier, vous avez dépensé 5 000 $ en formation. Cette année, vous prévoyez dépenser 10 500 $. Que feriez-vous pour votre budget de l'année prochaine ?",
+      "text": "Vous avez toujours mis de côté 8 000 $ année après année pour la formation des agents de centre d'appels. L'an dernier, vous avez dépensé 5 000 $ en formation. Cette année, vous prévoyez dépenser 10 500 $. Que feriez-vous pour votre budget de l'année prochaine?",
       "options": {
         "1": "Demandez le montant que vous prévoyez dépenser cette année ",
         "2": "Demandez le même montant que vous avez demandé année après année.",
@@ -635,7 +643,7 @@ export default {
       }
     },
     "q16": {
-      "text": "Vous avez ajouté une activité à votre plan de travail concernant la mise en œuvre d'un système de chatbot d'ici le milieu de l'année. Votre recherche initiale montre que les systèmes de chatbot coûtent entre 25 $ et 100 $ par mois. Quel montant allez-vous mettre dans votre budget ? ",
+      "text": "Vous avez ajouté une activité à votre plan de travail concernant la mise en œuvre d'un système de chatbot d'ici le milieu de l'année. Votre recherche initiale montre que les systèmes de chatbot coûtent entre 25 $ et 100 $ par mois. Quel montant allez-vous mettre dans votre budget? ",
       "options": {
         "1": "300$",
         "2": "600$",
@@ -648,7 +656,7 @@ export default {
       }
     },
     "q17": {
-      "text": "Le budget salarial de l'année en cours est de 760 000 $. Vous créez un nouveau poste d'analyste en TI qui sera doté l'an prochain. Le salaire annuel sera de 60 000 $. Vous aurez besoin de temps pour les embaucher et estimez qu'ils commenceront en juin et ne travailleront que 10 mois. Quel sera votre budget salarial pour l'année prochaine (en supposant que tout le reste demeure inchangé) ?",
+      "text": "Le budget salarial de l'année en cours est de 760 000 $. Vous créez un nouveau poste d'analyste en TI qui sera doté l'an prochain. Le salaire annuel sera de 60 000 $. Vous aurez besoin de temps pour les embaucher et estimez qu'ils commenceront en juin et ne travailleront que 10 mois. Quel sera votre budget salarial pour l'année prochaine (en supposant que tout le reste demeure inchangé)?",
       "options": {
         "1": "760 000$",
         "2": "810 000$",
@@ -674,7 +682,7 @@ export default {
       }
     },
     "q19": {
-      "text": "Vous avez soumis vos exigences budgétaires. Votre directeur est favorable à la formation d'un analyste en TI, d'un agent principal du centre d'appels et d'un agent subalterne du centre d'appels sur le système chatbot, que vous n'aviez pas inclus au départ. Le coût total sera de 1 500 $. Quelles mesures allez-vous prendre pour mettre à jour votre budget ?",
+      "text": "Vous avez soumis vos exigences budgétaires. Votre directeur est favorable à la formation d'un analyste en TI, d'un agent principal du centre d'appels et d'un agent subalterne du centre d'appels sur le système chatbot, que vous n'aviez pas inclus au départ. Le coût total sera de 1 500 $. Quelles mesures allez-vous prendre pour mettre à jour votre budget?",
       "options": {
         "1": "Laisser le budget de formation tel quel",
         "2": "Réduire une partie de la formation prévue pour couvrir les 1 500 $.",
@@ -687,7 +695,7 @@ export default {
       }
     },
     "q20": {
-      "text": "Vous avez soumis vos exigences budgétaires et votre directeur vous demande de réduire vos déplacements de 20 000 $ à 12 000 $. Quelles mesures pourriez-vous prendre ? ",
+      "text": "Vous avez soumis vos exigences budgétaires et votre directeur vous demande de réduire vos déplacements de 20 000 $ à 12 000 $. Quelles mesures pourriez-vous prendre? ",
       "options": {
         "1": "Réduire certains coûts discrétionnaires ",
         "2": "Explorez les options de vidéoconférence",

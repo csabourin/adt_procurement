@@ -16,7 +16,7 @@
         <nuxt-link :to="localePath('createBudget')" v-html="$t('CreateBudget')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')" v-html="$t('Test')" />
+        <nuxt-link :to="localePath('exam1')" v-html="$t('Test')" />
       </li>
     </menu>
     <h4>{{$t('spend')}}</h4>

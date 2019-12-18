@@ -1,6 +1,5 @@
 export const state = () => ({
-  name: localStorage.getItem("avatarName"),
-  pic: localStorage.getItem("avatarPic")
+	score: {}
 })
 
 export const mutations = {

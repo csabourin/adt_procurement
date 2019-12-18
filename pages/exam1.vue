@@ -5,72 +5,73 @@
     <b-container fluid>
       <b-row>
         <b-col class="col"></b-col>
-          <b-col class="col-11">
+          <b-col class="col-10">
     <b-card no-body>
     <b-tabs card v-model="tabIndex">
       <b-tab title="01">
-        <radioQuiz :question="$t('q2')" qId="0" @response="calculateAnswer($event,2,0)" />
+        <radioQuiz :question="$t('q1')" qId="0" @response="calculateAnswer($event,2,0)" />
       </b-tab>
       <b-tab title="02">
-        <radioQuiz :question="$t('q3')" qId="1" @response="calculateAnswer($event,3,1)" />
+        <radioQuiz :question="$t('q2')" qId="1" @response="calculateAnswer($event,3,1)" />
       </b-tab>
       <b-tab title="03">
-        <radioQuiz :question="$t('q4')" qId="2" @response="calculateAnswer($event,2,2)" />
+        <radioQuiz :question="$t('q3')" qId="2" @response="calculateAnswer($event,2,2)" />
       </b-tab>
       <b-tab title="04">
-        <radioQuiz :question="$t('q5')" qId="3" @response="calculateAnswer($event,2,3)" />
+        <radioQuiz :question="$t('q4')" qId="3" @response="calculateAnswer($event,2,3)" />
       </b-tab>
       <b-tab title="05">
-        <radioQuiz :question="$t('q6')" qId="4" @response="calculateAnswer($event,3,4)" />
+        <radioQuiz :question="$t('q5')" qId="4" @response="calculateAnswer($event,3,4)" />
       </b-tab>
       <b-tab title="06">
-        <radioQuiz :question="$t('q7')" qId="5" @response="calculateAnswer($event,1,5)" />
+        <radioQuiz :question="$t('q6')" qId="5" @response="calculateAnswer($event,1,5)" />
       </b-tab>
       <b-tab title="07">
-        <radioQuiz :question="$t('q8')" qId="6" @response="calculateAnswer($event,2,6)" />
+        <radioQuiz :question="$t('q7')" qId="6" @response="calculateAnswer($event,2,6)" />
       </b-tab>
       <b-tab title="08">
-        <radioQuiz :question="$t('q9')" qId="8" @response="calculateAnswer($event,2,7)" />
+        <radioQuiz :question="$t('q8')" qId="7" @response="calculateAnswer($event,2,7)" />
       </b-tab>
       <b-tab title="09">
-        <radioQuiz :question="$t('q11')" qId="10" @response="calculateAnswer($event,1,9)" />
+        <radioQuiz :question="$t('q9')" qId="8" @response="calculateAnswer($event,1,8)" />
       </b-tab>
       <b-tab title="10">
-        <radioQuiz :question="$t('q12')" qId="11" @response="calculateAnswer($event,1,10)" />
+        <radioQuiz :question="$t('q10')" qId="9" @response="calculateAnswer($event,1,9)" />
       </b-tab>
       <b-tab title="11">
-        <radioQuiz :question="$t('q13')" qId="12" @response="calculateAnswer($event,2,11)" />
+        <radioQuiz :question="$t('q11')" qId="10" @response="calculateAnswer($event,2,10)" />
       </b-tab>
       <b-tab title="12">
-        <radioQuiz :question="$t('q14')" qId="13" @response="calculateAnswer($event,1,12)" />
+        <radioQuiz :question="$t('q12')" qId="11" @response="calculateAnswer($event,1,11)" />
       </b-tab>
       <b-tab title="13">
-        <checkboxQuiz :question="$t('q15')" qId="14" @response="arraysMatch($event,['2','3'],13)" />
+        <checkboxQuiz :question="$t('q13')" qId="12" @response="arraysMatch($event,['2','3'],12)" />
       </b-tab>
       <b-tab title="14">
-        <radioQuiz :question="$t('q16')" qId="15" @response="calculateAnswer($event,2,14)" />
+        <radioQuiz :question="$t('q14')" qId="13" @response="calculateAnswer($event,2,13)" />
       </b-tab>
       <b-tab title="15">
-        <radioQuiz :question="$t('q17')" qId="16" @response="calculateAnswer($event,2,15)" />
+        <radioQuiz :question="$t('q15')" qId="14" @response="calculateAnswer($event,2,14)" />
       </b-tab>
       <b-tab title="16">
-        <radioQuiz :question="$t('q18')" qId="17" @response="calculateAnswer($event,2,16)" />
+        <radioQuiz :question="$t('q16')" qId="15" @response="calculateAnswer($event,2,15)" />
       </b-tab>
       <b-tab title="17">
-        <radioQuiz :question="$t('q19')" qId="18" @response="calculateAnswer($event,2,17)" />
+        <radioQuiz :question="$t('q17')" qId="16" @response="calculateAnswer($event,2,16)" />
       </b-tab>
       <b-tab title="18">
-        <radioQuiz :question="$t('q20')" qId="19" @response="calculateAnswer($event,2,18)" />
+        <radioQuiz :question="$t('q18')" qId="17" @response="calculateAnswer($event,2,17)" />
       </b-tab>
       <b-tab title="19">
-        <radioQuiz :question="$t('q21')" qId="20" @response="calculateAnswer($event,2,19)" />
+        <radioQuiz :question="$t('q19')" qId="18" @response="calculateAnswer($event,2,18)" />
       </b-tab>
       <b-tab title="20">
-        <radioQuiz :question="$t('q22')" qId="21" @response="calculateAnswer($event,2,20)" />
+        <radioQuiz :question="$t('q20')" qId="19" @response="calculateAnswer($event,2,19)" />
       </b-tab>
     </b-tabs>
   </b-card>
 </b-col>
+<b-col class="col"></b-col>
 </b-row>
 </b-container>
     
@@ -78,16 +79,16 @@
     <div class="text-center">
       <b-button-group class="mt-2">
         <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-        <b-button @click="tabIndex++" :disabled="tabIndex>=20">{{$t('nextPage')}}</b-button>
+        <b-button @click="tabIndex++" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
       </b-button-group>
     </div>
     <div class="progressBar">
       <span @click="tabIndex=index"v-for="(square,index) in 20" :class="['square',{'filled':answers[index],'Qactive':tabIndex==index}]" />
     </div>
-    <p v-if="debugging==true">{{answers}}</p>
     <div class="bottomNav planSection">
     <div class="planSectionBar"><span>{{$t('plan')}}</span></div>
     </div>
+    <p v-if="debugging==true">{{answers}}</p>
   </div>
 </template>
 <script type="text/javascript">
@@ -96,7 +97,7 @@ import checkboxQuiz from "~/components/checkboxQuiz"
 export default {
   data() {
     return {
-      debugging:false,
+      debugging:true,
       tabIndex: 0,
       answers: {}
     }
@@ -282,19 +283,6 @@ export default {
       }
     },
     "q9": {
-      "text": "What technology risks would there be in implementing a chatbot system? ",
-      "options": {
-        "1": "Decrease in staff positions and employee morale",
-        "2": "Lost productivity and implementation setback",
-        "3": "System breakdown and cyberattacks "
-      },
-      "feedback": {
-        "1": "",
-        "2": "",
-        "3": ""
-      }
-    },
-    "q10": {
       "text": "With any online technology, like the chatbot system, there is the risk of a privacy breach. What mitigation strategy would be added to the work plan for this risk? ",
       "options": {
         "1": "Secure firewall and encryption",
@@ -307,7 +295,7 @@ export default {
         "3": ""
       }
     },
-    "q11": {
+    "q10": {
       "text": "Temporary Help is paid out of which budget? ",
       "options": {
         "1": "Operating & Maintenance (O&M)",
@@ -320,7 +308,7 @@ export default {
         "3": ""
       }
     },
-    "q12": {
+    "q11": {
       "text": "Money given to an organization for Apprenticeship support would come out of which budget? ",
       "options": {
         "1": "Operating & Maintenance (O&M)",
@@ -333,7 +321,7 @@ export default {
         "3": ""
       }
     },
-    "q13": {
+    "q12": {
       "text": "The Main Estimates detail the government’s total projected expenditures for the upcoming fiscal year.",
       "options": {
         "1": "True",
@@ -345,7 +333,7 @@ export default {
         "3": ""
       }
     },
-    "q14": {
+    "q13": {
       "text": "Which reports provide information for a full fiscal cycle? ",
       "options": {
         "1": "Full Supply",
@@ -358,7 +346,7 @@ export default {
         "3": ""
       }
     },
-    "q15": {
+    "q14": {
       "text": "For last year’s office supplies, you set aside $3,000, and $2,500 was spent. For the current year, you are forecasting to spend $2,500. What amount will you put in your budget requirements for next year? ",
       "options": {
         "1": "$2,500",
@@ -371,7 +359,7 @@ export default {
         "3": ""
       }
     },
-    "q16": {
+    "q15": {
       "text": "You have consistently set aside $8,000 year after year for call center agent training. Last year, you spent $5,000 on training. This year, you’re forecasting to spend $10,500. What would you do for your budget requirements for next year?",
       "options": {
         "1": "Ask for the amount you forecast to spend this year ",
@@ -384,7 +372,7 @@ export default {
         "3": ""
       }
     },
-    "q17": {
+    "q16": {
       "text": "You added an activity to your work plan about implementing a chatbot system by mid-year. Your initial research shows that chatbot systems cost between $25 and $100 per month. What amount will you put in your budget requirements? ",
       "options": {
         "1": "$300",
@@ -397,7 +385,7 @@ export default {
         "3": ""
       }
     },
-    "q18": {
+    "q17": {
       "text": "The current year’s Salary budget is $760,000. You’re creating a new IT Analyst position to be staffed next year. The annual salary will be $60,000. You’ll need time to hire them and estimate they will start in June and only work 10 months. What will your Salary budget requirement be next year (assuming everything else remains the same)? ",
       "options": {
         "1": "$760,000",
@@ -410,7 +398,7 @@ export default {
         "3": ""
       }
     },
-    "q19": {
+    "q18": {
       "text": "The chatbot system implementation will incur $15,000 in IT costs for hosting which will be provided by another department on a cost recovery basis. This will be formalized in an MOU between organizations. Hosting costs in your budget will be …? ",
       "options": {
         "1": "$15,000 Non-discretionary ",
@@ -423,7 +411,7 @@ export default {
         "3": ""
       }
     },
-    "q20": {
+    "q19": {
       "text": "You’ve submitted your budget requirements. Your director is supportive of training an IT Analyst, Senior Call Center Agent, and one Junior Call Center Agent on the chatbot system, which you hadn’t originally included. Total cost will be $1,500. What action will you take to update your budget? ",
       "options": {
         "1": "Leave the training budget requirement as-is ",
@@ -436,7 +424,7 @@ export default {
         "3": ""
       }
     },
-    "q21": {
+    "q20": {
       "text": "You’ve submitted your budget requirements and your director asks you to cut travel from $20,000 to $12,000. What action could you take? ",
       "options": {
         "1": "Cut some discretionary costs ",
@@ -518,11 +506,11 @@ export default {
       }
     },
     "q6": {
-      "text": "Last year, you did not meet your target of answering calls within 30 seconds. Call centers are becoming more automated, an approach favored by senior management. Which activity is the most appropriate to take as you draft your work plan?",
+      "text": "L'an dernier, vous n'avez pas atteint votre objectif de répondre aux appels dans les 30 secondes. Les centres d'appels sont de plus en plus automatisés, une approche privilégiée par la haute direction. Quelle est l'activité la plus appropriée lorsque vous rédigez votre plan de travail ?",
       "options": {
-        "1": "Incorporate digital solutions",
-        "2": "Change the target",
-        "3": "Hire more staff"
+        "1": "Incorporer des solutions numériques",
+        "2": "Changer la cible",
+        "3": "Embaucher plus de personnel"
       },
       "feedback": {
         "1": "",
@@ -531,11 +519,11 @@ export default {
       }
     },
     "q7": {
-      "text": "You’d like to find out if clients are satisfied with the live support provided by the call center. What deliverable would be added to the activity to address this? ",
+      "text": "Vous aimeriez savoir si les clients sont satisfaits de l'assistance en direct fournie par le centre d'appels. Quel produit livrable serait ajouté à l'activité pour y remédier?",
       "options": {
-        "1": "Resolve call, text or chat within 2 minutes ",
-        "2": "Average 4 out of 5 rating on post-support client survey ",
-        "3": "One call, text or chat out of 10 is escalated for resolution"
+        "1": "Résoudre un appel, un SMS ou un chat en moins de 2 minutes",
+        "2": "Moyenne de 4 sur 5 d'après le sondage auprès des clients après le soutien",
+        "3": "Un appel, un message texte ou un clavardage sur 10 est soumis à une escalade pour résolution."
       },
       "feedback": {
         "1": "",
@@ -544,11 +532,11 @@ export default {
       }
     },
     "q8": {
-      "text": "You have added a new activity to your work plan about offering support to clients through automated means. This would be accomplished by implementing a chatbot system available 24 hours a day. The chatbot would respond to customer requests online without involving an agent. What deliverable would be added to the work plan for this activity? ",
+      "text": "Vous avez ajouté une nouvelle activité à votre plan de travail concernant l'offre de soutien aux clients par des moyens automatisés. Pour ce faire, il faudrait mettre en place un système de chatbot disponible 24 heures sur 24. Le chatbot répondrait aux demandes des clients en ligne sans l'intervention d'un agent. Quel produit livrable serait ajouté au plan de travail pour cette activité?",
       "options": {
-        "1": "Change call center operational hours to 24/7",
-        "2": "30% of online requests would be resolved by chatbot",
-        "3": "Chatbot interactions will be monitored by a call center agent "
+        "1": "Changer les heures d'ouverture du centre d'appels à 24 heures sur 24, 7 jours sur 7.",
+        "2": "30% des demandes en ligne seraient résolues par chatbot",
+        "3": "Les interactions Chatbot seront surveillées par un agent du centre d'appels."
       },
       "feedback": {
         "1": "",
@@ -557,11 +545,11 @@ export default {
       }
     },
     "q9": {
-      "text": "What technology risks would there be in implementing a chatbot system? ",
+      "text": "Avec n'importe quelle technologie en ligne, comme le système de chatbot, il y a le risque d'une atteinte à la vie privée. Quelle stratégie d'atténuation serait ajoutée au plan de travail pour ce risque? ",
       "options": {
-        "1": "Decrease in staff positions and employee morale",
-        "2": "Lost productivity and implementation setback",
-        "3": "System breakdown and cyberattacks "
+        "1": "Pare-feu sécurisé et cryptage",
+        "2": "Contrat de licence d'utilisation",
+        "3": "Former le personnel sur la façon de soutenir le chatbot"
       },
       "feedback": {
         "1": "",
@@ -570,11 +558,11 @@ export default {
       }
     },
     "q10": {
-      "text": "With any online technology, like the chatbot system, there is the risk of a privacy breach. What mitigation strategy would be added to the work plan for this risk? ",
+      "text": "L'aide temporaire est payée à partir de quel budget? ",
       "options": {
-        "1": "Secure firewall and encryption",
-        "2": "User license agreement",
-        "3": "Train staff on how to support the chatbot"
+        "1": "Exploitation et entretien (F et E)",
+        "2": "Salaire",
+        "3": "Subventions et contributions (S et C)"
       },
       "feedback": {
         "1": "",
@@ -583,11 +571,11 @@ export default {
       }
     },
     "q11": {
-      "text": "Temporary Help is paid out of which budget? ",
+      "text": "L'argent donné à un organisme pour le soutien à l'apprentissage proviendrait de quel budget ?",
       "options": {
-        "1": "Operating & Maintenance (O&M)",
-        "2": "Salary",
-        "3": "Grants and Contributions (Gs&Cs)"
+        "1": "Salaire",
+        "2": "Subventions et contributions (S et C)",
+        "3": "Capital"
       },
       "feedback": {
         "1": "",
@@ -596,11 +584,10 @@ export default {
       }
     },
     "q12": {
-      "text": "Money given to an organization for Apprenticeship support would come out of which budget? ",
+      "text": "Le Budget principal des dépenses détaille les dépenses totales prévues du gouvernement pour le prochain exercice financier.",
       "options": {
-        "1": "Operating & Maintenance (O&M)",
-        "2": "Salary",
-        "3": "Grants and Contributions (Gs&Cs)"
+        "1": "Vrai",
+        "2": "Faux"
       },
       "feedback": {
         "1": "",
@@ -609,10 +596,11 @@ export default {
       }
     },
     "q13": {
-      "text": "The Main Estimates detail the government’s total projected expenditures for the upcoming fiscal year.",
+      "text": "Quels rapports fournissent des renseignements pour un cycle financier complet ?",
       "options": {
-        "1": "True",
-        "2": "False"
+        "1": "Approvisionnement complet",
+        "2": "Comptes publics",
+        "3": "Rapport ministériel sur les résultats "
       },
       "feedback": {
         "1": "",
@@ -621,11 +609,11 @@ export default {
       }
     },
     "q14": {
-      "text": "Which reports provide information for a full fiscal cycle? ",
+      "text": "Pour les fournitures de bureau de l'an dernier, vous avez mis de côté 3 000 $, et 2 500 $ ont été dépensés. Pour l'année en cours, vous prévoyez dépenser 2 500 $. Quel montant allez-vous mettre dans votre budget pour l'année prochaine ? ",
       "options": {
-        "1": "Full Supply",
-        "2": "Public Accounts",
-        "3": "Departmental Results Report"
+        "1": "2 500$",
+        "2": "3 000$",
+        "3": "5 500$"
       },
       "feedback": {
         "1": "",
@@ -634,11 +622,11 @@ export default {
       }
     },
     "q15": {
-      "text": "For last year’s office supplies, you set aside $3,000, and $2,500 was spent. For the current year, you are forecasting to spend $2,500. What amount will you put in your budget requirements for next year? ",
+      "text": "Vous avez toujours mis de côté 8 000 $ année après année pour la formation des agents de centre d'appels. L'an dernier, vous avez dépensé 5 000 $ en formation. Cette année, vous prévoyez dépenser 10 500 $. Que feriez-vous pour votre budget de l'année prochaine ?",
       "options": {
-        "1": "$2,500",
-        "2": "$3,000 ",
-        "3": "$5,500"
+        "1": "Demandez le montant que vous prévoyez dépenser cette année ",
+        "2": "Demandez le même montant que vous avez demandé année après année.",
+        "3": "Demandez pourquoi il y a eu une fluctuation pour éclairer vos prévisions. "
       },
       "feedback": {
         "1": "",
@@ -647,11 +635,11 @@ export default {
       }
     },
     "q16": {
-      "text": "You have consistently set aside $8,000 year after year for call center agent training. Last year, you spent $5,000 on training. This year, you’re forecasting to spend $10,500. What would you do for your budget requirements for next year?",
+      "text": "Vous avez ajouté une activité à votre plan de travail concernant la mise en œuvre d'un système de chatbot d'ici le milieu de l'année. Votre recherche initiale montre que les systèmes de chatbot coûtent entre 25 $ et 100 $ par mois. Quel montant allez-vous mettre dans votre budget ? ",
       "options": {
-        "1": "Ask for the amount you forecast to spend this year ",
-        "2": "Ask for the same amount you’ve asked for year after year",
-        "3": "Ask why there’s been a fluctuation to inform your forecast"
+        "1": "300$",
+        "2": "600$",
+        "3": "1 200$"
       },
       "feedback": {
         "1": "",
@@ -660,11 +648,11 @@ export default {
       }
     },
     "q17": {
-      "text": "You added an activity to your work plan about implementing a chatbot system by mid-year. Your initial research shows that chatbot systems cost between $25 and $100 per month. What amount will you put in your budget requirements? ",
+      "text": "Le budget salarial de l'année en cours est de 760 000 $. Vous créez un nouveau poste d'analyste en TI qui sera doté l'an prochain. Le salaire annuel sera de 60 000 $. Vous aurez besoin de temps pour les embaucher et estimez qu'ils commenceront en juin et ne travailleront que 10 mois. Quel sera votre budget salarial pour l'année prochaine (en supposant que tout le reste demeure inchangé) ?",
       "options": {
-        "1": "$300",
-        "2": "$600",
-        "3": "$1,200"
+        "1": "760 000$",
+        "2": "810 000$",
+        "3": "820 000$"
       },
       "feedback": {
         "1": "",
@@ -673,11 +661,11 @@ export default {
       }
     },
     "q18": {
-      "text": "The current year’s Salary budget is $760,000. You’re creating a new IT Analyst position to be staffed next year. The annual salary will be $60,000. You’ll need time to hire them and estimate they will start in June and only work 10 months. What will your Salary budget requirement be next year (assuming everything else remains the same)? ",
+      "text": "La mise en œuvre du système de chatbot entraînera des coûts de 15 000 $ en TI pour l'hébergement, qui seront fournis par un autre ministère selon le principe du recouvrement des coûts. Cela sera officialisé dans un protocole d'entente entre les organisations. Les frais d'hébergement dans votre budget seront de …? ",
       "options": {
-        "1": "$760,000",
-        "2": "$810,000",
-        "3": "$820,000"
+        "1": "15 000 $ Non discrétionnaire  ",
+        "2": "15 000 $ Discrétionnaire ",
+        "3": "15 000 $ Immobilisations"
       },
       "feedback": {
         "1": "",
@@ -686,11 +674,11 @@ export default {
       }
     },
     "q19": {
-      "text": "The chatbot system implementation will incur $15,000 in IT costs for hosting which will be provided by another department on a cost recovery basis. This will be formalized in an MOU between organizations. Hosting costs in your budget will be …? ",
+      "text": "Vous avez soumis vos exigences budgétaires. Votre directeur est favorable à la formation d'un analyste en TI, d'un agent principal du centre d'appels et d'un agent subalterne du centre d'appels sur le système chatbot, que vous n'aviez pas inclus au départ. Le coût total sera de 1 500 $. Quelles mesures allez-vous prendre pour mettre à jour votre budget ?",
       "options": {
-        "1": "$15,000 Non-discretionary ",
-        "2": "$15,000 Discretionary ",
-        "3": "$15,000 Capital"
+        "1": "Laisser le budget de formation tel quel",
+        "2": "Réduire une partie de la formation prévue pour couvrir les 1 500 $.",
+        "3": "Ajoutez 1 500 $ à votre budget de formation"
       },
       "feedback": {
         "1": "",
@@ -699,24 +687,11 @@ export default {
       }
     },
     "q20": {
-      "text": "You’ve submitted your budget requirements. Your director is supportive of training an IT Analyst, Senior Call Center Agent, and one Junior Call Center Agent on the chatbot system, which you hadn’t originally included. Total cost will be $1,500. What action will you take to update your budget? ",
+      "text": "Vous avez soumis vos exigences budgétaires et votre directeur vous demande de réduire vos déplacements de 20 000 $ à 12 000 $. Quelles mesures pourriez-vous prendre ? ",
       "options": {
-        "1": "Leave the training budget requirement as-is ",
-        "2": "Cut some planned training to cover the $1,500 ",
-        "3": "Add $1,500 to your training budget requirements"
-      },
-      "feedback": {
-        "1": "",
-        "2": "",
-        "3": ""
-      }
-    },
-    "q21": {
-      "text": "You’ve submitted your budget requirements and your director asks you to cut travel from $20,000 to $12,000. What action could you take? ",
-      "options": {
-        "1": "Cut some discretionary costs ",
-        "2": "Explore video conferencing options ",
-        "3": "Change the budget requirement to $12,000"
+        "1": "Réduire certains coûts discrétionnaires ",
+        "2": "Explorez les options de vidéoconférence",
+        "3": "Modifier les exigences budgétaires à 12 000 $."
       },
       "feedback": {
         "1": "",

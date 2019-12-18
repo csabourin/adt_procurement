@@ -41,7 +41,7 @@
         <radioQuiz :question="$t('q14')" qId="14" @response="calculateAnswer($event,1,14)" />
       </b-tab>
       <b-tab title="Question 14">
-        <checkboxQuiz :question="$t('q15')" qId="15" @response="calculateAnswer($event,['2','3'],15)" />
+        <checkboxQuiz :question="$t('q15')" qId="15" @response="arraysMatch($event,['2','3'],15)" />
       </b-tab>
       <b-tab title="Question 15">
         <radioQuiz :question="$t('q16')" qId="16" @response="calculateAnswer($event,2,16)" />
@@ -64,16 +64,19 @@
       <b-tab title="Question 21">
         <radioQuiz :question="$t('q22')" qId="22" @response="calculateAnswer($event,2,22)" />
       </b-tab>
-      </b-tabs>
-
-       <!-- Control buttons-->
+    </b-tabs>
+    <p>Question {{tabIndex+1}} / 22</p>
+    <div>
+      <span v-for="(square,index) in 22" :class="['square',{'filled':answers[index]}]" />
+    </div>
+    <!-- Control buttons-->
     <div class="text-center">
       <b-button-group class="mt-2">
         <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
         <b-button @click="tabIndex++" :disabled="tabIndex>=20">{{$t('nextPage')}}</b-button>
       </b-button-group>
     </div>
-        <p>{{answers}}</p>
+    <p>{{answers}}</p>
   </div>
 </template>
 <script type="text/javascript">
@@ -82,7 +85,7 @@ import checkboxQuiz from "~/components/checkboxQuiz"
 export default {
   data() {
     return {
-    	tabIndex:0,
+      tabIndex: 0,
       answers: {}
     }
   },
@@ -95,11 +98,37 @@ export default {
       if (answer == correct) {
         this.$set(this.answers, qId.toString(), true)
       } else { this.$set(this.answers, qId.toString(), false) }
+    },
+    arraysMatch(arr1, arr2, qId) {
+      if (arr1.length !== arr2.length) {
+        this.$set(this.answers, qId.toString(), false)
+        return false
+      }
+      const arrayOne = arr1.concat().sort()
+      for (let i in arrayOne) {
+        if (arrayOne[i] !== arr2[i]){
+          this.$set(this.answers, qId.toString(), false)
+          return false
+        }
+      }
+      this.$set(this.answers, qId.toString(), true)
+
     }
   }
 }
-
 </script>
+<style type="text/css" scoped>
+.nav{display:none;}
+  .square{
+    display: inline-block;
+    width:1em;
+    height:1em;
+    margin: 0 1em 0 1em;
+    background-color: #999;
+  }
+
+  .filled{ background-color: #587C84; }
+</style>
 <i18n>{
   "en": {
   "q2": {

@@ -23,7 +23,7 @@
       <microlearning path="planKey" time="2" completion=100 imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
       <microlearning path="buildWP" time="20"  imagePath="BuildWP.svg" completion=80 :text="$t('BuildWorkPlan')" />
       <microlearning time="20" path="createBudget" completion=10 imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
-      <microlearning time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
+      <microlearning time="15" path="exam1" imagePath="TestPlan.png" :text="$t('Test')" />
     </section>
     <hr class="planHr">
     <h2 class="sideTitle spendTitle">{{$t('spend')}}</h2>

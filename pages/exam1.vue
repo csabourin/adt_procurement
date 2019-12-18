@@ -1,74 +1,82 @@
 <template>
   <div>
-    <b-tabs v-model="tabIndex">
-      <b-tab title="Question 1">
-        <radioQuiz :question="$t('q2')" qId="2" @response="calculateAnswer($event,2,2)" />
+  <h2 class="pageTitle">{{$t('Test')}}</h2>
+  <p>Question {{tabIndex+1}} / 21</p>
+    <b-container >
+      <b-row>
+        <b-col class="col"></b-col>
+          <b-col class="col-11">
+    <b-card no-body>
+    <b-tabs card v-model="tabIndex">
+      <b-tab title="Question 01">
+        <radioQuiz :question="$t('q2')" qId="0" @response="calculateAnswer($event,2,0)" />
       </b-tab>
-      <b-tab title="Question 2">
-        <radioQuiz :question="$t('q3')" qId="3" @response="calculateAnswer($event,3,3)" />
+      <b-tab title="Question 02">
+        <radioQuiz :question="$t('q3')" qId="1" @response="calculateAnswer($event,3,1)" />
       </b-tab>
-      <b-tab title="Question 3">
-        <radioQuiz :question="$t('q4')" qId="4" @response="calculateAnswer($event,2,4)" />
+      <b-tab title="Question 03">
+        <radioQuiz :question="$t('q4')" qId="2" @response="calculateAnswer($event,2,2)" />
       </b-tab>
-      <b-tab title="Question 4">
-        <radioQuiz :question="$t('q5')" qId="5" @response="calculateAnswer($event,2,5)" />
+      <b-tab title="Question 04">
+        <radioQuiz :question="$t('q5')" qId="3" @response="calculateAnswer($event,2,3)" />
       </b-tab>
-      <b-tab title="Question 5">
-        <radioQuiz :question="$t('q6')" qId="6" @response="calculateAnswer($event,3,6)" />
+      <b-tab title="Question 05">
+        <radioQuiz :question="$t('q6')" qId="4" @response="calculateAnswer($event,3,4)" />
       </b-tab>
-      <b-tab title="Question 6">
-        <radioQuiz :question="$t('q7')" qId="7" @response="calculateAnswer($event,1,7)" />
+      <b-tab title="Question 06">
+        <radioQuiz :question="$t('q7')" qId="5" @response="calculateAnswer($event,1,5)" />
       </b-tab>
-      <b-tab title="Question 7">
-        <radioQuiz :question="$t('q8')" qId="8" @response="calculateAnswer($event,2,8)" />
+      <b-tab title="Question 07">
+        <radioQuiz :question="$t('q8')" qId="6" @response="calculateAnswer($event,2,6)" />
       </b-tab>
-      <b-tab title="Question 8">
-        <radioQuiz :question="$t('q9')" qId="9" @response="calculateAnswer($event,2,9)" />
+      <b-tab title="Question 08">
+        <radioQuiz :question="$t('q9')" qId="8" @response="calculateAnswer($event,2,7)" />
       </b-tab>
-      <b-tab title="Question 9">
-        <radioQuiz :question="$t('q10')" qId="10" @response="calculateAnswer($event,3,10)" />
+      <b-tab title="Question 09">
+        <radioQuiz :question="$t('q10')" qId="9" @response="calculateAnswer($event,3,8)" />
       </b-tab>
       <b-tab title="Question 10">
-        <radioQuiz :question="$t('q11')" qId="11" @response="calculateAnswer($event,1,11)" />
+        <radioQuiz :question="$t('q11')" qId="10" @response="calculateAnswer($event,1,9)" />
       </b-tab>
       <b-tab title="Question 11">
-        <radioQuiz :question="$t('q12')" qId="12" @response="calculateAnswer($event,1,12)" />
+        <radioQuiz :question="$t('q12')" qId="11" @response="calculateAnswer($event,1,10)" />
       </b-tab>
       <b-tab title="Question 12">
-        <radioQuiz :question="$t('q13')" qId="13" @response="calculateAnswer($event,2,13)" />
+        <radioQuiz :question="$t('q13')" qId="12" @response="calculateAnswer($event,2,11)" />
       </b-tab>
       <b-tab title="Question 13">
-        <radioQuiz :question="$t('q14')" qId="14" @response="calculateAnswer($event,1,14)" />
+        <radioQuiz :question="$t('q14')" qId="13" @response="calculateAnswer($event,1,12)" />
       </b-tab>
       <b-tab title="Question 14">
-        <checkboxQuiz :question="$t('q15')" qId="15" @response="arraysMatch($event,['2','3'],15)" />
+        <checkboxQuiz :question="$t('q15')" qId="14" @response="arraysMatch($event,['2','3'],13)" />
       </b-tab>
       <b-tab title="Question 15">
-        <radioQuiz :question="$t('q16')" qId="16" @response="calculateAnswer($event,2,16)" />
+        <radioQuiz :question="$t('q16')" qId="15" @response="calculateAnswer($event,2,14)" />
       </b-tab>
       <b-tab title="Question 16">
-        <radioQuiz :question="$t('q17')" qId="17" @response="calculateAnswer($event,2,17)" />
+        <radioQuiz :question="$t('q17')" qId="16" @response="calculateAnswer($event,2,15)" />
       </b-tab>
       <b-tab title="Question 17">
-        <radioQuiz :question="$t('q18')" qId="18" @response="calculateAnswer($event,2,18)" />
+        <radioQuiz :question="$t('q18')" qId="17" @response="calculateAnswer($event,2,16)" />
       </b-tab>
       <b-tab title="Question 18">
-        <radioQuiz :question="$t('q19')" qId="19" @response="calculateAnswer($event,2,19)" />
+        <radioQuiz :question="$t('q19')" qId="18" @response="calculateAnswer($event,2,17)" />
       </b-tab>
       <b-tab title="Question 19">
-        <radioQuiz :question="$t('q20')" qId="20" @response="calculateAnswer($event,2,20)" />
+        <radioQuiz :question="$t('q20')" qId="19" @response="calculateAnswer($event,2,18)" />
       </b-tab>
       <b-tab title="Question 20">
-        <radioQuiz :question="$t('q21')" qId="21" @response="calculateAnswer($event,2,21)" />
+        <radioQuiz :question="$t('q21')" qId="20" @response="calculateAnswer($event,2,19)" />
       </b-tab>
       <b-tab title="Question 21">
-        <radioQuiz :question="$t('q22')" qId="22" @response="calculateAnswer($event,2,22)" />
+        <radioQuiz :question="$t('q22')" qId="21" @response="calculateAnswer($event,2,20)" />
       </b-tab>
     </b-tabs>
-    <p>Question {{tabIndex+1}} / 22</p>
-    <div>
-      <span v-for="(square,index) in 22" :class="['square',{'filled':answers[index]}]" />
-    </div>
+  </b-card>
+</b-col>
+</b-row>
+</b-container>
+    
     <!-- Control buttons-->
     <div class="text-center">
       <b-button-group class="mt-2">
@@ -76,7 +84,13 @@
         <b-button @click="tabIndex++" :disabled="tabIndex>=20">{{$t('nextPage')}}</b-button>
       </b-button-group>
     </div>
-    <p>{{answers}}</p>
+    <div class="progressBar">
+      <span @click="tabIndex=index"v-for="(square,index) in 21" :class="['square',{'filled':answers[index],'Qactive':tabIndex==index}]" />
+    </div>
+    <p v-if="debugging==true">{{answers}}</p>
+    <div class="bottomNav planSection">
+    <div class="planSectionBar"><span>{{$t('plan')}}</span></div>
+    </div>
   </div>
 </template>
 <script type="text/javascript">
@@ -85,6 +99,7 @@ import checkboxQuiz from "~/components/checkboxQuiz"
 export default {
   data() {
     return {
+      debugging:false,
       tabIndex: 0,
       answers: {}
     }
@@ -96,35 +111,67 @@ export default {
   methods: {
     calculateAnswer(answer, correct, qId) {
       if (answer == correct) {
-        this.$set(this.answers, qId.toString(), true)
-      } else { this.$set(this.answers, qId.toString(), false) }
+        this.$set(this.answers, qId.toString(), 1)
+      } else { this.$set(this.answers, qId.toString(), 2) }
     },
     arraysMatch(arr1, arr2, qId) {
       if (arr1.length !== arr2.length) {
-        this.$set(this.answers, qId.toString(), false)
+        this.$set(this.answers, qId.toString(), 2)
         return false
       }
       const arrayOne = arr1.concat().sort()
       for (let i in arrayOne) {
         if (arrayOne[i] !== arr2[i]){
-          this.$set(this.answers, qId.toString(), false)
+          this.$set(this.answers, qId.toString(), 2)
           return false
         }
       }
-      this.$set(this.answers, qId.toString(), true)
+      this.$set(this.answers, qId.toString(), 1)
 
     }
   }
 }
 </script>
 <style type="text/css" scoped>
-.nav{display:none;}
+.Qactive{box-shadow: 2px 2px 6px #00000088;
+/*outline: 2px solid #1000ff33;*/
+}
+.planSection {
+  position: relative;
+  height:100px;
+}
+.planSectionBar {
+  text-transform: uppercase;
+  position: absolute;
+  background-color: #d1dfe1;
+  width: 100vw;
+  height: 30px;
+  text-align: left;
+  left:-15px;
+  top:38%;
+}
+.planSectionBar span {
+  padding:2px 10px 0;
+  color: #4d4d4d;
+  font-weight: bold;
+  background-color: #fff;
+  display: inline-block;
+  height:100%;
+  margin-left:15px;
+}
+
+.progressBar{
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
   .square{
     display: inline-block;
     width:1em;
     height:1em;
-    margin: 0 1em 0 1em;
-    background-color: #999;
+    background-color: #DDD;
   }
 
   .filled{ background-color: #587C84; }

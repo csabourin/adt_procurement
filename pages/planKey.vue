@@ -61,7 +61,7 @@
       <microlearning path="planKey" youAreHere size="140" completion="100" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
       <microlearning path="buildWP"  imagePath="BuildWP.svg" size="140" time="20" completion="80" :text="$t('BuildWorkPlan')" />
       <microlearning size="140" path="createBudget" time="20" completion="10" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
-      <microlearning size="140" time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
+      <microlearning size="140" path="exam1" time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
     </div>
   </div>
 </template>

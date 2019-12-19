@@ -15,6 +15,7 @@ export default {
   nextPage: "Next",
   backButton: "Back",
   submit: "Submit",
+  submitTo: "Submit",
   reset: "Reset",
   playIcon: "Play icon",
   home: "Home",

@@ -1,72 +1,93 @@
 <template>
   <div>
     <h2 class="pageTitle">{{$t('Test')}}</h2>
+    <b-alert show dismissible>
+      <div v-if="$i18n.locale=='en'">
+        <p><strong>NOTE:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
+        <p>For some of the questions in this test, you play the role of a manager of a call center. You will be given scenarios based on this situation.&nbsp;</p>
+        <p>As per Treasury Board requirements, passing the test for this course is mandatory before you can exercise financial delegation.&nbsp;</p>
+        <p>There are three sections to the test - one for each phase: planning, spending and reporting.&nbsp;</p>
+        <p>The passing grade is 80% for each of these sections.</p>
+        <p>Each section should take you around 15-20 minutes to complete.&nbsp;</p>
+        <p>You can access course materials during the test and you can take it as many times as you need.</p>
+      </div>
+      <div v-if="$i18n.locale=='fr'"><p><strong>NOTE :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons &agrave; compl&eacute;ter les tests pour planifier, d&eacute;penser et faire un rapport et nous vous invitons &agrave; nous faire part de vos commentaires sur les questions et les fonctionnalit&eacute;s.&nbsp; Vos commentaires nous aideront &agrave; rendre le tout plus efficace.</p>
+<p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d'un responsable de centre d'appels. Des sc&eacute;narios bas&eacute;s sur cette situation vous seront propos&eacute;s.&nbsp;</p>
+<p>Conform&eacute;ment aux exigences du Conseil du Tr&eacute;sor, il est obligatoire de r&eacute;ussir l'examen de ce cours avant de pouvoir exercer la d&eacute;l&eacute;gation financi&egrave;re.</p>
+<p>Le test comporte trois parties - une &agrave; la fin de chaque phase - planification, d&eacute;penses et rapports.&nbsp;</p>
+<p>La note de passage est de 80%, par partie.&nbsp;</p>
+<p>Chaque partie devrait vous prendre environ 15-20 minutes.&nbsp;</p>
+<p>Vous pouvez acc&eacute;der au mat&eacute;riel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le d&eacute;sirez.</p></div>
+    </b-alert>
     <p>Question {{tabIndex+1}} / 20</p>
+    <div class="progressBar">
+      <a href="#" @click.prevent="tabIndex=index" v-for="(square,index) in 20" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square)" v-html="index+1" />
+    </div>
     <b-container fluid>
       <b-row>
         <b-col class="col"></b-col>
         <b-col class="col-10">
           <b-card no-body>
-            <b-tabs card v-model="tabIndex">
+            <b-tabs card pills v-model="tabIndex" class="exam">
               <b-tab title="01">
-                <radioQuiz :question="$t('q1')" qId="0" @response="calculateAnswer($event,3,0)" />
+                <radioQuiz exam :question="$t('q1')" qId="0" @response="calculateAnswer($event,3,0)" />
               </b-tab>
               <b-tab title="02">
-                <radioQuiz :question="$t('q2')" qId="1" @response="calculateAnswer($event,3,1)" />
+                <radioQuiz exam :question="$t('q2')" qId="1" @response="calculateAnswer($event,2,1)" />
               </b-tab>
               <b-tab title="03">
-                <radioQuiz :question="$t('q3')" qId="2" @response="calculateAnswer($event,2,2)" />
+                <radioQuiz exam :question="$t('q3')" qId="2" @response="calculateAnswer($event,2,2)" />
               </b-tab>
               <b-tab title="04">
-                <radioQuiz :question="$t('q4')" qId="3" @response="calculateAnswer($event,2,3)" />
+                <radioQuiz exam :question="$t('q4')" qId="3" @response="calculateAnswer($event,2,3)" />
               </b-tab>
               <b-tab title="05">
-                <radioQuiz :question="$t('q5')" qId="4" @response="calculateAnswer($event,3,4)" />
+                <radioQuiz exam :question="$t('q5')" qId="4" @response="calculateAnswer($event,3,4)" />
               </b-tab>
               <b-tab title="06">
-                <radioQuiz :question="$t('q6')" qId="5" @response="calculateAnswer($event,1,5)" />
+                <radioQuiz exam :question="$t('q6')" qId="5" @response="calculateAnswer($event,1,5)" />
               </b-tab>
               <b-tab title="07">
-                <radioQuiz :question="$t('q7')" qId="6" @response="calculateAnswer($event,2,6)" />
+                <radioQuiz exam :question="$t('q7')" qId="6" @response="calculateAnswer($event,1,6)" />
               </b-tab>
               <b-tab title="08">
-                <radioQuiz :question="$t('q8')" qId="7" @response="calculateAnswer($event,2,7)" />
+                <radioQuiz exam :question="$t('q8')" qId="7" @response="calculateAnswer($event,3,7)" />
               </b-tab>
               <b-tab title="09">
-                <radioQuiz :question="$t('q9')" qId="8" @response="calculateAnswer($event,1,8)" />
+                <radioQuiz exam :question="$t('q9')" qId="8" @response="calculateAnswer($event,2,8)" />
               </b-tab>
               <b-tab title="10">
-                <radioQuiz :question="$t('q10')" qId="9" @response="calculateAnswer($event,1,9)" />
+                <radioQuiz exam :question="$t('q10')" qId="9" @response="calculateAnswer($event,4,9)" />
               </b-tab>
               <b-tab title="11">
-                <radioQuiz :question="$t('q11')" qId="10" @response="calculateAnswer($event,2,10)" />
+                <radioQuiz exam :question="$t('q11')" qId="10" @response="calculateAnswer($event,1,10)" />
               </b-tab>
               <b-tab title="12">
-                <radioQuiz :question="$t('q12')" qId="11" @response="calculateAnswer($event,1,11)" />
+                <radioQuiz exam :question="$t('q12')" qId="11" @response="calculateAnswer($event,4,11)" />
               </b-tab>
               <b-tab title="13">
-                <checkboxQuiz :question="$t('q13')" qId="12" @response="arraysMatch($event,['2','3'],12)" />
+                <checkboxQuiz exam :question="$t('q13')" qId="12" @response="arraysMatch($event,['2','3'],12)" />
               </b-tab>
               <b-tab title="14">
-                <radioQuiz :question="$t('q14')" qId="13" @response="calculateAnswer($event,2,13)" />
+                <radioQuiz exam :question="$t('q14')" qId="13" @response="calculateAnswer($event,3,13)" />
               </b-tab>
               <b-tab title="15">
-                <radioQuiz :question="$t('q15')" qId="14" @response="calculateAnswer($event,2,14)" />
+                <radioQuiz exam :question="$t('q15')" qId="14" @response="calculateAnswer($event,2,14)" />
               </b-tab>
               <b-tab title="16">
-                <radioQuiz :question="$t('q16')" qId="15" @response="calculateAnswer($event,2,15)" />
+                <radioQuiz exam :question="$t('q16')" qId="15" @response="calculateAnswer($event,4,15)" />
               </b-tab>
               <b-tab title="17">
-                <radioQuiz :question="$t('q17')" qId="16" @response="calculateAnswer($event,2,16)" />
+                <radioQuiz exam :question="$t('q17')" qId="16" @response="calculateAnswer($event,2,16)" />
               </b-tab>
               <b-tab title="18">
-                <radioQuiz :question="$t('q18')" qId="17" @response="calculateAnswer($event,2,17)" />
+                <radioQuiz exam :question="$t('q18')" qId="17" @response="calculateAnswer($event,3,17)" />
               </b-tab>
               <b-tab title="19">
-                <radioQuiz :question="$t('q19')" qId="18" @response="calculateAnswer($event,2,18)" />
+                <radioQuiz exam :question="$t('q19')" qId="18" @response="calculateAnswer($event,1,18)" />
               </b-tab>
               <b-tab title="20">
-                <checkboxQuiz :question="$t('q20')" qId="19" @response="arraysMatch($event,['1','2','3'],19)" />
+                <checkboxQuiz exam :question="$t('q20')" qId="19" @response="arraysMatch($event,['1','2','3'],19)" />
               </b-tab>
             </b-tabs>
           </b-card>
@@ -81,9 +102,6 @@
         <b-button @click="tabIndex++" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
       </b-button-group>
     </div>
-    <div class="progressBar">
-      <span @click="tabIndex=index" v-for="(square,index) in 20" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" />
-    </div>
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('plan')}}</span></div>
     </div>
@@ -96,8 +114,8 @@ import checkboxQuiz from "~/components/checkboxQuiz"
 export default {
   data() {
     return {
-      debugging: true,
-      tabIndex:this.$store.state.plan.tabIndex,
+      debugging: false,
+      tabIndex: this.$store.state.plan.tabIndex,
       answers: {}
     }
   },
@@ -139,13 +157,9 @@ export default {
     }
   }
 }
+
 </script>
 <style type="text/css" scoped>
-.Qactive {
-  box-shadow: 0px 5px 5px #00000088;
-  /*outline: 2px solid #1000ff33;*/
-}
-
 .planSection {
   position: relative;
   height: 100px;
@@ -173,23 +187,41 @@ export default {
 }
 
 .progressBar {
-  margin-top: 2em;
+  margin-bottom: 2em;
   display: flex;
   justify-content: space-evenly;
 
 }
 
 .square {
+  font-size: .9em;
+  font-weight: bold;
+  text-align: center;
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 42px;
+  height: 22px;
   background-color: #DDD;
   cursor: pointer;
+  color: #4d4d4d;
 }
 
 .filled {
   background-color: #587C84;
+  color: #fff;
 }
+
+.Qactive {
+  background-color: #e0e59e;
+  box-shadow: -3px 7px 6px rgba(0, 0, 0, 0.3);
+  outline: 1px solid #fff;
+  color: #000;
+  /*outline: 2px solid #1000ff33;*/
+}
+
+.filled.Qactive {
+  background-color: #B3C295
+}
+
 </style>
 <i18n>{
   "en": {

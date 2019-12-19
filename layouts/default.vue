@@ -102,6 +102,10 @@ html {
   font-size: larger;
 }
 
+.exam .card-header{
+  display: none;
+}
+
 body {
   background-color: #fff;
   width: calc(100vw - (100vw - 100%));

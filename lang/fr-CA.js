@@ -15,6 +15,7 @@ export default {
   nextPage: "Suivant",
   backButton: "Retour",
   submit: "Vérifier",
+  submitTo: "Soumettre",
   reset: "Effacer",
   playIcon: "Jouer la vidéo",
   checkAll: "S&eacute;lectionnez tout ce qui s'applique.",

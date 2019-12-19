@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2 class="pageTitle">{{$t('Test')}}</h2>
+    <b-container>
     <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible >
       <div v-if="$i18n.locale=='en'">
         <p><strong>NOTE:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
@@ -25,7 +26,6 @@
     <div class="progressBar">
       <a href="#" @click.prevent="tabIndex=index" v-for="(square,index) in 20" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square)" v-html="index+1" />
     </div>
-    <b-container fluid>
       <b-row>
         <b-col class="col"></b-col>
         <b-col class="col-10">

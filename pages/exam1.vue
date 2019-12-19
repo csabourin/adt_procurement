@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="pageTitle">{{$t('Test')}}</h2>
-    <b-alert show dismissible>
+    <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible >
       <div v-if="$i18n.locale=='en'">
         <p><strong>NOTE:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
         <p>For some of the questions in this test, you play the role of a manager of a call center. You will be given scenarios based on this situation.&nbsp;</p>
@@ -11,13 +11,15 @@
         <p>Each section should take you around 15-20 minutes to complete.&nbsp;</p>
         <p>You can access course materials during the test and you can take it as many times as you need.</p>
       </div>
-      <div v-if="$i18n.locale=='fr'"><p><strong>NOTE :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons &agrave; compl&eacute;ter les tests pour planifier, d&eacute;penser et faire un rapport et nous vous invitons &agrave; nous faire part de vos commentaires sur les questions et les fonctionnalit&eacute;s.&nbsp; Vos commentaires nous aideront &agrave; rendre le tout plus efficace.</p>
-<p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d'un responsable de centre d'appels. Des sc&eacute;narios bas&eacute;s sur cette situation vous seront propos&eacute;s.&nbsp;</p>
-<p>Conform&eacute;ment aux exigences du Conseil du Tr&eacute;sor, il est obligatoire de r&eacute;ussir l'examen de ce cours avant de pouvoir exercer la d&eacute;l&eacute;gation financi&egrave;re.</p>
-<p>Le test comporte trois parties - une &agrave; la fin de chaque phase - planification, d&eacute;penses et rapports.&nbsp;</p>
-<p>La note de passage est de 80%, par partie.&nbsp;</p>
-<p>Chaque partie devrait vous prendre environ 15-20 minutes.&nbsp;</p>
-<p>Vous pouvez acc&eacute;der au mat&eacute;riel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le d&eacute;sirez.</p></div>
+      <div v-if="$i18n.locale=='fr'">
+        <p><strong>NOTE :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons &agrave; compl&eacute;ter les tests pour planifier, d&eacute;penser et faire un rapport et nous vous invitons &agrave; nous faire part de vos commentaires sur les questions et les fonctionnalit&eacute;s.&nbsp; Vos commentaires nous aideront &agrave; rendre le tout plus efficace.</p>
+        <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d'un responsable de centre d'appels. Des sc&eacute;narios bas&eacute;s sur cette situation vous seront propos&eacute;s.&nbsp;</p>
+        <p>Conform&eacute;ment aux exigences du Conseil du Tr&eacute;sor, il est obligatoire de r&eacute;ussir l'examen de ce cours avant de pouvoir exercer la d&eacute;l&eacute;gation financi&egrave;re.</p>
+        <p>Le test comporte trois parties - une &agrave; la fin de chaque phase - planification, d&eacute;penses et rapports.&nbsp;</p>
+        <p>La note de passage est de 80%, par partie.&nbsp;</p>
+        <p>Chaque partie devrait vous prendre environ 15-20 minutes.&nbsp;</p>
+        <p>Vous pouvez acc&eacute;der au mat&eacute;riel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le d&eacute;sirez.</p>
+      </div>
     </b-alert>
     <p>Question {{tabIndex+1}} / 20</p>
     <div class="progressBar">
@@ -105,17 +107,21 @@
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('plan')}}</span></div>
     </div>
-    <p v-if="debugging==true">{{answerScore}}</p>
+    <div v-if="debugging">
+      <p>{{answerScore}}</p>
+      <p>{{newTab}}</p></div>
   </div>
 </template>
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
 export default {
+  name:"examOne",
   data() {
     return {
-      debugging: false,
-      tabIndex: this.$store.state.plan.tabIndex,
+      debugging: true,
+      newTab:'',
+// tabIndex: this.$store.state.plan.tabIndex,
       answers: {}
     }
   },
@@ -124,39 +130,41 @@ export default {
     checkboxQuiz
   },
   methods: {
-    calculateAnswer(answer, correct, qId) {
-      if (answer == correct) {
-        this.$store.commit('plan/setScore', [qId.toString(), "'right'", answer])
-      } else { this.$store.commit('plan/setScore', [qId.toString(), "'wrong'", answer]) }
-    },
-    arraysMatch(arr1, arr2, qId) {
-      if (arr1.length !== arr2.length) {
-        $store.commit('plan/setScore', qId.toString(), 'wrong')
-        return false
-      }
-      const arrayOne = arr1.concat().sort()
-      for (let i in arrayOne) {
-        if (arrayOne[i] !== arr2[i]) {
-          $store.commit('plan/setScore', qId.toString(), 'wrong')
-          return false
-        }
-      }
-      $store.commit('plan/setScore', qId.toString(), 'right')
+      calculateAnswer(answer, correct, qId) {
+          if (answer == correct) {
+            this.$store.commit('plan/setScore', [qId.toString(), "'right'", answer])
+          } else { this.$store.commit('plan/setScore', [qId.toString(), "'wrong'", answer]) }
+        },
+        arraysMatch(arr1, arr2, qId) {
+          if (arr1.length !== arr2.length) {
+            this.$store.commit('plan/setScore', [qId.toString(), "'wrong'", answer])
+            return false
+          }
+          const arrayOne = arr1.concat().sort()
+          for (let i in arrayOne) {
+            if (arrayOne[i] !== arr2[i]) {
+              this.$store.commit('plan/setScore', [qId.toString(), "'wrong'", answer])
+              return false
+            }
+          }
+          this.$store.commit('plan/setScore', [qId.toString(), "'right'", answer])
 
-    }
-  },
-  computed: {
-    // tabIndex: {
-    //   get() { return this.$store.state.plan.tabIndex || this.tabIndex },
-    //     set(newValue) {
-    //       this.$store.commit('setCurrentTab', newValue)
-    //     }
-    // },
-    answerScore() {
-      return this.$store.state.plan.score
+        }
+    },
+    computed: {
+      AlertIsDismissed:{
+        get(){  return this.$store.state.plan.AlertIsDismissed},
+        set(){ this.$store.commit('plan/dismissAlert')}
+      },
+      tabIndex:{
+        set(tabIndex){ this.$store.commit('plan/setCurrentTab', tabIndex)},
+        get(){  return this.$store.state.plan.tabIndex}
+      },
+      answerScore() {
+        return this.$store.state.plan.score
+      }
     }
   }
-}
 
 </script>
 <style type="text/css" scoped>

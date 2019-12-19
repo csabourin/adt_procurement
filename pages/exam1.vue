@@ -97,7 +97,7 @@ export default {
   data() {
     return {
       debugging: true,
-      tabIndex:0,
+      tabIndex:this.$store.state.plan.tabIndex,
       answers: {}
     }
   },
@@ -128,12 +128,12 @@ export default {
     }
   },
   computed: {
-    tabIndex: {
-      get() { return this.$store.state.plan.tabIndex },
-        set(value) {
-          this.$store.commit('setCurrentTab', value)
-        }
-    },
+    // tabIndex: {
+    //   get() { return this.$store.state.plan.tabIndex || this.tabIndex },
+    //     set(newValue) {
+    //       this.$store.commit('setCurrentTab', newValue)
+    //     }
+    // },
     answerScore() {
       return this.$store.state.plan.score
     }

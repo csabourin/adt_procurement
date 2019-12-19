@@ -1,7 +1,7 @@
 export const state = () => ({
   // score: {}
   score: {},
-  tabIndex:1
+  tabIndex:0
 })
 
 export const mutations = {
@@ -14,5 +14,6 @@ export const mutations = {
   },
   setCurrentTab(state,currentTab){
   	state.tabIndex=currentTab
+  	console.log(currentTab)
   }
 }

@@ -849,7 +849,8 @@ export default {
       "options": {
         "1": "Réduire certains coûts discrétionnaires ",
         "2": "Explorez les options de vidéoconférence",
-        "3": "Demandez au service des finances de trouver 8 000 $."
+        "3": "Modifier les exigences budgétaires à 12 000 $",
+        "4": "Demandez au service des finances de trouver 8 000 $."
       },
       "feedback": {
         "right": "",

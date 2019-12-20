@@ -22,9 +22,9 @@
           <p>Vous pouvez acc&eacute;der au mat&eacute;riel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le d&eacute;sirez.</p>
         </div>
       </b-alert>
-      <p>Question {{tabIndex+1}} / 20</p>
+      <p>Question {{tabIndex+1}} / {{numQuestions}}</p>
       <div class="progressBar">
-        <a href="#" @click.prevent="tabIndex=index" :title="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-for="(square,index) in 20" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square)" v-html="index+1" />
+        <a href="#" @click.prevent="tabIndex=index" :title="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-for="(square,index) in numQuestions" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square)" v-html="index+1" />
       </div>
       <b-row>
         <b-col class="col"></b-col>
@@ -33,64 +33,64 @@
             <b-tabs card pills v-model="tabIndex" class="exam">
               <b-tab title="01">
                 <!-- calculateAnswer($event,correctAnswer,qId) -->
-                <radioQuiz exam :question="$t('q1')" qId="0" :refill="Refill('0')" @response="calculateAnswer($event,3,0)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q1')" qId="0" :refill="Refill('0')" @response="calculateAnswer($event,3,0)" />
               </b-tab>
               <b-tab title="02">
-                <radioQuiz exam :question="$t('q2')" qId="1" :refill="Refill('1')" @response="calculateAnswer($event,2,1)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q2')" qId="1" :refill="Refill('1')" @response="calculateAnswer($event,2,1)" />
               </b-tab>
               <b-tab title="03">
-                <radioQuiz exam :question="$t('q3')" qId="2" :refill="Refill('2')" @response="calculateAnswer($event,2,2)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q3')" qId="2" :refill="Refill('2')" @response="calculateAnswer($event,2,2)" />
               </b-tab>
               <b-tab title="04">
-                <radioQuiz exam :question="$t('q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,2,3)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,2,3)" />
               </b-tab>
               <b-tab title="05">
-                <radioQuiz exam :question="$t('q5')" qId="4" :refill="Refill('4')" @response="calculateAnswer($event,3,4)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q5')" qId="4" :refill="Refill('4')" @response="calculateAnswer($event,3,4)" />
               </b-tab>
               <b-tab title="06">
-                <radioQuiz exam :question="$t('q6')" qId="5" :refill="Refill('5')" @response="calculateAnswer($event,1,5)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q6')" qId="5" :refill="Refill('5')" @response="calculateAnswer($event,1,5)" />
               </b-tab>
               <b-tab title="07">
-                <radioQuiz exam :question="$t('q7')" qId="6" :refill="Refill('6')" @response="calculateAnswer($event,1,6)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q7')" qId="6" :refill="Refill('6')" @response="calculateAnswer($event,1,6)" />
               </b-tab>
               <b-tab title="08">
-                <radioQuiz exam :question="$t('q8')" qId="7" :refill="Refill('7')" @response="calculateAnswer($event,3,7)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q8')" qId="7" :refill="Refill('7')" @response="calculateAnswer($event,3,7)" />
               </b-tab>
               <b-tab title="09">
-                <radioQuiz exam :question="$t('q9')" qId="8" :refill="Refill('8')" @response="calculateAnswer($event,2,8)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q9')" qId="8" :refill="Refill('8')" @response="calculateAnswer($event,2,8)" />
               </b-tab>
               <b-tab title="10">
-                <radioQuiz exam :question="$t('q10')" qId="9" :refill="Refill('9')" @response="calculateAnswer($event,4,9)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q10')" qId="9" :refill="Refill('9')" @response="calculateAnswer($event,4,9)" />
               </b-tab>
               <b-tab title="11">
-                <radioQuiz exam :question="$t('q11')" qId="10" :refill="Refill('10')"  @response="calculateAnswer($event,1,10)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q11')" qId="10" :refill="Refill('10')" @response="calculateAnswer($event,1,10)" />
               </b-tab>
               <b-tab title="12">
-                <radioQuiz exam :question="$t('q12')" qId="11" :refill="Refill('11')" @response="calculateAnswer($event,4,11)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q12')" qId="11" :refill="Refill('11')" @response="calculateAnswer($event,4,11)" />
               </b-tab>
               <b-tab title="13">
-                <checkboxQuiz exam :question="$t('q13')" qId="12" :refill="Refill('12')" @response="arraysMatch($event,['2','3'],12)" />
+                <checkboxQuiz exam :lock="quizLocked" :question="$t('q13')" qId="12" :refill="Refill('12')" @response="arraysMatch($event,['2','3'],12)" />
               </b-tab>
               <b-tab title="14">
-                <radioQuiz exam :question="$t('q14')" qId="13" :refill="Refill('13')" @response="calculateAnswer($event,3,13)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q14')" qId="13" :refill="Refill('13')" @response="calculateAnswer($event,3,13)" />
               </b-tab>
               <b-tab title="15">
-                <radioQuiz exam :question="$t('q15')" qId="14" :refill="Refill('14')" @response="calculateAnswer($event,2,14)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q15')" qId="14" :refill="Refill('14')" @response="calculateAnswer($event,2,14)" />
               </b-tab>
               <b-tab title="16">
-                <radioQuiz exam :question="$t('q16')" qId="15" :refill="Refill('15')" @response="calculateAnswer($event,4,15)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q16')" qId="15" :refill="Refill('15')" @response="calculateAnswer($event,4,15)" />
               </b-tab>
               <b-tab title="17">
-                <radioQuiz exam :question="$t('q17')" qId="16" :refill="Refill('16')" @response="calculateAnswer($event,2,16)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q17')" qId="16" :refill="Refill('16')" @response="calculateAnswer($event,2,16)" />
               </b-tab>
               <b-tab title="18">
-                <radioQuiz exam :question="$t('q18')" qId="17" :refill="Refill('17')" @response="calculateAnswer($event,3,17)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q18')" qId="17" :refill="Refill('17')" @response="calculateAnswer($event,3,17)" />
               </b-tab>
               <b-tab title="19">
-                <radioQuiz exam :question="$t('q19')" qId="18" :refill="Refill('18')" @response="calculateAnswer($event,1,18)" />
+                <radioQuiz exam :lock="quizLocked" :question="$t('q19')" qId="18" :refill="Refill('18')" @response="calculateAnswer($event,1,18)" />
               </b-tab>
               <b-tab title="20">
-                <checkboxQuiz exam :question="$t('q20')" qId="19" :refill="Refill('19')" @response="arraysMatch($event,['1','2','3'],19)" />
+                <checkboxQuiz exam :lock="quizLocked" :question="$t('q20')" qId="19" :refill="Refill('19')" @response="arraysMatch($event,['1','2','3'],19)" />
               </b-tab>
             </b-tabs>
           </b-card>
@@ -105,15 +105,25 @@
         <b-button @click="tabIndex++" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
       </b-button-group>
     </div>
+      <transition name="fade">
+      <p v-if="allDone"><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
+    </transition>
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('plan')}}</span></div>
     </div>
+    <!-- Debugging section -->
     <div v-if="debugging">
+      <p>{{allDone}}</p>
       <p>{{answerScore}}</p>
       <ul>
-      <li v-for="index in answerScore">Answer {{Refill(index.toString())}} </li>
+        <li v-for="index in answerScore">Answer {{Refill(index.toString())}} </li>
       </ul>
     </div>
+    <!-- End of Debugging section -->
+    <b-modal id="Completed">
+      <p class='pageTitle'>{{$t('testComplete')}}</p>
+      <p>{{allDone}}</p>
+    </b-modal>
   </div>
 </template>
 <script type="text/javascript">
@@ -123,7 +133,9 @@ export default {
   name: "examOne",
   data() {
     return {
-      debugging: false
+      debugging: true,
+      numQuestions:2,
+      allDone:''
     }
   },
   components: {
@@ -131,12 +143,30 @@ export default {
     checkboxQuiz
   },
   methods: {
-    Refill(qId){
-      if (this.answerScore[qId]) return this.answerScore[qId][1]
+    resetQuiz(){
+      this.$store.commit('plan/resetQuiz')
+      this.allDone=undefined
+      this.$forceUpdate
+    },
+    markTest(){
+      this.$store.commit('plan/lockQuiz')
+      this.$bvModal.show('Completed')
+    },
+    checkforEighty() {
+      var count = 0;
+      for (let i in this.answerScore) {
+        if (this.answerScore[i][0] == "right")
+          count++;
+      }
+      const score=count/this.numQuestions*100
+      return score
+    },
+    Refill(qId) {
+      if (this.answerScore[qId]) {return this.answerScore[qId][1]} else {return false}
     },
     calculateAnswer(answer, correct, qId) {
       if (answer == correct) {
-        this.$store.commit('plan/setScore', [qId.toString(), "'right'", answer])
+        this.$store.commit('plan/setScore', [qId.toString(), "right", answer])
       } else { this.$store.commit('plan/setScore', [qId.toString(), "'wrong'", answer]) }
     },
     arraysMatch(arr1, arr2, qId) {
@@ -151,7 +181,7 @@ export default {
           return false
         }
       }
-      this.$store.commit('plan/setScore', [qId.toString(), "'right'", arr1])
+      this.$store.commit('plan/setScore', [qId.toString(), "right", arr1])
     }
   },
   computed: {
@@ -165,6 +195,17 @@ export default {
     },
     answerScore() {
       return this.$store.state.plan.score
+    },
+    quizLocked() {
+      return this.$store.state.plan.quizLocked
+    }
+  },
+  watch: {
+    answerScore() {
+      const answers=Object.keys(this.answerScore).length
+if (answers===this.numQuestions){
+  this.allDone=this.checkforEighty()+"%"
+}
     }
   }
 }
@@ -237,6 +278,9 @@ export default {
 <i18n>{
   "en": {
   "Answered":"Answered",
+  "markTest":"Mark my test",
+  "testComplete":"Test Completed",
+  "tryAgain":"Try Again",
   "q1": {
   "text": "Which of the following is <strong style='text-transform: uppercase;'>not</strong> included in a work plan?",
   "options": {
@@ -536,6 +580,9 @@ export default {
   },
   "fr": {
   "Answered":"Répondue",
+  "markTest":"Grader mon examen",
+  "testComplete":"Examen complété",
+  "tryAgain":"Essayer de nouveau",
   "q1": {
   "text": "Lequel des éléments suivants n'est <strong style='text-transform:uppercase'>PAS</strong> inclus dans un plan de travail?",
   "options": {

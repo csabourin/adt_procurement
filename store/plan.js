@@ -2,10 +2,19 @@ export const state = () => ({
   // score: {}
   score: {},
   tabIndex:0,
-  AlertIsDismissed:false
+  AlertIsDismissed:false,
+  quizLocked:false
 })
 
 export const mutations = {
+	lockQuiz(state){
+		state.quizLocked=true
+	},
+	resetQuiz(state){
+		state.quizLocked=false
+		state.score={}
+		state.tabIndex=0
+	},
   setScore(state, qId) {
   	let thatThing=new Object
   	thatThing[qId[0]]=[qId[1],qId[2]]

@@ -1,5 +1,5 @@
 <template>
-    <a href="javascript:" :title="$t('navMenu')" @click="ShowMenu" :class="[{'is-active':MenuShowing},'ui-hamburger-02']">
+    <a href="javascript:" :title="$t('navMenu')" @click="ShowMenu" @key.space.prevent="ShowMenu" :class="[{'is-active':MenuShowing},'ui-hamburger-02']">
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span class="v-inv">{{$t('navMenu')}}</span>
     </a>

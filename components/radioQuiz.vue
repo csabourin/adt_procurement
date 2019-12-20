@@ -18,12 +18,18 @@
 export default {
   data() {
     return {
-      Quest1: '',
-      q1Submitted: false
+      q1Submitted: false,
+      Quest1: this.refill
+
     }
   },
+
   props: {
-    exam:{type:Boolean,default:false},
+    refill: {
+      type: String,
+      default: undefined
+    },
+    exam: { type: Boolean, default: false },
     Question: {
       type: Object,
       default: function() {
@@ -42,7 +48,7 @@ export default {
   },
   methods: {
     submitAnswer() {
-        this.q1Submitted = true
+      this.q1Submitted = true
       if (this.Quest1 != '') {
         this.$emit('response', this.Quest1)
       }

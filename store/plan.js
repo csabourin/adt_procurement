@@ -17,6 +17,5 @@ export const mutations = {
   },
   dismissAlert(state){
   	state.AlertIsDismissed=true
-  	console.log(state.AlertIsDismissed)
   }
 }

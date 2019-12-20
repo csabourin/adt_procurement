@@ -6,8 +6,7 @@
       <ol type="1">
         <li v-for="(item,index) in Question.options" :key="index"><input @click="q1Submitted=false" type="radio" v-model="Quest1" :name="'q'+qId" :id="'radioq'+qId+index" :value="index">&nbsp;<label :for="'radioq'+qId+index" v-html="item" /></li>
       </ol>
-      <b-button v-if="exam" @click="submitAnswer">{{$t('submitTo')}}</b-button>
-      <b-button v-else @click="submitAnswer">{{$t('submit')}}</b-button>
+      <b-button :disabled="q1Submitted" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
     </fieldset>
     <p>&nbsp;</p>
     <p v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>

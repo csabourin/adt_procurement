@@ -6,7 +6,7 @@
     <ol type="1">
       <li v-for="(item,index) in Question.options" :key="index"><input @click="q2Submitted=false" type="checkbox" v-model="Quest2" :name="'q'+qId" :id="'checkboxq'+qId+index" :value="index"> <label :for="'checkboxq'+qId+index" v-html="item" /></li>
     </ol>
-    <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
+    <b-button :disabled="q2Submitted" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
     </fieldset>
     <p>&nbsp;</p>
     <p v-if="!isAcceptable(Quest2) && q2Submitted" v-html="$t('pleaseAnswer')"></p>
@@ -26,6 +26,7 @@ export default {
     }
   },
   props: {
+    exam:{type:Boolean,default:false},
     Question: {
       type: Object,
       default: {

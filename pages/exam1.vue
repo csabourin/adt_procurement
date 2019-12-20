@@ -24,7 +24,7 @@
       </b-alert>
       <p>Question {{tabIndex+1}} / 20</p>
       <div class="progressBar">
-        <a href="#" @click.prevent="tabIndex=index" v-for="(square,index) in 20" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square)" v-html="index+1" />
+        <a href="#" @click.prevent="tabIndex=index" :title="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-for="(square,index) in 20" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square)" v-html="index+1" />
       </div>
       <b-row>
         <b-col class="col"></b-col>
@@ -230,6 +230,7 @@ export default {
 </style>
 <i18n>{
   "en": {
+  "Answered":"Answered",
     "q1": {
       "text": "Which of the following is <strong style='text-transform: uppercase;'>not</strong> included in a work plan?",
       "options": {
@@ -528,6 +529,7 @@ export default {
     }
   },
   "fr": {
+  "Answered":"Répondue",
     "q1": {
       "text": "Lequel des éléments suivants n'est <strong style='text-transform:uppercase'>PAS</strong> inclus dans un plan de travail?",
       "options": {

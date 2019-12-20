@@ -133,8 +133,8 @@ export default {
   name: "examOne",
   data() {
     return {
-      debugging: true,
-      numQuestions:2,
+      debugging: false,
+      numQuestions:20,
       allDone:''
     }
   },

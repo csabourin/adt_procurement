@@ -262,6 +262,28 @@ img {
   margin-left: auto;
 }
 
+.spendSection {
+  position: relative;
+}
+.spendSectionBar {
+  position: absolute;
+  background-color: #cac1ca;
+  width: 100vw;
+  height: 30px;
+  text-align: left;
+  left:-15px;
+  top:38%;
+}
+.spendSectionBar span {
+  padding:2px 10px 0;
+  color: #4d4d4d;
+  font-weight: bold;
+  background-color: #fff;
+  display: inline-block;
+  height:100%;
+  margin-left:15px;
+}
+
 .rightSide {
   display: flex;
   align-content: flex-end;

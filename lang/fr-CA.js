@@ -37,7 +37,7 @@ export default {
   // Texte pour les tests
   notPassed: "Vous n'avez pas réussi ce test. Vous pouvez réviser vos réponses et réessayer.",
   Passed: "Vous avez réussi ce test, vous pouvez réviser vos réponses et essayer d'améliorer votre score ou aller à la page d'",
-  Excelled: "Vous avez réussi ce test, félicitations ! Vous pouvez retourner à l'"
+  Excelled: "Vous avez réussi ce test, félicitations ! Vous pouvez retourner à l'",
   // Texte pour icones
   t360Line1: "Aperçu",
   t360Line2: "360",

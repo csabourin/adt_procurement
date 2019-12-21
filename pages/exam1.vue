@@ -136,7 +136,7 @@ export default {
   name: "examOne",
   data() {
     return {
-      debugging: true,
+      debugging: false,
       isNull:false,
       numQuestions: 20
     }

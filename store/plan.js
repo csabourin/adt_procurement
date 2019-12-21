@@ -3,10 +3,13 @@ export const state = () => ({
   score: {},
   tabIndex:0,
   AlertIsDismissed:false,
-  quizLocked:false
+  quizLocked:false,
+  allDone:undefined
 })
 
 export const mutations = {
+	setComplete(state,score)
+	{ state.allDone=score},
 	lockQuiz(state){
 		state.quizLocked=true
 	},
@@ -14,6 +17,7 @@ export const mutations = {
 		state.quizLocked=false
 		state.score={}
 		state.tabIndex=0
+		state.allDone=undefined
 	},
   setScore(state, qId) {
   	let thatThing=new Object

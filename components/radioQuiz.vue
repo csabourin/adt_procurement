@@ -26,11 +26,9 @@ export default {
   },
 
   props: {
+    forceEmpty:{type:Boolean, default:false},
     lock:{type:Boolean, default:false},
-    refill: {
-      type: String,
-      default: undefined
-    },
+    refill: {      type: String,      default: undefined    },
     exam: { type: Boolean, default: false },
     Question: {
       type: Object,
@@ -54,6 +52,12 @@ export default {
       if (this.Quest1 != '') {
         this.$emit('response', this.Quest1)
       }
+    }
+  },
+  watch:{
+    forceEmpty(){
+      this.q1Submitted = false
+      this.Quest1=undefined
     }
   }
 }

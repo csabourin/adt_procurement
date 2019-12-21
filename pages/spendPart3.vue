@@ -152,7 +152,7 @@
       <microlearning path="spendPart1"  imagePath="InitiateAuthSpending.svg" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
       <microlearning path="spendPart2" imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
       <microlearning path="spendPart3" youAreHere size="140" ime="20" completion="10" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
-      <microlearning size="140" time="15" tmp_imagePath="TestPlan.png" :text="$t('Test')" />
+      <microlearning path="exam2" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="$store.state.spend.allDone"/>
     </div>
   </div>
 </template>

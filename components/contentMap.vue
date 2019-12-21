@@ -34,7 +34,7 @@
         <nuxt-link :to="localePath('spendPart3')" v-html="$t('MonitorControlFinances')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')" v-html="$t('Test')" />
+        <nuxt-link :to="localePath('exam2')" v-html="$t('Test')" />
       </li>
     </menu>
     <h4>{{$t('report')}}</h4>

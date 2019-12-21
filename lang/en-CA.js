@@ -1,6 +1,6 @@
 // English translation
 export default {
-  finRoles:"Responsible Use of Public Funds",
+  finRoles: "Responsible Use of Public Funds",
   searchBar: "Search",
   homePage: "Home",
   links: "Links",
@@ -32,6 +32,10 @@ export default {
   ContributeReporting: "Contribute to External Reporting",
   Test: "Test",
   MarkCompleted: "Mark as completed",
+  // Text for Exams
+  notPassed: "You have not passed this test. You can revise you answers and then try again.",
+  Passed: "You have passed this test, you can revise you answers and try to improve your score or go to the",
+  Excelled: "You have aced this test, congratulations! You can go back to the",
   // Text for icons
   t360Line1: "360",
   t360Line2: "Scan",

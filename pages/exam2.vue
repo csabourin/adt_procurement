@@ -125,9 +125,9 @@
     <b-modal id="Completed" size="lg" okOnly>
       <p class='pageTitle'>{{$t('testComplete')}}</p>
       <p>{{$t('scoreIs')}} {{allDone}}%.</p>
-      <p v-if="allDone < 80"> You have not passed this test. You can revise you answers and then try again.</p>
-      <p v-if="allDone >= 80 && allDone<100"> You have passed this test, you can revise you answers and try to improve your score or go to the <nuxt-link :to="localePath('index')">Home Page</nuxt-link></p>
-      <p v-if="allDone==100"> You have aced this test, congratulations! You can go back to the <nuxt-link :to="localePath('index')">Home Page</nuxt-link></p>
+      <p v-if="allDone < 80"> {{$t('notPassed')}}</p>
+      <p v-if="allDone >= 80 && allDone<100">{{$t('Passed')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link></p>
+      <p v-if="allDone==100"> {{$t('Excelled')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link></p>
     </b-modal>
   </div>
 </template>

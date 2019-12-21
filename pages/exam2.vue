@@ -603,7 +603,7 @@ export default {
     "scoreIs": "Votre note finale est de",
     "Questions": {
       "q1": {
-        "text": "Vous avez trouvé un système de chatbot qui répond à vos besoins. Une licence annuelle, plus les frais d'installation et d'installation, coûte 5 650 $, taxes incluses. Quelle est la première étape de l'exercice de votre pouvoir de dépenser ?",
+        "text": "Vous avez trouvé un système de chatbot qui répond à vos besoins. Une licence annuelle, plus les frais d'installation et de configuration, coûte 5&nbsp;650&mbsp;$, taxes incluses. Quelle est la première étape de l'exercice de votre pouvoir de dépenser?",
         "options": {
           "1": "Communiquez avec le fournisseur et commandez le système à l'aide de votre carte d'achat",
           "2": "Demandez à votre équipe d'effectuer une recherche approfondie sur le produit ",
@@ -618,7 +618,7 @@ export default {
         }
       },
       "q2": {
-        "text": "Vous avez dépensé 1 800 $ de votre budget de 2 000 $ pour les fournitures de bureau et vous ne prévoyez pas d'autres achats pour l'année. Un employé veut assister à une formation sur les systèmes de clavardage et les frais d'inscription sont de 150 $. Cependant, vous avez dépensé la totalité de votre budget de formation. Qu'allez-vous faire ?",
+        "text": "Vous avez dépensé 1 800 $ de votre budget de 2 000 $ pour les fournitures de bureau et vous ne prévoyez pas d'autres achats pour l'année. Un employé veut assister à une formation sur les systèmes de clavardage et les frais d'inscription sont de 150 $. Cependant, vous avez dépensé la totalité de votre budget de formation. Qu'allez-vous faire?",
         "options": {
           "1": "Dites à l'employé que le budget de formation a été dépensé ",
           "2": "Utiliser l'argent initialement alloué pour les fournitures de bureau",
@@ -648,7 +648,7 @@ export default {
         }
       },
       "q4": {
-        "text": "Laquelle de ces fonctions n'exige PAS qu'un gestionnaire de centre de responsabilité exerce le pouvoir délégué d'engager des dépenses ?",
+        "text": "Laquelle de ces fonctions n'exige PAS qu'un gestionnaire de centre de responsabilité exerce le pouvoir délégué d'engager des dépenses?",
         "options": {
           "1": "Demande d’activité d’accueil",
           "2": "Frais d'inscription à la conférence",
@@ -663,7 +663,7 @@ export default {
         }
       },
       "q5": {
-        "text": "La limite de dépenses de votre organisation lorsqu'elle utilise une carte d'achat est de 2 500 $ par transaction. Vous avez trouvé des chaises ergonomiques qui répondent à vos besoins et à ceux de votre adjointe administrative. Les deux chaises ensemble sont évaluées à 4 649 $, taxes comprises. En tant que gestionnaire, que ferez-vous ?",
+        "text": "La limite de dépenses de votre organisation lorsqu'elle utilise une carte d'achat est de 2 500 $ par transaction. Vous avez trouvé des chaises ergonomiques qui répondent à vos besoins et à ceux de votre adjointe administrative. Les deux chaises ensemble sont évaluées à 4 649 $, taxes comprises. En tant que gestionnaire, que ferez-vous?",
         "options": {
           "1": "Allez-y et autorisez l'engagement pour les deux chaises",
           "2": "Autoriser l'achat des deux chaises à l'aide de la carte d'achat de votre administrateur",
@@ -736,7 +736,7 @@ export default {
         }
       },
       "q8": {
-        "text": "Lequel des éléments suivants NE fait PAS partie d'un système de codage financier ? ",
+        "text": "Lequel des éléments suivants NE fait PAS partie d'un système de codage financier? ",
         "options": {
           "1": "Composante budgétaire",
           "2": "Gestionnaire de centre de responsabilité",
@@ -766,7 +766,7 @@ export default {
         }
       },
       "q10": {
-        "text": "M. Wong travaille comme gestionnaire d'un petit ministère et a reçu une délégation de pouvoirs en vertu des articles 32 et 34. Quel est l'instrument qui confère à M. Wong son pouvoir de délégation ?",
+        "text": "M. Wong travaille comme gestionnaire d'un petit ministère et a reçu une délégation de pouvoirs en vertu des articles 32 et 34. Quel est l'instrument qui confère à M. Wong son pouvoir de délégation?",
         "options": {
           "1": "Loi sur la gestion des finances publiques",
           "2": "Politiques du Conseil du Trésor",
@@ -796,7 +796,7 @@ export default {
         }
       },
       "q12": {
-        "text": "Vous recevez une facture pour l'adhésion professionnelle annuelle d'un employé qui doit être payée en septembre. Que faites-vous ?",
+        "text": "Vous recevez une facture pour l'adhésion professionnelle annuelle d'un employé qui doit être payée en septembre. Que faites-vous?",
         "options": {
           "1": "Payez maintenant la facture pour l'année entière",
           "2": "Payer ce qui est dû d'ici la fin de l'exercice financier ",
@@ -811,7 +811,7 @@ export default {
         }
       },
       "q13": {
-        "text": "Qui est responsable de l'exactitude du codage financier ?",
+        "text": "Qui est responsable de l'exactitude du codage financier?",
         "options": {
           "1": "L'adjoint administratif qui enregistre les codes conformément au manuel de codage de l'organisation",
           "2": "Les gestionnaires qui ont le pouvoir de confirmer et d'attester le droit aux prestations en vertu de l'article 34 de la Loi sur la gestion des finances publiques",
@@ -856,7 +856,7 @@ export default {
         }
       },
       "q16": {
-        "text": "Une analyse de la variance peut aider de quelles façons ?",
+        "text": "Une analyse de la variance peut aider de quelles façons?",
         "options": {
           "1": "Aide à la réaffectation précoce des ressources",
           "2": "Contribue à réduire les montants périmés à la fin de l'exercice",
@@ -869,7 +869,7 @@ export default {
         }
       },
       "q17": {
-        "text": "Votre budget contient le poste fourni :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'exercice</p></th><th><p>D&eacute;penses annuelles pr&eacute;vues</p></th></tr><tr><td><p>Voyages</p></td><td><p>8&nbsp;400&nbsp;$</p></td><td><p>0 $</p></td><td><p>2 400 $</p></td><td><p>8&nbsp;400&nbsp;$</p></td></tr></tbody></table><br>Vous avez approuvé un déplacement de 1 500 $ pour un employé. En regardant le poste budgétaire fourni, quelles colonnes seraient augmentées ?",
+        "text": "Votre budget contient le poste fourni :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'exercice</p></th><th><p>D&eacute;penses annuelles pr&eacute;vues</p></th></tr><tr><td><p>Voyages</p></td><td><p>8&nbsp;400&nbsp;$</p></td><td><p>0 $</p></td><td><p>2 400 $</p></td><td><p>8&nbsp;400&nbsp;$</p></td></tr></tbody></table><br>Vous avez approuvé un déplacement de 1 500 $ pour un employé. En regardant le poste budgétaire fourni, quelles colonnes seraient augmentées?",
         "options": {
           "1": "Dépenses annuelles prévues et dépenses réelles depuis le début de l'exercice",
           "2": "Prévisions annuelles des dépenses et des engagements",
@@ -884,7 +884,7 @@ export default {
         }
       },
       "q18": {
-        "text": "Votre budget contient les postes individuels fournis :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'exercice</p></th><th><p>D&eacute;penses annuelles pr&eacute;vues</p></th></tr><tr><td><p>Salaire</p></td><td><p>60&nbsp;000&nbsp;$</p></td><td><p>20&nbsp;000&nbsp;$</p></td><td><p>40&nbsp;000&nbsp;$</p></td><td><p>60&nbsp;000&nbsp;$</p></td></tr></tbody></table><br>Vous venez de vous rappeler qu'un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60 000 $. Où changeriez-vous le montant à 50 000 $ ?",
+        "text": "Votre budget contient les postes individuels fournis :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'exercice</p></th><th><p>D&eacute;penses annuelles pr&eacute;vues</p></th></tr><tr><td><p>Salaire</p></td><td><p>60&nbsp;000&nbsp;$</p></td><td><p>20&nbsp;000&nbsp;$</p></td><td><p>40&nbsp;000&nbsp;$</p></td><td><p>60&nbsp;000&nbsp;$</p></td></tr></tbody></table><br>Vous venez de vous rappeler qu'un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60 000 $. Où changeriez-vous le montant à 50 000 $?",
         "options": {
           "1": "Budget",
           "2": "Engagements",
@@ -899,7 +899,7 @@ export default {
         }
       },
       "q19": {
-        "text": "Que devez-vous avoir mis en place pour pouvoir payer votre consultant au cours du nouvel exercice en utilisant le budget de l'exercice précédent ?",
+        "text": "Que devez-vous avoir mis en place pour pouvoir payer votre consultant au cours du nouvel exercice en utilisant le budget de l'exercice précédent?",
         "options": {
           "1": "Report de budget",
           "2": "Payable à la fin de l'année",

@@ -39,19 +39,19 @@
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q2')" qId="1" :refill="Refill('1')" @response="calculateAnswer($event,2,1)" />
               </b-tab>
               <b-tab title="03">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q3')" qId="2" :refill="Refill('2')" @response="calculateAnswer($event,2,2)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q3')" qId="2" :refill="Refill('2')" @response="calculateAnswer($event,1,2)" />
               </b-tab>
               <b-tab title="04">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,2,3)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,4,3)" />
               </b-tab>
               <b-tab title="05">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q5')" qId="4" :refill="Refill('4')" @response="calculateAnswer($event,3,4)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q5')" qId="4" :refill="Refill('4')" @response="calculateAnswer($event,4,4)" />
               </b-tab>
               <b-tab title="06">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q6')" qId="5" :refill="Refill('5')" @response="calculateAnswer($event,1,5)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q6')" qId="5" :refill="Refill('5')" @response="calculateAnswer($event,3,5)" />
               </b-tab>
               <b-tab title="07">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q7')" qId="6" :refill="Refill('6')" @response="calculateAnswer($event,1,6)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q7')" qId="6" :refill="Refill('6')" @response="calculateAnswer($event,2,6)" />
               </b-tab>
               <b-tab title="08">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q8')" qId="7" :refill="Refill('7')" @response="calculateAnswer($event,3,7)" />
@@ -63,34 +63,34 @@
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q10')" qId="9" :refill="Refill('9')" @response="calculateAnswer($event,4,9)" />
               </b-tab>
               <b-tab title="11">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q11')" qId="10" :refill="Refill('10')" @response="calculateAnswer($event,1,10)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q11')" qId="10" :refill="Refill('10')" @response="calculateAnswer($event,2,10)" />
               </b-tab>
               <b-tab title="12">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q12')" qId="11" :refill="Refill('11')" @response="calculateAnswer($event,4,11)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q12')" qId="11" :refill="Refill('11')" @response="calculateAnswer($event,1,11)" />
               </b-tab>
               <b-tab title="13">
-                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q13')" qId="12" :refill="Refill('12')" @response="arraysMatch($event,['2','3'],12)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q13')" qId="12" :refill="Refill('12')" @response="calculateAnswer($event,2,12)" />
               </b-tab>
               <b-tab title="14">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q14')" qId="13" :refill="Refill('13')" @response="calculateAnswer($event,3,13)" />
               </b-tab>
               <b-tab title="15">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q15')" qId="14" :refill="Refill('14')" @response="calculateAnswer($event,2,14)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q15')" qId="14" :refill="Refill('14')" @response="calculateAnswer($event,3,14)" />
               </b-tab>
               <b-tab title="16">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q16')" qId="15" :refill="Refill('15')" @response="calculateAnswer($event,4,15)" />
+                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q16')" qId="15" :refill="Refill('15')" @response="arraysMatch($event,['1','2','4'],15)" />
               </b-tab>
               <b-tab title="17">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q17')" qId="16" :refill="Refill('16')" @response="calculateAnswer($event,2,16)" />
               </b-tab>
               <b-tab title="18">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q18')" qId="17" :refill="Refill('17')" @response="calculateAnswer($event,3,17)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q18')" qId="17" :refill="Refill('17')" @response="calculateAnswer($event,4,17)" />
               </b-tab>
               <b-tab title="19">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q19')" qId="18" :refill="Refill('18')" @response="calculateAnswer($event,1,18)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q19')" qId="18" :refill="Refill('18')" @response="calculateAnswer($event,2,18)" />
               </b-tab>
               <b-tab title="20">
-                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q20')" qId="19" :refill="Refill('19')" @response="arraysMatch($event,['1','2','3'],19)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q20')" qId="19" :refill="Refill('19')" @response="calculateAnswer($event,3,19)" />
               </b-tab>
             </b-tabs>
           </b-card>
@@ -108,8 +108,10 @@
       <transition name="fade">
       <p v-if="allDone"><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
     </transition>
+    
     <div class="bottomNav spendSection">
       <div class="spendSectionBar"><span>{{$t('spend')}}</span></div>
+    
     </div>
     <!-- Debugging section -->
     <div v-if="debugging">
@@ -217,15 +219,24 @@ export default {
 }
 </script>
 <style type="text/css" scoped>
-.planSection {
+
+/*Using a scoped 'deep' selector*/
+>>> .qTable td,>>> .qTable th{
+  border: 1px solid #4d4d4d;
+  padding: .5em;
+}
+>>> .qTable th{
+  background-color: #7d677d;
+  color:#fff;
+}
+.spendSection {
   position: relative;
   height: 100px;
 }
 
-.planSectionBar {
+.spendSectionBar {
   text-transform: uppercase;
   position: absolute;
-  background-color: #d1dfe1;
   width: 100vw;
   height: 30px;
   text-align: left;
@@ -233,7 +244,7 @@ export default {
   top: 38%;
 }
 
-.planSectionBar span {
+.spendSectionBar span {
   padding: 2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;
@@ -525,7 +536,7 @@ export default {
         }
       },
       "q17": {
-        "text": "Your budget contains the provided line item:\n\n\n Budget\n Commitments\n Year-to-Date Actuals\n Annual Forecasted Expenditures\n Travel\n $8,400\n $0\n $2,400\n $8,400\n \n\n\nYou approved $1,500 in travel for an employee. Looking at the provided line item, which columns would be increased?",
+        "text": "Your budget contains the provided line item:<br><table class='qTable'> <tbody> <tr><th>&nbsp;</th><th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Travel</p> </td> <td> <p>$8,400</p> </td> <td> <p>$0</p> </td> <td> <p>$2,400</p> </td> <td> <p>$8,400</p> </td> </tr> </tbody> </table><br>You approved $1,500 in travel for an employee. Looking at the provided line item, which columns would be increased?",
         "options": {
           "1": "Annual Forecasted Expenditures and Year-to-Date Actual",
           "2": "Annual Forecasted Expenditures and Commitments",
@@ -540,7 +551,7 @@ export default {
         }
       },
       "q18": {
-        "text": "Your budget contains the provided line items:\n\n\n Budget\n Commitments\n Year-to-Date Actuals\n Annual Forecasted Expenditures\n Salary\n $60,000\n $20,000\n $40,000\n $60,000\n \n\n\nYou just remembered that an employee has gone on leave without pay for two months. His yearly salary is $60,000. Where would you change the amount to $50,000?",
+        "text": "Your budget contains the provided line items:<br><table class='qTable'> <tbody> <tr> <th>&nbsp;</th> <th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Salary</p> </td> <td> <p>$60,000</p> </td> <td> <p>$20,000</p> </td> <td> <p>$40,000</p> </td> <td> <p>$60,000</p> </td> </tr> </tbody> </table><br>You just remembered that an employee has gone on leave without pay for two months. His yearly salary is $60,000. Where would you change the amount to $50,000?",
         "options": {
           "1": "Budget",
           "2": "Commitments",
@@ -667,7 +678,7 @@ export default {
         }
       },
       "q6": {
-        "text": "Jeu suis un mécanisme de dépense qui sert à obtenir des biens ou des services à partir d'une liste de fournisseurs préqualifiés, assortis de conditions préétablies. Que suis-je?",
+        "text": "Je suis un mécanisme de dépense qui sert à obtenir des biens ou des services à partir d'une liste de fournisseurs préqualifiés, assortis de conditions préétablies. Que suis-je?",
         "options": {
           "1": "Carte d'achat",
           "2": "Marché concurrentiel",
@@ -858,7 +869,7 @@ export default {
         }
       },
       "q17": {
-        "text": "Votre budget contient le poste fourni :\n\n\n Budget\n Engagements\n Dépenses réelles depuis le début de l'exercice\n Dépenses annuelles prévues\n Voyages\n 8 400 $\n 0 $\n 2 400 $\n 8 400 $\n \n\n\nVous avez approuvé un déplacement de 1 500 $ pour un employé. En regardant le poste budgétaire fourni, quelles colonnes seraient augmentées ?",
+        "text": "Votre budget contient le poste fourni :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'exercice</p></th><th><p>D&eacute;penses annuelles pr&eacute;vues</p></th></tr><tr><td><p>Voyages</p></td><td><p>8&nbsp;400&nbsp;$</p></td><td><p>0 $</p></td><td><p>2 400 $</p></td><td><p>8&nbsp;400&nbsp;$</p></td></tr></tbody></table><br>Vous avez approuvé un déplacement de 1 500 $ pour un employé. En regardant le poste budgétaire fourni, quelles colonnes seraient augmentées ?",
         "options": {
           "1": "Dépenses annuelles prévues et dépenses réelles depuis le début de l'exercice",
           "2": "Prévisions annuelles des dépenses et des engagements",
@@ -873,7 +884,7 @@ export default {
         }
       },
       "q18": {
-        "text": "Votre budget contient les postes individuels fournis :\n\n\n Budget\n Engagements\n Dépenses réelles depuis le début de l'exercice\n Dépenses annuelles prévues\n Salaire\n 60 000 $\n 20 000 $\n 40 000 $\n 60 000 $\n \n\n\nVous venez de vous rappeler qu'un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60 000 $. Où changeriez-vous le montant à 50 000 $ ?",
+        "text": "Votre budget contient les postes individuels fournis :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'exercice</p></th><th><p>D&eacute;penses annuelles pr&eacute;vues</p></th></tr><tr><td><p>Salaire</p></td><td><p>60&nbsp;000&nbsp;$</p></td><td><p>20&nbsp;000&nbsp;$</p></td><td><p>40&nbsp;000&nbsp;$</p></td><td><p>60&nbsp;000&nbsp;$</p></td></tr></tbody></table><br>Vous venez de vous rappeler qu'un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60 000 $. Où changeriez-vous le montant à 50 000 $ ?",
         "options": {
           "1": "Budget",
           "2": "Engagements",

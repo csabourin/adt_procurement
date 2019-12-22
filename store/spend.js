@@ -1,6 +1,6 @@
 export const state = () => ({
   // score: {}
-  score: {},
+  score: JSON.parse(window.localStorage.getItem("spendScore")) || {},
   tabIndex:0,
   AlertIsDismissed:false,
   quizLocked:false,
@@ -18,12 +18,14 @@ export const mutations = {
 		state.score={}
 		state.tabIndex=0
 		state.allDone=undefined
+		window.localStorage.setItem("spendScore",'{}')
 	},
   setScore(state, qId) {
   	let thatThing=new Object
   	thatThing[qId[0]]=[qId[1],qId[2]]
   	state.score=Object.assign({},state.score,thatThing)
-  	window.localStorage.setItem("planScore",thatThing[qId[0]])
+  	let toStore=JSON.stringify(Object.assign({},state.score,thatThing))
+  	window.localStorage.setItem("spendScore",toStore)
   },
   setCurrentTab(state,currentTab){
   	state.tabIndex=currentTab

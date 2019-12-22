@@ -603,7 +603,7 @@ export default {
     "scoreIs": "Votre note finale est de",
     "Questions": {
       "q1": {
-        "text": "Vous avez trouvé un système de chatbot qui répond à vos besoins. Une licence annuelle, plus les frais d'installation et de configuration, coûte 5&nbsp;650&mbsp;$, taxes incluses. Quelle est la première étape de l'exercice de votre pouvoir de dépenser?",
+        "text": "Vous avez trouvé un système de chatbot qui répond à vos besoins. Une licence annuelle, plus les frais d'installation et de configuration, coûte 5&nbsp;650&nbsp;$, taxes incluses. Quelle est la première étape de l'exercice de votre pouvoir de dépenser?",
         "options": {
           "1": "Communiquez avec le fournisseur et commandez le système à l'aide de votre carte d'achat",
           "2": "Demandez à votre équipe d'effectuer une recherche approfondie sur le produit ",

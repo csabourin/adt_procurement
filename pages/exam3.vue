@@ -109,8 +109,8 @@
       <p v-if="allDone"><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
     </transition>
     
-    <div class="bottomNav spendSection">
-      <div class="spendSectionBar"><span>{{$t('spend')}}</span></div>
+    <div class="bottomNav reportSection">
+      <div class="reportSectionBar"><span>{{$t('report')}}</span></div>
     
     </div>
     <!-- Debugging section -->
@@ -151,10 +151,10 @@ export default {
 
     resetQuiz() {
       this.isNull=!this.isNull
-      this.$store.commit('spend/resetQuiz')
+      this.$store.commit('report/resetQuiz')
     },
     markTest() {
-      this.$store.commit('spend/lockQuiz')
+      this.$store.commit('report/lockQuiz')
       this.$bvModal.show('Completed')
     },
     checkPercentage() {
@@ -171,48 +171,48 @@ export default {
     },
     calculateAnswer(answer, correct, qId) {
       if (answer == correct) {
-        this.$store.commit('spend/setScore', [qId.toString(), "01", answer])
-      } else { this.$store.commit('spend/setScore', [qId.toString(), "'10'", answer]) }
+        this.$store.commit('report/setScore', [qId.toString(), "01", answer])
+      } else { this.$store.commit('report/setScore', [qId.toString(), "'10'", answer]) }
     },
     arraysMatch(arr1, arr2, qId) {
       if (arr1.length !== arr2.length) {
-        this.$store.commit('spend/setScore', [qId.toString(), "'10'", arr1])
+        this.$store.commit('report/setScore', [qId.toString(), "'10'", arr1])
         return false
       }
       const arrayOne = arr1.concat().sort()
       for (let i in arrayOne) {
         if (arrayOne[i] !== arr2[i]) {
-          this.$store.commit('spend/setScore', [qId.toString(), "'10'", arr1])
+          this.$store.commit('report/setScore', [qId.toString(), "'10'", arr1])
           return false
         }
       }
-      this.$store.commit('spend/setScore', [qId.toString(), "01", arr1])
+      this.$store.commit('report/setScore', [qId.toString(), "01", arr1])
     }
   },
   computed: {
       allDone(){
-      return this.$store.state.spend.allDone
+      return this.$store.state.report.allDone
     },
     AlertIsDismissed: {
-      get() { return this.$store.state.spend.AlertIsDismissed },
-      set() { this.$store.commit('spend/dismissAlert') }
+      get() { return this.$store.state.report.AlertIsDismissed },
+      set() { this.$store.commit('report/dismissAlert') }
     },
     tabIndex: {
-      set(tabIndex) { this.$store.commit('spend/setCurrentTab', tabIndex) },
-      get() { return this.$store.state.spend.tabIndex }
+      set(tabIndex) { this.$store.commit('report/setCurrentTab', tabIndex) },
+      get() { return this.$store.state.report.tabIndex }
     },
     answerScore() {
-      return this.$store.state.spend.score
+      return this.$store.state.report.score
     },
     quizLocked() {
-      return this.$store.state.spend.quizLocked
+      return this.$store.state.report.quizLocked
     }
   },
   watch: {
     answerScore() {
       const answers = Object.keys(this.answerScore).length
       if (answers === this.numQuestions) {
-        this.$store.commit('spend/setComplete',this.checkPercentage())
+        this.$store.commit('report/setComplete',this.checkPercentage())
       }
     }
   }

@@ -158,7 +158,7 @@ export default {
     checkPercentage() {
       var count = 0;
       for (let i in this.answerScore) {
-        if (this.answerScore[i][0] == "right")
+        if (this.answerScore[i][0] == "01") // 01 means correct answer
           count++;
       }
       const score = parseInt(count / this.numQuestions * 100)
@@ -169,22 +169,22 @@ export default {
     },
     calculateAnswer(answer, correct, qId) {
       if (answer == correct) {
-        this.$store.commit('plan/setScore', [qId.toString(), "right", answer])
-      } else { this.$store.commit('plan/setScore', [qId.toString(), "'wrong'", answer]) }
+        this.$store.commit('plan/setScore', [qId.toString(), "01", answer]) // 01 means right
+      } else { this.$store.commit('plan/setScore', [qId.toString(), "'10'", answer]) } // wrong could be whatever
     },
     arraysMatch(arr1, arr2, qId) {
       if (arr1.length !== arr2.length) {
-        this.$store.commit('plan/setScore', [qId.toString(), "'wrong'", arr1])
+        this.$store.commit('plan/setScore', [qId.toString(), "'10'", arr1]) 
         return false
       }
       const arrayOne = arr1.concat().sort()
       for (let i in arrayOne) {
         if (arrayOne[i] !== arr2[i]) {
-          this.$store.commit('plan/setScore', [qId.toString(), "'wrong'", arr1])
+          this.$store.commit('plan/setScore', [qId.toString(), "'10'", arr1])
           return false
         }
       }
-      this.$store.commit('plan/setScore', [qId.toString(), "right", arr1])
+      this.$store.commit('plan/setScore', [qId.toString(), "01", arr1]) // 01 means right
     }
   },
   computed: {

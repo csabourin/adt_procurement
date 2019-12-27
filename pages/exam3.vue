@@ -236,6 +236,7 @@ export default {
 
 .reportSectionBar {
   text-transform: uppercase;
+  background-color: #e5dddc;
   position: absolute;
   width: 100vw;
   height: 30px;

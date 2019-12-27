@@ -191,7 +191,7 @@ export default {
   },
   computed: {
       allDone(){
-      return this.$store.state.report.allDone
+      return this.$store.getters['report/getScore']
     },
     AlertIsDismissed: {
       get() { return this.$store.state.report.AlertIsDismissed },
@@ -226,7 +226,7 @@ export default {
   padding: .5em;
 }
 >>> .qTable th{
-  background-color: #7d677d;
+  background-color: #865F56;
   color:#fff;
 }
 .reportSection {
@@ -275,7 +275,7 @@ export default {
 }
 
 .filled {
-  background-color: #7d677d;
+  background-color: #865F56;
   color: #fff;
 }
 
@@ -288,7 +288,7 @@ export default {
 }
 
 .filled.Qactive {
-  background-color: #AFA68E;
+  background-color: #B3A27A;
 }
 
 </style>

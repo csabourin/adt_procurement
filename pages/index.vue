@@ -40,7 +40,7 @@
       <microlearning imagePath="KeyMessR.png" path="reportKey" time="5" :text="$t('KeyMessages')" />
       <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
       <microlearning imagePath="R-Contribute.svg"  path="reportPart2" time="20" :text="$t('ContributeReporting')" />
-      <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('Test')" />
+      <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('Test')" :completion="$store.state.report.allDone" />
     </section>
     <hr class="reportHr">
   </div>

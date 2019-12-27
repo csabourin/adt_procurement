@@ -4,12 +4,25 @@ export const state = () => ({
   tabIndex: 0,
   AlertIsDismissed: JSON.parse(window.localStorage.getItem("spendNoteDismissed")) || false,
   quizLocked: JSON.parse(window.localStorage.getItem("spendquizLocked")) || false,
-  allDone: atob(window.localStorage.getItem("spendAllDone")) || undefined
+  allDone: window.localStorage.getItem("spendAllDone") || undefined
 })
+
+export const getters = {
+  getScore: (state) => {
+    try{
+      atob(state.allDone)
+    return atob(state.allDone)
+  }
+  catch(e){
+    return undefined
+  }
+
+  }
+}
 
 export const mutations = {
   setComplete(state, score) {
-    state.allDone = score
+    state.allDone = btoa(score)
     window.localStorage.setItem("spendAllDone", btoa(score))
   },
   lockQuiz(state) {
@@ -21,8 +34,8 @@ export const mutations = {
     window.localStorage.setItem("spendquizLocked", false)
     state.score = {}
     state.tabIndex = 0
-    state.allDone = undefined
     window.localStorage.setItem("spendAllDone", '')
+    state.allDone = undefined
     window.localStorage.setItem("spendScore", '{}')
   },
   setScore(state, qId) {

@@ -191,7 +191,7 @@ export default {
   },
   computed: {
       allDone(){
-      return this.$store.state.spend.allDone
+      return this.$store.getters['spend/getScore']
     },
     AlertIsDismissed: {
       get() { return this.$store.state.spend.AlertIsDismissed },

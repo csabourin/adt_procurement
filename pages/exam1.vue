@@ -113,11 +113,8 @@
     </div>
     <!-- Debugging section -->
     <div v-if="debugging">
-      <p>{{allDone}}</p>
+      <p>Alldone: {{allDone}}</p>
       <p>{{answerScore}}</p>
-      <ul>
-        <li v-for="index in answerScore">Answer {{Refill(index.toString())}} </li>
-      </ul>
     </div>
     <!-- End of Debugging section -->
     <b-modal id="Completed" size="lg" okOnly>
@@ -136,7 +133,7 @@ export default {
   name: "examOne",
   data() {
     return {
-      debugging: false,
+      debugging: true,
       isNull:false,
       numQuestions: 20
     }
@@ -189,7 +186,7 @@ export default {
   },
   computed: {
       allDone(){
-      return this.$store.state.plan.allDone
+      return this.$store.getters['plan/getScore']
     },
     AlertIsDismissed: {
       get() { return this.$store.state.plan.AlertIsDismissed },

@@ -229,12 +229,12 @@ export default {
   background-color: #7d677d;
   color:#fff;
 }
-.spendSection {
+.reportSection {
   position: relative;
   height: 100px;
 }
 
-.spendSectionBar {
+.reportSectionBar {
   text-transform: uppercase;
   position: absolute;
   width: 100vw;
@@ -244,7 +244,7 @@ export default {
   top: 38%;
 }
 
-.spendSectionBar span {
+.reportSectionBar span {
   padding: 2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;

@@ -49,7 +49,7 @@
         <nuxt-link :to="localePath('reportPart2')" v-html="$t('ContributeReporting')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('null')" v-html="$t('Test')" />
+        <nuxt-link :to="localePath('exam3')" v-html="$t('Test')" />
       </li>
     </menu>
   </div>

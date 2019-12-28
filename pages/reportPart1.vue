@@ -62,10 +62,10 @@
     </section>
     <div class="bottomNav reportSection">
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
-      <microlearning path="reportKey" size="140" completion="100" imagePath="KeyMessR.png" :text="$t('KeyMessages')" />
-      <microlearning path="reportPart1"  youAreHere imagePath="R-Conduct.svg" size="140" time="20" completion="80" :text="$t('ConductPeriodicVarianceReporting')" />
-      <microlearning path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" completion="80" :text="$t('ContributeReporting')" />
-      <microlearning size="140" time="15" tmp_imagePath="ReportPlan.png" :text="$t('Test')" />
+      <microlearning path="reportKey" size="140" imagePath="KeyMessR.png" :text="$t('KeyMessages')" />
+      <microlearning youAreHere path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
+      <microlearning path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" :text="$t('ContributeReporting')" />
+      <microlearning path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" />
     </div>
   </div>
 </template>

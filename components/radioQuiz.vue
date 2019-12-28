@@ -5,7 +5,7 @@
       <p v-html="$t('selectRight')" />
       <ol type="1">
         <li v-for="(item,index) in Question.options" :key="index">
-          <input :disabled="lock" @click="q1Submitted=false" type="radio" v-model="Quest1" :name="'q'+qId" :id="'radioq'+qId+index" :value="index">&nbsp;<label :for="'radioq'+qId+index" v-html="item" /></li>
+          <input :disabled="lock" @click="q1Submitted=false" type="radio" v-model="Quest1" :name="'q'+qId" :id="'radioq'+qId+index" :value="index"><label :for="'radioq'+qId+index" v-html="item" /></li>
       </ol>
       <b-button :disabled="q1Submitted || lock" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
     </fieldset>

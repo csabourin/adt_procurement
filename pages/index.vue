@@ -20,10 +20,10 @@
      <p>&nbsp;</p>
     <h2 class="sideTitle planTitle">{{$t('plan')}}</h2>
     <section role="navigation" class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }">
-      <microlearning path="planKey" time="2" completion=100 imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
-      <microlearning path="buildWP" time="20"  imagePath="BuildWP.svg" completion=80 :text="$t('BuildWorkPlan')" />
-      <microlearning time="20" path="createBudget" completion=10 imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
-      <microlearning time="15" path="exam1" imagePath="P-Test.svg" :text="$t('Test')" :completion="$store.state.plan.allDone" />
+      <microlearning path="planKey" time="2" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
+      <microlearning path="buildWP" time="20"  imagePath="BuildWP.svg" :text="$t('BuildWorkPlan')" />
+      <microlearning time="20" path="createBudget" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
+      <microlearning time="15" path="exam1" imagePath="P-Test.svg" :text="$t('Test')" :completion="planCompleted" />
     </section>
     <hr class="planHr">
     <h2 class="sideTitle spendTitle">{{$t('spend')}}</h2>
@@ -32,7 +32,7 @@
       <microlearning imagePath="InitiateAuthSpending.svg" path="spendPart1" time="20" :text="$t('InitiateAuthorizeSpending')" />
       <microlearning imagePath="ExerciseFinancialAuthority.svg" path="spendPart2" time="20" :text="$t('ExerciseFinancialAuthority')" />
       <microlearning time="20" path="spendPart3" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
-      <microlearning time="15" path="exam2"  imagePath="S-Test.svg" :text="$t('Test')" :completion="$store.state.spend.allDone"/>
+      <microlearning time="15" path="exam2"  imagePath="S-Test.svg" :text="$t('Test')" :completion="spendCompleted"/>
     </section>
     <hr class="spendHr">
     <h2 class="sideTitle reportTitle">{{$t('report')}}</h2>
@@ -40,7 +40,7 @@
       <microlearning imagePath="KeyMessR.png" path="reportKey" time="5" :text="$t('KeyMessages')" />
       <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
       <microlearning imagePath="R-Contribute.svg"  path="reportPart2" time="20" :text="$t('ContributeReporting')" />
-      <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('Test')" :completion="$store.state.report.allDone" />
+      <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('Test')" :completion="reportCompleted" />
     </section>
     <hr class="reportHr">
   </div>
@@ -49,7 +49,6 @@
 import planbgBarUrl from "~/components/plan_phase_bar.svg"
 import spendbgBarUrl from "~/components/spend_phase_bar.svg"
 import reportbgBarUrl from "~/components/report_phase_bar.svg"
-import courselogo from "~/components/three_phases";
 import microlearning from "~/components/microlearning";
 import hamburger from "~/components/hamburger";
 export default {
@@ -61,9 +60,19 @@ export default {
     }
   },
   components: {
-    courselogo,
     microlearning,
     hamburger
+  },
+  computed:{
+    planCompleted(){
+      return this.$store.getters['plan/getScore']
+    },
+    reportCompleted(){
+      return this.$store.getters['report/getScore']
+    },
+    spendCompleted(){
+      return this.$store.getters['spend/getScore']
+    },
   }
 }
 

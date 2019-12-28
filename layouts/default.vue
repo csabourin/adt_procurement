@@ -8,7 +8,7 @@
           <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
         </nuxt-link>
       </b-col>
-      <b-col cols="2" sm="6" ><h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" alt="Logo"> {{$t('finRoles')}}</h1></b-col>
+      <b-col cols="2" sm="6" ><h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')"> {{$t('finRoles')}}</h1></b-col>
       <b-col cols="5" sm="3" class="text-right">
         <fileMenu />
         <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">

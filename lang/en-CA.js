@@ -1,6 +1,7 @@
 // English translation
 export default {
   finRoles: "Responsible Use of Public Funds",
+  symbolicIdentifier: "Symbolic Identifier",
   searchBar: "Search",
   homePage: "Home",
   links: "Links",

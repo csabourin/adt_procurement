@@ -1,6 +1,7 @@
 // Traduction française
 export default {
   searchBar: "Recherche",
+  symbolicIdentifier: "Identificateur symbolique",
   finRoles: "Utilisation responsable des fonds publics",
   plan: "Planification",
   spend: "Dépenses",

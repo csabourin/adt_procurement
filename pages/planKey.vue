@@ -118,7 +118,7 @@ h3 {
   font-family: 'Roboto Medium',Roboto;
   font-weight:500;
   color: #608a93;
-  background-image: linear-gradient( transparent 40%, white 40%, white 85%, transparent 85%, transparent 100% );
+  background-image: linear-gradient( transparent 30%, white 30%, white 85%, transparent 85%, transparent 100% );
   quotes: "“" "”";
   padding:1em;
 }

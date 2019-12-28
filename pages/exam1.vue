@@ -243,7 +243,7 @@ export default {
 .progressBar {
   margin-bottom: 2em;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
 }
 

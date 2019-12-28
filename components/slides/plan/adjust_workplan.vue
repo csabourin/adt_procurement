@@ -348,21 +348,24 @@
 }
 </i18n>
 <script>
-  import radioQuiz from "~/components/radioQuiz"
+import radioQuiz from "~/components/radioQuiz"
 export default {
-  components:{radioQuiz},
-  data(){
-    return{tabIndex:0,Q1:'',Q2:'',Q3:'',Q4:''}
+  components: { radioQuiz },
+  data() {
+    return { tabIndex: 0, Q1: '', Q2: '', Q3: '', Q4: '' }
   },
-  watch:{
-    tabIndex:function (tab){ 
-      if (tab==3) this.$scrollTo('#deliverableTab')
-      if (tab==2) this.$scrollTo('#resourcesTab')
-      if (tab==1) this.$scrollTo('#deliverableTab')
-      if (tab==0) this.$scrollTo('#subActTab')
+  watch: {
+    tabIndex: {
+      immediate: true,
+      handler(tab) {
+        if (tab == 3) this.$scrollTo('#deliverableTab')
+        if (tab == 2) this.$scrollTo('#resourcesTab')
+        if (tab == 1) this.$scrollTo('#deliverableTab')
+        if (tab == 0) this.$scrollTo('#subActTab')
+      }
     }
   }
-  }
+}
 </script>
 <style type="text/css" scoped>
 .scrollMe {

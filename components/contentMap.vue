@@ -1,13 +1,10 @@
 <template>
-  <div class="contentMap">
-    <!-- <nuxt-link :to="localePath('index')">
-      <h3>{{$t('homePage')}}</h3>
-    </nuxt-link> -->
+  <nav class="contentMap" role="navigation">
     
-    <a href="#" ref="item"><h4 >{{$t('plan')}}</h4></a>    
+    <span ref="item"><h4>{{$t('plan')}}</h4></span>    
     <menu style="list-style: none">
       <li>
-        <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessages')"     />
+        <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessages')"  />
       </li>
       <li>
         <nuxt-link :to="localePath('buildWP')" v-html="$t('BuildWorkPlan')" />
@@ -52,7 +49,7 @@
         <nuxt-link :to="localePath('exam3')" v-html="$t('Test')" />
       </li>
     </menu>
-  </div>
+  </nav>
 </template>
 <script type="text/javascript">
   export default{
@@ -95,11 +92,11 @@
   border-left-width:4px;
   padding:4px 16px 4px 15px;
 }
-.contentMap ul:nth-of-type(1) a.nuxt-link-exact-active {border-left-color:#587C84;}
-.contentMap ul:nth-of-type(2) a.nuxt-link-exact-active {border-left-color:#7D677D;}
-.contentMap ul:nth-of-type(3) a.nuxt-link-exact-active {border-left-color:#865F56;}
+.contentMap menu:nth-of-type(1) a.nuxt-link-exact-active {border-left-color:#587C84;}
+.contentMap menu:nth-of-type(2) a.nuxt-link-exact-active {border-left-color:#7D677D;}
+.contentMap menu:nth-of-type(3) a.nuxt-link-exact-active {border-left-color:#865F56;}
 
-.contentMap ul {
+.contentMap menu {
     padding:0;
 }
 .contentMap h4{

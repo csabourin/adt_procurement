@@ -4,7 +4,7 @@
     <b-container>
       <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible>
         <div v-if="$i18n.locale=='en'">
-          <p><strong>NOTE:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
+          <p><strong style="text-transform: uppercase;">Note:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
           <p>For some of the questions in this test, you play the role of a manager of a call center. You will be given scenarios based on this situation.&nbsp;</p>
           <p>As per Treasury Board requirements, passing the test for this course is mandatory before you can exercise financial delegation.&nbsp;</p>
           <p>There are three sections to the test - one for each phase: planning, spending and reporting.&nbsp;</p>
@@ -13,7 +13,7 @@
           <p>You can access course materials during the test and you can take it as many times as you need.</p>
         </div>
         <div v-if="$i18n.locale=='fr'">
-          <p><strong>NOTE :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons &agrave; compl&eacute;ter les tests pour planifier, d&eacute;penser et faire un rapport et nous vous invitons &agrave; nous faire part de vos commentaires sur les questions et les fonctionnalit&eacute;s.&nbsp; Vos commentaires nous aideront &agrave; rendre le tout plus efficace.</p>
+          <p><strong style="text-transform: uppercase;">Note :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons &agrave; compl&eacute;ter les tests pour planifier, d&eacute;penser et faire un rapport et nous vous invitons &agrave; nous faire part de vos commentaires sur les questions et les fonctionnalit&eacute;s.&nbsp; Vos commentaires nous aideront &agrave; rendre le tout plus efficace.</p>
           <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d'un responsable de centre d'appels. Des sc&eacute;narios bas&eacute;s sur cette situation vous seront propos&eacute;s.&nbsp;</p>
           <p>Conform&eacute;ment aux exigences du Conseil du Tr&eacute;sor, il est obligatoire de r&eacute;ussir l'examen de ce cours avant de pouvoir exercer la d&eacute;l&eacute;gation financi&egrave;re.</p>
           <p>Le test comporte trois parties - une &agrave; la fin de chaque phase - planification, d&eacute;penses et rapports.&nbsp;</p>
@@ -736,7 +736,7 @@ export default {
         }
       },
       "q8": {
-        "text": "Lequel des éléments suivants NE fait PAS partie d'un système de codage financier? ",
+        "text": "Lequel des éléments suivants ne fait <span  style='text-transform: uppercase;'>pas</span> partie d'un système de codage financier? ",
         "options": {
           "1": "Composante budgétaire",
           "2": "Gestionnaire de centre de responsabilité",

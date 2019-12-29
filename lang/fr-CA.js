@@ -19,6 +19,7 @@ export default {
   submitTo: "Soumettre",
   reset: "Effacer",
   playIcon: "Jouer la vidéo",
+  playIcon: "Icône d'activité",
   checkAll: "S&eacute;lectionnez tout ce qui s'applique.",
   selectRight: "S&eacute;lectionnez la bonne r&eacute;ponse.",
   pleaseAnswer: "Veuillez r&eacute;pondre &agrave; la question!",

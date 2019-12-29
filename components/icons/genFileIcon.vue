@@ -1,7 +1,7 @@
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.24 169.33" :width="iconWidth" :height="iconWidth">
     <title>{{ title }}</title>
-    <rect id="Rectangle_5194" data-name="Rectangle 5194" :class="iconStyle" y="12.42" width="131.57" height="156.9" />
+    <rect data-name="Rectangle 5194" :class="iconStyle" y="12.42" width="131.57" height="156.9" />
     <rect fill="#fff" x="6.85" y="68.36" width="126.15" height="56" />
     <polyline class="icon3" points="96.19 1.84 96.19 50.25 138.02 50.25" />
     <polygon class="icon3" points="96.62 1.84 5.72 1.84 5.72 161.38 138.06 161.38 138.06 49.18 96.62 1.84" />

@@ -509,7 +509,7 @@ function evalObjective(id, score) {
 
 export const state = () => ({
   init: doLMSInitialize(),
-  name: doLMSGetValue("cmi.core.student_name")
+  name: doLMSGetValue("cmi.core.student_name"),
   examScore: doLMSGetValue("cmi.suspend_data")
 })
 

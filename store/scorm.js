@@ -450,10 +450,8 @@ var rootPath = "";
 var lessonStatus;
 
 function setCompletion(status) {
-  if (isTracking && lmsConnected) {
     doLMSSetValue("cmi.core.lesson_status", status);
     doLMSCommit();
-  }
 }
 
 
@@ -481,43 +479,43 @@ function initObjectives() {
 //Fonction d'évalution des objectifs
 function evalObjective(id, score) {
   var isTracking = true;
-  if (lmsConnected) {
-    //Vérifier si le status du cours n’est pas déjà complété. S'il ne l'est pas, mettre à jour les scores.
-    //Vérifier le nombre d'objective   
-    completionStatus = doLMSGetValue("cmi.core.lesson_status")
-    if (completionStatus == "completed" || completionStatus == "passed") isTracking = false;
-    if (isTracking) {
-      var objective = "cmi.objectives." + id
-      minScore = doLMSGetValue(objective + ".score.min")
-      if (minScore.length !== 0)
-        minScore = parseInt(minScore);
-      doLMSSetValue(objective + ".score.raw", score)
-      doLMSSetValue("cmi.core.score.raw", score)
 
-      if (score >= minScore) {
-        //Le cours est passé
-        doLMSSetValue(objective + ".status", "passed")
-        doLMSSetValue("cmi.core.lesson_status", "passed");
-      } else {
-        doLMSSetValue(objective + ".status", "failed")
-        doLMSSetValue("cmi.core.lesson_status", "incomplete");
-      }
-      doLMSCommit();
+  //Vérifier si le status du cours n’est pas déjà complété. S'il ne l'est pas, mettre à jour les scores.
+  //Vérifier le nombre d'objective   
+  completionStatus = doLMSGetValue("cmi.core.lesson_status")
+  if (completionStatus == "completed" || completionStatus == "passed") isTracking = false;
+  if (isTracking) {
+    var objective = "cmi.objectives." + id
+    minScore = doLMSGetValue(objective + ".score.min")
+    if (minScore.length !== 0)
+      minScore = parseInt(minScore);
+    doLMSSetValue(objective + ".score.raw", score)
+    doLMSSetValue("cmi.core.score.raw", score)
+
+    if (score >= minScore) {
+      //Le cours est passé
+      doLMSSetValue(objective + ".status", "passed")
+      doLMSSetValue("cmi.core.lesson_status", "passed");
+    } else {
+      doLMSSetValue(objective + ".status", "failed")
+      doLMSSetValue("cmi.core.lesson_status", "incomplete");
     }
+    doLMSCommit();
   }
 }
 
 export const state = () => ({
   init: doLMSInitialize(),
-  name: doLMSGetValue("cmi.core.student_name")
-  examScore: doLMSGetValue("cmi.suspend_data")
+  name: doLMSGetValue("cmi.core.student_name"),
+  examSuspend: doLMSGetValue("cmi.suspend_data"),
+  examStatus: doLMSGetValue("cmi.core.lesson_status")
 })
 
 export const getters = {
   getScore: (state) => {
     try {
-      atob(state.examScore)
-      return JSON.parse(atob(state.examScore))
+      atob(state.examSuspend)
+      return JSON.parse(atob(state.examSuspend))
     } catch (e) {
       return undefined
     }
@@ -525,14 +523,48 @@ export const getters = {
   }
 }
 
+export const actions = {
+  setLMSObjectives({ commit, state }) {
+    // intention: initialize cmi.objectives.n.id with the 3 objectives, set passage mark at 80
+    setObjective(0, 'plan', 80, 100)
+    setObjective(1, 'spend', 80, 100)
+    setObjective(2, 'report', 80, 100)
+  },
+  setScores({ commit, state }, scores) {
+
+    for (let i in scores) {
+      let objective = "cmi.objectives." + i
+      let minScore = doLMSGetValue(objective + ".score.min")
+      if (minScore.length !== 0) minScore = parseInt(minScore)
+
+      doLMSSetValue(objective + ".score.raw", scores[i])
+      if (scores[i] >= minScore) {
+        //Le cours est passé
+        doLMSSetValue(objective + ".status", "passed")
+        doLMSSetValue("cmi.core.score.raw", scores[i])
+        setCompletion("passed")
+
+      } else {
+        doLMSSetValue(objective + ".status", "failed")
+        doLMSSetValue("cmi.core.lesson_status", "incomplete");
+
+      }
+    }
+   commit('setExamStatus')
+  }
+}
+
 export const mutations = {
   setName(state, name) {
     state.name = name;
   },
-  setScore(state, score) {
+  setProgress(state, score) {
     state.examScore = btoa(JSON.stringify(score))
     doLMSSetValue('cmi.suspend_data', state.examScore)
 
+  },
+  setExamStatus(state){
+    state.examStatus= doLMSGetValue("cmi.core.lesson_status")
   }
 
 }

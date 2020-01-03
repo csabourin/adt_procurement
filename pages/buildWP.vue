@@ -4,7 +4,7 @@
       {{ $t('BuildWorkPlan')}}
     </h2>
     <section>
-      <videoPlayer ref="vp" videoFile="buildworkplan.mp4" chapterFile="chapters.vtt" posterFile="buildwp.jpg" :modalArray="modalArray" />
+      <videoPlayer ref="vp" videoFile="buildworkplan.mp4" chapters chapterFile="chapters.vtt" posterFile="buildwp.jpg" :modalArray="modalArray" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
@@ -177,22 +177,12 @@ export default {
   methods: {
     resumePlay() {
       this.$refs.vp.resumePlay()
-    },
-
-    accessibleModal(i) {
-      this.accessiblePopup = true
-      this.$refs.videoplayer.pause()
-      this.$bvModal.show(this.modalArray[i])
-      // this.$refs.videoplayer.currentTime = this.startTime[i + 1]
     }
   }
 }
 
 </script>
 <style scoped>
-.planSection {
-  position: relative;
-}
 
 .planSectionBar {
   position: absolute;
@@ -228,8 +218,6 @@ export default {
   "InRealLife":"In Real Life",
   "IRLText":"<p>Take what you have learned into real life!</p><p>Your organization will have their own ways of doing things. Take a time out from the course to scan your intranet to see which templates are used.</p><p>Connect with your colleagues, your director, or financial officer to have a chat about work plans.</p> ",
   "TakeTheQuiz":"Take the Quiz",
-  "jumpModalPartsWP":"Jump to activity",
-  "playSegment":"Play video segment",
   "transcriptText":"",
   "planSectionBar": "PLAN"
   },
@@ -245,8 +233,6 @@ export default {
   "InRealLife":"Dans la vraie vie",
   "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>  <p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter votre intranet pour voir quels mod&egrave;les sont utilis&eacute;s.</p>  <p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
   "gotIt":"Continuer au segment suivant.",
-  "jumpModalPartsWP":"Sauter à l'activité",
-  "playSegment":"Faire jouer le segment vidéo",
   "transcriptText":"",
   "planSectionBar": "PLANIFICATION"
   }

@@ -197,6 +197,10 @@ img {
   background-color: #865F56;
 }
 
+.bottomNav{
+    position: relative;
+}
+
 .bottomNav:before {
   content: " ";
   color: #4d4d4d;

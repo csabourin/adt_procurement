@@ -1,30 +1,30 @@
 <template>
   <b-container>
-  <b-row>
-    <b-col>
-      <script src="https://kit.fontawesome.com/e5ee1a6fb9.js" crossorigin="anonymous"></script>
-      <figure style="clear:both;position:relative;">
-        <video ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update">
-          <!-- <track kind="chapters" :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" default=""> -->
-          <track kind="chapters" :src="chapterUrl" @load="generate" default="">
-        </video>
-        <transition name="expand">
-          <div class="CC" v-if="CCactive"></div>
-        </transition>
-        <div ref="video-controls" class="controls" data-state="hidden">
-          <progress @click="setTime" ref="progress" :value="PlayTime" min="0" max="100">
-            <span ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
-          </progress>
-          <button ref="playpause" @click="setPlaying" type="button" data-state="play" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')"><i :class="{'fas fa-play':isPaused,'fas fa-pause':!isPaused}"></i></button>
-          <button ref="mute" @click="isMuted=!isMuted" type="button" data-state="mute" :title="'Volume: '+setVolume+'%'"><i :class="{'fas fa-volume-mute':isMuted,'fas fa-volume-up':!isMuted}" /></button>
-          <input type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'">
-          <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
-          <button @click="showCC" style="float:right" type="button" :title="$t('closedcaptionning')" :aria-label="$t('closedcaptionning')"><i class="fas fa-closed-captioning"></i></button>
-        </div>
-      </figure>
-    </b-col>
-  </b-row>
-    <ul id="bar" ref="linkBar">
+    <b-row>
+      <b-col>
+        <script src="https://kit.fontawesome.com/e5ee1a6fb9.js" crossorigin="anonymous"></script>
+        <figure style="clear:both;position:relative;">
+          <video ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update">
+            <!-- <track kind="chapters" :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" default=""> -->
+            <track kind="chapters" :src="chapterUrl" @load="generate" default="">
+          </video>
+          <transition name="expand">
+            <div class="CC" v-if="CCactive"></div>
+          </transition>
+          <div ref="video-controls" class="controls" data-state="hidden">
+            <progress @click="setTime" ref="progress" :value="PlayTime" min="0" max="100">
+              <span ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
+            </progress>
+            <button ref="playpause" @click="setPlaying" type="button" data-state="play" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')"><i :class="{'fas fa-play':isPaused,'fas fa-pause':!isPaused}"></i></button>
+            <button ref="mute" @click="isMuted=!isMuted" type="button" data-state="mute" :title="'Volume: '+setVolume+'%'"><i :class="{'fas fa-volume-mute':isMuted,'fas fa-volume-up':!isMuted}" /></button>
+            <input type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'">
+            <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
+            <button @click="showCC" style="float:right" type="button" :title="$t('closedcaptionning')" :aria-label="$t('closedcaptionning')"><i class="fas fa-closed-captioning"></i></button>
+          </div>
+        </figure>
+      </b-col>
+    </b-row>
+    <ul v-if="chapters" id="bar" ref="linkBar">
       <li v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
         <p>{{ item }}</p><br>
         <a href="#mainPlayer" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
@@ -36,13 +36,15 @@
       <span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
       <span>endTime : {{endTime}}</span><br>
       <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
-      <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>
-  </b-row>
-</b-container>
+      <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span>
+    </div>
+    
+  </b-container>
 </template>
 <script type="text/javascript">
 export default {
   props: {
+    chapters: { type: Boolean, default: false },
     videoFile: { type: String, default: 'IntroVideoPrototype.mp4' },
     posterFile: { type: String, default: 'video_poster.PNG' },
     chapterFile: { type: String, default: 'chapters.vtt' },

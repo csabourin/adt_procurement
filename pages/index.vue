@@ -1,9 +1,7 @@
 <template>
   <div class="mainWindow">
     <p>&nbsp;</p>
-    <div class="videoContain">
-      <video id="introVideo" :src="require('~/assets/'+ $i18n.locale +'/IntroVideoPrototype.mp4')" controls :poster="require('~/assets/'+ $i18n.locale +'/video_poster.PNG')">
-      </video>
+      <videoPlayer videoFile="IntroVideoPrototype.mp4" posterFile="video_poster.PNG" />
        <div role="tablist" class="transcriptionBox">
     <b-card no-body class="mb-1 text-left">
       <b-card-header header-tag="header" class="p-1" role="tab">
@@ -16,7 +14,7 @@
       </b-collapse>
     </b-card>
   </div>
-    </div>
+    
      <p>&nbsp;</p>
     <h2 class="sideTitle planTitle">{{$t('plan')}}</h2>
     <section role="navigation" class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }">
@@ -49,8 +47,9 @@
 import planbgBarUrl from "~/components/plan_phase_bar.svg"
 import spendbgBarUrl from "~/components/spend_phase_bar.svg"
 import reportbgBarUrl from "~/components/report_phase_bar.svg"
-import microlearning from "~/components/microlearning";
-import hamburger from "~/components/hamburger";
+import microlearning from "~/components/microlearning"
+import hamburger from "~/components/hamburger"
+import videoPlayer from "~/components/interface/videoPlayer"
 export default {
   data() {
     return {
@@ -61,7 +60,8 @@ export default {
   },
   components: {
     microlearning,
-    hamburger
+    hamburger,
+    videoPlayer
   },
   computed:{
     planCompleted(){

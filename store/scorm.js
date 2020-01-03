@@ -508,7 +508,7 @@ export const state = () => ({
   init: doLMSInitialize(),
   name: doLMSGetValue("cmi.core.student_name"),
   examSuspend: doLMSGetValue("cmi.suspend_data"),
-  examStatus: doLMSGetValue("cmi.core.lesson_status")
+  examStatus: doLMSGetValue("cmi.core.lesson_status"),
   examScore: doLMSGetValue("cmi.suspend_data")
 })
 

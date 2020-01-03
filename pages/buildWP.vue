@@ -101,7 +101,6 @@
         </b-card>
       </div>
       </ul>
-      
     </section>
     <section>
       <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
@@ -176,26 +175,15 @@ export default {
     planQuiz
   },
   methods: {
-    resumePlay(){
+    resumePlay() {
       this.$refs.vp.resumePlay()
     },
-    
+
     accessibleModal(i) {
       this.accessiblePopup = true
       this.$refs.videoplayer.pause()
       this.$bvModal.show(this.modalArray[i])
       // this.$refs.videoplayer.currentTime = this.startTime[i + 1]
-    },
-    showModal(i) {
-
-      if (!this.$refs.videoplayer.paused) {
-        this.$refs.videoplayer.pause()
-        if (this.startTime[i + 1]) {
-          this.$refs.videoplayer.currentTime = this.startTime[i + 1]
-        }
-        this.$bvModal.show(this.modalArray[i])
-      }
-
     }
   }
 }
@@ -205,24 +193,27 @@ export default {
 .planSection {
   position: relative;
 }
+
 .planSectionBar {
   position: absolute;
   background-color: #d1dfe1;
   width: 100vw;
   height: 30px;
   text-align: left;
-  left:-15px;
-  top:38%;
+  left: -15px;
+  top: 38%;
 }
+
 .planSectionBar span {
-  padding:2px 10px 0;
+  padding: 2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;
   background-color: #fff;
   display: inline-block;
-  height:100%;
-  margin-left:15px;
+  height: 100%;
+  margin-left: 15px;
 }
+
 </style>
 <i18n>{
   "en":{
@@ -252,7 +243,7 @@ export default {
   "adjustwptitle":"Activité: Ajuster le plan de travail",
   "scan360Title":"Activité: Appliquez l'apperçu 360",
   "InRealLife":"Dans la vraie vie",
-  "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p><p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter votre intranet pour voir quels mod&egrave;les sont utilis&eacute;s.</p><p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
+  "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>  <p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter votre intranet pour voir quels mod&egrave;les sont utilis&eacute;s.</p>  <p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalPartsWP":"Sauter à l'activité",
   "playSegment":"Faire jouer le segment vidéo",

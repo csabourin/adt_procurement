@@ -51,7 +51,7 @@ export default {
   },
   data() {
     return {
-      debugging: true,
+      debugging: false,
       setVolume: 100,
       oldVolume: 100,
       isMuted: false,

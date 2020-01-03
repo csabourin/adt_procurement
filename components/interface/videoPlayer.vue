@@ -220,12 +220,16 @@ export default {
   "en":{
   "play":"Play",
   "pause":"Pause",
-  "closedcaptionning":"Closed Captions"
+  "closedcaptionning":"Closed Captions",
+  "jumpModalPartsWP":"Jump to activity",
+  "playSegment":"Play video segment"
   },
   "fr":{
   "play":"Jouer",
   "pause":"Pause",
-  "closedcaptionning":"Sous-titrage codé"
+  "closedcaptionning":"Sous-titrage codé",
+  "jumpModalPartsWP":"Sauter à l'activité",
+  "playSegment":"Faire jouer le segment vidéo"
   }
   }
 </i18n>

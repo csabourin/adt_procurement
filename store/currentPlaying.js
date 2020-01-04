@@ -1,5 +1,6 @@
 export const state = () => ({
   // score: {},
+  showCC: window.localStorage.getItem("showCC") || true,
   volume: window.localStorage.getItem("volume") || 100,
   homepage: window.localStorage.getItem("homepage") || 0,
   buildWP: window.localStorage.getItem("buildWP") || 0,
@@ -12,6 +13,10 @@ export const state = () => ({
 })
 
 export const mutations = {
+  setShowCC(state, showCC) {
+    window.localStorage.setItem("showCC", showCC)
+    state.showCC = showCC
+  },
   setVolume(state, volume) {
     window.localStorage.setItem("volume", volume)
     state.volume = volume

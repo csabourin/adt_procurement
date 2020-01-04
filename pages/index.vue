@@ -1,7 +1,7 @@
 <template>
   <div class="mainWindow">
     <p>&nbsp;</p>
-      <videoplayer videoFile="IntroVideoPrototype.mp4" posterFile="video_poster.PNG" toResume="setHomepage" :restartAt="thatPoint" />
+      <videoplayer videoFile="IntroVideoPrototype.mp4" posterFile="video_poster.PNG" ccFile="intro_captions.vtt" toResume="setHomepage" :restartAt="thatPoint" />
        <div role="tablist" class="transcriptionBox">
     <b-card no-body class="mb-1 text-left">
       <b-card-header header-tag="header" class="p-1" role="tab">

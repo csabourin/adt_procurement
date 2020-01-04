@@ -4,14 +4,14 @@
       <b-col>
         <script src="https://kit.fontawesome.com/e5ee1a6fb9.js" crossorigin="anonymous"></script>
         <figure style="clear:both;position:relative;">
-          <video ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update">
+          <video @cuechange="readCaptions" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <!-- <track kind="chapters" :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" default=""> -->
             <track v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
-            <track kind="captions" @cuechange="readCaptions" :src="ccUrl" :srclang="$i18n.locale">
+            <track kind="captions" :src="ccUrl" :srclang="$i18n.locale" label="captions" default="">
           </video>
-          <transition name="expand">
+          <!--  <transition name="expand">
             <div class="CC" v-if="CCactive"><p>{{Captions}}</p></div>
-          </transition>
+          </transition> -->
           <div ref="video-controls" class="controls" data-state="hidden">
             <progress @click="setTime" ref="progress" :value="PlayTime" min="0" max="100">
               <span ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
@@ -21,7 +21,7 @@
             <input type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'">
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
             <p class="mediaTime">{{mediaTime| formatTime}} / {{totalTime | formatTime}}</p>
-            <button @click="showCC" style="float:right" type="button" :title="$t('closedcaptionning')" :aria-label="$t('closedcaptionning')"><i class="fas fa-closed-captioning"></i></button>
+            <button @click="showCC" style="float:right" type="button" :title="$t('closedcaptionning')" :aria-label="$t('closedcaptionning')"><i :class="{'fas fa-closed-captioning':CCactive,'far fa-closed-captioning':!CCactive}"></i></button>
           </div>
         </figure>
       </b-col>
@@ -33,19 +33,20 @@
         <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </a>
       </li>
     </ul>
+    <!-- Used for troublehooting video set debugging to true in data-->
     <div v-if="debugging">
-      <!-- Used for troublehooting video -->
       <span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
       <span>endTime : {{endTime}}</span><br>
       <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
       <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span>
     </div>
+    <!-- Used for troublehooting video -->
   </b-container>
 </template>
 <script type="text/javascript">
 export default {
   props: {
-    restartAt:{type:Number, default:0},
+    restartAt: { type: Number, default: 0 },
     toResume: { type: String, default: 'setHomepage' },
     chapters: { type: Boolean, default: false },
     videoFile: { type: String, default: 'IntroVideoPrototype.mp4' },
@@ -63,8 +64,8 @@ export default {
       isPaused: true,
       ready: false,
       PlayTime: 0,
-      totalTime:0,
-      CCactive: false,
+      totalTime: 0,
+      CCactive: this.$store.state.currentPlaying.showCC,
       videoUrl: require('~/assets/' + this.$i18n.locale + '/' + this.videoFile),
       posterUrl: require('~/assets/' + this.$i18n.locale + '/' + this.posterFile),
       ccUrl: require('~/assets/' + this.$i18n.locale + '/' + this.ccFile),
@@ -78,12 +79,12 @@ export default {
       isPlayingSoon: 0,
       byFrame: 0,
       justSeeked: false,
-      Captions:""
+      Captions: ""
     }
   },
-  filters:{
-    formatTime(time){
-       let minutes = Math.floor(time / 60),
+  filters: {
+    formatTime(time) {
+      let minutes = Math.floor(time / 60),
         seconds = Math.floor(time - minutes * 60),
         minuteValue, secondValue
 
@@ -109,8 +110,11 @@ export default {
       }
     },
     mediaTime() {
-          return this.PlayTime
+      return this.PlayTime
 
+    },
+    trackNumber() {
+      if (this.chapters) { return 1 } else { return 0 }
     }
   },
   watch: {
@@ -140,9 +144,19 @@ export default {
     }
   },
   methods: {
-    readCaptions(e){
+    readCaptions(e) {
       console.log(e)
-      this.Captions=e.target.track.activeCues
+      const tracks = this.$refs.videoplayer.textTracks()
+      this.Captions = tracks.activeCues
+    },
+    showCC() {
+      this.CCactive = !this.CCactive
+      this.$store.commit('currentPlaying/setShowCC', this.CCactive)
+      if (this.CCactive) {
+        this.$refs.videoplayer.textTracks[this.trackNumber].mode = "showing"
+      } else {
+        this.$refs.videoplayer.textTracks[this.trackNumber].mode = "hidden"
+      }
     },
     generate() {
       this.$nextTick(() => {
@@ -156,6 +170,7 @@ export default {
       })
     },
     resumePlay() {
+      this.showCC()
       if (!this.accessiblePopup) {
         const videoPlayer = this.$refs.videoplayer
         setTimeout(function() { videoPlayer.play(); }, 250)
@@ -193,13 +208,13 @@ export default {
       this.currentFrame = this.startTime.findIndex(element => element === isNow)
       this.$store.commit('currentPlaying/' + this.toResume, this.currentFrame)
       this.$nextTick(function() {
-        this.isPaused=false
+        this.isPaused = false
         setTimeout(function() { videoPlayer.play() }, 250)
         this.justSeeked = false
       })
     },
     resumePosition() {
-      this.totalTime=this.$refs.videoplayer.duration
+      this.totalTime = this.$refs.videoplayer.duration
       const savedPosition = this.startTime[this.restartAt]
       if (savedPosition) {
         this.$refs.videoplayer.currentTime = savedPosition
@@ -219,16 +234,13 @@ export default {
         this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
         if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
         this.isPlayingSoon = v.currentTime
-      } 
+      }
     },
     isItPlaying(i) {
       const isNow = this.isPlayingNow
       if (i === this.endTime.findIndex(element => element > isNow)) {
         return 'isPlaying'
       } else { return '' }
-    },
-    showCC() {
-      this.CCactive = !this.CCactive
     },
     stopVideo() {
       const video = this.$refs.videoplayer
@@ -278,9 +290,9 @@ video {
   cursor: pointer;
 }
 
-.mediaTime{
-  float:left;
-  position:relative;
+.mediaTime {
+  float: left;
+  position: relative;
   display: inline-block;
   padding: .5em;
 

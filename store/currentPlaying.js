@@ -1,6 +1,6 @@
 export const state = () => ({
   // score: {},
-  showCC: window.localStorage.getItem("showCC") || true,
+  showCC: window.localStorage.getItem("showCC") || false,
   volume: window.localStorage.getItem("volume") || 100,
   homepage: window.localStorage.getItem("homepage") || 0,
   buildWP: window.localStorage.getItem("buildWP") || 0,

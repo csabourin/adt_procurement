@@ -204,8 +204,8 @@ export default {
       }
     },
     update(e) {
-      let currentTime = this.$refs.videoplayer.currentTime
-      let duration = this.$refs.videoplayer.duration
+      let currentTime = e.target.currentTime
+      let duration = e.target.duration
       this.PlayTime = (currentTime / duration) * 100
       if (!this.justSeeked) {
         const v = e.target
@@ -217,7 +217,7 @@ export default {
         this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
         if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
         this.isPlayingSoon = v.currentTime
-      } else { window.alert("seeking") }
+      } 
     },
     isItPlaying(i) {
       const isNow = this.isPlayingNow

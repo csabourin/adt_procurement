@@ -7,7 +7,7 @@
           <video ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update">
             <!-- <track kind="chapters" :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" default=""> -->
             <track v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
-            <track kind="metadata" @cuechange="readCaptions" :src="ccUrl" :srclang="$i18n.locale">
+            <track kind="captions" @cuechange="readCaptions" :src="ccUrl" :srclang="$i18n.locale">
           </video>
           <transition name="expand">
             <div class="CC" v-if="CCactive"><p>{{Captions}}</p></div>
@@ -57,8 +57,8 @@ export default {
   data() {
     return {
       debugging: true,
-      setVolume: 100,
-      oldVolume: 100,
+      setVolume: this.$store.state.currentPlaying.volume,
+      oldVolume: this.$store.state.currentPlaying.volume,
       isMuted: false,
       isPaused: true,
       ready: false,
@@ -136,6 +136,7 @@ export default {
         video.volume = (volume / 100)
         this.oldVolume = this.setVolume
       }
+      this.$store.commit('currentPlaying/setVolume', volume)
     }
   },
   methods: {
@@ -192,6 +193,7 @@ export default {
       this.currentFrame = this.startTime.findIndex(element => element === isNow)
       this.$store.commit('currentPlaying/' + this.toResume, this.currentFrame)
       this.$nextTick(function() {
+        this.isPaused=false
         setTimeout(function() { videoPlayer.play() }, 250)
         this.justSeeked = false
       })

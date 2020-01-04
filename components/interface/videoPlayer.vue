@@ -200,7 +200,7 @@ export default {
     },
     resumePosition() {
       this.totalTime=this.$refs.videoplayer.duration
-      const savedPosition = this.thatPoint
+      const savedPosition = this.startTime[this.restartAt]
       if (savedPosition) {
         this.$refs.videoplayer.currentTime = savedPosition
       }

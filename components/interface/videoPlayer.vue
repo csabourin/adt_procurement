@@ -7,11 +7,13 @@
           <video @cuechange="readCaptions" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <!-- <track kind="chapters" :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" default=""> -->
             <track v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
-            <track kind="captions" :src="ccUrl" :srclang="$i18n.locale" label="captions" default="">
+            <track kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions">
           </video>
-          <!--  <transition name="expand">
-            <div class="CC" v-if="CCactive"><p>{{Captions}}</p></div>
-          </transition> -->
+          <transition name="expand">
+            <div class="CC" v-if="CCactive">
+              <p>{{Captions}}</p>
+            </div>
+          </transition>
           <div ref="video-controls" class="controls" data-state="hidden">
             <progress @click="setTime" ref="progress" :value="PlayTime" min="0" max="100">
               <span ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
@@ -159,7 +161,9 @@ export default {
       }
     },
     generate() {
+      this.showCC()
       this.$nextTick(() => {
+        this.showCC()
         const c = this.$refs.videoplayer.textTracks[0].cues
         for (let i = 0; i < c.length; i++) {
           this.navBarTracks.push(c[i].text)
@@ -170,7 +174,6 @@ export default {
       })
     },
     resumePlay() {
-      this.showCC()
       if (!this.accessiblePopup) {
         const videoPlayer = this.$refs.videoplayer
         setTimeout(function() { videoPlayer.play(); }, 250)
@@ -226,6 +229,11 @@ export default {
       this.PlayTime = (currentTime / duration) * 100
       if (!this.justSeeked) {
         const v = e.target
+        if (v.textTracks[this.trackNumber].activeCues) {
+          const tt = v.textTracks[this.trackNumber]
+          const cues = tt.cues
+          this.Captions = tt.activeCues[0].text
+        }
         this.isPlayingNow = v.currentTime
         const isNow = this.isPlayingNow
         this.hasPlayed = v.played.length

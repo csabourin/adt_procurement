@@ -1,7 +1,7 @@
 <template>
   <div class="mainWindow">
     <p>&nbsp;</p>
-      <videoPlayer videoFile="IntroVideoPrototype.mp4" posterFile="video_poster.PNG" />
+      <videoplayer videoFile="IntroVideoPrototype.mp4" posterFile="video_poster.PNG" toResume="setHomepage" :restartAt="thatPoint" />
        <div role="tablist" class="transcriptionBox">
     <b-card no-body class="mb-1 text-left">
       <b-card-header header-tag="header" class="p-1" role="tab">
@@ -49,7 +49,7 @@ import spendbgBarUrl from "~/components/spend_phase_bar.svg"
 import reportbgBarUrl from "~/components/report_phase_bar.svg"
 import microlearning from "~/components/microlearning"
 import hamburger from "~/components/hamburger"
-import videoPlayer from "~/components/interface/videoPlayer"
+import videoplayer from "~/components/interface/videoPlayer"
 export default {
   data() {
     return {
@@ -61,9 +61,12 @@ export default {
   components: {
     microlearning,
     hamburger,
-    videoPlayer
+    videoplayer
   },
   computed:{
+    thatPoint(){
+      return parseInt(this.$store.state.currentPlaying.homepage)
+    },
     planCompleted(){
       return this.$store.getters['plan/getScore']
     },

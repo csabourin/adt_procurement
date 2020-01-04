@@ -4,7 +4,7 @@
       {{ $t('BuildWorkPlan')}}
     </h2>
     <section>
-      <videoPlayer ref="vp" videoFile="buildworkplan.mp4" chapters chapterFile="chapters.vtt" posterFile="buildwp.jpg" toResume="setBuildWP" :modalArray="modalArray" />
+      <videoPlayer ref="vp" videoFile="buildworkplan.mp4" chapters chapterFile="chapters.vtt" posterFile="buildwp.jpg" :restartAt="thatPoint" toResume="setBuildWP" :modalArray="modalArray" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
@@ -177,6 +177,11 @@ export default {
   methods: {
     resumePlay() {
       this.$refs.vp.resumePlay()
+    }
+  },
+  computed:{
+    thatPoint(){
+      return parseInt(this.$store.state.currentPlaying.buildWP)
     }
   }
 }

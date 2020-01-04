@@ -1,5 +1,7 @@
 export const state = () => ({
   // score: {},
+  volume: window.localStorage.getItem("volume") || 100,
+  homepage: window.localStorage.getItem("homepage") || 0,
   buildWP: window.localStorage.getItem("buildWP") || 0,
   createBudget: window.localStorage.getItem("createBudget") || 0,
   spendPart1: window.localStorage.getItem("spendPart1") || 0,
@@ -10,6 +12,14 @@ export const state = () => ({
 })
 
 export const mutations = {
+  setVolume(state, volume) {
+    window.localStorage.setItem("volume", volume)
+    state.volume = volume
+  },
+  setHomepage(state, playing) {
+    window.localStorage.setItem("homepage", playing)
+    state.homepage = playing
+  },
   setBuildWP(state, playing) {
     window.localStorage.setItem("buildWP", playing)
     state.buildWP = playing

@@ -6,10 +6,11 @@
         <figure style="clear:both;position:relative;">
           <video ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update">
             <!-- <track kind="chapters" :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" default=""> -->
-            <track kind="chapters" :src="chapterUrl" @load="generate" default="">
+            <track v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
+            <track kind="metadata" @cuechange="readCaptions" :src="ccUrl" :srclang="$i18n.locale">
           </video>
           <transition name="expand">
-            <div class="CC" v-if="CCactive"></div>
+            <div class="CC" v-if="CCactive"><p>{{Captions}}</p></div>
           </transition>
           <div ref="video-controls" class="controls" data-state="hidden">
             <progress @click="setTime" ref="progress" :value="PlayTime" min="0" max="100">
@@ -19,6 +20,7 @@
             <button ref="mute" @click="isMuted=!isMuted" type="button" data-state="mute" :title="'Volume: '+setVolume+'%'"><i :class="{'fas fa-volume-mute':isMuted,'fas fa-volume-up':!isMuted}" /></button>
             <input type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'">
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
+            <p class="mediaTime">{{mediaTime| formatTime}} / {{totalTime | formatTime}}</p>
             <button @click="showCC" style="float:right" type="button" :title="$t('closedcaptionning')" :aria-label="$t('closedcaptionning')"><i class="fas fa-closed-captioning"></i></button>
           </div>
         </figure>
@@ -38,29 +40,30 @@
       <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
       <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span>
     </div>
-    
   </b-container>
 </template>
 <script type="text/javascript">
 export default {
   props: {
-    toResume:{type:String,default:'setBuildWP'},
+    restartAt:{type:Number, default:0},
+    toResume: { type: String, default: 'setHomepage' },
     chapters: { type: Boolean, default: false },
     videoFile: { type: String, default: 'IntroVideoPrototype.mp4' },
     posterFile: { type: String, default: 'video_poster.PNG' },
-    chapterFile: { type: String, default: 'chapters.vtt' },
+    chapterFile: { type: String, default: '' },
     ccFile: { type: String, default: 'chapters.vtt' },
     modalArray: { type: Array, default () { return [] } }
   },
   data() {
     return {
-      debugging: false,
+      debugging: true,
       setVolume: 100,
       oldVolume: 100,
       isMuted: false,
       isPaused: true,
       ready: false,
       PlayTime: 0,
+      totalTime:0,
       CCactive: false,
       videoUrl: require('~/assets/' + this.$i18n.locale + '/' + this.videoFile),
       posterUrl: require('~/assets/' + this.$i18n.locale + '/' + this.posterFile),
@@ -74,7 +77,29 @@ export default {
       isPlayingNow: 0,
       isPlayingSoon: 0,
       byFrame: 0,
-      justSeeked: false
+      justSeeked: false,
+      Captions:""
+    }
+  },
+  filters:{
+    formatTime(time){
+       let minutes = Math.floor(time / 60),
+        seconds = Math.floor(time - minutes * 60),
+        minuteValue, secondValue
+
+      if (minutes < 10) {
+        minuteValue = "0" + minutes;
+      } else {
+        minuteValue = minutes;
+      }
+
+      if (seconds < 10) {
+        secondValue = "0" + seconds;
+      } else {
+        secondValue = seconds;
+      }
+
+      return minuteValue + ":" + secondValue
     }
   },
   computed: {
@@ -82,6 +107,10 @@ export default {
       if (this.chapterFile) {
         return require('~/assets/' + this.$i18n.locale + '/' + this.chapterFile)
       }
+    },
+    mediaTime() {
+          return this.PlayTime
+
     }
   },
   watch: {
@@ -110,6 +139,10 @@ export default {
     }
   },
   methods: {
+    readCaptions(e){
+      console.log(e)
+      this.Captions=e.target.track.activeCues
+    },
     generate() {
       this.$nextTick(() => {
         const c = this.$refs.videoplayer.textTracks[0].cues
@@ -157,14 +190,15 @@ export default {
       this.isPlayingNow = videoPlayer.currentTime
       const isNow = this.isPlayingNow
       this.currentFrame = this.startTime.findIndex(element => element === isNow)
-      this.$store.commit('currentPlaying/'+this.toResume, this.currentFrame)
+      this.$store.commit('currentPlaying/' + this.toResume, this.currentFrame)
       this.$nextTick(function() {
         setTimeout(function() { videoPlayer.play() }, 250)
         this.justSeeked = false
       })
     },
     resumePosition() {
-      const savedPosition = this.startTime[this.$store.state.currentPlaying.buildWP]
+      this.totalTime=this.$refs.videoplayer.duration
+      const savedPosition = this.thatPoint
       if (savedPosition) {
         this.$refs.videoplayer.currentTime = savedPosition
       }
@@ -179,7 +213,7 @@ export default {
         const isNow = this.isPlayingNow
         this.hasPlayed = v.played.length
         this.currentFrame = this.endTime.findIndex(element => element > isNow)
-        this.$store.commit('currentPlaying/'+this.toResume, this.currentFrame)
+        this.$store.commit('currentPlaying/' + this.toResume, this.currentFrame)
         this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
         if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
         this.isPlayingSoon = v.currentTime
@@ -216,7 +250,6 @@ export default {
     }
   }
 }
-
 </script>
 <i18n>
   {
@@ -243,10 +276,12 @@ video {
   cursor: pointer;
 }
 
-#mainPlayer {
-  width: 60vw;
-  margin: auto;
-  display: block;
+.mediaTime{
+  float:left;
+  position:relative;
+  display: inline-block;
+  padding: .5em;
+
 }
 
 #bar {
@@ -538,5 +573,4 @@ button:active {
 video {
   margin-bottom: -5px;
 }
-
 </style>

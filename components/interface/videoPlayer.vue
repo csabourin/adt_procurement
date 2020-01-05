@@ -4,7 +4,8 @@
       <b-col>
         <script src="https://kit.fontawesome.com/e5ee1a6fb9.js" crossorigin="anonymous"></script>
         <figure style="clear:both;position:relative;">
-          <video @cuechange="readCaptions" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
+          <Spinner v-if="!canPlay"/>
+          <video @waiting="loading" @cuechange="readCaptions" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
             <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions" @cuechange="readCaptions">
           </video>
@@ -47,7 +48,11 @@
   </b-container>
 </template>
 <script type="text/javascript">
+  import Spinner from "~/components/icons/Spinner"
 export default {
+  components:{
+    Spinner
+  },
   props: {
     restartAt: { type: Number, default: 0 },
     toResume: { type: String, default: 'setHomepage' },
@@ -66,6 +71,7 @@ export default {
       isMuted: false,
       isPaused: true,
       ready: false,
+      canPlay:false,
       PlayTime: 0,
       totalTime: 0,
       CCactive: false,
@@ -151,6 +157,10 @@ export default {
     }
   },
   methods: {
+    loading(){
+      console.log("Waiting")
+      this.canPlay=false
+    },
     readCaptions(e) {
       const v = e.target.parentNode
       const tt = v.textTracks[this.trackNumber]
@@ -222,6 +232,7 @@ export default {
       })
     },
     resumePosition() {
+      this.canPlay=true
       this.totalTime = this.$refs.videoplayer.duration
       const savedPosition = this.startTime[this.restartAt]
       if (savedPosition) {
@@ -231,6 +242,7 @@ export default {
     update(e) {
       let currentTime = e.target.currentTime
       let duration = e.target.duration
+      this.canPlay=true
       this.PlayTime = (currentTime / duration) * 100
       if (!this.justSeeked) {
         const v = e.target

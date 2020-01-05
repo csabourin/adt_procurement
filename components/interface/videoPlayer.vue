@@ -158,7 +158,6 @@ export default {
   },
   methods: {
     loading(){
-      console.log("Waiting")
       this.canPlay=false
     },
     readCaptions(e) {

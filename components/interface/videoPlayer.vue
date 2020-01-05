@@ -402,25 +402,10 @@ button.accessibilityButton {
   border-radius: 5px;
 }
 
-.expand-enter-active,
-.expand-leave-active {
-  transition: all 1s ease;
-  padding: .5em;
-  overflow: hidden;
-}
-
-/* .expand-enter defines the starting state for entering */
-/* .expand-leave defines the ending state for leaving */
-.expand-enter,
-.expand-leave-to {
-  height: 0;
-  padding: 0 10px;
-  opacity: 0;
-}
-
 .CC {
   height: 4em;
   padding: .5em;
+  padding-top: 1.5em;
   background-color: #000;
   color: #FFF;
   font-family: sans-serif;
@@ -428,6 +413,23 @@ button.accessibilityButton {
   width: 100%;
 
 }
+.expand-enter-active,
+.expand-leave-active {
+  transition: all 1s ease;
+  padding: .5em;
+  overflow: hidden;
+  max-height: 15em;
+}
+
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.expand-enter,
+.expand-leave-to {
+  height: 0px;
+  padding: 0 10px;
+  opacity: 0;
+}
+
 
 input[type=range] {
   -webkit-appearance: none;

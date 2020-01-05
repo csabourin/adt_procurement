@@ -5,7 +5,7 @@
         <script src="https://kit.fontawesome.com/e5ee1a6fb9.js" crossorigin="anonymous"></script>
         <figure style="clear:both;position:relative;">
           <Spinner v-if="!canPlay"/>
-          <video @waiting="loading" @cuechange="readCaptions" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
+          <video @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
             <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions" @cuechange="readCaptions">
           </video>

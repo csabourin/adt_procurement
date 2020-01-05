@@ -17,11 +17,13 @@
             <progress @click="setTime" ref="progress" :value="PlayTime" min="0" max="100">
               <span ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
-            <button ref="playpause" @click="setPlaying" type="button" data-state="play" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')"><i :class="{'fas fa-play':isPaused,'fas fa-pause':!isPaused}"></i></button>
+            <button ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')"><i :class="{'fas fa-play':isPaused,'fas fa-pause':!isPaused}"></i></button>
+            <button ref="backward" @click="goBackwards" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="$t('backward')"><i class="fas fa-backward"></i></button>
+            <button ref="forward" @click="goForward" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="$t('forward')"><i class="fas fa-forward"></i></button>
             <button ref="mute" @click="isMuted=!isMuted" type="button" data-state="mute" :title="'Volume: '+setVolume+'%'"><i :class="{'fas fa-volume-mute':isMuted,'fas fa-volume-up':!isMuted}" /></button>
             <input type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'">
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
-            <p class="mediaTime">{{mediaTime| formatTime}} / {{totalTime | formatTime}}</p>
+            <p class="mediaTime">{{isPlayingNow | formatTime}} / {{totalTime | formatTime}}</p>
             <button :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')"><i :class="{'fas fa-closed-captioning':CCactive,'far fa-closed-captioning':!CCactive}"></i></button>
           </div>
         </figure>
@@ -30,7 +32,7 @@
     <ul v-if="chapters" class="bar" ref="linkBar">
       <li v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
         <p>{{ item }}</p><br>
-        <a href="#mainPlayer" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
+        <a href=javascript:" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
         <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </a>
       </li>
     </ul>
@@ -53,7 +55,7 @@ export default {
     videoFile: { type: String, default: 'IntroVideoPrototype.mp4' },
     posterFile: { type: String, default: 'video_poster.PNG' },
     chapterFile: { type: String, default: '' },
-    ccFile: { type: String, default: 'chapters.vtt' },
+    ccFile: { type: String, default: '' },
     modalArray: { type: Array, default () { return [] } }
   },
   data() {
@@ -115,7 +117,7 @@ export default {
       }
     },
     mediaTime() {
-      return this.PlayTime
+      return this.PlayTime * 2
 
     },
     trackNumber() {
@@ -152,7 +154,8 @@ export default {
     readCaptions(e) {
       const v = e.target.parentNode
       const tt = v.textTracks[this.trackNumber]
-      if (tt.activeCues) this.Captions = tt.activeCues[0].text
+      const cuesThere = tt.activeCues
+      if (cuesThere.length > 0) { this.Captions = tt.activeCues[0].text } else { this.Captions = "" }
 
     },
     showCC() {
@@ -260,6 +263,18 @@ export default {
 
     },
     isReady() { this.ready = true },
+    goBackwards() {
+      const video = this.$refs.videoplayer
+      if (this.isPlayingNow) {
+        if (this.isPlayingNow - 20 >= 0) { video.currentTime -= 20 } else { video.currentTime = 0 }
+      }
+    },
+    goForward() {
+      const video = this.$refs.videoplayer
+      if (this.isPlayingNow) {
+        if (this.isPlayingNow + 20 < this.totalTime) { video.currentTime += 20 } else { video.currentTime = this.totalTime - 2 }
+      }
+    },
     setPlaying() {
       this.isPaused = !this.isPaused
       if (!this.isPaused) {
@@ -276,6 +291,8 @@ export default {
   "en":{
   "play":"Play",
   "pause":"Pause",
+  "forward":"Forward 10 secs.",
+  "backward":"Rewind 10 secs.",
   "show":"Show ",
   "hide":"Hide ",
   "closedcaptionning":"Closed Captions",
@@ -285,6 +302,8 @@ export default {
   "fr":{
   "play":"Jouer",
   "pause":"Pause",
+  "forward":"Avancer 10 secs.",
+  "backward":"Reculer 10 secs.",
   "show":"Afficher le ",
   "hide":"Cacher le ",
   "closedcaptionning":"sous-titrage codé",
@@ -419,7 +438,7 @@ button.accessibilityButton {
 .expand-enter-active,
 .expand-leave-active {
   transition: all 1s ease;
-  padding: .5em;
+  padding: 0 10px;
   overflow: hidden;
   max-height: 15em;
 }

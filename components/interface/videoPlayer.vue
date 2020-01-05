@@ -6,8 +6,8 @@
         <figure style="clear:both;position:relative;">
           <video @cuechange="readCaptions" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <!-- <track kind="chapters" :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" default=""> -->
-            <track v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
-            <track kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions">
+            <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
+            <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions">
           </video>
           <transition name="expand">
             <div class="CC" v-if="CCactive">
@@ -161,9 +161,7 @@ export default {
       }
     },
     generate() {
-      this.showCC()
       this.$nextTick(() => {
-        this.showCC()
         const c = this.$refs.videoplayer.textTracks[0].cues
         for (let i = 0; i < c.length; i++) {
           this.navBarTracks.push(c[i].text)
@@ -316,7 +314,7 @@ video {
   justify-content: flex-start
 }
 
-#.bar>li {
+.bar>li {
   list-style-type: none;
 }
 

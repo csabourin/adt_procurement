@@ -138,14 +138,6 @@ a{
   }
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: all .5s ease;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-  transform: translateX(-100%);
-}
-
 
 .row.navBar {
   background-color: #fff;
@@ -473,5 +465,14 @@ Assumed this will be dealt with in the contentMap.vue file from now on. Commente
 borderscale {  50% {
  box-shadow: 0 0 0 2px #4d4d4d;
 }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .5s ease;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateX(-100%);
+  width:0;
 }
 </style>

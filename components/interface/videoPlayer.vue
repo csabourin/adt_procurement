@@ -22,7 +22,7 @@
             <input type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'">
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
             <p class="mediaTime">{{mediaTime| formatTime}} / {{totalTime | formatTime}}</p>
-            <button :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="$t('closedcaptionning')" :aria-label="$t('closedcaptionning')"><i :class="{'fas fa-closed-captioning':CCactive,'far fa-closed-captioning':!CCactive}"></i></button>
+            <button :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')"><i :class="{'fas fa-closed-captioning':CCactive,'far fa-closed-captioning':!CCactive}"></i></button>
           </div>
         </figure>
       </b-col>
@@ -276,6 +276,8 @@ export default {
   "en":{
   "play":"Play",
   "pause":"Pause",
+  "show":"Show ",
+  "hide":"Hide ",
   "closedcaptionning":"Closed Captions",
   "jumpModalPartsWP":"Jump to activity",
   "playSegment":"Play video segment"
@@ -283,7 +285,9 @@ export default {
   "fr":{
   "play":"Jouer",
   "pause":"Pause",
-  "closedcaptionning":"Sous-titrage codé",
+  "show":"Afficher le ",
+  "hide":"Cacher le ",
+  "closedcaptionning":"sous-titrage codé",
   "jumpModalPartsWP":"Sauter à l'activité",
   "playSegment":"Faire jouer le segment vidéo"
   }

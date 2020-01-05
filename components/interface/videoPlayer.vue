@@ -5,13 +5,12 @@
         <script src="https://kit.fontawesome.com/e5ee1a6fb9.js" crossorigin="anonymous"></script>
         <figure style="clear:both;position:relative;">
           <video @cuechange="readCaptions" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
-            <!-- <track kind="chapters" :src="require('~/assets/'+ $i18n.locale +'/chapters.vtt')" default=""> -->
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
-            <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions">
+            <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions" @cuechange="readCaptions">
           </video>
           <transition name="expand">
             <div class="CC" v-if="CCactive">
-              <p>{{Captions}}</p>
+              <p aria-live="polite">{{Captions}}</p>
             </div>
           </transition>
           <div ref="video-controls" class="controls" data-state="hidden">
@@ -23,7 +22,7 @@
             <input type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'">
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
             <p class="mediaTime">{{mediaTime| formatTime}} / {{totalTime | formatTime}}</p>
-            <button @click="showCC" style="float:right" type="button" :title="$t('closedcaptionning')" :aria-label="$t('closedcaptionning')"><i :class="{'fas fa-closed-captioning':CCactive,'far fa-closed-captioning':!CCactive}"></i></button>
+            <button :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="$t('closedcaptionning')" :aria-label="$t('closedcaptionning')"><i :class="{'fas fa-closed-captioning':CCactive,'far fa-closed-captioning':!CCactive}"></i></button>
           </div>
         </figure>
       </b-col>
@@ -67,10 +66,9 @@ export default {
       ready: false,
       PlayTime: 0,
       totalTime: 0,
-      CCactive: this.$store.state.currentPlaying.showCC,
+      CCactive: false,
       videoUrl: require('~/assets/' + this.$i18n.locale + '/' + this.videoFile),
       posterUrl: require('~/assets/' + this.$i18n.locale + '/' + this.posterFile),
-      ccUrl: require('~/assets/' + this.$i18n.locale + '/' + this.ccFile),
       currentFrame: 0,
       accessiblePopup: false,
       startTime: [],
@@ -106,6 +104,11 @@ export default {
     }
   },
   computed: {
+    ccUrl() {
+      if (this.ccFile) {
+        return require('~/assets/' + this.$i18n.locale + '/' + this.ccFile)
+      }
+    },
     chapterUrl() {
       if (this.chapterFile) {
         return require('~/assets/' + this.$i18n.locale + '/' + this.chapterFile)
@@ -147,9 +150,10 @@ export default {
   },
   methods: {
     readCaptions(e) {
-      console.log(e)
-      const tracks = this.$refs.videoplayer.textTracks()
-      this.Captions = tracks.activeCues
+      const v = e.target.parentNode
+      const tt = v.textTracks[this.trackNumber]
+      if (tt.activeCues) this.Captions = tt.activeCues[0].text
+
     },
     showCC() {
       this.CCactive = !this.CCactive
@@ -227,11 +231,7 @@ export default {
       this.PlayTime = (currentTime / duration) * 100
       if (!this.justSeeked) {
         const v = e.target
-        if (v.textTracks[this.trackNumber].activeCues) {
-          const tt = v.textTracks[this.trackNumber]
-          const cues = tt.cues
-          this.Captions = tt.activeCues[0].text
-        }
+        v.volume = this.setVolume / 100
         this.isPlayingNow = v.currentTime
         const isNow = this.isPlayingNow
         this.hasPlayed = v.played.length
@@ -411,6 +411,7 @@ button.accessibilityButton {
   width: 100%;
 
 }
+
 .expand-enter-active,
 .expand-leave-active {
   transition: all 1s ease;

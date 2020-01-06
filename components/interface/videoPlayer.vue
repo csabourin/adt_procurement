@@ -236,6 +236,7 @@ export default {
     resumePosition() {
       this.canPlay = true
       this.totalTime = this.$refs.videoplayer.duration
+      this.$refs.videoplayer.volume = this.setVolume / 100
       const savedPosition = this.startTime[this.restartAt]
       if (savedPosition) {
         this.$refs.videoplayer.currentTime = savedPosition

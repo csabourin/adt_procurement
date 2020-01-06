@@ -2,7 +2,6 @@
   <b-container>
     <b-row>
       <b-col>
-        <script src="https://kit.fontawesome.com/e5ee1a6fb9.js" crossorigin="anonymous"></script>
         <figure style="clear:both;position:relative;">
           <Spinner v-if="!canPlay" />
           <video @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadedmetadata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
@@ -18,14 +17,24 @@
             <progress @click="setTime" ref="progress" :title="Math.ceil(PlayTime)+'%'" :value="PlayTime" min="0" max="100">
               <span ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
-            <button ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')"><i :class="{'fas fa-play':isPaused,'fas fa-pause':!isPaused}"></i></button>
-            <button ref="backward" @click="goBackwards" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="$t('backward')"><i class="fas fa-backward"></i></button>
-            <button ref="forward" @click="goForward" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="$t('forward')"><i class="fas fa-forward"></i></button>
-            <button ref="mute" @click="isMuted=!isMuted" type="button" data-state="mute" :title="'Volume: '+setVolume+'%'"><i :class="{'fas fa-volume-mute':isMuted,'fas fa-volume-up':!isMuted}" /></button>
+            <button ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
+              <font-awesome-icon :icon="isPaused?'pause':'play'" />
+            </button>
+            <button ref="backward" @click="goBackwards" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="$t('backward')">
+              <font-awesome-icon icon="backward" />
+            </button>
+            <button ref="forward" @click="goForward" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="$t('forward')">
+              <font-awesome-icon icon="forward" />
+            </button>
+            <button ref="mute" @click="isMuted=!isMuted" type="button" data-state="mute" :title="'Volume: '+setVolume+'%'">
+              <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" />
+            </button>
             <input type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'">
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
             <p class="mediaTime">{{isPlayingNow | formatTime}} / {{totalTime | formatTime}}</p>
-            <button :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')"><i :class="{'fas fa-closed-captioning':CCactive,'far fa-closed-captioning':!CCactive}"></i></button>
+            <button :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')">
+              <font-awesome-icon :icon="[solidOrRegular,'closed-captioning']" />
+            </button>
           </div>
         </figure>
       </b-col>
@@ -112,6 +121,9 @@ export default {
     }
   },
   computed: {
+    solidOrRegular(){
+      return this.CCactive?'fas':'far'
+    },
     ccUrl() {
       if (this.ccFile) {
         return require('~/assets/' + this.$i18n.locale + '/' + this.ccFile)

@@ -63,9 +63,6 @@ export default {
     }
   },
   methods: {
-    goBack() {
-      this.$router.go(-1)
-    },
     ShowMenu() {
       this.MenuShowing = !this.MenuShowing
     }
@@ -207,33 +204,6 @@ img {
   right: 0;
 }
 
-/*.bottomNav.planSection:before {
-  content: "PLAN";
-  background-color: #d1dfe1;
-}*/
-
-/*.bottomNav.spendSection:before {
-  content: "SPEND";
-  background-color: #cac1ca;
-}*/
-
-/*.bottomNav.reportSection:before {
-  content: "REPORT";
-  background-color: #d6c5c1;
-}*/
-
-/*[lang="fr"] .bottomNav.planSection:before {
-  content: "PLANIFICATION";
-}*/
-
-/*[lang="fr"] .bottomNav.spendSection:before {
-  content: "DÉPENSES";
-}*/
-
-/*[lang="fr"] .bottomNav.reportSection:before {
-  content: "RAPPORTS";
-}*/
-
 .v-inv{    clip: rect(1px,1px,1px,1px);
     height: 1px;
     margin: 0;
@@ -354,15 +324,6 @@ page-enter-active,
   vertical-align: center;
 
 }
-/*
-
-Assumed this will be dealt with in the contentMap.vue file from now on. Commented out.
--TD
-
-.contentMap .nuxt-link-exact-active {
-  border-bottom: 2px solid #b54142;
-}
-*/
 
 .pure-checkbox input[type="checkbox"], .pure-radiobutton input[type="checkbox"], .pure-checkbox input[type="radio"], .pure-radiobutton input[type="radio"] {
   border: 0;

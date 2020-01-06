@@ -181,7 +181,7 @@ export default {
   },
   computed:{
     thatPoint(){
-      return parseInt(this.$store.state.currentPlaying.buildWP)
+      return this.$store.state.currentPlaying.buildWP
     }
   }
 }

@@ -65,7 +65,7 @@ export default {
   },
   data() {
     return {
-      debugging: true,
+      debugging: false,
       setVolume: this.$store.state.currentPlaying.volume,
       oldVolume: this.$store.state.currentPlaying.volume,
       isMuted: false,

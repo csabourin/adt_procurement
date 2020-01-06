@@ -15,7 +15,7 @@
             </figcaption>
           </transition>
           <div ref="video-controls" class="controls" data-state="hidden">
-            <progress @click="setTime" ref="progress" :value="PlayTime" min="0" max="100">
+            <progress @click="setTime" ref="progress" :title="Math.ceil(PlayTime)+'%'" :value="PlayTime" min="0" max="100">
               <span ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
             <button ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')"><i :class="{'fas fa-play':isPaused,'fas fa-pause':!isPaused}"></i></button>
@@ -552,7 +552,7 @@ progress {
   background: #fff;
   background-clip: padding-box;
   border: 2px solid #4d4d4d;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);*/
   border-radius: 0px 0px 4px 4px;
   color: #587C84;
   display: block;
@@ -594,6 +594,59 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abd1d8', end
   height: 22px
 }
 
+/* Moving on to the styling, we'll start with the main progress bar first and then the value part of it. After that, we'll do some experiments :D */
+body {
+  background: #322c35;
+}
+
+progress {
+  width: 100%;
+  height: 14px;
+  margin: 0 auto;
+  display: block;
+  /* Important Thing */
+  -webkit-appearance: none;
+  border: none;
+}
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+  background: black;
+  border-radius: 50px;
+  padding: 2px;
+  /*box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);*/
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+  border-radius: 50px;
+  /*box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);*/
+  background:
+    -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, #33484c, #587c84);
+  
+  /* Looks great, now animating it */
+  background-size: 25px 14px, 100% 100%, 100% 100%;
+  -webkit-animation: move 5s linear 0 infinite;
+}
+
+/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+
+@-webkit-keyframes move {
+  0% {background-position: 0px 0px, 0 0, 0 0}
+  100% {background-position: -100px 0px, 0 0, 0 0}
+}
+
+/* Prefix-free was creating issues with the animation */
+
+
+
+
+
+
+
+
 
 .player {
   width: 480px;
@@ -617,7 +670,7 @@ button {
   border: 0;
   margin-right: 2px;
   height: 100%;
-  width: 50px;
+  width: 40px;
   cursor: pointer;
 }
 

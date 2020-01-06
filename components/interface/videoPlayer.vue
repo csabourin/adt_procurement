@@ -552,11 +552,8 @@ progress {
   background: #fff;
   background-clip: padding-box;
   border: 2px solid #4d4d4d;
-  /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);*/
-  border-radius: 0px 0px 4px 4px;
   color: #587C84;
   display: block;
-  height: 30px;
   left: 0;
   padding: 2px;
   position: relative;
@@ -586,7 +583,6 @@ background: -moz-linear-gradient(top,  #abd1d8 0%, #587c84 46%, #587c84 50%, #58
 background: -webkit-linear-gradient(top,  #abd1d8 0%,#587c84 46%,#587c84 50%,#587c84 53%,#33484c 77%,#383838 87%,#1b1b1b 100%);
 background: linear-gradient(to bottom,  #abd1d8 0%,#587c84 46%,#587c84 50%,#587c84 53%,#33484c 77%,#383838 87%,#1b1b1b 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abd1d8', endColorstr='#1b1b1b',GradientType=0 );
-
   border-radius: 1px
 }
 

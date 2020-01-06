@@ -3,9 +3,7 @@
     <h1 class="pageTitle" v-html="$t('ExerciseFinancialAuthority')" />
     
     <section>
-      <video ref="videoplayer" id="mainPlayer" :poster="require('~/assets/'+ $i18n.locale +'/S32Part1Poster.jpg')" :src="require('~/assets/'+ $i18n.locale +'/spendPart2.mp4')" controls playsinline @loadeddata="resumePosition" @timeupdate="update" @canplaythrough="isReady">
-        <track :src="require('~/assets/'+ $i18n.locale +'/SpendPart2.vtt')" kind="chapters" default="" @load="generate">
-      </video>
+      <videoPlayer ref="vp" videoFile="spendPart2.mp4" chapters chapterFile="SpendPart2.vtt" posterFile="S32Part1Poster.jpg" :restartAt="parseInt(thatPoint)" toResume="setSpendPart1" :modalArray="modalArray" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
@@ -140,17 +138,6 @@
           </b-collapse>
         </b-card>
       </div>
-      <ul id="bar" ref="linkBar">
-        <li  v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
-          <p>{{ item }}</p><br>
-          <a href="#mainPlayer" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"  :alt="$t('playIcon')"  width="48" height="48"   :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
-          <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalParts') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </a>
-        </li>
-      </ul>
-      <div v-if="false"><span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
-        <span>endTime : {{endTime}}</span><br>
-        <span>isPlayingNow : {{ isPlayingNow}}</span> FPS: <span>{{ byFrame }}</span><br>
-        <span v-for="(segments, index) in hasPlayed">HP {{ hasPlayed }}P: {{ segments }}</span></div>
     </section>
     <section>
       <b-modal no-stacking id="CertificationAuthority" @hide="resumePlay()" size="xl" okOnly>
@@ -177,6 +164,7 @@
   </div>
 </template>
 <script type="text/javascript">
+  import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
 import CertificationAuthority from '~/components/slides/spend/Spend2CertificationAuthority'
 import AccuracyInvoice from '~/components/slides/spend/Spend2AccuracyInvoice'
@@ -184,105 +172,26 @@ import ProcessInvoice from '~/components/slides/spend/spendPart2ProcessInvoice'
 export default {
   data() {
     return {
-      currentFrame: 0,
-      accessiblePopup: false,
-      modalArray: ["CertificationAuthority", "AccuracyOfInvoice", "ProcessingInvoice"],
-      startTime: [],
-      endTime: [],
-      hasPlayed: {},
-      navBarTracks: [],
-      isPlayingNow: 0,
-      isPlayingSoon: 0,
-      byFrame: 0,
-      justSeeked: false,
-      isItReady: false
+      modalArray: ["CertificationAuthority", "AccuracyOfInvoice", "ProcessingInvoice"]
     }
   },
   components: {
+    videoPlayer,
     microlearning,
     AccuracyInvoice,
     CertificationAuthority,
     ProcessInvoice
   },
-  methods: {
-    isReady() { this.isItReady = true },
-    generate() {
-      const c = this.$refs.videoplayer.textTracks[0].cues
-      for (let i = 0; i < c.length; i++) {
-        this.navBarTracks.push(c[i].text)
-        this.startTime[i] = c[i].startTime
-        this.endTime[i] = Math.floor(c[i].endTime)
-      }
-      this.startTime.push(this.startTime[this.startTime.length - 1])
-    },
-    resumePlay() {
-      if (!this.accessiblePopup) {
-        const videoPlayer = this.$refs.videoplayer
-        setTimeout(function() { videoPlayer.play(); }, 250)
-      }
-    },
-    accessibleModal(i) {
-      this.accessiblePopup = true
-      this.$refs.videoplayer.pause()
-      this.$bvModal.show(this.modalArray[i])
-      // this.$refs.videoplayer.currentTime = this.startTime[i + 1]
-    },
-    showModal(i) {
-
-      if (!this.$refs.videoplayer.paused) {
-        this.$refs.videoplayer.pause()
-        if (this.startTime[i + 1]) {
-          this.$refs.videoplayer.currentTime = this.startTime[i + 1]
-        }
-        this.$bvModal.show(this.modalArray[i])
-      }
-
-    },
-    seek(e) {
-      const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-      this.accessiblePopup = false
-      this.justSeeked = true
-      const videoPlayer = this.$refs.videoplayer
-      const timeData = e.target.getAttribute('data-start')
-      videoPlayer.pause()
-      this.isPlayingSoon = timeData
-      if (!iOS) { videoPlayer.currentTime = timeData } else { videoPlayer.currentTime = timeData + 2 }
-
-      this.isPlayingNow = videoPlayer.currentTime
-      const isNow = this.isPlayingNow
-      this.currentFrame = this.startTime.findIndex(element => element === isNow)
-         this.$store.commit('currentPlaying/setSpendPart2',this.currentFrame)
-      this.$nextTick(function() {
-        setTimeout(function() { videoPlayer.play() }, 250)
-        this.justSeeked = false
-      })
-    },
-    resumePosition() {
-   const savedPosition = this.startTime[this.$store.state.currentPlaying.spendPart2]
-      if (savedPosition) {
-        this.$refs.videoplayer.currentTime = savedPosition
-      }
-    },
-    update(e) {
-      if (!this.justSeeked) {
-        const v = e.target
-        this.isPlayingNow = v.currentTime
-        const isNow = this.isPlayingNow
-        this.hasPlayed = v.played.length
-        this.currentFrame = this.endTime.findIndex(element => element > isNow)
-           this.$store.commit('currentPlaying/setSpendPart2',this.currentFrame)
-        this.byFrame = (this.isPlayingNow - this.isPlayingSoon)
-        if ((this.isPlayingNow + this.byFrame) > this.endTime[this.currentFrame]) this.showModal(this.currentFrame)
-        this.isPlayingSoon = v.currentTime
-      } else { window.alert("seeking") }
-    },
-    isItPlaying(i) {
-      const isNow = this.isPlayingNow
-      if (i === this.endTime.findIndex(element => element > isNow)) {
-        return 'isPlaying'
-      } else { return '' }
+  computed:{
+    thatPoint(){
+      return this.$store.state.currentPlaying.spendPart1
     }
-  }
+  },
+  methods: {
+    resumePlay() {
+      this.$refs.vp.resumePlay()
+    }
+  } 
 }
 </script>
 <style scoped>

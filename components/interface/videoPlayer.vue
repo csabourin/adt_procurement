@@ -4,7 +4,7 @@
       <b-col>
         <script src="https://kit.fontawesome.com/e5ee1a6fb9.js" crossorigin="anonymous"></script>
         <figure style="clear:both;position:relative;">
-          <Spinner v-if="!canPlay"/>
+          <Spinner v-if="!canPlay" />
           <video @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
             <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions" @cuechange="readCaptions">
@@ -34,7 +34,7 @@
       <li v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
         <p>{{ item }}</p><br>
         <a href="javascript:" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
-        <a href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </a>
+        <a v-if="modalArray[index]" href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </a>
       </li>
     </ul>
     <!-- Used for troublehooting video set debugging to true in data-->
@@ -48,9 +48,9 @@
   </b-container>
 </template>
 <script type="text/javascript">
-  import Spinner from "~/components/icons/Spinner"
+import Spinner from "~/components/icons/Spinner"
 export default {
-  components:{
+  components: {
     Spinner
   },
   props: {
@@ -71,7 +71,7 @@ export default {
       isMuted: false,
       isPaused: true,
       ready: false,
-      canPlay:false,
+      canPlay: false,
       PlayTime: 0,
       totalTime: 0,
       CCactive: false,
@@ -157,8 +157,8 @@ export default {
     }
   },
   methods: {
-    loading(){
-      this.canPlay=false
+    loading() {
+      this.canPlay = false
     },
     readCaptions(e) {
       const v = e.target.parentNode
@@ -214,24 +214,27 @@ export default {
       const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
       this.accessiblePopup = false
       this.justSeeked = true
+      this.ready = false
       const videoPlayer = this.$refs.videoplayer
       const timeData = e.target.getAttribute('data-start')
       videoPlayer.pause()
       this.isPlayingSoon = timeData
       if (!iOS) { videoPlayer.currentTime = timeData } else { videoPlayer.currentTime = timeData + 2 }
-
       this.isPlayingNow = videoPlayer.currentTime
       const isNow = this.isPlayingNow
       this.currentFrame = this.startTime.findIndex(element => element === isNow)
       this.$store.commit('currentPlaying/' + this.toResume, this.currentFrame)
       this.$nextTick(function() {
         this.isPaused = false
-        setTimeout(function() { videoPlayer.play() }, 250)
-        this.justSeeked = false
+        setTimeout(function() {
+          videoPlayer.play()
+          this.justSeeked = false
+        }, 250)
+
       })
     },
     resumePosition() {
-      this.canPlay=true
+      this.canPlay = true
       this.totalTime = this.$refs.videoplayer.duration
       const savedPosition = this.startTime[this.restartAt]
       if (savedPosition) {
@@ -241,7 +244,7 @@ export default {
     update(e) {
       let currentTime = e.target.currentTime
       let duration = e.target.duration
-      this.canPlay=true
+      this.canPlay = true
       this.PlayTime = (currentTime / duration) * 100
       if (!this.justSeeked) {
         const v = e.target
@@ -567,11 +570,21 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
   background: #587C84;
+background: -moz-linear-gradient(top,  #abd1d8 0%, #587c84 46%, #587c84 50%, #587c84 53%, #33484c 77%, #383838 87%, #1b1b1b 100%);
+background: -webkit-linear-gradient(top,  #abd1d8 0%,#587c84 46%,#587c84 50%,#587c84 53%,#33484c 77%,#383838 87%,#1b1b1b 100%);
+background: linear-gradient(to bottom,  #abd1d8 0%,#587c84 46%,#587c84 50%,#587c84 53%,#33484c 77%,#383838 87%,#1b1b1b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abd1d8', endColorstr='#1b1b1b',GradientType=0 );
   border-radius: 1px
 }
 
 progress::-moz-progress-bar {
   background: #587C84;
+  background: #abd1d8;
+background: -moz-linear-gradient(top,  #abd1d8 0%, #587c84 46%, #587c84 50%, #587c84 53%, #33484c 77%, #383838 87%, #1b1b1b 100%);
+background: -webkit-linear-gradient(top,  #abd1d8 0%,#587c84 46%,#587c84 50%,#587c84 53%,#33484c 77%,#383838 87%,#1b1b1b 100%);
+background: linear-gradient(to bottom,  #abd1d8 0%,#587c84 46%,#587c84 50%,#587c84 53%,#33484c 77%,#383838 87%,#1b1b1b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abd1d8', endColorstr='#1b1b1b',GradientType=0 );
+
   border-radius: 1px
 }
 

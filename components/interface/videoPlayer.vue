@@ -5,7 +5,7 @@
         <script src="https://kit.fontawesome.com/e5ee1a6fb9.js" crossorigin="anonymous"></script>
         <figure style="clear:both;position:relative;">
           <Spinner v-if="!canPlay" />
-          <video @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadeddata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
+          <video @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadedmetadata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
             <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions" @cuechange="readCaptions">
           </video>
@@ -65,7 +65,7 @@ export default {
   },
   data() {
     return {
-      debugging: false,
+      debugging: true,
       setVolume: this.$store.state.currentPlaying.volume,
       oldVolume: this.$store.state.currentPlaying.volume,
       isMuted: false,
@@ -186,6 +186,7 @@ export default {
           this.startTime.push(this.startTime[this.startTime.length - 1])
         }
       })
+          this.resumePosition()
     },
     resumePlay() {
       if (!this.accessiblePopup) {
@@ -228,8 +229,8 @@ export default {
         this.isPaused = false
         setTimeout(function() {
           videoPlayer.play()
-          this.justSeeked = false
         }, 250)
+          this.justSeeked = false
 
       })
     },

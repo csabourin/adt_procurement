@@ -11,8 +11,8 @@
           <b-collapse id="cbTranscript-1" role="tabpanel">
             <b-card-body>
               <b-card-text>
-                <span v-if="$i18n.locale=='en'"></span>
-                <span v-if="$i18n.locale=='fr'"></span>
+                <span v-if="$i18n.locale=='en'">Transcripts here</span>
+                <span v-if="$i18n.locale=='fr'">Transcription ici</span>
               </b-card-text>
             </b-card-body>
           </b-collapse>

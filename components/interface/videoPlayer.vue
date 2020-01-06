@@ -10,9 +10,9 @@
             <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions" @cuechange="readCaptions">
           </video>
           <transition name="expand">
-            <div class="CC" v-if="CCactive">
+            <figcaption class="CC" v-if="CCactive">
               <p aria-live="polite">{{Captions}}</p>
-            </div>
+            </figcaption>
           </transition>
           <div ref="video-controls" class="controls" data-state="hidden">
             <progress @click="setTime" ref="progress" :value="PlayTime" min="0" max="100">

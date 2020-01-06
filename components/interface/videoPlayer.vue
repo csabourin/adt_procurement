@@ -18,7 +18,7 @@
               <span ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
             <button ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
-              <font-awesome-icon :icon="isPaused?'pause':'play'" />
+              <font-awesome-icon :icon="isPaused?'play':'pause'" />
             </button>
             <button ref="backward" @click="goBackwards" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="$t('backward')">
               <font-awesome-icon icon="backward" />
@@ -122,7 +122,7 @@ export default {
   },
   computed: {
     solidOrRegular(){
-      return this.CCactive?'fas':'far'
+      return this.CCactive?'far':'fas'
     },
     ccUrl() {
       if (this.ccFile) {

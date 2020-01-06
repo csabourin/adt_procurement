@@ -36,14 +36,6 @@
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('UpdatingAnnualForecastTitle')}}</template>
         <UpdatingAnnualForecast />
       </b-modal>
-      <b-modal no-stacking id="RecordingFinancialSystem" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('UpdatingAnnualForecast')}}</template>
-        <RecordingFinancialSystem />
-      </b-modal>
-      <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}</template>
-        <budgetQuiz />
-      </b-modal>
     </section>
     <div class="bottomNav reportSection">
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
@@ -112,31 +104,19 @@ export default {
 </style>
 <i18n>{
   "en":{
-  "TakeTheQuiz":"Take the Quiz",
-  "tryItTitle":"Activity: Try it!",
-  "adjustwptitle":"Activity: Adjust the Work plan",
   "KeyPeriodsFSRTitle":"Activity: Key Periods for Financial Situation Reports",
   "whatIsFSR":"Activity: What is a Financial Situation Report?",
   "FSRActivitiesTitle":"Activity: Forecast Budget Requirements",
   "UpdatingAnnualForecastTitle":"Activity: Updating the Annual Forecast",
-  "gotIt":"Continue to next segment",
-  "jumpModalParts":"Jump to activity",
-  "playSegment":"Play video segment",
   "transcriptText":"",
   "reportSectionBar": "REPORT"
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
-  "completewptitle":"Activité: Compléter le plan de travail",
-  "adjustwptitle":"Activité: Ajuster le plan de travail",
   "KeyPeriodsFSRTitle":"Activité: Périodes clés pour les rapports sur la situation financière",
-  "whatIsFSR":"Activité: Vérifiez votre budget",
-  "tryItTitle":"Activité: Essayons-le!",
-  "FSRActivitiesTitle":"Activité: Prévoyez vos besoins budgétaires",
+  "whatIsFSR":"Activité: Qu'est-ce qu'un rapport sur la situation financière?",
+  "FSRActivitiesTitle":"Activité: Activités pour le Rapport sur la situation financière",
   "UpdatingAnnualForecastTitle":"Activité: Mise à jour des prévisions annuelles",
-  "gotIt":"Continuer au segment suivant.",
-  "jumpModalParts":"Sauter à l'activité",
-  "playSegment":"Faire jouer le segment vidéo",
   "transcriptText":"",
   "reportSectionBar": "RAPPORTS"
   }

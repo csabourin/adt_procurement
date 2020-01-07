@@ -336,7 +336,7 @@ export default {
         }
       },
       "q5": {
-        "text": "<table class='qTable'><tbody><tr><td>&nbsp;</td><td><p><strong>P6 Budget </strong></p></td><td><p><strong>P6 Engagements </strong></p></td><td><p><strong>P6 R&eacute;alisations &agrave; ce jour</strong></p></td><td><p><strong>P5 </strong><strong>Pr&eacute;visions annuelles</strong></p></td><td><p><strong>P6 Pr&eacute;visions annuelles</strong></p></td><td><p><strong>Exc&eacute;dent / D&eacute;ficit</strong></p></td></tr><tr><td><p>Logiciel de Chatbot</p></td><td><p>3 000 $</p></td><td><p>1 500 $</p></td><td><p>1 500 $</p></td><td><p>3 500 $</p></td><td><p>&nbsp;</p></td><td><p>0 $</p></td></tr><tr><td><p>Accueil</p></td><td><p>15 000 $</p></td><td><p>9 500 $</p></td><td><p>8 000 $</p></td><td><p>15 000 $</p></td><td><p>&nbsp;</p></td><td><p>0 $</p></td></tr></tbody></table>Looking at the provided financial situation report, what are the red flags that stand out to you that you would need to get more information? ",
+        "text": "<table><tbody><tr><td>&nbsp;</td><td><p><strong>P6 Budget&nbsp;</strong></p></td><td><p><strong>P6 Commitments&nbsp;</strong></p></td><td><p><strong>P6 Year-To-Date Actuals</strong></p></td><td><p><strong>P5 Annual Forecast</strong></p></td><td><p><strong>P6 Annual Forecast</strong></p></td><td><p><strong>Surplus / Deficit</strong></p></td></tr><tr><td><p>Chatbot software</p></td><td><p>$3,000</p></td><td><p>$1,500</p></td><td><p>$1,500</p></td><td><p>$3,500</p></td><td>&nbsp;</td><td><p>$0</p></td></tr><tr><td><p>Hospitality</p></td><td><p>$15,000</p></td><td><p>$9,500</p></td><td><p>$8,000</p></td><td><p>$15,000</p></td><td>&nbsp;</td><td><p>$0</p></td></tr></tbody></table>Looking at the provided financial situation report, what are the red flags that stand out to you that you would need to get more information? ",
         "options": {
           "1": "The P5 chatbot software commitments and year-to-date actuals added together is equal to the budget",
           "2": "The P6 hospitality commitments and year-to-date actuals added together are more than the budget ",
@@ -344,10 +344,8 @@ export default {
           "4": "The chatbot software P5 annual forecast is higher than the P6 budget"
         },
         "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
+          "wrong": "",
+          "right": ""
         }
       },
       "q6": {

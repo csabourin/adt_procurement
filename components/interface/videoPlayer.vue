@@ -579,32 +579,20 @@ progress::-webkit-progress-bar {
   background: #fff
 }
 
-progress::-webkit-progress-value {
-  background: #587C84;
-background: -moz-linear-gradient(top,  #abd1d8 0%, #587c84 46%, #587c84 50%, #587c84 53%, #33484c 77%, #383838 87%, #1b1b1b 100%);
-background: -webkit-linear-gradient(top,  #abd1d8 0%,#587c84 46%,#587c84 50%,#587c84 53%,#33484c 77%,#383838 87%,#1b1b1b 100%);
-background: linear-gradient(to bottom,  #abd1d8 0%,#587c84 46%,#587c84 50%,#587c84 53%,#33484c 77%,#383838 87%,#1b1b1b 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abd1d8', endColorstr='#1b1b1b',GradientType=0 );
-  border-radius: 1px
-}
 
 progress::-moz-progress-bar {
-  background: #587C84;
-  background: #abd1d8;
-background: -moz-linear-gradient(top,  #abd1d8 0%, #587c84 46%, #587c84 50%, #587c84 53%, #33484c 77%, #383838 87%, #1b1b1b 100%);
-background: -webkit-linear-gradient(top,  #abd1d8 0%,#587c84 46%,#587c84 50%,#587c84 53%,#33484c 77%,#383838 87%,#1b1b1b 100%);
-background: linear-gradient(to bottom,  #abd1d8 0%,#587c84 46%,#587c84 50%,#587c84 53%,#33484c 77%,#383838 87%,#1b1b1b 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abd1d8', endColorstr='#1b1b1b',GradientType=0 );
-  border-radius: 1px
+  
+background: -moz-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
+background: linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
+background: linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2));
+  border-radius: 50px;
+  background-color: #b54142;
+background-image: (45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), linear-gradient(left, #bc1339, #4a0000);
+  background-size: 25px 14px, 100% 100%, 100% 100%;
 }
 
 .progress {
-  height: 22px
-}
-
-/* Moving on to the styling, we'll start with the main progress bar first and then the value part of it. After that, we'll do some experiments :D */
-body {
-  background: #322c35;
+  height: 14px
 }
 
 progress {
@@ -617,44 +605,20 @@ progress {
   border: none;
 }
 
-/* All good till now. Now we'll style the background */
 progress::-webkit-progress-bar {
-  background: black;
+  background: #000;
   border-radius: 50px;
   padding: 2px;
-  /*box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);*/
 }
 
-/* Now the value part */
 progress::-webkit-progress-value {
   border-radius: 50px;
-  /*box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);*/
   background:
     -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
-    -webkit-linear-gradient(left, #33484c, #587c84);
-  
-  /* Looks great, now animating it */
+    -webkit-linear-gradient(left, #b54142, #b54142);
   background-size: 25px 14px, 100% 100%, 100% 100%;
-  -webkit-animation: move 5s linear 0 infinite;
 }
-
-/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
-
-@-webkit-keyframes move {
-  0% {background-position: 0px 0px, 0 0, 0 0}
-  100% {background-position: -100px 0px, 0 0, 0 0}
-}
-
-/* Prefix-free was creating issues with the animation */
-
-
-
-
-
-
-
-
 
 .player {
   width: 480px;

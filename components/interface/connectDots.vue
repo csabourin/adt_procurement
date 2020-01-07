@@ -14,7 +14,8 @@
             </ul>
           </b-col>
           <b-col class="col-4" ref="centerCol">
-            <svg ref="refSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid slice" :viewBox="'0 '+colWidth+' 70 '+ulSize" :width="colWidth" :height="ulSize">
+            <svg ref="refSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" :width="colWidth" :height="ulSize">
+
               <transition-group name="fade" tag="g" ref="pathGroup">
                 <line v-for="(item, index) in coordinates" :x1="coordinates[index][0][0]" :y1="coordinates[index][0][1]" :x2="coordinates[index][1][0]" :y2="coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
               </transition-group>
@@ -22,9 +23,9 @@
           </b-col>
           <b-col class="col-4">
             <div style="position:static">
-              <transition-group name="flip-list" tag="ul" style="list-style:none;padding-left: 0" ref="questionHeight">
-                <li v-for="(item,index) in answers" :key="item[0]">
-                  <input  @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" name="right" :id="'right'+qId+index" :value="item[0]" v-model="activeLeft">
+              <transition-group name="flip-list" tag="ul" style="list-style:none;padding-left: 0">
+                <li v-for="(item,index) in answers" :key="item[0]" ref="questionHeight">
+                  <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" name="right" :id="'right'+qId+index" :value="item[0]" v-model="activeLeft">
                   <label ref="rightInput" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'right'+qId+index">{{item[1]}}</label>
                 </li>
               </transition-group>
@@ -43,7 +44,8 @@
       <b-button @click="submitAnswer">{{$t('submit')}}</b-button>
       <b-button @click="resetAnswer">{{$t('reset')}}</b-button>
     </fieldset>
-    <span v-if="debugging">
+    <div class="debugWindow" v-if="debugging">
+      <p>ul size: {{ulSize}}</p>
       <p>SVG Position: {{svgPosx}} , {{svgPosy}}</p>
       <p>Active Left {{activeLeft}} Active Right {{activeRight}}</p>
       <p>Left {{left.x}} {{left.y}} Right {{right.x}} {{right.y}}</p>
@@ -52,7 +54,7 @@
       <p>givenlAnswer: {{givenAnswer}}</p>
       <p>finalAnswer: {{finalAnswer}}</p>
       <p>correctAnswer: {{correctAnswer}}</p>
-    </span>
+    </div>
     <p>&nbsp;</p>
   </div>
 </template>
@@ -72,7 +74,7 @@ export default {
       right: { x: 0, y: 0 },
       svgPosx: 0,
       svgPosy: 18,
-      ulSize: 1,
+      ulSize: 0,
       colWidth: 1,
       response: "",
       isSubmitted: false,
@@ -102,14 +104,9 @@ export default {
       }
     }
   },
-
-  beforeDestroy: function() {
-    window.removeEventListener('resize', this.updateOffsets)
-  },
-
   methods: {
     generateCorrect() {
-      var leftx, lefty, rightx, righty, right, topright, left, topleft,rightInput
+      var leftx, lefty, rightx, righty, right, topright, left, topleft, rightInput
       for (let i in this.question.dotsRight) {
         // var rightInput=document.querySelector('#right'+this.qId+i)
         // topright = rightInput.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
@@ -118,7 +115,7 @@ export default {
         topleft = ((this.$refs.leftInput[i].parentNode.getBoundingClientRect().top + this.$refs.leftInput[i].parentNode.getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
         topright = ((this.$refs.rightInput[i].getBoundingClientRect().top + this.$refs.rightInput[i].getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
         rightx = right - this.svgPosx - 8
-        righty = topright - this.svgPosy -16
+        righty = topright - this.svgPosy - 16
         leftx = left - this.svgPosx + 8
         lefty = topleft - this.svgPosy
         this.$set(this.correctCoordinates, (Number(i) + 1).toString(), [
@@ -146,8 +143,8 @@ export default {
     },
     offset(el) {
       var rect = el.getBoundingClientRect(),
-        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = parseInt(window.pageXOffset || document.documentElement.scrollLeft),
+        scrollTop = parseInt(window.pageYOffset || document.documentElement.scrollTop);
       return { x: rect.left + scrollLeft, y: rect.top + scrollTop }
     },
     submitAnswer() {
@@ -169,15 +166,15 @@ export default {
       this.isSubmitted = false
       const right = event.target.parentNode.getBoundingClientRect().left
       const top = event.target.parentNode.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
-      this.right.x = right - this.svgPosx - 8
-      this.right.y = top - this.svgPosy + 10
+      this.right.x = parseInt(right -  this.svgPosx) - 8
+      this.right.y = parseInt(top - this.svgPosy + 10)
     },
     getLeft(event) {
       this.isSubmitted = false
       const left = event.target.parentNode.getBoundingClientRect().right
       const top = ((event.target.parentNode.getBoundingClientRect().top + event.target.parentNode.getBoundingClientRect().bottom) / 2) + (window.pageYOffset || document.documentElement.scrollTop)
-      this.left.x = left - this.svgPosx + 8
-      this.left.y = top - this.svgPosy
+      this.left.x = parseInt(left - this.svgPosx) + 8
+      this.left.y = parseInt(top - this.svgPosy)
     },
     findRight(event) {
       if (this.activeRight && this.activeLeft) {
@@ -206,11 +203,12 @@ export default {
       }
     },
     updateOffsets() {
-      this.ulSize = 1 + this.$refs.questionHeight.offsetHeight
+      // this.ulSize =  "336"
+      this.ulSize =  parseInt(this.$refs.questionHeight[0].parentNode.offsetHeight,10)
       this.colWidth = 30 + this.$refs.centerCol.offsetWidth - 30
       const svgPos = this.offset(this.$refs.refSVG)
-      this.svgPosx = svgPos.x
-      this.svgPosy = svgPos.y
+      this.svgPosx = parseInt(svgPos.x)
+      this.svgPosy = parseInt(svgPos.y)
     }
   },
   mounted() {
@@ -221,6 +219,10 @@ export default {
     this.$nextTick(() => {
       this.updateOffsets()
     })
+  },
+
+  beforeDestroy: function() {
+    window.removeEventListener('resize', this.updateOffsets)
   },
   computed: {
     colorChoices() { return this.colorsChoices.sort(() => Math.random() - 0.5) },
@@ -234,6 +236,7 @@ export default {
     }
   }
 }
+
 </script>
 <i18n>
   {
@@ -248,6 +251,21 @@ export default {
   }
 </i18n>
 <style type="text/css" scoped>
+.debugWindow {
+  width:200px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000000;
+  background-color: #fff;
+  font-size: 10px;
+  padding:1em;
+}
+
+.debugWindow p{
+  margin-bottom: .25em;
+}
+
 .fade-enter-active-move,
 .fade-leave-active-move {
   transition: opacity .5s;
@@ -289,4 +307,5 @@ input:after{
 }*/
 
 ;
+
 </style>

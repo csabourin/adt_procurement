@@ -203,7 +203,6 @@ export default {
       }
     },
     updateOffsets() {
-      // this.ulSize =  "336"
       this.ulSize =  parseInt(this.$refs.questionHeight[0].parentNode.offsetHeight,10)
       this.colWidth = 30 + this.$refs.centerCol.offsetWidth - 30
       const svgPos = this.offset(this.$refs.refSVG)

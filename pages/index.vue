@@ -14,6 +14,17 @@
       </b-collapse>
     </b-card>
   </div>
+<p>&nbsp;</p>
+  <b-alert show="true">
+        <div v-if="$i18n.locale=='en'">
+          <p>Thank you for completing this new course “Responsible Use of Public Funds.” As this is a work in progress, we are seeking your feedback on the learning experience. We appreciate you taking a few minutes to tell us what worked well, any issues you faced and what we can fix to make it better. It will take you 5-10 minutes to complete the questionnaire.</p>
+          
+        </div>
+        <div v-if="$i18n.locale=='fr'">
+          <p>Merci d’avoir suivi le nouveau produit d’apprentissage intitulé « La saine gestion des fonds publics ». Comme celui-ci est dans une phase test, nous aimerions obtenir vos commentaires sur votre expérience d’apprentissage, particulièrement en ce qui a trait à ce qui a bien été, les défis que vous avez rencontrés et vos suggestions pour améliorer l’expérience. Remplir le questionnaire devrait vous prendre entre 5 et 10 minutes.</p>
+          
+        </div>
+      </b-alert>
     
      <p>&nbsp;</p>
     <h2 class="sideTitle planTitle">{{$t('plan')}}</h2>

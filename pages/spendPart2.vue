@@ -3,7 +3,7 @@
     <h1 class="pageTitle" v-html="$t('ExerciseFinancialAuthority')" />
     
     <section>
-      <videoPlayer ref="vp" videoFile="spendPart2.mp4" chapters chapterFile="SpendPart2.vtt" posterFile="S32Part1Poster.jpg" :restartAt="parseInt(thatPoint)" toResume="setSpendPart1" :modalArray="modalArray" />
+      <videoPlayer ref="vp" videoFile="spendPart2.mp4" chapters chapterFile="SpendPart2.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setSpendPart1" :modalArray="modalArray" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">

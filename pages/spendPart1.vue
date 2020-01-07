@@ -2,7 +2,7 @@
   <div>
     <h2 class="pageTitle" v-html="$t('InitiateAuthorizeSpending')" />
     <section>
-      <videoPlayer ref="vp" videoFile="S32Part1.mp4" chapters chapterFile="SpendPart1.vtt" posterFile="S32Part1Poster.jpg" :restartAt="parseInt(thatPoint)" toResume="setSpendPart1" :modalArray="modalArray" />
+      <videoPlayer ref="vp" videoFile="S32Part1.mp4" chapters chapterFile="SpendPart1.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setSpendPart1" :modalArray="modalArray" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">

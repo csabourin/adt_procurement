@@ -564,7 +564,7 @@ progress {
   background: #fff;
   background-clip: padding-box;
   border: 2px solid #4d4d4d;
-  color: #587C84;
+  color: #b54142;
   display: block;
   left: 0;
   padding: 2px;

@@ -15,7 +15,7 @@
           </transition>
           <div ref="video-controls" class="controls" data-state="hidden">
             <progress @click="setTime" ref="progress" :title="Math.ceil(PlayTime)+'%'" :value="PlayTime" min="0" max="100">
-              <span ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
+              <span class="progress" ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
             <button ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
               <font-awesome-icon :icon="isPaused?'play':'pause'" />
@@ -575,19 +575,16 @@ progress {
 }
 
 
-progress::-webkit-progress-bar {
-  background: #fff
-}
+
 
 
 progress::-moz-progress-bar {
-  
 background: -moz-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
 background: linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
-background: linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2));
+background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2));
   border-radius: 50px;
   background-color: #b54142;
-background-image: (45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), linear-gradient(left, #bc1339, #4a0000);
+background-image: (45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), (to right, #bc1339, #4a0000);
   background-size: 25px 14px, 100% 100%, 100% 100%;
 }
 
@@ -614,9 +611,9 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   border-radius: 50px;
   background:
-    -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
-    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
-    -webkit-linear-gradient(left, #b54142, #b54142);
+    linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    linear-gradient(to right, #b54142, #b54142);
   background-size: 25px 14px, 100% 100%, 100% 100%;
 }
 

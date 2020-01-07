@@ -1,13 +1,13 @@
 <template>
-	<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+	<div class="lds-spinner"><div v-for="i in 12" :key="'spin'+i"/></div>
 </template>
 <style type="text/css" scoped>
 	.lds-spinner {
   color: official;
   display: inline-block;
   position: absolute;
-  top:50%;
-  left:50%;
+    top: calc(50% - 60px);
+    left: calc(50% - 40px);
   width: 80px;
   height: 80px;
 }

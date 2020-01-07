@@ -45,7 +45,7 @@
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,4,3)" />
               </b-tab>
               <b-tab title="05">
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q5')" qId="4" :refill="Refill('4')" @response="calculateAnswer($event,4,4)" />
+                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q5')" qId="4" :refill="Refill('4')" @response="arraysMatch($event,[2,4],4)" />
               </b-tab>
               <b-tab title="06">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q6')" qId="5" :refill="Refill('5')" @response="calculateAnswer($event,3,5)" />
@@ -108,7 +108,7 @@
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
 export default {
-  name: "examTwo",
+  name: "examThree",
   data() {
     return {
       debugging: false,
@@ -276,7 +276,7 @@ export default {
     "scoreIs": "Your final score is",
     "Questions": {
       "q1": {
-        "text": "<table class='qTable'> <tbody><tr><td><p>Budget </p></td><td><p>Commitments </p></td><td><p>Year-To-Date Actuals</p></td><td><p>Annual Forecast</p></td><td>          <p>Surplus / Deficit</p></td></tr></tbodytable>",
+        "text": "<table class='qTable'> <tbody><tr><td><p>Budget </p></td><td><p>Commitments </p></td><td><p>Year-To-Date Actuals</p></td><td><p>Annual Forecast</p></td><td><p>Surplus / Deficit</p></td></tr></tbody><table><br>These are the column headings for the financial situation report. How is the surplus / deficit calculated?",
         "options": {
           "1": "Annual Forecast – Budget",
           "2": "Commitments – Actuals",
@@ -336,7 +336,7 @@ export default {
         }
       },
       "q5": {
-        "text": "<table class='qTable'><tbody><tr><td>-</td><td><p><strong>P6 Budget </strong></p></td><td><p><strong>P6 Engagements </strong></p></td><td><p><strong>P6 R&eacute;alisations &agrave; ce jour</strong></p></td><td><p><strong>P5 </strong><strong>Pr&eacute;visions annuelles</strong></p></td><td><p><strong>P6 Pr&eacute;visions annuelles</strong></p></td><td><p><strong>Exc&eacute;dent / D&eacute;ficit</strong></p></td></tr><tr><td><p>Logiciel de Chatbot</p></td><td><p>3 000 $</p></td><td><p>1 500 $</p></td><td><p>1 500 $</p></td><td><p>3 500 $</p></td><td><p>0 $</p></td></tr><tr><td><p>Accueil</p></td><td><p>15 000 $</p></td><td><p>9 500 $</p></td><td><p>8 000 $</p></td><td><p>15 000 $</p></td><td><p>0 $</p></td></tr></tbody></table>Looking at the provided financial situation report, what are the red flags that stand out to you that you would need to get more information? ",
+        "text": "<table class='qTable'><tbody><tr><td>&nbsp;</td><td><p><strong>P6 Budget </strong></p></td><td><p><strong>P6 Engagements </strong></p></td><td><p><strong>P6 R&eacute;alisations &agrave; ce jour</strong></p></td><td><p><strong>P5 </strong><strong>Pr&eacute;visions annuelles</strong></p></td><td><p><strong>P6 Pr&eacute;visions annuelles</strong></p></td><td><p><strong>Exc&eacute;dent / D&eacute;ficit</strong></p></td></tr><tr><td><p>Logiciel de Chatbot</p></td><td><p>3 000 $</p></td><td><p>1 500 $</p></td><td><p>1 500 $</p></td><td><p>3 500 $</p></td><td><p>&nbsp;</p></td><td><p>0 $</p></td></tr><tr><td><p>Accueil</p></td><td><p>15 000 $</p></td><td><p>9 500 $</p></td><td><p>8 000 $</p></td><td><p>15 000 $</p></td><td><p>&nbsp;</p></td><td><p>0 $</p></td></tr></tbody></table>Looking at the provided financial situation report, what are the red flags that stand out to you that you would need to get more information? ",
         "options": {
           "1": "The P5 chatbot software commitments and year-to-date actuals added together is equal to the budget",
           "2": "The P6 hospitality commitments and year-to-date actuals added together are more than the budget ",
@@ -435,7 +435,7 @@ export default {
     "scoreIs": "Votre note finale est de",
     "Questions": {
       "q1": {
-        "text": "<table class='qTable'> <tbody><tr><td><p>Budget </p></td><td><p>Engagements</p></td><td><p>Réalisations à ce jour</p></td><td><p>Prévisions annuelles</p></td><td>          <p>Excédent / Déficit</p></td></tr></tbodytable> Il s'agit des intitulés de colonne de l'état de la situation financière. Comment l'excédent / le déficit est-il calculé ?",
+        "text": "<table class='qTable'> <tbody><tr><td><p>Budget </p></td><td><p>Engagements</p></td><td><p>Réalisations à ce jour</p></td><td><p>Prévisions annuelles</p></td><td>          <p>Excédent / Déficit</p></td></tr></tbodytable> Il s'agit des intitulés de colonne de l'état de la situation financière. Comment l'excédent / le déficit est-il calculé?",
         "options": {
           "1": "Prévisions annuelles - Budget",
           "2": "Engagements - Réalisations",
@@ -450,7 +450,7 @@ export default {
         }
       },
       "q2": {
-        "text": "Il s'agit de P6 et vous examinez le rapport sur la situation financière (RSF). Au cours des quatre derniers mois, trois de vos postes ont été vacants, de sorte qu'il y a un important excédent salarial. Toutefois, vous embauchez deux étudiants à titre de solution provisoire jusqu'à la fin de l'exercice financier. Mais il faudra un mois de plus pour les embaucher après le traitement de leur autorisation de sécurité. En tant que gestionnaire, comment prévoyez-vous la situation ?",
+        "text": "Il s'agit de P6 et vous examinez le rapport sur la situation financière (RSF). Au cours des quatre derniers mois, trois de vos postes ont été vacants, de sorte qu'il y a un important excédent salarial. Toutefois, vous embauchez deux étudiants à titre de solution provisoire jusqu'à la fin de l'exercice financier. Mais il faudra un mois de plus pour les embaucher après le traitement de leur autorisation de sécurité. En tant que gestionnaire, comment prévoyez-vous la situation?",
         "options": {
           "1": "Prévoir les coûts de deux salaires d'étudiants, ajoutez ce montant au total de votre budget et demandez à votre administrateur de modifier les chiffres réels à ce jour pour refléter cette situation",
           "2": "Prévoir les coûts de deux salaires d'étudiants de P7 à P12 (fin de l'année financière) et demander à votre administration de mettre à jour les engagements dans le système financier",
@@ -465,7 +465,7 @@ export default {
         }
       },
       "q3": {
-        "text": "Trois de vos postes ont été vacants au cours des quatre derniers mois, et vous vous attendez maintenant à ce qu'ils le soient encore pour cinq mois. Il y a un surplus de salaire croissant. Qu'allez-vous faire ?",
+        "text": "Trois de vos postes ont été vacants au cours des quatre derniers mois, et vous vous attendez maintenant à ce qu'ils le soient encore pour cinq mois. Il y a un surplus de salaire croissant. Qu'allez-vous faire?",
         "options": {
           "1": "Continuez à prévoir le montant prévu pour le salaire et faites appel à de l'aide temporaire, car c'est plus rapide",
           "2": "Transférer l'excédent salarial au F&E, même si vous n'avez pas de déficit de F&E",
@@ -480,7 +480,7 @@ export default {
         }
       },
       "q4": {
-        "text": "Comme tous vos fonds ont été engagés, vous avez reçu le mois dernier un montant supplémentaire de 5 000 $ pour former les employés sur les nouveaux logiciels en raison d'un changement de priorité. En examinant le rapport sur la situation financière que vous venez de recevoir des Finances, vous constatez que ces fonds ne sont pas inclus dans les totaux du budget. Sachant que la prévision est due dans deux semaines, que faites-vous ?",
+        "text": "Comme tous vos fonds ont été engagés, vous avez reçu le mois dernier un montant supplémentaire de 5 000 $ pour former les employés sur les nouveaux logiciels en raison d'un changement de priorité. En examinant le rapport sur la situation financière que vous venez de recevoir des Finances, vous constatez que ces fonds ne sont pas inclus dans les totaux du budget. Sachant que la prévision est due dans deux semaines, que faites-vous?",
         "options": {
           "1": "Augmenter le budget dans le système financier de 5 000$",
           "2": "Créer un engagement dans le système financier pour 5 000 $.",
@@ -495,7 +495,7 @@ export default {
         }
       },
       "q5": {
-        "text": "<table class='qTable'><tbody><tr><td>-</td><td><p><strong>P6 Budget </strong></p></td><td><p><strong>P6 Engagements </strong></p></td><td><p><strong>P6 R&eacute;alisations &agrave; ce jour</strong></p></td><td><p><strong>P5 </strong><strong>Pr&eacute;visions annuelles</strong></p></td><td><p><strong>P6 Pr&eacute;visions annuelles</strong></p></td><td><p><strong>Exc&eacute;dent / D&eacute;ficit</strong></p></td></tr><tr><td><p>Logiciel de Chatbot</p></td><td><p>3 000 $</p></td><td><p>1 500 $</p></td><td><p>1 500 $</p></td><td><p>3 500 $</p></td><td><p>0 $</p></td></tr><tr><td><p>Accueil</p></td><td><p>15 000 $</p></td><td><p>9 500 $</p></td><td><p>8 000 $</p></td><td><p>15 000 $</p></td><td><p>0 $</p></td></tr></tbody></table><br>En examinant le rapport sur la situation financière fourni, quels sont les signaux d'alarme qui vous indiquent que vous auriez besoin de plus d'information ?",
+        "text": "<table class='qTable'><tbody><tr><td>-</td><td><p><strong>P6 Budget </strong></p></td><td><p><strong>P6 Engagements </strong></p></td><td><p><strong>P6 R&eacute;alisations &agrave; ce jour</strong></p></td><td><p><strong>P5 </strong><strong>Pr&eacute;visions annuelles</strong></p></td><td><p><strong>P6 Pr&eacute;visions annuelles</strong></p></td><td><p><strong>Exc&eacute;dent / D&eacute;ficit</strong></p></td></tr><tr><td><p>Logiciel de Chatbot</p></td><td><p>3 000 $</p></td><td><p>1 500 $</p></td><td><p>1 500 $</p></td><td><p>3 500 $</p></td><td><p>0 $</p></td></tr><tr><td><p>Accueil</p></td><td><p>15 000 $</p></td><td><p>9 500 $</p></td><td><p>8 000 $</p></td><td><p>15 000 $</p></td><td><p>0 $</p></td></tr></tbody></table><br>En examinant le rapport sur la situation financière fourni, quels sont les signaux d'alarme qui vous indiquent que vous auriez besoin de plus d'information?",
         "options": {
           "1": "La somme des engagements du logiciel de clavardage P5 et des chiffres réels depuis le début de l'année est égale au budget ",
           "2": "La somme des engagements des P6 en matière d'accueil et des chiffres réels depuis le début de l'année dépasse le budget ",
@@ -510,7 +510,7 @@ export default {
         }
       },
       "q6": {
-        "text": "Quel rapport publie sur les sites Web des ministères l'information concernant les voyages, l'accueil, les contrats, les reclassifications de postes, les actes répréhensibles, les subventions et les contributions ?",
+        "text": "Quel rapport publie sur les sites Web des ministères l'information concernant les voyages, l'accueil, les contrats, les reclassifications de postes, les actes répréhensibles, les subventions et les contributions?",
         "options": {
           "1": "Rapport ministériel sur les résultats",
           "2": "Rapport financier trimestriel",
@@ -540,7 +540,7 @@ export default {
         }
       },
       "q8": {
-        "text": "Vers la fin de l'année, votre unité de planification vous demande de rendre compte des résultats de la &laquo;Numérisation des services&raquo;. Quels renseignements fourniriez-vous ?",
+        "text": "Vers la fin de l'année, votre unité de planification vous demande de rendre compte des résultats de la &laquo;Numérisation des services&raquo;. Quels renseignements fourniriez-vous?",
         "options": {
           "1": "100 % du courrier reçu par la poste a reçu une réponse dans un délai de 1 jour au lieu de 3 jours",
           "2": "Le système de chatbot a résolu 30% des demandes de support en ligne",
@@ -555,7 +555,7 @@ export default {
         }
       },
       "q9": {
-        "text": "Lequel des éléments suivants est un indicateur de rendement valide ?",
+        "text": "Lequel des éléments suivants est un indicateur de rendement valide?",
         "options": {
           "1": "Centre d'appels avec personnel de 9 h à 17 h du lundi au vendredi",
           "2": "Répondre aux demandes d'assistance par chat en direct dès que possible",
@@ -570,7 +570,7 @@ export default {
         }
       },
       "q10": {
-        "text": "On vous a demandé de fournir de l'information pour le Rapport ministériel sur les résultats. Quels renseignements allez-vous fournir ?",
+        "text": "On vous a demandé de fournir de l'information pour le Rapport ministériel sur les résultats. Quels renseignements allez-vous fournir?",
         "options": {
           "1": "Fournir les recommandations de vérification de mon programme",
           "2": "Fournir le plan triennal de mon programme",

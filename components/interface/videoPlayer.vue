@@ -29,7 +29,7 @@
             <button ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')"  :aria-label="isMuted?$t('unmute'):$t('mute')">
               <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" />
             </button>
-            <input type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'">
+            <input id="volumeSlider" type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'"><label for="volumeSlider" class="v-inv">Volume</label>
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
             <p class="mediaTime">{{isPlayingNow | formatTime}} / {{totalTime | formatTime}}</p>
             <button :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')">
@@ -42,8 +42,8 @@
     <ul v-if="chapters" class="bar" ref="linkBar">
       <li v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
         <p>{{ item }}</p><br>
-        <a href="javascript:" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
-        <a v-if="modalArray[index]" href="javascript:" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </a>
+        <button @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></button>
+        <button v-if="modalArray[index]" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </button>
       </li>
     </ul>
     <!-- Used for troublehooting video set debugging to true in data-->
@@ -432,6 +432,10 @@ video {
 .activityButton {
   display: inline-block;
   width: 58px;
+  height: min-content;
+  border-radius: 100px;
+  background-color: transparent;
+  float:none;
 }
 
 .playButton:hover,
@@ -440,6 +444,7 @@ video {
 .activityButton:focus {
   /*Insert hover animation here, placeholder for now*/
   opacity: 0.8;
+  background-color: transparent;
 }
 
 .playButton {

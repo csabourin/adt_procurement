@@ -346,8 +346,8 @@ export default {
 </i18n>
 <style type="text/css" scoped>
 video {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  background: #000;
+  /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);*/
+  background: #transparent;
   cursor: pointer;
 }
 
@@ -593,7 +593,7 @@ progress {
 
  .videoControls:hover,
  .videoControls:focus{
-  color:#6d9ba9;
+  color:#6d6d6d;
 }
 
  .videoControls:active{

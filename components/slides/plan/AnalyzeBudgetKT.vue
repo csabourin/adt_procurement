@@ -8,7 +8,7 @@
           <p><select v-model="Q1">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-            </select> {{$t('sentences[0]')}}</p>
+            </select> {{$t('sentences[0]')}}<b-submit></b-submit></p>
           <p v-if="Q1"><span class="v-right" v-if="Q1=='2'"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
           <hr>
           <p><select v-model="Q2">

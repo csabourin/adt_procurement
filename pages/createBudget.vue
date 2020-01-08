@@ -4,7 +4,7 @@
       {{ $t('CreateBudget')}}
     </h2>
     <section>
- <videoPlayer ref="vp" videoFile="CreateBudget.mp4" chapters chapterFile="BudgetChapters.vtt" ccFile="BudgetChapters.vtt" posterFile="CreateBudgetPoster.jpg" :restartAt="thatPoint" toResume="setCreateBudget" :modalArray="modalArray" />
+ <videoPlayer ref="vp" videoFile="CreateBudget.mp4" chapters chapterFile="BudgetChapters.vtt" ccFile="CreateBudget_captions.vtt" posterFile="CreateBudgetPoster.jpg" :restartAt="thatPoint" toResume="setCreateBudget" :modalArray="modalArray" />
 
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">

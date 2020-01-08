@@ -436,4 +436,8 @@ borderscale {  50% {
   transform: translateX(-100%);
   width:0;
 }
+
+.btn-primary{
+  background-color:#0051A8;
+}
 </style>

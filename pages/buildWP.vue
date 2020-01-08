@@ -103,7 +103,11 @@
       </ul>
     </section>
     <section>
-      <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>{{ $t('gotIt') }}</b-modal>
+      <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>
+      <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
+      {{ $t('gotIt') }}
+    </template>
+    {{ $t('gotIt') }}</b-modal>
       <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('activityLinks')}}</template>
         <p>{{$t('gotoLinks')}}</p>

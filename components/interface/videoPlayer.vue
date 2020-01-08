@@ -662,7 +662,6 @@ button {
   float: left;
   border: 0;
   margin-right: 2px;
-  height: 100%;
   width: 40px;
   cursor: pointer;
 }

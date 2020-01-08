@@ -2,7 +2,7 @@
   <b-container>
     <b-row>
       <b-col>
-        <figure style="clear:both;position:relative;">
+        <figure style="clear:both;position:relative;background-color: #000;padding: 0 0 2em;">
           <Spinner v-if="!canPlay" />
           <video @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadedmetadata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
@@ -17,22 +17,22 @@
             <progress @click="setTime" ref="progress" :title="Math.ceil(PlayTime)+'%'" :value="PlayTime" min="0" max="100">
               <span class="progress" ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
-            <button ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
+            <button class="videoControls" ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
               <font-awesome-icon :icon="isPaused?'play':'pause'" />
             </button>
-            <button ref="backward" @click="goBackwards" type="button" :aria-label="$t('backward')" :title="$t('backward')">
+            <button class="videoControls" ref="backward" @click="goBackwards" type="button" :aria-label="$t('backward')" :title="$t('backward')">
               <font-awesome-icon icon="backward" />
             </button>
-            <button ref="forward" @click="goForward" type="button" :aria-label="$t('forward')" :title="$t('forward')">
+            <button class="videoControls" ref="forward" @click="goForward" type="button" :aria-label="$t('forward')" :title="$t('forward')">
               <font-awesome-icon icon="forward" />
             </button>
-            <button ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')"  :aria-label="isMuted?$t('unmute'):$t('mute')">
+            <button  class="videoControls" ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')"  :aria-label="isMuted?$t('unmute'):$t('mute')">
               <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" />
             </button>
             <input id="volumeSlider" type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'"><label for="volumeSlider" class="v-inv">Volume</label>
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
             <p class="mediaTime">{{isPlayingNow | formatTime}} / {{totalTime | formatTime}}</p>
-            <button :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')">
+            <button class="videoControls" :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')">
               <font-awesome-icon :icon="[solidOrRegular,'closed-captioning']" />
             </button>
           </div>
@@ -352,6 +352,8 @@ video {
 }
 
 .mediaTime {
+  color:#fff;
+  background-color: #000;
   float: left;
   position: relative;
   display: inline-block;
@@ -570,7 +572,7 @@ input[type=range]::-ms-thumb {
 
 progress {
   -webkit-appearance: none;
-  background: #fff;
+  background: #000;
   background-clip: padding-box;
   border: 2px solid #4d4d4d;
   color: #b54142;
@@ -583,8 +585,21 @@ progress {
   width: 100%
 }
 
+.videoControls{
+  margin: 0 1em;
+  background-color: #000;
+  color:#fff;
+}
 
+ .videoControls:hover,
+ .videoControls:focus{
+  color:#6d9ba9;
+}
 
+ .videoControls:active{
+  color:#b54142;
+
+ }
 
 
 progress::-moz-progress-bar {
@@ -656,14 +671,14 @@ input[type=range] {
   float: left;
 }
 
-button:hover,
+/*button:hover,
 button:focus {
   background-color: #ddd;
 }
 
 button:active {
   background-color: #ccc;
-}
+}*/
 
 .controls div {
   font-size: 12px;

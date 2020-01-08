@@ -20,13 +20,13 @@
             <button ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
               <font-awesome-icon :icon="isPaused?'play':'pause'" />
             </button>
-            <button ref="backward" @click="goBackwards" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="$t('backward')">
+            <button ref="backward" @click="goBackwards" type="button" :aria-label="$t('backward')" :title="$t('backward')">
               <font-awesome-icon icon="backward" />
             </button>
-            <button ref="forward" @click="goForward" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="$t('forward')">
+            <button ref="forward" @click="goForward" type="button" :aria-label="$t('forward')" :title="$t('forward')">
               <font-awesome-icon icon="forward" />
             </button>
-            <button ref="mute" @click="isMuted=!isMuted" type="button" data-state="mute" :title="'Volume: '+setVolume+'%'">
+            <button ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')"  :aria-label="isMuted?$t('unmute'):$t('mute')">
               <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" />
             </button>
             <input type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'">
@@ -319,8 +319,10 @@ export default {
   "en":{
   "play":"Play",
   "pause":"Pause",
-  "forward":"Forward 10 secs.",
-  "backward":"Rewind 10 secs.",
+  "forward":"Forward 10 s.",
+  "backward":"Rewind 10 s.",
+  "mute":"Mute",
+  "unmute":"Unmute",
   "show":"Show ",
   "hide":"Hide ",
   "closedcaptionning":"Closed Captions",
@@ -330,8 +332,10 @@ export default {
   "fr":{
   "play":"Jouer",
   "pause":"Pause",
-  "forward":"Avancer 10 secs.",
-  "backward":"Reculer 10 secs.",
+  "forward":"Avancer 10 s.",
+  "backward":"Reculer 10 s.",
+  "mute":"Désactiver le son",
+  "unmute":"Activer le son",
   "show":"Afficher le ",
   "hide":"Cacher le ",
   "closedcaptionning":"sous-titrage codé",

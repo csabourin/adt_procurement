@@ -1,5 +1,6 @@
 <template>
   <div>
+    <fieldset>
     <table dir="ltr" border="1" cellspacing="0" cellpadding="0" width="100%">
       <colgroup>
         <col width="157" />
@@ -12,7 +13,7 @@
       </colgroup>
       <tbody>
         <tr>
-          <th v-html="$t('tableData[1]')" />
+          <td v-html="$t('tableData[1]')" />
           <th v-html="$t('tableData[2]')" />
           <th v-html="$t('tableData[3]')" />
           <th v-html="$t('tableData[4]')" />
@@ -35,7 +36,7 @@
           <td v-html="$t('tableData[17]')" />
           <td v-html="$t('tableData[18]')" />
           <td v-html="$t('tableData[19]')" />
-          <td><input @key.enter="salaryGo='checked'" v-b-popover.focus.bottom="$t('salaryPop')" type="number" v-model="salary" name="salary"><input type="checkbox" v-model="salaryGo" name="salaryGo" @change="$bvModal.show('salaryFeedback')"></td>
+          <td><input :aria-label="$t('instructions')" @key.enter="salaryGo='checked'" v-b-popover.focus.bottom="$t('salaryPop')" type="number" v-model="salary" name="salary"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="salaryGo" name="salaryGo" @change="$bvModal.show('salaryFeedback')"></td>
           <td>{{443333-salary}}</td>
         </tr>
         <tr>
@@ -62,7 +63,7 @@
           <td v-html="$t('tableData[38]')" />
           <td v-html="$t('tableData[39]')" />
           <td v-html="$t('tableData[40]')" />
-          <td><input v-b-popover.focus.bottom="$t('softwarePop')" type="number" v-model="software" name="software"><input type="checkbox" v-model="softwareGo" name="salaryGo" @change="$bvModal.show('softwareFeedback')"></td>
+          <td><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('softwarePop')" type="number" v-model="software" name="software"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="softwareGo" name="salaryGo" @change="$bvModal.show('softwareFeedback')"></td>
           <td v-html="$t('tableData[42]')" />
         </tr>
         <tr>
@@ -71,7 +72,7 @@
           <td v-html="$t('tableData[45]')" />
           <td v-html="$t('tableData[46]')" />
           <td v-html="$t('tableData[47]')" />
-          <td><input v-b-popover.focus.bottom="$t('hospitalityPop')" type="number" v-model="hospitality" name="hospitality"><input type="checkbox" v-model="hospitalityGo" name="hospitalityGo" @change="showHospitality"></td>
+          <td><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('hospitalityPop')" type="number" v-model="hospitality" name="hospitality"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="hospitalityGo" name="hospitalityGo" @change="showHospitality"></td>
           <td v-html="$t('tableData[49]')" />
         </tr>
         <tr>
@@ -80,7 +81,7 @@
           <td v-html="$t('tableData[52]')" />
           <td v-html="$t('tableData[53]')" />
           <td v-html="$t('tableData[54]')" />
-          <td><input v-b-popover.focus.bottom="$t('furniturePop')" type="number" v-model="furniture" name="furniture"><input type="checkbox" v-model="furnitureGo" name="furnitureGo" @change="$bvModal.show('furnitureFeedback')"></td>
+          <td><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('furniturePop')" type="number" v-model="furniture" name="furniture"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="furnitureGo" name="furnitureGo" @change="$bvModal.show('furnitureFeedback')"></td>
           <td v-html="$t('tableData[56]')" />
         </tr>
         <tr>
@@ -89,7 +90,7 @@
           <td v-html="$t('tableData[59]')" />
           <td v-html="$t('tableData[60]')" />
           <td v-html="$t('tableData[61]')" />
-          <td><input v-b-popover.focus.bottom="$t('trainingPop')" type="number" v-model="training" name="training"><input type="checkbox" v-model="trainingGo" name="trainingGo" @change="$bvModal.show('trainingFeedback')"></td>
+          <td><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('trainingPop')" type="number" v-model="training" name="training"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="trainingGo" name="trainingGo" @change="$bvModal.show('trainingFeedback')"></td>
           <td v-html="$t('tableData[63]')" />
         </tr>
         <tr>
@@ -143,6 +144,7 @@
         </tr>
       </tbody>
     </table>
+    </fieldset>
      <b-modal @hide="salaryGo=''" id="salaryFeedback" okOnly>
         <p v-if="salary==423333"><span class="v-right" /> Correct!</span></p>
         <p v-else><span class="v-wrong" /> Incorrect.</span></p>
@@ -200,12 +202,15 @@ methods:{
 <style type="text/css" scoped>
 .heading{background-color: #865F56; color:#FFF;}
     th,td{padding:.25em;font-size: 12px}
+    input[type=checkbox]{margin-left:1em;}
     input[type=checkbox]:before{content:" ";}
     th{text-align: center}
     td{text-align: right}
 </style>
 <i18n>{
   "en": {
+  "validate":"Validate answer",
+  "instructions":"Type the number here",
     "salaryPop": "An officer earning $70,000 is using their sick leave and will not be back for at least 6 months. A junior analyst earning $40,000 is resigning as of October 1. You will not have time to replace them in this fiscal year.",
     "salaryFeedback": "<p>The P6 annual forecast will change to $423,333.</p><ul><li>An employee using their sick leave doesn&rsquo;t impact the annual forecast as you still need to pay their salary.</li><li>Since your junior analyst will be gone the last six months (October to March) of the fiscal year, the P6 Annual Forecast for Salary will decrease by $20,000 ($443,333-$20,000=$423,333).You&rsquo;ll also need to update your Salary Commitments in the financial system.</li></ul>",
     "softwarePop": "You found out that the company providing the new software was bought out, and will be charging twice as much starting October 1. You are currently paying $1,000 per year per license; you have three licenses.",
@@ -321,6 +326,8 @@ methods:{
     ]
   },
   "fr": {
+  "validate":"Valider la réponse",
+  "instructions":"Entrez les chiffres ici",
     "salaryPop": "- Un officier qui gagne 70 000 $ utilise ses congés de maladie et ne reviendra pas avant au moins six mois. -Un analyste subalterne gagnant 40 000 $ démissionne à compter du 1er octobre. Vous n'aurez pas le temps de les remplacer au cours du présent exercice financier.",
     "salaryFeedback": "<p>&nbsp;Les pr&eacute;visions annuelles de P6 passeront &agrave; 423 333 dollars.</p><ul><li>Un employ&eacute; qui utilise ses cong&eacute;s de maladie n'a pas d'incidence sur les pr&eacute;visions annuelles puisque vous devez quand m&ecirc;me payer son salaire.</li><li>&Eacute;tant donn&eacute; que votre analyste subalterne sera absent au cours des six derniers mois (d'octobre &agrave; mars) de l'exercice, les pr&eacute;visions salariales annuelles de P6 diminueront de 20 000 $ (443 333 $ - 20 000 $ = 423 333 $) et vous devrez &eacute;galement mettre &agrave; jour vos engagements salariaux dans le syst&egrave;me financier.</li></ul>",
     "softwarePop": "Vous avez découvert que l'entreprise qui fournit le nouveau logiciel a été rachetée et qu'elle facturera deux fois plus cher à partir du 1er octobre. Vous payez actuellement 1 000 $ par année par licence ; vous avez trois licences.",

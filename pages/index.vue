@@ -4,7 +4,7 @@
       <videoplayer videoFile="IntroVideoPrototype.mp4" posterFile="video_poster.PNG" ccFile="intro_captions.vtt" toResume="setHomepage" :restartAt="thatPoint" />
        <div role="tablist" class="transcriptionBox">
     <b-card no-body class="mb-1 text-left">
-      <b-card-header header-tag="header" class="p-1" role="tab">
+      <b-card-header header-tag="p" class="p-1" role="tab">
         <b-button block href="#" v-b-toggle.translationbox variant="light" class="text-left" >{{$t('transcript')}}</b-button>
       </b-card-header>
       <b-collapse id="translationbox" accordion="translation-box" role="tabpanel">
@@ -89,6 +89,11 @@ export default {
     spendCompleted(){
       return this.$store.getters['spend/getScore']
     },
+    courseComplete(){
+      if(this.planCompleted>=80 && this.spendCompleted>=80&&this.reportCompleted>=80){
+        return true
+      }
+    }
   }
 }
 

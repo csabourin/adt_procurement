@@ -1,35 +1,41 @@
 <template>
-<div>
-  <b-container fluid style="overflow:hidden;">
-    <b-row class="navBar">
-      <b-col cols="5" sm="3" class="text-left">
-        <hamburger @menu-toggle="ShowMenu" />
-        <nuxt-link :to="localePath('index')">
-          <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
-        </nuxt-link>
-      </b-col>
-      <b-col cols="2" sm="6" ><h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')"> {{$t('finRoles')}}</h1></b-col>
-      <b-col cols="5" sm="3" class="text-right">
-        <fileMenu />
-        <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
-          <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" :lang="locale.code" v-bind:iconTitle="locale.name" />
-        </nuxt-link>
-      </b-col>
-    </b-row>
-    </b-row>
-    <b-row>
-      <!-- <transition-group tag="div" name="fade" class="grid"> -->
-      <b-col class="col-md-3" v-if="MenuShowing">
-        <transition appear mode="in-out" name="fade">
-          <content-map />
-        </transition>
-      </b-col>
-      <b-col>
-        <nuxt role="main"/>
-      </b-col>
-    <!-- </transition-group> -->
-    </b-row>
-  </b-container>
+  <div>
+    <b-container fluid style="overflow:hidden;">
+      <b-row class="navBar">
+        <b-col cols="5" sm="3" class="text-left">
+          <hamburger @menu-toggle="ShowMenu" />
+          <nuxt-link :to="localePath('index')">
+            <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
+          </nuxt-link>
+          <button v-b-modal.completionModal v-if="courseComplete">Course<br>Complete</button>
+        </b-col>
+        <b-col cols="2" sm="6">
+          <h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')"> {{$t('finRoles')}}</h1>
+        </b-col>
+        <b-col cols="5" sm="3" class="text-right">
+          <fileMenu />
+          <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
+            <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" :lang="locale.code" v-bind:iconTitle="locale.name" />
+          </nuxt-link>
+        </b-col>
+      </b-row>
+      </b-row>
+      <b-row>
+        <!-- <transition-group tag="div" name="fade" class="grid"> -->
+        <b-col class="col-md-3" v-if="MenuShowing">
+          <transition appear mode="in-out" name="fade">
+            <content-map />
+          </transition>
+        </b-col>
+        <b-col>
+          <nuxt role="main" />
+        </b-col>
+        <!-- </transition-group> -->
+      </b-row>
+    </b-container>
+    <b-modal centered okOnly id="completionModal">
+        <div>Success!</div>
+    </b-modal>
   </div>
 </template>
 <script type="text/javascript">
@@ -39,6 +45,7 @@ import contentMap from "~/components/contentMap"
 import homebutton from "~/components/icons/home_icon"
 import fileMenu from "~/components/fileMenu"
 export default {
+  name:"mainPage",
   head() {
     return {
       htmlAttrs: { lang: this.$i18n.locale }
@@ -58,6 +65,23 @@ export default {
 
   },
   computed: {
+    thatPoint() {
+      return parseInt(this.$store.state.currentPlaying.homepage)
+    },
+    planCompleted() {
+      return this.$store.getters['plan/getScore']
+    },
+    reportCompleted() {
+      return this.$store.getters['report/getScore']
+    },
+    spendCompleted() {
+      return this.$store.getters['spend/getScore']
+    },
+    courseComplete() {
+      if (parseInt(this.planCompleted,10) >= 80 && parseInt(this.spendCompleted,10) >= 80 && parseInt(this.reportCompleted,10) >= 80) {
+        return true
+      }
+    },
     availableLocales() {
       return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     }
@@ -65,6 +89,17 @@ export default {
   methods: {
     ShowMenu() {
       this.MenuShowing = !this.MenuShowing
+    }
+  },
+  watch: {
+    courseComplete: {
+      immediate:true,
+      handler(isCompleted){
+        if(isCompleted){
+          this.$bvModal.show('completionModal')
+        }
+      }
+
     }
   }
 
@@ -90,16 +125,17 @@ html {
   margin: 0;
 }
 
-.v-right:before{
-  content:"\1f600";
-  font-size: larger;
-}
-.v-wrong:before{
-  content:"\1f61e";
+.v-right:before {
+  content: "\1f600";
   font-size: larger;
 }
 
-.exam .card-header{
+.v-wrong:before {
+  content: "\1f61e";
+  font-size: larger;
+}
+
+.exam .card-header {
   display: none;
 }
 
@@ -110,26 +146,31 @@ body {
   padding: 0;
 }
 
-legend{
+legend {
   font-size: 1em;
 }
 
-a{
-  color:#1000ff;
+a {
+  color: #1000ff;
 }
+
 .bounce-enter-active {
   animation: bounce-in .5s;
 }
+
 .bounce-leave-active {
   animation: bounce-in .5s reverse;
 }
+
 @keyframes bounce-in {
   0% {
     transform: scale(0);
   }
+
   50% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -161,7 +202,8 @@ h3,
 }
 
 img {
-    vertical-align: text-top;}
+  vertical-align: text-top;
+}
 
 .transcriptionBox {
   width: 60vw;
@@ -186,8 +228,8 @@ img {
   background-color: #865F56;
 }
 
-.bottomNav{
-    position: relative;
+.bottomNav {
+  position: relative;
 }
 
 .bottomNav:before {
@@ -204,12 +246,14 @@ img {
   right: 0;
 }
 
-.v-inv{    clip: rect(1px,1px,1px,1px);
-    height: 1px;
-    margin: 0;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;}
+.v-inv {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
 
 .leftSide {
   display: flex;
@@ -231,23 +275,25 @@ img {
 .spendSection {
   position: relative;
 }
+
 .spendSectionBar {
   position: absolute;
   background-color: #cac1ca;
   width: 100vw;
   height: 30px;
   text-align: left;
-  left:-15px;
-  top:38%;
+  left: -15px;
+  top: 38%;
 }
+
 .spendSectionBar span {
-  padding:2px 10px 0;
+  padding: 2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;
   background-color: #fff;
   display: inline-block;
-  height:100%;
-  margin-left:15px;
+  height: 100%;
+  margin-left: 15px;
 }
 
 .rightSide {
@@ -259,7 +305,8 @@ img {
   padding: 0;
 }
 
-.pageTitle,.mainTitle {
+.pageTitle,
+.mainTitle {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 800;
   display: block;
@@ -267,10 +314,13 @@ img {
   color: #4D4D4D;
   letter-spacing: -1px;
   text-align: center;
-  padding-top:20px;
+  padding-top: 20px;
 }
-.mainTitle{  font-size: 30px;
-margin-top:-0.15em}
+
+.mainTitle {
+  font-size: 30px;
+  margin-top: -0.15em
+}
 
 .scrollMe {
   width: 100%;
@@ -279,11 +329,14 @@ margin-top:-0.15em}
 }
 
 @media only screen and (max-width: 720px) {
-  .mainTitle{  font-size: 18px;
-margin-top:-0.15em}
-h1 img {
-  vertical-align: middle;
-}
+  .mainTitle {
+    font-size: 18px;
+    margin-top: -0.15em
+  }
+
+  h1 img {
+    vertical-align: middle;
+  }
 }
 
 /* always present */
@@ -325,7 +378,10 @@ page-enter-active,
 
 }
 
-.pure-checkbox input[type="checkbox"], .pure-radiobutton input[type="checkbox"], .pure-checkbox input[type="radio"], .pure-radiobutton input[type="radio"] {
+.pure-checkbox input[type="checkbox"],
+.pure-radiobutton input[type="checkbox"],
+.pure-checkbox input[type="radio"],
+.pure-radiobutton input[type="radio"] {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -336,14 +392,29 @@ page-enter-active,
   width: 1px;
 }
 
-.pure-checkbox input[type="checkbox"]:focus + label:before, .pure-radiobutton input[type="checkbox"]:focus + label:before, .pure-checkbox input[type="radio"]:focus + label:before, .pure-radiobutton input[type="radio"]:focus + label:before, .pure-checkbox input[type="checkbox"]:hover + label:before, .pure-radiobutton input[type="checkbox"]:hover + label:before, .pure-checkbox input[type="radio"]:hover + label:before, .pure-radiobutton input[type="radio"]:hover + label:before {
+.pure-checkbox input[type="checkbox"]:focus+label:before,
+.pure-radiobutton input[type="checkbox"]:focus+label:before,
+.pure-checkbox input[type="radio"]:focus+label:before,
+.pure-radiobutton input[type="radio"]:focus+label:before,
+.pure-checkbox input[type="checkbox"]:hover+label:before,
+.pure-radiobutton input[type="checkbox"]:hover+label:before,
+.pure-checkbox input[type="radio"]:hover+label:before,
+.pure-radiobutton input[type="radio"]:hover+label:before {
   border-color: #4d4d4d;
   background-color: #f2f2f2;
 }
 
-.pure-checkbox input[type="checkbox"]:active + label:before, .pure-radiobutton input[type="checkbox"]:active + label:before, .pure-checkbox input[type="radio"]:active + label:before, .pure-radiobutton input[type="radio"]:active + label:before { transition-duration: 0s; }
+.pure-checkbox input[type="checkbox"]:active+label:before,
+.pure-radiobutton input[type="checkbox"]:active+label:before,
+.pure-checkbox input[type="radio"]:active+label:before,
+.pure-radiobutton input[type="radio"]:active+label:before {
+  transition-duration: 0s;
+}
 
-.pure-checkbox input[type="checkbox"] + label, .pure-radiobutton input[type="checkbox"] + label, .pure-checkbox input[type="radio"] + label, .pure-radiobutton input[type="radio"] + label {
+.pure-checkbox input[type="checkbox"]+label,
+.pure-radiobutton input[type="checkbox"]+label,
+.pure-checkbox input[type="radio"]+label,
+.pure-radiobutton input[type="radio"]+label {
   position: relative;
   padding-left: 2em;
   vertical-align: middle;
@@ -351,7 +422,10 @@ page-enter-active,
   cursor: pointer;
 }
 
-.pure-checkbox input[type="checkbox"] + label:before, .pure-radiobutton input[type="checkbox"] + label:before, .pure-checkbox input[type="radio"] + label:before, .pure-radiobutton input[type="radio"] + label:before {
+.pure-checkbox input[type="checkbox"]+label:before,
+.pure-radiobutton input[type="checkbox"]+label:before,
+.pure-checkbox input[type="radio"]+label:before,
+.pure-radiobutton input[type="radio"]+label:before {
   box-sizing: content-box;
   content: '';
   color: #4d4d4d;
@@ -366,7 +440,10 @@ page-enter-active,
   transition: all 0.4s ease;
 }
 
-.pure-checkbox input[type="checkbox"] + label:after, .pure-radiobutton input[type="checkbox"] + label:after, .pure-checkbox input[type="radio"] + label:after, .pure-radiobutton input[type="radio"] + label:after {
+.pure-checkbox input[type="checkbox"]+label:after,
+.pure-radiobutton input[type="checkbox"]+label:after,
+.pure-checkbox input[type="radio"]+label:after,
+.pure-radiobutton input[type="radio"]+label:after {
   box-sizing: content-box;
   content: '';
   background-color: #4d4d4d;
@@ -381,13 +458,33 @@ page-enter-active,
   transition: transform 200ms ease-out;
 }
 
-.pure-checkbox input[type="checkbox"]:disabled + label:before, .pure-radiobutton input[type="checkbox"]:disabled + label:before, .pure-checkbox input[type="radio"]:disabled + label:before, .pure-radiobutton input[type="radio"]:disabled + label:before { border-color: #cccccc; }
+.pure-checkbox input[type="checkbox"]:disabled+label:before,
+.pure-radiobutton input[type="checkbox"]:disabled+label:before,
+.pure-checkbox input[type="radio"]:disabled+label:before,
+.pure-radiobutton input[type="radio"]:disabled+label:before {
+  border-color: #cccccc;
+}
 
-.pure-checkbox input[type="checkbox"]:disabled:focus + label:before, .pure-radiobutton input[type="checkbox"]:disabled:focus + label:before, .pure-checkbox input[type="radio"]:disabled:focus + label:before, .pure-radiobutton input[type="radio"]:disabled:focus + label:before, .pure-checkbox input[type="checkbox"]:disabled:hover + label:before, .pure-radiobutton input[type="checkbox"]:disabled:hover + label:before, .pure-checkbox input[type="radio"]:disabled:hover + label:before, .pure-radiobutton input[type="radio"]:disabled:hover + label:before { background-color: inherit; }
+.pure-checkbox input[type="checkbox"]:disabled:focus+label:before,
+.pure-radiobutton input[type="checkbox"]:disabled:focus+label:before,
+.pure-checkbox input[type="radio"]:disabled:focus+label:before,
+.pure-radiobutton input[type="radio"]:disabled:focus+label:before,
+.pure-checkbox input[type="checkbox"]:disabled:hover+label:before,
+.pure-radiobutton input[type="checkbox"]:disabled:hover+label:before,
+.pure-checkbox input[type="radio"]:disabled:hover+label:before,
+.pure-radiobutton input[type="radio"]:disabled:hover+label:before {
+  background-color: inherit;
+}
 
-.pure-checkbox input[type="checkbox"]:disabled:checked + label:before, .pure-radiobutton input[type="checkbox"]:disabled:checked + label:before, .pure-checkbox input[type="radio"]:disabled:checked + label:before, .pure-radiobutton input[type="radio"]:disabled:checked + label:before { background-color: #cccccc; }
+.pure-checkbox input[type="checkbox"]:disabled:checked+label:before,
+.pure-radiobutton input[type="checkbox"]:disabled:checked+label:before,
+.pure-checkbox input[type="radio"]:disabled:checked+label:before,
+.pure-radiobutton input[type="radio"]:disabled:checked+label:before {
+  background-color: #cccccc;
+}
 
-.pure-checkbox input[type="checkbox"] + label:after, .pure-radiobutton input[type="checkbox"] + label:after {
+.pure-checkbox input[type="checkbox"]+label:after,
+.pure-radiobutton input[type="checkbox"]+label:after {
   background-color: transparent;
   top: 50%;
   left: 4px;
@@ -401,43 +498,65 @@ page-enter-active,
   transform: rotate(-45deg) scale(0);
 }
 
-.pure-checkbox input[type="checkbox"]:checked + label:after, .pure-radiobutton input[type="checkbox"]:checked + label:after {
+.pure-checkbox input[type="checkbox"]:checked+label:after,
+.pure-radiobutton input[type="checkbox"]:checked+label:after {
   content: '';
   transform: rotate(-45deg) scale(1);
   transition: transform 200ms ease-out;
 }
 
-.pure-checkbox input[type="radio"]:checked + label:before, .pure-radiobutton input[type="radio"]:checked + label:before {
+.pure-checkbox input[type="radio"]:checked+label:before,
+.pure-radiobutton input[type="radio"]:checked+label:before {
   animation: borderscale 300ms ease-in;
   background-color: white;
 }
 
-.pure-checkbox input[type="radio"]:checked + label:after, .pure-radiobutton input[type="radio"]:checked + label:after { transform: scale(1); }
+.pure-checkbox input[type="radio"]:checked+label:after,
+.pure-radiobutton input[type="radio"]:checked+label:after {
+  transform: scale(1);
+}
 
-.pure-checkbox input[type="radio"] + label:before, .pure-radiobutton input[type="radio"] + label:before, .pure-checkbox input[type="radio"] + label:after, .pure-radiobutton input[type="radio"] + label:after { border-radius: 50%; }
+.pure-checkbox input[type="radio"]+label:before,
+.pure-radiobutton input[type="radio"]+label:before,
+.pure-checkbox input[type="radio"]+label:after,
+.pure-radiobutton input[type="radio"]+label:after {
+  border-radius: 50%;
+}
 
-.pure-checkbox input[type="checkbox"]:checked + label:before, .pure-radiobutton input[type="checkbox"]:checked + label:before {
+.pure-checkbox input[type="checkbox"]:checked+label:before,
+.pure-radiobutton input[type="checkbox"]:checked+label:before {
   animation: borderscale 200ms ease-in;
   background: #4d4d4d;
 }
 
-.pure-checkbox input[type="checkbox"]:checked + label:after, .pure-radiobutton input[type="checkbox"]:checked + label:after { transform: rotate(-45deg) scale(1); }
-@keyframes 
-borderscale {  50% {
- box-shadow: 0 0 0 2px #4d4d4d;
-}
+.pure-checkbox input[type="checkbox"]:checked+label:after,
+.pure-radiobutton input[type="checkbox"]:checked+label:after {
+  transform: rotate(-45deg) scale(1);
 }
 
-.fade-enter-active, .fade-leave-active {
+@keyframes borderscale {
+  50% {
+    box-shadow: 0 0 0 2px #4d4d4d;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
   transition: all .5s ease;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+  {
   opacity: 0;
   transform: translateX(-100%);
-  width:0;
+  width: 0;
 }
 
-.btn-primary{
-  background-color:#0051A8;
+.btn-primary {
+  background-color: #0051A8;
 }
+
 </style>

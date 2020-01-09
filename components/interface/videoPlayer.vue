@@ -4,7 +4,7 @@
       <b-col>
         <figure style="clear:both;position:relative;background-color: #000;padding: 0 0 2em;">
           <Spinner v-if="!canPlay" />
-          <video @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadedmetadata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
+          <video id="mainPlayer" @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadedmetadata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
             <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions" @cuechange="readCaptions">
           </video>
@@ -307,6 +307,7 @@ export default {
       this.isPaused = !this.isPaused
       if (!this.isPaused) {
         this.$refs.videoplayer.play()
+        window.scrollTo(0,0)
       } else {
         this.$refs.videoplayer.pause()
       }
@@ -586,7 +587,7 @@ progress {
 }
 
 .videoControls{
-  margin: 0 1em;
+  margin: .5em 1em;
   background-color: #000;
   color:#fff;
 }
@@ -624,6 +625,7 @@ progress {
   /* Important Thing */
   -webkit-appearance: none;
   border: none;
+  border-bottom: 1px solid #4d4d4d;
 }
 
 progress::-webkit-progress-bar {

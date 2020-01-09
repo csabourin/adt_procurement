@@ -260,7 +260,7 @@ export default {
       let duration = e.target.duration
       this.canPlay = true
       this.PlayTime = (currentTime / duration) * 100
-      this.playToPercent = 10 * (1 + parseInt(Math.ceil(this.PlayTime / 10)))
+      this.playToPercent = 10 * ( parseInt(Math.ceil(this.PlayTime / 10)))
       if (!this.justSeeked) {
         const v = e.target
         v.volume = this.setVolume / 100

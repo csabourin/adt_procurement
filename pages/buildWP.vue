@@ -165,7 +165,7 @@ export default {
   data() {
     return {
       modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"],
-      playPercent:0
+      playPercent:"0"
     }
   },
   components: {
@@ -184,7 +184,7 @@ export default {
       this.$refs.vp.resumePlay()
     },
     updatePercent(e){
-      this.playPercent=e
+      this.playPercent=e.toString()
     }
   },
   computed:{

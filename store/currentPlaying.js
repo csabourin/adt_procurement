@@ -2,14 +2,14 @@ export const state = () => ({
   // score: {},
   showCC: window.localStorage.getItem("showCC") || false,
   volume: window.localStorage.getItem("volume") || 100,
-  homepage: window.localStorage.getItem("homepage") || 0,
-  buildWP: window.localStorage.getItem("buildWP") || 0,
-  createBudget: window.localStorage.getItem("createBudget") || 0,
-  spendPart1: window.localStorage.getItem("spendPart1") || 0,
-  spendPart2: window.localStorage.getItem("spendPart2") || 0,
-  spendPart3: window.localStorage.getItem("spendPart3") || 0,
-  reportPart1: window.localStorage.getItem("reportPart1") || 0,
-  reportPart2: window.localStorage.getItem("reportPart2") || 0
+  homepage: parseInt(window.localStorage.getItem("homepage"),10) || 0,
+  buildWP: parseInt(window.localStorage.getItem("buildWP"),10) || 0,
+  createBudget: parseInt(window.localStorage.getItem("createBudget"),10) || 0,
+  spendPart1: parseInt(window.localStorage.getItem("spendPart1"),10) || 0,
+  spendPart2: parseInt(window.localStorage.getItem("spendPart2"),10) || 0,
+  spendPart3: parseInt(window.localStorage.getItem("spendPart3"),10) || 0,
+  reportPart1: parseInt(window.localStorage.getItem("reportPart1"),10) || 0,
+  reportPart2: parseInt(window.localStorage.getItem("reportPart2"),10) || 0
 })
 
 export const mutations = {

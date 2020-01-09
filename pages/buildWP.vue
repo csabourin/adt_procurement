@@ -4,7 +4,7 @@
       {{ $t('BuildWorkPlan')}}
     </h2>
     <section>
-      <videoPlayer ref="vp" videoFile="buildworkplan.mp4" chapters chapterFile="chapters.vtt" posterFile="buildworkplan.png" ccFile="buildWP_captions.vtt" :restartAt="thatPoint" toResume="setBuildWP" :modalArray="modalArray" />
+      <videoPlayer ref="vp" videoFile="buildworkplan.mp4" chapters chapterFile="chapters.vtt" posterFile="buildworkplan.png" ccFile="buildWP_captions.vtt" :restartAt="thatPoint" toResume="setBuildWP" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
@@ -145,8 +145,8 @@
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
       <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
-      <microlearning path="buildWP" youAreHere imagePath="BuildWP.svg" size="140" time="20" completion="80" :text="$t('BuildWorkPlan')" />
-      <microlearning size="140" path="createBudget" time="20" completion="10" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
+      <microlearning path="buildWP" youAreHere imagePath="BuildWP.svg" size="140" time="20" :completion="playPercent" :text="$t('BuildWorkPlan')" />
+      <microlearning size="140" path="createBudget" time="20" completion="0" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
       <microlearning size="140" path="exam1" time="15" imagePath="P-Test.svg" :text="$t('Test')" />
     </div>
   </div>
@@ -165,6 +165,7 @@ export default {
   data() {
     return {
       modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"],
+      playPercent:0
     }
   },
   components: {
@@ -181,6 +182,9 @@ export default {
   methods: {
     resumePlay() {
       this.$refs.vp.resumePlay()
+    },
+    updatePercent(e){
+      this.playPercent=e
     }
   },
   computed:{

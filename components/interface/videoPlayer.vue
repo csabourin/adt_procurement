@@ -26,7 +26,7 @@
             <button class="videoControls" ref="forward" @click="goForward" type="button" :aria-label="$t('forward')" :title="$t('forward')">
               <font-awesome-icon icon="forward" />
             </button>
-            <button  class="videoControls" ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')"  :aria-label="isMuted?$t('unmute'):$t('mute')">
+            <button class="videoControls" ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')" :aria-label="isMuted?$t('unmute'):$t('mute')">
               <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" />
             </button>
             <input id="volumeSlider" type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'"><label for="volumeSlider" class="v-inv">Volume</label>
@@ -66,7 +66,7 @@ export default {
     restartAt: { type: Number, default: 0 },
     toResume: { type: String, default: 'setHomepage' },
     chapters: { type: Boolean, default: false },
-    videoFile: { type: String, default: 'IntroVideoPrototype.mp4' },
+    videoFile: { type: String, required: true, default: 'IntroVideoPrototype.mp4' },
     posterFile: { type: String, default: 'video_poster.PNG' },
     chapterFile: { type: String, default: '' },
     ccFile: { type: String, default: '' },
@@ -82,6 +82,7 @@ export default {
       ready: false,
       canPlay: false,
       PlayTime: 0,
+      playToPercent: 0,
       totalTime: 0,
       CCactive: false,
       videoUrl: require('~/assets/' + this.$i18n.locale + '/' + this.videoFile),
@@ -121,8 +122,8 @@ export default {
     }
   },
   computed: {
-    solidOrRegular(){
-      return this.CCactive?'far':'fas'
+    solidOrRegular() {
+      return this.CCactive ? 'far' : 'fas'
     },
     ccUrl() {
       if (this.ccFile) {
@@ -134,15 +135,14 @@ export default {
         return require('~/assets/' + this.$i18n.locale + '/' + this.chapterFile)
       }
     },
-    mediaTime() {
-      return this.PlayTime * 2
-
-    },
     trackNumber() {
       if (this.chapters) { return 1 } else { return 0 }
     }
   },
   watch: {
+    playToPercent(newValue) {
+      this.$emit('timeupdate', newValue)
+    },
     isMuted() {
       const video = this.$refs.videoplayer
       if (this.isMuted) {
@@ -198,7 +198,7 @@ export default {
           this.startTime.push(this.startTime[this.startTime.length - 1])
         }
       })
-          this.resumePosition()
+      this.resumePosition()
     },
     resumePlay() {
       if (!this.accessiblePopup) {
@@ -242,7 +242,7 @@ export default {
         setTimeout(function() {
           videoPlayer.play()
         }, 250)
-          this.justSeeked = false
+        this.justSeeked = false
 
       })
     },
@@ -260,6 +260,7 @@ export default {
       let duration = e.target.duration
       this.canPlay = true
       this.PlayTime = (currentTime / duration) * 100
+      this.playToPercent = 10 * (1 + parseInt(Math.ceil(this.PlayTime / 10)))
       if (!this.justSeeked) {
         const v = e.target
         v.volume = this.setVolume / 100
@@ -307,13 +308,13 @@ export default {
       this.isPaused = !this.isPaused
       if (!this.isPaused) {
         this.$refs.videoplayer.play()
-        window.scrollTo(0,0)
       } else {
         this.$refs.videoplayer.pause()
       }
     }
   }
 }
+
 </script>
 <i18n>
   {
@@ -353,7 +354,7 @@ video {
 }
 
 .mediaTime {
-  color:#fff;
+  color: #fff;
   background-color: #000;
   float: left;
   position: relative;
@@ -438,7 +439,7 @@ video {
   height: min-content;
   border-radius: 100px;
   background-color: transparent;
-  float:none;
+  float: none;
 }
 
 .playButton:hover,
@@ -586,30 +587,30 @@ progress {
   width: 100%
 }
 
-.videoControls{
+.videoControls {
   margin: .5em 1em;
   background-color: #000;
-  color:#fff;
+  color: #fff;
 }
 
- .videoControls:hover,
- .videoControls:focus{
-  color:#6d6d6d;
+.videoControls:hover,
+.videoControls:focus {
+  color: #6d6d6d;
 }
 
- .videoControls:active{
-  color:#b54142;
+.videoControls:active {
+  color: #b54142;
 
- }
+}
 
 
 progress::-moz-progress-bar {
-background: -moz-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
-background: linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
-background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2));
+  background: -moz-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
+  background: linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2));
   border-radius: 50px;
   background-color: #b54142;
-background-image: (45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), (to right, #bc1339, #4a0000);
+  background-image: (45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), (to right, #bc1339, #4a0000);
   background-size: 25px 14px, 100% 100%, 100% 100%;
 }
 
@@ -692,4 +693,5 @@ button:active {
 video {
   margin-bottom: -5px;
 }
+
 </style>

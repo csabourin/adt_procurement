@@ -49,8 +49,8 @@
     <h2 class="sideTitle reportTitle">{{$t('report')}}</h2>
     <section role="navigation" class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }">
       <microlearning imagePath="KeyMessR.png" path="reportKey" time="5" :text="$t('KeyMessages')" :completion="$store.state.currentPlaying.kmReport" />
-      <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
-      <microlearning imagePath="R-Contribute.svg"  path="reportPart2" time="20" :text="$t('ContributeReporting')" />
+      <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" :completion="$store.state.currentPlaying.reportPart1_player"/>
+      <microlearning imagePath="R-Contribute.svg"  path="reportPart2" time="20" :text="$t('ContributeReporting')" :completion="$store.state.currentPlaying.reportPart2_player" />
       <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('Test')" :completion="parseInt(reportCompleted)" />
     </section>
     <hr class="reportHr">

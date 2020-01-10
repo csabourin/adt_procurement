@@ -4,7 +4,7 @@
       <b-col>
         <figure style="clear:both;position:relative;background-color: #000;padding: 0 0 2em;">
           <Spinner v-if="!canPlay" />
-          <video id="mainPlayer" @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadedmetadata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
+          <video :id="vId" @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadedmetadata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
             <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions" @cuechange="readCaptions">
           </video>
@@ -42,7 +42,7 @@
     <ul v-if="chapters" class="bar" ref="linkBar">
       <li v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
         <p>{{ item }}</p><br>
-        <button @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></button>
+        <a :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
         <button v-if="modalArray[index]" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </button>
       </li>
     </ul>
@@ -63,6 +63,7 @@ export default {
     Spinner
   },
   props: {
+    vId: { type: String, required: true, default: 'mainPlayer' },
     restartAt: { type: Number, default: 0 },
     toResume: { type: String, default: 'setHomepage' },
     chapters: { type: Boolean, default: false },
@@ -260,7 +261,7 @@ export default {
       let duration = e.target.duration
       this.canPlay = true
       this.PlayTime = (currentTime / duration) * 100
-      this.playToPercent = 10 * ( parseInt(Math.ceil(this.PlayTime / 10)))
+      this.playToPercent = 10 * (parseInt(Math.ceil(this.PlayTime / 10)))
       if (!this.justSeeked) {
         const v = e.target
         v.volume = this.setVolume / 100

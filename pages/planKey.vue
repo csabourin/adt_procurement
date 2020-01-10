@@ -58,14 +58,15 @@
 
 <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
-      <microlearning path="planKey" youAreHere size="140" completion="100" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
-      <microlearning path="buildWP"  imagePath="BuildWP.svg" size="140" time="20" completion="80" :text="$t('BuildWorkPlan')" />
-      <microlearning size="140" path="createBudget" time="20" completion="10" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
-      <microlearning size="140" path="exam1" time="15" imagePath="P-Test.svg" :text="$t('Test')" />
+      <microlearning path="planKey" youAreHere size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
+      <microlearning path="buildWP" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" />
+      <microlearning size="140" path="createBudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
+      <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" />
     </div>
   </div>
 </template>
 <script type="text/javascript">
+var seenKey
 import download from "~/components/fileDownload"
 import hamburger from "~/components/hamburger"
 import microlearning from "~/components/microlearning"
@@ -74,8 +75,23 @@ export default {
     hamburger,
     microlearning,
      download
+  },
+  computed:{
+    pageComplete(){
+      return this.$store.state.currentPlaying.kmPlan
+    },
+    planCompleted(){
+      return this.$store.getters['plan/getScore']
+    }
+  },
+  mounted(){
+    seenKey = setTimeout(() => this.$store.commit('currentPlaying/setKmPlan',100),30000) // sets viewed after 30 secs
+  },
+  beforeDestroy(){
+    clearTimeout(seenKey) // cancel if leaving before 30 secs.
   }
 }
+
 
 </script>
 <i18n>{

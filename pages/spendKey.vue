@@ -70,21 +70,28 @@
     </b-container>
     <div class="bottomNav spendSection">
       <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
-      <microlearning youAreHere path="spendKey" size="140" completion="100" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
-      <microlearning path="spendPart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" completion="80" :text="$t('InitiateAuthorizeSpending')" />
-      <microlearning path="spendPart2"  imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" completion="80" :text="$t('ExerciseFinancialAuthority')" />
-      <microlearning path="spendPart3" size="140" time="20" completion="10" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
-      <microlearning path="exam2" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="$store.state.spend.allDone"/>
+      <microlearning time="5" youAreHere path="spendKey" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.png" :text="$t('KeyMessages')" />
+      <microlearning path="spendPart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('InitiateAuthorizeSpending')" />
+      <microlearning path="spendPart2"  imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('ExerciseFinancialAuthority')" />
+      <microlearning path="spendPart3" size="140" time="20" :completion="$store.state.currentPlaying.spendPart3_player" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
+      <microlearning path="exam2" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)"/>
     </div>
   </div>
 </template>
 <script type="text/javascript">
+ var seenKey
 import download from "~/components/fileDownload"
 import microlearning from "~/components/microlearning"
 export default {
   components: {
     microlearning,
     download
+  },
+  mounted(){
+    seenKey = setTimeout(() => this.$store.commit('currentPlaying/setKmSpend',100),30000)
+  },
+  beforeDestroy(){
+    clearTimeout(seenKey)
   }
 }
 

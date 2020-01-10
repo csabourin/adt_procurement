@@ -4,7 +4,7 @@
       {{ $t('CreateBudget')}}
     </h2>
     <section>
- <videoPlayer ref="vp" videoFile="CreateBudget.mp4" chapters chapterFile="BudgetChapters.vtt" ccFile="CreateBudget_captions.vtt" posterFile="CreateBudgetPoster.jpg" :restartAt="thatPoint" toResume="setCreateBudget" :modalArray="modalArray" />
+ <videoPlayer ref="vp" videoFile="CreateBudget.mp4" chapters chapterFile="BudgetChapters.vtt" ccFile="CreateBudget_captions.vtt" posterFile="CreateBudgetPoster.jpg" :restartAt="thatPoint" toResume="setCreateBudget" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
 
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
@@ -244,10 +244,10 @@
     </section>
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
-      <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
-      <microlearning path="buildWP"  imagePath="BuildWP.svg" size="140" time="20" completion="80" :text="$t('BuildWorkPlan')" />
-      <microlearning size="140" path="createBudget" youAreHere time="20" completion="10" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
-      <microlearning size="140" path="exam1" time="15" imagePath="P-Test.svg" :text="$t('Test')" />
+      <microlearning path="planKey" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
+      <microlearning path="buildWP" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" />
+      <microlearning youAreHere size="140" path="createBudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
+      <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" />
     </div>
   </div>
 </template>
@@ -262,18 +262,7 @@ import budgetQuiz from '~/components/slides/plan/budgetQuiz'
 export default {
   data() {
     return {
-      currentFrame: 0,
-      accessiblePopup: false,
-      modalArray: ["purpose", "purpose", "budgetKeyTerms", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"],
-      startTime: [],
-      endTime: [],
-      hasPlayed: {},
-      navBarTracks: [],
-      isPlayingNow: 0,
-      isPlayingSoon: 0,
-      byFrame: 0,
-      justSeeked: false,
-      isItReady: false
+      modalArray: ["purpose", "purpose", "budgetKeyTerms", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"]
     }
   },
   components: {
@@ -288,6 +277,9 @@ export default {
     methods: {
     resumePlay() {
       this.$refs.vp.resumePlay()
+    },
+    updatePercent(e){
+      this.$store.commit('currentPlaying/setCreateBudget_player',e)
     }
   },
   computed:{

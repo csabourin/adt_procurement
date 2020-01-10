@@ -63,7 +63,7 @@ export default {
     Spinner
   },
   props: {
-    vId: { type: String, required: true, default: 'mainPlayer' },
+    vId: { type: String, default: 'mainPlayer' },
     restartAt: { type: Number, default: 0 },
     toResume: { type: String, default: 'setHomepage' },
     chapters: { type: Boolean, default: false },

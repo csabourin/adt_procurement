@@ -2,7 +2,7 @@
   <div>
     <h2 class="pageTitle" v-html="$t('ContributeReporting')" />
     <section>
-<videoPlayer ref="vp" videoFile="reportPart2.mp4" chapters chapterFile="ReportPart2.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setReportPart1" :modalArray="modalArray" />
+<videoPlayer ref="vp" videoFile="reportPart2.mp4" chapters chapterFile="ReportPart2.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setReportPart1" :modalArray="modalArray" @timeupdate="updatePercent($event)"/>
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
@@ -60,10 +60,10 @@
     </section>
     <div class="bottomNav reportSection">
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
-      <microlearning path="reportKey" size="140" imagePath="KeyMessR.png" :text="$t('KeyMessages')" />
-      <microlearning path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
-      <microlearning youAreHere path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" :text="$t('ContributeReporting')" />
-      <microlearning path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" />
+      <microlearning :completion="$store.state.currentPlaying.kmReport" path="reportKey" size="140" imagePath="KeyMessR.png" :text="$t('KeyMessages')" />
+      <microlearning :completion="$store.state.currentPlaying.reportPart1_player" path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
+      <microlearning youAreHere :completion="$store.state.currentPlaying.reportPart2_player" path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" :text="$t('ContributeReporting')" />
+      <microlearning :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" />
     </div>
   </div>
 </template>
@@ -94,6 +94,9 @@ export default {
   methods: {
     resumePlay() {
       this.$refs.vp.resumePlay()
+    },
+    updatePercent(e){
+      this.$store.commit('currentPlaying/setReportPart2_player',e)
     }
   }
 }

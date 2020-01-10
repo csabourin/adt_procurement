@@ -82,8 +82,8 @@
         "4": "Deputy Head"
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
+        "right": "<span class='v-right' /> <strong>Correct!</strong>.",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
       "conclusion": "You would need to consult the Assistant Deputy Minister (ADM). Only the ADM has the authority to approve departmental costs for an event of more than $20,000 and up to $25,000. Don’t forget to consult with your Director and your Director General before approaching your ADM!<p>For more information on events, visit the <a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228'>Directive on Travel, Hospitality, Conference and Event Expenditures</a>.</p>"
     },

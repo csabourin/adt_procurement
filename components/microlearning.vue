@@ -1,7 +1,7 @@
 <template>
   <div class="learningElement">
     <nuxt-link :to="localePath(path)">
-      <div class="box" :style="boxSize">
+      <div class="box" :style="boxSize" style="color:#000">
         <div class="completed" :style="completionBar" :data-percent="completion"></div>
         <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes</span></div>
       </div>
@@ -22,8 +22,8 @@ export default {
     },
     time: String,
     completion: {
-      type: String,
-      default: "0"
+      type: Number,
+      default: 0
     },
     path: {
       type: String,
@@ -79,15 +79,15 @@ a {
   left: 0;
   bottom: 1.7em;
   height: 10px;
-  background-color: #000;
+  background-color: currentColor;
 }
 
 .completed:after {
   color: #000;
   background-color: rgba(255, 255, 255, .8);
   position: absolute;
-  right: 0em;
-  bottom: 0em;
+  right: 0;
+  bottom: 0;
   font-size: 12px;
   content: attr(data-percent)"%";
 }

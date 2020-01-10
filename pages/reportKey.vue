@@ -87,20 +87,27 @@
     </b-container>
     <div class="bottomNav reportSection">
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
-      <microlearning youAreHere path="reportKey" size="140" imagePath="KeyMessR.png" :text="$t('KeyMessages')" />
-      <microlearning path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
-      <microlearning path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" :text="$t('ContributeReporting')" />
-      <microlearning path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" />
+      <microlearning :completion="$store.state.currentPlaying.kmReport" youAreHere path="reportKey" size="140" imagePath="KeyMessR.png" :text="$t('KeyMessages')" />
+      <microlearning :completion="$store.state.currentPlaying.reportPart1_player" path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
+      <microlearning :completion="$store.state.currentPlaying.reportPart2_player" path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" :text="$t('ContributeReporting')" />
+      <microlearning :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" />
     </div>
   </div>
 </template>
 <script type="text/javascript">
+  var seenKey
 import download from "~/components/fileDownload"
 import microlearning from "~/components/microlearning"
 export default {
   components: {
     microlearning,
     download
+  },
+  mounted(){
+    seenKey = setTimeout(() => this.$store.commit('currentPlaying/setKmReport',100),30000)
+  },
+  beforeDestroy(){
+    clearTimeout(seenKey)
   }
 }
 

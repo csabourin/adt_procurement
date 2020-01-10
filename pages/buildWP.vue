@@ -144,10 +144,10 @@
     </section>
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
-      <microlearning path="planKey" size="140" completion="100" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
-      <microlearning path="buildWP" youAreHere imagePath="BuildWP.svg" size="140" time="20" :completion="playPercent" :text="$t('BuildWorkPlan')" />
-      <microlearning size="140" path="createBudget" time="20" completion="0" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
-      <microlearning size="140" path="exam1" time="15" imagePath="P-Test.svg" :text="$t('Test')" />
+      <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
+      <microlearning path="buildWP" youAreHere imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" />
+      <microlearning size="140" path="createBudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
+      <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" />
     </div>
   </div>
 </template>
@@ -164,8 +164,7 @@ import planQuiz from '~/components/slides/plan/planQuiz'
 export default {
   data() {
     return {
-      modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"],
-      playPercent:"0"
+      modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"]
     }
   },
   components: {
@@ -184,7 +183,7 @@ export default {
       this.$refs.vp.resumePlay()
     },
     updatePercent(e){
-      this.playPercent=e.toString()
+      this.$store.commit('currentPlaying/setBuildWP_player',e)
     }
   },
   computed:{

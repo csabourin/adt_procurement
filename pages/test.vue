@@ -1,18 +1,13 @@
 <template>
 	<div>
-    <videoPlayer />
-  
-  <p>{{users}}</p>
+    <whatIsFSR />
 </div>
 </template>
 <script type="text/javascript">
-	import videoPlayer from "~/components/interface/videoPlayer"
+  import whatIsFSR from '~/components/slides/report/whatIsFSR'
 export default{
-  computed:{
-    users(){  return this.$store.state.scorm.name    }
-  },
   components:{
-  	videoPlayer
+  	whatIsFSR
   }
 }
 </script>

@@ -6,7 +6,7 @@
       <b-container>
         <b-row>
           <b-col class="col-4">
-            <ul style="list-style:none;text-align: right;padding-left: 0">
+            <ul class="leftCol">
               <li v-for="(item,index) in questions" :key="index">
                 <label @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" ref="leftInput" style='text-align:right' :for="'left'+qId+index">{{item}}</label>
                 <input @click="getLeft" @focus="updateOffsets" type="radio" name="left" :id="'left'+qId+index" :value="index+1" @keyup.enter="findLeft" @dblclick="findLeft" @keyup.space="findLeft" v-model="activeRight">
@@ -14,18 +14,17 @@
             </ul>
           </b-col>
           <b-col class="col-4" ref="centerCol">
-            <svg ref="refSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" :width="colWidth" :height="ulSize">
-
+            <svg ref="refSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" :width="colWidth" :height="ulSize">
               <transition-group name="fade" tag="g" ref="pathGroup">
                 <line v-for="(item, index) in coordinates" :x1="coordinates[index][0][0]" :y1="coordinates[index][0][1]" :x2="coordinates[index][1][0]" :y2="coordinates[index][1][1]" stroke-width="2" :stroke="colorChoices[index]" fill="" stroke-linecap='round' :key="'pathKey'+index" ref="svgPath" />
               </transition-group>
             </svg>
           </b-col>
           <b-col class="col-4">
-            <div style="position:static">
-              <transition-group name="flip-list" tag="ul" style="list-style:none;padding-left: 0">
-                <li v-for="(item,index) in answers" :key="item[0]" ref="questionHeight">
-                  <input @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" name="right" :id="'right'+qId+index" :value="item[0]" v-model="activeLeft">
+            <div style="height:100%">
+              <transition-group name="flip-list" tag="ul" class="rightCol" @transitionend="generateCorrect">
+                <li class="answerSide" v-for="(item,index) in answers" :key="item[0]" ref="questionHeight">
+                  <input :data-coords="getCoords(index)" @click="getRight" @focus="updateOffsets" type="radio" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" name="right" :id="'right'+qId+index" :value="item[0]" v-model="activeLeft">
                   <label ref="rightInput" @dblclick="findRight" @keyup.enter="findRight" @keyup.space="findRight" :for="'right'+qId+index">{{item[1]}}</label>
                 </li>
               </transition-group>
@@ -63,6 +62,7 @@ export default {
   data() {
     return {
       debugging: false,
+      isMounted:false,
       isGenerated: false,
       colorsChoices: ['#167777', '#6C076C', '#6F1E0D', '#577a90', '#3A8251', '#616EB8', '#8D9245', '#775F75', '#607293', '#B35685', '#C35522'],
       coordinates: {},
@@ -105,9 +105,18 @@ export default {
     }
   },
   methods: {
+    getCoords(i){
+      if(!this.$refs.questionHeight){
+      return i  
+      } else {
+        return parseInt(this.$refs.questionHeight[i].getBoundingClientRect().y)-this.svgPosy
+      }
+      
+    },
+
     generateCorrect() {
       var leftx, lefty, rightx, righty, right, topright, left, topleft, rightInput
-      for (let i in this.question.dotsRight) {
+      for (let i in this.question.dotsLeft) {
         // var rightInput=document.querySelector('#right'+this.qId+i)
         // topright = rightInput.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
         right = this.$refs.rightInput[i].parentNode.getBoundingClientRect().left
@@ -166,7 +175,7 @@ export default {
       this.isSubmitted = false
       const right = event.target.parentNode.getBoundingClientRect().left
       const top = event.target.parentNode.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop)
-      this.right.x = parseInt(right -  this.svgPosx) - 8
+      this.right.x = parseInt(right - this.svgPosx) - 8
       this.right.y = parseInt(top - this.svgPosy + 10)
     },
     getLeft(event) {
@@ -203,7 +212,7 @@ export default {
       }
     },
     updateOffsets() {
-      this.ulSize =  parseInt(this.$refs.questionHeight[0].parentNode.offsetHeight,10)
+      this.ulSize = parseInt(this.$refs.questionHeight[0].parentNode.offsetHeight, 10)
       this.colWidth = 30 + this.$refs.centerCol.offsetWidth - 30
       const svgPos = this.offset(this.$refs.refSVG)
       this.svgPosx = parseInt(svgPos.x)
@@ -211,6 +220,7 @@ export default {
     }
   },
   mounted() {
+    this.isMounted=true
     window.addEventListener('resize', this.updateOffsets)
     // this.generateAnswers()
     this.answers = this.generateAnswers().sort(() => Math.random() - 0.5)
@@ -235,7 +245,6 @@ export default {
     }
   }
 }
-
 </script>
 <i18n>
   {
@@ -250,18 +259,45 @@ export default {
   }
 </i18n>
 <style type="text/css" scoped>
+.answerSide input:before {
+  content: attr(data-coords) "px";
+  font-size: 10px;
+  position: absolute;
+  left: -25px;
+}
+
+.leftCol {
+  list-style: none;
+  text-align: right;
+  padding-left: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rightCol {
+  list-style: none;
+  text-align: left;
+  padding-left: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .debugWindow {
-  width:200px;
+  width: 200px;
   position: fixed;
   top: 10px;
   left: 10px;
   z-index: 1000000;
   background-color: #fff;
   font-size: 10px;
-  padding:1em;
+  padding: 1em;
 }
 
-.debugWindow p{
+.debugWindow p {
   margin-bottom: .25em;
 }
 
@@ -306,5 +342,4 @@ input:after{
 }*/
 
 ;
-
 </style>

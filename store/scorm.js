@@ -527,7 +527,7 @@ export const getters = {
 export const actions = {
   setSuccess({commit}){
     setCompletion('passed')
-  }
+  },
   setLMSObjectives({ commit, state }) {
     // intention: initialize cmi.objectives.n.id with the 3 objectives, set passage mark at 80
     setObjective(0, 'plan', 80, 100)

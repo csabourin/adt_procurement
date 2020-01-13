@@ -79,6 +79,7 @@ export default {
     },
     courseComplete() {
       if (parseInt(this.planCompleted,10) >= 80 && parseInt(this.spendCompleted,10) >= 80 && parseInt(this.reportCompleted,10) >= 80) {
+        this.$store.dispatch('scorm/setSuccess')
         return true
       }
     },

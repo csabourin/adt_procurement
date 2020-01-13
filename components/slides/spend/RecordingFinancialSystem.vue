@@ -38,7 +38,7 @@ export default {
 <i18n>{
   "en": {
     "q1": {
-      "text": "This is what is used to obtain goods and/or services at prearranged prices.",
+      "text": "You want to buy two dry erase boards. Is this a soft or a hard commitment?",
       "options": {
         "1": "Soft Commitment",
         "2": "Hard Commitment"

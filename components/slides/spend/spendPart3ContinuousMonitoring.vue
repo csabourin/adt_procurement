@@ -44,7 +44,7 @@ export default {
 <i18n>{
   "en": {
     "q1": {
-      "text": "Travel has been approved for an employee. When it came time to book the flight, the price went up 10% from the time the travel was approved. What would you do? ",
+      "text": "The Assistant Deputy Minister approved a $5,000 travel request. It has been registered in the financial system. A week later, when it came time to book the flight, the price went from $600 to $650. What would you do? ",
       "options": {
         "1": "Change your actual expenditure amount.",
         "2": "Change your commitments without seeking an increase in the trip approval.",
@@ -74,7 +74,7 @@ export default {
   },
   "fr": {
     "q1": {
-      "text": "Le déplacement d’un employé a été autorisé. Au moment de réserver le vol, le prix a augmenté de 10 % à partir du moment où le voyage a été approuvé. Que feriez-vous?",
+      "text": "Le sous-ministre adjoint a approuvé une demande de voyage de 5 000 $. Elle a été enregistrée dans le système financier. Une semaine plus tard, au moment de réserver le vol, le prix est passé de 600 $ à 650 $. Que feriez-vous?",
       "options": {
         "1": "Modifiez le montant réel de vos dépenses.",
         "2": "Modifiez vos engagements sans demander une augmentation de l'autorisation de déplacement.",

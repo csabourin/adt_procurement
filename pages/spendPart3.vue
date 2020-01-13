@@ -2,7 +2,7 @@
   <div>
     <h1 class="pageTitle" v-html="$t('MonitorControlFinances')" />
     <section>
-      <videoPlayer ref="vp" videoFile="SpendPart3.mp4" chapters chapterFile="SpendPart3.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setSpendPart1" :modalArray="modalArray"  @timeupdate="updatePercent($event)" />
+      <videoPlayer ref="vp" videoFile="SpendPart3.mp4" chapters chapterFile="SpendPart3.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setSpendPart3" :modalArray="modalArray"  @timeupdate="updatePercent($event)" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">

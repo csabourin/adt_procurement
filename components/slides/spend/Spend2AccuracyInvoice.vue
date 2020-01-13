@@ -5,6 +5,7 @@
         <b-col><SalesInvoice /></b-col>
         <b-col>
 		 <b-card>
+      <p v-html="$t('instructions')" />
     <b-tabs content v-model="tabIndex">
       <b-tab title="Question 1"><radioQuiz :Question="$t('q1')" qId="1"/></b-tab>
       <b-tab title="Question 2"><radioQuiz :Question="$t('q2')" qId="2" /></b-tab>
@@ -43,6 +44,7 @@
 </script>
 <i18n>{
   "en": {
+  "instructions":"Answer the following questions by looking at the provided invoice.",
     "q1": {
       "text": "You have received 15 pairs of rose-colored glasses. The other five pairs are backordered. Do you pay the invoice?",
       "options": {
@@ -65,7 +67,7 @@
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": " If you look closely, you ordered from XYZ Enterprises, but the invoice is stating ABC Enterprises."
+      "conclusion": " You ordered from XYZ Enterprises, but if you look closely, the invoice is stating ABC Enterprises."
     },
     "q3": {
       "text": "You have ordered rose colored glasses at $20 per pair. Looking at the provided invoice, should you pay it?",
@@ -77,10 +79,11 @@
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>."
       },
-      "conclusion": " If you look closely, you ordered rose colored glasses at $20 per pair. The invoice indicates $25 per unit. You will need to contact the supplier to correct the invoice."
+      "conclusion": " You ordered rose colored glasses at $20 per pair. If you look closely, the invoice indicates $25 per unit. You will need to contact the supplier to correct the invoice."
     }
   },
   "fr": {
+  "instructions":"Répondez aux questions suivantes en consultant la facture fournie.",
     "q1": {
       "text": "Vous avez reçu 15 paires de lunettes roses. Les cinq autres paires sont en rupture de stock. Payez-vous la facture ?",
       "options": {

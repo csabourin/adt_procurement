@@ -1,7 +1,7 @@
 <template>
   <div>
     <span v-if="$i18n.locale=='en'">
-      <p>To deliver on your work plan, one of your activities requires you to purchase 10 microscopes for your team. Each microscope cost $200.</p>
+      <p>To deliver on your work plan, one of your activities requires you to purchase 10 microscopes for your team. Each microscope costs $200.</p>
       <p>First, let&rsquo;s check your budget.</p>
       <table border='1'>
         <tbody>
@@ -120,7 +120,7 @@ export default {
   "conclusion": "Of your $44,900 budget, you have already committed $15,000 and spent $29,000. So, $44,000 is already accounted for, meaning there is only $900 left in your budget."
   },
   "q2": {
-  "text": "Looking at the attached specimen signature card, does the manager have the required delegated authority to initiate and commit the funds?",
+  "text": "If there had been enough funds in the budget, looking at the provided specimen signature card, does the manager have the required delegated authority to initiate and commit the funds?",
   "options": {
   "1": "Yes",
   "2": "No"

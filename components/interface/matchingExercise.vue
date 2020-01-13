@@ -3,7 +3,7 @@
   	<legend><strong v-html="$t('instructions')"></strong></legend>
     <b-container fluid>
     	<p>&nbsp;</p>
-      <b-row v-for="(item,index) in this.questionList">
+      <b-row v-for="(item,index) in this.questionList" :key="'row0'+index">
         <b-col cols="5" >
           <ul>
             <li class="questions" >

@@ -2,7 +2,7 @@
   <div>
     <h2 class="pageTitle" v-html="$t('ContributeReporting')" />
     <section>
-<videoPlayer ref="vp" videoFile="reportPart2.mp4" chapters chapterFile="ReportPart2.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setReportPart1" :modalArray="modalArray" @timeupdate="updatePercent($event)"/>
+      <videoPlayer ref="vp" videoFile="reportPart2.mp4" chapters chapterFile="ReportPart2.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setReportPart1" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
@@ -25,7 +25,7 @@
         <externalGovtReports />
       </b-modal>
       <b-modal id="identifyResults" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('delegateAuthority')}}</template>
+        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('IdentifyResultsTitle')}}</template>
         <identifyResults />
       </b-modal>
       <b-modal id="inRealLife" @hide="resumePlay()" size="xl" okOnly>
@@ -95,8 +95,8 @@ export default {
     resumePlay() {
       this.$refs.vp.resumePlay()
     },
-    updatePercent(e){
-      this.$store.commit('currentPlaying/setReportPart2_player',e)
+    updatePercent(e) {
+      this.$store.commit('currentPlaying/setReportPart2_player', e)
     }
   }
 }
@@ -126,23 +126,18 @@ export default {
 </style>
 <i18n>{
   "en":{
-  "TakeTheQuiz":"Take the Quiz",
-  "tryItTitle":"Activity: Try it!",
-  "delegateAuthority":"Activity: Delegation of Authority",
-  "externalGovtReports":"Activity: What is a Financial Situation Report?",
+  "externalGovtReports":"Activity: External Government Reports",
+  "IdentifyResultsTitle":"Activity: Identify Results",
   "inRealLifeTitle":"Activity: In Real Life",
-  "RecordingTitle":"Activity: Recording in the Financial System",
+  "TakeTheQuiz":"Take the Quiz",
   "transcriptText":"",
   "reportSectionBar": "REPORT"
   },
   "fr":{
-  "TakeTheQuiz":"Répondez au questionnaire",
-  "completewptitle":"Activité: Compléter le plan de travail",
-  "delegateAuthority":"Activité: Délégation des pouvoirs",
-  "externalGovtReports":"Activité: Vérifiez votre budget",
-  "tryItTitle":"Activité: Essayons-le!",
+  "externalGovtReports":"Activité: Rapports externes du gouvernement",
+  "IdentifyResultsTitle":"Activité: Démontrer les résultats",
   "inRealLifeTitle":"Activité: Dans la vraie vie",
-  "RecordingTitle":"Activité: Enregistrement dans le système financier",
+  "TakeTheQuiz":"Répondez au questionnaire",
   "transcriptText":"",
   "reportSectionBar": "RAPPORTS"
   }

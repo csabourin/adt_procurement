@@ -1,5 +1,5 @@
 <template>
-  <matchingExercise :question="$t('q1')" qId="1" />
+	<matchingExercise :question="$t('q1')" qId="1" />
 </template>
 <script type="text/javascript">
 import matchingExercise from "~/components/interface/matchingExercise"

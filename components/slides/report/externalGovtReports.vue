@@ -1,11 +1,11 @@
 <template>
-	<connectDots :question="$t('q1')" qId="1" />
+    <matchingExercise :question="$t('q1')" qId="1" />
 </template>
 <script type="text/javascript">
-import connectDots from "~/components/interface/connectDots"
+import matchingExercise from "~/components/interface/matchingExercise"
 export default {
     components: {
-        connectDots
+        matchingExercise
     }
 }
 </script>

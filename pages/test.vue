@@ -1,13 +1,13 @@
 <template>
 	<div>
-    <whatIsFSR />
+    <matchingTest />
 </div>
 </template>
 <script type="text/javascript">
-  import whatIsFSR from '~/components/slides/report/whatIsFSR'
+  import matchingTest from '~/components/matchingTest'
 export default{
   components:{
-  	whatIsFSR
+  	matchingTest
   }
 }
 </script>

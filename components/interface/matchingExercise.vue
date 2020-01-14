@@ -8,14 +8,14 @@
           <ul>
             <li class="questions" >
               <p><label :for="'select'+index">{{item[0]}}</label> <select :id="'select'+index" v-model="Answered[item[1]]">
-                  <option v-for="(option,index) in AnswerList" :aria-described-by="'AnswerKey'+index"" :value="index" :disabled="!index" :selected="index===0">{{option}}</option>
+                  <option v-for="(option,index) in AnswerList" :aria-labelledby="'AnswerKey'+(index)" :value="index" :disabled="!index" :selected="index===0">{{option}}</option>
                 </select></p>
             </li>
           </ul>
         </b-col>
         <b-col cols="4">
           <ol class="AnswerNums" type="A" :start="index+1">
-            <li class="answers"><p :id="'AnswerKey'+index">{{question.dotsRight[index]}}</p></li>
+            <li class="answers"><p :id="'AnswerKey'+parseInt(index+1)">{{question.dotsRight[index]}}</p></li>
           </ol>
         </b-col>
         <b-col>

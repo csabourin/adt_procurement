@@ -36,8 +36,8 @@ export default {
   Test: "Test",
   MarkCompleted: "Mark as completed",
   // Text for Exams
-  notPassed: "You have not passed this test. You can revise you answers and then try again.",
-  Passed: "You have passed this test, you can revise you answers and try to improve your score or go to the",
+  notPassed: "You have not passed this test. You can revise your answers and then try again.",
+  Passed: "You have passed this test, you can revise your answers and try to improve your score or go to the",
   Excelled: "You have aced this test, congratulations! You can go back to the",
   // Text for icons
   t360Line1: "360",
@@ -46,5 +46,7 @@ export default {
   download360: "Download the 360 Scan",
   dwnPlanLine1: "Work Plan",
   dwnPlanLine2: "Template",
-  fileFolder: "Download files and tools"
+  fileFolder: "Download files and tools",
+  congratulations:"<h3>Congratulations!</h3><p>You have successfully completed this course.</p><p>Exit the course by closing this window.</p>",
+  courseComplete:"Course Completed"
 }

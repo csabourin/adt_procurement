@@ -7,7 +7,7 @@
           <nuxt-link :to="localePath('index')">
             <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
           </nuxt-link>
-          <button v-b-modal.completionModal v-if="courseComplete">Course<br>Complete</button>
+          <button class="successIcon" v-b-modal.completionModal v-if="courseComplete"><img src="~/assets/successIcon.png" width="50" height="50"><strong class="completeCaption" v-html="$t('courseComplete')" /></button>
         </b-col>
         <b-col cols="2" sm="6">
           <h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')"> {{$t('finRoles')}}</h1>
@@ -33,8 +33,8 @@
         <!-- </transition-group> -->
       </b-row>
     </b-container>
-    <b-modal centered okOnly id="completionModal">
-        <div>Success!</div>
+    <b-modal OkOnly centered okOnly id="completionModal" modal-class="successModal" body-class="successBody" header-class="successHeadFoot" footer-class="successHeadFoot" content-class="successContent">
+        <div class="successImage" /><div v-html="$t('congratulations')"></div>
     </b-modal>
   </div>
 </template>
@@ -176,8 +176,55 @@ a {
     transform: scale(1);
   }
 }
+.completeCaption{
+font-size: 12px;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
 
 
+}
+.successImage{
+    background-image: url('~assets/successIcon.svg');
+    display: block;
+    position:absolute;
+    width:55px;
+    height:55px;
+    top:50px;
+    left:-30px;
+}
+
+.successIcon{
+  background-color: transparent;
+  border:0;
+}
+.successModal
+{
+background-image: linear-gradient(135deg, #7a474e 45.45%, #8f5e65 45.45%, #8f5e65 50%, #7a474e 50%, #7a474e 95.45%, #8f5e65 95.45%, #8f5e65 100%);
+background-size: 11.00px 11.00px;
+  color:#fff;
+
+}
+.successHeadFoot{border:0;}
+
+.successBody{
+  text-align:center;
+  padding:1em;
+  border: 2px solid #fff;
+  border-radius:10px;
+  /*background-image: url('~assets/successIcon.svg');*/
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+}
+
+.successContent{
+  background-color: transparent;
+  background-image: url('~assets/SuccessPaper.svg');
+  background-size: contain;
+  padding:.5em 3em;
+  border:0;
+}
 .row.navBar {
   background-color: #fff;
   color: #000;

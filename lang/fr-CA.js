@@ -45,5 +45,7 @@ export default {
   t360Line1: "Aperçu",
   t360Line2: "360",
   dwnPlanLine1: "Plan de",
-  dwnPlanLine2: "travail"
+  dwnPlanLine2: "travail",
+  congratulations:"<h3>Félicitations!</h3><p>Vous avez réussi ce cours.</p><p>Quittez le cours en fermant cette fenêtre.</p>",
+  courseComplete:"Cours complété"
 }

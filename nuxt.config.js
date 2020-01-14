@@ -18,7 +18,7 @@ export default {
     ]
   },
   router: {
-    // base: '/ProdContent/cninv000000000017454/'
+    base: '/ProdContent/cninv000000000017454/'
   },
   /*
    ** Customize the progress-bar color

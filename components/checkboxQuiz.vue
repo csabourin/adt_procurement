@@ -1,7 +1,7 @@
 <template>
   <span class="pure-checkbox">
     <strong class="question" v-html="Question.text" />
-    <fieldset>
+    <fieldset tabindex="0">
       <legend v-html="$t('checkAll')" />
       <ol type="1">
         <li v-for="(item,index) in Question.options" :key="index">

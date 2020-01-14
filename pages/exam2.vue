@@ -150,8 +150,15 @@ export default {
   methods: {
 
     resetQuiz() {
-      this.isNull=!this.isNull
-      this.$store.commit('spend/resetQuiz')
+      this.$bvModal.msgBoxConfirm(this.$t('warnReset'), { cancelTitle: this.$t('cancel') }).then(trigger => {
+          if (trigger) {
+            this.isNull = !this.isNull
+            this.$store.commit('spend/resetQuiz')
+          } else {}
+        })
+        .catch(err => {
+          console.log(err)
+        });
     },
     markTest() {
       this.$store.commit('spend/lockQuiz')
@@ -293,6 +300,7 @@ export default {
 </style>
 <i18n>{
   "en": {
+  "warnReset":"This will erase your answer and score for this test, are you certain?",
     "Answered": "Answered",
     "markTest": "Mark my test",
     "testComplete": "Test Completed",
@@ -596,6 +604,7 @@ export default {
     }
   },
   "fr": {
+  "warnReset":"Ceci effacera vos réponses et les résultats de ce test. Voulez-vous continer?",
     "Answered": "Répondue",
     "markTest": "Grader mon examen",
     "testComplete": "Examen complété",

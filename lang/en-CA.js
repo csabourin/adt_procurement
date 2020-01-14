@@ -17,6 +17,7 @@ export default {
   backButton: "Back",
   submit: "Submit",
   submitTo: "Submit",
+  cancel: "Cancel",
   reset: "Reset",
   playIcon: "Play icon",
   pencilIcon: "Activity icon",

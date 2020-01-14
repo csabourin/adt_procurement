@@ -17,6 +17,7 @@ export default {
   backButton: "Retour",
   submit: "Vérifier",
   submitTo: "Soumettre",
+  cancel: "Annuler",
   reset: "Effacer",
   playIcon: "Jouer la vidéo",
   pencilIcon: "Icône d’activité",

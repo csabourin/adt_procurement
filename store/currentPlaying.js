@@ -93,7 +93,7 @@ export const mutations = {
   },
   setSpendPart3_player(state, playing) {
     window.localStorage.setItem("spendPart3_player", playing)
-    state.spendPart3 = playing
+    state.spendPart3_player = playing
   },
   setReportPart1_player(state, playing) {
     window.localStorage.setItem("reportPart1", playing)

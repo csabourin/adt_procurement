@@ -174,10 +174,10 @@
                   <p><span>Voyages au Canada</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_TwCU">
-                  <p><span>Voyages dans les États-Unis continentaux</span></p>
+                  <p><span>Voyages dans les États-Unis</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_TAinU">
-                  <p><span>Voyages à l'étranger, incluant les États-Unis non-continentaux</span></p>
+                  <p><span>Voyages hors du Canada et des États-Unis</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_Hos">
                   <p id="fn*-rf"><span>Accueil <a href="#fn1" class="fn-lnk">*<span class="wb-inv">Note</span></a>
@@ -206,13 +206,13 @@
                   <p><span>Prix</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_SaSB">
-                  <p><span>Rémunération et avantages sociaux</span></p>
+                  <p><span>Rémunération et avantages</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_AOGaS">
                   <p><span>Tous les autres biens et services</span></p>
                 </th>
                 <th class="chrtRotate blue" id="dc_GaAS">
-                  <p><span>Biens et services reliés aux biens</span></p>
+                  <p><span>Achat avec la carte d'acquisition</span></p>
                 </th>
                 <th class="chrtRotate blue" id="dc_EBS">
                   <p><span>Soumission électronique - Services</span></p>
@@ -529,9 +529,9 @@
                 <td headers="dc_adm dc_cat_sa dc_cat_eic dc_TwC dc_col_1">
                   <p>P</p>
                 </td>
-                <td headers="dc_adm dc_cat_sa dc_cat_eic dc_TwCU dc_col_2">&nbsp;
+                <td headers="dc_adm dc_cat_sa dc_cat_eic dc_TwCU dc_col_2">P
                 </td>
-                <td headers="dc_adm dc_cat_sa dc_cat_eic dc_TAinU dc_col_3">&nbsp;
+                <td headers="dc_adm dc_cat_sa dc_cat_eic dc_TAinU dc_col_3">10K
                 </td>
                 <td headers="dc_adm dc_cat_sa dc_cat_eic dc_Hos dc_col_4">
                   <p>3K</p>
@@ -566,7 +566,7 @@
                   <p>5K</p>
                 </td>
                 <td headers="dc_adm dc_cat_sa dc_cat_tra dc_EBS dc_col_15">
-                  <p>80K</p>
+                  <p>2M</p>
                 </td>
                 <td headers="dc_adm dc_cat_sa dc_cat_tra dc_CG dc_col_16">
                   <p>5K</p>
@@ -633,7 +633,7 @@
                 <th class="c3 grey" id="dc_dg">
                   <p><span class="small-font">Directeur général</span></p>
                 </th>
-                <td headers="dc_dg dc_cat_sa dc_cat_eic dc_TwC dc_col_1">&nbsp;
+                <td headers="dc_dg dc_cat_sa dc_cat_eic dc_TwC dc_col_1">P
                 </td>
                 <td headers="dc_dg dc_cat_sa dc_cat_eic dc_TwCU dc_col_2">&nbsp;
                 </td>
@@ -665,19 +665,19 @@
                 <td headers="dc_dg dc_cat_sa dc_cat_eic dc_AOGaS dc_col_13">
                   <p>P</p>
                 </td>
-                <td headers="dc_dg dc_cat_sa dc_cat_tra dc_GaAS dc_col_14">&nbsp;
+                <td headers="dc_dg dc_cat_sa dc_cat_tra dc_GaAS dc_col_14">5K
                 </td>
-                <td headers="dc_dg dc_cat_sa dc_cat_tra dc_EBS dc_col_15">&nbsp;
+                <td headers="dc_dg dc_cat_sa dc_cat_tra dc_EBS dc_col_15">100K
                 </td>
-                <td headers="dc_dg dc_cat_sa dc_cat_tra dc_CG dc_col_16">&nbsp;
+                <td headers="dc_dg dc_cat_sa dc_cat_tra dc_CG dc_col_16">5K
                 </td>
-                <td headers="dc_dg dc_cat_sa dc_cat_tra dc_CS dc_col_17">&nbsp;
+                <td headers="dc_dg dc_cat_sa dc_cat_tra dc_CS dc_col_17">5K
                 </td>
                 <td headers="dc_dg dc_cat_sa dc_cat_tra dc_N-CG dc_col_18">
-                  <p>5K</p>
+                  <p>&nbsp; </p>
                 </td>
                 <td headers="dc_dg dc_cat_sa dc_cat_tra dc_N-CS dc_col_19">
-                  <p>5K</p>
+                  <p>&nbsp; </p>
                 </td>
                 <td headers="dc_dg dc_cat_sa dc_cat_tra dc_TH dc_col_20">
                   <p>25K</p>
@@ -728,7 +728,7 @@
                 <th class="c3 grey" id="dc_dir">
                   <p class="small-font">Directeur</p>
                 </th>
-                <td headers="dc_dir dc_cat_sa dc_cat_eic dc_TwC dc_col_1">&nbsp;
+                <td headers="dc_dir dc_cat_sa dc_cat_eic dc_TwC dc_col_1">P
                 </td>
                 <td headers="dc_dir dc_cat_sa dc_cat_eic dc_TwCU dc_col_2">&nbsp;
                 </td>
@@ -758,19 +758,19 @@
                 <td headers="dc_dir dc_cat_sa dc_cat_eic dc_AOGaS dc_col_13">
                   <p>P</p>
                 </td>
-                <td headers="dc_dir dc_cat_sa dc_cat_tra dc_GaAS dc_col_14">&nbsp;
+                <td headers="dc_dir dc_cat_sa dc_cat_tra dc_GaAS dc_col_14">5K
                 </td>
                 <td headers="dc_dir dc_cat_sa dc_cat_tra dc_EBS dc_col_15">&nbsp;
                 </td>
-                <td headers="dc_dir dc_cat_sa dc_cat_tra dc_CG dc_col_16">&nbsp;
+                <td headers="dc_dir dc_cat_sa dc_cat_tra dc_CG dc_col_16">5K
                 </td>
-                <td headers="dc_dir dc_cat_sa dc_cat_tra dc_CS dc_col_17">&nbsp;
+                <td headers="dc_dir dc_cat_sa dc_cat_tra dc_CS dc_col_17">5K
                 </td>
                 <td headers="dc_dir dc_cat_sa dc_cat_tra dc_N-CG dc_col_18">
-                  <p>5K</p>
+                  <p>&nbsp; </p>
                 </td>
                 <td headers="dc_dir dc_cat_sa dc_cat_tra dc_N-CS dc_col_19">
-                  <p>5K</p>
+                  <p>&nbsp; </p>
                 </td>
                 <td headers="dc_dir dc_cat_sa dc_cat_tra dc_TH dc_col_20">&nbsp;
                 </td>
@@ -848,7 +848,7 @@
                 <td headers="dc_man dc_cat_sa dc_cat_eic dc_AOGaS dc_col_13">
                   <p>P</p>
                 </td>
-                <td headers="dc_man dc_cat_sa dc_cat_tra dc_GaAS dc_col_14">&nbsp;
+                <td headers="dc_man dc_cat_sa dc_cat_tra dc_GaAS dc_col_14">5K
                 </td>
                 <td headers="dc_man dc_cat_sa dc_cat_tra dc_EBS dc_col_15">&nbsp;
                 </td>
@@ -1300,7 +1300,7 @@
               </tr>
               <tr>
                 <th class="c3 grey" colspan="2" id="dc_pao">
-                  <p class="small-font">Agent d'autorisation de la paye</p>
+                  <p class="small-font">Agent d'acquisition désigné</p>
                 </th>
                 <td headers="dc_pao dc_cat_sa dc_cat_eic dc_TwC dc_col_1">&nbsp;
                 </td>
@@ -1328,29 +1328,26 @@
                 </td>
                 <td headers="dc_pao dc_cat_sa dc_cat_eic dc_AOGaS dc_col_13">&nbsp;
                 </td>
-                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_GaAS dc_col_14">&nbsp;
+                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_GaAS dc_col_14">25K
                 </td>
-                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_EBS dc_col_15">&nbsp;
+                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_EBS dc_col_15">600K
                 </td>
-                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_CG dc_col_16">&nbsp;
+                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_CG dc_col_16">250K
                 </td>
-                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_CS dc_col_17">&nbsp;
+                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_CS dc_col_17">5K
                 </td>
-                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_N-CG dc_col_18">&nbsp;
+                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_N-CG dc_col_18">25K
                 </td>
-                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_N-CS dc_col_19">&nbsp;
+                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_N-CS dc_col_19">80K
                 </td>
                 <td headers="dc_pao dc_cat_sa dc_cat_tra dc_TH dc_col_20">&nbsp;
                 </td>
                 <td headers="dc_pao dc_cat_sa dc_cat_tra dc_FPSRaP dc_col_21">&nbsp;
                 </td>
-                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_EC dc_col_22">&nbsp;
-                </td>
-                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_CASOGoS dc_col_23">&nbsp;
-                </td>
-                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_RtPfGaS dc_col_24">&nbsp;
-                </td>
-                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_DPPOAC dc_col_25">&nbsp;
+                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_EC dc_col_22">&nbsp;</td>
+                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_CASOGoS dc_col_23">P</td>
+                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_RtPfGaS dc_col_24">P</td>
+                <td headers="dc_pao dc_cat_sa dc_cat_tra dc_DPPOAC dc_col_25">P
                 </td>
                 <td headers="dc_pao dc_cat_fa dc_cat_cert dc_CertSE dc_col_26">&nbsp;
                 </td>
@@ -1445,7 +1442,6 @@
   </span>
 </template>
 <style scoped>
-
 footer,
 header,
 main {

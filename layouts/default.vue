@@ -191,7 +191,7 @@ font-size: 12px;
     position:absolute;
     width:55px;
     height:55px;
-    top:50px;
+    top:46px;
     left:-30px;
 }
 
@@ -204,9 +204,10 @@ font-size: 12px;
 background-image: linear-gradient(135deg, #7a474e 45.45%, #8f5e65 45.45%, #8f5e65 50%, #7a474e 50%, #7a474e 95.45%, #8f5e65 95.45%, #8f5e65 100%);
 background-size: 11.00px 11.00px;
   color:#fff;
-
 }
+
 .successHeadFoot{border:0;}
+.successHeadFoot .close {color:#fff;}
 
 .successBody{
   text-align:center;

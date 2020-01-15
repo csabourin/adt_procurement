@@ -438,7 +438,6 @@ video {
   display: inline-block;
   width: 58px;
   height: min-content;
-  border-radius: 100px;
   background-color: transparent;
   float: none;
 }

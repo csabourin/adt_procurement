@@ -22,7 +22,7 @@
           
         </div>
         <div v-if="$i18n.locale=='fr'">
-          <p>Merci de suivre le nouveau produit d’apprentissage intitulé « Utilisation responsable des fonds publics ». Comme celui-ci est dans une phase test, nous aimerions obtenir vos commentaires sur votre expérience d’apprentissage, particulièrement en ce qui a trait à ce qui a bien été, les défis que vous avez rencontrés et vos suggestions pour améliorer l’expérience. Remplir le questionnaire devrait vous prendre entre 5 et 10 minutes.</p>
+          <p>Merci de suivre le nouveau produit d’apprentissage intitulé « La saine gestion des fonds publics ». Comme celui-ci est dans une phase test, nous aimerions obtenir vos commentaires sur votre expérience d’apprentissage, particulièrement en ce qui a trait à ce qui a bien été, les défis que vous avez rencontrés et vos suggestions pour améliorer l’expérience. Remplir le questionnaire devrait vous prendre entre 5 et 10 minutes.</p>
           <p><a href="https://csps-efpc.sondage-survey.ca/f/s.aspx?s=f594eb12-9bd2-4cde-bed9-5d3220a7113b&lang=FR" target="_blank">Questionnaire</a></p>
           
         </div>

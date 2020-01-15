@@ -3,10 +3,10 @@
     <b-container>
       <b-row>
         <b-col>
-          <radioQuiz :Question="$t('q1')" qId="1" @response="lala=$event" />
+          <radioQuiz :question="$t('q1')" qId="1" @response="lala=$event" />
         </b-col>
         <b-col>
-          <checkboxQuiz :Question="$t('q2')" qId="2" :Answer='["1","2","3"]' @response="land = $event" />
+          <checkboxQuiz :question="$t('q2')" qId="2" :Answer='["1","2","3"]' @response="land = $event" />
         </b-col>
       </b-row>
     </b-container>

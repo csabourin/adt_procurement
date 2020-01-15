@@ -3,22 +3,22 @@
     <b-card>
       <b-tabs v-model="tabIndex">
         <b-tab title="Question 1">
-          <radioQuiz :Question="$t('q1')" qId="1" />
+          <radioQuiz :question="$t('q1')" qId="1" />
         </b-tab>
         <b-tab title="Question 2">
-          <radioQuiz :Question="$t('q2')" qId="2" />
+          <radioQuiz :question="$t('q2')" qId="2" />
         </b-tab>
         <b-tab title="Question 3">
-          <radioQuiz :Question="$t('q3')" qId="3" />
+          <radioQuiz :question="$t('q3')" qId="3" />
         </b-tab>
         <b-tab title="Question 4">
-          <radioQuiz :Question="$t('q4')" qId="4" />
+          <radioQuiz :question="$t('q4')" qId="4" />
         </b-tab>
         <b-tab title="Question 5">
-          <radioQuiz :Question="$t('q5')" qId="5" />
+          <radioQuiz :question="$t('q5')" qId="5" />
         </b-tab>
         <b-tab title="Question 6">
-          <radioQuiz :Question="$t('q6')" qId="6" />
+          <radioQuiz :question="$t('q6')" qId="6" />
         </b-tab>
         <b-tab title="Question 7">
           <div v-if="$i18n.locale=='en'">
@@ -108,7 +108,7 @@
 </tbody>
 </table>
           </div>
-          <radioQuiz :Question="$t('q7')" qId="7" />
+          <radioQuiz :question="$t('q7')" qId="7" />
         </b-tab>
       </b-tabs>
     </b-card>

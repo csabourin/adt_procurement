@@ -99,13 +99,13 @@
     <div>
     <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
     <b-tab title="Question 1">
-      <radioQuiz :Question="$t('q1')" qId="1" @response="Q1=$event"/>
+      <radioQuiz :question="$t('q1')" qId="1" @response="Q1=$event"/>
     </b-tab>
     <b-tab title="Question 2">
-      <radioQuiz :Question="$t('q2')" qId="2" @response="Q2=$event"/>
+      <radioQuiz :question="$t('q2')" qId="2" @response="Q2=$event"/>
     </b-tab>
     <b-tab title="Question 3">
-      <radioQuiz :Question="$t('q3')" qId="3" @response="Q3=$event"/>
+      <radioQuiz :question="$t('q3')" qId="3" @response="Q3=$event"/>
     </b-tab>
   </b-tabs>
   </div>

@@ -3,7 +3,7 @@
     <div>
       <b-card>
         <b-tabs v-model="tabIndex">
-          <b-tab title="Question 1"><checkboxQuiz :Question="$t('q2')" qId="2" :Answer='["2","3"]' /></b-tab>
+          <b-tab title="Question 1"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["2","3"]' /></b-tab>
           <b-tab title="Question 2">
             <p v-html="$t('q1.text')" />
             <span>
@@ -85,18 +85,18 @@
               </div>
             </span>
           </b-tab>
-          <b-tab title="Question 3"><radioQuiz :Question="$t('q3')" qId="3" /></b-tab>
-          <b-tab title="Question 4"><radioQuiz :Question="$t('q4')" qId="4" /></b-tab>
-          <b-tab title="Question 5"><radioQuiz :Question="$t('q5')" qId="5" /></b-tab>
-          <b-tab title="Question 6"><radioQuiz :Question="$t('q6')" qId="6" /></b-tab>
-          <b-tab title="Question 7"><radioQuiz :Question="$t('q7')" qId="7" /></b-tab>
-          <b-tab title="Question 8"><radioQuiz :Question="$t('q8')" qId="8" /></b-tab>
-          <b-tab title="Question 9"><checkboxQuiz :Question="$t('q9')" qId="9" :Answer='["1","2","3"]' /></b-tab>
-          <b-tab title="Question 10"><radioQuiz :Question="$t('q10')" qId="10" /></b-tab>
-          <b-tab title="Question 11"><checkboxQuiz :Question="$t('q11')" qId="11" :Answer='["3","4","5"]' /></b-tab>
-          <b-tab title="Question 12"><radioQuiz :Question="$t('q12')" qId="12" /></b-tab>
-          <b-tab title="Question 13"><checkboxQuiz :Question="$t('q13')" qId="13" :Answer='["1","2"]'/></b-tab>
-          <b-tab title="Question 14"><radioQuiz :Question="$t('q14')" qId="14" /></b-tab>
+          <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
+          <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
+          <b-tab title="Question 5"><radioQuiz :question="$t('q5')" qId="5" /></b-tab>
+          <b-tab title="Question 6"><radioQuiz :question="$t('q6')" qId="6" /></b-tab>
+          <b-tab title="Question 7"><radioQuiz :question="$t('q7')" qId="7" /></b-tab>
+          <b-tab title="Question 8"><radioQuiz :question="$t('q8')" qId="8" /></b-tab>
+          <b-tab title="Question 9"><checkboxQuiz :question="$t('q9')" qId="9" :Answer='["1","2","3"]' /></b-tab>
+          <b-tab title="Question 10"><radioQuiz :question="$t('q10')" qId="10" /></b-tab>
+          <b-tab title="Question 11"><checkboxQuiz :question="$t('q11')" qId="11" :Answer='["3","4","5"]' /></b-tab>
+          <b-tab title="Question 12"><radioQuiz :question="$t('q12')" qId="12" /></b-tab>
+          <b-tab title="Question 13"><checkboxQuiz :question="$t('q13')" qId="13" :Answer='["1","2"]'/></b-tab>
+          <b-tab title="Question 14"><radioQuiz :question="$t('q14')" qId="14" /></b-tab>
         </b-tabs>
       </b-card>
       <!-- Control buttons-->

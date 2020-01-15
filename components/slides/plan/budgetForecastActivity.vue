@@ -149,11 +149,11 @@
     </table>
     <b-modal id="question4" okOnly size="lg" :title="$t('q1.title')">
       <p v-html="$t('q1.introduction')"></p>
-      <radioQuiz :Question="$t('q1')" @response="q1Answer=$event" qId="1" />
+      <radioQuiz :question="$t('q1')" @response="q1Answer=$event" qId="1" />
     </b-modal>
     <b-modal id="question5" :title="$t('q2.title')" size="lg" okOnly>
       <p v-html="$t('q2.introduction')"></p>
-      <checkboxQuiz :Question="$t('q2')" qId="2" @response="q2Answer=$event" :Answer="['3','4']" />
+      <checkboxQuiz :question="$t('q2')" qId="2" @response="q2Answer=$event" :Answer="['3','4']" />
     </b-modal>
   </span>
 </template>

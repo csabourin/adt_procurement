@@ -1,10 +1,10 @@
 <template>
   <span class="pure-checkbox">
-    <strong class="question" v-html="Question.text" />
+    <strong class="question" v-html="question.text" />
     <fieldset tabindex="0">
       <legend v-html="$t('checkAll')" />
       <ol type="1">
-        <li v-for="(item,index) in Question.options" :key="index">
+        <li v-for="(item,index) in question.options" :key="index">
           <input :disabled="lock" @click="q2Submitted=false" type="checkbox" v-model="Quest2" :name="'q'+qId" :id="'checkboxq'+qId+index" :value="index"> <label :for="'checkboxq'+qId+index" v-html="item" />
         </li>
       </ol>
@@ -13,9 +13,9 @@
     <p>&nbsp;</p>
     <p v-if="!isAcceptable(Quest2) && q2Submitted" v-html="$t('pleaseAnswer')"></p>
     <span v-if="isAcceptable(Quest2) && q2Submitted">
-      <p v-if="arraysMatch(Quest2,Answer)"><span v-html="Question.feedback.right" /></p>
-      <p v-else> <span v-html="Question.feedback.wrong" /></p>
-      <p v-if="Quest2 && q2Submitted && Question.conclusion" v-html="Question.conclusion" />
+      <p v-if="arraysMatch(Quest2,Answer)"><span v-html="question.feedback.right" /></p>
+      <p v-else> <span v-html="question.feedback.wrong" /></p>
+      <p v-if="Quest2 && q2Submitted && question.conclusion" v-html="question.conclusion" />
     </span>
   </span>
 </template>
@@ -32,7 +32,7 @@ export default {
     lock: { type: Boolean, default: false },
     refill: { type: Array, default () { return [] } },
     exam: { type: Boolean, default: false },
-    Question: {
+    question: {
       type: Object,
       default: {
         text: "Question",

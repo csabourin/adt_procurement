@@ -5,36 +5,36 @@
     <b-tabs v-model="tabIndex">
       <b-tab title="Question 1">
         <!-- <p><strong v-html="$t('q1a.text')" /></p> -->
-        <selectMatching :Question="$t('q1a')" match="2" @response="Q1a=$event" />
-        <selectMatching :Question="$t('q1b')" match="3" @response="Q1b=$event" />
-        <selectMatching :Question="$t('q1c')" match="1" @response="Q1c=$event" />
-        <selectMatching :Question="$t('q1d')" match="4" @response="Q1d=$event" />
+        <selectMatching :question="$t('q1a')" match="2" @response="Q1a=$event" />
+        <selectMatching :question="$t('q1b')" match="3" @response="Q1b=$event" />
+        <selectMatching :question="$t('q1c')" match="1" @response="Q1c=$event" />
+        <selectMatching :question="$t('q1d')" match="4" @response="Q1d=$event" />
         <p v-if="Q1a && Q1b && Q1c && Q1d" v-html="$t('q1.conclusion')" />
       </b-tab>
       <b-tab title="Question 2">
-        <selectMatching :Question="$t('q2a')" match='3' @response="Q2a=$event" />
-        <selectMatching :Question="$t('q2b')" match='4' @response="Q2b=$event" />
-        <selectMatching :Question="$t('q2c')" match='1' @response="Q2c=$event" />
-        <selectMatching :Question="$t('q2d')" match='2' @response="Q2d=$event" />
+        <selectMatching :question="$t('q2a')" match='3' @response="Q2a=$event" />
+        <selectMatching :question="$t('q2b')" match='4' @response="Q2b=$event" />
+        <selectMatching :question="$t('q2c')" match='1' @response="Q2c=$event" />
+        <selectMatching :question="$t('q2d')" match='2' @response="Q2d=$event" />
         <p v-if="Q2a && Q2b && Q2c && Q2d" v-html="$t('q2.conclusion')" />
       </b-tab>
       <b-tab title="Question 3">
-        <radioQuiz :Question="$t('q3')" qId="3" />
+        <radioQuiz :question="$t('q3')" qId="3" />
       </b-tab>
       <b-tab title="Question 4">
-        <radioQuiz :Question="$t('q4')" qId="4" />
+        <radioQuiz :question="$t('q4')" qId="4" />
       </b-tab>
       <b-tab title="Question 5">
-        <checkboxQuiz :Question="$t('q5')" qId="5" :Answer="['1','2','3']" />
+        <checkboxQuiz :question="$t('q5')" qId="5" :Answer="['1','2','3']" />
       </b-tab>
       <b-tab title="Question 6">
-        <radioQuiz :Question="$t('q6')" qId="6" />
+        <radioQuiz :question="$t('q6')" qId="6" />
       </b-tab>
       <b-tab title="Question 7">
-        <radioQuiz :Question="$t('q7')" qId="7" />
+        <radioQuiz :question="$t('q7')" qId="7" />
       </b-tab>
       <b-tab title="Question 8">
-        <radioQuiz :Question="$t('q8')" qId="8" />
+        <radioQuiz :question="$t('q8')" qId="8" />
       </b-tab>
     </b-tabs>
   </b-card>

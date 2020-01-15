@@ -6,7 +6,7 @@
           <b-card>
             <b-tabs content>
               <b-tab title="Question">
-                <radioQuiz :Question="$t('q1')" qId="1" />
+                <radioQuiz :question="$t('q1')" qId="1" />
               </b-tab>
             </b-tabs>
           </b-card>

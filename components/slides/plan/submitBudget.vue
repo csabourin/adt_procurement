@@ -1,8 +1,8 @@
 <template>
 	<span>
-		<checkboxQuiz :Question="$t('q1')" qId="1" :Answer='["1","2","3"]'/>
+		<checkboxQuiz :question="$t('q1')" qId="1" :Answer='["1","2","3"]'/>
 		<hr>
-		<checkboxQuiz :Question="$t('q2')" qId="2" :Answer='["1","2"]'/>
+		<checkboxQuiz :question="$t('q2')" qId="2" :Answer='["1","2"]'/>
 	</span>
 </template>
 <script type="text/javascript">

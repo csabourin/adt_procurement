@@ -133,9 +133,9 @@
     <br>
     <b-card>
     <b-tabs content v-model="tabIndex">
-      <b-tab title="Question 1"><br><radioQuiz :Question="$t('q1')" qId="1"/></b-tab>
-      <b-tab title="Question 2"><br><radioQuiz :Question="$t('q2')" qId="2" /></b-tab>
-      <b-tab title="Question 3"><br><radioQuiz :Question="$t('q3')" qId="3" /></b-tab>
+      <b-tab title="Question 1"><br><radioQuiz :question="$t('q1')" qId="1"/></b-tab>
+      <b-tab title="Question 2"><br><radioQuiz :question="$t('q2')" qId="2" /></b-tab>
+      <b-tab title="Question 3"><br><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
     </b-tabs>
       <!-- Control buttons-->
       <div class="text-center">

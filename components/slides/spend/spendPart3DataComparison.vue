@@ -81,7 +81,7 @@
             </tbody>
           </table>
         </p>
-        <radioQuiz :Question="$t('q1')" qId="1" />
+        <radioQuiz :question="$t('q1')" qId="1" />
         </b-tab>
         <b-tab title="Question 2">
           <p>&nbsp;</p>
@@ -161,7 +161,7 @@
             </tbody>
           </table>
         </p>
-        <radioQuiz :Question="$t('q2')" qId="2" />
+        <radioQuiz :question="$t('q2')" qId="2" />
         </b-tab>
       </b-tabs>
       </b-card>

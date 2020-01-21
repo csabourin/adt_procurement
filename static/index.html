@@ -1,25 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
   <title>Responsible Use of Public Funds - La saine gestion des fonds publics</title>
 <style type="text/css">
+	body{
+	    font-family: 'Roboto Condensed', sans-serif;
+	    background-color: #d2d6da;
+        background-image: url('intro.jpg');
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+		margin: 0;
+		padding: 0;
+	}
 	.intro{
-		font-family:sans-serif;
+		padding-top:80px;
+		height:450px;
+		background: -moz-linear-gradient(top,  rgba(242,242,242,1) 0%, rgba(242,242,242,1) 34%, rgba(242,242,242,0) 100%);
+		background: -webkit-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(242,242,242,1) 34%,rgba(242,242,242,0) 100%);
+		background: linear-gradient(to bottom,  rgba(242,242,242,1) 0%,rgba(242,242,242,1) 34%,rgba(242,242,242,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#00f2f2f2',GradientType=0 );
+	}
+	.main-logo{
+		width: 60%;
+		height: 60%;
+		padding-bottom: 2px;
+		border-radius: 50%;
+		-webkit-box-shadow: 3px 3px 7px 0 #666666;
+		box-shadow: 3px 3px 7px 0 #666666;
+	}
+	.align-center{
+		display: block;
+		float:left;
+		width: 20%;
 		text-align: center;
+	}
+	.align-left{
+		display:block;
+		float:left;
+		text-align:right;
+	}
+	.align-left p, .align-left a{
+		margin-right:10px;
+	}
+	.align-right{
+		display:block;
+		float:left;
+		text-align:left;
+	}
+	.align-right p, .align-right a{
+		margin-left:10px;
+	}
+	.extra-pad{
+		clear:both;
+		display: block;
+		height: 20%;
+	}
+	.p40{
+		width: 40%;
+	}
+	.p50{
+		width: 50%;
+	}
+	.intro p {
+		font-size:2em;
+	}
+	.intro a {
+		color:#4d4d4d;
+		font-size:1.7em;
+		text-decoration:none;
+		padding:20px;
+	}
+	.intro a:hover, .intro a:focus {
+		text-decoration: underline;
+	}
+	.align-left.p50:after{
+		font-size:1.7em;
+		color:#c0c0c0;
+		content:"|";
 	}
 </style>
 </head>
 
 <body>
 	<div class="intro">
-	<img alt="" role="presentation" src="symbolic_identifier.png">
-  <p><a href="/en/">English</a></p>
-  <p><a href="/fr/">Français</a></p>
-  <!-- <p lang="en"><a href="/ProdContent/cninv000000000017454/en/">English</a></p> -->
-  <!-- <p lang="fr"><a href="/ProdContent/cninv000000000017454/fr/">Français</a></p>  -->
-</div>
+		<div class="align-left p40">
+			<p>Responsible Use of<br>Public Funds</p>
+		</div>
+		<div class="align-center">
+			<img class="main-logo" alt="" role="presentation" src="symbolic_identifier.svg">
+		</div>
+		<div class="align-right p40">
+			<p lang="fr">Utilisation responsable<br>des fonds publics</p>
+		</div>
 
+		<div class="extra-pad"></div>
+
+		<div class="align-left p50">
+		 	<a href="/en/">English</a>
+	  <!-- <a href="/ProdContent/cninv000000000017454/en/">English</a> -->
+		</div>
+		<div class="align-right p50">
+		 	<a href="/fr/" lang="fr">Français</a>
+	  <!-- <a href="/ProdContent/cninv000000000017454/fr/">Français</a>  -->
+		</div>
+	</div>
 </body>
 
 </html>

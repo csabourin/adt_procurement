@@ -4,6 +4,7 @@
       <div>
         <p>PLANIFICATION</p>
         <ul>
+          <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/system-gestion-depenses/cycle-rapports.html">Le cycle des rapports sur les dépenses gouvernementales</a></li>
           <li><a target="_blank" href="https://laws-lois.justice.gc.ca/fra/lois/f-11/">Loi sur la gestion des finances publiques</a></li>
           <li><a target="_blank" href="https://www.canada.ca/fr/gouvernement/systeme/priorites.html">Priorit&eacute;s du gouvernement</a>
             <ul>
@@ -29,6 +30,7 @@
     <div v-if="$i18n.locale=='en'">
       <p>PLAN</p>
       <ul class="list-unstyled">
+        <li><a target="_blank" href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/expenditure-management-system/reporting-cycle.html">The Reporting Cycle for Government Expenditures</a></li>
         <li><a target="_blank" href="http://laws-lois.justice.gc.ca/eng/acts/f-11/">Financial Administration Act</a></li>
         <li><a target="_blank" href="https://www.canada.ca/en/government/system/priorities.html">Government Priorities</a>
           <ul>

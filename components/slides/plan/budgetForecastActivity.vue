@@ -11,7 +11,7 @@
         <col width="351" />
       </colgroup>
       <tbody>
-        <tr>
+        <tr class="qTable">
           <td v-html="$t('budgetTableFill1')"></td>
           <td v-html="$t('budgetTableFill2')"></td>
           <td v-html="$t('budgetTableFill3')"></td>
@@ -34,7 +34,7 @@
           <td v-html="$t('budgetTableFill16')"></td>
           <td v-html="$t('budgetTableFill17')"></td>
         </tr>
-        <tr style="background-color:#8e7cc3">
+        <tr class="qTable">
           <td v-html="$t('budgetTableFill18')"></td>
           <td v-html="$t('budgetTableFill19')"></td>
           <td v-html="$t('budgetTableFill20')"></td>
@@ -77,7 +77,7 @@
           <td v-html="$t('budgetTableFill46')"></td>
           <td v-html="$t('budgetTableFill47')"></td>
         </tr>
-        <tr style="background-color:#8e7cc3">
+        <tr class="qTable">
           <td v-html="$t('budgetTableFill48')"></td>
           <td v-html="$t('budgetTableFill49')"></td>
           <td v-html="$t('budgetTableFill50')"></td>
@@ -175,6 +175,15 @@ export default {
 
 </script>
 <style type="text/css">
+.AnalyzeBudgetTable td:nth-child(n+2):nth-child(-n+5){
+  text-align: right;
+}
+tr.qTable{
+  background-color:#8e7cc3;
+  color:#fff;
+  font-weight: bold;
+  text-align: center;
+}
 .AnalyzeBudgetTable td {
   position: relative;
 }

@@ -29,34 +29,42 @@
           <span v-if="$i18n.locale=='en'">
             <h3>Create a Budget</h3>
             <ul>
-              <li>Budgets are essentially the conversion of the work plans into financial terms. In other words, the budget represents how much you will spend to achieve your work plan activities.</li>
-              <li>Typically, budgets will include Operating and Maintenance (O&amp;M) and Salary costs. Some budgets may also include Capital and Grants and Contributions amounts.</li>
-              <li>To create your budget, you must analyze information, forecast your new budget requirements and submit your new budget for approval.</li>
-            </ul>          </span>
+              <li>Budgets are essentially the conversion of the work plans into financial terms. In other words, the<strong> budget represents how much </strong><strong>you forecast to spend to </strong><strong>achieve your work plan activities</strong>.</li>
+            </ul>
+            <ul>
+              <li>Typically, budgets will include <strong>operating </strong><strong>and </strong><strong>maintenance</strong>(O&amp;M) and <strong>salary </strong>costs. Depending on the mandate of your department, some budgets may also include <strong>capital </strong>and <strong>grants </strong><strong>and </strong><strong>contributions</strong>amounts.</li>
+              <li><br />To create your budget, you must <strong>analyze </strong>information from various sources, <strong>forecast</strong> your new budget requirements and <strong>submit</strong> your new budget for approval to upper management.</li>
+            </ul>
+          </span>
           <span v-if="$i18n.locale=='fr'">
             <h3>&Eacute;tablir un budget</h3>
             <ul>
-              <li>Les budgets sont essentiellement la conversion des plans de travail en termes financiers. En d'autres mots, le budget repr&eacute;sente le montant que vous d&eacute;penserez pour r&eacute;aliser les activit&eacute;s de votre plan de travail.</li>
-              <li>Habituellement, les budgets comprennent les co&ucirc;ts de fonctionnement et d'entretien (F et E) et les co&ucirc;ts salariaux. Certains budgets peuvent &eacute;galement inclure des montants d'immobilisations et de subventions et contributions.</li>
-              <li>Pour cr&eacute;er votre budget, vous devez analyser les informations, pr&eacute;voir vos nouveaux besoins budg&eacute;taires et soumettre votre nouveau budget pour approbation.</li>
+              <li>Essentiellement, les budgets repr&eacute;sentent la conversion des plans de travail en termes financiers. En d'autres mots, <strong>le budget repr&eacute;sente le montant que vous pr&eacute;voyez d&eacute;penser pour r&eacute;aliser les activit&eacute;s de votre plan de travail</strong>.</li>
+              <li>Pour cr&eacute;er votre budget, vous devez <strong>analyser </strong>les informations de diverses sources,<strong>pr&eacute;voir </strong>vos nouveaux besoins budg&eacute;taires et <strong>soumettre </strong>votre nouveau budget pour approbation &agrave; la direction.</li>
+              <li>Habituellement, les budgets comprennent les co&ucirc;ts de <strong>fonctionnement et d'entretien</strong> (F et E) et les co&ucirc;ts <strong>salariaux</strong>. Selon le mandat de votre minist&egrave;re, certains budgets peuvent &eacute;galement inclure des montants <strong>d'immobilisations</strong> et de <strong>subventions et contributions</strong>.</li>
             </ul>
-
           </span>
         </b-col>
       </b-row>
-      <b-row><b-col><br><hr><h3>{{$t('fileSet')}}</h3>
-           <download filename="ADT_Ressources_360.pdf" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" />
-      <download filename="WorkPlan_Template.docx" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" /></b-col></b-row>
-    <b-row><b-col><p>&nbsp;</p><span v-if="$i18n.locale=='en'">
-      Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
-      <span v-if="$i18n.locale=='fr'">
-      Jetez un coup d'oeil au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
-    
-    </span></p>
-  </b-col></b-row>
+      <b-row>
+        <b-col><br>
+          <hr>
+          <h3>{{$t('fileSet')}}</h3>
+          <download filename="ADT_Ressources_360.pdf" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" />
+          <download filename="WorkPlan_Template.docx" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" />
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
+            Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
+          <span v-if="$i18n.locale=='fr'">
+            Jetez un coup d'oeil au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
+          </span></p>
+        </b-col>
+      </b-row>
     </b-container>
-
-<div class="bottomNav planSection">
+    <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
       <microlearning path="planKey" youAreHere size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
       <microlearning path="buildWP" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" />
@@ -74,106 +82,116 @@ export default {
   components: {
     hamburger,
     microlearning,
-     download
+    download
   },
-  computed:{
-    pageComplete(){
+  computed: {
+    pageComplete() {
       return this.$store.state.currentPlaying.kmPlan
     },
-    planCompleted(){
+    planCompleted() {
       return this.$store.getters['plan/getScore']
     }
   },
-  mounted(){
-    seenKey = setTimeout(() => this.$store.commit('currentPlaying/setKmPlan',100),30000) // sets viewed after 30 secs
+  mounted() {
+    seenKey = setTimeout(() => this.$store.commit('currentPlaying/setKmPlan', 100), 30000) // sets viewed after 30 secs
   },
-  beforeDestroy(){
+  beforeDestroy() {
     clearTimeout(seenKey) // cancel if leaving before 30 secs.
   }
 }
-
 
 </script>
 <i18n>{
   "en":
   {
-    "keyPlanQuote": " Great planning leads to great performance. ",
-    "fileSet": "Files in this section",
-    "downloadPlan": "Download a Word template of the work plan",
-    "planSectionBar": "PLAN"
+  "keyPlanQuote": " Great planning leads to great performance. ",
+  "fileSet": "Files in this section",
+  "downloadPlan": "Download a Word template of the work plan",
+  "planSectionBar": "PLAN"
   },
   "fr":
   {
-    "keyPlanQuote": " Une bonne planification mène à une bonne performance. ",
-    "fileSet": "Fichiers dans cette section",
-    "downloadPlan": "Télécharger un modèle Word du plan de travail",
-    "planSectionBar": "PLANIFICATION"
+  "keyPlanQuote": " Une bonne planification mène à une bonne performance. ",
+  "fileSet": "Fichiers dans cette section",
+  "downloadPlan": "Télécharger un modèle Word du plan de travail",
+  "planSectionBar": "PLANIFICATION"
   }
-}</i18n>
+  }</i18n>
 <style type="text/css" scoped>
-
 span.plan:before {
-background-color: #d1dfe1;
-content: " ";
-width: 100vw;
-height:2em;
-display: block;
-position: absolute;
-left:0;
-z-index: -1;
-margin: 0;
-margin-top: 30px;
+  background-color: #d1dfe1;
+  content: " ";
+  width: 100vw;
+  height: 2em;
+  display: block;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  margin: 0;
+  margin-top: 30px;
 }
+
 h3 {
   font-family: "Roboto Condensed";
   font-size: 1.5em;
 }
-.bigQuote{
+
+.bigQuote {
   font-size: 36px;
   padding-bottom: 2em;
-  font-family: 'Roboto Medium',Roboto;
-  font-weight:500;
+  font-family: 'Roboto Medium', Roboto;
+  font-weight: 500;
   color: #608a93;
-  background-image: linear-gradient( transparent 30%, white 30%, white 85%, transparent 85%, transparent 100% );
-  quotes: "“" "”";
-  padding:1em;
+  background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);
+  quotes: "“""”";
+  padding: 1em;
 }
-[lang=en] .bigQuote{
+
+[lang=en] .bigQuote {
   position: relative;
-    bottom: .75em;
+  bottom: .75em;
 }
-.bigQuote:before,.bigQuote:after{
-font-size:72px;
-font-family: Times;
-font-weight: bold;
-color:#d1dfe1;
-margin-top:-60px;
+
+.bigQuote:before,
+.bigQuote:after {
+  font-size: 72px;
+  font-family: Times;
+  font-weight: bold;
+  color: #d1dfe1;
+  margin-top: -60px;
 }
-.french-quote:before,.french-quote:after {
-font-size: 50px;
+
+.french-quote:before,
+.french-quote:after {
+  font-size: 50px;
 }
+
 .french-quote {
-quotes: "« " " »";
+  quotes: "« "" »";
 }
+
 .planSection {
   position: relative;
 }
+
 .planSectionBar {
   position: absolute;
   background-color: #d1dfe1;
   width: 100vw;
   height: 30px;
   text-align: left;
-  left:-15px;
-  top:38%;
+  left: -15px;
+  top: 38%;
 }
+
 .planSectionBar span {
-  padding:2px 10px 0;
+  padding: 2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;
   background-color: #fff;
   display: inline-block;
-  height:100%;
-  margin-left:15px;
+  height: 100%;
+  margin-left: 15px;
 }
+
 </style>

@@ -5,21 +5,21 @@
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">
             <p v-if="$i18n.locale=='en'">
-              <table border="1">
+              <table class="qTable" border="1">
                 <tbody>
                   <tr>
-                    <td colspan="2">
-                      <p><strong>Fund</strong></p>
-                    </td>
-                    <td colspan="2">
-                      <p><strong>Fund Center</strong></p>
-                    </td>
-                    <td colspan="2">
-                      <p><strong>General Ledger</strong></p>
-                    </td>
-                    <td colspan="2">
-                      <p><strong>Program Inventory</strong></p>
-                    </td>
+                    <th colspan="2">
+                      <p>Fund</p>
+                    </th>
+                    <th colspan="2">
+                      <p>Fund Center</p>
+                    </th>
+                    <th colspan="2">
+                      <p>General Ledger</p>
+                    </th>
+                    <th colspan="2">
+                      <p>Program Inventory</p>
+                    </th>
                   </tr>
                   <tr>
                     <td>
@@ -113,6 +113,23 @@
     </div>
   </span>
 </template>
+<style type="text/css" scoped>
+  .qTable th{
+    text-align: center;
+    background-color: #8e7cc3;
+    color: #fff;
+  }
+  .qTable td{
+    padding:.5em;
+  }
+  .qTable td:nth-child(n+3):nth-child(-n+4),
+  .qTable td:nth-child(n+7){
+    background-color: hsl(255, 37%, 90%);
+  }
+  .qTable{
+    margin-top:1em;
+  }
+</style>
 <i18n>
   {
   "en":{

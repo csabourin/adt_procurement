@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="scrollMe">
-    <table border=1 style="text-align: right">
+    <table border=1 class="qTable">
       <colgroup>
         <col />
         <col />
@@ -11,7 +11,7 @@
         <col />
       </colgroup>
       <tbody>
-        <tr style="background-color: #7d677d; color: white; padding:.5em; ">
+        <tr >
           <th v-html="$t('lines[0][0]')" />
           <th v-html="$t('lines[0][1]')" />
           <th v-html="$t('lines[0][2]')" />
@@ -23,8 +23,8 @@
           <td v-for="i in 6">&nbsp;</td>
         </tr>
         <tr>
-          <td v-html="$t('salary')" />
-          <td v-for="i in 5">&nbsp;</td>
+          <th v-html="$t('salary')" />
+          <th v-for="i in 5">&nbsp;</th>
         </tr>
         <tr>
           <td v-for="i in 6">&nbsp;</td>
@@ -49,8 +49,8 @@
           <td v-for="i in 6">&nbsp;</td>
         </tr>
         <tr>
-          <td v-html="$t('oAndm')" />
-          <td v-for="i in 5">&nbsp;</td>
+          <th v-html="$t('oAndm')" />
+          <th v-for="i in 5">&nbsp;</th>
         </tr>
         <tr>
           <td v-for="i in 6">&nbsp;</td>
@@ -442,6 +442,20 @@
 	}
 </script>
 <style type="text/css" scoped>
+.qTable th{
+    text-align: center;
+    background-color: #8e7cc3;
+    color: #fff;
+  }
+  .qTable td:nth-child(n+2):nth-child(-n+5){
+    text-align: right;
+  }
+  .qTable td:nth-child(odd){
+    background-color: hsl(255, 37%, 90%);
+  }
+  .qTable td{
+    padding:.5em;
+  }
   .scrollMe{ 
 display: block;
 position:relative;

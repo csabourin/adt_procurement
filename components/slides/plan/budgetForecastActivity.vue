@@ -174,11 +174,11 @@ export default {
 }
 
 </script>
-<style type="text/css">
+<style type="text/css" scoped>
 .AnalyzeBudgetTable td:nth-child(n+2):nth-child(-n+5){
   text-align: right;
 }
-tr.qTable{
+>>> tr.qTable{
   background-color:#8e7cc3;
   color:#fff;
   font-weight: bold;
@@ -188,6 +188,10 @@ tr.qTable{
   position: relative;
 }
 
+>>> .trainTable td{padding:.5em;}
+>>> .trainTable tr:nth-child(even) td:nth-child(n+2):nth-child(-n+4){
+  text-align: right;
+}
 .questionMark {
   display: block;
   font-family: Roboto Medium, Sans Serif;
@@ -202,7 +206,7 @@ tr.qTable{
   box-shadow: 3px 3px 3px rgba(50, 50, 51, .3);
   width: 60px;
   height: 60px;
-  left: 30%;
+  left: 20%;
   top: -.25em;
   z-index: 9999;
   cursor: pointer;
@@ -213,7 +217,7 @@ tr.qTable{
   {
   "en": {
     "q1": {
-      "introduction": "You have three employees that need training to implement the new software at $800 per employee. It has been common practice to send four employees on training of their choice at $500 per employee. ",
+      "introduction": "You have 3 employees that need training to implement the new software at $800 per employee. It has been common practice to send four employees on training of their choice at $500 per employee. ",
       "text": "What will your budget requirements be?",
       "options": {
         "1": "$4,400 Non-Discretionary ",
@@ -241,7 +245,7 @@ tr.qTable{
         "wrong": "<span class='v-wrong'/> <strong>Incorrect.</strong> The correct answers are $10,000 Non-Discretionary and $1,600 Discretionary or $11,600 Non-Discretionary."
       },
       "title": "Travel ",
-      "introduction": "<table border='1'> <tbody> <tr> <td> <p>Travel</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$18,000</p> </td> <td> <p>$16,000</p> </td> <td> <p>($2,000)</p> </td> <td> <p>Employee on leave without pay, and another did not travel.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$18,000</p> </td> <td> <p>$9,000</p> </td> <td> <p>$18,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Historically, you have&nbsp;</p> <ul> <li>spent $10,000 on travel to conduct inspections, and</li> <li>budgeted a total of $8,000 for general travel. However, you know that 80% of work can now be done virtually.</li> </ul>",
+      "introduction": "<table border='1' class='trainTable'> <tbody> <tr class='qTable'> <td> <p>Travel</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$18,000</p> </td> <td> <p>$16,000</p> </td> <td> <p style='color:red'>($2,000)</p> </td> <td> <p>Employee on leave without pay, and another did not travel.</p> </td> </tr> <tr class='qTable'> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$18,000</p> </td> <td> <p>$9,000</p> </td> <td> <p>$18,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Historically, you have&nbsp;</p> <ul> <li>spent $10,000 on travel to conduct inspections, and</li> <li>budgeted a total of $8,000 for general travel. However, you know that 80% of work can now be done virtually.</li> </ul>",
       "conclusion": "<p>We need to conduct inspections as part of our business, hence $10,000 is non-discretionary. As per the Directive on Travel, Hospitality, Conference, and Event Expenditures, travel should be avoided where appropriate. We will not request a budget for the 80% that can be done virtually. Since there is no indication of what the remaining general travel is for, it could be non-discretionary or discretionary.&nbsp;</p> <p><a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228'>Directive</a></p>"
     },
     "actInstructions": "Select any question marks and answer the question that appears",
@@ -344,7 +348,7 @@ tr.qTable{
   "fr": {
     "q1": {
       "conclusion": "La formation pour la mise en œuvre du nouveau logiciel est non discrétionnaire et la formation des autres employés est discrétionnaire.",
-      "introduction": "Vous avez trois employés qui ont besoin de formation pour mettre en œuvre le nouveau logiciel à 800 $ par employé. Il est courant d'envoyer quatre employés suivre la formation de leur choix au coût de 500 $ par employé.",
+      "introduction": "Vous avez 3 employés qui ont besoin de formation pour mettre en œuvre le nouveau logiciel à 800 $ par employé. Il est courant d'envoyer quatre employés suivre la formation de leur choix au coût de 500 $ par employé.",
       "text": "Quels seront vos besoins budgétaires ?",
       "options": {
         "1": "4 400 $ Non discrétionnaire",
@@ -359,7 +363,7 @@ tr.qTable{
       "title": "Formation"
     },
     "q2": {
-      "introduction": "<table border='1'> <tbody> <tr> <td> <p>Voyage</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explication</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>18 000 $</p> </td> <td> <p>16 000 $</p> </td> <td> <p>(2 000 $)</p> </td> <td> <p>en cong&eacute; non pay&eacute;, et un autre n'a pas voyag&eacute;.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>18 000 $</p> </td> <td> <p>9 000 $</p> </td> <td> <p>18 000 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Historiquement, vous avez&nbsp;</p> <ul> <li>d&eacute;pens&eacute; 10 000 $ en frais de d&eacute;placement pour effectuer des inspections, et</li> <li>a pr&eacute;vu au budget un montant total de 8 000 dollars pour les voyages g&eacute;n&eacute;raux. Cependant, vous savez que 80 % des d&eacute;placements g&eacute;n&eacute;raux peuvent se faire virtuellement.</li> </ul>",
+      "introduction": "<table border='1'  class='trainTable'> <tbody> <tr class='qTable'> <td> <p>Voyage</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explicationde la variance</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>16&nbsp;000&nbsp;$</p> </td> <td> <p style='color:red'>(2&nbsp;000 $)</p> </td> <td> <p>Un employé était en congé sans solde, et un autre n'est pas parti en voyage.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>18 000 $</p> </td> <td> <p>9 000 $</p> </td> <td> <p>18 000 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Historiquement, vous avez&nbsp;</p> <ul> <li>d&eacute;pens&eacute; 10 000 $ en frais de d&eacute;placement pour effectuer des inspections, et</li> <li>a pr&eacute;vu au budget un montant total de 8 000 dollars pour les voyages g&eacute;n&eacute;raux. Cependant, vous savez que 80 % des d&eacute;placements g&eacute;n&eacute;raux peuvent se faire virtuellement.</li> </ul>",
       "text": "Quels seront vos besoins budgétaires ?",
       "options": {
         "1": "18 000 $ Pouvoir discrétionnaire ",

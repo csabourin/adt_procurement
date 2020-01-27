@@ -29,10 +29,10 @@
           <span v-if="$i18n.locale=='en'">
             <h3>Create a Budget</h3>
             <ul>
-              <li>Budgets are essentially the conversion of the work plans into financial terms. In other words, the<strong> budget represents how much </strong><strong>you forecast to spend to </strong><strong>achieve your work plan activities</strong>.</li>
+              <li>Budgets are essentially the conversion of the work plans into financial terms. In other words, the<strong> budget represents how much you forecast to spend to achieve your work plan activities</strong>.</li>
             </ul>
             <ul>
-              <li>Typically, budgets will include <strong>operating </strong><strong>and </strong><strong>maintenance</strong>(O&amp;M) and <strong>salary </strong>costs. Depending on the mandate of your department, some budgets may also include <strong>capital </strong>and <strong>grants </strong><strong>and </strong><strong>contributions</strong>amounts.</li>
+              <li>Typically, budgets will include <strong>operating and maintenance</strong> (O&amp;M) and <strong>salary </strong>costs. Depending on the mandate of your department, some budgets may also include <strong>capital </strong>and <strong>grants  and contributions</strong> amounts.</li>
               <li><br />To create your budget, you must <strong>analyze </strong>information from various sources, <strong>forecast</strong> your new budget requirements and <strong>submit</strong> your new budget for approval to upper management.</li>
             </ul>
           </span>

@@ -54,16 +54,16 @@ export default {
       "conclusion":"Ce sont tous des ajustements possibles que vous pourriez faire. Les solutions peuvent être diverses - cela dépend de votre situation."
     },
     "q2": {
-      "text": "Au cours de la réunion d'examen du budget proposé, vous découvrez que vous obtenez trois employés et leur charge de travail d'une autre équipe qui est répartie entre quelques gestionnaires. Qu'est-ce que vous feriez?",
+      "text": "Au cours de la réunion d'examen du budget proposé, vous découvrez que vous obtenez 3 employés et leur charge de travail d'une autre équipe qui est répartie entre quelques gestionnaires. Que feriez-vous?",
       "options": {
         "1": "Ajoutez leurs activités à votre plan de travail. ",
-        "2": "Ajoutez leurs salaires et les frais de F&E à votre budget.",
-        "3": "Envisager de convertir les fonds de F&E en salaires pour couvrir les salaires supplémentaires."
+        "2": "Ajoutez leurs salaires et les frais de F et E à votre budget.",
+        "3": "Envisagez de convertir les fonds de F et E en salaires pour couvrir les salaires supplémentaires."
       },
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
         "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> "
-      },"conclusion":"Les bonnes réponses sont d'ajouter leurs activités à votre plan de travail et d'ajouter leurs salaires et F&E à votre budget. La conversion des fonds de F&E en salaires n'est pas une solution, car vos besoins en ressources augmentent et vous avez besoin de ces fonds."
+      },"conclusion":"Les bonnes réponses sont &laquo; Ajoutez leurs activités à votre plan de travail &raquo; et &laquo; Ajoutez leurs salaires et F et E à votre budget &raquo;. La conversion des fonds de F et E en salaires n'est pas une solution, car vos besoins en ressources augmentent et vous avez donc besoin de ces fonds."
     }
   }
 }</i18n>

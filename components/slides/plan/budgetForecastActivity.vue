@@ -245,7 +245,7 @@ export default {
         "wrong": "<span class='v-wrong'/> <strong>Incorrect.</strong> The correct answers are $10,000 Non-Discretionary and $1,600 Discretionary or $11,600 Non-Discretionary."
       },
       "title": "Travel ",
-      "introduction": "<table border='1' class='trainTable'> <tbody> <tr class='qTable'> <td> <p>Travel</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$18,000</p> </td> <td> <p>$16,000</p> </td> <td> <p style='color:red'>($2,000)</p> </td> <td> <p>Employee on leave without pay, and another did not travel.</p> </td> </tr> <tr class='qTable'> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$18,000</p> </td> <td> <p>$9,000</p> </td> <td> <p>$18,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Historically, you have&nbsp;</p> <ul> <li>spent $10,000 on travel to conduct inspections, and</li> <li>budgeted a total of $8,000 for general travel. However, you know that 80% of work can now be done virtually.</li> </ul>",
+      "introduction": "<table border='1' class='trainTable'> <tbody> <tr class='qTable'> <td> <p>Travel</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$18,000</p> </td> <td> <p>$16,000</p> </td> <td> <p style='color:red'>($2,000)</p> </td> <td> <p>Employee on leave without pay, and another did not travel.</p> </td> </tr> <tr class='qTable'> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$18,000</p> </td> <td> <p>$9,000</p> </td> <td> <p>$18,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Historically, you have&nbsp;</p> <ul> <li>spent $10,000 on travel to conduct inspections</li> <li>budgeted a total of $8,000 for general travel. However, you know that 80% of work can now be done virtually.</li> </ul>",
       "conclusion": "<p>We need to conduct inspections as part of our business, hence $10,000 is non-discretionary. As per the Directive on Travel, Hospitality, Conference, and Event Expenditures, travel should be avoided where appropriate. We will not request a budget for the 80% that can be done virtually. Since there is no indication of what the remaining general travel is for, it could be non-discretionary or discretionary.&nbsp;</p> <p><a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228'>Directive</a></p>"
     },
     "actInstructions": "Select any question marks and answer the question that appears",
@@ -347,36 +347,36 @@ export default {
   },
   "fr": {
     "q1": {
-      "conclusion": "La formation pour la mise en œuvre du nouveau logiciel est non discrétionnaire et la formation des autres employés est discrétionnaire.",
-      "introduction": "Vous avez 3 employés qui ont besoin de formation pour mettre en œuvre le nouveau logiciel à 800 $ par employé. Il est courant d'envoyer quatre employés suivre la formation de leur choix au coût de 500 $ par employé.",
-      "text": "Quels seront vos besoins budgétaires ?",
+      "conclusion": "La formation pour utiliser le nouveau logiciel est non discrétionnaire et la formation des autres employés est discrétionnaire.",
+      "introduction": "Vous avez 3 employés qui ont besoin de formation pour  utiliser le nouveau logiciel à 800 $ par employé. Il est courant d'envoyer 4 employés suivre la formation de leur choix à raison de 500 $ par employé.",
+      "text": "Quels sont vos besoins budgétaires ?",
       "options": {
-        "1": "4 400 $ Non discrétionnaire",
-        "2": "2 400 $ non discrétionnaire et 2 000 $ discrétionnaire",
-        "3": "2 000 $ non discrétionnaire et 2 400 $ discrétionnaire"
+        "1": "4 400 $ Non discrétionnaires",
+        "2": "2 400 $ non discrétionnaires et 2 000 $ discrétionnaires",
+        "3": "2 000 $ non discrétionnaires et 2 400 $ discrétionnaires"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 2 400 $ non discrétionnaire et 2 000 $ discrétionnaire.</strong>.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 2 400 $ non discrétionnaires et 2 000 $ discrétionnaires.</strong>.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 2 400 $ non discrétionnaire et 2 000 $ discrétionnaire."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 2 400 $ non discrétionnaires et 2 000 $ discrétionnaires."
       },
       "title": "Formation"
     },
     "q2": {
-      "introduction": "<table border='1'  class='trainTable'> <tbody> <tr class='qTable'> <td> <p>Voyage</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explicationde la variance</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>16&nbsp;000&nbsp;$</p> </td> <td> <p style='color:red'>(2&nbsp;000 $)</p> </td> <td> <p>Un employé était en congé sans solde, et un autre n'est pas parti en voyage.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>18 000 $</p> </td> <td> <p>9 000 $</p> </td> <td> <p>18 000 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Historiquement, vous avez&nbsp;</p> <ul> <li>d&eacute;pens&eacute; 10 000 $ en frais de d&eacute;placement pour effectuer des inspections, et</li> <li>a pr&eacute;vu au budget un montant total de 8 000 dollars pour les voyages g&eacute;n&eacute;raux. Cependant, vous savez que 80 % des d&eacute;placements g&eacute;n&eacute;raux peuvent se faire virtuellement.</li> </ul>",
-      "text": "Quels seront vos besoins budgétaires ?",
+      "introduction": "<table border='1'  class='trainTable'> <tbody> <tr class='qTable'> <td> <p>Voyage</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explicationde la variance</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>16&nbsp;000&nbsp;$</p> </td> <td> <p style='color:red'>(2&nbsp;000 $)</p> </td> <td> <p>Un employé était en congé sans solde, et un autre n'est pas parti en voyage.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>18 000 $</p> </td> <td> <p>9 000 $</p> </td> <td> <p>18 000 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Par le passé, vous avez&nbsp;:</p> <ul> <li>d&eacute;pens&eacute; 10 000 $ en frais de d&eacute;placement pour effectuer des inspections;</li> <li>pr&eacute;vu au budget un montant total de 8 000 dollars pour les voyages g&eacute;n&eacute;raux. Cependant, vous savez que 80 % des du travail peut maintenant se faire virtuellement.</li> </ul>",
+      "text": "Quels seront vos besoins budgétaires?",
       "options": {
-        "1": "18 000 $ Pouvoir discrétionnaire ",
-        "2": "10 000 $ non discrétionnaire et 8 000 $ discrétionnaire",
-        "3": "10 000 $ non discrétionnaire et 1 600 $ discrétionnaire",
-        "4": "11 600 $ Non discrétionnaire"
+        "1": "18 000 $ discrétionnaires",
+        "2": "10 000 $ non discrétionnaires et 8 000 $ discrétionnaires",
+        "3": "10 000 $ non discrétionnaires et 1 600 $ discrétionnaires",
+        "4": "11 600 $ Non discrétionnaires"
       },
       "feedback": {
         "wrong": "<span class='v-wrong'/> <strong>Incorrect.</strong> Les bonnes réponses sont 10 000 $ non discrétionnaire et 1 600 $ discrétionnaire ou 11 600 $ non discrétionnaire. ",
         "right": "<span class='v-right'/> <strong>Correct!</strong> "
       },
       "title": "Voyage",
-      "conclusion": "<p>Nous devons effectuer des inspections dans le cadre de nos activités, de sorte que 10 000 $ ne sont pas discrétionnaires. Conformément à la Directive sur les dépenses de voyage, d'accueil, de conférence et d'événement, les déplacements devraient être évités au besoin. Nous ne demanderons pas un budget pour les 80 p. 100 qui peuvent être réalisés virtuellement. Étant donné qu'il n'y a aucune indication de la raison pour laquelle les déplacements généraux restants sont effectués, ils pourraient être non discrétionnaires ou discrétionnaires.</p> <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive</a>"
+      "conclusion": "<p>Nous devons effectuer des inspections dans le cadre de nos activités, de sorte que 10 000 $ ne sont pas discrétionnaires. Conformément à la Directive sur les dépenses de voyage, d'accueil, de conférence et d'événement, les déplacements devraient être évités lorsque cela est possible. Nous ne demanderons pas un budget pour les 80 p. 100 qui peuvent être réalisés virtuellement. Étant donné qu'il n'y a aucune indication de la raison pour laquelle il reste de l’argent pour les voyages, ces sommes pourraient être non discrétionnaires ou discrétionnaires.</p> <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive</a>"
     },
     "actInstructions": "Sélectionnez les points d'interrogation et répondez à la question qui apparaît. ",
     "budgetTableFill1": "Poste individuel",

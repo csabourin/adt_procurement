@@ -12,11 +12,11 @@
       </colgroup>
       <tbody>
         <tr class="qTable">
-          <td v-html="$t('budgetTableFill1')"></td>
-          <td v-html="$t('budgetTableFill2')"></td>
-          <td v-html="$t('budgetTableFill3')"></td>
-          <td colspan="2" rowspan="1" v-html="$t('budgetTableFill4')"></td>
-          <td v-html="$t('budgetTableFill5')"></td>
+          <th v-html="$t('budgetTableFill1')"></th>
+          <th v-html="$t('budgetTableFill2')"></th>
+          <th v-html="$t('budgetTableFill3')"></th>
+          <th colspan="2" rowspan="1" v-html="$t('budgetTableFill4')"></th>
+          <th v-html="$t('budgetTableFill5')"></th>
         </tr>
         <tr>
           <td v-html="$t('budgetTableFill6')"></td>
@@ -230,7 +230,7 @@ text-align: right;
   "en": {
     "q1": {
       "title": "Salary",
-      "introduction": "<table class='qTable finTable'> <tbody> <tr> <th> <p>Salary</p> </th> <th> <p>Budget (A)</p> </th> <th> <p>Actual (B)</p> </th> <th> <p>Variance (C=B-A)</p> </th> <th> <p>Variance Explanation</p> </th> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$460,000</p> </td> <td> <p>$450,000</p> </td> <td> <p><span style='color: #ff0000;'>($10,000)</span></p> </td> <td> <p>An employee was on leave without pay.</p> </td> </tr> <tr> <td>&nbsp;</td> <th> <p>Budget</p> </th> <th> <p>YTD Actual</p> </th> <td> <p>Annual Forecast</p> </td> <td></td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$475,000</p> </td> <td> <p>$237,500</p> </td> <td> <p>$475,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table><br><ul> <li>An employee&rsquo;s annual salary is $60,000 per year. You know that they will retire on July 1 of next year and won&rsquo;t be replaced, and&nbsp;</li> <li>You plan on getting a casual employee for 4 months for a total of $13,333.</li> </ul>",
+      "introduction": "<table class='qTable finTable' border='1'> <tbody> <tr> <th> <p>Salary</p> </th> <th> <p>Budget (A)</p> </th> <th> <p>Actual (B)</p> </th> <th> <p>Variance (C=B-A)</p> </th> <th> <p>Variance Explanation</p> </th> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$460,000</p> </td> <td> <p>$450,000</p> </td> <td> <p><span style='color: #ff0000;'>($10,000)</span></p> </td> <td> <p>An employee was on leave without pay.</p> </td> </tr> <tr> <td>&nbsp;</td> <th> <p>Budget</p> </th> <th> <p>YTD Actual</p> </th> <td> <p>Annual Forecast</p> </td> <td></td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$475,000</p> </td> <td> <p>$237,500</p> </td> <td> <p>$475,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table><br><ul> <li>An employee&rsquo;s annual salary is $60,000 per year. You know that they will retire on July 1 of next year and won&rsquo;t be replaced, and&nbsp;</li> <li>You plan on getting a casual employee for 4 months for a total of $13,333.</li> </ul>",
       "text": "What budget will you propose for the next fiscal year?",
       "options": {
         "1": "$415,000 Non-Discretionary and $13,333 Discretionary",
@@ -264,7 +264,7 @@ text-align: right;
     },
     "q3": {
       "title": "Office Supplies",
-      "introduction": "<p><strong>Trends </strong>are costs in your budget that are either constant, or show a similar pattern year after year.&nbsp;</p> <table class='qTable finTable'> <tbody> <tr> <td> <p>Office Supplies</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year</p> </td> <td> <p>$1,961</p> </td> <td> <p>$1,500</p> </td> <td> <p>($461)</p> </td> <td> <p>Costs were lower than planned.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget&nbsp;</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$2,000</p> </td> <td> <p>$100</p> </td> <td> <p>$1,500</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
+      "introduction": "<p><strong>Trends </strong>are costs in your budget that are either constant, or show a similar pattern year after year.&nbsp;</p> <table class='qTable finTable' border='1'> <tbody> <tr> <td> <p>Office Supplies</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year</p> </td> <td> <p>$1,961</p> </td> <td> <p>$1,500</p> </td> <td> <p style='color:red'>($461)</p> </td> <td> <p>Costs were lower than planned.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget&nbsp;</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$2,000</p> </td> <td> <p>$100</p> </td> <td> <p>$1,500</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
       "text": "If you do not plan a significant change in your spending patterns for office supplies, what should you budget for?",
       "options": {
         "1": "$1,500",
@@ -412,7 +412,7 @@ text-align: right;
     },
     "q3": {
       "title": "Fournitures de bureau",
-      "introduction": "<p>Les <strong>tendances</strong> sont des co&ucirc;ts (dans votre budget) qui sont soit constants, soit semblables d'ann&eacute;e en ann&eacute;e.</p> <table border='1' class='qTable finTable'> <tbody> <tr> <th> <p>Fournitures de bureau</p> </th> <th> <p>Budget (A)</p> </th> <th> <p>R&eacute;el (B)</p> </th> <th> <p>Variance (C=B-A)</p> </th> <th> <p>Explicationde la variance</p> </th> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>1 961 $</p> </td> <td> <p>1 500 $</p> </td> <td> <p style='color:red'>(461 $)</p> </td> <td> <p>Les coûts ont &eacute;t&eacute; inf&eacute;rieurs aux pr&eacute;visions.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>2 000 $</p> </td> <td> <p>100 $</p> </td> <td> <p>1 500 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
+      "introduction": "<p>Les <strong>tendances</strong> sont des co&ucirc;ts (dans votre budget) qui sont soit constants, soit semblables d'ann&eacute;e en ann&eacute;e.</p> <table border='1' class='qTable finTable' border='1'> <tbody> <tr> <th> <p>Fournitures de bureau</p> </th> <th> <p>Budget (A)</p> </th> <th> <p>R&eacute;el (B)</p> </th> <th> <p>Variance (C=B-A)</p> </th> <th> <p>Explicationde la variance</p> </th> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>1 961 $</p> </td> <td> <p>1 500 $</p> </td> <td> <p style='color:red'>(461 $)</p> </td> <td> <p>Les coûts ont &eacute;t&eacute; inf&eacute;rieurs aux pr&eacute;visions.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>2 000 $</p> </td> <td> <p>100 $</p> </td> <td> <p>1 500 $</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
       "text": "Si vous ne prévoyez pas de changement important dans vos habitudes de dépenses pour le matériel et les fournitures, que devriez-vous prévoir dans votre budget?",
       "options": {
         "1": "1500$",

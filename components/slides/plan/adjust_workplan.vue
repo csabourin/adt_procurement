@@ -118,10 +118,10 @@
 <i18n>{
   "en":
   {
-    "pwpInstructions": "Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. Three things:",
-    "thing1": "new software implementation to speed up the issuing of licenses;",
-    "thing2": "new policy that now requires licenses to be issued in 15 days, not 30 days, starting November 1;",
-    "thing3": "a decision to not replace a retiring employee.",
+    "pwpInstructions": "Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. 3 new pieces of information: ",
+    "thing1": "There will be new software implementation to speed up the issuing of licenses",
+    "thing2": "There’s a new policy that now requires licenses to be issued in 15 days, not 30 days, starting on November first and",
+    "thing3": "There’s been a decision not to replace a retiring employee.",
     "pwpTitle": "Adjust your work plan by selecting the best answer to the following questions. You can scroll horizontally to view the whole plan.",
     "pwpGovtPri": "<strong>Government priorities</strong>",
     "pwpDeptPri": "<strong>Departmental priorities</strong>",
@@ -167,18 +167,18 @@
     "pRes3": "<li>1 officer</li><li>1 junior analyst</li>",
     "q1":
     {
-      "text": "Where should you add the “Implementation of the new software” to your work plan?",
+      "text": "Where should you add the “Implementation of the new software” in your work plan?",
       "options":
       {
         "1": "In the “Deliverables” column, next to the “Manage and administer directorate” activity",
-        "2": "Yes, in the “Mitigation” column, next to the “Issue commercial fishing licenses” activity",
-        "3": "Yes, in the “Sub-activities”, next to the “Renew commercial fishing licenses” activity"
+        "2": "In the “Mitigation” column, next to the “Issue commercial fishing licenses” activity",
+        "3": "In the “Sub-activities”, next to the “Renew commercial fishing licenses” activity"
       },
       "feedback":
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Implementation of the new software&rdquo; is a deliverable.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While &ldquo;Implementation of the new software&rdquo; could be a &ldquo;Mitigation&rdquo; strategy in certain cases, in this work plan, it is a &ldquo;Deliverable&rdquo;."
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> While “Implementation of the new software” could be a “Mitigation” strategy in certain cases, in this work plan, it is a “Deliverable.”",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While “Implementation of the new software” could be a “Sub-activity” in certain cases, in this work plan, it is a “Deliverable.”"
       }
     },
     "q2":
@@ -186,30 +186,30 @@
       "text": "What would you do with the following statement &ldquo;Issue license renewal within 30 days of request&rdquo; in your work plan?",
       "options":
       {
-        "1": "Nothing, leave it as is",
-        "2": "Remove it - it is no longer true",
+        "1": "Leave “Issue license renewal within 30 days of request” as is.",
+        "2": "Remove “Issue license renewal within 30 days of request”.",
         "3": "Change it to &ldquo;Issue license renewal within 15 days of request&rdquo;"
       },
       "feedback":
       {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request&rdquo;.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request.&rdquo;",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> With the implementation of the new policy, change it to &ldquo;Issue license renewal within 15 days of request.&rdquo;",
         "3": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },
     "q3":
     {
-      "text": "Do you need to adjust your Resources?",
+      "text": "Do you need to adjust your resources given that your licencing officer is retiring?",
       "options":
       {
-        "1": "Yes. I need to add more staff.",
-        "2": "No. I can leave it as is.",
-        "3": "Yes. I need to adjust my full time employees."
+        "1": "I need to add more staff.",
+        "2": "I can leave the resources as is.",
+        "3": "I need to remove 1 employee."
       },
       "feedback":
       {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have not received any additional full time employees so you cannot add more staff.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have an employee that is retiring, so you will need to remove a full time employee from your work plan.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have not received any additional full-time employees so you cannot add more staff.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have an employee that is retiring, so you will need to remove a full-time employee from your work plan.",
         "3": "<span class='v-right' /> <strong>Correct!</strong>"
       }},
       "q4":
@@ -217,27 +217,25 @@
         "text": "Do you need to indicate the need for training for the officers?",
         "options":
         {
-          "1": "Yes, with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;",
-          "2": "No, this is not needed in the work plan",
-          "3": "Yes, with the activity &ldquo;Issue commercial fishing licenses&rdquo; under &ldquo;Mitigation&rdquo;",
-          "4": "Yes, with the activity &ldquo;Renew commercial fishing licenses&rdquo; under &ldquo;Sub-activities&rdquo;"
+          "1": "Yes, with the activity, &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;",
+          "2": "Yes, with the activity &ldquo;Issue commercial fishing licenses&rdquo; under &ldquo;Mitigation&rdquo;",
+          "3": "Yes, with the activity &ldquo;Renew commercial fishing licenses&rdquo; under &ldquo;Sub-activities&rdquo;"
         },
         "feedback":
         {
           "1": "<span class='v-right' /> <strong>Correct!</strong>",
-          "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
-          "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;.",
-          "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables&rdquo;."
+          "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity, &ldquo;Manage and administer directorate&rdquo; under &ldquo;Deliverables.&rdquo;",
+          "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> It should be included with the activity, &ldquo;Manage and administer directorate,&rdquo; under &ldquo;Deliverables.&rdquo;"
         }
     }
   },
   "fr":
   {
-    "pwpInstructions": "Votre directeur vous dit qu'il a siégé à un comité directeur et qu'il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois choses :",
-    "thing1": " la mise en œuvre d'un nouveau logiciel pour accélérer l'émission de licences;",
-    "thing2": " une nouvelle politique qui exige maintenant que les licences soient émises en 15 jours, et non plus en 30 jours, à compter du 1er novembre;",
-    "thing3": " une décision de ne pas remplacer un employé qui prend sa retraite.",
-    "pwpTitle": "Ajustez votre plan de travail en choisissant la meilleure réponse aux questions suivantes. Vous pouvez consulter le plan de travail en défilant horizontalement",
+    "pwpInstructions": "Votre directeur vous dit qu'il a siégé à un comité directeur et qu'il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois nouveaux renseignements : ",
+    "thing1": "la mise en œuvre d'un nouveau logiciel pour accélérer la délivrance de permis;",
+    "thing2": "une nouvelle politique qui exige maintenant que les permis soient délivrés en 15 jours, et non plus en 30 jours, à compter du 1er novembre;",
+    "thing3": "une décision de ne pas remplacer un employé qui prend sa retraite.",
+    "pwpTitle": "Vous pouvez consulter le plan de travail par défilement vers le bas. Ajustez votre plan de travail en choisissant la meilleure réponse aux questions suivantes :",
     "pwpGovtPri": "<strong>Priorités du gouvernement</strong>",
     "pwpDeptPri": "<strong>Priorités ministérielles</strong>",
     "pwpDirPri": "<strong>Priorités de la direction</strong>",
@@ -281,7 +279,7 @@
     "pRes3": "<li>1 agent</li><li>1 analyste subalterne</li>",
     "q1":
     {
-      "text": "Où ajouteriez-vous la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» dans votre plan de travail??",
+      "text": "Où ajouteriez-vous la &laquo;&nbsp;Mise en œuvre du nouveau logiciel&nbsp;&raquo; dans votre plan de travail?",
       "options":
       {
         "1": "Dans la colonne «&nbsp;Livrables&nbsp;», à côté de l'activité «&nbsp;Gérer et administrer la direction&nbsp;». ",
@@ -291,57 +289,57 @@
       "feedback":
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",        
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d'atténuation dans certains cas, dans le présent plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d'atténuation dans certains cas, dans ce plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Alors que la « Mise en œuvre du nouveau logiciel » pourrait être une « Sous-activité » dans certains cas, dans ce plan de travail, il s'agit d'un « Livrable »."
       }
     },
     "q2":
     {
-      "text": "Que feriez-vous de l'énoncé suivant dans votre plan de travail : « Renouveler le permis dans les 30 jours suivant la demande »?",
+      "text": "Que feriez-vous de l'énoncé suivant dans le plan de travail : « Renouveler le permis dans les 30 jours suivant la demande »?",
       "options":
       {
-        "1": "Laissez « Renouveler le permis dans les 30 jours suivant la demande » tel quel.",
-        "2": "Enlevez « Renouveler le permis dans les 30 jours suivant la demande ».",
-        "3": "Changez-le à «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;»."
+        "1": "Laissez &laquo;&nbsp;Renouveler le permis dans les 30 jours suivant la demande&nbsp;&raquo; tel quel.",
+        "2": "Enlevez &laquo;&nbsp;Renouveler le permis dans les 30 jours suivant la demande&nbsp;&raquo;.",
+        "3": "Changez-le pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;."
       },
       "feedback":
       {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l'entrée en vigueur de la nouvelle politique, changez-la en «&nbsp;Renouveler la licence dans les 15 jours suivant la demande&nbsp;».",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Étant donné l'entrée en vigueur de la nouvelle politique, changez-l’énoncé pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l'entrée en vigueur de la nouvelle politique, changez-l’énoncé pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;.",
         "3": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },
     "q3":
     {
-      "text": "Avez-vous besoin d'ajuster vos Ressources ?",
+      "text": "Avez-vous besoin d'ajuster vos Ressources étant donné que l’agent qui délivre les permis prend sa retraite?",
       "options":
       {
         "1": "Je dois ajouter du personnel.",
-        "2": "Je peux laisser les ressources tel quel.",
-        "3": "Je dois enlever un employé."
+        "2": "Je peux laisser les ressources telles quelles.",
+        "3": "Je dois enlever un employé du plan de travail."
       },
       "feedback":
       {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous n'avez pas reçu d'employés à temps plein supplémentaires, vous ne pouvez donc pas ajouter d'employés supplémentaires.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous avez un employé qui prend sa retraite, vous devrez donc ajuster un employé à temps plein de votre plan de travail.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous n'avez pas d'employés supplémentaires à temps plein, vous ne pouvez donc pas ajouter d'employés.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous avez un employé qui prend sa retraite, vous devrez donc enlever un employé à temps plein de votre plan de travail.",
         "3": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },
 
     "q4":
     {
-      "text": "Avez-vous besoin d'indiquer le besoin de formation pour les agents?",
+      "text": "Avez-vous besoin d'indiquer le besoin de formation des agents?",
       "options":
       {
-        "1": "Oui, avec l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous«&nbsp;Livrables&nbsp;».",
-        "2": "Oui, avec l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» sous «&nbsp;Atténuation&nbsp;».",
-        "3": "Oui, avec l'activité «&nbsp;Renouvellement de permis de pêche commerciale&nbsp;» sous «&nbsp;Sous-activités&nbsp;»."
+        "1": "Oui, avec l'activité &laquo;&nbsp;Gérer et administrer la direction&nbsp;&raquo; sous &laquo;&nbsp;Livrables&nbsp;&raquo;.",
+        "2": "Oui, avec l'activité &laquo;&nbsp;Délivrance de permis de pêche commerciale&nbsp;&raquo; sous &laquo;&nbsp;Atténuation&nbsp;&raquo;.",
+        "3": "Oui, avec l'activité &laquo;&nbsp;Renouvellement de permis de pêche commerciale&nbsp;&raquo; sous &laquo;&nbsp;Sous-activités&nbsp;&raquo;."
       },
       "feedback":
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' />  <strong>Incorrect.</strong> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;».",
-        "3": "<span class='v-wrong' />  <strong>Incorrect.</strong> Il devrait être inclus dans l'activité «&nbsp;Gérer et administrer la direction&nbsp;» sous la rubrique «&nbsp;Livrables&nbsp;»."
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Il devrait être inclus dans l'activité &laquo;&nbsp;Gérer et administrer la direction&nbsp;&raquo; sous la rubrique &laquo;&nbsp;Livrables&nbsp;&raquo;.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Il devrait être inclus dans l'activité &laquo;&nbsp;Gérer et administrer la direction&nbsp;&raquo; sous la rubrique &laquo;&nbsp;Livrables&nbsp;&raquo;."
       }
     }
   }

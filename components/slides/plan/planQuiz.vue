@@ -5,6 +5,36 @@
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">
             <p v-html="$t('q1.text')" />
+            <!-- Working ... in -->
+            <!-- <span>
+
+              <div class="tableColoured">
+                <div class="govtPri">
+                  <p><span>&nbsp;</span></p>
+                </div>
+                <div class="deptPri">
+                  <p><span>&nbsp;</span></p>
+                </div>
+                <div class="dirPri">
+                  <p><span>&nbsp;</span></p>
+                </div>
+              </div>
+
+              <div class="microTablePart2">
+                <div class='planAct thNumbered'>&nbsp;</div>
+                <div class='planSubAct thNumbered'>&nbsp;</div>
+                <div class='planDelivs thNumbered'>&nbsp;</div>
+                <div class='planRisk thNumbered'>&nbsp;</div>
+                <div class='planLikely thNumbered'>&nbsp;</div>
+                <div class='planImpact thNumbered'>&nbsp;</div>
+                <div class='planMitigat thNumbered'>&nbsp;</div>
+                <div class='planRes thNumbered'>&nbsp;</div>
+              </div>
+            </span>
+
+<br><br><br><br> -->
+
+            <!-- Working ... out -->
             <span>
               <table class='tableColoured'>
                 <tr>
@@ -612,7 +642,7 @@ select {
   counter-reset: wpParts
 }
 
-.tableColoured td:before {
+.tableColoured td:before, .tableColoured div:before {
   counter-increment: wpParts;
   content: counter(wpParts);
   position: absolute;
@@ -622,9 +652,10 @@ select {
   border-radius: 0 0 30px 0;
   padding: .1em .5em 0 .5em;
   color: white;
+  font-weight:bold;
 }
 
-.tableColoured td {
+.tableColoured td, .tableColoured div{
   vertical-align: top;
   position: relative;
   padding-left: 35px;
@@ -753,6 +784,30 @@ select {
   border-radius: 0 0 30px 0;
   padding: .1em .5em 0 .5em;
   color: white;
+  font-weight:bold;
 }
+
+/* Wokring ... in */
+div.tableColoured div {
+  height:40px;
+}
+div.tableColoured p {
+  margin:0;
+}
+
+.microTablePart2 div.thNumbered {
+  float:left;
+  height:40px;
+  /* display:inline-block; */
+  padding:0;
+  margin:0;
+  width:12.5%;
+}
+.microTablePart2 {
+  /* position:relative; */
+  width:100%;
+}
+
+/* Wokring ... out */
 
 </style>

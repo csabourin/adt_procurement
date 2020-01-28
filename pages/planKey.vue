@@ -12,15 +12,15 @@
             <h3>Work Plan</h3>
             <ul>
               <li>A work plan is a detailed schedule of the activities to be carried out, resources to be consumed, and results to be achieved over a one-year period, usually a fiscal year for a responsibility center.</li>
-              <li>To build a work plan, you review the activities from the previous year's work plan, budget and reports to identify lessons learned and what needs to be carried over in order to identify possible trends..&nbsp;</li>
-              <li>Specifically, you define and prioritize the work and activities of your unit, assigning resources and timelines to each activity, making sure the activities align with the organizational priorities and conducting a risk assessment.</li>
+              <li>To build a work plan, you review the activities from the previous year's work plan, budget and reports to identify lessons learned and what needs to be carried over in order to identify possible trends.&nbsp;</li>
+              <li>Specifically, with input from your team, you define and prioritize the work and activities of your unit, assigning resources and timelines to each activity, making sure the activities align with the organizational priorities and conducting a risk assessment.</li>
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
             <h3>Plan de travail</h3>
             <ul>
               <li>Un plan de travail est un compte rendu d&eacute;taill&eacute; des activit&eacute;s &agrave; exercer, des ressources &agrave; utiliser et des r&eacute;sultats &agrave; atteindre au cours d&rsquo;une p&eacute;riode d&rsquo;un an, laquelle correspond habituellement &agrave; un exercice financier pour un centre de responsabilit&eacute;.</li>
-              <li>Pour &eacute;laborer un plan de travail, vous passez en revue les activit&eacute;s inscrites dans le plan de travail, le budget et les rapports de l&rsquo;ann&eacute;e pr&eacute;c&eacute;dente afin de d&eacute;terminer les le&ccedil;ons apprises et les mesures &agrave; reporter afin d’identifier les tendances possibles.&nbsp;</li>
+              <li>Pour élaborer un plan de travail, vous passez en revue les activités inscrites dans le plan de travail, le budget et les rapports de l’année précédente afin de prendre note des leçons apprises et les mesures à reporter afin de cerner les tendances possibles.&nbsp;</li>
               <li>Plus pr&eacute;cis&eacute;ment, vous d&eacute;finissez et hi&eacute;rarchisez le travail et les activit&eacute;s de votre unit&eacute;, attribuez des ressources et des &eacute;ch&eacute;anciers &agrave; chaque activit&eacute;, veillez &agrave; ce que les activit&eacute;s correspondent aux priorit&eacute;s organisationnelles et effectuez une &eacute;valuation des risques.&nbsp;</li>
             </ul>
           </span>

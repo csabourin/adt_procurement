@@ -57,7 +57,7 @@
   "rLine2":"Reports"
   },
   "fr":{
-  "instructions":"Examinez chacun des documents suivants.",
+  "instructions":"Examinez chacun des documents suivants :",
   "Test360":"Aperçu 360",
   "t360Line1":"Aperçu",
   "t360Line2":"360",

@@ -77,7 +77,7 @@
         "qDisabled": "Please select one",
         "q1":
         {
-            "1": "To make Canada a leader of international efforts to combat climate change and reduce greenhouse emissions",
+            "1": "To make Canada a leader of international efforts to combat climate change and reduce greenhouse emissions.",
             "2": "To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations",
             "3": "To implement and further develop the Oceans Protection Plan and restore annual federal funding for freshwater research."
         },
@@ -88,7 +88,7 @@
             "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority for the government, your unit’s scope is more about fisheries, not protecting the oceans."
         },
         "q2-1": "To contribute to an environmentally, economically and socially sustainable Canadian aquaculture sector by developing new federal legislation",
-        "q2-2": "To ensure access to safe harbors, respond to on-water incidents and minimize or avoid negative impacts of environmental disasters on Canada’s oceans",
+        "q2-2": "To ensure access to safe harbours, respond to on-water incidents and minimize or avoid negative impacts of environmental disasters on Canada’s oceans",
         "q2-3": "To support prosperous and sustainable commercial, Aboriginal and recreational fisheries, aquaculture and other oceans industries",
         "a2-1": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority, our scope is more about fisheries.",
         "a2-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority, our scope is more about fisheries.",
@@ -118,28 +118,28 @@
         "qDisabled": "Veuillez faire un choix",
         "q1":
         {
-            "1": "Faire du Canada un chef de file des efforts internationaux de lutte contre les changements climatiques et réduire les émissions de gaz à effet de serre.",
+            "1": "Faire du Canada un chef de file international de lutte contre les changements climatiques et réduire les émissions de gaz à effet de serre.",
             "2": "Servir les Canadiens en assurant l'utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
-            "3": "Mettre en œuvre et développer davantage le Plan de protection des océans et rétablir le financement fédéral annuel de la recherche sur l'eau douce."
+            "3": "Mettre en œuvre et développer davantage le Plan de protection des océans et rétablir le financement fédéral annuel pour la recherche sur l'eau douce."
         },
         "q1a":
         {
-            "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une grande priorité pour le gouvernement, notre portée porte davantage sur les pêches que sur les changements climatiques.",
-            "2": "<span class='v-right' /> <strong>Correct!</strong> Notre priorité est de protéger les pêches pour qu'elles soient encore là dans 40 ans pour nos petits-enfants!",
-            "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Bien qu'il s'agisse d'une grande priorité pour le gouvernement, votre unité s'occupe davantage des pêches que de la protection des océans."
+            "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une priorité importante pour le gouvernement, notre responsabilité porte davantage sur la pêche que sur les changements climatiques.",
+            "2": "<span class='v-right' /> <strong>Correct!</strong> Notre priorité est de protéger la pêche pour qu'elle existe encore dans 40 ans pour nos petits-enfants!",
+            "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une priorité importante pour le gouvernement, votre unité s'occupe davantage de la pêche que de la protection des océans."
         },
-        "q2-1": "Contribuer à la durabilité environnementale, économique et sociale du secteur de l’aquaculture canadien en élaborant de nouvelles mesures législatives fédérales",
-        "q2-2": "Garantir l’accès aux ports sûrs, intervenir en cas d'incident sur l'eau et minimiser ou éviter les impacts négatifs de catastrophes environnementales sur les océans du Canada",
-        "q2-3": "Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l'aquaculture et d'autres industries océaniques.",
-        "a2-1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une grande priorité, la portée de notre travail concerne davantage les pêches.",
-        "a2-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une grande priorité, la portée de notre travail concerne davantage les pêches.",
+        "q2-1": "Contribuer à la durabilité environnementale, économique et sociale du secteur de l’aquaculture canadien en élaborant de nouvelles lois fédérales.",
+        "q2-2": "Garantir l’accès à des ports sûrs, intervenir en cas d'incident sur l'eau et minimiser ou éviter les impacts négatifs sur les océans du Canada suite à des catastrophes environnementales.",
+        "q2-3": "Soutenir une pêche commerciale, autochtone et récréative qui soit productive et durable, l'aquaculture, et d'autres industries océaniques.",
+        "a2-1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une priorité importante, notre responsabilité porte davantage sur les pêches.",
+        "a2-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une priorité importante, notre responsabilité porte davantage sur les pêches.",
         "a2-3": "<span class='v-right' /> <strong>Correct!</strong> La portée de notre travail concerne les pêches.",
-        "q3-1": "Gérer les pêches commerciales intérieures",
-        "q3-2": "Protéger les espèces en voie de disparition dans les Grands Lacs",
-        "q3-3": "Éliminer l'empiètement d'espèces envahissantes",
+        "q3-1": "Gérer les pêches commerciales intérieures.",
+        "q3-2": "Protéger les espèces en voie de disparition dans les Grands Lacs.",
+        "q3-3": "Éliminer la prolifération des espèces envahissantes.",
         "a3-1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "a3-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches.",
-        "a3-3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une grande priorité, notre portée concerne davantage les pêches."
+        "a3-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une priorité importante, notre responsabilité porte davantage sur les pêches.",
+        "a3-3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu'il s'agisse d'une priorité importante, notre responsabilité porte davantage sur les pêches."
     }
 }</i18n>
 <script>

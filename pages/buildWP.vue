@@ -241,7 +241,7 @@ export default {
   "completewpDrafttitle":"Activité: Préparer un plan de travail",
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
-  "scan360Title":"Activité: Appliquez l'apperçu 360",
+  "scan360Title":"Activité: Aperçu à 360 degrés",
   "InRealLife":"Dans la vraie vie",
   "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>  <p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter votre intranet pour voir quels mod&egrave;les sont utilis&eacute;s.</p>  <p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
   "gotIt":"Continuer au segment suivant.",

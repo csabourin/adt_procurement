@@ -160,18 +160,18 @@
   "fr":{
   "qDisabled":"Veuillez faire un choix",
   "q1":{
-  "text":"Faites correspondre les &eacute;nonc&eacute;s suivants aux sections appropri&eacute;es du plan de travail. Chaque section ne peut contenir qu'un seul &eacute;nonc&eacute;.",
+  "text":"Faites correspondre les énoncés suivants aux parties appropriées du plan de travail. Chaque partie ne peut dépasser un seul énoncé.",
   "a11": "Élevé ",
   "a12": "Travailler avec les Canadiens dans tous les secteurs de l'économie et dans toutes les régions du pays pour améliorer les conditions d'investissement.",
   "a13" : "Tablettes",
-  "a14" : "Conservez les ordinateurs d'origine jusqu'à ce que les tablettes soient prêtes et à l'emploi pendant 3 mois. ",
-  "a15" : "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité ",
-  "a16" : "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'œuvre saine et productive.",
+  "a14" : "Conservez les ordinateurs d'origine jusqu'à ce que les tablettes soient prêtes et à l'emploi pendant 3 mois.",
+  "a15" : "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité.",
+  "a16" : "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et favoriser une main-d'œuvre saine et productive.",
   "a17" : "Acheter des tablettes",
-  "a18" : "La technologie n'est pas compatible avec le réseau existant ",
+  "a18" : "La technologie n'est pas compatible avec le réseau existant.",
   "a19" : "Faible",
   "a110" : "Modernisation du milieu de travail ",
-  "a111" : "Donner des tablettes aux employés"
+  "a111" : "Donner des tablettes aux employés."
   }
   }
   }
@@ -260,7 +260,7 @@ export default {
       "text": "To find your department’s core responsibilities, expected results and indicators, you would look to:",
       "options": {
         "1": "The directorate’s plan",
-        "2": "The Departmental plan",
+        "2": "The Departmental Plan",
         "3": "The Speech from the Throne",
         "4": "The sector’s plan"
       },
@@ -272,18 +272,18 @@ export default {
       }
     },
     "q5": {
-      "text": "The Prime Minister sets out his expectations and objectives for your department in: ",
+      "text": "The Prime Minister sets out their expectations and objectives for your department in: ",
       "options": {
         "1": "The Speech from the Throne",
         "2": "The Departmental Results Framework",
-        "3": "The Mandate Letter",
+        "3": "The mandate letter",
         "4": "The Departmental Plan"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the mandate letter to the minister responsible for the department.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the mandate letter to the minister responsible for the department.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> The Prime Minister outlines their expectations and objectives in the mandate letter to the minister responsible for the department.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the mandate letter to the minister responsible for the department."
       }
     },
     "q6": {
@@ -450,29 +450,29 @@ export default {
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devriez tenir compte des priorités gouvernementales, des priorités ministérielles et des priorités de la direction ainsi que du plan de travail, du budget et des rapports de l'année précédente lorsque vous rédigez votre nouveau plan de travail. À moins que les activités de votre collègue gestionnaire n'aient été transférées à votre équipe, vous ne les prendriez pas en compte. "
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devriez tenir compte des priorités gouvernementales, ministérielles et de la direction, ainsi que du plan de travail, du budget et des rapports de l'année précédente lorsque vous rédigez votre nouveau plan de travail. À moins que les activités de votre collègue gestionnaire n'aient été transférées à votre équipe, vous n’en tiendrez pas compte. "
       }
     },
     "q3": {
-      "text": "Une priorité ministérielle de votre plan de travail remonte à l'origine:",
+      "text": "Une priorité ministérielle du plan de travail remonte au :",
       "options": {
-        "1": "du plan de la direction ",
-        "2": "du plan ministériel",
-        "3": "du discours du Trône"
+        "1": "plan de la Direction ",
+        "2": "plan ministériel",
+        "3": "discours du Trône"
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  C'est une bonne idée de commencer votre vision d'ensemble avec le discours du Trône."
+        "3": "<span class='v-right' /> <strong>Correct!</strong> C'est une bonne idée de commencer votre vision d'ensemble en consultant les priorités énoncées dans le discours du Trône."
       }
     },
     "q4": {
       "text": "Pour trouver les principales responsabilités de votre ministère, les résultats escomptés et les indicateurs, vous devriez vous tourner vers :",
       "options": {
-        "1": "Le plan de la Direction ",
-        "2": "Le Plan ministériel",
-        "3": "Le discours du Trône",
-        "4": "Le plan du secteur"
+        "1": "le plan de la Direction ",
+        "2": "le Plan ministériel",
+        "3": "le discours du Trône",
+        "4": "le plan du secteur"
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel. ",
@@ -484,13 +484,13 @@ export default {
     "q5": {
       "text": "Le premier ministre énonce ses attentes et ses objectifs pour votre ministère dans : ",
       "options": {
-        "1": "Le discours du Trône",
-        "2": "Le Cadre ministériel des résultats ",
-        "3": "La lettre de mandat",
-        "4": "Le plan ministériel\n"
+        "1": "le discours du Trône",
+        "2": "le Cadre ministériel des résultats ",
+        "3": "la lettre de mandat",
+        "4": "le plan ministériel"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre indique ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
         "3": "<span class='v-right' /> <strong>Correct!</strong>  Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
         "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère."
@@ -504,13 +504,13 @@ export default {
         "3": "Tous les 5 ans"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les cinq ans.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les cinq ans.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les 5 ans.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les 5 ans.",
         "3": "<span class='v-right' /> <strong>Correct!</strong> "
       }
     },
     "q7": {
-      "text": "Pour effectuer un aperçu à 360 degrés, vous devez procéder comme suit.",
+      "text": "Pour effectuer un aperçu à 360 degrés, vous devez procéder comme il est indiqué ci-dessous : ",
       "options": {
         "1": "Se faire une idée de la situation actuelle en examinant ce qui a été fait dans un passé récent.",
         "2": "Examinez les plans de travail, budgets et rapports antérieurs.",
@@ -527,16 +527,16 @@ export default {
       }
     },
     "q8": {
-      "text": "Choisissez les priorités auxquelles les activités de votre plan de travail devraient se rattacher, en commençant par le sommet.",
+      "text": "Choisissez les priorités auxquelles les activités du plan de travail devraient se rattacher, en commençant par le haut.",
       "options": {
         "1": "Priorités ministérielles, priorités de la Direction, priorités du gouvernement",
         "2": "Priorités gouvernementales, priorités ministérielles, priorités de la Direction",
         "3": "Priorités de la Direction, priorités gouvernementales, priorités ministérielles"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du sommet sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du haut sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du sommet sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du haut sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction."
       }
     },
     "q9": {

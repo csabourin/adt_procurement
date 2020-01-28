@@ -22,7 +22,7 @@ export default {
   playIcon: "Jouer la vidéo",
   pencilIcon: "Icône d’activité",
   checkAll: "S&eacute;lectionnez tout ce qui s'applique.",
-  selectRight: "S&eacute;lectionnez la bonne r&eacute;ponse.",
+  selectRight: "Choisissez la bonne réponse.",
   pleaseAnswer: "Veuillez r&eacute;pondre &agrave; la question!",
   KeyMessages: "Messages clés",
   BuildWorkPlan: "Élaborer un plan de travail",

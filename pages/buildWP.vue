@@ -45,7 +45,7 @@
                   <p>Alright. Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. Three things: new software implementation to speed up the issuing of licenses; new policy that now requires licenses to be issued in 15 days, not 30 days, starting November 1; a decision to not replace a retiring employee. The following exercise will help you adjust your work plan according to this new information.</p>
                   <hr>
                   <h2>In Real Life</h2>
-                  <p>Let&rsquo;s take what you have learned into real life. Your organization will have their own ways of doing things. Take a time out from the course to scan your intranet to see which templates are used. Connect with your colleagues, your director, or financial officer to have a chat about work plans.</p>
+                  <p>Let&rsquo;s take what you have learned into real life. Your organization will have their own ways of doing things. Take a time out from the course to scan your intranet to see which templates are used. Connect with your colleagues, your director, or financial officer, and chat about work plans.</p>
                   <hr>
                   <h2>Take a Quiz</h2>
                   <p>So now that you know how to examine, prepare and adjust a work plan, let&rsquo;s see what you remember by taking this short quiz.</p>
@@ -89,7 +89,7 @@
                   <p>&laquo; D'accord. Votre directeur vous dit qu'il a si&eacute;g&eacute; &agrave; un comit&eacute; directeur et qu'il dispose maintenant de nouveaux renseignements qui devraient se refl&eacute;ter dans votre plan de travail. Trois choses : la mise en &oelig;uvre d'un nouveau logiciel pour acc&eacute;l&eacute;rer l'&eacute;mission de licences; une nouvelle politique qui exige maintenant que les licences soient &eacute;mises en 15 jours, et non plus en 30 jours, &agrave; compter du 1er novembre; une d&eacute;cision de ne pas remplacer un employ&eacute; qui prend sa retraite. L'exercice suivant vous aidera &agrave; ajuster votre plan de travail en fonction de ces nouvelles informations. &raquo;</p>
                   <hr>
                   <h2>Dans la vraie vie</h2>
-                  <p>&laquo; Appliquez ce que vous avez appris dans la vraie vie. Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter votre intranet pour voir quels mod&egrave;les sont utilis&eacute;s. Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. &raquo;</p>
+                  <p>&laquo; Appliquez ce que vous avez appris dans la vraie vie. Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l’intranet pour voir quels mod&egrave;les sont utilis&eacute;s. Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. &raquo;</p>
                   <hr>
                   <h2>Répondez à un questionnaire rapide</h2>
                   <p>&laquo; Maintenant que vous savez comment examiner, pr&eacute;parer et ajuster un plan de travail, voyons ce dont vous vous souvenez en r&eacute;pondant &agrave; ce petit quiz. &raquo;<h2>Section complétée</h2>
@@ -228,7 +228,7 @@ export default {
   "adjustwptitle":"Activity: Adjust the Work plan",
   "scan360Title":"Activity: Apply the 360 scan",
   "InRealLife":"In Real Life",
-  "IRLText":"<p>Take what you have learned into real life!</p><p>Your organization will have their own ways of doing things. Take a time out from the course to scan your intranet to see which templates are used.</p><p>Connect with your colleagues, your director, or financial officer to have a chat about work plans.</p> ",
+  "IRLText":"<p>Take what you have learned into real life!</p><p>Your organization will have their own ways of doing things. Take a time out from the course to scan your intranet to see which templates are used.</p><p>Connect with your colleagues, your director, or financial officer, and chat about work plans.</p> ",
   "TakeTheQuiz":"Take the Quiz",
   "transcriptText":"",
   "planSectionBar": "PLAN"
@@ -243,7 +243,7 @@ export default {
   "adjustwptitle":"Activité: Ajuster le plan de travail",
   "scan360Title":"Activité: Aperçu à 360 degrés",
   "InRealLife":"Dans la vraie vie",
-  "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>  <p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter votre intranet pour voir quels mod&egrave;les sont utilis&eacute;s.</p>  <p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
+  "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>  <p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l’intranet pour voir quels mod&egrave;les sont utilis&eacute;s.</p>  <p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
   "gotIt":"Continuer au segment suivant.",
   "transcriptText":"",
   "planSectionBar": "PLANIFICATION"

@@ -159,8 +159,8 @@
               "text": "Currently, “Implement flexible work hours” is a <strong>mitigation</strong> strategy for the following risks: overfishing, habitat degradation, environmental disaster, climate change. Where should it appear in the work plan?",
               "options":
               {
-                  "1": "Keep it as a mitigation strategy for “Overfishing”",
-                  "2": "It should be a mitigation strategy for “Staff turnover”.",
+                  "1": "Keep it as a mitigation strategy for “Overfishing.”",
+                  "2": "It should be a mitigation strategy for “Staff turnover.”.",
                   "3": "Remove “Implement flexible work hours” completely."
               },
               "feedback":
@@ -172,7 +172,7 @@
           },
           "q2":
           {
-              "text": "The following <strong>deliverable</strong> is missing from your work plan: “Issue 500 licenses per year”. With which activity should you place it?",
+              "text": "The following <strong>deliverable</strong> is missing from your work plan: “Issue 500 licenses per year.” With which activity should you place it?",
               "options":
               {
                   "1": "Manage and administer the directorate",
@@ -198,15 +198,15 @@
               "feedback":
               {
                   "1": "<span class='v-right' /> <strong>Correct!</strong>",
-                  "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager position would be reflected under “Manage and administer the directorate”.",
-                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  A manager position would be reflected under “Manage and administer the directorate”."
+                  "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager position would be reflected under “Manage and administer the directorate.”",
+                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  A manager position would be reflected under “Manage and administer directorate.”"
               }
           }
       },
       "fr":
       {
           "pwpInstructions": "En regardant votre brouillon, vous remarquez que certains items peuvent avoir été placés au mauvais endroit ou manquer. Mettez à jour votre brouillon en conséquence. ",
-          "pwpTitle": "Choisissez la meilleure option pour chaque section de ce plan de travail en utilisant les menus déroulants.",
+          "pwpTitle": "Choisissez la meilleure option pour chaque partie du plan de travail en utilisant les menus déroulants.",
           "pwpGovtPri": "<strong>Priorités du gouvernement</strong>",
           "pwpDeptPri": "<strong>Priorités ministérielles</strong>",
           "pwpDirPri": "<strong>Priorités de la direction</strong>",
@@ -245,23 +245,23 @@
           "pRes3": "<li>1 agent</strong></li><li>1 analyste subalterne</li>",
           "q1":
           {
-              "text": "Actuellement, &laquo;&nbsp;Mettre en &oelig;uvre des horaires de travail flexibles&nbsp;&raquo; est une strat&eacute;gie d'att&eacute;nuation de la surp&ecirc;che. O&ugrave; devrait-il appara&icirc;tre dans le plan de travail?",
+              "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d'atténuation de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
               "options":
               {
-                  "1": "Garde-le comme strat&eacute;gie d&rsquo;att&eacute;nuation pour la &laquo; Surp&ecirc;che &raquo;.",
+                  "1": "Gardez-la comme stratégie d’atténuation pour la &laquo; Surpêche &raquo;.",
                   "2": "Il devrait faire partie de la strat&eacute;gie d'att&eacute;nuation &laquo; Roulement du personnel &raquo;.",
-                  "3": "Enlever &laquo; Mettre en &oelig;uvre des horaires de travail flexibles &raquo; compl&egrave;tement."
+                  "3": "Enlever complètement &laquo; Horaires de travail flexibles &raquo;."
               },
               "feedback":
               {
-                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, les heures de travail flexibles se rapportent mieux &agrave; la &laquo; Gestion et &agrave; l'administration de la direction &raquo;.",
+                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, les heures de travail flexibles se rapportent plus &agrave; la &laquo; Gestion et &agrave; administration de la direction &raquo;.",
                   "2": "<span class='v-right' />  <strong>Correct!</strong>",
-                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  En fait, &laquo; Mettre en place des horaires de travail flexibles &raquo; est une strat&eacute;gie valable pour attirer et retenir les employ&eacute;s."
+                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, &laquo; Horaires de travail flexibles &raquo; est une stratégie valable pour attirer et retenir les employés."
               }
           },
           "q2":
           {
-              "text": "Le <strong>livrable</strong> suivant ne figure pas dans votre plan de travail : &laquo; D&eacute;livrer 500 licences par an &raquo;. Avec quelle activit&eacute; devriez-vous le placer?",
+              "text": "Le <strong>livrable</strong> suivant ne figure pas dans le plan de travail : &laquo; Délivrer 500 permis par an &raquo;. À quelle activité devrait-il être associé?",
               "options":
               {
                   "1": "G&eacute;rer et administrer la direction",
@@ -277,7 +277,7 @@
           },
           "q3":
           {
-              "text": "En regardant sous la colonne <strong>ressources</strong>, vous remarquez que le poste de gestionnaire est manquant. Sous quelle activit&eacute; devez-vous le placer?",
+              "text": "En regardant sous <strong>Ressources</strong>, vous remarquez que le poste de gestionnaire n’y figure pas. À quelle activité devrait-il être associé?",
               "options":
               {
                   "1": "G&eacute;rer et administrer la direction",
@@ -287,8 +287,8 @@
               "feedback":
               {
                   "1": "<span class='v-right' /> <strong>Correct!</strong>",
-                  "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un poste de gestionnaire serait refl&eacute;t&eacute; sous la rubrique &laquo; G&eacute;rer et administrer la direction &raquo;.",
-                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Un poste de gestionnaire serait refl&eacute;t&eacute; sous la rubrique &laquo; G&eacute;rer et administrer la direction &raquo;."
+                  "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un poste de gestionnaire serait sous sous la rubrique &laquo; G&eacute;rer et administrer la direction &raquo;.",
+                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Un poste de gestionnaire serait sous sous la rubrique &laquo; G&eacute;rer et administrer la direction &raquo;."
 
               }
           }

@@ -540,13 +540,13 @@ export default {
       }
     },
     "q9": {
-      "text": "Quelles situations vous amèneraient à mettre à jour votre plan de travail?",
+      "text": "Quelles situations vous amèneraient à mettre à jour le plan de travail?",
       "options": {
-        "1": "Un nouvel administrateur est nommé",
-        "2": "Un employé quitte",
-        "3": "La formation obligatoire est reportée à l'année prochaine",
-        "4": "Plus de 500 licences ont été délivrées",
-        "5": "Votre logiciel reçoit une mise à jour"
+        "1": "Un nouvel administrateur est nommé.",
+        "2": "Un employé s'en va.",
+        "3": "La formation obligatoire est reportée à l'année prochaine.",
+        "4": "Plus de 500 permis ont été délivrés.",
+        "5": "Votre logiciel fait l’objet d’une mise à jour."
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
@@ -573,9 +573,9 @@ export default {
       "options": {
         "1": "Établir des priorités à l'échelle du gouvernement",
         "2": "Négocier les contrats gouvernementaux",
-        "3": "Planifier les activités de leur unité",
-        "4": "Utiliser les fonds publics pour mener à bien les activités de leur unité",
-        "5": "Faire rapport sur l'état d'avancement des activités de leur unité"
+        "3": "Planifier les activités de son unité",
+        "4": "Utiliser les fonds publics pour mener à bien les activités de son unité",
+        "5": "Faire rapport de l'état d'avancement des activités de son unité"
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
@@ -592,7 +592,7 @@ export default {
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les livrables sont plus précis et tangibles que les activités.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce sont les ressources. Les livrables sont des éléments précis et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les réalisez."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce sont les ressources. Les livrables font partie des éléments précis et tangibles que vous devriez cocher sur votre liste lorsque vous les réalisez."
       }
     },
     "q13": {

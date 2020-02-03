@@ -125,7 +125,7 @@
           <b-tab title="Question 10"><radioQuiz :question="$t('q10')" qId="10" /></b-tab>
           <b-tab title="Question 11"><checkboxQuiz :question="$t('q11')" qId="11" :Answer='["3","4","5"]' /></b-tab>
           <b-tab title="Question 12"><radioQuiz :question="$t('q12')" qId="12" /></b-tab>
-          <b-tab title="Question 13"><checkboxQuiz :question="$t('q13')" qId="13" :Answer='["1","2"]'/></b-tab>
+          <b-tab title="Question 13"><radioQuiz :question="$t('q13')" qId="13" /></b-tab>
           <b-tab title="Question 14"><radioQuiz :question="$t('q14')" qId="14" /></b-tab>
         </b-tabs>
       </b-card>
@@ -388,14 +388,18 @@ export default {
     "q13": {
       "text": "Which activities should you include in your new work plan?",
       "options": {
-        "1": "Ongoing activities",
-        "2": "New activities",
-        "3": "Completed activities",
-        "4": "Project activities"
+        "1": "Ongoing activities, new activities, completed activities",
+        "2": "Ongoing activities, new activities",
+        "3": "New activities, completed activities",
+        "4": "New activities, completed activities, project activities",
+        "5": "Ongoing activities, completed activities, project activities"
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
-        "right": "<span class='v-right' /> <strong>Correct!</strong> "
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
+        "5": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included."
       }
     },
     "q14": {
@@ -598,28 +602,32 @@ export default {
     "q13": {
       "text": "Quelles activités devriez-vous inclure dans votre nouveau plan de travail?",
       "options": {
-        "1": "Activités en cours",
-        "2": "Nouvelles activités",
-        "3": "Activités terminées",
-        "4": "Activités d'un projet"
+        "1": "Activités en cours, nouvelles activités, activités terminées",
+        "2": "Activités en cours, nouvelles activités",
+        "3": "Nouvelles activités, activités terminées",
+        "4": "Nouvelles activités, activités terminées, activités du projet",
+        "4": "Activités en cours, activités terminées, activités du projet"
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
-        "right": "<span class='v-right' /> <strong>Correct!</strong> "
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
+        "5": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses."
       }
     },
     "q14": {
       "text": "Quels sont les risques considérés?",
       "options": {
-        "1": "Panne d'électricité de 15 minutes, bogues logiciels mineurs",
+        "1": "Panne d'électricité de 15 minutes, bogues mineurs de logiciels",
         "2": "Droits de permis, gestion des pêches",
         "3": "Pannes d'électricité, stocks de poissons bien gérés",
         "4": "Surpêche, rotation du personnel"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Une panne de courant de 15 minutes ne devrait pas être suffisante pour être considérée comme un risque. La surpêche et le roulement du personnel sont des risques.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce ne sont pas des risques. La surpêche et le roulement du personnel sont des risques.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les stocks de poissons bien gérés ne sont pas des risques. La surpêche et le roulement du personnel sont des risques.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Une panne de courant de 15 minutes ne devrait pas être suffisante pour être considérée comme un risque. Par contre, la surpêche et le roulement du personnel sont des risques.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce ne sont pas des risques.  Par contre, la surpêche et le roulement du personnel sont des risques.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les stocks de poissons bien gérés ne sont pas des risques.  Par contre, la surpêche et le roulement du personnel sont des risques.",
         "4": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     }

@@ -627,7 +627,7 @@ export default {
         }
       },
       "q2": {
-        "text": "Vous avez dépensé 1 800 $ de votre budget de 2 000 $ pour les fournitures de bureau et vous ne prévoyez pas d'autres achats pour l'année. Un employé veut assister à une formation sur les systèmes de clavardage et les frais d'inscription sont de 150 $. Cependant, vous avez dépensé la totalité de votre budget de formation. Qu'allez-vous faire?",
+        "text": "Vous avez dépensé 1&nbsp;800&nbsp;$ de votre budget de 2&nbsp;000&nbsp;$ pour les fournitures de bureau et vous ne prévoyez pas d'autres achats pour l'année. Un employé veut assister à une formation sur les systèmes de clavardage et les frais d'inscription sont de 150 $. Cependant, vous avez dépensé la totalité de votre budget de formation. Qu'allez-vous faire?",
         "options": {
           "1": "Dites à l'employé que le budget de formation a été dépensé ",
           "2": "Utiliser l'argent initialement alloué pour les fournitures de bureau",
@@ -672,7 +672,7 @@ export default {
         }
       },
       "q5": {
-        "text": "La limite de dépenses de votre organisation lorsqu'elle utilise une carte d'achat est de 2 500 $ par transaction. Vous avez trouvé des chaises ergonomiques qui répondent à vos besoins et à ceux de votre adjointe administrative. Les deux chaises ensemble sont évaluées à 4 649 $, taxes comprises. En tant que gestionnaire, que ferez-vous?",
+        "text": "La limite de dépenses de votre organisation lorsqu'elle utilise une carte d'achat est de 2&nbsp;500&nbsp;$ par transaction. Vous avez trouvé des chaises ergonomiques qui répondent à vos besoins et à ceux de votre adjointe administrative. Les deux chaises ensemble sont évaluées à 4&nbsp;649&nbsp;$, taxes comprises. En tant que gestionnaire, que ferez-vous?",
         "options": {
           "1": "Allez-y et autorisez l'engagement pour les deux chaises",
           "2": "Autoriser l'achat des deux chaises à l'aide de la carte d'achat de votre administrateur",
@@ -850,12 +850,12 @@ export default {
         }
       },
       "q15": {
-        "text": "La date de début de votre nouveau salarié a été repoussée. Ils ne travailleront que dix mois de l'exercice financier au lieu de douze. Leur salaire est de 60 000 $. Que faites-vous?",
+        "text": "La date de début de votre nouveau salarié a été repoussée. Ils ne travailleront que dix mois de l'exercice financier au lieu de douze. Leur salaire est de 60&nbsp;000&nbsp;$. Que faites-vous?",
         "options": {
-          "1": "Augmentez le budget de 10 000 $.",
-          "2": "Réduire les dépenses réelles de 10 000 $.",
-          "3": "Réduire de 10 000 $ les dépenses annuelles prévues",
-          "4": "Augmenter les engagements de 10 000 $."
+          "1": "Augmentez le budget de 10&nbsp;000&nbsp;$.",
+          "2": "Réduire les dépenses réelles de 10&nbsp;000&nbsp;$.",
+          "3": "Réduire de 10&nbsp;000&nbsp;$ les dépenses annuelles prévues",
+          "4": "Augmenter les engagements de 10&nbsp;000&nbsp;$."
         },
         "feedback": {
           "1": "",
@@ -878,7 +878,7 @@ export default {
         }
       },
       "q17": {
-        "text": "Votre budget contient le poste fourni :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'exercice</p></th><th><p>D&eacute;penses annuelles pr&eacute;vues</p></th></tr><tr><td><p>Voyages</p></td><td><p>8&nbsp;400&nbsp;$</p></td><td><p>0 $</p></td><td><p>2 400 $</p></td><td><p>8&nbsp;400&nbsp;$</p></td></tr></tbody></table><br>Vous avez approuvé un déplacement de 1 500 $ pour un employé. En regardant le poste budgétaire fourni, quelles colonnes seraient augmentées?",
+        "text": "Votre budget contient le poste fourni :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'exercice</p></th><th><p>D&eacute;penses annuelles pr&eacute;vues</p></th></tr><tr><td><p>Voyages</p></td><td><p>8&nbsp;400&nbsp;$</p></td><td><p>0 $</p></td><td><p>2&nbsp;400&nbsp;$</p></td><td><p>8&nbsp;400&nbsp;$</p></td></tr></tbody></table><br>Vous avez approuvé un déplacement de 1&nbsp;500&nbsp;$ pour un employé. En regardant le poste budgétaire fourni, quelles colonnes seraient augmentées?",
         "options": {
           "1": "Dépenses annuelles prévues et dépenses réelles depuis le début de l'exercice",
           "2": "Prévisions annuelles des dépenses et des engagements",
@@ -893,7 +893,7 @@ export default {
         }
       },
       "q18": {
-        "text": "Votre budget contient les postes individuels fournis :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'exercice</p></th><th><p>D&eacute;penses annuelles pr&eacute;vues</p></th></tr><tr><td><p>Salaire</p></td><td><p>60&nbsp;000&nbsp;$</p></td><td><p>20&nbsp;000&nbsp;$</p></td><td><p>40&nbsp;000&nbsp;$</p></td><td><p>60&nbsp;000&nbsp;$</p></td></tr></tbody></table><br>Vous venez de vous rappeler qu'un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60 000 $. Où changeriez-vous le montant à 50 000 $?",
+        "text": "Votre budget contient les postes individuels fournis :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'exercice</p></th><th><p>D&eacute;penses annuelles pr&eacute;vues</p></th></tr><tr><td><p>Salaire</p></td><td><p>60&nbsp;000&nbsp;$</p></td><td><p>20&nbsp;000&nbsp;$</p></td><td><p>40&nbsp;000&nbsp;$</p></td><td><p>60&nbsp;000&nbsp;$</p></td></tr></tbody></table><br>Vous venez de vous rappeler qu'un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60&nbsp;000&nbsp;$. Où changeriez-vous le montant à 50&nbsp;000&nbsp;$?",
         "options": {
           "1": "Budget",
           "2": "Engagements",

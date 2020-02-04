@@ -445,7 +445,7 @@ export default {
         "1": "Le budget des voyages a augmenté d'année en année d'un facteur de 3 %.",
         "2": "Une activité liée au renouvellement des permis de pêche a été retardée en raison des conditions météorologiques dans l'Arctique.",
         "3": "L'an dernier, on a consacré moins d'argent aux conférences parce qu'un employé n'a pas assisté à une conférence comme prévu.",
-        "4": "Le budget de formation a été dépassé de 6 000 $ l'an dernier."
+        "4": "Le budget de formation a été dépassé de 6&nbsp;000&nbsp;$ l'an dernier."
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong> ",
@@ -469,14 +469,14 @@ export default {
     "q6": {
       "text": "Un exemple d'écart est …",
       "options": {
-        "1": "1 500 $ par employé est utilisé pour calculer le budget total de formation.",
-        "2": "Un surplus de 10 000 $ dans le budget de réinstallation.",
+        "1": "1&nbsp;500&nbsp;$ par employé est utilisé pour calculer le budget total de formation.",
+        "2": "Un surplus de 10&nbsp;000&nbsp;$ dans le budget de réinstallation.",
         "3": "Délivrance des permis de pêche en 15 jours. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Un surplus de 10 000 $ dans le budget de réinstallation, car 10 000 $ est la différence entre le budget et les dépenses réelles.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> 10 000 $ est la différence entre le budget et les dépenses réelles. ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Un surplus de 10 000 $ dans le budget de réinstallation, car 10 000 $ est la différence entre le budget et les dépenses réelles."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Un surplus de 10&nbsp;000&nbsp;$ dans le budget de réinstallation, car 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles. ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Un surplus de 10&nbsp;000&nbsp;$ dans le budget de réinstallation, car 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles."
       }
     },
     "q7": {

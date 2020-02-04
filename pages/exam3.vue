@@ -487,12 +487,12 @@ export default {
           }
           },
           "q4": {
-          "text": "Comme tous vos fonds ont été engagés, vous avez reçu le mois dernier un montant supplémentaire de 5 000 $ pour former les employés sur les nouveaux logiciels en raison d'un changement de priorité. En examinant le rapport sur la situation financière que vous venez de recevoir des Finances, vous constatez que ces fonds ne sont pas inclus dans les totaux du budget. Sachant que la prévision est due dans deux semaines, que faites-vous?",
+          "text": "Comme tous vos fonds ont été engagés, vous avez reçu le mois dernier un montant supplémentaire de 5&nbsp;000&nbsp;$ pour former les employés sur les nouveaux logiciels en raison d'un changement de priorité. En examinant le rapport sur la situation financière que vous venez de recevoir des Finances, vous constatez que ces fonds ne sont pas inclus dans les totaux du budget. Sachant que la prévision est due dans deux semaines, que faites-vous?",
           "options": {
-          "1": "Augmenter le budget dans le système financier de 5 000$",
-          "2": "Créer un engagement dans le système financier pour 5 000 $.",
+          "1": "Augmenter le budget dans le système financier de 5&nbsp;000&nbsp;$",
+          "2": "Créer un engagement dans le système financier pour 5&nbsp;000&nbsp;$.",
           "3": "Attendez le prochain FSR pour voir si les totaux de budget sont mis à jour",
-          "4": "Prévoir les 5 000 $ et faire le suivi avec les finances"
+          "4": "Prévoir les 5&nbsp;000&nbsp;$ et faire le suivi avec les finances"
           },
           "feedback": {
           "1": "",
@@ -502,7 +502,7 @@ export default {
           }
           },
           "q5": {
-          "text": "<table class='qTable'> <tbody> <tr> <th>&nbsp;</th> <th> <p><strong>P6 Budget </strong></p> </th> <th> <p><strong>P6 Engagements </strong></p> </th> <th> <p><strong>P6 R&eacute;alisations &agrave; ce jour</strong></p> </th> <th> <p><strong>P5 </strong><strong>Pr&eacute;visions annuelles</strong></p> </th> <th> <p><strong>P6 Pr&eacute;visions annuelles</strong></p> </th> <th> <p><strong>Exc&eacute;dent / D&eacute;ficit</strong></p> </th> </tr> <tr> <td> <p>Logiciel de Chatbot</p> </td> <td> <p>3 000 $</p> </td> <td> <p>1 500 $</p> </td> <td> <p>1 500 $</p> </td> <td> <p>3 500 $</p> </td> <td>&nbsp;</td> <td> <p>0$</p> </td> </tr> <tr> <td> <p>Accueil</p> </td> <td> <p>15 000 $</p> </td> <td> <p>9 500 $</p> </td> <td> <p>8 000 $</p> </td> <td> <p>15 000 $</p> </td> <td> <p>&nbsp;</p> </td> <td> <p>0$</p> </td> </tr> </tbody> </table> <p>&nbsp;</p> En examinant le rapport sur la situation financière fourni, quels sont les signaux d'alarme qui vous indiquent que vous auriez besoin de plus d'information?",
+          "text": "<table class='qTable'> <tbody> <tr> <th>&nbsp;</th> <th> <p><strong>P6 Budget </strong></p> </th> <th> <p><strong>P6 Engagements </strong></p> </th> <th> <p><strong>P6 R&eacute;alisations &agrave; ce jour</strong></p> </th> <th> <p><strong>P5 </strong><strong>Pr&eacute;visions annuelles</strong></p> </th> <th> <p><strong>P6 Pr&eacute;visions annuelles</strong></p> </th> <th> <p><strong>Exc&eacute;dent / D&eacute;ficit</strong></p> </th> </tr> <tr> <td> <p>Logiciel de Chatbot</p> </td> <td> <p>3&nbsp;000&nbsp;$</p> </td> <td> <p>1&nbsp;500&nbsp;$</p> </td> <td> <p>1&nbsp;500&nbsp;$</p> </td> <td> <p>3&nbsp;500&nbsp;$</p> </td> <td>&nbsp;</td> <td> <p>0$</p> </td> </tr> <tr> <td> <p>Accueil</p> </td> <td> <p>15&nbsp;000&nbsp;$</p> </td> <td> <p>9&nbsp;500&nbsp;$</p> </td> <td> <p>8&nbsp;000&nbsp;$</p> </td> <td> <p>15&nbsp;000&nbsp;$</p> </td> <td> <p>&nbsp;</p> </td> <td> <p>0$</p> </td> </tr> </tbody> </table> <p>&nbsp;</p> En examinant le rapport sur la situation financière fourni, quels sont les signaux d'alarme qui vous indiquent que vous auriez besoin de plus d'information?",
           "options": {
           "1": "La somme des engagements du logiciel de clavardage P5 et des chiffres réels depuis le début de l'année est égale au budget ",
           "2": "La somme des engagements des P6 en matière d'accueil et des chiffres réels depuis le début de l'année dépasse le budget ",
@@ -566,7 +566,7 @@ export default {
           "options": {
           "1": "Centre d'appels avec personnel de 9 h à 17 h du lundi au vendredi",
           "2": "Répondre aux demandes d'assistance par chat en direct dès que possible",
-          "3": "Budget de 9 000 $ pour l'infrastructure informatique",
+          "3": "Budget de 9&nbsp;000&nbsp;$ pour l'infrastructure informatique",
           "4": "90 % du temps, les courriels reçoivent une réponse dans un délai d'un jour ouvrable"
           },
           "feedback": {

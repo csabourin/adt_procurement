@@ -24,16 +24,16 @@
                   </tr>
                   <tr>
                     <td>
-                      <p>44 900 $</p>
+                      <p>44&nbsp;900&nbsp;$</p>
                     </td>
                     <td>
-                      <p>15 053 $</p>
+                      <p>15&nbsp;053&nbsp;$</p>
                     </td>
                     <td>
-                      <p>17 800 $</p>
+                      <p>17&nbsp;800&nbsp;$</p>
                     </td>
                     <td>
-                      <p>44 100 $</p>
+                      <p>44&nbsp;100&nbsp;$</p>
                     </td>
                   </tr>
                 </tbody>
@@ -273,7 +273,7 @@ export default {
   },
   "fr": {
   "q1": {
-  "text": "Compte tenu du budget prévu, avez-vous suffisamment de fonds pour vous engager à acheter des biens pour 13 000 $?",
+  "text": "Compte tenu du budget prévu, avez-vous suffisamment de fonds pour vous engager à acheter des biens pour 13&nbsp;000&nbsp;$?",
   "options": {
   "1": "Oui",
   "2": "Non"
@@ -282,7 +282,7 @@ export default {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": " Votre budget est de 44 900 $, moins vos engagements de 15 053 $, moins les dépenses réelles à ce jour de 17 800 $. Il ne vous reste donc plus que 12 047 $, ce qui ne suffit pas à couvrir votre demande de 13 000 $ pour des biens."
+  "conclusion": " Votre budget est de 44&nbsp;900&nbsp;$, moins vos engagements de 15&nbsp;053&nbsp;$, moins les dépenses réelles à ce jour de 17&nbsp;800&nbsp;$. Il ne vous reste donc plus que 12&nbsp;047&nbsp;$, ce qui ne suffit pas à couvrir votre demande de 13&nbsp;000&nbsp;$ pour des biens."
   },
   "q2": {
   "text": "En général, un gestionnaire peut-il autoriser les articles 33 et 34 pour la même transaction ?",

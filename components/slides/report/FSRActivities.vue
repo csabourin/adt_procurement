@@ -69,18 +69,18 @@ export default {
   },
   "fr": {
     "q1": {
-      "text": "Vous avez approuvé des demandes de remboursement de frais de voyage de 3 000 $ pour les employés dans P4. Mais en regardant le rapport des six Présidents, vous constaterez que les chiffres réels depuis le début de l'année ne sont que de 1 700 $. Qu'est-ce que vous faites ?",
+      "text": "Vous avez approuvé des demandes de remboursement de frais de voyage de 3&nbsp;000&nbsp;$ pour les employés dans P4. Mais en regardant le rapport des six Présidents, vous constaterez que les chiffres réels depuis le début de l'année ne sont que de 1&nbsp;700&nbsp;$. Qu'est-ce que vous faites ?",
       "options": {
-        "1": "Changez votre prévision à 10 800 $.",
-        "2": "Assurez le suivi des 3 000 $ auprès du service des finances.",
-        "3": "Modifier les chiffres réels depuis le début de l'année dans le rapport P6 à 4 700 $."
+        "1": "Changez votre prévision à 10&nbsp;800&nbsp;$.",
+        "2": "Assurez le suivi des 3&nbsp;000&nbsp;$ auprès du service des finances.",
+        "3": "Modifier les chiffres réels depuis le début de l'année dans le rapport P6 à 4&nbsp;700&nbsp;$."
       },
       "feedback": {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Vos prévisions ne changent pas.",
         "2": "<span class='v-right' /><strong>Correct!</strong>",
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Vous ne pouvez pas modifier les données réelles depuis le début de l'année dans le rapport P6."
       },
-      "conclusion": " Vous devez demander au service des finances pourquoi les 3 000 $ ne figurent pas dans les chiffres réels depuis le début de l'année puisqu'il y a plus de deux mois que vous avez approuvé les demandes."
+      "conclusion": " Vous devez demander au service des finances pourquoi les 3&nbsp;000&nbsp;$ ne figurent pas dans les chiffres réels depuis le début de l'année puisqu'il y a plus de deux mois que vous avez approuvé les demandes."
     },
     "q2": {
       "text": "Un employé a perdu sa carte d'achat dont les frais de fournitures de bureau s'élevaient à 800 $. Qu'est-ce que vous faites ?",

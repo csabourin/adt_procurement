@@ -139,7 +139,7 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Votre carte d'achat sera le mode de paiement que vous utiliserez le plus souvent pour acquérir et payer des biens ou des services d'une valeur inférieure à 5 000 $. Pour connaître vos limites spécifiques, vérifiez auprès de votre ministère."
+      "conclusion": "Votre carte d'achat sera le mode de paiement que vous utiliserez le plus souvent pour acquérir et payer des biens ou des services d'une valeur inférieure à 5&nbsp;000&nbsp;$. Pour connaître vos limites spécifiques, vérifiez auprès de votre ministère."
     },
     "q3": {
       "text": "Ce mécanisme de dépenses est une entente non-contraignante conclue avec un fournisseur présélectionné qui permet aux ministères et organismes d'attribuer des contrats et de solliciter des soumissions auprès d'un bassin de fournisseurs présélectionnés pour des besoins précis.",

@@ -106,8 +106,8 @@
       "options": {
         "1": "0$",
         "2": "300$",
-        "3": "3 000$",
-        "4": "10 000$"
+        "3": "3&nbsp;000&nbsp;$",
+        "4": "10&nbsp;000&nbsp;$"
       },
       "feedback": {
         "1": "<span class='v-right' /><strong>Correct!</strong>",
@@ -134,7 +134,7 @@
       "conclusion": ""
     },
     "q3": {
-      "text": "Plusieurs employés du Ministère se déplacent pour assister à un événement. En consultant le tableau de délégation financière ministériel fourni, à qui demanderiez-vous d'approuver (article 32) un montant de 23 000 $ composé des frais de déplacement et d'inscription aux événements?",
+      "text": "Plusieurs employés du Ministère se déplacent pour assister à un événement. En consultant le tableau de délégation financière ministériel fourni, à qui demanderiez-vous d'approuver (article 32) un montant de 23&nbsp;000&nbsp;$ composé des frais de déplacement et d'inscription aux événements?",
       "options": {
         "1": "Directeur",
         "2": "Directeur général",

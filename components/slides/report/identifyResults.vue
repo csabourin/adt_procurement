@@ -105,7 +105,7 @@ export default {
       "options": {
         "1": "Pourcentage des vérifications des stocks de poissons prévues par rapport aux vérifications terminées.",
         "2": "Nombre de partenaires offrant un soutien supplémentaire aux projets financés.",
-        "3": "Un budget de 1 000 $ pour les microscopes."
+        "3": "Un budget de 1&nbsp;000&nbsp;$ pour les microscopes."
       },
       "feedback": {
         "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>",

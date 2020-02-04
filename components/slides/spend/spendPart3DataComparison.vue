@@ -28,16 +28,16 @@
                   <p>Salaire</p>
                 </td>
                 <td>
-                  <p>60 000 $</p>
+                  <p>60&nbsp;000&nbsp;$</p>
                 </td>
                 <td>
-                  <p>20 000 $</p>
+                  <p>20&nbsp;000&nbsp;$</p>
                 </td>
                 <td>
-                  <p>40 000 $</p>
+                  <p>40&nbsp;000&nbsp;$</p>
                 </td>
                 <td>
-                  <p>60 000 $</p>
+                  <p>60&nbsp;000&nbsp;$</p>
                 </td>
               </tr>
             </tbody>
@@ -108,16 +108,16 @@
                   <p>Formation</p>
                 </td>
                 <td>
-                  <p>8 400$</p>
+                  <p>8&nbsp;400&nbsp;$</p>
                 </td>
                 <td>
                   <p>0$</p>
                 </td>
                 <td>
-                  <p>2 400$</p>
+                  <p>2&nbsp;400&nbsp;$</p>
                 </td>
                 <td>
-                  <p>8 400$</p>
+                  <p>8&nbsp;400&nbsp;$</p>
                 </td>
               </tr>
             </tbody>
@@ -228,7 +228,7 @@ export default {
   },
   "fr": {
     "q1": {
-      "text": "Vous venez de vous rappeler qu'un employé est en congé non payé depuis un mois. Son salaire annuel est de 60 000 $. Où changeriez-vous le montant à 55 000 $?",
+      "text": "Vous venez de vous rappeler qu'un employé est en congé non payé depuis un mois. Son salaire annuel est de 60&nbsp;000&nbsp;$. Où changeriez-vous le montant à 55&nbsp;000&nbsp;$?",
       "options": {
         "1": "Sous « Budget »",
         "2": "Sous « Engagements »",
@@ -236,24 +236,24 @@ export default {
         "4": "Sous « Dépenses annuelles prévues »"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n'est pas nécessaire de réduire le budget, car vous pourriez en avoir besoin pour payer des heures supplémentaires ou pour embaucher un employé occasionnel. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55 000 $.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Même si vous pouviez réduire vos engagements, vous ne les réduiriez que de 5 000 $. 20 000 $ - (60 000 $ ÷ 12 mois X 1 mois) = 15 000 $. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55 000 $.",
-        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n'est pas nécessaire d'ajuster les dépenses réelles parce que l'employé n'a pas encore été payé. Vous changeriez le montant sous «Dépenses annuelles prévues» à 55 000 $. ",
-        "4": "<span class='v-right' /><strong>Correct!</strong> Vous devez réduire vos dépenses annuelles prévues d'un mois. 60 000 $ ÷ 12 mois X 11 mois = 55 000 $."
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n'est pas nécessaire de réduire le budget, car vous pourriez en avoir besoin pour payer des heures supplémentaires ou pour embaucher un employé occasionnel. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Même si vous pouviez réduire vos engagements, vous ne les réduiriez que de 5&nbsp;000&nbsp;$. 20&nbsp;000&nbsp;$ - (60&nbsp;000&nbsp;$ ÷ 12 mois X 1 mois) = 15&nbsp;000&nbsp;$. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$.",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n'est pas nécessaire d'ajuster les dépenses réelles parce que l'employé n'a pas encore été payé. Vous changeriez le montant sous «Dépenses annuelles prévues» à 55&nbsp;000&nbsp;$. ",
+        "4": "<span class='v-right' /><strong>Correct!</strong> Vous devez réduire vos dépenses annuelles prévues d'un mois. 60&nbsp;000&nbsp;$ ÷ 12 mois X 11 mois = 55&nbsp;000&nbsp;$."
       },
       "conclusion": ""
     },
     "q2": {
-      "text": "Vous avez approuvé un plan d'apprentissage de 1 500 $ pour un nouvel employé. En examinant l’objet de dépenses fourni, quelles colonnes doivent être mises à jour?",
+      "text": "Vous avez approuvé un plan d'apprentissage de 1&nbsp;500&nbsp;$ pour un nouvel employé. En examinant l’objet de dépenses fourni, quelles colonnes doivent être mises à jour?",
       "options": {
         "1": "Augmenter « Engagements » et « Budget »",
         "2": "Augmenter « Engagements » et « Dépenses réelles à ce jour »",
         "3": "Augmenter « Engagements » et « Dépenses annuelles prévues »"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Incorrect. Il n'est pas nécessaire d'augmenter ou de diminuer le budget. Vous changeriez le montant sous  «Engagements » à 1 500 $ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1 500 $.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Vous n'augmenteriez pas ou ne diminueriez pas les    « Dépenses réelles à ce jour » parce que vous n'avez pas payé pour le cours. Vous changeriez le montant sous « Engagements » à 1 500 $ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1 500 $",
-        "3": "<span class='v-right' /><strong>Correct!</strong> Vous changeriez le montant sous  «Engagements » à   1 500 $ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues »  de 1 500 $."
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Incorrect. Il n'est pas nécessaire d'augmenter ou de diminuer le budget. Vous changeriez le montant sous  «Engagements » à 1&nbsp;500&nbsp;$ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1&nbsp;500&nbsp;$.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Vous n'augmenteriez pas ou ne diminueriez pas les    « Dépenses réelles à ce jour » parce que vous n'avez pas payé pour le cours. Vous changeriez le montant sous « Engagements » à 1&nbsp;500&nbsp;$ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1&nbsp;500&nbsp;$",
+        "3": "<span class='v-right' /><strong>Correct!</strong> Vous changeriez le montant sous  «Engagements » à   1&nbsp;500&nbsp;$ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues »  de 1&nbsp;500&nbsp;$."
       },
       "conclusion": ""
     }

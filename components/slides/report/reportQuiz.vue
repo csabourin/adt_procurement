@@ -92,16 +92,16 @@
 <p>Voyage</p>
 </td>
 <td>
-<p>8 000 $</p>
+<p>8&nbsp;000&nbsp;$</p>
 </td>
 <td>
-<p>4 000 $</p>
+<p>4&nbsp;000&nbsp;$</p>
 </td>
 <td>
-<p>1 700 $</p>
+<p>1&nbsp;700&nbsp;$</p>
 </td>
 <td>
-<p>7 800 $</p>
+<p>7&nbsp;800&nbsp;$</p>
 </td>
 <td>&nbsp;</td>
 </tr>
@@ -324,18 +324,18 @@ export default {
   "conclusion": ""
   },
   "q7": {
-  "text": "Les déplacements ont été préapprouvés ce matin par le SMA. Le coût estimatif du vol, de l'hébergement, du transport local et des faux frais est de 2 500 $. Quel montant inscrirez-vous dans la colonne P6 Prévisions annuelles ? ",
+  "text": "Les déplacements ont été préapprouvés ce matin par le SMA. Le coût estimatif du vol, de l'hébergement, du transport local et des faux frais est de 2&nbsp;500&nbsp;$. Quel montant inscrirez-vous dans la colonne P6 Prévisions annuelles ? ",
   "options": {
-  "1": "10 300 $",
-  "2": "8 200 $",
-  "3": "7 800 $"
+  "1": "10&nbsp;300&nbsp;$",
+  "2": "8&nbsp;200&nbsp;$",
+  "3": "7&nbsp;800&nbsp;$"
   },
   "feedback": {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>",
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
-  "conclusion": "Le montant exact est de 8 200 $. Engagements de 4 000 $ + 1 700 $ pour les dépenses réelles depuis le début de l'année + 2 500 $ pour le voyage qui vient d'être approuvé = 8 200 $. Les engagements augmenteront également de 2 500 $."
+  "conclusion": "Le montant exact est de 8&nbsp;200&nbsp;$. Engagements de 4&nbsp;000&nbsp;$ + 1&nbsp;700&nbsp;$ pour les dépenses réelles depuis le début de l'année + 2&nbsp;500&nbsp;$ pour le voyage qui vient d'être approuvé = 8&nbsp;200&nbsp;$. Les engagements augmenteront également de 2&nbsp;500&nbsp;$."
   }
   }
   }</i18n>

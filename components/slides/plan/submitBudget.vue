@@ -41,7 +41,7 @@ export default {
   },
   "fr": {
     "q1": {
-      "text": "Comment ajusteriez-vous votre budget de voyage si vous receviez 9 000 $ au lieu des 11 600 $ proposés? ",
+      "text": "Comment ajusteriez-vous votre budget de voyage si vous receviez 9&nbsp;000&nbsp;$ au lieu des 11&nbsp;600&nbsp;$ proposés? ",
       "options": {
         "1": "Passez en revue votre plan d'inspection de voyage.",
         "2": "Encouragez vos employés à assister virtuellement à des conférences ou à des événements.",

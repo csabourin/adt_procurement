@@ -74,7 +74,7 @@ export default {
   },
   "fr": {
     "q1": {
-      "text": "Le sous-ministre adjoint a approuvé une demande de voyage de 5 000 $. Elle a été enregistrée dans le système financier. Une semaine plus tard, au moment de réserver le vol, le prix est passé de 600 $ à 650 $. Que feriez-vous?",
+      "text": "Le sous-ministre adjoint a approuvé une demande de voyage de 5&nbsp;000&nbsp;$. Elle a été enregistrée dans le système financier. Une semaine plus tard, au moment de réserver le vol, le prix est passé de 600 $ à 650 $. Que feriez-vous?",
       "options": {
         "1": "Modifiez le montant réel de vos dépenses.",
         "2": "Modifiez vos engagements sans demander une augmentation de l'autorisation de déplacement.",
@@ -88,11 +88,11 @@ export default {
       "conclusion": ""
     },
     "q2": {
-      "text": "La date d'entrée en fonction de votre nouvel employé a été repoussée d'un mois. Il ne travaillera donc que les six mois restants de l'exercice au lieu de sept mois. Son salaire est de 70 000 $. Qu'est-ce que vous faites?",
+      "text": "La date d'entrée en fonction de votre nouvel employé a été repoussée d'un mois. Il ne travaillera donc que les six mois restants de l'exercice au lieu de sept mois. Son salaire est de 70&nbsp;000&nbsp;$. Qu'est-ce que vous faites?",
       "options": {
-        "1": "Réduire les dépenses réelles de 5 833 $ (70 000 $ ÷ 12 mois X 1 mois).",
-        "2": "Réduire les dépenses d'engagement de 40 833 $ (70 000 $ ÷ 12 mois X 7 mois).",
-        "3": "Réduire les dépenses annuelles prévues de 5 833 $ (70 000 $ ÷ 12 mois X 1 mois)."
+        "1": "Réduire les dépenses réelles de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ ÷ 12 mois X 1 mois).",
+        "2": "Réduire les dépenses d'engagement de 40&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ ÷ 12 mois X 7 mois).",
+        "3": "Réduire les dépenses annuelles prévues de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ ÷ 12 mois X 1 mois)."
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>. Étant donné que l’employé n'a pas encore commencé, les dépenses ne peuvent pas être réduites.",

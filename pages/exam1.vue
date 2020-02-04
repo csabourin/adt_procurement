@@ -823,12 +823,12 @@ export default {
         }
       },
       "q14": {
-        "text": "Vos coûts d'infrastructure informatique ont augmenté de 10% par an au cours des dernières années. Si vos coûts actuels sont de 20 000 $, quel montant inscrirez-vous dans votre budget pour l'année prochaine? ",
+        "text": "Vos coûts d'infrastructure informatique ont augmenté de 10% par an au cours des dernières années. Si vos coûts actuels sont de 20&nbsp;000&nbsp;$, quel montant inscrirez-vous dans votre budget pour l'année prochaine? ",
         "options": {
-          "1": "20 000 $",
-          "2": "20 200 $",
-          "3": "22 000 $",
-          "4": "22 200 $"
+          "1": "20&nbsp;000&nbsp;$",
+          "2": "20&nbsp;200&nbsp;$",
+          "3": "22&nbsp;000&nbsp;$",
+          "4": "22&nbsp;200&nbsp;$"
         },
         "feedback": {
           "1": "",
@@ -838,12 +838,12 @@ export default {
         }
       },
       "q15": {
-        "text": "Pour les fournitures de bureau de l'an dernier, vous avez mis de côté 3 000 $, et 2 500 $ ont été dépensés. Pour l'année en cours, vous prévoyez dépenser 2 500 $. Quel montant allez-vous mettre dans votre budget pour l'année prochaine?",
+        "text": "Pour les fournitures de bureau de l'an dernier, vous avez mis de côté 3&nbsp;000&nbsp;$, et 2&nbsp;500&nbsp;$ ont été dépensés. Pour l'année en cours, vous prévoyez dépenser 2&nbsp;500&nbsp;$. Quel montant allez-vous mettre dans votre budget pour l'année prochaine?",
         "options": {
-          "1": "2 000$",
-          "2": "2 500$",
-          "3": "3 000$",
-          "4": "5 500$"
+          "1": "2&nbsp;000&nbsp;$",
+          "2": "2&nbsp;500&nbsp;$",
+          "3": "3&nbsp;000&nbsp;$",
+          "4": "5&nbsp;500&nbsp;$"
         },
         "feedback": {
           "1": "",
@@ -853,7 +853,7 @@ export default {
         }
       },
       "q16": {
-        "text": "Vous avez toujours mis de côté 8 000 $ année après année pour la formation des agents de centre d'appels. L'an dernier, vous avez dépensé 5 000 $ en formation. Cette année, vous prévoyez dépenser 10 500 $. Que feriez-vous pour votre budget de l'année prochaine?",
+        "text": "Vous avez toujours mis de côté 8&nbsp;000&nbsp;$ année après année pour la formation des agents de centre d'appels. L'an dernier, vous avez dépensé 5&nbsp;000&nbsp;$ en formation. Cette année, vous prévoyez dépenser 10&nbsp;500&nbsp;$. Que feriez-vous pour votre budget de l'année prochaine?",
         "options": {
           "1": "Demandez le montant que vous prévoyez dépenser cette année ",
           "2": "Demandez le montant que vous avez dépensé l'année dernière",
@@ -873,7 +873,7 @@ export default {
           "1": "300$",
           "2": "600$",
           "3": "900$",
-          "4": "1 200$"
+          "4": "1&nbsp;200&nbsp;$"
         },
         "feedback": {
           "1": "",
@@ -883,12 +883,12 @@ export default {
         }
       },
       "q18": {
-        "text": "Le budget salarial de l'année en cours est de 760 000 $. Vous créez un nouveau poste d'analyste en TI qui sera doté l'an prochain. Le salaire annuel sera de 60 000 $. Vous aurez besoin de temps pour les embaucher et estimez qu'ils commenceront en juin et ne travailleront que 10 mois. Quel sera votre budget salarial pour l'année prochaine (en supposant que tout le reste demeure inchangé)?",
+        "text": "Le budget salarial de l'année en cours est de 760&nbsp;000&nbsp;$. Vous créez un nouveau poste d'analyste en TI qui sera doté l'an prochain. Le salaire annuel sera de 60&nbsp;000&nbsp;$. Vous aurez besoin de temps pour les embaucher et estimez qu'ils commenceront en juin et ne travailleront que 10 mois. Quel sera votre budget salarial pour l'année prochaine (en supposant que tout le reste demeure inchangé)?",
         "options": {
-          "1": "760 000 $",
-          "2": "800 000 $",
-          "3": "810 000 $",
-          "4": "820 000 $"
+          "1": "760&nbsp;000&nbsp;$",
+          "2": "800&nbsp;000&nbsp;$",
+          "3": "810&nbsp;000&nbsp;$",
+          "4": "820&nbsp;000&nbsp;$"
         },
         "feedback": {
           "1": "",
@@ -898,12 +898,12 @@ export default {
         }
       },
       "q19": {
-        "text": "La mise en œuvre du système de chatbot entraînera des coûts de 15 000 $ en TI pour l'hébergement, qui seront fournis par un autre ministère selon le principe du recouvrement des coûts. Cela sera officialisé dans un protocole d'entente entre les organisations. Les frais d'hébergement dans votre budget seront de &hellip;?",
+        "text": "La mise en œuvre du système de chatbot entraînera des coûts de 15&nbsp;000&nbsp;$ en TI pour l'hébergement, qui seront fournis par un autre ministère selon le principe du recouvrement des coûts. Cela sera officialisé dans un protocole d'entente entre les organisations. Les frais d'hébergement dans votre budget seront de &hellip;?",
         "options": {
-          "1": "15 000 $ Non discrétionnaire ",
-          "2": "15 000 $ Discrétionnaire ",
-          "3": "15 000 $ Subventions et Contributions",
-          "4": "15 000 $ Immobilisations"
+          "1": "15&nbsp;000&nbsp;$ Non discrétionnaire ",
+          "2": "15&nbsp;000&nbsp;$ Discrétionnaire ",
+          "3": "15&nbsp;000&nbsp;$ Subventions et Contributions",
+          "4": "15&nbsp;000&nbsp;$ Immobilisations"
         },
         "feedback": {
           "1": "",
@@ -913,12 +913,12 @@ export default {
         }
       },
       "q20": {
-        "text": "Vous avez soumis vos exigences budgétaires et votre directeur vous demande de réduire vos déplacements de 20 000 $ à 12 000 $. Quelles mesures pourriez-vous prendre? ",
+        "text": "Vous avez soumis vos exigences budgétaires et votre directeur vous demande de réduire vos déplacements de 20&nbsp;000&nbsp;$ à 12&nbsp;000&nbsp;$. Quelles mesures pourriez-vous prendre? ",
         "options": {
           "1": "Réduire certains coûts discrétionnaires ",
           "2": "Explorez les options de vidéoconférence",
-          "3": "Modifier les exigences budgétaires à 12 000 $",
-          "4": "Demandez au service des finances de trouver 8 000 $."
+          "3": "Modifier les exigences budgétaires à 12&nbsp;000&nbsp;$",
+          "4": "Demandez au service des finances de trouver 8&nbsp;000&nbsp;$."
         },
         "feedback": {
           "right": "",

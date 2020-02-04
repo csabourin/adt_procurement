@@ -298,10 +298,10 @@
         "1": "<span class='v-right' /><strong>Correct!</strong>",
         "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": "Il y a 2 500 $ dans votre budget pour les traductions, donc vous avez assez d'argent pour la demande de traduction."
+      "conclusion": "Il y a 2&nbsp;500&nbsp;$ dans votre budget pour les traductions, donc vous avez assez d'argent pour la demande de traduction."
     },
     "q2": {
-      "text": "Avez-vous assez d'argent dans votre budget pour embaucher un consultant dont les honoraires sont de         90 000 $?",
+      "text": "Avez-vous assez d'argent dans votre budget pour embaucher un consultant dont les honoraires sont de         90&nbsp;000&nbsp;$?",
       "options": {
         "1": "Oui, j'ai juste besoin d'ajouter une ligne pour le montant des honoraires du consultant à mon budget approuvé.",
         "2": "Non. Il n'y a pas assez d'argent dans votre budget approuvé."

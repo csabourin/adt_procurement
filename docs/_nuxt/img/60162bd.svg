@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 50 50">
+  <defs/>
+  <defs>
+  <linearGradient y2="0.05691" y1="0.90126" x2="0.29746" x1="1.01025" id="b">
+   <stop stop-color="#826b81" offset="0%"/>
+   <stop stop-color="#000000" offset="0%"/>
+   <stop stop-color="#261f26" offset="15%"/>
+   <stop stop-color="#473a46" offset="30%"/>
+   <stop stop-color="#614f60" offset="47%"/>
+   <stop stop-color="#735f72" offset="63%"/>
+   <stop stop-color="#7e687d" offset="81%"/>
+   <stop stop-color="#826b81" offset="100%"/>
+  </linearGradient>
+  <linearGradient y2="0.79561" y1="-0.09922" x2="0.28308" x1="0.68126" id="c">
+   <stop stop-color="#7eb3bf" offset="0"/>
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#121a1b" offset="0.08"/>
+   <stop stop-color="#32484d" offset="0.25"/>
+   <stop stop-color="#4d6e76" offset="0.41"/>
+   <stop stop-color="#628c95" offset="0.57"/>
+   <stop stop-color="#71a1ac" offset="0.73"/>
+   <stop stop-color="#7aaeba" offset="0.87"/>
+   <stop stop-color="#7eb3bf" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="0.36012" y1="0.72446" x2="1.10066" x1="-0.12112" id="d">
+   <stop stop-color="#b78579" offset="0"/>
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#58403a" offset="0.45"/>
+   <stop stop-color="#9c7167" offset="0.82"/>
+   <stop stop-color="#b78579" offset="1"/>
+  </linearGradient>
+    <filter id="a" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#000" flood-opacity=".498" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur" stdDeviation="1"/>
+      <feOffset dx=".8" dy=".8" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+    </filter>
+  </defs>
+  <g data-name="Layer 1-2" filter="url(#a)">
+    <g data-name="Group 10898">
+      <g data-name="Group 1">
+        <circle cx="25" cy="19" r="19" fill="#fff" data-name="Ellipse 366-2"/>
+      </g>
+      <g data-name="Group 10362">
+        <g data-name="Group 10361">
+          <path fill="url(#b)" d="M20.66 4.32a7.46 7.46 0 014.47 3.5l9.8 17a7.41 7.41 0 005.27-2.13 8.57 8.57 0 002.09-6A17.33 17.33 0 0014.44 5.5a8.61 8.61 0 016.22-1.18z" data-name="Path 19696"/>
+          <path fill="url(#c)" d="M14.54 30.42a7.45 7.45 0 01.8-5.63l9.79-17a7.46 7.46 0 00-4.47-3.5 8.61 8.61 0 00-6.22 1.21 17.34 17.34 0 004.23 29.71 8.59 8.59 0 01-4.13-4.79z" data-name="Path 19697"/>
+          <path fill="url(#d)" d="M42.29 16.69a8.57 8.57 0 01-2.09 6 7.41 7.41 0 01-5.27 2.13H15.34a7.45 7.45 0 00-.8 5.63 8.57 8.57 0 004.14 4.79 17.32 17.32 0 0023.78-16.11 18.08 18.08 0 00-.17-2.44z" data-name="Path 19698"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

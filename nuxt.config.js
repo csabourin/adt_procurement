@@ -19,6 +19,7 @@ export default {
   },
   router: {
     // base: '/ProdContent/cninv000000000017454/'
+    // base: '/adt_finance-R1/'
   },
   /*
    ** Customize the progress-bar color

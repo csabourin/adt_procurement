@@ -255,7 +255,7 @@
     "psA1": "<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir du soutien administratif&nbsp;</li><li> D&eacute;m&eacute;nagement des bureaux dans de nouveaux locaux</li></ul>",
     "pD1": "Gestion des activit&eacute;s de d&eacute;livrance de permis</li><li> R&eacute;ception ouverte de 9&nbsp;h &agrave; 17&nbsp;h",
     "pD1add":"Formation de tous les agents sur le nouveau logiciel de gestion des pêches",
-    "pD2add":"Mise en œuvre d'un nouveau logiciel de gestion des pêches",
+    "pD2add":"Lancement d'un nouveau logiciel de gestion des pêches",
     "pR1": "Roulement du personnel",
     "low": "Faible",
     "high": "&Eacute;lev&eacute;",
@@ -266,7 +266,7 @@
     "pA2": "D&eacute;livrer des permis de p&ecirc;che commerciale",
     "pSA2": "<ul><li>Examiner les dossiers des demandeurs</li><li>V&eacute;rifier la fiabilit&eacute;</li><li>Délivrer des permis</li><li>Effectuer des inspections</li></ul>",
     "pD2_1w": "Délivrer le permis dans les 30 jours suivant la demande",
-    "pD2_1r": "Délivrer le permis dans les 30 jours suivant la demande",
+    "pD2_1r": "Délivrer le permis dans les 15 jours suivant la demande",
     "pD2_2": "D&eacute;livrer 500 permis par an",
     "pR2": "Surp&ecirc;che",
     "pM2": "<li> Prot&eacute;ger l'habitat</li><li> Fixer des limites de capture</li><li> Lancer les saisons de p&ecirc;che</li>",
@@ -275,7 +275,7 @@
     "pRes2.c": "1 agent subalterne",
     "pA3": "Renouveler les permis de p&ecirc;che commerciale",
     "pSA3": "<li> Examiner les dossiers de renouvellement des demandeurs</li><li> Délivrer des renouvellements de permis&nbsp;</li></li>",
-    "pD3": "<li> Émettre les renouvellements de permis dans les 30 jours suivant la demande</li><li> Émettre 300  renouvellements de permis par an</li>",
+    "pD3": "<li> Délivrer les renouvellements de permis dans les 30 jours suivant la demande</li><li> Délivrer 300  renouvellements de permis par an</li>",
     "pRes3": "<li>1 agent</li><li>1 analyste subalterne</li>",
     "q1":
     {

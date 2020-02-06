@@ -30,18 +30,44 @@
             <h3>Create a Budget</h3>
             <ul>
               <li>Budgets are essentially the conversion of the work plans into financial terms. In other words, the<strong> budget represents how much you forecast to spend to achieve your work plan activities</strong>.</li>
-            </ul>
-            <ul>
+              <!--
+                NEW VERSION? (CSPS-TD)
+                <li>Budgets are essentially the conversion of the work plans into financial terms. In other words, <strong>the budget represents how much you plan to spend to achieve your plan</strong>.</li>
+              -->
+
               <li>Typically, budgets will include <strong>operating and maintenance</strong> (O&amp;M) and <strong>salary </strong>costs. Depending on the mandate of your department, some budgets may also include <strong>capital </strong>and <strong>grants  and contributions</strong> amounts.</li>
-              <li><br />To create your budget, you must <strong>analyze </strong>information from various sources, <strong>forecast</strong> your new budget requirements and <strong>submit</strong> your new budget for approval to upper management.</li>
+              <!--
+                NEW VERSION? (CSPS-TD)
+                <li>To create a budget, you review the previous year’s budget to identify what <strong>salary</strong> and what <strong>operations and maintenance expenses</strong>&mdash;and in some cases, <strong>capital</strong>, <strong>grants</strong> and <strong>Contributions</strong>&mdash;you will keep, eliminate and add.</li> 
+              -->
+
+              <li>To create your budget, you must <strong>analyze </strong>information from various sources, <strong>forecast</strong> your new budget requirements and <strong>submit</strong> your new budget for approval to upper management.</li>
+              <!--
+                NEW VERSION? (CSPS-TD)
+                <li>Compare the previous year’s budget to the new work plan, making sure it covers all the expenses linked to the activities. Forecast expenses and submit the proposed new budget for approval, making adjustments throughout the year as activities evolve.</li>
+              -->
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
             <h3>&Eacute;tablir un budget</h3>
             <ul>
               <li>Essentiellement, les budgets repr&eacute;sentent la conversion des plans de travail en termes financiers. En d'autres mots, <strong>le budget repr&eacute;sente le montant que vous pr&eacute;voyez d&eacute;penser pour r&eacute;aliser les activit&eacute;s de votre plan de travail</strong>.</li>
+              <!--
+                NOUVELLE VERION? (CSPS-TD)
+                <li>Les budgets correspondent essentiellement aux plans de travail exprimés en termes financiers. Autrement dit, <strong>le budget représente le montant que vous prévoyez dépenser pour réaliser votre plan.</strong></li>
+              -->
+
               <li>Pour cr&eacute;er votre budget, vous devez <strong>analyser </strong>les informations de diverses sources,<strong>pr&eacute;voir </strong>vos nouveaux besoins budg&eacute;taires et <strong>soumettre </strong>votre nouveau budget pour approbation &agrave; la direction.</li>
+              <!--
+                NOUVELLE VERSION? (CSPS-TD)
+                <li>Pour créer un budget, vous <strong>passez en revue</strong> le budget de l’année précédente afin de déterminer quels salaires, quelles dépenses de fonctionnement et d’entretien et, dans certains cas, de capital et des subventions et contributions vous devrez <strong>conserver</strong>, <strong>éliminer</strong> ou <strong>ajouter</strong>.</li>
+              -->
+
               <li>Habituellement, les budgets comprennent les co&ucirc;ts de <strong>fonctionnement et d'entretien</strong> (F et E) et les co&ucirc;ts <strong>salariaux</strong>. Selon le mandat de votre minist&egrave;re, certains budgets peuvent &eacute;galement inclure des montants <strong>d'immobilisations</strong> et de <strong>subventions et contributions</strong>.</li>
+              <!--
+                NOUVELLE VERSION? (CSPS-TD)
+                <li>Vous comparez le budget de l’année précédente au nouveau plan de travail en vous assurant que toutes les dépenses liées aux activités sont prises en compte. Vous prévoyez les dépenses et soumettez le nouveau budget proposé pour approbation, en y apportant des modifications tout au long de l’année à mesure que les activités évoluent.</li>
+              -->
             </ul>
           </span>
         </b-col>

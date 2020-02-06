@@ -43,7 +43,7 @@
       <li v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
         <p>{{ item }}</p><br>
         <a :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
-        <button v-if="modalArray[index]" class="activityButton" @click="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </button>
+        <button v-if="modalArray[index]" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </button>
       </li>
     </ul>
     <!-- Used for troublehooting video set debugging to true in data-->
@@ -208,10 +208,10 @@ export default {
       }
     },
     accessibleModal(i) {
+      const videoPlayer = this.$refs.videoplayer
       this.accessiblePopup = true
-      this.$refs.videoplayer.pause()
+      videoPlayer.pause()
       this.$bvModal.show(this.modalArray[i])
-      // this.$refs.videoplayer.currentTime = this.startTime[i + 1]
     },
     showModal(i) {
 

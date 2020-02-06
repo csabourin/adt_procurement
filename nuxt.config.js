@@ -18,6 +18,7 @@ export default {
     ]
   },
   router: {
+    // base: '/ProdContent/cninv000000000016763/'
     // base: '/ProdContent/cninv000000000017454/'
     // base: '/adt_finance-R1/'
   },
@@ -110,7 +111,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
+    extend(config, { isDev, isClient }) {
       config.module.rules.push({
         test: /\.(pdf|docx|xlsx)(\?.*)?$/,
         loader: 'file-loader',
@@ -123,7 +124,6 @@ export default {
           loader: 'file-loader'
         }]
       })
-
     }
   }
 }

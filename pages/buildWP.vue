@@ -4,7 +4,7 @@
       {{ $t('BuildWorkPlan')}}
     </h2>
     <section>
-      <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/sp/10100/serveFlavor/entryId/0_99dima2k/v/2/flavorId/0_37s982du/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/sp/10100/serveFlavor/entryId/0_iazbfh85/v/2/flavorId/0_gn7zgcd1/name/a.mp4" chapters chapterFile="chapters.vtt" posterFile="buildworkplan.png" ccFile="buildWP_captions.vtt" :restartAt="thatPoint" toResume="setBuildWP" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
+      <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/sp/10100/serveFlavor/entryId/0_99dima2k/v/2/flavorId/0_37s982du/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/sp/10100/serveFlavor/entryId/0_iazbfh85/v/12/flavorId/0_gn7zgcd1/name/a.mp4" chapters chapterFile="chapters.vtt" posterFile="buildworkplan.png" ccFile="buildWP_captions.vtt" :restartAt="thatPoint" toResume="setBuildWP" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">

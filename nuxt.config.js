@@ -18,6 +18,8 @@ export default {
     ]
   },
   router: {
+    // /Learning Services/GT test/tdumas → base: '/ProdContent/cninv000000000017653/'
+    
     // base: '/ProdContent/cninv000000000016763/'
     // base: '/ProdContent/cninv000000000017454/'
     // base: '/adt_finance-R1/'

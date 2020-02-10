@@ -125,7 +125,7 @@ export default {
 <i18n>{
   "en": {
   "qDisabled": "Choose",
-  "instructions": "Here&rsquo;s a chance for you to confirm your knowledge of budgets and costs. Select the best choice to fill in the blanks.",
+  "instructions": "Here's a chance for you to confirm your knowledge of budgets and costs. Select the best choice to fill in the blanks.",
   "keyTerms": [
   {
   "1": "Operating &amp; Maintenance (O&amp;M)",
@@ -149,7 +149,7 @@ export default {
   "Temp help is considered a contract and paid out of {0}.",
   "Money given to non-governmental organizations for refugee settlement, like language classes, would come out of the {0} budget.",
   "The operating budget consists of both {0} and {1}.",
-  "is money that is provided to entities outside of the federal government to advance the department&rsquo;s mandate.",
+  "is money that is provided to entities outside of the federal government to advance the department's mandate.",
   "is for items that will depreciate over time, such as a new addition to an existing building, vehicles, etc.",
   "{0} costs are essential for delivering on your activities and if cut will result in you not being able to deliver on them.",
   "{0} costs are less likely to have a negative impact on delivering your activities.",
@@ -181,16 +181,16 @@ export default {
   "sentences": [
   "comprend les postes de durée indéterminée, déterminée et occasionnelle, les heures supplémentaires, la rémunération au rendement et les congés.",
   "comprend des articles comme les voyages, la formation, la traduction, les fournitures de bureau, etc.",
-  "L&rsquo;aide temporaire est considérée comme un contrat et est payée à même {0}.",
-  "L&rsquo;argent donné aux organisations non gouvernementales pour l&rsquo;établissement des réfugiés, comme les cours de langue, proviendrait du budget de {0}",
+  "L’aide temporaire est considérée comme un contrat et est payée à même {0}.",
+  "L’argent donné aux organisations non gouvernementales pour l’établissement des réfugiés, comme les cours de langue, proviendrait du budget de {0}",
   "Le budget de fonctionnement comprend {0} et {1}.",
-  "est de l&rsquo;argent qui est fourni à des entités extérieures au gouvernement fédéral, pour répondre au mandat du ministère.",
-  "s&rsquo;applique aux articles qui se déprécieront avec le temps, comme une annexe à un bâtiment, des véhicules, etc.",
-  "Les coûts {0} sont essentiels à l&rsquo;exécution de vos activités et, si des compressions budgétaires peuvent vous empêcher de les exécuter, vous pourriez ne pas être en mesure de les faire.",
-  "Les coûts {0} sont moins susceptibles d&rsquo;avoir une incidence négative sur l&rsquo;exécution de vos activités.",
+  "est de l’argent qui est fourni à des entités extérieures au gouvernement fédéral, pour répondre au mandat du ministère.",
+  "s’applique aux articles qui se déprécieront avec le temps, comme une annexe à un bâtiment, des véhicules, etc.",
+  "Les coûts {0} sont essentiels à l’exécution de vos activités et, si des compressions budgétaires peuvent vous empêcher de les exécuter, vous pourriez ne pas être en mesure de les faire.",
+  "Les coûts {0} sont moins susceptibles d’avoir une incidence négative sur l’exécution de vos activités.",
   "Une pratique exemplaire consiste à inclure une colonne supplémentaire {0} dans vos besoins budgétaires pour vous rappeler comment vous êtes arrivé aux chiffres que vous avez obtenus.",
   "Si vous avez des niveaux de référence, vous commencez par {0}.",
-  "Si vous n&rsquo;avez pas de niveaux de référence, vous commencez par {0}."
+  "Si vous n’avez pas de niveaux de référence, vous commencez par {0}."
   ]
   }
   }</i18n>

@@ -6,24 +6,24 @@
         <ul>
           <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/system-gestion-depenses/cycle-rapports.html">Le cycle des rapports sur les dépenses gouvernementales</a></li>
           <li><a target="_blank" href="https://laws-lois.justice.gc.ca/fra/lois/f-11/">Loi sur la gestion des finances publiques</a></li>
-          <li><a target="_blank" href="https://www.canada.ca/fr/gouvernement/systeme/priorites.html">Priorit&eacute;s du gouvernement</a>
+          <li><a target="_blank" href="https://www.canada.ca/fr/gouvernement/systeme/priorites.html">Priorités du gouvernement</a>
             <ul>
               <li><a target="_blank" href="https://pm.gc.ca/fr/lettres-de-mandat">Lettres de mandat</a> des Ministres</li>
               <li><a target="_blank" href="https://www.canada.ca/fr/conseil-prive/campagnes/discours-trone.html">Discours du Tr&ocirc;ne</a></li>
-              <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html">Plan minist&eacute;riels (PM)</a>&nbsp;</li>
+              <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html">Plan ministériels (PM)</a>&nbsp;</li>
             </ul>
           </li>
-          <li><a target="_blank" href="https://www.fin.gc.ca/access/budinfo-fra.asp">Budget f&eacute;d&eacute;ral</a></li>
+          <li><a target="_blank" href="https://www.fin.gc.ca/access/budinfo-fra.asp">Budget fédéral</a></li>
           <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/cadre-responsabilisation-gestion.html">Cadre de responsabilisation de gestion (CRG)</a></li>
-          <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/sujets/depenses-prevues.html">D&eacute;penses pr&eacute;vues du gouvernement</a></li>
-          <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/rapports-ministeriels-rendement.html">Rapport sur les r&eacute;sultats minist&eacute;riels (RRM)</a></li>
-          <li><a target="_blank" href="https://ouvert.canada.ca/fr/divulgation-proactive">Divulgation proactive</a> (&agrave; l'&eacute;chelle du gouvernement)
+          <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/sujets/depenses-prevues.html">Dépenses prévues du gouvernement</a></li>
+          <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/rapports-ministeriels-rendement.html">Rapport sur les résultats ministériels (RRM)</a></li>
+          <li><a target="_blank" href="https://ouvert.canada.ca/fr/divulgation-proactive">Divulgation proactive</a> (à l&rsquo;échelle du gouvernement)
             <ul>
-              <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/etablissement-rapports-depenses/divulgation-proactive-ministeres-organismes.html">Divulgation proactive par ordre de minist&egrave;res ou d&rsquo;organismes</a>&nbsp;</li>
+              <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/etablissement-rapports-depenses/divulgation-proactive-ministeres-organismes.html">Divulgation proactive par ordre de ministères ou d&rsquo;organismes</a>&nbsp;</li>
             </ul>
           </li>
-          <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/presentations-conseil-tresor/guide.html">Guide d&eacute;taill&eacute; &agrave; l&rsquo;intention des r&eacute;dacteurs</a></li>
-          <li><a target="_blank" href="https://www.canada.ca/fr/conseil-prive/services/publications/memoires-cabinet.html">Guide et gabarits pour M&eacute;moires au Cabinet</a></li>
+          <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/presentations-conseil-tresor/guide.html">Guide détaillé à l&rsquo;intention des rédacteurs</a></li>
+          <li><a target="_blank" href="https://www.canada.ca/fr/conseil-prive/services/publications/memoires-cabinet.html">Guide et gabarits pour Mémoires au Cabinet</a></li>
         </ul>
       </div>
     </div>

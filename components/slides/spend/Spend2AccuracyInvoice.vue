@@ -77,7 +77,7 @@
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong>."
+        "2": "<span class='v-right' /> <strong>Correct!</strong>"
       },
       "conclusion": " You ordered rose colored glasses at $20 per pair. If you look closely, the invoice indicates $25 per unit. You will need to contact the supplier to correct the invoice."
     }
@@ -94,10 +94,10 @@
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Vous devrez contacter le fournisseur pour corriger la facture car vous n'avez pas reçu cinq paires."
+      "conclusion": "Vous devrez contacter le fournisseur pour corriger la facture car vous n&rsquo;avez pas reçu cinq paires."
     },
     "q2": {
-      "text": "Vous avez commandé des surligneurs d'une valeur de 10,00 $ auprès des Entreprises XYZ. En regardant la facture fournie, devriez-vous la payer?",
+      "text": "Vous avez commandé des surligneurs d&rsquo;une valeur de 10,00 $ auprès des Entreprises XYZ. En regardant la facture fournie, devriez-vous la payer?",
       "options": {
         "1": "Oui",
         "2": "Non"

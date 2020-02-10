@@ -73,7 +73,7 @@ export default {
       "conclusion": ""
     },
     "q3": {
-      "text": "Mid-year, you’ve renewed 75 fishing licenses. Given the provided scenario, are you on track to meet your target? ",
+      "text": "Mid-year, you&rsquo;ve renewed 75 fishing licenses. Given the provided scenario, are you on track to meet your target? ",
       "options": {
         "1": "Yes",
         "2": "No"
@@ -82,7 +82,7 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "You’re halfway through the year but have only renewed a quarter of the target for fishing licenses. This target is at risk of not being reached."
+      "conclusion": "You&rsquo;re halfway through the year but have only renewed a quarter of the target for fishing licenses. This target is at risk of not being reached."
     },
     "q4": {
       "text": "It is now year-end. You have issued 400 licenses. How would you explain the variance to the finance unit?",
@@ -99,9 +99,9 @@ export default {
     }
   },
   "fr": {
-    "intro": "Vous êtes responsable d'une équipe de pêche de huit personnes. Votre équipe est chargée de délivrer 500 licences par an et de renouveler 300 licences par an. Les licences doivent être délivrées ou renouvelées dans les 15 jours suivant la demande. Un nouveau logiciel a été implémenté pour accélérer le processus de licence. Votre bureau est également chargé d'effectuer des vérifications des stocks. ",
+    "intro": "Vous êtes responsable d&rsquo;une équipe de pêche de huit personnes. Votre équipe est chargée de délivrer 500 licences par an et de renouveler 300 licences par an. Les licences doivent être délivrées ou renouvelées dans les 15 jours suivant la demande. Un nouveau logiciel a été implémenté pour accélérer le processus de licence. Votre bureau est également chargé d&rsquo;effectuer des vérifications des stocks. ",
     "q1": {
-      "text": "Compte tenu du scénario fourni, lequel des exemples suivants sont des exemples d'indicateurs de rendement?",
+      "text": "Compte tenu du scénario fourni, lequel des exemples suivants sont des exemples d&rsquo;indicateurs de rendement?",
       "options": {
         "1": "Pourcentage des vérifications des stocks de poissons prévues par rapport aux vérifications terminées.",
         "2": "Nombre de partenaires offrant un soutien supplémentaire aux projets financés.",
@@ -121,14 +121,14 @@ export default {
         "3": "523 permis de chasse ont été délivrés."
       },
       "feedback": {
-        "1": "<span class='v-right' /><strong>Correct!</strong>  Il s'agit clairement d'un résultat par rapport à l'objectif fixé dans votre plan de travail.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>  &laquo;Les permis de pêche ont été délivrés dans les 15 jours suivant la demande, 95 % du temps&raquo; est un résultat par rapport à l'objectif fixé dans le plan de travail. L'achat d'un nouveau logiciel ne serait pas considéré comme un résultat.  ",
-        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> &laquo;Les permis de pêche ont été délivrés dans les 15 jours suivant la demande, 95 % du temps&raquo; est un résultat par rapport à l'objectif fixé dans le plan de travail. Les permis de chasse ne s'appliquent pas aux pêches."
+        "1": "<span class='v-right' /><strong>Correct!</strong>  Il s&rsquo;agit clairement d&rsquo;un résultat par rapport à l'objectif fixé dans votre plan de travail.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>  &laquo;Les permis de pêche ont été délivrés dans les 15 jours suivant la demande, 95 % du temps&raquo; est un résultat par rapport à l'objectif fixé dans le plan de travail. L&rsquo;achat d&rsquo;un nouveau logiciel ne serait pas considéré comme un résultat.  ",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> &laquo;Les permis de pêche ont été délivrés dans les 15 jours suivant la demande, 95 % du temps&raquo; est un résultat par rapport à l'objectif fixé dans le plan de travail. Les permis de chasse ne s&rsquo;appliquent pas aux pêches."
       },
       "conclusion": ""
     },
     "q3": {
-      "text": "En milieu d'année, vous avez renouvelé 75 permis de pêche. Compte tenu du scénario présenté, êtes-vous sur la bonne voie pour atteindre votre objectif ? ",
+      "text": "En milieu d&rsquo;année, vous avez renouvelé 75 permis de pêche. Compte tenu du scénario présenté, êtes-vous sur la bonne voie pour atteindre votre objectif ? ",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -137,10 +137,10 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Vous êtes à la moitié de l'année, mais vous n'avez renouvelé qu'un quart de l'objectif fixé pour les permis de pêche. Cet objectif risque de ne pas être atteint."
+      "conclusion": "Vous êtes à la moitié de l&rsquo;année, mais vous n&rsquo;avez renouvelé qu&rsquo;un quart de l'objectif fixé pour les permis de pêche. Cet objectif risque de ne pas être atteint."
     },
     "q4": {
-      "text": "C'est maintenant la fin de l'année. Vous avez délivré 400 licences. Comment expliquez-vous l'écart à l'unité des finances ? Sélectionnez tout ce qui pourrait s'appliquer.",
+      "text": "C&rsquo;est maintenant la fin de l&rsquo;année. Vous avez délivré 400 licences. Comment expliquez-vous l&rsquo;écart à l&rsquo;unité des finances ? Sélectionnez tout ce qui pourrait s&rsquo;appliquer.",
       "options": {
         "1": "Le personnel clé est parti inopinément.",
         "2": "Il y a eu un retard dans la mise en œuvre du nouveau logiciel. ",
@@ -150,7 +150,7 @@ export default {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
         "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong> Toutes les explications sont possibles."
       },
-      "conclusion": "Il peut y avoir de nombreuses raisons d'expliquer un écart. Vous saurez comment expliquer tout écart dans vos propres activités."
+      "conclusion": "Il peut y avoir de nombreuses raisons d&rsquo;expliquer un écart. Vous saurez comment expliquer tout écart dans vos propres activités."
     }
   }
 }</i18n>

@@ -219,25 +219,25 @@
           "titleMitigation": "Atténuation",
           "titleResources": "Resources",
           "qDisabled": "Veuillez faire un choix",
-          "govtPriorities": "Servir les Canadiens en assurant l'utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
-          "deptPriorities": "Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l'aquaculture et d'autres industries maritimes.",
+          "govtPriorities": "Servir les Canadiens en assurant l&rsquo;utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
+          "deptPriorities": "Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l&rsquo;aquaculture et d&rsquo;autres industries maritimes.",
           "dirPriorities": "Gérer les pêches commerciales.",
-          "pA1": "G&eacute;rer et administrer la direction&nbsp;",
-          "psA1": "<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir du soutien administratif&nbsp;</li><li> D&eacute;m&eacute;nagement des bureaux dans de nouveaux locaux</li></ul>",
-          "pD1": "<ul><li> Gestion des activit&eacute;s de d&eacute;livrance de permis</li><li> R&eacute;ception ouverte de 9 h &agrave; 17 h</li></ul>",
+          "pA1": "Gérer et administrer la direction&nbsp;",
+          "psA1": "<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir du soutien administratif&nbsp;</li><li> Déménagement des bureaux dans de nouveaux locaux</li></ul>",
+          "pD1": "<ul><li> Gestion des activités de délivrance de permis</li><li> Réception ouverte de 9 h à 17 h</li></ul>",
           "pR1": "Roulement du personnel",
           "low": "Faible",
-          "high": "&Eacute;lev&eacute;",
-          "pM1": "<ul><li>&Eacute;tablir un plan de rel&egrave;ve</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l'excellence du travail</li><li> C&eacute;l&eacute;brer les succ&egrave;s</li><li> Impliquer les employ&eacute;s dans la prise de d&eacute;cisions</li><li>Horaires de travail flexibles</li></ul>",
+          "high": "&Eacute;levé",
+          "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l&rsquo;excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li></ul>",
           "pM1_1": "Mettre en &oelig;uvre des horaires de travail flexibles",
           "pR1_1": "1 adjoint administratif",
           "pR1_2": "gestionnaire",
-          "pA2": "D&eacute;livrer des permis de p&ecirc;che commerciale",
-          "pSA2": "<ul><li>Examiner les dossiers des demandeurs</li><li>V&eacute;rifier la fiabilit&eacute;</li><li>Délivrer des permis</li><li>Effectuer des inspections</li></ul>",
+          "pA2": "Délivrer des permis de p&ecirc;che commerciale",
+          "pSA2": "<ul><li>Examiner les dossiers des demandeurs</li><li>Vérifier la fiabilité</li><li>Délivrer des permis</li><li>Effectuer des inspections</li></ul>",
           "pD2_1": "Délivrer le permis dans les 30 jours suivant la demande",
-          "pD2_2": "D&eacute;livrer 500 permis par an",
+          "pD2_2": "Délivrer 500 permis par an",
           "pR2": "Surp&ecirc;che",
-          "pM2": "<li> Prot&eacute;ger l'habitat</li><li> Fixer des limites de capture</li><li> Lancer les saisons de p&ecirc;che</li>",
+          "pM2": "<li> Protéger l'habitat</li><li> Fixer des limites de capture</li><li> Lancer les saisons de p&ecirc;che</li>",
           "pRes2": "<li> 1 agent</li><li> 2 analystes</li><li> 1 agent subalterne</li>",
           "pA3": "Renouveler les permis de p&ecirc;che commerciale",
           "pSA3": "<li> Examiner les dossiers de renouvellement des demandeurs</li><li> Délivrer des renouvellements de permis&nbsp;</li></li>",
@@ -245,16 +245,16 @@
           "pRes3": "<li>1 agent</strong></li><li>1 analyste subalterne</li>",
           "q1":
           {
-              "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d'atténuation de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
+              "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d&rsquo;atténuation de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
               "options":
               {
-                  "1": "Gardez-la comme stratégie d’atténuation pour la &laquo; Surpêche &raquo;.",
-                  "2": "Il devrait faire partie de la strat&eacute;gie d'att&eacute;nuation &laquo; Roulement du personnel &raquo;.",
+                  "1": "Gardez-la comme stratégie d&rsquo;atténuation pour la &laquo; Surpêche &raquo;.",
+                  "2": "Il devrait faire partie de la stratégie d&rsquo;atténuation &laquo; Roulement du personnel &raquo;.",
                   "3": "Enlever complètement &laquo; Horaires de travail flexibles &raquo;."
               },
               "feedback":
               {
-                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, les heures de travail flexibles se rapportent plus &agrave; la &laquo; Gestion et &agrave; administration de la direction &raquo;.",
+                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, les heures de travail flexibles se rapportent plus à la &laquo; Gestion et à administration de la direction &raquo;.",
                   "2": "<span class='v-right' />  <strong>Correct!</strong>",
                   "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, &laquo; Horaires de travail flexibles &raquo; est une stratégie valable pour attirer et retenir les employés."
               }
@@ -264,31 +264,31 @@
               "text": "Le <strong>livrable</strong> suivant ne figure pas dans le plan de travail : &laquo; Délivrer 500 permis par an &raquo;. À quelle activité devrait-il être associé?",
               "options":
               {
-                  "1": "G&eacute;rer et administrer la direction",
-                  "2": "D&eacute;livrer des permis de p&ecirc;che commerciale",
+                  "1": "Gérer et administrer la direction",
+                  "2": "Délivrer des permis de p&ecirc;che commerciale",
                   "3": "Renouveler les permis de p&ecirc;che commerciale"
               },
               "feedback":
               {
-                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne la d&eacute;livrance de permis de p&ecirc;che commerciale.",
+                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne la délivrance de permis de p&ecirc;che commerciale.",
                   "2": "<span class='v-right' />  <strong>Correct!</strong>",
-                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne la d&eacute;livrance de permis de p&ecirc;che commerciale."
+                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne la délivrance de permis de p&ecirc;che commerciale."
               }
           },
           "q3":
           {
-              "text": "En regardant sous <strong>Ressources</strong>, vous remarquez que le poste de gestionnaire n’y figure pas. À quelle activité devrait-il être associé?",
+              "text": "En regardant sous <strong>Ressources</strong>, vous remarquez que le poste de gestionnaire n&rsquo;y figure pas. À quelle activité devrait-il être associé?",
               "options":
               {
-                  "1": "G&eacute;rer et administrer la direction",
-                  "2": "D&eacute;livrer des permis de p&ecirc;che commerciale",
+                  "1": "Gérer et administrer la direction",
+                  "2": "Délivrer des permis de p&ecirc;che commerciale",
                   "3": "Renouveler les permis de p&ecirc;che commerciale"
               },
               "feedback":
               {
                   "1": "<span class='v-right' /> <strong>Correct!</strong>",
-                  "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un poste de gestionnaire serait sous sous la rubrique &laquo; G&eacute;rer et administrer la direction &raquo;.",
-                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Un poste de gestionnaire serait sous sous la rubrique &laquo; G&eacute;rer et administrer la direction &raquo;."
+                  "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un poste de gestionnaire serait sous sous la rubrique &laquo; Gérer et administrer la direction &raquo;.",
+                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Un poste de gestionnaire serait sous sous la rubrique &laquo; Gérer et administrer la direction &raquo;."
 
               }
           }

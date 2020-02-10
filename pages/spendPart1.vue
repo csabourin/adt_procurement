@@ -14,17 +14,17 @@
                 <span v-if="$i18n.locale=='en'">
 
                   <h2>Check your Budget</h2>
-                  <p>Now that you have your approved budget, and are beginning to deliver on your work plan, let’s begin spending money! </p>
+                  <p>Now that you have your approved budget, and are beginning to deliver on your work plan, let&rsquo;s begin spending money! </p>
                   <p>Before initiating and committing any expenditures, however, you must verify that there are sufficient funds in your budget.</p>
                   <p>This means that you need to review what has been spent or committed to date, along with any other planned expenditures. </p>
                   <p>As the year progresses, you will most likely shuffle amounts within your budget items to find the funds needed for your expenditures. </p>
-                  <p>Don’t forget! The format of your budget may differ from the one used here depending on where you work.</p>
+                  <p>Don&rsquo;t forget! The format of your budget may differ from the one used here depending on where you work.</p>
 
                   <hr>
 
                   <h2>Delegation of Authority</h2>
                   <p>Did you know that financial authorities are granted to ministers and deputy heads through the Financial Administration Act?</p>
-                  <p>These individuals then delegate authority to positions identified by title through their organization’s delegation of financial signing authorities chart. </p>
+                  <p>These individuals then delegate authority to positions identified by title through their organization&rsquo;s delegation of financial signing authorities chart. </p>
                   <p>To exercise your financial authority, you need three things: </p>
                   <ol>
                     <li>Successfully complete this course, </li>
@@ -35,7 +35,7 @@
                   <p>Section 32 is expenditure initiation and commitment authority and Section 34 is certification authority. Section 32 would allow you to order office supplies, while Section 34 would allow you to sign off on having received the supplies.</p>
                   <p>Then, Section 33 allows the finance unit to pay for the supplies. </p>
                   <p>In certain situations, for example, temporary help services, you will need to go through a procurement process because it involves a contract. These situations are governed by section 41 of the FAA, and would typically be managed by the procurement section in your organization.. </p>
-                  <p>To know what and how much you can authorize, consult your own signed delegation card and your organization’s delegation chart. </p>
+                  <p>To know what and how much you can authorize, consult your own signed delegation card and your organization&rsquo;s delegation chart. </p>
                   <p>Again, the format of these documents will differ depending on where you work. </p>
 
                   <hr>
@@ -51,7 +51,7 @@
                   <p>When you have checked that you have enough money to cover a purchase, you then create either a soft commitment, or hard commitment. </p>
                   <p>A soft commitment is when you reserve funds before the supplier is identified. </p>
                   <p>A hard commitment is when you make an arrangement with a known supplier.</p>
-                  <p>Either way, you will need to enter these commitments in the financial system using the department’s unique financial coding.</p>
+                  <p>Either way, you will need to enter these commitments in the financial system using the department&rsquo;s unique financial coding.</p>
                   <p>This financial coding is a system that allows us to keep track of the different kinds of financial transactions throughout the year. It allows us to identify, amongst other things: </p>
                   <ul>
                     <li>Which manager is responsible for the financial transaction</li>
@@ -66,7 +66,7 @@
                   <hr>
 
                   <h2>Try It!</h2>
-                  <p>To wrap up this section, let’s take a look at a practice scenario.</p>
+                  <p>To wrap up this section, let&rsquo;s take a look at a practice scenario.</p>
 
                   <h2>Section Completed</h2>
 
@@ -75,52 +75,52 @@
 
                   <h2>Vérifiez votre budget</h2>
                   <p>Maintenant que votre budget est approuvé et que vous avez commencé à mettre en oeuvre votre plan de travail, vous pouvez commencer à dépenser! </p>
-                  <p>Avant d'engager des dépenses, toutefois, vous devez vous assurer que les fonds disponibles dans votre budget sont suffisants. </p>
+                  <p>Avant d&rsquo;engager des dépenses, toutefois, vous devez vous assurer que les fonds disponibles dans votre budget sont suffisants. </p>
                   <p>Pour ce faire, vous devez examiner les dépenses qui ont été engagées, dépensées ou prévues. </p>
-                  <p>Au fur et à mesure que l'année avance, vous devrez probablement ajuster votre budget à vos besoins en déplaçant des montants d’un item à l’autre au sein même votre budget. </p>
+                  <p>Au fur et à mesure que l&rsquo;année avance, vous devrez probablement ajuster votre budget à vos besoins en déplaçant des montants d&rsquo;un item à l&rsquo;autre au sein même votre budget. </p>
                   <p>N'oubliez pas que le gabarit utilisé dans votre unité peut différer sensiblement de celui que nous vous présentons ici!</p>
 
                   <hr>
 
                   <h2>Délégation des pouvoirs</h2>
-                  <p>C’est la Loi sur la gestion des finances publiques qui confère aux ministres et aux administrateurs généraux leurs pouvoirs financiers. </p>
-                  <p>Par la suite, ces personnes délèguent, à leur tour, une partie de ces pouvoirs financiers à l’intérieur de leur organisation, par le biais d’un tableau de délégation des pouvoirs de signature en matière financière. </p>
+                  <p>C&rsquo;est la Loi sur la gestion des finances publiques qui confère aux ministres et aux administrateurs généraux leurs pouvoirs financiers. </p>
+                  <p>Par la suite, ces personnes délèguent, à leur tour, une partie de ces pouvoirs financiers à l&rsquo;intérieur de leur organisation, par le biais d&rsquo;un tableau de délégation des pouvoirs de signature en matière financière. </p>
                   <p>Pour exercer votre délégation financière, vous avez besoin de trois choses: </p>
                   <ol>
                     <li>Réussir le présent cours</li>
                     <li>Soumettre votre carte de délégation signée à votre service des finances et</li>
                     <li>Obtenir votre délégation de pouvoir officielle par écrit de la part de votre service des finances. </li>
                   </ol>
-                  <p>Il existe divers pouvoirs délégués. Les gestionnaires en ont généralement deux. L'article 32 permet à une personne déléguée d'engager des fonds et des dépenses tandis que l'article 34 est l'autorité de certification. L’article 32 vous permet de commander des articles de bureau, puis l’article 34 vous permet de certifier que vous les avez bel et bien reçus. </p>
-                  <p>Ensuite, l’article 33 permet à l’unité des finances de payer la facture. </p>
-                  <p>Dans certaines situations, par exemple des services d’aide temporaire, vous devrez passer par un processus d’approvisionnement parce que cela implique un contrat. Habituellement, ce serait au groupe “Approvisionnement” de votre organisation que reviendrait ces démarches, sous l’article 41 de la Loi sur la gestion des finances publiques. </p>
-                  <p>Pour savoir ce que vous pouvez initier et engager, vous devez vous fier à votre carte de délégation signée -  qui est bien propre à vous dans votre rôle actuel - ainsi qu’au tableau de délégation des pouvoirs de signature en matière financière dans votre organisation. </p>
-                  <p>Encore une fois, le format de ces documents variera selon l'endroit où vous travaillez. </p>
+                  <p>Il existe divers pouvoirs délégués. Les gestionnaires en ont généralement deux. L'article 32 permet à une personne déléguée d&rsquo;engager des fonds et des dépenses tandis que l&rsquo;article 34 est l&rsquo;autorité de certification. L&rsquo;article 32 vous permet de commander des articles de bureau, puis l&rsquo;article 34 vous permet de certifier que vous les avez bel et bien reçus. </p>
+                  <p>Ensuite, l&rsquo;article 33 permet à l&rsquo;unité des finances de payer la facture. </p>
+                  <p>Dans certaines situations, par exemple des services d&rsquo;aide temporaire, vous devrez passer par un processus d&rsquo;approvisionnement parce que cela implique un contrat. Habituellement, ce serait au groupe “Approvisionnement” de votre organisation que reviendrait ces démarches, sous l&rsquo;article 41 de la Loi sur la gestion des finances publiques. </p>
+                  <p>Pour savoir ce que vous pouvez initier et engager, vous devez vous fier à votre carte de délégation signée -  qui est bien propre à vous dans votre rôle actuel - ainsi qu&rsquo;au tableau de délégation des pouvoirs de signature en matière financière dans votre organisation. </p>
+                  <p>Encore une fois, le format de ces documents variera selon l&rsquo;endroit où vous travaillez. </p>
 
                   <hr>
 
                   <h2>Mécanismes de dépense</h2>
-                  <p>Vous avez l’argent et vous avez la délégation. Super! </p>
-                  <p>Maintenant, vous devez déterminer la meilleure façon d’obtenir les biens et les services en question. </p>
-                  <p>La prochaine activité vous donnera l’occasion de vous familiariser avec les mécanismes de dépense!</p>
+                  <p>Vous avez l&rsquo;argent et vous avez la délégation. Super! </p>
+                  <p>Maintenant, vous devez déterminer la meilleure façon d&rsquo;obtenir les biens et les services en question. </p>
+                  <p>La prochaine activité vous donnera l&rsquo;occasion de vous familiariser avec les mécanismes de dépense!</p>
 
                   <hr>
 
                   <h2>Enregistrement dans le système financier</h2>
-                  <p>Après avoir vérifié que vous avez assez d'argent pour couvrir un achat, vous créez soit un engagement préalable ou un engagement ferme. </p>
+                  <p>Après avoir vérifié que vous avez assez d&rsquo;argent pour couvrir un achat, vous créez soit un engagement préalable ou un engagement ferme. </p>
                   <p>Un engagement préalable est approprié lorsque vous réservez des fonds alors que vous n'avez pas encore identifié de fournisseur. </p>
                   <p>Un engagement ferme est approprié lorsque vous faites affaire avec un fournisseur connu. </p>
-                  <p>Dans un cas comme dans l’autre, vous devrez entrer ces engagements dans le système financier en utilisant le codage financier unique de votre organisation.</p>
-                  <p>Ce codage financier est un système qui permet de faire le suivi des opérations financières tout au long de l’année. Il permet d’identifier, entre autres: </p>
+                  <p>Dans un cas comme dans l&rsquo;autre, vous devrez entrer ces engagements dans le système financier en utilisant le codage financier unique de votre organisation.</p>
+                  <p>Ce codage financier est un système qui permet de faire le suivi des opérations financières tout au long de l&rsquo;année. Il permet d&rsquo;identifier, entre autres: </p>
                   <ul>
                     <li>Le  gestionnaire responsable </li>
                     <li>La composante de votre budget utilisée, par exemple fonctionnement et entretien, salaire, etc.</li>
                     <li>La nature de l'opération financière, par exemple  dépenses, recettes, actif, passif</li>
                     <li>Les détails de la transaction</li>
-                    <li>L’activité à laquelle est associée l’opération financière</li>
+                    <li>L&rsquo;activité à laquelle est associée l&rsquo;opération financière</li>
                   </ul>
-                  <p>Cela vous permet de bien gérer vos opérations financières et de bien pouvoir répondre de votre budget à tout moment au cours de l’année. </p>
-                  <p>Les gestionnaires travaillent souvent avec des professionnels de l'administration ou des agents financiers pour cette tâche.</p>
+                  <p>Cela vous permet de bien gérer vos opérations financières et de bien pouvoir répondre de votre budget à tout moment au cours de l&rsquo;année. </p>
+                  <p>Les gestionnaires travaillent souvent avec des professionnels de l&rsquo;administration ou des agents financiers pour cette tâche.</p>
 
                   <hr>
 

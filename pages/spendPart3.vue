@@ -23,15 +23,15 @@
                     <li>Flag budget surpluses to senior management; and</li>
                     <li>Make expenditure adjustments.</li>
                   </ul>
-                  <p>Let’s play with a few examples.</p>
+                  <p>Let&rsquo;s play with a few examples.</p>
                   <hr>
                   <h2>Data Comparison</h2>
                   <p>Taking care of your budget is really important because the decisions you make within your budget may influence your sector, your branch, or even your department. </p>
                   <p>At year-end, you will need to justify any deficit or surplus. </p>
                   <p>On one hand, overspending can cause a deficit, which puts a lot of pressure on senior management to find additional sources of funds to compensate. </p>
-                  <p>On the other hand, a surplus should be flagged as early as possible so that your unit doesn’t miss an opportunity to reallocate unused funds to another activity or to another unit. </p>
+                  <p>On the other hand, a surplus should be flagged as early as possible so that your unit doesn&rsquo;t miss an opportunity to reallocate unused funds to another activity or to another unit. </p>
                   <p>Monthly reports help you track your financials. They are sometimes called “Financial Situation Reports” - or FSRs - and are usually produced by the finance team within your organization. </p>
-                  <p>What is in the FSR needs to match what is actually going on in your unit. If it doesn’t, then you need to take appropriate action to resolve it. </p>
+                  <p>What is in the FSR needs to match what is actually going on in your unit. If it doesn&rsquo;t, then you need to take appropriate action to resolve it. </p>
                   <p>In the next activity, you will have a chance to review and adjust your financials according to new information. </p>
                   <hr>
                   <h2>Year-End Procedures</h2>
@@ -47,13 +47,13 @@
                   </ol>
                   <hr>
                   <h2>Quiz</h2>
-                  <p>So now that you know how to initiate expenditures, authorize commitments, exercise financial authority and monitor and control finances, let’s see what you remember by taking this short quiz.</p>
+                  <p>So now that you know how to initiate expenditures, authorize commitments, exercise financial authority and monitor and control finances, let&rsquo;s see what you remember by taking this short quiz.</p>
                   <h2>Section Completed</h2>
                 </span>
                 <span v-if="$i18n.locale=='fr'">
                   <h2>Suivi continu </h2>
-                  <p>En tant que gestionnaire, vous avez la responsabilité de veiller à ce que les engagements et les dépenses soient suivis tout au long de l'année et qu’ils soient enregistrés avec exactitude dans le système financier.</p>
-                  <p>Ce suivi se fait à la fois au niveau transactionnel et au niveau stratégique. Selon la situation, cela se traduit par l’une ou l’autre des actions suivantes : </p>
+                  <p>En tant que gestionnaire, vous avez la responsabilité de veiller à ce que les engagements et les dépenses soient suivis tout au long de l&rsquo;année et qu&rsquo;ils soient enregistrés avec exactitude dans le système financier.</p>
+                  <p>Ce suivi se fait à la fois au niveau transactionnel et au niveau stratégique. Selon la situation, cela se traduit par l&rsquo;une ou l&rsquo;autre des actions suivantes : </p>
                   <ul>
                     <li>Fermer les engagements qui ne sont plus requis; </li>
                     <li>Modifier les contrats en fonction de leur portée, de leur durée et des montants qui leur sont alloués;</li>
@@ -66,23 +66,23 @@
                   <hr>
                   <h2>Comparaison des données</h2>
                   <p>Il est essentiel de porter une attention particulière et soutenue à votre budget parce que les décisions que vous prenez au sein de votre budget peuvent avoir une incidence sur votre secteur, votre direction générale, ou même votre ministère. </p>
-                  <p>À la fin de l'année fiscale, vous devez justifier tout déficit ou surplus.</p>
-                  <p>D’une part, le fait de dépasser votre budget pourrait causer un déficit, ce qui met beaucoup de pression sur la haute direction de trouver d'autres sources de financement pour compenser.</p>
-                  <p>D’autre part, un surplus devrait être signalé le plus tôt possible sans quoi on pourrait manquer l’occasion de réaffecter les fonds inutilisés à une autre activité ou à une autre unité.</p>
-                  <p>Les rapports mensuels vous aident à suivre vos dépenses. On les appelle parfois “ Rapports sur la situation financière” - ou RSF - et sont habituellement produits par l’unité des Finances de votre organisation. </p>
-                  <p>Ce qui se trouve dans votre RSF doit refléter ce qui se passe dans votre unité. Si ce n’est pas le cas, vous devez faire un suivi afin de résoudre cet écart.</p>
-                  <p>Dans la prochaine activité, vous aurez l’occasion de réviser et d’ajuster vos données financières selon les nouvelles informations.</p>
+                  <p>À la fin de l&rsquo;année fiscale, vous devez justifier tout déficit ou surplus.</p>
+                  <p>D&rsquo;une part, le fait de dépasser votre budget pourrait causer un déficit, ce qui met beaucoup de pression sur la haute direction de trouver d&rsquo;autres sources de financement pour compenser.</p>
+                  <p>D&rsquo;autre part, un surplus devrait être signalé le plus tôt possible sans quoi on pourrait manquer l&rsquo;occasion de réaffecter les fonds inutilisés à une autre activité ou à une autre unité.</p>
+                  <p>Les rapports mensuels vous aident à suivre vos dépenses. On les appelle parfois “ Rapports sur la situation financière” - ou RSF - et sont habituellement produits par l&rsquo;unité des Finances de votre organisation. </p>
+                  <p>Ce qui se trouve dans votre RSF doit refléter ce qui se passe dans votre unité. Si ce n&rsquo;est pas le cas, vous devez faire un suivi afin de résoudre cet écart.</p>
+                  <p>Dans la prochaine activité, vous aurez l&rsquo;occasion de réviser et d&rsquo;ajuster vos données financières selon les nouvelles informations.</p>
                   <hr>
-                  <h2>Procédures de fin d’année</h2>
-                  <p>Étant donné que la plupart des budgets sont établis par le Parlement sur une base annuelle et qu’ils doivent être utilisés au cours de l'exercice financier, les biens et services doivent être reçus au plus tard le 31 mars. </p>
-                  <p>Il est toutefois fort probable que vous ne soyez pas en mesure de compléter le paiement de toutes vos dépenses avant la fin de l'exercice financier. C'est pourquoi l’unité des Finances vous demandera d'établir des créditeurs à la fin de l'exercice (CAFE) ou des débiteurs à la fin de l'exercice (DAFE) après avoir reçu votre liste de payables non réglés. </p>
-                  <p>Un CAFE est un montant dû pour des biens et/ou des services fournis dans l’année financière précédente, en se servant des fonds de l’année financière précédente, mais payés dans la nouvelle année financière alors qu’on aura reçu la facture du fournisseur. </p>
-                  <p>Un DAFE est un montant dû d’un autre ministère pour des biens et/ou des services fournis dans l’année financière précédente pour lesquels le paiement sera fait dans la nouvelle année financière. </p>
-                  <p>D’habitude, encore une fois selon les pratiques courantes au sein de votre ministère, vous recevrez des instructions de fin d'année pour l’établissement des CAFE et des DAFE. Ces instructions incluront aussi les critères quant au montant minimal requis et à l'échéancier. </p>
-                  <p>Lorsqu’on s’approche de la fin de l’année financière, les choses peuvent se compliquer un peu en ce qui a trait aux contrats. Voici deux choses à tenir à l’esprit.</p>
+                  <h2>Procédures de fin d&rsquo;année</h2>
+                  <p>Étant donné que la plupart des budgets sont établis par le Parlement sur une base annuelle et qu&rsquo;ils doivent être utilisés au cours de l&rsquo;exercice financier, les biens et services doivent être reçus au plus tard le 31 mars. </p>
+                  <p>Il est toutefois fort probable que vous ne soyez pas en mesure de compléter le paiement de toutes vos dépenses avant la fin de l&rsquo;exercice financier. C'est pourquoi l&rsquo;unité des Finances vous demandera d'établir des créditeurs à la fin de l&rsquo;exercice (CAFE) ou des débiteurs à la fin de l&rsquo;exercice (DAFE) après avoir reçu votre liste de payables non réglés. </p>
+                  <p>Un CAFE est un montant dû pour des biens et/ou des services fournis dans l&rsquo;année financière précédente, en se servant des fonds de l&rsquo;année financière précédente, mais payés dans la nouvelle année financière alors qu&rsquo;on aura reçu la facture du fournisseur. </p>
+                  <p>Un DAFE est un montant dû d&rsquo;un autre ministère pour des biens et/ou des services fournis dans l&rsquo;année financière précédente pour lesquels le paiement sera fait dans la nouvelle année financière. </p>
+                  <p>D&rsquo;habitude, encore une fois selon les pratiques courantes au sein de votre ministère, vous recevrez des instructions de fin d&rsquo;année pour l&rsquo;établissement des CAFE et des DAFE. Ces instructions incluront aussi les critères quant au montant minimal requis et à l&rsquo;échéancier. </p>
+                  <p>Lorsqu&rsquo;on s&rsquo;approche de la fin de l&rsquo;année financière, les choses peuvent se compliquer un peu en ce qui a trait aux contrats. Voici deux choses à tenir à l&rsquo;esprit.</p>
                   <ol>
-                    <li>Portez attention aux délais fixés par le service d’approvisionnement. Il se peut que vous ne puissiez pas créer de commande d'achat en fin d'année. </li>
-                    <li>Faites un suivi auprès des fournisseurs pour vous assurer que les biens ou services seront livrés avant la fin de l'année. Si le fournisseur n'est pas en mesure de livrer avant le 31 mars, discutez des étapes possibles avec le service d’approvisionnement. </li>
+                    <li>Portez attention aux délais fixés par le service d&rsquo;approvisionnement. Il se peut que vous ne puissiez pas créer de commande d&rsquo;achat en fin d&rsquo;année. </li>
+                    <li>Faites un suivi auprès des fournisseurs pour vous assurer que les biens ou services seront livrés avant la fin de l&rsquo;année. Si le fournisseur n'est pas en mesure de livrer avant le 31 mars, discutez des étapes possibles avec le service d&rsquo;approvisionnement. </li>
                   </ol>
                   <hr>
                   <h2>Quiz</h2>
@@ -202,9 +202,9 @@ export default {
   "TakeTheQuiz":"Répondez au questionnaire",
   "DataComparisonTitle":"Activité: Comparaison des données",
   "ContinuousMonitoringTitle":"Activité: Suivi continu",
-  "YearEndProceduresTitle":"Activité: Procédures de fin d’année",
+  "YearEndProceduresTitle":"Activité: Procédures de fin d&rsquo;année",
   "gotIt":"Continuer au segment suivant.",
-  "jumpModalParts":"Sauter à l'activité",
+  "jumpModalParts":"Sauter à l&rsquo;activité",
   "playSegment":"Faire jouer le segment vidéo",
   "transcriptText":"",
   "spendSectionBar": "DÉPENSES"

@@ -61,13 +61,13 @@
   "Test360":"Aperçu 360",
   "t360Line1":"Aperçu",
   "t360Line2":"360",
-  "wpExample":"Plan de travail de l'année passée",
+  "wpExample":"Plan de travail de l&rsquo;année passée",
   "wpLine1":"Plan de",
   "wpLine2":"travail",
-  "bExample":"Budget de l'année passée",
+  "bExample":"Budget de l&rsquo;année passée",
   "bLine1":" ",
   "bLine2":"Budget",
-  "rExample":"Rapport de l'année passée",
+  "rExample":"Rapport de l&rsquo;année passée",
   "rLine1":" ",
   "rLine2":"Rapport"
   }

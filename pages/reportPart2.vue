@@ -42,11 +42,11 @@
           </ul>
         </div>
         <div v-if="$i18n.locale=='fr'">
-          <p>Faites une recherche afin de localiser les profils d'information sur le rendement de votre organisation et ses rapports externes, comme le Rapport minist&eacute;riel sur les r&eacute;sultats.&nbsp;</p>
-          <p>Votre organisation aura sa propre fa&ccedil;on de produire des rapports sur la situation financi&egrave;re et de rendre compte de ses d&eacute;penses et de ses r&eacute;sultats. Parlez-en &agrave; votre section des finances ou de la planification et &agrave; votre directeur. Demandez-leur :</p>
+          <p>Faites une recherche afin de localiser les profils d&rsquo;information sur le rendement de votre organisation et ses rapports externes, comme le Rapport ministériel sur les résultats.&nbsp;</p>
+          <p>Votre organisation aura sa propre fa&ccedil;on de produire des rapports sur la situation financi&egrave;re et de rendre compte de ses dépenses et de ses résultats. Parlez-en à votre section des finances ou de la planification et à votre directeur. Demandez-leur :</p>
           <ul>
-            <li>Comment appelons-nous nos rapports sur la situation financi&egrave;re et &agrave; quoi ressemblent-ils ? &Agrave; quel endroit puis-je les trouver?</li>
-            <li>&Agrave; quelle fr&eacute;quence pr&eacute;parons-nous des rapports sur la situation financi&egrave;re?&nbsp;</li>
+            <li>Comment appelons-nous nos rapports sur la situation financi&egrave;re et à quoi ressemblent-ils ? &Agrave; quel endroit puis-je les trouver?</li>
+            <li>&Agrave; quelle fréquence préparons-nous des rapports sur la situation financi&egrave;re?&nbsp;</li>
             <li>Doit-on remplir ces rapports dans le syst&egrave;me financier ou dans un tableur?</li>
             <li>Quel est mon r&ocirc;le?</li>
             <li>Quelles informations vais-je fournir pour alimenter les rapports externes?</li>

@@ -120,8 +120,8 @@
   {
     "pwpInstructions": "Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. 3 new pieces of information: ",
     "thing1": "There will be new software implementation to speed up the issuing of licenses",
-    "thing2": "There’s a new policy that now requires licenses to be issued in 15 days, not 30 days, starting on November first and",
-    "thing3": "There’s been a decision not to replace a retiring employee.",
+    "thing2": "There&rsquo;s a new policy that now requires licenses to be issued in 15 days, not 30 days, starting on November first and",
+    "thing3": "There&rsquo;s been a decision not to replace a retiring employee.",
     "pwpTitle": "Adjust your work plan by selecting the best answer to the following questions. You can scroll horizontally to view the whole plan.",
     "pwpGovtPri": "<strong>Government priorities</strong>",
     "pwpDeptPri": "<strong>Departmental priorities</strong>",
@@ -232,7 +232,7 @@
   "fr":
   {
     "pwpInstructions": "Votre directeur vous dit qu'il a siégé à un comité directeur et qu'il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois nouveaux renseignements : ",
-    "thing1": "la mise en œuvre d'un nouveau logiciel pour accélérer la délivrance de permis;",
+    "thing1": "la mise en œuvre d&rsquo;un nouveau logiciel pour accélérer la délivrance de permis;",
     "thing2": "une nouvelle politique qui exige maintenant que les permis soient délivrés en 15 jours, et non plus en 30 jours, à compter du 1er novembre;",
     "thing3": "une décision de ne pas remplacer un employé qui prend sa retraite.",
     "pwpTitle": "Vous pouvez consulter le plan de travail par défilement vers le bas. Ajustez votre plan de travail en choisissant la meilleure réponse aux questions suivantes :",
@@ -248,28 +248,28 @@
     "titleMitigation": "Atténuation",
     "titleResources": "Resources",
     "qDisabled": "Veuillez faire un choix",
-    "govtPriorities": "Servir les Canadiens en assurant l'utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
-    "deptPriorities": "Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l'aquaculture et d'autres industries maritimes.",
+    "govtPriorities": "Servir les Canadiens en assurant l&rsquo;utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
+    "deptPriorities": "Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l&rsquo;aquaculture et d&rsquo;autres industries maritimes.",
     "dirPriorities": "Gérer les pêches commerciales.",
-    "pA1": "G&eacute;rer et administrer la direction&nbsp;",
-    "psA1": "<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir du soutien administratif&nbsp;</li><li> D&eacute;m&eacute;nagement des bureaux dans de nouveaux locaux</li></ul>",
-    "pD1": "Gestion des activit&eacute;s de d&eacute;livrance de permis</li><li> R&eacute;ception ouverte de 9&nbsp;h &agrave; 17&nbsp;h",
+    "pA1": "Gérer et administrer la direction&nbsp;",
+    "psA1": "<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir du soutien administratif&nbsp;</li><li> Déménagement des bureaux dans de nouveaux locaux</li></ul>",
+    "pD1": "Gestion des activités de délivrance de permis</li><li> Réception ouverte de 9&nbsp;h à 17&nbsp;h",
     "pD1add":"Formation de tous les agents sur le nouveau logiciel de gestion des pêches",
-    "pD2add":"Lancement d'un nouveau logiciel de gestion des pêches",
+    "pD2add":"Lancement d&rsquo;un nouveau logiciel de gestion des pêches",
     "pR1": "Roulement du personnel",
     "low": "Faible",
-    "high": "&Eacute;lev&eacute;",
-    "pM1": "<ul><li>&Eacute;tablir un plan de rel&egrave;ve</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l'excellence du travail</li><li> C&eacute;l&eacute;brer les succ&egrave;s</li><li> Impliquer les employ&eacute;s dans la prise de d&eacute;cisions</li><li>Horaires de travail flexibles</li></ul>",
+    "high": "&Eacute;levé",
+    "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l&rsquo;excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li></ul>",
     "pM1_1": "Mettre en &oelig;uvre des horaires de travail flexibles",
     "pR1_1": "1 adjoint administratif",
     "pR1_2": "gestionnaire",
-    "pA2": "D&eacute;livrer des permis de p&ecirc;che commerciale",
-    "pSA2": "<ul><li>Examiner les dossiers des demandeurs</li><li>V&eacute;rifier la fiabilit&eacute;</li><li>Délivrer des permis</li><li>Effectuer des inspections</li></ul>",
+    "pA2": "Délivrer des permis de p&ecirc;che commerciale",
+    "pSA2": "<ul><li>Examiner les dossiers des demandeurs</li><li>Vérifier la fiabilité</li><li>Délivrer des permis</li><li>Effectuer des inspections</li></ul>",
     "pD2_1w": "Délivrer le permis dans les 30 jours suivant la demande",
     "pD2_1r": "Délivrer le permis dans les 15 jours suivant la demande",
-    "pD2_2": "D&eacute;livrer 500 permis par an",
+    "pD2_2": "Délivrer 500 permis par an",
     "pR2": "Surp&ecirc;che",
-    "pM2": "<li> Prot&eacute;ger l'habitat</li><li> Fixer des limites de capture</li><li> Lancer les saisons de p&ecirc;che</li>",
+    "pM2": "<li> Protéger l'habitat</li><li> Fixer des limites de capture</li><li> Lancer les saisons de p&ecirc;che</li>",
     "pRes2.a": "1 agent",
     "pRes2.b": "2 analystes",
     "pRes2.c": "1 agent subalterne",
@@ -282,20 +282,20 @@
       "text": "Où ajouteriez-vous la &laquo;&nbsp;Mise en œuvre du nouveau logiciel&nbsp;&raquo; dans votre plan de travail?",
       "options":
       {
-        "1": "Dans la colonne «&nbsp;Livrables&nbsp;», à côté de l'activité «&nbsp;Gérer et administrer la direction&nbsp;». ",
-        "2": "Dans la colonne «&nbsp;Atténuation&nbsp;», à côté de l'activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» ",
-        "3": "Dans les « Sous-activités », à côté de l'activité « Renouvellement de permis de pêche commerciale »."
+        "1": "Dans la colonne «&nbsp;Livrables&nbsp;», à côté de l&rsquo;activité «&nbsp;Gérer et administrer la direction&nbsp;». ",
+        "2": "Dans la colonne «&nbsp;Atténuation&nbsp;», à côté de l&rsquo;activité «&nbsp;Délivrance de permis de pêche commerciale&nbsp;» ",
+        "3": "Dans les « Sous-activités », à côté de l&rsquo;activité « Renouvellement de permis de pêche commerciale »."
       },
       "feedback":
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",        
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d'atténuation dans certains cas, dans ce plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Alors que la « Mise en œuvre du nouveau logiciel » pourrait être une « Sous-activité » dans certains cas, dans ce plan de travail, il s'agit d'un « Livrable »."
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d&rsquo;atténuation dans certains cas, dans ce plan de travail, il s&rsquo;agit d&rsquo;un «&nbsp;Livrable&nbsp;».",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Alors que la « Mise en œuvre du nouveau logiciel » pourrait être une « Sous-activité » dans certains cas, dans ce plan de travail, il s&rsquo;agit d&rsquo;un « Livrable »."
       }
     },
     "q2":
     {
-      "text": "Que feriez-vous de l'énoncé suivant dans le plan de travail : « Renouveler le permis dans les 30 jours suivant la demande »?",
+      "text": "Que feriez-vous de l&rsquo;énoncé suivant dans le plan de travail : « Renouveler le permis dans les 30 jours suivant la demande »?",
       "options":
       {
         "1": "Laissez &laquo;&nbsp;Renouveler le permis dans les 30 jours suivant la demande&nbsp;&raquo; tel quel.",
@@ -304,14 +304,14 @@
       },
       "feedback":
       {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Étant donné l'entrée en vigueur de la nouvelle politique, changez-l’énoncé pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l'entrée en vigueur de la nouvelle politique, changez-l’énoncé pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Étant donné l&rsquo;entrée en vigueur de la nouvelle politique, changez-l&rsquo;énoncé pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l&rsquo;entrée en vigueur de la nouvelle politique, changez-l&rsquo;énoncé pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;.",
         "3": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },
     "q3":
     {
-      "text": "Avez-vous besoin d'ajuster vos Ressources étant donné que l’agent qui délivre les permis prend sa retraite?",
+      "text": "Avez-vous besoin d&rsquo;ajuster vos Ressources étant donné que l&rsquo;agent qui délivre les permis prend sa retraite?",
       "options":
       {
         "1": "Je dois ajouter du personnel.",
@@ -320,7 +320,7 @@
       },
       "feedback":
       {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous n'avez pas d'employés supplémentaires à temps plein, vous ne pouvez donc pas ajouter d'employés.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous n&rsquo;avez pas d&rsquo;employés supplémentaires à temps plein, vous ne pouvez donc pas ajouter d&rsquo;employés.",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous avez un employé qui prend sa retraite, vous devrez donc enlever un employé à temps plein de votre plan de travail.",
         "3": "<span class='v-right' /> <strong>Correct!</strong>"
       }
@@ -328,18 +328,18 @@
 
     "q4":
     {
-      "text": "Avez-vous besoin d'indiquer le besoin de formation des agents?",
+      "text": "Avez-vous besoin d&rsquo;indiquer le besoin de formation des agents?",
       "options":
       {
-        "1": "Oui, avec l'activité &laquo;&nbsp;Gérer et administrer la direction&nbsp;&raquo; sous &laquo;&nbsp;Livrables&nbsp;&raquo;.",
-        "2": "Oui, avec l'activité &laquo;&nbsp;Délivrance de permis de pêche commerciale&nbsp;&raquo; sous &laquo;&nbsp;Atténuation&nbsp;&raquo;.",
-        "3": "Oui, avec l'activité &laquo;&nbsp;Renouvellement de permis de pêche commerciale&nbsp;&raquo; sous &laquo;&nbsp;Sous-activités&nbsp;&raquo;."
+        "1": "Oui, avec l&rsquo;activité &laquo;&nbsp;Gérer et administrer la direction&nbsp;&raquo; sous &laquo;&nbsp;Livrables&nbsp;&raquo;.",
+        "2": "Oui, avec l&rsquo;activité &laquo;&nbsp;Délivrance de permis de pêche commerciale&nbsp;&raquo; sous &laquo;&nbsp;Atténuation&nbsp;&raquo;.",
+        "3": "Oui, avec l&rsquo;activité &laquo;&nbsp;Renouvellement de permis de pêche commerciale&nbsp;&raquo; sous &laquo;&nbsp;Sous-activités&nbsp;&raquo;."
       },
       "feedback":
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Il devrait être inclus dans l'activité &laquo;&nbsp;Gérer et administrer la direction&nbsp;&raquo; sous la rubrique &laquo;&nbsp;Livrables&nbsp;&raquo;.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Il devrait être inclus dans l'activité &laquo;&nbsp;Gérer et administrer la direction&nbsp;&raquo; sous la rubrique &laquo;&nbsp;Livrables&nbsp;&raquo;."
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Il devrait être inclus dans l&rsquo;activité &laquo;&nbsp;Gérer et administrer la direction&nbsp;&raquo; sous la rubrique &laquo;&nbsp;Livrables&nbsp;&raquo;.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Il devrait être inclus dans l&rsquo;activité &laquo;&nbsp;Gérer et administrer la direction&nbsp;&raquo; sous la rubrique &laquo;&nbsp;Livrables&nbsp;&raquo;."
       }
     }
   }

@@ -66,7 +66,7 @@
             <p><br /><br /></p>
           </div>
           <div v-if="$i18n.locale=='fr'">
-          	<p>En utilisant la colonne P5 Pr&eacute;visions annuelles comme r&eacute;f&eacute;rence, remplissez la colonne P6 Pr&eacute;visions annuelles dans le rapport sur la situation financi&egrave;re fourni.&nbsp;</p>
+          	<p>En utilisant la colonne P5 Prévisions annuelles comme référence, remplissez la colonne P6 Prévisions annuelles dans le rapport sur la situation financière fourni.&nbsp;</p>
 <table border="1">
 <tbody>
 <tr>
@@ -78,13 +78,13 @@
 <p><strong>P6 Engagements</strong></p>
 </td>
 <td>
-<p><strong>P6 D&eacute;penses r&eacute;elles depuis le d&eacute;but de l'ann&eacute;e</strong></p>
+<p><strong>P6 Dépenses réelles depuis le début de l&rsquo;année</strong></p>
 </td>
 <td>
-<p><strong>P5 Pr&eacute;visions annuelles</strong></p>
+<p><strong>P5 Prévisions annuelles</strong></p>
 </td>
 <td>
-<p><strong>P6 Pr&eacute;visions annuelles</strong></p>
+<p><strong>P6 Prévisions annuelles</strong></p>
 </td>
 </tr>
 <tr>
@@ -162,7 +162,7 @@ export default {
   },
   "feedback": {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong> The correct answer is Departmental Results Reports. The plans, priorities and expected results are set out in Departmental Plans.",
-  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> The correct answer is Departmental Results Reports. Proactive Disclosure reports are information on the departments’ websites related to travel, hospitality, contracts, position reclassifications, wrongdoing, grants and contributions.",
+  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> The correct answer is Departmental Results Reports. Proactive Disclosure reports are information on the departments&rsquo; websites related to travel, hospitality, contracts, position reclassifications, wrongdoing, grants and contributions.",
   "3": "<span class='v-right' /><strong>Correct!</strong> Departmental Results Reports are individual department accounts of actual performance, for the most recently completed fiscal year, against the plans, priorities and expected results set out in their respective Departmental Plans."
   },
   "conclusion": ""
@@ -189,14 +189,14 @@ export default {
   "3": "Internal audit reports "
   },
   "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> The financial situation report is a snapshot of a responsibility centre’s finances.",
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> The financial situation report is a snapshot of a responsibility centre&rsquo;s finances.",
   "2": "<span class='v-right' /><strong>Correct!</strong> ",
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Internal audit reports examine compliance relating to governance, risk management, and control processes and make recommendations to improve performance, effectiveness, and efficiency of government operations."
   },
   "conclusion": "Performance Information Profiles outline performance indicators and targets as well as core responsibility and program description."
   },
   "q5": {
-  "text": "In addition to influencing year-end results, Treasury Board Secretariat uses which period’s financials to inform the Department of Finance on planned spending throughout the government?",
+  "text": "In addition to influencing year-end results, Treasury Board Secretariat uses which period&rsquo;s financials to inform the Department of Finance on planned spending throughout the government?",
   "options": {
   "1": "P6 September",
   "2": "P9 December",
@@ -242,14 +242,14 @@ export default {
   "q1": {
   "text": "Les engagements sont:",
   "options": {
-  "1": "Fonds alloués pour l'exercice financier.",
+  "1": "Fonds alloués pour l&rsquo;exercice financier.",
   "2": "Fonds mis de côté à des fins précises.",
-  "3": "Ce que vous avez dépensé jusqu'à présent."
+  "3": "Ce que vous avez dépensé jusqu&rsquo;à présent."
   },
   "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Les fonds alloués pour l'exercice financier sont le budget.",
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Les fonds alloués pour l&rsquo;exercice financier sont le budget.",
   "2": "<span class='v-right' /><strong>Correct!</strong>",
-  "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Ce que vous avez dépensé jusqu'à présent, ce sont les dépenses réelles depuis le début de l'année."
+  "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Ce que vous avez dépensé jusqu&rsquo;à présent, ce sont les dépenses réelles depuis le début de l&rsquo;année."
   },
   "conclusion": "Les engagements sont des fonds mis de côté dans votre budget à des fins précises."
   },
@@ -262,17 +262,17 @@ export default {
   },
   "feedback": {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong> La bonne réponse est les rapports ministériels sur les résultats. Les plans, les priorités et les résultats attendus sont énoncés dans les plans ministériels.",
-  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> La bonne réponse est les rapports ministériels sur les résultats. Les rapports de divulgation proactive sont des renseignements sur les sites Web des ministères concernant les voyages, l'accueil, les contrats, les reclassifications de postes, les actes fautifs, les subventions et les contributions.",
+  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> La bonne réponse est les rapports ministériels sur les résultats. Les rapports de divulgation proactive sont des renseignements sur les sites Web des ministères concernant les voyages, l&rsquo;accueil, les contrats, les reclassifications de postes, les actes fautifs, les subventions et les contributions.",
   "3": "<span class='v-right' /><strong>Correct!</strong> Les rapports ministériels sur les résultats sont des comptes rendus ministériels individuels du rendement réel, pour le dernier exercice terminé, par rapport aux plans, aux priorités et aux résultats attendus énoncés dans leurs plans ministériels respectifs."
   },
   "conclusion": ""
   },
   "q3": {
-  "text": "Le champ le plus important que vous devez corriger dans l'état de la situation financière est :",
+  "text": "Le champ le plus important que vous devez corriger dans l&rsquo;état de la situation financière est :",
   "options": {
   "1": "Prévisions annuelles",
   "2": "Engagements",
-  "3": "Dépenses réelles depuis le début de l'année"
+  "3": "Dépenses réelles depuis le début de l&rsquo;année"
   },
   "feedback": {
   "1": "<span class='v-right' /><strong>Correct!</strong> ",
@@ -285,27 +285,27 @@ export default {
   "text": "Les indicateurs de rendement du programme sont décrits dans le:",
   "options": {
   "1": "Rapport sur la situation financière ",
-  "2": "Profils d'information sur le rendement ",
-  "3": "Rapports d'audit interne "
+  "2": "Profils d&rsquo;information sur le rendement ",
+  "3": "Rapports d&rsquo;audit interne "
   },
   "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Le rapport sur la situation financière est un instantané des finances d'un centre de responsabilité.",
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Le rapport sur la situation financière est un instantané des finances d&rsquo;un centre de responsabilité.",
   "2": "<span class='v-right' /><strong>Correct!</strong> ",
-  "3": "<span class='v-wrong' /><strong>Incorrect.</strong>Les rapports de vérification interne examinent la conformité aux processus de gouvernance, de gestion des risques et de contrôle et font des recommandations pour améliorer le rendement, l'efficacité et l'efficience des opérations gouvernementales."
+  "3": "<span class='v-wrong' /><strong>Incorrect.</strong>Les rapports de vérification interne examinent la conformité aux processus de gouvernance, de gestion des risques et de contrôle et font des recommandations pour améliorer le rendement, l&rsquo;efficacité et l&rsquo;efficience des opérations gouvernementales."
   },
-  "conclusion": "Les profils d'information sur le rendement décrivent les indicateurs et les cibles de rendement ainsi que la responsabilité fondamentale et la description du programme."
+  "conclusion": "Les profils d&rsquo;information sur le rendement décrivent les indicateurs et les cibles de rendement ainsi que la responsabilité fondamentale et la description du programme."
   },
   "q5": {
-  "text": "En plus d'influer sur les résultats de fin d'exercice, le Secrétariat du Conseil du Trésor utilise les états financiers de quelle période pour informer le ministère des Finances des dépenses prévues dans l'ensemble du gouvernement ?",
+  "text": "En plus d&rsquo;influer sur les résultats de fin d&rsquo;exercice, le Secrétariat du Conseil du Trésor utilise les états financiers de quelle période pour informer le ministère des Finances des dépenses prévues dans l&rsquo;ensemble du gouvernement ?",
   "options": {
   "1": "P6 Septembre",
   "2": "P9 Décembre",
-  "3": "P12 Fin d'année"
+  "3": "P12 Fin d&rsquo;année"
   },
   "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Les rapports P9 sont utilisés par le Secrétariat du Conseil du Trésor. P6 Septembre donne une bonne image de la situation financière de l'organisation à mi-parcours de l'année et permet à la direction de prendre des décisions pour influencer les résultats de fin d'année.",
-  "2": "<span class='v-right' /><strong>Correct!</strong> P9 sert à influencer les résultats de fin d'exercice, et le Secrétariat du Conseil du Trésor s'en sert pour informer le ministère des Finances des dépenses prévues dans l'ensemble du gouvernement.",
-  "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Les rapports P9 sont utilisés par le Secrétariat du Conseil du Trésor. Les données de fin d'exercice sont utilisées par les ministères pour présenter leurs résultats financiers globaux."
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Les rapports P9 sont utilisés par le Secrétariat du Conseil du Trésor. P6 Septembre donne une bonne image de la situation financière de l'organisation à mi-parcours de l&rsquo;année et permet à la direction de prendre des décisions pour influencer les résultats de fin d&rsquo;année.",
+  "2": "<span class='v-right' /><strong>Correct!</strong> P9 sert à influencer les résultats de fin d&rsquo;exercice, et le Secrétariat du Conseil du Trésor s'en sert pour informer le ministère des Finances des dépenses prévues dans l&rsquo;ensemble du gouvernement.",
+  "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Les rapports P9 sont utilisés par le Secrétariat du Conseil du Trésor. Les données de fin d&rsquo;exercice sont utilisées par les ministères pour présenter leurs résultats financiers globaux."
   },
   "conclusion": ""
   },
@@ -313,12 +313,12 @@ export default {
   "text": "Lequel des énoncés suivants est une cible valide ?",
   "options": {
   "1": "80 p. 100 des produits ministériels sont mis à jour conformément au plan du cycle de vie des produits.",
-  "2": "Nombre d'emplois canadiens créés grâce aux initiatives du Ministère",
-  "3": "Investissements par département dans des projets d'innovation"
+  "2": "Nombre d&rsquo;emplois canadiens créés grâce aux initiatives du Ministère",
+  "3": "Investissements par département dans des projets d&rsquo;innovation"
   },
   "feedback": {
-  "1": "<span class='v-right' /><strong>Correct!</strong> Il s'agit d'un objectif valide puisqu'il comprend un pourcentage précis. ",
-  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n'est pas assez précis pour une cible, mais c'est un indicateur de rendement. La bonne réponse est &laquo;80 p. 100 des produits ministériels sont mis à jour conformément au plan du cycle de vie des produits.&raquo;, car elle inclut un pourcentage spécifique.",
+  "1": "<span class='v-right' /><strong>Correct!</strong> Il s&rsquo;agit d&rsquo;un objectif valide puisqu'il comprend un pourcentage précis. ",
+  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n'est pas assez précis pour une cible, mais c&rsquo;est un indicateur de rendement. La bonne réponse est &laquo;80 p. 100 des produits ministériels sont mis à jour conformément au plan du cycle de vie des produits.&raquo;, car elle inclut un pourcentage spécifique.",
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n'est ni une cible ni un indicateur de rendement, car il n'existe aucune mesure des investissements. La bonne réponse est &laquo;80 p. 100 des produits ministériels sont mis à jour conformément au plan du cycle de vie des produits.&raquo;, car elle inclut un pourcentage spécifique."
   },
   "conclusion": ""
@@ -335,7 +335,7 @@ export default {
   "2": "<span class='v-right' /><strong>Correct!</strong>",
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
-  "conclusion": "Le montant exact est de 8&nbsp;200&nbsp;$. Engagements de 4&nbsp;000&nbsp;$ + 1&nbsp;700&nbsp;$ pour les dépenses réelles depuis le début de l'année + 2&nbsp;500&nbsp;$ pour le voyage qui vient d'être approuvé = 8&nbsp;200&nbsp;$. Les engagements augmenteront également de 2&nbsp;500&nbsp;$."
+  "conclusion": "Le montant exact est de 8&nbsp;200&nbsp;$. Engagements de 4&nbsp;000&nbsp;$ + 1&nbsp;700&nbsp;$ pour les dépenses réelles depuis le début de l&rsquo;année + 2&nbsp;500&nbsp;$ pour le voyage qui vient d'être approuvé = 8&nbsp;200&nbsp;$. Les engagements augmenteront également de 2&nbsp;500&nbsp;$."
   }
   }
   }</i18n>

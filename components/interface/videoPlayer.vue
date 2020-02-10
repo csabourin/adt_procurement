@@ -343,7 +343,7 @@ export default {
   "show":"Afficher le ",
   "hide":"Cacher le ",
   "closedcaptionning":"sous-titrage codé",
-  "jumpModalPartsWP":"Sauter à l'activité",
+  "jumpModalPartsWP":"Sauter à l&rsquo;activité",
   "playSegment":"Faire jouer le segment vidéo"
   }
   }

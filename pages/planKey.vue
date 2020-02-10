@@ -19,9 +19,9 @@
           <span v-if="$i18n.locale=='fr'">
             <h3>Plan de travail</h3>
             <ul>
-              <li>Un plan de travail est un compte rendu d&eacute;taill&eacute; des activit&eacute;s &agrave; exercer, des ressources &agrave; utiliser et des r&eacute;sultats &agrave; atteindre au cours d&rsquo;une p&eacute;riode d&rsquo;un an, laquelle correspond habituellement &agrave; un exercice financier pour un centre de responsabilit&eacute;.</li>
-              <li>Pour élaborer un plan de travail, vous passez en revue les activités inscrites dans le plan de travail, le budget et les rapports de l’année précédente afin de prendre note des leçons apprises et les mesures à reporter afin de cerner les tendances possibles.&nbsp;</li>
-              <li>Plus pr&eacute;cis&eacute;ment, vous d&eacute;finissez et hi&eacute;rarchisez le travail et les activit&eacute;s de votre unit&eacute;, attribuez des ressources et des &eacute;ch&eacute;anciers &agrave; chaque activit&eacute;, veillez &agrave; ce que les activit&eacute;s correspondent aux priorit&eacute;s organisationnelles et effectuez une &eacute;valuation des risques.&nbsp;</li>
+              <li>Un plan de travail est un compte rendu détaillé des activités à exercer, des ressources à utiliser et des résultats à atteindre au cours d&rsquo;une période d&rsquo;un an, laquelle correspond habituellement à un exercice financier pour un centre de responsabilité.</li>
+              <li>Pour élaborer un plan de travail, vous passez en revue les activités inscrites dans le plan de travail, le budget et les rapports de l&rsquo;année précédente afin de prendre note des leçons apprises et les mesures à reporter afin de cerner les tendances possibles.&nbsp;</li>
+              <li>Plus précisément, vous définissez et hiérarchisez le travail et les activités de votre unité, attribuez des ressources et des échéanciers à chaque activité, veillez à ce que les activités correspondent aux priorités organisationnelles et effectuez une évaluation des risques.&nbsp;</li>
             </ul>
           </span>
         </b-col>
@@ -38,35 +38,35 @@
               <li>Typically, budgets will include <strong>operating and maintenance</strong> (O&amp;M) and <strong>salary </strong>costs. Depending on the mandate of your department, some budgets may also include <strong>capital </strong>and <strong>grants  and contributions</strong> amounts.</li>
               <!--
                 NEW VERSION? (CSPS-TD)
-                <li>To create a budget, you review the previous year’s budget to identify what <strong>salary</strong> and what <strong>operations and maintenance expenses</strong>&mdash;and in some cases, <strong>capital</strong>, <strong>grants</strong> and <strong>Contributions</strong>&mdash;you will keep, eliminate and add.</li> 
+                <li>To create a budget, you review the previous year&rsquo;s budget to identify what <strong>salary</strong> and what <strong>operations and maintenance expenses</strong>&mdash;and in some cases, <strong>capital</strong>, <strong>grants</strong> and <strong>Contributions</strong>&mdash;you will keep, eliminate and add.</li> 
               -->
 
               <li>To create your budget, you must <strong>analyze </strong>information from various sources, <strong>forecast</strong> your new budget requirements and <strong>submit</strong> your new budget for approval to upper management.</li>
               <!--
                 NEW VERSION? (CSPS-TD)
-                <li>Compare the previous year’s budget to the new work plan, making sure it covers all the expenses linked to the activities. Forecast expenses and submit the proposed new budget for approval, making adjustments throughout the year as activities evolve.</li>
+                <li>Compare the previous year&rsquo;s budget to the new work plan, making sure it covers all the expenses linked to the activities. Forecast expenses and submit the proposed new budget for approval, making adjustments throughout the year as activities evolve.</li>
               -->
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
-            <h3>&Eacute;tablir un budget</h3>
+            <h3>Établir un budget</h3>
             <ul>
-              <li>Essentiellement, les budgets repr&eacute;sentent la conversion des plans de travail en termes financiers. En d'autres mots, <strong>le budget repr&eacute;sente le montant que vous pr&eacute;voyez d&eacute;penser pour r&eacute;aliser les activit&eacute;s de votre plan de travail</strong>.</li>
+              <li>Essentiellement, les budgets représentent la conversion des plans de travail en termes financiers. En d&rsquo;autres mots, <strong>le budget représente le montant que vous prévoyez dépenser pour réaliser les activités de votre plan de travail</strong>.</li>
               <!--
                 NOUVELLE VERION? (CSPS-TD)
                 <li>Les budgets correspondent essentiellement aux plans de travail exprimés en termes financiers. Autrement dit, <strong>le budget représente le montant que vous prévoyez dépenser pour réaliser votre plan.</strong></li>
               -->
 
-              <li>Pour cr&eacute;er votre budget, vous devez <strong>analyser </strong>les informations de diverses sources,<strong>pr&eacute;voir </strong>vos nouveaux besoins budg&eacute;taires et <strong>soumettre </strong>votre nouveau budget pour approbation &agrave; la direction.</li>
+              <li>Pour créer votre budget, vous devez <strong>analyser </strong>les informations de diverses sources,<strong>prévoir </strong>vos nouveaux besoins budgétaires et <strong>soumettre </strong>votre nouveau budget pour approbation à la direction.</li>
               <!--
                 NOUVELLE VERSION? (CSPS-TD)
-                <li>Pour créer un budget, vous <strong>passez en revue</strong> le budget de l’année précédente afin de déterminer quels salaires, quelles dépenses de fonctionnement et d’entretien et, dans certains cas, de capital et des subventions et contributions vous devrez <strong>conserver</strong>, <strong>éliminer</strong> ou <strong>ajouter</strong>.</li>
+                <li>Pour créer un budget, vous <strong>passez en revue</strong> le budget de l&rsquo;année précédente afin de déterminer quels salaires, quelles dépenses de fonctionnement et d&rsquo;entretien et, dans certains cas, de capital et des subventions et contributions vous devrez <strong>conserver</strong>, <strong>éliminer</strong> ou <strong>ajouter</strong>.</li>
               -->
 
-              <li>Habituellement, les budgets comprennent les co&ucirc;ts de <strong>fonctionnement et d'entretien</strong> (F et E) et les co&ucirc;ts <strong>salariaux</strong>. Selon le mandat de votre minist&egrave;re, certains budgets peuvent &eacute;galement inclure des montants <strong>d'immobilisations</strong> et de <strong>subventions et contributions</strong>.</li>
+              <li>Habituellement, les budgets comprennent les co&ucirc;ts de <strong>fonctionnement et d&rsquo;entretien</strong> (F et E) et les co&ucirc;ts <strong>salariaux</strong>. Selon le mandat de votre minist&egrave;re, certains budgets peuvent également inclure des montants <strong>d&rsquo;immobilisations</strong> et de <strong>subventions et contributions</strong>.</li>
               <!--
                 NOUVELLE VERSION? (CSPS-TD)
-                <li>Vous comparez le budget de l’année précédente au nouveau plan de travail en vous assurant que toutes les dépenses liées aux activités sont prises en compte. Vous prévoyez les dépenses et soumettez le nouveau budget proposé pour approbation, en y apportant des modifications tout au long de l’année à mesure que les activités évoluent.</li>
+                <li>Vous comparez le budget de l&rsquo;année précédente au nouveau plan de travail en vous assurant que toutes les dépenses liées aux activités sont prises en compte. Vous prévoyez les dépenses et soumettez le nouveau budget proposé pour approbation, en y apportant des modifications tout au long de l&rsquo;année à mesure que les activités évoluent.</li>
               -->
             </ul>
           </span>

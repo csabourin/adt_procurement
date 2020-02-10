@@ -61,7 +61,7 @@
                       <p><strong>Centre financier</strong></p>
                     </td>
                     <td colspan="2">
-                      <p><strong>Grand livre g&eacute;n&eacute;ral</strong></p>
+                      <p><strong>Grand livre général</strong></p>
                     </td>
                     <td colspan="2">
                       <p><strong>Inventaire des programmes</strong></p>
@@ -184,7 +184,7 @@ export default {
   },
   "fr": {
   "q1": {
-  "text": "En examinant le codage financier fourni, certifieriez-vous la facture en vertu de l'article 34 ?",
+  "text": "En examinant le codage financier fourni, certifieriez-vous la facture en vertu de l&rsquo;article 34 ?",
   "options": {
   "1": "Oui",
   "2": "Non"
@@ -193,10 +193,10 @@ export default {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": "Le fonds est incorrectement codé dans Salaire, il devrait être F&E. Le Grand livre général est incorrectement codé dans Voyages, il devrait s'agir de Fournitures de bureau. Vous devez corriger le codage financier avant d'attester en vertu de l'article 34."
+  "conclusion": "Le fonds est incorrectement codé dans Salaire, il devrait être F&E. Le Grand livre général est incorrectement codé dans Voyages, il devrait s&rsquo;agir de Fournitures de bureau. Vous devez corriger le codage financier avant d&rsquo;attester en vertu de l&rsquo;article 34."
   },
   "q2": {
-  "text": "Est-ce qu'un gestionnaire peut approuver sa propre réclamation de stationnement de 15 $?",
+  "text": "Est-ce qu&rsquo;un gestionnaire peut approuver sa propre réclamation de stationnement de 15 $?",
   "options": {
   "1": "Oui",
   "2": "Non"
@@ -205,7 +205,7 @@ export default {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": "Personne n'a le pouvoir délégué d'approuver le remboursement de ses propres dépenses."
+  "conclusion": "Personne n&rsquo;a le pouvoir délégué d&rsquo;approuver le remboursement de ses propres dépenses."
   }
   }
   }</i18n>

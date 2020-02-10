@@ -359,7 +359,7 @@ export default {
       }
     },
     "q1": {
-      "conclusion": "<p><strong>Un contrat avec une agence pour le personnel temporaire</strong> serait en <strong>Fonctionnement - F&amp;E</strong>, et non en Fonctionnement - Salaire, parce que le personnel temporaire n'est pas un employé et que les contrats ne sont pas payés à m&ecirc;me le salaire.&nbsp;</p><p><strong>Les fonds fournis à une université pour étudier l'habitat du poisson</strong> seraient sous forme de <strong>subventions et de contributions</strong>. La nature de cette transaction est telle qu'il s&rsquo;agit d&rsquo;un paiement à sens unique pour lequel le gouvernement ne recevra aucun bien ou service.</p><p><strong>Les postes occasionnels ou les encaissements de congés</strong> seraient dans la catégorie <strong>Fonctionnement - Salaire</strong> parce qu'ils concernent des employés.&nbsp;</p><p><strong>L&rsquo;achat d&rsquo;une nouvelle flotte de camions</strong> serait dans le <strong>Capital </strong>parce que ce sont des biens qui se déprécieraient avec le temps.</p>"
+      "conclusion": "<p><strong>Un contrat avec une agence pour le personnel temporaire</strong> serait en <strong>Fonctionnement - F&amp;E</strong>, et non en Fonctionnement - Salaire, parce que le personnel temporaire n&rsquo;est pas un employé et que les contrats ne sont pas payés à m&ecirc;me le salaire.&nbsp;</p><p><strong>Les fonds fournis à une université pour étudier l'habitat du poisson</strong> seraient sous forme de <strong>subventions et de contributions</strong>. La nature de cette transaction est telle qu&rsquo;il s&rsquo;agit d&rsquo;un paiement à sens unique pour lequel le gouvernement ne recevra aucun bien ou service.</p><p><strong>Les postes occasionnels ou les encaissements de congés</strong> seraient dans la catégorie <strong>Fonctionnement - Salaire</strong> parce qu&rsquo;ils concernent des employés.&nbsp;</p><p><strong>L&rsquo;achat d&rsquo;une nouvelle flotte de camions</strong> serait dans le <strong>Capital </strong>parce que ce sont des biens qui se déprécieraient avec le temps.</p>"
     },
     "q2a": {
       "text": "Faites correspondre l&rsquo;activité à son statut.",
@@ -455,7 +455,7 @@ export default {
       }
     },
     "q5": {
-      "text": "Comment utiliseriez-vous l'information tirée des tendances de vos besoins budgétaires?",
+      "text": "Comment utiliseriez-vous l&rsquo;information tirée des tendances de vos besoins budgétaires?",
       "options": {
         "1": "Utiliser les dépenses réelles de l&rsquo;année dernière comme point de départ pour créer mes besoins budgétaires.",
         "2": "Utiliser le budget de l&rsquo;année dernière comme point de départ pour créer mes besoins budgétaires.",
@@ -480,7 +480,7 @@ export default {
       }
     },
     "q7": {
-      "text": "L'écart par rapport à l&rsquo;an dernier s'explique par une nouvelle priorité ministérielle, soit la tenue d&rsquo;une consultation de trois ans à l&rsquo;échelle du Canada, qui a entraîné un plus grand nombre de déplacements. En ferez-vous état dans votre budget de l&rsquo;année prochaine ?",
+      "text": "L'écart par rapport à l&rsquo;an dernier s&rsquo;explique par une nouvelle priorité ministérielle, soit la tenue d&rsquo;une consultation de trois ans à l&rsquo;échelle du Canada, qui a entraîné un plus grand nombre de déplacements. En ferez-vous état dans votre budget de l&rsquo;année prochaine ?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -496,14 +496,14 @@ export default {
       "options": {
         "1": "Les coûts qui ne sont pas directement liés à vos activités et qui sont donc moins susceptibles d&rsquo;avoir un impact négatif sur celles-ci.",
         "2": "Coûts que vous avez pré-budgétés au début de l&rsquo;exercice et qui ont été induits au cours de l&rsquo;exercice.",
-        "3": "Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser. "
+        "3": "Les coûts qui sont essentiels à la réalisation de vos activités et qui, s&rsquo;ils sont réduits, pourraient vous empêcher de les réaliser. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s'ils sont réduits, pourraient vous empêcher de les réaliser.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s&rsquo;ils sont réduits, pourraient vous empêcher de les réaliser.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s&rsquo;ils sont réduits, pourraient vous empêcher de les réaliser.",
         "3": "<span class='v-right' /> <strong>Correct!</strong> "
       },
-      "conclusion":" Les coûts non discrétionnaires, s'ils sont réduits ou éliminés, affecteront sérieusement votre capacité à respecter vos priorités."
+      "conclusion":" Les coûts non discrétionnaires, s&rsquo;ils sont réduits ou éliminés, affecteront sérieusement votre capacité à respecter vos priorités."
     }
   }
 }</i18n>

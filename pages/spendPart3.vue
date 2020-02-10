@@ -75,14 +75,14 @@
                   <hr>
                   <h2>Procédures de fin d&rsquo;année</h2>
                   <p>Étant donné que la plupart des budgets sont établis par le Parlement sur une base annuelle et qu&rsquo;ils doivent être utilisés au cours de l&rsquo;exercice financier, les biens et services doivent être reçus au plus tard le 31 mars. </p>
-                  <p>Il est toutefois fort probable que vous ne soyez pas en mesure de compléter le paiement de toutes vos dépenses avant la fin de l&rsquo;exercice financier. C'est pourquoi l&rsquo;unité des Finances vous demandera d'établir des créditeurs à la fin de l&rsquo;exercice (CAFE) ou des débiteurs à la fin de l&rsquo;exercice (DAFE) après avoir reçu votre liste de payables non réglés. </p>
+                  <p>Il est toutefois fort probable que vous ne soyez pas en mesure de compléter le paiement de toutes vos dépenses avant la fin de l&rsquo;exercice financier. C&rsquo;est pourquoi l&rsquo;unité des Finances vous demandera d&rsquo;établir des créditeurs à la fin de l&rsquo;exercice (CAFE) ou des débiteurs à la fin de l&rsquo;exercice (DAFE) après avoir reçu votre liste de payables non réglés. </p>
                   <p>Un CAFE est un montant dû pour des biens et/ou des services fournis dans l&rsquo;année financière précédente, en se servant des fonds de l&rsquo;année financière précédente, mais payés dans la nouvelle année financière alors qu&rsquo;on aura reçu la facture du fournisseur. </p>
                   <p>Un DAFE est un montant dû d&rsquo;un autre ministère pour des biens et/ou des services fournis dans l&rsquo;année financière précédente pour lesquels le paiement sera fait dans la nouvelle année financière. </p>
                   <p>D&rsquo;habitude, encore une fois selon les pratiques courantes au sein de votre ministère, vous recevrez des instructions de fin d&rsquo;année pour l&rsquo;établissement des CAFE et des DAFE. Ces instructions incluront aussi les critères quant au montant minimal requis et à l&rsquo;échéancier. </p>
                   <p>Lorsqu&rsquo;on s&rsquo;approche de la fin de l&rsquo;année financière, les choses peuvent se compliquer un peu en ce qui a trait aux contrats. Voici deux choses à tenir à l&rsquo;esprit.</p>
                   <ol>
                     <li>Portez attention aux délais fixés par le service d&rsquo;approvisionnement. Il se peut que vous ne puissiez pas créer de commande d&rsquo;achat en fin d&rsquo;année. </li>
-                    <li>Faites un suivi auprès des fournisseurs pour vous assurer que les biens ou services seront livrés avant la fin de l&rsquo;année. Si le fournisseur n'est pas en mesure de livrer avant le 31 mars, discutez des étapes possibles avec le service d&rsquo;approvisionnement. </li>
+                    <li>Faites un suivi auprès des fournisseurs pour vous assurer que les biens ou services seront livrés avant la fin de l&rsquo;année. Si le fournisseur n&rsquo;est pas en mesure de livrer avant le 31 mars, discutez des étapes possibles avec le service d&rsquo;approvisionnement. </li>
                   </ol>
                   <hr>
                   <h2>Quiz</h2>

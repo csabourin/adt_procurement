@@ -164,11 +164,11 @@
   "a11": "Élevé ",
   "a12": "Travailler avec les Canadiens dans tous les secteurs de l&rsquo;économie et dans toutes les régions du pays pour améliorer les conditions d&rsquo;investissement.",
   "a13" : "Tablettes",
-  "a14" : "Conservez les ordinateurs d'origine jusqu&rsquo;à ce que les tablettes soient prêtes et à l&rsquo;emploi pendant 3 mois.",
+  "a14" : "Conservez les ordinateurs d&rsquo;origine jusqu&rsquo;à ce que les tablettes soient prêtes et à l&rsquo;emploi pendant 3 mois.",
   "a15" : "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité.",
   "a16" : "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et favoriser une main-d'œuvre saine et productive.",
   "a17" : "Acheter des tablettes",
-  "a18" : "La technologie n'est pas compatible avec le réseau existant.",
+  "a18" : "La technologie n&rsquo;est pas compatible avec le réseau existant.",
   "a19" : "Faible",
   "a110" : "Modernisation du milieu de travail ",
   "a111" : "Donner des tablettes aux employés."
@@ -436,11 +436,11 @@ export default {
       "a1": "Élevé ",
       "a2": "Travailler avec les Canadiens dans tous les secteurs de l&rsquo;économie et dans toutes les régions du pays pour améliorer les conditions d&rsquo;investissement.",
       "a3": "Tablettes",
-      "a4": "Conservez les ordinateurs d'origine jusqu&rsquo;à ce que les tablettes soient prêtes et à l&rsquo;emploi pendant 3 mois. ",
+      "a4": "Conservez les ordinateurs d&rsquo;origine jusqu&rsquo;à ce que les tablettes soient prêtes et à l&rsquo;emploi pendant 3 mois. ",
       "a5": "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité ",
       "a6": "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'œuvre saine et productive.",
       "a7": "Acheter des tablettes",
-      "a8": "La technologie n'est pas compatible avec le réseau existant ",
+      "a8": "La technologie n&rsquo;est pas compatible avec le réseau existant ",
       "a9": "Faible",
       "a10": "Modernisation du milieu de travail ",
       "a11": "Donner des tablettes aux employés"
@@ -547,7 +547,7 @@ export default {
       "text": "Quelles situations vous amèneraient à mettre à jour le plan de travail?",
       "options": {
         "1": "Un nouvel administrateur est nommé.",
-        "2": "Un employé s'en va.",
+        "2": "Un employé s&rsquo;en va.",
         "3": "La formation obligatoire est reportée à l&rsquo;année prochaine.",
         "4": "Plus de 500 permis ont été délivrés.",
         "5": "Votre logiciel fait l&rsquo;objet d&rsquo;une mise à jour."
@@ -566,10 +566,10 @@ export default {
         "4": "Un résumé de ce que vous avez accompli"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités qui s'échelonneront au cours d&rsquo;un exercice comptable.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités qui s&rsquo;échelonneront au cours d&rsquo;un exercice comptable.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> ",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités à réaliser sur une période d&rsquo;un an, et non de sommes d&rsquo;argent à dépenser.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités qui s'échelonneront au cours d&rsquo;un exercice comptable."
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités qui s&rsquo;échelonneront au cours d&rsquo;un exercice comptable."
       }
     },
     "q11": {

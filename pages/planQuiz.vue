@@ -364,7 +364,7 @@ export default {
     "titleMitigation": "Atténuation",
     "titleResources": "Resources",
     "q1": {
-      "text": "Faites correspondre les énoncés suivants aux sections appropriées du plan de travail. Chaque section ne peut contenir qu'un seul énoncé.",
+      "text": "Faites correspondre les énoncés suivants aux sections appropriées du plan de travail. Chaque section ne peut contenir qu&rsquo;un seul énoncé.",
       "options":[{
       "a2": "Travailler avec les Canadiens dans tous les secteurs de l&rsquo;économie et dans toutes les régions du pays pour améliorer les conditions d&rsquo;investissement.",
       "a6": "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'œuvre saine et productive.",
@@ -373,10 +373,10 @@ export default {
       "a1": "Élevé ",
       "a9": "Faible",
       "a3": "Tablettes"},{
-      "a4": "Conservez les ordinateurs d'origine jusqu&rsquo;à ce que les tablettes soient prêtes et à l&rsquo;emploi pendant 3 mois. ",
+      "a4": "Conservez les ordinateurs d&rsquo;origine jusqu&rsquo;à ce que les tablettes soient prêtes et à l&rsquo;emploi pendant 3 mois. ",
       "a5": "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité ",
       "a7": "Acheter des tablettes",
-      "a8": "La technologie n'est pas compatible avec le réseau existant ",
+      "a8": "La technologie n&rsquo;est pas compatible avec le réseau existant ",
       "a11": "Donner des tablettes aux employés"
     }
       ]
@@ -390,7 +390,7 @@ export default {
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devriez tenir compte des priorités gouvernementales, des priorités ministérielles et des priorités de la direction ainsi que du plan de travail, du budget et des rapports de l&rsquo;année précédente lorsque vous rédigez votre nouveau plan de travail. À moins que les activités de votre collègue gestionnaire n'aient été transférées à votre équipe, vous ne les prendriez pas en compte. "
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devriez tenir compte des priorités gouvernementales, des priorités ministérielles et des priorités de la direction ainsi que du plan de travail, du budget et des rapports de l&rsquo;année précédente lorsque vous rédigez votre nouveau plan de travail. À moins que les activités de votre collègue gestionnaire n&rsquo;aient été transférées à votre équipe, vous ne les prendriez pas en compte. "
       }
     },
     "q3": {
@@ -403,7 +403,7 @@ export default {
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  C'est une bonne idée de commencer votre vision d&rsquo;ensemble avec le discours du Trône."
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  C&rsquo;est une bonne idée de commencer votre vision d&rsquo;ensemble avec le discours du Trône."
       }
     },
     "q4": {
@@ -490,26 +490,26 @@ export default {
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> La nomination d'un nouvel administrateur, le départ d'un employé et le report de la formation obligatoire à l&rsquo;année suivante exigent tous une mise à jour du plan de travail."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> La nomination d&rsquo;un nouvel administrateur, le départ d&rsquo;un employé et le report de la formation obligatoire à l&rsquo;année suivante exigent tous une mise à jour du plan de travail."
       }
     },
     "q10": {
-      "text": "Qu'est-ce qu'un plan de travail?",
+      "text": "Qu&rsquo;est-ce qu&rsquo;un plan de travail?",
       "options": {
         "1": "Une liste quotidienne des tâches à accomplir",
-        "2": "Les activités à réaliser au cours d'un exercice comptable",
+        "2": "Les activités à réaliser au cours d&rsquo;un exercice comptable",
         "3": "Les sommes d&rsquo;argent à dépenser",
         "4": "Un résumé de ce que vous avez accompli"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités qui s'échelonneront au cours d'un exercice comptable.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités qui s&rsquo;échelonneront au cours d&rsquo;un exercice comptable.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités à réaliser sur une période d'un an, et non de sommes d&rsquo;argent à dépenser.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités qui s'échelonneront au cours d'un exercice comptable."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités à réaliser sur une période d&rsquo;un an, et non de sommes d&rsquo;argent à dépenser.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités qui s&rsquo;échelonneront au cours d&rsquo;un exercice comptable."
       }
     },
     "q11": {
-      "text": "Quelles sont les responsabilités d'un gestionnaire?",
+      "text": "Quelles sont les responsabilités d&rsquo;un gestionnaire?",
       "options": {
         "1": "Établir des priorités à l&rsquo;échelle du gouvernement",
         "2": "Négocier les contrats gouvernementaux",
@@ -541,7 +541,7 @@ export default {
         "1": "Activités en cours",
         "2": "Nouvelles activités",
         "3": "Activités terminées",
-        "4": "Activités d'un projet"
+        "4": "Activités d&rsquo;un projet"
       },
       "feedback": {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
@@ -551,9 +551,9 @@ export default {
     "q14": {
       "text": "Quels sont les risques considérés?",
       "options": {
-        "1": "Panne d'électricité de 15 minutes, bogues logiciels mineurs",
+        "1": "Panne d&rsquo;électricité de 15 minutes, bogues logiciels mineurs",
         "2": "Droits de permis, gestion des pêches",
-        "3": "Pannes d'électricité, stocks de poissons bien gérés",
+        "3": "Pannes d&rsquo;électricité, stocks de poissons bien gérés",
         "4": "Surpêche, rotation du personnel"
       },
       "feedback": {

@@ -121,9 +121,9 @@ export default {
         "3": "523 permis de chasse ont été délivrés."
       },
       "feedback": {
-        "1": "<span class='v-right' /><strong>Correct!</strong>  Il s&rsquo;agit clairement d&rsquo;un résultat par rapport à l'objectif fixé dans votre plan de travail.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>  &laquo;Les permis de pêche ont été délivrés dans les 15 jours suivant la demande, 95 % du temps&raquo; est un résultat par rapport à l'objectif fixé dans le plan de travail. L&rsquo;achat d&rsquo;un nouveau logiciel ne serait pas considéré comme un résultat.  ",
-        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> &laquo;Les permis de pêche ont été délivrés dans les 15 jours suivant la demande, 95 % du temps&raquo; est un résultat par rapport à l'objectif fixé dans le plan de travail. Les permis de chasse ne s&rsquo;appliquent pas aux pêches."
+        "1": "<span class='v-right' /><strong>Correct!</strong>  Il s&rsquo;agit clairement d&rsquo;un résultat par rapport à l&rsquo;objectif fixé dans votre plan de travail.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>  &laquo;Les permis de pêche ont été délivrés dans les 15 jours suivant la demande, 95 % du temps&raquo; est un résultat par rapport à l&rsquo;objectif fixé dans le plan de travail. L&rsquo;achat d&rsquo;un nouveau logiciel ne serait pas considéré comme un résultat.  ",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> &laquo;Les permis de pêche ont été délivrés dans les 15 jours suivant la demande, 95 % du temps&raquo; est un résultat par rapport à l&rsquo;objectif fixé dans le plan de travail. Les permis de chasse ne s&rsquo;appliquent pas aux pêches."
       },
       "conclusion": ""
     },
@@ -137,7 +137,7 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Vous êtes à la moitié de l&rsquo;année, mais vous n&rsquo;avez renouvelé qu&rsquo;un quart de l'objectif fixé pour les permis de pêche. Cet objectif risque de ne pas être atteint."
+      "conclusion": "Vous êtes à la moitié de l&rsquo;année, mais vous n&rsquo;avez renouvelé qu&rsquo;un quart de l&rsquo;objectif fixé pour les permis de pêche. Cet objectif risque de ne pas être atteint."
     },
     "q4": {
       "text": "C&rsquo;est maintenant la fin de l&rsquo;année. Vous avez délivré 400 licences. Comment expliquez-vous l&rsquo;écart à l&rsquo;unité des finances ? Sélectionnez tout ce qui pourrait s&rsquo;appliquer.",

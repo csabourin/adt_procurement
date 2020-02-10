@@ -14,7 +14,7 @@
         </div>
         <div v-if="$i18n.locale=='fr'">
           <p><strong>NOTE :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons à compléter les tests pour planifier, dépenser et faire un rapport et nous vous invitons à nous faire part de vos commentaires sur les questions et les fonctionnalités.&nbsp; Vos commentaires nous aideront à rendre le tout plus efficace.</p>
-          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d'un responsable de centre d&rsquo;appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
+          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d&rsquo;un responsable de centre d&rsquo;appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
           <!-- <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l&rsquo;examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> -->
           <p>Le test comporte trois parties - une à la fin de chaque phase - planification, dépenses et rapports.&nbsp;</p>
           <p>La note de passage est de 80%, par partie.&nbsp;</p>
@@ -600,7 +600,7 @@ export default {
     "scoreIs":"Votre note finale est de",
     "Questions": {
       "q1": {
-        "text": "Lequel des éléments suivants n'est <strong style='text-transform:uppercase'>PAS</strong> inclus dans un plan de travail?",
+        "text": "Lequel des éléments suivants n&rsquo;est <strong style='text-transform:uppercase'>PAS</strong> inclus dans un plan de travail?",
         "options": {
           "1": "Activité",
           "2": "Produit livrable",
@@ -630,7 +630,7 @@ export default {
         }
       },
       "q3": {
-        "text": "Où trouveriez-vous des renseignements détaillés sur ce que votre organisation fait et ce qu'elle prévoit faire au cours des trois prochaines années?",
+        "text": "Où trouveriez-vous des renseignements détaillés sur ce que votre organisation fait et ce qu&rsquo;elle prévoit faire au cours des trois prochaines années?",
         "options": {
           "1": "Lettre de mandat",
           "2": "Plan ministériel",
@@ -650,7 +650,7 @@ export default {
           "1": "Attendre que d&rsquo;autres aient mis en œuvre avec succès un projet d&rsquo;innovation",
           "2": "Lancer un projet d&rsquo;innovation à petite échelle et en tirer des leçons",
           "3": "Lancer un projet d&rsquo;innovation très visible avec les effectifs actuels.",
-          "4": "Garder les choses telles qu'elles sont"
+          "4": "Garder les choses telles qu&rsquo;elles sont"
         },
         "feedback": {
           "1": "",
@@ -675,12 +675,12 @@ export default {
         }
       },
       "q6": {
-        "text": "L'an dernier, vous n'avez pas atteint votre objectif de répondre aux appels dans les 30 secondes. Les centres d&rsquo;appels sont de plus en plus automatisés, une approche privilégiée par la haute direction. Quelle est l&rsquo;activité la plus appropriée lorsque vous rédigez votre plan de travail?",
+        "text": "L'an dernier, vous n&rsquo;avez pas atteint votre objectif de répondre aux appels dans les 30 secondes. Les centres d&rsquo;appels sont de plus en plus automatisés, une approche privilégiée par la haute direction. Quelle est l&rsquo;activité la plus appropriée lorsque vous rédigez votre plan de travail?",
         "options": {
           "1": "Incorporer des solutions numériques",
           "2": "Changer la cible",
           "3": "Embaucher plus de personnel",
-          "4": "Mener des réunions d'équipe"
+          "4": "Mener des réunions d&rsquo;équipe"
         },
         "feedback": {
           "1": "",
@@ -733,9 +733,9 @@ export default {
         }
       },
       "q8": {
-        "text": "Vous avez ajouté une nouvelle activité à votre plan de travail concernant l'offre de soutien aux clients par des moyens automatisés. Pour ce faire, il faudrait mettre en place un système de chatbot disponible 24 heures sur 24. Le chatbot répondrait aux demandes des clients en ligne sans l'intervention d'un agent. Quel produit livrable serait ajouté au plan de travail pour cette activité?",
+        "text": "Vous avez ajouté une nouvelle activité à votre plan de travail concernant l'offre de soutien aux clients par des moyens automatisés. Pour ce faire, il faudrait mettre en place un système de chatbot disponible 24 heures sur 24. Le chatbot répondrait aux demandes des clients en ligne sans l'intervention d&rsquo;un agent. Quel produit livrable serait ajouté au plan de travail pour cette activité?",
         "options": {
-          "1": "Changer les heures d'ouverture du centre d&rsquo;appels à 24 heures sur 24, 7 jours sur 7.",
+          "1": "Changer les heures d&rsquo;ouverture du centre d&rsquo;appels à 24 heures sur 24, 7 jours sur 7.",
           "2": "99% de temps de disponibilité pour le système de chat en direct",
           "3": "30% des demandes en ligne seraient résolues par chatbot",
           "4": "Les interactions du chatbot seront surveillées par un agent du centre d&rsquo;appels."
@@ -748,7 +748,7 @@ export default {
         }
       },
       "q9": {
-        "text": "Avec n'importe quelle technologie en ligne, comme le système de chatbot, il y a le risque d'une atteinte à la vie privée. À quel élément du plan de travail pourrait être ajouté &laquo;Un pare-feu sécurisé et cryptage&raquo;?",
+        "text": "Avec n&rsquo;importe quelle technologie en ligne, comme le système de chatbot, il y a le risque d&rsquo;une atteinte à la vie privée. À quel élément du plan de travail pourrait être ajouté &laquo;Un pare-feu sécurisé et cryptage&raquo;?",
         "options": {
           "1": "Sous-activité",
           "2": "Atténuation",
@@ -767,7 +767,7 @@ export default {
         "options": {
           "1": "Roulement de personnel",
           "2": "Ne pas répondre à la norme de rendement",
-          "3": "Heures d'ouverture non dotées en personnel",
+          "3": "Heures d&rsquo;ouverture non dotées en personnel",
           "4": "Panne du système"
         },
         "feedback": {
@@ -868,7 +868,7 @@ export default {
         }
       },
       "q17": {
-        "text": "Vous avez ajouté une activité à votre plan de travail concernant la mise en œuvre d'un système de chatbot d&rsquo;ici le milieu de l&rsquo;année. Votre recherche initiale montre que les systèmes de chatbot coûtent entre 25 $ et 100 $ par mois. Quel montant allez-vous mettre dans votre budget? ",
+        "text": "Vous avez ajouté une activité à votre plan de travail concernant la mise en œuvre d&rsquo;un système de chatbot d&rsquo;ici le milieu de l&rsquo;année. Votre recherche initiale montre que les systèmes de chatbot coûtent entre 25 $ et 100 $ par mois. Quel montant allez-vous mettre dans votre budget? ",
         "options": {
           "1": "300$",
           "2": "600$",
@@ -883,7 +883,7 @@ export default {
         }
       },
       "q18": {
-        "text": "Le budget salarial de l&rsquo;année en cours est de 760&nbsp;000&nbsp;$. Vous créez un nouveau poste d&rsquo;analyste en TI qui sera doté l&rsquo;an prochain. Le salaire annuel sera de 60&nbsp;000&nbsp;$. Vous aurez besoin de temps pour les embaucher et estimez qu'ils commenceront en juin et ne travailleront que 10 mois. Quel sera votre budget salarial pour l&rsquo;année prochaine (en supposant que tout le reste demeure inchangé)?",
+        "text": "Le budget salarial de l&rsquo;année en cours est de 760&nbsp;000&nbsp;$. Vous créez un nouveau poste d&rsquo;analyste en TI qui sera doté l&rsquo;an prochain. Le salaire annuel sera de 60&nbsp;000&nbsp;$. Vous aurez besoin de temps pour les embaucher et estimez qu&rsquo;ils commenceront en juin et ne travailleront que 10 mois. Quel sera votre budget salarial pour l&rsquo;année prochaine (en supposant que tout le reste demeure inchangé)?",
         "options": {
           "1": "760&nbsp;000&nbsp;$",
           "2": "800&nbsp;000&nbsp;$",
@@ -898,7 +898,7 @@ export default {
         }
       },
       "q19": {
-        "text": "La mise en œuvre du système de chatbot entraînera des coûts de 15&nbsp;000&nbsp;$ en TI pour l'hébergement, qui seront fournis par un autre ministère selon le principe du recouvrement des coûts. Cela sera officialisé dans un protocole d&rsquo;entente entre les organisations. Les frais d'hébergement dans votre budget seront de &hellip;?",
+        "text": "La mise en œuvre du système de chatbot entraînera des coûts de 15&nbsp;000&nbsp;$ en TI pour l'hébergement, qui seront fournis par un autre ministère selon le principe du recouvrement des coûts. Cela sera officialisé dans un protocole d&rsquo;entente entre les organisations. Les frais d&rsquo;hébergement dans votre budget seront de &hellip;?",
         "options": {
           "1": "15&nbsp;000&nbsp;$ Non discrétionnaire ",
           "2": "15&nbsp;000&nbsp;$ Discrétionnaire ",

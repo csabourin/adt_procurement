@@ -236,9 +236,9 @@ export default {
         "4": "Sous « Dépenses annuelles prévues »"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n'est pas nécessaire de réduire le budget, car vous pourriez en avoir besoin pour payer des heures supplémentaires ou pour embaucher un employé occasionnel. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$.",
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n&rsquo;est pas nécessaire de réduire le budget, car vous pourriez en avoir besoin pour payer des heures supplémentaires ou pour embaucher un employé occasionnel. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$.",
         "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Même si vous pouviez réduire vos engagements, vous ne les réduiriez que de 5&nbsp;000&nbsp;$. 20&nbsp;000&nbsp;$ - (60&nbsp;000&nbsp;$ ÷ 12 mois X 1 mois) = 15&nbsp;000&nbsp;$. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$.",
-        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n'est pas nécessaire d&rsquo;ajuster les dépenses réelles parce que l&rsquo;employé n&rsquo;a pas encore été payé. Vous changeriez le montant sous «Dépenses annuelles prévues» à 55&nbsp;000&nbsp;$. ",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n&rsquo;est pas nécessaire d&rsquo;ajuster les dépenses réelles parce que l&rsquo;employé n&rsquo;a pas encore été payé. Vous changeriez le montant sous «Dépenses annuelles prévues» à 55&nbsp;000&nbsp;$. ",
         "4": "<span class='v-right' /><strong>Correct!</strong> Vous devez réduire vos dépenses annuelles prévues d&rsquo;un mois. 60&nbsp;000&nbsp;$ ÷ 12 mois X 11 mois = 55&nbsp;000&nbsp;$."
       },
       "conclusion": ""
@@ -251,7 +251,7 @@ export default {
         "3": "Augmenter « Engagements » et « Dépenses annuelles prévues »"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Incorrect. Il n'est pas nécessaire d&rsquo;augmenter ou de diminuer le budget. Vous changeriez le montant sous  «Engagements » à 1&nbsp;500&nbsp;$ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1&nbsp;500&nbsp;$.",
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Incorrect. Il n&rsquo;est pas nécessaire d&rsquo;augmenter ou de diminuer le budget. Vous changeriez le montant sous  «Engagements » à 1&nbsp;500&nbsp;$ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1&nbsp;500&nbsp;$.",
         "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Vous n&rsquo;augmenteriez pas ou ne diminueriez pas les    « Dépenses réelles à ce jour » parce que vous n&rsquo;avez pas payé pour le cours. Vous changeriez le montant sous « Engagements » à 1&nbsp;500&nbsp;$ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1&nbsp;500&nbsp;$",
         "3": "<span class='v-right' /><strong>Correct!</strong> Vous changeriez le montant sous  «Engagements » à   1&nbsp;500&nbsp;$ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues »  de 1&nbsp;500&nbsp;$."
       },

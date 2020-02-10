@@ -117,10 +117,10 @@
 
                   <h2>Introduction</h2>
                   <p>Dans cette leçon, vous apprendrez comment créer un budget conforme à votre plan de travail. Les gens qui le font depuis un certain temps vous diront que ces deux choses - le plan de travail et le budget - se font souvent en même temps et en une seule étape. Cependant, afin de vous aider à apprendre à bien faire chacune de ces tâches, nous les avons séparées. </p>
-                  <p>La création d'un budget implique trois tâches principales : analyser les informations disponibles, prévoir vos besoins budgétaires et soumettre votre budget proposé. </p>
-                  <p>Analyser, c'est bien examiner le plan de travail et les rapports financiers de l&rsquo;an dernier. Si vous avez accès aux années antérieures, il est bon de les examiner, ainsi que les finances, le contexte et les priorités actuels de votre organisation. </p>
-                  <p>Prévoir, c'est estimer les coûts et identifier les coûts qui peuvent changer de façon significative au cours de l&rsquo;exercice financier.</p>
-                  <p>Une fois vos besoins budgétaires complétés, vous soumettez votre budget proposé. Il se peut qu'on vous demande d&rsquo;apporter des ajustements avant l&rsquo;approbation finale.</p>
+                  <p>La création d&rsquo;un budget implique trois tâches principales : analyser les informations disponibles, prévoir vos besoins budgétaires et soumettre votre budget proposé. </p>
+                  <p>Analyser, c&rsquo;est bien examiner le plan de travail et les rapports financiers de l&rsquo;an dernier. Si vous avez accès aux années antérieures, il est bon de les examiner, ainsi que les finances, le contexte et les priorités actuels de votre organisation. </p>
+                  <p>Prévoir, c&rsquo;est estimer les coûts et identifier les coûts qui peuvent changer de façon significative au cours de l&rsquo;exercice financier.</p>
+                  <p>Une fois vos besoins budgétaires complétés, vous soumettez votre budget proposé. Il se peut qu&rsquo;on vous demande d&rsquo;apporter des ajustements avant l&rsquo;approbation finale.</p>
                   <p>Prêt à plonger plus loin dans chacune de ces étapes ? Super ! Mais juste avant cela, prenons un moment pour en savoir plus sur le fonctionnement du cycle financier du gouvernement afin que vous puissiez le relier à votre propre travail en tant que gestionnaire.</p>
 
                   <hr>
@@ -131,7 +131,7 @@
                   <p>Comme vous pouvez le constater, certaines activités se déroulent à la fois à l&rsquo;échelle du gouvernement et de l'organisation.</p>
                   <p>Des activités clés se préparent pour le prochain exercice, d&rsquo;autres se déroulent au cours de l&rsquo;exercice et d&rsquo;autres encore après la fin de celui-ci.</p>
                   <p>En tant que gestionnaire, vous élaborez votre plan de travail et vos exigences budgétaires pour le prochain exercice financier à l&rsquo;automne.</p>
-                  <p>Vous pourriez être responsable d'un nouveau programme établi par le biais d'une proposition budgétaire ou d'un mémoire au Cabinet. </p>
+                  <p>Vous pourriez être responsable d&rsquo;un nouveau programme établi par le biais d&rsquo;une proposition budgétaire ou d&rsquo;un mémoire au Cabinet. </p>
                   <p>Ces questions sont discutées lors des consultations prébudgétaires du Comité des finances.</p>
                   <p>Lorsque le nouveau programme sera annoncé dans le budget fédéral, vous devrez alors préparer une présentation au Conseil du Trésor et demander l&rsquo;autorisation d&rsquo;accéder au financement.</p>
                   <p>Les crédits provisoires fournissent le financement initial pour lancer l&rsquo;année en attendant que le Parlement approuve les crédits intérimaires.</p>
@@ -164,26 +164,26 @@
                   <hr>
 
                   <h2>Prévoyez vos besoins budgétaires</h2>
-                  <p>Après avoir obtenu tous les renseignements que vous pouvez à partir des budgets de l&rsquo;année dernière et de l&rsquo;année en cours, vous constatez qu'il vous faut encore prévoir certains besoins budgétaires. Cliquez sur les points d&rsquo;interrogation que vous voyez à l&rsquo;écran et une question apparaîtra. Une fois que vous aurez fait votre choix, le chiffre correct apparaîtra dans le budget. </p>
+                  <p>Après avoir obtenu tous les renseignements que vous pouvez à partir des budgets de l&rsquo;année dernière et de l&rsquo;année en cours, vous constatez qu&rsquo;il vous faut encore prévoir certains besoins budgétaires. Cliquez sur les points d&rsquo;interrogation que vous voyez à l&rsquo;écran et une question apparaîtra. Une fois que vous aurez fait votre choix, le chiffre correct apparaîtra dans le budget. </p>
 
                   <hr>
 
                   <h2>Soumettez votre budget proposé et apportez les ajustements nécessaires</h2>
                   <p>Vous êtes maintenant prêt à soumettre votre budget à votre directeur. On vous demandera peut-être d&rsquo;expliquer les hypothèses que vous avez utilisées, comment vos chiffres ont été estimés et comment votre budget vous permettra de respecter vos priorités.</p>
-                  <p>Si votre directeur vous pose des questions sur les coûts, les notes budgétaires dans votre "poche arrière" vous rappelleront comment vous les avez atteints. Il se peut que vous ayez besoin de faire des ajustements avant d'obtenir l&rsquo;approbation finale. </p>
+                  <p>Si votre directeur vous pose des questions sur les coûts, les notes budgétaires dans votre "poche arrière" vous rappelleront comment vous les avez atteints. Il se peut que vous ayez besoin de faire des ajustements avant d&rsquo;obtenir l&rsquo;approbation finale. </p>
                   <p>Si, au cours de la réunion, votre directeur vous demande d&rsquo;ajuster votre budget, vous devrez peut-être aussi mettre à jour votre plan de travail. </p>
-                  <p>Il se peut que vous n'ayez pas assez de budget de F&E, mais vous constaterez que vous pourriez transférer ce montant de la rubrique Salaire à d&rsquo;autres postes. Bien que cela se produise rarement, vous pouvez convertir certains fonds du Salaire en F&E, ou vice versa. Vous n'avez qu&rsquo;à tenir compte du montant de 27 % du régime d&rsquo;avantages sociaux des employés - RASE - dans vos calculs. Cela signifie que 100&nbsp;000&nbsp;$ en salaire équivaut à 127&nbsp;000&nbsp;$ en F et E. C'est l'inverse de la conversion du salaire en F&E. Parlez-en à votre conseiller en gestion financière si vous pensez que c'est quelque chose que vous devriez faire. </p>
+                  <p>Il se peut que vous n&rsquo;ayez pas assez de budget de F&E, mais vous constaterez que vous pourriez transférer ce montant de la rubrique Salaire à d&rsquo;autres postes. Bien que cela se produise rarement, vous pouvez convertir certains fonds du Salaire en F&E, ou vice versa. Vous n&rsquo;avez qu&rsquo;à tenir compte du montant de 27 % du régime d&rsquo;avantages sociaux des employés - RASE - dans vos calculs. Cela signifie que 100&nbsp;000&nbsp;$ en salaire équivaut à 127&nbsp;000&nbsp;$ en F et E. C&rsquo;est l'inverse de la conversion du salaire en F&E. Parlez-en à votre conseiller en gestion financière si vous pensez que c&rsquo;est quelque chose que vous devriez faire. </p>
                   <p>Vous pourriez avoir besoin d&rsquo;autres sources de financement dans votre budget pour couvrir les priorités de votre plan de travail. Voici quelques exemples d&rsquo;endroits où vous pouvez vous adresser : </p>
                   <ul>
                     <li>Transférez des fonds à l'intérieur de votre propre budget </li>
                     <li>Obtenez de l&rsquo;argent supplémentaire d&rsquo;autres gestionnaires </li>
                     <li>Utilisez un surplus inexploité que votre administrateur pourrait avoir</li>
                     <li>Présentez une soumission au Conseil du Trésor ou un mémoire au Cabinet</li>
-                    <li>En fonction de votre activité, tirez parti d'un règlement interministériel </li>
+                    <li>En fonction de votre activité, tirez parti d&rsquo;un règlement interministériel </li>
                   </ul>
                   <p>La présentation d&rsquo;une soumission au Conseil du Trésor est un document utilisé pour obtenir l&rsquo;approbation du Conseil du Trésor pour une stratégie d&rsquo;exécution de programme ou des autorisations de financement pour une initiative que l'organisation ne serait pas en mesure d&rsquo;entreprendre autrement ou qui ne relève pas de ses pouvoirs délégués. Pour plus d&rsquo;informations, consultez la boîte à outils. </p>
                   <p>Un mémoire au Cabinet est utilisé en tout temps de l&rsquo;année par les ministres qui souhaitent consulter leurs collègues ministériels et prendre une décision du Cabinet. Pour plus d&rsquo;informations, consultez la boîte à outils. </p>
-                  <p>Au cas où vous vous demandez ce qu'est un règlement interministériel, il s'agit d'un mécanisme de processus propre au gouvernement du Canada où une entrée financière est créée pour que les ministères puissent transférer entre eux les coûts engagés ou percevoir des recettes les uns des autres. Par exemple, les tests linguistiques sont effectués par la Commission de la fonction publique ou la traduction par le Bureau de la traduction au sein des Services publics et Approvisionnements Canada. </p>
+                  <p>Au cas où vous vous demandez ce qu&rsquo;est un règlement interministériel, il s&rsquo;agit d&rsquo;un mécanisme de processus propre au gouvernement du Canada où une entrée financière est créée pour que les ministères puissent transférer entre eux les coûts engagés ou percevoir des recettes les uns des autres. Par exemple, les tests linguistiques sont effectués par la Commission de la fonction publique ou la traduction par le Bureau de la traduction au sein des Services publics et Approvisionnements Canada. </p>
                   <p>L'activité suivante vous permettra d&rsquo;ajuster votre budget proposé. </p>
 
                   <hr>

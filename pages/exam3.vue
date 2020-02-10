@@ -14,7 +14,7 @@
         </div>
         <div v-if="$i18n.locale=='fr'">
           <p><strong style="text-transform: uppercase;">Note :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons à compléter les tests pour planifier, dépenser et faire un rapport et nous vous invitons à nous faire part de vos commentaires sur les questions et les fonctionnalités.&nbsp; Vos commentaires nous aideront à rendre le tout plus efficace.</p>
-          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d'un responsable de centre d&rsquo;appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
+          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d&rsquo;un responsable de centre d&rsquo;appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
           <!-- <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l&rsquo;examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> -->
           <p>Le test comporte trois parties - une à la fin de chaque phase - planification, dépenses et rapports.&nbsp;</p>
           <p>La note de passage est de 80%, par partie.&nbsp;</p>
@@ -442,7 +442,7 @@ export default {
       "scoreIs": "Votre note finale est de",
       "Questions": {
       "q1": {
-      "text": "<table class='qTable'>        <tbody>          <tr>            <td>              <p>Budget </p>            </td>            <td>              <p>Engagements</p>            </td>            <td>              <p>Réalisations à ce jour</p>            </td>            <td>              <p>Prévisions annuelles</p>            </td>            <td>              <p>Excédent / Déficit</p>            </td>          </tr>          </tbodytable> Il s'agit des intitulés de colonne de l&rsquo;état de la situation financière. Comment l&rsquo;excédent / le déficit est-il calculé?",
+      "text": "<table class='qTable'>        <tbody>          <tr>            <td>              <p>Budget </p>            </td>            <td>              <p>Engagements</p>            </td>            <td>              <p>Réalisations à ce jour</p>            </td>            <td>              <p>Prévisions annuelles</p>            </td>            <td>              <p>Excédent / Déficit</p>            </td>          </tr>          </tbodytable> Il s&rsquo;agit des intitulés de colonne de l&rsquo;état de la situation financière. Comment l&rsquo;excédent / le déficit est-il calculé?",
           "options": {
           "1": "Prévisions annuelles - Budget",
           "2": "Engagements - Réalisations",
@@ -457,12 +457,12 @@ export default {
           }
           },
           "q2": {
-          "text": "Il s'agit de P6 et vous examinez le rapport sur la situation financière (RSF). Au cours des quatre derniers mois, trois de vos postes ont été vacants, de sorte qu'il y a un important excédent salarial. Toutefois, vous embauchez deux étudiants à titre de solution provisoire jusqu&rsquo;à la fin de l&rsquo;exercice financier. Mais il faudra un mois de plus pour les embaucher après le traitement de leur autorisation de sécurité. En tant que gestionnaire, comment prévoyez-vous la situation?",
+          "text": "Il s&rsquo;agit de P6 et vous examinez le rapport sur la situation financière (RSF). Au cours des quatre derniers mois, trois de vos postes ont été vacants, de sorte qu&rsquo;il y a un important excédent salarial. Toutefois, vous embauchez deux étudiants à titre de solution provisoire jusqu&rsquo;à la fin de l&rsquo;exercice financier. Mais il faudra un mois de plus pour les embaucher après le traitement de leur autorisation de sécurité. En tant que gestionnaire, comment prévoyez-vous la situation?",
           "options": {
-          "1": "Prévoir les coûts de deux salaires d'étudiants, ajoutez ce montant au total de votre budget et demandez à votre administrateur de modifier les chiffres réels à ce jour pour refléter cette situation",
-          "2": "Prévoir les coûts de deux salaires d'étudiants de P7 à P12 (fin de l&rsquo;année financière) et demander à votre administration de mettre à jour les engagements dans le système financier",
-          "3": "Prévoir les coûts de deux salaires d'étudiants et déduisez-les du total de votre budget et demandez à votre administration de modifier les chiffres réels de l&rsquo;année en cours pour en tenir compte",
-          "4": "Prévoir les coûts de deux salaires d'étudiants de P6 à P12 (fin de l&rsquo;année financière) et demander à votre administration de mettre à jour les engagements dans le système financier"
+          "1": "Prévoir les coûts de deux salaires d&rsquo;étudiants, ajoutez ce montant au total de votre budget et demandez à votre administrateur de modifier les chiffres réels à ce jour pour refléter cette situation",
+          "2": "Prévoir les coûts de deux salaires d&rsquo;étudiants de P7 à P12 (fin de l&rsquo;année financière) et demander à votre administration de mettre à jour les engagements dans le système financier",
+          "3": "Prévoir les coûts de deux salaires d&rsquo;étudiants et déduisez-les du total de votre budget et demandez à votre administration de modifier les chiffres réels de l&rsquo;année en cours pour en tenir compte",
+          "4": "Prévoir les coûts de deux salaires d&rsquo;étudiants de P6 à P12 (fin de l&rsquo;année financière) et demander à votre administration de mettre à jour les engagements dans le système financier"
           },
           "feedback": {
           "1": "",
@@ -472,11 +472,11 @@ export default {
           }
           },
           "q3": {
-          "text": "Trois de vos postes ont été vacants au cours des quatre derniers mois, et vous vous attendez maintenant à ce qu'ils le soient encore pour cinq mois. Il y a un surplus de salaire croissant. Qu'allez-vous faire?",
+          "text": "Trois de vos postes ont été vacants au cours des quatre derniers mois, et vous vous attendez maintenant à ce qu&rsquo;ils le soient encore pour cinq mois. Il y a un surplus de salaire croissant. Qu&rsquo;allez-vous faire?",
           "options": {
-          "1": "Continuez à prévoir le montant prévu pour le salaire et faites appel à de l&rsquo;aide temporaire, car c'est plus rapide",
-          "2": "Transférer l&rsquo;excédent salarial au F&E, même si vous n'avez pas de déficit de F&E",
-          "3": "Dites à votre gestionnaire que vous avez un surplus dans votre budget salarial, afin qu'il puisse être utilisé ailleurs dans l'organisation",
+          "1": "Continuez à prévoir le montant prévu pour le salaire et faites appel à de l&rsquo;aide temporaire, car c&rsquo;est plus rapide",
+          "2": "Transférer l&rsquo;excédent salarial au F&E, même si vous n&rsquo;avez pas de déficit de F&E",
+          "3": "Dites à votre gestionnaire que vous avez un surplus dans votre budget salarial, afin qu&rsquo;il puisse être utilisé ailleurs dans l'organisation",
           "4": "Ne prévoyez pas d&rsquo;excédent supplémentaire afin de pouvoir conserver les fonds ; ensuite, dans P9, prévoyez ce que vous prévoyez de dépenser"
           },
           "feedback": {
@@ -487,7 +487,7 @@ export default {
           }
           },
           "q4": {
-          "text": "Comme tous vos fonds ont été engagés, vous avez reçu le mois dernier un montant supplémentaire de 5&nbsp;000&nbsp;$ pour former les employés sur les nouveaux logiciels en raison d'un changement de priorité. En examinant le rapport sur la situation financière que vous venez de recevoir des Finances, vous constatez que ces fonds ne sont pas inclus dans les totaux du budget. Sachant que la prévision est due dans deux semaines, que faites-vous?",
+          "text": "Comme tous vos fonds ont été engagés, vous avez reçu le mois dernier un montant supplémentaire de 5&nbsp;000&nbsp;$ pour former les employés sur les nouveaux logiciels en raison d&rsquo;un changement de priorité. En examinant le rapport sur la situation financière que vous venez de recevoir des Finances, vous constatez que ces fonds ne sont pas inclus dans les totaux du budget. Sachant que la prévision est due dans deux semaines, que faites-vous?",
           "options": {
           "1": "Augmenter le budget dans le système financier de 5&nbsp;000&nbsp;$",
           "2": "Créer un engagement dans le système financier pour 5&nbsp;000&nbsp;$.",
@@ -567,7 +567,7 @@ export default {
           "1": "Centre d&rsquo;appels avec personnel de 9 h à 17 h du lundi au vendredi",
           "2": "Répondre aux demandes d&rsquo;assistance par chat en direct dès que possible",
           "3": "Budget de 9&nbsp;000&nbsp;$ pour l'infrastructure informatique",
-          "4": "90 % du temps, les courriels reçoivent une réponse dans un délai d'un jour ouvrable"
+          "4": "90 % du temps, les courriels reçoivent une réponse dans un délai d&rsquo;un jour ouvrable"
           },
           "feedback": {
           "1": "",

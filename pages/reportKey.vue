@@ -58,7 +58,7 @@
                   <li>Rapports financiers trimestriels (RFT)</li>
                   <li>Divulgation proactive&nbsp;</li>
                   <li>Cadre de responsabilisation de gestion (CRG)</li>
-                  <li>Rapports de vérification interne et d'évaluation</li>
+                  <li>Rapports de vérification interne et d&rsquo;évaluation</li>
                 </ul>
               </ul>
               <li>Les gestionnaires contribuent à ces rapports gouvernementaux en fournissant de l'information sur les résultats de rendement et les résultats de leurs activités.</li>
@@ -80,7 +80,7 @@
           <!-- <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
             Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
           <span v-if="$i18n.locale=='fr'">
-            Jetez un coup d'oeil au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
+            Jetez un coup d&rsquo;&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
           </span></p> -->
         </b-col>
       </b-row>

@@ -231,7 +231,7 @@
   },
   "fr":
   {
-    "pwpInstructions": "Votre directeur vous dit qu'il a siégé à un comité directeur et qu'il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois nouveaux renseignements : ",
+    "pwpInstructions": "Votre directeur vous dit qu&rsquo;il a siégé à un comité directeur et qu&rsquo;il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois nouveaux renseignements : ",
     "thing1": "la mise en œuvre d&rsquo;un nouveau logiciel pour accélérer la délivrance de permis;",
     "thing2": "une nouvelle politique qui exige maintenant que les permis soient délivrés en 15 jours, et non plus en 30 jours, à compter du 1er novembre;",
     "thing3": "une décision de ne pas remplacer un employé qui prend sa retraite.",

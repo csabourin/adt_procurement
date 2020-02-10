@@ -68,7 +68,7 @@
                 <span v-if="$i18n.locale=='fr'">
                   <dl>
                     <dt>Structure de codage</dt>
-                    <dd>Il s&rsquo;agit d&rsquo;une méthode de classification des transactions qui permet à une organisation de saisir l'information financière. C&rsquo;est le langage commun qui permet d&rsquo;identifier, d&rsquo;agréger et de rapporter les données comptables et financières à des fins de planification, d&rsquo;affectation des ressources, de contrôle de gestion, de reporting et d&rsquo;évaluation.</dd>
+                    <dd>Il s&rsquo;agit d&rsquo;une méthode de classification des transactions qui permet à une organisation de saisir l&rsquo;information financière. C&rsquo;est le langage commun qui permet d&rsquo;identifier, d&rsquo;agréger et de rapporter les données comptables et financières à des fins de planification, d&rsquo;affectation des ressources, de contrôle de gestion, de reporting et d&rsquo;évaluation.</dd>
                   </dl>
                   <dl>
                     <dt>Centre de responsabilité</dt>

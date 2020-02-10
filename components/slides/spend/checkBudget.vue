@@ -316,7 +316,7 @@
       "text": "Vous avez acheté tous les meubles dont vous aurez besoin pour l&rsquo;année au coût de 900 $. Vous aimeriez acheter 100 $ de plus en fournitures de bureaux. Pouvez-vous utiliser l&rsquo;argent initialement alloué pour le mobilier?",
       "options": {
         "1": "Oui &mdash; Les fonds peuvent être transférés d&rsquo;un objet de dépenses à l&rsquo;autre.",
-        "2": "Non &mdash; Une fois qu'ils sont affectés au mobilier, les fonds ne peuvent plus être déplacés."
+        "2": "Non &mdash; Une fois qu&rsquo;ils sont affectés au mobilier, les fonds ne peuvent plus être déplacés."
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",

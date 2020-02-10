@@ -104,7 +104,7 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Un CAFE n'est pas nécessaire parce que les ministères ont habituellement une période de temps en avril au cours de laquelle ils peuvent payer leurs factures avec les fonds de l&rsquo;ancienne année."
+      "conclusion": "Un CAFE n&rsquo;est pas nécessaire parce que les ministères ont habituellement une période de temps en avril au cours de laquelle ils peuvent payer leurs factures avec les fonds de l&rsquo;ancienne année."
     },
     "q3": {
       "text": "Vous avez reçu les marchandises mais pas la facture de  50 $. Créez-vous un créditeur à la fin de l&rsquo;exercice (CAFE)?",
@@ -116,7 +116,7 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Vous ne créerez pas de CAFE parce que le montant n'est pas important. Les procédures de fin d&rsquo;exercice de votre ministère vous informeront de l'importance relative de vos montants. Si vous recevez la facture à la fin d&rsquo;avril ou en mai, vous paierez à même les fonds de la nouvelle année."
+      "conclusion": "Vous ne créerez pas de CAFE parce que le montant n&rsquo;est pas important. Les procédures de fin d&rsquo;exercice de votre ministère vous informeront de l&rsquo;importance relative de vos montants. Si vous recevez la facture à la fin d&rsquo;avril ou en mai, vous paierez à même les fonds de la nouvelle année."
     }
   }
 }</i18n>

@@ -63,7 +63,7 @@ export default {
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
         "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> "
-      },"conclusion":"Les bonnes réponses sont &laquo; Ajoutez leurs activités à votre plan de travail &raquo; et &laquo; Ajoutez leurs salaires et F et E à votre budget &raquo;. La conversion des fonds de F et E en salaires n'est pas une solution, car vos besoins en ressources augmentent et vous avez donc besoin de ces fonds."
+      },"conclusion":"Les bonnes réponses sont &laquo; Ajoutez leurs activités à votre plan de travail &raquo; et &laquo; Ajoutez leurs salaires et F et E à votre budget &raquo;. La conversion des fonds de F et E en salaires n&rsquo;est pas une solution, car vos besoins en ressources augmentent et vous avez donc besoin de ces fonds."
     }
   }
 }</i18n>

@@ -160,7 +160,7 @@ export default {
   },
   "fr": {
   "qDisabled": "Choisissez",
-  "instructions": "Voici l'occasion pour vous de confirmer votre connaissance des budgets et des coûts. Sélectionnez le meilleur choix pour remplir les blancs. ",
+  "instructions": "Voici l&rsquo;occasion pour vous de confirmer votre connaissance des budgets et des coûts. Sélectionnez le meilleur choix pour remplir les blancs. ",
   "keyTerms": [
   {
   "1": "Fonctionnement et entretien (F et E)",

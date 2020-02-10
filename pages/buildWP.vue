@@ -55,38 +55,38 @@
                    <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->
                 </span>
                 <span v-if="$i18n.locale=='fr'">
-                  <h2>Le but d'un plan de travail</h2>
-                  <p>&laquo; Un plan de travail est un document évolutif dans lequel vous définissez et hiérarchisez les activités de votre unité. Considérez-le comme une liste de choses à faire pour l&rsquo;année à venir. Il vous aide à communiquer la fa&ccedil;on dont vous affectez les ressources et fixez des échéances. C'est la pierre angulaire de votre processus de planification, car elle soutient votre budget et vos activités de production de rapports.&nbsp;</p>
-                  <p>D'habitude, on ne part pas de zéro. Vous n'auriez qu&rsquo;à examiner le plan de travail, le budget et les rapports de l&rsquo;année derni&egrave;re pour déterminer ce qui doit &ecirc;tre conservé, ajouté ou supprimé pour la nouvelle année.</p>
-                  <p>Mais avant m&ecirc;me d'élaborer votre plan de travail, il est utile de s&rsquo;arr&ecirc;ter pour regarder la situation dans son ensemble. &raquo;</p>
+                  <h2>Le but d&rsquo;un plan de travail</h2>
+                  <p>&laquo; Un plan de travail est un document évolutif dans lequel vous définissez et hiérarchisez les activités de votre unité. Considérez-le comme une liste de choses à faire pour l&rsquo;année à venir. Il vous aide à communiquer la fa&ccedil;on dont vous affectez les ressources et fixez des échéances. C&rsquo;est la pierre angulaire de votre processus de planification, car elle soutient votre budget et vos activités de production de rapports.&nbsp;</p>
+                  <p>D&rsquo;habitude, on ne part pas de zéro. Vous n&rsquo;auriez qu&rsquo;à examiner le plan de travail, le budget et les rapports de l&rsquo;année derni&egrave;re pour déterminer ce qui doit &ecirc;tre conservé, ajouté ou supprimé pour la nouvelle année.</p>
+                  <p>Mais avant m&ecirc;me d&rsquo;élaborer votre plan de travail, il est utile de s&rsquo;arr&ecirc;ter pour regarder la situation dans son ensemble. &raquo;</p>
                   <hr>
                   <h2>Lier le plan avec les priorités du gouvernement</h2>
                   <p>&laquo; Tout commence avec le discours du Tr&ocirc;ne, qui énonce les priorités du gouvernement.&nbsp;</p>
                   <p>Ces priorités se répercuteront jusqu&rsquo;à vous en tant que gestionnaire et devront se refléter dans votre plan de travail. Regardons comment cela se produit.</p>
                   <p>Apr&egrave;s le discours du Tr&ocirc;ne, le premier ministre adresse une &laquo; lettre de mandat &raquo; au ministre de chaque minist&egrave;re.&nbsp;</p>
                   <p>Le premier ministre y énonce ses attentes globales et ses objectifs stratégiques pour chaque minist&egrave;re.&nbsp;</p>
-                  <p>Chaque année, il y a un budget fédéral qui établit le programme économique du Canada pour l&rsquo;année. Les minist&egrave;res auront des priorités et des objectifs qui s'aligneront sur ce programme en plus d&rsquo;autres mandats de base.</p>
+                  <p>Chaque année, il y a un budget fédéral qui établit le programme économique du Canada pour l&rsquo;année. Les minist&egrave;res auront des priorités et des objectifs qui s&rsquo;aligneront sur ce programme en plus d&rsquo;autres mandats de base.</p>
                   <p>Les objectifs de l'organisation sont décrits dans un Cadre ministériel des résultats - ou &laquo; CMR &raquo;.</p>
                   <p>Il y a ensuite le Plan ministériel, qui décrit les principales responsabilités du minist&egrave;re, les résultats que le minist&egrave;re veut atteindre et les indicateurs de ces résultats.&nbsp;</p>
                   <p>Ensuite, vous pouvez avoir des plans par secteur&nbsp;- direction générale&nbsp;- et direction.</p>
-                  <p>C'est là qu'intervient votre plan de travail! Vous construisez votre plan de travail autour des activités dont vous &ecirc;tes responsables au sein de votre unité et cela se rattache naturellement au Plan ministériel. &raquo;</p>
+                  <p>C&rsquo;est là qu&rsquo;intervient votre plan de travail! Vous construisez votre plan de travail autour des activités dont vous &ecirc;tes responsables au sein de votre unité et cela se rattache naturellement au Plan ministériel. &raquo;</p>
                   <hr>
-                  <h2>Parties d'un plan de travail</h2>
-                  <p>&laquo; &Agrave; ce stade, vous vous demandez peut-&ecirc;tre à quoi ressemble un plan de travail. Toutes les unités n'utilisent pas le m&ecirc;me mod&egrave;le. En parlant à vos coll&egrave;gues et aux gens de la planification d&rsquo;entreprise et des finances, vous pouvez savoir lequel est utilisé dans votre bureau. Voici une structure de plan de travail typique. Jetez y un coup d'oeil! Aussi, regardez dans la section Fichiers en haut à droite pour trouver des exemples de plans de travail. &raquo;<br />Prenez maintenant un moment pour explorer les différentes sections d'un plan de travail.</p>
+                  <h2>Parties d&rsquo;un plan de travail</h2>
+                  <p>&laquo; &Agrave; ce stade, vous vous demandez peut-&ecirc;tre à quoi ressemble un plan de travail. Toutes les unités n&rsquo;utilisent pas le m&ecirc;me mod&egrave;le. En parlant à vos coll&egrave;gues et aux gens de la planification d&rsquo;entreprise et des finances, vous pouvez savoir lequel est utilisé dans votre bureau. Voici une structure de plan de travail typique. Jetez y un coup d&rsquo;&oelig;l! Aussi, regardez dans la section Fichiers en haut à droite pour trouver des exemples de plans de travail. &raquo;<br />Prenez maintenant un moment pour explorer les différentes sections d&rsquo;un plan de travail.</p>
                   <hr>
                   <h2>Effectuer une analyse 360</h2>
-                  <p>&laquo; Pour élaborer un plan de travail, il est utile de comprendre le contexte historique et culturel de votre unité en vous posant une série de questions. C'est ce que nous appelons l&rsquo;aper&ccedil;u à 360 degrés.</p>
+                  <p>&laquo; Pour élaborer un plan de travail, il est utile de comprendre le contexte historique et culturel de votre unité en vous posant une série de questions. C&rsquo;est ce que nous appelons l&rsquo;aper&ccedil;u à 360 degrés.</p>
                   <p>Voici un exemple fictif du plan de travail, du budget et du rapport de l&rsquo;an dernier. Essayez d&rsquo;appliquer les questions du document d&rsquo;aper&ccedil;u à 360 degrés à cet exemple fictif.&nbsp;</p>
                   <p>Vous pouvez accéder au document d&rsquo;aper&ccedil;u à 360 degrés à tout moment à partir de l'ic&ocirc;ne Fichier en haut à droite. &raquo;</p>
                   <hr>
                   <h2>Préparer un plan de travail</h2>
-                  <p>&laquo; &Agrave; ce stade, vous comprenez le contexte, tant historique que culturel, et vous &ecirc;tes en mesure d'élaborer le plan de travail de cette année! Imaginez que votre directeur partage avec vous les priorités de la prochaine année pour votre direction : protéger les écosyst&egrave;mes aquatiques, soutenir les p&ecirc;ches et gérer la délivrance des permis. &raquo;</p>
+                  <p>&laquo; &Agrave; ce stade, vous comprenez le contexte, tant historique que culturel, et vous &ecirc;tes en mesure d&rsquo;élaborer le plan de travail de cette année! Imaginez que votre directeur partage avec vous les priorités de la prochaine année pour votre direction : protéger les écosyst&egrave;mes aquatiques, soutenir les p&ecirc;ches et gérer la délivrance des permis. &raquo;</p>
                   <hr>
                   <h2>Compléter le plan de travail</h2>
                   <p>&laquo; Pour vous aider à vous faire une idée de la fa&ccedil;on de remplir les autres sections du plan de travail, continuons avec le scénario des p&ecirc;ches. En regardant votre brouillon, vous remarquez que certains items peuvent avoir été déposés au mauvais endroit ou manquer. Mettez à jour votre brouillon en conséquence. &raquo;</p>
                   <hr>
                   <h2>Ajuster le plan de travail</h2>
-                  <p>&laquo; D'accord. Votre directeur vous dit qu'il a siégé à un comité directeur et qu'il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois choses : la mise en &oelig;uvre d'un nouveau logiciel pour accélérer l&rsquo;émission de licences; une nouvelle politique qui exige maintenant que les licences soient émises en 15 jours, et non plus en 30 jours, à compter du 1er novembre; une décision de ne pas remplacer un employé qui prend sa retraite. L'exercice suivant vous aidera à ajuster votre plan de travail en fonction de ces nouvelles informations. &raquo;</p>
+                  <p>&laquo; D&rsquo;accord. Votre directeur vous dit qu&rsquo;il a siégé à un comité directeur et qu&rsquo;il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois choses : la mise en &oelig;uvre d&rsquo;un nouveau logiciel pour accélérer l&rsquo;émission de licences; une nouvelle politique qui exige maintenant que les licences soient émises en 15 jours, et non plus en 30 jours, à compter du 1er novembre; une décision de ne pas remplacer un employé qui prend sa retraite. L'exercice suivant vous aidera à ajuster votre plan de travail en fonction de ces nouvelles informations. &raquo;</p>
                   <hr>
                   <h2>Dans la vraie vie</h2>
                   <p>&laquo; Appliquez ce que vous avez appris dans la vraie vie. Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l&rsquo;intranet pour voir quels mod&egrave;les sont utilisés. Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. &raquo;</p>
@@ -237,7 +237,7 @@ export default {
   "TakeTheQuiz":"Répondez au questionnaire",
   "activityLinks":"Activity: Liens externes",
   "gotoLinks":"Ces liens se retrouvent aussi dans la boite à outils",
-  "partsofWPTitle":"Activité: Parties d'un plan de travail",
+  "partsofWPTitle":"Activité: Parties d&rsquo;un plan de travail",
   "completewpDrafttitle":"Activité: Préparer un plan de travail",
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",

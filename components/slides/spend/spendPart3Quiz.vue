@@ -356,13 +356,13 @@ export default {
   "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
   "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
   },
-  "conclusion": "Puisqu'il s&rsquo;agit d&rsquo;une rénovation majeure et que vous prolongez la durée de vie de l'immeuble, c&rsquo;est un actif."
+  "conclusion": "Puisqu&rsquo;il s&rsquo;agit d&rsquo;une rénovation majeure et que vous prolongez la durée de vie de l&rsquo;immeuble, c&rsquo;est un actif."
   },
   "q7": {
   "text": "Vous remarquez qu&rsquo;une facture est supérieure de 10 $ à ce qu&rsquo;elle devrait être et qu&rsquo;elle est exigible aujourd&rsquo;hui. Que faites-vous?",
   "options": {
   "1": "Traiter la facture en vertu de l&rsquo;article 34",
-  "2": "Renvoyez-la au fournisseur pour qu'il la corrige.",
+  "2": "Renvoyez-la au fournisseur pour qu&rsquo;il la corrige.",
   "3": "Envoyer-la à votre directeur en notant l&rsquo;erreur"
   },
   "feedback": {
@@ -373,7 +373,7 @@ export default {
   "conclusion": "Les erreurs de facturation doivent être renvoyées aux fournisseurs pour correction. La date d&rsquo;échéance de 30 jours commence lorsque le ministère reçoit la bonne facture."
   },
   "q8": {
-  "text": "Vous avez un employé qui a épuisé tous ses congés de maladie. Vous avez maintenant une nouvelle note médicale qui dit qu'ils seront en congé pour un mois. Cependant, vous pensez que le congé sera prolongé de six mois. Que faites-vous?",
+  "text": "Vous avez un employé qui a épuisé tous ses congés de maladie. Vous avez maintenant une nouvelle note médicale qui dit qu&rsquo;ils seront en congé pour un mois. Cependant, vous pensez que le congé sera prolongé de six mois. Que faites-vous?",
   "options": {
   "1": "Diminuer immédiatement les prévisions de F et E pour un mois",
   "2": "Diminuer immédiatement les prévisions salariales pour un mois",

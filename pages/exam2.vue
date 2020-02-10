@@ -14,7 +14,7 @@
         </div>
         <div v-if="$i18n.locale=='fr'">
           <p><strong>NOTE :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons à compléter les tests pour planifier, dépenser et faire un rapport et nous vous invitons à nous faire part de vos commentaires sur les questions et les fonctionnalités.&nbsp; Vos commentaires nous aideront à rendre le tout plus efficace.</p>
-          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d'un responsable de centre d&rsquo;appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
+          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d&rsquo;un responsable de centre d&rsquo;appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
           <!-- <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l&rsquo;examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> -->
           <p>Le test comporte trois parties - une à la fin de chaque phase - planification, dépenses et rapports.&nbsp;</p>
           <p>La note de passage est de 80%, par partie.&nbsp;</p>
@@ -617,7 +617,7 @@ export default {
           "1": "Communiquez avec le fournisseur et commandez le système à l&rsquo;aide de votre carte d&rsquo;achat",
           "2": "Demandez à votre équipe d&rsquo;effectuer une recherche approfondie sur le produit ",
           "3": "Assurez-vous d&rsquo;avoir suffisamment de fonds dans votre budget pour acheter le système",
-          "4": "Commander le système à l&rsquo;aide d'une commande d&rsquo;achat"
+          "4": "Commander le système à l&rsquo;aide d&rsquo;une commande d&rsquo;achat"
         },
         "feedback": {
           "1": "",
@@ -627,7 +627,7 @@ export default {
         }
       },
       "q2": {
-        "text": "Vous avez dépensé 1&nbsp;800&nbsp;$ de votre budget de 2&nbsp;000&nbsp;$ pour les fournitures de bureau et vous ne prévoyez pas d&rsquo;autres achats pour l&rsquo;année. Un employé veut assister à une formation sur les systèmes de clavardage et les frais d&rsquo;inscription sont de 150 $. Cependant, vous avez dépensé la totalité de votre budget de formation. Qu'allez-vous faire?",
+        "text": "Vous avez dépensé 1&nbsp;800&nbsp;$ de votre budget de 2&nbsp;000&nbsp;$ pour les fournitures de bureau et vous ne prévoyez pas d&rsquo;autres achats pour l&rsquo;année. Un employé veut assister à une formation sur les systèmes de clavardage et les frais d&rsquo;inscription sont de 150 $. Cependant, vous avez dépensé la totalité de votre budget de formation. Qu&rsquo;allez-vous faire?",
         "options": {
           "1": "Dites à l&rsquo;employé que le budget de formation a été dépensé ",
           "2": "Utiliser l&rsquo;argent initialement alloué pour les fournitures de bureau",
@@ -644,7 +644,7 @@ export default {
       "q3": {
         "text": "Lequel des énoncés suivants concernant la délégation des pouvoirs en matière de finances est vrai?",
         "options": {
-          "1": "Les pouvoirs ne peuvent être délégués qu'aux postes.",
+          "1": "Les pouvoirs ne peuvent être délégués qu&rsquo;aux postes.",
           "2": "Les pouvoirs ne peuvent être délégués qu&rsquo;à des personnes.",
           "3": "Les pouvoirs ne peuvent être délégués que par des personnes qui les exercent.",
           "4": "Les pouvoirs ne peuvent être délégués que par des personnes ayant certaines classifications"
@@ -657,11 +657,11 @@ export default {
         }
       },
       "q4": {
-        "text": "Laquelle de ces fonctions n'exige PAS qu'un gestionnaire de centre de responsabilité exerce le pouvoir délégué d&rsquo;engager des dépenses?",
+        "text": "Laquelle de ces fonctions n&rsquo;exige PAS qu&rsquo;un gestionnaire de centre de responsabilité exerce le pouvoir délégué d&rsquo;engager des dépenses?",
         "options": {
           "1": "Demande d&rsquo;activité d&rsquo;accueil",
           "2": "Frais d&rsquo;inscription à la conférence",
-          "3": "Petites dépenses telles qu'un achat de 20 $ de matériel d&rsquo;artisanat",
+          "3": "Petites dépenses telles qu&rsquo;un achat de 20 $ de matériel d&rsquo;artisanat",
           "4": "Aucune de ces réponses"
         },
         "feedback": {
@@ -672,7 +672,7 @@ export default {
         }
       },
       "q5": {
-        "text": "La limite de dépenses de votre organisation lorsqu'elle utilise une carte d&rsquo;achat est de 2&nbsp;500&nbsp;$ par transaction. Vous avez trouvé des chaises ergonomiques qui répondent à vos besoins et à ceux de votre adjointe administrative. Les deux chaises ensemble sont évaluées à 4&nbsp;649&nbsp;$, taxes comprises. En tant que gestionnaire, que ferez-vous?",
+        "text": "La limite de dépenses de votre organisation lorsqu&rsquo;elle utilise une carte d&rsquo;achat est de 2&nbsp;500&nbsp;$ par transaction. Vous avez trouvé des chaises ergonomiques qui répondent à vos besoins et à ceux de votre adjointe administrative. Les deux chaises ensemble sont évaluées à 4&nbsp;649&nbsp;$, taxes comprises. En tant que gestionnaire, que ferez-vous?",
         "options": {
           "1": "Allez-y et autorisez l&rsquo;engagement pour les deux chaises",
           "2": "Autoriser l&rsquo;achat des deux chaises à l&rsquo;aide de la carte d&rsquo;achat de votre administrateur",
@@ -687,7 +687,7 @@ export default {
         }
       },
       "q6": {
-        "text": "Je suis un mécanisme de dépense qui sert à obtenir des biens ou des services à partir d'une liste de fournisseurs préqualifiés, assortis de conditions préétablies. Que suis-je?",
+        "text": "Je suis un mécanisme de dépense qui sert à obtenir des biens ou des services à partir d&rsquo;une liste de fournisseurs préqualifiés, assortis de conditions préétablies. Que suis-je?",
         "options": {
           "1": "Carte d&rsquo;achat",
           "2": "Marché concurrentiel",
@@ -720,7 +720,7 @@ export default {
         "options": {
           "1": "Lorsque vous faites un arrangement avec un fournisseur connu",
           "2": "Lorsque vous réservez des fonds avant que le fournisseur ne soit identifié",
-          "3": "Lorsqu'une transaction a été codée dans le système financier",
+          "3": "Lorsqu&rsquo;une transaction a été codée dans le système financier",
           "4": "Lorsque vous avez un protocole d&rsquo;entente avec un autre ministère"
         },
         "feedback": {
@@ -745,7 +745,7 @@ export default {
         }
       },
       "q8": {
-        "text": "Lequel des éléments suivants NE fait PAS partie d'un système de codage financier? ",
+        "text": "Lequel des éléments suivants NE fait PAS partie d&rsquo;un système de codage financier? ",
         "options": {
           "1": "Composante budgétaire",
           "2": "Gestionnaire de centre de responsabilité",
@@ -775,7 +775,7 @@ export default {
         }
       },
       "q10": {
-        "text": "M. Wong travaille comme gestionnaire d'un petit ministère et a reçu une délégation de pouvoirs en vertu des articles 32 et 34. Quel est l'instrument qui confère à M. Wong son pouvoir de délégation?",
+        "text": "M. Wong travaille comme gestionnaire d&rsquo;un petit ministère et a reçu une délégation de pouvoirs en vertu des articles 32 et 34. Quel est l'instrument qui confère à M. Wong son pouvoir de délégation?",
         "options": {
           "1": "Loi sur la gestion des finances publiques",
           "2": "Politiques du Conseil du Trésor",
@@ -790,7 +790,7 @@ export default {
         }
       },
       "q11": {
-        "text": "Votre professionnel administratif a reçu une commande de fournitures de bureau, accompagnée d'une facture. La facture comprend 5 tableaux blancs mais elle vous dit qu'aucun n'a été reçu. Que feriez-vous?",
+        "text": "Votre professionnel administratif a reçu une commande de fournitures de bureau, accompagnée d&rsquo;une facture. La facture comprend 5 tableaux blancs mais elle vous dit qu&rsquo;aucun n&rsquo;a été reçu. Que feriez-vous?",
         "options": {
           "1": "Payez la facture maintenant",
           "2": "Payer la facture après réception des 5 tableaux blancs",
@@ -805,7 +805,7 @@ export default {
         }
       },
       "q12": {
-        "text": "Vous recevez une facture pour l&rsquo;adhésion professionnelle annuelle d'un employé qui doit être payée en septembre. Que faites-vous?",
+        "text": "Vous recevez une facture pour l&rsquo;adhésion professionnelle annuelle d&rsquo;un employé qui doit être payée en septembre. Que faites-vous?",
         "options": {
           "1": "Payez maintenant la facture pour l&rsquo;année entière",
           "2": "Payer ce qui est dû d&rsquo;ici la fin de l&rsquo;exercice financier ",
@@ -837,7 +837,7 @@ export default {
       "q14": {
         "text": "Combien de temps le gouvernement a-t-il pour payer les marchandises et services?",
         "options": {
-          "1": "Dans les 15 jours ouvrables suivant la réception d'une facture ou l&rsquo;acceptation des marchandises, selon la dernière de ces dates",
+          "1": "Dans les 15 jours ouvrables suivant la réception d&rsquo;une facture ou l&rsquo;acceptation des marchandises, selon la dernière de ces dates",
           "2": "Trente jours après la signature de l&rsquo;article 34",
           "3": "Trente jours après réception de la facture",
           "4": "Immédiatement"
@@ -893,7 +893,7 @@ export default {
         }
       },
       "q18": {
-        "text": "Votre budget contient les postes individuels fournis :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>Dépenses réelles depuis le début de l&rsquo;exercice</p></th><th><p>Dépenses annuelles prévues</p></th></tr><tr><td><p>Salaire</p></td><td><p>60&nbsp;000&nbsp;$</p></td><td><p>20&nbsp;000&nbsp;$</p></td><td><p>40&nbsp;000&nbsp;$</p></td><td><p>60&nbsp;000&nbsp;$</p></td></tr></tbody></table><br>Vous venez de vous rappeler qu'un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60&nbsp;000&nbsp;$. Où changeriez-vous le montant à 50&nbsp;000&nbsp;$?",
+        "text": "Votre budget contient les postes individuels fournis :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>Dépenses réelles depuis le début de l&rsquo;exercice</p></th><th><p>Dépenses annuelles prévues</p></th></tr><tr><td><p>Salaire</p></td><td><p>60&nbsp;000&nbsp;$</p></td><td><p>20&nbsp;000&nbsp;$</p></td><td><p>40&nbsp;000&nbsp;$</p></td><td><p>60&nbsp;000&nbsp;$</p></td></tr></tbody></table><br>Vous venez de vous rappeler qu&rsquo;un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60&nbsp;000&nbsp;$. Où changeriez-vous le montant à 50&nbsp;000&nbsp;$?",
         "options": {
           "1": "Budget",
           "2": "Engagements",
@@ -926,7 +926,7 @@ export default {
         "text": "On est en avril. À titre de gestionnaire de centre de responsabilité, vous devez avoir établi un CAFE (créditeur à la fin de l&rsquo;exercice) pour imputer à votre budget de l&rsquo;année précédente les coûts associés aux transactions suivantes",
         "options": {
           "1": "Tous les engagements en cours actuellement dans le système au cours de l&rsquo;exercice précédent qui vient de se terminer le 31 mars, sous votre centre de coûts.",
-          "2": "Les dépenses annuelles prévues qui n'ont pas été dépensées au cours de l&rsquo;exercice financier se terminant le 31 mars.",
+          "2": "Les dépenses annuelles prévues qui n&rsquo;ont pas été dépensées au cours de l&rsquo;exercice financier se terminant le 31 mars.",
           "3": "Les coûts estimatifs associés aux biens et services qui ont été livrés le 31 mars ou avant.",
           "4": "Tous les coûts engagés au cours des deux premières semaines du nouvel exercice financier."
         },

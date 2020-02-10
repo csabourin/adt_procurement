@@ -123,7 +123,7 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Les offres à commandes facilitent l&rsquo;accès aux biens et aux services et accélèrent les délais d&rsquo;exécution. Vous n&rsquo;avez qu&rsquo;à choisir parmi une liste de fournisseurs préqualifiés dont l'offre est normalisée ou prédéfinie et les conditions préétablies. "
+      "conclusion": " Les offres à commandes facilitent l&rsquo;accès aux biens et aux services et accélèrent les délais d&rsquo;exécution. Vous n&rsquo;avez qu&rsquo;à choisir parmi une liste de fournisseurs préqualifiés dont l&rsquo;offre est normalisée ou prédéfinie et les conditions préétablies. "
     },
     "q2": {
       "text": "Ce mécanisme de dépense est idéal pour les achats de faible valeur, à faible risque et à volume élevé.",

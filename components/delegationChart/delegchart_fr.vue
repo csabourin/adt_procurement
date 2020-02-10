@@ -4,14 +4,14 @@
       <div id="dynamic_content" data-ajax-replace="content/jobaid_fr.html" class="wb-init wb-data-ajax-replace-inited">
         <div id="auth_matrix" class="container-fluid">
           <h1>Tableau de délégation des pouvoirs de dépenser et de signer des documents financiers</h1>
-          <p>Veuillez noter que cette portion d&rsquo;un tableau de délégation des pouvoirs pour un ministère fictif a été élaborée uniquement pour les besoins de ce cours. Elle ne renferme pas nécessairement tous les éléments ni tous les renseignements qui feraient normalement partie d&rsquo;un tableau complet. Consultez le tableau de délégation des pouvoirs de votre ministère ainsi que la documentation connexe afin d'obtenir l'information complète et exacte concernant votre organisation.</p>
+          <p>Veuillez noter que cette portion d&rsquo;un tableau de délégation des pouvoirs pour un ministère fictif a été élaborée uniquement pour les besoins de ce cours. Elle ne renferme pas nécessairement tous les éléments ni tous les renseignements qui feraient normalement partie d&rsquo;un tableau complet. Consultez le tableau de délégation des pouvoirs de votre ministère ainsi que la documentation connexe afin d&rsquo;obtenir l&rsquo;information complète et exacte concernant votre organisation.</p>
           <table class="DelegChart c49">
             <tbody>
               <tr>
                 <td class="c41-noright text-left" colspan="2"><img alt="Drapeau du Canada" id="ui-id-2" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/drapeauCanada.png" title="Drapeau du Canada">&nbsp;
                 </td>
                 <td class="c41-noleft text-left" colspan="37">
-                  <p><strong>Nom du Ministère :</strong> Ministère de l'infrastructure publique</p>
+                  <p><strong>Nom du Ministère :</strong> Ministère de l&rsquo;infrastructure publique</p>
                 </td>
               </tr>
               <tr>
@@ -1419,7 +1419,7 @@
                 <li>les fonds disponibles dans le budget alloué au poste.</li>
               </ol>
             </li>
-            <li><strong>Une case vide indique qu'aucun pouvoir n&rsquo;a été accordé.</strong></li>
+            <li><strong>Une case vide indique qu&rsquo;aucun pouvoir n&rsquo;a été accordé.</strong></li>
             <li> <strong>Les principes de délégation clés du tableau de délégation des pouvoirs de dépenser et de signer des documents financiers sont notamment les suivants :</strong>
               <ol type="a">
                 <li>Les agents des ressources humaines exercent les pouvoirs qui leur sont délégués en vertu de l&rsquo;article 33 de la <em>Loi sur la gestion des finances publiques</em> (LGFP) seulement pour les éléments qui concernent la paye;</li>

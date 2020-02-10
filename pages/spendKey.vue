@@ -20,7 +20,7 @@
             <p>
               <h3>Engager et autoriser des dépenses</h3>
               <ul>
-                <li>Lorsque vous décidez d'obtenir des biens ou des services qui entra&icirc;neront une dépense éventuelle, comme l&rsquo;embauche de personnel, la commande de fournitures ou l&rsquo;autorisation de voyager, vous engagez une dépense.</li>
+                <li>Lorsque vous décidez d&rsquo;obtenir des biens ou des services qui entra&icirc;neront une dépense éventuelle, comme l&rsquo;embauche de personnel, la commande de fournitures ou l&rsquo;autorisation de voyager, vous engagez une dépense.</li>
                 <li>Lorsque vous engagez une dépense, vous certifiez que l&rsquo;argent est disponible. C&rsquo;est ce à quoi on fait référence lorsqu&rsquo;on parle de l&rsquo;article 32 de la<em> Loi sur la gestion des finances publiques </em>(LGFP).</li>
                 <li>Un tableau de délégation des pouvoirs financiers indique les pouvoirs de dépenser et les pouvoirs financiers officiels de votre organisation.</li>
                 <li>Pour savoir ce que vous pouvez engager comme dépense, consultez votre propre carte de délégation signée. Pour les dépenses pour lesquelles vous n&rsquo;avez pas d&rsquo;autorisation, consultez le tableau de délégation des pouvoirs financiers de votre organisation.&nbsp;</li>
@@ -65,7 +65,7 @@
           <!-- <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
             Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
           <span v-if="$i18n.locale=='fr'">
-            Jetez un coup d'oeil au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
+            Jetez un coup d&rsquo;&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
           </span></p> -->
         </b-col>
       </b-row>

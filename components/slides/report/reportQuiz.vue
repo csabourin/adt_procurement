@@ -303,8 +303,8 @@ export default {
   "3": "P12 Fin d&rsquo;année"
   },
   "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Les rapports P9 sont utilisés par le Secrétariat du Conseil du Trésor. P6 Septembre donne une bonne image de la situation financière de l'organisation à mi-parcours de l&rsquo;année et permet à la direction de prendre des décisions pour influencer les résultats de fin d&rsquo;année.",
-  "2": "<span class='v-right' /><strong>Correct!</strong> P9 sert à influencer les résultats de fin d&rsquo;exercice, et le Secrétariat du Conseil du Trésor s'en sert pour informer le ministère des Finances des dépenses prévues dans l&rsquo;ensemble du gouvernement.",
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Les rapports P9 sont utilisés par le Secrétariat du Conseil du Trésor. P6 Septembre donne une bonne image de la situation financière de l&rsquo;organisation à mi-parcours de l&rsquo;année et permet à la direction de prendre des décisions pour influencer les résultats de fin d&rsquo;année.",
+  "2": "<span class='v-right' /><strong>Correct!</strong> P9 sert à influencer les résultats de fin d&rsquo;exercice, et le Secrétariat du Conseil du Trésor s&rsquo;en sert pour informer le ministère des Finances des dépenses prévues dans l&rsquo;ensemble du gouvernement.",
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Les rapports P9 sont utilisés par le Secrétariat du Conseil du Trésor. Les données de fin d&rsquo;exercice sont utilisées par les ministères pour présenter leurs résultats financiers globaux."
   },
   "conclusion": ""
@@ -317,9 +317,9 @@ export default {
   "3": "Investissements par département dans des projets d&rsquo;innovation"
   },
   "feedback": {
-  "1": "<span class='v-right' /><strong>Correct!</strong> Il s&rsquo;agit d&rsquo;un objectif valide puisqu'il comprend un pourcentage précis. ",
-  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n'est pas assez précis pour une cible, mais c&rsquo;est un indicateur de rendement. La bonne réponse est &laquo;80 p. 100 des produits ministériels sont mis à jour conformément au plan du cycle de vie des produits.&raquo;, car elle inclut un pourcentage spécifique.",
-  "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n'est ni une cible ni un indicateur de rendement, car il n'existe aucune mesure des investissements. La bonne réponse est &laquo;80 p. 100 des produits ministériels sont mis à jour conformément au plan du cycle de vie des produits.&raquo;, car elle inclut un pourcentage spécifique."
+  "1": "<span class='v-right' /><strong>Correct!</strong> Il s&rsquo;agit d&rsquo;un objectif valide puisqu&rsquo;il comprend un pourcentage précis. ",
+  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n&rsquo;est pas assez précis pour une cible, mais c&rsquo;est un indicateur de rendement. La bonne réponse est &laquo;80 p. 100 des produits ministériels sont mis à jour conformément au plan du cycle de vie des produits.&raquo;, car elle inclut un pourcentage spécifique.",
+  "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n&rsquo;est ni une cible ni un indicateur de rendement, car il n&rsquo;existe aucune mesure des investissements. La bonne réponse est &laquo;80 p. 100 des produits ministériels sont mis à jour conformément au plan du cycle de vie des produits.&raquo;, car elle inclut un pourcentage spécifique."
   },
   "conclusion": ""
   },

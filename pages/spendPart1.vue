@@ -78,7 +78,7 @@
                   <p>Avant d&rsquo;engager des dépenses, toutefois, vous devez vous assurer que les fonds disponibles dans votre budget sont suffisants. </p>
                   <p>Pour ce faire, vous devez examiner les dépenses qui ont été engagées, dépensées ou prévues. </p>
                   <p>Au fur et à mesure que l&rsquo;année avance, vous devrez probablement ajuster votre budget à vos besoins en déplaçant des montants d&rsquo;un item à l&rsquo;autre au sein même votre budget. </p>
-                  <p>N'oubliez pas que le gabarit utilisé dans votre unité peut différer sensiblement de celui que nous vous présentons ici!</p>
+                  <p>N&rsquo;oubliez pas que le gabarit utilisé dans votre unité peut différer sensiblement de celui que nous vous présentons ici!</p>
 
                   <hr>
 
@@ -108,7 +108,7 @@
 
                   <h2>Enregistrement dans le système financier</h2>
                   <p>Après avoir vérifié que vous avez assez d&rsquo;argent pour couvrir un achat, vous créez soit un engagement préalable ou un engagement ferme. </p>
-                  <p>Un engagement préalable est approprié lorsque vous réservez des fonds alors que vous n'avez pas encore identifié de fournisseur. </p>
+                  <p>Un engagement préalable est approprié lorsque vous réservez des fonds alors que vous n&rsquo;avez pas encore identifié de fournisseur. </p>
                   <p>Un engagement ferme est approprié lorsque vous faites affaire avec un fournisseur connu. </p>
                   <p>Dans un cas comme dans l&rsquo;autre, vous devrez entrer ces engagements dans le système financier en utilisant le codage financier unique de votre organisation.</p>
                   <p>Ce codage financier est un système qui permet de faire le suivi des opérations financières tout au long de l&rsquo;année. Il permet d&rsquo;identifier, entre autres: </p>

@@ -47,7 +47,7 @@ export default {
             "dotsLeft": [
                 "C&rsquo;est ce qui a été accompli par rapport à ce qui était prévu au cours de l&rsquo;exercice financier en termes de priorités et de résultats attendus.",
                 "Une comparaison entre les dépenses prévues et les dépenses réelles publiées trois fois par année.",
-                "Publier de l'information sur les sites Web des ministères concernant les voyages, l&rsquo;accueil, les contrats, les reclassifications de postes, les actes fautifs, les subventions et les contributions.",
+                "Publier de l&rsquo;information sur les sites Web des ministères concernant les voyages, l&rsquo;accueil, les contrats, les reclassifications de postes, les actes fautifs, les subventions et les contributions.",
                 "Une évaluation annuelle des pratiques de gestion et du rendement dans des domaines comme les finances, les ressources humaines et la TI. ",
                 "Examine la conformité aux processus de gouvernance, de gestion des risques et de contrôle et formule des recommandations pour améliorer le rendement, l&rsquo;efficacité et l&rsquo;efficience des opérations gouvernementales.",
                 "Évalue le rendement des programmes, des initiatives et des politiques en termes d&rsquo;efficience, d&rsquo;efficacité et de pertinence."

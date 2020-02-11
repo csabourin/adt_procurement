@@ -108,7 +108,7 @@ export default {
   },
   "fr":
   {
-  "keyPlanQuote": " La responsabilité engendre l&rsquo;habileté. ",
+  "keyPlanQuote": " La responsabilité engendre l’habileté. ",
   "fileSet": "Fichiers dans cette section",
   "downloadPlan": "Télécharger un modèle Word du plan de travail",
   "spendSectionBar": "DÉPENSES"

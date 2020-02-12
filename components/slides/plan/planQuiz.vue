@@ -6,7 +6,7 @@
           <b-tab title="Question 1">
             <p v-html="$t('q1.text')" />
             <!-- Working ... in -->
-            <!-- <span>
+           <!--  <span>
 
               <div class="tableColoured">
                 <div class="govtPri">
@@ -32,10 +32,47 @@
               </div>
             </span>
 
-<br><br><br><br> -->
+<br><br><br><br>
+
+<ol>
+  <li>
+    <span v-html="$t('pwpGovtPri')" />
+  </li>
+  <li>
+    <span v-html="$t('pwpDeptPri')" />
+  </li>
+  <li>
+    <span v-html="$t('pwpDirPri')" />
+  </li>
+  <li>
+    <span v-html="$t('titleActivities')" />
+  </li>
+  <li>
+    <span v-html="$t('titleSubActivities')" />
+  </li>
+  <li>
+    <span v-html="$t('titleDeliverables')" />
+  </li>
+  <li>
+    <span v-html="$t('titleRisk')" />
+  </li>
+  <li>
+    <span v-html="$t('titleLikelihood')" />
+  </li>
+  <li>
+    <span v-html="$t('titleImpact')" />
+  </li>
+  <li>
+    <span v-html="$t('titleMitigation')" />
+  </li>
+  <li>
+    <span v-html="$t('titleResources')" />
+  </li>
+</ol>
+ -->
 
             <!-- Working ... out -->
-            <span>
+                        <span>
               <table class='tableColoured'>
                 <tr>
                   <td colspan='8' class='govtPri'>
@@ -113,6 +150,7 @@
                 </table>
               </div>
             </span>
+         
           </b-tab>
           <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["2","3"]' /></b-tab>
           <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" /></b-tab>

@@ -114,7 +114,10 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, { isDev, isClient }) {
+    extend(config, ctx) {
+    //    if(!ctx.isDev) {
+    //   config.output.publicPath = './_nuxt/'
+    // }
       config.module.rules.push({
         test: /\.(pdf|docx|xlsx)(\?.*)?$/,
         loader: 'file-loader',

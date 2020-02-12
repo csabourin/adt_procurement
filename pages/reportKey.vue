@@ -21,15 +21,15 @@
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
-            <h3><strong>Pr&eacute;parer le Rapport sur la situation financi&egrave;re (RSF)</strong></h3>
+            <h3><strong>Préparer le Rapport sur la situation financi&egrave;re (RSF)</strong></h3>
             <ul>
               <li>Les rapports sur la situation financi&egrave;re :</li>
               <ul>
                 <ul>
-                  <li>Fournissent le portrait financier le plus r&eacute;cent des finances de l'organisme.</li>
-                  <li>Sont des outils permettant aux gestionnaires d'identifier r&eacute;guli&egrave;rement les finances courantes, les risques, les exc&eacute;dents et/ou les d&eacute;ficits potentiels dans leurs budgets.</li>
-                  <li>Sont lanc&eacute;s et dirig&eacute;s par le chef de la direction financi&egrave;re.&nbsp;</li>
-                  <li>Permettent au dirigeant principal des finances de faire des recommandations aux cadres sup&eacute;rieurs sur les ressources financi&egrave;res n&eacute;cessaires pour obtenir des r&eacute;sultats.</li>
+                  <li>Fournissent le portrait financier le plus récent des finances de l'organisme.</li>
+                  <li>Sont des outils permettant aux gestionnaires d&rsquo;identifier réguli&egrave;rement les finances courantes, les risques, les excédents et/ou les déficits potentiels dans leurs budgets.</li>
+                  <li>Sont lancés et dirigés par le chef de la direction financi&egrave;re.&nbsp;</li>
+                  <li>Permettent au dirigeant principal des finances de faire des recommandations aux cadres supérieurs sur les ressources financi&egrave;res nécessaires pour obtenir des résultats.</li>
                 </ul>
               </ul>
             </ul>
@@ -49,19 +49,19 @@
               <li>Managers contribute to these government reports by providing information on the performance outcomes and results of their activities.</li>
             </ul>
           </span><span v-if="$i18n.locale=='fr'">
-            <h3><strong>Contribuer à l'établissement de rapports externes</strong></h3>
+            <h3><strong>Contribuer à l&rsquo;établissement de rapports externes</strong></h3>
             <ul>
-              <li>Les finances et les r&eacute;sultats des services et des programmes gouvernementaux font l'objet de rapports r&eacute;guliers au Parlement et &agrave; la population canadienne dans divers rapports :&nbsp;</li>
+              <li>Les finances et les résultats des services et des programmes gouvernementaux font l'objet de rapports réguliers au Parlement et à la population canadienne dans divers rapports :&nbsp;</li>
               <ul>
                 <ul>
-                  <li>Rapport minist&eacute;riel sur les r&eacute;sultats (RRC)</li>
+                  <li>Rapport ministériel sur les résultats (RRC)</li>
                   <li>Rapports financiers trimestriels (RFT)</li>
                   <li>Divulgation proactive&nbsp;</li>
                   <li>Cadre de responsabilisation de gestion (CRG)</li>
-                  <li>Rapports de v&eacute;rification interne et d'&eacute;valuation</li>
+                  <li>Rapports de vérification interne et d&rsquo;évaluation</li>
                 </ul>
               </ul>
-              <li>Les gestionnaires contribuent &agrave; ces rapports gouvernementaux en fournissant de l'information sur les r&eacute;sultats de rendement et les r&eacute;sultats de leurs activit&eacute;s.</li>
+              <li>Les gestionnaires contribuent à ces rapports gouvernementaux en fournissant de l'information sur les résultats de rendement et les résultats de leurs activités.</li>
             </ul>
           </span></b-col>
       </b-row>
@@ -80,7 +80,7 @@
           <!-- <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
             Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
           <span v-if="$i18n.locale=='fr'">
-            Jetez un coup d'oeil au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
+            Jetez un coup d&rsquo;&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
           </span></p> -->
         </b-col>
       </b-row>

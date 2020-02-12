@@ -52,7 +52,7 @@ export default {
   },
   "fr": {
   "q1": {
-  "text": "En examinant la carte de signature fournie, quel est le montant maximal qu'un gestionnaire pourrait approuver pour attester un prix (article 34)?",
+  "text": "En examinant la carte de signature fournie, quel est le montant maximal qu&rsquo;un gestionnaire pourrait approuver pour attester un prix (article 34)?",
   "options": {
   "1": "0$",
   "2": "300$",
@@ -65,7 +65,7 @@ export default {
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "4": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": " Conformément à la colonne Attestation - Article 34 de la carte de spécimen de signature, le gestionnaire a le plein pouvoir d'attestation pour le salaire et toutes les autres dépenses."
+  "conclusion": " Conformément à la colonne Attestation - Article 34 de la carte de spécimen de signature, le gestionnaire a le plein pouvoir d&rsquo;attestation pour le salaire et toutes les autres dépenses."
   }
   }
   }</i18n>

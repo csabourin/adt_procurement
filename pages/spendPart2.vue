@@ -72,61 +72,61 @@
 
                 </span>
                 <span v-if="$i18n.locale=='fr'">
-                  <!-- <h3>Autorit&eacute; de certification</h3>
-                  <p>De mani&egrave;re g&eacute;n&eacute;rale, aucune facture ne doit &ecirc;tre pay&eacute;e tant que les biens n&rsquo;ait &eacute;t&eacute; re&ccedil;us ou que les services n'aient &eacute;t&eacute; rendus.</p>
-                  <p>Exercer votre autorit&eacute; de certification en vertu de l'article 34 de la LGFP signifie, essentiellement, que vous devez prendre un moment pour attester que les biens et services que vous avez re&ccedil;us correspondent bien &agrave; la facture &agrave; payer.</p>
-                  <p>Bien qu&rsquo;en principe d&rsquo;autres personnes de votre &eacute;quipe pourraient faire cette &eacute;valuation, c&rsquo;est &agrave; vous, en tant que gestionnaire d&eacute;l&eacute;gu&eacute; que revient le poids de cette responsabilit&eacute;.</p>
-                  <p>Bien entendu, vous ne pouvez faire cette attestation que si vous avez bel et bien la d&eacute;l&eacute;gation de la faire. Assurez-vous de v&eacute;rifier que c&rsquo;est bien le cas!</p>
+                  <!-- <h3>Autorité de certification</h3>
+                  <p>De mani&egrave;re générale, aucune facture ne doit &ecirc;tre payée tant que les biens n&rsquo;ait été re&ccedil;us ou que les services n&rsquo;aient été rendus.</p>
+                  <p>Exercer votre autorité de certification en vertu de l&rsquo;article 34 de la LGFP signifie, essentiellement, que vous devez prendre un moment pour attester que les biens et services que vous avez re&ccedil;us correspondent bien à la facture à payer.</p>
+                  <p>Bien qu&rsquo;en principe d&rsquo;autres personnes de votre équipe pourraient faire cette évaluation, c&rsquo;est à vous, en tant que gestionnaire délégué que revient le poids de cette responsabilité.</p>
+                  <p>Bien entendu, vous ne pouvez faire cette attestation que si vous avez bel et bien la délégation de la faire. Assurez-vous de vérifier que c&rsquo;est bien le cas!</p>
                   <h3>Exactitude de la facture</h3>
-                  <p>Avant d&rsquo;attester de l&rsquo;exactitude d&rsquo;une facture, le gestionnaire, habituellement avec l'aide de son personnel administratif, v&eacute;rifie l'exactitude de la facture ou de la r&eacute;clamation des &eacute;l&eacute;ments suivants:</p>
+                  <p>Avant d&rsquo;attester de l&rsquo;exactitude d&rsquo;une facture, le gestionnaire, habituellement avec l&rsquo;aide de son personnel administratif, vérifie l&rsquo;exactitude de la facture ou de la réclamation des éléments suivants:</p>
                   <ul>
-                  <li>La date d'&eacute;mission: on s&rsquo;assure que la facture a &eacute;t&eacute; &eacute;mise &agrave; la date de commande ou apr&egrave;s celle-ci. Ou encore, s&rsquo;il s&rsquo;agit d&rsquo;un contrat, on doit v&eacute;rifier que la facture a bel et bien &eacute;t&eacute; &eacute;mise pendant la dur&eacute;e du contrat.</li>
-                  <li>Les quantit&eacute;s: on v&eacute;rifie &agrave; ce que le nombre d&rsquo;article r&eacute;clam&eacute;s corresponde bien aux articles command&eacute;s</li>
+                  <li>La date d&rsquo;émission: on s&rsquo;assure que la facture a été émise à la date de commande ou apr&egrave;s celle-ci. Ou encore, s&rsquo;il s&rsquo;agit d&rsquo;un contrat, on doit vérifier que la facture a bel et bien été émise pendant la durée du contrat.</li>
+                  <li>Les quantités: on vérifie à ce que le nombre d&rsquo;article réclamés corresponde bien aux articles commandés</li>
                   <li>Les taxes: on valide que le montant pour les taxes est exact</li>
-                  <li>Le fournisseur ou le b&eacute;n&eacute;ficiaire : on s&rsquo;assure que l&rsquo;information est exacte et que le fournisseur ou le b&eacute;n&eacute;ficiaire est admissible au paiement</li>
-                  <li>Statut: on v&eacute;rifie que la facture n'a pas d&eacute;j&agrave; &eacute;t&eacute; pay&eacute;e</li>
+                  <li>Le fournisseur ou le bénéficiaire : on s&rsquo;assure que l&rsquo;information est exacte et que le fournisseur ou le bénéficiaire est admissible au paiement</li>
+                  <li>Statut: on vérifie que la facture n&rsquo;a pas déjà été payée</li>
                   </ul>
-                  <p>Il se peut que vous deviez retourner au fournisseur pour faire corriger la facture avant de signer l'article 34.</p>
-                  <p>Les factures doivent &ecirc;tre pay&eacute;es dans les 30 jours suivant la r&eacute;ception de la facture par le minist&egrave;re afin d'&eacute;viter les frais d'int&eacute;r&ecirc;t.</p>
+                  <p>Il se peut que vous deviez retourner au fournisseur pour faire corriger la facture avant de signer l&rsquo;article 34.</p>
+                  <p>Les factures doivent &ecirc;tre payées dans les 30 jours suivant la réception de la facture par le minist&egrave;re afin d&rsquo;éviter les frais d&rsquo;intér&ecirc;t.</p>
                   <h3>Traitement de la facture</h3>
-                  <p><br />Une fois la facture valid&eacute;e, le gestionnaire v&eacute;rifie le codage financier et approuve l'article 34. L&rsquo;approbation se fait soit sur papier ou encore par voie &eacute;lectronique, selon les pratiques habituelles dans votre minist&egrave;re.</p>
-                  <p>La facture approuv&eacute;e est ensuite envoy&eacute;e au service des finances qui paiera la facture, conform&eacute;ment &agrave; l'article 33.</p>
-                  <p>Gardez &agrave; l'esprit les &eacute;l&eacute;ments suivants:</p>
+                  <p><br />Une fois la facture validée, le gestionnaire vérifie le codage financier et approuve l&rsquo;article 34. L&rsquo;approbation se fait soit sur papier ou encore par voie électronique, selon les pratiques habituelles dans votre minist&egrave;re.</p>
+                  <p>La facture approuvée est ensuite envoyée au service des finances qui paiera la facture, conformément à l&rsquo;article 33.</p>
+                  <p>Gardez à l&rsquo;esprit les éléments suivants:</p>
                   <ul>
-                  <li>vous ne pouvez pas autoriser les articles 33 et 34 pour la m&ecirc;me transaction ou facture; un agent financier ex&eacute;cutera l'article 33 ;</li>
-                  <li>vous ne pouvez pas autoriser l'application de l'article 41 pour un march&eacute; et de l'article 34 li&eacute; au m&ecirc;me march&eacute;; un agent d'approvisionnement ex&eacute;cutera l'article 41;</li>
+                  <li>vous ne pouvez pas autoriser les articles 33 et 34 pour la m&ecirc;me transaction ou facture; un agent financier exécutera l&rsquo;article 33 ;</li>
+                  <li>vous ne pouvez pas autoriser l&rsquo;application de l&rsquo;article 41 pour un marché et de l&rsquo;article 34 lié au m&ecirc;me marché; un agent d&rsquo;approvisionnement exécutera l&rsquo;article 41;</li>
                   <li>vous ne pouvez autoriser aucune transaction pour laquelle vous pouvez &ecirc;tre per&ccedil;u comme ayant un avantage personnel.</li>
                   </ul> -->
 
                   <h2>Autorité de certification</h2>
-                  <p>De manière générale, aucune facture ne doit être payée tant que les biens n’aient pas été reçus ou que les services n'aient été rendus.</p>
-                  <p>Exercer votre autorité de certification en vertu de l'article 34 de la LGFP signifie, essentiellement, que vous devez prendre un moment pour attester que les biens et services que vous avez reçus correspondent bien à la facture à payer. </p>
-                  <p>Bien qu’en principe d’autres personnes de votre équipe pourraient faire cette évaluation, c’est à vous, en tant que gestionnaire délégué que revient le poids de cette responsabilité. </p>
-                  <p>Bien entendu, vous ne pouvez faire cette attestation que si vous avez bel et bien la délégation de la faire. Assurez-vous de vérifier que c’est bien le cas!</p>
+                  <p>De manière générale, aucune facture ne doit être payée tant que les biens n&rsquo;aient pas été reçus ou que les services n&rsquo;aient été rendus.</p>
+                  <p>Exercer votre autorité de certification en vertu de l&rsquo;article 34 de la LGFP signifie, essentiellement, que vous devez prendre un moment pour attester que les biens et services que vous avez reçus correspondent bien à la facture à payer. </p>
+                  <p>Bien qu&rsquo;en principe d&rsquo;autres personnes de votre équipe pourraient faire cette évaluation, c&rsquo;est à vous, en tant que gestionnaire délégué que revient le poids de cette responsabilité. </p>
+                  <p>Bien entendu, vous ne pouvez faire cette attestation que si vous avez bel et bien la délégation de la faire. Assurez-vous de vérifier que c&rsquo;est bien le cas!</p>
 
                   <hr>
 
                   <h2>Exactitude de la facture</h2>
-                  <p>Avant d’attester de l’exactitude d’une facture, le gestionnaire, habituellement avec l'aide de son personnel administratif, vérifie l'exactitude de la facture ou de la réclamation des éléments suivants: </p>
+                  <p>Avant d&rsquo;attester de l&rsquo;exactitude d&rsquo;une facture, le gestionnaire, habituellement avec l&rsquo;aide de son personnel administratif, vérifie l&rsquo;exactitude de la facture ou de la réclamation des éléments suivants: </p>
                   <ul>
-                    <li>La date d'émission: on s’assure que la facture a été émise à la date de commande ou après celle-ci. Ou encore, s’il s’agit d’un contrat, on doit vérifier que la facture a bel et bien  été émise pendant la durée du contrat. </li>
-                    <li>Les quantités: on vérifie à ce que le nombre d’article réclamés corresponde bien aux articles commandés </li>
+                    <li>La date d&rsquo;émission: on s&rsquo;assure que la facture a été émise à la date de commande ou après celle-ci. Ou encore, s&rsquo;il s&rsquo;agit d&rsquo;un contrat, on doit vérifier que la facture a bel et bien  été émise pendant la durée du contrat. </li>
+                    <li>Les quantités: on vérifie à ce que le nombre d&rsquo;article réclamés corresponde bien aux articles commandés </li>
                     <li>Les taxes: on valide que le montant pour les taxes est exact</li>
-                    <li>Le fournisseur ou le bénéficiaire : on s’assure que l’information est exacte et que le fournisseur ou le  bénéficiaire est admissible au paiement</li>
-                    <li>Statut: on vérifie que la facture n'a pas déjà été payée</li>
+                    <li>Le fournisseur ou le bénéficiaire : on s&rsquo;assure que l&rsquo;information est exacte et que le fournisseur ou le  bénéficiaire est admissible au paiement</li>
+                    <li>Statut: on vérifie que la facture n&rsquo;a pas déjà été payée</li>
                   </ul>
-                  <p>Il se peut que vous deviez retourner au fournisseur pour faire corriger la facture avant de signer l'article 34.</p>
-                  <p>Les factures doivent être payées dans les 30 jours suivant la réception de la facture par le ministère afin d'éviter les frais d'intérêt.</p>
+                  <p>Il se peut que vous deviez retourner au fournisseur pour faire corriger la facture avant de signer l&rsquo;article 34.</p>
+                  <p>Les factures doivent être payées dans les 30 jours suivant la réception de la facture par le ministère afin d&rsquo;éviter les frais d&rsquo;intérêt.</p>
 
                   <hr>
 
                   <h2>Traitement de la facture</h2>
-                  <p>Une fois la facture validée, le gestionnaire vérifie le codage financier et approuve l'article 34. L’approbation se fait soit sur papier ou encore par voie électronique, selon les pratiques habituelles dans votre ministère.</p>
-                  <p>La facture approuvée est ensuite envoyée au service des finances qui paiera la facture, conformément à l'article 33. </p>
-                  <p>Gardez à l'esprit les éléments suivants: </p>
+                  <p>Une fois la facture validée, le gestionnaire vérifie le codage financier et approuve l&rsquo;article 34. L&rsquo;approbation se fait soit sur papier ou encore par voie électronique, selon les pratiques habituelles dans votre ministère.</p>
+                  <p>La facture approuvée est ensuite envoyée au service des finances qui paiera la facture, conformément à l&rsquo;article 33. </p>
+                  <p>Gardez à l&rsquo;esprit les éléments suivants: </p>
                   <ul>
-                    <li>vous ne pouvez pas autoriser les articles 33 et 34 pour la même transaction ou facture; un agent financier exécutera l'article 33 ; </li>
-                    <li>vous ne pouvez pas autoriser l'application de l'article 41 pour un contrat et de l'article 34 lié au même contrat; un agent d'approvisionnement exécutera l'article 41; </li>
+                    <li>vous ne pouvez pas autoriser les articles 33 et 34 pour la même transaction ou facture; un agent financier exécutera l&rsquo;article 33 ; </li>
+                    <li>vous ne pouvez pas autoriser l&rsquo;application de l&rsquo;article 41 pour un contrat et de l&rsquo;article 34 lié au même contrat; un agent d&rsquo;approvisionnement exécutera l&rsquo;article 41; </li>
                     <li>vous ne pouvez pas non plus autoriser une transaction pour laquelle vous pourriez être perçu comme ayant un avantage personnel.</li>
                   </ul>
 
@@ -344,7 +344,7 @@ button.accessibilityButton {
   "ProcessInvoiceTitle":"Activité: Traitement de la facture",
   "AccuracyInvoiceTitle":"Activité: Exactitude de la facture",
   "gotIt":"Continuer au segment suivant.",
-  "jumpModalParts":"Sauter à l'activité",
+  "jumpModalParts":"Sauter à l&rsquo;activité",
   "playSegment":"Faire jouer le segment vidéo",
   "transcriptText":"",
   "spendSectionBar": "DÉPENSES"

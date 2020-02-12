@@ -63,12 +63,12 @@ export default {
         "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
         "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
-      "conclusion": "Given that you have only bought two dry erase boards, it is an expenditure.<br>Don’t forget, your organisation may use a different financial structure, so go find out how your coding works!"
+      "conclusion": "Given that you have only bought two dry erase boards, it is an expenditure.<br>Don&rsquo;t forget, your organisation may use a different financial structure, so go find out how your coding works!"
     }
   },
   "fr": {
     "q1": {
-      "text": "Vous voulez acheter deux tableaux effaçables à sec. S'agit-il d'un engagement préalable ou d’un engagement ferme?",
+      "text": "Vous voulez acheter deux tableaux effaçables à sec. S&rsquo;agit-il d&rsquo;un engagement préalable ou d&rsquo;un engagement ferme?",
       "options": {
         "1": "Engagement préalable",
         "2": "Engagement ferme"
@@ -77,7 +77,7 @@ export default {
         "1": "<span class='v-right' /><strong>Correct!</strong>",
         "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Il s'agit d'un engagement préalable parce que vous n'avez pas encore conclu d'entente avec un fournisseur."
+      "conclusion": " Il s&rsquo;agit d&rsquo;un engagement préalable parce que vous n&rsquo;avez pas encore conclu d&rsquo;entente avec un fournisseur."
     },
     "q2": {
       "text": "Vous avez maintenant acheté les deux tableaux effaçables à sec. Quelle est la nature de cette transaction financière?",
@@ -93,7 +93,7 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": "Étant donné que vous n'avez acheté que deux tableaux effaçables à sec, c'est une dépense.<br>N'oubliez pas que votre organisation peut utiliser une structure financière différente, alors allez voir comment fonctionne votre codage!"
+      "conclusion": "Étant donné que vous n&rsquo;avez acheté que deux tableaux effaçables à sec, c&rsquo;est une dépense.<br>N&rsquo;oubliez pas que votre organisation peut utiliser une structure financière différente, alors allez voir comment fonctionne votre codage!"
     }
   }
 }</i18n>

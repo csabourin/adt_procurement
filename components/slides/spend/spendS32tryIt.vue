@@ -31,8 +31,8 @@
       </table>
     </span>
     <span v-if="$i18n.locale=='fr'">
-      <p>Pour réaliser votre plan de travail, l'une de vos activités exige que vous achetiez dix microscopes pour votre équipe. Chaque microscope coûte 200 $.</p>
-      <p>D'abord, vérifions votre budget.</p>
+      <p>Pour réaliser votre plan de travail, l&rsquo;une de vos activités exige que vous achetiez dix microscopes pour votre équipe. Chaque microscope coûte 200 $.</p>
+      <p>D&rsquo;abord, vérifions votre budget.</p>
       <table border='1'>
         <tbody>
           <tr style="background-color: #d9d2e9;">
@@ -140,7 +140,7 @@ export default {
   "4": "Supply Arrangement"
   },
   "feedback": {
-  "1": "<span class='v-right' /> <strong>Correct!</strong>.",
+  "1": "<span class='v-right' /> <strong>Correct!</strong>",
   "2": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
   "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
   "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
@@ -157,7 +157,7 @@ export default {
   },
   "feedback": {
   "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
-  "2": "<span class='v-right' /> <strong>Correct!</strong>.",
+  "2": "<span class='v-right' /> <strong>Correct!</strong>",
   "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
   "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
   },
@@ -166,7 +166,7 @@ export default {
   },
   "fr": {
   "q1": {
-  "text": "Avez-vous assez d'argent pour couvrir le coût des microscopes?",
+  "text": "Avez-vous assez d&rsquo;argent pour couvrir le coût des microscopes?",
   "options": {
   "1": "Oui",
   "2": "Non"
@@ -175,10 +175,10 @@ export default {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": "De votre budget de 44&nbsp;900&nbsp;$, vous avez déjà engagé 15&nbsp;000&nbsp;$ et dépensé 29&nbsp;000&nbsp;$. Donc, 44&nbsp;000&nbsp;$ sont déjà comptabilisés, ce qui signifie qu'il ne reste que 900 $ dans votre budget."
+  "conclusion": "De votre budget de 44&nbsp;900&nbsp;$, vous avez déjà engagé 15&nbsp;000&nbsp;$ et dépensé 29&nbsp;000&nbsp;$. Donc, 44&nbsp;000&nbsp;$ sont déjà comptabilisés, ce qui signifie qu&rsquo;il ne reste que 900 $ dans votre budget."
   },
   "q2": {
-  "text": "S'il y avait eu suffisamment de fonds dans le budget, en examinant la carte de signature fournie, le gestionnaire a-t-il le pouvoir délégué nécessaire pour engager les fonds?",
+  "text": "S&rsquo;il y avait eu suffisamment de fonds dans le budget, en examinant la carte de signature fournie, le gestionnaire a-t-il le pouvoir délégué nécessaire pour engager les fonds?",
  "options": {
   "1": "Oui",
   "2": "Non"
@@ -187,23 +187,23 @@ export default {
   "1": "<span class='v-right' /><strong>Correct!</strong>",
   "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
-  "conclusion": "Le gestionnaire a l'autorité d'initier et d'engager les fonds nécessaires pour les microscopes."
+  "conclusion": "Le gestionnaire a l&rsquo;autorité d&rsquo;initier et d&rsquo;engager les fonds nécessaires pour les microscopes."
   },
   "q3": {
   "text": "Quel est le meilleur mécanisme de dépense à utiliser pour acheter les microscopes ?",
   "options": {
-  "1": "Carte d'achat",
+  "1": "Carte d&rsquo;achat",
   "2": "Contrat concurrentiel",
   "3": "Offre à commandes",
-  "4": "Arrangement en matière d'approvisionnement"
+  "4": "Arrangement en matière d&rsquo;approvisionnement"
   },
   "feedback": {
-  "1": "<span class='v-right' /> <strong>Correct!</strong>.",
+  "1": "<span class='v-right' /> <strong>Correct!</strong>",
   "2": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
   "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
   "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
   },
-  "conclusion": "Étant donné qu'il ne s'agit que de 2&nbsp;000&nbsp;$ pour 10 microscopes, la carte d'achat est le meilleur mécanisme de dépense."
+  "conclusion": "Étant donné qu&rsquo;il ne s&rsquo;agit que de 2&nbsp;000&nbsp;$ pour 10 microscopes, la carte d&rsquo;achat est le meilleur mécanisme de dépense."
   },
   "q4": {
   "text": "Quelle est la nature de cette transaction financière (microscopes)?",
@@ -215,11 +215,11 @@ export default {
   },
   "feedback": {
   "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
-  "2": "<span class='v-right' /> <strong>Correct!</strong>.",
+  "2": "<span class='v-right' /> <strong>Correct!</strong>",
   "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
   "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
   },
-  "conclusion": "Étant donné qu'il ne s'agit que de 2&nbsp;000&nbsp;$ pour 10 microscopes, c'est une dépense. Si vous aviez acheté plus de microscopes et/ou à un prix unitaire plus élevé, cela pourrait être considéré comme un actif. Consultez votre ministère pour connaître vos limites."
+  "conclusion": "Étant donné qu&rsquo;il ne s&rsquo;agit que de 2&nbsp;000&nbsp;$ pour 10 microscopes, c&rsquo;est une dépense. Si vous aviez acheté plus de microscopes et/ou à un prix unitaire plus élevé, cela pourrait être considéré comme un actif. Consultez votre ministère pour connaître vos limites."
   }
   }
   }</i18n>

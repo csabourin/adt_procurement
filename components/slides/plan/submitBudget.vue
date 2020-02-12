@@ -26,7 +26,7 @@ export default {
       "conclusion":"All of these are possible adjustments you could make. Solutions can be diverse - it depends on your situation."
     },
     "q2": {
-      "text": "You find out during the proposed budget review meeting that you’re getting three employees and their workload from another team that is being split up among a few managers. What would you do?",
+      "text": "You find out during the proposed budget review meeting that you&rsquo;re getting three employees and their workload from another team that is being split up among a few managers. What would you do?",
       "options": {
         "1": "Add their activities to your work plan.",
         "2": "Add their salaries and O&M to your budget requirements.",
@@ -43,9 +43,9 @@ export default {
     "q1": {
       "text": "Comment ajusteriez-vous votre budget de voyage si vous receviez 9&nbsp;000&nbsp;$ au lieu des 11&nbsp;600&nbsp;$ proposés? ",
       "options": {
-        "1": "Passez en revue votre plan d'inspection de voyage.",
+        "1": "Passez en revue votre plan d&rsquo;inspection de voyage.",
         "2": "Encouragez vos employés à assister virtuellement à des conférences ou à des événements.",
-        "3": "Passez en revue d'autres secteurs de votre budget pour compenser la réduction du budget de voyage."
+        "3": "Passez en revue d&rsquo;autres secteurs de votre budget pour compenser la réduction du budget de voyage."
       },
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
@@ -54,7 +54,7 @@ export default {
       "conclusion":"Ce sont tous des ajustements possibles que vous pourriez faire. Les solutions peuvent être diverses - cela dépend de votre situation."
     },
     "q2": {
-      "text": "Au cours de la réunion d'examen du budget proposé, vous découvrez que vous obtenez 3 employés et leur charge de travail d'une autre équipe qui est répartie entre quelques gestionnaires. Que feriez-vous?",
+      "text": "Au cours de la réunion d&rsquo;examen du budget proposé, vous découvrez que vous obtenez 3 employés et leur charge de travail d&rsquo;une autre équipe qui est répartie entre quelques gestionnaires. Que feriez-vous?",
       "options": {
         "1": "Ajoutez leurs activités à votre plan de travail. ",
         "2": "Ajoutez leurs salaires et les frais de F et E à votre budget.",
@@ -63,7 +63,7 @@ export default {
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",
         "wrong": "<span class='v-wrong' /><strong>Incorrect</strong> "
-      },"conclusion":"Les bonnes réponses sont &laquo; Ajoutez leurs activités à votre plan de travail &raquo; et &laquo; Ajoutez leurs salaires et F et E à votre budget &raquo;. La conversion des fonds de F et E en salaires n'est pas une solution, car vos besoins en ressources augmentent et vous avez donc besoin de ces fonds."
+      },"conclusion":"Les bonnes réponses sont &laquo; Ajoutez leurs activités à votre plan de travail &raquo; et &laquo; Ajoutez leurs salaires et F et E à votre budget &raquo;. La conversion des fonds de F et E en salaires n&rsquo;est pas une solution, car vos besoins en ressources augmentent et vous avez donc besoin de ces fonds."
     }
   }
 }</i18n>

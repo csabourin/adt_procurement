@@ -44,12 +44,12 @@ export default {
 <i18n>{
   "en": {
     "q1": {
-      "text": "This is what is used to obtain goods and/or services at prearranged prices.",
+      "text": "This is what is used to obtain goods and/or services at pre-arranged prices.",
       "options": {
-        "1": "Competitive Contract",
-        "2": "Standing Offer",
-        "3": "Supply Arrangement",
-        "4": "Acquisition Card"
+        "1": "Competitive contract",
+        "2": "Standing offer",
+        "3": "Supply arrangement",
+        "4": "Acquisition card"
       },
       "feedback": {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
@@ -89,7 +89,7 @@ export default {
         "3": "<span class='v-right' /> <strong>Correct!</strong>",
         "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
-      "conclusion": " Supply arrangements are used for procuring commonly required goods or services (mostly services) when the requirement can’t be fully defined in advance of the need, and the available Standing Offers cannot be used."
+      "conclusion": " Supply arrangements are used for procuring commonly required goods or services (mostly services) when the requirement can&rsquo;t be fully defined in advance of the need, and the available Standing Offers cannot be used."
     },
     "q4": {
       "text": "This spending mechanism is mostly used for goods and services that are very costly or very complex.",
@@ -110,12 +110,12 @@ export default {
   },
   "fr": {
     "q1": {
-      "text": "C'est ce qui est utilisé pour obtenir des biens et / ou des services à des prix préétablis.",
+      "text": "C&rsquo;est ce qui est utilisé pour obtenir des biens ou des services à des prix préétablis.",
       "options": {
         "1": "Contrat concurrentiel",
         "2": "Offre à commandes",
-        "3": "Arrangement en matière d'approvisionnement",
-        "4": "Carte d'achat"
+        "3": "Arrangement en matière d&rsquo;approvisionnement",
+        "4": "Carte d&rsquo;achat"
       },
       "feedback": {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
@@ -123,15 +123,15 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Les offres à commandes facilitent l'accès aux biens et aux services et accélèrent les délais d'exécution. Vous n'avez qu'à choisir parmi une liste de fournisseurs préqualifiés dont l'offre est normalisée ou prédéfinie et les conditions préétablies. "
+      "conclusion": " Les offres à commandes facilitent l&rsquo;accès aux biens et aux services et accélèrent les délais d&rsquo;exécution. Vous n&rsquo;avez qu&rsquo;à choisir parmi une liste de fournisseurs préqualifiés dont l&rsquo;offre est normalisée ou prédéfinie et les conditions préétablies. "
     },
     "q2": {
       "text": "Ce mécanisme de dépense est idéal pour les achats de faible valeur, à faible risque et à volume élevé.",
       "options": {
         "1": "Contrat concurrentiel",
         "2": "Offre à commandes",
-        "3": "Arrangement en matière d'approvisionnement",
-        "4": "Carte d'achat"
+        "3": "Arrangement en matière d&rsquo;approvisionnement",
+        "4": "Carte d&rsquo;achat"
       },
       "feedback": {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
@@ -139,15 +139,15 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Votre carte d'achat sera le mode de paiement que vous utiliserez le plus souvent pour acquérir et payer des biens ou des services d'une valeur inférieure à 5&nbsp;000&nbsp;$. Pour connaître vos limites spécifiques, vérifiez auprès de votre ministère."
+      "conclusion": "Votre carte d&rsquo;achat sera le mode de paiement que vous utiliserez le plus souvent pour acquérir et payer des biens ou des services d&rsquo;une valeur inférieure à 5&nbsp;000&nbsp;$. Pour connaître vos limites spécifiques, vérifiez auprès de votre ministère."
     },
     "q3": {
-      "text": "Ce mécanisme de dépenses est une entente non-contraignante conclue avec un fournisseur présélectionné qui permet aux ministères et organismes d'attribuer des contrats et de solliciter des soumissions auprès d'un bassin de fournisseurs présélectionnés pour des besoins précis.",
+      "text": "Ce mécanisme de dépenses est une entente non-contraignante conclue avec un fournisseur présélectionné qui permet aux ministères et organismes d&rsquo;attribuer des contrats et de solliciter des soumissions auprès d&rsquo;un bassin de fournisseurs présélectionnés pour des besoins précis.",
       "options": {
         "1": "Contrat concurrentiel",
         "2": "Offre à commandes",
-        "3": "Arrangement en matière d'approvisionnement",
-        "4": "Carte d'achat"
+        "3": "Arrangement en matière d&rsquo;approvisionnement",
+        "4": "Carte d&rsquo;achat"
       },
       "feedback": {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
@@ -155,15 +155,15 @@ export default {
         "3": "<span class='v-right' /><strong>Correct!</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Les arrangements en matière d'approvisionnement servent à l'achat de biens ou de services couramment requis (principalement des services) lorsque le besoin ne peut être entièrement défini à l'avance et que les offres à commandes disponibles ne peuvent être utilisées."
+      "conclusion": " Les arrangements en matière d&rsquo;approvisionnement servent à l&rsquo;achat de biens ou de services couramment requis (principalement des services) lorsque le besoin ne peut être entièrement défini à l&rsquo;avance et que les offres à commandes disponibles ne peuvent être utilisées."
     },
     "q4": {
       "text": "Ce mécanisme de dépenses est surtout utilisé pour des biens et services très coûteux ou très complexes.",
       "options": {
         "1": "Contrat concurrentiel",
         "2": "Offre à commandes",
-        "3": "Arrangement en matière d'approvisionnement",
-        "4": "Carte d'achat"
+        "3": "Arrangement en matière d&rsquo;approvisionnement",
+        "4": "Carte d&rsquo;achat"
       },
       "feedback": {
         "1": "<span class='v-right' /><strong>Correct!</strong>",
@@ -171,7 +171,7 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Les contrats concurrentiels sont surtout utilisés pour des besoins de plus grande valeur ou de plus grande complexité lorsque des offres à commandes ou des arrangements en matière d'approvisionnement ne sont pas en place.<br>Vous en apprendrez davantage sur ces options et lignes directrices dans le module Approvisionnement."
+      "conclusion": " Les contrats concurrentiels sont surtout utilisés pour des besoins de plus grande valeur ou de plus grande complexité lorsque des offres à commandes ou des arrangements en matière d&rsquo;approvisionnement ne sont pas en place.<br>Vous en apprendrez davantage sur ces options et lignes directrices dans le module Approvisionnement."
     }
   }
 }</i18n>

@@ -348,7 +348,7 @@ export default {
   "fr": {
     "q1": {
       "conclusion": "La formation pour utiliser le nouveau logiciel est non discrétionnaire et la formation des autres employés est discrétionnaire.",
-      "introduction": "Vous avez 3 employés qui ont besoin de formation pour  utiliser le nouveau logiciel à 800 $ par employé. Il est courant d'envoyer 4 employés suivre la formation de leur choix à raison de 500 $ par employé.",
+      "introduction": "Vous avez 3 employés qui ont besoin de formation pour  utiliser le nouveau logiciel à 800 $ par employé. Il est courant d&rsquo;envoyer 4 employés suivre la formation de leur choix à raison de 500 $ par employé.",
       "text": "Quels sont vos besoins budgétaires ?",
       "options": {
         "1": "4&nbsp;400&nbsp;$ Non discrétionnaires",
@@ -363,7 +363,7 @@ export default {
       "title": "Formation"
     },
     "q2": {
-      "introduction": "<table border='1'  class='trainTable'> <tbody> <tr class='qTable'> <td> <p>Voyage</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>R&eacute;el (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explicationde la variance</p> </td> </tr> <tr> <td> <p>Ann&eacute;e pr&eacute;c&eacute;dente&nbsp;</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>16&nbsp;000&nbsp;$</p> </td> <td> <p style='color:red'>(2&nbsp;000 $)</p> </td> <td> <p>Un employé était en congé sans solde, et un autre n'est pas parti en voyage.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA R&eacute;el&nbsp;</p> </td> <td> <p>Pr&eacute;visions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Ann&eacute;e en cours &agrave; P6</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>9&nbsp;000&nbsp;$</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Par le passé, vous avez&nbsp;:</p> <ul> <li>d&eacute;pens&eacute; 10&nbsp;000&nbsp;$ en frais de d&eacute;placement pour effectuer des inspections;</li> <li>pr&eacute;vu au budget un montant total de 8 000 dollars pour les voyages g&eacute;n&eacute;raux. Cependant, vous savez que 80 % des du travail peut maintenant se faire virtuellement.</li> </ul>",
+      "introduction": "<table border='1'  class='trainTable'> <tbody> <tr class='qTable'> <td> <p>Voyage</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Réel (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explicationde la variance</p> </td> </tr> <tr> <td> <p>Année précédente&nbsp;</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>16&nbsp;000&nbsp;$</p> </td> <td> <p style='color:red'>(2&nbsp;000 $)</p> </td> <td> <p>Un employé était en congé sans solde, et un autre n&rsquo;est pas parti en voyage.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA Réel&nbsp;</p> </td> <td> <p>Prévisions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Année en cours à P6</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>9&nbsp;000&nbsp;$</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Par le passé, vous avez&nbsp;:</p> <ul> <li>dépensé 10&nbsp;000&nbsp;$ en frais de déplacement pour effectuer des inspections;</li> <li>prévu au budget un montant total de 8 000 dollars pour les voyages généraux. Cependant, vous savez que 80 % des du travail peut maintenant se faire virtuellement.</li> </ul>",
       "text": "Quels seront vos besoins budgétaires?",
       "options": {
         "1": "18&nbsp;000&nbsp;$ discrétionnaires",
@@ -376,9 +376,9 @@ export default {
         "right": "<span class='v-right'/> <strong>Correct!</strong> "
       },
       "title": "Voyage",
-      "conclusion": "<p>Nous devons effectuer des inspections dans le cadre de nos activités, de sorte que 10&nbsp;000&nbsp;$ ne sont pas discrétionnaires. Conformément à la Directive sur les dépenses de voyage, d'accueil, de conférence et d'événement, les déplacements devraient être évités lorsque cela est possible. Nous ne demanderons pas un budget pour les 80 p. 100 qui peuvent être réalisés virtuellement. Étant donné qu'il n'y a aucune indication de la raison pour laquelle il reste de l’argent pour les voyages, ces sommes pourraient être non discrétionnaires ou discrétionnaires.</p> <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive</a>"
+      "conclusion": "<p>Nous devons effectuer des inspections dans le cadre de nos activités, de sorte que 10&nbsp;000&nbsp;$ ne sont pas discrétionnaires. Conformément à la Directive sur les dépenses de voyage, d&rsquo;accueil, de conférence et d&rsquo;événement, les déplacements devraient être évités lorsque cela est possible. Nous ne demanderons pas un budget pour les 80 p. 100 qui peuvent être réalisés virtuellement. Étant donné qu&rsquo;il n&rsquo;y a aucune indication de la raison pour laquelle il reste de l&rsquo;argent pour les voyages, ces sommes pourraient être non discrétionnaires ou discrétionnaires.</p> <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive</a>"
     },
-    "actInstructions": "Sélectionnez les points d'interrogation et répondez à la question qui apparaît. ",
+    "actInstructions": "Sélectionnez les points d&rsquo;interrogation et répondez à la question qui apparaît. ",
     "budgetTableFill1": "Poste individuel",
     "budgetTableFill2": "Budget Précédent",
     "budgetTableFill3": "Budget Actuel",

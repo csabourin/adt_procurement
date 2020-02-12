@@ -4,28 +4,28 @@
       <div>
         <p>D&Eacute;PENSES</p>
         <ul>
-          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32495">Politique sur la gestion financi&egrave;re</a></li>
-          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32503">Directive sur la d&eacute;l&eacute;gation des pouvoirs de d&eacute;penser et des pouvoirs financiers</a>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32495">Politique sur la gestion financière</a></li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32503">Directive sur la délégation des pouvoirs de dépenser et des pouvoirs financiers</a>
             <ul>
-              <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584&amp;section=html">Guide de d&eacute;l&eacute;gation</a></li>
+              <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584&amp;section=html">Guide de délégation</a></li>
             </ul>
           </li>
-          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584&amp;section=html">et de mise en &oelig;uvre des pouvoirs de d&eacute;penser et des pouvoirs financiers</a>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584&amp;section=html">et de mise en &oelig;uvre des pouvoirs de dépenser et des pouvoirs financiers</a>
             <ul>
-              <li><a href="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_fr.html">Tableau de d&eacute;l&eacute;gation des pouvoirs de d&eacute;penser et de signer des documents financiers</a> (Lien vers un graphique fictif)&nbsp;</li>
+              <li><a href="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_fr.html">Tableau de délégation des pouvoirs de dépenser et de signer des documents financiers</a> (Lien vers un graphique fictif)&nbsp;</li>
             </ul>
           </li>
-          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228">Directive sur les d&eacute;penses de voyages, d&rsquo;accueil, de conf&eacute;rences et d&rsquo;&eacute;v&eacute;nements</a>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228">Directive sur les dépenses de voyages, d&rsquo;accueil, de conférences et d&rsquo;événements</a>
             <ul>
-              <li><a href="https://intranet.canada.ca/pol/doc-fra.aspx?id=32553">Guide sur les d&eacute;penses de voyages, d&rsquo;accueil, de conf&eacute;rences et d&rsquo;&eacute;v&eacute;nements</a></li>
+              <li><a href="https://intranet.canada.ca/pol/doc-fra.aspx?id=32553">Guide sur les dépenses de voyages, d&rsquo;accueil, de conférences et d&rsquo;événements</a></li>
               <li><a href="https://www.njc-cnm.gc.ca/directive/d10/fr">Directive sur les voyages du Conseil national mixte (CNM)</a></li>
-              <li><a href="https://www.gcpedia.gc.ca/wiki/Ensemble_de_politiques_sur_la_gestion_financi%C3%A8re/Conf%C3%A9rence_par_opposition_%C3%A0_formation">Conf&eacute;rence par opposition &agrave; formation</a></li>
+              <li><a href="https://www.gcpedia.gc.ca/wiki/Ensemble_de_politiques_sur_la_gestion_financi%C3%A8re/Conf%C3%A9rence_par_opposition_%C3%A0_formation">Conférence par opposition à formation</a></li>
             </ul>
           </li>
           <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32504">Directive sur les paiements</a></li>
-          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14662">Directive sur la r&eacute;installation du CNM</a></li>
-          <li>Directive sur l&rsquo;imputation et les autorisations financi&egrave;res sp&eacute;ciales</li>
-          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32505">Directive sur la gestion des fonds publics et des comptes d&eacute;biteurs</a></li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14662">Directive sur la réinstallation du CNM</a></li>
+          <li>Directive sur l&rsquo;imputation et les autorisations financières spéciales</li>
+          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32505">Directive sur la gestion des fonds publics et des comptes débiteurs</a></li>
         </ul>
       </div>
     </div>

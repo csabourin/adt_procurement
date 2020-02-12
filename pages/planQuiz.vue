@@ -171,40 +171,40 @@ export default {
       "text": "Which elements should you consider when drafting your new work plan? ",
       "options": {
         "1": "Government priorities, departmental priorities and directorate priorities",
-        "2": "Previous year’s work plan, budget, reports",
-        "3": "Your fellow manager’s work plan from last year"
+        "2": "Previous year&rsquo;s work plan, budget, reports",
+        "3": "Your fellow manager&rsquo;s work plan from last year"
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> You should consider government priorities, departmental priorities and directorate priorities as well as the previous year’s work plan, budget, reports when drafting your new work plan. Unless the activities of your fellow manager have been transferred to your team, you would not take them into account. "
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> You should consider government priorities, departmental priorities and directorate priorities as well as the previous year&rsquo;s work plan, budget, reports when drafting your new work plan. Unless the activities of your fellow manager have been transferred to your team, you would not take them into account. "
       }
     },
     "q3": {
       "text": "A departmental priority in your work plan originates all the way back to:",
       "options": {
-        "1": "The Directorate’s plan",
+        "1": "The Directorate&rsquo;s plan",
         "2": "The Departmental plan",
         "3": "The Speech from the Throne"
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  It’s a good idea to start your view of the big picture with the Speech from the Throne."
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  It&rsquo;s a good idea to start your view of the big picture with the Speech from the Throne."
       }
     },
     "q4": {
-      "text": "To find your department’s core responsibilities, expected results and indicators, you would look to:",
+      "text": "To find your department&rsquo;s core responsibilities, expected results and indicators, you would look to:",
       "options": {
-        "1": "The directorate’s plan",
+        "1": "The directorate&rsquo;s plan",
         "2": "The Departmental plan",
         "3": "The Speech from the Throne",
-        "4": "The sector’s plan"
+        "4": "The sector&rsquo;s plan"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department&rsquo;s core responsibilities, expected results and indicators are found within the Departmental Plan.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Your department&rsquo;s core responsibilities, expected results and indicators are found within the Departmental Plan.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department&rsquo;s core responsibilities, expected results and indicators are found within the Departmental Plan.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department&rsquo;s core responsibilities, expected results and indicators are found within the Departmental Plan."
       }
     },
     "q5": {
@@ -295,23 +295,23 @@ export default {
       }
     },
     "q11": {
-      "text": "What are a manager’s responsibilities?",
+      "text": "What are a manager&rsquo;s responsibilities?",
       "options": {
         "1": "To establish government wide priorities",
         "2": "To negotiate government contracts",
-        "3": "To plan their unit’s activities",
-        "4": "To use public funds to carry out their unit’s activities",
-        "5": "To report on the status of their unit’s activities"
+        "3": "To plan their unit&rsquo;s activities",
+        "4": "To use public funds to carry out their unit&rsquo;s activities",
+        "5": "To report on the status of their unit&rsquo;s activities"
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager is responsible for planning their unit’s activities, using public funds to carry out their unit’s activities and reporting on the status of their unit’s activities."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager is responsible for planning their unit&rsquo;s activities, using public funds to carry out their unit&rsquo;s activities and reporting on the status of their unit&rsquo;s activities."
       }
     },
     "q12": {
       "text": "What are deliverables?",
       "options": {
-        "1": "The work tasks to be accomplished to support your directorate’s priorities.",
+        "1": "The work tasks to be accomplished to support your directorate&rsquo;s priorities.",
         "2": "The specific and tangible items you should be able to check off your list when you accomplish them.",
         "3": "The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
       },
@@ -364,33 +364,33 @@ export default {
     "titleMitigation": "Atténuation",
     "titleResources": "Resources",
     "q1": {
-      "text": "Faites correspondre les &eacute;nonc&eacute;s suivants aux sections appropri&eacute;es du plan de travail. Chaque section ne peut contenir qu'un seul &eacute;nonc&eacute;.",
+      "text": "Faites correspondre les énoncés suivants aux sections appropriées du plan de travail. Chaque section ne peut contenir qu&rsquo;un seul énoncé.",
       "options":[{
-      "a2": "Travailler avec les Canadiens dans tous les secteurs de l'économie et dans toutes les régions du pays pour améliorer les conditions d'investissement.",
+      "a2": "Travailler avec les Canadiens dans tous les secteurs de l&rsquo;économie et dans toutes les régions du pays pour améliorer les conditions d&rsquo;investissement.",
       "a6": "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'œuvre saine et productive.",
       "a10": "Modernisation du milieu de travail "
       },{
       "a1": "Élevé ",
       "a9": "Faible",
       "a3": "Tablettes"},{
-      "a4": "Conservez les ordinateurs d'origine jusqu'à ce que les tablettes soient prêtes et à l'emploi pendant 3 mois. ",
+      "a4": "Conservez les ordinateurs d&rsquo;origine jusqu&rsquo;à ce que les tablettes soient prêtes et à l&rsquo;emploi pendant 3 mois. ",
       "a5": "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité ",
       "a7": "Acheter des tablettes",
-      "a8": "La technologie n'est pas compatible avec le réseau existant ",
+      "a8": "La technologie n&rsquo;est pas compatible avec le réseau existant ",
       "a11": "Donner des tablettes aux employés"
     }
       ]
     },
     "q2": {
-      "text": "Quels éléments devez-vous prendre en compte lors de l'élaboration de votre nouveau plan de travail? ",
+      "text": "Quels éléments devez-vous prendre en compte lors de l&rsquo;élaboration de votre nouveau plan de travail? ",
       "options": {
         "1": "Priorités gouvernementales, priorités ministérielles et priorités de la Direction ",
-        "2": "Plan de travail, budget et rapports de l'année précédente",
-        "3": "Le plan de travail de votre collègue gestionnaire de l'année dernière"
+        "2": "Plan de travail, budget et rapports de l&rsquo;année précédente",
+        "3": "Le plan de travail de votre collègue gestionnaire de l&rsquo;année dernière"
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devriez tenir compte des priorités gouvernementales, des priorités ministérielles et des priorités de la direction ainsi que du plan de travail, du budget et des rapports de l'année précédente lorsque vous rédigez votre nouveau plan de travail. À moins que les activités de votre collègue gestionnaire n'aient été transférées à votre équipe, vous ne les prendriez pas en compte. "
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devriez tenir compte des priorités gouvernementales, des priorités ministérielles et des priorités de la direction ainsi que du plan de travail, du budget et des rapports de l&rsquo;année précédente lorsque vous rédigez votre nouveau plan de travail. À moins que les activités de votre collègue gestionnaire n&rsquo;aient été transférées à votre équipe, vous ne les prendriez pas en compte. "
       }
     },
     "q3": {
@@ -403,7 +403,7 @@ export default {
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  C'est une bonne idée de commencer votre vision d'ensemble avec le discours du Trône."
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  C&rsquo;est une bonne idée de commencer votre vision d&rsquo;ensemble avec le discours du Trône."
       }
     },
     "q4": {
@@ -484,42 +484,42 @@ export default {
       "options": {
         "1": "Un nouvel administrateur est nommé",
         "2": "Un employé quitte",
-        "3": "La formation obligatoire est reportée à l'année prochaine",
+        "3": "La formation obligatoire est reportée à l&rsquo;année prochaine",
         "4": "Plus de 500 licences ont été délivrées",
         "5": "Votre logiciel reçoit une mise à jour"
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> La nomination d'un nouvel administrateur, le départ d'un employé et le report de la formation obligatoire à l'année suivante exigent tous une mise à jour du plan de travail."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> La nomination d&rsquo;un nouvel administrateur, le départ d&rsquo;un employé et le report de la formation obligatoire à l&rsquo;année suivante exigent tous une mise à jour du plan de travail."
       }
     },
     "q10": {
-      "text": "Qu'est-ce qu'un plan de travail?",
+      "text": "Qu&rsquo;est-ce qu&rsquo;un plan de travail?",
       "options": {
         "1": "Une liste quotidienne des tâches à accomplir",
-        "2": "Les activités à réaliser au cours d'un exercice comptable",
-        "3": "Les sommes d'argent à dépenser",
+        "2": "Les activités à réaliser au cours d&rsquo;un exercice comptable",
+        "3": "Les sommes d&rsquo;argent à dépenser",
         "4": "Un résumé de ce que vous avez accompli"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités qui s&rsquo;échelonneront au cours d&rsquo;un exercice comptable.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités à réaliser sur une période d'un an, et non de sommes d'argent à dépenser.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités à réaliser sur une période d&rsquo;un an, et non de sommes d&rsquo;argent à dépenser.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d&rsquo;activités qui s&rsquo;échelonneront au cours d&rsquo;un exercice comptable."
       }
     },
     "q11": {
-      "text": "Quelles sont les responsabilités d'un gestionnaire?",
+      "text": "Quelles sont les responsabilités d&rsquo;un gestionnaire?",
       "options": {
-        "1": "Établir des priorités à l'échelle du gouvernement",
+        "1": "Établir des priorités à l&rsquo;échelle du gouvernement",
         "2": "Négocier les contrats gouvernementaux",
         "3": "Planifier les activités de leur unité",
         "4": "Utiliser les fonds publics pour mener à bien les activités de leur unité",
-        "5": "Faire rapport sur l'état d'avancement des activités de leur unité"
+        "5": "Faire rapport sur l&rsquo;état d&rsquo;avancement des activités de leur unité"
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un gestionnaire est responsable de la planification des activités de son unité, de l'utilisation des fonds publics pour mener à bien les activités de son unité et de la production de rapports sur l'état des activités de son unité."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un gestionnaire est responsable de la planification des activités de son unité, de l'utilisation des fonds publics pour mener à bien les activités de son unité et de la production de rapports sur l&rsquo;état des activités de son unité."
       }
     },
     "q12": {
@@ -527,7 +527,7 @@ export default {
       "options": {
         "1": "Les tâches de travail à accomplir pour appuyer les priorités de votre direction.",
         "2": "Les éléments spécifiques et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les réalisez.",
-        "3": "Le budget, le personnel, les consultants, les bâtiments et le matériel nécessaires à l'exécution des activités de la direction."
+        "3": "Le budget, le personnel, les consultants, les bâtiments et le matériel nécessaires à l&rsquo;exécution des activités de la direction."
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les livrables sont plus précis et tangibles que les activités.",
@@ -541,7 +541,7 @@ export default {
         "1": "Activités en cours",
         "2": "Nouvelles activités",
         "3": "Activités terminées",
-        "4": "Activités d'un projet"
+        "4": "Activités d&rsquo;un projet"
       },
       "feedback": {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
@@ -551,9 +551,9 @@ export default {
     "q14": {
       "text": "Quels sont les risques considérés?",
       "options": {
-        "1": "Panne d'électricité de 15 minutes, bogues logiciels mineurs",
+        "1": "Panne d&rsquo;électricité de 15 minutes, bogues logiciels mineurs",
         "2": "Droits de permis, gestion des pêches",
-        "3": "Pannes d'électricité, stocks de poissons bien gérés",
+        "3": "Pannes d&rsquo;électricité, stocks de poissons bien gérés",
         "4": "Surpêche, rotation du personnel"
       },
       "feedback": {

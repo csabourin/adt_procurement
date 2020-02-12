@@ -52,7 +52,10 @@ export default {
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    'nuxt-i18n',
+    ['nuxt-i18n', {
+  strategy: 'prefix',
+  defaultLocale: 'en'
+}],
     ['vue-scrollto/nuxt', {container: "#scrollDiv",
      duration: 750,
      easing: "ease",
@@ -76,25 +79,30 @@ export default {
   axios: {},
   i18n: {
     strategy: 'prefix',
+       useCookie: true,
+    // Cookie name
+    cookieKey: 'i18n_redirected',
+    // Set to always redirect to value stored in the cookie, not just once
     vueI18nLoader: true,
     locales: [{
         code: 'en',
         name: 'English',
         iso: 'en-CA',
-        file: 'en-CA.js'
+        file: 'en.js'
       },
       {
         code: 'fr',
         name: 'Français',
         iso: 'fr-CA',
-        file: 'fr-CA.js'
+        file: 'fr.js'
       }
     ],
     lazy: true,
+    loadedLanguages :['en','fr'],
     langDir: 'lang/',
     defaultLocale: "en",
     fallbackLocale: 'en',
-    fallbackRoot: false,
+    fallbackRoot: true,
     silentTranslationWarn: true,
     silentFallbackWarn: true
   },
@@ -116,7 +124,7 @@ export default {
      */
     extend(config, ctx) {
     //    if(!ctx.isDev) {
-    //   config.output.publicPath = './_nuxt/'
+    //   config.output.publicPath = '_nuxt/'
     // }
       config.module.rules.push({
         test: /\.(pdf|docx|xlsx)(\?.*)?$/,

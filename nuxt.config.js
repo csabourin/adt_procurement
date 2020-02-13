@@ -18,7 +18,6 @@ export default {
     ]
   },
   router: {
-    mode:"hash",
     // PREPROD/Learning Services/GT test/ADT-testing-mimetypes → base: '/ProdContent/cninv000000000016765/'
     // PROD/Learning Services/GT test/tdumas/ADT-testing-mimetypes → base: '/ProdContent/cninv000000000017653/'
     
@@ -124,9 +123,9 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-       if(!ctx.isDev) {
-      config.output.publicPath = './_nuxt/'
-    }
+    //    if(!ctx.isDev) {
+    //   config.output.publicPath = '_nuxt/'
+    // }
       config.module.rules.push({
         test: /\.(pdf|docx|xlsx)(\?.*)?$/,
         loader: 'file-loader',

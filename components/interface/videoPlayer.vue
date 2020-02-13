@@ -192,6 +192,7 @@ export default {
     },
     generate() {
       this.$nextTick(() => {
+        this.navBarTracks=[]
         const c = this.$refs.videoplayer.textTracks[0].cues
         for (let i = 0; i < c.length; i++) {
           this.navBarTracks.push(c[i].text)

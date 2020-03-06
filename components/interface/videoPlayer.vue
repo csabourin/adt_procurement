@@ -20,6 +20,9 @@
             <button class="videoControls" ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
               <font-awesome-icon :icon="isPaused?'play':'pause'" />
             </button>
+            <button class="videoControls" ref="stop" @click="stopVideo" type="button" :aria-label="$t('stop')" :title="$t('stop')">
+              <font-awesome-icon icon="stop" />
+            </button>
             <button class="videoControls" ref="backward" @click="goBackwards" type="button" :aria-label="$t('backward')" :title="$t('backward')">
               <font-awesome-icon icon="backward" />
             </button>
@@ -29,7 +32,7 @@
             <button class="videoControls" ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')" :aria-label="isMuted?$t('unmute'):$t('mute')">
               <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" />
             </button>
-            <input id="volumeSlider" type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'"><label for="volumeSlider" class="v-inv">Volume</label>
+            <label><input class="setVolume" type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'"><span class="v-inv">Volume</span></label>
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
             <p class="mediaTime">{{isPlayingNow | formatTime}} / {{totalTime | formatTime}}</p>
             <button class="videoControls" :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')">
@@ -87,7 +90,7 @@ export default {
       playToPercent: 0,
       totalTime: 0,
       CCactive: false,
-      videoUrl: this.$i18n.locale == 'en' ? this.enVideoFile:this.frVideoFile,
+      videoUrl: this.$i18n.locale == 'en' ? this.enVideoFile : this.frVideoFile,
       posterUrl: require('~/assets/' + this.$i18n.locale + '/' + this.posterFile),
       currentFrame: 0,
       accessiblePopup: false,
@@ -192,7 +195,7 @@ export default {
     },
     generate() {
       this.$nextTick(() => {
-        this.navBarTracks=[]
+        this.navBarTracks = []
         const c = this.$refs.videoplayer.textTracks[0].cues
         for (let i = 0; i < c.length; i++) {
           this.navBarTracks.push(c[i].text)
@@ -285,7 +288,9 @@ export default {
     },
     stopVideo() {
       const video = this.$refs.videoplayer
-
+      video.currentTime = 0
+      this.$refs.videoplayer.pause()
+      this.isPaused = true
     },
 
     setTime(e) {
@@ -298,13 +303,16 @@ export default {
     goBackwards() {
       const video = this.$refs.videoplayer
       if (this.isPlayingNow) {
-        if (this.isPlayingNow - 20 >= 0) { video.currentTime -= 20 } else { video.currentTime = 0 }
+        if (this.isPlayingNow - 10 >= 0) { video.currentTime -= 10 } else { video.currentTime = 0 }
       }
     },
     goForward() {
       const video = this.$refs.videoplayer
-      if (this.isPlayingNow) {
-        if (this.isPlayingNow + 20 < this.totalTime) { video.currentTime += 20 } else { video.currentTime = this.totalTime - 2 }
+      if (this.isPlayingNow || (video.currentTime == 0 && this.totalTime >= 10)) {
+        if (this.isPlayingNow + 10 < this.totalTime) { video.currentTime += 10 } else {
+          video.pause()
+          video.currentTime = this.totalTime
+        }
       }
     },
     setPlaying() {
@@ -324,6 +332,7 @@ export default {
   "en":{
   "play":"Play",
   "pause":"Pause",
+  "stop":"Stop",
   "forward":"Forward 10 s.",
   "backward":"Rewind 10 s.",
   "mute":"Mute",
@@ -337,6 +346,7 @@ export default {
   "fr":{
   "play":"Jouer",
   "pause":"Pause",
+  "stop":"Arrêter",
   "forward":"Avancer 10 s.",
   "backward":"Reculer 10 s.",
   "mute":"Désactiver le son",
@@ -559,6 +569,11 @@ input[type=range]::-ms-thumb {
   width: 10px
 }
 
+.setVolume:focus {
+  outline: 2px solid #26487f;
+  outline-offset: 5px;
+}
+
 .fd-slider {
   display: inline-block;
   height: 100%;
@@ -571,7 +586,7 @@ input[type=range]::-ms-thumb {
   border: 1px solid #707070;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  width: 10px
+  width: 10px;
 }
 
 progress {

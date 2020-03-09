@@ -44,7 +44,7 @@ export default {
 <i18n>{
   "en": {
     "q1": {
-      "text": "This is what is used to obtain goods and/or services at pre-arranged prices.",
+      "text": "This is what is used to obtain goods and/or services at pre&#8209;arranged prices.",
       "options": {
         "1": "Competitive contract",
         "2": "Standing offer",
@@ -57,15 +57,15 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": "Standing Offers provide easy access to goods and services with faster turnaround. You simply choose from a list of pre-qualified suppliers with a standardized/pre-defined offering, and pre-established terms and conditions. "
+      "conclusion": "Standing offers provide easy access to goods and services with a faster turnaround. You simply choose from a list of pre-qualified suppliers with a standardized or predefined offering, and pre&#8209;established terms and conditions. "
     },
     "q2": {
       "text": "This spending mechanism is ideal for lower-dollar-value, lower-risk, and higher-volume purchases.",
       "options": {
-        "1": "Competitive Contract",
-        "2": "Standing Offer",
-        "3": "Supply Arrangement",
-        "4": "Acquisition Card"
+        "1": "Competitive contract",
+        "2": "Standing offer",
+        "3": "Supply arrangement",
+        "4": "Acquisition card"
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
@@ -73,7 +73,7 @@ export default {
         "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
         "4": "<span class='v-right' /> <strong>Correct!</strong>"
       },
-      "conclusion": "Your acquisition card will be the payment method you use most to acquire and pay for goods or services most often valued at less than $5,000. For your specific limits, check with your department."
+      "conclusion": "Your acquisition card will be the payment method you use most to acquire and pay for goods or services valued at less than $5,000. For your specific limits, check with your department."
     },
     "q3": {
       "text": "This spending mechanism is a non-binding agreement with a pre-qualified vendor that allows departments and agencies to award contracts and solicit bids from a pool of pre-qualified vendors for specific requirements.",
@@ -123,7 +123,7 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Les offres à commandes facilitent l’accès aux biens et aux services et accélèrent les délais d’exécution. Vous n’avez qu’à choisir parmi une liste de fournisseurs préqualifiés dont l’offre est normalisée ou prédéfinie et les conditions préétablies. "
+      "conclusion": "Les offres à commandes facilitent l’accès aux biens et aux services et accélèrent les délais d’exécution. Vous n’avez qu’à choisir parmi une liste de fournisseurs préqualifiés dont l’offre est normalisée ou prédéfinie et les conditions préétablies. "
     },
     "q2": {
       "text": "Ce mécanisme de dépense est idéal pour les achats de faible valeur, à faible risque et à volume élevé.",
@@ -139,7 +139,7 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Votre carte d’achat sera le mode de paiement que vous utiliserez le plus souvent pour acquérir et payer des biens ou des services d’une valeur inférieure à 5&nbsp;000&nbsp;$. Pour connaître vos limites spécifiques, vérifiez auprès de votre ministère."
+      "conclusion": "Votre carte d’achat sera le mode de paiement que vous utiliserez le plus souvent pour acquérir et payer des biens ou des services d’une valeur inférieure à 5&nbsp;000&nbsp;$. Pour connaître vos limites précises, vérifiez auprès de votre ministère."
     },
     "q3": {
       "text": "Ce mécanisme de dépenses est une entente non-contraignante conclue avec un fournisseur présélectionné qui permet aux ministères et organismes d’attribuer des contrats et de solliciter des soumissions auprès d’un bassin de fournisseurs présélectionnés pour des besoins précis.",

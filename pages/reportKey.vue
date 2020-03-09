@@ -9,14 +9,14 @@
     <b-container style="text-align: left">
       <b-row>
         <b-col><span v-if="$i18n.locale=='en'">
-            <h3>Prepare the Financial Situation Report (FSR)</h3>
+            <h3>Prepare the financial situation report</h3>
             <ul>
               <li>Financial situation reports:</li>
               <ul>
-                <li>Provide the most current financial picture of the organization’s finances.</li>
-                <li>Are tools for managers to regularly identify current financials, risks, potential surpluses and/or shortfalls in their budgets.</li>
-                <li>Are initiated and led by the Chief Financial Officer.&nbsp;</li>
-                <li>Allow the Chief Financial Officer to make recommendations to senior leaders on the financial resources needed to achieve results.</li>
+                <li>Provide the most current financial picture of the organization’s finances on a given date</li>
+                <li>Are tools for managers to regularly identify current financials, risks, potential surpluses and/or shortfalls in their budgets</li>
+                <li>Are initiated and led by the Chief Financial Officer</li>
+                <li>Allow the Chief Financial Officer to make recommendations to senior leaders on the financial resources needed to achieve results</li>
               </ul>
             </ul>
           </span>
@@ -26,20 +26,22 @@
               <li>Les rapports sur la situation financi&egrave;re :</li>
               <ul>
                 <ul>
-                  <li>Fournissent le portrait financier le plus récent des finances de l'organisme.</li>
-                  <li>Sont des outils permettant aux gestionnaires d’identifier réguli&egrave;rement les finances courantes, les risques, les excédents et/ou les déficits potentiels dans leurs budgets.</li>
-                  <li>Sont lancés et dirigés par le chef de la direction financi&egrave;re.&nbsp;</li>
-                  <li>Permettent au dirigeant principal des finances de faire des recommandations aux cadres supérieurs sur les ressources financi&egrave;res nécessaires pour obtenir des résultats.</li>
+                  <li>fournissent le portrait financier le plus récent des finances de l'organisme à une date donnée;</li>
+                  <li>font des outils permettant aux gestionnaires de vérifier réguli&egrave;rement les finances courantes, les risques, les excédents ou les déficits potentiels dans leurs budgets;</li>
+                  <li>sont lancés et dirigés par le chef de la direction financi&egrave;re;</li>
+                  <li>permettent au dirigeant principal des finances de faire des recommandations aux cadres supérieurs sur les ressources financi&egrave;res nécessaires pour obtenir des résultats.</li>
                 </ul>
               </ul>
             </ul>
           </span>
         </b-col>
         <b-col><span v-if="$i18n.locale=='en'">
-            <h3>Contribute to External Reporting</h3>
+            <h3>Contribute to external reporting</h3>
             <ul>
               <li>The finances and results of government services and programs are reported regularly to Parliament and Canadians through a variety of reports:&nbsp;</li>
               <ul>
+                <li>Public Accounts of Canada</li>
+                <li>Departmental Plan</li>
                 <li>Departmental Results Report (DRR)</li>
                 <li>Quarterly Financial Reporting (QFR)</li>
                 <li>Proactive disclosure&nbsp;</li>
@@ -54,6 +56,8 @@
               <li>Les finances et les résultats des services et des programmes gouvernementaux font l'objet de rapports réguliers au Parlement et à la population canadienne dans divers rapports :&nbsp;</li>
               <ul>
                 <ul>
+                  <li>Comptes publics du Canada</li>
+                  <li>Plan ministériel</li>
                   <li>Rapport ministériel sur les résultats (RRC)</li>
                   <li>Rapports financiers trimestriels (RFT)</li>
                   <li>Divulgation proactive&nbsp;</li>
@@ -122,7 +126,7 @@ export default {
   },
   "fr":
   {
-  "keyPlanQuote": " Les rapports devraient communiquer notre performance au public.",
+  "keyPlanQuote": " Les rapports devraient faire part de notre performance au public.",
   "fileSet": "Fichiers dans cette section",
   "downloadPlan": "Télécharger un modèle Word du plan de travail",
   "reportSectionBar": "DÉPENSES"

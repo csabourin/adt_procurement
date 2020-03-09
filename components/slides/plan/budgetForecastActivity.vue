@@ -363,16 +363,16 @@ export default {
       "title": "Formation"
     },
     "q2": {
-      "introduction": "<table border='1'  class='trainTable'> <tbody> <tr class='qTable'> <td> <p>Voyage</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Réel (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explicationde la variance</p> </td> </tr> <tr> <td> <p>Année précédente&nbsp;</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>16&nbsp;000&nbsp;$</p> </td> <td> <p style='color:red'>(2&nbsp;000 $)</p> </td> <td> <p>Un employé était en congé sans solde, et un autre n’est pas parti en voyage.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA Réel&nbsp;</p> </td> <td> <p>Prévisions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Année en cours à P6</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>9&nbsp;000&nbsp;$</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Par le passé, vous avez&nbsp;:</p> <ul> <li>dépensé 10&nbsp;000&nbsp;$ en frais de déplacement pour effectuer des inspections;</li> <li>prévu au budget un montant total de 8 000 dollars pour les voyages généraux. Cependant, vous savez que 80 % des du travail peut maintenant se faire virtuellement.</li> </ul>",
+      "introduction": "<table border='1'  class='trainTable'> <tbody> <tr class='qTable'> <td> <p>Voyage</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Réel (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Explication de la variance</p> </td> </tr> <tr> <td> <p>Année précédente&nbsp;</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>16&nbsp;000&nbsp;$</p> </td> <td> <p style='color:red'>(2&nbsp;000 $)</p> </td> <td> <p>Un employé était en congé sans solde, et un autre n’est pas parti en voyage.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA réel&nbsp;</p> </td> <td> <p>Prévisions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Année en cours à P6</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td> <p>9&nbsp;000&nbsp;$</p> </td> <td> <p>18&nbsp;000&nbsp;$</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <p>Par le passé, vous avez&nbsp;:</p> <ul> <li>dépensé 10&nbsp;000&nbsp;$ en frais de déplacement pour effectuer des inspections;</li> <li>prévu au budget un montant total de 8 000 dollars pour les voyages généraux. Cependant, vous savez que 80 % des du travail peut maintenant se faire virtuellement.</li> </ul>",
       "text": "Quels seront vos besoins budgétaires?",
       "options": {
         "1": "18&nbsp;000&nbsp;$ discrétionnaires",
         "2": "10&nbsp;000&nbsp;$ non discrétionnaires et 8&nbsp;000&nbsp;$ discrétionnaires",
         "3": "10&nbsp;000&nbsp;$ non discrétionnaires et 1&nbsp;600&nbsp;$ discrétionnaires",
-        "4": "11&nbsp;600&nbsp;$ Non discrétionnaires"
+        "4": "11&nbsp;600&nbsp;$ non discrétionnaires"
       },
       "feedback": {
-        "wrong": "<span class='v-wrong'/> <strong>Incorrect.</strong> Les bonnes réponses sont 10&nbsp;000&nbsp;$ non discrétionnaire et 1&nbsp;600&nbsp;$ discrétionnaire ou 11&nbsp;600&nbsp;$ non discrétionnaire. ",
+        "wrong": "<span class='v-wrong'/> <strong>Incorrect.</strong> Les bonnes réponses sont 10&nbsp;000&nbsp;$ non discrétionnaires et 1&nbsp;600&nbsp;$ discrétionnaires ou 11&nbsp;600&nbsp;$ non discrétionnaires. ",
         "right": "<span class='v-right'/> <strong>Correct!</strong> "
       },
       "title": "Voyage",

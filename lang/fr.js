@@ -21,7 +21,7 @@ export default {
   reset: "Effacer",
   playIcon: "Jouer la vidéo",
   pencilIcon: "Icône d’activité",
-  checkAll: "Cochez toutes les réponses qui s’appliquent.",
+  checkAll: "Choisissez toutes les réponses qui s’appliquent.",
   selectRight: "Choisissez la bonne réponse&nbsp;:",
   pleaseAnswer: "Veuillez r&eacute;pondre &agrave; la question!",
   KeyMessages: "Messages clés",

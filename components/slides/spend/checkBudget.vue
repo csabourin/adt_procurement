@@ -177,7 +177,7 @@
     "q3": {
       "text": "You have purchased all the furniture that you will need for the year that costs $900. You would like to buy an extra $100 in office supplies. Can you use the money initially allocated in furniture?",
       "options": {
-        "1": "Yes. Funds can be moved between line items. ",
+        "1": "Yes. Funds can be moved between line items.",
         "2": "No. Once they are allocated to furniture, the funds cannot be moved."
       },
       "feedback": {
@@ -313,10 +313,10 @@
       "conclusion": "Il n’y a pas assez d’argent dans votre budget approuvé. Si on ne vous donne pas plus d’argent, vous ne pouvez pas embaucher le consultant."
     },
     "q3": {
-      "text": "Vous avez acheté tous les meubles dont vous aurez besoin pour l’année au coût de 900 $. Vous aimeriez acheter 100 $ de plus en fournitures de bureaux. Pouvez-vous utiliser l’argent initialement alloué pour le mobilier?",
+      "text": "Vous avez acheté tous les meubles dont vous aurez besoin pour l’année au coût de 900&nbsp;$. Vous aimeriez acheter 100&nbsp;$ de plus en fournitures de bureau. Pouvez-vous utiliser l’argent initialement alloué pour le mobilier?",
       "options": {
-        "1": "Oui &mdash; Les fonds peuvent être transférés d’un objet de dépenses à l’autre.",
-        "2": "Non &mdash; Une fois qu’ils sont affectés au mobilier, les fonds ne peuvent plus être déplacés."
+        "1": "Oui. Les fonds peuvent être transférés d’un poste à l’autre.",
+        "2": "Non. Une fois qu’ils sont affectés au mobilier, les fonds ne peuvent plus être déplacés."
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",

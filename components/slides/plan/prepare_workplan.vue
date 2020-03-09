@@ -78,7 +78,7 @@
         "q1":
         {
             "1": "To make Canada a leader of international efforts to combat climate change and reduce greenhouse emissions.",
-            "2": "To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations",
+            "2": "To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations.",
             "3": "To implement and further develop the Oceans Protection Plan and restore annual federal funding for freshwater research."
         },
         "q1a":
@@ -87,15 +87,15 @@
             "2": "<span class='v-right' /> <strong>Correct!</strong> Our priority is to protect the fisheries so they are still around in 40 years for our grandchildren!",
             "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority for the government, your unit’s scope is more about fisheries, not protecting the oceans."
         },
-        "q2-1": "To contribute to an environmentally, economically and socially sustainable Canadian aquaculture sector by developing new federal legislation",
-        "q2-2": "To ensure access to safe harbours, respond to on-water incidents and minimize or avoid negative impacts of environmental disasters on Canada’s oceans",
-        "q2-3": "To support prosperous and sustainable commercial, Indigenous and recreational fisheries, aquaculture and other oceans industries",
+        "q2-1": "To contribute to an environmentally, economically and socially sustainable Canadian aquaculture sector by developing new federal legislation.",
+        "q2-2": "To ensure access to safe harbours, respond to on-water incidents and minimize or avoid negative impacts of environmental disasters on Canada’s oceans.",
+        "q2-3": "To support prosperous and sustainable commercial, Indigenous and recreational fisheries, aquaculture and other oceans industries.",
         "a2-1": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority, our scope is more about fisheries.",
         "a2-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority, our scope is more about fisheries.",
         "a2-3": "<span class='v-right' /> <strong>Correct!</strong> Our scope is about fisheries",
-        "q3-1": "To manage the commercial domestic fisheries",
-        "q3-2": "To protect endangered species in the great lakes",
-        "q3-3": "To eliminate the encroachment of invasive species",
+        "q3-1": "To manage the commercial domestic fisheries.",
+        "q3-2": "To protect endangered species in the great lakes.",
+        "q3-3": "To eliminate the encroachment of invasive species.",
         "a3-1": "<span class='v-right' /> <strong>Correct!</strong>",
         "a3-2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries.",
         "a3-3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries."
@@ -133,7 +133,7 @@
         "q2-3": "Soutenir une pêche commerciale, autochtone et récréative qui soit productive et durable, l’aquaculture, et d’autres industries maritimes.",
         "a2-1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",
         "a2-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",
-        "a2-3": "<span class='v-right' /> <strong>Correct!</strong> La portée de notre travail concerne les pêches.",
+        "a2-3": "<span class='v-right' /> <strong>Correct!</strong> Notre responsabilité est de nous occuper des pêches.",
         "q3-1": "Gérer les pêches commerciales.",
         "q3-2": "Protéger les espèces en voie de disparition dans les Grands Lacs.",
         "q3-3": "Éliminer la prolifération des espèces envahissantes.",

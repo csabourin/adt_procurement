@@ -1,4 +1,5 @@
 <template>
+  <p><strong>{{$t('header')}}</strong></p>
   <matchingExercise :question="$t('q1')" qId="1" />
 </template>
 <script type="text/javascript">
@@ -11,6 +12,7 @@ export default {
 </script>
 <i18n>{
   "en": {
+  "header":"Let’s see what you already know about financial situation reports.",
     "q1": {
       "dotsRight": [
         "Budget",
@@ -34,12 +36,13 @@ export default {
   },
   "fr": {
     "q1": {
+    "header":"Voyons ce que vous savez déjà au sujet de rapports sur la situation financière.",
       "dotsRight": [
         "Budget",
         "Engagements",
         "Dépenses réelles depuis le début de l’année",
         "Prévisions annuelles",
-        "Excédent/déficit",
+        "Excédent ou déficit",
         "Notes sur les excédents ou déficits",
         "Notes sur les risques"
       ],

@@ -304,8 +304,8 @@
       },
       "feedback":
       {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Étant donné l’entrée en vigueur de la nouvelle politique, changez-l’énoncé pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l’entrée en vigueur de la nouvelle politique, changez-l’énoncé pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Étant donné l’entrée en vigueur de la nouvelle politique, changez l’énoncé pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avec l’entrée en vigueur de la nouvelle politique, changez l’énoncé pour &laquo;&nbsp;Renouveler le permis dans les 15 jours suivant la demande&nbsp;&raquo;.",
         "3": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },

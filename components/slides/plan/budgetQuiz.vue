@@ -84,8 +84,8 @@ export default {
         "1": "A contract with an agency for temp staff"
       },
       "matching": {
-        "1": "Operating - Salary ",
-        "2": "Operating - O&M ",
+        "1": "Operating–Salary ",
+        "2": "Operating–O&M ",
         "3": "Grants & Contributions",
         "4": "Capital "
       },
@@ -100,8 +100,8 @@ export default {
         "2": "Funds provided to a university to study fish habitat"
       },
       "matching": {
-        "1": "Operating - Salary ",
-        "2": "Operating - O&M ",
+        "1": "Operating–Salary ",
+        "2": "Operating–O&M ",
         "3": "Grants & Contributions",
         "4": "Capital "
       },
@@ -143,10 +143,10 @@ export default {
       }
     },
     "q1": {
-      "conclusion": "<p><strong>A contract with an agency for temp staff</strong> would be in <strong>Operating - O&amp;M</strong>, and not Operating - Salary, because temp staff are not employees, and contracts are not paid out of Salary.&nbsp;</p><p><strong>Funds provided to a university to study fish habitat </strong>would be in <strong>Grants and Contributions</strong>. The nature of this transaction is such that it is a one-way payment of money for which the government will not receive any good or service.</p><p><strong>Casual positions or leave cash-outs</strong> would be in <strong>Operating - Salary</strong> because they concern employees.&nbsp;</p><p><strong>Purchase a new fleet of trucks</strong> would be in <strong>Capital </strong>because they are assets that would depreciate over time.</p>"
+      "conclusion": "<p><strong>A contract with an agency for temp staff</strong> would be in <strong>Operating - O&amp;M</strong>, and not Operating - Salary, because temp staff are not employees, and contracts are not paid out of Salary.&nbsp;</p><p><strong>Funds provided to a university to study fish habitat </strong>would be in <strong>Grants and Contributions</strong>. The nature of this transaction is such that it is a 1-way payment of money for which the government will not receive any good or service.</p><p><strong>Casual positions or leave cash-outs</strong> would be in <strong>Operating–Salary</strong> because they concern employees.&nbsp;</p><p><strong>Purchase a new fleet of trucks</strong> would be in <strong>Capital </strong>because they are assets that would depreciate over time.</p>"
     },
     "q2a": {
-      "text": "Match the activity to it’s status. ",
+      "text": "Match the activity to its status. ",
       "options": {
         "1": "Issuing fishing licenses."
       },
@@ -210,7 +210,7 @@ export default {
       }
     },
     "q2": {
-      "conclusion": "<p><strong>Issuing fishing licenses</strong> is a <strong>Continuing </strong>activity; it’s one of your main activities each year.&nbsp;</p><p><strong>Next year, you are going to purchase software to replace a paper process</strong> is a <strong>New </strong>activity, as you did not have this activity in previous plans.</p><p><strong>Costs for an office move that was completed last year</strong> is a <strong>Sunsetted </strong>activity because it finished last year.&nbsp;</p><p><strong>Consultations across Canada were stopped earlier this year</strong> is a <strong>Cancelled </strong>activity as the consultations were stopped and not completed.</p>"
+      "conclusion": "<p><strong>Issuing fishing licenses</strong> is a <strong>continuing </strong>activity; it’s 1 of your main activities each year.&nbsp;</p><p><strong>Next year, you are going to purchase software to replace a paper process</strong> is a <strong>new </strong>activity, as you did not have this activity in previous plans.</p><p><strong>Costs for an office move that was completed last year</strong> is a <strong>sunsetted </strong>activity because it finished last year.&nbsp;</p><p><strong>Consultations across Canada were stopped earlier this year</strong> is a <strong>cancelled </strong>activity as the consultations were stopped and not completed.</p>"
     },
     "q3": {
       "text": "An employee will be retiring after 8 months next year, so you estimate their salary as:",
@@ -226,16 +226,16 @@ export default {
       }
     },
     "q4": {
-      "text": "An example of a trend is …",
+      "text": "An example of a trend is…",
       "options": {
         "1": "The budget for travel has increased year over year by a factor of 3%. ",
         "2": "An activity related to renewing fishing licenses was delayed due to Arctic weather. ",
-        "3": "Less was spent on conferences last year because an employee didn’t attend a conference as planned. ",
+        "3": "Less was spent on conferences last year because an employee left part-way through the year, so they didn’t attend a conference as planned.",
         "4": "The training budget was overspent by $6,000 last year."
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong> This is a trend because the increase has been the same percentage for a few years",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is The budget for travel has increased year over year by a factor of 3%. This is a trend because the increase has been the same percentage for a few years.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “The budget for travel has increased year over year by a factor of 3%.” This is a trend because the increase has been the same percentage for a few years.",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is The budget for travel has increased year over year by a factor of 3%. This is a trend because the increase has been the same percentage for a few years.",
         "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is The budget for travel has increased year over year by a factor of 3%. This is a trend because the increase has been the same percentage for a few years."
       }
@@ -260,20 +260,20 @@ export default {
         "3": "Issuing fishing licenses in 15 days."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is a surplus in the relocation budget of $10,000, as $10,000 is the difference between budget and actual expenditures. ",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “a surplus in the relocation budget of $10,000,” as $10,000 is the difference between budget and actual expenditures. ",
         "2": "<span class='v-right' /> <strong>Correct!</strong> $10,000 is the difference between budget and actual expenditures.",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is a surplus in the relocation budget of $10,000, as $10,000 is the difference between budget and actual expenditures."
       }
     },
     "q7": {
-      "text": "Last year’s travel variance was due to a new departmental priority to conduct a 3-year cross-Canada consultation which resulted in more trips. Will you put this in your budget requirements for next year?",
+      "text": "Last year’s travel variance was due to a new departmental priority to conduct a 3-year cross-Canada consultation, which resulted in more trips. Will you put this in your budget requirements for next year?",
       "options": {
         "1": "Yes.",
         "2": "No."
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Yes."
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “yes.”"
       },
       "conclusion":" Consultations started last year, are continuing in the current year, and should end next year."
     },
@@ -282,7 +282,7 @@ export default {
       "options": {
         "1": "Costs that are not directly linked to your activities and therefore are less likely to have a negative impact on them.",
         "2": "Costs you planned for at the beginning of the fiscal year and that were incurred over the year.",
-        "3": "Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them. "
+        "3": "Costs that are essential for delivering on your activities and, if cut, may result in not being able to deliver those activities."
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them.",

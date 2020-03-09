@@ -109,7 +109,7 @@ export default {
   "en":{
   "KeyPeriodsFSRTitle":"Activity: Key Periods for Financial Situation Reports",
   "whatIsFSR":"Activity: What is a Financial Situation Report?",
-  "FSRActivitiesTitle":"Activity: Forecast Budget Requirements",
+  "FSRActivitiesTitle":"Activity: Financial Situation Report Activities",
   "UpdatingAnnualForecastTitle":"Activity: Updating the Annual Forecast",
   "transcriptText":"",
   "reportSectionBar": "REPORT"

@@ -160,7 +160,7 @@
               "options":
               {
                   "1": "Keep it as a mitigation strategy for “Overfishing.”",
-                  "2": "It should be a mitigation strategy for “Staff turnover.”.",
+                  "2": "It should be a mitigation strategy for “Staff turnover.”",
                   "3": "Remove “Implement flexible work hours” completely."
               },
               "feedback":
@@ -217,7 +217,7 @@
           "titleLikelihood": "Probabilité",
           "titleImpact": "Impact",
           "titleMitigation": "Atténuation",
-          "titleResources": "Resources",
+          "titleResources": "Ressources",
           "qDisabled": "Veuillez faire un choix",
           "govtPriorities": "Servir les Canadiens en assurant l’utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
           "deptPriorities": "Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l’aquaculture et d’autres industries maritimes.",

@@ -25,7 +25,7 @@ export default {
 <i18n>
 	{
   "en": {
-  "intro":"Using the P5 Annual Forecast column as a reference, complete the P6 Annual Forecast column in the provided financial situation report.  Select a cell in the P6 Annual Forecast column and enter the correct amount based on the statement provided. Then select the checkbox beside to validate your answer. <strong>Note:</strong> enter only numbers; no dollar signs, commas or spaces.",
+  "intro":"Using the P5 Annual Forecast column as a reference, complete the P6 Annual Forecast column in the financial situation report provided. Select a cell in the P6 Annual Forecast column and enter the correct amount based on the statements provided. Then select the checkbox beside to validate your answer. <strong>Note:</strong> Enter only numbers — no dollar signs, commas or spaces.",
     "q1": {
       "text": "You approved $3,000 in employee travel claims in P4. But looking at the P6 report, you see that the Year-To-Date Actuals is only $1,700. What do you do? ",
       "options": {
@@ -56,7 +56,7 @@ export default {
     }
   },
   "fr": {
-  "intro":"En utilisant la colonne P5 Prévisions annuelles comme référence, remplissez la colonne P6 Prévisions annuelles dans le rapport sur la situation financière fourni. Sélectionnez une cellule de la colonne P6 Prévisions annuelles et entrez le montant exact en fonction du relevé fourni. Sélectionnez ensuite la case à cocher èa côté pour valider votre réponse. <strong>Note :</strong> n’entrez que des chiffres ; pas de signes de dollar, de virgules ou d’espaces.",
+  "intro":"En utilisant la colonne P5 Prévisions annuelles comme référence, remplissez la colonne P6 Prévisions annuelles dans le rapport sur la situation financière fournie. Sélectionnez une cellule de la colonne P6 Prévisions annuelles et insérez le montant exact en fonction du relevé fourni. Sélectionnez ensuite la case à cocher à côté pour valider votre réponse. <strong>Note :</strong> n’insérez pas que des chiffres ; ni signes de dollar, ni virgules, ni espaces.",
     "q1": {
       "text": "Vous avez approuvé des demandes de remboursement de frais de voyage de 3&nbsp;000&nbsp;$ pour les employés dans P4. Mais en regardant le rapport des six Présidents, vous constaterez que les chiffres réels depuis le début de l’année ne sont que de 1&nbsp;700&nbsp;$. Qu’est-ce que vous faites ?",
       "options": {

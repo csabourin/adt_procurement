@@ -38,16 +38,16 @@ export default {
 <i18n>{
   "en": {
     "q1": {
-      "text": "You want to buy two dry erase boards. Is this a soft or a hard commitment?",
+      "text": "You are shopping around to buy two dry erase boards. Is this a soft commmitment or a hard commitment?",
       "options": {
         "1": "Soft Commitment",
         "2": "Hard Commitment"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-        "2": "<span class='v-right' /><strong>Correct!</strong>"
+        "1": "<span class='v-wrong' /><strong>Correct!</strong>",
+        "2": "<span class='v-right' /><strong>Incorrect.</strong>"
       },
-      "conclusion": "This is a soft commitment because you have not yet made an arrangement with a supplier."
+      "conclusion": "This is a soft commitment because you have not yet made an arrangement with a supplier but have an idea of the cost."
     },
     "q2": {
       "text": "You have now bought the two dry erase boards. What is the nature of this financial transaction?",
@@ -63,12 +63,12 @@ export default {
         "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
         "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
-      "conclusion": "Given that you have only bought two dry erase boards, it is an expenditure.<br>Don’t forget, your organisation may use a different financial structure, so go find out how your coding works!"
+      "conclusion": "Given that you bought a low number of items, it would be considered an expenditure.<br>Don’t forget, your organisation may use a different financial structure, find out how your coding works!"
     }
   },
   "fr": {
     "q1": {
-      "text": "Vous voulez acheter deux tableaux effaçables à sec. S’agit-il d’un engagement préalable ou d’un engagement ferme?",
+      "text": "Vous magasinez deux tableaux effaçables à sec. S’agit-il d’un engagement préalable ou d’un engagement ferme?",
       "options": {
         "1": "Engagement préalable",
         "2": "Engagement ferme"
@@ -77,7 +77,7 @@ export default {
         "1": "<span class='v-right' /><strong>Correct!</strong>",
         "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Il s’agit d’un engagement préalable parce que vous n’avez pas encore conclu d’entente avec un fournisseur."
+      "conclusion": " Il s’agit d’un engagement préalable parce que vous n’avez pas encore conclu d’entente avec un fournisseur mais vous avez und idée du coût."
     },
     "q2": {
       "text": "Vous avez maintenant acheté les deux tableaux effaçables à sec. Quelle est la nature de cette transaction financière?",
@@ -93,7 +93,7 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": "Étant donné que vous n’avez acheté que deux tableaux effaçables à sec, c’est une dépense.<br>N’oubliez pas que votre organisation peut utiliser une structure financière différente, alors allez voir comment fonctionne votre codage!"
+      "conclusion": "Étant donné que vous n’avez acheté qu’un petit nombre d’items, on considérerait qu’il s’agit d’une dépense.<br>N’oubliez pas que votre organisation peut utiliser une structure financière différente, alors renseignez-vous pour savoir comment fonctionne votre codage!"
     }
   }
 }</i18n>

@@ -78,10 +78,10 @@ export default {
     "q3": {
       "text": "This spending mechanism is a non-binding agreement with a pre-qualified vendor that allows departments and agencies to award contracts and solicit bids from a pool of pre-qualified vendors for specific requirements.",
       "options": {
-        "1": "Competitive Contract",
-        "2": "Standing Offer",
-        "3": "Supply Arrangement",
-        "4": "Acquisition Card"
+        "1": "Competitive contract",
+        "2": "Standing offer",
+        "3": "Supply arrangement",
+        "4": "Acquisition card"
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
@@ -89,15 +89,15 @@ export default {
         "3": "<span class='v-right' /> <strong>Correct!</strong>",
         "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
-      "conclusion": " Supply arrangements are used for procuring commonly required goods or services (mostly services) when the requirement can’t be fully defined in advance of the need, and the available Standing Offers cannot be used."
+      "conclusion": " Supply arrangements are used for procuring commonly required goods or services (mostly services) when the requirement can’t be fully defined in advance of the need, and the available standing offers cannot be used."
     },
     "q4": {
       "text": "This spending mechanism is mostly used for goods and services that are very costly or very complex.",
       "options": {
-        "1": "Competitive Contract",
-        "2": "Standing Offer",
-        "3": "Supply Arrangement",
-        "4": "Acquisition Card"
+        "1": "Competitive contract",
+        "2": "Standing offer",
+        "3": "Supply arrangement",
+        "4": "Acquisition card"
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
@@ -142,7 +142,7 @@ export default {
       "conclusion": "Votre carte d’achat sera le mode de paiement que vous utiliserez le plus souvent pour acquérir et payer des biens ou des services d’une valeur inférieure à 5&nbsp;000&nbsp;$. Pour connaître vos limites précises, vérifiez auprès de votre ministère."
     },
     "q3": {
-      "text": "Ce mécanisme de dépenses est une entente non-contraignante conclue avec un fournisseur présélectionné qui permet aux ministères et organismes d’attribuer des contrats et de solliciter des soumissions auprès d’un bassin de fournisseurs présélectionnés pour des besoins précis.",
+      "text": "Ce mécanisme de dépense est une entente non contraignante conclue avec un fournisseur présélectionné qui permet aux ministères et organismes d’attribuer à des compagnies des contrats et de solliciter des soumissions auprès d’un bassin de fournisseurs présélectionnés pour des besoins précis.",
       "options": {
         "1": "Contrat concurrentiel",
         "2": "Offre à commandes",
@@ -155,7 +155,7 @@ export default {
         "3": "<span class='v-right' /><strong>Correct!</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Les arrangements en matière d’approvisionnement servent à l’achat de biens ou de services couramment requis (principalement des services) lorsque le besoin ne peut être entièrement défini à l’avance et que les offres à commandes disponibles ne peuvent être utilisées."
+      "conclusion": "Les arrangements en matière d’approvisionnement servent à l’achat de biens ou de services couramment requis (principalement des services) lorsque le besoin ne peut être entièrement défini à l’avance et que les offres à commandes disponibles ne peuvent être utilisées."
     },
     "q4": {
       "text": "Ce mécanisme de dépenses est surtout utilisé pour des biens et services très coûteux ou très complexes.",
@@ -171,7 +171,7 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Les contrats concurrentiels sont surtout utilisés pour des besoins de plus grande valeur ou de plus grande complexité lorsque des offres à commandes ou des arrangements en matière d’approvisionnement ne sont pas en place.<br>Vous en apprendrez davantage sur ces options et lignes directrices dans le module Approvisionnement."
+      "conclusion": "Les contrats concurrentiels sont surtout utilisés pour des besoins de plus grande valeur ou de plus grande complexité lorsque des offres à commandes ou des arrangements en matière d’approvisionnement ne sont pas en place.<br>Vous en apprendrez davantage sur ces options et lignes directrices dans le module Approvisionnement."
     }
   }
 }</i18n>

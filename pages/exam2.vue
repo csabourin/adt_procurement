@@ -503,7 +503,7 @@ export default {
       "q14": {
         "text": "How much time does the government have to pay for received goods or services?",
         "options": {
-          "1": "Within 15 working days from the receipt of an invoice or the acceptance of goods, whichever is later",
+          "1": "Thirty days following acceptance of goods",
           "2": "Thirty days after signing of Section 34 ",
           "3": "Thirty days following receipt of the invoice",
           "4": "Immediately"
@@ -544,9 +544,9 @@ export default {
         }
       },
       "q17": {
-        "text": "Your budget contains the provided line item:<br><table class='qTable'> <tbody> <tr><th>&nbsp;</th><th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Travel</p> </td> <td> <p>$8,400</p> </td> <td> <p>$0</p> </td> <td> <p>$2,400</p> </td> <td> <p>$8,400</p> </td> </tr> </tbody> </table><br>You approved $1,500 in travel for an employee. Looking at the provided line item, which columns would be increased?",
+        "text": "Your budget contains the following line item:<br><table class='qTable'> <tbody> <tr><th>&nbsp;</th><th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Travel</p> </td> <td> <p>$8,400</p> </td> <td> <p>$0</p> </td> <td> <p>$2,400</p> </td> <td> <p>$8,400</p> </td> </tr> </tbody> </table><br>You approved $1,500 in travel for an employee. Looking at the provided line item, which columns would be increased?",
         "options": {
-          "1": "Annual Forecasted Expenditures and Year-to-Date Actual",
+          "1": "Year-to-Date Actuals and Annual Forecasted Expenditures",
           "2": "Annual Forecasted Expenditures and Commitments",
           "3": "Commitments only",
           "4": "Budget and Year-to-Date Actual"
@@ -837,7 +837,7 @@ export default {
       "q14": {
         "text": "Combien de temps le gouvernement a-t-il pour payer les marchandises et services?",
         "options": {
-          "1": "Dans les 15 jours ouvrables suivant la réception d’une facture ou l’acceptation des marchandises, selon la dernière de ces dates",
+          "1": "Trente jours après l'acceptation de la marchandise",
           "2": "Trente jours après la signature de l’article 34",
           "3": "Trente jours après réception de la facture",
           "4": "Immédiatement"

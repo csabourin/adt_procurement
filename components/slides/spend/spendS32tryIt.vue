@@ -1,7 +1,7 @@
 <template>
   <div>
     <span v-if="$i18n.locale=='en'">
-      <p>To deliver on your work plan, one of your activities requires you to purchase 10 microscopes for your team. Each microscope costs $200.</p>
+      <p>To deliver on your work plan, one of your activities requires the purchase of 10 microscopes for your team. Each microscope costs $200.</p>
       <p>First, let’s check your budget.</p>
       <table border='1'>
         <tbody>
@@ -31,7 +31,7 @@
       </table>
     </span>
     <span v-if="$i18n.locale=='fr'">
-      <p>Pour réaliser votre plan de travail, l’une de vos activités exige que vous achetiez dix microscopes pour votre équipe. Chaque microscope coûte 200 $.</p>
+      <p>Pour réaliser votre plan de travail, l’une de vos activités exige que vous achetiez 10 microscopes pour votre équipe. Chaque microscope coûte 200&nbsp;$.</p>
       <p>D’abord, vérifions votre budget.</p>
       <table border='1'>
         <tbody>
@@ -117,10 +117,10 @@ export default {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": "Of your $44,900 budget, you have already committed $15,000 and spent $29,000. So, $44,000 is already accounted for, meaning there is only $900 left in your budget."
+  "conclusion": "Out of a $44,900 budget, you have committed $15,000 and spent $29,000. So $44,000 is already accounted for. This means there is only $900 left in your budget."
   },
   "q2": {
-  "text": "If there had been enough funds in the budget, looking at the provided specimen signature card, does the manager have the required delegated authority to initiate and commit the funds?",
+  "text": "Look at the specimen delegation card provided. If there had been enough funds in the budget, would the manager have the required delegated authority to initiate and commit the funds?",
   "options": {
   "1": "Yes",
   "2": "No"
@@ -134,21 +134,19 @@ export default {
   "q3": {
   "text": "What is the best spending mechanism to use to purchase the microscopes?",
   "options": {
-  "1": "Acquisition Card",
-  "2": "Competitive Contract",
-  "3": "Standing Offer",
-  "4": "Supply Arrangement"
+  "1": "Acquisition card",
+  "2": "Competitive contract",
+  "3": "Supply arrangement"
   },
   "feedback": {
   "1": "<span class='v-right' /> <strong>Correct!</strong>",
   "2": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
-  "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
-  "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
+  "3": "<span class='v-wrong' /> <strong>Incorrect</strong>."
   },
   "conclusion": "Given that it is only $2,000 for 10 microscopes, the acquisition card is the best spending mechanism."
   },
   "q4": {
-  "text": "What is the nature of this financial transaction (microscopes)?",
+  "text": "Assuming that you are able to purchase the microscopes, what is the nature of this financial transaction?",
   "options": {
   "1": "Revenue ",
   "2": "Expenditure",
@@ -161,12 +159,12 @@ export default {
   "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
   "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
   },
-  "conclusion": "Given that it is only $2,000 for 10 microscopes, it is an expenditure. If you had purchased more microscopes and/or at a higher unit price, it may be considered an asset. Consult your department to find out your limits."
+  "conclusion": "Given that it is only $2,000 for 10 microscopes, it is an expenditure. If you had purchased more microscopes or at a higher unit price, it could have been considered an asset. Consult your department to find out your limits."
   }
   },
   "fr": {
   "q1": {
-  "text": "Avez-vous assez d’argent pour couvrir le coût des microscopes?",
+  "text": "Avez-vous assez d’argent pour payer les microscopes?",
   "options": {
   "1": "Oui",
   "2": "Non"
@@ -178,7 +176,7 @@ export default {
   "conclusion": "De votre budget de 44&nbsp;900&nbsp;$, vous avez déjà engagé 15&nbsp;000&nbsp;$ et dépensé 29&nbsp;000&nbsp;$. Donc, 44&nbsp;000&nbsp;$ sont déjà comptabilisés, ce qui signifie qu’il ne reste que 900 $ dans votre budget."
   },
   "q2": {
-  "text": "S’il y avait eu suffisamment de fonds dans le budget, en examinant la carte de signature fournie, le gestionnaire a-t-il le pouvoir délégué nécessaire pour engager les fonds?",
+  "text": "Examinez la carte de délégation fournie. S’il y a suffisamment de fonds dans le budget, le gestionnaire a-t-il le pouvoir délégué nécessaire pour engager les fonds?",
  "options": {
   "1": "Oui",
   "2": "Non"
@@ -190,23 +188,21 @@ export default {
   "conclusion": "Le gestionnaire a l’autorité d’initier et d’engager les fonds nécessaires pour les microscopes."
   },
   "q3": {
-  "text": "Quel est le meilleur mécanisme de dépense à utiliser pour acheter les microscopes ?",
+  "text": "Quel est le meilleur mécanisme de dépense à utiliser pour acheter les microscopes?",
   "options": {
   "1": "Carte d’achat",
   "2": "Contrat concurrentiel",
-  "3": "Offre à commandes",
-  "4": "Arrangement en matière d’approvisionnement"
+  "3": "Arrangement en matière d’approvisionnement"
   },
   "feedback": {
   "1": "<span class='v-right' /> <strong>Correct!</strong>",
   "2": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
-  "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
-  "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
+  "3": "<span class='v-wrong' /> <strong>Incorrect</strong>."
   },
   "conclusion": "Étant donné qu’il ne s’agit que de 2&nbsp;000&nbsp;$ pour 10 microscopes, la carte d’achat est le meilleur mécanisme de dépense."
   },
   "q4": {
-  "text": "Quelle est la nature de cette transaction financière (microscopes)?",
+  "text": "En supposant que vous êtes en mesure d’acheter les microscopes, quelle est la nature de cette transaction financière?",
   "options": {
   "1": "Revenu",
   "2": "Dépense",
@@ -219,7 +215,7 @@ export default {
   "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
   "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
   },
-  "conclusion": "Étant donné qu’il ne s’agit que de 2&nbsp;000&nbsp;$ pour 10 microscopes, c’est une dépense. Si vous aviez acheté plus de microscopes et/ou à un prix unitaire plus élevé, cela pourrait être considéré comme un actif. Consultez votre ministère pour connaître vos limites."
+  "conclusion": "Étant donné qu’il ne s’agit que de 2&nbsp;000&nbsp;$ pour 10 microscopes, c’est une dépense. Si vous aviez acheté davantage de microscopes ou si vous les aviez achetés à un prix unitaire plus élevé, cela aurait pu être considéré comme un actif. Consultez votre ministère pour connaître vos limites."
   }
   }
   }</i18n>

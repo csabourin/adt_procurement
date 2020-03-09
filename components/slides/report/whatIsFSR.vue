@@ -1,6 +1,8 @@
 <template>
+  <div>
   <p><strong>{{$t('header')}}</strong></p>
   <matchingExercise :question="$t('q1')" qId="1" />
+</div>
 </template>
 <script type="text/javascript">
 import matchingExercise from "~/components/interface/matchingExercise"

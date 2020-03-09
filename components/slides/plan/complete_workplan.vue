@@ -42,7 +42,7 @@
           <td class='planLikely' v-html="$t('low')"></td>
           <td class='planImpact' v-html="$t('high')"></td>
           <td class='planMitigat'>
-            <ul>
+            <ul><!-- *CSABOURIN* -->
               <li v-html="$t('pM1')"></li>
              <transition name="bounce"><li v-if="Q1==2" v-html="'<strong>'+$t('pM1_1')+'</strong>'" /></transition>
             </ul>

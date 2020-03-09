@@ -89,7 +89,7 @@
                   <p>&laquo; D’accord. Votre directeur vous dit qu’il a siégé à un comité directeur et qu’il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois choses : la mise en &oelig;uvre d’un nouveau logiciel pour accélérer l’émission de licences; une nouvelle politique qui exige maintenant que les licences soient émises en 15 jours, et non plus en 30 jours, à compter du 1er novembre; une décision de ne pas remplacer un employé qui prend sa retraite. L'exercice suivant vous aidera à ajuster votre plan de travail en fonction de ces nouvelles informations. &raquo;</p>
                   <hr>
                   <h2>Dans la vraie vie</h2>
-                  <p>&laquo; Appliquez ce que vous avez appris dans la vraie vie. Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l’intranet pour voir quels mod&egrave;les sont utilisés. Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. &raquo;</p>
+                  <p>&laquo; Appliquez ce que vous avez appris dans la vraie vie. Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l’intranet pour voir quels mod&egrave;les sont utilisés. Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter de plans de travail. &raquo;</p>
                   <hr>
                   <h2>Répondez à un questionnaire rapide</h2>
                   <p>&laquo; Maintenant que vous savez comment examiner, préparer et ajuster un plan de travail, voyons ce dont vous vous souvenez en répondant à ce petit quiz. &raquo;<h2>Section complétée</h2>

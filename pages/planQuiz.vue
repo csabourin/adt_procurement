@@ -208,7 +208,7 @@ export default {
       }
     },
     "q5": {
-      "text": "The Prime Minister sets out his expectations and objectives for your department in: ",
+      "text": "The Prime Minister sets out their expectations and objectives for your department in: ",
       "options": {
         "1": "The Speech from the Throne",
         "2": "The Departmental Results Framework",
@@ -216,10 +216,10 @@ export default {
         "4": "The Departmental Plan"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the Mandate letter to the Minister responsible for the department."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines their expectations and objectives in the Mandate letter to the Minister responsible for the department.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines their expectations and objectives in the Mandate letter to the Minister responsible for the department.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  The Prime Minister outlines their expectations and objectives in the Mandate letter to the Minister responsible for the department.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines their expectations and objectives in the Mandate letter to the Minister responsible for the department."
       }
     },
     "q6": {
@@ -364,20 +364,20 @@ export default {
     "titleMitigation": "Atténuation",
     "titleResources": "Resources",
     "q1": {
-      "text": "Faites correspondre les énoncés suivants aux sections appropriées du plan de travail. Chaque section ne peut contenir qu’un seul énoncé.",
+      "text": "Faites correspondre les énoncés suivants aux parties appropriées du plan de travail. Chaque partie ne peut dépasser un seul énoncé.",
       "options":[{
       "a2": "Travailler avec les Canadiens dans tous les secteurs de l’économie et dans toutes les régions du pays pour améliorer les conditions d’investissement.",
-      "a6": "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'œuvre saine et productive.",
+      "a6": "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et favoriser une main-d'œuvre saine et productive.",
       "a10": "Modernisation du milieu de travail "
       },{
       "a1": "Élevé ",
       "a9": "Faible",
       "a3": "Tablettes"},{
       "a4": "Conservez les ordinateurs d’origine jusqu’à ce que les tablettes soient prêtes et à l’emploi pendant 3 mois. ",
-      "a5": "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité ",
+      "a5": "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité.",
       "a7": "Acheter des tablettes",
-      "a8": "La technologie n’est pas compatible avec le réseau existant ",
-      "a11": "Donner des tablettes aux employés"
+      "a8": "La technologie n’est pas compatible avec le réseau existant.",
+      "a11": "Donner des tablettes aux employés."
     }
       ]
     },

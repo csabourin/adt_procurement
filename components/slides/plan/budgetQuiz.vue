@@ -285,11 +285,11 @@ export default {
         "3": "Costs that are essential for delivering on your activities and, if cut, may result in not being able to deliver those activities."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is Costs that are essential for delivering on your activities and if cut may result in not being able to deliver on them. ",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “costs that are essential for delivering on your activities and, if cut, may result in not being able to deliver those activities.”",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “costs that are essential for delivering on your activities and, if cut, may result in not being able to deliver those activites.”",
         "3": "<span class='v-right' /> <strong>Correct!</strong> "
       },
-      "conclusion":"Non-Discretionary costs, if reduced or cut, will seriously affect your ability to deliver your priorities."
+      "conclusion":"Non-discretionary costs, if reduced or cut, will seriously affect your ability to deliver on priorities."
     }
   },
   "fr": {
@@ -300,8 +300,8 @@ export default {
         "1": "Un contrat avec une agence d’intérim"
       },
       "matching": {
-        "1": "Fonctionnement - Salaire",
-        "2": "Exploitation - F et E",
+        "1": "Fonctionnement - Salaires",
+        "2": "Fonctionnement - F et E",
         "3": "Subventions et contributions",
         "4": "Capital"
       },
@@ -316,8 +316,8 @@ export default {
         "2": "Fonds versés à une université pour étudier l'habitat du poisson"
       },
       "matching": {
-        "1": "Fonctionnement - Salaire",
-        "2": "Exploitation - F et E",
+        "1": "Fonctionnement - Salaires",
+        "2": "Fonctionnement - F et E",
         "3": "Subventions et contributions",
         "4": "Capital"
       },
@@ -332,8 +332,8 @@ export default {
         "3": "Les postes occasionnels ou les encaissements de congés"
       },
       "matching": {
-        "1": "Fonctionnement - Salaire",
-        "2": "Exploitation - F et E",
+        "1": "Fonctionnement - Salaires",
+        "2": "Fonctionnement - F et E",
         "3": "Subventions et contributions",
         "4": "Capital"
       },
@@ -345,11 +345,11 @@ export default {
     "q1d": {
       "text": " ",
       "options": {
-        "4": "Achat d’une nouvelle flotte de camions"
+        "4": "Achat d’un nouveau parc de camions"
       },
       "matching": {
-        "1": "Fonctionnement - Salaire",
-        "2": "Exploitation - F et E",
+        "1": "Fonctionnement - Salaires",
+        "2": "Fonctionnement - F et E",
         "3": "Subventions et contributions",
         "4": "Capital"
       },
@@ -359,7 +359,7 @@ export default {
       }
     },
     "q1": {
-      "conclusion": "<p><strong>Un contrat avec une agence pour le personnel temporaire</strong> serait en <strong>Fonctionnement - F&amp;E</strong>, et non en Fonctionnement - Salaire, parce que le personnel temporaire n’est pas un employé et que les contrats ne sont pas payés à m&ecirc;me le salaire.&nbsp;</p><p><strong>Les fonds fournis à une université pour étudier l'habitat du poisson</strong> seraient sous forme de <strong>subventions et de contributions</strong>. La nature de cette transaction est telle qu’il s’agit d’un paiement à sens unique pour lequel le gouvernement ne recevra aucun bien ou service.</p><p><strong>Les postes occasionnels ou les encaissements de congés</strong> seraient dans la catégorie <strong>Fonctionnement - Salaire</strong> parce qu’ils concernent des employés.&nbsp;</p><p><strong>L’achat d’une nouvelle flotte de camions</strong> serait dans le <strong>Capital </strong>parce que ce sont des biens qui se déprécieraient avec le temps.</p>"
+      "conclusion": "<p><strong>Un contrat avec une agence pour le personnel temporaire</strong> devrait se trouver sous <strong>Fonctionnement - F&amp;E</strong>, et non pas sous Fonctionnement - Salaires, parce que le personnel temporaire n’a pas le status d'un employé et que les contrats ne sont pas payés à m&ecirc;me le poste de salaires.&nbsp;</p><p><strong>Les fonds allant à une université pour étudier l'habitat du poisson</strong> seraient fournis sous forme de <strong>subventions et de contributions</strong>. La nature de cette transaction est telle qu’il s’agit d’un paiement à sens unique pour lequel le gouvernement ne recevra aucun bien ni service.</p><p><strong>Les postes occasionnels ou les encaissements de congés</strong> se trouveraient dans la catégorie <strong>Fonctionnement - Salaires</strong> parce qu’ils concernent des employés.&nbsp;</p><p><strong>L’achat d’un nouveau parc de camions</strong> se trouverait sous <strong>Capital </strong>parce que ce sont des biens qui se déprécient avec le temps.</p>"
     },
     "q2a": {
       "text": "Faites correspondre l’activité à son statut.",
@@ -367,10 +367,10 @@ export default {
         "1": "Délivrance des permis de pêche."
       },
       "matching": {
-        "1": "Caduque",
-        "2": "Annulée",
-        "3": "Se poursuivant",
-        "4": "Nouvelle"
+        "1": "Éliminé progressivement",
+        "2": "Annulé",
+        "3": "Continu",
+        "4": "Nouveau"
       },
       "feedback": {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
@@ -380,13 +380,13 @@ export default {
     "q2b": {
       "text": " ",
       "options": {
-        "2": "L’année prochaine, vous allez acheter un logiciel pour remplacer un processus papier."
+        "2": "L’année prochaine, vous allez acheter un logiciel pour remplacer un processus manuel."
       },
       "matching": {
-        "1": "Caduque",
-        "2": "Annulée",
-        "3": "Se poursuivant",
-        "4": "Nouvelle"
+        "1": "Éliminé progressivement",
+        "2": "Annulé",
+        "3": "Continu",
+        "4": "Nouveau"
       },
       "feedback": {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
@@ -396,13 +396,13 @@ export default {
     "q2c": {
       "text": " ",
       "options": {
-        "3": "Les coûts d’un déménagement de bureaux a été terminé l’an dernier."
+        "3": "Les sommes prévues pour un déménagement de bureaux ont été dépensées l’an dernier."
       },
       "matching": {
-        "1": "Caduque",
-        "2": "Annulée",
-        "3": "Se poursuivant",
-        "4": "Nouvelle"
+        "1": "Éliminé progressivement",
+        "2": "Annulé",
+        "3": "Continu",
+        "4": "Nouveau"
       },
       "feedback": {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
@@ -412,46 +412,49 @@ export default {
     "q2d": {
       "text": " ",
       "options": {
-        "4": "Les consultations à l’échelle du Canada ont été interrompues plus tôt cette année"
+        "4": "Les consultations à l’échelle du Canada ont été interrompues plus tôt dans l'année"
       },
       "matching": {
-        "1": "Caduque",
-        "2": "Annulée",
-        "3": "Se poursuivant",
-        "4": "Nouvelle"
+        "1": "Éliminé progressivement",
+        "2": "Annulé",
+        "3": "Continu",
+        "4": "Nouveau"
       },
       "feedback": {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
         "right": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },
-    "q2":{"conclusion":"<p><strong>L'émission de permis de p&ecirc;che</strong> est une activité se&nbsp;<strong>Poursuivant</strong>; c’est l’une de vos principales activités chaque année.&nbsp;</p><p><strong>L’année prochaine, vous allez acheter un logiciel pour remplacer un processus papier</strong> est une <strong>Nouvelle </strong>activité, car vous n’aviez pas cette activité dans les plans précédents.</p><p><strong>Les co&ucirc;ts d’un déménagement de bureau qui a été effectué l’an dernier</strong> sont des activités&nbsp;<strong>Caduques </strong>parce qu’elles se sont terminées l’an dernier.&nbsp;</p><p><strong>Les consultations à travers le Canada ont été interrompues plus t&ocirc;t cette année</strong> est une activité <strong>Annulée </strong>car les consultations ont été interrompues et non terminées.</p>"},
+    "q2":{"conclusion":"<p><strong>L'émission de permis de p&ecirc;che</strong> est une activité <strong>continue</strong>; c’est l’une de vos principales activités chaque année.&nbsp;</p><p><strong>L’année prochaine, vous allez acheter un logiciel pour remplacer un processus manuel,</strong> est une <strong>nouvelle</strong> activité, car cette activité n'était pas dans les plans précédents.</p><p><strong>Les co&ucirc;ts d’un déménagement de bureau qui a été effectué l’an dernier</strong> sont <strong>éliminés progressivement</strong>, car cette activité est terminée.&nbsp;</p><p><strong>Les consultations à travers le Canada ont été interrompues plus t&ocirc;t cette année</strong>, c’est une activité <strong>annulée</strong>, car les consultations ont été interrompues, donc non terminées.</p>"},
     "q3": {
-      "text": "Un employé prendra sa retraite après 8 mois l’année prochaine, donc vous estimez son salaire comme :",
+      "text": "Un employé prendra sa retraite après 8 mois l’année prochaine, donc vous estimez son salaire comme étant :",
       "options": {
-        "1": "Salaire complet",
-        "2": "¾ de leur salaire",
-        "3": "⅔ de leur salaire"
+        "1": "salaire complet",
+        "2": "¾ de son salaire",
+        "3": "⅔ de son salaire"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est ⅔ de leur salaire. Ils gagneront 8/12 de leur salaire ou ⅔.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est ⅔ de leur salaire. Ils gagneront 8/12 de leur salaire ou ⅔.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  Ils gagneront 8/12 de leur salaire ou ⅔."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est ⅔ de son salaire. Il gagnera 8/12 de son salaire, soit ⅔.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est ⅔ de son salaire. Il gagnera 8/12 de son salaire, soit ⅔.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  Il gagnera 8/12 de son salaire, soit ⅔."
       }
     },
     "q4": {
       "text": "Un exemple de tendance est ...",
       "options": {
-        "1": "Le budget des voyages a augmenté d’année en année d’un facteur de 3 %.",
+        "1": "Le budget des voyages a augmenté de 3 % année après année.",
         "2": "Une activité liée au renouvellement des permis de pêche a été retardée en raison des conditions météorologiques dans l'Arctique.",
-        "3": "L’an dernier, on a consacré moins d’argent aux conférences parce qu’un employé n’a pas assisté à une conférence comme prévu.",
+        "3": "L’an dernier, on a consacré moins d’argent aux conférences parce qu’un employé, parti au milieu d'année, n’a pas assisté à des conférences comme prévu.",
         "4": "Le budget de formation a été dépassé de 6&nbsp;000&nbsp;$ l’an dernier."
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Le budget des voyages a augmenté d’année en année d’un facteur de 3 %. Il s’agit d’une tendance parce que l’augmentation est la même depuis quelques années.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Le budget des voyages a augmenté d’année en année d’un facteur de 3 %. Il s’agit d’une tendance parce que l’augmentation est la même depuis quelques années.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Le budget des voyages a augmenté d’année en année d’un facteur de 3 %. Il s’agit d’une tendance parce que l’augmentation est la même depuis quelques années."
+
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Le budget des voyages a augmenté de 3 % année après année ». Il s’agit d’une tendance parce que l’augmentation est la même depuis quelques années.",
+
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Le budget des voyages a augmenté de 3 % année après année ». Il s’agit d’une tendance parce que l’augmentation est la même depuis quelques années.",
+
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Le budget des voyages a augmenté de 3 % année après année ». Il s’agit d’une tendance parce que l’augmentation est la même depuis quelques années."
       }
     },
     "q5": {
@@ -462,8 +465,8 @@ export default {
         "3": "Ajoutez les chiffres de l’an dernier et l’augmentation prévue des besoins budgétaires de l’an prochain."
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Tous sont corrects. Les tendances que vous voyez peuvent varier, de sorte que la façon dont vous les utilisez dans vos besoins budgétaires peut varier. ",
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les tendances que vous voyez peuvent varier, de sorte que la façon dont vous les utilisez dans vos besoins budgétaires peut varier."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Tous les réponses sont exactes. Les tendances que vous voyez peuvent varier, de sorte que la façon dont vous les utilisez dans vos besoins budgétaires peut changer. ",
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Les tendances que vous voyez peuvent varier, de sorte que la façon dont vous les utilisez dans vos besoins budgétaires peut changer."
       }
     },
     "q6": {
@@ -474,13 +477,13 @@ export default {
         "3": "Délivrance des permis de pêche en 15 jours. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Un surplus de 10&nbsp;000&nbsp;$ dans le budget de réinstallation, car 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Un surplus de 10&nbsp;000&nbsp;$ dans le budget de réinstallation », car 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles. ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Un surplus de 10&nbsp;000&nbsp;$ dans le budget de réinstallation, car 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Un surplus de 10&nbsp;000&nbsp;$ dans le budget de réinstallation », car 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles."
       }
     },
     "q7": {
-      "text": "L'écart par rapport à l’an dernier s’explique par une nouvelle priorité ministérielle, soit la tenue d’une consultation de trois ans à l’échelle du Canada, qui a entraîné un plus grand nombre de déplacements. En ferez-vous état dans votre budget de l’année prochaine ?",
+      "text": "L'écart par rapport à l’an dernier s’explique par une nouvelle priorité ministérielle, soit la tenue d’une consultation de 3 ans à l’échelle du Canada, qui a entraîné un plus grand nombre de déplacements. En ferez-vous état dans votre budget de l’année prochaine ?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -494,16 +497,16 @@ export default {
     "q8": {
       "text": "Les coûts non discrétionnaires sont :",
       "options": {
-        "1": "Les coûts qui ne sont pas directement liés à vos activités et qui sont donc moins susceptibles d’avoir un impact négatif sur celles-ci.",
-        "2": "Coûts que vous avez pré-budgétés au début de l’exercice et qui ont été induits au cours de l’exercice.",
-        "3": "Les coûts qui sont essentiels à la réalisation de vos activités et qui, s’ils sont réduits, pourraient vous empêcher de les réaliser. "
+        "1": "Les coûts ne sont pas directement liés à vos activités et sont donc moins susceptibles d’avoir un impact négatif sur celles-ci.",
+        "2": "Coûts que vous avez budgétés au début de l’exercice et qui ont été engagés au cours de l’exercice.",
+        "3": "Les fonds qui sont essentiels à la réalisation de vos activités et qui, s’ils sont réduits, pourraient vous empêcher de les réaliser. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s’ils sont réduits, pourraient vous empêcher de les réaliser.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est Les coûts qui sont essentiels à la réalisation de vos activités et qui, s’ils sont réduits, pourraient vous empêcher de les réaliser.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est « Les coûts qui sont essentiels à la réalisation de vos activités » et qui, s’ils sont réduits, pourraient vous empêcher de les réaliser.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est « Les coûts qui sont essentiels à la réalisation de vos activités » et qui, s’ils sont réduits, pourraient vous empêcher de les réaliser.",
         "3": "<span class='v-right' /> <strong>Correct!</strong> "
       },
-      "conclusion":" Les coûts non discrétionnaires, s’ils sont réduits ou éliminés, affecteront sérieusement votre capacité à respecter vos priorités."
+      "conclusion":" Les fonds non discrétionnaires, s’ils sont réduits ou éliminés, affecteront sérieusement votre capacité à respecter vos priorités."
     }
   }
 }</i18n>

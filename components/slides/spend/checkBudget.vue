@@ -165,7 +165,7 @@
     "q2": {
       "text": "Do you have enough money in your budget to hire a consultant whose fee is $90,000?",
       "options": {
-        "1": "Yes. I just need to add a row for the amount of the consultant&rsquo;s fee to my approved budget.",
+        "1": "Yes. I just need to add a row for the amount of the consultant’s fee to my approved budget.",
         "2": "No. There is not enough money in your approved budget."
       },
       "feedback": {
@@ -298,31 +298,31 @@
         "1": "<span class='v-right' /><strong>Correct!</strong>",
         "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": "Il y a 2&nbsp;500&nbsp;$ dans votre budget pour les demandes de traduction, donc vous avez assez d&rsquo;argent pour la demande de traduction."
+      "conclusion": "Il y a 2&nbsp;500&nbsp;$ dans votre budget pour les demandes de traduction, donc vous avez assez d’argent pour la demande de traduction."
     },
     "q2": {
-      "text": "Avez-vous assez d&rsquo;argent dans votre budget pour embaucher un consultant dont les honoraires sont de 90&nbsp;000&nbsp;$?",
+      "text": "Avez-vous assez d’argent dans votre budget pour embaucher un consultant dont les honoraires sont de 90&nbsp;000&nbsp;$?",
       "options": {
-        "1": "Oui, j&rsquo;ai juste besoin d&rsquo;ajouter une ligne pour le montant des honoraires du consultant à mon budget approuvé.",
-        "2": "Non. Il n&rsquo;y a pas assez d&rsquo;argent dans votre budget approuvé."
+        "1": "Oui, j’ai juste besoin d’ajouter une ligne pour mettre le montant des honoraires du consultant à mon budget approuvé.",
+        "2": "Non. Il n’y a pas assez d’argent dans mon budget approuvé."
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>"
       },
-      "conclusion": "Il n&rsquo;y a pas assez d&rsquo;argent dans votre budget approuvé. Si on ne vous donne pas plus d&rsquo;argent, vous ne pouvez pas embaucher le consultant."
+      "conclusion": "Il n’y a pas assez d’argent dans votre budget approuvé. Si on ne vous donne pas plus d’argent, vous ne pouvez pas embaucher le consultant."
     },
     "q3": {
-      "text": "Vous avez acheté tous les meubles dont vous aurez besoin pour l&rsquo;année au coût de 900 $. Vous aimeriez acheter 100 $ de plus en fournitures de bureaux. Pouvez-vous utiliser l&rsquo;argent initialement alloué pour le mobilier?",
+      "text": "Vous avez acheté tous les meubles dont vous aurez besoin pour l’année au coût de 900 $. Vous aimeriez acheter 100 $ de plus en fournitures de bureaux. Pouvez-vous utiliser l’argent initialement alloué pour le mobilier?",
       "options": {
-        "1": "Oui &mdash; Les fonds peuvent être transférés d&rsquo;un objet de dépenses à l&rsquo;autre.",
-        "2": "Non &mdash; Une fois qu&rsquo;ils sont affectés au mobilier, les fonds ne peuvent plus être déplacés."
+        "1": "Oui &mdash; Les fonds peuvent être transférés d’un objet de dépenses à l’autre.",
+        "2": "Non &mdash; Une fois qu’ils sont affectés au mobilier, les fonds ne peuvent plus être déplacés."
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
         "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
-      "conclusion": "Les fonds peuvent être transférés d&rsquo;un poste à l&rsquo;autre."
+      "conclusion": "Les fonds peuvent être transférés d’un poste à l’autre."
     },
     "lines": [
       [

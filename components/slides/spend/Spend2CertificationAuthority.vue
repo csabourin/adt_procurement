@@ -34,7 +34,7 @@ export default {
 <i18n>{
   "en": {
   "q1": {
-  "text": "Looking at the provided specimen signature card, what is the maximum amount that a manager could approve to certify an award (section 34)?",
+  "text": "Looking at the specimen signature card provided, what is the maximum amount that a manager could approve under section 34 to certify an award?",
   "options": {
   "1": "$0",
   "2": "$300",
@@ -47,12 +47,12 @@ export default {
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "4": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": "As per the Certification - Section 34 column in the specimen signature card, the manager has full certification authority for salary and all other expenditures."
+  "conclusion": "As per the Certification – Section 34 column in the specimen signature card, the manager has full certification authority for salaries and all other expenditures."
   }
   },
   "fr": {
   "q1": {
-  "text": "En examinant la carte de signature fournie, quel est le montant maximal qu&rsquo;un gestionnaire pourrait approuver pour attester un prix (article 34)?",
+  "text": "En examinant la carte de signature fournie, quel est le montant maximal qu’un gestionnaire pourrait approuver pour attester un prix en vertu de l’article 34?",
   "options": {
   "1": "0$",
   "2": "300$",
@@ -65,7 +65,7 @@ export default {
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "4": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": " Conformément à la colonne Attestation - Article 34 de la carte de spécimen de signature, le gestionnaire a le plein pouvoir d&rsquo;attestation pour le salaire et toutes les autres dépenses."
+  "conclusion": " Conformément à la colonne Attestation - Article 34 de la carte de spécimen de signature, le gestionnaire a le plein pouvoir d’attestation pour le salaire et toutes les autres dépenses."
   }
   }
   }</i18n>

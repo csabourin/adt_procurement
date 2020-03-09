@@ -151,7 +151,7 @@ export default {
   "The operating budget consists of both {0} and {1}.",
   "is money that is provided to entities outside of the federal government to advance the department's mandate.",
   "is for items that will depreciate over time, such as a new addition to an existing building, vehicles, etc.",
-  "{0} costs are essential for delivering on your activities and if cut will result in you not being able to deliver on them.",
+  "{0} costs are essential for delivering on your activities, and if cut will result in you not being able to deliver on them.",
   "{0} costs are less likely to have a negative impact on delivering your activities.",
   "A best practice is to include a {0} column in your budget requirements to remind you how you arrived at your figures.",
   "If you have reference levels, you start with {0}. ",

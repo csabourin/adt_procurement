@@ -77,26 +77,26 @@ export default {
       "text": "Le sous-ministre adjoint a approuvé une demande de voyage de 5&nbsp;000&nbsp;$. Elle a été enregistrée dans le système financier. Une semaine plus tard, au moment de réserver le vol, le prix est passé de 600 $ à 650 $. Que feriez-vous?",
       "options": {
         "1": "Modifiez le montant réel de vos dépenses.",
-        "2": "Modifiez vos engagements sans demander une augmentation de l&rsquo;autorisation de déplacement.",
+        "2": "Modifiez vos engagements sans demander une augmentation de l’autorisation de déplacement.",
         "3": "Laissez les finances telles quelles. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Vous ne modifierez pas le montant réel des dépenses puisque le salarié n&rsquo;a pas encore présenté de demande d&rsquo;indemnité de déplacement.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Vous ne demandez pas une augmentation de voyage parce que seul le billet d&rsquo;avion a augmenté, et non le coût total du voyage. Toutefois, si vous croyez que le montant total du voyage dépassera le montant préapprouvé, vous devriez faire approuver de nouveau le montant rajusté du voyage.",
-        "3": "<span class='v-right' /><strong>Correct!</strong> Vous ne modifierez pas le montant réel des dépenses puisque le salarié n&rsquo;a pas encore présenté de demande d&rsquo;indemnité de déplacement. Vous ne demandez pas une augmentation de voyage parce que seul le billet d&rsquo;avion a augmenté, et non le coût total du voyage."
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Vous ne modifierez pas le montant réel des dépenses puisque le salarié n’a pas encore présenté de demande d’indemnité de déplacement.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Vous ne demandez pas une augmentation de voyage parce que seul le billet d’avion a augmenté, et non le coût total du voyage. Toutefois, si vous croyez que le montant total du voyage dépassera le montant préapprouvé, vous devriez faire approuver de nouveau le montant rajusté du voyage.",
+        "3": "<span class='v-right' /><strong>Correct!</strong> Vous ne modifierez pas le montant réel des dépenses puisque le salarié n’a pas encore présenté de demande d’indemnité de déplacement. Vous ne demandez pas une augmentation de voyage parce que seul le billet d’avion a augmenté, et non le coût total du voyage."
       },
       "conclusion": ""
     },
     "q2": {
-      "text": "La date d&rsquo;entrée en fonction de votre nouvel employé a été repoussée d&rsquo;un mois. Il ne travaillera donc que les six mois restants de l&rsquo;exercice au lieu de sept mois. Son salaire est de 70&nbsp;000&nbsp;$. Qu&rsquo;est-ce que vous faites?",
+      "text": "La date d’entrée en fonction de votre nouvel employé a été repoussée d’un mois. Il ne travaillera donc que les six mois restants de l’exercice au lieu de sept mois. Son salaire est de 70&nbsp;000&nbsp;$. Qu’est-ce que vous faites?",
       "options": {
         "1": "Réduire les dépenses réelles de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ ÷ 12 mois X 1 mois).",
-        "2": "Réduire les dépenses d&rsquo;engagement de 40&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ ÷ 12 mois X 7 mois).",
+        "2": "Réduire les dépenses d’engagement de 40&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ ÷ 12 mois X 7 mois).",
         "3": "Réduire les dépenses annuelles prévues de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ ÷ 12 mois X 1 mois)."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect</strong>. Étant donné que l&rsquo;employé n&rsquo;a pas encore commencé, les dépenses ne peuvent pas être réduites.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>. Bien que vous puissiez réduire vos engagements, vous ne les réduiriez que d&rsquo;un mois au lieu de sept mois.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect</strong>. Étant donné que l’employé n’a pas encore commencé, les dépenses ne peuvent pas être réduites.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>. Bien que vous puissiez réduire vos engagements, vous ne les réduiriez que d’un mois au lieu de sept mois.",
         "3": "<span class='v-right' /> <strong>Correct!</strong> Comme vous aviez déjà prévu sept mois, vous devrez supprimer un mois."
       },
       "conclusion": ""

@@ -13,7 +13,7 @@
             <ul>
               <li>Financial situation reports:</li>
               <ul>
-                <li>Provide the most current financial picture of the organization&rsquo;s finances.</li>
+                <li>Provide the most current financial picture of the organization’s finances.</li>
                 <li>Are tools for managers to regularly identify current financials, risks, potential surpluses and/or shortfalls in their budgets.</li>
                 <li>Are initiated and led by the Chief Financial Officer.&nbsp;</li>
                 <li>Allow the Chief Financial Officer to make recommendations to senior leaders on the financial resources needed to achieve results.</li>
@@ -27,7 +27,7 @@
               <ul>
                 <ul>
                   <li>Fournissent le portrait financier le plus récent des finances de l'organisme.</li>
-                  <li>Sont des outils permettant aux gestionnaires d&rsquo;identifier réguli&egrave;rement les finances courantes, les risques, les excédents et/ou les déficits potentiels dans leurs budgets.</li>
+                  <li>Sont des outils permettant aux gestionnaires d’identifier réguli&egrave;rement les finances courantes, les risques, les excédents et/ou les déficits potentiels dans leurs budgets.</li>
                   <li>Sont lancés et dirigés par le chef de la direction financi&egrave;re.&nbsp;</li>
                   <li>Permettent au dirigeant principal des finances de faire des recommandations aux cadres supérieurs sur les ressources financi&egrave;res nécessaires pour obtenir des résultats.</li>
                 </ul>
@@ -49,7 +49,7 @@
               <li>Managers contribute to these government reports by providing information on the performance outcomes and results of their activities.</li>
             </ul>
           </span><span v-if="$i18n.locale=='fr'">
-            <h3><strong>Contribuer à l&rsquo;établissement de rapports externes</strong></h3>
+            <h3><strong>Contribuer à l’établissement de rapports externes</strong></h3>
             <ul>
               <li>Les finances et les résultats des services et des programmes gouvernementaux font l'objet de rapports réguliers au Parlement et à la population canadienne dans divers rapports :&nbsp;</li>
               <ul>
@@ -58,7 +58,7 @@
                   <li>Rapports financiers trimestriels (RFT)</li>
                   <li>Divulgation proactive&nbsp;</li>
                   <li>Cadre de responsabilisation de gestion (CRG)</li>
-                  <li>Rapports de vérification interne et d&rsquo;évaluation</li>
+                  <li>Rapports de vérification interne et d’évaluation</li>
                 </ul>
               </ul>
               <li>Les gestionnaires contribuent à ces rapports gouvernementaux en fournissant de l'information sur les résultats de rendement et les résultats de leurs activités.</li>
@@ -80,7 +80,7 @@
           <!-- <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
             Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
           <span v-if="$i18n.locale=='fr'">
-            Jetez un coup d&rsquo;&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
+            Jetez un coup d’&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
           </span></p> -->
         </b-col>
       </b-row>

@@ -85,7 +85,7 @@
         "right": "<span class='v-right' /> <strong>Correct!</strong>",
         "wrong": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
-      "conclusion": "You would need to consult the Assistant Deputy Minister (ADM). Only the ADM has the authority to approve departmental costs for an event of more than $20,000, and up to $25,000. Don&rsquo;t forget to consult with your Director and your Director General before approaching your ADM!<p>For more information on events, visit the <a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228'>Directive on Travel, Hospitality, Conference and Event Expenditures</a>.</p>"
+      "conclusion": "You would need to consult the Assistant Deputy Minister (ADM). Only the ADM has the authority to approve departmental costs for an event of more than $20,000, and up to $25,000. Don’t forget to consult with your Director and your Director General before approaching your ADM!<p>For more information on events, visit the <a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228'>Directive on Travel, Hospitality, Conference and Event Expenditures</a>.</p>"
     },
     "q4": {
       "text": "What does “F” or “Full” mean in the chart provided?",
@@ -102,7 +102,7 @@
   },
   "fr": {
     "q1": {
-      "text": "Après avoir examiné le tableau de délégation de pouvoirs suivant, quel est le montant maximal qu&rsquo;un gestionnaire pourrait approuver pour entreprendre des activités d&rsquo;accueil (article 32)?",
+      "text": "Après avoir examiné le tableau de délégation de pouvoirs suivant, quel est le montant maximal qu’un gestionnaire pourrait approuver pour entreprendre des activités d’accueil (article 32)?",
       "options": {
         "1": "0$",
         "2": "300$",
@@ -115,10 +115,10 @@
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": " Selon le tableau de délégation signé, le gestionnaire n&rsquo;a pas le pouvoir d&rsquo;entreprendre des activités d&rsquo;accueil; la bonne réponse est donc 0 $. Pour de plus amples renseignements sur l&rsquo;accueil, visitez la <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive sur les dépenses de voyages, d&rsquo;accueil, de conférences et d&rsquo;événements</a>."
+      "conclusion": " Selon le tableau de délégation signé, le gestionnaire n’a pas le pouvoir d’entreprendre des activités d’accueil; la bonne réponse est donc 0 $. Pour de plus amples renseignements sur l’accueil, visitez la <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive sur les dépenses de voyages, d’accueil, de conférences et d’événements</a>."
     },
     "q2": {
-      "text": "Quel est le poste le moins élevé qui aurait l&rsquo;autorité d&rsquo;approuver l&rsquo;accueil?",
+      "text": "Quel est le poste le moins élevé qui aurait l’autorité d’approuver l’accueil?",
       "options": {
         "1": "Directeur",
         "2": "Directeur général",
@@ -126,15 +126,15 @@
         "4": "Sous-ministre"
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>  Le poste le moins élevé qui aurait l&rsquo;autorité d&rsquo;approuver l&rsquo;accueil est celui de directeur. ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>.   Le directeur est le poste le moins élevé qui a le pouvoir d&rsquo;approuver l&rsquo;accueil conformément à ce tableau de délégation.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.   Le directeur est le poste le moins élevé qui a le pouvoir d&rsquo;approuver l&rsquo;accueil conformément à ce tableau de délégation. ",
-        "4": "<span class='v-wrong' /> <strong>Incorrect</strong>.   Le directeur est le poste le moins élevé qui a le pouvoir d&rsquo;approuver l&rsquo;accueil conformément à ce tableau de délégation. "
+        "1": "<span class='v-right' /> <strong>Correct!</strong>  Le poste le moins élevé qui aurait l’autorité d’approuver l’accueil est celui de directeur. ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>.   Le directeur est le poste le moins élevé qui a le pouvoir d’approuver l’accueil conformément à ce tableau de délégation.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.   Le directeur est le poste le moins élevé qui a le pouvoir d’approuver l’accueil conformément à ce tableau de délégation. ",
+        "4": "<span class='v-wrong' /> <strong>Incorrect</strong>.   Le directeur est le poste le moins élevé qui a le pouvoir d’approuver l’accueil conformément à ce tableau de délégation. "
       },
       "conclusion": ""
     },
     "q3": {
-      "text": "Plusieurs employés du ministère se déplacent pour assister à un événement. En consultant le tableau de délégation financière ministériel fourni, à qui demanderiez-vous d&rsquo;approuver (article 32) un montant de 23&nbsp;000&nbsp;$ pour des frais de déplacement et d&rsquo;inscription aux événements?",
+      "text": "Plusieurs employés du ministère se déplacent pour assister à un événement. En consultant le tableau de délégation financière ministériel fourni, à qui demanderiez-vous d’approuver (article 32) un montant de 23&nbsp;000&nbsp;$ pour des frais de déplacement et d’inscription aux événements?",
       "options": {
         "1": "Directeur",
         "2": "Directeur général",
@@ -145,19 +145,19 @@
         "right": "<span class='v-right' /> <strong>Correct!</strong>",
         "wrong": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
-      "conclusion": "Vous devriez consulter le sous-ministre adjoint (SMA). Seul le SMA a le pouvoir d&rsquo;approuver les coûts ministériels pour un événement de plus de 20&nbsp;000&nbsp;$ et jusqu&rsquo;à 25&nbsp;000&nbsp;$. N&rsquo;oubliez pas de consulter votre directeur et votre directeur général avant d&rsquo;approcher votre SMA! <p> Pour plus d&rsquo;information sur les événements, visiter la <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive sur les dépenses de voyages, d&rsquo;accueil, de conférences et d&rsquo;événements.</a>.</p>"
+      "conclusion": "Vous devriez consulter le sous-ministre adjoint (SMA). Seul le SMA a le pouvoir d’approuver les coûts ministériels pour un événement de plus de 20&nbsp;000&nbsp;$ et jusqu’à 25&nbsp;000&nbsp;$. N’oubliez pas de consulter votre directeur et votre directeur général avant d’approcher votre SMA! <p> Pour plus d’information sur les événements, visiter la <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank'>Directive sur les dépenses de voyages, d’accueil, de conférences et d’événements.</a>.</p>"
     },
     "q4": {
       "text": "Que signifie 'P' ou 'Plein' dans le tableau fourni?",
       "options": {
         "1": "Tout est possible Vous pouvez approuver le montant de votre choix.",
-        "2": "Vous ne pouvez approuver qu&rsquo;un montant prédéfini. "
+        "2": "Vous ne pouvez approuver qu’un montant prédéfini. "
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>"
       },
-      "conclusion": "Vous êtes limité dans la mesure de votre budget alloué. Pour plus d&rsquo;informations sur les autorités, visitez le <a target='_blank' href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584'>Guide de délégation et de mise en œuvre des pouvoirs de dépenser et des pouvoirs financiers</a>"
+      "conclusion": "Vous êtes limité dans la mesure de votre budget alloué. Pour plus d’informations sur les autorités, visitez le <a target='_blank' href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584'>Guide de délégation et de mise en œuvre des pouvoirs de dépenser et des pouvoirs financiers</a>"
     }
   }
 }</i18n>

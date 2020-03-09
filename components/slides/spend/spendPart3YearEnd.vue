@@ -54,7 +54,7 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Your Finance section will establish your department&rsquo;s year end procedures."
+      "conclusion": "Your Finance section will establish your department’s year end procedures."
     },
     "q2": {
       "text": "You received an invoice on April 1 after goods have been delivered in March. Should you create a Payable at Year-End (PAYE)?",
@@ -78,12 +78,12 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "You will not create a PAYE because the amount is not material. Your department&rsquo;s year-end procedures will inform you of your materiality amounts. If you receive the invoice in late April or May, you will be paying out of new year funds."
+      "conclusion": "You will not create a PAYE because the amount is not material. Your department’s year-end procedures will inform you of your materiality amounts. If you receive the invoice in late April or May, you will be paying out of new year funds."
     }
   },
   "fr": {
     "q1": {
-      "text": "Les procédures de fin d&rsquo;exercice sont-elles les mêmes pour tous les gestionnaires du gouvernement?",
+      "text": "Les procédures de fin d’exercice sont-elles les mêmes pour tous les gestionnaires du gouvernement?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -92,10 +92,10 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Votre section des finances établira les procédures de fin d&rsquo;exercice de votre ministère."
+      "conclusion": "Votre section des finances établira les procédures de fin d’exercice de votre ministère."
     },
     "q2": {
-      "text": "Vous avez reçu une facture le 1 avril après la livraison des marchandises en mars. Devriez-vous créer un créditeur à la fin de l&rsquo;exercice (CAFE)?",
+      "text": "Vous avez reçu une facture le 1 avril après la livraison des marchandises en mars. Devriez-vous créer un créditeur à la fin de l’exercice (CAFE)?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -104,10 +104,10 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Un CAFE n&rsquo;est pas nécessaire parce que les ministères ont habituellement une période de temps en avril au cours de laquelle ils peuvent payer leurs factures avec les fonds de l&rsquo;ancienne année."
+      "conclusion": "Un CAFE n’est pas nécessaire parce que les ministères ont habituellement une période de temps en avril au cours de laquelle ils peuvent payer leurs factures avec les fonds de l’ancienne année."
     },
     "q3": {
-      "text": "Vous avez reçu les marchandises mais pas la facture de  50 $. Créez-vous un créditeur à la fin de l&rsquo;exercice (CAFE)?",
+      "text": "Vous avez reçu les marchandises mais pas la facture de  50 $. Créez-vous un créditeur à la fin de l’exercice (CAFE)?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -116,7 +116,7 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Vous ne créerez pas de CAFE parce que le montant n&rsquo;est pas important. Les procédures de fin d&rsquo;exercice de votre ministère vous informeront de l&rsquo;importance relative de vos montants. Si vous recevez la facture à la fin d&rsquo;avril ou en mai, vous paierez à même les fonds de la nouvelle année."
+      "conclusion": "Vous ne créerez pas de CAFE parce que le montant n’est pas important. Les procédures de fin d’exercice de votre ministère vous informeront de l’importance relative de vos montants. Si vous recevez la facture à la fin d’avril ou en mai, vous paierez à même les fonds de la nouvelle année."
     }
   }
 }</i18n>

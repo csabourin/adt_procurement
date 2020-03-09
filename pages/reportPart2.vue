@@ -31,7 +31,7 @@
       <b-modal id="inRealLife" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('inRealLifeTitle')}}</template>
         <div v-if="$i18n.locale=='en'">
-          <p>Look up your organization&rsquo;s Performance Information Profiles and its external reports, such as the Departmental Results Report.&nbsp;</p>
+          <p>Look up your organization’s Performance Information Profiles and its external reports, such as the Departmental Results Report.&nbsp;</p>
           <p>Your organization will have their own ways of doing financial situation reports, and reporting on spending and results. Talk to your finance or planning section and director. Ask them:</p>
           <ul>
             <li>What do we call our financial situation reports and what do they look like? Where can I find them?</li>
@@ -42,7 +42,7 @@
           </ul>
         </div>
         <div v-if="$i18n.locale=='fr'">
-          <p>Faites une recherche afin de localiser les profils d&rsquo;information sur le rendement de votre organisation et ses rapports externes, comme le Rapport ministériel sur les résultats.&nbsp;</p>
+          <p>Faites une recherche afin de localiser les profils d’information sur le rendement de votre organisation et ses rapports externes, comme le Rapport ministériel sur les résultats.&nbsp;</p>
           <p>Votre organisation aura sa propre fa&ccedil;on de produire des rapports sur la situation financi&egrave;re et de rendre compte de ses dépenses et de ses résultats. Parlez-en à votre section des finances ou de la planification et à votre directeur. Demandez-leur :</p>
           <ul>
             <li>Comment appelons-nous nos rapports sur la situation financi&egrave;re et à quoi ressemblent-ils ? &Agrave; quel endroit puis-je les trouver?</li>

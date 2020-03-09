@@ -9,7 +9,7 @@
       <b-row>
         <b-col>
           <span v-if="$i18n.locale=='en'">
-            <h3>Work Plan</h3>
+            <h3>Build a Work Plan</h3>
             <ul>
               <li>A work plan is a detailed schedule of the activities to be carried out, resources to be consumed, and results to be achieved over a one-year period, usually a fiscal year for a responsibility center.</li>
               <li>To build a work plan, you review the activities from the previous year's work plan, budget and reports to identify lessons learned and what needs to be carried over in order to identify possible trends.&nbsp;</li>
@@ -17,10 +17,10 @@
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
-            <h3>Plan de travail</h3>
+            <h3>Élaborer un plan de travail</h3>
             <ul>
-              <li>Un plan de travail est un compte rendu détaillé des activités à exercer, des ressources à utiliser et des résultats à atteindre au cours d&rsquo;une période d&rsquo;un an, laquelle correspond habituellement à un exercice financier pour un centre de responsabilité.</li>
-              <li>Pour élaborer un plan de travail, vous passez en revue les activités inscrites dans le plan de travail, le budget et les rapports de l&rsquo;année précédente afin de prendre note des leçons apprises et les mesures à reporter afin de cerner les tendances possibles.&nbsp;</li>
+              <li>Un plan de travail est un compte rendu détaillé des activités à exercer, des ressources à utiliser et des résultats à atteindre au cours d’une période d’un an, laquelle correspond habituellement à un exercice financier pour un centre de responsabilité.</li>
+              <li>Pour élaborer un plan de travail, vous passez en revue les activités inscrites dans le plan de travail, le budget et les rapports de l’année précédente afin de prendre note des leçons apprises et les mesures à reporter afin de cerner les tendances possibles.&nbsp;</li>
               <li>Plus précisément, vous définissez et hiérarchisez le travail et les activités de votre unité, attribuez des ressources et des échéanciers à chaque activité, veillez à ce que les activités correspondent aux priorités organisationnelles et effectuez une évaluation des risques.&nbsp;</li>
             </ul>
           </span>
@@ -38,20 +38,20 @@
               <li>Typically, budgets will include <strong>operating and maintenance</strong> (O&amp;M) and <strong>salary </strong>costs. Depending on the mandate of your department, some budgets may also include <strong>capital </strong>and <strong>grants  and contributions</strong> amounts.</li>
               <!--
                 NEW VERSION? (CSPS-TD)
-                <li>To create a budget, you review the previous year&rsquo;s budget to identify what <strong>salary</strong> and what <strong>operations and maintenance expenses</strong>&mdash;and in some cases, <strong>capital</strong>, <strong>grants</strong> and <strong>Contributions</strong>&mdash;you will keep, eliminate and add.</li> 
+                <li>To create a budget, you review the previous year’s budget to identify what <strong>salary</strong> and what <strong>operations and maintenance expenses</strong>&mdash;and in some cases, <strong>capital</strong>, <strong>grants</strong> and <strong>Contributions</strong>&mdash;you will keep, eliminate and add.</li> 
               -->
 
               <li>To create your budget, you must <strong>analyze </strong>information from various sources, <strong>forecast</strong> your new budget requirements and <strong>submit</strong> your new budget for approval to upper management.</li>
               <!--
                 NEW VERSION? (CSPS-TD)
-                <li>Compare the previous year&rsquo;s budget to the new work plan, making sure it covers all the expenses linked to the activities. Forecast expenses and submit the proposed new budget for approval, making adjustments throughout the year as activities evolve.</li>
+                <li>Compare the previous year’s budget to the new work plan, making sure it covers all the expenses linked to the activities. Forecast expenses and submit the proposed new budget for approval, making adjustments throughout the year as activities evolve.</li>
               -->
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
             <h3>Établir un budget</h3>
             <ul>
-              <li>Essentiellement, les budgets représentent la conversion des plans de travail en termes financiers. En d&rsquo;autres mots, <strong>le budget représente le montant que vous prévoyez dépenser pour réaliser les activités de votre plan de travail</strong>.</li>
+              <li>Essentiellement, les budgets représentent la conversion des plans de travail en termes financiers. En d’autres mots, <strong>le budget représente le montant que vous prévoyez dépenser pour réaliser les activités de votre plan de travail</strong>.</li>
               <!--
                 NOUVELLE VERION? (CSPS-TD)
                 <li>Les budgets correspondent essentiellement aux plans de travail exprimés en termes financiers. Autrement dit, <strong>le budget représente le montant que vous prévoyez dépenser pour réaliser votre plan.</strong></li>
@@ -60,13 +60,13 @@
               <li>Pour créer votre budget, vous devez <strong>analyser </strong>les informations de diverses sources,<strong>prévoir </strong>vos nouveaux besoins budgétaires et <strong>soumettre </strong>votre nouveau budget pour approbation à la direction.</li>
               <!--
                 NOUVELLE VERSION? (CSPS-TD)
-                <li>Pour créer un budget, vous <strong>passez en revue</strong> le budget de l&rsquo;année précédente afin de déterminer quels salaires, quelles dépenses de fonctionnement et d&rsquo;entretien et, dans certains cas, de capital et des subventions et contributions vous devrez <strong>conserver</strong>, <strong>éliminer</strong> ou <strong>ajouter</strong>.</li>
+                <li>Pour créer un budget, vous <strong>passez en revue</strong> le budget de l’année précédente afin de déterminer quels salaires, quelles dépenses de fonctionnement et d’entretien et, dans certains cas, de capital et des subventions et contributions vous devrez <strong>conserver</strong>, <strong>éliminer</strong> ou <strong>ajouter</strong>.</li>
               -->
 
-              <li>Habituellement, les budgets comprennent les co&ucirc;ts de <strong>fonctionnement et d&rsquo;entretien</strong> (F et E) et les co&ucirc;ts <strong>salariaux</strong>. Selon le mandat de votre minist&egrave;re, certains budgets peuvent également inclure des montants <strong>d&rsquo;immobilisations</strong> et de <strong>subventions et contributions</strong>.</li>
+              <li>Habituellement, les budgets comprennent les co&ucirc;ts de <strong>fonctionnement et d’entretien</strong> (F et E) et les co&ucirc;ts <strong>salariaux</strong>. Selon le mandat de votre minist&egrave;re, certains budgets peuvent également inclure des montants <strong>d’immobilisations</strong> et de <strong>subventions et contributions</strong>.</li>
               <!--
                 NOUVELLE VERSION? (CSPS-TD)
-                <li>Vous comparez le budget de l&rsquo;année précédente au nouveau plan de travail en vous assurant que toutes les dépenses liées aux activités sont prises en compte. Vous prévoyez les dépenses et soumettez le nouveau budget proposé pour approbation, en y apportant des modifications tout au long de l&rsquo;année à mesure que les activités évoluent.</li>
+                <li>Vous comparez le budget de l’année précédente au nouveau plan de travail en vous assurant que toutes les dépenses liées aux activités sont prises en compte. Vous prévoyez les dépenses et soumettez le nouveau budget proposé pour approbation, en y apportant des modifications tout au long de l’année à mesure que les activités évoluent.</li>
               -->
             </ul>
           </span>
@@ -83,9 +83,9 @@
       <b-row>
         <b-col>
           <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
-            Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
+            Find your organization's Departmental Plan here: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
           <span v-if="$i18n.locale=='fr'">
-            Jetez un coup d&rsquo;&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
+            Trouvez le plan ministériel de votre organisation ici : <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
           </span></p>
         </b-col>
       </b-row>

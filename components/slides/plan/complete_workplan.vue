@@ -219,8 +219,8 @@
           "titleMitigation": "Atténuation",
           "titleResources": "Resources",
           "qDisabled": "Veuillez faire un choix",
-          "govtPriorities": "Servir les Canadiens en assurant l&rsquo;utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
-          "deptPriorities": "Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l&rsquo;aquaculture et d&rsquo;autres industries maritimes.",
+          "govtPriorities": "Servir les Canadiens en assurant l’utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
+          "deptPriorities": "Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l’aquaculture et d’autres industries maritimes.",
           "dirPriorities": "Gérer les pêches commerciales.",
           "pA1": "Gérer et administrer la direction&nbsp;",
           "psA1": "<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir du soutien administratif&nbsp;</li><li> Déménagement des bureaux dans de nouveaux locaux</li></ul>",
@@ -228,7 +228,7 @@
           "pR1": "Roulement du personnel",
           "low": "Faible",
           "high": "&Eacute;levé",
-          "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l&rsquo;excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li></ul>",
+          "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l’excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li></ul>",
           "pM1_1": "Mettre en &oelig;uvre des horaires de travail flexibles",
           "pR1_1": "1 adjoint administratif",
           "pR1_2": "gestionnaire",
@@ -245,11 +245,11 @@
           "pRes3": "<li>1 agent</strong></li><li>1 analyste subalterne</li>",
           "q1":
           {
-              "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d&rsquo;atténuation de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
+              "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d’atténuation de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
               "options":
               {
-                  "1": "Gardez-la comme stratégie d&rsquo;atténuation pour la &laquo; Surpêche &raquo;.",
-                  "2": "Il devrait faire partie de la stratégie d&rsquo;atténuation &laquo; Roulement du personnel &raquo;.",
+                  "1": "Gardez-la comme stratégie d’atténuation pour la &laquo; Surpêche &raquo;.",
+                  "2": "Il devrait faire partie de la stratégie d’atténuation &laquo; Roulement du personnel &raquo;.",
                   "3": "Enlever complètement &laquo; Horaires de travail flexibles &raquo;."
               },
               "feedback":
@@ -277,7 +277,7 @@
           },
           "q3":
           {
-              "text": "En regardant sous <strong>Ressources</strong>, vous remarquez que le poste de gestionnaire n&rsquo;y figure pas. À quelle activité devrait-il être associé?",
+              "text": "En regardant sous <strong>Ressources</strong>, vous remarquez que le poste de gestionnaire n’y figure pas. À quelle activité devrait-il être associé?",
               "options":
               {
                   "1": "Gérer et administrer la direction",

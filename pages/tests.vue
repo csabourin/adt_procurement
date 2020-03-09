@@ -119,7 +119,7 @@ export default {
   "What you plan on spending for the full fiscal year.",
   "Budget leftover or shortfall. ",
   "Provides details on the budget leftover or shortfall",
-  "Situations that may change the results you&rsquo;ve reported. "
+  "Situations that may change the results you’ve reported. "
   ]}
   },
   "fr": {
@@ -152,7 +152,7 @@ export default {
   "q3": {
   "text": "Faites correspondre le poste au budget auquel il appartient.",
   "options": {
-  "1": "Un contrat avec une agence d&rsquo;intérim"
+  "1": "Un contrat avec une agence d’intérim"
   },
   "matching": {
   "1": "Fonctionnement - Salaire",
@@ -168,17 +168,17 @@ export default {
   "q4":{"dotsRight":[
   "Budget",
   "Engagements",
-  "Dépenses réelles depuis le début de l&rsquo;année",
+  "Dépenses réelles depuis le début de l’année",
   "Prévisions annuelles",
   "Excédent/déficit",
   "Notes sur les excédents ou déficits",
   "Notes sur les risques"
   ],
   "dotsLeft":[
-  "Fonds alloués pour l&rsquo;exercice financier. ",
+  "Fonds alloués pour l’exercice financier. ",
   "Fonds mis de côté à des fins précises.",
-  "Ce que vous avez dépensé jusqu&rsquo;à présent.",
-  "Ce que vous prévoyez dépenser pour l&rsquo;ensemble de l&rsquo;exercice financier.",
+  "Ce que vous avez dépensé jusqu’à présent.",
+  "Ce que vous prévoyez dépenser pour l’ensemble de l’exercice financier.",
   "Reste ou manque à gagner dans le budget. ",
   "Fournit des détails sur le reliquat ou le manque à gagner du budget. ",
   "Les situations qui peuvent changer les résultats que vous avez rapportés. "

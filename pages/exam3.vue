@@ -14,8 +14,8 @@
         </div>
         <div v-if="$i18n.locale=='fr'">
           <p><strong style="text-transform: uppercase;">Note :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons à compléter les tests pour planifier, dépenser et faire un rapport et nous vous invitons à nous faire part de vos commentaires sur les questions et les fonctionnalités.&nbsp; Vos commentaires nous aideront à rendre le tout plus efficace.</p>
-          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d&rsquo;un responsable de centre d&rsquo;appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
-          <!-- <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l&rsquo;examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> -->
+          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d’un responsable de centre d’appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
+          <!-- <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> -->
           <p>Le test comporte trois parties - une à la fin de chaque phase - planification, dépenses et rapports.&nbsp;</p>
           <p>La note de passage est de 80%, par partie.&nbsp;</p>
           <p>Chaque partie devrait vous prendre environ 15-20 minutes.&nbsp;</p>
@@ -316,7 +316,7 @@ export default {
       "q3": {
       "text": "Three of your positions have been vacant for the last four months, and you now expect they will be vacant for another five months. There is a growing salary surplus. What will you do?",
       "options": {
-      "1": "Keep forecasting the budgeted amount for salary and acquire temporary help because it&rsquo;s quicker ",
+      "1": "Keep forecasting the budgeted amount for salary and acquire temporary help because it’s quicker ",
       "2": "Transfer the salary surplus to O&M, even though you have no O&M deficit",
       "3": "Tell your manager that you have a surplus in your salary budget, so it can be used elsewhere in the organization",
       "4": "Do not forecast an additional surplus so you can hold onto the funds; then in P9, forecast what you expect to spend"
@@ -357,7 +357,7 @@ export default {
       }
       },
       "q6": {
-      "text": "Which report publishes information on the departments&rsquo; websites related to travel, hospitality, contracts, position reclassifications, wrongdoing, grants and contributions?",
+      "text": "Which report publishes information on the departments’ websites related to travel, hospitality, contracts, position reclassifications, wrongdoing, grants and contributions?",
       "options": {
       "1": "Departmental Results Report",
       "2": "Quarterly Financial Report",
@@ -442,7 +442,7 @@ export default {
       "scoreIs": "Votre note finale est de",
       "Questions": {
       "q1": {
-      "text": "<table class='qTable'>        <tbody>          <tr>            <td>              <p>Budget </p>            </td>            <td>              <p>Engagements</p>            </td>            <td>              <p>Réalisations à ce jour</p>            </td>            <td>              <p>Prévisions annuelles</p>            </td>            <td>              <p>Excédent / Déficit</p>            </td>          </tr>          </tbodytable> Il s&rsquo;agit des intitulés de colonne de l&rsquo;état de la situation financière. Comment l&rsquo;excédent / le déficit est-il calculé?",
+      "text": "<table class='qTable'>        <tbody>          <tr>            <td>              <p>Budget </p>            </td>            <td>              <p>Engagements</p>            </td>            <td>              <p>Réalisations à ce jour</p>            </td>            <td>              <p>Prévisions annuelles</p>            </td>            <td>              <p>Excédent / Déficit</p>            </td>          </tr>          </tbodytable> Il s’agit des intitulés de colonne de l’état de la situation financière. Comment l’excédent / le déficit est-il calculé?",
           "options": {
           "1": "Prévisions annuelles - Budget",
           "2": "Engagements - Réalisations",
@@ -457,12 +457,12 @@ export default {
           }
           },
           "q2": {
-          "text": "Il s&rsquo;agit de P6 et vous examinez le rapport sur la situation financière (RSF). Au cours des quatre derniers mois, trois de vos postes ont été vacants, de sorte qu&rsquo;il y a un important excédent salarial. Toutefois, vous embauchez deux étudiants à titre de solution provisoire jusqu&rsquo;à la fin de l&rsquo;exercice financier. Mais il faudra un mois de plus pour les embaucher après le traitement de leur autorisation de sécurité. En tant que gestionnaire, comment prévoyez-vous la situation?",
+          "text": "Il s’agit de P6 et vous examinez le rapport sur la situation financière (RSF). Au cours des quatre derniers mois, trois de vos postes ont été vacants, de sorte qu’il y a un important excédent salarial. Toutefois, vous embauchez deux étudiants à titre de solution provisoire jusqu’à la fin de l’exercice financier. Mais il faudra un mois de plus pour les embaucher après le traitement de leur autorisation de sécurité. En tant que gestionnaire, comment prévoyez-vous la situation?",
           "options": {
-          "1": "Prévoir les coûts de deux salaires d&rsquo;étudiants, ajoutez ce montant au total de votre budget et demandez à votre administrateur de modifier les chiffres réels à ce jour pour refléter cette situation",
-          "2": "Prévoir les coûts de deux salaires d&rsquo;étudiants de P7 à P12 (fin de l&rsquo;année financière) et demander à votre administration de mettre à jour les engagements dans le système financier",
-          "3": "Prévoir les coûts de deux salaires d&rsquo;étudiants et déduisez-les du total de votre budget et demandez à votre administration de modifier les chiffres réels de l&rsquo;année en cours pour en tenir compte",
-          "4": "Prévoir les coûts de deux salaires d&rsquo;étudiants de P6 à P12 (fin de l&rsquo;année financière) et demander à votre administration de mettre à jour les engagements dans le système financier"
+          "1": "Prévoir les coûts de deux salaires d’étudiants, ajoutez ce montant au total de votre budget et demandez à votre administrateur de modifier les chiffres réels à ce jour pour refléter cette situation",
+          "2": "Prévoir les coûts de deux salaires d’étudiants de P7 à P12 (fin de l’année financière) et demander à votre administration de mettre à jour les engagements dans le système financier",
+          "3": "Prévoir les coûts de deux salaires d’étudiants et déduisez-les du total de votre budget et demandez à votre administration de modifier les chiffres réels de l’année en cours pour en tenir compte",
+          "4": "Prévoir les coûts de deux salaires d’étudiants de P6 à P12 (fin de l’année financière) et demander à votre administration de mettre à jour les engagements dans le système financier"
           },
           "feedback": {
           "1": "",
@@ -472,12 +472,12 @@ export default {
           }
           },
           "q3": {
-          "text": "Trois de vos postes ont été vacants au cours des quatre derniers mois, et vous vous attendez maintenant à ce qu&rsquo;ils le soient encore pour cinq mois. Il y a un surplus de salaire croissant. Qu&rsquo;allez-vous faire?",
+          "text": "Trois de vos postes ont été vacants au cours des quatre derniers mois, et vous vous attendez maintenant à ce qu’ils le soient encore pour cinq mois. Il y a un surplus de salaire croissant. Qu’allez-vous faire?",
           "options": {
-          "1": "Continuez à prévoir le montant prévu pour le salaire et faites appel à de l&rsquo;aide temporaire, car c&rsquo;est plus rapide",
-          "2": "Transférer l&rsquo;excédent salarial au F&E, même si vous n&rsquo;avez pas de déficit de F&E",
-          "3": "Dites à votre gestionnaire que vous avez un surplus dans votre budget salarial, afin qu&rsquo;il puisse être utilisé ailleurs dans l'organisation",
-          "4": "Ne prévoyez pas d&rsquo;excédent supplémentaire afin de pouvoir conserver les fonds ; ensuite, dans P9, prévoyez ce que vous prévoyez de dépenser"
+          "1": "Continuez à prévoir le montant prévu pour le salaire et faites appel à de l’aide temporaire, car c’est plus rapide",
+          "2": "Transférer l’excédent salarial au F&E, même si vous n’avez pas de déficit de F&E",
+          "3": "Dites à votre gestionnaire que vous avez un surplus dans votre budget salarial, afin qu’il puisse être utilisé ailleurs dans l'organisation",
+          "4": "Ne prévoyez pas d’excédent supplémentaire afin de pouvoir conserver les fonds ; ensuite, dans P9, prévoyez ce que vous prévoyez de dépenser"
           },
           "feedback": {
           "1": "",
@@ -487,7 +487,7 @@ export default {
           }
           },
           "q4": {
-          "text": "Comme tous vos fonds ont été engagés, vous avez reçu le mois dernier un montant supplémentaire de 5&nbsp;000&nbsp;$ pour former les employés sur les nouveaux logiciels en raison d&rsquo;un changement de priorité. En examinant le rapport sur la situation financière que vous venez de recevoir des Finances, vous constatez que ces fonds ne sont pas inclus dans les totaux du budget. Sachant que la prévision est due dans deux semaines, que faites-vous?",
+          "text": "Comme tous vos fonds ont été engagés, vous avez reçu le mois dernier un montant supplémentaire de 5&nbsp;000&nbsp;$ pour former les employés sur les nouveaux logiciels en raison d’un changement de priorité. En examinant le rapport sur la situation financière que vous venez de recevoir des Finances, vous constatez que ces fonds ne sont pas inclus dans les totaux du budget. Sachant que la prévision est due dans deux semaines, que faites-vous?",
           "options": {
           "1": "Augmenter le budget dans le système financier de 5&nbsp;000&nbsp;$",
           "2": "Créer un engagement dans le système financier pour 5&nbsp;000&nbsp;$.",
@@ -502,11 +502,11 @@ export default {
           }
           },
           "q5": {
-          "text": "<table class='qTable'> <tbody> <tr> <th>&nbsp;</th> <th> <p><strong>P6 Budget </strong></p> </th> <th> <p><strong>P6 Engagements </strong></p> </th> <th> <p><strong>P6 Réalisations à ce jour</strong></p> </th> <th> <p><strong>P5 </strong><strong>Prévisions annuelles</strong></p> </th> <th> <p><strong>P6 Prévisions annuelles</strong></p> </th> <th> <p><strong>Excédent / Déficit</strong></p> </th> </tr> <tr> <td> <p>Logiciel de Chatbot</p> </td> <td> <p>3&nbsp;000&nbsp;$</p> </td> <td> <p>1&nbsp;500&nbsp;$</p> </td> <td> <p>1&nbsp;500&nbsp;$</p> </td> <td> <p>3&nbsp;500&nbsp;$</p> </td> <td>&nbsp;</td> <td> <p>0$</p> </td> </tr> <tr> <td> <p>Accueil</p> </td> <td> <p>15&nbsp;000&nbsp;$</p> </td> <td> <p>9&nbsp;500&nbsp;$</p> </td> <td> <p>8&nbsp;000&nbsp;$</p> </td> <td> <p>15&nbsp;000&nbsp;$</p> </td> <td> <p>&nbsp;</p> </td> <td> <p>0$</p> </td> </tr> </tbody> </table> <p>&nbsp;</p> En examinant le rapport sur la situation financière fourni, quels sont les signaux d&rsquo;alarme qui vous indiquent que vous auriez besoin de plus d&rsquo;information?",
+          "text": "<table class='qTable'> <tbody> <tr> <th>&nbsp;</th> <th> <p><strong>P6 Budget </strong></p> </th> <th> <p><strong>P6 Engagements </strong></p> </th> <th> <p><strong>P6 Réalisations à ce jour</strong></p> </th> <th> <p><strong>P5 </strong><strong>Prévisions annuelles</strong></p> </th> <th> <p><strong>P6 Prévisions annuelles</strong></p> </th> <th> <p><strong>Excédent / Déficit</strong></p> </th> </tr> <tr> <td> <p>Logiciel de Chatbot</p> </td> <td> <p>3&nbsp;000&nbsp;$</p> </td> <td> <p>1&nbsp;500&nbsp;$</p> </td> <td> <p>1&nbsp;500&nbsp;$</p> </td> <td> <p>3&nbsp;500&nbsp;$</p> </td> <td>&nbsp;</td> <td> <p>0$</p> </td> </tr> <tr> <td> <p>Accueil</p> </td> <td> <p>15&nbsp;000&nbsp;$</p> </td> <td> <p>9&nbsp;500&nbsp;$</p> </td> <td> <p>8&nbsp;000&nbsp;$</p> </td> <td> <p>15&nbsp;000&nbsp;$</p> </td> <td> <p>&nbsp;</p> </td> <td> <p>0$</p> </td> </tr> </tbody> </table> <p>&nbsp;</p> En examinant le rapport sur la situation financière fourni, quels sont les signaux d’alarme qui vous indiquent que vous auriez besoin de plus d’information?",
           "options": {
-          "1": "La somme des engagements du logiciel de clavardage P5 et des chiffres réels depuis le début de l&rsquo;année est égale au budget ",
-          "2": "La somme des engagements des P6 en matière d&rsquo;accueil et des chiffres réels depuis le début de l&rsquo;année dépasse le budget ",
-          "3": "La prévision annuelle du P5 pour l&rsquo;accueil est la même que celle du P6",
+          "1": "La somme des engagements du logiciel de clavardage P5 et des chiffres réels depuis le début de l’année est égale au budget ",
+          "2": "La somme des engagements des P6 en matière d’accueil et des chiffres réels depuis le début de l’année dépasse le budget ",
+          "3": "La prévision annuelle du P5 pour l’accueil est la même que celle du P6",
           "4": "La prévision annuelle du logiciel de chat P5 est supérieure au budget P6"
           },
           "feedback": {
@@ -517,7 +517,7 @@ export default {
           }
           },
           "q6": {
-          "text": "Quel rapport publie sur les sites Web des ministères l'information concernant les voyages, l&rsquo;accueil, les contrats, les reclassifications de postes, les actes répréhensibles, les subventions et les contributions?",
+          "text": "Quel rapport publie sur les sites Web des ministères l'information concernant les voyages, l’accueil, les contrats, les reclassifications de postes, les actes répréhensibles, les subventions et les contributions?",
           "options": {
           "1": "Rapport ministériel sur les résultats",
           "2": "Rapport financier trimestriel",
@@ -532,7 +532,7 @@ export default {
           }
           },
           "q7": {
-          "text": "Que contiennent les profils d&rsquo;information sur le rendement?",
+          "text": "Que contiennent les profils d’information sur le rendement?",
           "options": {
           "1": "Indicateurs et cibles de rendement ",
           "2": "Aperçu des finances et des engagements",
@@ -547,12 +547,12 @@ export default {
           }
           },
           "q8": {
-          "text": "Vers la fin de l&rsquo;année, votre unité de planification vous demande de rendre compte des résultats de la &laquo;Numérisation des services&raquo;. Quels renseignements fourniriez-vous?",
+          "text": "Vers la fin de l’année, votre unité de planification vous demande de rendre compte des résultats de la &laquo;Numérisation des services&raquo;. Quels renseignements fourniriez-vous?",
           "options": {
           "1": "100 % du courrier reçu par la poste a reçu une réponse dans un délai de 1 jour au lieu de 3 jours",
           "2": "Le système de chatbot a résolu 30% des demandes de support en ligne",
-          "3": "70% des agents des centres d&rsquo;appels ont été formés sur les normes de performance",
-          "4": "L'absentéisme dans les centres d&rsquo;appels a diminué de 20 %."
+          "3": "70% des agents des centres d’appels ont été formés sur les normes de performance",
+          "4": "L'absentéisme dans les centres d’appels a diminué de 20 %."
           },
           "feedback": {
           "1": "",
@@ -564,10 +564,10 @@ export default {
           "q9": {
           "text": "Lequel des éléments suivants est un indicateur de rendement valide?",
           "options": {
-          "1": "Centre d&rsquo;appels avec personnel de 9 h à 17 h du lundi au vendredi",
-          "2": "Répondre aux demandes d&rsquo;assistance par chat en direct dès que possible",
+          "1": "Centre d’appels avec personnel de 9 h à 17 h du lundi au vendredi",
+          "2": "Répondre aux demandes d’assistance par chat en direct dès que possible",
           "3": "Budget de 9&nbsp;000&nbsp;$ pour l'infrastructure informatique",
-          "4": "90 % du temps, les courriels reçoivent une réponse dans un délai d&rsquo;un jour ouvrable"
+          "4": "90 % du temps, les courriels reçoivent une réponse dans un délai d’un jour ouvrable"
           },
           "feedback": {
           "1": "",

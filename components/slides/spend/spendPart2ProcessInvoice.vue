@@ -12,7 +12,7 @@
                       <p>Fund</p>
                     </th>
                     <th colspan="2">
-                      <p>Fund Center</p>
+                      <p>Fund Centre</p>
                     </th>
                     <th colspan="2">
                       <p>General Ledger</p>
@@ -158,7 +158,7 @@ export default {
 <i18n>{
   "en": {
   "q1": {
-  "text": "Looking at the provided financial coding, would you certify the invoice under section 34?",
+  "text": "Looking at the provided financial coding provided, would you certify the invoice under section 34?",
   "options": {
   "1": "Yes",
   "2": "No"
@@ -167,7 +167,7 @@ export default {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": "The Fund is coded incorrectly to Salary, it should be O&M. The General Ledger is coded incorrectly to Travel, it should be Office Supplies. You should correct the financial coding before certifying under section 34."
+  "conclusion": "The Fund is coded incorrectly to Salary, it should be coded to Operations and Maintenance. The General Ledger is coded incorrectly to Travel. It should be to Office Supplies. You should correct the financial coding before certifying under section 34."
   },
   "q2": {
   "text": "Can a manager approve their own $15 parking claim?",
@@ -179,12 +179,12 @@ export default {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": "No one has delegated authority to sign off for a reimbursement of their own expenditures."
+  "conclusion": "No one has delegated authority to sign off on the reimbursement of their own expenditures."
   }
   },
   "fr": {
   "q1": {
-  "text": "En examinant le codage financier fourni, certifieriez-vous la facture en vertu de l&rsquo;article 34 ?",
+  "text": "En examinant le codage financier fourni, certifieriez-vous la facture en vertu de l’article 34?",
   "options": {
   "1": "Oui",
   "2": "Non"
@@ -193,10 +193,10 @@ export default {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": "Le fonds est incorrectement codé dans Salaire, il devrait être F&E. Le Grand livre général est incorrectement codé dans Voyages, il devrait s&rsquo;agir de Fournitures de bureau. Vous devez corriger le codage financier avant d&rsquo;attester en vertu de l&rsquo;article 34."
+  "conclusion": "Le fonds est incorrectement codé dans Salaires, il devrait être sous fonctionnement et entretien. Le Grand livre général est incorrectement codé dans Voyages, il devrait s’agir de Fournitures de bureau. Vous devez corriger le codage financier avant de signer l'attestation en vertu de l’article 34."
   },
   "q2": {
-  "text": "Est-ce qu&rsquo;un gestionnaire peut approuver sa propre réclamation de stationnement de 15 $?",
+  "text": "Est-ce qu’un gestionnaire peut approuver sa propre réclamation de stationnement de 15 $?",
   "options": {
   "1": "Oui",
   "2": "Non"
@@ -205,7 +205,7 @@ export default {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": "Personne n&rsquo;a le pouvoir délégué d&rsquo;approuver le remboursement de ses propres dépenses."
+  "conclusion": "Personne n’a le pouvoir délégué d’approuver le remboursement de ses propres dépenses."
   }
   }
   }</i18n>

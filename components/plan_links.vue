@@ -17,12 +17,12 @@
           <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/cadre-responsabilisation-gestion.html">Cadre de responsabilisation de gestion (CRG)</a></li>
           <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/sujets/depenses-prevues.html">Dépenses prévues du gouvernement</a></li>
           <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/rapports-ministeriels-rendement.html">Rapport sur les résultats ministériels (RRM)</a></li>
-          <li><a target="_blank" href="https://ouvert.canada.ca/fr/divulgation-proactive">Divulgation proactive</a> (à l&rsquo;échelle du gouvernement)
+          <li><a target="_blank" href="https://ouvert.canada.ca/fr/divulgation-proactive">Divulgation proactive</a> (à l’échelle du gouvernement)
             <ul>
-              <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/etablissement-rapports-depenses/divulgation-proactive-ministeres-organismes.html">Divulgation proactive par ordre de ministères ou d&rsquo;organismes</a>&nbsp;</li>
+              <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/etablissement-rapports-depenses/divulgation-proactive-ministeres-organismes.html">Divulgation proactive par ordre de ministères ou d’organismes</a>&nbsp;</li>
             </ul>
           </li>
-          <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/presentations-conseil-tresor/guide.html">Guide détaillé à l&rsquo;intention des rédacteurs</a></li>
+          <li><a target="_blank" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/presentations-conseil-tresor/guide.html">Guide détaillé à l’intention des rédacteurs</a></li>
           <li><a target="_blank" href="https://www.canada.ca/fr/conseil-prive/services/publications/memoires-cabinet.html">Guide et gabarits pour Mémoires au Cabinet</a></li>
         </ul>
       </div>

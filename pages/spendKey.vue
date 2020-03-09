@@ -8,27 +8,27 @@
     <b-container style="text-align: left">
       <b-row>
         <b-col><span v-if="$i18n.locale=='en'">
-            <h3>Initiate Expenditures and Authorize Commitments&nbsp;</h3>
+            <h3>Initiate Expenditures and Authorize Commitments</h3>
             <ul>
               <li>When you decide to obtain goods or services that will result in the eventual spending of funds, such as the decision to hire staff, order supplies, or authorize travel, you are initiating an expenditure.</li>
-              <li>When you commit an expenditure, you are certifying that the money is available. This is known as section 32 of the <em>Financial Administration Act </em> (FAA).</li>
-              <li>A delegation of financial authority chart shows your organization&rsquo;s official spending and financial authorities.&nbsp;</li>
-              <li>To learn what you can initiate and commit, consult your own signed delegation form. For those expenditures for which you do not have authority, consult your organization&rsquo;s delegation of financial authority chart.&nbsp;</li>
+              <li>When you commit an expenditure, you are certifying that the money is available. This is known as section 32 of the <em>Financial Administration Act </em> (<abbr>FAA</abbr>).</li>
+              <li>A delegation of financial authority chart shows your organization’s official spending and financial authorities.</li>
+              <li>To learn what you can initiate and commit, consult your own signed delegation form. For those expenditures for which you do not have authority, consult your organization’s delegation of financial authority chart.</li>
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
             <p>
               <h3>Engager et autoriser des dépenses</h3>
               <ul>
-                <li>Lorsque vous décidez d&rsquo;obtenir des biens ou des services qui entra&icirc;neront une dépense éventuelle, comme l&rsquo;embauche de personnel, la commande de fournitures ou l&rsquo;autorisation de voyager, vous engagez une dépense.</li>
-                <li>Lorsque vous engagez une dépense, vous certifiez que l&rsquo;argent est disponible. C&rsquo;est ce à quoi on fait référence lorsqu&rsquo;on parle de l&rsquo;article 32 de la<em> Loi sur la gestion des finances publiques </em>(LGFP).</li>
+                <li>Lorsque vous décidez d’obtenir des biens ou des services qui entra&icirc;neront une dépense éventuelle, comme l’embauche de personnel, la commande de fournitures ou l’autorisation de voyager, vous engagez une dépense.</li>
+                <li>Lorsque vous engagez une dépense, vous certifiez que l’argent est disponible. C’est ce à quoi on fait référence lorsqu’on parle de l’article 32 de la<em> Loi sur la gestion des finances publiques </em>(<abbr>LGFP</abbr>).</li>
                 <li>Un tableau de délégation des pouvoirs financiers indique les pouvoirs de dépenser et les pouvoirs financiers officiels de votre organisation.</li>
-                <li>Pour savoir ce que vous pouvez engager comme dépense, consultez votre propre carte de délégation signée. Pour les dépenses pour lesquelles vous n&rsquo;avez pas d&rsquo;autorisation, consultez le tableau de délégation des pouvoirs financiers de votre organisation.&nbsp;</li>
+                <li>Pour savoir ce que vous pouvez engager comme dépense, consultez votre propre carte de délégation signée. Pour les dépenses pour lesquelles vous n’avez pas d’autorisation, consultez le tableau de délégation des pouvoirs financiers de votre organisation.</li>
               </ul>
           </span>
         </b-col>
         <b-col><span v-if="$i18n.locale=='en'">
-            <h3>Exercise Financial Authority&nbsp;</h3>
+            <h3>Exercise Financial Authority</h3>
             <ul>
               <li>When you certify that the work has been performed as required, and services and supplies have been satisfactorily rendered, this is known as section 34.</li>
               <li>When your financial department ensures that the payment complies with policy requirements, this is section 33.</li>
@@ -41,8 +41,8 @@
             <p>
               <h3>Exercer son pouvoir financier</h3>
               <ul>
-                <li>Lorsque vous attestez que les travaux ont été exécutés conformément aux exigences et que les services ont été rendus et les fournitures livrées de façon satisfaisante, il s&rsquo;agit de l&rsquo;article 34.</li>
-                <li>Lorsque votre service financier s&rsquo;assure que le paiement est conforme aux exigences de la politique, il s&rsquo;agit de l&rsquo;article 33.</li>
+                <li>Lorsque vous attestez que les travaux ont été exécutés conformément aux exigences et que les services ont été rendus et les fournitures livrées de façon satisfaisante, il s’agit de l’article 34.</li>
+                <li>Lorsque votre service financier s’assure que le paiement est conforme aux exigences de la politique, il s’agit de l’article 33.</li>
               </ul>
               <h3>Surveiller et contr&ocirc;ler les finances</h3>
               <ul>
@@ -65,7 +65,7 @@
           <!-- <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
             Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
           <span v-if="$i18n.locale=='fr'">
-            Jetez un coup d&rsquo;&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
+            Jetez un coup d’&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
           </span></p> -->
         </b-col>
       </b-row>
@@ -101,14 +101,14 @@ export default {
 <i18n>{
   "en":
   {
-  "keyPlanQuote": " Accountability breeds response-ability ",
+  "keyPlanQuote": "Accountability breeds response-ability",
   "fileSet": "Files in this section",
   "downloadPlan": "Download a Word template of the work plan",
   "spendSectionBar": "SPEND"
   },
   "fr":
   {
-  "keyPlanQuote": " La responsabilité engendre l’habileté. ",
+  "keyPlanQuote": "La responsabilité engendre l’habileté.",
   "fileSet": "Fichiers dans cette section",
   "downloadPlan": "Télécharger un modèle Word du plan de travail",
   "spendSectionBar": "DÉPENSES"

@@ -82,7 +82,7 @@ export default {
       "conclusion": "Le Secrétariat du Conseil du Trésor reçoit habituellement des données du P9 décembre pour informer le ministère des Finances des dépenses prévues."
     },
     "q2": {
-      "text": "Les périodes les plus courantes pour les rapports sur la situation financière sont P6 septembre, P9 décembre et un rapport de fin d&rsquo;année.",
+      "text": "Les périodes les plus courantes pour les rapports sur la situation financière sont P6 septembre, P9 décembre et un rapport de fin d’année.",
       "options": {
         "1": "Vrai",
         "2": "Faux"
@@ -91,7 +91,7 @@ export default {
         "1": "<span class='v-right' /><strong>Correct!</strong>",
         "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": "C&rsquo;est vrai. P6 septembre, P9 décembre et un rapport de fin d&rsquo;année sont les périodes les plus courantes au sein du gouvernement."
+      "conclusion": "C’est vrai. P6 septembre, P9 décembre et un rapport de fin d’année sont les périodes les plus courantes au sein du gouvernement."
     }
   }
 }</i18n>

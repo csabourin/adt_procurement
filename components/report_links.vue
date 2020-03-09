@@ -5,7 +5,7 @@
         <p>RAPPORTS</p>
         <ul>
           <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=31300">Politique sur les résultats</a></li>
-          <li><a href="https://www.tbs-sct.gc.ca/ems-sgd/edb-bdd/index-fra.html#start">InfoBase du GC</a> (Trouver l&rsquo;information la plus récente sur les finances, l&rsquo;effectif et les résultats du gouvernement)</li>
+          <li><a href="https://www.tbs-sct.gc.ca/ems-sgd/edb-bdd/index-fra.html#start">InfoBase du GC</a> (Trouver l’information la plus récente sur les finances, l’effectif et les résultats du gouvernement)</li>
         </ul>
       </div>
     </div>

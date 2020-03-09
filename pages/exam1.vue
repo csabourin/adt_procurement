@@ -7,18 +7,18 @@
           <p><strong>NOTE:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
           <p>For some of the questions in this test, you play the role of a manager of a call center. You will be given scenarios based on this situation.&nbsp;</p>
           <!-- <p>As per Treasury Board requirements, passing the test for this course is mandatory before you can exercise financial delegation.&nbsp;</p> -->
-          <p>There are three sections to the test - one for each phase: planning, spending and reporting.&nbsp;</p>
+          <p>There are three sections to the test - one for each phase: planning, spending and reporting.</p>
           <p>The passing grade is 80% for each of these sections.</p>
           <p>Each section should take you around 15-20 minutes to complete.&nbsp;</p>
           <p>You can access course materials during the test and you can take it as many times as you need.</p>
         </div>
         <div v-if="$i18n.locale=='fr'">
-          <p><strong>NOTE :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons à compléter les tests pour planifier, dépenser et faire un rapport et nous vous invitons à nous faire part de vos commentaires sur les questions et les fonctionnalités.&nbsp; Vos commentaires nous aideront à rendre le tout plus efficace.</p>
-          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d&rsquo;un responsable de centre d&rsquo;appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
-          <!-- <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l&rsquo;examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> -->
+          <p><strong>NOTE :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons à compléter les tests pour planifier, dépenser et faire un rapport et nous vous invitons à nous faire part de vos commentaires sur les questions et les fonctionnalités. Vos commentaires nous aideront à rendre le tout plus efficace.</p>
+          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d’un responsable de centre d’appels. Des scénarios basés sur cette situation vous seront proposés.</p>
+          <!-- <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> -->
           <p>Le test comporte trois parties - une à la fin de chaque phase - planification, dépenses et rapports.&nbsp;</p>
-          <p>La note de passage est de 80%, par partie.&nbsp;</p>
-          <p>Chaque partie devrait vous prendre environ 15-20 minutes.&nbsp;</p>
+          <p>La note de passage est de 80%, par partie.</p>
+          <p>Chaque partie devrait vous prendre environ 15-20 minutes.</p>
           <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p>
         </div>
       </b-alert>
@@ -384,7 +384,7 @@ export default {
         }
       },
       "q7": {
-        "text": "You&rsquo;d like to find out if clients are satisfied with the live support provided by the call center. What deliverable would be added to the activity “Offer live support to clients” to address this?",
+        "text": "You’d like to find out if clients are satisfied with the live support provided by the call center. What deliverable would be added to the activity “Offer live support to clients” to address this?",
         "options": {
           "1": "Create a client satisfaction survey",
           "2": "Resolve call, text or chat within 2 minutes ",
@@ -416,7 +416,7 @@ export default {
       "q9": {
         "text": "With any online technology, like the chatbot system, there is the risk of a privacy breach. &ldquo;Secure firewall and encryption&rdquo; could be added to the work plan as a:",
         "options": {
-          "1": "Sub-activity",
+          "1": "Resource",
           "2": "Mitigation",
           "3": "Impact",
           "4": "Directorate priority"
@@ -459,7 +459,7 @@ export default {
         }
       },
       "q12": {
-        "text": "Which of the following details the total projected expenditures for the upcoming fiscal year?",
+        "text": "Which of the following details the total projected expenditures for a federal organization for the upcoming fiscal year?",
         "options": {
           "1": "Departmental Results Report",
           "2": "Interim Supply",
@@ -502,7 +502,7 @@ export default {
         }
       },
       "q15": {
-        "text": "For last year&rsquo;s office supplies, you set aside $3,000, and $2,500 was spent. For the current year, you are forecasting to spend $2,500. What amount will you put in your budget requirements for next year?",
+        "text": "For last year’s office supplies, you set aside $3,000, and $2,500 was spent. For the current year, you are forecasting to spend $2,500. What amount will you put in your budget requirements for next year?",
         "options": {
           "1": "$2,000",
           "2": "$2,500",
@@ -517,12 +517,12 @@ export default {
         }
       },
       "q16": {
-        "text": "You have consistently set aside $8,000 year after year for call center agent training. Last year, you spent $5,000 on training. This year, you&rsquo;re forecasting to spend $10,500. What would you do for your budget requirements for next year?",
+        "text": "You have consistently set aside $8,000 year after year for call center agent training. Last year, you spent $5,000 on training. This year, you’re forecasting to spend $10,500. What would you do for your budget requirements for next year?",
         "options": {
-          "1": "Ask for the amount you forecast to spend this year ",
-          "2": "Ask for the amount you spent last year",
-          "3": "Ask for the same amount you&rsquo;ve asked for year after year",
-          "4": "Ask why there&rsquo;s been a fluctuation to inform your forecast"
+          "1": "Budget for the amount you forecast to spend this year ($10,500)",
+          "2": "Budget for the amount you spent last year ($5,000) and make a side note of your forecast amount ($10,500)",
+          "3": "Budget for the same amount you’ve asked for year after year ($8,000) and overspend throughout the year with ongoing justifications",
+          "4": "Budget for the amount you forecast to spend this year($10,500) after having examined why there’s been a fluctuation"
         },
         "feedback": {
           "1": "",
@@ -547,7 +547,7 @@ export default {
         }
       },
       "q18": {
-        "text": "The current year&rsquo;s Salary budget is $760,000. You&rsquo;re creating a new IT Analyst position to be staffed next year. The annual salary will be $60,000. You&rsquo;ll need time to hire them and estimate they will start in June and only work 10 months. What will your Salary budget requirement be next year (assuming everything else remains the same)? ",
+        "text": "The current year’s Salary budget is $760,000. You’re creating a new IT Analyst position to be staffed next year. The annual salary will be $60,000. You’ll need time to hire them and estimate they will start in June and only work 10 months. What will your Salary budget requirement be next year (assuming everything else remains the same)? ",
         "options": {
           "1": "$760,000",
           "2": "$800,000",
@@ -577,7 +577,7 @@ export default {
         }
       },
       "q20": {
-        "text": "You&rsquo;ve submitted your budget requirements and your director asks you to cut travel from $20,000 to $12,000. What action could you take?",
+        "text": "You’ve submitted your budget requirements and your director asks you to cut travel from $20,000 to $12,000. What action could you take?",
         "options": {
           "1": "Cut some discretionary costs",
           "2": "Explore video conferencing options ",
@@ -600,7 +600,7 @@ export default {
     "scoreIs":"Votre note finale est de",
     "Questions": {
       "q1": {
-        "text": "Lequel des éléments suivants n&rsquo;est <strong style='text-transform:uppercase'>PAS</strong> inclus dans un plan de travail?",
+        "text": "Lequel des éléments suivants n’est <strong style='text-transform:uppercase'>PAS</strong> inclus dans un plan de travail?",
         "options": {
           "1": "Activité",
           "2": "Produit livrable",
@@ -615,7 +615,7 @@ export default {
         }
       },
       "q2": {
-        "text": "Où les priorités du gouvernement sont-elles d&rsquo;abord annoncées?",
+        "text": "Où les priorités du gouvernement sont-elles d’abord annoncées?",
         "options": {
           "1": "Dans le budget fédéral",
           "2": "Dans le discours du Trône",
@@ -630,7 +630,7 @@ export default {
         }
       },
       "q3": {
-        "text": "Où trouveriez-vous des renseignements détaillés sur ce que votre organisation fait et ce qu&rsquo;elle prévoit faire au cours des trois prochaines années?",
+        "text": "Où trouveriez-vous des renseignements détaillés sur ce que votre organisation fait et ce qu’elle prévoit faire au cours des trois prochaines années?",
         "options": {
           "1": "Lettre de mandat",
           "2": "Plan ministériel",
@@ -645,12 +645,12 @@ export default {
         }
       },
       "q4": {
-        "text": "Votre analyse à 360° réitère pour vous que votre organisation a une faible tolérance au risque. En même temps, le sous-ministre veut voir plus d&rsquo;innovation. Quelle est la meilleure ligne de conduite à adopter, car ces forces opposées ont une incidence sur votre plan de travail?",
+        "text": "Votre analyse à 360° réitère pour vous que votre organisation a une faible tolérance au risque. En même temps, le sous-ministre veut voir plus d’innovation. Quelle est la meilleure ligne de conduite à adopter, car ces forces opposées ont une incidence sur votre plan de travail?",
         "options": {
-          "1": "Attendre que d&rsquo;autres aient mis en œuvre avec succès un projet d&rsquo;innovation",
-          "2": "Lancer un projet d&rsquo;innovation à petite échelle et en tirer des leçons",
-          "3": "Lancer un projet d&rsquo;innovation très visible avec les effectifs actuels.",
-          "4": "Garder les choses telles qu&rsquo;elles sont"
+          "1": "Attendre que d’autres aient mis en œuvre avec succès un projet d’innovation",
+          "2": "Lancer un projet d’innovation à petite échelle et en tirer des leçons",
+          "3": "Lancer un projet d’innovation très visible avec les effectifs actuels.",
+          "4": "Garder les choses telles qu’elles sont"
         },
         "feedback": {
           "1": "",
@@ -660,7 +660,7 @@ export default {
         }
       },
       "q5": {
-        "text": "Quelle partie du plan de travail devrait être mise à jour avec &laquo;Établir des bassins de dotation collective&raquo; pour tenir compte des risques liés aux centres d&rsquo;appels, comme le roulement élevé du personnel et les défis en dotation?",
+        "text": "Quelle partie du plan de travail devrait être mise à jour avec &laquo;Établir des bassins de dotation collective&raquo; pour tenir compte des risques liés aux centres d’appels, comme le roulement élevé du personnel et les défis en dotation?",
         "options": {
           "1": "Probabilité",
           "2": "Impact",
@@ -675,12 +675,12 @@ export default {
         }
       },
       "q6": {
-        "text": "L'an dernier, vous n&rsquo;avez pas atteint votre objectif de répondre aux appels dans les 30 secondes. Les centres d&rsquo;appels sont de plus en plus automatisés, une approche privilégiée par la haute direction. Quelle est l&rsquo;activité la plus appropriée lorsque vous rédigez votre plan de travail?",
+        "text": "L’an dernier, vous n’avez pas atteint votre objectif de répondre aux appels dans les 30 secondes. Les centres d’appels sont de plus en plus automatisés, une approche privilégiée par la haute direction. Quelle est l’activité la plus appropriée lorsque vous rédigez votre plan de travail?",
         "options": {
           "1": "Incorporer des solutions numériques",
           "2": "Changer la cible",
           "3": "Embaucher plus de personnel",
-          "4": "Mener des réunions d&rsquo;équipe"
+          "4": "Mener des réunions d’équipe"
         },
         "feedback": {
           "1": "",
@@ -689,10 +689,10 @@ export default {
           "4": ""
         },
         "q7": {
-          "text": "Vous aimeriez savoir si les clients sont satisfaits de l&rsquo;assistance en direct fournie par le centre d&rsquo;appels. Quel produit livrable serait ajouté à l&rsquo;activité pour y remédier?",
+          "text": "Vous aimeriez savoir si les clients sont satisfaits de l’assistance en direct fournie par le centre d’appels. Quel produit livrable serait ajouté à l’activité pour y remédier?",
           "options": {
             "1": "Résoudre un appel, un SMS ou un chat en moins de 2 minutes",
-            "2": "Moyenne de 4 sur 5 d&rsquo;après le sondage auprès des clients après le soutien",
+            "2": "Moyenne de 4 sur 5 d’après le sondage auprès des clients après le soutien",
             "3": "Un appel, un message texte ou un clavardage sur 10 est soumis à une escalade pour résolution."
           },
           "feedback": {
@@ -704,7 +704,7 @@ export default {
         }
       },
       "q7": {
-        "text": "Vous aimeriez savoir si les clients sont satisfaits de l&rsquo;assistance en direct fournie par le centre d&rsquo;appels. Quel produit livrable serait ajouté à l&rsquo;activité &laquo;Offrir un soutien en direct aux clients&raquo; pour répondre à cette question? ",
+        "text": "Vous aimeriez savoir si les clients sont satisfaits de l’assistance en direct fournie par le centre d’appels. Quel produit livrable serait ajouté à l’activité &laquo;Offrir un soutien en direct aux clients&raquo; pour répondre à cette question? ",
         "options": {
           "1": "Créer un sondage auprès des clients après le soutien",
           "2": "Résoudre un appel, un SMS ou un chat en moins de 2 minutes",
@@ -718,10 +718,10 @@ export default {
           "4": ""
         },
         "q7": {
-          "text": "Vous aimeriez savoir si les clients sont satisfaits de l&rsquo;assistance en direct fournie par le centre d&rsquo;appels. Quel produit livrable serait ajouté à l&rsquo;activité pour y remédier?",
+          "text": "Vous aimeriez savoir si les clients sont satisfaits de l’assistance en direct fournie par le centre d’appels. Quel produit livrable serait ajouté à l’activité pour y remédier?",
           "options": {
             "1": "Résoudre un appel, un SMS ou un chat en moins de 2 minutes",
-            "2": "Moyenne de 4 sur 5 d&rsquo;après le sondage auprès des clients après le soutien",
+            "2": "Moyenne de 4 sur 5 d’après le sondage auprès des clients après le soutien",
             "3": "Un appel, un message texte ou un clavardage sur 10 est soumis à une escalade pour résolution."
           },
           "feedback": {
@@ -733,12 +733,12 @@ export default {
         }
       },
       "q8": {
-        "text": "Vous avez ajouté une nouvelle activité à votre plan de travail concernant l'offre de soutien aux clients par des moyens automatisés. Pour ce faire, il faudrait mettre en place un système de chatbot disponible 24 heures sur 24. Le chatbot répondrait aux demandes des clients en ligne sans l'intervention d&rsquo;un agent. Quel produit livrable serait ajouté au plan de travail pour cette activité?",
+        "text": "Vous avez ajouté une nouvelle activité à votre plan de travail concernant l’offre de soutien aux clients par des moyens automatisés. Pour ce faire, il faudrait mettre en place un système de chatbot disponible 24 heures sur 24. Le chatbot répondrait aux demandes des clients en ligne sans l’intervention d’un agent. Quel produit livrable serait ajouté au plan de travail pour cette activité?",
         "options": {
-          "1": "Changer les heures d&rsquo;ouverture du centre d&rsquo;appels à 24 heures sur 24, 7 jours sur 7.",
+          "1": "Changer les heures d’ouverture du centre d’appels à 24 heures sur 24, 7 jours sur 7.",
           "2": "99% de temps de disponibilité pour le système de chat en direct",
           "3": "30% des demandes en ligne seraient résolues par chatbot",
-          "4": "Les interactions du chatbot seront surveillées par un agent du centre d&rsquo;appels."
+          "4": "Les interactions du chatbot seront surveillées par un agent du centre d’appels."
         },
         "feedback": {
           "1": "",
@@ -748,9 +748,9 @@ export default {
         }
       },
       "q9": {
-        "text": "Avec n&rsquo;importe quelle technologie en ligne, comme le système de chatbot, il y a le risque d&rsquo;une atteinte à la vie privée. À quel élément du plan de travail pourrait être ajouté &laquo;Un pare-feu sécurisé et cryptage&raquo;?",
+        "text": "Avec n’importe quelle technologie en ligne, comme le système de chatbot, il y a le risque d’une atteinte à la vie privée. À quel élément du plan de travail pourrait être ajouté &laquo;Un pare-feu sécurisé et cryptage&raquo;?",
         "options": {
-          "1": "Sous-activité",
+          "1": "Ressource",
           "2": "Atténuation",
           "3": "Impact",
           "4": "Priorité de la Direction"
@@ -767,7 +767,7 @@ export default {
         "options": {
           "1": "Roulement de personnel",
           "2": "Ne pas répondre à la norme de rendement",
-          "3": "Heures d&rsquo;ouverture non dotées en personnel",
+          "3": "Heures d’ouverture non dotées en personnel",
           "4": "Panne du système"
         },
         "feedback": {
@@ -778,7 +778,7 @@ export default {
         }
       },
       "q11": {
-        "text": "L'aide temporaire pour mener à bien les activités quotidiennes est payée à partir de quel budget?",
+        "text": "L’aide temporaire pour mener à bien les activités quotidiennes est payée à partir de quel budget?",
         "options": {
           "1": "Exploitation et entretien (F et E)",
           "2": "Salaire",
@@ -793,7 +793,7 @@ export default {
         }
       },
       "q12": {
-        "text": "Lequel des éléments suivants détaille le total des dépenses prévues pour le prochain exercice financier?",
+        "text": "Lequel des éléments suivants détaille le total des dépenses prévues pour le prochain exercice financier d’une organisation fédérale?",
         "options": {
           "1": "Rapport ministériel sur les résultats",
           "2": "Approvisionnements provisoires",
@@ -823,7 +823,7 @@ export default {
         }
       },
       "q14": {
-        "text": "Vos coûts d&rsquo;infrastructure informatique ont augmenté de 10% par an au cours des dernières années. Si vos coûts actuels sont de 20&nbsp;000&nbsp;$, quel montant inscrirez-vous dans votre budget pour l&rsquo;année prochaine? ",
+        "text": "Vos coûts d’infrastructure informatique ont augmenté de 10% par an au cours des dernières années. Si vos coûts actuels sont de 20&nbsp;000&nbsp;$, quel montant inscrirez-vous dans votre budget pour l’année prochaine? ",
         "options": {
           "1": "20&nbsp;000&nbsp;$",
           "2": "20&nbsp;200&nbsp;$",
@@ -838,7 +838,7 @@ export default {
         }
       },
       "q15": {
-        "text": "Pour les fournitures de bureau de l&rsquo;an dernier, vous avez mis de côté 3&nbsp;000&nbsp;$, et 2&nbsp;500&nbsp;$ ont été dépensés. Pour l&rsquo;année en cours, vous prévoyez dépenser 2&nbsp;500&nbsp;$. Quel montant allez-vous mettre dans votre budget pour l&rsquo;année prochaine?",
+        "text": "Pour les fournitures de bureau de l’an dernier, vous avez mis de côté 3&nbsp;000&nbsp;$, et 2&nbsp;500&nbsp;$ ont été dépensés. Pour l’année en cours, vous prévoyez dépenser 2&nbsp;500&nbsp;$. Quel montant allez-vous mettre dans votre budget pour l’année prochaine?",
         "options": {
           "1": "2&nbsp;000&nbsp;$",
           "2": "2&nbsp;500&nbsp;$",
@@ -853,12 +853,12 @@ export default {
         }
       },
       "q16": {
-        "text": "Vous avez toujours mis de côté 8&nbsp;000&nbsp;$ année après année pour la formation des agents de centre d&rsquo;appels. L'an dernier, vous avez dépensé 5&nbsp;000&nbsp;$ en formation. Cette année, vous prévoyez dépenser 10&nbsp;500&nbsp;$. Que feriez-vous pour votre budget de l&rsquo;année prochaine?",
+        "text": "Vous avez toujours mis de côté 8&nbsp;000&nbsp;$ année après année pour la formation des agents de centre d’appels. L’an dernier, vous avez dépensé 5&nbsp;000&nbsp;$ en formation. Cette année, vous prévoyez dépenser 10&nbsp;500&nbsp;$. Que feriez-vous pour votre budget de l’année prochaine?",
         "options": {
-          "1": "Demandez le montant que vous prévoyez dépenser cette année ",
-          "2": "Demandez le montant que vous avez dépensé l&rsquo;année dernière",
-          "3": "Demandez le même montant que vous avez demandé année après année.",
-          "4": "Demandez pourquoi il y a eu une fluctuation pour éclairer vos prévisions. "
+          "1": "Demandez le montant que vous prévoyez dépenser cette année (10&nbsp;500&nbsp;$)",
+          "2": "Demandez le montant que vous avez dépensé l’année dernière (5&nbsp;000&nbsp;$) et faire une note en bas de page indiquant le montant que vous prévoyez dépense (10&nbsp;500&nbsp;$)",
+          "3": "Demandez le même montant que vous avez demandé année après année (8&nbsp;000&nbsp;$) et dépasser ce montant durant l’année avec des justifications continues.",
+          "4": "Demandez le montant que vous prévoyez dépenser cette année (10&nbsp;500&nbsp;$) après vous être demandé pourquoi il y a eu une fluctuation pour éclairer vos prévisions. "
         },
         "feedback": {
           "1": "",
@@ -868,7 +868,7 @@ export default {
         }
       },
       "q17": {
-        "text": "Vous avez ajouté une activité à votre plan de travail concernant la mise en œuvre d&rsquo;un système de chatbot d&rsquo;ici le milieu de l&rsquo;année. Votre recherche initiale montre que les systèmes de chatbot coûtent entre 25 $ et 100 $ par mois. Quel montant allez-vous mettre dans votre budget? ",
+        "text": "Vous avez ajouté une activité à votre plan de travail concernant la mise en œuvre d’un système de chatbot d’ici le milieu de l’année. Votre recherche initiale montre que les systèmes de chatbot coûtent entre 25 $ et 100 $ par mois. Quel montant allez-vous mettre dans votre budget? ",
         "options": {
           "1": "300$",
           "2": "600$",
@@ -883,7 +883,7 @@ export default {
         }
       },
       "q18": {
-        "text": "Le budget salarial de l&rsquo;année en cours est de 760&nbsp;000&nbsp;$. Vous créez un nouveau poste d&rsquo;analyste en TI qui sera doté l&rsquo;an prochain. Le salaire annuel sera de 60&nbsp;000&nbsp;$. Vous aurez besoin de temps pour les embaucher et estimez qu&rsquo;ils commenceront en juin et ne travailleront que 10 mois. Quel sera votre budget salarial pour l&rsquo;année prochaine (en supposant que tout le reste demeure inchangé)?",
+        "text": "Le budget salarial de l’année en cours est de 760&nbsp;000&nbsp;$. Vous créez un nouveau poste d’analyste en TI qui sera doté l’an prochain. Le salaire annuel sera de 60&nbsp;000&nbsp;$. Vous aurez besoin de temps pour les embaucher et estimez qu’ils commenceront en juin et ne travailleront que 10 mois. Quel sera votre budget salarial pour l’année prochaine (en supposant que tout le reste demeure inchangé)?",
         "options": {
           "1": "760&nbsp;000&nbsp;$",
           "2": "800&nbsp;000&nbsp;$",
@@ -898,7 +898,7 @@ export default {
         }
       },
       "q19": {
-        "text": "La mise en œuvre du système de chatbot entraînera des coûts de 15&nbsp;000&nbsp;$ en TI pour l'hébergement, qui seront fournis par un autre ministère selon le principe du recouvrement des coûts. Cela sera officialisé dans un protocole d&rsquo;entente entre les organisations. Les frais d&rsquo;hébergement dans votre budget seront de &hellip;?",
+        "text": "La mise en œuvre du système de chatbot entraînera des coûts de 15&nbsp;000&nbsp;$ en TI pour l'hébergement, qui seront fournis par un autre ministère selon le principe du recouvrement des coûts. Cela sera officialisé dans un protocole d’entente entre les organisations. Les frais d’hébergement dans votre budget seront de &hellip;?",
         "options": {
           "1": "15&nbsp;000&nbsp;$ Non discrétionnaire ",
           "2": "15&nbsp;000&nbsp;$ Discrétionnaire ",

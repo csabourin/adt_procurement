@@ -4,14 +4,14 @@
       <div id="dynamic_content" data-ajax-replace="content/jobaid_fr.html" class="wb-init wb-data-ajax-replace-inited">
         <div id="auth_matrix" class="container-fluid">
           <h1>Tableau de délégation des pouvoirs de dépenser et de signer des documents financiers</h1>
-          <p>Veuillez noter que cette portion d&rsquo;un tableau de délégation des pouvoirs pour un ministère fictif a été élaborée uniquement pour les besoins de ce cours. Elle ne renferme pas nécessairement tous les éléments ni tous les renseignements qui feraient normalement partie d&rsquo;un tableau complet. Consultez le tableau de délégation des pouvoirs de votre ministère ainsi que la documentation connexe afin d&rsquo;obtenir l&rsquo;information complète et exacte concernant votre organisation.</p>
+          <p>Veuillez noter que cette portion d’un tableau de délégation des pouvoirs pour un ministère fictif a été élaborée uniquement pour les besoins de ce cours. Elle ne renferme pas nécessairement tous les éléments ni tous les renseignements qui feraient normalement partie d’un tableau complet. Consultez le tableau de délégation des pouvoirs de votre ministère ainsi que la documentation connexe afin d’obtenir l’information complète et exacte concernant votre organisation.</p>
           <table class="DelegChart c49">
             <tbody>
               <tr>
                 <td class="c41-noright text-left" colspan="2"><img alt="Drapeau du Canada" id="ui-id-2" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/drapeauCanada.png" title="Drapeau du Canada">&nbsp;
                 </td>
                 <td class="c41-noleft text-left" colspan="37">
-                  <p><strong>Nom du Ministère :</strong> Ministère de l&rsquo;infrastructure publique</p>
+                  <p><strong>Nom du Ministère :</strong> Ministère de l’infrastructure publique</p>
                 </td>
               </tr>
               <tr>
@@ -52,7 +52,7 @@
               </tr>
               <tr class="vertical-align">
                 <th class="green" colspan="2" scope="row">
-                  <p><strong>Section des Notes d&rsquo;appui</strong></p>
+                  <p><strong>Section des Notes d’appui</strong></p>
                 </th>
                 <th class="green" id="dc_col_1">
                   <p><span>1</span></p>
@@ -200,7 +200,7 @@
                   <p><span>Subventions et contributions</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_MaRF">
-                  <p><span>Cotisations et droits d&rsquo;inscription</span></p>
+                  <p><span>Cotisations et droits d’inscription</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_Awrd">
                   <p><span>Prix</span></p>
@@ -212,7 +212,7 @@
                   <p><span>Tous les autres biens et services</span></p>
                 </th>
                 <th class="chrtRotate blue" id="dc_GaAS">
-                  <p><span>Achat avec la carte d&rsquo;acquisition</span></p>
+                  <p><span>Achat avec la carte d’acquisition</span></p>
                 </th>
                 <th class="chrtRotate blue" id="dc_EBS">
                   <p><span>Soumission électronique - Services</span></p>
@@ -233,10 +233,10 @@
                   <p><span>Aide temporaire</span></p>
                 </th>
                 <th class="chrtRotate blue" id="dc_FPSRaP">
-                  <p><span>Marchés avec d&rsquo;anciens fonctionnaires<br> recevant une pension</span></p>
+                  <p><span>Marchés avec d’anciens fonctionnaires<br> recevant une pension</span></p>
                 </th>
                 <th class="chrtRotate blue" id="dc_EC">
-                  <p><span>Marchés d&rsquo;urgence</span></p>
+                  <p><span>Marchés d’urgence</span></p>
                 </th>
                 <th class="chrtRotate blue" id="dc_CASOGoS">
                   <p><span>Commande subséquente -<br> Biens et services</span></p>
@@ -245,7 +245,7 @@
                   <p><span>Demande de biens et services<br> auprès de SPAC</span></p>
                 </th>
                 <th class="chrtRotate blue" id="dc_DPPOAC">
-                  <p><span>Achats directs<br> (bons de commande locaux, carte d&rsquo;achat)</span></p>
+                  <p><span>Achats directs<br> (bons de commande locaux, carte d’achat)</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_CertSE">
                   <p><span>Dépenses salariales</span></p>
@@ -263,7 +263,7 @@
                   <p><span>Mise en place de petites caisses<br> et avances permanentes</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_ICWoR">
-                  <p><span>Pertes d&rsquo;argent ou de biens</span></p>
+                  <p><span>Pertes d’argent ou de biens</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_DW-O">
                   <p><span>Intérêts et frais administratifs -<br> renonciation ou réduction</span></p>
@@ -272,7 +272,7 @@
                   <p><span>Radiation de dette</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_DoSMA">
-                  <p><span>Pertes d&rsquo;argent ou de biens</span></p>
+                  <p><span>Pertes d’argent ou de biens</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_EGPaCbatC">
                   <p><span>Aliénation du matériel en surplus</span></p>
@@ -281,7 +281,7 @@
                   <p><span>Remboursement de recettes</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_W-OoA">
-                  <p><span>Radiation d&rsquo;éléments d&rsquo;actif</span></p>
+                  <p><span>Radiation d’éléments d’actif</span></p>
                 </th>
               </tr>
               <tr role="”presentation”">
@@ -1300,7 +1300,7 @@
               </tr>
               <tr>
                 <th class="c3 grey" colspan="2" id="dc_pao">
-                  <p class="small-font">Agent d&rsquo;acquisition désigné</p>
+                  <p class="small-font">Agent d’acquisition désigné</p>
                 </th>
                 <td headers="dc_pao dc_cat_sa dc_cat_eic dc_TwC dc_col_1">&nbsp;
                 </td>
@@ -1383,7 +1383,7 @@
               </tr>
               <tr>
                 <td class="c41 text-left" colspan="39">
-                  <p><span class="large-font">Les personnes désignées à exercer des pouvoirs délégués et nommées à un poste figurant dans le tableau de délégation des pouvoirs de dépenser et de signer des documents financiers et dans le tableau des postes équivalents, y compris les personnes nommées officiellement de façon intérimaire, peuvent exercer les pouvoirs délégués sous réserve des limites qui y sont précisées et en conformité avec les lois, règlements et directives pertinents. Ce tableau de délégation demeure en vigueur jusqu&rsquo;à ce qu&rsquo;un nouveau tableau soit signé.</span></p>
+                  <p><span class="large-font">Les personnes désignées à exercer des pouvoirs délégués et nommées à un poste figurant dans le tableau de délégation des pouvoirs de dépenser et de signer des documents financiers et dans le tableau des postes équivalents, y compris les personnes nommées officiellement de façon intérimaire, peuvent exercer les pouvoirs délégués sous réserve des limites qui y sont précisées et en conformité avec les lois, règlements et directives pertinents. Ce tableau de délégation demeure en vigueur jusqu’à ce qu’un nouveau tableau soit signé.</span></p>
                   <p><span class="c93">Approuvé</span></p>
                 </td>
               </tr>
@@ -1396,7 +1396,7 @@
                 <td class="c35-noleft text-left" colspan="20">
                   <p><strong>Approuvé par l'hon. Mary Ann Russell</strong></p><img alt="Signature de l'Honorable Mary Ann Russell" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/signature_M.png">
                   <p style="text-decoration: overline;line-height: 1.2em">L'hon. Mary Ann Russell, ministre</p>
-                  <p class="pull-right">Date d&rsquo;entrée en vigueur : &nbsp;Le 10 décembre 2018</p>
+                  <p class="pull-right">Date d’entrée en vigueur : &nbsp;Le 10 décembre 2018</p>
                 </td>
               </tr>
             </tbody>
@@ -1415,15 +1415,15 @@
             <li> <strong>La lettre « P » signifie que les pleins pouvoirs ont été délégués au poste, sous réserve de ce qui suit :</strong>
               <ol type="a">
                 <li>les limitations imposées par les lois et les règlements ainsi que les politiques, directives et bulletins des organismes centraux et du Ministère, y compris le tableau de délégation des pouvoirs de dépenser et de signer des documents financiers;</li>
-                <li>les limitations imposées par un supérieur lors de l&rsquo;authentification de la fiche des pouvoirs de signer des documents financiers;</li>
+                <li>les limitations imposées par un supérieur lors de l’authentification de la fiche des pouvoirs de signer des documents financiers;</li>
                 <li>les fonds disponibles dans le budget alloué au poste.</li>
               </ol>
             </li>
-            <li><strong>Une case vide indique qu&rsquo;aucun pouvoir n&rsquo;a été accordé.</strong></li>
+            <li><strong>Une case vide indique qu’aucun pouvoir n’a été accordé.</strong></li>
             <li> <strong>Les principes de délégation clés du tableau de délégation des pouvoirs de dépenser et de signer des documents financiers sont notamment les suivants :</strong>
               <ol type="a">
-                <li>Les agents des ressources humaines exercent les pouvoirs qui leur sont délégués en vertu de l&rsquo;article 33 de la <em>Loi sur la gestion des finances publiques</em> (LGFP) seulement pour les éléments qui concernent la paye;</li>
-                <li>Nul ne peut exercer plus d&rsquo;un des pouvoirs mentionnés ci-après pour la même transaction&nbsp;: le pouvoir d&rsquo;exécuter une opération (conclure un marché), le pouvoir d&rsquo;attestation (article&nbsp;34 de la LGFP) et le pouvoir de payer (article&nbsp;33);</li>
+                <li>Les agents des ressources humaines exercent les pouvoirs qui leur sont délégués en vertu de l’article 33 de la <em>Loi sur la gestion des finances publiques</em> (LGFP) seulement pour les éléments qui concernent la paye;</li>
+                <li>Nul ne peut exercer plus d’un des pouvoirs mentionnés ci-après pour la même transaction&nbsp;: le pouvoir d’exécuter une opération (conclure un marché), le pouvoir d’attestation (article&nbsp;34 de la LGFP) et le pouvoir de payer (article&nbsp;33);</li>
                 <li>Nul ne peut être autorisé à exercer le pouvoir de dépenser ou de payer pour un paiement qui pourrait lui profiter personnellement;</li>
                 <li>Nul ne peut exercer à titre intérimaire les pouvoirs délégués à un poste, à moins que ces pouvoirs ne lui aient été délégués comme il se doit par écrit par un agent dont relève le titulaire du poste.</li>
               </ol>
@@ -1435,7 +1435,7 @@
     </main>
     <footer role="contentinfo">
       <div class="container">
-        <img class="pull-left fip" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/images/fip_csps_fr.png" alt="Logo de l&rsquo;école de la fonction publique du Canada">
+        <img class="pull-left fip" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/images/fip_csps_fr.png" alt="Logo de l’école de la fonction publique du Canada">
         <img class="pull-right" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/images/canada.png" alt="Logo Canada">
       </div>
     </footer>

@@ -44,9 +44,9 @@
 </script>
 <i18n>{
   "en": {
-  "instructions":"Answer the following questions by looking at the provided invoice.",
+  "instructions":"Answer the following questions by looking at the invoice provided.",
     "q1": {
-      "text": "You have received 15 pairs of rose-colored glasses. The other five pairs are backordered. Do you pay the invoice?",
+      "text": "You have received 15 pairs of rose-coloured glasses. The other five pairs are backordered. Do you pay the invoice for the full order of 20 pairs?",
       "options": {
         "1": "Yes",
         "2": "No"
@@ -55,10 +55,10 @@
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "You will need to contact the supplier to correct the invoice as you have not received five pairs. "
+      "conclusion": "You will need to contact the supplier to correct the invoice as there are five pairs of glasses you have not received as there are five pairs of glasses you have not received. "
     },
     "q2": {
-      "text": "You have ordered highlighters in the amount of $10.00 from XYZ Enterprises. Looking at the provided invoice, should you pay it?",
+      "text": "You ordered highlighters in the amount of $10.00 from XYZ Enterprises. Looking at the invoice provided, should you pay it?",
       "options": {
         "1": "Yes",
         "2": "No"
@@ -67,10 +67,10 @@
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": " You ordered from XYZ Enterprises, but if you look closely, the invoice is stating ABC Enterprises."
+      "conclusion": " You ordered from XYZ Enterprises, but if you look closely, the invoice states ABC Enterprises."
     },
     "q3": {
-      "text": "You have ordered rose colored glasses at $20 per pair. Looking at the provided invoice, should you pay it?",
+      "text": "You ordered rose-coloured glasses at $20 per pair. Looking at the invoice provided, should you pay it?",
       "options": {
         "1": "Yes",
         "2": "No"
@@ -79,13 +79,13 @@
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>"
       },
-      "conclusion": " You ordered rose colored glasses at $20 per pair. If you look closely, the invoice indicates $25 per unit. You will need to contact the supplier to correct the invoice."
+      "conclusion": "You ordered rose-coloured glasses at $20 per pair. If you look closely, the invoice indicates $25 per unit. You will need to contact the supplier to correct the invoice."
     }
   },
   "fr": {
   "instructions":"Répondez aux questions suivantes en consultant la facture fournie.",
     "q1": {
-      "text": "Vous avez reçu 15 paires de lunettes roses. Les cinq autres paires sont en rupture de stock. Payez-vous la facture ?",
+      "text": "Vous avez reçu 15 paires de lunettes roses. Les 5 autres paires sont en rupture de stock. Payez-vous la facture pour la commande compl&egrave;te de 20 pairs?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -94,10 +94,10 @@
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Vous devrez contacter le fournisseur pour corriger la facture car vous n&rsquo;avez pas reçu cinq paires."
+      "conclusion": "Vous devrez contacter le fournisseur pour faire corriger la facture, car vous n’avez pas reçu 5 paires."
     },
     "q2": {
-      "text": "Vous avez commandé des surligneurs d&rsquo;une valeur de 10,00 $ auprès des Entreprises XYZ. En regardant la facture fournie, devriez-vous la payer?",
+      "text": "Vous avez commandé des surligneurs d’une valeur de 10$ auprès de l’Entreprise XYZ. En regardant la facture fournie, devriez-vous la payer?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -106,7 +106,7 @@
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Si vous regardez attentivement, vous avez commandé chez Entreprises XYZ, mais la facture indique Entreprises ABC ."
+      "conclusion": "Si vous regardez attentivement, vous avez commandé chez Entreprise XYZ, mais la facture indique Entreprise ABC."
     },
     "q3": {
       "text": "Vous avez commandé des lunettes roses au prix de 20 $ la paire. En regardant la facture fournie, devriez-vous la payer?",
@@ -118,7 +118,7 @@
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": " Si vous regardez bien, vous avez commandé des lunettes roses à 20 $ la paire. La facture indique 25 $ par unité. Vous devrez communiquer avec le fournisseur pour corriger la facture."
+      "conclusion": " Si vous regardez bien, vous avez commandé des lunettes roses à 20 $ la paire. La facture indique 25 $ l’unité. Vous devrez communiquer avec le fournisseur pour faire corriger la facture."
     }
   }
 }</i18n>

@@ -43,8 +43,8 @@
   {
   "en":{
   "instructions":"Examine each of the following documents.",
-  "Test360":"360 Scan",
-  "t360Line1":"360",
+  "Test360":"360° Scan",
+  "t360Line1":"360°",
   "t360Line2":"Scan",
   "wpExample":"Last Year's Work Plan",
   "wpLine1":"Work",
@@ -58,16 +58,16 @@
   },
   "fr":{
   "instructions":"Examinez chacun des documents suivants :",
-  "Test360":"Aperçu 360",
+  "Test360":"Aperçu à 360 degrés",
   "t360Line1":"Aperçu",
   "t360Line2":"360",
-  "wpExample":"Plan de travail de l&rsquo;année passée",
+  "wpExample":"Plan de travail de l’année dernière",
   "wpLine1":"Plan de",
   "wpLine2":"travail",
-  "bExample":"Budget de l&rsquo;année passée",
+  "bExample":"Budget de l’année dernière",
   "bLine1":" ",
   "bLine2":"Budget",
-  "rExample":"Rapport de l&rsquo;année passée",
+  "rExample":"Rapport de l’année dernière",
   "rLine1":" ",
   "rLine2":"Rapport"
   }

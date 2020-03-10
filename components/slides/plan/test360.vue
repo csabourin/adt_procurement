@@ -82,3 +82,8 @@ export default {
 }
 
 </script>
+<style scoped>
+  p:first-child() {
+
+  }
+</style>

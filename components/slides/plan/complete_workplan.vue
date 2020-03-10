@@ -323,34 +323,37 @@
 
 </script>
 <style type="text/css" scoped>
-
 .tableColoured {
   table-layout: fixed;
   width: 100%;
   counter-reset: wpParts
 }
-
-td {
-  vertical-align: top
+.tableColoured td {
+  vertical-align: top;
+  position: relative;
+  padding: 5px 15px 8px 55px;
+  height:60px;
 }
 
 .tableColoured td:before {
+  font-family:"Roboto";
   counter-increment: wpParts;
   content: counter(wpParts);
   position: absolute;
-  font-weight: 400;
   height: 2em;
   left: 0px;
   top: 0px;
   border-radius: 0 0 30px 0;
-  padding: .1em .5em 0 .5em;
+  /*padding: .1em .5em 0 .5em;*/
+  padding: 0em .5em 0 .3em;
   color: white;
+  font-weight: bold;
 }
-
-.tableColoured td {
-  vertical-align: top;
-  position: relative;
-  padding-left: 35px;
+.tableColoured td:nth-of-type(-n+6):before {
+  content: "0"counter(wpParts);
+}
+.tableColoured td p{
+  margin-bottom:0;
 }
 
 .striked{text-decoration: line-through}
@@ -360,12 +363,12 @@ td {
 }
 
 .deptPri {
-  border-top: 2px solid #167777;
+  border-top: 4px solid #167777;
   background-color: #c7e0e0
 }
 
 .govtPri {
-  border-top: 2px solid #6C076C;
+  border-top: 4px solid #6C076C;
   background-color: #e1c8e1
 }
 
@@ -374,7 +377,7 @@ td {
 }
 
 .dirPri {
-  border-top: 2px solid #6F1E0D;
+  border-top: 4px solid #6F1E0D;
   background-color: #e2ceca
 }
 
@@ -383,7 +386,7 @@ td {
 }
 
 .planAct {
-  border-top: 2px solid #577a90;
+  border-left:2px solid #577a90;
   background-color: #E2E8EC;
 }
 
@@ -392,7 +395,7 @@ td {
 }
 
 .planSubAct {
-  border-top: 2px solid #3A8251;
+  border-left:2px solid #3A8251;
   background-color: #dcefe3;
 }
 
@@ -401,7 +404,7 @@ td {
 }
 
 .planDelivs {
-  border-top: 2px solid #616EB8;
+  border-left:2px solid #616EB8;
   background-color: #dfe2f1;
 }
 
@@ -410,7 +413,7 @@ td {
 }
 
 .planRisk {
-  border-top: 2px solid #8D9245;
+  border-left:2px solid #8D9245;
   background-color: #f0f1df;
 }
 
@@ -419,7 +422,7 @@ td {
 }
 
 .planLikely {
-  border-top: 2px solid #775F75;
+  border-left:2px solid #775F75;
   background-color: #E1DCE1;
 }
 
@@ -428,7 +431,7 @@ td {
 }
 
 .planImpact {
-  border-top: 2px solid #607293;
+  border-left:2px solid #607293;
   background-color: hsl(219, 21%, 91%);
 }
 
@@ -437,7 +440,7 @@ td {
 }
 
 .planMitigat {
-  border-top: 2px solid #B35685;
+  border-left:2px solid #B35685;
   background-color: #f1dfe8;
 }
 
@@ -446,7 +449,7 @@ td {
 }
 
 .planRes {
-  border-top: 2px solid #C35522;
+  border-left:2px solid #C35522;
   background-color: #f1e5df;
 }
 
@@ -461,15 +464,54 @@ td {
 }
 
 .thNumbered:before {
-  position: absolute;
-  font-weight: 400;
+ font-family:"Roboto";
   counter-increment: wpParts;
   content: counter(wpParts);
+  position: absolute;
   height: 2em;
   left: 0px;
   top: 0px;
   border-radius: 0 0 30px 0;
-  padding: .1em .5em 0 .5em;
+  /*padding: .1em .5em 0 .5em;*/
+  padding: 0em .5em 0 .3em;
   color: white;
+  font-weight: bold;
+}
+
+.thNumbered:nth-of-type(-n+6):before {
+  content: "0"counter(wpParts);
+}
+
+.thNumbered:nth-of-type(1) {
+  border-top: 4px solid #577a90;
+}
+
+.thNumbered:nth-of-type(2) {
+  border-top: 4px solid #3A8251;
+}
+
+.thNumbered:nth-of-type(3) {
+  border-top: 4px solid #616EB8;
+}
+
+.thNumbered:nth-of-type(4) {
+  border-top: 4px solid #8D9245;
+}
+
+.thNumbered:nth-of-type(5) {
+  border-top: 4px solid #775F75;
+}
+
+.thNumbered:nth-of-type(6) {
+  border-top: 4px solid #607293;
+ 
+}
+
+.thNumbered:nth-of-type(7) {
+  border-top: 4px solid #B35685;
+}
+
+.thNumbered:nth-of-type(8) {
+  border-top: 4px solid #C35522;
 }
 </style>

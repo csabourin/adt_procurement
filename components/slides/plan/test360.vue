@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ $t('instructions') }}</p>
+    <h3>{{ $t('instructions') }}</h3>
     <b-container>
       <b-row>
         <b-col>
@@ -83,7 +83,8 @@ export default {
 
 </script>
 <style scoped>
-  p:first-child() {
-
+  h3 {
+    font-size:1.3em;
+    padding-bottom:1em;
   }
 </style>

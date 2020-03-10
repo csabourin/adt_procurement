@@ -117,9 +117,9 @@
       {
           "pwpInstructions": "Looking at your draft, you notice that some items may have been dropped into the wrong location or may be missing. Update your draft accordingly.",
           "pwpTitle": "Choose the best option for each section of this work plan by selecting the most appropriate answer. You can scroll horizontally to view the whole plan.",
-          "pwpGovtPri": "<strong>Government priorities</strong>",
-          "pwpDeptPri": "<strong>Departmental priorities</strong>",
-          "pwpDirPri": "<strong>Directorate priorities</strong>",
+          "pwpGovtPri": "<strong>Government priorities &mdash;</strong>",
+          "pwpDeptPri": "<strong>Departmental priorities &mdash;</strong>",
+          "pwpDirPri": "<strong>Directorate priorities &mdash;</strong>",
           "titleActivities": "Activities",
           "pwpPlanAct": "<strong>Activities</strong>",
           "titleSubActivities": "Sub-activities",
@@ -378,6 +378,7 @@
 
 .dirPri {
   border-top: 4px solid #6F1E0D;
+  border-bottom: 4px solid #fff;
   background-color: #e2ceca
 }
 
@@ -430,10 +431,16 @@
   background-color: #775F75;
 }
 
+.planLikely {
+  border-left:2px solid #775F75;
+  background-color: #E1DCE1;
+}
+
 .planImpact {
   border-left:2px solid #607293;
   background-color: hsl(219, 21%, 91%);
 }
+
 
 .planImpact:before {
   background-color: #607293;
@@ -473,7 +480,7 @@
   top: 0px;
   border-radius: 0 0 30px 0;
   /*padding: .1em .5em 0 .5em;*/
-  padding: 0em .5em 0 .3em;
+  padding: 0em .5em 0 .2em;
   color: white;
   font-weight: bold;
 }
@@ -504,7 +511,7 @@
 
 .thNumbered:nth-of-type(6) {
   border-top: 4px solid #607293;
- 
+
 }
 
 .thNumbered:nth-of-type(7) {

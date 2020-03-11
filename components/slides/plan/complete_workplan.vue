@@ -207,9 +207,9 @@
       {
           "pwpInstructions": "En regardant votre brouillon, vous remarquez que certains items peuvent avoir été placés au mauvais endroit ou manquer. Mettez à jour votre brouillon en conséquence. ",
           "pwpTitle": "Choisissez la meilleure option pour chaque partie du plan de travail en utilisant les menus déroulants.",
-          "pwpGovtPri": "<strong>Priorités du gouvernement</strong>",
-          "pwpDeptPri": "<strong>Priorités ministérielles</strong>",
-          "pwpDirPri": "<strong>Priorités de la direction</strong>",
+          "pwpGovtPri": "<strong>Priorités du gouvernement &mdash;</strong>",
+          "pwpDeptPri": "<strong>Priorités ministérielles &mdash;</strong>",
+          "pwpDirPri": "<strong>Priorités de la direction &mdash;</strong>",
           "titleActivities": "Activités",
           "titleSubActivities": "Sous-activités",
           "titleDeliverables": "Livrables",

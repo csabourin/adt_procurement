@@ -9,7 +9,7 @@
           <!-- <p>As per Treasury Board requirements, passing the test for this course is mandatory before you can exercise financial delegation.&nbsp;</p> -->
           <p>There are three sections to the test - one for each phase: planning, spending and reporting.</p>
           <p>The passing grade is 80% for each of these sections.</p>
-          <p>Each section should take you around 15-20 minutes to complete.&nbsp;</p>
+          <p>Each section should take you around 15 to 20 minutes to complete.&nbsp;</p>
           <p>You can access course materials during the test and you can take it as many times as you need.</p>
         </div>
         <div v-if="$i18n.locale=='fr'">

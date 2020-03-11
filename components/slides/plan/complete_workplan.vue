@@ -153,7 +153,7 @@
           "pA3": "Renew commercial fishing licenses",
           "pSA3": "<li>Review applicant renewal requests</li><li>Issue renewal license</li>",
           "pD3": "<li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year </li>",
-          "pRes3": "<li>1 officer</li><li>1 junior analyst<</li>",
+          "pRes3": "<li>1 officer</li><li>1 junior analyst</li>",
           "q1":
           {
               "text": "Currently, “Implement flexible work hours” is a <strong>mitigation</strong> strategy for the following risks: overfishing, habitat degradation, environmental disaster, climate change. Where should it appear in the work plan?",

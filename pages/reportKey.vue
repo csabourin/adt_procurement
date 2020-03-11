@@ -172,7 +172,7 @@ h3 {
   font-size: 72px;
   font-family: Times;
   font-weight: bold;
-  color: #e5dddc;
+  color: #865f56;
   margin-top: -60px;
 }
 

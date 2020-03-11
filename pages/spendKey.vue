@@ -154,7 +154,7 @@ h3 {
   font-size: 72px;
   font-family: Times;
   font-weight: bold;
-  color: #cac1ca;
+  color: #7d677d;
   margin-top: -60px;
 }
 

@@ -671,14 +671,14 @@
 }</i18n>
 <style scoped>
 .font15 {
-  color: #4d4d4d;
+  color: #010101;
   font-size: 11pt;
   font-weight: 700;
   font-family: Roboto, sans-serif
 }
 
 .font16 {
-  color: #4d4d4d;
+  color: #010101;
   font-size: 11pt;
   font-family: Roboto, sans-serif
 }
@@ -692,7 +692,7 @@
 }
 
 .font22 {
-  color: #4d4d4d;
+  color: #010101;
   font-size: 12pt;
   font-weight: 700;
   font-family: Roboto, sans-serif
@@ -700,7 +700,7 @@
 
 td {
   padding: .1em;
-  color: #4d4d4d;
+  color: #010101;
   font-size: 10pt;
   font-family: Roboto;
   vertical-align: bottom;
@@ -711,7 +711,7 @@ td {
   font-weight: 700;
   font-family: Roboto, sans-serif;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
   border-bottom: none;
   border-left: none
@@ -722,8 +722,8 @@ td {
   font-weight: 700;
   font-family: Roboto, sans-serif;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
-  border-right: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
+  border-right: .5pt solid #010101;
   border-bottom: none;
   border-left: none
 }
@@ -761,10 +761,10 @@ td {
   font-size: 9pt;
   font-family: Roboto, sans-serif;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
 }
 
 .xl76 {
@@ -772,10 +772,10 @@ td {
   font-weight: 700;
   font-family: Roboto, sans-serif;
   text-align: right;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
 }
 
 .xl81 {
@@ -783,7 +783,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d
+  border: .5pt solid #010101
 }
 
 .xl85 {
@@ -794,8 +794,8 @@ td {
   vertical-align: middle;
   border-top: none;
   border-right: none;
-  border-bottom: .5pt hairline #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt hairline #010101;
+  border-left: .5pt solid #010101;
   background: #ff9
 }
 
@@ -805,10 +805,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border-top: .5pt hairline #4d4d4d;
+  border-top: .5pt hairline #010101;
   border-right: none;
-  border-bottom: .5pt hairline #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt hairline #010101;
+  border-left: .5pt solid #010101;
   background: #ff9
 }
 
@@ -821,7 +821,7 @@ td {
   border-top: none;
   border-right: none;
   border-bottom: none;
-  border-left: .5pt solid #4d4d4d;
+  border-left: .5pt solid #010101;
   background: #ff9
 }
 
@@ -833,8 +833,8 @@ td {
   vertical-align: middle;
   border-top: none;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
   background: #ff9
 }
 
@@ -844,10 +844,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
   border-bottom: none;
-  border-left: .5pt solid #4d4d4d;
+  border-left: .5pt solid #010101;
   background: #f90
 }
 
@@ -858,9 +858,9 @@ td {
   text-align: left;
   vertical-align: middle;
   border-top: none;
-  border-right: .5pt solid #4d4d4d;
-  border-bottom: .5pt hairline #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-right: .5pt solid #010101;
+  border-bottom: .5pt hairline #010101;
+  border-left: .5pt solid #010101;
   background: #f90
 }
 
@@ -870,10 +870,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border-top: .5pt hairline #4d4d4d;
-  border-right: .5pt solid #4d4d4d;
-  border-bottom: .5pt hairline #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-top: .5pt hairline #010101;
+  border-right: .5pt solid #010101;
+  border-bottom: .5pt hairline #010101;
+  border-left: .5pt solid #010101;
   background: #f90
 }
 
@@ -883,7 +883,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d;
+  border: .5pt solid #010101;
   background: #ff9
 }
 
@@ -892,14 +892,14 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d
+  border: .5pt solid #010101
 }
 
 .xl94 {
   font-size: 11pt;
   font-family: Roboto, sans-serif;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d
+  border: .5pt solid #010101
 }
 
 .xl95 {
@@ -907,7 +907,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d
+  border: .5pt solid #010101
 }
 
 .xl96 {
@@ -915,10 +915,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101
 }
 
 .xl97 {
@@ -927,7 +927,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d;
+  border: .5pt solid #010101;
   background: #f90
 }
 
@@ -937,7 +937,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d;
+  border: .5pt solid #010101;
   background: #fabf8f
 }
 
@@ -947,7 +947,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d;
+  border: .5pt solid #010101;
   background: #9cf
 }
 
@@ -961,10 +961,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101
 }
 
 .xl102 {
@@ -993,7 +993,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d
+  border: .5pt solid #010101
 }
 
 .xl107 {
@@ -1002,7 +1002,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d;
+  border: .5pt solid #010101;
   background: #f90
 }
 
@@ -1011,7 +1011,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d;
+  border: .5pt solid #010101;
   background: #c9f
 }
 
@@ -1020,7 +1020,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d;
+  border: .5pt solid #010101;
 }
 
 .xl133 {
@@ -1049,10 +1049,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101
 }
 
 .xl173 {
@@ -1060,10 +1060,10 @@ td {
   font-weight: 700;
   font-family: Roboto, sans-serif;
   text-align: center;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
   border-bottom: none;
-  border-left: .5pt solid #4d4d4d;
+  border-left: .5pt solid #010101;
   background: #f2f2f2;
 }
 
@@ -1073,10 +1073,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
   background: #f2f2f2
 }
 
@@ -1086,10 +1086,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
   border-bottom: none;
-  border-left: .5pt solid #4d4d4d;
+  border-left: .5pt solid #010101;
   background: #ff9
 }
 
@@ -1099,7 +1099,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d;
+  border: .5pt solid #010101;
   background: #fabf8f
 }
 
@@ -1108,10 +1108,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
   background: #fff
 }
 
@@ -1121,7 +1121,7 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border: .5pt solid #4d4d4d;
+  border: .5pt solid #010101;
   background: #9cf
 }
 
@@ -1129,10 +1129,10 @@ td {
   font-size: 11pt;
   font-family: Roboto, sans-serif;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101
 }
 
 .xl195 {
@@ -1141,10 +1141,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
   background: #c9f
 }
 
@@ -1152,10 +1152,10 @@ td {
   font-size: 11pt;
   font-family: Roboto, sans-serif;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
 }
 
 .xl203 {
@@ -1164,10 +1164,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
   border-bottom: none;
-  border-left: .5pt solid #4d4d4d;
+  border-left: .5pt solid #010101;
   background: #c4d79b
 }
 
@@ -1176,10 +1176,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
-  border-right: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
+  border-right: .5pt solid #010101;
   border-bottom: none;
-  border-left: .5pt solid #4d4d4d;
+  border-left: .5pt solid #010101;
   background: #c4d79b
 }
 
@@ -1191,28 +1191,28 @@ td {
   font-size: 11pt;
   font-family: Roboto, sans-serif;
   text-align: left;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
   border-left: none;
 }
 
 .xl213 {
   font-family: Roboto, sans-serif;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
 }
 
 .xl216 {
   font-size: 11pt;
   font-weight: 700;
   font-family: Roboto, sans-serif;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
 }
 
 .xl219 {
@@ -1221,10 +1221,10 @@ td {
   font-family: Roboto, sans-serif;
   text-align: center;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
 }
 
 .xl221 {
@@ -1232,10 +1232,10 @@ td {
   font-weight: 700;
   font-family: Roboto, sans-serif;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101
 }
 
 .xl224 {
@@ -1246,7 +1246,7 @@ td {
   border-top: none;
   border-right: none;
   border-bottom: none;
-  border-left: .5pt solid #4d4d4d;
+  border-left: .5pt solid #010101;
 }
 
 .xl226 {
@@ -1257,7 +1257,7 @@ td {
   text-align: left;
   border-top: none;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
   border-left: none;
 }
 
@@ -1268,9 +1268,9 @@ td {
   text-underline-style: single;
   font-family: Roboto, sans-serif;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
   border-left: none;
 }
 
@@ -1279,10 +1279,10 @@ td {
   font-weight: 700;
   font-family: Roboto, sans-serif;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
 }
 
 .xl232 {
@@ -1290,9 +1290,9 @@ td {
   font-family: Roboto, sans-serif;
   text-align: left;
   vertical-align: middle;
-  border-top: .5pt solid #4d4d4d;
+  border-top: .5pt solid #010101;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
   border-left: none;
 }
 
@@ -1303,8 +1303,8 @@ td {
   vertical-align: middle;
   border-top: none;
   border-right: none;
-  border-bottom: .5pt solid #4d4d4d;
-  border-left: .5pt solid #4d4d4d;
+  border-bottom: .5pt solid #010101;
+  border-left: .5pt solid #010101;
 }
 
 </style>

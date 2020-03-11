@@ -179,7 +179,7 @@ export default {
 </script>
 <style type="text/css" scoped>
 >>> .finTable tr:nth-child(odd){ 
-background-color: #8e7cc3;
+background-color: #5F4D94;
 color:#fff;
 text-align: center;}
 
@@ -196,7 +196,7 @@ text-align: right;
   text-align: right;
 }
 >>> .qTable th{
-  background-color:#8e7cc3;
+  background-color:#5F4D94;
   color:#fff;
   font-weight: bold;
   text-align: center;

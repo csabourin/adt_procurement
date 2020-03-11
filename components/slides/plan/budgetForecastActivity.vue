@@ -179,7 +179,7 @@ export default {
   text-align: right;
 }
 >>> tr.qTable{
-  background-color:#8e7cc3;
+  background-color:#5F4D94;
   color:#fff;
   font-weight: bold;
   text-align: center;

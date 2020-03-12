@@ -605,7 +605,17 @@ page-enter-active,
 }
 
 .btn-primary {
-  background-color: #0051A8;
+  /* background-color: #0051A8; */
+  background-color: #587C84;
+  border-color:#365A62;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #365A62;
+  border-color:#365A62;
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #365A62;
+  border-color:#365A62;
 }
 
 </style>

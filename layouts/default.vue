@@ -619,5 +619,7 @@ page-enter-active,
   background-color: #365A62;
   border-color:#365A62;
 }
-
+a:hover, a:focus {
+  text-decoration: underline;
+}
 </style>

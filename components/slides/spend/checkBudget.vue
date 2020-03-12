@@ -444,14 +444,15 @@
 <style type="text/css" scoped>
 .qTable th{
     text-align: center;
-    background-color: #5F4D94;
+    background-color: #7D677D;
     color: #fff;
   }
   .qTable td:nth-child(n+2):nth-child(-n+5){
     text-align: right;
   }
   .qTable td:nth-child(odd){
-    background-color: hsl(255, 37%, 90%);
+    /* background-color: hsl(255, 37%, 90%); */
+    background-color: #CAC1CA;
   }
   .qTable td{
     padding:.5em;

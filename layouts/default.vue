@@ -145,6 +145,8 @@ body {
   width: calc(100vw - (100vw - 100%));
   margin: 0;
   padding: 0;
+  /*There's gotta be a better way to override things from BS's _reboot.scss... *CSPS-TD* */
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 legend {

@@ -25,6 +25,7 @@
             </ul>
           </span>
         </b-col>
+        <b-col cols="1"></b-col>
         <b-col>
           <span v-if="$i18n.locale=='en'">
             <h3>Create a Budget</h3>

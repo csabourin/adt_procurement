@@ -1,6 +1,8 @@
 <template functionnal>
   <a :href="require('~/assets/'+ $i18n.locale +'/'+ filename)" :download="filename" target="_blank">
     <genericFile :iconStyle="iconColor" :iconWidth=size :title="$t(title)" :line1="$t(line1)" :line2="$t(line2)" />
+    <br>
+    {{$t(lineTag)}}
   </a>
 </template>
 <script type="text/javascript">
@@ -12,7 +14,8 @@ export default {
     filename: { type: String, default: "" },
     title: { type: String, default: "" },
     line1: { type: String, default: "" },
-    line2: { type: String, default: "" }
+    line2: { type: String, default: "" },
+    lineTag: { type: String, default: "" }
   },
 
   components: {

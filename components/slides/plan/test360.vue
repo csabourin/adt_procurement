@@ -9,32 +9,36 @@
            iconColor="Scan360Background"
            size=128 :title="$t('Test360')"
            :line1="$t('t360Line1')"
-           :line2="$t('t360Line2')" />
-          <br>{{$t('Test360')}}</b-col>
+           :line2="$t('t360Line2')"
+           :lineTag="$t('Test360')" />
+          </b-col>
         <b-col>
           <download
            filename="WorkPlan_lastYear.pdf"
            iconColor="planBackground"
            size=128 :title="$t('wpExample')"
            :line1="$t('wpLine1')"
-           :line2="$t('wpLine2')" />
-          <br>{{$t('wpExample')}}</b-col>
+           :line2="$t('wpLine2')"
+           :lineTag="$t('wpExample')" />
+          </b-col>
         <b-col>
           <download
            filename="Budget.xlsx"
            iconColor="spendBackground"
            size=128 :title="$t('bExample')"
            :line1="$t('bLine1')"
-           :line2="$t('bLine2')" />
-          <br>{{$t('bExample')}}</b-col>
+           :line2="$t('bLine2')"
+           :lineTag="$t('bExample')" />
+          </b-col>
         <b-col>
           <download
            filename="ReportLast.docx"
            iconColor="reportBackground"
            size=128 :title="$t('rExample')"
            :line1="$t('rLine1')"
-           :line2="$t('rLine2')" />
-          <br>{{$t('rExample')}}</b-col>
+           :line2="$t('rLine2')"
+           :lineTag="$t('rExample')" />
+          </b-col>
       </b-row>
     </b-container>
   </div>
@@ -52,7 +56,7 @@
   "bExample":"Last Year's Budget",
   "bLine1":"Last year's",
   "bLine2":"Budget",
-  "rExample":"Last Years's Reports",
+  "rExample":"Last Year's Reports",
   "rLine1":" ",
   "rLine2":"Reports"
   },
@@ -86,5 +90,8 @@ export default {
   h3 {
     font-size:1.3em;
     padding-bottom:1em;
+  }
+  a {
+    color:#000;
   }
 </style>

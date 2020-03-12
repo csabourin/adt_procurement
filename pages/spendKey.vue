@@ -8,7 +8,7 @@
     <b-container style="text-align: left">
       <b-row>
         <b-col><span v-if="$i18n.locale=='en'">
-            <h3>Initiate Expenditures and Authorize Commitments</h3>
+            <h3>Initiate Expenditures S.32 and Authorize Commitments S.34</h3>
             <ul>
               <li>When you decide to obtain goods or services that will result in the eventual spending of funds, such as the decision to hire staff, order supplies, or authorize travel, you are initiating an expenditure.</li>
               <li>When you commit an expenditure, you are certifying that the money is available. This is known as section 32 of the <em>Financial Administration Act </em> (<abbr>FAA</abbr>).</li>
@@ -27,8 +27,9 @@
               </ul>
           </span>
         </b-col>
+        <b-col cols="1"></b-col>
         <b-col><span v-if="$i18n.locale=='en'">
-            <h3>Exercise Financial Authority</h3>
+            <h3>Exercise Financial Authority S.34</h3>
             <ul>
               <li>When you certify that the work has been performed as required, and services and supplies have been satisfactorily rendered, this is known as section 34.</li>
               <li>When your financial department ensures that the payment complies with policy requirements, this is section 33.</li>
@@ -166,5 +167,7 @@ h3 {
 .french-quote {
   quotes: "« "" »";
 }
-
+footer {
+  display:inline;
+}
 </style>

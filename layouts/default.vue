@@ -253,7 +253,7 @@ h3,
 }
 
 img {
-  vertical-align: text-top;
+  vertical-align: -30%;
 }
 
 .transcriptionBox {

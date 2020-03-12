@@ -200,8 +200,8 @@ methods:{
 
 </script>
 <style type="text/css" scoped>
-.heading{background-color: #865F56; color:#FFF;}
-    th,td{padding:.25em;font-size: 12px}
+.heading{background-color: #865F56; color:#FFF;font-weight: bold;}
+    th,td{padding:.25em;font-size: 12px;}
     input[type=checkbox]{margin-left:1em;}
     input[type=checkbox]:before{content:" ";}
     th{text-align: center}

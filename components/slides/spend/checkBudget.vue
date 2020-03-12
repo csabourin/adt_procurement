@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="scrollMe">
+    <div class="DONTscrollMe"><!-- *CSABOURIN* : scrollMe should only be doing its thing when the screen is narrow no? Hard to adapt to content for now... -->
     <table border=1 class="qTable">
       <colgroup>
         <col />
@@ -201,7 +201,7 @@
         "$240,139",
         "$203,194",
         "$443,333",
-        "manager,<br>2 officers,<br>2 analysts,<br>1 jr. officer,<br>1 jr. analyst,<br>admin,<br>1 officer retiring July 1,<br>casual 4 months"
+        "manager, 2 officers, 2 analysts, 1 jr. officer, 1 jr. analyst, admin, 1 officer retiring July 1, casual 4 months"
       ],
       [
         "TOTAL",
@@ -339,7 +339,7 @@
         "240&nbsp;139&nbsp;$",
         "203&nbsp;194&nbsp;$",
         "443&nbsp;333&nbsp;$",
-        "gestionnaire,<br>2 agents,<br>2 analystes,<br>1 agent jr.,<br>1 analyste jr.,<br>1 administrateur,<br>1 agent prenant sa retraite le 1er juillet,<br>occasionnel 4 mois"
+        "gestionnaire, 2 agents, 2 analystes, 1 agent jr., 1 analyste jr., 1 administrateur, 1 agent prenant sa retraite le 1er juillet, occasionnel 4 mois"
       ],
       [
         "TOTAL",

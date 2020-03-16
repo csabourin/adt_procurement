@@ -1,7 +1,6 @@
 <template functionnal>
   <a :href="require('~/assets/'+ $i18n.locale +'/'+ filename)" :download="filename" target="_blank">
     <genericFile :iconStyle="iconColor" :iconWidth=size :title="$t(title)" :line1="$t(line1)" :line2="$t(line2)" />
-    <br>
     {{$t(lineTag)}}
   </a>
 </template>

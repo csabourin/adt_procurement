@@ -27,13 +27,14 @@
               </ul>
           </span>
         </b-col>
+        <b-col cols="1"></b-col>
         <b-col><span v-if="$i18n.locale=='en'">
             <h3>Exercise Financial Authority</h3>
             <ul>
               <li>When you certify that the work has been performed as required, and services and supplies have been satisfactorily rendered, this is known as section 34.</li>
               <li>When your financial department ensures that the payment complies with policy requirements, this is section 33.</li>
             </ul>
-            <h3>Monitor and control finances</h3>
+            <h3>Monitor and Control Finances</h3>
             <ul>
               <li>To help you track your work plan and budget, you will continually monitor your spending and manage your risks.</li>
             </ul>
@@ -154,7 +155,7 @@ h3 {
   font-size: 72px;
   font-family: Times;
   font-weight: bold;
-  color: #cac1ca;
+  color: #7d677d;
   margin-top: -60px;
 }
 
@@ -166,5 +167,7 @@ h3 {
 .french-quote {
   quotes: "« "" »";
 }
-
+footer {
+  display:inline;
+}
 </style>

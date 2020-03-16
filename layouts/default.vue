@@ -621,11 +621,9 @@ page-enter-active,
 }
 
 
-
 /* ***************************************
  * new table style for build a workplan
  * **************************************/
-
 
 
 .workplan-table .row{
@@ -729,5 +727,9 @@ page-enter-active,
 
 .workplan-table ul {
   list-style: circle;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
 }
 </style>

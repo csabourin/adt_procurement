@@ -35,6 +35,7 @@
             </ul>
           </span>
         </b-col>
+        <b-col cols="1"></b-col>
         <b-col><span v-if="$i18n.locale=='en'">
             <h3>Contribute to external reporting</h3>
             <ul>

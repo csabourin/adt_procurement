@@ -2,6 +2,7 @@
 export default {
   finRoles: "Responsible Use of Public Funds",
   symbolicIdentifier: "Symbolic Identifier",
+  skipToMain:"Skip to main content",
   searchBar: "Search",
   homePage: "Home",
   links: "Links",

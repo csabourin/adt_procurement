@@ -1,5 +1,7 @@
 <template>
   <div>
+  	<div class="invSkip">
+    <a href="#mainContent" class="skipToMain">{{$t('skipToMain')}}</a></div>
     <b-container fluid style="overflow:hidden;">
       <b-row class="navBar">
         <b-col cols="5" sm="3" class="text-left">
@@ -28,13 +30,16 @@
           </transition>
         </b-col>
         <b-col>
-          <nuxt role="main" />
+          <main id="mainContent">
+            <nuxt />
+          </main>
         </b-col>
         <!-- </transition-group> -->
       </b-row>
     </b-container>
     <b-modal OkOnly centered okOnly id="completionModal" modal-class="successModal" body-class="successBody" header-class="successHeadFoot" footer-class="successHeadFoot" content-class="successContent">
-        <div class="successImage" /><div v-html="$t('congratulations')"></div>
+      <div class="successImage" />
+      <div v-html="$t('congratulations')"></div>
     </b-modal>
   </div>
 </template>
@@ -45,7 +50,7 @@ import contentMap from "~/components/contentMap"
 import homebutton from "~/components/icons/home_icon"
 import fileMenu from "~/components/fileMenu"
 export default {
-  name:"mainPage",
+  name: "mainPage",
   head() {
     return {
       htmlAttrs: { lang: this.$i18n.locale }
@@ -78,7 +83,7 @@ export default {
       return this.$store.getters['spend/getScore']
     },
     courseComplete() {
-      if (parseInt(this.planCompleted,10) >= 80 && parseInt(this.spendCompleted,10) >= 80 && parseInt(this.reportCompleted,10) >= 80) {
+      if (parseInt(this.planCompleted, 10) >= 80 && parseInt(this.spendCompleted, 10) >= 80 && parseInt(this.reportCompleted, 10) >= 80) {
         this.$store.dispatch('scorm/setSuccess')
         return true
       }
@@ -94,9 +99,9 @@ export default {
   },
   watch: {
     courseComplete: {
-      immediate:true,
-      handler(isCompleted){
-        if(isCompleted){
+      immediate: true,
+      handler(isCompleted) {
+        if (isCompleted) {
           this.$bvModal.show('completionModal')
         }
       }
@@ -124,6 +129,36 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.invSkip {
+  width: 100%;
+  text-align: center;
+}
+
+.skipToMain,.skipToMain:hover {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.skipToMain:focus {
+  clip: rect(auto, auto, auto, auto);
+  height: inherit;
+  margin: inherit;
+  overflow: inherit;
+  position: static;
+  width: inherit;
 }
 
 .v-right:before {
@@ -178,56 +213,64 @@ a {
     transform: scale(1);
   }
 }
-.completeCaption{
-font-size: 12px;
-    width: 60px;
-    display: inline-block;
-    text-align: center;
-    vertical-align: bottom;
+
+.completeCaption {
+  font-size: 12px;
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
 
 
 }
-.successImage{
-    background-image: url('~assets/successIcon.svg');
-    display: block;
-    position:absolute;
-    width:55px;
-    height:55px;
-    top:46px;
-    left:-30px;
+
+.successImage {
+  background-image: url('~assets/successIcon.svg');
+  display: block;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 46px;
+  left: -30px;
 }
 
-.successIcon{
+.successIcon {
   background-color: transparent;
-  border:0;
-}
-.successModal
-{
-background-image: linear-gradient(135deg, #7a474e 45.45%, #8f5e65 45.45%, #8f5e65 50%, #7a474e 50%, #7a474e 95.45%, #8f5e65 95.45%, #8f5e65 100%);
-background-size: 11.00px 11.00px;
-  color:#fff;
+  border: 0;
 }
 
-.successHeadFoot{border:0;}
-.successHeadFoot .close {color:#fff;}
+.successModal {
+  background-image: linear-gradient(135deg, #7a474e 45.45%, #8f5e65 45.45%, #8f5e65 50%, #7a474e 50%, #7a474e 95.45%, #8f5e65 95.45%, #8f5e65 100%);
+  background-size: 11.00px 11.00px;
+  color: #fff;
+}
 
-.successBody{
-  text-align:center;
-  padding:1em;
+.successHeadFoot {
+  border: 0;
+}
+
+.successHeadFoot .close {
+  color: #fff;
+}
+
+.successBody {
+  text-align: center;
+  padding: 1em;
   border: 2px solid #fff;
-  border-radius:10px;
+  border-radius: 10px;
   /*background-image: url('~assets/successIcon.svg');*/
   background-repeat: no-repeat;
   background-size: 50px 50px;
 }
 
-.successContent{
+.successContent {
   background-color: transparent;
   background-image: url('~assets/SuccessPaper.svg');
   background-size: contain;
-  padding:.5em 3em;
-  border:0;
+  padding: .5em 3em;
+  border: 0;
 }
+
 .row.navBar {
   background-color: #fff;
   color: #000;
@@ -609,15 +652,18 @@ page-enter-active,
 .btn-primary {
   /* background-color: #0051A8; */
   background-color: #587C84;
-  border-color:#365A62;
+  border-color: #365A62;
 }
-.btn-primary:hover, .btn-primary:focus {
+
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: #365A62;
-  border-color:#365A62;
+  border-color: #365A62;
 }
+
 .btn-primary:not(:disabled):not(.disabled):active {
   background-color: #365A62;
-  border-color:#365A62;
+  border-color: #365A62;
 }
 
 
@@ -626,8 +672,8 @@ page-enter-active,
  * **************************************/
 
 
-.workplan-table .row{
-    clear:both;
+.workplan-table .row {
+  clear: both;
 }
 
 .workplan-table .row:nth-child(1) {
@@ -637,21 +683,24 @@ page-enter-active,
 /* ------------ WORKPLAN TITLES -------------*/
 .workplan-table .encadrage {
   border: 1px #eaeaea solid;
-  display:block;
-  padding:10px;
+  display: block;
+  padding: 10px;
 }
+
 .workplan-table h3 {
   font-size: 1.2em;
 }
+
 .workplan-table .row:nth-child(1) h3:after,
 .workplan-table .row:nth-child(2) h3:after,
-.workplan-table .row:nth-child(3) h3:after{
-  content:' – ';
+.workplan-table .row:nth-child(3) h3:after {
+  content: ' – ';
 }
+
 .workplan-table .encadrage h4 {
 
   margin: 0px -10px 15px -10px;
-  padding:20px 15px;
+  padding: 20px 15px;
   -webkit-box-shadow: 0px 7px 5px -7px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 7px 5px -7px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 7px 5px -7px rgba(0, 0, 0, 0.5);
@@ -659,37 +708,41 @@ page-enter-active,
 }
 
 
-.workplan-table>.row:nth-child(1) .encadrage{
+.workplan-table>.row:nth-child(1) .encadrage {
   border-top: 4px solid #6C076C;
   border-top: 4px solid #6C076C;
-  background-color:#e1c8e1;
-}
-.workplan-table>.row:nth-child(2) .encadrage{
-    border-top: 4px solid #167777;
-    background-color: #c7e0e0;
+  background-color: #e1c8e1;
 }
 
-.workplan-table>.row:nth-child(3) .encadrage{
-    border-top: 4px solid #6F1E0D;
-    background-color: #e2ceca;
+.workplan-table>.row:nth-child(2) .encadrage {
+  border-top: 4px solid #167777;
+  background-color: #c7e0e0;
 }
-.workplan-table>.row:nth-child(4) .encadrage{
 
-  padding:0px;
-  margin:0px;
-  border:none;
-  padding-right:0px;
+.workplan-table>.row:nth-child(3) .encadrage {
+  border-top: 4px solid #6F1E0D;
+  background-color: #e2ceca;
+}
+
+.workplan-table>.row:nth-child(4) .encadrage {
+
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  padding-right: 0px;
 
 }
-.workplan-table>.row:nth-child(4) .encadrage h3{
-    border-top: 4px solid #577a90;
-    background-color: #e2e8ec;
-    margin:0px;
-    padding:10px;
+
+.workplan-table>.row:nth-child(4) .encadrage h3 {
+  border-top: 4px solid #577a90;
+  background-color: #e2e8ec;
+  margin: 0px;
+  padding: 10px;
 
 }
-.workplan-table>.row:nth-child(5) .encadrage{
-  padding-top:0px;
+
+.workplan-table>.row:nth-child(5) .encadrage {
+  padding-top: 0px;
 }
 
 
@@ -698,38 +751,43 @@ page-enter-active,
 .workplan-table>.row:nth-child(3) .encadrage>p,
 .workplan-table>.row:nth-child(1) .encadrage>h3,
 .workplan-table>.row:nth-child(2) .encadrage>h3,
-.workplan-table>.row:nth-child(3) .encadrage>h3{
-  display:inline;
-  min-height:40px;
+.workplan-table>.row:nth-child(3) .encadrage>h3 {
+  display: inline;
+  min-height: 40px;
 }
 
 /* ------------ ACTIVITIES TITLES -------------*/
 
-.workplan-table .encadrage h4{
-  background-color:#f9f9f9;
-  font-size:1.1em;
+.workplan-table .encadrage h4 {
+  background-color: #f9f9f9;
+  font-size: 1.1em;
 }
 
-.workplan-table .encadrage h5{
-  padding:5px 30px;
-  border-left:2px solid #587c84;
-  background-color:#f9f9f9;
+.workplan-table .encadrage h5 {
+  padding: 5px 30px;
+  border-left: 2px solid #587c84;
+  background-color: #f9f9f9;
 }
+
 .workplan-table h5 {
   font-size: 1em;
 }
-.workplan-table>.row:nth-child(5) .encadrage>*:not(h4){
-  margin:0px 5px ;
+
+.workplan-table>.row:nth-child(5) .encadrage>*:not(h4) {
+  margin: 0px 5px;
 }
-.workplan-table>.row:nth-child(5) .encadrage>p{
-  margin-left:20px;
+
+.workplan-table>.row:nth-child(5) .encadrage>p {
+  margin-left: 20px;
 }
 
 .workplan-table ul {
   list-style: circle;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: underline;
 }
+
 </style>

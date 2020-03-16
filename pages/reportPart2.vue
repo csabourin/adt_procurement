@@ -30,6 +30,7 @@
       </b-modal>
       <b-modal id="inRealLife" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('inRealLifeTitle')}}</template>
+        <img src="/_nuxt/assets/R-Contribute.svg" class="img-real_Life" alt="">
         <div v-if="$i18n.locale=='en'">
           <p>Look up your organization’s Performance Information Profiles and its external reports, such as the Departmental Results Report.&nbsp;</p>
           <p>Your organization will have their own ways of doing financial situation reports, and reporting on spending and results. Talk to your finance or planning section and director. Ask them:</p>
@@ -123,6 +124,12 @@ export default {
   margin-left: 15px;
 }
 
+.img-real_Life{
+  width:265px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
 <i18n>{
   "en":{

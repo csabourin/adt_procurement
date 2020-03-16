@@ -116,7 +116,7 @@
 <style type="text/css" scoped>
   .qTable th{
     text-align: center;
-    background-color: #8e7cc3;
+    background-color: #7D677D;
     color: #fff;
   }
   .qTable td{

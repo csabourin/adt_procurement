@@ -200,8 +200,8 @@ methods:{
 
 </script>
 <style type="text/css" scoped>
-.heading{background-color: #865F56; color:#FFF;}
-    th,td{padding:.25em;font-size: 12px}
+.heading{background-color: #865F56; color:#FFF;font-weight: bold;}
+    th,td{padding:.25em;font-size: 12px;}
     input[type=checkbox]{margin-left:1em;}
     input[type=checkbox]:before{content:" ";}
     th{text-align: center}
@@ -230,7 +230,7 @@ methods:{
       "P6 Year-To-Date Actuals<br />C",
       "P5 Annual Forecast<br /><br />D",
       "P6 Annual Forecast<br /><br />E",
-      "Surplus / Deficit<br /><br />F=E-A",
+      "Surplus / Deficit<br /><br />F=E&minus;A",
       "Salary",
       "&nbsp;",
       "&nbsp;",
@@ -347,7 +347,7 @@ methods:{
       "P6 Dépenses réelles depuis le début de l’année<br />C",
       "P5 Prévisions annuelles<br /><br />D",
       "P6 Prévisions annuelles<br /><br />E",
-      "Excédent/déficit<br /><br /><br />F=E-A",
+      "Excédent/déficit<br /><br /><br />F=E&minus;A",
       "Salaires",
       "&nbsp;",
       "&nbsp;",

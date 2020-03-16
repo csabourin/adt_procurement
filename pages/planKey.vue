@@ -92,7 +92,7 @@
     </b-container>
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
-      <microlearning path="planKey" youAreHere size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
+      <microlearning path="planKey" time="5" youAreHere size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
       <microlearning path="buildWP" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" />
       <microlearning size="140" path="createBudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
       <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" />
@@ -183,7 +183,7 @@ h3 {
   font-size: 72px;
   font-family: Times;
   font-weight: bold;
-  color: #d1dfe1;
+  color: #608a93;
   margin-top: -60px;
 }
 

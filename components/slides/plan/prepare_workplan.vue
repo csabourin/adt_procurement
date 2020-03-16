@@ -161,58 +161,77 @@
   overflow-x: auto;
   white-space: nowrap;
 }
+
 .tableColoured {
   table-layout: fixed;
   width: 100%;
   counter-reset: wpParts
 }
+
+.tableColoured td {
+  vertical-align: top;
+  position: relative;
+  padding: 5px 15px 8px 55px;
+  height:60px;
+}
+
 .tableColoured td:before {
+  font-family:"Roboto";
   counter-increment: wpParts;
   content: counter(wpParts);
-  font-weight: bolder;
   position: absolute;
   height: 2em;
   left: 0px;
   top: 0px;
   border-radius: 0 0 30px 0;
-  padding: .1em .5em 0 .5em;
+  /*padding: .1em .5em 0 .5em;*/
+  padding: 0em .5em 0 .3em;
   color: white;
+  font-weight: bold;
 }
-.tableColoured td {
-  vertical-align: top;
-  position: relative;
-  padding-left: 35px;
+
+.tableColoured td:nth-of-type(-n+6):before {
+  content: "0"counter(wpParts);
 }
 
 .tableColoured select{
   max-width: 90%;
 }
+
 .vertical{
   transform: rotate(90deg);
 }
+
 .deptPri:before {
   background-color: #167777;
 }
 .deptPri {
-  border-top: 2px solid #167777;
+  border-top: 4px solid #167777;
   background-color: #c7e0e0
 }
+
 .govtPri {
-  border-top: 2px solid #6C076C;
+  border-top: 4px solid #6C076C;
   background-color: #e1c8e1
 }
+
 .govtPri:before {
   background-color: #6C076C;
 }
+
 .dirPri {
-  border-top: 2px solid #6F1E0D;
+  border-top: 4px solid #6F1E0D;
+  border-bottom: 4px solid #fff;
   background-color: #e2ceca
 }
+
 .dirPri:before {
   background-color: #6F1E0D;
 }
+
 .planAct {
-  border-top: 2px solid #577a90;
+  border-bottom:hidden; 
+  border-left:2px solid #577a90;
   background-color: #E2E8EC;
 }
 
@@ -221,7 +240,8 @@
 }
 
 .planSubAct {
-  border-top: 2px solid #3A8251;
+  border-bottom:hidden;   
+  border-left:2px solid #3A8251;
   background-color: #dcefe3;
 }
 
@@ -230,7 +250,8 @@
 }
 
 .planDelivs {
-  border-top: 2px solid #616EB8;
+  border-bottom:hidden; 
+  border-left:2px solid #616EB8;
   background-color: #dfe2f1;
 }
 
@@ -239,7 +260,8 @@
 }
 
 .planRisk {
-  border-top: 2px solid #8D9245;
+  border-bottom:hidden;
+  border-left:2px solid #8D9245;
   background-color: #f0f1df;
 }
 
@@ -248,7 +270,8 @@
 }
 
 .planLikely {
-  border-top: 2px solid #775F75;
+  border-bottom:hidden;
+  border-left:2px solid #775F75;
   background-color: #E1DCE1;
 }
 
@@ -257,7 +280,8 @@
 }
 
 .planImpact {
-  border-top: 2px solid #607293;
+  border-bottom:hidden;
+  border-left:2px solid #607293;
   background-color: hsl(219, 21%, 91%);
 }
 
@@ -266,7 +290,8 @@
 }
 
 .planMitigat {
-  border-top: 2px solid #B35685;
+  border-bottom:hidden;
+  border-left:2px solid #B35685;
   background-color: #f1dfe8;
 }
 
@@ -275,28 +300,71 @@
 }
 
 .planRes {
-  border-top: 2px solid #C35522;
+  border-bottom:hidden;
+  border-right:hidden;
+  border-left:2px solid #C35522;
   background-color: #f1e5df;
 }
 
 .planRes:before {
   background-color: #C35522;
 }
+
 .thNumbered {
   position: relative;
   text-align: center;
-  padding-left: 25px;
+  padding-left: 32px;
 }
+
 .thNumbered:before {
-  position: absolute;
+ font-family:"Roboto";
   counter-increment: wpParts;
   content: counter(wpParts);
+  position: absolute;
   height: 2em;
   left: 0px;
   top: 0px;
   border-radius: 0 0 30px 0;
-  padding: .1em .5em 0 .5em;
+  /*padding: .1em .5em 0 .5em;*/
+  padding: 0em .5em 0 .2em;
   color: white;
+  font-weight: bold;
 }
 
+.thNumbered:nth-of-type(-n+6):before {
+  content: "0"counter(wpParts);
+}
+
+.thNumbered:nth-of-type(1) {
+  border-top: 4px solid #577a90;
+}
+
+.thNumbered:nth-of-type(2) {
+  border-top: 4px solid #3A8251;
+}
+
+.thNumbered:nth-of-type(3) {
+  border-top: 4px solid #616EB8;
+}
+
+.thNumbered:nth-of-type(4) {
+  border-top: 4px solid #8D9245;
+}
+
+.thNumbered:nth-of-type(5) {
+  border-top: 4px solid #775F75;
+}
+
+.thNumbered:nth-of-type(6) {
+  border-top: 4px solid #607293;
+
+}
+
+.thNumbered:nth-of-type(7) {
+  border-top: 4px solid #B35685;
+}
+
+.thNumbered:nth-of-type(8) {
+  border-top: 4px solid #C35522;
+}
 </style>

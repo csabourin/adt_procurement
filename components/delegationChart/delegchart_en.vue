@@ -1202,8 +1202,8 @@
                   <p class="pull-right">&nbsp;</p>
                 </td>
                 <td class="c35-noleft text-left" colspan="20">
-                  <p><strong>Approved by Hon. Mary Ann Russell</strong></p><img alt="Signature of Honorable Mary Ann Russell" src="~/assets/signature_M.png">
-                  <p style="text-decoration: overline;line-height: 1.2em">Hon. Mary Ann Russell , Minister</p>
+                  <p><strong>Approved by Honourable Mary Ann Russell</strong></p><img alt="Signature of Honourable Mary Ann Russell" src="~/assets/signature_M.png">
+                  <p style="text-decoration: overline;line-height: 1.2em">Honourable Mary Ann Russell , Minister</p>
                   <p class="pull-right">Effective date: Dec. 10, 2019</p>
                 </td>
               </tr>

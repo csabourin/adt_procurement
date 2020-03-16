@@ -1394,8 +1394,8 @@
                   <p class="pull-right">&nbsp;</p>
                 </td>
                 <td class="c35-noleft text-left" colspan="20">
-                  <p><strong>Approuvé par l'hon. Mary Ann Russell</strong></p><img alt="Signature de l'Honorable Mary Ann Russell" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/signature_M.png">
-                  <p style="text-decoration: overline;line-height: 1.2em">L'hon. Mary Ann Russell, ministre</p>
+                  <p><strong>Approuvé par l'honorable Mary Ann Russell</strong></p><img alt="Signature de l'honorable Mary Ann Russell" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/signature_M.png">
+                  <p style="text-decoration: overline;line-height: 1.2em">L'honorable Mary Ann Russell, ministre</p>
                   <p class="pull-right">Date d’entrée en vigueur : &nbsp;Le 10 décembre 2018</p>
                 </td>
               </tr>

@@ -1,7 +1,7 @@
 <template>
   <nav class="contentMap" role="navigation">
     
-    <span ref="item"><h4>{{$t('plan')}}</h4></span>    
+    <span ref="item"><h4 class="colorBar1">{{$t('plan')}}</h4></span>    
     <menu style="list-style: none">
       <li>
         <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessages')"  />
@@ -16,7 +16,7 @@
         <nuxt-link :to="localePath('exam1')" v-html="$t('Test')" />
       </li>
     </menu>
-    <h4>{{$t('spend')}}</h4>
+    <h4 class="colorBar2">{{$t('spend')}}</h4>
     <menu style="list-style: none">
       <li>
         <nuxt-link :to="localePath('spendKey')" v-html="$t('KeyMessages')" />
@@ -34,7 +34,7 @@
         <nuxt-link :to="localePath('exam2')" v-html="$t('Test')" />
       </li>
     </menu>
-    <h4>{{$t('report')}}</h4>
+    <h4 class="colorBar3">{{$t('report')}}</h4>
     <menu style="list-style: none">
       <li>
         <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessages')" />
@@ -105,8 +105,8 @@
   text-transform: uppercase;
   font-weight: 700;
 }
-.contentMap h4:nth-of-type(1){border-bottom:4px solid #b4c6ca;}
-.contentMap h4:nth-of-type(2){border-bottom:4px solid #d3cad2;}
-.contentMap h4:nth-of-type(3){border-bottom:4px solid #d6c7c3;}
+.colorBar1{border-bottom:4px solid #b4c6ca;}
+.colorBar2{border-bottom:4px solid #d3cad2;}
+.colorBar3{border-bottom:4px solid #d6c7c3;}
 
 </style>

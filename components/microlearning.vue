@@ -66,6 +66,10 @@ a {
   color: black;
 }
 
+a:focus {
+  text-decoration: underline;
+}
+
 .floatOver {
   position: absolute;
   top: -36px;

@@ -145,6 +145,8 @@ body {
   width: calc(100vw - (100vw - 100%));
   margin: 0;
   padding: 0;
+  /*There's gotta be a better way to override things from BS's _reboot.scss... *CSPS-TD* */
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 legend {
@@ -251,7 +253,7 @@ h3,
 }
 
 img {
-  vertical-align: text-top;
+  vertical-align: -30%;
 }
 
 .transcriptionBox {
@@ -605,7 +607,127 @@ page-enter-active,
 }
 
 .btn-primary {
-  background-color: #0051A8;
+  /* background-color: #0051A8; */
+  background-color: #587C84;
+  border-color:#365A62;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #365A62;
+  border-color:#365A62;
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #365A62;
+  border-color:#365A62;
 }
 
+
+
+/* ***************************************
+ * new table style for build a workplan
+ * **************************************/
+
+
+
+.workplan-table .row{
+    clear:both;
+}
+
+.workplan-table .row:nth-child(1) {
+  counter-reset: section;
+}
+
+/* ------------ WORKPLAN TITLES -------------*/
+.workplan-table .encadrage {
+  border: 1px #eaeaea solid;
+  display:block;
+  padding:10px;
+}
+.workplan-table h3 {
+  font-size: 1.2em;
+}
+.workplan-table .row:nth-child(1) h3:after,
+.workplan-table .row:nth-child(2) h3:after,
+.workplan-table .row:nth-child(3) h3:after{
+  content:' – ';
+}
+.workplan-table .encadrage h4 {
+
+  margin: 0px -10px 15px -10px;
+  padding:20px 15px;
+  -webkit-box-shadow: 0px 7px 5px -7px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 7px 5px -7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 7px 5px -7px rgba(0, 0, 0, 0.5);
+  /*border-top:#587c84 3px solid;*/
+}
+
+
+.workplan-table>.row:nth-child(1) .encadrage{
+  border-top: 4px solid #6C076C;
+  border-top: 4px solid #6C076C;
+  background-color:#e1c8e1;
+}
+.workplan-table>.row:nth-child(2) .encadrage{
+    border-top: 4px solid #167777;
+    background-color: #c7e0e0;
+}
+
+.workplan-table>.row:nth-child(3) .encadrage{
+    border-top: 4px solid #6F1E0D;
+    background-color: #e2ceca;
+}
+.workplan-table>.row:nth-child(4) .encadrage{
+
+  padding:0px;
+  margin:0px;
+  border:none;
+  padding-right:0px;
+
+}
+.workplan-table>.row:nth-child(4) .encadrage h3{
+    border-top: 4px solid #577a90;
+    background-color: #e2e8ec;
+    margin:0px;
+    padding:10px;
+
+}
+.workplan-table>.row:nth-child(5) .encadrage{
+  padding-top:0px;
+}
+
+
+.workplan-table>.row:nth-child(1) .encadrage>p,
+.workplan-table>.row:nth-child(2) .encadrage>p,
+.workplan-table>.row:nth-child(3) .encadrage>p,
+.workplan-table>.row:nth-child(1) .encadrage>h3,
+.workplan-table>.row:nth-child(2) .encadrage>h3,
+.workplan-table>.row:nth-child(3) .encadrage>h3{
+  display:inline;
+  min-height:40px;
+}
+
+/* ------------ ACTIVITIES TITLES -------------*/
+
+.workplan-table .encadrage h4{
+  background-color:#f9f9f9;
+  font-size:1.1em;
+}
+
+.workplan-table .encadrage h5{
+  padding:5px 30px;
+  border-left:2px solid #587c84;
+  background-color:#f9f9f9;
+}
+.workplan-table h5 {
+  font-size: 1em;
+}
+.workplan-table>.row:nth-child(5) .encadrage>*:not(h4){
+  margin:0px 5px ;
+}
+.workplan-table>.row:nth-child(5) .encadrage>p{
+  margin-left:20px;
+}
+
+.workplan-table ul {
+  list-style: circle;
+}
 </style>

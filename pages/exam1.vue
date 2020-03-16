@@ -7,9 +7,9 @@
           <p><strong>NOTE:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
           <p>For some of the questions in this test, you play the role of a manager of a call center. You will be given scenarios based on this situation.&nbsp;</p>
           <!-- <p>As per Treasury Board requirements, passing the test for this course is mandatory before you can exercise financial delegation.&nbsp;</p> -->
-          <p>There are three sections to the test - one for each phase: planning, spending and reporting.</p>
+          <p>There are three sections to the test - one for each phase: Plan, Spend and Report<!-- planning, spending and reporting -->.</p>
           <p>The passing grade is 80% for each of these sections.</p>
-          <p>Each section should take you around 15-20 minutes to complete.&nbsp;</p>
+          <p>Each section should take you around 15 to 20 minutes to complete.&nbsp;</p>
           <p>You can access course materials during the test and you can take it as many times as you need.</p>
         </div>
         <div v-if="$i18n.locale=='fr'">

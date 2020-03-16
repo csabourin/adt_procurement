@@ -31,7 +31,7 @@
      <p>&nbsp;</p>
     <h2 class="sideTitle planTitle">{{$t('plan')}}</h2>
     <section role="navigation" class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }">
-      <microlearning path="planKey" time="2" imagePath="KeyMessP.svg" :text="$t('KeyMessages')"  :completion="$store.state.currentPlaying.kmPlan"/>
+      <microlearning path="planKey" time="5" imagePath="KeyMessP.svg" :text="$t('KeyMessages')"  :completion="$store.state.currentPlaying.kmPlan"/>
       <microlearning path="buildWP" time="20"  imagePath="BuildWP.svg" :text="$t('BuildWorkPlan')" :completion="$store.state.currentPlaying.buildWP_player"  />
       <microlearning time="20" path="createBudget" imagePath="CreateBud.svg" :text="$t('CreateBudget')" :completion="$store.state.currentPlaying.createBudget_player" />
       <microlearning time="15" path="exam1" imagePath="P-Test.svg" :text="$t('Test')" :completion="parseInt(planCompleted)" />

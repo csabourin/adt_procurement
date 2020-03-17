@@ -416,6 +416,10 @@ img {
   margin-top: -0.15em
 }
 
+.mainTitle img {
+  vertical-align: -60%;
+}
+
 .scrollMe {
   width: 100%;
   overflow-x: auto;

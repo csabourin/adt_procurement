@@ -2,6 +2,108 @@
   <span>
     <p>{{ $t('pwpInstructions') }}</p>
     <p><strong v-html="$t('pwpTitle')"></strong></p>
+
+
+<b-container class="workplan-table wp-table-1">
+      <b-row>
+        <b-col class="encadrage">
+          <label><h3 v-html="$t('pwpGovtPri')"></h3>
+          <p v-html="$t('govtPriorities')"></p>
+        </label>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <label><h3 v-html="$t('pwpDeptPri')"></h3>
+          <p v-html="$t('deptPriorities')"></p></label>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <label><h3 v-html="$t('pwpDirPri')"></h3>
+          <p v-html="$t('dirPriorities')"></p></label>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('titleActivities')"></h3>
+        </b-col>
+      </b-row>
+
+        <!---------------------- ACTIVITY 1 -->      
+      <b-row>
+        <b-col class="encadrage" sm="12" xl="4">
+          <h4 v-html="$t('pA1')"></h4>
+          <h5 v-html="$t('titleSubActivities')">Sous activités</h5>
+          <p v-html="$t('psA1')"></p>
+          <h5 v-html="$t('titleDeliverables')">Livrables</h5>
+          <p v-html="$t('pD1')"></p>
+          <h5 v-html="$t('titleRisk')">Risque</h5>
+          <p v-html="$t('pR1')">Roulement du personnel</p>
+          <h5 v-html="$t('titleLikelihood')">Probabilité</h5>
+          <p v-html="$t('low')">Faible</p>
+          <h5 v-html="$t('titleImpact')">Impact</h5>
+          <p v-html="$t('high')">Élevé</p>
+          <h5 v-html="$t('titleMitigation')">Atténuation</h5>
+          <p v-html="$t('pM1')"></p>
+          <h5 v-html="$t('titleResources')">Resources</h5>
+          <p v-html="$t('pR1_1')">          </p>
+        </b-col>
+        
+        <!---------------------- ACTIVITY 2 --> 
+        <b-col class="encadrage" sm="12" xl="4">
+          <h4 v-html="$t('pA2')"></h4>
+          <h5 v-html="$t('titleSubActivities')">Sous activités</h5>
+          <p v-html="$t('pSA2')"></p>
+          <h5 v-html="$t('titleDeliverables')">Livrables</h5>
+          <p>
+            <ul>
+              <li v-html="$t('pD2_1')"></li>
+            </ul>
+          </p>
+          <h5 v-html="$t('titleRisk')">Risque</h5>
+          <p v-html="$t('pR2')">Roulement du personnel</p>
+          <h5 v-html="$t('titleLikelihood')">Probabilité</h5>
+          <p v-html="$t('low')">Faible</p>
+          <h5 v-html="$t('titleImpact')">Impact</h5>
+          <p v-html="$t('high')">Élevé</p>
+          <h5 v-html="$t('titleMitigation')">Atténuation</h5>
+          <ul v-html="$t('pM2')"></ul>
+          <h5 v-html="$t('titleResources')">Resources</h5>
+          <ul v-html="$t('pRes2')"></ul>
+        </b-col>
+
+
+        
+        <!---------------------- ACTIVITY 3 --> 
+        <b-col class="encadrage" sm="12" xl="4">
+          <h4 v-html="$t('pA3')"></h4>
+          <h5 v-html="$t('titleSubActivities')">Sous activités</h5>
+          <ul v-html="$t('pSA3')"></ul>
+          <h5 v-html="$t('titleDeliverables')">Livrables</h5>
+          <ul v-html="$t('pD3')"></ul>
+          
+          <h5 v-html="$t('titleRisk')">Risque</h5>
+          <p v-html="$t('pR2')"></p>
+          <h5 v-html="$t('titleLikelihood')">Probabilité</h5>
+          <p v-html="$t('low')">Faible</p>
+          <h5 v-html="$t('titleImpact')">Impact</h5>
+          <p v-html="$t('high')">Élevé</p>
+          <h5 v-html="$t('titleMitigation')">Atténuation</h5>
+          <ul v-html="$t('pM2')"></ul>
+          <h5 v-html="$t('titleResources')">Resources</h5>
+          <ul v-html="$t('pRes3')">
+              <li>1 adjoint administratif</li>
+              <li>gestionnaire</li>
+          </ul>
+        </b-col>
+        
+      </b-row>
+    </b-container>
+
+    <!--------------------------------------------------------- END TABLE --> 
+
+
     <table class='tableColoured'>
       <tr>
         <td colspan='8' class='govtPri'>
@@ -69,7 +171,6 @@
           <td rowspan="4" class='planImpact'  v-html="$t('high')"></td>
           <td rowspan="4" class='planMitigat'>
             <ul v-html="$t('pM2')" />
-            <p>&nbsp;</p>
             <ul>
               <transition name="fade"><li v-if="Q1==''||Q1==1" :class="{striked:Q1==1}" v-html="$t('pM1_1')" /></transition>
             </ul>
@@ -117,9 +218,9 @@
       {
           "pwpInstructions": "Looking at your draft, you notice that some items may have been dropped into the wrong location or may be missing. Update your draft accordingly.",
           "pwpTitle": "Choose the best option for each section of this work plan by selecting the most appropriate answer. You can scroll horizontally to view the whole plan.",
-          "pwpGovtPri": "<strong>Government priorities &mdash;</strong>",
-          "pwpDeptPri": "<strong>Departmental priorities &mdash;</strong>",
-          "pwpDirPri": "<strong>Directorate priorities &mdash;</strong>",
+          "pwpGovtPri": "Government priorities",
+          "pwpDeptPri": "Departmental priorities",
+          "pwpDirPri": "Directorate priorities",
           "titleActivities": "Activities",
           "pwpPlanAct": "<strong>Activities</strong>",
           "titleSubActivities": "Sub-activities",
@@ -136,18 +237,18 @@
           "pA1": "Manage and administer the directorate",
           "psA1": "<ul><li>Supervise, monitor and train staff&nbsp;</li><li>Schedule work&nbsp;</li><li>Provide clerical support&nbsp;</li><li>Move office to new location </li></ul>",
           "pD1": "<ul><li>Management of licencing activities</li><li>Reception covered from 9 to 5</li></ul>",
-          "pR1": "Staff turnover",
-          "low": "Low",
-          "high": "High",
+          "pR1": "<ul><li>Staff turnover</li></ul>",
+          "low": "<ul><li>Low</li></ul>",
+          "high": "<ul><li>High</li></ul>",
           "pM1": "<ul><li>Establish succession plan</li><li>Establish collective staffing pools</li><li>Recognize excellent work</li><li>Celebrate successes</li><li>Involve employees in decision-making</li></ul>",
-          "pM1_1": "Implement flexible work hours",
-          "pR1_1": "1 administrative assistant",
-          "pR1_2": "manager",
+          "pM1_1": "<ul><li>Implement flexible work hours</li></ul>",
+          "pR1_1": "<ul><li>1 administrative assistant</li></ul>",
+          "pR1_2": "<ul><li>manager</li></ul>",
           "pA2": "Issue commercial fishing licenses",
           "pSA2": "<ul><li>Review applicant requests</li><li>Check reliability</li><li>Issue licenses</li><li>Conduct inspections</li></ul>",
           "pD2_1": "Issue license within 30 days of request",
           "pD2_2": "Issue 500 licenses per year",
-          "pR2": "Overfishing",
+          "pR2": "<ul><li>Overfishing</li></ul>",
           "pM2": "<li>Protect habitat</li><li>Place catching limits</li><li>Implement fishing seasons</li>",
           "pRes2": "<li>1 officer</li><li>2 analysts</li><li>1 junior officer</li>",
           "pA3": "Renew commercial fishing licenses",
@@ -225,18 +326,18 @@
           "pA1": "Gérer et administrer la direction&nbsp;",
           "psA1": "<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir du soutien administratif&nbsp;</li><li> Déménagement des bureaux dans de nouveaux locaux</li></ul>",
           "pD1": "<ul><li> Gestion des activités de délivrance de permis</li><li> Réception ouverte de 9 h à 17 h</li></ul>",
-          "pR1": "Roulement du personnel",
-          "low": "Faible",
-          "high": "&Eacute;levé",
+          "pR1": "<ul><li>Roulement du personnel</li></ul>",
+          "low": "<ul><li>Faible</li></ul>",
+          "high": "<ul><li>&Eacute;levé</li></ul>",
           "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l’excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li></ul>",
           "pM1_1": "Mettre en &oelig;uvre des horaires de travail flexibles",
-          "pR1_1": "1 adjoint administratif",
-          "pR1_2": "gestionnaire",
+          "pR1_1": "<ul><li>1 adjoint administratif</li></ul>",
+          "pR1_2": "<ul><li>gestionnaire</li></ul>",
           "pA2": "Délivrer des permis de p&ecirc;che commerciale",
           "pSA2": "<ul><li>Examiner les dossiers des demandeurs</li><li>Vérifier la fiabilité</li><li>Délivrer des permis</li><li>Effectuer des inspections</li></ul>",
           "pD2_1": "Délivrer le permis dans les 30 jours suivant la demande",
           "pD2_2": "Délivrer 500 permis par an",
-          "pR2": "Surp&ecirc;che",
+          "pR2": "<ul><li>Surp&ecirc;che</li></ul>",
           "pM2": "<li> Protéger l'habitat</li><li> Fixer des limites de capture</li><li> Lancer les saisons de p&ecirc;che</li>",
           "pRes2": "<li> 1 agent</li><li> 2 analystes</li><li> 1 agent subalterne</li>",
           "pA3": "Renouveler les permis de p&ecirc;che commerciale",

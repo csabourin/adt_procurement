@@ -1,10 +1,10 @@
 <template>
   <span>
     <p>{{ $t('pwpInstructions') }}</p>
-    <ul style="list-style: none">
-    <li><input type="checkbox" name="things" disabled id="things1" v-model="Q4"> <label for="things1">{{$t('thing1')}}</label></li>
-    <li><input type="checkbox" name="things" disabled id="things2" v-model="Q2"> <label for="things2">{{$t('thing2')}}</label></li>
-    <li><input type="checkbox" name="things" disabled id="things3" v-model="Q3"> <label for="things3">{{$t('thing3')}}</label></li>
+    <ul style="list-style: circle">
+    <li>{{$t('thing1')}}</li>
+    <li>{{$t('thing2')}}</li>
+    <li>{{$t('thing3')}}</li>
   </ul>
     <p><strong v-html="$t('pwpTitle')"></strong></p>
     <table class='tableColoured'>

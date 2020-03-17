@@ -4,25 +4,110 @@
       <download filename="WorkPlan_Template.docx" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" iconStyle="planBackground" size="64" :title="$t('downloadPlan')" />
     </div>
     <h2 v-html="$t('pwpTitle')"></h2>
-    <p>&nbsp;</p>
-    <table class='tableColoured'>
+
+    <b-container class="workplan-table wp-table-1">
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpGovtPriTitle')"></h3>
+          <p v-html="$t('pwpGovtPri')"></p>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpDeptPriTitle')"></h3>
+          <p v-html="$t('pwpDeptPri')"></p>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpDirPriTitle')"></h3>
+          <p v-html="$t('pwpDirPri')"></p>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage" sm="12">
+          <h3 v-html="$t('titleActivities')"></h3>
+          <!--p v-html="$t('pwpPlanAct')"></p-->
+          <p v-html="$t('pwpPlanAct')"></p>
+
+          <h4 v-html="$t('titleSubActivities')">Sous activités</h4>
+          <p v-html="$t('pwpPlanSubAct')">
+          <ul>
+            <li>Superviser, surveiller et former le personnel</li>
+            <li>Planifier le travail</li>
+            <li>Fournir du soutien administratif</li>
+            <li>Déménagement des bureaux dans de nouveaux locaux</li>
+          </ul>
+          </p>
+          <h4 v-html="$t('titleDeliverables')">Livrables</h4>
+          <p v-html="$t('pwpPlanDelivs')">
+            <ul>
+              <li>Gestion des activités de délivrance de permis</li>
+              <li>Réception ouverte de 9 h à 17 h</li>
+            </ul>
+          </p>
+          
+          <h4 v-html="$t('titleRisk')">Risque</h4>
+          <p v-html="$t('pwpPlanRisk')">Roulement du personnel</p>
+          <h4 v-html="$t('titleLikelihood')">Probabilité</h4>
+          <p v-html="$t('pwpPlanLikely')">Faible</p>
+          <h4 v-html="$t('titleImpact')">Impact</h4>
+          <p v-html="$t('pwpPlanImpact')">Élevé</p>
+          <h4 v-html="$t('titleMitigation')">Atténuation</h4>
+          <p v-html="$t('pwpPlanMitigat')">
+            <ul>
+              <li>Établir un plan de relève</li>
+              <li>Établir des bassins de dotation collective</li>
+              <li>Reconnaître l'excellence du travail</li>
+              <li>Célébrer les succès</li>
+              <li>Impliquer les employés dans la prise de décision</li>
+              <li>Horaires de travail flexibles</li>
+            </ul>
+           </p>
+          <h4 v-html="$t('titleResources')">Resources</h4>
+          <p v-html="$t('pwpPlanRes')">
+            <ul>
+              <li>1 adjoint administratif</li>
+              <li>gestionnaire</li>
+            </ul>
+          </p>
+        </b-col>
+        
+      </b-row>
+    </b-container>
+    <!--table class='tableColoured'>
       <tr>
         <td colspan='8' class='govtPri'>
-          <p v-html="$t('pwpGovtPri')"></p>
+          <p>
+            <strong v-html="$t('pwpGovtPriTitle')"></strong> - 
+            <span v-html="$t('pwpGovtPri')"></span>
+        </p>
         </td>
       </tr>
       <tr>
         <td colspan='8' class='deptPri'>
-          <p v-html="$t('pwpDeptPri')"></p>
+
+          <p>
+            <strong v-html="$t('pwpDeptPriTitle')"></strong> - 
+            <span v-html="$t('pwpDeptPri')"></span>
+        </p>
         </td>
       </tr>
       <tr>
         <td colspan='8' class='dirPri'>
-          <p v-html="$t('pwpDirPri')"></p>
+
+          <p>
+            <strong v-html="$t('pwpDirPriTitle')"></strong> - 
+            <span v-html="$t('pwpDirPri')"></span>
+        </p>
         </td>
       </tr>
-    </table>
-    <div>
+    </table-->
+
+
+
+
+    <!--div>
       <b-card no-body>
         <b-tabs class="thNumbered" card fill>
           <b-tab class='planAct thNumbered' :title="$t('titleActivities')" active>
@@ -67,52 +152,61 @@
           </b-tab>
         </b-tabs>
       </b-card>
-    </div>
+    </div-->
   </span>
 </template>
 <i18n>
   {
   "en":{
+  "someActivityTitle":"Doing things and stuff",
   "pwpTitle":"Take a moment now to explore the different sections of a work plan.",
   "downloadPlan":"Download a Word template of the work plan",
   "dwnPlanLine1":"Work Plan",
   "dwnPlanLine2":"Template",
-  "pwpGovtPri":"<strong>Government priorities —</strong> In the Speech from the throne, a new government sets out its agenda. This includes its broad goals and commitments and how it will reach them.",
-  "pwpDeptPri":"<strong>Departmental priorities —</strong> What your department sets out to do to support the government’s priorities.",
-  "pwpDirPri":"<strong>Directorate priorities —</strong> What your directorate sets out to do to support the departmental priorities.",
+  "pwpGovtPriTitle":"Government priorities",
+  "pwpGovtPri":"In the Speech from the throne, a new government sets out its agenda. This includes its broad goals and commitments and how it will reach them.",
+  "pwpDeptPriTitle":"Departmental priorities",
+  "pwpDeptPri":"What your department sets out to do to support the government’s priorities.",
+  "pwpDirPriTitle":"Directorate priorities",
+  "pwpDirPri":"What your directorate sets out to do to support the departmental priorities.",
   "titleActivities":"Activities",
-  "pwpPlanAct":"<strong>Activities —</strong> The work tasks to be accomplished to support your directorate’s priorities. This includes performance indicators and service standards for each work task.",
+  "pwpPlanAct":"The work tasks to be accomplished to support your directorate’s priorities. This includes performance indicators and service standards for each work task.",
   "titleSubActivities":"Sub-activities",
-  "pwpPlanSubAct":"<strong>Sub-activities —</strong> The work tasks broken down into smaller parts.",
+  "pwpPlanSubAct":"The work tasks broken down into smaller parts.",
   "titleDeliverables":"Deliverables",
-  "pwpPlanDelivs":"<strong>Deliverables —</strong> Specific and tangible items you should be able to check off your list when you accomplish them.",
+  "pwpPlanDelivs":"Specific and tangible items you should be able to check off your list when you accomplish them.",
   "titleRisk":"Risk",
-  "pwpPlanRisk":"<strong>Risk —</strong> Potential events that may affect the activity and its ability to meet and accomplish its objectives and expected results.",
+  "pwpPlanRisk":"Potential events that may affect the activity and its ability to meet and accomplish its objectives and expected results.",
   "titleLikelihood":"Likelihood",
-  "pwpPlanLikely":"<strong>Likelihood —</strong> An educated guess at whether or not the risk will happen.",
+  "pwpPlanLikely":"An educated guess at whether or not the risk will happen.",
   "titleImpact":"Impact",
-  "pwpPlanImpact":"<strong>Impact —</strong> The potential loss associated with a risk.",
+  "pwpPlanImpact":"The potential loss associated with a risk.",
   "titleMitigation":"Mitigation",
-  "pwpPlanMitigat":"<strong>Mitigation —</strong> Actions to counteract the potential risks.",
+  "pwpPlanMitigat":"Actions to counteract the potential risks.",
   "titleResources":"Resources",
-  "pwpPlanRes":"<strong>Resources —</strong> The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
+  "pwpPlanRes":"The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
   },
   "fr":{
+  "someActivityTitle":"Doing things and stuff",
   "pwpTitle":"Prenez un moment pour explorer les différentes sections d’un plan de travail.",
   "downloadPlan":"Télécharger un modèle Word du plan de travail",
   "dwnPlanLine1":"Plan de",
   "dwnPlanLine2":"travail",
-  "pwpGovtPri":"<strong>Priorités du gouvernement —</strong> Dans le discours du Trône, un nouveau gouvernement présente son programme. Il s’agit notamment de ses objectifs généraux et de ses engagements, et de la façon dont il les atteindra.",
-  "pwpDeptPri":"<strong>Priorités ministérielles —</strong> Ce que votre ministère entend faire pour appuyer les priorités du gouvernement.",
-  "pwpDirPri":"<strong>Priorités de la direction —</strong> Ce que votre direction générale entend faire pour appuyer les priorités ministérielles.","titleActivities":"Activités",
-  "pwpPlanAct":"<strong>Activités —</strong> Les tâches à accomplir pour appuyer les priorités de votre direction. Cela comprend des indicateurs de rendement et des normes de service pour chaque tâche.","titleSubActivities":"Sous-activités",
-  "pwpPlanSubAct":"<strong>Sous-activités —</strong> La tâche est divisée en plus petites parties.","titleDeliverables":"Livrables",
-  "pwpPlanDelivs":"<strong>Livrables —</strong>Les éléments spécifiques et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les avez terminés.","titleRisk":"Risque",
-  "pwpPlanRisk":"<strong>Risque —</strong> Événements susceptibles d’influer sur l’activité et sur sa capacité d’atteindre et d’atteindre ses objectifs et les résultats escomptés.","titleLikelihood":"Probabilité",
-  "pwpPlanLikely":"<strong>Probabilité —</strong> Un jugement approximatif permettant de déterminer si le risque se concrétisera ou pas.","titleImpact":"Impact",
-  "pwpPlanImpact":"<strong>Impact —</strong> La perte potentielle associée à un risque.","titleMitigation":"Atténuation",
-  "pwpPlanMitigat":"<strong>Atténuation —</strong> Actions pour contrer les risques potentiels.","titleResources":"Resources",
-  "pwpPlanRes":"<strong>Resources —</strong> Le budget, le personnel (équivalent temps plein (ETP)), les consultants, les bâtiments et le matériel nécessaire à la réalisation des activités de la direction."
+  "pwpGovtPriTitle":"Government priorities",
+  "pwpGovtPri":"Dans le discours du Trône, un nouveau gouvernement présente son programme. Il s’agit notamment de ses objectifs généraux et de ses engagements, et de la façon dont il les atteindra.",
+  "pwpDeptPriTitle":"Priorités ministérielles",
+  "pwpDeptPri":"Ce que votre ministère entend faire pour appuyer les priorités du gouvernement.",
+  "pwpDirPriTitle":"Priorités de la direction",
+  "titleActivities":"Activités",
+  "pwpDirPri":"Ce que votre direction générale entend faire pour appuyer les priorités ministérielles.","titleActivities":"Activités",
+  "pwpPlanAct":"Les tâches à accomplir pour appuyer les priorités de votre direction. Cela comprend des indicateurs de rendement et des normes de service pour chaque tâche.","titleSubActivities":"Sous-activités",
+  "pwpPlanSubAct":"La tâche est divisée en plus petites parties.","titleDeliverables":"Livrables",
+  "pwpPlanDelivs":"Les éléments spécifiques et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les avez terminés.","titleRisk":"Risque",
+  "pwpPlanRisk":"Événements susceptibles d’influer sur l’activité et sur sa capacité d’atteindre et d’atteindre ses objectifs et les résultats escomptés.","titleLikelihood":"Probabilité",
+  "pwpPlanLikely":"Un jugement approximatif permettant de déterminer si le risque se concrétisera ou pas.","titleImpact":"Impact",
+  "pwpPlanImpact":"La perte potentielle associée à un risque.","titleMitigation":"Atténuation",
+  "pwpPlanMitigat":"Actions pour contrer les risques potentiels.","titleResources":"Resources",
+  "pwpPlanRes":"Le budget, le personnel (équivalent temps plein (ETP)), les consultants, les bâtiments et le matériel nécessaire à la réalisation des activités de la direction."
   }
   }
 </i18n>
@@ -374,10 +468,11 @@ export default {
 }
 /*Overriding BSVue (to centralize once tested & approved)*/
 .tab-pane.thNumbered.card-body {
-padding:15px;
+  padding:15px;
   margin-top:12px;
 }
 .card {
   border:0
 }
+
 </style>

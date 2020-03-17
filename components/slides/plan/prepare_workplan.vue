@@ -2,7 +2,65 @@
   <span>
     <p>{{ $t('pwpInstructions') }}</p>
     <p><strong v-html="$t('pwpTitle')"></strong></p>
-    <table class='tableColoured'>
+
+
+<b-container class="workplan-table wp-table-1">
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpGovtPri')"></h3>
+          <p>
+            <select v-model='govtPri' @change="q1Submit=false">
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option v-for="(answer, index) in $t('q1')" :value="index">{{answer}}</option>
+            </select> <b-button @click="q1Submit=true">{{$t('submit')}}</b-button>
+          </p>
+          <p v-if="govtPri && q1Submit"> <span v-html="$t('q1a.'+govtPri)" /></p>
+            
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpDeptPri')"></h3>
+          <p>
+            <select v-model='deptPri' @change="q2Submit=false">
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option value="1">{{$t('q2-1')}}</option>
+              <option value="2">{{$t('q2-2')}}</option>
+              <option value="3">{{$t('q2-3')}}</option>
+            </select> <b-button @click="q2Submit=true">{{$t('submit')}}</b-button>
+          </p>
+          <p v-if="deptPri && q2Submit"> <span v-html="$t('a2-'+deptPri)" /></p>
+
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpDirPri')"></h3>
+          <p>
+            <select v-model='dirPri' @change="q3Submit=false">
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option value="1">{{$t('q3-1')}}</option>
+              <option value="2">{{$t('q3-2')}}</option>
+              <option value="3">{{$t('q3-3')}}</option>
+            </select> <b-button @click="q3Submit=true">{{$t('submit')}}</b-button>
+          </p>
+          <p v-if="dirPri && q3Submit"><span v-html="$t('a3-'+dirPri)" /></p>
+
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('titleActivities')"></h3>
+        </b-col>
+      </b-row>
+
+        <!---------------------- ACTIVITY 1 -->      
+
+    </b-container>
+
+
+
+    <!--table class='tableColoured'>
       <tr>
         <td colspan='8' class='govtPri'>
           <p><span v-html="$t('pwpGovtPri')" />
@@ -53,7 +111,7 @@
           <th class='planMitigat thNumbered'><span >{{$t('titleMitigation')}}</span></th>
           <th class='planRes thNumbered'><span >{{$t('titleResources')}}</span></th>
         </tr>
-      </table>
+      </table-->
     </div>
   </span>
 </template>

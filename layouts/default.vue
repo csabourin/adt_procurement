@@ -416,6 +416,10 @@ img {
   margin-top: -0.15em
 }
 
+.mainTitle img {
+  vertical-align: -60%;
+}
+
 .scrollMe {
   width: 100%;
   overflow-x: auto;
@@ -759,8 +763,14 @@ page-enter-active,
 /* ------------ ACTIVITIES TITLES -------------*/
 
 .workplan-table .encadrage h4 {
-  background-color: #f9f9f9;
+  background-color: #e2e8ec;
   font-size: 1.1em;
+  border-top:1px solid #577a90;
+  margin-top:1px;
+}
+
+.workplan-table .encadrage h4:nth-child(1){
+  
 }
 
 .workplan-table .encadrage h5 {
@@ -784,6 +794,13 @@ page-enter-active,
 .workplan-table ul {
   list-style: circle;
 }
+
+.workplan-table .encadrage select{
+    display:block;
+    position: relative;
+    width: 100%;;
+}
+
 
 a:hover,
 a:focus {

@@ -54,3 +54,8 @@
     </div>
   </span>
 </template>
+<style scoped>
+  p {
+    font-weight: bold;
+  }
+</style>

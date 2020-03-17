@@ -176,7 +176,7 @@
                   <p><span>Travel Abroad&nbsp; outside Canada &amp; USA</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_Hos">
-                  <p id="fn*-rf"><span>Hospitality <a href="#fn1" class="fn-lnk">*<span class="wb-inv">Footnote</span></a>
+                  <p id="fn*-rf"><span>Hospitality <a href="#fn1" class="fn-lnk">*<span class="v-inv">Footnote</span></a>
                     </span>
                   </p>
                 </th>
@@ -1186,7 +1186,7 @@
               </tr>
               <tr>
                 <td colspan="39">
-                  <p class="fn-rtn" id="fn1">Subject to restrictions <a href="#fn*-rf"><span class="wb-inv">Return to footnote </span>*<span class="wb-inv"> referrer</span></a></p>
+                  <p class="fn-rtn" id="fn1">Subject to restrictions <a href="#fn*-rf"><span class="v-inv">Return to footnote </span>*<span class="wb-inv"> referrer</span></a></p>
                 </td>
               </tr>
               <tr>

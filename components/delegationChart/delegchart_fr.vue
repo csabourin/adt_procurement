@@ -180,7 +180,7 @@
                   <p><span>Voyages hors du Canada et des États-Unis</span></p>
                 </th>
                 <th class="chrtRotate" headers="dc_PLT" scope="col" id="dc_Hos">
-                  <p id="fn*-rf"><span>Accueil <a href="#fn1" class="fn-lnk">*<span class="wb-inv">Note</span></a>
+                  <p id="fn*-rf"><span>Accueil <a href="#fn1" class="fn-lnk">*<span class="v-inv">Note</span></a>
                     </span>
                   </p>
                 </th>
@@ -1378,7 +1378,7 @@
               </tr>
               <tr>
                 <td colspan="39">
-                  <p class="c46 fn-rtn" id="fn1">Sujet à des restrictions<a href="#fn*-rf"><span class="wb-inv">Retour à la référence de la </span>*<span class="wb-inv"> note</span></a></p>
+                  <p class="c46 fn-rtn" id="fn1">Sujet à des restrictions<a href="#fn*-rf"><span class="v-inv">Retour à la référence de la </span>*<span class="v-inv"> note</span></a></p>
                 </td>
               </tr>
               <tr>

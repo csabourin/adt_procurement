@@ -104,99 +104,7 @@
     <!--------------------------------------------------------- END TABLE --> 
 
 
-    <table class='tableColoured'>
-      <tr>
-        <td colspan='8' class='govtPri'>
-          <p><span v-html="$t('pwpGovtPri')" /> {{$t('govtPriorities')}}
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan='8' class='deptPri'>
-          <p><span v-html="$t('pwpDeptPri')" /> {{$t('deptPriorities')}}
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan='8' class='dirPri'>
-          <p><span v-html="$t('pwpDirPri')" /> {{$t('dirPriorities')}}
-          </p>
-        </td>
-      </tr>
-    </table>
-    <div class="scrollMe" id="scrollDiv">
-      <table border="1" cellspacing="0" cellpadding="5">
-        <tr>
-          <th class='planAct thNumbered'>{{$t('titleActivities')}}</th>
-          <th class='planSubAct thNumbered'>{{$t('titleSubActivities')}}</th>
-          <th id="deliverable" class='planDelivs thNumbered'>{{$t('titleDeliverables')}}</th>
-          <th class='planRisk thNumbered'>{{$t('titleRisk')}}</th>
-          <th class='planLikely thNumbered'>{{$t('titleLikelihood')}}</th>
-          <th class='planImpact thNumbered'>{{$t('titleImpact')}}</th>
-          <th id="mitigationTab"class='planMitigat thNumbered'>{{$t('titleMitigation')}}</th>
-          <th id="resources" class='planRes thNumbered'>{{$t('titleResources')}}</th>
-        </tr>
-        <tr>
-          <td class='planAct' v-html="$t('pA1')"></td>
-          <td class='planSubAct' v-html="$t('psA1')"></td>
-          <td class='planDelivs' v-html="$t('pD1')"></td>
-          <td class='planRisk' v-html="$t('pR1')"></td>
-          <td class='planLikely' v-html="$t('low')"></td>
-          <td class='planImpact' v-html="$t('high')"></td>
-          <td class='planMitigat'>
-            <ul><!-- *CSABOURIN* -->
-              <li v-html="$t('pM1')"></li>
-             <transition name="bounce"><li v-if="Q1==2" v-html="'<strong>'+$t('pM1_1')+'</strong>'" /></transition>
-            </ul>
-          </td>
-          <td class='planRes'>
-            <ul>
-              <li>{{ $t('pR1_1')}}</li>
-              <transition name="bounce"><li v-if="Q3==1"><strong>{{ $t('pR1_2')}}</strong></li></transition>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td rowspan="2" class='planAct' v-html="$t('pA2')"></td>
-          <td rowspan="2" class='planSubAct' v-html="$t('pSA2')">
-          </td>
-          <td rowspan="2" class='planDelivs'>
-            <ul>
-              <li v-html="$t('pD2_1')"></li>
-              <transition name="bounce">    <li v-if="Q2==2" v-html="'<strong>'+$t('pD2_2')+'</strong>'"></li></transition>
-            </ul>
-          </td>
-          <td rowspan="4" class='planRisk' v-html="$t('pR2')"></td>
-          <td rowspan="4" class='planLikely' v-html="$t('low')"></td>
-          <td rowspan="4" class='planImpact'  v-html="$t('high')"></td>
-          <td rowspan="4" class='planMitigat'>
-            <ul v-html="$t('pM2')" />
-            <ul>
-              <transition name="fade"><li v-if="Q1==''||Q1==1" :class="{striked:Q1==1}" v-html="$t('pM1_1')" /></transition>
-            </ul>
-          </td>
-          <td rowspan="2" class='planRes'>
-            <ul v-html="$t('pRes2')" />
-          </td>
-        </tr>
-        <tr></tr>
-        <tr>
-          <td rowspan="2" class='planAct' v-html="$t('pA3')">
-            <p></p>
-          </td>
-          <td rowspan="2" class='planSubAct'>
-            <ul v-html="$t('pSA3')"></ul>
-          </td>
-          <td rowspan="2" class='planDelivs'>
-            <ul  v-html="$t('pD3')"></ul>
-          </td>
-          <td rowspan="2" class='planRes'>
-            <ul  v-html="$t('pRes3')" />
-          </td>
-        </tr>
-        <tr> </tr>
-      </table>
-    </div>
+
     <div>
     <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
     <b-tab title="Question 1">
@@ -412,13 +320,6 @@
      Q2:'',
      Q3:''
    }
-  },
-  watch: {
-    tabIndex:function (tab){ 
-      if (tab==2) this.$scrollTo('#resources')
-      if (tab==1) this.$scrollTo('#deliverable')
-      if (tab==0) this.$scrollTo('#mitigationTab')
-    }
   }
 }
 

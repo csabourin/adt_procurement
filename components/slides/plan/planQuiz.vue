@@ -70,86 +70,109 @@
   </li>
 </ol>
  -->
-
-            <!-- Working ... out -->
-                        <span>
-              <table class='tableColoured'>
-                <tr>
-                  <td colspan='8' class='govtPri'>
+<b-container class="workplan-table wp-table-1">
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpGovtPri')"></h3>
                     <p><span v-html="$t('pwpGovtPri')" /><br>
                       <select v-model="options1">
                         <option disabled value=''>{{$t('qDisabled')}}</option>
                         <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
                       </select>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan='8' class='deptPri'>
-                    <p><span v-html="$t('pwpDeptPri')" /><br><select v-model="options2">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan='8' class='dirPri'>
-                    <p><span v-html="$t('pwpDirPri')" /><br><select v-model="options3">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select>
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <div class="scrollMe">
-                <table border="1" cellspacing="0" cellpadding="5" width="100%">
-                  <tr>
-                    <th class='planAct thNumbered'><span>{{$t('titleActivities')}}</span><br>
-                      <select v-model="options4">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select></th>
-                    <th class='planSubAct thNumbered'><span>{{$t('titleSubActivities')}}</span><br>
-                      <select v-model="options5">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select></th>
-                    <th class='planDelivs thNumbered'><span>{{$t('titleDeliverables')}}</span><br>
-                      <select v-model="options6">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select></th>
-                    <th class='planRisk thNumbered'><span>{{$t('titleRisk')}}</span><br>
-                      <select v-model="options7">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select></th>
-                    <th class='planLikely thNumbered'><span>{{$t('titleLikelihood')}}</span><br>
-                      <select v-model="options8">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select></th>
-                    <th class='planImpact thNumbered'><span>{{$t('titleImpact')}}</span><br>
-                      <select v-model="options9">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select></th>
-                    <th class='planMitigat thNumbered'><span>{{$t('titleMitigation')}}</span><br>
-                      <select v-model="options10">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select></th>
-                    <th class='planRes thNumbered'><span>{{$t('titleResources')}}</span><br>
-                      <select v-model="options11">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select></th>
-                  </tr>
-                </table>
-              </div>
-            </span>
+                    </p>          
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpDeptPri')"></h3>
+              <p><span v-html="$t('pwpDeptPri')" /><br><select v-model="options2">
+                    <option disabled value=''>{{$t('qDisabled')}}</option>
+                    <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+                  </select>
+                </p>
+
+
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpDirPri')"></h3>
+          <p><span v-html="$t('pwpDirPri')" /><br><select v-model="options3">
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+            </select>
+          </p>
+
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage" sm="12">
+          <h3 v-html="$t('titleActivities')"></h3>
+          <p>
+            <select v-model="options4">
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+            </select>
+          </p>
+
+          <h4 v-html="$t('titleSubActivities')">Sous activités</h4>
+          <p>
+            <select v-model="options5">
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+            </select>
+          </p>
+
+          <h4 v-html="$t('titleDeliverables')">Livrables</h4>
+            <p><select v-model="options6">
+                <option disabled value=''>{{$t('qDisabled')}}</option>
+                <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+              </select>
+            </p>
+          <h4 v-html="$t('titleRisk')">Risque</h4>
+          <p>
+            <select v-model="options7">
+                <option disabled value=''>{{$t('qDisabled')}}</option>
+                <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+              </select>
+            </p>
+
+          <h4 v-html="$t('titleLikelihood')">Probabilité</h4>
+            <p>
+              <select v-model="options8">
+                <option disabled value=''>{{$t('qDisabled')}}</option>
+                <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+              </select>
+            </p>
+          <h4 v-html="$t('titleImpact')">Impact</h4>
+          <p>
+            <select v-model="options9">
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+            </select>
+          </p>
+
+          <h4 v-html="$t('titleMitigation')">Atténuation</h4>
+          <p>
+            <select v-model="options10">
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+            </select>
+          </p>
+
+          <h4 v-html="$t('titleResources')">Resources</h4>
+          <p>
+            <select v-model="options11">
+              <option disabled value=''>{{$t('qDisabled')}}</option>
+              <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
+            </select>
+          </p>
+        </b-col>
+        
+      </b-row>
+    </b-container>
+
+
          
           </b-tab>
           <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["2","3"]' /></b-tab>

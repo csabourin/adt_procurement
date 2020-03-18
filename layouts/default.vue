@@ -500,6 +500,7 @@ page-enter-active,
 .pure-radiobutton input[type="radio"]:hover+label:before {
   border-color: #4d4d4d;
   background-color: #f2f2f2;
+  outline:blue solid 1px;
 }
 
 .pure-checkbox input[type="checkbox"]:active+label:before,
@@ -770,7 +771,7 @@ page-enter-active,
 }
 
 .workplan-table .encadrage h4:nth-child(1){
-  
+
 }
 
 .workplan-table .encadrage h5 {

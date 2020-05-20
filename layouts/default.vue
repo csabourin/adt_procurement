@@ -192,6 +192,14 @@ a {
   color: #1000ff;
 }
   
+a.external{
+  text-decoration: underline;
+}
+  
+a.external:hover, a.external:focus{
+  text-decoration: none;
+}
+  
 a.external:after {
   background: url("../assets/icon_external_link.svg");
   background-size: contain;

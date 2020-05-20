@@ -150,10 +150,12 @@
     <b-modal id="question4" okOnly size="lg" :title="$t('q1.title')">
       <p v-html="$t('q1.introduction')"></p>
       <radioQuiz :question="$t('q1')" @response="q1Answer=$event" qId="1" />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal id="question5" :title="$t('q2.title')" size="lg" okOnly>
       <p v-html="$t('q2.introduction')"></p>
       <checkboxQuiz :question="$t('q2')" qId="2" @response="q2Answer=$event" :Answer="['3','4']" />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
   </span>
 </template>

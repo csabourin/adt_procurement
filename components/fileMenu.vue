@@ -106,6 +106,7 @@
           </b-collapse>
         </b-card>
       </div>
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
   </span>
 </template>

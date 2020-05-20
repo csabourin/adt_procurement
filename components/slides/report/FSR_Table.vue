@@ -149,26 +149,31 @@
         <p v-if="salary==423333"><span class="v-right" /> Correct!</span></p>
         <p v-else><span class="v-wrong" /> Incorrect.</span></p>
          <div v-html="$t('salaryFeedback')" />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
      </b-modal>
      <b-modal @hide="softwareGo=''" id="softwareFeedback" okOnly>
         <p v-if="software==4500"><span class="v-right" /> Correct!</span></p>
         <p v-else><span class="v-wrong" /> Incorrect.</span></p>
          <div v-html="$t('softwareFeedback')" />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
      </b-modal>
      <b-modal @hide="hospitalityGo=''" id="hospitalityFeedback" okOnly>
         <p v-if="hospitality==11500"><span class="v-right" /> Correct!</span></p>
         <p v-else><span class="v-wrong" /> Incorrect.</span></p>
          <div v-html="$t('hospitalityFeedback')" />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
      </b-modal>
      <b-modal @hide="furnitureGo=''" id="furnitureFeedback" okOnly>
         <p v-if="furniture==3900"><span class="v-right" /> Correct!</span></p>
         <p v-else><span class="v-wrong" /> Incorrect.</span></p>
          <div v-html="$t('furnitureFeedback')" />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
      </b-modal>
      <b-modal @hide="trainingGo=''" id="trainingFeedback" okOnly>
         <p v-if="training==2400"><span class="v-right" /> Correct!</span></p>
         <p v-else><span class="v-wrong" /> Incorrect.</span></p>
          <div v-html="$t('trainingFeedback')" />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
      </b-modal>
   </div>
 </template>

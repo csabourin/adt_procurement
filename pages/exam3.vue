@@ -101,6 +101,7 @@
       </p>
       <p v-if="allDone==100"> {{$t('Excelled')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link>
       </p>
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
   </div>
 </template>

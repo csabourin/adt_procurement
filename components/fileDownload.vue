@@ -1,5 +1,5 @@
 <template functionnal>
-  <a :href="require('~/assets/'+ $i18n.locale +'/'+ filename)" :download="filename" target="_blank">
+  <a :href="require('~/assets/'+ $i18n.locale +'/'+ filename)" :download="filename" target="_blank" rel="external" aria-aspopup="true">
     <genericFile :iconStyle="iconColor" :iconWidth=size :title="$t(title)" :line1="$t(line1)" :line2="$t(line2)" />
     {{$t(lineTag)}}
   </a>

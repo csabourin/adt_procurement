@@ -20,7 +20,7 @@
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.1.0",
     "eslint": "^6.7.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "nuxt": "^2.10.2",
     "nuxt-i18n": "^6.4.1",
     "simple-scorm-wrapper": "^0.2.1",

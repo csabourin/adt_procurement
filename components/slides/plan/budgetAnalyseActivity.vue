@@ -150,14 +150,17 @@
     <b-modal id="question1" okOnly size="lg" :title="$t('q1.title')">
       <p v-html="$t('q1.introduction')"></p>
       <radioQuiz :question="$t('q1')" @response="q1Answer=$event" qId="1" />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal id="question2" :title="$t('q2.title')" size="lg" okOnly>
       <p v-html="$t('q2.introduction')"></p>
       <radioQuiz :question="$t('q2')" qId="2" @response="q2Answer=$event" />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal id="question3" okOnly size="lg" :title="$t('q3.title')">
       <p v-html="$t('q3.introduction')" />
       <radioQuiz :question="$t('q3')" qId="3" @response="q3Answer=$event" />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
   </span>
 </template>

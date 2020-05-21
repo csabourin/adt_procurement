@@ -70,7 +70,6 @@
           }
           app.querySelectorAll(".contentMap .nuxt-link-exact-active").forEach(current => {
             current.setAttribute("aria-current", "page");
-            console.log(current);
           });
         });
       }

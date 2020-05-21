@@ -3,7 +3,7 @@
   	<div class="invSkip">
     <a href="#mainContent" class="skipToMain">{{$t('skipToMain')}}</a></div>
     <b-container fluid style="overflow:hidden;">
-      <b-row class="navBar">
+      <b-row class="navBar" role="header">
         <b-col cols="5" sm="3" class="text-left">
           <hamburger @menu-toggle="ShowMenu" />
           <nuxt-link :to="localePath('index')">

@@ -14,7 +14,7 @@
             </figcaption>
           </transition>
           <div ref="video-controls" class="controls" data-state="hidden">
-            <progress @click="setTime" ref="progress" :title="Math.ceil(PlayTime)+'%'" :value="PlayTime" min="0" max="100">
+            <progress tabindex="0" @click="setTime" ref="progress" :title="Math.ceil(PlayTime)+'%'" :value="PlayTime" min="0" max="100" @keyup.arrow-left="goBackwards" @keyup.arrow-right="goForward">
               <span class="progress" ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
             <button class="videoControls" ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">

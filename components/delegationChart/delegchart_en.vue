@@ -280,7 +280,7 @@
                   <p><span>Write-Off of Assets</span></p>
                 </th>
               </tr>
-              <tr role="”presentation”">
+              <tr role="presentation">
                 <th class="green" colspan="2" scope="col">
                   <p><span class="text-uppercase">Managerial Authorities</span></p>
                 </th>

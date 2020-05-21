@@ -284,7 +284,7 @@
                   <p><span>Radiation d’éléments d’actif</span></p>
                 </th>
               </tr>
-              <tr role="”presentation”">
+              <tr role="presentation">
                 <th class="c3 green" colspan="2" scope="col">
                   <p><span class="text-uppercase">Responsables de la direction</span></p>
                 </th>

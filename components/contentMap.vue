@@ -3,49 +3,49 @@
     
     <span ref="item"><h4 class="colorBar1">{{$t('plan')}}</h4></span>    
     <menu style="list-style: none">
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessagesPlan')" />
       </li>
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('buildWP')" v-html="$t('BuildWorkPlan')" />
       </li>
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('createBudget')" v-html="$t('CreateBudget')" />
       </li>
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('exam1')" v-html="$t('TestPlan')" />
       </li>
     </menu>
     <h4 class="colorBar2">{{$t('spend')}}</h4>
     <menu style="list-style: none">
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('spendKey')" v-html="$t('KeyMessagesSpend')" />
       </li>
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('spendPart1')" v-html="$t('InitiateAuthorizeSpending')" />
       </li>
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('spendPart2')" v-html="$t('ExerciseFinancialAuthority')" />
       </li>
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('spendPart3')" v-html="$t('MonitorControlFinances')" />
       </li>
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('exam2')" v-html="$t('TestSpend')" />
       </li>
     </menu>
     <h4 class="colorBar3">{{$t('report')}}</h4>
     <menu style="list-style: none">
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessagesReport')" />
       </li>
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('reportPart1')" v-html="$t('ConductPeriodicVarianceReporting')" />
       </li>
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('reportPart2')" v-html="$t('ContributeReporting')" />
       </li>
-      <li>
+      <li role="menuitem">
         <nuxt-link :to="localePath('exam3')" v-html="$t('TestReport')" />
       </li>
     </menu>
@@ -56,15 +56,28 @@
     methods:{
       setFocus(){
         this.$nextTick(() => {
-        this.$refs.item.focus()
-      });
-        
-
-      
+          this.$refs.item.focus()
+        });
+      },
+      setAriaCurrent() {
+        this.$nextTick(function() {
+          let app = this.$el,
+            currents = app.querySelectorAll("[aria-current]");
+          if (currents) {
+            currents.forEach(current => {
+              current.removeAttribute("aria-current");
+            });
+          }
+          app.querySelectorAll(".contentMap .nuxt-link-exact-active").forEach(current => {
+            current.setAttribute("aria-current", "page");
+            console.log(current);
+          });
+        });
       }
     },
     mounted(){
       this.setFocus()
+      this.setAriaCurrent();
     }
   }
 </script>

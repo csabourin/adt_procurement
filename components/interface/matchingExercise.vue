@@ -7,9 +7,12 @@
         <b-col cols="5" >
           <ul>
             <li class="questions" >
-              <p><label :for="'select'+index">{{item[0]}}</label> <select :id="'select'+index" v-model="Answered[item[1]]">
-                  <option v-for="(option,index) in AnswerList" :aria-labelledby="'AnswerKey'+(index)" :value="index" :disabled="!index" :selected="index===0">{{option}}</option>
-                </select></p>
+              <p>
+                <label :for="'select'+index">{{item[0]}}</label>
+                <select :id="'select'+index" v-model="Answered[item[1]]">
+                  <option v-for="(option,index) in AnswerList" :aria-labelledby="index !== 0 ? 'AnswerKey'+(index) : ''" :value="index" :disabled="!index" :selected="index===0">{{option}}</option>
+                </select>
+              </p>
             </li>
           </ul>
         </b-col>

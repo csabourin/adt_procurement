@@ -4,7 +4,7 @@
       {{ $t('CreateBudget')}}
     </h2>
     <section>
- <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_38mk4oxi/v/12/flavorId/0_9vv38k5m/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_cyj2h9a9/flavorId/0_ft4b704i/name/a.mp4" chapters chapterFile="BudgetChapters.vtt" ccFile="CreateBudget_captions.vtt" posterFile="video_poster.PNG" :restartAt="thatPoint" toResume="setCreateBudget" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
+ <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_38mk4oxi/flavorId/0_9vv38k5m/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_cyj2h9a9/flavorId/0_ft4b704i/name/a.mp4" chapters chapterFile="BudgetChapters.vtt" ccFile="CreateBudget_captions.vtt" posterFile="video_poster.PNG" :restartAt="thatPoint" toResume="setCreateBudget" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
 
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">

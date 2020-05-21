@@ -4,7 +4,7 @@
     <span ref="item"><h4 class="colorBar1">{{$t('plan')}}</h4></span>    
     <menu style="list-style: none">
       <li>
-        <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessages')"  />
+        <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessagesPlan')" />
       </li>
       <li>
         <nuxt-link :to="localePath('buildWP')" v-html="$t('BuildWorkPlan')" />
@@ -13,13 +13,13 @@
         <nuxt-link :to="localePath('createBudget')" v-html="$t('CreateBudget')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('exam1')" v-html="$t('Test')" />
+        <nuxt-link :to="localePath('exam1')" v-html="$t('TestPlan')" />
       </li>
     </menu>
     <h4 class="colorBar2">{{$t('spend')}}</h4>
     <menu style="list-style: none">
       <li>
-        <nuxt-link :to="localePath('spendKey')" v-html="$t('KeyMessages')" />
+        <nuxt-link :to="localePath('spendKey')" v-html="$t('KeyMessagesSpend')" />
       </li>
       <li>
         <nuxt-link :to="localePath('spendPart1')" v-html="$t('InitiateAuthorizeSpending')" />
@@ -31,13 +31,13 @@
         <nuxt-link :to="localePath('spendPart3')" v-html="$t('MonitorControlFinances')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('exam2')" v-html="$t('Test')" />
+        <nuxt-link :to="localePath('exam2')" v-html="$t('TestSpend')" />
       </li>
     </menu>
     <h4 class="colorBar3">{{$t('report')}}</h4>
     <menu style="list-style: none">
       <li>
-        <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessages')" />
+        <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessagesReport')" />
       </li>
       <li>
         <nuxt-link :to="localePath('reportPart1')" v-html="$t('ConductPeriodicVarianceReporting')" />
@@ -46,7 +46,7 @@
         <nuxt-link :to="localePath('reportPart2')" v-html="$t('ContributeReporting')" />
       </li>
       <li>
-        <nuxt-link :to="localePath('exam3')" v-html="$t('Test')" />
+        <nuxt-link :to="localePath('exam3')" v-html="$t('TestReport')" />
       </li>
     </menu>
   </nav>

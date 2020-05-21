@@ -39,6 +39,7 @@
               <font-awesome-icon :icon="[solidOrRegular,'closed-captioning']" />
             </button>
           </div>
+          <span class="sr-only">{{$t('sr_transcriptlocation')}}</span>
         </figure>
       </b-col>
     </b-row>
@@ -341,7 +342,8 @@ export default {
   "hide":"Hide ",
   "closedcaptionning":"Closed Captions",
   "jumpModalPartsWP":"Jump to activity",
-  "playSegment":"Play video segment"
+  "playSegment":"Play video segment",
+  "sr_transcriptlocation":"The transcript can be found after the chapters list."
   },
   "fr":{
   "play":"Jouer",
@@ -355,7 +357,8 @@ export default {
   "hide":"Cacher le ",
   "closedcaptionning":"sous-titrage codé",
   "jumpModalPartsWP":"Sauter à l’activité",
-  "playSegment":"Faire jouer le segment vidéo"
+  "playSegment":"Faire jouer le segment vidéo",
+  "sr_transcriptlocation":"Le transcript peut être trouvé après la liste des chapitres."
   }
   }
 </i18n>
@@ -402,7 +405,7 @@ video {
   width: 200px;
   height: 171px;
   overflow: hidden;
-  padding: 1.2em 1.5em;
+  padding: 1.8em 1.5em;
   line-height: 17px;
   color: #575757;
   background-color: #ebebeb;

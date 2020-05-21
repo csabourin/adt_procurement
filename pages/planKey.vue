@@ -84,9 +84,9 @@
       <b-row>
         <b-col>
           <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
-            Find your organization's Departmental Plan here: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
+            Find your organization's Departmental Plan here: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank" rel="external" aria-aspopup="true" class="external">Departmental Plans</a></span>
           <span v-if="$i18n.locale=='fr'">
-            Trouvez le plan ministériel de votre organisation ici : <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
+            Trouvez le plan ministériel de votre organisation ici : <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank" rel="external" aria-aspopup="true" class="external">Plans ministériels</a>
           </span></p>
         </b-col>
       </b-row>

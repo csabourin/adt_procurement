@@ -21,15 +21,32 @@
     </section>
     <section>
       <b-modal no-stacking id="externalGovtReports" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('externalGovtReports')}}</template>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('externalGovtReports')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
         <externalGovtReports />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
       <b-modal id="identifyResults" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('IdentifyResultsTitle')}}</template>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('IdentifyResultsTitle')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
         <identifyResults />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
       <b-modal id="inRealLife" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('inRealLifeTitle')}}</template>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('inRealLifeTitle')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
         <img src="/_nuxt/assets/R-Contribute.svg" class="img-real_Life" alt="">
         <div v-if="$i18n.locale=='en'">
           <p>Look up your organization’s Performance Information Profiles and its external reports, such as the Departmental Results Report.&nbsp;</p>
@@ -53,10 +70,17 @@
             <li>Quelles informations vais-je fournir pour alimenter les rapports externes?</li>
           </ul>
         </div>
+        <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
       <b-modal no-stacking id="reportQuiz" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}</template>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
         <reportQuiz />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
     </section>
     <div class="bottomNav reportSection">

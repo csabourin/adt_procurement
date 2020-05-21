@@ -140,18 +140,36 @@
       </div>
     </section>
     <section>
-      <b-modal no-stacking id="CertificationAuthority" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('CertAuthorityTitle')}}</template>
-    <CertificationAuthority />
+        <b-modal no-stacking id="CertificationAuthority" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('CertAuthorityTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <CertificationAuthority />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-      <b-modal id="AccuracyOfInvoice" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('AccuracyInvoiceTitle')}}</template>
-        <AccuracyInvoice />
-      </b-modal>
-      <b-modal id="ProcessingInvoice" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('ProcessInvoiceTitle')}}</template>
-        <ProcessInvoice />
-      </b-modal>
+        <b-modal id="AccuracyOfInvoice" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('AccuracyInvoiceTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <AccuracyInvoice />
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal id="ProcessingInvoice" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('ProcessInvoiceTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <ProcessInvoice />
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
     </section>
     <div class="bottomNav spendSection">
       <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>

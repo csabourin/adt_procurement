@@ -150,14 +150,17 @@
     <b-modal id="question1" okOnly size="lg" :title="$t('q1.title')">
       <p v-html="$t('q1.introduction')"></p>
       <radioQuiz :question="$t('q1')" @response="q1Answer=$event" qId="1" />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal id="question2" :title="$t('q2.title')" size="lg" okOnly>
       <p v-html="$t('q2.introduction')"></p>
       <radioQuiz :question="$t('q2')" qId="2" @response="q2Answer=$event" />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal id="question3" okOnly size="lg" :title="$t('q3.title')">
       <p v-html="$t('q3.introduction')" />
       <radioQuiz :question="$t('q3')" qId="3" @response="q3Answer=$event" />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
   </span>
 </template>
@@ -343,7 +346,7 @@ text-align: right;
     "budgetTableFill62": "$0",
     "budgetTableFill63": "$3,000",
     "budgetTableFill64": " ",
-    "budgetTableFill65": "new software, annual cost $1,000 X 3 FTEs",
+    "budgetTableFill65": "new software, annual cost $1,000&times;3 FTEs",
     "budgetTableFill66": "Office Supplies",
     "budgetTableFill67": "$1,961",
     "budgetTableFill68": "$2,000",
@@ -398,7 +401,7 @@ text-align: right;
       "title": "License de logiciel",
       "introduction": "<p>Vous devrez estimer les coûts des nouvelles activités en fonction de vos besoins budgétaires. Si une activité a été terminée l'année dernière, elle n'apparaîtra pas dans le budget. Cherchez les activités annulées ou retardées, ou toute nouvelle activité qui pourrait ne pas être incluse dans votre niveau de référence, pour vous assurer que vos besoins budgétaires sont exacts.</p><p>Vous n’aviez pas de logiciel dans le budget de l’année dernière ou de l’année en cours. En examinant votre plan de travail, vous savez que vous avez l’intention d’acheter un nouveau logiciel l’an prochain pour la délivrance des permis de pêche. Vous faites des recherches et découvrez que la licence du logiciel coûte 1&nbsp;000&nbsp;$ par an par agent (3 agents l’utiliseront). La formation en ligne coûtera 800 $ par agent.</p>",
       "text": "Quel budget proposez-vous pour le nouveau logiciel pour l’exercice financier suivant?",
-      "conclusion": " La bonne réponse est 3&nbsp;000&nbsp;$. Le nouveau logiciel coûtera 1&nbsp;000&nbsp;$ par agent pour 3 agents (3 X 1&nbsp;000&nbsp;$ = 3&nbsp;000&nbsp;$). La formation ferait l’objet d’un poste distinct. ",
+      "conclusion": " La bonne réponse est 3&nbsp;000&nbsp;$. Le nouveau logiciel coûtera 1&nbsp;000&nbsp;$ par agent pour 3 agents (3&times;1&nbsp;000&nbsp;$ = 3&nbsp;000&nbsp;$). La formation ferait l’objet d’un poste distinct. ",
       "options": {
         "1": "1000$",
         "2": "3000$",
@@ -491,7 +494,7 @@ text-align: right;
     "budgetTableFill62": "0$",
     "budgetTableFill63": "3&nbsp;000&nbsp;$",
     "budgetTableFill64": " ",
-    "budgetTableFill65": "nouveau logiciel, coût annuel 1&nbsp;000&nbsp;$ X 3 ETP",
+    "budgetTableFill65": "nouveau logiciel, coût annuel 1&nbsp;000&nbsp;$&times;3 ETP",
     "budgetTableFill66": "Fournitures de bureau",
     "budgetTableFill67": "1&nbsp;961&nbsp;$",
     "budgetTableFill68": "2&nbsp;000&nbsp;$",

@@ -150,10 +150,12 @@
     <b-modal id="question4" okOnly size="lg" :title="$t('q1.title')">
       <p v-html="$t('q1.introduction')"></p>
       <radioQuiz :question="$t('q1')" @response="q1Answer=$event" qId="1" />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal id="question5" :title="$t('q2.title')" size="lg" okOnly>
       <p v-html="$t('q2.introduction')"></p>
       <checkboxQuiz :question="$t('q2')" qId="2" @response="q2Answer=$event" :Answer="['3','4']" />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
   </span>
 </template>
@@ -313,7 +315,7 @@ export default {
     "budgetTableFill62": "$0",
     "budgetTableFill63": "$3,000",
     "budgetTableFill64": " ",
-    "budgetTableFill65": "new software, annual cost $1,000 X 3 FTEs",
+    "budgetTableFill65": "new software, annual cost $1,000&times;3 FTEs",
     "budgetTableFill66": "Material and Supplies",
     "budgetTableFill67": "$1,961",
     "budgetTableFill68": "$2,000",
@@ -443,7 +445,7 @@ export default {
     "budgetTableFill62": "0$",
     "budgetTableFill63": "3&nbsp;000&nbsp;$",
     "budgetTableFill64": " ",
-    "budgetTableFill65": "nouveau logiciel, coût annuel 1&nbsp;000&nbsp;$ X 3 ETP",
+    "budgetTableFill65": "nouveau logiciel, coût annuel 1&nbsp;000&nbsp;$&times;3 ETP",
     "budgetTableFill66": "Fournitures de bureau",
     "budgetTableFill67": "1&nbsp;961&nbsp;$",
     "budgetTableFill68": "2&nbsp;000&nbsp;$",

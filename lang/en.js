@@ -27,6 +27,9 @@ export default {
   selectRight: "Select the correct answer.",
   pleaseAnswer: "Please answer the question!",
   KeyMessages: "Key Messages",
+  KeyMessagesPlan: "<span class='v-inv'>Plan: </span>Key Messages",
+  KeyMessagesSpend: "<span class='v-inv'>Spend: </span>Key Messages",
+  KeyMessagesReport: "<span class='v-inv'>Report: </span>Key Messages",
   BuildWorkPlan: "Build a Work Plan",
   CreateBudget: "Create a Budget",
   InitiateAuthorizeSpending: "Initiate and Authorize Spending (Section 32)",
@@ -35,6 +38,9 @@ export default {
   ConductPeriodicVarianceReporting: "Prepare the Financial Situation Report",
   ContributeReporting: "Contribute to External Reporting",
   Test: "Test",
+  TestPlan: "<span class='v-inv'>Plan: </span>Test",
+  TestSpend: "<span class='v-inv'>Spend: </span>Test",
+  TestReport: "<span class='v-inv'>Report: </span>Test",
   MarkCompleted: "Mark as completed",
   // Text for Exams
   notPassed: "You have not passed this test. You can revise your answers and then try again.",
@@ -49,5 +55,6 @@ export default {
   dwnPlanLine2: "Template",
   fileFolder: "Download files and tools",
   congratulations:"<h3>Congratulations!</h3><p>You have successfully completed this course.</p><p>Exit the course by closing this window.</p>",
-  courseComplete:"Course Completed"
+  courseComplete:"Course Completed",
+  close: "Close"
 }

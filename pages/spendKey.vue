@@ -64,9 +64,9 @@
       <b-row>
         <b-col>
           <!-- <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
-            Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank">Departmental Plans</a></span>
+            Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank" rel="external" aria-aspopup="true" class="external">Departmental Plans</a></span>
           <span v-if="$i18n.locale=='fr'">
-            Jetez un coup d’&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank">Plans ministériels</a>
+            Jetez un coup d’&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank" rel="external" aria-aspopup="true" class="external">Plans ministériels</a>
           </span></p> -->
         </b-col>
       </b-row>

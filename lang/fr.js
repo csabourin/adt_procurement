@@ -26,6 +26,9 @@ export default {
   selectRight: "Choisissez la bonne réponse&nbsp;:",
   pleaseAnswer: "Veuillez r&eacute;pondre &agrave; la question!",
   KeyMessages: "Messages clés",
+  KeyMessagesPlan: "<span class='v-inv'>Planification&nbsp;: </span>Messages clés",
+  KeyMessagesSpend: "<span class='v-inv'>Dépenses&nbsp;: </span>Messages clés",
+  KeyMessagesReport: "<span class='v-inv'>Rapports&nbsp;: </span>Messages clés",
   BuildWorkPlan: "Élaborer un plan de travail",
   CreateBudget: "Établir un budget",
   InitiateAuthorizeSpending: "Engager et autoriser des dépenses (art.&nbsp;32)",
@@ -34,6 +37,9 @@ export default {
   ConductPeriodicVarianceReporting: "Préparer le rapport sur la situation financière",
   ContributeReporting: "Contribuer à l’établissement de rapports externes",
   Test: "Test",
+  TestPlan: "<span class='v-inv'>Planification&nbsp;: </span>Test",
+  TestSpend: "<span class='v-inv'>Dépenses&nbsp;: </span>Test",
+  TestReport: "<span class='v-inv'>Rapports&nbsp;: </span>Test",
   MarkCompleted: "Visualisation complétée",
   fileFolder: "Fichiers et outils à télécharger",
   downloadPlan: "Télécharger un modèle Word du plan de travail",
@@ -48,5 +54,6 @@ export default {
   dwnPlanLine1: "Plan de",
   dwnPlanLine2: "travail",
   congratulations:"<h3>Félicitations!</h3><p>Vous avez réussi ce cours.</p><p>Quittez le cours en fermant cette fenêtre.</p>",
-  courseComplete:"Cours complété"
+  courseComplete:"Cours complété",
+  close: "Fermer"
 }

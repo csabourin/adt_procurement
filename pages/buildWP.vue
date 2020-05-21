@@ -103,45 +103,106 @@
       </ul>
     </section>
     <section>
-      <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>
-      <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-      {{ $t('gotIt') }}
-    </template>
-    {{ $t('gotIt') }}</b-modal>
-      <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('activityLinks')}}</template>
-        <p>{{$t('gotoLinks')}}</p>
-        <planLinks /><!-- {{ $t('gotIt') }} -->
-      </b-modal>
-      <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('partsofWPTitle')}}</template>
-        <partsOfWorkPlan />
-      </b-modal>
-      <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('scan360Title')}}</template>
-        <test360 />
-      </b-modal>
-      <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('completewpDrafttitle')}}</template>
-        <prepareWorkPlan />
-      </b-modal>
-      <b-modal no-stacking id="completewp" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('completewptitle')}}</template>
-        <completeWorkplan />
-      </b-modal>
-      <b-modal no-stacking id="adjustwp" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('adjustwptitle')}}</template>
-        <adjustWorkplan />
-      </b-modal>
-      <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('InRealLife')}}</template>
-        <span v-html="$t('IRLText')"></span>
-      </b-modal>
-      <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}</template>
-        <planQuiz />
-      </b-modal>
-    </section>
+        <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
+                    {{ $t('gotIt') }}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            {{ $t('gotIt') }}
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('activityLinks')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <p>{{$t('gotoLinks')}}</p>
+            <planLinks /><!-- {{ $t('gotIt') }} -->
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                    {{$t('partsofWPTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <partsOfWorkPlan />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                    {{$t('scan360Title')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <test360 />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                    {{$t('completewpDrafttitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <prepareWorkPlan />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="completewp" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                    {{$t('completewptitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <completeWorkplan />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="adjustwp" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                    {{$t('adjustwptitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <adjustWorkplan />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                    {{$t('InRealLife')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <span v-html="$t('IRLText')"></span>
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                    {{$t('TakeTheQuiz')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <planQuiz />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        </section>
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
       <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />

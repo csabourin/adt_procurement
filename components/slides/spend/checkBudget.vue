@@ -217,7 +217,7 @@
         "$1,500",
         "$1,500",
         "$3,000",
-        "new software, annual cost $1,000 X 3 FTEs"
+        "new software, annual cost $1,000&times;3 FTEs"
       ],
       [
         "Hospitality &amp; Conferences",
@@ -355,7 +355,7 @@
         "1&nbsp;500&nbsp;$",
         "1&nbsp;500&nbsp;$",
         "3&nbsp;000&nbsp;$",
-        "nouveau logiciel, coût annuel 1&nbsp;000&nbsp;$ X 3 ETP"
+        "nouveau logiciel, coût annuel 1&nbsp;000&nbsp;$&times;3 ETP"
       ],
       [
         "Accueil et conférences",

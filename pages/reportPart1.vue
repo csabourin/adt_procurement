@@ -21,20 +21,44 @@
     </section>
     <section>
       <b-modal no-stacking id="whatIsFSR" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('whatIsFSR')}}</template>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('whatIsFSR')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
         <whatIsFSR />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
       <b-modal id="keyPeriods" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('KeyPeriodsFSRTitle')}}</template>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('KeyPeriodsFSRTitle')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
         <keyPeriods />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
       <b-modal id="FSRActivities" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('FSRActivitiesTitle')}}</template>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('FSRActivitiesTitle')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
         <FSRActivities />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
       <b-modal id="UpdatingAnnualForecast" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('UpdatingAnnualForecastTitle')}}</template>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('UpdatingAnnualForecastTitle')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
         <UpdatingAnnualForecast />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
     </section>
     <div class="bottomNav reportSection">

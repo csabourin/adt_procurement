@@ -137,30 +137,66 @@
       </div>
     </section>
     <section>
-      <b-modal no-stacking id="checkYourBudget" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('checkBudget')}}</template>
-    <checkBudget />
+        <b-modal no-stacking id="checkYourBudget" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('checkBudget')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <checkBudget />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-      <b-modal id="delegAuth" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('delegateAuthority')}}</template>
-        <delegAuthority />
-      </b-modal>
-      <b-modal id="spendMechanisms" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('forecastBudgetTitle')}}</template>
-        <spendMechanisms />
-      </b-modal>
-      <b-modal no-stacking id="spendS32tryIt" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('tryItTitle')}}</template>
-        <spendS32tryIt />
-      </b-modal>
-      <b-modal no-stacking id="RecordingFinancialSystem" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('RecordingTitle')}}</template>
-        <RecordingFinancialSystem />
-      </b-modal>
-      <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
-        <template v-slot:modal-title><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}</template>
-      <budgetQuiz />
-      </b-modal>
+        <b-modal id="delegAuth" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('delegateAuthority')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <delegAuthority />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal id="spendMechanisms" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('forecastBudgetTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <spendMechanisms />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="spendS32tryIt" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('tryItTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <spendS32tryIt />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="RecordingFinancialSystem" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('RecordingTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <RecordingFinancialSystem />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <budgetQuiz />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
     </section>
     <div class="bottomNav spendSection">
       <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>

@@ -14,7 +14,7 @@
             </figcaption>
           </transition>
           <div ref="video-controls" class="controls" data-state="hidden">
-            <progress @click="setTime" ref="progress" :title="Math.ceil(PlayTime)+'%'" :value="PlayTime" min="0" max="100">
+            <progress tabindex="0" @click="setTime" ref="progress" :title="Math.ceil(PlayTime)+'%'" :value="PlayTime" min="0" max="100" @keyup.arrow-left="goBackwards" @keyup.arrow-right="goForward">
               <span class="progress" ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
             <button class="videoControls" ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
@@ -39,6 +39,7 @@
               <font-awesome-icon :icon="[solidOrRegular,'closed-captioning']" />
             </button>
           </div>
+          <span class="sr-only">{{$t('sr_transcriptlocation')}}</span>
         </figure>
       </b-col>
     </b-row>
@@ -341,7 +342,8 @@ export default {
   "hide":"Hide ",
   "closedcaptionning":"Closed Captions",
   "jumpModalPartsWP":"Jump to activity",
-  "playSegment":"Play video segment"
+  "playSegment":"Play video segment",
+  "sr_transcriptlocation":"The transcript can be found after the chapters list."
   },
   "fr":{
   "play":"Jouer",
@@ -355,7 +357,8 @@ export default {
   "hide":"Cacher le ",
   "closedcaptionning":"sous-titrage codé",
   "jumpModalPartsWP":"Sauter à l’activité",
-  "playSegment":"Faire jouer le segment vidéo"
+  "playSegment":"Faire jouer le segment vidéo",
+  "sr_transcriptlocation":"Le transcript peut être trouvé après la liste des chapitres."
   }
   }
 </i18n>

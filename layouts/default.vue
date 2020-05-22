@@ -96,6 +96,20 @@ export default {
   methods: {
     ShowMenu() {
       this.MenuShowing = !this.MenuShowing
+    },
+    setAriaCurrent() {
+      this.$nextTick(function() {
+        let app = this.$el,
+          currents = app.querySelectorAll("[aria-current]");
+        if (currents) {
+          currents.forEach(current => {
+            current.removeAttribute("aria-current");
+          });
+        }
+        app.querySelectorAll(".contentMap .nuxt-link-exact-active").forEach(current => {
+          current.setAttribute("aria-current", "page");
+        });
+      });
     }
   },
   watch: {
@@ -107,9 +121,18 @@ export default {
         }
       }
 
-    }
+    },
+    $route: function(to) {
+      // $nextTick = DOM updated
+      this.$nextTick(function() {
+        // setAriaCurrent in navigation only after focus management
+        this.setAriaCurrent();
+      });
+    },
+  },
+  mounted() {
+    this.setAriaCurrent();
   }
-
 }
 
 </script>

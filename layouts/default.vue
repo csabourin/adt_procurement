@@ -195,9 +195,76 @@ html {
   font-size: larger;
 }
 
-.exam .card-header {
+/*.exam .card-header {
   display: none;
-}
+}*/
+  
+  .exam .card-header{
+    background-color: transparent;
+    border: none;
+  }
+  
+  .exam .card-header li.nav-item a{
+    border-radius: 0px;
+    font-size: .9em;
+    font-weight: bold;
+    background-color: #DDD;
+    color: #4d4d4d;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .exam .card-header li.nav-item a:focus{
+    outline: 1px dashed black;
+  }
+  
+  .exam.plan .card-header li.nav-item a.filled{
+      background-color: #587C84;
+      color: #fff;
+  }
+  
+  .exam.plan .card-header li.nav-item a.Qactive{
+    background-color: #e0e59e;
+    box-shadow: -3px 7px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #fff;
+    color: #000;
+  }
+  
+  .exam.plan .card-header li.nav-item a.filled.Qactive{
+    background-color: #B3C295;
+  }
+  
+  .exam.spend .card-header li.nav-item a.filled{
+    background-color: #7d677d;
+    color: #fff;
+  }
+  
+  .exam.spend .card-header li.nav-item a.Qactive{
+    background-color: #e0e59e;
+    box-shadow: -3px 7px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #fff;
+    color: #000;
+  }
+  
+  .exam.spend .card-header li.nav-item a.filled.Qactive{
+    background-color: #AFA68E;
+  }
+  
+  .exam.report .card-header li.nav-item a.filled{
+    background-color: #865F56;
+    color: #fff;
+  }
+  
+  .exam.report .card-header li.nav-item a.Qactive{
+    background-color: #e0e59e;
+    box-shadow: -3px 7px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #fff;
+    color: #000;
+  }
+  
+  .exam.report .card-header li.nav-item a.filled.Qactive{
+    background-color: #B3A27A;
+  }
 
 body {
   background-color: #fff;

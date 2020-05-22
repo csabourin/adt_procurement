@@ -23,49 +23,47 @@
         </div>
       </b-alert>
       <p>Question {{tabIndex+1}} / {{numQuestions}}</p>
-      <div class="progressBar">
+      <!--<div class="progressBar" >
         <a href="#" @click.prevent="tabIndex=index" :title="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-for="(square,index) in numQuestions" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-html="index+1" />
-      </div>
+      </div>-->
       <b-row>
-        <b-col class="col"></b-col>
-        <b-col class="col-10">
+        <b-col class="col-12">
           <b-card no-body>
-            <b-tabs card pills v-model="tabIndex" class="exam">
-              <b-tab title="01">
+            <b-tabs card pills v-model="tabIndex" class="exam report" active-nav-item-class="Qactive">
+              <b-tab title="01" :title-link-class="[{'filled':answerScore[0]}]">
                 <!-- calculateAnswer($event,correctAnswer,qId) -->
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q1')" qId="0" :refill="Refill('0')" @response="calculateAnswer($event,1,0)" />
               </b-tab>
-              <b-tab title="02">
+              <b-tab title="02" :title-link-class="[{'filled':answerScore[1]}]">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q2')" qId="1" :refill="Refill('1')" @response="calculateAnswer($event,2,1)" />
               </b-tab>
-              <b-tab title="03">
+              <b-tab title="03" :title-link-class="[{'filled':answerScore[2]}]">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q3')" qId="2" :refill="Refill('2')" @response="calculateAnswer($event,3,2)" />
               </b-tab>
-              <b-tab title="04">
+              <b-tab title="04" :title-link-class="[{'filled':answerScore[3]}]">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,4,3)" />
               </b-tab>
-              <b-tab title="05">
+              <b-tab title="05" :title-link-class="[{'filled':answerScore[4]}]">
                 <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q5')" qId="4" :refill="Refill('4')" @response="arraysMatch($event,[2,4],4)" />
               </b-tab>
-              <b-tab title="06">
+              <b-tab title="06" :title-link-class="[{'filled':answerScore[5]}]">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q6')" qId="5" :refill="Refill('5')" @response="calculateAnswer($event,4,5)" />
               </b-tab>
-              <b-tab title="07">
+              <b-tab title="07" :title-link-class="[{'filled':answerScore[6]}]">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q7')" qId="6" :refill="Refill('6')" @response="calculateAnswer($event,1,6)" />
               </b-tab>
-              <b-tab title="08">
+              <b-tab title="08" :title-link-class="[{'filled':answerScore[7]}]">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q8')" qId="7" :refill="Refill('7')" @response="calculateAnswer($event,2,7)" />
               </b-tab>
-              <b-tab title="09">
+              <b-tab title="09" :title-link-class="[{'filled':answerScore[8]}]">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q9')" qId="8" :refill="Refill('8')" @response="calculateAnswer($event,4,8)" />
               </b-tab>
-              <b-tab title="10">
+              <b-tab title="10" :title-link-class="[{'filled':answerScore[9]}]">
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q10')" qId="9" :refill="Refill('9')" @response="calculateAnswer($event,3,9)" />
               </b-tab>
             </b-tabs>
           </b-card>
         </b-col>
-        <b-col class="col"></b-col>
       </b-row>
     </b-container>
     <!-- Control buttons-->

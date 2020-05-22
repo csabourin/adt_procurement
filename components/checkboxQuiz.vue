@@ -1,8 +1,7 @@
 <template>
   <span class="pure-checkbox">
-    <strong class="question" v-html="question.text" />
     <fieldset tabindex="0">
-      <legend v-html="$t('checkAll')" />
+      <legend><strong class="question" v-html="question.text" /><p>{{$t('checkAll')}}</p></legend>
       <ol type="1">
         <li v-for="(item,index) in question.options" :key="index">
           <input :disabled="lock" @click="q2Submitted=false" type="checkbox" v-model="Quest2" :name="'q'+qId" :id="'checkboxq'+qId+index" :value="index"> <label :for="'checkboxq'+qId+index" v-html="item" />

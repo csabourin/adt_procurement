@@ -7,9 +7,9 @@
       <div role="tablist">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.toolbox-2 class="fileHead" variant="light"><img src="~/assets/FilesIcon.svg" width="50" height="50">{{$t('files')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-1 class="fileHead" variant="light"><img src="~/assets/FilesIcon.svg" width="50" height="50">{{$t('files')}}</b-button>
           </b-card-header>
-          <b-collapse id="toolbox-2" visible accordion="my-toolbox" role="tabpanel">
+          <b-collapse id="toolbox-1" visible accordion="my-toolbox" role="tabpanel">
             <b-card-body>
               <b-card-text>
                 <download filename="ADT_Ressources_360.pdf" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" />
@@ -20,9 +20,9 @@
         </b-card>
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.toolbox-1 variant="light"><img alt="" src="~/assets/LinksIcon.svg" width="50" height="50"> {{$t('links')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-2 variant="light"><img alt="" src="~/assets/LinksIcon.svg" width="50" height="50"> {{$t('links')}}</b-button>
           </b-card-header>
-          <b-collapse id="toolbox-1" accordion="my-toolbox" role="tabpanel">
+          <b-collapse id="toolbox-2" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
               <b-card-text>
                 <planLinks />
@@ -97,11 +97,46 @@
         </b-card>
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.toolbox-3 variant="light"><img alt=""  src="~/assets/HelpIcon.svg" width="50" height="50"> {{$t('help')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-4 variant="light"><img alt=""  src="~/assets/HelpIcon.svg" width="50" height="50"> {{$t('help')}}</b-button>
           </b-card-header>
-          <b-collapse id="toolbox-3" accordion="my-toolbox" role="tabpanel">
+          <b-collapse id="toolbox-4" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
-              <b-card-text></b-card-text>
+              <b-card-text>
+                <span v-if="$i18n.locale=='en'">
+                  <p>This course is organized into three sections: <strong>plan</strong>, <strong>spend</strong> and <strong>report</strong>.</p>
+                  <p>You can choose where you want to start the course and how deep you wish to go into the content. Here are a few tips to help orient you.</p>
+                  <ul>
+                    <li>You can navigate through the sections of the course by using the <strong>menu icon</strong> (<span class="hamburger-example">&nbsp;&nbsp;&nbsp;&nbsp; <span class="v-inv">navigation menu icon example</span></span>) in the top left corner of the screen or by using the &ldquo;tiles&rdquo; found on each screen.</li>
+                  </ul>
+                  <img class="img-fluid" src="~/assets/nav-example.PNG" alt="&ldquo;tiles&rdquo; example" />
+                  <ul>
+                    <li>Select the key messages to review highlights, for a refresher on each topic.</li>
+                    <li>If you’re learning the content for the first time, take the time to <strong>go through each section</strong>. Do the <strong>in-depth learning activities</strong> and review the tools and resources. Each section should take you around 15 to 20 minutes to complete. There are visual cues to show your progress as you move through the course.</li>
+                  </ul>
+                  <img class="img-fluid" src="~/assets/progression-example.PNG" alt="visual cues for progression example" />
+                  <ul>
+                    <li>Select the <strong>video icon</strong> ( <img src="~/assets/VideoIcon.svg" alt="video icon example" style="display: inline; width: 30px; height: 30px;" /> ) to view the videos in each section, and the <strong>pencil icon</strong> ( <img src="~/assets/ActivityIcon.svg" alt="pencil icon example" style="display: inline; width: 30px; height: 30px;" /> ) to complete an activity.</li>
+                    <li>You can jump to the <strong>test</strong> for each section at any time or complete the tests for the <strong>plan</strong>, <strong>spend</strong> and <strong>report</strong> sections in order as you finish each lesson. The passing grade is <strong>80% for each section</strong>. You can access course materials during the test and retake the test as many times as you need to. </li>
+                    <li>Access the <strong>home</strong> screen at any time by selecting the (<homebutton v-bind:iconWidth="50" iconTitle="home icon example" style="position: relative; top: -12px; left: -6px;" />) icon.</li>
+                  </ul>
+                </span>
+                <span v-if="$i18n.locale=='fr'">
+                  <p>Ce cours est organisé en 3 sections : <strong>planification</strong>, <strong>dépenses</strong> et <strong>rapports</strong>. </p>
+                  <p>Vous pouvez choisir là où commencer le cours, et décider jusqu'à quel point approfondir le contenu. Voici quelques conseils pour vous orienter&nbsp;:</p>
+                  <ul>
+                    <li>Vous pouvez naviguer dans les sections du cours en utilisant l’icône du <strong>menu</strong> (<span class="hamburger-example">&nbsp;&nbsp;&nbsp;&nbsp; <span class="v-inv">exemple de l'icône du menu de navigation</span></span>) en haut à gauche de l'écran ou en utilisant les «&nbsp;tuiles&nbsp;» sur chaque écran.</li>
+                  </ul>
+                  <img class="img-fluid" src="~/assets/nav-example_fr.PNG" alt="exemple de «&nbsp;tuiles&nbsp;»" />
+                  <ul>
+                    <li>Choisissez les <strong>messages clés</strong> pour réviser les points saillants, comme rappel sur chaque sujet.</li>
+                    <li>Si le contenu est nouveau pour vous, prenez le temps de <strong>parcourir chaque section</strong>. Faites <strong>les activités d'apprentissage en profondeur</strong> et examinez les outils et les ressources. Chaque section devrait vous prendre de 15 à 20 minutes. Des repères visuels s’affichent pour indiquer vos progrès au fur et à mesure que vous avancez dans le cours.</li>
+                  </ul>
+                  <img class="img-fluid" src="~/assets/progression-example_fr.PNG" alt="visual cues for progression example" />
+                  <ul></ul>
+                  <li>Choisissez l'<strong>icône de la vidéo</strong> ( <img src="~/assets/VideoIcon.svg" alt="exemple de l'icône de la vidéo" style="display: inline; width: 30px; height: 30px;" /> )  pour visionner les vidéos de chaque section et l'<strong>icône du crayon</strong> ( <img src="~/assets/ActivityIcon.svg" alt="exemple de l'icône du crayon" style="display: inline; width: 30px; height: 30px;" /> ) pour réaliser une activité.</li>
+                  <li>Passez au <strong>test</strong> pour chaque section de <strong>planification</strong>, <strong>dépenses</strong> et <strong>rapports</strong> à n'importe quel moment ou faites-les dans l'ordre au fur et à mesure que vous terminez chaque leçon. La note de passage est de <strong>80&nbsp;% pour chacune de ces sections</strong>. Vous pouvez accéder au matériel didactique pendant le test et vous pouvez le reprendre autant de fois que vous le souhaitez.</li>
+                </span>
+              </b-card-text>
             </b-card-body>
           </b-collapse>
         </b-card>
@@ -116,24 +151,61 @@ import download from "~/components/fileDownload"
 import planLinks from "~/components/plan_links"
 import spendLinks from "~/components/spend_links"
 import reportLinks from "~/components/report_links"
+import homebutton from "~/components/icons/home_icon"
 export default {
   components: {
     fileIcon,
     download,
     planLinks,
     spendLinks,
-    reportLinks
+    reportLinks,
+    homebutton
   }
 }
 
 </script>
 <style type="text/css" scoped>
-.card-header a.btn-light {
-  text-transform: uppercase;
-  color: #4d4d4d;
-  font-weight: 500;
-  font-size: 28px;
-  text-align: left
-}
+  
+  .card-header a.btn-light {
+    text-transform: uppercase;
+    color: #4d4d4d;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: left
+  }
+  
+  .hamburger-example {
+    top: 0em;
+    width: 50px;
+    height: 26px;
+    border: none;
+    position: relative;
+    background: linear-gradient(to bottom, #4D4D4D, #4D4D4D);
+    background-size: 100% 20%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-size 0.2s 0.25s ease;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .hamburger-example:before,
+  .hamburger-example:after {
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #4D4D4D;
+    content: '';
+    transition: transform 0.3s ease;
+  }
+  .hamburger-example:before {
+    top: 0;
+    transform-origin: 91% 150%;
+  }
+  .hamburger-example:after {
+    bottom: 0;
+    transform-origin: 84% -50%;
+  }
 
 </style>

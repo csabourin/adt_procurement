@@ -67,13 +67,13 @@
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[1]')" :key="index" :value="index" v-html="term" />
             </select></i18n>
-          <p v-if="Q9"><span class="v-right" v-if="Q9=='2'"> <strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+          <p v-if="Q9"><span class="v-right" v-if="Q9=='3'"> <strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
          <hr>
           <i18n path="sentences[9]" tag="p"><select v-model="Q10">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[1]')" :key="index" :value="index" v-html="term" />
             </select></i18n>
-          <p v-if="Q10"><span class="v-right" v-if="Q10=='3'"> <strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+          <p v-if="Q10"><span class="v-right" v-if="Q10=='2'"> <strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
         </b-tab>
         <b-tab title="Question 3">
           <p>&nbsp;</p>
@@ -135,8 +135,8 @@ export default {
   },
   {
   "1": "Non-discretionary",
-  "2": "Discretionary",
-  "3": "Notes"
+  "2": "Notes",
+  "3": "Discretionary"
   },
   {
   "1": "a predetermined budget amount",

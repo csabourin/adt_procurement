@@ -115,8 +115,8 @@
     <!-- Control buttons-->
     <div class="text-center">
       <b-button-group class="mt-2">
-        <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-        <b-button @click="tabIndex++" :disabled="tabIndex>=6">{{$t('nextPage')}}</b-button>
+        <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+        <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=6">{{$t('nextPage')}}</b-button>
       </b-button-group>
     </div>
   </div>
@@ -133,6 +133,13 @@ export default {
   components: {
     radioQuiz,
     checkboxQuiz
+  },
+  methods:{
+    focus(){
+      setTimeout(function(){
+        document.querySelector(".tab-pane.active .pure-radiobutton fieldset, .tab-pane.active .pure-checkbox fieldset").focus();
+      }, 300);
+    }
   }
 }
 

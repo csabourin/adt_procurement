@@ -193,8 +193,8 @@
       <!-- Control buttons-->
       <div class="text-center">
         <b-button-group class="mt-2">
-          <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-          <b-button @click="tabIndex++" :disabled="tabIndex>=13">{{$t('nextPage')}}</b-button>
+          <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+          <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=13">{{$t('nextPage')}}</b-button>
         </b-button-group>
       </div>
     </div>
@@ -259,6 +259,14 @@ export default {
       options10: '',
       options11: '',
 
+    }
+  },
+  methods:{
+    focus(){
+      setTimeout(function(){
+        document.querySelector(".tab-pane.active .pure-radiobutton fieldset, .tab-pane.active .pure-checkbox fieldset, .tab-pane.active .workplan-table").setAttribute("tabindex", 0);
+        document.querySelector(".tab-pane.active .pure-radiobutton fieldset, .tab-pane.active .pure-checkbox fieldset, .tab-pane.active .workplan-table").focus();
+      }, 300);
     }
   }
 }

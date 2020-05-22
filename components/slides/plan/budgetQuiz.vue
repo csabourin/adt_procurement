@@ -41,8 +41,8 @@
   <!-- Control buttons-->
   <div class="text-center">
     <b-button-group class="mt-2">
-      <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-      <b-button @click="tabIndex++" :disabled="tabIndex>=7">{{$t('nextPage')}}</b-button>
+      <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+      <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=7">{{$t('nextPage')}}</b-button>
     </b-button-group>
   </div>
 </div>
@@ -59,6 +59,14 @@ export default {
       tabIndex: 0,
       Q1a:false,Q1b:false,Q1c:false,Q1d:false,
       Q2a:false,Q2b:false,Q2c:false,Q2d:false
+    }
+  },
+  methods:{
+    focus(){
+      setTimeout(function(){
+        document.querySelector(".tab-pane.active").setAttribute("tabindex", 0);
+        document.querySelector(".tab-pane.active").focus();
+      }, 300);
     }
   }
 }

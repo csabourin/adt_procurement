@@ -99,8 +99,8 @@
     <!-- Control buttons-->
     <div class="text-center">
       <b-button-group class="mt-2">
-        <b-button @click="tabIndex--" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-        <b-button @click="tabIndex++" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
+        <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+        <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
       </b-button-group>
     </div>
       <transition name="fade">
@@ -193,6 +193,11 @@ export default {
         }
       }
       this.$store.commit('spend/setScore', [qId.toString(), "01", arr1])
+    },
+    focus(){
+      setTimeout(function(){
+        document.querySelector(".tab-pane.active .pure-radiobutton fieldset, .tab-pane.active .pure-checkbox fieldset").focus();
+      }, 300);
     }
   },
   computed: {

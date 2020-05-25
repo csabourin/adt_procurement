@@ -51,5 +51,9 @@ export const mutations = {
   dismissAlert(state) {
     state.AlertIsDismissed = true
     window.localStorage.setItem("planNoteDismissed", true)
+  },
+  undismissAlert(state) {
+    state.AlertIsDismissed = false
+    window.localStorage.setItem("planNoteDismissed", false)
   }
 }

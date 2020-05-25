@@ -2,7 +2,7 @@
   <div>
     <h2 class="pageTitle">{{$t('Test')}}</h2>
     <b-container>
-      <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible>
+      <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible fade>
         <div v-if="$i18n.locale=='en'">
           <p><strong style="text-transform: uppercase;">Note:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
           <p>For some of the questions in this test, you play the role of a manager of a call center. You will be given scenarios based on this situation.&nbsp;</p>
@@ -22,6 +22,7 @@
           <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p>
         </div>
       </b-alert>
+      <p v-if="AlertIsDismissed"><b-button @click="AlertIsDismissed=false">Show Instructions</b-button></p>
       <p>Question {{tabIndex+1}} / {{numQuestions}}</p>
       <!--<div class="progressBar" >
         <a href="#" @click.prevent="tabIndex=index" :title="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-for="(square,index) in numQuestions" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-html="index+1" />
@@ -177,8 +178,8 @@ export default {
       return this.$store.getters['report/getScore']
     },
     AlertIsDismissed: {
-      get() { return this.$store.state.report.AlertIsDismissed },
-      set() { this.$store.commit('report/dismissAlert') }
+      set(AlertIsDismissed) { AlertIsDismissed ? this.$store.commit('report/dismissAlert') : this.$store.commit('report/undismissAlert') },
+      get() { return this.$store.state.report.AlertIsDismissed }
     },
     tabIndex: {
       set(tabIndex) { this.$store.commit('report/setCurrentTab', tabIndex) },

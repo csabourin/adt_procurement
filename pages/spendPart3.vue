@@ -2,7 +2,7 @@
   <div>
     <h1 class="pageTitle" v-html="$t('MonitorControlFinances')" />
     <section>
-      <videoPlayer ref="vp" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_0rk3xq64/flavorId/0_55i24m70/name/a.mp4" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_mg1mled1/flavorId/0_y6cb8jdy/name/a.mp4" chapters chapterFile="SpendPart3.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setSpendPart3" :modalArray="modalArray"  @timeupdate="updatePercent($event)" />
+      <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_mg1mled1/flavorId/0_0jrrhyl9/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_0rk3xq64/flavorId/0_55i24m70/name/a.mp4"  chapters chapterFile="SpendPart3.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setSpendPart3" :modalArray="modalArray"  @timeupdate="updatePercent($event)" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">

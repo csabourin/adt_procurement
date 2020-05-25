@@ -7,10 +7,10 @@
           <input :disabled="lock" @click="q2Submitted=false" type="checkbox" v-model="Quest2" :name="'q'+qId" :id="'checkboxq'+qId+index" :value="index"> <label :for="'checkboxq'+qId+index" v-html="item" />
         </li>
       </ol>
-      <b-button :disabled="q2Submitted" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
+      <b-button :disabled="q2Submitted || !isAcceptable(Quest2)" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
     </fieldset>
     <p>&nbsp;</p>
-    <p v-if="!isAcceptable(Quest2) && q2Submitted" v-html="$t('pleaseAnswer')"></p>
+    <!--<p v-if="!isAcceptable(Quest2) && q2Submitted" v-html="$t('pleaseAnswer')"></p>-->
     <span v-if="isAcceptable(Quest2) && q2Submitted">
       <p v-if="arraysMatch(Quest2,Answer)"><span v-html="question.feedback.right" /></p>
       <p v-else> <span v-html="question.feedback.wrong" /></p>

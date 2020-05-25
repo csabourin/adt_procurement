@@ -12,7 +12,7 @@
             <select v-model='govtPri' @change="q1Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(answer, index) in $t('q1')" :value="index">{{answer}}</option>
-            </select> <b-button @click="q1Submit=true">{{$t('submit')}}</b-button>
+            </select> <b-button @click="q1Submit=true" :disabled="!govtPri || q1Submit">{{$t('submit')}}</b-button>
           </p>
           <p v-if="govtPri && q1Submit"> <span v-html="$t('q1a.'+govtPri)" /></p>
             
@@ -27,7 +27,7 @@
               <option value="1">{{$t('q2-1')}}</option>
               <option value="2">{{$t('q2-2')}}</option>
               <option value="3">{{$t('q2-3')}}</option>
-            </select> <b-button @click="q2Submit=true">{{$t('submit')}}</b-button>
+            </select> <b-button @click="q2Submit=true" :disabled="!deptPri || q2Submit">{{$t('submit')}}</b-button>
           </p>
           <p v-if="deptPri && q2Submit"> <span v-html="$t('a2-'+deptPri)" /></p>
 
@@ -42,7 +42,7 @@
               <option value="1">{{$t('q3-1')}}</option>
               <option value="2">{{$t('q3-2')}}</option>
               <option value="3">{{$t('q3-3')}}</option>
-            </select> <b-button @click="q3Submit=true">{{$t('submit')}}</b-button>
+            </select> <b-button @click="q3Submit=true" :disabled="!dirPri || q3Submit">{{$t('submit')}}</b-button>
           </p>
           <p v-if="dirPri && q3Submit"><span v-html="$t('a3-'+dirPri)" /></p>
 

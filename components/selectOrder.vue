@@ -17,7 +17,7 @@
       </span>
     </div>
     <br>
-    <b-button @click="submitted=true">{{$t('submit')}}</b-button>
+    <b-button @click="submitted=true" :disabled="form.selectId[index] || submitted">{{$t('submit')}}</b-button>
   </span>
 </template>
 <script type="text/javascript">

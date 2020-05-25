@@ -8,7 +8,7 @@
             <option disabled value="">{{$t('qDisabled')}}</option>
             <option :value="oIndex" v-for="(match, oIndex) in Question.matching">{{match}}</option>
           </select></b-col>
-          <b-col><b-button @click="submitAnswer">{{$t('submit')}}</b-button></b-col><b-col>
+          <b-col><b-button @click="submitAnswer" :disabled="!selectId || submitted">{{$t('submit')}}</b-button></b-col><b-col>
       <span v-if="submitted">
         <div v-if="selectId == match" v-html="Question.feedback.right"/>
         <div v-else v-html="Question.feedback.wrong" />

@@ -5,88 +5,121 @@
       <b-tabs v-model="tabIndex">
         <b-tab title="Question 1">
           <p>&nbsp;</p>
-          <p><select v-model="Q1">
+          <p>
+            <select v-model="Q1" @change="q1Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-            </select> {{$t('sentences[0]')}}</p>
-          <p v-if="Q1"><span class="v-right" v-if="Q1=='2'"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+            </select> {{$t('sentences[0]')}}
+          </p>
+          <p><b-button @click="q1Submit=true" :disabled="!Q1 || q1Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q1"><span class="v-right" v-if="Q1=='2' && q1Submit"><strong>Correct!</strong></span><span v-else-if="q1Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
           <hr>
-          <p><select v-model="Q2">
+          <p>
+            <select v-model="Q2" @change="q2Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-            </select> {{$t('sentences[1]')}}</p>
-          <p v-if="Q2"><span class="v-right" v-if="Q2=='1'"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+            </select> {{$t('sentences[1]')}}
+          </p>
+          <p><b-button @click="q2Submit=true" :disabled="!Q2 || q2Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q2"><span class="v-right" v-if="Q2=='1' && q2Submit"><strong>Correct!</strong></span><span v-else-if="q2Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
           <hr>
-          <i18n path="sentences[2]" tag="p"><select v-model="Q3">
+          <i18n path="sentences[2]" tag="p">
+            <select v-model="Q3" @change="q3Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
             </select>
           </i18n>
-          <p v-if="Q3"><span class="v-right" v-if="Q3=='1'"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+          <p><b-button @click="q3Submit=true" :disabled="!Q3 || q3Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q3"><span class="v-right" v-if="Q3=='1' && q3Submit"><strong>Correct!</strong></span><span v-else-if="q3Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
           <hr>
-          <i18n path="sentences[3]" tag="p"><select v-model="Q4">
+          <i18n path="sentences[3]" tag="p">
+            <select v-model="Q4" @change="q4Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
             </select>
           </i18n>
-          <p v-if="Q4"><span class="v-right" v-if="Q4=='3'"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+          <p><b-button @click="q4Submit=true" :disabled="!Q4 || q4Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q4"><span class="v-right" v-if="Q4=='3' && q4Submit"><strong>Correct!</strong></span><span v-else-if="q4Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
           <hr>
-          <i18n path="sentences[4]" tag="p"> <select v-model="Q5a">
+          <i18n path="sentences[4]" tag="p">
+            <select v-model="Q5a" @change="q5Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
             </select>
-            <select v-model="Q5b">
+            <select v-model="Q5b" @change="q5Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
             </select>
           </i18n>
-          <p><span v-if="Q5a && Q5b"><span class="v-right" v-if="(Q5a=='1' && Q5b=='2') || (Q5a=='2' && Q5b=='1')"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></span></p>
+          <p><b-button @click="q5Submit=true" :disabled="!Q5a || !Q5b || q5Submit">{{$t('submit')}}</b-button></p>
+          <p><span v-if="Q5a && Q5b"><span class="v-right" v-if="((Q5a=='1' && Q5b=='2') || (Q5a=='2' && Q5b=='1')) && q5Submit"><strong>Correct!</strong></span><span v-else-if="q5Submit" class="v-wrong"><strong>Incorrect.</strong></span></span></p>
           <hr>
-          <p><select v-model="Q6">
+          <p>
+            <select v-model="Q6" @change="q6Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-            </select> {{$t('sentences[5]')}}</p>
-          <p v-if="Q6"><span class="v-right" v-if="Q6=='3'"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+            </select> {{$t('sentences[5]')}}
+          </p>
+          <p><b-button @click="q6Submit=true" :disabled="!Q6 || q6Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q6"><span class="v-right" v-if="Q6=='3' && q6Submit"><strong>Correct!</strong></span><span v-else-if="q6Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
           <hr>
-          <p><select v-model="Q7">
+          <p>
+            <select v-model="Q7" @change="q7Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-            </select> {{$t('sentences[6]')}}</p>
-          <p v-if="Q7"><span class="v-right" v-if="Q7=='4'"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+            </select> {{$t('sentences[6]')}}
+          </p>
+          <p><b-button @click="q7Submit=true" :disabled="!Q7 || q7Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q7"><span class="v-right" v-if="Q7=='4' && q7Submit"><strong>Correct!</strong></span><span v-else-if="q7Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
         </b-tab>
         <b-tab title="Question 2">
           <p>&nbsp;</p>
-          <i18n path="sentences[7]" tag="p"><select v-model="Q8">
+          <i18n path="sentences[7]" tag="p">
+            <select v-model="Q8" @change="q8Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[1]')" :key="index" :value="index" v-html="term" />
             </select>
           </i18n>
-          <p v-if="Q8"><span class="v-right" v-if="Q8=='1'"> <strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+          <p><b-button @click="q8Submit=true" :disabled="!Q8 || q8Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q8"><span class="v-right" v-if="Q8=='1' && q8Submit"> <strong>Correct!</strong></span><span v-else-if="q8Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
           <hr>
-          <i18n path="sentences[8]" tag="p"><select v-model="Q9">
+          <i18n path="sentences[8]" tag="p">
+            <select v-model="Q9" @change="q9Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[1]')" :key="index" :value="index" v-html="term" />
-            </select></i18n>
-          <p v-if="Q9"><span class="v-right" v-if="Q9=='3'"> <strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
-         <hr>
-          <i18n path="sentences[9]" tag="p"><select v-model="Q10">
+            </select>
+          </i18n>
+          <p><b-button @click="q9Submit=true" :disabled="!Q9 || q9Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q9"><span class="v-right" v-if="Q9=='3' && q9Submit"> <strong>Correct!</strong></span><span v-else-if="q9Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
+          <hr>
+          <i18n path="sentences[9]" tag="p">
+            <select v-model="Q10" @change="q10Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[1]')" :key="index" :value="index" v-html="term" />
-            </select></i18n>
-          <p v-if="Q10"><span class="v-right" v-if="Q10=='2'"> <strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+            </select>
+          </i18n>
+          <p><b-button @click="q10Submit=true" :disabled="!Q10 || q10Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q10"><span class="v-right" v-if="Q10=='2' && q10Submit"> <strong>Correct!</strong></span><span v-else-if="q10Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
         </b-tab>
         <b-tab title="Question 3">
           <p>&nbsp;</p>
-          <i18n path="sentences[10]" tag="p"><select v-model="Q11">
+          <i18n path="sentences[10]" tag="p">
+            <select v-model="Q11" @change="q11Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[2]')" :key="index" :value="index" v-html="term" />
-            </select></i18n>
-          <p v-if="Q11"><span class="v-right" v-if="Q11=='1'"> <strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></p>
+            </select>
+          </i18n>
+          <p><b-button @click="q11Submit=true" :disabled="!Q11 || q11Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q11"><span class="v-right" v-if="Q11=='1' && q11Submit"> <strong>Correct!</strong></span><span v-else-if="q11Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
           <hr>
-          <i18n path="sentences[11]" tag="p"><select v-model="Q12">
+          <i18n path="sentences[11]" tag="p">
+            <select v-model="Q12" @change="q12Submit=false">
               <option disabled value=''>{{$t('qDisabled')}}</option>
               <option v-for="(term,index) in $t('keyTerms[2]')" :key="index" :value="index" v-html="term" />
-            </select></i18n><span v-if="Q12"><span class="v-right" v-if="Q12=='2'"><strong>Correct!</strong></span><span v-else class="v-wrong"><strong>Incorrect.</strong></span></span>
+            </select>
+          </i18n>
+          <p><b-button @click="q12Submit=true" :disabled="!Q12 || q12Submit">{{$t('submit')}}</b-button></p>
+          <p v-if="Q12"><span class="v-right" v-if="Q12=='2' && q12Submit"><strong>Correct!</strong></span><span v-else-if="q12Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
           </p>
         </b-tab>
       </b-tabs>
@@ -117,7 +150,8 @@ export default {
       Q9: '',
       Q10: '',
       Q11: '',
-      Q12: ''
+      Q12: '',
+      q1Submit:false, q2Submit:false, q3Submit:false, q4Submit:false, q5Submit:false, q6Submit:false, q7Submit:false,q8Submit:false,q9Submit:false, q10Submit:false,q11Submit:false,q12Submit:false
     }
   },
   methods:{

@@ -9,7 +9,7 @@
             <li class="questions" >
               <p>
                 <label :for="'select'+index">{{item[0]}}</label>
-                <select :id="'select'+index" v-model="Answered[item[1]]">
+                <select :id="'select'+index" v-model="Answered[item[1]]" @change="Submitted[item[1]]=false">
                   <option v-for="(option,index) in AnswerList" :aria-labelledby="index !== 0 ? 'AnswerKey'+(index) : ''" :value="index" :disabled="!index" :selected="index===0">{{option}}</option>
                 </select>
               </p>
@@ -22,7 +22,7 @@
           </ol>
         </b-col>
         <b-col>
-        	<b-button style="float:left" :disabled="!Answered[item[1]]" @click="submitAnswer(item[1])">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
+        	<b-button style="float:left" :disabled="!Answered[item[1]] || Submitted[item[1]]" @click="submitAnswer(item[1])">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
         	<p v-if="Submitted[item[1]]"> <span class="v-right" v-if="Answered[item[1]]==parseInt(item[1])+1" > Correct!</span>
     	<span class="v-wrong" v-if="Answered[item[1]]!=parseInt(item[1])+1" > Incorrect </span>
     </p>

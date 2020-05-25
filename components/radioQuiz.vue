@@ -7,10 +7,10 @@
         <li v-for="(item,index) in question.options" :key="index">
           <input :disabled="lock" @click="q1Submitted=false" type="radio" v-model="Quest1" :name="'q'+qId" :id="'radioq'+qId+index" :value="index"><label :for="'radioq'+qId+index" v-html="item" /></li>
       </ol>
-      <b-button :disabled="q1Submitted || lock" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
+      <b-button :disabled="q1Submitted || lock || !Quest1" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
     </fieldset>
     <p>&nbsp;</p>
-    <p aria-live="polite" v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>
+    <!--<p aria-live="polite" v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>-->
     <p tabindex="0" aria-live="assertive" v-if="Quest1 && q1Submitted" v-html="question.feedback[Quest1]" />
     <p tabindex="0" aria-live="assertive" v-if="Quest1 && q1Submitted && question.conclusion" v-html="question.conclusion" />
   </span>

@@ -4,10 +4,10 @@
       <legend><strong class="question" v-html="question.text" /><p>{{$t('checkAll')}}</p></legend>
       <ol type="1">
         <li v-for="(item,index) in question.options" :key="index">
-          <input :disabled="lock" @click="q2Submitted=false" type="checkbox" v-model="Quest2" :name="'q'+qId" :id="'checkboxq'+qId+index" :value="index"> <label :for="'checkboxq'+qId+index" v-html="item" />
+          <input :disabled="lock" @click="makeaChoice" type="checkbox" v-model="Quest2" :name="'q'+qId" :id="'checkboxq'+qId+index" :value="index"> <label :for="'checkboxq'+qId+index" v-html="item" />
         </li>
       </ol>
-      <b-button :disabled="q2Submitted" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
+      <b-button :disabled="q2Submitted || lock || beforeSelection" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
     </fieldset>
     <p>&nbsp;</p>
     <p v-if="!isAcceptable(Quest2) && q2Submitted" v-html="$t('pleaseAnswer')"></p>
@@ -22,6 +22,7 @@
 export default {
   data() {
     return {
+      beforeSelection:true,
       q2Submitted: false,
       Quest2: this.refill
     }
@@ -52,6 +53,10 @@ export default {
     }
   },
   methods: {
+    makeaChoice() {
+      this.q2Submitted = false
+      this.beforeSelection = false
+    },
     arraysMatch(arr1, arr2) {
       if (arr1.length !== arr2.length) return false
       const arrayOne = arr1.concat().sort()
@@ -70,6 +75,7 @@ export default {
   },
   watch: {
     forceEmpty() {
+      this.beforeSelection = true
       this.q2Submitted = false
       this.Quest2 = []
     }

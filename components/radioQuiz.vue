@@ -5,9 +5,9 @@
       <p v-html="$t('selectRight')" />
       <ol type="1">
         <li v-for="(item,index) in question.options" :key="index">
-          <input :disabled="lock" @click="q1Submitted=false" type="radio" v-model="Quest1" :name="'q'+qId" :id="'radioq'+qId+index" :value="index"><label :for="'radioq'+qId+index" v-html="item" /></li>
+          <input :disabled="lock" @click="makeaChoice" type="radio" v-model="Quest1" :name="'q'+qId" :id="'radioq'+qId+index" :value="index"><label :for="'radioq'+qId+index" v-html="item" /></li>
       </ol>
-      <b-button :disabled="q1Submitted || lock" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
+      <b-button :disabled="q1Submitted || lock || beforeSelection" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
     </fieldset>
     <p>&nbsp;</p>
     <p aria-live="polite" v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>
@@ -19,6 +19,7 @@
 export default {
   data() {
     return {
+      beforeSelection: true,
       q1Submitted: false,
       Quest1: this.refill
 
@@ -26,9 +27,9 @@ export default {
   },
 
   props: {
-    forceEmpty:{type:Boolean, default:false},
-    lock:{type:Boolean, default:false},
-    refill: {      type: String,      default: undefined    },
+    forceEmpty: { type: Boolean, default: false },
+    lock: { type: Boolean, default: false },
+    refill: { type: String, default: undefined },
     exam: { type: Boolean, default: false },
     question: {
       type: Object,
@@ -47,6 +48,10 @@ export default {
     }
   },
   methods: {
+    makeaChoice() {
+      this.q1Submitted = false
+      this.beforeSelection = false
+    },
     submitAnswer() {
       this.q1Submitted = true
       if (this.Quest1 != '') {
@@ -54,10 +59,11 @@ export default {
       }
     }
   },
-  watch:{
-    forceEmpty(){
+  watch: {
+    forceEmpty() {
       this.q1Submitted = false
-      this.Quest1=undefined
+      this.Quest1 = undefined
+      this.beforeSelection = true
     }
   }
 }

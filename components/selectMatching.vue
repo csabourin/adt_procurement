@@ -6,9 +6,11 @@
       </legend>
       <b-container>
         <b-row v-for="(option,index) in question.options">
-          <b-col v-html="option" />
           <b-col>
-            <select v-model="selectId[index - 1]" @change="submitted[index - 1] = false">
+            <label v-html="option" :for="exId + '_q' + index"></label>
+          </b-col>
+          <b-col>
+            <select v-model="selectId[index - 1]" @change="submitted[index - 1] = false" :id="exId + '_q' + index">
               <option disabled value="">{{$t('qDisabled')}}</option>
               <option :value="oIndex" v-for="(match, oIndex) in question.matching">{{match}}</option>
             </select>
@@ -43,6 +45,10 @@ export default {
     match: {
       type: Array,
       default: []
+    },
+    exId: {
+      type: String,
+      default: ""
     }
   },
   data() {

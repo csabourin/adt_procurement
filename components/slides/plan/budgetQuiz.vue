@@ -5,11 +5,11 @@
     <b-tabs v-model="tabIndex">
       <b-tab title="Question 1">
         <!-- <p><strong v-html="$t('q1a.text')" /></p> -->
-        <selectMatching :question="$t('q1content')" :match="q1Match" @response="Q1 = $event" />
+        <selectMatching :question="$t('q1content')" :match="q1Match" @response="Q1 = $event" exId="ex1" />
         <p v-if="Q1[0] && Q1[1] && Q1[2] && Q1[3]" v-html="$t('q1.conclusion')" />
       </b-tab>
       <b-tab title="Question 2">
-        <selectMatching :question="$t('q2content')" :match="q2Match" @response="Q2 = $event" />
+        <selectMatching :question="$t('q2content')" :match="q2Match" @response="Q2 = $event" exId="ex2" />
         <p v-if="Q2[0] && Q2[1] && Q2[2] && Q2[3]" v-html="$t('q2.conclusion')" />
       </b-tab>
       <b-tab title="Question 3">

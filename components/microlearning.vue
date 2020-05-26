@@ -3,7 +3,7 @@
     <nuxt-link :to="localePath(path)">
       <div class="box" :style="boxSize" style="color:#000">
         <div class="completed" :style="completionBar" :data-percent="completion"></div>
-        <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes <span class="v-inv" v-if="$i18n.locale=='en'">({{completion}}% complete)</span><span class="v-inv" v-if="$i18n.locale=='fr'">(complété à {{completion}}%)</span></span></div>
+        <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span><span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span></span></div>
       </div>
       <p class="text-left" :style="'width:'+size+'px'">
         <span v-html="text" />

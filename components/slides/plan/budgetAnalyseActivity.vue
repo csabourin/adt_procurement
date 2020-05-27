@@ -1,152 +1,201 @@
 <template>
   <span>
-    <p><span v-html="$t('actInstructions')"></span></p>
-    <table dir="ltr" border="1" cellspacing="0" cellpadding="5" width="100%" class="AnalyzeBudgetTable">
-      <colgroup>
-        <col width="132" />
-        <col width="70" />
-        <col width="70" />
-        <col width="120" />
-        <col width="90" />
-        <col width="351" />
-      </colgroup>
-      <tbody>
-        <tr class="qTable">
-          <th v-html="$t('budgetTableFill1')"></th>
-          <th v-html="$t('budgetTableFill2')"></th>
-          <th v-html="$t('budgetTableFill3')"></th>
-          <th colspan="2" rowspan="1" v-html="$t('budgetTableFill4')"></th>
-          <th v-html="$t('budgetTableFill5')"></th>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill6')"></td>
-          <td v-html="$t('budgetTableFill7')"></td>
-          <td v-html="$t('budgetTableFill8')"></td>
-          <td v-html="$t('budgetTableFill9')"></td>
-          <td v-html="$t('budgetTableFill10')"></td>
-          <td v-html="$t('budgetTableFill11')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill12')"></td>
-          <td v-html="$t('budgetTableFill13')"></td>
-          <td v-html="$t('budgetTableFill14')"></td>
-          <td v-html="$t('budgetTableFill15')"></td>
-          <td v-html="$t('budgetTableFill16')"></td>
-          <td v-html="$t('budgetTableFill17')"></td>
-        </tr>
-        <tr class="qTable">
-          <td v-html="$t('budgetTableFill18')"></td>
-          <td v-html="$t('budgetTableFill19')"></td>
-          <td v-html="$t('budgetTableFill20')"></td>
-          <td v-html="$t('budgetTableFill21')"></td>
-          <td v-html="$t('budgetTableFill22')"></td>
-          <td v-html="$t('budgetTableFill23')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill24')"></td>
-          <td v-html="$t('budgetTableFill25')"></td>
-          <td v-html="$t('budgetTableFill26')"></td>
-          <td v-html="$t('budgetTableFill27')"></td>
-          <td v-html="$t('budgetTableFill28')"></td>
-          <td v-html="$t('budgetTableFill29')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill30')"></td>
-          <td v-html="$t('budgetTableFill31')"></td>
-          <td v-html="$t('budgetTableFill32')"></td>
-          <td v-b-modal.question1>
-            <strong v-if="q1Answer" v-html="$t('budgetTableFill33')"></strong><a v-else href="javascript:" class="questionMark">?</a>
-          </td>
-          <td v-b-modal.question1><strong v-if="q1Answer" v-html="$t('budgetTableFill34')"></strong><span v-else></span>
-          </td>
-          <td v-html="$t('budgetTableFill35')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill36')"></td>
-          <td v-html="$t('budgetTableFill37')"></td>
-          <td v-html="$t('budgetTableFill38')"></td>
-          <td><span v-if="q1Answer" v-html="$t('budgetTableFill39')"></span></td>
-          <td><span v-if="q1Answer" v-html="$t('budgetTableFill40')"></span></td>
-          <td v-html="$t('budgetTableFill41')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill42')"></td>
-          <td v-html="$t('budgetTableFill43')"></td>
-          <td v-html="$t('budgetTableFill44')"></td>
-          <td v-html="$t('budgetTableFill45')"></td>
-          <td v-html="$t('budgetTableFill46')"></td>
-          <td v-html="$t('budgetTableFill47')"></td>
-        </tr>
-        <tr class="qTable">
-          <td v-html="$t('budgetTableFill48')"></td>
-          <td v-html="$t('budgetTableFill49')"></td>
-          <td v-html="$t('budgetTableFill50')"></td>
-          <td v-html="$t('budgetTableFill51')"></td>
-          <td v-html="$t('budgetTableFill52')"></td>
-          <td v-html="$t('budgetTableFill53')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill54')"></td>
-          <td v-html="$t('budgetTableFill55')"></td>
-          <td v-html="$t('budgetTableFill56')"></td>
-          <td v-html="$t('budgetTableFill57')"></td>
-          <td v-html="$t('budgetTableFill58')"></td>
-          <td v-html="$t('budgetTableFill59')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill60')"></td>
-          <td v-html="$t('budgetTableFill61')"></td>
-          <td v-html="$t('budgetTableFill62')"></td>
-          <td v-b-modal.question2><strong v-if="q2Answer" v-html="$t('budgetTableFill63')">$3,000</strong></td>
-          <td v-b-modal.question2><strong v-if="q2Answer" v-html="$t('budgetTableFill64')"></strong><a v-else href="javascript:" class="questionMark">?</a></td>
-          <td v-html="$t('budgetTableFill65')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill66')"></td>
-          <td v-html="$t('budgetTableFill67')"></td>
-          <td v-html="$t('budgetTableFill68')"></td>
-          <td v-b-modal.question3><strong v-if="q3Answer" v-html="$t('budgetTableFill69')" /><a v-else href="javascript:" class="questionMark">?</a></td>
-          <td v-b-modal.question3 v-html="$t('budgetTableFill70')"></td>
-          <td v-html="$t('budgetTableFill71')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill72')"></td>
-          <td v-html="$t('budgetTableFill73')"></td>
-          <td v-html="$t('budgetTableFill74')"></td>
-          <td v-html="$t('budgetTableFill75')"></td>
-          <td v-html="$t('budgetTableFill76')"></td>
-          <td v-html="$t('budgetTableFill77')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill78')"></td>
-          <td v-html="$t('budgetTableFill79')"></td>
-          <td v-html="$t('budgetTableFill80')"></td>
-          <td v-html="$t('budgetTableFill81')"></td>
-          <td v-html="$t('budgetTableFill82')"></td>
-          <td v-html="$t('budgetTableFill83')"></td>
-        </tr>
-        <tr>
-          <td v-html="$t('budgetTableFill84')"></td>
-          <td v-html="$t('budgetTableFill85')"></td>
-          <td v-html="$t('budgetTableFill86')"></td>
-          <td v-html="$t('budgetTableFill87')"></td>
-          <td v-html="$t('budgetTableFill88')"></td>
-          <td v-html="$t('budgetTableFill89')"></td>
-        </tr>
-        <tr>
-          <td><strong v-html="$t('budgetTableFill90')"></strong></td>
-          <td v-html="$t('budgetTableFill91')"></td>
-          <td v-html="$t('budgetTableFill92')"></td>
-          <td>
-            <p v-if="q1Answer && q2Answer" v-html="$t('budgetTableFill93')" />
-          </td>
-          <td>
-            <p v-if="q1Answer && q2Answer" v-html="$t('budgetTableFill94')" />
-          </td>
-          <td v-html="$t('budgetTableFill95')"></td>
-        </tr>
-      </tbody>
-    </table>
+    <b-row>
+      <b-col>
+        <p><span v-html="$t('actInstructions')"></span></p>
+        <table dir="ltr" border="1" cellspacing="0" cellpadding="5" width="100%" class="AnalyzeBudgetTable">
+          <colgroup>
+            <col width="132" />
+            <col width="70" />
+            <col width="70" />
+            <col width="120" />
+            <col width="90" />
+            <col width="351" />
+          </colgroup>
+          <thead>
+            <tr class="qTable">
+              <th v-html="$t('budgetTableFill1')" id="budgetTableFill1" scope="col"></th>
+              <th v-html="$t('budgetTableFill2')" id="budgetTableFill2" scope="col"></th>
+              <th v-html="$t('budgetTableFill3')" id="budgetTableFill3" scope="col"></th>
+              <th colspan="2" rowspan="1" v-html="$t('budgetTableFill4')" id="budgetTableFill4" scope="col"></th>
+              <th v-html="$t('budgetTableFill5')" id="budgetTableFill5" scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td v-html="$t('budgetTableFill6')" headers="budgetTableFill1"></td>
+              <td v-html="$t('budgetTableFill7')" headers="budgetTableFill2"></td>
+              <td v-html="$t('budgetTableFill8')" headers="budgetTableFill3"></td>
+              <th v-html="$t('budgetTableFill9')" headers="budgetTableFill4" id="budgetTableFill9" scope="col"></th>
+              <th v-html="$t('budgetTableFill10')" headers="budgetTableFill4" id="budgetTableFill10" scope="col"></th>
+              <td v-html="$t('budgetTableFill11')" headers="budgetTableFill5"></td>
+            </tr>
+            <!--<tr>
+              <td v-html="$t('budgetTableFill12')" headers="budgetTableFill1"></td>
+              <td v-html="$t('budgetTableFill13')" headers="budgetTableFill2"></td>
+              <td v-html="$t('budgetTableFill14')" headers="budgetTableFill3"></td>
+              <td v-html="$t('budgetTableFill15')" headers="budgetTableFill4 budgetTableFill9"></td>
+              <td v-html="$t('budgetTableFill16')" headers="budgetTableFill4 budgetTableFill10"></td>
+              <td v-html="$t('budgetTableFill17')" headers="budgetTableFill5"></td>
+            </tr>-->
+          </tbody>
+          <thead>
+            <tr class="qTable">
+              <th v-html="$t('budgetTableFill18')" id="budgetTableFill18" scope="col" headers="budgetTableFill1" colspan="6"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--<tr>
+              <td v-html="$t('budgetTableFill24')" headers="budgetTableFill1 budgetTableFill18 "></td>
+              <td v-html="$t('budgetTableFill25')" headers="budgetTableFill2 budgetTableFill18"></td>
+              <td v-html="$t('budgetTableFill26')" headers="budgetTableFill3 budgetTableFill18"></td>
+              <td v-html="$t('budgetTableFill27')" headers="budgetTableFill4 budgetTableFill9 budgetTableFill18"></td>
+              <td v-html="$t('budgetTableFill28')" headers="budgetTableFill4 budgetTableFill10 budgetTableFill18"></td>
+              <td v-html="$t('budgetTableFill29')" headers="budgetTableFill5 budgetTableFill18"></td>
+            </tr>-->
+            <tr>
+              <th v-html="$t('budgetTableFill30')" id="budgetTableFill30" scope="row" headers="budgetTableFill1 budgetTableFill18"></th>
+              <td v-html="$t('budgetTableFill31')" headers="budgetTableFill2 budgetTableFill18 budgetTableFill30"></td>
+              <td v-html="$t('budgetTableFill32')" headers="budgetTableFill3 budgetTableFill18 budgetTableFill30"></td>
+              <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill18 budgetTableFill30">
+                <strong v-if="q1Answer" v-html="$t('budgetTableFill33')"></strong><a v-else v-b-toggle.question-1 href="javascript:" class="questionMark">?</a>
+              </td>
+              <td headers="budgetTableFill4 budgetTableFill10 budgetTableFill18 budgetTableFill30"><strong v-if="q1Answer" v-html="$t('budgetTableFill34')"></strong><span v-else></span>
+              </td>
+              <td v-html="$t('budgetTableFill35')" headers="budgetTableFill5 budgetTableFill18 budgetTableFill30"></td>
+            </tr>
+            <tr>
+              <th v-html="$t('budgetTableFill36')" id="budgetTableFill36" scope="row" header="budgetTableFill1 budgetTableFill18"></th>
+              <td v-html="$t('budgetTableFill37')" header="budgetTableFill2 budgetTableFill18 budgetTableFill36"></td>
+              <td v-html="$t('budgetTableFill38')" header="budgetTableFill3 budgetTableFill36"></td>
+              <td><span v-if="q1Answer" v-html="$t('budgetTableFill39')" header="budgetTableFill4 budgetTableFill9 budgetTableFill18 budgetTableFill36"></span></td>
+              <td><span v-if="q1Answer" v-html="$t('budgetTableFill40')" header="budgetTableFill4 budgetTableFill10 budgetTableFill18 budgetTableFill36"></span></td>
+              <td v-html="$t('budgetTableFill41')" header="budgetTableFill5 budgetTableFill18 budgetTableFill36"></td>
+            </tr>
+            <!--<tr>
+              <td v-html="$t('budgetTableFill42')" header="budgetTableFill1 budgetTableFill18"></td>
+              <td v-html="$t('budgetTableFill43')" header="budgetTableFill2 budgetTableFill18"></td>
+              <td v-html="$t('budgetTableFill44')" header="budgetTableFill3 budgetTableFill18"></td>
+              <td v-html="$t('budgetTableFill45')" header="budgetTableFill4 budgetTableFill9 budgetTableFill18"></td>
+              <td v-html="$t('budgetTableFill46')" header="budgetTableFill4 budgetTableFill10 budgetTableFill18"></td>
+              <td v-html="$t('budgetTableFill47')" header="budgetTableFill5 budgetTableFill18"></td>
+            </tr>-->
+          </tbody>
+          <thead>
+            <tr class="qTable">
+              <th v-html="$t('budgetTableFill48')" id="budgetTableFill48" scope="col" headers="budgetTableFill1" colspan="6"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--<tr>
+              <td v-html="$t('budgetTableFill54')" header="budgetTableFill1 budgetTableFill48"></td>
+              <td v-html="$t('budgetTableFill55')" header="budgetTableFill2 budgetTableFill48"></td>
+              <td v-html="$t('budgetTableFill56')" header="budgetTableFill3 budgetTableFill48"></td>
+              <td v-html="$t('budgetTableFill57')" header="budgetTableFill4 budgetTableFill9 budgetTableFill48"></td>
+              <td v-html="$t('budgetTableFill58')" header="budgetTableFill4 budgetTableFill10 budgetTableFill48"></td>
+              <td v-html="$t('budgetTableFill59')" header="budgetTableFill5 budgetTableFill48"></td>
+            </tr>-->
+            <tr>
+              <th v-html="$t('budgetTableFill60')" id="budgetTableFill60" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
+              <td v-html="$t('budgetTableFill61')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill60"></td>
+              <td v-html="$t('budgetTableFill62')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill60"></td>
+              <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill60"><strong v-if="q2Answer" v-html="$t('budgetTableFill63')">$3,000</strong></td>
+              <td headers="budgetTableFill4 budgetTableFill10 budgetTableFill48 budgetTableFill60"><strong v-if="q2Answer" v-html="$t('budgetTableFill64')"></strong><a v-else v-b-toggle.question-2 href="javascript:" class="questionMark">?</a></td>
+              <td v-html="$t('budgetTableFill65')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill60"></td>
+            </tr>
+            <tr>
+              <th v-html="$t('budgetTableFill66')" id="budgetTableFill66" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
+              <td v-html="$t('budgetTableFill67')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill66"></td>
+              <td v-html="$t('budgetTableFill68')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill66"></td>
+              <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill66"><strong v-if="q3Answer" v-html="$t('budgetTableFill69')" /><a v-else v-b-toggle.question-3 href="javascript:" class="questionMark">?</a></td>
+              <td v-html="$t('budgetTableFill70')" headers="budgetTableFill4 budgetTableFill10 budgetTableFill48 budgetTableFill66"></td>
+              <td v-html="$t('budgetTableFill71')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill66"></td>
+            </tr>
+            <tr>
+              <th v-html="$t('budgetTableFill72')" id="budgetTableFill72" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
+              <td v-html="$t('budgetTableFill73')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill72"></td>
+              <td v-html="$t('budgetTableFill74')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill72"></td>
+              <td v-html="$t('budgetTableFill75')" headers="budgetTableFill4 budgetTableFill48 budgetTableFill9 budgetTableFill72"></td>
+              <td v-html="$t('budgetTableFill76')" headers="budgetTableFill4 budgetTableFill10 budgetTableFill48 budgetTableFill72"></td>
+              <td v-html="$t('budgetTableFill77')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill72"></td>
+            </tr>
+            <tr>
+              <th v-html="$t('budgetTableFill78')" id="budgetTableFill78" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
+              <td v-html="$t('budgetTableFill79')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill78"></td>
+              <td v-html="$t('budgetTableFill80')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill78"></td>
+              <td v-html="$t('budgetTableFill81')" headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill78"></td>
+              <td v-html="$t('budgetTableFill82')" headers="budgetTableFill4 budgetTableFill10 budgetTableFill48 budgetTableFill78"></td>
+              <td v-html="$t('budgetTableFill83')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill78"></td>
+            </tr>
+            <tr>
+              <th v-html="$t('budgetTableFill84')" id="budgetTableFill84" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
+              <td v-html="$t('budgetTableFill85')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill84"></td>
+              <td v-html="$t('budgetTableFill86')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill84"></td>
+              <td v-html="$t('budgetTableFill87')" headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill84"></td>
+              <td v-html="$t('budgetTableFill88')" headers="budgetTableFill4 budgetTableFill10 budgetTableFill48 budgetTableFill84"></td>
+              <td v-html="$t('budgetTableFill89')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill84"></td>
+            </tr>
+            <tr>
+              <th><strong v-html="$t('budgetTableFill90')" id="budgetTableFill90" scope="row" headers="budgetTableFill1 budgetTableFill48"></strong></th>
+              <td v-html="$t('budgetTableFill91')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill90"></td>
+              <td v-html="$t('budgetTableFill92')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill90"></td>
+              <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill90">
+                <p v-if="q1Answer && q2Answer" v-html="$t('budgetTableFill93')" />
+              </td>
+              <td headers="budgetTableFill4 budgetTableFill10 budgetTableFill48 budgetTableFill90">
+                <p v-if="q1Answer && q2Answer" v-html="$t('budgetTableFill94')" />
+              </td>
+              <td v-html="$t('budgetTableFill95')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill90"></td>
+            </tr>
+          </tbody>
+        </table>
+      </b-col>
+    </b-row>
+    <b-row style="margin-top: 20px;">
+      <b-col>
+        <div role="tablist">
+          <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+              <b-button block href="#" v-b-toggle.question-1 variant="light" class="text-left">{{ $t('q1.title') }}</b-button>
+            </b-card-header>
+            <b-collapse id="question-1" accordion="analyseBudgetQuestions" role="tabpanel">
+              <b-card-body>
+                <b-card-text>
+                  <p v-html="$t('q1.introduction')"></p>
+                  <radioQuiz :question="$t('q1')" @response="q1Answer=$event" qId="1" />
+                </b-card-text>
+              </b-card-body>
+            </b-collapse>
+          </b-card>
+          <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+              <b-button block href="#" v-b-toggle.question-2 variant="light" class="text-left">{{ $t('q2.title') }}</b-button>
+            </b-card-header>
+            <b-collapse id="question-2" accordion="analyseBudgetQuestions" role="tabpanel">
+              <b-card-body>
+                <b-card-text>
+                  <p v-html="$t('q2.introduction')"></p>
+                  <radioQuiz :question="$t('q2')" qId="2" @response="q2Answer=$event" />
+                </b-card-text>
+              </b-card-body>
+            </b-collapse>
+          </b-card>
+          <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+              <b-button block href="#" v-b-toggle.question-3 variant="light" class="text-left">{{ $t('q3.title') }}</b-button>
+            </b-card-header>
+            <b-collapse id="question-3" accordion="analyseBudgetQuestions" role="tabpanel">
+              <b-card-body>
+                <b-card-text>
+                  <p v-html="$t('q3.introduction')" />
+                  <radioQuiz :question="$t('q3')" qId="3" @response="q3Answer=$event" />
+                </b-card-text>
+              </b-card-body>
+            </b-collapse>
+          </b-card>
+        </div>
+      </b-col>
+    </b-row>
     <b-modal id="question1" okOnly size="lg" :title="$t('q1.title')">
       <p v-html="$t('q1.introduction')"></p>
       <radioQuiz :question="$t('q1')" @response="q1Answer=$event" qId="1" />
@@ -181,12 +230,12 @@ export default {
 
 </script>
 <style type="text/css" scoped>
->>> .finTable tr:nth-child(odd){ 
+>>> .finTable thead{ 
 background-color: #587C84;
 color:#fff;
 text-align: center;}
 
->>> .finTable tr:nth-child(even) td:nth-child(n+2):nth-child(-n+4){
+>>> .finTable tbody td:nth-child(n+2):nth-child(-n+4){
 text-align: right;
 } 
 
@@ -198,7 +247,7 @@ text-align: right;
 .AnalyzeBudgetTable td:nth-child(n+2):nth-child(-n+5){
   text-align: right;
 }
->>> .qTable th{
+>>> .qTable th[scope="col"]{
   background-color:#587C84;
   color:#fff;
   font-weight: bold;
@@ -226,6 +275,7 @@ text-align: right;
   top: -.25em;
   z-index: 9999;
   cursor: pointer;
+  padding: 0;
 }
 
 </style>
@@ -233,7 +283,7 @@ text-align: right;
   "en": {
     "q1": {
       "title": "Salary",
-      "introduction": "<table class='qTable finTable' border='1'> <tbody> <tr> <th> <p>Salary</p> </th> <th> <p>Budget (A)</p> </th> <th> <p>Actual (B)</p> </th> <th> <p>Variance (C=B-A)</p> </th> <th> <p>Variance Explanation</p> </th> </tr> <tr> <td> <p>Previous year&nbsp;</p> </td> <td> <p>$460,000</p> </td> <td> <p>$450,000</p> </td> <td> <p><span style='color: #AF0000;'>($10,000)</span></p> </td> <td> <p>An employee was on leave without pay.</p> </td> </tr> <tr> <td>&nbsp;</td> <th> <p>Budget</p> </th> <th> <p>YTD Actual</p> </th> <td> <p>Annual Forecast</p> </td> <td></td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$475,000</p> </td> <td> <p>$237,500</p> </td> <td> <p>$475,000</p> </td> <td>&nbsp;</td> </tr> </tbody> </table><br><ul> <li>An employee’s annual salary is $60,000 per year. You know that they will retire on July 1 of next year and won’t be replaced, and&nbsp;</li> <li>You plan on getting a casual employee for 4 months for a total of $13,333.</li> </ul>",
+      "introduction": "<table class='qTable finTable' border='1'><thead><tr><th id='1' scope='col'><p>Salary</p></th><th id='2' scope='col'><p>Budget (A)</p></th><th id='3' scope='col'><p>Actual (B)</p></th><th id='4' scope='col'><p>Variance (C=B-A)</p></th><th id='5' scope='col'><p>Variance Explanation</p></th></tr></thead><tbody><tr><th headers='1' id='11' scope='row'><p>Previous year&nbsp;</p></th><td headers='2 11'><p>$460,000</p</td><td headers='3 11'><p>$450,000</p></td><td headers='4 11'><p><span style='color: #AF0000;'>($10,000)</span></p></td><td headers='5 11'><p>An employee was on leave without pay.</p></td></tr></tbody><thead><tr><th id='6' scope='col'>&nbsp;</th><th id='7' scope='col'><p>Budget</p></th><th id='8' scope='col'><p>YTD Actual</p></th><th id='9' scope='col'><p>Annual Forecast</p></th><th id='10' scope='col'></th></tr></thead><tbody><tr><th headers='6' id='12' scope='row'><p>Current year at P6</p></th><td headers='7 12'><p>$475,000</p></td><td headers='8 12'><p>$237,500</p></td><td headers='9 12'><p>$475,000</p></td><td headers='10 12'>&nbsp;</td></tr></tbody></table><br><ul><li>An employee’s annual salary is $60,000 per year. You know that they will retire on July 1 of next year and won’t be replaced, and&nbsp;</li><li>You plan on getting a casual employee for 4 months for a total of $13,333.</li></ul>",
       "text": "What budget will you propose for the next fiscal year?",
       "options": {
         "1": "$415,000 Non-Discretionary and $13,333 Discretionary",
@@ -267,7 +317,7 @@ text-align: right;
     },
     "q3": {
       "title": "Office Supplies",
-      "introduction": "<p><strong>Trends </strong>are costs in your budget that are either constant, or show a similar pattern year after year.&nbsp;</p> <table class='qTable finTable' border='1'> <tbody> <tr> <td> <p>Office Supplies</p> </td> <td> <p>Budget (A)</p> </td> <td> <p>Actual (B)</p> </td> <td> <p>Variance (C=B-A)</p> </td> <td> <p>Variance Explanation</p> </td> </tr> <tr> <td> <p>Previous year</p> </td> <td> <p>$1,961</p> </td> <td> <p>$1,500</p> </td> <td> <p style='color:#AF0000;'>($461)</p> </td> <td> <p>Costs were lower than planned.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget&nbsp;</p> </td> <td> <p>YTD Actual</p> </td> <td> <p>Annual Forecast</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Current year at P6</p> </td> <td> <p>$2,000</p> </td> <td> <p>$100</p> </td> <td> <p>$1,500</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
+      "introduction": "<p><strong>Trends </strong>are costs in your budget that are either constant, or show a similar pattern year after year.&nbsp;</p> <table class='qTable finTable' border='1'> <thead> <tr> <th id='1' scope='col'> <p>Office Supplies</p> </th> <th id='2' scope='col'> <p>Budget (A)</p> </th> <th id='3' scope='col'> <p>Actual (B)</p> </th> <th id='4' scope='col'> <p>Variance (C=B-A)</p> </th> <th id='5' scope='col'> <p>Variance Explanation</p> </th> </tr> </thead> <tbody> <tr> <th id='11' scope='row' headers='1'> <p>Previous year</p> </th> <td headers='2 11'> <p>$1,961</p> </td> <td headers='3 11'> <p>$1,500</p> </td> <td headers='4 11'> <p style='color:#AF0000;'>($461)</p> </td> <td headers='5 11'> <p>Costs were lower than planned.</p> </td> </tr> </tbody> <thead> <tr> <th id='6' scope='col'>&nbsp;</th> <th id='7' scope='col'> <p>Budget&nbsp;</p> </th> <th id='8' scope='col'> <p>YTD Actual</p> </th> <th id='9' scope='col'> <p>Annual Forecast</p> </th> <th id='10' scope='col'>&nbsp;</th> </tr> </thead> <tbody> <tr> <th id='12' scope='row' headers='6'> <p>Current year at P6</p> </th> <td headers='7 12'> <p>$2,000</p> </td> <td headers='8 12'> <p>$100</p> </td> <td headers='9 12'> <p>$1,500</p> </td> <td headers='10 12'>&nbsp;</td> </tr> </tbody> </table>",
       "text": "If you do not plan a significant change in your spending patterns for office supplies, what should you budget for?",
       "options": {
         "1": "$1,500",
@@ -381,7 +431,7 @@ text-align: right;
   "fr": {
     "q1": {
       "title": "Salaires",
-      "introduction": "<table class='qTable finTable' border='1'> <th> <p>Salaires</p> </th> <th> <p>Budget (A)</p> </th> <th> <p>Réel (B)</p> </th> <th> <p>Variance (C=B-A)</p> </th> <th> <p>Explication de variance&nbsp;</p> </th> </tr> <tr> <td> <p>Année précédente&nbsp;</p> </td> <td> <p>460&nbsp;000&nbsp;$</p> </td> <td> <p>450&nbsp;000&nbsp;$</p> </td> <td> <p><span style='color: #AF0000;'>(10&nbsp;000&nbsp;$)</span></p> </td> <td> <p>Un employé était en congé sans solde.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA Réel&nbsp;</p> </td> <td> <p>Prévisions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Année en cours à P6</p> </td> <td> <p>475&nbsp;000&nbsp;$</p> </td> <td> <p>237&nbsp;500&nbsp;$</p> </td> <td> <p>475&nbsp;000&nbsp;$</p> </td> <td>&nbsp;</td> </tr> </tbody> </table> <br> <ul> <li>Le salaire annuel d’un employé est de 60&nbsp;000&nbsp;$ par année. Vous savez qu’il prendra sa retraite le 1er juillet de l’année prochaine et qu’il ne sera pas remplacé.&nbsp;</li> <li>Vous prévoyez embaucher un employé occasionnel pendant 4 mois pour un coût total de 13&nbsp;333&nbsp;$.</li> </ul>",
+      "introduction": "<table class='qTable finTable' border='1'> <thead> <tr> <th id='1' scope='col'> <p>Salaires</p> </th> <th id='2' scope='col'> <p>Budget (A)</p> </th> <th id='3' scope='col'> <p>Réel (B)</p> </th> <th id='4' scope='col'> <p>Variance (C=B-A)</p> </th> <th id='5' scope='col'> <p>Explication de variance&nbsp;</p> </th> </tr> </thead> <tbody> <tr> <th id='11' scope='row' headers='1'> <p>Année précédente&nbsp;</p> </th> <td headers='2 11'> <p>460&nbsp;000&nbsp;$</p> </td> <td headers='3 11'> <p>450&nbsp;000&nbsp;$</p> </td> <td headers='4 11'> <p><span style='color: #AF0000;'>(10&nbsp;000&nbsp;$)</span></p> </td> <td headers='5 11'> <p>Un employé était en congé sans solde.</p> </td> </tr> </tbody> <thead> <tr> <th id='6' scope='col'>&nbsp;</th> <th id='7' scope='col'> <p>Budget</p> </th> <th id='8' scope='col'> <p>CDA Réel&nbsp;</p> </th> <th id='9' scope='col'> <p>Prévisions annuelles</p> </th> <th id='10' scope='col'>&nbsp;</th> </tr> </thead> <tbody> <tr> <th id='12' scope='row' headers='6'> <p>Année en cours à P6</p> </th> <td headers='7 12'> <p>475&nbsp;000&nbsp;$</p> </td> <td headers='8 12'> <p>237&nbsp;500&nbsp;$</p> </td> <td headers='9 12'> <p>475&nbsp;000&nbsp;$</p> </td> <td headers='10 12'>&nbsp;</td> </tr> </tbody> </table> <br> <ul> <li>Le salaire annuel d’un employé est de 60&nbsp;000&nbsp;$ par année. Vous savez qu’il prendra sa retraite le 1er juillet de l’année prochaine et qu’il ne sera pas remplacé.&nbsp;</li> <li>Vous prévoyez embaucher un employé occasionnel pendant 4 mois pour un coût total de 13&nbsp;333&nbsp;$.</li> </ul>",
       "text": "Quel budget proposez-vous pour l’exercice financier suivant?",
       "options": {
         "1": "$415&nbsp;000&nbsp;$ non discrétionnaires et 13&nbsp;333&nbsp;$ discrétionnaires",
@@ -415,7 +465,7 @@ text-align: right;
     },
     "q3": {
       "title": "Fournitures de bureau",
-      "introduction": "<p>Les <strong>tendances</strong> sont des co&ucirc;ts (dans votre budget) qui sont soit constants, soit semblables d’année en année.</p> <table border='1' class='qTable finTable' border='1'> <tbody> <tr> <th> <p>Fournitures de bureau</p> </th> <th> <p>Budget (A)</p> </th> <th> <p>Réel (B)</p> </th> <th> <p>Variance (C=B-A)</p> </th> <th> <p>Explication de la variance</p> </th> </tr> <tr> <td> <p>Année précédente&nbsp;</p> </td> <td> <p>1&nbsp;961&nbsp;$</p> </td> <td> <p>1&nbsp;500&nbsp;$</p> </td> <td> <p style='color:#AF0000;'>(461 $)</p> </td> <td> <p>Les coûts ont été inférieurs aux prévisions.</p> </td> </tr> <tr> <td>&nbsp;</td> <td> <p>Budget</p> </td> <td> <p>CDA Réel&nbsp;</p> </td> <td> <p>Prévisions annuelles</p> </td> <td>&nbsp;</td> </tr> <tr> <td> <p>Année en cours à P6</p> </td> <td> <p>2&nbsp;000&nbsp;$</p> </td> <td> <p>100 $</p> </td> <td> <p>1&nbsp;500&nbsp;$</p> </td> <td>&nbsp;</td> </tr> </tbody> </table>",
+      "introduction": "<p>Les <strong>tendances</strong> sont des co&ucirc;ts (dans votre budget) qui sont soit constants, soit semblables d’année en année.</p> <table border='1' class='qTable finTable' border='1'> <thead> <tr> <th id='1'scope='col'> <p>Fournitures de bureau</p> </th> <th id='2'scope='col'> <p>Budget (A)</p> </th> <th id='3'scope='col'> <p>Réel (B)</p> </th> <th id='4'scope='col'> <p>Variance (C=B-A)</p> </th> <th id='5'scope='col'> <p>Explication de la variance</p> </th> </tr> </thead> <tbody> <tr> <th id='11' scope='row' headers='1'> <p>Année précédente&nbsp;</p> </th> <td headers='2 11'> <p>1&nbsp;961&nbsp;$</p> </td> <td headers='3 11'> <p>1&nbsp;500&nbsp;$</p> </td> <td headers='4 11'> <p style='color:#AF0000;'>(461 $)</p> </td> <td headers='5 11'> <p>Les coûts ont été inférieurs aux prévisions.</p> </td> </tr> </tbody> <thead> <tr> <th id='6' scope='col'>&nbsp;</th> <th id='7' scope='col'> <p>Budget</p> </hd> <th id='8' scope='col'> <p>CDA Réel&nbsp;</p> </th> <th id='9' scope='col'> <p>Prévisions annuelles</p> </th> <th id='10' scope='col'>&nbsp;</th> </tr> </thead> <tbody> <tr> <th id='12' scope='row' headers='6'> <p>Année en cours à P6</p> </th> <td headers='7 12'> <p>2&nbsp;000&nbsp;$</p> </td> <td headers='8 12'> <p>100 $</p> </td> <td headers='9 12'> <p>1&nbsp;500&nbsp;$</p> </td> <td headers='10 12'>&nbsp;</td> </tr> </tbody> </table>",
       "text": "Si vous ne prévoyez pas de changement important dans vos habitudes de dépenses pour le matériel et les fournitures, que devriez-vous prévoir dans votre budget?",
       "options": {
         "1": "1500$",

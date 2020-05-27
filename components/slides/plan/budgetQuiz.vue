@@ -5,18 +5,12 @@
     <b-tabs v-model="tabIndex">
       <b-tab title="Question 1">
         <!-- <p><strong v-html="$t('q1a.text')" /></p> -->
-        <selectMatching :question="$t('q1a')" match="2" @response="Q1a=$event" />
-        <selectMatching :question="$t('q1b')" match="3" @response="Q1b=$event" />
-        <selectMatching :question="$t('q1c')" match="1" @response="Q1c=$event" />
-        <selectMatching :question="$t('q1d')" match="4" @response="Q1d=$event" />
-        <p v-if="Q1a && Q1b && Q1c && Q1d" v-html="$t('q1.conclusion')" />
+        <selectMatching :question="$t('q1content')" :match="q1Match" @response="Q1 = $event" exId="ex1" />
+        <p v-if="Q1[0] && Q1[1] && Q1[2] && Q1[3]" v-html="$t('q1.conclusion')" />
       </b-tab>
       <b-tab title="Question 2">
-        <selectMatching :question="$t('q2a')" match='3' @response="Q2a=$event" />
-        <selectMatching :question="$t('q2b')" match='4' @response="Q2b=$event" />
-        <selectMatching :question="$t('q2c')" match='1' @response="Q2c=$event" />
-        <selectMatching :question="$t('q2d')" match='2' @response="Q2d=$event" />
-        <p v-if="Q2a && Q2b && Q2c && Q2d" v-html="$t('q2.conclusion')" />
+        <selectMatching :question="$t('q2content')" :match="q2Match" @response="Q2 = $event" exId="ex2" />
+        <p v-if="Q2[0] && Q2[1] && Q2[2] && Q2[3]" v-html="$t('q2.conclusion')" />
       </b-tab>
       <b-tab title="Question 3">
         <radioQuiz :question="$t('q3')" qId="3" />
@@ -57,8 +51,11 @@ export default {
   data() {
     return {
       tabIndex: 0,
-      Q1a:false,Q1b:false,Q1c:false,Q1d:false,
-      Q2a:false,Q2b:false,Q2c:false,Q2d:false
+      Q1: [],
+      Q2: [],
+      
+      q1Match: [2,3,1,4],
+      q2Match: [3,4,1,2]
     }
   },
   methods:{
@@ -67,7 +64,7 @@ export default {
         document.querySelector(".tab-pane.active").setAttribute("tabindex", 0);
         document.querySelector(".tab-pane.active").focus();
       }, 300);
-    }
+    },
   }
 }
 </script>
@@ -86,62 +83,17 @@ export default {
     "titleImpact": "Impact",
     "titleMitigation": "Mitigation",
     "titleResources": "Resources",
-    "q1a": {
+    "q1content": {
       "text": "Match the item to the budget in which it belongs. ",
       "options": {
-        "1": "A contract with an agency for temp staff"
-      },
-      "matching": {
-        "1": "Operating–Salary ",
-        "2": "Operating–O&M ",
-        "3": "Grants & Contributions",
-        "4": "Capital "
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q1b": {
-      "text": " ",
-      "options": {
-        "2": "Funds provided to a university to study fish habitat"
-      },
-      "matching": {
-        "1": "Operating–Salary ",
-        "2": "Operating–O&M ",
-        "3": "Grants & Contributions",
-        "4": "Capital "
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q1c": {
-      "text": " ",
-      "options": {
-        "3": "Casual positions or leave cash-outs"
-      },
-      "matching": {
-        "1": "Operating - Salary ",
-        "2": "Operating - O&M ",
-        "3": "Grants & Contributions",
-        "4": "Capital "
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q1d": {
-      "text": " ",
-      "options": {
+        "1": "A contract with an agency for temp staff",
+        "2": "Funds provided to a university to study fish habitat",
+        "3": "Casual positions or leave cash-outs",
         "4": "Purchase a new fleet of trucks"
       },
       "matching": {
-        "1": "Operating - Salary ",
-        "2": "Operating - O&M ",
+        "1": "Operating–Salary ",
+        "2": "Operating–O&M ",
         "3": "Grants & Contributions",
         "4": "Capital "
       },
@@ -153,57 +105,12 @@ export default {
     "q1": {
       "conclusion": "<p><strong>A contract with an agency for temp staff</strong> would be in <strong>Operating - O&amp;M</strong>, and not Operating - Salary, because temp staff are not employees, and contracts are not paid out of Salary.&nbsp;</p><p><strong>Funds provided to a university to study fish habitat </strong>would be in <strong>Grants and Contributions</strong>. The nature of this transaction is such that it is a 1-way payment of money for which the government will not receive any good or service.</p><p><strong>Casual positions or leave cash-outs</strong> would be in <strong>Operating–Salary</strong> because they concern employees.&nbsp;</p><p><strong>Purchase a new fleet of trucks</strong> would be in <strong>Capital </strong>because they are assets that would depreciate over time.</p>"
     },
-    "q2a": {
+    "q2content": {
       "text": "Match the activity to its status. ",
       "options": {
-        "1": "Issuing fishing licenses."
-      },
-      "matching": {
-        "1": "Sunsetted",
-        "2": "Cancelled",
-        "3": "Continuing",
-        "4": "New"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q2b": {
-      "text": " ",
-      "options": {
-        "2": "Next year, you are going to purchase software to replace a paper process."
-      },
-      "matching": {
-        "1": "Sunsetted",
-        "2": "Cancelled",
-        "3": "Continuing",
-        "4": "New"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q2c": {
-      "text": " ",
-      "options": {
-        "3": "Costs for an office move that was completed last year."
-      },
-      "matching": {
-        "1": "Sunsetted",
-        "2": "Cancelled",
-        "3": "Continuing",
-        "4": "New"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q2d": {
-      "text": " ",
-      "options": {
+        "1": "Issuing fishing licenses.",
+        "2": "Next year, you are going to purchase software to replace a paper process.",
+        "3": "Costs for an office move that was completed last year.",
         "4": "Consultations across Canada were stopped earlier this year."
       },
       "matching": {

@@ -310,6 +310,10 @@ html[lang="en"] a.external:after{
 html[lang="fr"] a.external:after{
   content: "(Ce contenu ouvrira dans une nouvelle fenêtre)";
 }
+  
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    font-weight: 700;
+  }
 
 .bounce-enter-active {
   animation: bounce-in .5s;

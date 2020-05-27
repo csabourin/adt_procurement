@@ -41,7 +41,7 @@
           <td v-html="$t('tableData[18]')" headers="4 8 15" />
           <td v-html="$t('tableData[19]')" headers="5 8 15" />
           <td headers="6 8 15"><input :aria-label="$t('instructions')" @key.enter="salaryGo='checked'" v-b-popover.focus.bottom="$t('salaryPop')" type="number" v-model="salary" name="salary"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="salaryGo" name="salaryGo" @change="$bvModal.show('salaryFeedback')"></td>
-          <td headers="6 8 15">{{salarySurplusDeficit}}</td>
+          <td headers="6 8 15" aria-live="polite">{{salarySurplusDeficit}}</td>
         </tr>
         <tr>
           <th v-html="$t('tableData[22]')" id="22" scope="row" headers="8" />
@@ -49,8 +49,8 @@
           <td v-html="$t('tableData[24]')" headers="3 8 22" />
           <td v-html="$t('tableData[25]')" headers="4 8 22" />
           <td v-html="$t('tableData[26]')" headers="5 8 22" />
-          <td headers="6 8 22">{{salaryTotal}}</td>
-          <td headers="7 8 22">{{salarySurplusDeficit}}</td>
+          <td headers="6 8 22" aria-live="polite">{{salaryTotal}}</td>
+          <td headers="7 8 22" aria-live="polite">{{salarySurplusDeficit}}</td>
         </tr>
       </tbody>
       <thead>
@@ -73,7 +73,7 @@
           <td v-html="$t('tableData[40]')" headers="5 29 36" />
           <td headers="6 29 36"><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('softwarePop')" type="number" v-model="software" name="software"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="softwareGo" name="softwareGo" @change="$bvModal.show('softwareFeedback')"></td>
           <!--<td v-html="$t('tableData[42]')" headers="7 29 36" />-->
-          <td headers="7 29 36">{{softwareSurplusDeficit}}</td>
+          <td headers="7 29 36" aria-live="polite">{{softwareSurplusDeficit}}</td>
         </tr>
         <tr>
           <th v-html="$t('tableData[43]')" id="43" scope="row" headers="29" />
@@ -83,7 +83,7 @@
           <td v-html="$t('tableData[47]')" headers="5 29 43" />
           <td headers="6 29 43"><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('hospitalityPop')" type="number" v-model="hospitality" name="hospitality"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="hospitalityGo" name="hospitalityGo" @change="showHospitality"></td>
           <!--<td v-html="$t('tableData[49]')" headers="7 29 43" />-->
-          <td headers="7 29 43">{{hospitalitySurplusDeficit}}</td>
+          <td headers="7 29 43" aria-live="polite">{{hospitalitySurplusDeficit}}</td>
         </tr>
         <tr>
           <th v-html="$t('tableData[50]')" id="50" scope="row" headers="29" />
@@ -93,7 +93,7 @@
           <td v-html="$t('tableData[54]')" headers="5 29 50" />
           <td headers="6 29 50"><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('furniturePop')" type="number" v-model="furniture" name="furniture"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="furnitureGo" name="furnitureGo" @change="$bvModal.show('furnitureFeedback')"></td>
           <!--<td v-html="$t('tableData[56]')" headers="7 29 50" />-->
-          <td headers="7 29 50">{{furnitureSurplusDeficit}}</td>
+          <td headers="7 29 50" aria-live="polite">{{furnitureSurplusDeficit}}</td>
         </tr>
         <tr>
           <th v-html="$t('tableData[57]')" id="57" scope="row" headers="29" />
@@ -103,7 +103,7 @@
           <td v-html="$t('tableData[61]')" headers="5 29 57" />
           <td headers="6 29 57"><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('trainingPop')" type="number" v-model="training" name="training"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="trainingGo" name="trainingGo" @change="$bvModal.show('trainingFeedback')"></td>
           <!--<td v-html="$t('tableData[63]')" headers="7 29 57" />-->
-          <td headers="7 29 57">{{trainingSurplusDeficit}}</td>
+          <td headers="7 29 57" aria-live="polite">{{trainingSurplusDeficit}}</td>
         </tr>
         <tr>
           <th v-html="$t('tableData[64]')" id="64" scope="row" headers="29" />

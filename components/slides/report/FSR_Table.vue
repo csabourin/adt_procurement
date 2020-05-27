@@ -11,136 +11,149 @@
         <col width="71" />
         <col width="63" />
       </colgroup>
-      <tbody>
+      <thead>
         <tr>
           <td v-html="$t('tableData[1]')" />
-          <th v-html="$t('tableData[2]')" />
-          <th v-html="$t('tableData[3]')" />
-          <th v-html="$t('tableData[4]')" />
-          <th v-html="$t('tableData[5]')" />
-          <th v-html="$t('tableData[6]')" />
-          <th v-html="$t('tableData[7]')" />
+          <th v-html="$t('tableData[2]')" id="2" scope="col" />
+          <th v-html="$t('tableData[3]')" id="3" scope="col" />
+          <th v-html="$t('tableData[4]')" id="4" scope="col" />
+          <th v-html="$t('tableData[5]')" id="5" scope="col" />
+          <th v-html="$t('tableData[6]')" id="6" scope="col" />
+          <th v-html="$t('tableData[7]')" id="7" scope="col" />
         </tr>
+      </thead>
+      <thead>
         <tr class="heading">
-          <td v-html="$t('tableData[8]')" />
-          <td v-html="$t('tableData[9]')" />
+          <th v-html="$t('tableData[8]')" colspan="7" id="8" scope="col" />
+          <!--<td v-html="$t('tableData[9]')" />
           <td v-html="$t('tableData[10]')" />
           <td v-html="$t('tableData[11]')" />
           <td v-html="$t('tableData[12]')" />
           <td v-html="$t('tableData[13]')" />
-          <td v-html="$t('tableData[14]')" />
+          <td v-html="$t('tableData[14]')" />-->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th v-html="$t('tableData[15]')" id="15" scope="row" headers="8" />
+          <td v-html="$t('tableData[16]')" headers="2 8 15" />
+          <td v-html="$t('tableData[17]')" headers="3 8 15" />
+          <td v-html="$t('tableData[18]')" headers="4 8 15" />
+          <td v-html="$t('tableData[19]')" headers="5 8 15" />
+          <td headers="6 8 15"><input :aria-label="$t('instructions')" @key.enter="salaryGo='checked'" v-b-popover.focus.bottom="$t('salaryPop')" type="number" v-model="salary" name="salary"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="salaryGo" name="salaryGo" @change="$bvModal.show('salaryFeedback')"></td>
+          <td headers="6 8 15">{{salarySurplusDeficit}}</td>
         </tr>
         <tr>
-          <td v-html="$t('tableData[15]')" />
-          <td v-html="$t('tableData[16]')" />
-          <td v-html="$t('tableData[17]')" />
-          <td v-html="$t('tableData[18]')" />
-          <td v-html="$t('tableData[19]')" />
-          <td><input :aria-label="$t('instructions')" @key.enter="salaryGo='checked'" v-b-popover.focus.bottom="$t('salaryPop')" type="number" v-model="salary" name="salary"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="salaryGo" name="salaryGo" @change="$bvModal.show('salaryFeedback')"></td>
-          <td>{{443333-salary}}</td>
+          <th v-html="$t('tableData[22]')" id="22" scope="row" headers="8" />
+          <td v-html="$t('tableData[23]')" headers="2 8 22" />
+          <td v-html="$t('tableData[24]')" headers="3 8 22" />
+          <td v-html="$t('tableData[25]')" headers="4 8 22" />
+          <td v-html="$t('tableData[26]')" headers="5 8 22" />
+          <td headers="6 8 22">{{salaryTotal}}</td>
+          <td headers="7 8 22">{{salarySurplusDeficit}}</td>
         </tr>
-        <tr>
-          <td v-html="$t('tableData[22]')" />
-          <td v-html="$t('tableData[23]')" />
-          <td v-html="$t('tableData[24]')" />
-          <td v-html="$t('tableData[25]')" />
-          <td v-html="$t('tableData[26]')" />
-          <td>{{salary}}</td>
-          <td>{{443333-salary}}</td>
-        </tr>
+      </tbody>
+      <thead>
         <tr class="heading">
-          <td v-html="$t('tableData[29]')" />
-          <td v-html="$t('tableData[30]')" />
+          <th v-html="$t('tableData[29]')" colspan="7" id="29" scope="col" />
+          <!--<td v-html="$t('tableData[30]')" />
           <td v-html="$t('tableData[31]')" />
           <td v-html="$t('tableData[32]')" />
           <td v-html="$t('tableData[33]')" />
           <td v-html="$t('tableData[34]')" />
-          <td v-html="$t('tableData[35]')" />
+          <td v-html="$t('tableData[35]')" />-->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th v-html="$t('tableData[36]')" id="36" scope="row" headers="29" />
+          <td v-html="$t('tableData[37]')" headers="2 29 36" />
+          <td v-html="$t('tableData[38]')" headers="3 29 36" />
+          <td v-html="$t('tableData[39]')" headers="4 29 36" />
+          <td v-html="$t('tableData[40]')" headers="5 29 36" />
+          <td headers="6 29 36"><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('softwarePop')" type="number" v-model="software" name="software"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="softwareGo" name="softwareGo" @change="$bvModal.show('softwareFeedback')"></td>
+          <!--<td v-html="$t('tableData[42]')" headers="7 29 36" />-->
+          <td headers="7 29 36">{{softwareSurplusDeficit}}</td>
         </tr>
         <tr>
-          <td v-html="$t('tableData[36]')" />
-          <td v-html="$t('tableData[37]')" />
-          <td v-html="$t('tableData[38]')" />
-          <td v-html="$t('tableData[39]')" />
-          <td v-html="$t('tableData[40]')" />
-          <td><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('softwarePop')" type="number" v-model="software" name="software"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="softwareGo" name="salaryGo" @change="$bvModal.show('softwareFeedback')"></td>
-          <td v-html="$t('tableData[42]')" />
+          <th v-html="$t('tableData[43]')" id="43" scope="row" headers="29" />
+          <td v-html="$t('tableData[44]')" headers="2 29 43" />
+          <td v-html="$t('tableData[45]')" headers="3 29 43" />
+          <td v-html="$t('tableData[46]')" headers="4 29 43" />
+          <td v-html="$t('tableData[47]')" headers="5 29 43" />
+          <td headers="6 29 43"><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('hospitalityPop')" type="number" v-model="hospitality" name="hospitality"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="hospitalityGo" name="hospitalityGo" @change="showHospitality"></td>
+          <!--<td v-html="$t('tableData[49]')" headers="7 29 43" />-->
+          <td headers="7 29 43">{{hospitalitySurplusDeficit}}</td>
         </tr>
         <tr>
-          <td v-html="$t('tableData[43]')" />
-          <td v-html="$t('tableData[44]')" />
-          <td v-html="$t('tableData[45]')" />
-          <td v-html="$t('tableData[46]')" />
-          <td v-html="$t('tableData[47]')" />
-          <td><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('hospitalityPop')" type="number" v-model="hospitality" name="hospitality"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="hospitalityGo" name="hospitalityGo" @change="showHospitality"></td>
-          <td v-html="$t('tableData[49]')" />
+          <th v-html="$t('tableData[50]')" id="50" scope="row" headers="29" />
+          <td v-html="$t('tableData[51]')" headers="2 29 50" />
+          <td v-html="$t('tableData[52]')" headers="3 29 50" />
+          <td v-html="$t('tableData[53]')" headers="4 29 50" />
+          <td v-html="$t('tableData[54]')" headers="5 29 50" />
+          <td headers="6 29 50"><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('furniturePop')" type="number" v-model="furniture" name="furniture"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="furnitureGo" name="furnitureGo" @change="$bvModal.show('furnitureFeedback')"></td>
+          <!--<td v-html="$t('tableData[56]')" headers="7 29 50" />-->
+          <td headers="7 29 50">{{furnitureSurplusDeficit}}</td>
         </tr>
         <tr>
-          <td v-html="$t('tableData[50]')" />
-          <td v-html="$t('tableData[51]')" />
-          <td v-html="$t('tableData[52]')" />
-          <td v-html="$t('tableData[53]')" />
-          <td v-html="$t('tableData[54]')" />
-          <td><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('furniturePop')" type="number" v-model="furniture" name="furniture"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="furnitureGo" name="furnitureGo" @change="$bvModal.show('furnitureFeedback')"></td>
-          <td v-html="$t('tableData[56]')" />
+          <th v-html="$t('tableData[57]')" id="57" scope="row" headers="29" />
+          <td v-html="$t('tableData[58]')" headers="2 29 57" />
+          <td v-html="$t('tableData[59]')" headers="3 29 57" />
+          <td v-html="$t('tableData[60]')" headers="4 29 57" />
+          <td v-html="$t('tableData[61]')" headers="5 29 57" />
+          <td headers="6 29 57"><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('trainingPop')" type="number" v-model="training" name="training"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="trainingGo" name="trainingGo" @change="$bvModal.show('trainingFeedback')"></td>
+          <!--<td v-html="$t('tableData[63]')" headers="7 29 57" />-->
+          <td headers="7 29 57">{{trainingSurplusDeficit}}</td>
         </tr>
         <tr>
-          <td v-html="$t('tableData[57]')" />
-          <td v-html="$t('tableData[58]')" />
-          <td v-html="$t('tableData[59]')" />
-          <td v-html="$t('tableData[60]')" />
-          <td v-html="$t('tableData[61]')" />
-          <td><input :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('trainingPop')" type="number" v-model="training" name="training"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="trainingGo" name="trainingGo" @change="$bvModal.show('trainingFeedback')"></td>
-          <td v-html="$t('tableData[63]')" />
+          <th v-html="$t('tableData[64]')" id="64" scope="row" headers="29" />
+          <td v-html="$t('tableData[65]')" headers="2 29 64" />
+          <td v-html="$t('tableData[66]')" headers="3 29 64" />
+          <td v-html="$t('tableData[67]')" headers="4 29 64" />
+          <td v-html="$t('tableData[68]')" headers="5 29 64" />
+          <td v-html="$t('tableData[69]')" headers="6 29 64" />
+          <td v-html="$t('tableData[70]')" headers="7 29 64" />
         </tr>
         <tr>
-          <td v-html="$t('tableData[64]')" />
-          <td v-html="$t('tableData[65]')" />
-          <td v-html="$t('tableData[66]')" />
-          <td v-html="$t('tableData[67]')" />
-          <td v-html="$t('tableData[68]')" />
-          <td v-html="$t('tableData[69]')" />
-          <td v-html="$t('tableData[70]')" />
+          <th v-html="$t('tableData[71]')" id="71" scope="row" headers="29" />
+          <td v-html="$t('tableData[72]')" headers="2 29 71" />
+          <td v-html="$t('tableData[73]')" headers="3 29 71" />
+          <td v-html="$t('tableData[74]')" headers="4 29 71" />
+          <td v-html="$t('tableData[75]')" headers="5 29 71" />
+          <td v-html="$t('tableData[76]')" headers="6 29 71" />
+          <td v-html="$t('tableData[77]')" headers="7 29 71" />
         </tr>
         <tr>
-          <td v-html="$t('tableData[71]')" />
-          <td v-html="$t('tableData[72]')" />
-          <td v-html="$t('tableData[73]')" />
-          <td v-html="$t('tableData[74]')" />
-          <td v-html="$t('tableData[75]')" />
-          <td v-html="$t('tableData[76]')" />
-          <td v-html="$t('tableData[77]')" />
+          <th v-html="$t('tableData[78]')" id="78" scope="row" headers="29" />
+          <td v-html="$t('tableData[79]')" headers="2 29 78" />
+          <td v-html="$t('tableData[80]')" headers="3 29 78" />
+          <td v-html="$t('tableData[81]')" headers="4 29 78" />
+          <td v-html="$t('tableData[82]')" headers="5 29 78" />
+          <td v-html="$t('tableData[83]')" headers="6 29 78" />
+          <td v-html="$t('tableData[84]')" headers="7 29 78" />
         </tr>
         <tr>
-          <td v-html="$t('tableData[78]')" />
-          <td v-html="$t('tableData[79]')" />
-          <td v-html="$t('tableData[80]')" />
-          <td v-html="$t('tableData[81]')" />
-          <td v-html="$t('tableData[82]')" />
-          <td v-html="$t('tableData[83]')" />
-          <td v-html="$t('tableData[84]')" />
+          <th v-html="$t('tableData[85]')" id="85" scope="row" headers="29" />
+          <td v-html="$t('tableData[86]')" headers="2 29 85" />
+          <td v-html="$t('tableData[87]')" headers="3 29 85" />
+          <td v-html="$t('tableData[88]')" headers="4 29 85" />
+          <td v-html="$t('tableData[89]')" headers="5 29 85" />
+          <td v-html="$t('tableData[90]')" headers="6 29 85" />
+          <td v-html="$t('tableData[91]')" headers="7 29 85" />
         </tr>
         <tr>
-          <td v-html="$t('tableData[85]')" />
-          <td v-html="$t('tableData[86]')" />
-          <td v-html="$t('tableData[87]')" />
-          <td v-html="$t('tableData[88]')" />
-          <td v-html="$t('tableData[89]')" />
-          <td v-html="$t('tableData[90]')" />
-          <td v-html="$t('tableData[91]')" />
+          <th v-html="$t('tableData[92]')" id="92" scope="row" headers="29" />
+          <td v-html="$t('tableData[93]')" headers="2 29 92" />
+          <td v-html="$t('tableData[94]')" headers="3 29 92" />
+          <td v-html="$t('tableData[95]')" headers="4 29 92" />
+          <td v-html="$t('tableData[96]')" headers="5 29 92" />
+          <!--<td v-html="$t('tableData[97]')" headers="6 29 92" />-->
+          <td headers="6 29 92">{{omTotal}}</td>
+          <td headers="7 29 92">{{omSurplusDeficitTotal}}</td>
         </tr>
         <tr>
-          <td v-html="$t('tableData[92]')" />
-          <td v-html="$t('tableData[93]')" />
-          <td v-html="$t('tableData[94]')" />
-          <td v-html="$t('tableData[95]')" />
-          <td v-html="$t('tableData[96]')" />
-          <td v-html="$t('tableData[97]')" />
-          <td v-html="$t('tableData[98]')" />
-        </tr>
-        <tr>
-          <td v-html="$t('tableData[99]')" />
-          <td colspan="6" rowspan="1">{{showRisks}}</td>
+          <th v-html="$t('tableData[99]')" id="99" scope="row" headers="29" />
+          <td colspan="6" rowspan="1" headers="29 99">{{showRisks}}</td>
         </tr>
       </tbody>
     </table>
@@ -179,28 +192,115 @@
 </template>
 <script type="text/javascript">
 export default {
-data(){
+  data(){
     return{
-        salary:"",
-        salaryGo:"",
-        software:"",
-        softwareGo:"",
-        hospitality:"",
-        hospitalityGo:"",
-        furnitureGo:"",
-        furniture:"",
-        trainingGo:"",
-        training:"",
-        showRisks:""
-            }
-},
-methods:{
-  showHospitality(){
-    this.$bvModal.show('hospitalityFeedback')
-    this.showRisks=this.$i18n.t('showRisk')
+      salary:"",
+      salaryGo:"",
+      software:"",
+      softwareGo:"",
+      hospitality:"",
+      hospitalityGo:"",
+      furnitureGo:"",
+      furniture:"",
+      trainingGo:"",
+      training:"",
+      showRisks:""
+    }
+  },
+  methods:{
+    showHospitality(){
+      this.$bvModal.show('hospitalityFeedback')
+      this.showRisks=this.$i18n.t('showRisk')
 
+    },
+    format(n, lang){
+      var formatter = new Intl.NumberFormat(lang, {
+        style: 'currency',
+        currency: 'CAD',
+      });
+      return formatter.format(n);
+    },
+    numberize(value){
+      console.log(value.split("$").join("").split(",").join("").split(" ").join("").split("&nbsp;").join("").replace(/\s/g, ''))
+      return Number(value.split("$").join("").split(",").join("").split(" ").join("").split("&nbsp;").join("").replace(/\s/g, ''))
+    }
+  },
+  computed:{
+    salarySurplusDeficit: function(){
+      var value = this.numberize(this.$t("tableData[16]")) - this.salary;
+      if(this.$i18n.locale == "en"){
+        return this.format(value, "en-CA").slice(0, -3).replace("CA", "");
+      }
+      else if(this.$i18n.locale == "fr"){
+        return this.format(value, "fr").replace("CA", "").replace(",00", "");
+      }
+    },
+    salaryTotal: function(){
+      var value = this.salary;
+      if(this.$i18n.locale == "en"){
+        return this.format(value, "en-CA").slice(0, -3).replace("CA", "");
+      }
+      else if(this.$i18n.locale == "fr"){
+        return this.format(value, "fr-CA").replace("CA", "").replace(",00", "");
+      }
+    },
+    softwareSurplusDeficit: function(){
+      var value = this.numberize(this.$t("tableData[37]")) - this.software;
+      if(this.$i18n.locale == "en"){
+        return this.format(value, "en-CA").slice(0, -3).replace("CA", "");
+      }
+      else if(this.$i18n.locale == "fr"){
+        return this.format(value, "fr").replace("CA", "").replace(",00", "");
+      }
+    },
+    hospitalitySurplusDeficit: function(){
+      var value = this.numberize(this.$t("tableData[44]")) - this.hospitality;
+      if(this.$i18n.locale == "en"){
+        return this.format(value, "en-CA").slice(0, -3).replace("CA", "");
+      }
+      else if(this.$i18n.locale == "fr"){
+        return this.format(value, "fr").replace("CA", "").replace(",00", "");
+      }
+    },
+    furnitureSurplusDeficit: function(){
+      var value = this.numberize(this.$t("tableData[51]")) - this.furniture;
+      if(this.$i18n.locale == "en"){
+        return this.format(value, "en-CA").slice(0, -3).replace("CA", "");
+      }
+      else if(this.$i18n.locale == "fr"){
+        return this.format(value, "fr").replace("CA", "").replace(",00", "");
+      }
+    },
+    trainingSurplusDeficit: function(){
+      var value = this.numberize(this.$t("tableData[58]")) - this.training;
+      if(this.$i18n.locale == "en"){
+        return this.format(value, "en-CA").slice(0, -3).replace("CA", "");
+      }
+      else if(this.$i18n.locale == "fr"){
+        return this.format(value, "fr").replace("CA", "").replace(",00", "");
+      }
+    },
+    omTotal: function(){
+      var value = Number(this.software) + Number(this.hospitality) + Number(this.furniture) + Number(this.training) + this.numberize(this.$t("tableData[69]")) + this.numberize(this.$t("tableData[76]")) + this.numberize(this.$t("tableData[83]")) + this.numberize(this.$t("tableData[90]"));
+      if(this.$i18n.locale == "en"){
+        return this.format(value, "en-CA").slice(0, -3).replace("CA", "");
+      }
+      else if(this.$i18n.locale == "fr"){
+        return this.format(value, "fr-CA").replace("CA", "").replace(",00", "");
+      }
+    },
+    omSurplusDeficitTotal: function(){
+      var value = this.numberize(this.softwareSurplusDeficit) + this.numberize(this.hospitalitySurplusDeficit) + this.numberize(this.furnitureSurplusDeficit) + this.numberize(this.trainingSurplusDeficit) + this.numberize(this.$t("tableData[70]")) + this.numberize(this.$t("tableData[77]")) + this.numberize(this.$t("tableData[84]")) + this.numberize(this.$t("tableData[91]"));
+      
+      console.log(this.numberize(this.softwareSurplusDeficit), this.numberize(this.hospitalitySurplusDeficit), this.numberize(this.furnitureSurplusDeficit), this.numberize(this.trainingSurplusDeficit), this.numberize(this.$t("tableData[70]")), this.numberize(this.$t("tableData[77]")), this.numberize(this.$t("tableData[84]")), this.numberize(this.$t("tableData[91]")))
+      if(this.$i18n.locale == "en"){
+        return this.format(value, "en-CA").slice(0, -3).replace("CA", "");
+      }
+      else if(this.$i18n.locale == "fr"){
+        return this.format(value, "fr").replace("CA", "").replace(",00", "");
+      }
+    }
   }
-}
 }
 
 </script>
@@ -211,11 +311,12 @@ methods:{
     input[type=checkbox]:before{content:" ";}
     th{text-align: center}
     td{text-align: right}
+    th[scope="row"]{text-align: right}
 </style>
 <i18n>{
   "en": {
-  "validate":"Validate answer",
-  "instructions":"Type the number here",
+    "validate":"Validate answer",
+    "instructions":"Type the number here",
     "salaryPop": "An officer earning $70,000 is using their sick leave and will not be back for at least 6 months. A junior analyst earning $40,000 is resigning as of October 1. You will not have time to replace them in this fiscal year.",
     "salaryFeedback": "<p>The P6 Annual Forecast will change to $423,333.</p><ul><li>An employee using their sick leave doesn’t impact the Annual Forecast as you still need to pay their salary.</li><li>Since your junior analyst will be gone the last 6 months (October to March) of the fiscal year, the P6 Annual Forecast for Salary will decrease by $20,000 ($443,333 - $20,000 = $423,333).You’ll also need to update your Salary commitments in the financial system.</li></ul>",
     "softwarePop": "You found out that the company providing the new software was bought out, and will be charging twice as much starting October 1. You are currently paying $1,000 per year per license; you have 3 licenses.",
@@ -331,8 +432,8 @@ methods:{
     ]
   },
   "fr": {
-  "validate":"Valider la réponse",
-  "instructions":"Entrez les chiffres ici",
+    "validate":"Valider la réponse",
+    "instructions":"Entrez les chiffres ici",
     "salaryPop": "- Un agent qui gagne 70 000 $ utilise ses congés de maladie et ne reviendra pas avant au moins 6 mois. -Un analyste subalterne gagnant 40 000 $ démissionne à compter du 1er octobre. Vous n’aurez pas le temps de les remplacer au cours du présent exercice financier.",
     "salaryFeedback": "<p>&nbsp;Les prévisions annuelles de P6 passeront à 423 333 $.</p><ul><li>Un employé qui utilise ses congés de maladie n’a pas d’incidence sur les prévisions annuelles puisque vous devez quand m&ecirc;me payer son salaire.</li><li>Étant donné que l’analyste subalterne sera absent pendant les six derniers mois (d’octobre à mars) de l’exercice, les prévisions salariales annuelles de P6 diminueront de 20 000 $ (443 333 $ - 20 000 $ = 423 333 $) et vous devrez également mettre à jour vos engagements salariaux dans le système financier.</li></ul>",
     "softwarePop": "Vous avez découvert que l’entreprise qui fournit le nouveau logiciel a été rachetée et qu’elle facturera 2 fois plus à partir du 1er octobre. Vous payez actuellement 1 000 $ par an et par licence; vous avez 3 licences.",

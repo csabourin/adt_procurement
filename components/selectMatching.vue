@@ -64,7 +64,7 @@ export default {
       
       var allResponded = true;
       for (var i = 0; i < Object.keys(this.question.options).length; i++){
-        if(!this.selectId[i]){
+        if(!this.selectId[i] || !this.submitted[i]){
           allResponded = false;
         }
       }

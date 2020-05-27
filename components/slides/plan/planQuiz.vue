@@ -163,7 +163,7 @@
               </b-row>
             </b-container>
           </b-tab>
-          <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["2","3"]' /></b-tab>
+          <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["1","2"]' /></b-tab>
           <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
           <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
           <b-tab title="Question 5"><radioQuiz :question="$t('q5')" qId="5" /></b-tab>

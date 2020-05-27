@@ -56,7 +56,7 @@ export default {
     }
   },
   "fr": {
-  "intro":"En utilisant la colonne P5 Prévisions annuelles comme référence, remplissez la colonne P6 Prévisions annuelles dans le rapport sur la situation financière fournie. Sélectionnez une cellule de la colonne P6 Prévisions annuelles et insérez le montant exact en fonction du relevé fourni. Sélectionnez ensuite la case à cocher à côté pour valider votre réponse. <strong>Note :</strong> n’insérez pas que des chiffres ; ni signes de dollar, ni virgules, ni espaces.",
+  "intro":"En utilisant la colonne P5 Prévisions annuelles comme référence, remplissez la colonne P6 Prévisions annuelles dans le rapport sur la situation financière fournie. Sélectionnez une cellule de la colonne P6 Prévisions annuelles et insérez le montant exact en fonction du relevé fourni. Sélectionnez ensuite la case à cocher à côté pour valider votre réponse. <strong>Note :</strong> n’insérez que des chiffres ; ni signes de dollar, ni virgules, ni espaces.",
     "q1": {
       "text": "Vous avez approuvé des demandes de remboursement de frais de voyage de 3&nbsp;000&nbsp;$ pour les employés dans P4. Mais en regardant le rapport des six Présidents, vous constaterez que les chiffres réels depuis le début de l’année ne sont que de 1&nbsp;700&nbsp;$. Qu’est-ce que vous faites ?",
       "options": {

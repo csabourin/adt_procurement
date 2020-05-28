@@ -1,12 +1,12 @@
 <template>
 	<div>
-		 <b-card>
-    <b-tabs content v-model="tabIndex">
-      <b-tab title="Question 1"><radioQuiz :question="$t('q1')" qId="1"/></b-tab>
-      <b-tab title="Question 2"><radioQuiz :question="$t('q2')" qId="2" /></b-tab>
-      <b-tab title="Question 3"><checkboxQuiz :question="$t('q3')" qId="3" :Answer="['3']"/></b-tab>
-      <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
-    </b-tabs>
+    <b-card>
+      <b-tabs content v-model="tabIndex">
+        <b-tab title="Question 1"><radioQuiz :question="$t('q1')" qId="1"/></b-tab>
+        <b-tab title="Question 2"><radioQuiz :question="$t('q2')" qId="2" /></b-tab>
+        <b-tab title="Question 3"><checkboxQuiz :question="$t('q3')" qId="3" :Answer="['3']"/></b-tab>
+        <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
+      </b-tabs>
       <!-- Control buttons-->
       <div class="text-center">
         <b-button-group class="mt-2">
@@ -14,27 +14,35 @@
           <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=3">{{$t('nextPage')}}</b-button>
         </b-button-group>
       </div>
-  </b-card>
-    <p class="scrollMe" v-if="$i18n.locale=='en'"><delegAutorityEn /></p>
-<p class="scrollMe" v-if="$i18n.locale=='fr'"><delegAutorityFr /></p>
-
+    </b-card>
+    <!--<p class="scrollMe" v-if="$i18n.locale=='en'"><delegAutorityEn /></p>
+    <p class="scrollMe" v-if="$i18n.locale=='fr'"><delegAutorityFr /></p>-->
+    <windowPortal :open="openChart" @close="openChart = false">
+      <delegAutorityEn v-if="$i18n.locale=='en'" />
+      <delegAutorityFr v-if="$i18n.locale=='fr'" />
+    </windowPortal>
+    <p><b-button @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
 	</div>
 </template>
+
 <script type="text/javascript">
 	import checkboxQuiz from "~/components/checkboxQuiz"
 	import radioQuiz from "~/components/radioQuiz"
   import delegAutorityEn from "~/components/delegationChart/delegchart_en"
   import delegAutorityFr from "~/components/delegationChart/delegchart_fr"
+  import windowPortal from "~/components/newWindow"
 	export default{
 		components:{
 			checkboxQuiz,
 			radioQuiz,
       delegAutorityEn,
-      delegAutorityFr
+      delegAutorityFr,
+      windowPortal
 		},
     data(){
       return{
-        tabIndex:0
+        tabIndex:0,
+        openChart: false
       }
     },
     methods:{
@@ -42,12 +50,13 @@
         setTimeout(function(){
           document.querySelector(".tab-pane.active .pure-radiobutton fieldset, .tab-pane.active .pure-checkbox fieldset").focus();
         }, 300);
-      }
+      },
     }
 	}
 </script>
 <i18n>{
   "en": {
+    "openChartButton": "Open the delegation of spending and financial signing authorities chart",
     "q1": {
       "text": "Using the delegation of financial signing authority chart provided, identify the maximum amount that a manager could approve to initiate hospitality (section 32).",
       "options": {
@@ -108,6 +117,7 @@
     }
   },
   "fr": {
+    "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
     "q1": {
       "text": "En vous appuyant sur le tableau de délégation de pouvoirs fourni, identifiez quel est le montant maximal qu’un gestionnaire pourrait approuver pour entreprendre des activités d’accueil (article 32).",
       "options": {

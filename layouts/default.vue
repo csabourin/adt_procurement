@@ -318,10 +318,6 @@ html[lang="fr"] a.external:after{
   span.bolder{
     font-weight: 900;
   }
-  
-  strong strong{
-    color: red;
-  }
 
 .bounce-enter-active {
   animation: bounce-in .5s;

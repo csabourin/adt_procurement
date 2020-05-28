@@ -6,44 +6,46 @@
           <b-tab title="Question 1">
             <p v-if="$i18n.locale=='en'">
               <table class="qTable" border="1">
-                <tbody>
+                <thead>
                   <tr>
-                    <th colspan="2">
+                    <th colspan="2" id="1" scope="col">
                       <p>Fund</p>
                     </th>
-                    <th colspan="2">
+                    <th colspan="2" id="2" scope="col">
                       <p>Fund Centre</p>
                     </th>
-                    <th colspan="2">
+                    <th colspan="2" id="3" scope="col">
                       <p>General Ledger</p>
                     </th>
-                    <th colspan="2">
+                    <th colspan="2" id="4" scope="col">
                       <p>Program Inventory</p>
                     </th>
                   </tr>
+                </thead>
+                <tbody>
                   <tr>
-                    <td>
+                    <td headers="1">
                       <p>N001</p>
                     </td>
-                    <td>
+                    <td headers="1">
                       <p>Salary</p>
                     </td>
-                    <td>
+                    <td headers="2">
                       <p>C4346</p>
                     </td>
-                    <td>
+                    <td headers="2">
                       <p>Fisheries Manager</p>
                     </td>
-                    <td>
+                    <td headers="3">
                       <p>40600</p>
                     </td>
-                    <td>
+                    <td headers="3">
                       <p>Travel</p>
                     </td>
-                    <td>
+                    <td headers="4">
                       <p>P45</p>
                     </td>
-                    <td>
+                    <td headers="4">
                       <p>Commercial Fishing</p>
                     </td>
                   </tr>
@@ -52,44 +54,46 @@
             </p>
             <p v-if="$i18n.locale=='fr'">
               <table border="1">
-                <tbody>
+                <thead>
                   <tr>
-                    <td colspan="2">
+                    <td colspan="2" id="1" scope="col">
                       <p><strong>Fonds</strong></p>
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" id="2" scope="col">
                       <p><strong>Centre financier</strong></p>
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" id="3" scope="col">
                       <p><strong>Grand livre général</strong></p>
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" id="4" scope="col">
                       <p><strong>Inventaire des programmes</strong></p>
                     </td>
                   </tr>
+                </thead>
+                <tbody>
                   <tr>
-                    <td>
+                    <td headers="1">
                       <p>N001</p>
                     </td>
-                    <td>
+                    <td headers="1">
                       <p>Salaire</p>
                     </td>
-                    <td>
+                    <td headers="2">
                       <p>C4346</p>
                     </td>
-                    <td>
+                    <td headers="2">
                       <p>Gestionnaire des p&ecirc;ches</p>
                     </td>
-                    <td>
+                    <td headers="3">
                       <p>40600</p>
                     </td>
-                    <td>
+                    <td headers="3">
                       <p>Voyage</p>
                     </td>
-                    <td>
+                    <td headers="4">
                       <p>P45</p>
                     </td>
-                    <td>
+                    <td headers="4">
                       <p>P&ecirc;che commerciale</p>
                     </td>
                   </tr>

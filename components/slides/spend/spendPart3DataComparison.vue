@@ -7,36 +7,38 @@
           <p>&nbsp;</p>
         <p v-if="$i18n.locale=='fr'">
           <table border="1" class="qTable">
-            <tbody>
+            <thead>
               <tr>
-                <th>&nbsp;</th>
-                <th>
+                <th id="1" scope="col">&nbsp;</th>
+                <th id="2" scope="col">
                   <p><strong>Budget</strong></p>
                 </th>
-                <th>
+                <th id="3" scope="col">
                   <p><strong>Engagement</strong></p>
                 </th>
-                <th>
+                <th id="4" scope="col">
                   <p><strong>Dépenses réelles à ce jour</strong></p>
                 </th>
-                <th>
+                <th id="5" scope="col">
                   <p><strong>Dépenses annuelles prévues&nbsp;</strong></p>
                 </th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
-                <td>
+                <th id="6" scope="row" headers="1">
                   <p>Salaire</p>
-                </td>
-                <td>
+                </th>
+                <td headers="2 6">
                   <p>60&nbsp;000&nbsp;$</p>
                 </td>
-                <td>
+                <td headers="3 6">
                   <p>20&nbsp;000&nbsp;$</p>
                 </td>
-                <td>
+                <td headers="4 6">
                   <p>40&nbsp;000&nbsp;$</p>
                 </td>
-                <td>
+                <td headers="5 6">
                   <p>60&nbsp;000&nbsp;$</p>
                 </td>
               </tr>
@@ -45,36 +47,38 @@
         </p>
         <p v-if="$i18n.locale=='en'">
           <table border="1" class="qTable">
-            <tbody>
+            <thead>
               <tr>
-                <th>&nbsp;</th>
-                <th>
+                <th id="1" scope="col">&nbsp;</th>
+                <th id="2" scope="col">
                   <p><strong>Budget</strong></p>
                 </th>
-                <th>
+                <th id="3" scope="col">
                   <p><strong>Commitments</strong></p>
                 </th>
-                <th>
+                <th id="4" scope="col">
                   <p><strong>Year-to-Date Actuals</strong></p>
                 </th>
-                <th>
+                <th id="5" scope="col">
                   <p><strong>Annual Forecasted Expenditures</strong></p>
                 </th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
-                <td>
+                <th id="6" scope="row" headers="1">
                   <p>Salary</p>
-                </td>
-                <td>
+                </th>
+                <td headers="2 6">
                   <p>$60,000</p>
                 </td>
-                <td>
+                <td headers="3 6">
                   <p>$20,000</p>
                 </td>
-                <td>
+                <td headers="4 6">
                   <p>$40,000</p>
                 </td>
-                <td>
+                <td headers="5 6">
                   <p>$60,000</p>
                 </td>
               </tr>
@@ -87,36 +91,38 @@
           <p>&nbsp;</p>
           <p v-if="$i18n.locale=='fr'">
           <table border="1" class="qTable">
-            <tbody>
+            <thead>
               <tr>
-                <th>&nbsp;</th>
-                <th>
+                <th id="7" scope="col">&nbsp;</th>
+                <th id="8" scope="col">
                   <p><strong>Budget</strong></p>
                 </th>
-                <th>
+                <th id="9" scope="col">
                   <p><strong>Engagement</strong></p>
                 </th>
-                <th>
+                <th id="10" scope="col">
                   <p><strong>Dépenses réelles à ce jour</strong></p>
                 </th>
-                <th>
+                <th id="11" scope="col">
                   <p><strong>Dépenses annuelles prévues&nbsp;</strong></p>
                 </th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
-                <td>
+                <th id="12" scope="row" headers="7">
                   <p>Formation</p>
-                </td>
-                <td>
+                </th>
+                <td header="8 12">
                   <p>8&nbsp;400&nbsp;$</p>
                 </td>
-                <td>
+                <td header="9 12">
                   <p>0$</p>
                 </td>
-                <td>
+                <td header="10 12">
                   <p>2&nbsp;400&nbsp;$</p>
                 </td>
-                <td>
+                <td header="11 12">
                   <p>8&nbsp;400&nbsp;$</p>
                 </td>
               </tr>
@@ -125,36 +131,38 @@
         </p>
         <p v-if="$i18n.locale=='en'">
           <table border="1" class="qTable">
-            <tbody>
+            <thead>
               <tr>
-                <th>&nbsp;</th>
-                <th>
+                <th id="7" scope="col">&nbsp;</th>
+                <th id="8" scope="col">
                   <p><strong>Budget</strong></p>
                 </th>
-                <th>
+                <th id="9" scope="col">
                   <p><strong>Commitments</strong></p>
                 </th>
-                <th>
+                <th id="10" scope="col">
                   <p><strong>Year-to-Date Actuals</strong></p>
                 </th>
-                <th>
+                <th id="11" scope="col">
                   <p><strong>Annual Forecasted Expenditures</strong></p>
                 </th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
-                <td>
+                <th id="12" scope="row" headers="7">
                   <p>Training</p>
-                </td>
-                <td>
+                </th>
+                <td headers="8 12">
                   <p>$8,400</p>
                 </td>
-                <td>
+                <td headers="9 12">
                   <p>$0</p>
                 </td>
-                <td>
+                <td headers="10 12">
                   <p>$2,400</p>
                 </td>
-                <td>
+                <td headers="11 12">
                   <p>$8,400</p>
                 </td>
               </tr>
@@ -265,7 +273,7 @@ export default {
   border: 1px solid #4d4d4d;
   padding: .5em;
 }
- .qTable th{
+ .qTable th[scope="col"]{
   background-color: #7d677d;
   color:#fff;
 }

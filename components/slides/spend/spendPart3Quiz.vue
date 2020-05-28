@@ -7,32 +7,34 @@
             <p>&nbsp;</p>
             <p v-if="$i18n.locale=='fr'">
               <table class="qTable">
-                <tbody>
+                <thead>
                   <tr>
-                    <th>
+                    <th id="1" scope="col">
                       <p><strong>Budget</strong></p>
                     </th>
-                    <th>
+                    <th id="2" scope="col">
                       <p><strong>Engagements</strong></p>
                     </th>
-                    <th>
+                    <th id="3" scope="col">
                       <p><strong>Dépenses réelles à ce jour</strong></p>
                     </th>
-                    <th>
+                    <th id="4" scope="col">
                       <p><strong>Dépenses annuelles prévues&nbsp;</strong></p>
                     </th>
                   </tr>
+                </thead>
+                <tbody>
                   <tr>
-                    <td>
+                    <td headers="1">
                       <p>44&nbsp;900&nbsp;$</p>
                     </td>
-                    <td>
+                    <td headers="2">
                       <p>15&nbsp;053&nbsp;$</p>
                     </td>
-                    <td>
+                    <td headers="3">
                       <p>17&nbsp;800&nbsp;$</p>
                     </td>
-                    <td>
+                    <td headers="4">
                       <p>44&nbsp;100&nbsp;$</p>
                     </td>
                   </tr>
@@ -41,32 +43,34 @@
             </p>
             <p v-if="$i18n.locale=='en'">
               <table class="qTable">
-                <tbody>
+                <thead>
                   <tr>
-                    <th>
+                    <th id="1" scope="col">
                       <p><strong>Budget</strong></p>
                     </th>
-                    <th>
+                    <th id="2" scope="col">
                       <p><strong>Commitments</strong></p>
                     </th>
-                    <th>
+                    <th id="3" scope="col">
                       <p><strong>Year-to-Date Actuals</strong></p>
                     </th>
-                    <th>
+                    <th id="4" scope="col">
                       <p><strong>Annual Forecast Expenditures</strong></p>
                     </th>
                   </tr>
+                </thead>
+                <tbody>
                   <tr>
-                    <td>
+                    <td headers="1">
                       <p>$44,900</p>
                     </td>
-                    <td>
+                    <td headers="2">
                       <p>$15,053</p>
                     </td>
-                    <td>
+                    <td headers="3">
                       <p>$17,800</p>
                     </td>
-                    <td>
+                    <td headers="4">
                       <p>$44,100</p>
                     </td>
                   </tr>

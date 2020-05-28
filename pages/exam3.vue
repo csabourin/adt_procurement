@@ -289,7 +289,7 @@ export default {
   "scoreIs": "Your final score is",
   "Questions": {
   "q1": {
-  "text": "<table class='qTable'>    <tbody>      <tr>        <td>          <p>Budget </p>        </td>        <td>          <p>Commitments </p>        </td>        <td>          <p>Year-To-Date Actuals</p>        </td>        <td>          <p>Annual Forecast</p>        </td>        <td>          <p>Surplus / Deficit</p>        </td>      </tr>    </tbody>    <table><br>These are the column headings for the financial situation report. How is the surplus / deficit calculated?",
+  "text": "<table class='qTable' style='font-weight: 400;'>    <tbody>      <tr>        <td>          <p>Budget </p>        </td>        <td>          <p>Commitments </p>        </td>        <td>          <p>Year-To-Date Actuals</p>        </td>        <td>          <p>Annual Forecast</p>        </td>        <td>          <p>Surplus / Deficit</p>        </td>      </tr>    </tbody>    <table><br>These are the column headings for the financial situation report. How is the surplus / deficit calculated?",
       "options": {
       "1": "Annual Forecast – Budget",
       "2": "Commitments – Actuals",
@@ -349,7 +349,7 @@ export default {
       }
       },
       "q5": {
-      "text": "<table class='qTable'> <tbody> <tr> <th>&nbsp;</th> <th> <p><strong>P6 Budget&nbsp;</strong></p> </th> <th> <p><strong>P6 Commitments&nbsp;</strong></p> </th> <th> <p><strong>P6 Year-To-Date Actuals</strong></p> </th> <th> <p><strong>P5 Annual Forecast</strong></p> </th> <th> <p><strong>P6 Annual Forecast</strong></p> </th> <th> <p><strong>Surplus / Deficit</strong></p> </th> </tr> <tr> <td> <p>Chatbot software</p> </td> <td> <p>$3,000</p> </td> <td> <p>$1,500</p> </td> <td> <p>$1,500</p> </td> <td> <p>$3,500</p> </td> <td>&nbsp;</td> <td> <p>$0</p> </td> </tr> <tr> <td> <p>Hospitality</p> </td> <td> <p>$15,000</p> </td> <td> <p>$9,500</p> </td> <td> <p>$8,000</p> </td> <td> <p>$15,000</p> </td> <td>&nbsp;</td> <td> <p>$0</p> </td> </tr> </tbody> </table><p>&nbsp;</p> Looking at the provided financial situation report, what are the red flags that stand out to you that you would need to get more information? ",
+      "text": "<table class='qTable'  style='font-weight: 400;'> <tbody> <tr> <th>&nbsp;</th> <th> <p><strong>P6 Budget&nbsp;</strong></p> </th> <th> <p><strong>P6 Commitments&nbsp;</strong></p> </th> <th> <p><strong>P6 Year-To-Date Actuals</strong></p> </th> <th> <p><strong>P5 Annual Forecast</strong></p> </th> <th> <p><strong>P6 Annual Forecast</strong></p> </th> <th> <p><strong>Surplus / Deficit</strong></p> </th> </tr> <tr> <td> <p>Chatbot software</p> </td> <td> <p>$3,000</p> </td> <td> <p>$1,500</p> </td> <td> <p>$1,500</p> </td> <td> <p>$3,500</p> </td> <td>&nbsp;</td> <td> <p>$0</p> </td> </tr> <tr> <td> <p>Hospitality</p> </td> <td> <p>$15,000</p> </td> <td> <p>$9,500</p> </td> <td> <p>$8,000</p> </td> <td> <p>$15,000</p> </td> <td>&nbsp;</td> <td> <p>$0</p> </td> </tr> </tbody> </table><p>&nbsp;</p> Looking at the provided financial situation report, what are the red flags that stand out to you that you would need to get more information? ",
       "options": {
       "1": "The P5 chatbot software commitments and year-to-date actuals added together is equal to the budget",
       "2": "The P6 hospitality commitments and year-to-date actuals added together are more than the budget ",

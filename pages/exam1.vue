@@ -299,7 +299,7 @@ export default {
     "scoreIs":"Your final score is",
     "Questions": {
       "q1": {
-        "text": "Which of the following is <strong style='text-transform: uppercase;'>not</strong> included in a work plan?",
+        "text": "Which of the following is <span class='bolder' style='text-transform: uppercase;'>not</span> included in a work plan?",
         "options": {
           "1": "Activity",
           "2": "Deliverable",
@@ -605,7 +605,7 @@ export default {
     "scoreIs":"Votre note finale est de",
     "Questions": {
       "q1": {
-        "text": "Lequel des éléments suivants n’est <strong style='text-transform:uppercase'>PAS</strong> inclus dans un plan de travail?",
+        "text": "Lequel des éléments suivants n’est <span class='bolder' style='text-transform:uppercase'>PAS</span> inclus dans un plan de travail?",
         "options": {
           "1": "Activité",
           "2": "Produit livrable",

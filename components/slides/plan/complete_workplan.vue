@@ -2,9 +2,7 @@
   <span>
     <p>{{ $t('pwpInstructions') }}</p>
     <p><strong v-html="$t('pwpTitle')"></strong></p>
-
-
-<b-container class="workplan-table wp-table-1">
+    <b-container class="workplan-table wp-table-1">
       <b-row>
         <b-col class="encadrage">
           <label><h3 v-html="$t('pwpGovtPri')"></h3>
@@ -165,7 +163,7 @@
           "pRes3": "<li>1 officer</li><li>1 junior analyst</li>",
           "q1":
           {
-              "text": "Currently, “Implement flexible work hours” is a <strong>mitigation</strong> strategy for the following risks: overfishing, habitat degradation, environmental disaster, climate change. Where should it appear in the work plan?",
+              "text": "Currently, “Implement flexible work hours” is a <span class='bolder'>mitigation</span> strategy for the following risks: overfishing, habitat degradation, environmental disaster, climate change. Where should it appear in the work plan?",
               "options":
               {
                   "1": "Keep it as a mitigation strategy for “Overfishing.”",
@@ -181,7 +179,7 @@
           },
           "q2":
           {
-              "text": "The following <strong>deliverable</strong> is missing from your work plan: “Issue 500 licenses per year.” With which activity should you place it?",
+              "text": "The following <span class='bolder'>deliverable</span> is missing from your work plan: “Issue 500 licenses per year.” With which activity should you place it?",
               "options":
               {
                   "1": "Manage and administer the directorate",
@@ -197,7 +195,7 @@
           },
           "q3":
           {
-              "text": "Looking under the <strong>resources</strong> column, you notice that the manager position is missing. Under which activity should you place it?",
+              "text": "Looking under the <span class='bolder'>resources</span> column, you notice that the manager position is missing. Under which activity should you place it?",
               "options":
               {
                   "1": "Manage and administer the directorate",
@@ -254,7 +252,7 @@
           "pRes3": "<li>1 agent</strong></li><li>1 analyste subalterne</li>",
           "q1":
           {
-              "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d’atténuation de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
+              "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d’<span class='bolder'>atténuation</span> de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
               "options":
               {
                   "1": "Gardez-la comme stratégie d’atténuation pour la &laquo; Surpêche &raquo;.",
@@ -270,7 +268,7 @@
           },
           "q2":
           {
-              "text": "Le <strong>livrable</strong> suivant ne figure pas dans le plan de travail : &laquo; Délivrer 500 permis par an &raquo;. À quelle activité devrait-il être associé?",
+              "text": "Le <span class='bolder'>livrable</span> suivant ne figure pas dans le plan de travail : &laquo; Délivrer 500 permis par an &raquo;. À quelle activité devrait-il être associé?",
               "options":
               {
                   "1": "Gérer et administrer la direction",
@@ -286,7 +284,7 @@
           },
           "q3":
           {
-              "text": "En regardant sous <strong>Ressources</strong>, vous remarquez que le poste de gestionnaire n’y figure pas. À quelle activité devrait-il être associé?",
+              "text": "En regardant sous <span class='bolder'>Ressources</span>, vous remarquez que le poste de gestionnaire n’y figure pas. À quelle activité devrait-il être associé?",
               "options":
               {
                   "1": "Gérer et administrer la direction",

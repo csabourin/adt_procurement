@@ -2,7 +2,7 @@
 	<div>
     <b-container>
       <b-row>
-        <b-col><SalesInvoice /></b-col>
+        <b-col class="col-7"><SalesInvoice /></b-col>
         <b-col>
 		 <b-card>
       <p v-html="$t('instructions')" />

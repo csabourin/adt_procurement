@@ -2,7 +2,7 @@
   <div>
     <h2 class="pageTitle" v-html="$t('ConductPeriodicVarianceReporting')" />
     <section>
-      <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_qgu8jn1b/flavorId/0_a3zbiwxm/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_wjg0b6iw/flavorId/0_su33c3la/name/a.mp4" chapters chapterFile="ReportPart1.vtt" ccFile="ReportPart1_captions.vtt" posterFile="video_poster.PNG" :restartAt="parseInt(thatPoint)" toResume="setReportPart1" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
+      <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_qgu8jn1b/flavorId/0_a3zbiwxm/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_wjg0b6iw/flavorId/0_su33c3la/name/a.mp4" chapters chapterFile="ReportPart1.vtt" ccFile="ReportPart1_captions.vtt" posterFile="reportPart1_poster.png" :restartAt="parseInt(thatPoint)" toResume="setReportPart1" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">

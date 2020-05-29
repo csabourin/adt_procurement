@@ -7,68 +7,93 @@
             <b-tabs content>
               <b-tab title="Question">
                 <radioQuiz :question="$t('q1')" qId="1" />
+                <windowPortal :open="openCard" @close="openCard = false">
+                  <b-container style="margin-top: 25px; margin-bottom: 25px;">
+                    <b-row>
+                      <b-col>
+                        <signatureCard />
+                      </b-col>
+                    </b-row>
+                </b-container>
+                </windowPortal>
+                <p><b-button @click="openCard = true">{{$t('openCard')}}</b-button></p>
               </b-tab>
             </b-tabs>
           </b-card>
         </b-col>
-        <b-col>
+        <!--<b-col>
           <signatureCard />
-        </b-col>
+        </b-col>-->
       </b-row>
     </b-container>
   </div>
 </template>
 <script type="text/javascript">
-import checkboxQuiz from "~/components/checkboxQuiz"
-import radioQuiz from "~/components/radioQuiz"
-import signatureCard from "~/components/delegationChart/signatureCard"
-export default {
-  components: {
-    checkboxQuiz,
-    radioQuiz,
-    signatureCard
+  
+  import checkboxQuiz from "~/components/checkboxQuiz"
+  import radioQuiz from "~/components/radioQuiz"
+  import signatureCard from "~/components/delegationChart/signatureCard"
+  import windowPortal from "~/components/newWindow"
+  export default {
+    components: {
+      checkboxQuiz,
+      radioQuiz,
+      signatureCard,
+      windowPortal
+    },
+    data(){
+      return{
+        openCard: false
+      }
+      
+    }
   }
-}
 
 </script>
-<i18n>{
-  "en": {
-  "q1": {
-  "text": "Looking at the specimen signature card provided, what is the maximum amount that a manager could approve under section 34 to certify an award?",
-  "options": {
-  "1": "$0",
-  "2": "$300",
-  "3": "$10,000",
-  "4": "Full"
-  },
-  "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-  "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-  "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-  "4": "<span class='v-right' /><strong>Correct!</strong>"
-  },
-  "conclusion": "As per the Certification – Section 34 column in the specimen signature card, the manager has full certification authority for salaries and all other expenditures."
+<i18n>
+  
+  {
+    "en": {
+      "openCard": "Open the specimen signature card",
+      "q1": {
+        "text": "Looking at the specimen signature card provided, what is the maximum amount that a manager could approve under section 34 to certify an award?",
+        "options": {
+          "1": "$0",
+          "2": "$300",
+          "3": "$10,000",
+          "4": "Full"
+        },
+        "feedback": {
+          "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+          "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+          "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+          "4": "<span class='v-right' /><strong>Correct!</strong>"
+        },
+        "conclusion": "As per the Certification – Section 34 column in the specimen signature card, the manager has full certification authority for salaries and all other expenditures."
+      }
+    },
+    "fr": {
+      "openCard": "Ouvrir le specimen de carte de signature",
+      "q1": {
+        "text": "En examinant la carte de signature fournie, quel est le montant maximal qu’un gestionnaire pourrait approuver pour attester un prix en vertu de l’article 34?",
+        "options": {
+          "1": "0$",
+          "2": "300$",
+          "3": "10&nbsp;000$",
+          "4": "Plein"
+        },
+        "feedback": {
+          "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+          "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+          "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+          "4": "<span class='v-right' /><strong>Correct!</strong>"
+        },
+        "conclusion": " Conformément à la colonne Attestation - Article 34 de la carte de spécimen de signature, le gestionnaire a le plein pouvoir d’attestation pour le salaire et toutes les autres dépenses."
+      }
+    }
   }
-  },
-  "fr": {
-  "q1": {
-  "text": "En examinant la carte de signature fournie, quel est le montant maximal qu’un gestionnaire pourrait approuver pour attester un prix en vertu de l’article 34?",
-  "options": {
-  "1": "0$",
-  "2": "300$",
-  "3": "10&nbsp;000$",
-  "4": "Plein"
-  },
-  "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-  "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-  "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-  "4": "<span class='v-right' /><strong>Correct!</strong>"
-  },
-  "conclusion": " Conformément à la colonne Attestation - Article 34 de la carte de spécimen de signature, le gestionnaire a le plein pouvoir d’attestation pour le salaire et toutes les autres dépenses."
-  }
-  }
-  }</i18n>
+
+</i18n>
 <style type="text/css" scoped>
 .scrollMe {
   width: 50%;

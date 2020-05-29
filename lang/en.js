@@ -38,6 +38,7 @@ export default {
   ConductPeriodicVarianceReporting: "Prepare the Financial Situation Report",
   ContributeReporting: "Contribute to External Reporting",
   Test: "Test",
+  ShowInstructions:"Show Instructions",
   TestPlan: "<span class='v-inv'>Plan: </span>Test",
   TestSpend: "<span class='v-inv'>Spend: </span>Test",
   TestReport: "<span class='v-inv'>Report: </span>Test",

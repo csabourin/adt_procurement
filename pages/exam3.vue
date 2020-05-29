@@ -22,7 +22,7 @@
           <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p>
         </div>
       </b-alert>
-      <p v-if="AlertIsDismissed"><b-button @click="AlertIsDismissed=false">Show Instructions</b-button></p>
+      <p v-if="AlertIsDismissed"><b-button @click="AlertIsDismissed=false">{{$t('ShowInstructions')}}</b-button></p>
       <p>Question {{tabIndex+1}} / {{numQuestions}}</p>
       <!--<div class="progressBar" >
         <a href="#" @click.prevent="tabIndex=index" :title="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-for="(square,index) in numQuestions" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-html="index+1" />

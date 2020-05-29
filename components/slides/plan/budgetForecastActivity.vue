@@ -115,16 +115,16 @@
               <th v-html="$t('budgetTableFill72')" id="budgetTableFill72" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
               <td v-html="$t('budgetTableFill73')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill72"></td>
               <td v-html="$t('budgetTableFill74')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill72"></td>
-              <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill72"><strong v-if="q1Answer" v-html="$t('budgetTableFill75')"></strong><a v-else v-b-toggle.question-1 href="javascript:" class="questionMark">?</a></td>
-              <td headers="budgetTableFill4 budgetTableFill10 budgetTableFill48 budgetTableFill72"><strong v-if="q1Answer" v-html="$t('budgetTableFill76')"></strong></td>
+              <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill72" aria-live="polite"><strong v-if="q1Answer" v-html="$t('budgetTableFill75')"></strong><a v-else v-b-toggle.question-1 href="javascript:" class="questionMark">?</a></td>
+              <td headers="budgetTableFill4 budgetTableFill10 budgetTableFill48 budgetTableFill72" aria-live="polite"><strong v-if="q1Answer" v-html="$t('budgetTableFill76')"></strong></td>
               <td v-html="$t('budgetTableFill77')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill72"></td>
             </tr>
             <tr>
               <th v-html="$t('budgetTableFill78')" id="budgetTableFill78" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
               <td v-html="$t('budgetTableFill79')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill78"></td>
               <td v-html="$t('budgetTableFill80')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill78"></td>
-              <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill78"><strong v-if="q2Answer" v-html="$t('budgetTableFill81')"></strong></td>
-              <td headers="budgetTableFill4 budgetTableFill10 budgetTableFill48 budgetTableFill78"><strong v-if="q2Answer" v-html="$t('budgetTableFill82')"></strong><a v-else v-b-toggle.question-2 href="javascript:" class="questionMark">?</a></td>
+              <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill78" aria-live="polite"><strong v-if="q2Answer" v-html="$t('budgetTableFill81')"></strong></td>
+              <td headers="budgetTableFill4 budgetTableFill10 budgetTableFill48 budgetTableFill78" aria-live="polite"><strong v-if="q2Answer" v-html="$t('budgetTableFill82')"></strong><a v-else v-b-toggle.question-2 href="javascript:" class="questionMark">?</a></td>
               <td v-html="$t('budgetTableFill83')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill78"></td>
             </tr>
             <tr>

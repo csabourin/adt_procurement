@@ -10,122 +10,130 @@
         <col />
         <col />
       </colgroup>
+      <thead>
+        <tr>
+          <th v-html="$t('lines[0][0]')" id="0-0" scope="col" />
+          <th v-html="$t('lines[0][1]')" id="0-1" scope="col" />
+          <th v-html="$t('lines[0][2]')" id="0-2" scope="col" />
+          <th v-html="$t('lines[0][3]')" id="0-3" scope="col" />
+          <th v-html="$t('lines[0][4]')" id="0-4" scope="col" />
+          <th v-html="$t('lines[0][5]')" id="0-5" scope="col" />
+        </tr>
+      </thead>
+      <thead>
+        <!--<tr>
+          <td v-for="i in 6">&nbsp;</td>
+        </tr>-->
+        <tr>
+          <th v-html="$t('salary')" colspan="6" id="salary" scope="col" />
+          <!--<th v-for="i in 5">&nbsp;</th>-->
+        </tr>
+  </thead>
       <tbody>
-        <tr >
-          <th v-html="$t('lines[0][0]')" />
-          <th v-html="$t('lines[0][1]')" />
-          <th v-html="$t('lines[0][2]')" />
-          <th v-html="$t('lines[0][3]')" />
-          <th v-html="$t('lines[0][4]')" />
-          <th v-html="$t('lines[0][5]')" />
-        </tr>
-        <tr>
+        <!--<tr>
           <td v-for="i in 6">&nbsp;</td>
-        </tr>
+        </tr>-->
         <tr>
-          <th v-html="$t('salary')" />
-          <th v-for="i in 5">&nbsp;</th>
-        </tr>
-        <tr>
-          <td v-for="i in 6">&nbsp;</td>
-        </tr>
-        <tr>
-          <td v-html="$t('lines[1][0]')" />
-          <td v-html="$t('lines[1][1]')" />
-          <td v-html="$t('lines[1][2]')" />
-          <td v-html="$t('lines[1][3]')" />
-          <td v-html="$t('lines[1][4]')" />
-          <td v-html="$t('lines[1][5]')" />
+          <th v-html="$t('lines[1][0]')" id="1-0" scope="row" headers="0-0 salary" />
+          <td v-html="$t('lines[1][1]')" headers="0-1 salary 1-0" />
+          <td v-html="$t('lines[1][2]')" headers="0-2 salary 1-0" />
+          <td v-html="$t('lines[1][3]')" headers="0-3 salary 1-0" />
+          <td v-html="$t('lines[1][4]')" headers="0-4 salary 1-0" />
+          <td v-html="$t('lines[1][5]')" headers="0-5 salary 1-0" />
         </tr>
         <tr style="font-weight: bold">
-          <td v-html="$t('lines[2][0]')" />
-          <td v-html="$t('lines[2][1]')" />
-          <td v-html="$t('lines[2][2]')" />
-          <td v-html="$t('lines[2][3]')" />
-          <td v-html="$t('lines[2][4]')" />
-          <td v-html="$t('lines[2][5]')" />
+          <th v-html="$t('lines[2][0]')" id="2-0" scope="row" headers="0-0 salary" />
+          <td v-html="$t('lines[2][1]')" headers="0-1 salary 2-0" />
+          <td v-html="$t('lines[2][2]')" headers="0-2 salary 2-0" />
+          <td v-html="$t('lines[2][3]')" headers="0-3 salary 2-0" />
+          <td v-html="$t('lines[2][4]')" headers="0-4 salary 2-0" />
+          <td v-html="$t('lines[2][5]')" headers="0-5 salary 2-0" />
         </tr>
-        <tr>
+        <!--<tr>
           <td v-for="i in 6">&nbsp;</td>
-        </tr>
+        </tr>-->
+      </tbody>
+      <thead>
         <tr>
-          <th v-html="$t('oAndm')" />
-          <th v-for="i in 5">&nbsp;</th>
+          <th v-html="$t('oAndm')" colspan="6" id="om" scope="col" />
+          <!--<th v-for="i in 5">&nbsp;</th>-->
         </tr>
-        <tr>
+      </thead>
+      <tbody>
+        <!--<tr>
           <td v-for="i in 6">&nbsp;</td>
+        </tr>-->
+        <tr>
+          <th v-html="$t('lines[3][0]')" id="3-0" scope="row" headers="0-0 om" />
+          <td v-html="$t('lines[3][1]')" header="0-1 om 3-0" />
+          <td v-html="$t('lines[3][2]')" header="0-2 om 3-0" />
+          <td v-html="$t('lines[3][3]')" header="0-3 om 3-0" />
+          <td v-html="$t('lines[3][4]')" header="0-4 om 3-0" />
+          <td v-html="$t('lines[3][5]')" header="0-5 om 3-0" />
         </tr>
         <tr>
-          <td v-html="$t('lines[3][0]')" />
-          <td v-html="$t('lines[3][1]')" />
-          <td v-html="$t('lines[3][2]')" />
-          <td v-html="$t('lines[3][3]')" />
-          <td v-html="$t('lines[3][4]')" />
-          <td v-html="$t('lines[3][5]')" />
+          <th v-html="$t('lines[4][0]')" id="4-0" scope="row" headers="0-0 om" />
+          <td v-html="$t('lines[4][1]')" header="0-1 om 4-0" />
+          <td v-html="$t('lines[4][2]')" header="0-2 om 4-0" />
+          <td v-html="$t('lines[4][3]')" header="0-3 om 4-0" />
+          <td v-html="$t('lines[4][4]')" header="0-4 om 4-0" />
+          <td v-html="$t('lines[4][5]')" header="0-5 om 4-0" />
         </tr>
         <tr>
-          <td v-html="$t('lines[4][0]')" />
-          <td v-html="$t('lines[4][1]')" />
-          <td v-html="$t('lines[4][2]')" />
-          <td v-html="$t('lines[4][3]')" />
-          <td v-html="$t('lines[4][4]')" />
-          <td v-html="$t('lines[4][5]')" />
+          <th v-html="$t('lines[5][0]')" id="5-0" scope="row" headers="0-0 om" />
+          <td v-html="$t('lines[5][1]')" header="0-1 om 5-0" />
+          <td v-html="$t('lines[5][2]')" header="0-2 om 5-0" />
+          <td v-html="$t('lines[5][3]')" header="0-3 om 5-0" />
+          <td v-html="$t('lines[5][4]')" header="0-4 om 5-0" />
+          <td v-html="$t('lines[5][5]')" header="0-5 om 5-0" />
         </tr>
         <tr>
-          <td v-html="$t('lines[5][0]')" />
-          <td v-html="$t('lines[5][1]')" />
-          <td v-html="$t('lines[5][2]')" />
-          <td v-html="$t('lines[5][3]')" />
-          <td v-html="$t('lines[5][4]')" />
-          <td v-html="$t('lines[5][5]')" />
+          <th v-html="$t('lines[6][0]')" id="6-0" scope="row" headers="0-0 om" />
+          <td v-html="$t('lines[6][1]')" header="0-1 om 6-0" />
+          <td v-html="$t('lines[6][2]')" header="0-2 om 6-0" />
+          <td v-html="$t('lines[6][3]')" header="0-3 om 6-0" />
+          <td v-html="$t('lines[6][4]')" header="0-4 om 6-0" />
+          <td v-html="$t('lines[6][5]')" header="0-5 om 6-0" />
         </tr>
         <tr>
-          <td v-html="$t('lines[6][0]')" />
-          <td v-html="$t('lines[6][1]')" />
-          <td v-html="$t('lines[6][2]')" />
-          <td v-html="$t('lines[6][3]')" />
-          <td v-html="$t('lines[6][4]')" />
-          <td v-html="$t('lines[6][5]')" />
+          <th v-html="$t('lines[7][0]')" id="7-0" scope="row" headers="0-0 om" />
+          <td v-html="$t('lines[7][1]')" header="0-1 om 7-0" />
+          <td v-html="$t('lines[7][2]')" header="0-2 om 7-0" />
+          <td v-html="$t('lines[7][3]')" header="0-3 om 7-0" />
+          <td v-html="$t('lines[7][4]')" header="0-4 om 7-0" />
+          <td v-html="$t('lines[7][5]')" header="0-5 om 7-0" />
         </tr>
         <tr>
-          <td v-html="$t('lines[7][0]')" />
-          <td v-html="$t('lines[7][1]')" />
-          <td v-html="$t('lines[7][2]')" />
-          <td v-html="$t('lines[7][3]')" />
-          <td v-html="$t('lines[7][4]')" />
-          <td v-html="$t('lines[7][5]')" />
+          <th v-html="$t('lines[8][0]')" id="8-0" scope="row" headers="0-0 om" />
+          <td v-html="$t('lines[8][1]')" header="0-1 om 8-0" />
+          <td v-html="$t('lines[8][2]')" header="0-2 om 8-0" />
+          <td v-html="$t('lines[8][3]')" header="0-3 om 8-0" />
+          <td v-html="$t('lines[8][4]')" header="0-4 om 8-0" />
+          <td v-html="$t('lines[8][5]')" header="0-5 om 8-0" />
         </tr>
         <tr>
-          <td v-html="$t('lines[8][0]')" />
-          <td v-html="$t('lines[8][1]')" />
-          <td v-html="$t('lines[8][2]')" />
-          <td v-html="$t('lines[8][3]')" />
-          <td v-html="$t('lines[8][4]')" />
-          <td v-html="$t('lines[8][5]')" />
+          <th v-html="$t('lines[9][0]')" id="9-0" scope="row" headers="0-0 om" />
+          <td v-html="$t('lines[9][1]')" header="0-1 om 9-0" />
+          <td v-html="$t('lines[9][2]')" header="0-2 om 9-0" />
+          <td v-html="$t('lines[9][3]')" header="0-3 om 9-0" />
+          <td v-html="$t('lines[9][4]')" header="0-4 om 9-0" />
+          <td v-html="$t('lines[9][5]')" header="0-5 om 9-0" />
         </tr>
         <tr>
-          <td v-html="$t('lines[9][0]')" />
-          <td v-html="$t('lines[9][1]')" />
-          <td v-html="$t('lines[9][2]')" />
-          <td v-html="$t('lines[9][3]')" />
-          <td v-html="$t('lines[9][4]')" />
-          <td v-html="$t('lines[9][5]')" />
-        </tr>
-        <tr>
-          <td v-html="$t('lines[10][0]')" />
-          <td v-html="$t('lines[10][1]')" />
-          <td v-html="$t('lines[10][2]')" />
-          <td v-html="$t('lines[10][3]')" />
-          <td v-html="$t('lines[10][4]')" />
-          <td v-html="$t('lines[10][5]')" />
+          <th v-html="$t('lines[10][0]')" id="10-0" scope="row" headers="0-0 om" />
+          <td v-html="$t('lines[10][1]')" header="01- om 10-0" />
+          <td v-html="$t('lines[10][2]')" header="02- om 10-0" />
+          <td v-html="$t('lines[10][3]')" header="03- om 10-0" />
+          <td v-html="$t('lines[10][4]')" header="04- om 10-0" />
+          <td v-html="$t('lines[10][5]')" header="05- om 10-0" />
         </tr>
         <tr style="font-weight: bold">
-          <td v-html="$t('lines[11][0]')" />
-          <td v-html="$t('lines[11][1]')" />
-          <td v-html="$t('lines[11][2]')" />
-          <td v-html="$t('lines[11][3]')" />
-          <td v-html="$t('lines[11][4]')" />
-          <td v-html="$t('lines[11][5]')" />
+          <th v-html="$t('lines[11][0]')" id="11-0" scope="row" headers="0-0 om" />
+          <td v-html="$t('lines[11][1]')" header="0-1 om 11-0" />
+          <td v-html="$t('lines[11][2]')" header="0-2 om 11-0" />
+          <td v-html="$t('lines[11][3]')" header="0-3 om 11-0" />
+          <td v-html="$t('lines[11][4]')" header="0-4 om 11-0" />
+          <td v-html="$t('lines[11][5]')" header="0-5 om 11-0" />
         </tr>
       </tbody>
     </table>
@@ -449,7 +457,7 @@
 	}
 </script>
 <style type="text/css" scoped>
-.qTable th{
+.qTable th[scope="col"]{
     text-align: center;
     background-color: #7D677D;
     color: #fff;
@@ -457,11 +465,14 @@
   .qTable td:nth-child(n+2):nth-child(-n+5){
     text-align: right;
   }
-  .qTable td:nth-child(odd){
+  .qTable th[scope="row"]{
+    text-align: right;
+  }
+  .qTable td:nth-child(odd), .qTable th[scope="row"]:nth-child(odd){
     /* background-color: hsl(255, 37%, 90%); */
     background-color: #CAC1CA;
   }
-  .qTable td{
+  .qTable td, .qTable th[scope="row"]{
     padding:.5em;
   }
   .scrollMe{ 

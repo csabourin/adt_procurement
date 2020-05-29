@@ -5,6 +5,50 @@
 </template>
 
 <script>
+  
+
+function copyStyles(sourceDoc, targetDoc) {
+  Array.from(sourceDoc.styleSheets).forEach(styleSheet => {
+    if (styleSheet.href) {
+      // for <link> elements loading CSS from a URL
+      const newLinkEl = sourceDoc.createElement("link");
+
+      newLinkEl.rel = "stylesheet";
+      newLinkEl.href = styleSheet.href;
+      targetDoc.head.appendChild(newLinkEl);
+    }
+    else if (styleSheet.cssRules) {
+      // for <style> elements
+      const newStyleEl = sourceDoc.createElement("style");
+
+      Array.from(styleSheet.cssRules).forEach(cssRule => {
+        // write the text of each rule into the body of the style element
+        newStyleEl.appendChild(sourceDoc.createTextNode(cssRule.cssText));
+      });
+
+      targetDoc.head.appendChild(newStyleEl);
+    }
+  });
+}
+  
+function changePaths(that){
+  var imgs = that.windowRef.document.querySelectorAll("img");
+  var src;
+  for (var i = 0; i < imgs.length; i++){
+    src = imgs[i].getAttribute("src");
+    src = src.split("/_nuxt/").join(window.location.origin + that.$router.options.base + "_nuxt/" ); 
+    imgs[i].setAttribute("src", src)
+  }
+  
+  var styles = that.windowRef.document.querySelectorAll("style");
+  var style;
+  for (var i = 0; i < styles.length; i++){
+    style = styles[i].innerHTML;    
+    style = style.split("/_nuxt/").join(window.location.origin + that.$router.options.base + "_nuxt/" ); 
+    styles[i].innerHTML = style;
+  }
+}
+
 export default {
   name: 'window-portal',
   model: {
@@ -33,8 +77,14 @@ export default {
   },
   methods: {
     openPortal() {
-      this.windowRef = window.open("", "", "width=1080,height=800,left=200,top=200");
+      this.windowRef = window.open("", "", "width=600,height=400,left=200,top=200");
       this.windowRef.document.body.appendChild(this.$el);
+      
+      copyStyles(window.document, this.windowRef.document);
+      
+      var that = this
+      this.windowRef.onload = function(){ changePaths(that); }
+      
       this.windowRef.addEventListener('beforeunload', this.closePortal);
     },
     closePortal() {

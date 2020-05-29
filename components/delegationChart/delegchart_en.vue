@@ -1722,5 +1722,15 @@ th.c35 {
   font-family: "Gotham Bold";
   src: url(https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/fonts/Gotham/Gotham-Bold.woff) format("woff"), url(https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/fonts/Gotham/Gotham_TrueType/Gotham-Bold.ttf) format("truetype");
 }
+  
+@font-face {
+  font-family: "Gotham Book";
+  src: url("~assets/Gotham-Book.woff") format("woff"), url("~assets/Gotham-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("~assets/Gotham-Bold.woff") format("woff"), url("~assets/Gotham-Bold.ttf") format("truetype");
+}
 
 </style>

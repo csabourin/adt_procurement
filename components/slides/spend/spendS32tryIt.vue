@@ -4,26 +4,28 @@
       <p>To deliver on your work plan, one of your activities requires the purchase of 10 microscopes for your team. Each microscope costs $200.</p>
       <p>First, let’s check your budget.</p>
       <table border='1'>
-        <tbody>
+        <thead>
           <tr style="background-color: #d9d2e9;">
-            <th>
+            <th id="1" scope="col">
               <p>Budget</p>
             </th>
-            <th>
+            <th id="2" scope="col">
               <p>Commitment</p>
             </th>
-            <th>
+            <th id="3" scope="col">
               <p>Year to Date Actuals</p>
             </th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
-            <td>
+            <td headers="1">
               <p>$44,900</p>
             </td>
-            <td>
+            <td headers="2">
               <p>$15,000</p>
             </td>
-            <td>
+            <td headers="3">
               <p>$29,000</p>
             </td>
           </tr>
@@ -34,26 +36,28 @@
       <p>Pour réaliser votre plan de travail, l’une de vos activités exige que vous achetiez 10 microscopes pour votre équipe. Chaque microscope coûte 200&nbsp;$.</p>
       <p>D’abord, vérifions votre budget.</p>
       <table border='1'>
-        <tbody>
+        <thead>
           <tr style="background-color: #d9d2e9;">
-            <th>
+            <th id="1" scope="col">
               <p>Budget</p>
             </th>
-            <th>
+            <th id="2" scope="col">
               <p>Engagements </p>
             </th>
-            <th>
+            <th id="3" scope="col">
               <p>Dépenses réelles à ce jour</p>
             </th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
-            <td>
+            <td headers="1">
               <p>44&nbsp;900$</p>
             </td>
-            <td>
+            <td headers="2">
               <p>15&nbsp;000$</p>
             </td>
-            <td>
+            <td headers="3">
               <p>29&nbsp;000$</p>
             </td>
           </tr>

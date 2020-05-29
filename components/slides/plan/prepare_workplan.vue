@@ -8,41 +8,44 @@
       <b-container class="workplan-table wp-table-1">
         <b-row>
           <b-col class="encadrage">
-            <h3 v-html="$t('pwpGovtPri')"></h3>
+            <h3 v-html="$t('pwpGovtPri')" id="pwpGovtPriLabel"></h3>
             <p>
-              <select v-model='govtPri' @change="q1Submit=false">
+              <select v-model='govtPri' @change="q1Submit=false" aria-labelledby="pwpGovtPriLabel">
                 <option disabled value=''>{{$t('qDisabled')}}</option>
                 <option v-for="(answer, index) in $t('q1')" :value="index">{{answer}}</option>
-              </select> <b-button @click="q1Submit=true" :disabled="!govtPri || q1Submit">{{$t('submit')}}</b-button>
+              </select> 
             </p>
+            <p style="display: block; margin-top: 10px; margin-bottom: 10px;"><b-button @click="q1Submit=true" :disabled="!govtPri || q1Submit">{{$t('submit')}}</b-button></p>
             <p v-if="govtPri && q1Submit"> <span v-html="$t('q1a.'+govtPri)" /></p>
           </b-col>
         </b-row>
         <b-row>
           <b-col class="encadrage">
-            <h3 v-html="$t('pwpDeptPri')"></h3>
+            <h3 v-html="$t('pwpDeptPri')" id="pwpDeptPriLabel"></h3>
             <p>
-              <select v-model='deptPri' @change="q2Submit=false">
+              <select v-model='deptPri' @change="q2Submit=false" aria-labelledby="pwpDeptPriLabel">
                 <option disabled value=''>{{$t('qDisabled')}}</option>
                 <option value="1">{{$t('q2-1')}}</option>
                 <option value="2">{{$t('q2-2')}}</option>
                 <option value="3">{{$t('q2-3')}}</option>
-              </select> <b-button @click="q2Submit=true" :disabled="!deptPri || q2Submit">{{$t('submit')}}</b-button>
+              </select> 
             </p>
+            <p style="display: block; margin-top: 10px; margin-bottom: 10px;"><b-button @click="q2Submit=true" :disabled="!deptPri || q2Submit">{{$t('submit')}}</b-button></p>
             <p v-if="deptPri && q2Submit"> <span v-html="$t('a2-'+deptPri)" /></p>
           </b-col>
         </b-row>
         <b-row>
           <b-col class="encadrage">
-            <h3 v-html="$t('pwpDirPri')"></h3>
+            <h3 v-html="$t('pwpDirPri')" id="pwpDirPriLabel"></h3>
             <p>
-              <select v-model='dirPri' @change="q3Submit=false">
+              <select v-model='dirPri' @change="q3Submit=false" aria-labelledby="pwpDirPriLabel">
                 <option disabled value=''>{{$t('qDisabled')}}</option>
                 <option value="1">{{$t('q3-1')}}</option>
                 <option value="2">{{$t('q3-2')}}</option>
                 <option value="3">{{$t('q3-3')}}</option>
-              </select> <b-button @click="q3Submit=true" :disabled="!dirPri || q3Submit">{{$t('submit')}}</b-button>
+              </select> 
             </p>
+            <p style="display: block; margin-top: 10px; margin-bottom: 10px;"><b-button @click="q3Submit=true" :disabled="!dirPri || q3Submit">{{$t('submit')}}</b-button></p>
             <p v-if="dirPri && q3Submit"><span v-html="$t('a3-'+dirPri)" /></p>
           </b-col>
         </b-row>

@@ -52,9 +52,9 @@
     </menu>
     </div>
     <div v-else>
-      <h6 class="colorBar1">Plan</h6>
-      <h6 class="colorBar2">Spend</h6>
-      <h6 class="colorBar3">Report</h6>
+      <h6 class="colorBar1">{{$t('plan')}}</h6>
+      <h6 class="colorBar2">{{$t('spend')}}</h6>
+      <h6 class="colorBar3">{{$t('report')}}</h6>
     </div></transition>
   </nav>
 </template>

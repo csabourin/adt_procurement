@@ -376,7 +376,7 @@ video {
   position: relative;
   display: inline-block;
   padding: .5em;
-
+  margin-top: 3px;
 }
 
 .bar {
@@ -573,7 +573,7 @@ input[type=range]::-ms-thumb {
 }
 
 .setVolume:focus {
-  outline: 2px solid #26487f;
+  outline: 1px dashed white;
   outline-offset: 5px;
 }
 
@@ -608,7 +608,7 @@ progress {
 }
 
 .videoControls {
-  margin: .5em 1em;
+  margin: .6em 1em;
   background-color: #000;
   color: #fff;
 }
@@ -620,7 +620,10 @@ progress {
 
 .videoControls:active {
   color: #b54142;
-
+}
+  
+.videoControls:focus {
+  outline: 1px dashed white;
 }
 
 
@@ -649,6 +652,10 @@ progress {
   border-bottom: 1px solid #4d4d4d;
 }
 
+progress:focus{
+  outline: 1px dashed white;
+}
+  
 progress::-webkit-progress-bar {
   background: #000;
   border-radius: 50px;
@@ -684,13 +691,15 @@ button {
   display: block;
   float: left;
   border: 0;
-  margin-right: 2px;
+  margin-right: 3px;
   width: 40px;
   cursor: pointer;
 }
 
 input[type=range] {
   float: left;
+  margin-left: 5px;
+  margin-top: 2px;
 }
 
 /*button:hover,

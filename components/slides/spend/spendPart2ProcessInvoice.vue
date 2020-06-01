@@ -4,7 +4,7 @@
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">
-            <p v-if="$i18n.locale=='en'">
+            <div class="tableScrollLTL" v-if="$i18n.locale=='en'">
               <table class="qTable" border="1">
                 <thead>
                   <tr>
@@ -51,8 +51,8 @@
                   </tr>
                 </tbody>
               </table>
-            </p>
-            <p v-if="$i18n.locale=='fr'">
+            </div>
+            <div class="tableScrollLTL" v-if="$i18n.locale=='fr'">
               <table border="1">
                 <thead>
                   <tr>
@@ -99,7 +99,7 @@
                   </tr>
                 </tbody>
               </table>
-            </p>
+            </div>
             <radioQuiz :question="$t('q1')" qId="1" />
           </b-tab>
           <b-tab title="Question 2">

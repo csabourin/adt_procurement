@@ -72,7 +72,7 @@
               <td v-html="$t('tableData[38]')" headers="3 29 36" />
               <td v-html="$t('tableData[39]')" headers="4 29 36" />
               <td v-html="$t('tableData[40]')" headers="5 29 36" />
-              <td headers="6 29 36"><input id="software" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('softwarePop')" type="number" v-model="software" name="software" @keydown.esc="closePopover('software')"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="softwareGo" name="softwareGo" @change="$bvModal.show('softwareFeedback')"></td>
+              <td headers="6 29 36"><input id="software" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('softwarePop')" type="number" v-model="software" name="software" @keydown.esc="closePopover('software', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="softwareGo" name="softwareGo" @change="$bvModal.show('softwareFeedback')"></td>
               <!--<td v-html="$t('tableData[42]')" headers="7 29 36" />-->
               <td headers="7 29 36" aria-live="assertive">{{softwareSurplusDeficit}}</td>
             </tr>
@@ -82,7 +82,7 @@
               <td v-html="$t('tableData[45]')" headers="3 29 43" />
               <td v-html="$t('tableData[46]')" headers="4 29 43" />
               <td v-html="$t('tableData[47]')" headers="5 29 43" />
-              <td headers="6 29 43"><input id="hospitality" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('hospitalityPop')" type="number" v-model="hospitality" name="hospitality" @keydown.esc="closePopover('hospitality')"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="hospitalityGo" name="hospitalityGo" @change="showHospitality"></td>
+              <td headers="6 29 43"><input id="hospitality" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('hospitalityPop')" type="number" v-model="hospitality" name="hospitality" @keydown.esc="closePopover('hospitality', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="hospitalityGo" name="hospitalityGo" @change="showHospitality"></td>
               <!--<td v-html="$t('tableData[49]')" headers="7 29 43" />-->
               <td headers="7 29 43" aria-live="assertive">{{hospitalitySurplusDeficit}}</td>
             </tr>
@@ -92,7 +92,7 @@
               <td v-html="$t('tableData[52]')" headers="3 29 50" />
               <td v-html="$t('tableData[53]')" headers="4 29 50" />
               <td v-html="$t('tableData[54]')" headers="5 29 50" />
-              <td headers="6 29 50"><input id="furniture" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('furniturePop')" type="number" v-model="furniture" name="furniture" @keydown.esc="closePopover('furniture')"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="furnitureGo" name="furnitureGo" @change="$bvModal.show('furnitureFeedback')"></td>
+              <td headers="6 29 50"><input id="furniture" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('furniturePop')" type="number" v-model="furniture" name="furniture" @keydown.esc="closePopover('furniture', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="furnitureGo" name="furnitureGo" @change="$bvModal.show('furnitureFeedback')"></td>
               <!--<td v-html="$t('tableData[56]')" headers="7 29 50" />-->
               <td headers="7 29 50" aria-live="assertive">{{furnitureSurplusDeficit}}</td>
             </tr>
@@ -102,7 +102,7 @@
               <td v-html="$t('tableData[59]')" headers="3 29 57" />
               <td v-html="$t('tableData[60]')" headers="4 29 57" />
               <td v-html="$t('tableData[61]')" headers="5 29 57" />
-              <td headers="6 29 57"><input id="training" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('trainingPop')" type="number" v-model="training" name="training" @keydown.esc="closePopover('training')"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="trainingGo" name="trainingGo" @change="$bvModal.show('trainingFeedback')"></td>
+              <td headers="6 29 57"><input id="training" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('trainingPop')" type="number" v-model="training" name="training" @keydown.esc="closePopover('training', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="trainingGo" name="trainingGo" @change="$bvModal.show('trainingFeedback')"></td>
               <!--<td v-html="$t('tableData[63]')" headers="7 29 57" />-->
               <td headers="7 29 57" aria-live="assertive">{{trainingSurplusDeficit}}</td>
             </tr>

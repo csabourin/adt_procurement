@@ -50,6 +50,11 @@
         <nuxt-link :to="localePath('exam3')" v-html="$t('TestReport')" />
       </li>
     </menu>
+    </div>
+    <div v-else>
+      <h6 class="colorBar1">Plan</h6>
+      <h6 class="colorBar2">Spend</h6>
+      <h6 class="colorBar3">Report</h6>
     </div></transition>
   </nav>
 </template>
@@ -120,4 +125,9 @@
 .colorBar2{border-bottom:4px solid #d3cad2;}
 .colorBar3{border-bottom:4px solid #d6c7c3;}
 
+h6.colorBar1,h6.colorBar2,h6.colorBar3{
+  padding-top:4em;
+  text-transform: uppercase;
+  border-bottom-width: 5em;
+}
 </style>

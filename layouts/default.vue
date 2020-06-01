@@ -318,6 +318,68 @@ html[lang="fr"] a.external:after{
   span.bolder{
     font-weight: 900;
   }
+  
+  /* Tables that scroll horizontally */
+  
+  /* Less than xlarge (1200px) */
+  @media (max-width: 1200px){
+    .tableScrollLTXL {
+      display: block;
+      position:relative;
+      width:100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .tableScrollLTXL table{
+      width:100%;
+    }  
+  }
+  
+  /* Less than large (992px) */
+  @media (max-width: 992px){
+    .tableScrollLTL {
+      display: block;
+      position:relative;
+      width:100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .tableScrollLTL table{
+      width:100%;
+    }  
+  }
+  
+  /* Less than medium (768px) */
+  @media (max-width: 768px){
+    .tableScrollLTM {
+      display: block;
+      position:relative;
+      width:100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .tableScrollLTM table{
+      width:100%;
+    }  
+  }
+  
+  /* Less than small 576px) */
+  @media (max-width: 576px){
+    .tableScrollLTS {
+      display: block;
+      position:relative;
+      width:100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .tableScrollLTS table{
+      width:100%;
+    }  
+  }
 
 .bounce-enter-active {
   animation: bounce-in .5s;

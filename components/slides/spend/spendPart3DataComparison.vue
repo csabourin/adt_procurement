@@ -5,171 +5,171 @@
         <b-tabs content v-model="tabIndex">
         <b-tab title="Question 1">
           <p>&nbsp;</p>
-        <p v-if="$i18n.locale=='fr'">
-          <table border="1" class="qTable">
-            <thead>
-              <tr>
-                <th id="1" scope="col">&nbsp;</th>
-                <th id="2" scope="col">
-                  <p><strong>Budget</strong></p>
-                </th>
-                <th id="3" scope="col">
-                  <p><strong>Engagement</strong></p>
-                </th>
-                <th id="4" scope="col">
-                  <p><strong>Dépenses réelles à ce jour</strong></p>
-                </th>
-                <th id="5" scope="col">
-                  <p><strong>Dépenses annuelles prévues&nbsp;</strong></p>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th id="6" scope="row" headers="1">
-                  <p>Salaire</p>
-                </th>
-                <td headers="2 6">
-                  <p>60&nbsp;000&nbsp;$</p>
-                </td>
-                <td headers="3 6">
-                  <p>20&nbsp;000&nbsp;$</p>
-                </td>
-                <td headers="4 6">
-                  <p>40&nbsp;000&nbsp;$</p>
-                </td>
-                <td headers="5 6">
-                  <p>60&nbsp;000&nbsp;$</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </p>
-        <p v-if="$i18n.locale=='en'">
-          <table border="1" class="qTable">
-            <thead>
-              <tr>
-                <th id="1" scope="col">&nbsp;</th>
-                <th id="2" scope="col">
-                  <p><strong>Budget</strong></p>
-                </th>
-                <th id="3" scope="col">
-                  <p><strong>Commitments</strong></p>
-                </th>
-                <th id="4" scope="col">
-                  <p><strong>Year-to-Date Actuals</strong></p>
-                </th>
-                <th id="5" scope="col">
-                  <p><strong>Annual Forecasted Expenditures</strong></p>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th id="6" scope="row" headers="1">
-                  <p>Salary</p>
-                </th>
-                <td headers="2 6">
-                  <p>$60,000</p>
-                </td>
-                <td headers="3 6">
-                  <p>$20,000</p>
-                </td>
-                <td headers="4 6">
-                  <p>$40,000</p>
-                </td>
-                <td headers="5 6">
-                  <p>$60,000</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </p>
-        <radioQuiz :question="$t('q1')" qId="1" />
+          <div class="tableScrollLTS" v-if="$i18n.locale=='fr'">
+            <table border="1" class="qTable">
+              <thead>
+                <tr>
+                  <th id="1" scope="col">&nbsp;</th>
+                  <th id="2" scope="col">
+                    <p><strong>Budget</strong></p>
+                  </th>
+                  <th id="3" scope="col">
+                    <p><strong>Engagement</strong></p>
+                  </th>
+                  <th id="4" scope="col">
+                    <p><strong>Dépenses réelles à ce jour</strong></p>
+                  </th>
+                  <th id="5" scope="col">
+                    <p><strong>Dépenses annuelles prévues&nbsp;</strong></p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th id="6" scope="row" headers="1">
+                    <p>Salaire</p>
+                  </th>
+                  <td headers="2 6">
+                    <p>60&nbsp;000&nbsp;$</p>
+                  </td>
+                  <td headers="3 6">
+                    <p>20&nbsp;000&nbsp;$</p>
+                  </td>
+                  <td headers="4 6">
+                    <p>40&nbsp;000&nbsp;$</p>
+                  </td>
+                  <td headers="5 6">
+                    <p>60&nbsp;000&nbsp;$</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tableScrollLTS" v-if="$i18n.locale=='en'">
+            <table border="1" class="qTable">
+              <thead>
+                <tr>
+                  <th id="1" scope="col">&nbsp;</th>
+                  <th id="2" scope="col">
+                    <p><strong>Budget</strong></p>
+                  </th>
+                  <th id="3" scope="col">
+                    <p><strong>Commitments</strong></p>
+                  </th>
+                  <th id="4" scope="col">
+                    <p><strong>Year-to-Date Actuals</strong></p>
+                  </th>
+                  <th id="5" scope="col">
+                    <p><strong>Annual Forecasted Expenditures</strong></p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th id="6" scope="row" headers="1">
+                    <p>Salary</p>
+                  </th>
+                  <td headers="2 6">
+                    <p>$60,000</p>
+                  </td>
+                  <td headers="3 6">
+                    <p>$20,000</p>
+                  </td>
+                  <td headers="4 6">
+                    <p>$40,000</p>
+                  </td>
+                  <td headers="5 6">
+                    <p>$60,000</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <radioQuiz :question="$t('q1')" qId="1" />
         </b-tab>
         <b-tab title="Question 2">
           <p>&nbsp;</p>
-          <p v-if="$i18n.locale=='fr'">
-          <table border="1" class="qTable">
-            <thead>
-              <tr>
-                <th id="7" scope="col">&nbsp;</th>
-                <th id="8" scope="col">
-                  <p><strong>Budget</strong></p>
-                </th>
-                <th id="9" scope="col">
-                  <p><strong>Engagement</strong></p>
-                </th>
-                <th id="10" scope="col">
-                  <p><strong>Dépenses réelles à ce jour</strong></p>
-                </th>
-                <th id="11" scope="col">
-                  <p><strong>Dépenses annuelles prévues&nbsp;</strong></p>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th id="12" scope="row" headers="7">
-                  <p>Formation</p>
-                </th>
-                <td header="8 12">
-                  <p>8&nbsp;400&nbsp;$</p>
-                </td>
-                <td header="9 12">
-                  <p>0$</p>
-                </td>
-                <td header="10 12">
-                  <p>2&nbsp;400&nbsp;$</p>
-                </td>
-                <td header="11 12">
-                  <p>8&nbsp;400&nbsp;$</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </p>
-        <p v-if="$i18n.locale=='en'">
-          <table border="1" class="qTable">
-            <thead>
-              <tr>
-                <th id="7" scope="col">&nbsp;</th>
-                <th id="8" scope="col">
-                  <p><strong>Budget</strong></p>
-                </th>
-                <th id="9" scope="col">
-                  <p><strong>Commitments</strong></p>
-                </th>
-                <th id="10" scope="col">
-                  <p><strong>Year-to-Date Actuals</strong></p>
-                </th>
-                <th id="11" scope="col">
-                  <p><strong>Annual Forecasted Expenditures</strong></p>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th id="12" scope="row" headers="7">
-                  <p>Training</p>
-                </th>
-                <td headers="8 12">
-                  <p>$8,400</p>
-                </td>
-                <td headers="9 12">
-                  <p>$0</p>
-                </td>
-                <td headers="10 12">
-                  <p>$2,400</p>
-                </td>
-                <td headers="11 12">
-                  <p>$8,400</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </p>
-        <radioQuiz :question="$t('q2')" qId="2" />
+          <div class="tableScrollLTS" v-if="$i18n.locale=='fr'">
+            <table border="1" class="qTable">
+              <thead>
+                <tr>
+                  <th id="7" scope="col">&nbsp;</th>
+                  <th id="8" scope="col">
+                    <p><strong>Budget</strong></p>
+                  </th>
+                  <th id="9" scope="col">
+                    <p><strong>Engagement</strong></p>
+                  </th>
+                  <th id="10" scope="col">
+                    <p><strong>Dépenses réelles à ce jour</strong></p>
+                  </th>
+                  <th id="11" scope="col">
+                    <p><strong>Dépenses annuelles prévues&nbsp;</strong></p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th id="12" scope="row" headers="7">
+                    <p>Formation</p>
+                  </th>
+                  <td header="8 12">
+                    <p>8&nbsp;400&nbsp;$</p>
+                  </td>
+                  <td header="9 12">
+                    <p>0$</p>
+                  </td>
+                  <td header="10 12">
+                    <p>2&nbsp;400&nbsp;$</p>
+                  </td>
+                  <td header="11 12">
+                    <p>8&nbsp;400&nbsp;$</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tableScrollLTS" v-if="$i18n.locale=='en'">
+            <table border="1" class="qTable">
+              <thead>
+                <tr>
+                  <th id="7" scope="col">&nbsp;</th>
+                  <th id="8" scope="col">
+                    <p><strong>Budget</strong></p>
+                  </th>
+                  <th id="9" scope="col">
+                    <p><strong>Commitments</strong></p>
+                  </th>
+                  <th id="10" scope="col">
+                    <p><strong>Year-to-Date Actuals</strong></p>
+                  </th>
+                  <th id="11" scope="col">
+                    <p><strong>Annual Forecasted Expenditures</strong></p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th id="12" scope="row" headers="7">
+                    <p>Training</p>
+                  </th>
+                  <td headers="8 12">
+                    <p>$8,400</p>
+                  </td>
+                  <td headers="9 12">
+                    <p>$0</p>
+                  </td>
+                  <td headers="10 12">
+                    <p>$2,400</p>
+                  </td>
+                  <td headers="11 12">
+                    <p>$8,400</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <radioQuiz :question="$t('q2')" qId="2" />
         </b-tab>
       </b-tabs>
       </b-card>

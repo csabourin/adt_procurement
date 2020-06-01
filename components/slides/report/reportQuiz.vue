@@ -23,94 +23,97 @@
         <b-tab title="Question 7">
           <div v-if="$i18n.locale=='en'">
             <p>Using the P5 Annual Forecast column as a reference, complete the P6 Annual Forecast column in the provided financial situation report.&nbsp;</p>
-            <table border="1" class="qTable">
-              <thead>
-                <tr>
-                  <th id="1" scope="col">&nbsp;</td>
-                  <th id="2" scope="col">
-                    <p><strong>P6 Budget</strong></p>
-                  </th>
-                  <th id="3" scope="col">
-                    <p><strong>P6 Commitments</strong></p>
-                  </td>
-                  <th id="4" scope="col">
-                    <p><strong>P6 Year-To-Date Actuals</strong></p>
-                  </th>
-                  <th id="5" scope="col">
-                    <p><strong>P5 Annual Forecast</strong></p>
-                  </th>
-                  <th id="6" scope="col">
-                    <p><strong>P6 Annual Forecast</strong></p>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th id="7" scope="row" headers="1">
-                    <p>Travel</p>
-                  </th>
-                  <td headers="2 7">
-                    <p>$8,000</p>
-                  </td>
-                  <td headers="3 7">
-                    <p>$4,000</p>
-                  </td>
-                  <td headers="4 7">
-                    <p>$1,700</p>
-                  </td>
-                  <td headers="5 7">
-                    <p>$7,800</p>
-                  </td>
-                  <td headers="6 7">&nbsp;</td>
-                </tr>
-              </tbody>
-            </table>
-            <p><br /><br /></p>
+            <div class="tableScrollLTL">
+              <table border="1" class="qTable">
+                <thead>
+                  <tr>
+                    <th id="1" scope="col">&nbsp;</td>
+                    <th id="2" scope="col">
+                      <p><strong>P6 Budget</strong></p>
+                    </th>
+                    <th id="3" scope="col">
+                      <p><strong>P6 Commitments</strong></p>
+                    </td>
+                    <th id="4" scope="col">
+                      <p><strong>P6 Year-To-Date Actuals</strong></p>
+                    </th>
+                    <th id="5" scope="col">
+                      <p><strong>P5 Annual Forecast</strong></p>
+                    </th>
+                    <th id="6" scope="col">
+                      <p><strong>P6 Annual Forecast</strong></p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th id="7" scope="row" headers="1">
+                      <p>Travel</p>
+                    </th>
+                    <td headers="2 7">
+                      <p>$8,000</p>
+                    </td>
+                    <td headers="3 7">
+                      <p>$4,000</p>
+                    </td>
+                    <td headers="4 7">
+                      <p>$1,700</p>
+                    </td>
+                    <td headers="5 7">
+                      <p>$7,800</p>
+                    </td>
+                    <td headers="6 7">&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div v-if="$i18n.locale=='fr'">
           	<p>En utilisant la colonne P5 Prévisions annuelles comme référence, remplissez la colonne P6 Prévisions annuelles dans le rapport sur la situation financière fourni.&nbsp;</p>
-            <table border="1" class="qTable">
-              <thead>
-                <tr>
-                  <th id="1" scope="col">&nbsp;</th>
-                  <th id="2" scope="col">
-                    <p><strong>P6 Budget</strong></p>
-                  </th>
-                  <th id="3" scope="col">
-                    <p><strong>P6 Engagements</strong></p>
-                  </th>
-                  <th id="4" scope="col">
-                    <p><strong>P6 Dépenses réelles depuis le début de l’année</strong></p>
-                  </th>
-                  <th id="5" scope="col">
-                    <p><strong>P5 Prévisions annuelles</strong></p>
-                  </th>
-                  <th id="6" scope="col">
-                    <p><strong>P6 Prévisions annuelles</strong></p>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th id="7" scope="row" headers="1">
-                    <p>Voyage</p>
-                  </th>
-                  <td headers="2 7">
-                    <p>8&nbsp;000&nbsp;$</p>
-                  </td>
-                  <td headers="3 7">
-                    <p>4&nbsp;000&nbsp;$</p>
-                  </td>
-                  <td headers="4 7">
-                    <p>1&nbsp;700&nbsp;$</p>
-                  </td>
-                  <td headers="5 7">
-                    <p>7&nbsp;800&nbsp;$</p>
-                  </td>
-                  <td headers="6 7">&nbsp;</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="tableScrollLTL">
+              <table border="1" class="qTable">
+                <thead>
+                  <tr>
+                    <th id="1" scope="col">&nbsp;</th>
+                    <th id="2" scope="col">
+                      <p><strong>P6 Budget</strong></p>
+                    </th>
+                    <th id="3" scope="col">
+                      <p><strong>P6 Engagements</strong></p>
+                    </th>
+                    <th id="4" scope="col">
+                      <p><strong>P6 Dépenses réelles depuis le début de l’année</strong></p>
+                    </th>
+                    <th id="5" scope="col">
+                      <p><strong>P5 Prévisions annuelles</strong></p>
+                    </th>
+                    <th id="6" scope="col">
+                      <p><strong>P6 Prévisions annuelles</strong></p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th id="7" scope="row" headers="1">
+                      <p>Voyage</p>
+                    </th>
+                    <td headers="2 7">
+                      <p>8&nbsp;000&nbsp;$</p>
+                    </td>
+                    <td headers="3 7">
+                      <p>4&nbsp;000&nbsp;$</p>
+                    </td>
+                    <td headers="4 7">
+                      <p>1&nbsp;700&nbsp;$</p>
+                    </td>
+                    <td headers="5 7">
+                      <p>7&nbsp;800&nbsp;$</p>
+                    </td>
+                    <td headers="6 7">&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <radioQuiz :question="$t('q7')" qId="7" />
         </b-tab>

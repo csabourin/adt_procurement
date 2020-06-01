@@ -549,7 +549,7 @@ export default {
         }
       },
       "q17": {
-        "text": "Your budget contains the following line item:<br><table class='qTable'> <tbody> <tr><th>&nbsp;</th><th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Travel</p> </td> <td> <p>$8,400</p> </td> <td> <p>$0</p> </td> <td> <p>$2,400</p> </td> <td> <p>$8,400</p> </td> </tr> </tbody> </table><br>You approved $1,500 in travel for an employee. Looking at the provided line item, which columns would be increased?",
+        "text": "Your budget contains the following line item:<br> <div class='tableScrollLTS'> <table class='qTable'> <tbody> <tr><th>&nbsp;</th><th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Travel</p> </td> <td> <p>$8,400</p> </td> <td> <p>$0</p> </td> <td> <p>$2,400</p> </td> <td> <p>$8,400</p> </td> </tr> </tbody> </table> </div> <br>You approved $1,500 in travel for an employee. Looking at the provided line item, which columns would be increased?",
         "options": {
           "1": "Year-to-Date Actuals and Annual Forecasted Expenditures",
           "2": "Annual Forecasted Expenditures and Commitments",
@@ -883,7 +883,7 @@ export default {
         }
       },
       "q17": {
-        "text": "Votre budget contient le poste fourni :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>Dépenses réelles depuis le début de l’exercice</p></th><th><p>Dépenses annuelles prévues</p></th></tr><tr><td><p>Voyages</p></td><td><p>8&nbsp;400&nbsp;$</p></td><td><p>0 $</p></td><td><p>2&nbsp;400&nbsp;$</p></td><td><p>8&nbsp;400&nbsp;$</p></td></tr></tbody></table><br>Vous avez approuvé un déplacement de 1&nbsp;500&nbsp;$ pour un employé. En regardant le poste budgétaire fourni, quelles colonnes seraient augmentées?",
+        "text": "Votre budget contient le poste fourni :<br><div class='tableScrollLTS'><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>Dépenses réelles depuis le début de l’exercice</p></th><th><p>Dépenses annuelles prévues</p></th></tr><tr><td><p>Voyages</p></td><td><p>8&nbsp;400&nbsp;$</p></td><td><p>0 $</p></td><td><p>2&nbsp;400&nbsp;$</p></td><td><p>8&nbsp;400&nbsp;$</p></td></tr></tbody></table> </div><br>Vous avez approuvé un déplacement de 1&nbsp;500&nbsp;$ pour un employé. En regardant le poste budgétaire fourni, quelles colonnes seraient augmentées?",
         "options": {
           "1": "Dépenses annuelles prévues et dépenses réelles depuis le début de l’exercice",
           "2": "Prévisions annuelles des dépenses et des engagements",

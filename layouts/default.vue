@@ -24,9 +24,9 @@
       </b-row>
       <b-row>
         <!-- <transition-group tag="div" name="fade" class="grid"> -->
-        <b-col class="col-md-3" v-if="MenuShowing">
+        <b-col :class="MenuShowing?['col-md-3','sideMenu']:['closedMenu','sideMenu']">
           <transition appear mode="in-out" name="fade">
-            <content-map />
+            <content-map :currentState="MenuShowing"/>
           </transition>
         </b-col>
         <b-col>
@@ -412,6 +412,15 @@ html[lang="fr"] a.external:after{
   margin: 0;
 }
 
+.col.sideMenu{ 
+     padding-left: 0px;
+     transition: all .30s ease-out;
+   }
+
+.col.closedMenu.sideMenu{ 
+  max-width: 75px;
+}
+
 h2,
 .h2 {
   font-size: 1.6em;
@@ -583,7 +592,7 @@ img {
 }
 
 /* Transitions using the page hook */
-page-enter-active,
+.page-enter-active,
 .page-leave-active {
   transition: all .30s ease-out;
 }

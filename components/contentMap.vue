@@ -1,6 +1,7 @@
 <template>
   <nav class="contentMap" role="navigation">
-    
+    <transition appear mode="out-in" name="fade">
+    <div v-if="currentState">
     <span ref="item"><h4 class="colorBar1">{{$t('plan')}}</h4></span>    
     <menu style="list-style: none">
       <li role="menuitem">
@@ -49,16 +50,15 @@
         <nuxt-link :to="localePath('exam3')" v-html="$t('TestReport')" />
       </li>
     </menu>
+    </div></transition>
   </nav>
 </template>
 <script type="text/javascript">
   export default{
+    props:{
+      currentState: { type: Boolean, default: false }
+    },
     methods:{
-      setFocus(){
-        this.$nextTick(() => {
-          this.$refs.item.focus()
-        });
-      },
       setAriaCurrent() {
         this.$nextTick(function() {
           let app = this.$el,
@@ -75,7 +75,6 @@
       }
     },
     mounted(){
-      this.setFocus()
       this.setAriaCurrent();
     }
   }

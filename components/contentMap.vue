@@ -129,5 +129,6 @@ h6.colorBar1,h6.colorBar2,h6.colorBar3{
   padding-top:4em;
   text-transform: uppercase;
   border-bottom-width: 5em;
+  transform: rotate(90deg);
 }
 </style>

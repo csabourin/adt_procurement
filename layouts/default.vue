@@ -480,6 +480,7 @@ html[lang="fr"] a.external:after{
    }
 
 .col.closedMenu.sideMenu{ 
+  width: 75px;
   max-width: 75px;
 }
 

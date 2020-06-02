@@ -1,7 +1,8 @@
 <template>
-    <a href="javascript:" :title="$t('navMenu')" @click="ShowMenu" @key.space.prevent="ShowMenu" :class="[{'is-active':MenuShowing},'ui-hamburger-02']">
+    <a href="javascript:" :title="MenuShowing ? $t('navMenuCollapse') : $t('navMenuExpand')" @click="ShowMenu" @key.space.prevent="ShowMenu" :class="[{'is-active':MenuShowing},'ui-hamburger-02']">
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <span class="v-inv">{{$t('navMenu')}}</span>
+      <span class="v-inv" v-if="MenuShowing">{{$t('navMenuCollapse')}}</span>
+      <span class="v-inv" v-else>{{$t('navMenuExpand')}}</span>
     </a>
 </template>
 <style type="text/css" scoped>
@@ -61,7 +62,7 @@ export default {
   },
   methods:{
     ShowMenu(){
-      this.MenuShowing=!this.MenuShowing
+      //this.MenuShowing=!this.MenuShowing
       this.$emit('menu-toggle')
     }
    
@@ -72,10 +73,12 @@ export default {
 <i18n>
   {
     "en":{
-    "navMenu":"Navigation Menu"
+    "navMenuCollapse":"Collapse Navigation Menu",
+    "navMenuExpand":"Expand Navigation Menu"
   },
     "fr":{
-    "navMenu":"Menu de navigation"
+    "navMenuCollapse":"Réduire le menu de navigation",
+    "navMenuExpand":"Développer le menu de navigation"
   }
   }
 </i18n>

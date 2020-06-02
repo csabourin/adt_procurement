@@ -1,5 +1,5 @@
 <template>
-  <nav class="contentMap" role="navigation">
+  <nav :class="currentState ? 'contentMap' : ['contentMap', 'closed']" role="navigation" :aria-label="currentState ? $t('navMenuExpanded') : $t('navMenuCollapsed')">
     <transition appear mode="out-in" name="fade">
     <div v-if="currentState">
     <span ref="item"><h4 class="colorBar1">{{$t('plan')}}</h4></span>    
@@ -52,9 +52,19 @@
     </menu>
     </div>
     <div v-else @click="setParentOpen" class="clickMe">
-      <h6 class="colorBar1">{{$t('plan')}}</h6>
-      <h6 class="colorBar2">{{$t('spend')}}</h6>
-      <h6 class="colorBar3">{{$t('report')}}</h6>
+      <!--<h4 class="colorBar1">{{$t('plan')}}</h4>
+      <h4 class="colorBar2">{{$t('spend')}}</h4>
+      <h4 class="colorBar3">{{$t('report')}}</h4>-->
+      
+      <div class="color1">
+        <h4>{{$t('plan')}}</h4>
+      </div>
+      <div class="color2">
+        <h4>{{$t('spend')}}</h4>
+      </div>
+      <div class="color3">
+        <h4>{{$t('report')}}</h4>
+      </div>
     </div></transition>
   </nav>
 </template>
@@ -62,6 +72,11 @@
   export default{
     props:{
       currentState: { type: Boolean, default: false }
+    },
+    data(){
+      return{
+        currentModule: ""
+      }
     },
     methods:{
       setParentOpen(){
@@ -80,24 +95,114 @@
             current.setAttribute("aria-current", "page");
           });
         });
+      },
+      setClosedMenuHeight(){
+        if(this.currentState == false){
+          this.$nextTick(function() {
+            var that = this;
+            this.$el.querySelectorAll(".color1, .color2, .color3").forEach(el => {
+              el.style.height = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
+            });
+            this.$el.querySelectorAll(".color1 h4, .color2 h4, .color3 h4").forEach(el => {
+              el.style.width = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
+            });
+          });
+        }
+      },
+      setClosedMenuHighlight(newModule){
+        if(this.currentState == false){
+          this.$nextTick(function() {
+            
+            var that = this;
+            
+            document.querySelectorAll(".color1, .color2, .color3").forEach(el => {
+              el.className = el.className.replace(/\bhighlighted\b/g, "");
+            });
+            
+            switch(newModule){
+              case "plan":
+                that.$el.querySelector(".color1").classList.add("highlighted");
+                break;
+              case "spend":
+                that.$el.querySelector(".color2").classList.add("highlighted");
+                break;
+              case "report":
+                that.$el.querySelector(".color3").classList.add("highlighted");
+                break;
+            }
+          });
+        }
+      },
+      findModule(page){
+        if(page.name.indexOf("planKey") >=0 || page.name.indexOf("buildWP") >=0 || page.name.indexOf("createBudget") >=0 || page.name.indexOf("exam1") >=0){
+          return "plan";
+        }
+        else if(page.name.indexOf("spendKey") >=0 || page.name.indexOf("spendPart1") >=0 || page.name.indexOf("spendPart2") >=0 || page.name.indexOf("spendPart3") >=0 || page.name.indexOf("exam2") >=0){
+          return "spend";
+        }
+        else if(page.name.indexOf("reportKey") >=0 || page.name.indexOf("reportPart1") >=0 || page.name.indexOf("reportPart2") >=0 || page.name.indexOf("exam3") >=0){
+          return "report";
+        }
+        else{
+          return "";
+        }
       }
     },
     mounted(){
       this.setAriaCurrent();
+      
+      this.setClosedMenuHeight();
+      this.setClosedMenuHighlight();
+      window.onresize = this.setClosedMenuHeight;
+      
+      this.setClosedMenuHighlight(this.findModule(this.$route))
+    },
+    watch: {
+      currentState: function(newVal){
+        if(newVal == false){
+          this.setClosedMenuHeight();
+          this.setClosedMenuHighlight(this.currentModule);
+        }
+      },
+      $route: function(to) {
+        this.currentModule = this.findModule(to);
+      }, 
+      currentModule: function(newModule) {
+        this.$nextTick(function() {
+          this.setClosedMenuHighlight(newModule);
+        });
+      },
     }
   }
 </script>
+
+<i18n>
+  {
+    "en":{
+    "navMenuCollapsed":"Navigation Menu (collapsed)",
+    "navMenuExpanded":"Navigation Menu (expanded)"
+  },
+    "fr":{
+    "navMenuCollapsed":"Menu de navigation (réduit)",
+    "navMenuExpanded":"Menu de navigation (développé)"
+  }
+  }
+</i18n>
+
 <style type="text/css" scoped>
 .clickMe{
   cursor: pointer;
 }
 .contentMap {
   background-color: #fff;
-  box-shadow: 4px 4px 8px #888;
+  box-shadow: 4px 9px 8px #888;
   padding: 0;
 
   height:100%;
   color:#4d4d4d;
+  
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .contentMap a {
@@ -131,10 +236,55 @@
 .colorBar2{border-bottom:4px solid #d3cad2;}
 .colorBar3{border-bottom:4px solid #d6c7c3;}
 
-h6.colorBar1,h6.colorBar2,h6.colorBar3{
+contentMap.closed h4.colorBar1, contentMap.closed h4.colorBar2, contentMap.closed h4.colorBar3{
   padding-top:4em;
   text-transform: uppercase;
   border-bottom-width: 5em;
   transform: rotate(90deg);
 }
+  
+  .color1, .color2, .color3{
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  
+  .color1{
+    background-color: #b4c6ca;
+  }
+  .color2{
+    background-color: #d3cad2;
+  }
+  .color3{
+    background-color: #d6c7c3;
+  }
+  .color1.highlighted{
+    background-color: #587C84;
+    color: white;
+  }
+  .color2.highlighted{
+    background-color: #7d677d;
+    color: white;
+  }
+  .color3.highlighted{
+    background-color: #865F56;
+    color: white;
+  }
+  
+  .color1 h4, .color2 h4, .color3 h4{
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    font-size: 0.95em;
+    position: absolute;
+    line-height: 60px;
+    top: 0%;
+    right: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 200px;
+    
+  }
+  
 </style>

@@ -322,7 +322,8 @@
       </tbody>
     </table>-->
 
-    <table class="signatureCard" style="margin-top: 30px;">
+    <h1>{{ $t('title') }}</h1>
+    <table class="signatureCard">
       <tbody>
         <tr>
           <td v-html="$t('tableLine[1]')" rowspan="3" colspan="3" style="width: 50%;" class="grey text-center bold"></td>
@@ -368,7 +369,7 @@
           <th v-html="$t('tableLine[27]')" scope="row" class="yellow small" id="27" headers="5"></th>
           <td v-html="$t('tableLine[28]')" headers="5 27"></td>
           <td v-html="$t('tableLine[29]')" class="small" headers="5 27"></td>
-          <th v-html="$t('tableLine[30]')" scope="col" class="beige small" colspan="2" rowspan="2" id="30" headers="7"></th>
+          <th v-html="$t('tableLine[30]')" scope="col" class="beige small" colspan="2" rowspan="2" id="30"></th>
           <td v-html="$t('tableLine[31]')" class="beige small" rowspan="2"></td>
         </tr>
         <tr>
@@ -457,18 +458,18 @@
           <td v-html="$t('tableLine[94]')" class="small" headers="30 92"></td>
         </tr>
         <tr>
-          <th v-html="$t('tableLine[95]')" scope="col" class="purple small" colspan="2" id="95" headers="7"></th>
+          <th v-html="$t('tableLine[95]')" scope="col" class="purple small" colspan="2" id="95"></th>
           <td v-html="$t('tableLine[96]')" class="purple small"></td>
-          <th v-html="$t('tableLine[97]')" scope="row" class="beige small" id="97" headers="5"></th>
-          <td v-html="$t('tableLine[98]')" headers="5 97"></td>
-          <td v-html="$t('tableLine[99]')" class="small" headers="5 97"></td>
+          <th v-html="$t('tableLine[97]')" scope="row" class="beige small" id="97" headers="30"></th>
+          <td v-html="$t('tableLine[98]')" headers="30 97"></td>
+          <td v-html="$t('tableLine[99]')" class="small" headers="30 97"></td>
         </tr>
         <tr>
-          <th v-html="$t('tableLine[100]')" scope="col" class="orange small" colspan="2" id="100" headers="7"></th>
+          <th v-html="$t('tableLine[100]')" scope="col" class="orange small" colspan="2" id="100"></th>
           <td v-html="$t('tableLine[101]')" class="orange small"></td>
-          <th v-html="$t('tableLine[102]')" scope="row" class="beige small" id="102" headers="5"></th>
-          <td v-html="$t('tableLine[103]')" headers="5 102"></td>
-          <td v-html="$t('tableLine[104]')" class="small" headers="5 102"></td>
+          <th v-html="$t('tableLine[102]')" scope="row" class="beige small" id="102" headers="30"></th>
+          <td v-html="$t('tableLine[103]')" headers="30 102"></td>
+          <td v-html="$t('tableLine[104]')" class="small" headers="30 102"></td>
         </tr>
         <tr>
           <th v-html="$t('tableLine[105]')" scope="row" class="orange small" id="105" headers="100"></th>
@@ -487,16 +488,16 @@
           <td v-html="$t('tableLine[116]')" class="small" headers="30 114"></td>
         </tr>
         <tr>
-          <th v-html="$t('tableLine[117]')" scope="row" class="orange small" id="117" headers="5"></th>
-          <td v-html="$t('tableLine[118]')" headers="5 117"></td>
-          <td v-html="$t('tableLine[119]')" class="small" headers="5 117"></td>
-          <th v-html="$t('tableLine[120]')" scope="col" class="blue small" colspan="2" rowspan="2" id="120" headers="7"></th>
+          <th v-html="$t('tableLine[117]')" scope="row" class="orange small" id="117" headers="100"></th>
+          <td v-html="$t('tableLine[118]')" headers="100 117"></td>
+          <td v-html="$t('tableLine[119]')" class="small" headers="100 117"></td>
+          <th v-html="$t('tableLine[120]')" scope="col" class="blue small" colspan="2" rowspan="2" id="120"></th>
           <td v-html="$t('tableLine[121]')" class="blue small" rowspan="2"></td>
         </tr>
         <tr>
-          <th v-html="$t('tableLine[122]')" scope="row" class="orange small" id="122" headers="5"></th>
-          <td v-html="$t('tableLine[123]')" headers="5 122"></td>
-          <td v-html="$t('tableLine[124]')" class="small" headers="5 122"></td>
+          <th v-html="$t('tableLine[122]')" scope="row" class="orange small" id="122" headers="100"></th>
+          <td v-html="$t('tableLine[123]')" headers="100 122"></td>
+          <td v-html="$t('tableLine[124]')" class="small" headers="100 122"></td>
         </tr>
         <tr>
           <th v-html="$t('tableLine[125]')" scope="row" class="orange small" id="125" headers="100"></th>
@@ -523,16 +524,16 @@
           <td v-html="$t('tableLine[142]')" class="small" headers="120 140"></td>
         </tr>
         <tr>
-          <th v-html="$t('tableLine[143]')" scope="row" class="orange small" id="143" headers="5"></th>
-          <td v-html="$t('tableLine[144]')" headers="5 143"></td>
-          <td v-html="$t('tableLine[145]')" class="small" headers="5 143"></td>
-          <th v-html="$t('tableLine[146]')" scope="col" class="green small" colspan="2" rowspan="2" id="146" headers="7"></th>
+          <th v-html="$t('tableLine[143]')" scope="row" class="orange small" id="143" headers="100"></th>
+          <td v-html="$t('tableLine[144]')" headers="100 143"></td>
+          <td v-html="$t('tableLine[145]')" class="small" headers="100 143"></td>
+          <th v-html="$t('tableLine[146]')" scope="col" class="green small" colspan="2" rowspan="2" id="146"></th>
           <td v-html="$t('tableLine[147]')" class="green small" rowspan="2"></td>
         </tr>
         <tr>
-          <th v-html="$t('tableLine[148]')" scope="row" class="orange small" id="148" headers="5"></th>
-          <td v-html="$t('tableLine[149]')" headers="5 148"></td>
-          <td v-html="$t('tableLine[150]')" class="small" headers="5 148"></td>
+          <th v-html="$t('tableLine[148]')" scope="row" class="orange small" id="148" headers="100"></th>
+          <td v-html="$t('tableLine[149]')" headers="100 148"></td>
+          <td v-html="$t('tableLine[150]')" class="small" headers="100 148"></td>
         </tr>
       </tbody>
     </table>
@@ -620,6 +621,7 @@
 </template>
 <i18n>{
   "en": {
+    "title": "Specimen Signature Card",
     "tableLine": [
       "",
       "Delegation Form<br>Acceptance Of Financial Authorities Delegated By The Minister And The Deputy Minister/president",
@@ -805,6 +807,7 @@
     ]
   },
   "fr": {
+    "title": "Specimen de carte de signature",
     "tableLine": [
       "",
       "Formulaire de délégation<br>Acceptation de pouvoirs financiers délégués par le ministre et la sous-ministre/présidente",
@@ -975,6 +978,18 @@
       "Signature:",
       "Indéterminée Intérimaire ou temporaire",
       "Date:"
+    ],
+    "legend": [
+      "P",
+      "Plein pouvoir à l’intérieur des limites budgétaires et assujettie aux autorités ministérielles déléguées.<br> <br> Tous les montants indiqués sont le maximum alloué par transaction, y compris les taxes. Ces montants sont en milliers (k) ou en millions (M) de dollars.",
+      "**",
+      "Consulter le manuel sur la délégation des pouvoirs de signer des documents financiers - article 6B (niveaux I &amp; II seulement)",
+      "*",
+      "Consulter le manuel sur la délégation des pouvoirs de signer des documents financiers",
+      "1",
+      "Le pouvoir de conclure des marchés avec d’anciens fonctionnaires qui touchent une pension n’a pas été délégué et conséquemment l’approbation ministérielle est requise pour de tels contrats",
+      "2",
+      "Les modifications aux contrats excédant 50% de l’engagement initial requiert la signature du niveau II"
     ]
   }
 }</i18n>

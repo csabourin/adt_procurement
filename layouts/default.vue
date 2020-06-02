@@ -137,6 +137,16 @@ export default {
 
 </script>
 <style>
+  
+  .review{
+    color: deeppink;
+  }  
+  
+  img.review{
+    outline: 2px solid deeppink;
+    outline-offset: 2px;
+  }
+
 html {
   width: 100%;
   font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;

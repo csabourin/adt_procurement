@@ -103,106 +103,106 @@
       </ul>
     </section>
     <section>
-        <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-                    {{ $t('gotIt') }}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            {{ $t('gotIt') }}
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
-        <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('activityLinks')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <p>{{$t('gotoLinks')}}</p>
-            <planLinks /><!-- {{ $t('gotIt') }} -->
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
-        <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
-                    {{$t('partsofWPTitle')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <partsOfWorkPlan />
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
-        <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
-                    {{$t('scan360Title')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <test360 />
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
-        <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
-                    {{$t('completewpDrafttitle')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <prepareWorkPlan />
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
-        <b-modal no-stacking id="completewp" @hide="resumePlay()" size="xl" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
-                    {{$t('completewptitle')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <completeWorkplan />
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
-        <b-modal no-stacking id="adjustwp" @hide="resumePlay()" size="xl" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
-                    {{$t('adjustwptitle')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <adjustWorkplan />
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
-        <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
-                    {{$t('InRealLife')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <span v-html="$t('IRLText')"></span>
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
-        <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
-                    {{$t('TakeTheQuiz')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <planQuiz />
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
-        </section>
+      <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>
+          <template v-slot:modal-header="{ close }">
+              <h3 class="h5">
+                  <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
+                  {{ $t('gotIt') }}
+              </h3>
+              <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <p class="review">{{ $t('gotItContent') }}</p>
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>-
+      <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
+          <template v-slot:modal-header="{ close }">
+              <h3 class="h5">
+                  <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('activityLinks')}}
+              </h3>
+              <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <p>{{$t('gotoLinks')}}</p>
+          <planLinks /><!-- {{ $t('gotIt') }} -->
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
+          <template v-slot:modal-header="{ close }">
+              <h3 class="h5">
+                  <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                  {{$t('partsofWPTitle')}}
+              </h3>
+              <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <partsOfWorkPlan />
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly>
+          <template v-slot:modal-header="{ close }">
+              <h3 class="h5">
+                  <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                  {{$t('scan360Title')}}
+              </h3>
+              <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <test360 />
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly>
+          <template v-slot:modal-header="{ close }">
+              <h3 class="h5">
+                  <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                  {{$t('completewpDrafttitle')}}
+              </h3>
+              <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <prepareWorkPlan />
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal no-stacking id="completewp" @hide="resumePlay()" size="xl" okOnly>
+          <template v-slot:modal-header="{ close }">
+              <h3 class="h5">
+                  <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                  {{$t('completewptitle')}}
+              </h3>
+              <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <completeWorkplan />
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal no-stacking id="adjustwp" @hide="resumePlay()" size="xl" okOnly>
+          <template v-slot:modal-header="{ close }">
+              <h3 class="h5">
+                  <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                  {{$t('adjustwptitle')}}
+              </h3>
+              <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <adjustWorkplan />
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
+          <template v-slot:modal-header="{ close }">
+              <h3 class="h5">
+                  <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                  {{$t('InRealLife')}}
+              </h3>
+              <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <span v-html="$t('IRLText')"></span>
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
+          <template v-slot:modal-header="{ close }">
+              <h3 class="h5">
+                  <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> 
+                  {{$t('TakeTheQuiz')}}
+              </h3>
+              <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <planQuiz />
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+    </section>
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
       <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.png" :text="$t('KeyMessages')" />
@@ -222,6 +222,7 @@ import completeWorkplan from '~/components/slides/plan/complete_workplan'
 import adjustWorkplan from '~/components/slides/plan/adjust_workplan'
 import test360 from '~/components/slides/plan/test360'
 import planQuiz from '~/components/slides/plan/planQuiz'
+import continuePopup from '~/components/continuePopup'
 export default {
   data() {
     return {
@@ -237,7 +238,8 @@ export default {
     prepareWorkPlan,
     completeWorkplan,
     adjustWorkplan,
-    planQuiz
+    planQuiz,
+    continuePopup
   },
   methods: {
     resumePlay() {
@@ -281,6 +283,7 @@ export default {
 <i18n>{
   "en":{
   "gotIt":"Continue to next segment",
+  "gotItContent": "There will eventually be a paragraph here that explains the fact that a popup appears everytime a section of the video is completed, containing an exercise, resources or a simple instruction notifying the user that the section is completed.",
   "activityLinks":"Activity: External Links",
   "gotoLinks":"These links are also available in the Toolbox",
   "partsofWPTitle":"Activity: Parts of a Work Plan",
@@ -306,6 +309,7 @@ export default {
   "InRealLife":"Dans la vraie vie",
   "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>  <p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l’intranet pour voir quels mod&egrave;les sont utilisés.</p>  <p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
   "gotIt":"Continuer au segment suivant.",
+  "gotItContent": "Il y aura éventuellement un paragraphe ici qui expliquera le fait qu'une fenêtre apparaît chaque fois qu'une section de la vidéo est complétée, contenant un exercice, des ressources ou une simple instruction notifiant à l'utilisateur que la section est terminée.",
   "transcriptText":"",
   "planSectionBar": "PLANIFICATION"
   }

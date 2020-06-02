@@ -216,10 +216,7 @@
       </div>
     </section>
     <section>
-        <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>
-          {{ $t('gotIt') }}
-          <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
+        <continue-popup id="purpose"></continue-popup>
         <b-modal no-stacking id="budgetKeyTerms" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
@@ -298,6 +295,7 @@ import budgetForecastActivity from '~/components/slides/plan/budgetForecastActiv
 import AnalyzeBudgetKT from '~/components/slides/plan/AnalyzeBudgetKT'
 import submitBudget from '~/components/slides/plan/submitBudget'
 import budgetQuiz from '~/components/slides/plan/budgetQuiz'
+import continuePopup from '~/components/continuePopup'
 export default {
   data() {
     return {
@@ -312,6 +310,7 @@ export default {
     budgetForecastActivity,
     submitBudget,
     budgetQuiz,
+    continuePopup
   },
     methods: {
     resumePlay() {

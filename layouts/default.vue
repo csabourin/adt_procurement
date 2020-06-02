@@ -26,7 +26,7 @@
         <!-- <transition-group tag="div" name="fade" class="grid"> -->
         <b-col :class="MenuShowing?['col-md-3','sideMenu']:['closedMenu','sideMenu']">
           <transition appear mode="in-out" name="fade">
-            <content-map :currentState="MenuShowing"/>
+            <content-map :currentState="MenuShowing" @menu-toggle="ShowMenu"/>
           </transition>
         </b-col>
         <b-col>

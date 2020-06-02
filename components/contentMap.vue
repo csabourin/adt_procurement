@@ -51,7 +51,7 @@
       </li>
     </menu>
     </div>
-    <div v-else>
+    <div v-else @click="setParentOpen">
       <h6 class="colorBar1">{{$t('plan')}}</h6>
       <h6 class="colorBar2">{{$t('spend')}}</h6>
       <h6 class="colorBar3">{{$t('report')}}</h6>
@@ -64,6 +64,9 @@
       currentState: { type: Boolean, default: false }
     },
     methods:{
+      setParentOpen(){
+        this.$emit('menu-toggle')
+      },
       setAriaCurrent() {
         this.$nextTick(function() {
           let app = this.$el,

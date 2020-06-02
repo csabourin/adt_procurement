@@ -53,9 +53,10 @@
 </style>
 <script type="text/javascript">
 export default {
-  data(){
-    return{
-      MenuShowing:false
+  props:{
+    MenuShowing:{
+      type:Boolean,
+      default:false
     }
   },
   methods:{

@@ -51,7 +51,7 @@
       </li>
     </menu>
     </div>
-    <div v-else @click="setParentOpen">
+    <div v-else @click="setParentOpen" class="clickMe">
       <h6 class="colorBar1">{{$t('plan')}}</h6>
       <h6 class="colorBar2">{{$t('spend')}}</h6>
       <h6 class="colorBar3">{{$t('report')}}</h6>
@@ -88,6 +88,9 @@
   }
 </script>
 <style type="text/css" scoped>
+.clickMe{
+  cursor: pointer;
+}
 .contentMap {
   background-color: #fff;
   box-shadow: 4px 4px 8px #888;

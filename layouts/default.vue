@@ -5,7 +5,7 @@
     <b-container fluid style="overflow:hidden;">
       <b-row class="navBar" role="header">
         <b-col cols="5" sm="3" class="text-left">
-          <hamburger @menu-toggle="ShowMenu" />
+          <hamburger @menu-toggle="ShowMenu" :MenuShowing="MenuShowing" />
           <nuxt-link :to="localePath('index')">
             <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
           </nuxt-link>

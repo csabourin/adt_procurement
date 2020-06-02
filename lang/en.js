@@ -57,5 +57,8 @@ export default {
   fileFolder: "Download files and tools",
   congratulations:"<h3>Congratulations!</h3><p>You have successfully completed this course.</p><p>Exit the course by closing this window.</p>",
   courseComplete:"Course Completed",
-  close: "Close"
+  close: "Close",
+  fileName:{
+    WorkPlanTemplate:"WorkPlan_Template.docx"
+  }
 }

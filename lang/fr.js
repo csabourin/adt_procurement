@@ -56,5 +56,8 @@ export default {
   dwnPlanLine2: "travail",
   congratulations:"<h3>Félicitations!</h3><p>Vous avez réussi ce cours.</p><p>Quittez le cours en fermant cette fenêtre.</p>",
   courseComplete:"Cours complété",
-  close: "Fermer"
+  close: "Fermer",
+  fileName:{
+    WorkPlanTemplate:"Exemple_Plan_de_travail.docx"
+  }
 }

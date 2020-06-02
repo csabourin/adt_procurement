@@ -39,7 +39,7 @@
               <font-awesome-icon :icon="[solidOrRegular,'closed-captioning']" />
             </button>
           </div>
-          <span class="sr-only">{{$t('sr_transcriptlocation')}}</span>
+          <span class="v-inv">{{$t('sr_transcriptlocation')}}</span>
         </figure>
       </b-col>
     </b-row>

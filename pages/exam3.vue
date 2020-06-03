@@ -31,35 +31,65 @@
         <b-col class="col-12">
           <b-card no-body>
             <b-tabs card pills v-model="tabIndex" class="exam report" active-nav-item-class="Qactive">
-              <b-tab title="01" :title-link-class="[{'filled':answerScore[0]}]">
+              <b-tab :title-link-class="[{'filled':answerScore[0]}]">
+                <template v-slot:title>
+                  <span class="v-inv">Question </span>01
+                </template>
                 <!-- calculateAnswer($event,correctAnswer,qId) -->
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q1')" qId="0" :refill="Refill('0')" @response="calculateAnswer($event,1,0)" />
               </b-tab>
-              <b-tab title="02" :title-link-class="[{'filled':answerScore[1]}]">
+              <b-tab :title-link-class="[{'filled':answerScore[1]}]">
+                <template v-slot:title>
+                  <span class="v-inv">Question </span>02
+                </template>
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q2')" qId="1" :refill="Refill('1')" @response="calculateAnswer($event,2,1)" />
               </b-tab>
-              <b-tab title="03" :title-link-class="[{'filled':answerScore[2]}]">
+              <b-tab :title-link-class="[{'filled':answerScore[2]}]">
+                <template v-slot:title>
+                  <span class="v-inv">Question </span>03
+                </template>
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q3')" qId="2" :refill="Refill('2')" @response="calculateAnswer($event,3,2)" />
               </b-tab>
-              <b-tab title="04" :title-link-class="[{'filled':answerScore[3]}]">
+              <b-tab :title-link-class="[{'filled':answerScore[3]}]">
+                <template v-slot:title>
+                  <span class="v-inv">Question </span>04
+                </template>
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,4,3)" />
               </b-tab>
-              <b-tab title="05" :title-link-class="[{'filled':answerScore[4]}]">
+              <b-tab :title-link-class="[{'filled':answerScore[4]}]">
+                <template v-slot:title>
+                  <span class="v-inv">Question </span>05
+                </template>
                 <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q5')" qId="4" :refill="Refill('4')" @response="arraysMatch($event,[2,4],4)" />
               </b-tab>
-              <b-tab title="06" :title-link-class="[{'filled':answerScore[5]}]">
+              <b-tab :title-link-class="[{'filled':answerScore[5]}]">
+                <template v-slot:title>
+                  <span class="v-inv">Question </span>06
+                </template>
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q6')" qId="5" :refill="Refill('5')" @response="calculateAnswer($event,4,5)" />
               </b-tab>
-              <b-tab title="07" :title-link-class="[{'filled':answerScore[6]}]">
+              <b-tab :title-link-class="[{'filled':answerScore[6]}]">
+                <template v-slot:title>
+                  <span class="v-inv">Question </span>07
+                </template>
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q7')" qId="6" :refill="Refill('6')" @response="calculateAnswer($event,1,6)" />
               </b-tab>
-              <b-tab title="08" :title-link-class="[{'filled':answerScore[7]}]">
+              <b-tab :title-link-class="[{'filled':answerScore[7]}]">
+                <template v-slot:title>
+                  <span class="v-inv">Question </span>08
+                </template>
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q8')" qId="7" :refill="Refill('7')" @response="calculateAnswer($event,2,7)" />
               </b-tab>
-              <b-tab title="09" :title-link-class="[{'filled':answerScore[8]}]">
+              <b-tab :title-link-class="[{'filled':answerScore[8]}]">
+                <template v-slot:title>
+                  <span class="v-inv">Question </span>09
+                </template>
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q9')" qId="8" :refill="Refill('8')" @response="calculateAnswer($event,4,8)" />
               </b-tab>
-              <b-tab title="10" :title-link-class="[{'filled':answerScore[9]}]">
+              <b-tab :title-link-class="[{'filled':answerScore[9]}]">
+                <template v-slot:title>
+                  <span class="v-inv">Question </span>10
+                </template>
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q10')" qId="9" :refill="Refill('9')" @response="calculateAnswer($event,3,9)" />
               </b-tab>
             </b-tabs>

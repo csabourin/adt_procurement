@@ -133,27 +133,19 @@
         }
       },
       findModule(page){
-        console.log(this.$el);
-        
         var module = "";
         this.$el.querySelectorAll("menu")[0].querySelectorAll("a").forEach(el => {
-          console.log(page.path, el.getAttribute("href"))
           if(page.path == el.getAttribute("href")){
-            console.log("plan")
             module = "plan";
           }
         }); 
         this.$el.querySelectorAll("menu")[1].querySelectorAll("a").forEach(el => {
-          console.log(page.path, el.getAttribute("href"))
           if(page.path == el.getAttribute("href")){
-            console.log("spend")
             module = "spend";
           }
         }); 
         this.$el.querySelectorAll("menu")[2].querySelectorAll("a").forEach(el => {
-          console.log(page.path, el.getAttribute("href"))
           if(page.path == el.getAttribute("href")){
-            console.log("report")
             module = "report";
           }
         });  
@@ -168,7 +160,6 @@
       this.setClosedMenuHighlight();
       window.onresize = this.setClosedMenuHeight;
       
-      console.log(this.findModule(this.$route))
       this.setClosedMenuHighlight(this.findModule(this.$route));
     },
     watch: {

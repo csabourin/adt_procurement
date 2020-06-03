@@ -47,7 +47,7 @@
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
-        <img src="/_nuxt/assets/R-Contribute.svg" class="img-real_Life" alt="">
+        <img src="~/assets/R-Contribute.svg" class="img-real_Life" alt="">
         <div v-if="$i18n.locale=='en'">
           <p>Look up your organization’s Performance Information Profiles and its external reports, such as the Departmental Results Report.&nbsp;</p>
           <p>Your organization will have their own ways of doing financial situation reports, and reporting on spending and results. Talk to your finance or planning section and director. Ask them:</p>

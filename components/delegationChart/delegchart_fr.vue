@@ -8,7 +8,7 @@
           <table class="DelegChart c49">
             <tbody>
               <tr>
-                <td class="c41-noright text-left" colspan="2"><img alt="Drapeau du Canada" id="ui-id-2" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/drapeauCanada.png" title="Drapeau du Canada">&nbsp;
+                <td class="c41-noright text-left" colspan="2"><img alt="Drapeau du Canada" id="ui-id-2" src="~static/assets/drapeauCanada.png" title="Drapeau du Canada">&nbsp;
                 </td>
                 <td class="c41-noleft text-left" colspan="37">
                   <p><strong>Nom du Ministère :</strong> Ministère de l’infrastructure publique</p>
@@ -1389,12 +1389,12 @@
               </tr>
               <tr>
                 <td class="c35-noright text-left" colspan="19">
-                  <p><strong>Approuvé par M.&nbsp;Arthur Vandale</strong></p><img alt="Signature de Arthur Vandale" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/signature_DM.png">
+                  <p><strong>Approuvé par M.&nbsp;Arthur Vandale</strong></p><img alt="Signature de Arthur Vandale" src="~static/assets/signature_DM.png">
                   <p style="text-decoration: overline;line-height: 1.2em">Arthur Vandale, sous-ministre</p>
                   <p class="pull-right">&nbsp;</p>
                 </td>
                 <td class="c35-noleft text-left" colspan="20">
-                  <p><strong>Approuvé par l'honorable Mary Ann Russell</strong></p><img alt="Signature de l'honorable Mary Ann Russell" src="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/content/images/signature_M.png">
+                  <p><strong>Approuvé par l'honorable Mary Ann Russell</strong></p><img alt="Signature de l'honorable Mary Ann Russell" src="~static/assets/signature_M.png">
                   <p style="text-decoration: overline;line-height: 1.2em">L'honorable Mary Ann Russell, ministre</p>
                   <p class="pull-right">Date d’entrée en vigueur : &nbsp;Le 10 décembre 2018</p>
                 </td>
@@ -1911,6 +1911,16 @@ th.c35 {
 @font-face {
   font-family: "Gotham Bold";
   src: url(https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/fonts/Gotham/Gotham-Bold.woff) format("woff"), url(https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/fonts/Gotham/Gotham_TrueType/Gotham-Bold.ttf) format("truetype");
+}
+  
+@font-face {
+  font-family: "Gotham Book";
+  src: url("~assets/Gotham-Book.woff") format("woff"), url("~static/assets/Gotham-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("~assets/Gotham-Bold.woff") format("woff"), url("~static/assets/Gotham-Bold.ttf") format("truetype");
 }
 
 </style>

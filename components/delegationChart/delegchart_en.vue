@@ -8,7 +8,7 @@
           <table class="DelegChart c49" border="1">
             <tbody>
               <tr>
-                <td class="c41-noright text-left" colspan="2"><img alt="Canada Flag" id="ui-id-2" src="~/assets/drapeauCanada.png" title="Canada Flag">&nbsp;</td>
+                <td class="c41-noright text-left" colspan="2"><img alt="Canada Flag" id="ui-id-2" src="~static/assets/drapeauCanada.png" title="Canada Flag">&nbsp;</td>
                 <td class="c41-noleft text-left" colspan="37">
                   <p><strong>Department Name:</strong> Department of Public Infrastructure</p>
                 </td>
@@ -1197,12 +1197,12 @@
               </tr>
               <tr>
                 <td class="c35-noright text-left" colspan="19">
-                  <p><strong>Approved by Mr. Arthur Vandale</strong></p><img alt="Signature of Arthur Vandale" src="~/assets/signature_DM.png">
+                  <p><strong>Approved by Mr. Arthur Vandale</strong></p><img alt="Signature of Arthur Vandale" src="~static/assets/signature_DM.png">
                   <p style="text-decoration: overline;line-height: 1.2em">Arthur Vandale, Deputy Minister</p>
                   <p class="pull-right">&nbsp;</p>
                 </td>
                 <td class="c35-noleft text-left" colspan="20">
-                  <p><strong>Approved by Honourable Mary Ann Russell</strong></p><img alt="Signature of Honourable Mary Ann Russell" src="~/assets/signature_M.png">
+                  <p><strong>Approved by Honourable Mary Ann Russell</strong></p><img alt="Signature of Honourable Mary Ann Russell" src="~static/assets/signature_M.png">
                   <p style="text-decoration: overline;line-height: 1.2em">Honourable Mary Ann Russell , Minister</p>
                   <p class="pull-right">Effective date: Dec. 10, 2019</p>
                 </td>
@@ -1725,12 +1725,12 @@ th.c35 {
   
 @font-face {
   font-family: "Gotham Book";
-  src: url("~assets/Gotham-Book.woff") format("woff"), url("~assets/Gotham-Book.ttf") format("truetype");
+  src: url("~assets/Gotham-Book.woff") format("woff"), url("~static/assets/Gotham-Book.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gotham Bold";
-  src: url("~assets/Gotham-Bold.woff") format("woff"), url("~assets/Gotham-Bold.ttf") format("truetype");
+  src: url("~assets/Gotham-Bold.woff") format("woff"), url("~static/assets/Gotham-Bold.ttf") format("truetype");
 }
 
 </style>

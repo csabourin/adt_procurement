@@ -36,7 +36,7 @@ function changePaths(that){
   var src;
   for (var i = 0; i < imgs.length; i++){
     src = imgs[i].getAttribute("src");
-    src = src.split("/_nuxt/").join(window.location.origin + that.$router.options.base); 
+    src = src.split("/_nuxt/static/").join(window.location.origin + that.$router.options.base); 
     imgs[i].setAttribute("src", src)
   }
   
@@ -44,7 +44,7 @@ function changePaths(that){
   var style;
   for (var i = 0; i < styles.length; i++){
     style = styles[i].innerHTML;    
-    style = style.split("/_nuxt/").join(window.location.origin + that.$router.options.base); 
+    style = style.split("/_nuxt/static/").join(window.location.origin + that.$router.options.base); 
     styles[i].innerHTML = style;
   }
 }

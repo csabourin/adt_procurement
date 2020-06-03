@@ -113,7 +113,7 @@
           </template>
           <p class="review">{{ $t('gotItContent') }}</p>
           <template v-slot:modal-ok>{{$t('close')}}</template>
-      </b-modal>-
+      </b-modal>
       <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
           <template v-slot:modal-header="{ close }">
               <h3 class="h5">

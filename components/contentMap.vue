@@ -1,71 +1,70 @@
 <template>
   <nav :class="currentState ? 'contentMap' : ['contentMap', 'closed']" role="navigation" :aria-label="currentState ? $t('navMenuExpanded') : $t('navMenuCollapsed')">
     <transition appear mode="out-in" name="fade">
-    <div v-if="currentState">
-    <span ref="item"><h4 class="colorBar1">{{$t('plan')}}</h4></span>    
-    <menu style="list-style: none">
-      <li role="menuitem">
-        <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessagesPlan')" />
-      </li>
-      <li role="menuitem">
-        <nuxt-link :to="localePath('buildWP')" v-html="$t('BuildWorkPlan')" />
-      </li>
-      <li role="menuitem">
-        <nuxt-link :to="localePath('createBudget')" v-html="$t('CreateBudget')" />
-      </li>
-      <li role="menuitem">
-        <nuxt-link :to="localePath('exam1')" v-html="$t('TestPlan')" />
-      </li>
-    </menu>
-    <h4 class="colorBar2">{{$t('spend')}}</h4>
-    <menu style="list-style: none">
-      <li role="menuitem">
-        <nuxt-link :to="localePath('spendKey')" v-html="$t('KeyMessagesSpend')" />
-      </li>
-      <li role="menuitem">
-        <nuxt-link :to="localePath('spendPart1')" v-html="$t('InitiateAuthorizeSpending')" />
-      </li>
-      <li role="menuitem">
-        <nuxt-link :to="localePath('spendPart2')" v-html="$t('ExerciseFinancialAuthority')" />
-      </li>
-      <li role="menuitem">
-        <nuxt-link :to="localePath('spendPart3')" v-html="$t('MonitorControlFinances')" />
-      </li>
-      <li role="menuitem">
-        <nuxt-link :to="localePath('exam2')" v-html="$t('TestSpend')" />
-      </li>
-    </menu>
-    <h4 class="colorBar3">{{$t('report')}}</h4>
-    <menu style="list-style: none">
-      <li role="menuitem">
-        <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessagesReport')" />
-      </li>
-      <li role="menuitem">
-        <nuxt-link :to="localePath('reportPart1')" v-html="$t('ConductPeriodicVarianceReporting')" />
-      </li>
-      <li role="menuitem">
-        <nuxt-link :to="localePath('reportPart2')" v-html="$t('ContributeReporting')" />
-      </li>
-      <li role="menuitem">
-        <nuxt-link :to="localePath('exam3')" v-html="$t('TestReport')" />
-      </li>
-    </menu>
-    </div>
-    <div v-else @click="setParentOpen" class="clickMe">
-      <!--<h4 class="colorBar1">{{$t('plan')}}</h4>
-      <h4 class="colorBar2">{{$t('spend')}}</h4>
-      <h4 class="colorBar3">{{$t('report')}}</h4>-->
-      
-      <div class="color1">
-        <h4>{{$t('plan')}}</h4>
+      <div>
+        <div v-show="currentState">
+          <span ref="item"><h4 class="colorBar1">{{$t('plan')}}</h4></span>    
+          <menu style="list-style: none">
+            <li role="menuitem">
+              <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessagesPlan')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('buildWP')" v-html="$t('BuildWorkPlan')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('createBudget')" v-html="$t('CreateBudget')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('exam1')" v-html="$t('TestPlan')" />
+            </li>
+          </menu>
+          <h4 class="colorBar2">{{$t('spend')}}</h4>
+          <menu style="list-style: none">
+            <li role="menuitem">
+              <nuxt-link :to="localePath('spendKey')" v-html="$t('KeyMessagesSpend')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('spendPart1')" v-html="$t('InitiateAuthorizeSpending')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('spendPart2')" v-html="$t('ExerciseFinancialAuthority')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('spendPart3')" v-html="$t('MonitorControlFinances')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('exam2')" v-html="$t('TestSpend')" />
+            </li>
+          </menu>
+          <h4 class="colorBar3">{{$t('report')}}</h4>
+          <menu style="list-style: none">
+            <li role="menuitem">
+              <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessagesReport')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('reportPart1')" v-html="$t('ConductPeriodicVarianceReporting')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('reportPart2')" v-html="$t('ContributeReporting')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('exam3')" v-html="$t('TestReport')" />
+            </li>
+          </menu>
+        </div>
+        <div v-show="!currentState" class="clickMe" @click="setParentOpen">
+          <div class="color1">
+            <h4>{{$t('plan')}}</h4>
+          </div>
+          <div class="color2">
+            <h4>{{$t('spend')}}</h4>
+          </div>
+          <div class="color3">
+            <h4>{{$t('report')}}</h4>
+          </div>
+        </div>
       </div>
-      <div class="color2">
-        <h4>{{$t('spend')}}</h4>
-      </div>
-      <div class="color3">
-        <h4>{{$t('report')}}</h4>
-      </div>
-    </div></transition>
+    </transition>
   </nav>
 </template>
 <script type="text/javascript">
@@ -134,18 +133,32 @@
         }
       },
       findModule(page){
-        if(page.name.indexOf("planKey") >=0 || page.name.indexOf("buildWP") >=0 || page.name.indexOf("createBudget") >=0 || page.name.indexOf("exam1") >=0){
-          return "plan";
-        }
-        else if(page.name.indexOf("spendKey") >=0 || page.name.indexOf("spendPart1") >=0 || page.name.indexOf("spendPart2") >=0 || page.name.indexOf("spendPart3") >=0 || page.name.indexOf("exam2") >=0){
-          return "spend";
-        }
-        else if(page.name.indexOf("reportKey") >=0 || page.name.indexOf("reportPart1") >=0 || page.name.indexOf("reportPart2") >=0 || page.name.indexOf("exam3") >=0){
-          return "report";
-        }
-        else{
-          return "";
-        }
+        console.log(this.$el);
+        
+        var module = "";
+        this.$el.querySelectorAll("menu")[0].querySelectorAll("a").forEach(el => {
+          console.log(page.path, el.getAttribute("href"))
+          if(page.path == el.getAttribute("href")){
+            console.log("plan")
+            module = "plan";
+          }
+        }); 
+        this.$el.querySelectorAll("menu")[1].querySelectorAll("a").forEach(el => {
+          console.log(page.path, el.getAttribute("href"))
+          if(page.path == el.getAttribute("href")){
+            console.log("spend")
+            module = "spend";
+          }
+        }); 
+        this.$el.querySelectorAll("menu")[2].querySelectorAll("a").forEach(el => {
+          console.log(page.path, el.getAttribute("href"))
+          if(page.path == el.getAttribute("href")){
+            console.log("report")
+            module = "report";
+          }
+        });  
+        
+        return module;
       }
     },
     mounted(){
@@ -155,7 +168,8 @@
       this.setClosedMenuHighlight();
       window.onresize = this.setClosedMenuHeight;
       
-      this.setClosedMenuHighlight(this.findModule(this.$route))
+      console.log(this.findModule(this.$route))
+      this.setClosedMenuHighlight(this.findModule(this.$route));
     },
     watch: {
       currentState: function(newVal){

@@ -84,6 +84,7 @@ export default {
   {"en":{"qDisabled":"Select matching value"},"fr":{"qDisabled":"Sélectionner la valeur correspondante"}}
 </i18n>
 <style type="text/css" scoped>
+  
   .row{
     margin-bottom: 1em;
   }
@@ -92,4 +93,8 @@ export default {
     position: relative;
     display: inline-block;
   }
+  select{
+    width: 100%;
+  }
+  
 </style>

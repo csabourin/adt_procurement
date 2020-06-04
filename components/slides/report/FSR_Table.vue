@@ -72,7 +72,7 @@
               <td v-html="$t('tableData[38]')" headers="3 29 36" />
               <td v-html="$t('tableData[39]')" headers="4 29 36" />
               <td v-html="$t('tableData[40]')" headers="5 29 36" />
-              <td headers="6 29 36"><input id="software" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('softwarePop')" type="number" v-model="software" name="software" @keydown.esc="closePopover('software', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="softwareGo" name="softwareGo" @change="$bvModal.show('softwareFeedback')"></td>
+              <td headers="6 29 36"><input id="software" :aria-label="$t('instructions')" v-b-popover.focus.bottom.html="$t('softwarePop') + $t('dismissPopover')" type="number" v-model="software" name="software" @keydown.esc="closePopover('software', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="softwareGo" name="softwareGo" @change="$bvModal.show('softwareFeedback')"></td>
               <!--<td v-html="$t('tableData[42]')" headers="7 29 36" />-->
               <td headers="7 29 36" aria-live="assertive">{{softwareSurplusDeficit}}</td>
             </tr>
@@ -82,7 +82,7 @@
               <td v-html="$t('tableData[45]')" headers="3 29 43" />
               <td v-html="$t('tableData[46]')" headers="4 29 43" />
               <td v-html="$t('tableData[47]')" headers="5 29 43" />
-              <td headers="6 29 43"><input id="hospitality" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('hospitalityPop')" type="number" v-model="hospitality" name="hospitality" @keydown.esc="closePopover('hospitality', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="hospitalityGo" name="hospitalityGo" @change="showHospitality"></td>
+              <td headers="6 29 43"><input id="hospitality" :aria-label="$t('instructions')" v-b-popover.focus.bottom.html="$t('hospitalityPop') + $t('dismissPopover')" type="number" v-model="hospitality" name="hospitality" @keydown.esc="closePopover('hospitality', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="hospitalityGo" name="hospitalityGo" @change="showHospitality"></td>
               <!--<td v-html="$t('tableData[49]')" headers="7 29 43" />-->
               <td headers="7 29 43" aria-live="assertive">{{hospitalitySurplusDeficit}}</td>
             </tr>
@@ -92,7 +92,7 @@
               <td v-html="$t('tableData[52]')" headers="3 29 50" />
               <td v-html="$t('tableData[53]')" headers="4 29 50" />
               <td v-html="$t('tableData[54]')" headers="5 29 50" />
-              <td headers="6 29 50"><input id="furniture" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('furniturePop')" type="number" v-model="furniture" name="furniture" @keydown.esc="closePopover('furniture', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="furnitureGo" name="furnitureGo" @change="$bvModal.show('furnitureFeedback')"></td>
+              <td headers="6 29 50"><input id="furniture" :aria-label="$t('instructions')" v-b-popover.focus.bottom.html="$t('furniturePop') + $t('dismissPopover')" type="number" v-model="furniture" name="furniture" @keydown.esc="closePopover('furniture', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="furnitureGo" name="furnitureGo" @change="$bvModal.show('furnitureFeedback')"></td>
               <!--<td v-html="$t('tableData[56]')" headers="7 29 50" />-->
               <td headers="7 29 50" aria-live="assertive">{{furnitureSurplusDeficit}}</td>
             </tr>
@@ -102,7 +102,7 @@
               <td v-html="$t('tableData[59]')" headers="3 29 57" />
               <td v-html="$t('tableData[60]')" headers="4 29 57" />
               <td v-html="$t('tableData[61]')" headers="5 29 57" />
-              <td headers="6 29 57"><input id="training" :aria-label="$t('instructions')" v-b-popover.focus.bottom="$t('trainingPop')" type="number" v-model="training" name="training" @keydown.esc="closePopover('training', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="trainingGo" name="trainingGo" @change="$bvModal.show('trainingFeedback')"></td>
+              <td headers="6 29 57"><input id="training" :aria-label="$t('instructions')" v-b-popover.focus.bottom.html="$t('trainingPop') + $t('dismissPopover')" type="number" v-model="training" name="training" @keydown.esc="closePopover('training', $event)"><input type="checkbox" :aria-label="$t('validate')" :title="$t('validate')" v-model="trainingGo" name="trainingGo" @change="$bvModal.show('trainingFeedback')"></td>
               <!--<td v-html="$t('tableData[63]')" headers="7 29 57" />-->
               <td headers="7 29 57" aria-live="assertive">{{trainingSurplusDeficit}}</td>
             </tr>
@@ -346,7 +346,7 @@ export default {
   "en": {
     "validate":"Validate answer",
     "instructions":"Type the number here",
-    "dismissPopover": "<span class='v-inv'>Press the escape key to dismiss this popopver</span>",
+    "dismissPopover": "<span class='v-inv'>Press the escape key to dismiss this popover</span>",
     "salaryPop": "An officer earning $70,000 is using their sick leave and will not be back for at least 6 months. A junior analyst earning $40,000 is resigning as of October 1. You will not have time to replace them in this fiscal year.",
     "salaryFeedback": "<p>The P6 Annual Forecast will change to $423,333.</p><ul><li>An employee using their sick leave doesn’t impact the Annual Forecast as you still need to pay their salary.</li><li>Since your junior analyst will be gone the last 6 months (October to March) of the fiscal year, the P6 Annual Forecast for Salary will decrease by $20,000 ($443,333 - $20,000 = $423,333).You’ll also need to update your Salary commitments in the financial system.</li></ul>",
     "softwarePop": "You found out that the company providing the new software was bought out, and will be charging twice as much starting October 1. You are currently paying $1,000 per year per license; you have 3 licenses.",

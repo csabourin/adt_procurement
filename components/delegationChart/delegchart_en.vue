@@ -1725,15 +1725,6 @@ th.c35 {
 }
 
 /*! CSS Used fontfaces */
-@font-face {
-  font-family: "Gotham Book";
-  src: url(https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/fonts/Gotham/Gotham-Book.woff) format("woff"), url(https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/fonts/Gotham/Gotham_TrueType/Gotham-Book.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Gotham Bold";
-  src: url(https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/fonts/Gotham/Gotham-Bold.woff) format("woff"), url(https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/theme/fonts/Gotham/Gotham_TrueType/Gotham-Bold.ttf) format("truetype");
-}
 
 @font-face {
   font-family: "Gotham Book";
@@ -1742,7 +1733,7 @@ th.c35 {
 
 @font-face {
   font-family: "Gotham Bold";
-  src: url("/Gotham-Bold.woff") format("woff"), url("~static/assets/Gotham-Bold.ttf") format("truetype");
+  src: url("/Gotham-Bold.woff") format("woff"), url("/Gotham-Bold.ttf") format("truetype");
 }
 
 </style>

@@ -9,10 +9,10 @@
           <nuxt-link :to="localePath('index')">
             <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
           </nuxt-link>
-          <button class="successIcon" v-b-modal.completionModal v-if="courseComplete"><img src="~/assets/successIcon.png" width="50" height="50"><strong class="completeCaption" v-html="$t('courseComplete')" /></button>
+          <button class="successIcon" v-b-modal.completionModal v-if="courseComplete"><img src="~/assets/successIcon.png" width="50" height="50" role="presentation" alt=""><strong class="completeCaption" v-html="$t('courseComplete')" /></button>
         </b-col>
         <b-col cols="2" sm="6">
-          <h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')"> {{$t('finRoles')}}</h1>
+          <h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')" role="presentation"> {{$t('finRoles')}}</h1>
         </b-col>
         <b-col cols="5" sm="3" class="text-right">
           <fileMenu />

@@ -1,7 +1,7 @@
 <template functionnal>
   <a :href="require('~/assets/'+ $i18n.locale +'/'+ filename)" :download="filename" target="_blank" rel="external" aria-aspopup="true">
     <genericFile :iconStyle="iconColor" :iconWidth=size :title="$t(title)" :line1="$t(line1)" :line2="$t(line2)" />
-    {{$t(lineTag)}}
+    <span v-html="$t(lineTag)"></span>
   </a>
 </template>
 <script type="text/javascript">
@@ -23,3 +23,16 @@ export default {
 }
 
 </script>
+
+<style scoped>
+
+  a{
+    text-decoration: underline;
+    color: black;
+  }
+  
+  a:hover, a:focus{
+    text-decoration: none;
+  }
+
+</style>

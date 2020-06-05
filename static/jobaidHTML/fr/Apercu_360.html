@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>APERÇU À 360 DEGRÉS</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<style>
+	body{
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	p, li{
+		font-size: 20px;
+		color: #2E475D;
+	}
+	
+	h1{
+		font-size: 40px;
+		margin-bottom: 0;
+		color: #357887;
+		position: relative;
+		margin-left: 200px;
+	}
+	
+	h1:before{
+		position:absolute;
+		left: -200px;
+		height: 75px;
+		width: 194px;
+		margin-top: 5.5px;
+		content: " ";
+		background:url('banners/flag/flag.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		
+	}
+	
+	.numberList .listitem{
+		counter-increment:list2;
+		list-style:none;  
+	}
+	
+	.numberList .listitem{
+		/*counter-increment:list2;*/
+		margin:0 0 5px;
+		padding:0;
+	}
+	
+	.numberList .listitem:before {
+		/*counter-increment:list2;*/
+		content: counters(list2, ".", decimal-leading-zero)""; 
+		color: #2E475D;
+		font-size: 50px;
+	}
+	
+	.margins{
+		margin-top: -31px;
+		margin-left: 80px;
+		margin-bottom: 0px;
+	}
+	
+	.marginimage{
+		margin-left: 5px;
+	}
+	
+	.letterList{
+		list-style:none; 
+		margin:0; 
+		padding-left: 102px; 
+		counter-reset:list;
+	}
+	
+	.letterList li{
+		margin:0 0 5px;
+		padding:0;
+	}
+	
+	.letterList li:before {
+		counter-increment:list;
+		content: counter(list, lower-alpha)". "; 
+		color:#B64142;
+	}
+	
+	.letterc p{
+		margin-top: -24px;
+		margin-left: 22px;
+		margin-bottom: 0px;
+	}
+	
+	.canadalogo{
+		width: 250px;
+	}
+	
+	.paddingh1{
+		padding-left: 204px;
+	}
+	
+	.paddinglists{
+		padding-left: 84px;
+	}
+	
+	@media print {
+		h1{
+		font-size: 30px;
+		margin-bottom: 0;
+		color: #357887;
+		position: relative;
+		margin-left: 200px;
+		page-break-after: avoid;
+	}
+	
+	h1:before{
+		position:absolute;
+		left: -200px;
+		height: 50px;
+		width: 169px;
+		margin-top: 3px;
+		content: " ";
+		background:url('banners/flag/flag.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		
+	}
+	.canadalogo{
+		width: 150px;
+	}
+}
+	@media print and (color) {
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+}
+</style>
+</head>
+
+<body>
+<img src="banners/banner_360aidememoire.jpg" alt="École de la fonction publique du Canada - APERÇU À 360 DEGRÉS">
+
+	<h1>OBTENIR DES DONNÉES HISTORIQUES</h1>
+	<div class="paddingh1">
+		<p><strong>Se faire une idée de la situation actuelle en examinant ce qui a été fait récemment.</strong></p>
+	</div>
+	<div class="paddinglists">
+		<ol class="numberList">
+			<li class="listitem">
+				<img src="banners/triangle/4x/triangle_x4.png" width="15px" height="15px" alt="">
+				Examiner les plans de travail antérieurs (ceux de l’année dernière et des années précédentes, si possible).
+				<ol type="a" class="letterList">
+					<li>Quels étaient les programmes et les produits livrables?</li>
+					<li class="letterc"><p>Ces programmes et produits livrables sont-ils reportés au plan de travail de l’année en cours ou ont-ils pris fin?</p></li>
+					<li class="letterc"><p>Combien y avait-il de ressources humaines? Était-ce suffisant pour atteindre les objectifs fixés?</p></li>
+					<br>
+				</ol>
+			</li>
+			<li class="listitem">
+				<img src="banners/triangle/4x/triangle_x4.png" width="15px" height="15px" alt="">
+				Identifier les défis des années précédentes.
+				<ol type="a" class="letterList">
+					<li class="letterc"><p>Quels étaient-ils? Financement, ressources humaines, retards dans l’exécution des programmes, décisions internes, facteurs externes, etc.</p></li>
+					<li class="letterc"><p>Les objectifs ont-ils été atteints? Jusqu’à quel point? Quel a été l’impact?</p></li>
+					<li class="letterc"><p>Ont-ils été résolus ou sont-ils toujours en cours? Posent-ils toujours un risque? Pouvez-vous observer des tendances pour expliquer les défis? Quelles mesures ou stratégies
+	pourraient être mises en place pour corriger ou atténuer le risque?</p></li>
+					<li>Quelles leçons peut-on en tirer?</li>
+					<br>
+				</ol>
+			</li>
+		</ol>
+	</div>
+	<h1>ÉVALUER LA CULTURE</h1>
+	<div class="paddingh1">
+		<p><strong>Se faire une idée du contexte culturel de son ministère, de sa direction générale ou de sa direction.</strong></p>
+	</div>
+	<div class="paddinglists">
+		<ol class="numberList">
+			<li class="listitem"><img src="banners/triangle/4x/triangle_x4.png" width="15px" height="15px" alt="" class="marginimage"><p class="margins">À quel point votre milieu a une aversion au risque? Qu’en est-il de l’innovation, de la hiérarchie et de la démographie? Votre organisation est-elle centralisée ou décentralisée? Pourquoi?</p></li>
+			<li class="listitem"><img src="banners/triangle/4x/triangle_x4.png" width="15px" height="15px" alt="" class="marginimage"><p class="margins">Comment cela pourrait-il influer sur la façon dont vous planifiez votre plan de travail (et éventuellement votre budget)?</p></li>
+			<li class="listitem"><img src="banners/triangle/4x/triangle_x4.png" width="15px" height="15px" alt="" class="marginimage"><p class="margins">Comment les différentes lentilles (ACS+, Peuples autochtones, Développement durable, etc.) sont-elles considérées dans le processus de prise de décision financière? Est-ce qu’elles ont
+	une incidence sur votre plan de travail, spécifiquement?</p></li>
+		</ol>
+	</div>
+<br>
+<div align="right">
+	<img src="banners/Canada_GouvFooter.png" alt="Gouvernement du Canada" class="canadalogo">
+</div>
+</body>
+</html>

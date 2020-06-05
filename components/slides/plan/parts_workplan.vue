@@ -1,7 +1,7 @@
 <template>
   <span>
     <div style="float:right">
-      <download filename="WorkPlan_Template.docx" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" iconStyle="planBackground" size="64" :title="$t('downloadPlan')" />
+      <!--<download :filename="$t('fileName.WorkPlanTemplate')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" iconStyle="planBackground" size="64" :title="$t('downloadPlan')" />-->
     </div>
     <h2 v-html="$t('pwpTitle')"></h2>
 

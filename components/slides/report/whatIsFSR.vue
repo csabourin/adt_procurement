@@ -1,15 +1,25 @@
 <template>
   <div>
-  <p><strong>{{$t('header')}}</strong></p>
-  <matchingExercise :question="$t('q1')" qId="1" />
-</div>
+    <p><strong>{{$t('header')}}</strong></p>
+    <matchingExercise :question="$t('q1')" qId="1" />
+    <b-row>
+      <b-col cols="2" class="text-center">
+        <download :filename="$t('fileName.FSRRoadmap')" size=128 iconColor="reportBackground" :title="$t('DownloadFSRRoadmap')" :line1="$t('FSRRoadmapLn1')" :line2="$t('FSRRoadmapLn2')" :lineTag="$t('FSRRoadmapExample')"/>
+        <HTMLJobaidLink :filename="$t('fileName.FSRRoadmapHTML')" />
+      </b-col>
+    </b-row>
+  </div>
 </template>
 <script type="text/javascript">
 import matchingExercise from "~/components/interface/matchingExercise"
+import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 export default {
-    components: {
-        matchingExercise
-    }
+  components: {
+    matchingExercise,
+    download,
+    HTMLJobaidLink
+  }
 }
 </script>
 <i18n>{

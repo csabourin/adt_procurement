@@ -2,7 +2,7 @@
   <span>
     <div v-if="$i18n.locale=='fr'">
       <div>
-        <p>PLANIFICATION</p>
+        <h4>Planification</h4>
         <ul>
           <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/system-gestion-depenses/cycle-rapports.html">Le cycle des rapports sur les dépenses gouvernementales</a></li>
           <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://laws-lois.justice.gc.ca/fra/lois/f-11/">Loi sur la gestion des finances publiques</a></li>
@@ -28,7 +28,7 @@
       </div>
     </div>
     <div v-if="$i18n.locale=='en'">
-      <p>PLAN</p>
+      <h4>Plan</h4>
       <ul class="list-unstyled">
         <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/expenditure-management-system/reporting-cycle.html">The Reporting Cycle for Government Expenditures</a></li>
         <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="http://laws-lois.justice.gc.ca/eng/acts/f-11/">Financial Administration Act</a></li>

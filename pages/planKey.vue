@@ -77,8 +77,35 @@
         <b-col><br>
           <hr>
           <h3>{{$t('fileSet')}}</h3>
-          <download filename="ADT_Ressources_360.pdf" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" />
-          <download filename="WorkPlan_Template.docx" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" />
+          <b-row>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.threeSixty')" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" :lineTag="$t('threeSixtyExample')" />
+              <HTMLJobaidLink :filename="$t('fileName.threeSixtyHTML')" />
+            </b-col>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.WorkPlanTemplate')" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" :lineTag="$t('WPExample')" />
+            </b-col>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.WorkPlan_lastYear')" iconColor="planBackground" size=128 :title="$t('wpExample')" :line1="$t('wpLine1')" :line2="$t('wpLine2')" :lineTag="$t('wpExample')" />
+            </b-col>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.Budget_lastYear')" iconColor="spendBackground" size=128 :title="$t('bExample')" :line1="$t('bLine1')" :line2="$t('bLine2')" :lineTag="$t('bExample')" />
+            </b-col>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.ReportLast')" iconColor="reportBackground" size=128 :title="$t('rExample')" :line1="$t('rLine1')" :line2="$t('rLine2')" :lineTag="$t('rExample')" />
+            </b-col>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.buildWPProcessMap')" size=128 iconColor="planBackground" :title="$t('DownloadProcessMap')" :line1="$t('ProcessMapLn1')" :line2="$t('ProcessMapLn2')" :lineTag="$t('buildWPProcessMapExample')" />
+              <HTMLJobaidLink :filename="$t('fileName.buildWPProcessMapHTML')" />
+            </b-col>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.newBudget')" size=128 iconColor="planBackground" :title="$t('DownloadNewBudget')" :line1="$t('newBudgetLn1')" :line2="$t('newBudgetLn2')" :lineTag="$t('newBudgetExample')" />
+              <HTMLJobaidLink :filename="$t('fileName.newBudgetHTML')" />
+            </b-col>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.cycle')" size=128 iconColor="Scan360Background" :title="$t('DownloadCycle')" :line1="$t('cycleLn1')" :line2="$t('cycleLn2')" :lineTag="$t('cycleExample')" />
+            </b-col>
+          </b-row>
         </b-col>
       </b-row>
       <b-row>
@@ -103,13 +130,15 @@
 <script type="text/javascript">
 var seenKey
 import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 import hamburger from "~/components/hamburger"
 import microlearning from "~/components/microlearning"
 export default {
   components: {
     hamburger,
     microlearning,
-    download
+    download,
+    HTMLJobaidLink
   },
   computed: {
     pageComplete() {
@@ -128,22 +157,22 @@ export default {
 }
 
 </script>
-<i18n>{
-  "en":
+<i18n>
   {
-  "keyPlanQuote": " Great planning leads to great performance. ",
-  "fileSet": "Files in this section",
-  "downloadPlan": "Download a Word template of the work plan",
-  "planSectionBar": "PLAN"
-  },
-  "fr":
-  {
-  "keyPlanQuote": " Une bonne planification mène à une bonne performance. ",
-  "fileSet": "Fichiers dans cette section",
-  "downloadPlan": "Télécharger un modèle Word du plan de travail",
-  "planSectionBar": "PLANIFICATION"
+    "en":{
+      "keyPlanQuote": " Great planning leads to great performance. ",
+      "fileSet": "Files in this section",
+      "downloadPlan": "Download a Word template of the work plan",
+      "planSectionBar": "PLAN"
+    },
+    "fr":{
+      "keyPlanQuote": " Une bonne planification mène à une bonne performance. ",
+      "fileSet": "Fichiers dans cette section",
+      "downloadPlan": "Télécharger un modèle Word du plan de travail",
+      "planSectionBar": "PLANIFICATION" 
+    }
   }
-  }</i18n>
+</i18n>
 <style type="text/css" scoped>
 span.plan:before {
   background-color: #d1dfe1;

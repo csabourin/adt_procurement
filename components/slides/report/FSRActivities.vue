@@ -1,5 +1,5 @@
 <template>
-<div>
+  <div>
     <b-card>
       <b-tabs v-model="tabIndex">
         <b-tab title="Question 1">
@@ -17,11 +17,19 @@
         <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=1">{{$t('nextPage')}}</b-button>
       </b-button-group>
     </div>
+    <b-row>
+      <b-col cols="2" class="text-center">
+        <download :filename="$t('fileName.prepareFSR')" size=128 iconColor="reportBackground" :title="$t('DownloadPrepareFSR')" :line1="$t('prepareFSRLn1')" :line2="$t('prepareFSRLn2')" :lineTag="$t('prepareFSRExample')"/>
+        <HTMLJobaidLink :filename="$t('fileName.prepareFSRHTML')" />
+      </b-col>
+    </b-row>
   </div>
 </template>
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
+import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 export default {
 	data(){
 		return{
@@ -30,7 +38,9 @@ export default {
 	},
   components: {
     radioQuiz,
-    checkboxQuiz
+    checkboxQuiz,
+    download,
+    HTMLJobaidLink
   },
   methods:{
     focus(){

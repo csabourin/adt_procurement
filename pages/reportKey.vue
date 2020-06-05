@@ -72,12 +72,23 @@
       </b-row>
       <b-row>
         <b-col>
-          <!-- <br>
+          <br>
           <hr>
           <h3>{{$t('fileSet')}}</h3>
-          <download filename="ADT_Ressources_360.pdf" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" />
-          <download filename="WorkPlan_Template.docx" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" />
-         -->
+          <b-row>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.FSRRoadmap')" size=128 iconColor="reportBackground" :title="$t('DownloadFSRRoadmap')" :line1="$t('FSRRoadmapLn1')" :line2="$t('FSRRoadmapLn2')" :lineTag="$t('FSRRoadmapExample')"/>
+              <HTMLJobaidLink :filename="$t('fileName.FSRRoadmapHTML')" />
+            </b-col>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.prepareFSR')" size=128 iconColor="reportBackground" :title="$t('DownloadPrepareFSR')" :line1="$t('prepareFSRLn1')" :line2="$t('prepareFSRLn2')" :lineTag="$t('prepareFSRExample')"/>
+              <HTMLJobaidLink :filename="$t('fileName.prepareFSRHTML')" />
+            </b-col>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.extReports')" size=128 iconColor="reportBackground" :title="$t('DownloadExtReports')" :line1="$t('extReportsLn1')" :line2="$t('extReportsLn2')" :lineTag="$t('extReportsExample')"/>
+              <HTMLJobaidLink :filename="$t('fileName.extReportsHTML')" />
+            </b-col>
+         </b-row>
         </b-col>
       </b-row>
       <b-row>
@@ -102,11 +113,13 @@
 <script type="text/javascript">
   var seenKey
 import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 import microlearning from "~/components/microlearning"
 export default {
   components: {
     microlearning,
-    download
+    download,
+    HTMLJobaidLink
   },
   mounted(){
     seenKey = setTimeout(() => this.$store.commit('currentPlaying/setKmReport',100),30000)

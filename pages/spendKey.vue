@@ -53,12 +53,18 @@
       </b-row>
       <b-row>
         <b-col>
-          <!-- <br>
+          <br>
           <hr>
           <h3>{{$t('fileSet')}}</h3>
-          <download filename="ADT_Ressources_360.pdf" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" />
-          <download filename="WorkPlan_Template.docx" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" />
-         -->
+          <b-row>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.procurementInstruments')" size=128 iconColor="spendBackground" :title="$t('DownloadProcurementInstruments')" :line1="$t('procurementInstrumentsLn1')" :line2="$t('procurementInstrumentsLn2')" :lineTag="$t('procurementInstrumentsExample')" />
+              <HTMLJobaidLink :filename="$t('fileName.procurementInstrumentsHTML')" />
+            </b-col>
+            <b-col cols="2" class="text-center">
+              <download :filename="$t('fileName.s32s34')" size=128 iconColor="spendBackground" :title="$t('Downloads32s34')" :line1="$t('s32s34Ln1')" :line2="$t('s32s34Ln2')" :lineTag="$t('s32s34Example')" class="review" />
+            </b-col>
+          </b-row>
         </b-col>
       </b-row>
       <b-row>
@@ -84,11 +90,13 @@
 <script type="text/javascript">
 var seenKey
 import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 import microlearning from "~/components/microlearning"
 export default {
   components: {
     microlearning,
-    download
+    download,
+    HTMLJobaidLink
   },
   mounted() {
     seenKey = setTimeout(() => this.$store.commit('currentPlaying/setKmSpend', 100), 30000)

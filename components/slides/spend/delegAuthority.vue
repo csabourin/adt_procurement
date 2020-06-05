@@ -22,6 +22,11 @@
       <delegAutorityFr v-if="$i18n.locale=='fr'" />
     </windowPortal>
     <p><b-button @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
+    <b-row>
+      <b-col cols="2" class="text-center">
+        <download :filename="$t('fileName.s32s34')" size=128 iconColor="spendBackground" :title="$t('Downloads32s34')" :line1="$t('s32s34Ln1')" :line2="$t('s32s34Ln2')" :lineTag="$t('s32s34Example')" class="review" />
+      </b-col>
+    </b-row>
 	</div>
 </template>
 
@@ -31,13 +36,17 @@
   import delegAutorityEn from "~/components/delegationChart/delegchart_en"
   import delegAutorityFr from "~/components/delegationChart/delegchart_fr"
   import windowPortal from "~/components/newWindow"
+  import download from "~/components/fileDownload"
+  import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 	export default{
 		components:{
 			checkboxQuiz,
 			radioQuiz,
       delegAutorityEn,
       delegAutorityFr,
-      windowPortal
+      windowPortal,
+      download,
+      HTMLJobaidLink
 		},
     data(){
       return{

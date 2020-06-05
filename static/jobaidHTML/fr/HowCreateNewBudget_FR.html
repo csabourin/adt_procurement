@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>COMMENT CRÉER UN NOUVEAU BUDGET</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<style>
+	body{
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	p, li{
+		font-size: 20px;
+		color: #2E475D;
+	}
+	
+	h1{
+		font-size: 30px;
+		margin-bottom: 0;
+		color: #2A4357;
+		position: relative;
+		margin-left: 200px;
+	}
+	
+	h1:before{
+		position:absolute;
+		left: -200px;
+		height: 100px;
+		width: 180px;
+		margin-top: 1px;
+		content: " ";
+		background:url('banners/flag/flag.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		
+	}
+	
+	.h1bold{
+		color: #357887;
+	}
+	
+	.numberList .listitem{
+		counter-increment:list2;
+		list-style:none;  
+	}
+	
+	.numberList .listitem{
+		/*counter-increment:list2;*/
+		margin:0 0 5px;
+		padding:0;
+	}
+	
+	.numberList .listitem:before {
+		/*counter-increment:list2;*/
+		content: counters(list2, ".", decimal)". "; 
+		color: #B64142;
+		font-weight: bolder;
+	}
+	
+	.margins{
+		margin-top: -31px;
+		margin-left: 80px;
+		margin-bottom: 0px;
+	}
+	
+	.marginimage{
+		margin-left: 5px;
+	}
+	
+	.letterList{
+		list-style:none; 
+		margin:0; 
+		padding-left: 102px; 
+		counter-reset:list;
+	}
+	
+	.letterList li{
+		margin:15px 0 5px;
+		padding:0;
+	}
+	
+	.letterList li:before {
+		counter-increment:list;
+		content: counter(list, lower-alpha)". "; 
+		color:#B64142;
+		font-weight: bolder;
+	}
+	
+	.balisePadding{
+		margin-top: -24px;
+		margin-left: 22px;
+		margin-bottom: 0px;
+	}
+	
+	.baliseLettresPadding{
+		margin-top: -24px;
+		margin-left: 22px;
+		margin-bottom: 0px;
+	}
+	
+	.canadalogo{
+		width: 250px;
+	}
+	
+	.paddingh1{
+		padding-left: 202px;
+	}
+	
+	.paddingletterlist{
+		margin-left: -79px;
+	}
+	
+	.paddinglists{
+		padding-left: 182px;
+	}
+	
+	@media print {
+		h1{
+		font-size: 30px;
+		margin-bottom: 0;
+		position: relative;
+		margin-left: 200px;
+		page-break-after: avoid;
+	}
+	
+	h1:before{
+		position:absolute;
+		left: -180px;
+		height: 40px;
+		width: 160px;
+		margin-top: 3px;
+		content: " ";
+		background:url('banners/flag/flag.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		
+	}
+	.canadalogo{
+		width: 150px;
+	}
+}
+	@media print and (color) {
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+}
+</style>
+</head>
+
+<body>
+<img src="banners/banner_creebudget.jpg" alt="École de la fonction publique du Canada - Comment créer un nouveau budget?">
+<h1><strong class="h1bold">ANALYSEZ</strong> l’information tirée de vos budgets passés et actuels ainsi que des
+rapports financiers clés pour déterminer les hypothèses comptables, les chiffres et les
+formules que vous pouvez utiliser comme point de départ dans votre nouveau budget.</h1>
+<div class="paddinglists">
+<ol class="numberList">
+	<li class="listitem"><p class="balisePadding">Quel est l’état des activités : temporarisées, retardées, annulées, en cours ou
+nouvelles ? Ce faisant, vous identifiez toutes les activités qui doivent être reportées ou
+éliminées de votre nouveau budget.</p></li>
+	<li class="listitem"><p class="balisePadding">Y a-t-il des tendances dans les chiffres du budget précédent ou du budget actuel qui
+sont constantes ou qui montrent la même structure de dépenses année après année et
+qui devraient être incluses dans le nouveau budget ?</p></li>
+	<li class="listitem"><p class="balisePadding">Y a-t-il des écarts entre le montant prévu au budget et le montant réel dépensé ?</p>
+		<div class="paddingletterlist">
+		<ul class="letterList">
+			<li><p class="baliseLettresPadding">Quels sont ces écarts?</p></li>
+			<li><p class="baliseLettresPadding">Quels sont les raisons de ces écarts?</p></li>
+			<li><p class="baliseLettresPadding">Dois-je ajuster les chiffres en fonction de mon analyse des écarts ou les chiffres
+peuvent-ils être utilisés sans modification?</p></li>
+		</ul>
+		</div>
+	</li>
+</ol>
+</div>
+<br>
+	<h1><strong class="h1bold">PRÉVOYEZ</strong> vos nouveaux besoins budgétaires :</h1>
+<div class="paddinglists">
+	<ol class="numberList">
+		<li class="listitem"><p class="balisePadding">Estimer les coûts de vos activités à l’aide d’hypothèses comptables, de chiffres et de
+formules, identifiés lors de la phase d’analyse.</p></li>
+		<li class="listitem"><p class="balisePadding">Organisez les coûts de façon non discrétionnaire (essentiel à la réalisation de vos
+activités) ou discrétionnaire (non essentiel à la réalisation de vos activités).</p></li>
+		<li class="listitem"><p class="balisePadding">Déterminez les coûts qui peuvent fluctuer et la façon dont vous prévoyez gérer ces
+fluctuations.</p></li>
+	</ol>
+</div>
+<br>
+	<h1><strong class="h1bold">SOUMETTEZ</strong> votre nouveau budget proposé pour approbation.</h1>
+<div class="paddinglists">
+	<ol class="numberList">
+		<li class="listitem"><p class="balisePadding">Expliquez vos hypothèses comptables, vos calculs de coûts, vos chiffres et vos
+formules et expliquez comment le budget s’aligne sur les priorités ministérielles
+et gouvernementales.</p></li>
+		<li class="listitem"><p class="balisePadding">Apporter des ajustements au budget et au plan de travail, si nécessaire, avant
+l’approbation finale.</p></li>
+	</ol>
+</div>
+<br>
+<div align="right">
+	<img src="banners/Canada_GouvFooter.png" alt="Gouvernement du Canada" class="canadalogo">
+</div>
+</body>
+</html>

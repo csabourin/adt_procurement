@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HOW TO CREATE A NEW BUDGET</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<style>
+	body{
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	p, li{
+		font-size: 20px;
+		color: #2E475D;
+	}
+	
+	h1{
+		font-size: 30px;
+		margin-bottom: 0;
+		color: #2A4357;
+		position: relative;
+		margin-left: 200px;
+	}
+	
+	h1:before{
+		position:absolute;
+		left: -200px;
+		height: 100px;
+		width: 180px;
+		margin-top: 1px;
+		content: " ";
+		background:url('banners/flag/flag.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		
+	}
+	
+	.h1bold{
+		color: #357887;
+	}
+	
+	.numberList .listitem{
+		counter-increment:list2;
+		list-style:none;  
+	}
+	
+	.numberList .listitem{
+		/*counter-increment:list2;*/
+		margin:0 0 5px;
+		padding:0;
+	}
+	
+	.numberList .listitem:before {
+		/*counter-increment:list2;*/
+		content: counters(list2, ".", decimal)". "; 
+		color: #B64142;
+		font-weight: bolder;
+	}
+	
+	.margins{
+		margin-top: -31px;
+		margin-left: 80px;
+		margin-bottom: 0px;
+	}
+	
+	.marginimage{
+		margin-left: 5px;
+	}
+	
+	.letterList{
+		list-style:none; 
+		margin:0; 
+		padding-left: 102px; 
+		counter-reset:list;
+	}
+	
+	.letterList li{
+		margin:15px 0 5px;
+		padding:0;
+	}
+	
+	.letterList li:before {
+		counter-increment:list;
+		content: counter(list, lower-alpha)". "; 
+		color:#B64142;
+		font-weight: bolder;
+	}
+	
+	.balisePadding{
+		margin-top: -24px;
+		margin-left: 22px;
+		margin-bottom: 0px;
+	}
+	
+	.baliseLettresPadding{
+		margin-top: -24px;
+		margin-left: 22px;
+		margin-bottom: 0px;
+	}
+	
+	.canadalogo{
+		width: 250px;
+	}
+	
+	.paddingh1{
+		padding-left: 202px;
+	}
+	
+	.paddingletterlist{
+		margin-left: -79px;
+	}
+	
+	.paddinglists{
+		padding-left: 182px;
+	}
+	
+	@media print {
+		h1{
+		font-size: 30px;
+		margin-bottom: 0;
+		position: relative;
+		margin-left: 200px;
+		page-break-after: avoid;
+	}
+	
+	h1:before{
+		position:absolute;
+		left: -180px;
+		height: 40px;
+		width: 160px;
+		margin-top: 3px;
+		content: " ";
+		background:url('banners/flag/flag.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		
+	}
+	.canadalogo{
+		width: 150px;
+	}
+}
+	@media print and (color) {
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+}
+</style>
+</head>
+
+<body>
+<img src="banners/banner_createnewbudget.jpg" alt="Canada School of Public Service - How to create a budget">
+<h1><strong class="h1bold">ANALYZE</strong> information from your past and current budgets as well as key financial
+reports to identify accounting assumptions, figures and formulas you can use as a
+starting point in your new budget.</h1>
+<div class="paddinglists">
+<ol class="numberList">
+	<li class="listitem"><p class="balisePadding">What is the status of the activities: sunsetted, delayed, cancelled, continuing or new?
+		By doing this, you identify any activities that need to be carried over or eliminated from
+		your new budget.</p></li>
+	<li class="listitem"><p class="balisePadding">Are there any trends in the figures of the past or the current budget that are constant
+		or show the same spending pattern year after year that should be included in the new
+		budget?</p></li>
+	<li class="listitem"><p class="balisePadding">Are there any variances between the budgeted amount and the actual amount spent?</p>
+		<div class="paddingletterlist">
+		<ul class="letterList">
+			<li><p class="baliseLettresPadding">What are these variances?</p></li>
+			<li><p class="baliseLettresPadding">What are the reasons for these variances?</p></li>
+			<li><p class="baliseLettresPadding">Do I need to adjust the figures based on my analysis of the variances or can the
+			figures be used without modification?</p></li>
+		</ul>
+		</div>
+	</li>
+</ol>
+</div>
+<br>
+	<h1><strong class="h1bold">FORECAST</strong> your new budget requirements:</h1>
+<div class="paddinglists">
+	<ol class="numberList">
+		<li class="listitem"><p class="balisePadding">Estimate costs for your activities using accounting assumptions, figures and formulas,
+		identified during the analysis phase.</p></li>
+		<li class="listitem"><p class="balisePadding">Organize costs as either non-discretionary (essential for delivering on your activities) or
+		discretionary (not essential for delivering on your activities).</p></li>
+		<li class="listitem"><p class="balisePadding">Identify costs that have the potential of fluctuating and how you plan to manage these
+		fluctuations.</p></li>
+	</ol>
+</div>
+<br>
+	<h1><strong class="h1bold">SUBMIT</strong> your proposed new budget for approval.</h1>
+<div class="paddinglists">
+	<ol class="numberList">
+		<li class="listitem"><p class="balisePadding">Explain your accounting assumptions, cost calculations, figures and formulas and how
+		the budget aligns to departmental and government priorities.</p></li>
+		<li class="listitem"><p class="balisePadding">Make adjustments to the budget and work plan, if requested, before final approval.</p></li>
+	</ol>
+</div>
+<br>
+<div align="right">
+	<img src="banners/Canada_GouvFooter.png" alt="Government of Canada" class="canadalogo">
+</div>
+</body>
+</html>

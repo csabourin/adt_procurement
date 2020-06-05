@@ -139,7 +139,7 @@ export default {
 <style>
   
   .review{
-    color: deeppink;
+    color: deeppink!important;
   }  
   
   img.review{

@@ -3,85 +3,73 @@
     <h3>{{ $t('instructions') }}</h3>
     <b-container>
       <b-row>
-        <b-col>
+        <b-col class="text-center">
+          <download 
+            :filename="$t('fileName.threeSixty')" 
+            iconColor="Scan360Background" 
+            size=128 :title="$t('download360')"
+            :line1="$t('t360Line1')"
+            :line2="$t('t360Line2')"
+            :lineTag="$t('threeSixtyExample')" />
+          <HTMLJobaidLink :filename="$t('fileName.threeSixtyHTML')" />
+        </b-col>
+        <b-col class="text-center">
           <download
-           filename="ADT_Ressources_360.pdf"
-           iconColor="Scan360Background"
-           size=128 :title="$t('Test360')"
-           :line1="$t('t360Line1')"
-           :line2="$t('t360Line2')"
-           :lineTag="$t('Test360')" />
-          </b-col>
-        <b-col>
+            :filename="$t('fileName.WorkPlanTemplate')"
+            iconColor="planBackground"
+            size="128":title="$t('downloadPlan')"
+            :line1="$t('dwnPlanLine1')"
+            :line2="$t('dwnPlanLine2')"
+            :lineTag="$t('WPExample')" />
+        </b-col>
+        <b-col class="text-center">
           <download
-           filename="WorkPlan_lastYear.pdf"
+           :filename="$t('fileName.WorkPlan_lastYear')"
            iconColor="planBackground"
            size=128 :title="$t('wpExample')"
            :line1="$t('wpLine1')"
            :line2="$t('wpLine2')"
            :lineTag="$t('wpExample')" />
-          </b-col>
-        <b-col>
+        </b-col>
+        <b-col class="text-center">
           <download
-           filename="Budget.xlsx"
+           :filename="$t('fileName.Budget_lastYear')"
            iconColor="spendBackground"
            size=128 :title="$t('bExample')"
            :line1="$t('bLine1')"
            :line2="$t('bLine2')"
            :lineTag="$t('bExample')" />
-          </b-col>
-        <b-col>
+        </b-col>
+        <b-col class="text-center">
           <download
-           filename="ReportLast.docx"
+           :filename="$t('fileName.ReportLast')"
            iconColor="reportBackground"
            size=128 :title="$t('rExample')"
            :line1="$t('rLine1')"
            :line2="$t('rLine2')"
            :lineTag="$t('rExample')" />
-          </b-col>
+        </b-col>
       </b-row>
     </b-container>
   </div>
 </template>
 <i18n>
   {
-  "en":{
-  "instructions":"Examine each of the following documents.",
-  "Test360":"360° Scan",
-  "t360Line1":"360°",
-  "t360Line2":"Scan",
-  "wpExample":"Last Year's Work Plan",
-  "wpLine1":"Work",
-  "wpLine2":"Plan",
-  "bExample":"Last Year's Budget",
-  "bLine1":"Last year's",
-  "bLine2":"Budget",
-  "rExample":"Last Year's Reports",
-  "rLine1":" ",
-  "rLine2":"Reports"
-  },
-  "fr":{
-  "instructions":"Examinez chacun des documents suivants :",
-  "Test360":"Aperçu à 360 degrés",
-  "t360Line1":"Aperçu",
-  "t360Line2":"360",
-  "wpExample":"Plan de travail de l’année dernière",
-  "wpLine1":"Plan de",
-  "wpLine2":"travail",
-  "bExample":"Budget de l’année dernière",
-  "bLine1":" ",
-  "bLine2":"Budget",
-  "rExample":"Rapport de l’année dernière",
-  "rLine1":" ",
-  "rLine2":"Rapport"
-  }
+    "en":{
+      "instructions":"Examine each of the following documents."
+    },
+    "fr":{
+      "instructions":"Examinez chacun des documents suivants :"
+    }
   }
 </i18n>
 <script type="text/javascript">
 import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 export default {
   components: {
-    download
+    download,
+    HTMLJobaidLink
   }
 }
 

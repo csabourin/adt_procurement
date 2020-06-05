@@ -1,12 +1,24 @@
 <template>
+  <div>
     <matchingExercise :question="$t('q1')" qId="1" />
+    <b-row>
+      <b-col cols="2" class="text-center">
+          <download :filename="$t('fileName.extReports')" size=128 iconColor="reportBackground" :title="$t('DownloadExtReports')" :line1="$t('extReportsLn1')" :line2="$t('extReportsLn2')" :lineTag="$t('extReportsExample')"/>
+          <HTMLJobaidLink :filename="$t('fileName.extReportsHTML')" />
+        </b-col>
+     </b-row>
+  </div>
 </template>
 <script type="text/javascript">
 import matchingExercise from "~/components/interface/matchingExercise"
+import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 export default {
-    components: {
-        matchingExercise
-    }
+  components: {
+    matchingExercise,
+    download,
+    HTMLJobaidLink
+  }
 }
 </script>
 <i18n>{

@@ -3,7 +3,13 @@
     <a href="javascript:" v-b-modal.fileFolder>
       <fileIcon :title="$t('fileFolder')" width="44" />
     </a>
-    <b-modal id="fileFolder" :title="$t('fileFolder')" okOnly size="xl">
+    <b-modal id="fileFolder" okOnly size="xl">
+      <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            {{$t('fileFolder')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
       <div role="tablist">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
@@ -12,8 +18,52 @@
           <b-collapse id="toolbox-1" visible accordion="my-toolbox" role="tabpanel">
             <b-card-body>
               <b-card-text>
-                <download filename="ADT_Ressources_360.pdf" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" />
-                <download :filename="$t('fileName.WorkPlanTemplate')" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" />
+                <b-row>
+                  <b-col cols="12"><h4>{{$t('plan')}}</h4></b-col>
+                  <b-col cols="2" class="text-center">
+                    <download :filename="$t('fileName.threeSixty')" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" :lineTag="$t('threeSixtyExample')" />
+                    <HTMLJobaidLink :filename="$t('fileName.threeSixtyHTML')" />
+                  </b-col>
+                  <b-col cols="2" class="text-center">
+                    <download :filename="$t('fileName.WorkPlanTemplate')" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" :lineTag="$t('WPExample')" />
+                  </b-col>
+                  <b-col cols="2" class="text-center">
+                    <download :filename="$t('fileName.buildWPProcessMap')" size=128 iconColor="planBackground" :title="$t('DownloadProcessMap')" :line1="$t('ProcessMapLn1')" :line2="$t('ProcessMapLn2')" :lineTag="$t('buildWPProcessMapExample')" />
+                    <HTMLJobaidLink :filename="$t('fileName.buildWPProcessMapHTML')" />
+                  </b-col>
+                  <b-col cols="2" class="text-center">
+                    <download :filename="$t('fileName.newBudget')" size=128 iconColor="planBackground" :title="$t('DownloadNewBudget')" :line1="$t('newBudgetLn1')" :line2="$t('newBudgetLn2')" :lineTag="$t('newBudgetExample')" />
+                    <HTMLJobaidLink :filename="$t('fileName.newBudgetHTML')" />
+                  </b-col>
+                  <b-col cols="2" class="text-center">
+                    <download :filename="$t('fileName.cycle')" size=128 iconColor="Scan360Background" :title="$t('DownloadCycle')" :line1="$t('cycleLn1')" :line2="$t('cycleLn2')" :lineTag="$t('cycleExample')" />
+                  </b-col>
+                </b-row>
+                <b-row>
+                  <b-col cols="12"><h4>{{$t('spend')}}</h4></b-col>
+                  <b-col cols="2" class="text-center">
+                    <download :filename="$t('fileName.procurementInstruments')" size=128 iconColor="spendBackground" :title="$t('DownloadProcurementInstruments')" :line1="$t('procurementInstrumentsLn1')" :line2="$t('procurementInstrumentsLn2')" :lineTag="$t('procurementInstrumentsExample')" />
+                    <HTMLJobaidLink :filename="$t('fileName.procurementInstrumentsHTML')" />
+                  </b-col>
+                  <b-col cols="2" class="text-center">
+                    <download :filename="$t('fileName.s32s34')" size=128 iconColor="spendBackground" :title="$t('Downloads32s34')" :line1="$t('s32s34Ln1')" :line2="$t('s32s34Ln2')" :lineTag="$t('s32s34Example')" class="review" />
+                  </b-col>
+                </b-row>
+                <b-row>
+                  <b-col cols="12"><h4>{{$t('report')}}</h4></b-col>
+                  <b-col cols="2" class="text-center">
+                    <download :filename="$t('fileName.FSRRoadmap')" size=128 iconColor="reportBackground" :title="$t('DownloadFSRRoadmap')" :line1="$t('FSRRoadmapLn1')" :line2="$t('FSRRoadmapLn2')" :lineTag="$t('FSRRoadmapExample')"/>
+                    <HTMLJobaidLink :filename="$t('fileName.FSRRoadmapHTML')" />
+                  </b-col>
+                  <b-col cols="2" class="text-center">
+                    <download :filename="$t('fileName.prepareFSR')" size=128 iconColor="reportBackground" :title="$t('DownloadPrepareFSR')" :line1="$t('prepareFSRLn1')" :line2="$t('prepareFSRLn2')" :lineTag="$t('prepareFSRExample')"/>
+                    <HTMLJobaidLink :filename="$t('fileName.prepareFSRHTML')" />
+                  </b-col>
+                  <b-col cols="2" class="text-center">
+                    <download :filename="$t('fileName.extReports')" size=128 iconColor="reportBackground" :title="$t('DownloadExtReports')" :line1="$t('extReportsLn1')" :line2="$t('extReportsLn2')" :lineTag="$t('extReportsExample')"/>
+                    <HTMLJobaidLink :filename="$t('fileName.extReportsHTML')" />
+                  </b-col>
+                </b-row>
                 <!-- <download filename="WorkPlan_Template.docx" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" /> -->
               </b-card-text>
             </b-card-body>
@@ -149,6 +199,7 @@
 <script type="text/javascript">
 import fileIcon from '~/components/icons/FileIcon'
 import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 import planLinks from "~/components/plan_links"
 import spendLinks from "~/components/spend_links"
 import reportLinks from "~/components/report_links"
@@ -160,7 +211,8 @@ export default {
     planLinks,
     spendLinks,
     reportLinks,
-    homebutton
+    homebutton,
+    HTMLJobaidLink
   }
 }
 

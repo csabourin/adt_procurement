@@ -2,7 +2,7 @@
   <span>
     <div v-if="$i18n.locale=='fr'">
       <div>
-        <p>D&Eacute;PENSES</p>
+        <h4>Dépenses</h4>
         <ul>
           <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32495">Politique sur la gestion financière</a></li>
           <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32503">Directive sur la délégation des pouvoirs de dépenser et des pouvoirs financiers</a>
@@ -31,7 +31,7 @@
     </div>
     <div v-if="$i18n.locale=='en'">
       <div>
-        <p>SPEND</p>
+        <h4>Spend</h4>
         <ul class="list-unstyled">
           <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32495">Policy on Financial Management</a></li>
           <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32503">Directive on Delegation of Spending and Financial Authorities</a>

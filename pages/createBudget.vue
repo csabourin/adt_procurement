@@ -217,6 +217,20 @@
     </section>
     <section>
         <continue-popup id="purpose"></continue-popup>
+        <b-modal no-stacking id="financialCycle" @hide="resumePlay()" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5 review">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('financialCycle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <b-row>
+              <b-col cols="4" offset-md="4" class="text-center">
+                <download :filename="$t('fileName.cycle')" size=128 iconColor="Scan360Background" :title="$t('DownloadCycle')" :line1="$t('cycleLn1')" :line2="$t('cycleLn2')" :lineTag="$t('cycleExample')" class="review" />
+              </b-col>
+            </b-row>
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
         <b-modal no-stacking id="budgetKeyTerms" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
@@ -296,10 +310,12 @@ import AnalyzeBudgetKT from '~/components/slides/plan/AnalyzeBudgetKT'
 import submitBudget from '~/components/slides/plan/submitBudget'
 import budgetQuiz from '~/components/slides/plan/budgetQuiz'
 import continuePopup from '~/components/continuePopup'
+import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 export default {
   data() {
     return {
-      modalArray: ["purpose", "purpose", "budgetKeyTerms", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"]
+      modalArray: ["purpose", "financialCycle", "budgetKeyTerms", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"]
     }
   },
   components: {
@@ -310,7 +326,9 @@ export default {
     budgetForecastActivity,
     submitBudget,
     budgetQuiz,
-    continuePopup
+    continuePopup,
+    download,
+    HTMLJobaidLink
   },
     methods: {
     resumePlay() {
@@ -354,6 +372,7 @@ export default {
   "submitBudgetTitle":"Activity: Submit and Adjust your Budget",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "AnalyzeBudgetKT":"Activity: Analyze a Budget - Key Terms",
+  "financialCycle":"Activity: Financial Cycle of the Government of Canada",
   "budgetAnalyzeActivity":"Activity: Analyze Past And Current Year’s Budget",
   "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
   "InRealLife":"In Real Life",
@@ -369,6 +388,7 @@ export default {
   "completewptitle":"Activité: Compléter le plan de travail",
   "adjustwptitle":"Activité: Ajuster le plan de travail",
   "AnalyzeBudgetKT":"Activité: Analyser un budget - Termes clés",
+  "financialCycle":"Activité: Le cycle financier",
   "budgetAnalyzeActivity":"Activité: Analyser les budgets précédents et en cours",
   "submitBudgetTitle":"Activité: Soumettre et ajuster votre budget ",
   "forecastBudgetTitle":"Activité: Prévoyez vos besoins budgétaires",

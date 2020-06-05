@@ -23,15 +23,25 @@
         </b-button-group>
       </div>
     </b-card>
+    <b-row>
+      <b-col cols="2" class="text-center">
+        <download :filename="$t('fileName.procurementInstruments')" size=128 iconColor="spendBackground" :title="$t('DownloadProcurementInstruments')" :line1="$t('procurementInstrumentsLn1')" :line2="$t('procurementInstrumentsLn2')" :lineTag="$t('procurementInstrumentsExample')" />
+        <HTMLJobaidLink :filename="$t('fileName.procurementInstrumentsHTML')" />
+      </b-col>
+    </b-row>
   </div>
 </template>
 <script type="text/javascript">
 import checkboxQuiz from "~/components/checkboxQuiz"
 import radioQuiz from "~/components/radioQuiz"
+import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 export default {
   components: {
     checkboxQuiz,
-    radioQuiz
+    radioQuiz,
+    download,
+    HTMLJobaidLink
   },
   data(){
     return{

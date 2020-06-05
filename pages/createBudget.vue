@@ -226,7 +226,7 @@
             </template>
             <b-row>
               <b-col cols="4" offset-md="4" class="text-center">
-                <download :filename="$t('fileName.cycle')" size=128 iconColor="Scan360Background" :title="$t('DownloadCycle')" :line1="$t('cycleLn1')" :line2="$t('cycleLn2')" :lineTag="$t('cycleExample')" class="review" />
+                <download :filename="$t('fileName.cycle')" size=128 iconColor="Scan360Background" :title="$t('DownloadCycle')" :line1="$t('cycleLn1')" :line2="$t('cycleLn2')" :lineTag="$t('cycleExample')" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" class="review" />
               </b-col>
             </b-row>
             <template v-slot:modal-ok>{{$t('close')}}</template>

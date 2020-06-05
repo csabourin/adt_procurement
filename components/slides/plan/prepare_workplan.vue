@@ -56,7 +56,7 @@
         </b-row>     
         <b-row>
           <b-col cols="2" class="text-center" style="margin-top: 30px;">
-            <download :filename="$t('fileName.buildWPProcessMap')" size=128 iconColor="planBackground" :title="$t('DownloadProcessMap')" :line1="$t('ProcessMapLn1')" :line2="$t('ProcessMapLn2')" :lineTag="$t('buildWPProcessMapExample')" />
+            <download :filename="$t('fileName.buildWPProcessMap')" size=128 iconColor="planBackground" :title="$t('DownloadProcessMap')" :line1="$t('ProcessMapLn1')" :line2="$t('ProcessMapLn2')" :lineTag="$t('buildWPProcessMapExample')" :fileSize="this.$i18n.locale == 'en' ? '121' : '114'" />
             <HTMLJobaidLink :filename="$t('fileName.buildWPProcessMapHTML')" />
           </b-col>
         </b-row>

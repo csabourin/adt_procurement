@@ -79,31 +79,31 @@
           <h3>{{$t('fileSet')}}</h3>
           <b-row>
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.threeSixty')" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" :lineTag="$t('threeSixtyExample')" />
+              <download :filename="$t('fileName.threeSixty')" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" :lineTag="$t('threeSixtyExample')" :fileSize="this.$i18n.locale == 'en' ? '118' : '124'" />
               <HTMLJobaidLink :filename="$t('fileName.threeSixtyHTML')" />
             </b-col>
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.WorkPlanTemplate')" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" :lineTag="$t('WPExample')" />
+              <download :filename="$t('fileName.WorkPlanTemplate')" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" :lineTag="$t('WPExample')" :fileSize="this.$i18n.locale == 'en' ? '15.9' : '17,5'" />
             </b-col>
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.WorkPlan_lastYear')" iconColor="planBackground" size=128 :title="$t('wpExample')" :line1="$t('wpLine1')" :line2="$t('wpLine2')" :lineTag="$t('wpExample')" />
+              <download :filename="$t('fileName.WorkPlan_lastYear')" iconColor="planBackground" size=128 :title="$t('wpExample')" :line1="$t('wpLine1')" :line2="$t('wpLine2')" :lineTag="$t('wpExample')" :fileSize="this.$i18n.locale == 'en' ? '120' : '120'" />
             </b-col>
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.Budget_lastYear')" iconColor="spendBackground" size=128 :title="$t('bExample')" :line1="$t('bLine1')" :line2="$t('bLine2')" :lineTag="$t('bExample')" />
+              <download :filename="$t('fileName.Budget_lastYear')" iconColor="spendBackground" size=128 :title="$t('bExample')" :line1="$t('bLine1')" :line2="$t('bLine2')" :lineTag="$t('bExample')" :fileSize="this.$i18n.locale == 'en' ? '9.96' : '9,62'" />
             </b-col>
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.ReportLast')" iconColor="reportBackground" size=128 :title="$t('rExample')" :line1="$t('rLine1')" :line2="$t('rLine2')" :lineTag="$t('rExample')" />
+              <download :filename="$t('fileName.ReportLast')" iconColor="reportBackground" size=128 :title="$t('rExample')" :line1="$t('rLine1')" :line2="$t('rLine2')" :lineTag="$t('rExample')" :fileSize="this.$i18n.locale == 'en' ? '16.6' : '19,4'" />
             </b-col>
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.buildWPProcessMap')" size=128 iconColor="planBackground" :title="$t('DownloadProcessMap')" :line1="$t('ProcessMapLn1')" :line2="$t('ProcessMapLn2')" :lineTag="$t('buildWPProcessMapExample')" />
+              <download :filename="$t('fileName.buildWPProcessMap')" size=128 iconColor="planBackground" :title="$t('DownloadProcessMap')" :line1="$t('ProcessMapLn1')" :line2="$t('ProcessMapLn2')" :lineTag="$t('buildWPProcessMapExample')" :fileSize="this.$i18n.locale == 'en' ? '121' : '114'" />
               <HTMLJobaidLink :filename="$t('fileName.buildWPProcessMapHTML')" />
             </b-col>
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.newBudget')" size=128 iconColor="planBackground" :title="$t('DownloadNewBudget')" :line1="$t('newBudgetLn1')" :line2="$t('newBudgetLn2')" :lineTag="$t('newBudgetExample')" />
+              <download :filename="$t('fileName.newBudget')" size=128 iconColor="planBackground" :title="$t('DownloadNewBudget')" :line1="$t('newBudgetLn1')" :line2="$t('newBudgetLn2')" :lineTag="$t('newBudgetExample')" :fileSize="this.$i18n.locale == 'en' ? '129' : '131'" />
               <HTMLJobaidLink :filename="$t('fileName.newBudgetHTML')" />
             </b-col>
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.cycle')" size=128 iconColor="Scan360Background" :title="$t('DownloadCycle')" :line1="$t('cycleLn1')" :line2="$t('cycleLn2')" :lineTag="$t('cycleExample')" />
+              <download :filename="$t('fileName.cycle')" size=128 iconColor="Scan360Background" :title="$t('DownloadCycle')" :line1="$t('cycleLn1')" :line2="$t('cycleLn2')" :lineTag="$t('cycleExample')" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" />
             </b-col>
           </b-row>
         </b-col>

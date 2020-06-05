@@ -211,7 +211,7 @@
 }
 
 .contentMap a {
-  color: #000;
+  color: #212529;
   width:100%;
   display: inline-block;
   padding:4px 16px;

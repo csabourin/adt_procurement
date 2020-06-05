@@ -1,7 +1,7 @@
 <template>
   <div class="learningElement">
     <nuxt-link :to="localePath(path)">
-      <div class="box" :style="boxSize" style="color:#000">
+      <div class="box" :style="boxSize" style="color:#212529">
         <div class="completed" :style="completionBar" :data-percent="completion"></div>
         <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span><span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span></span></div>
       </div>
@@ -63,7 +63,7 @@ export default {
 </script>
 <style type="text/css" scoped>
 a {
-  color: black;
+  color: #212529;
 }
 
 a:focus {
@@ -87,7 +87,7 @@ a:focus {
 }
 
 .completed:after {
-  color: #000;
+  color: #212529;
   background-color: rgba(255, 255, 255, .8);
   position: absolute;
   right: 0;

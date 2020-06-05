@@ -354,7 +354,7 @@ export default {
   background-color: #e0e59e;
   box-shadow: -3px 7px 6px rgba(0, 0, 0, 0.3);
   outline: 1px solid #fff;
-  color: #000;
+  color: #212529;
   /*outline: 2px solid #1000ff33;*/
 }
 

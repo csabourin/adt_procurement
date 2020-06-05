@@ -2,7 +2,7 @@
   <b-container>
     <b-row>
       <b-col>
-        <figure style="clear:both;position:relative;background-color: #000;padding: 0 0 2em;">
+        <figure style="clear:both;position:relative;background-color: #212529;padding: 0 0 2em;">
           <Spinner v-if="!canPlay" />
           <video :id="vId" @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadedmetadata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">

@@ -85,6 +85,6 @@ export default {
     padding-bottom:1em;
   }
   a {
-    color:#000;
+    color:#212529;
   }
 </style>

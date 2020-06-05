@@ -39,12 +39,12 @@ export default {
         return {name: "XLSX", longName: "Microsoft Excel (OpenXML)", mime: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"};
       }
     },
-    msieversion() {
+    detectIE() {
       var ua = window.navigator.userAgent;
       var msie = ua.indexOf("MSIE ");
 
       if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)){  // If Internet Explorer, return version number
-        return parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
+        return true
       }
       else{  // If another browser, return 0
         return false;
@@ -56,7 +56,7 @@ export default {
   mounted(){
     var type = this.findType();
     
-    if(this.msieversion() && type.name == "PDF"){
+    if(this.detectIE() && type.name == "PDF"){
       this.downloadOK = false;
     }
     

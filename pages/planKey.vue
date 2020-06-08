@@ -111,9 +111,9 @@
       <b-row>
         <b-col>
           <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
-            Find your organization's Departmental Plan here: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank" rel="external" aria-aspopup="true" class="external">Departmental Plans</a></span>
+            Find your organization's Departmental Plan here: <externalLink link="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html">Departmental Plans</externalLink></span>
           <span v-if="$i18n.locale=='fr'">
-            Trouvez le plan ministériel de votre organisation ici : <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank" rel="external" aria-aspopup="true" class="external">Plans ministériels</a>
+            Trouvez le plan ministériel de votre organisation ici : <externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html">Plans ministériels</externalLink>
           </span></p>
         </b-col>
       </b-row>
@@ -133,12 +133,14 @@ import download from "~/components/fileDownload"
 import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 import hamburger from "~/components/hamburger"
 import microlearning from "~/components/microlearning"
+import externalLink from "~/components/externalLink"
 export default {
   components: {
     hamburger,
     microlearning,
     download,
-    HTMLJobaidLink
+    HTMLJobaidLink,
+    externalLink
   },
   computed: {
     pageComplete() {

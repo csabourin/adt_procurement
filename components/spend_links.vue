@@ -4,28 +4,24 @@
       <div>
         <h4>Dépenses</h4>
         <ul>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32495">Politique sur la gestion financière</a></li>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32503">Directive sur la délégation des pouvoirs de dépenser et des pouvoirs financiers</a>
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32495">Politique sur la gestion financière</externalLink></li>
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32503">Directive sur la délégation des pouvoirs de dépenser et des pouvoirs financiers</externalLink>
             <ul>
-              <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584&amp;section=html">Guide de délégation</a></li>
+              <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584&amp;section=html">Guide de délégation et de mise en &oelig;uvre des pouvoirs de dépenser et des pouvoirs financiers</externalLink></li>
+              <li><externalLink link="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_fr.html">Tableau de délégation des pouvoirs de dépenser et de signer des documents financiers</externalLink> (Lien vers un graphique fictif)&nbsp;</li>
             </ul>
           </li>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32584&amp;section=html">et de mise en &oelig;uvre des pouvoirs de dépenser et des pouvoirs financiers</a>
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228">Directive sur les dépenses de voyages, d’accueil, de conférences et d’événements</externalLink>
             <ul>
-              <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_fr.html">Tableau de délégation des pouvoirs de dépenser et de signer des documents financiers</a> (Lien vers un graphique fictif)&nbsp;</li>
+              <li><externalLink link="https://intranet.canada.ca/pol/doc-fra.aspx?id=32553">Guide sur les dépenses de voyages, d’accueil, de conférences et d’événements</externalLink></li>
+              <li><externalLink link="https://www.njc-cnm.gc.ca/directive/d10/fr">Directive sur les voyages du Conseil national mixte (CNM)</externalLink></li>
+              <li><externalLink link="https://www.gcpedia.gc.ca/wiki/Ensemble_de_politiques_sur_la_gestion_financi%C3%A8re/Conf%C3%A9rence_par_opposition_%C3%A0_formation">Conférence par opposition à formation</externalLink></li>
             </ul>
           </li>
-          <li><a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228">Directive sur les dépenses de voyages, d’accueil, de conférences et d’événements</a>
-            <ul>
-              <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://intranet.canada.ca/pol/doc-fra.aspx?id=32553">Guide sur les dépenses de voyages, d’accueil, de conférences et d’événements</a></li>
-              <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.njc-cnm.gc.ca/directive/d10/fr">Directive sur les voyages du Conseil national mixte (CNM)</a></li>
-              <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.gcpedia.gc.ca/wiki/Ensemble_de_politiques_sur_la_gestion_financi%C3%A8re/Conf%C3%A9rence_par_opposition_%C3%A0_formation">Conférence par opposition à formation</a></li>
-            </ul>
-          </li>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32504">Directive sur les paiements</a></li>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14662">Directive sur la réinstallation du CNM</a></li>
-          <li>Directive sur l’imputation et les autorisations financières spéciales</li>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32505">Directive sur la gestion des fonds publics et des comptes débiteurs</a></li>
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32504">Directive sur les paiements</externalLink></li>
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14662">Directive sur la réinstallation du CNM</externalLink></li>
+          <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32502">Directive sur l’imputation et les autorisations financières spéciales</externalLink></li>
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32505">Directive sur la gestion des fonds publics et des comptes débiteurs</externalLink></li>
         </ul>
       </div>
     </div>
@@ -33,27 +29,41 @@
       <div>
         <h4>Spend</h4>
         <ul class="list-unstyled">
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32495">Policy on Financial Management</a></li>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32503">Directive on Delegation of Spending and Financial Authorities</a>
+          <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32495">Policy on Financial Management</externalLink></li>
+          <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32503">Directive on Delegation of Spending and Financial Authorities</externalLink>
             <ul>
-              <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_en.html">Delegation of Spending and Financial Signing Authorities Chart</a> (Link to a fictitious chart)</li>
+              <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32584&amp;section=html">Guide to Delegating and Applying Spending and Financial Authorities</externalLink></li>
+              <li><externalLink link="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_en.html">Delegation of Spending and Financial Signing Authorities Chart</externalLink> (Link to a fictitious chart)</li>
             </ul>
           </li>
-          <li><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228">Directive on Travel, Hospitality, Conference and Event Expenditures</a>
+          <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228">Directive on Travel, Hospitality, Conference and Event Expenditures</externalLink>
             <ul>
-              <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://intranet.canada.ca/pol/doc-eng.aspx?id=32553">Guide to Travel, Hospitality, Conference and Event Expenditures</a></li>
-              <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.gcpedia.gc.ca/wiki/Financial_Management_Policy_Suite/Conference_versus_training">Determination of training vs. conferences for functional communities</a></li>
+              <li><externalLink link="https://intranet.canada.ca/pol/doc-eng.aspx?id=32553">Guide to Travel, Hospitality, Conference and Event Expenditures</externalLink></li>
+              <li><externalLink link="https://www.njc-cnm.gc.ca/directive/d10/en">Travel Directive of the National Joint Council (NJC)</externalLink></li>
+              <li><externalLink link="https://www.gcpedia.gc.ca/wiki/Financial_Management_Policy_Suite/Conference_versus_training">Determination of training vs. conferences for functional communities</externalLink></li>
             </ul>
           </li>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32504">Directive on Payments</a></li>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32502">Directive on Charging and Special Financial Authorities</a></li>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32505">Directive on Public</a></li>
-          <li><a target="_blank" rel="external" aria-aspopup="true" class="external" href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32505">Money and Receivables</a></li>
+          <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32504">Directive on Payments</externalLink></li>
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=14662">NJC Relocation Directive</externalLink></li>
+          <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32502">Directive on Charging and Special Financial Authorities</externalLink></li>
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32505">Directive on Public Money and Receivables</externalLink></li>
         </ul>
       </div>
     </div>
   </span>
 </template>
+
+<script>
+
+  import externalLink from "~/components/externalLink"
+  export default{
+    components:{
+      externalLink
+    }
+  }
+
+</script>
+
 <style scoped>
   p {
     font-weight: bold;

@@ -94,9 +94,9 @@
       <b-row>
         <b-col>
           <!-- <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
-            Have a look at your organization's DP by selecting the following link: <a href="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html" target="_blank" rel="external" aria-aspopup="true" class="external">Departmental Plans</a></span>
+            Find your organization's Departmental Plan here: <externalLink link="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html">Departmental Plans</externalLink></span>
           <span v-if="$i18n.locale=='fr'">
-            Jetez un coup d’&oelig;l au PM de votre organisation en sélectionnant le lien suivant: <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html" target="_blank" rel="external" aria-aspopup="true" class="external">Plans ministériels</a>
+            Trouvez le plan ministériel de votre organisation ici : <externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html">Plans ministériels</externalLink>
           </span></p> -->
         </b-col>
       </b-row>

@@ -1,13 +1,16 @@
 <template>
   <p class="text-center">
-    <a :href="'../jobaidHTML/' + $i18n.locale + '/' + filename" target="_blank" rel="external" aria-aspopup="true" class="external" :title="$t('title')">{{$t('HTMLVersion')}}</a>
+    <externalLink :link="'../jobaidHTML/' + $i18n.locale + '/' + filename" :title="$t('title')">{{$t('HTMLVersion')}}</externalLink>
   </p>
 </template>
 
 <script type="text/javascript">
   
+  import externalLink from "~/components/externalLink"
   export default {
-
+    components:{
+      externalLink
+    },
     props: {
       filename: { type: String, default: "" },
     },

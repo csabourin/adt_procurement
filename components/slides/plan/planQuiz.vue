@@ -3,170 +3,7 @@
     <div>
       <b-card>
         <b-tabs v-model="tabIndex">
-          <b-tab title="Question 1">
-            <fieldset>
-              <legend>
-                <p v-html="$t('q1.text')" />
-                <!-- Working ... in -->
-                <!--  <span>
-
-                  <div class="tableColoured">
-                    <div class="govtPri">
-                      <p><span>&nbsp;</span></p>
-                    </div>
-                    <div class="deptPri">
-                      <p><span>&nbsp;</span></p>
-                    </div>
-                    <div class="dirPri">
-                      <p><span>&nbsp;</span></p>
-                    </div>
-                  </div>
-
-                  <div class="microTablePart2">
-                    <div class='planAct thNumbered'>&nbsp;</div>
-                    <div class='planSubAct thNumbered'>&nbsp;</div>
-                    <div class='planDelivs thNumbered'>&nbsp;</div>
-                    <div class='planRisk thNumbered'>&nbsp;</div>
-                    <div class='planLikely thNumbered'>&nbsp;</div>
-                    <div class='planImpact thNumbered'>&nbsp;</div>
-                    <div class='planMitigat thNumbered'>&nbsp;</div>
-                    <div class='planRes thNumbered'>&nbsp;</div>
-                  </div>
-                </span>
-
-                <br><br><br><br>
-
-                <ol>
-                  <li>
-                    <span v-html="$t('pwpGovtPri')" />
-                  </li>
-                  <li>
-                    <span v-html="$t('pwpDeptPri')" />
-                  </li>
-                  <li>
-                    <span v-html="$t('pwpDirPri')" />
-                  </li>
-                  <li>
-                    <span v-html="$t('titleActivities')" />
-                  </li>
-                  <li>
-                    <span v-html="$t('titleSubActivities')" />
-                  </li>
-                  <li>
-                    <span v-html="$t('titleDeliverables')" />
-                  </li>
-                  <li>
-                    <span v-html="$t('titleRisk')" />
-                  </li>
-                  <li>
-                    <span v-html="$t('titleLikelihood')" />
-                  </li>
-                  <li>
-                    <span v-html="$t('titleImpact')" />
-                  </li>
-                  <li>
-                    <span v-html="$t('titleMitigation')" />
-                  </li>
-                  <li>
-                    <span v-html="$t('titleResources')" />
-                  </li>
-                </ol>
-                 -->
-              </legend>
-              <b-container class="workplan-table wp-table-1">
-                <b-row>
-                  <b-col class="encadrage">
-                    <h3 v-html="$t('pwpGovtPri')"></h3>
-                    <p><span v-html="$t('pwpGovtPri')" /><br>
-                      <select v-model="options1">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select>
-                    </p>          
-                  </b-col>
-                </b-row>
-                <b-row>
-                  <b-col class="encadrage">
-                    <h3 v-html="$t('pwpDeptPri')"></h3>
-                      <p><span v-html="$t('pwpDeptPri')" /><br><select v-model="options2">
-                          <option disabled value=''>{{$t('qDisabled')}}</option>
-                          <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                        </select>
-                      </p>
-                  </b-col>
-                </b-row>
-                <b-row>
-                  <b-col class="encadrage">
-                    <h3 v-html="$t('pwpDirPri')"></h3>
-                    <p><span v-html="$t('pwpDirPri')" /><br><select v-model="options3">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select>
-                    </p>
-                  </b-col>
-                </b-row>
-                <b-row>
-                  <b-col class="encadrage" sm="12">
-                    <h3 v-html="$t('titleActivities')"></h3>
-                    <p>
-                      <select v-model="options4">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select>
-                    </p>
-                    <h4 v-html="$t('titleSubActivities')">Sous activités</h4>
-                    <p>
-                      <select v-model="options5">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select>
-                    </p>
-                    <h4 v-html="$t('titleDeliverables')">Livrables</h4>
-                      <p><select v-model="options6">
-                          <option disabled value=''>{{$t('qDisabled')}}</option>
-                          <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                        </select>
-                      </p>
-                    <h4 v-html="$t('titleRisk')">Risque</h4>
-                    <p>
-                      <select v-model="options7">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select>
-                    </p>
-                    <h4 v-html="$t('titleLikelihood')">Probabilité</h4>
-                      <p>
-                        <select v-model="options8">
-                          <option disabled value=''>{{$t('qDisabled')}}</option>
-                          <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                        </select>
-                      </p>
-                    <h4 v-html="$t('titleImpact')">Impact</h4>
-                    <p>
-                      <select v-model="options9">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select>
-                    </p>
-                    <h4 v-html="$t('titleMitigation')">Atténuation</h4>
-                    <p>
-                      <select v-model="options10">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select>
-                    </p>
-                    <h4 v-html="$t('titleResources')">Resources</h4>
-                    <p>
-                      <select v-model="options11">
-                        <option disabled value=''>{{$t('qDisabled')}}</option>
-                        <option v-for="(statement,index) in answers1" :value="index" :key="index">{{$t(statement)}}</option>
-                      </select>
-                    </p>
-                  </b-col>
-                </b-row>
-              </b-container>
-            </fieldset>
-          </b-tab>
+          <b-tab title="Question 1"><radioQuiz :question="$t('q1')" qId="1" /></b-tab>
           <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["1","2"]' /></b-tab>
           <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
           <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
@@ -192,43 +29,6 @@
     </div>
   </span>
 </template>
-<i18n>
-  {
-  "en":{
-  "qDisabled":"Please select one",
-  "q1":{"text":"Match the following statements to the appropriate sections of the work plan. Each section can only be populated with one statement.",
-  "a11": "High",
-  "a12": "Work with Canadians in all areas of the economy and all parts of the country to improve conditions for investment",
-  "a13" : "Tablets",
-  "a14" : "Keep original computers until tablets are up and running for 3 months",
-  "a15" : "Give employees new digital tools to promote mobility",
-  "a16" : "Modernize and renew the public service to better serve Canadians and foster a healthy, productive workforce",
-  "a17" : "Buy tablets ",
-  "a18" : "Technology is not compatible with existing network ",
-  "a19" : "Low",
-  "a110" : "Workplace Modernization",
-  "a111" : "Give employees tablets" }
-  }
-  ,
-  "fr":{
-  "qDisabled":"Veuillez faire un choix",
-  "q1":{
-  "text":"Faites correspondre les énoncés suivants aux parties appropriées du plan de travail. Chaque partie ne peut dépasser un seul énoncé.",
-  "a11": "Élevé ",
-  "a12": "Travailler avec les Canadiens dans tous les secteurs de l’économie et dans toutes les régions du pays pour améliorer les conditions d’investissement.",
-  "a13" : "Tablettes",
-  "a14" : "Conservez les ordinateurs d’origine jusqu’à ce que les tablettes soient prêtes et à l’emploi pendant 3 mois.",
-  "a15" : "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité.",
-  "a16" : "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et favoriser une main-d'œuvre saine et productive.",
-  "a17" : "Acheter des tablettes",
-  "a18" : "La technologie n’est pas compatible avec le réseau existant.",
-  "a19" : "Faible",
-  "a110" : "Modernisation du milieu de travail ",
-  "a111" : "Donner des tablettes aux employés."
-  }
-  }
-  }
-</i18n>
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
@@ -236,21 +36,7 @@ export default {
   components: { radioQuiz, checkboxQuiz },
   data() {
     return {
-      tabIndex: 0,
-      Quest1: '',
-      answers1: ['q1.a1', 'q1.a2', 'q1.a3', 'q1.a4', 'q1.a5', 'q1.a6', 'q1.a7', 'q1.a8', 'q1.a9', 'q1.a10', 'q1.a11'],
-      options1: '',
-      options2: '',
-      options3: '',
-      options4: '',
-      options5: '',
-      options6: '',
-      options7: '',
-      options8: '',
-      options9: '',
-      options10: '',
-      options11: '',
-
+      tabIndex: 0
     }
   },
   methods:{
@@ -266,31 +52,20 @@ export default {
 <i18n>{
   "en": {
     "qDisabled": "Choose",
-    "pwpGovtPri": "<strong>Government priorities</strong>",
-    "pwpDeptPri": "<strong>Departmental priorities</strong>",
-    "pwpDirPri": "<strong>Directorate priorities</strong>",
-    "titleActivities": "Activities",
-    "pwpPlanAct": "<strong>Activities</strong>",
-    "titleSubActivities": "Sub-activities",
-    "titleDeliverables": "Deliverables",
-    "titleRisk": "Risk",
-    "titleLikelihood": "Likelihood",
-    "titleImpact": "Impact",
-    "titleMitigation": "Mitigation",
-    "titleResources": "Resources",
-    "q1": {
-      "text": "Match the following statements to the appropriate sections of the work plan. Each section can only be populated with one statement.",
-      "a1": "High",
-      "a2": "Work with Canadians in all areas of the economy and all parts of the country to improve conditions for investment",
-      "a3": "Tablets",
-      "a4": "Keep original computers until tablets are up and running for 3 months",
-      "a5": "Give employees new digital tools to promote mobility",
-      "a6": "Modernize and renew the public service to better serve Canadians and foster a healthy, productive workforce",
-      "a7": "Buy tablets ",
-      "a8": "Technology is not compatible with existing network ",
-      "a9": "Low",
-      "a10": "Workplace Modernization",
-      "a11": "Give employees tablets"
+        "q1": {
+      "text": "What is a work plan?",
+      "options": {
+        "1": "A daily to-do list",
+        "2": "The activities to be carried out over a fiscal year",
+        "3": "The amounts of money to be spent ",
+        "4": "A summary of what you have accomplished"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year. ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year. ",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year. "
+      }
     },
     "q2": {
       "text": "Which elements should you consider when drafting your new work plan? ",
@@ -481,30 +256,20 @@ export default {
   },
   "fr": {
     "qDisabled": "Choisissez",
-    "pwpGovtPri": "<strong>Priorités du gouvernement</strong>",
-    "pwpDeptPri": "<strong>Priorités ministérielles</strong>",
-    "pwpDirPri": "<strong>Priorités de la direction</strong>",
-    "titleActivities": "Activités",
-    "titleSubActivities": "Sous-activités",
-    "titleDeliverables": "Livrables",
-    "titleRisk": "Risque",
-    "titleLikelihood": "Probabilité",
-    "titleImpact": "Impact",
-    "titleMitigation": "Atténuation",
-    "titleResources": "Resources",
-    "q1": {
-      "text": "Faites correspondre les énoncés suivants aux sections appropriées du plan de travail. Chaque section ne peut contenir qu’un seul énoncé.",
-      "a1": "Élevé ",
-      "a2": "Travailler avec les Canadiens dans tous les secteurs de l’économie et dans toutes les régions du pays pour améliorer les conditions d’investissement.",
-      "a3": "Tablettes",
-      "a4": "Conservez les ordinateurs d’origine jusqu’à ce que les tablettes soient prêtes et à l’emploi pendant 3 mois. ",
-      "a5": "Donner aux salariés de nouveaux outils numériques pour favoriser la mobilité ",
-      "a6": "Moderniser et renouveler la fonction publique afin de mieux servir les Canadiens et de favoriser une main-d'œuvre saine et productive.",
-      "a7": "Acheter des tablettes",
-      "a8": "La technologie n’est pas compatible avec le réseau existant ",
-      "a9": "Faible",
-      "a10": "Modernisation du milieu de travail ",
-      "a11": "Donner des tablettes aux employés"
+        "q1": {
+      "text": "Qu'est-ce qu'un plan de travail?",
+      "options": {
+        "1": "Une liste quotidienne des tâches à accomplir",
+        "2": "Les activités à réaliser au cours d'un exercice comptable",
+        "3": "Les sommes d'argent à dépenser",
+        "4": "Un résumé de ce que vous avez accompli"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable. ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable. ",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable. "
+      }
     },
     "q2": {
       "text": "Quels éléments devez-vous prendre en compte lors de l’élaboration de votre nouveau plan de travail? ",

@@ -79,26 +79,25 @@ export default {
   a{
     text-decoration: none;
     color: #212529;
+    transition: opacity 0.2s; 
   }
   
   a:hover, a:focus{
     text-decoration: none;
     opacity: 0.85;
     outline: none;
-    
-    transition: opacity 0.2s; 
   }
   
   a:hover svg.icon, a:focus svg.icon{
     opacity: 0.85;
     outline: none;
-    
-    transition: opacity 0.2s; 
   }
   
   a svg.icon{
     display: block;
     margin: auto;
+    
+    transition: opacity 0.2s; 
   }
 
 </style>

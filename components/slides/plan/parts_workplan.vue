@@ -158,7 +158,6 @@
 <i18n>
   {
   "en":{
-  "someActivityTitle":"Doing things and stuff",
   "pwpTitle":"Take a moment now to explore the different sections of a work plan.",
   "downloadPlan":"Download a Word template of the work plan",
   "dwnPlanLine1":"Work Plan",
@@ -187,12 +186,11 @@
   "pwpPlanRes":"The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
   },
   "fr":{
-  "someActivityTitle":"Doing things and stuff",
   "pwpTitle":"Prenez un moment pour explorer les différentes sections d’un plan de travail.",
   "downloadPlan":"Télécharger un modèle Word du plan de travail",
   "dwnPlanLine1":"Plan de",
   "dwnPlanLine2":"travail",
-  "pwpGovtPriTitle":"Government priorities",
+  "pwpGovtPriTitle":"Priorités gouvernementales",
   "pwpGovtPri":"Dans le discours du Trône, un nouveau gouvernement présente son programme. Il s’agit notamment de ses objectifs généraux et de ses engagements, et de la façon dont il les atteindra.",
   "pwpDeptPriTitle":"Priorités ministérielles",
   "pwpDeptPri":"Ce que votre ministère entend faire pour appuyer les priorités du gouvernement.",

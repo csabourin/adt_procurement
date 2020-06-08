@@ -144,6 +144,7 @@ export default {
     procurementInstruments: "Commonly_Used_Procurement_Instruments.pdf",
     procurementInstrumentsHTML: "SpendCommonlyUsedProcurementInstruments_EN.html",
     s32s34: "Section32_Section34.pdf",
+    s32s34HTML: "../s32s34/en.html",
     FSRRoadmap: "Financial_Situation_Reporting_Roadmap.pdf",
     FSRRoadmapHTML: "../ReportFSReportingRoadmap/en.html",
     prepareFSR: "Prepare_the_Financial_Situation_Report.pdf",

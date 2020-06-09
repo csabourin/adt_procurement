@@ -141,6 +141,7 @@ export default {
     newBudget: "How_to_Create_a_New_Budget.pdf",
     newBudgetHTML: "HowCreateNewBudget_EN.html",
     cycle: "Financial_Cycle.pdf",
+    cycleHTML: "../financialCycle/en.html",
     procurementInstruments: "Commonly_Used_Procurement_Instruments.pdf",
     procurementInstrumentsHTML: "SpendCommonlyUsedProcurementInstruments_EN.html",
     s32s34: "Section32_Section34.pdf",

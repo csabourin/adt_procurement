@@ -104,6 +104,7 @@
             </b-col>
             <b-col cols="2" class="text-center">
               <download :filename="$t('fileName.cycle')" size=128 iconColor="Scan360Background" :title="$t('DownloadCycle')" :line1="$t('cycleLn1')" :line2="$t('cycleLn2')" :lineTag="$t('cycleExample')" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" />
+              <HTMLJobaidLink :filename="$t('fileName.cycleHTML')" />
             </b-col>
           </b-row>
         </b-col>

@@ -72,11 +72,6 @@
     props:{
       currentState: { type: Boolean, default: false }
     },
-    data(){
-      return{
-        currentModule: ""
-      }
-    },
     methods:{
       setParentOpen(){
         this.$emit('menu-toggle')
@@ -109,28 +104,25 @@
         }
       },
       setClosedMenuHighlight(newModule){
-        if(this.currentState == false){
-          this.$nextTick(function() {
-            
-            var that = this;
-            
-            document.querySelectorAll(".color1, .color2, .color3").forEach(el => {
-              el.className = el.className.replace(/\bhighlighted\b/g, "");
-            });
-            
-            switch(newModule){
-              case "plan":
-                that.$el.querySelector(".color1").classList.add("highlighted");
-                break;
-              case "spend":
-                that.$el.querySelector(".color2").classList.add("highlighted");
-                break;
-              case "report":
-                that.$el.querySelector(".color3").classList.add("highlighted");
-                break;
-            }
+        this.$nextTick(function() { 
+          var that = this;
+
+          document.querySelectorAll(".color1, .color2, .color3").forEach(el => {
+            el.className = el.className.replace(/\bhighlighted\b/g, "");
           });
-        }
+
+          switch(newModule){
+            case "plan":
+              that.$el.querySelector(".color1").classList.add("highlighted");
+              break;
+            case "spend":
+              that.$el.querySelector(".color2").classList.add("highlighted");
+              break;
+            case "report":
+              that.$el.querySelector(".color3").classList.add("highlighted");
+              break;
+          }
+        });
       },
       findModule(page){
         var module = "";
@@ -157,7 +149,6 @@
       this.setAriaCurrent();
       
       this.setClosedMenuHeight();
-      this.setClosedMenuHighlight();
       window.onresize = this.setClosedMenuHeight;
       
       this.setClosedMenuHighlight(this.findModule(this.$route));
@@ -166,17 +157,11 @@
       currentState: function(newVal){
         if(newVal == false){
           this.setClosedMenuHeight();
-          this.setClosedMenuHighlight(this.currentModule);
         }
       },
       $route: function(to) {
-        this.currentModule = this.findModule(to);
+        this.setClosedMenuHighlight(this.findModule(to));
       }, 
-      currentModule: function(newModule) {
-        this.$nextTick(function() {
-          this.setClosedMenuHighlight(newModule);
-        });
-      },
     }
   }
 </script>

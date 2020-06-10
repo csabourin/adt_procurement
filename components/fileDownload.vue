@@ -43,10 +43,10 @@ export default {
       var ua = window.navigator.userAgent;
       var msie = ua.indexOf("MSIE ");
 
-      if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)){  // If Internet Explorer, return version number
+      if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)){
         return true
       }
-      else{  // If another browser, return 0
+      else{ 
         return false;
       }
       
@@ -58,6 +58,7 @@ export default {
     
     if(this.detectIE() && type.name == "PDF"){
       this.downloadOK = false;
+      this.$el.setAttribute("target", "_blank");
     }
     
     this.$el.setAttribute("type", type.mime);

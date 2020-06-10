@@ -299,7 +299,7 @@ export default {
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
-  "activityLinks":"Activity: Liens externes",
+  "activityLinks":"Activité: Liens externes",
   "gotoLinks":"Ces liens se retrouvent aussi dans la boite à outils",
   "partsofWPTitle":"Activité: Parties d’un plan de travail",
   "completewpDrafttitle":"Activité: Préparer un plan de travail",

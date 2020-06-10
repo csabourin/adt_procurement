@@ -52,7 +52,7 @@
             </li>
           </menu>
         </div>
-        <div v-show="!currentState" class="clickMe" @click="setParentOpen">
+        <div v-show="!currentState" class="clickMe closedMenuBox" @click="setParentOpen">
           <div class="color1">
             <h4>{{$t('plan')}}</h4>
           </div>
@@ -62,6 +62,7 @@
           <div class="color3">
             <h4>{{$t('report')}}</h4>
           </div>
+          <div class="open-indicator"></div>
         </div>
       </div>
     </transition>
@@ -81,25 +82,28 @@
           let app = this.$el,
             currents = app.querySelectorAll("[aria-current]");
           if (currents) {
-            currents.forEach(current => {
-              current.removeAttribute("aria-current");
-            });
+            for(var i = 0; i < currents.length; i++){
+              currents[i].removeAttribute("aria-current");
+            }
           }
-          app.querySelectorAll(".contentMap .nuxt-link-exact-active").forEach(current => {
-            current.setAttribute("aria-current", "page");
-          });
+          var actives = app.querySelectorAll(".contentMap .nuxt-link-exact-active")
+          for(var j = 0; j < actives.length; j++){
+            actives[j].setAttribute("aria-current", "page");
+          }
         });
       },
       setClosedMenuHeight(){
         if(this.currentState == false){
           this.$nextTick(function() {
             var that = this;
-            this.$el.querySelectorAll(".color1, .color2, .color3").forEach(el => {
-              el.style.height = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
-            });
-            this.$el.querySelectorAll(".color1 h4, .color2 h4, .color3 h4").forEach(el => {
-              el.style.width = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
-            });
+            var colorBoxes = this.$el.querySelectorAll(".color1, .color2, .color3")
+            for(var k = 0; k < colorBoxes.length; k++){
+              colorBoxes[k].style.height = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
+            }
+            var hFours = this.$el.querySelectorAll(".color1 h4, .color2 h4, .color3 h4")
+            for(var l = 0; l < hFours.length; l++){
+              hFours[l].style.width = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
+            }
           });
         }
       },
@@ -107,9 +111,10 @@
         this.$nextTick(function() { 
           var that = this;
 
-          document.querySelectorAll(".color1, .color2, .color3").forEach(el => {
-            el.className = el.className.replace(/\bhighlighted\b/g, "");
-          });
+          var colorBoxes2 = document.querySelectorAll(".color1, .color2, .color3")
+          for(var m = 0; m < colorBoxes2.length; m++){
+            colorBoxes2[m].className = colorBoxes2[m].className.replace(/\bhighlighted\b/g, "");
+          }
 
           switch(newModule){
             case "plan":
@@ -126,21 +131,24 @@
       },
       findModule(page){
         var module = "";
-        this.$el.querySelectorAll("menu")[0].querySelectorAll("a").forEach(el => {
-          if(page.path == el.getAttribute("href")){
+        var menu1Links = this.$el.querySelectorAll("menu")[0].querySelectorAll("a")
+        for(var n = 0; n < menu1Links.length; n++){
+          if(page.path == menu1Links[n].getAttribute("href")){
             module = "plan";
           }
-        }); 
-        this.$el.querySelectorAll("menu")[1].querySelectorAll("a").forEach(el => {
-          if(page.path == el.getAttribute("href")){
+        }
+        var menu2Links = this.$el.querySelectorAll("menu")[1].querySelectorAll("a")
+        for(var o = 0; o < menu2Links.length; o++){
+          if(page.path == menu2Links[o].getAttribute("href")){
             module = "spend";
           }
-        }); 
-        this.$el.querySelectorAll("menu")[2].querySelectorAll("a").forEach(el => {
-          if(page.path == el.getAttribute("href")){
+        }
+        var menu3Links = this.$el.querySelectorAll("menu")[2].querySelectorAll("a")
+        for(var p = 0; p < menu3Links.length; p++){
+          if(page.path == menu3Links[p].getAttribute("href")){
             module = "report";
           }
-        });  
+        } 
         
         return module;
       }
@@ -191,8 +199,11 @@
   height:100%;
   color:#4d4d4d;
   
-  overflow: hidden;
   white-space: nowrap;
+}
+  
+.contentMap:not(.closed){
+  overflow: hidden;
 }
 
 .contentMap a {
@@ -275,6 +286,48 @@ contentMap.closed h4.colorBar1, contentMap.closed h4.colorBar2, contentMap.close
     display: block;
     width: 200px;
     
+  }
+  
+  
+  .closedMenuBox{
+    position: relative;
+  }
+  .open-indicator {
+    position: absolute;
+    right: -40px;
+    top: calc(50% - 40px);
+    text-align: center;
+    padding: 0px;
+    height: 80px;
+    width: 15px;
+    animation: blink 3s linear infinite normal;
+  }
+  .open-indicator:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 51%;
+    width: 100%;
+    background: rgb(220, 220, 220);
+    transform: skew(25deg, 0deg);
+  }
+  .open-indicator:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    background: rgb(220, 220, 220);
+    transform: skew(-25deg, 0deg);
+  }
+  
+  @keyframes blink {
+    0%   { opacity: 0; right: -35px; }
+    25%  { opacity: 1; right: -40px; }
+    75%  { opacity: 1; right: -40px; }
+    100% { opacity: 0; right: -45px; }
   }
   
 </style>

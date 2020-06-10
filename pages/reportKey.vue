@@ -2,7 +2,7 @@
   <div class="text-center">
     <h2 class="pageTitle">{{$t('KeyMessages')}}</h2>
     <br>
-    <p><img src="~/assets/KeyMessR.png" alt="" role="presentation"></p>
+    <p><img src="~/assets/KeyMessR.svg" alt="" role="presentation" width="250px"></p>
     <p>&nbsp;</p>
     <span class="spend"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></span>
     <p>&nbsp;</p>
@@ -103,7 +103,7 @@
     </b-container>
     <div class="bottomNav reportSection">
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
-      <microlearning :completion="$store.state.currentPlaying.kmReport" youAreHere path="reportKey" time="5" size="140" imagePath="KeyMessR.png" :text="$t('KeyMessages')" />
+      <microlearning :completion="$store.state.currentPlaying.kmReport" youAreHere path="reportKey" time="5" size="140" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" />
       <microlearning :completion="$store.state.currentPlaying.reportPart1_player" path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
       <microlearning :completion="$store.state.currentPlaying.reportPart2_player" path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" :text="$t('ContributeReporting')" />
       <microlearning :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" />

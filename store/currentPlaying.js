@@ -20,7 +20,7 @@ export const state = () => ({
   spendPart3_player: parseInt(window.localStorage.getItem("spendPart3_player"),10) || 0,
   reportPart1_player: parseInt(window.localStorage.getItem("reportPart1_player"),10) || 0,
   reportPart2_player: parseInt(window.localStorage.getItem("reportPart2"),10) || 0,
-  currentModule: JSON.parse(window.localStorage.getItem("currentModule")) || "",
+  currentModule: window.localStorage.getItem("currentModule") || ""
 })
 
 export const mutations = {

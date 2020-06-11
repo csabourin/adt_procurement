@@ -25,7 +25,7 @@
     </b-card>
     <b-row>
       <b-col cols="2" class="text-center">
-        <download :filename="$t('fileName.procurementInstruments')" size=128 iconColor="spendBackground" :title="$t('DownloadProcurementInstruments')" :line1="$t('procurementInstrumentsLn1')" :line2="$t('procurementInstrumentsLn2')" :lineTag="$t('procurementInstrumentsExample')" :fileSize="this.$i18n.locale == 'en' ? '134' : '139'" />
+        <download :filename="$t('fileName.procurementInstruments')" size=128 iconColor="spendBackground" :title="$t('DownloadProcurementInstruments')" :line1="$t('procurementInstrumentsLn1')" :line2="$t('procurementInstrumentsLn2')" :lineTag="$t('procurementInstrumentsExample')" :fileSize="this.$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
         <HTMLJobaidLink :filename="$t('fileName.procurementInstrumentsHTML')" />
       </b-col>
     </b-row>

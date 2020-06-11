@@ -171,6 +171,15 @@
       currentState: function(newVal){
         if(newVal == false){
           this.setClosedMenuHeight();
+          
+          this.$el.style.whiteSpace = "nowrap";
+          console.log(this.$el.style.whiteSpace)
+        }
+        else{
+          var that = this;
+          setTimeout(function(){
+            that.$el.style.whiteSpace = "normal";
+          }, 300)
         }
       },
       $route: function(to) {
@@ -204,7 +213,7 @@
 
   height:100%;
   color:#4d4d4d;
-  /*white-space: nowrap;*/
+  white-space: nowrap;
 }
   
 .contentMap:not(.closed){

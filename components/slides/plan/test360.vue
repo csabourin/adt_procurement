@@ -11,7 +11,8 @@
             :line1="$t('t360Line1')"
             :line2="$t('t360Line2')"
             :lineTag="$t('threeSixtyExample')"
-            :fileSize="this.$i18n.locale == 'en' ? '118' : '124'" />
+            :fileSize="this.$i18n.locale == 'en' ? '118' : '124'"
+            name="threeSixty" />
           <HTMLJobaidLink :filename="$t('fileName.threeSixtyHTML')" />
         </b-col>
         <b-col class="text-center">
@@ -22,7 +23,8 @@
             :line1="$t('dwnPlanLine1')"
             :line2="$t('dwnPlanLine2')"
             :lineTag="$t('WPExample')"
-            :fileSize="this.$i18n.locale == 'en' ? '15.9' : '17,5'" />
+            :fileSize="this.$i18n.locale == 'en' ? '15.9' : '17,5'"
+            name="WorkPlanTemplate" />
         </b-col>
         <b-col class="text-center">
           <download
@@ -32,7 +34,8 @@
            :line1="$t('wpLine1')"
            :line2="$t('wpLine2')"
            :lineTag="$t('wpExample')"
-           :fileSize="this.$i18n.locale == 'en' ? '120' : '120'" />
+           :fileSize="this.$i18n.locale == 'en' ? '120' : '120'"
+           name="WorkPlan_lastYear" />
         </b-col>
         <b-col class="text-center">
           <download
@@ -42,7 +45,8 @@
            :line1="$t('bLine1')"
            :line2="$t('bLine2')"
            :lineTag="$t('bExample')"
-           :fileSize="this.$i18n.locale == 'en' ? '9.96' : '9,62'" />
+           :fileSize="this.$i18n.locale == 'en' ? '9.96' : '9,62'"
+           name="Budget_lastYear" />
         </b-col>
         <b-col class="text-center">
           <download
@@ -52,7 +56,8 @@
            :line1="$t('rLine1')"
            :line2="$t('rLine2')"
            :lineTag="$t('rExample')"
-           :fileSize="this.$i18n.locale == 'en' ? '16.6' : '19,4'" />
+           :fileSize="this.$i18n.locale == 'en' ? '16.6' : '19,4'"
+           name="ReportLast" />
         </b-col>
       </b-row>
     </b-container>

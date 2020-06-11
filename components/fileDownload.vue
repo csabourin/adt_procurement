@@ -3,10 +3,10 @@
     <genericFile :iconStyle="iconColor" :iconWidth=size :title="$t(title)" :line1="$t(line1)" :line2="$t(line2)" aria-hidden="true" class="icon" />
     <span v-html="$t(lineTag)"></span>
     <span class="v-inv" v-if="downloadOK">{{$t('download')}}</span>
-    <font-awesome-icon icon="download" />
+    <font-awesome-icon icon="download" role="presentation" />
     <span class="v-inv" v-if="opened">{{$t('viewed')}}</span>
     <div class="highlight" v-show="opened">
-      <font-awesome-icon icon="check" size="2x" />
+      <font-awesome-icon icon="check" size="2x" role="presentation" />
     </div>
   </a>
 </template>

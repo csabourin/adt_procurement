@@ -18,25 +18,25 @@
               <span class="progress" ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
             <button class="videoControls" ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
-              <font-awesome-icon :icon="isPaused?'play':'pause'" />
+              <font-awesome-icon :icon="isPaused?'play':'pause'" role="presentation" />
             </button>
             <button class="videoControls" ref="stop" @click="stopVideo" type="button" :aria-label="$t('stop')" :title="$t('stop')">
-              <font-awesome-icon icon="stop" />
+              <font-awesome-icon icon="stop" role="presentation" />
             </button>
             <button class="videoControls" ref="backward" @click="goBackwards" type="button" :aria-label="$t('backward')" :title="$t('backward')">
-              <font-awesome-icon icon="backward" />
+              <font-awesome-icon icon="backward" role="presentation" />
             </button>
             <button class="videoControls" ref="forward" @click="goForward" type="button" :aria-label="$t('forward')" :title="$t('forward')">
-              <font-awesome-icon icon="forward" />
+              <font-awesome-icon icon="forward" role="presentation" />
             </button>
             <button class="videoControls" ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')" :aria-label="isMuted?$t('unmute'):$t('mute')">
-              <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" />
+              <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" role="presentation" />
             </button>
             <label><input class="setVolume" type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'"><span class="v-inv">Volume</span></label>
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
             <p class="mediaTime">{{isPlayingNow | formatTime}} / {{totalTime | formatTime}}</p>
             <button class="videoControls" :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')">
-              <font-awesome-icon :icon="[solidOrRegular,'closed-captioning']" />
+              <font-awesome-icon :icon="[solidOrRegular,'closed-captioning']" role="presentation" />
             </button>
           </div>
           <span class="v-inv">{{$t('sr_transcriptlocation')}}</span>

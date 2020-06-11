@@ -130,7 +130,7 @@
         });
       },
       findModule(page){
-        var module = "";
+        var module = "home";
         var menu1Links = this.$el.querySelectorAll("menu")[0].querySelectorAll("a")
         for(var n = 0; n < menu1Links.length; n++){
           if(page.path == menu1Links[n].getAttribute("href")){
@@ -150,6 +150,7 @@
           }
         } 
         
+        this.$store.commit('currentPlaying/setCurrentModule', module);
         return module;
       }
     },

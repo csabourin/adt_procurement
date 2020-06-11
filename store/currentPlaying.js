@@ -19,7 +19,8 @@ export const state = () => ({
   spendPart2_player: parseInt(window.localStorage.getItem("spendPart2_player"),10) || 0,
   spendPart3_player: parseInt(window.localStorage.getItem("spendPart3_player"),10) || 0,
   reportPart1_player: parseInt(window.localStorage.getItem("reportPart1_player"),10) || 0,
-  reportPart2_player: parseInt(window.localStorage.getItem("reportPart2"),10) || 0
+  reportPart2_player: parseInt(window.localStorage.getItem("reportPart2"),10) || 0,
+  currentModule: JSON.parse(window.localStorage.getItem("currentModule")) || "",
 })
 
 export const mutations = {
@@ -102,5 +103,9 @@ export const mutations = {
   setReportPart2_player(state, playing) {
     window.localStorage.setItem("reportPart2", playing)
     state.reportPart2_player = playing
+  },
+  setCurrentModule(state, module) {
+    window.localStorage.setItem("currentModule", module)
+    state.currentModule = module
   }
 }

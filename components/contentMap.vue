@@ -171,6 +171,15 @@
       currentState: function(newVal){
         if(newVal == false){
           this.setClosedMenuHeight();
+          
+          this.$el.style.whiteSpace = "nowrap";
+          console.log(this.$el.style.whiteSpace)
+        }
+        else{
+          var that = this;
+          setTimeout(function(){
+            that.$el.style.whiteSpace = "normal";
+          }, 300)
         }
       },
       $route: function(to) {

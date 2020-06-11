@@ -44,7 +44,7 @@
       </b-col>
     </b-row>
     <ul v-if="chapters" class="bar" ref="linkBar">
-      <li v-for="(item,index) in navBarTracks" :class="'chaptersLink '+ isItPlaying(index)">
+      <li v-for="(item,index) in navBarTracks" :class="['chaptersLink '+ isItPlaying(index),$store.state.currentPlaying.currentModule]">
         <p>{{ item }}</p><br>
         <a :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
         <button v-if="modalArray[index]" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"> </button>
@@ -421,13 +421,24 @@ video {
   counter-increment: WPepisode;
   content: counter(WPepisode);
   position: absolute;
-  background-color: #587C84;
+  background-color: #575757;
   height: 2em;
   right: 0px;
   top: 0px;
   border-radius: 0 0 0 30px;
   padding: .1em .25em 0 .5em;
   color: white;
+}
+
+.chaptersLink.plan:before {
+  background-color: #587C84;
+}
+.chaptersLink.spend:before {
+  background-color: #7d677d;
+}
+
+.chaptersLink.report:before {
+  background-color: #865f56;
 }
 
 .chaptersLink:nth-child(-n+9):before {

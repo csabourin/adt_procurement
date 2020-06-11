@@ -52,7 +52,7 @@
             </li>
           </menu>
         </div>
-        <div v-show="!currentState" class="clickMe closedMenuBox" @click="setParentOpen">
+        <div v-show="!currentState" class="clickMe closedMenuBox" @click="setParentOpen" @mouseover="arrowVisible = true" @mouseout="arrowVisible = false">
           <div class="color1">
             <h4>{{$t('plan')}}</h4>
           </div>
@@ -62,7 +62,7 @@
           <div class="color3">
             <h4>{{$t('report')}}</h4>
           </div>
-          <div class="open-indicator"></div>
+          <div class="open-indicator" v-show="arrowVisible"></div>
         </div>
       </div>
     </transition>
@@ -72,6 +72,11 @@
   export default{
     props:{
       currentState: { type: Boolean, default: false }
+    },
+    data(){
+      return{
+        arrowVisible: false
+      }
     },
     methods:{
       setParentOpen(){
@@ -296,11 +301,11 @@ contentMap.closed h4.colorBar1, contentMap.closed h4.colorBar2, contentMap.close
   .open-indicator {
     position: absolute;
     right: -40px;
-    top: calc(50% - 40px);
+    top: calc(50% - 35px);
     text-align: center;
     padding: 0px;
-    height: 80px;
-    width: 15px;
+    height: 70px;
+    width: 12px;
     animation: blink 3s linear infinite normal;
   }
   .open-indicator:before {

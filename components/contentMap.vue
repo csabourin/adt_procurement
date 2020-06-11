@@ -204,8 +204,7 @@
 
   height:100%;
   color:#4d4d4d;
-  
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
   
 .contentMap:not(.closed){
@@ -232,6 +231,11 @@
 
 .contentMap menu {
     padding:0;
+}
+
+li{
+  /*line-height: 100%;*/
+  margin-bottom: .25em;
 }
 .contentMap h4{
   text-align:center;

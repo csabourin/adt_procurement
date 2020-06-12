@@ -1,5 +1,5 @@
 <template>
-  <nav :class="currentState ? 'contentMap' : ['contentMap', 'closed']" role="navigation" :aria-label="currentState ? $t('navMenuExpanded') : $t('navMenuCollapsed')">
+  <nav :class="currentState ? 'contentMap' : ['contentMap', 'closed']" :aria-label="currentState ? $t('navMenuExpanded') : $t('navMenuCollapsed')">
     <transition appear mode="out-in" name="fade">
       <div>
         <div v-show="currentState">

@@ -8,9 +8,13 @@
   </ul>
     <p><strong v-html="$t('pwpTitle')"></strong></p>
 
-
-
-
+      <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
+    <b-tab title="Question 1" ><radioQuiz :question="$t('q1')" qId="1" @response="Q1=$event"/></b-tab>
+    <b-tab title="Question 2"><radioQuiz :question="$t('q2')" qId="2" @response="Q2=$event"/></b-tab>
+    <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" @response="Q3=$event"/></b-tab>
+    <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" @response="Q4=$event"/></b-tab>
+  </b-tabs>
+  
 <b-container class="workplan-table wp-table-1">
       <b-row>
         <b-col class="encadrage">
@@ -102,19 +106,6 @@
       </b-row>
     </b-container>
 
-
-
-
-
-
-
-   
-    <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
-    <b-tab title="Question 1" ><radioQuiz :question="$t('q1')" qId="1" @response="Q1=$event"/></b-tab>
-    <b-tab title="Question 2"><radioQuiz :question="$t('q2')" qId="2" @response="Q2=$event"/></b-tab>
-    <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" @response="Q3=$event"/></b-tab>
-    <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" @response="Q4=$event"/></b-tab>
-  </b-tabs>
   </span>
 </template>
 <i18n>{

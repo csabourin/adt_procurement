@@ -227,8 +227,8 @@ export default {
       "kb": "<abbr title='kylobyte'>KB</abbr>",
       "download": " (this document will be downloaded)",
       "viewed": " (you have already viewed this document)",
-      "title": "Open the web version of \"",
-      "quote": "\""
+      "title": "Open the web version of “",
+      "quote": "”"
     },
     "fr":{
       "kb": "&nbsp;<abbr title='kylo-octet'>Ko</abbr>",

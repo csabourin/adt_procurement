@@ -284,7 +284,7 @@ export default {
   "en":{
   "gotIt":"Continue to next segment",
   "gotItContent": "There will eventually be a paragraph here that explains the fact that a popup appears everytime a section of the video is completed, containing an exercise, resources or a simple instruction notifying the user that the section is completed.",
-  "activityLinks":"Activity: External Links",
+  "activityLinks":"Reference: External Links",
   "gotoLinks":"These links are also available in the Toolbox",
   "partsofWPTitle":"Activity: Parts of a Work Plan",
   "completewpDrafttitle":"Activity: Prepare a Work Plan",
@@ -299,7 +299,7 @@ export default {
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
-  "activityLinks":"Activité: Liens externes",
+  "activityLinks":"Référence: Liens externes",
   "gotoLinks":"Ces liens se retrouvent aussi dans la boite à outils",
   "partsofWPTitle":"Activité: Parties d’un plan de travail",
   "completewpDrafttitle":"Activité: Préparer un plan de travail",

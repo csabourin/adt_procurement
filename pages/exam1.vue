@@ -159,7 +159,7 @@
     </b-container>
     <!-- Control buttons-->
     <div class="text-center">
-      <b-button-group class="mt-2">
+      <b-button-group class="mt-2" :aria-label="$t('questionNav')">
         <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
         <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
       </b-button-group>
@@ -357,6 +357,7 @@ export default {
     "testComplete": "Test Completed",
     "tryAgain": "Try Again",
     "scoreIs":"Your final score is",
+    "questionNav": "Question Navigation",
     "Questions": {
       "q1": {
         "text": "Which of the following is <span class='bolder' style='text-transform: uppercase;'>not</span> included in a work plan?",
@@ -663,6 +664,7 @@ export default {
     "testComplete": "Examen complété",
     "tryAgain": "Essayer de nouveau",
     "scoreIs":"Votre note finale est de",
+    "questionNav": "Navigation Questions",
     "Questions": {
       "q1": {
         "text": "Lequel des éléments suivants n’est <span class='bolder' style='text-transform:uppercase'>PAS</span> inclus dans un plan de travail?",

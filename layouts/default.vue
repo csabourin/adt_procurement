@@ -1,7 +1,8 @@
 <template>
   <div>
-  	<div class="invSkip">
-    <a href="#mainContent" class="skipToMain">{{$t('skipToMain')}}</a></div>
+  	<div class="invSkip" role="navigation">
+      <a href="#mainContent" class="skipToMain">{{$t('skipToMain')}}</a>
+    </div>
     <b-container fluid style="overflow:hidden;">
       <b-row class="navBar" role="banner">
         <b-col cols="5" sm="3" class="text-left">
@@ -20,7 +21,6 @@
             <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" :lang="locale.code" v-bind:iconTitle="locale.name" />
           </nuxt-link>
         </b-col>
-      </b-row>
       </b-row>
       <b-row>
         <!-- <transition-group tag="div" name="fade" class="grid"> -->

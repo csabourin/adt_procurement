@@ -1,22 +1,27 @@
 <template functionnal>
-  <a :href="require('~/assets/'+ $i18n.locale +'/'+ filename)" :download="filename" :class="opened ? 'openHighlight' : ''" @click="opened = true">
-    <genericFile :iconStyle="iconColor" :iconWidth=size :title="$t(title)" :line1="$t(line1)" :line2="$t(line2)" aria-hidden="true" class="icon" />
-    <span v-html="$t(lineTag)"></span>
-    <span class="v-inv" v-if="downloadOK">{{$t('download')}}</span>
-    <font-awesome-icon icon="download" role="presentation" />
-    <span class="v-inv" v-if="opened">{{$t('viewed')}}</span>
-    <div class="highlight" v-show="opened">
-      <font-awesome-icon icon="check" size="2x" role="presentation" />
-    </div>
-  </a>
+  <span>
+    <a :href="require('~/assets/'+ $i18n.locale +'/'+ filename)" :download="filename" :class="opened ? ['openHighlight', 'download'] : 'download'" @click="opened = true">
+      <genericFile :iconStyle="iconColor" :iconWidth=size :title="$t(title)" :line1="$t(line1)" :line2="$t(line2)" aria-hidden="true" class="icon" />
+      <span v-html="$t(lineTag)"></span>
+      <span class="v-inv" v-if="downloadOK">{{$t('download')}}</span>
+      <font-awesome-icon icon="download" role="presentation" />
+      <span class="v-inv" v-if="opened">{{$t('viewed')}}</span>
+      <div class="highlight" v-show="opened">
+        <font-awesome-icon icon="check" size="2x" role="presentation" />
+      </div>
+    </a>
+    <HTMLJobaidLink :filename="HTMLFilename" v-if="HTMLFilename" @click.native="opened = true" :title="$t('title') + lineTag + $t('quote')" />
+  </span>
 </template>
 <script type="text/javascript">
 import genericFile from "~/components/icons/genFileIcon"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 export default {
   props: {
     size: { type: String, default: "64" },
     iconColor: { type: String, default: "planBackground" },
     filename: { type: String, default: "" },
+    HTMLFilename: { type: String, default: "" },
     title: { type: String, default: "" },
     line1: { type: String, default: "" },
     line2: { type: String, default: "" },
@@ -25,7 +30,8 @@ export default {
     name: { type: String, default: "" }
   },
   components: {
-    genericFile
+    genericFile,
+    HTMLJobaidLink
   },
   data(){
     return{
@@ -116,19 +122,19 @@ export default {
       this.$nextTick(function() {
         this.$el.querySelector("div.highlight").style.height = this.size + "px";
         this.$el.querySelector("div.highlight").style.width = this.size + "px";
-        this.$el.querySelector("div.highlight").style.left = ((this.$el.offsetWidth - this.size) / 2) + "px";
+        this.$el.querySelector("div.highlight").style.left = ((this.$el.querySelector("a").offsetWidth - this.size) / 2) + "px";
       });
-    }
+    },
   },
   mounted(){
     var type = this.findType();
     
     if(this.detectIE() && type.name == "PDF"){
       this.downloadOK = false;
-      this.$el.setAttribute("target", "_blank");
+      this.$el.querySelector("a").setAttribute("target", "_blank");
     }
     
-    this.$el.setAttribute("type", type.mime);
+    this.$el.querySelector("a").setAttribute("type", type.mime);
     var newSpan = document.createElement("span");
     if(this.fileSize && this.fileSize != ""){
       newSpan.innerHTML = " (<abbr title='" + type.longName + "'>" + type.name + "</abbr>, " + this.fileSize + this.$i18n.t('kb') + ")"
@@ -162,45 +168,45 @@ export default {
 
 <style scoped>
 
-  a{
+  a.download{
     text-decoration: none;
     color: #212529;
     transition: opacity 0.2s; 
   }
   
-  a:hover, a:focus{
+  a.download:hover, a.download:focus{
     text-decoration: none;
     opacity: 0.85;
     outline: none;
   }
   
-  a:hover svg.icon, a:focus svg.icon{
+  a.download:hover svg.icon, a.download:focus svg.icon{
     opacity: 0.85;
     outline: none;
   }
   
-  a svg.icon{
+  a.download svg.icon{
     display: block;
     margin: auto;
     
     transition: opacity 0.2s; 
   }
   
-  a.openHighlight{
+  a.download.openHighlight{
     position: relative;
     display: block;
   }
   /*a.openHighlight svg.icon{
     opacity: 0.7;
   }*/
-  a.openHighlight .highlight{
+  a.download.openHighlight .highlight{
     position: absolute;
     left: 0;
     top: 0px;
     /*background-color: rgba(0, 0, 0, 0.1);*/
     animation: fadein 0.2s;
   }
-  a.openHighlight .highlight svg{
+  a.download.openHighlight .highlight svg{
     position: absolute;
     top: calc(10% - 16px);
     left: calc(90% - 16px);
@@ -220,12 +226,16 @@ export default {
     "en":{
       "kb": "<abbr title='kylobyte'>KB</abbr>",
       "download": " (this document will be downloaded)",
-      "viewed": " (you have already viewed this document)"
+      "viewed": " (you have already viewed this document)",
+      "title": "Open the web version of \"",
+      "quote": "\""
     },
     "fr":{
       "kb": "&nbsp;<abbr title='kylo-octet'>Ko</abbr>",
       "download": " (ce document sera téléchargé)",
-      "viewed": " (vous avez déjà consulté ce document)"
+      "viewed": " (vous avez déjà consulté ce document)",
+      "title": "Ouvrir la version web de « ",
+      "quote": " »"
     }
   }
 

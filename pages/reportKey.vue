@@ -77,16 +77,13 @@
           <h3>{{$t('fileSet')}}</h3>
           <b-row style="margin-top: 30px;">
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.FSRRoadmap')" size=128 iconColor="reportBackground" :title="$t('DownloadFSRRoadmap')" :line1="$t('FSRRoadmapLn1')" :line2="$t('FSRRoadmapLn2')" :lineTag="$t('FSRRoadmapExample')" :fileSize="this.$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
-              <HTMLJobaidLink :filename="$t('fileName.FSRRoadmapHTML')" />
+              <download :filename="$t('fileName.FSRRoadmap')" :HTMLFilename="$t('fileName.FSRRoadmapHTML')" size=128 iconColor="reportBackground" :title="$t('DownloadFSRRoadmap')" :line1="$t('FSRRoadmapLn1')" :line2="$t('FSRRoadmapLn2')" :lineTag="$t('FSRRoadmapExample')" :fileSize="this.$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
             </b-col>
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.prepareFSR')" size=128 iconColor="reportBackground" :title="$t('DownloadPrepareFSR')" :line1="$t('prepareFSRLn1')" :line2="$t('prepareFSRLn2')" :lineTag="$t('prepareFSRExample')" :fileSize="this.$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
-              <HTMLJobaidLink :filename="$t('fileName.prepareFSRHTML')" />
+              <download :filename="$t('fileName.prepareFSR')" :HTMLFilename="$t('fileName.prepareFSRHTML')" size=128 iconColor="reportBackground" :title="$t('DownloadPrepareFSR')" :line1="$t('prepareFSRLn1')" :line2="$t('prepareFSRLn2')" :lineTag="$t('prepareFSRExample')" :fileSize="this.$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
             </b-col>
             <b-col cols="2" class="text-center">
-              <download :filename="$t('fileName.extReports')" size=128 iconColor="reportBackground" :title="$t('DownloadExtReports')" :line1="$t('extReportsLn1')" :line2="$t('extReportsLn2')" :lineTag="$t('extReportsExample')" :fileSize="this.$i18n.locale == 'en' ? '138' : '124'" name="extReports" />
-              <HTMLJobaidLink :filename="$t('fileName.extReportsHTML')" />
+              <download :filename="$t('fileName.extReports')" :HTMLFilename="$t('fileName.extReportsHTML')" size=128 iconColor="reportBackground" :title="$t('DownloadExtReports')" :line1="$t('extReportsLn1')" :line2="$t('extReportsLn2')" :lineTag="$t('extReportsExample')" :fileSize="this.$i18n.locale == 'en' ? '138' : '124'" name="extReports" />
             </b-col>
          </b-row>
         </b-col>

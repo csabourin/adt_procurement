@@ -5,7 +5,8 @@
       <b-row>
         <b-col class="text-center">
           <download 
-            :filename="$t('fileName.threeSixty')" 
+            :filename="$t('fileName.threeSixty')"
+            :HTMLFilename="$t('fileName.threeSixtyHTML')"
             iconColor="Scan360Background" 
             size=128 :title="$t('download360')"
             :line1="$t('t360Line1')"
@@ -13,7 +14,6 @@
             :lineTag="$t('threeSixtyExample')"
             :fileSize="this.$i18n.locale == 'en' ? '118' : '124'"
             name="threeSixty" />
-          <HTMLJobaidLink :filename="$t('fileName.threeSixtyHTML')" />
         </b-col>
         <b-col class="text-center">
           <download

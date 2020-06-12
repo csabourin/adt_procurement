@@ -99,7 +99,7 @@
     </b-container>
     <!-- Control buttons-->
     <div class="text-center">
-      <b-button-group class="mt-2">
+      <b-button-group class="mt-2" :aria-label="$t('questionNav')">
         <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
         <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
       </b-button-group>
@@ -317,6 +317,7 @@ export default {
   "testComplete": "Test Completed",
   "tryAgain": "Try Again",
   "scoreIs": "Your final score is",
+  "questionNav": "Question Navigation",
   "Questions": {
   "q1": {
   "text": "<div class='tableScrollLTS'><table class='qTable' style='font-weight: 400;'>    <tbody>      <tr>        <td>          <p>Budget </p>        </td>        <td>          <p>Commitments </p>        </td>        <td>          <p>Year-To-Date Actuals</p>        </td>        <td>          <p>Annual Forecast</p>        </td>        <td>          <p>Surplus / Deficit</p>        </td>      </tr>    </tbody>    <table></div><br>These are the column headings for the financial situation report. How is the surplus / deficit calculated?",
@@ -475,6 +476,7 @@ export default {
       "testComplete": "Examen complété",
       "tryAgain": "Essayer de nouveau",
       "scoreIs": "Votre note finale est de",
+      "questionNav": "Navigation Questions",
       "Questions": {
       "q1": {
       "text": "<div class='tableScrollLTS'><table class='qTable' style='font-weight: 400;'>        <tbody>          <tr>            <td>              <p>Budget </p>            </td>            <td>              <p>Engagements</p>            </td>            <td>              <p>Réalisations à ce jour</p>            </td>            <td>              <p>Prévisions annuelles</p>            </td>            <td>              <p>Excédent / Déficit</p>            </td>          </tr>          </tbody></table></div> Il s’agit des intitulés de colonne de l’état de la situation financière. Comment l’excédent / le déficit est-il calculé?",

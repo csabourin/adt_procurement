@@ -2,6 +2,19 @@
   <span>
     <p>{{ $t('pwpInstructions') }}</p>
     <p><strong v-html="$t('pwpTitle')"></strong></p>
+       <div>
+    <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
+    <b-tab title="Question 1">
+      <radioQuiz :question="$t('q1')" qId="1" @response="Q1=$event"/>
+    </b-tab>
+    <b-tab title="Question 2">
+      <radioQuiz :question="$t('q2')" qId="2" @response="Q2=$event"/>
+    </b-tab>
+    <b-tab title="Question 3">
+      <radioQuiz :question="$t('q3')" qId="3" @response="Q3=$event"/>
+    </b-tab>
+  </b-tabs>
+  </div>
     <b-container class="workplan-table wp-table-1">
       <b-row>
         <b-col class="encadrage">
@@ -101,21 +114,6 @@
 
     <!--------------------------------------------------------- END TABLE --> 
 
-
-
-    <div>
-    <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
-    <b-tab title="Question 1">
-      <radioQuiz :question="$t('q1')" qId="1" @response="Q1=$event"/>
-    </b-tab>
-    <b-tab title="Question 2">
-      <radioQuiz :question="$t('q2')" qId="2" @response="Q2=$event"/>
-    </b-tab>
-    <b-tab title="Question 3">
-      <radioQuiz :question="$t('q3')" qId="3" @response="Q3=$event"/>
-    </b-tab>
-  </b-tabs>
-  </div>
   </span>
 </template>
 <i18n>
@@ -123,7 +121,7 @@
       "en":
       {
           "pwpInstructions": "Looking at your draft, you notice that some items may have been dropped into the wrong location or may be missing. Update your draft accordingly.",
-          "pwpTitle": "Choose the best option for each section of this work plan by selecting the most appropriate answer. You can scroll horizontally to view the whole plan.",
+          "pwpTitle": "Choose the best option for each section of this work plan by selecting the most appropriate answer.",
           "pwpGovtPri": "Government priorities",
           "pwpDeptPri": "Departmental priorities",
           "pwpDirPri": "Directorate priorities",
@@ -213,7 +211,7 @@
       "fr":
       {
           "pwpInstructions": "En regardant votre brouillon, vous remarquez que certains items peuvent avoir été placés au mauvais endroit ou manquer. Mettez à jour votre brouillon en conséquence. ",
-          "pwpTitle": "Choisissez la meilleure option pour chaque partie du plan de travail en utilisant les menus déroulants.",
+          "pwpTitle": "Choisissez la meilleure option pour chaque partie du plan de travail.",
           "pwpGovtPri": "<strong>Priorités du gouvernement &mdash;</strong>",
           "pwpDeptPri": "<strong>Priorités ministérielles &mdash;</strong>",
           "pwpDirPri": "<strong>Priorités de la direction &mdash;</strong>",

@@ -63,17 +63,17 @@ export default {
   
   //Last year's WP
   wpExample:"Last Year's Work Plan",
-  wpLine1:"Work",
-  wpLine2:"Plan",
+  wpLine1:"Last Year's",
+  wpLine2:"Work Plan",
   
   //Last year's Budget
   bExample:"Last Year's Budget",
-  bLine1:"Last year's",
+  bLine1:"Last Year's",
   bLine2:"Budget",
   
   //Last year's Reports
   rExample:"Last Year's Reports",
-  rLine1:" ",
+  rLine1:"Last Year's",
   rLine2:"Reports",
 
   //Building a Work Plan: Process Map

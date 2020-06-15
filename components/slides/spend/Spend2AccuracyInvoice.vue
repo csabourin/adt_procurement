@@ -92,7 +92,7 @@
   "fr": {
   "instructions":"Répondez aux questions suivantes en consultant la facture fournie.",
     "q1": {
-      "text": "Vous avez reçu 15 paires de lunettes roses. Les 5 autres paires sont en rupture de stock. Payez-vous la facture pour la commande compl&egrave;te de 20 pairs?",
+      "text": "Vous avez reçu 15 paires de lunettes roses. Les 5 autres paires sont en rupture de stock. Payez-vous la facture pour la commande compl&egrave;te de 20 paires?",
       "options": {
         "1": "Oui",
         "2": "Non"

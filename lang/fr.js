@@ -30,7 +30,7 @@ export default {
   KeyMessagesSpend: "<span class='v-inv'>Dépenses&nbsp;: </span>Messages clés",
   KeyMessagesReport: "<span class='v-inv'>Rapports&nbsp;: </span>Messages clés",
   BuildWorkPlan: "Élaborer un plan de travail",
-  CreateBudget: "Établir un budget",
+  CreateBudget: "Créer un budget",
   InitiateAuthorizeSpending: "Engager et autoriser des dépenses (art.&nbsp;32)",
   ExerciseFinancialAuthority: "Exercer son pouvoir financier (art.&nbsp;34)",
   MonitorControlFinances: "Surveiller et contrôler les finances",

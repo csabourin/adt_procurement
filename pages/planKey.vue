@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
     <h2 class="pageTitle">{{$t('KeyMessages')}}</h2>
-    <p><img src="~/assets/KeyMessP.svg" alt="" role="presentation" width="320" height="216"></p>
+    <p><img src="~/assets/KeyMessP.svg" alt="" role="presentation" height="275"></p>
     <p>&nbsp;</p>
     <span class="plan"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></span>
     <p>&nbsp;</p>
@@ -19,9 +19,9 @@
           <span v-if="$i18n.locale=='fr'">
             <h3>Élaborer un plan de travail</h3>
             <ul>
-              <li>Un plan de travail est un compte rendu détaillé des activités à exercer, des ressources à utiliser et des résultats à atteindre au cours d’une période d’un an, laquelle correspond habituellement à un exercice financier pour un centre de responsabilité.</li>
+              <li>Un plan de travail est une liste détaillée des activités à exercer, des ressources à utiliser et des résultats à atteindre au cours d’une période d’un an, laquelle correspond habituellement à un exercice financier pour un centre de responsabilité.</li>
               <li>Pour élaborer un plan de travail, vous passez en revue les activités inscrites dans le plan de travail, le budget et les rapports de l’année précédente afin de prendre note des leçons apprises et les mesures à reporter afin de cerner les tendances possibles.&nbsp;</li>
-              <li>Plus précisément, vous définissez et hiérarchisez le travail et les activités de votre unité, attribuez des ressources et des échéanciers à chaque activité, veillez à ce que les activités correspondent aux priorités organisationnelles et effectuez une évaluation des risques.&nbsp;</li>
+              <li>Plus précisément, avec l’aide de votre équipe, vous définissez et priorisez le travail et les activités de votre unité, attribuez des ressources et des échéanciers à chaque activité, veillez à ce que les activités s’alignent aux priorités organisationnelles et effectuez une évaluation des risques.&nbsp;</li>
             </ul>
           </span>
         </b-col>

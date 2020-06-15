@@ -1,6 +1,6 @@
 <template>
   <div>
-  	<div class="invSkip" role="navigation">
+  	<div class="invSkip" role="navigation" :aria-label="$t('bypass')">
       <a href="#mainContent" class="skipToMain">{{$t('skipToMain')}}</a>
     </div>
     <b-container fluid style="overflow:hidden;">
@@ -1023,3 +1023,15 @@ a:focus {
 }
 
 </style>
+<i18n>
+
+  {
+    "en": {
+      "bypass": "Bypass blocks"
+    },
+    "fr": {
+      "bypass": "Blocs de contournement"
+    }
+  }
+
+</i18n>

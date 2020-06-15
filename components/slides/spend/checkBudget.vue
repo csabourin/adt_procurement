@@ -1,5 +1,19 @@
 <template>
   <div>
+    <b-card>
+    <b-tabs content v-model="tabIndex">
+      <b-tab title="Question 1"><br><radioQuiz :question="$t('q1')" qId="1"/></b-tab>
+      <b-tab title="Question 2"><br><radioQuiz :question="$t('q2')" qId="2" /></b-tab>
+      <b-tab title="Question 3"><br><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
+    </b-tabs>
+      <!-- Control buttons-->
+      <div class="text-center">
+        <b-button-group class="mt-2">
+          <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+          <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=2">{{$t('nextPage')}}</b-button>
+        </b-button-group>
+      </div>
+</b-card>
     <div class="tableScrollLTL"><!-- *CSABOURIN* : scrollMe should only be doing its thing when the screen is narrow no? Hard to adapt to content for now... -->
       <table border=1 class="qTable">
         <colgroup>
@@ -138,21 +152,6 @@
         </tbody>
       </table>
     </div>
-    <br>
-    <b-card>
-    <b-tabs content v-model="tabIndex">
-      <b-tab title="Question 1"><br><radioQuiz :question="$t('q1')" qId="1"/></b-tab>
-      <b-tab title="Question 2"><br><radioQuiz :question="$t('q2')" qId="2" /></b-tab>
-      <b-tab title="Question 3"><br><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
-    </b-tabs>
-      <!-- Control buttons-->
-      <div class="text-center">
-        <b-button-group class="mt-2">
-          <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-          <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=2">{{$t('nextPage')}}</b-button>
-        </b-button-group>
-      </div>
-</b-card>
   </div>
 </template>
 <i18n>

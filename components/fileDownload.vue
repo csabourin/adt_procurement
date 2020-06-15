@@ -177,7 +177,7 @@ export default {
   a.download:hover, a.download:focus{
     text-decoration: none;
     opacity: 0.85;
-    outline: none;
+    /*outline: none;*/
   }
   
   a.download:hover svg.icon, a.download:focus svg.icon{

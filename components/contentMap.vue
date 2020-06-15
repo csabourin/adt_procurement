@@ -3,7 +3,7 @@
     <transition appear mode="out-in" name="fade">
       <div>
         <div v-show="currentState">
-          <span ref="item"><h4 class="colorBar1">{{$t('plan')}}</h4></span>    
+          <span ref="item"><h2 class="colorBar1">{{$t('plan')}}</h2></span>    
           <menu style="list-style: none">
             <li role="menuitem">
               <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessagesPlan')" />
@@ -18,7 +18,7 @@
               <nuxt-link :to="localePath('exam1')" v-html="$t('TestPlan')" />
             </li>
           </menu>
-          <h4 class="colorBar2">{{$t('spend')}}</h4>
+          <h2 class="colorBar2">{{$t('spend')}}</h2>
           <menu style="list-style: none">
             <li role="menuitem">
               <nuxt-link :to="localePath('spendKey')" v-html="$t('KeyMessagesSpend')" />
@@ -36,7 +36,7 @@
               <nuxt-link :to="localePath('exam2')" v-html="$t('TestSpend')" />
             </li>
           </menu>
-          <h4 class="colorBar3">{{$t('report')}}</h4>
+          <h2 class="colorBar3">{{$t('report')}}</h2>
           <menu style="list-style: none">
             <li role="menuitem">
               <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessagesReport')" />
@@ -54,13 +54,13 @@
         </div>
         <div v-show="!currentState" class="clickMe closedMenuBox" @click="setParentOpen" @mouseover="arrowVisible = true" @mouseout="arrowVisible = false">
           <div class="color1">
-            <h4>{{$t('plan')}}</h4>
+            <h2>{{$t('plan')}}</h2>
           </div>
           <div class="color2">
-            <h4>{{$t('spend')}}</h4>
+            <h2>{{$t('spend')}}</h2>
           </div>
           <div class="color3">
-            <h4>{{$t('report')}}</h4>
+            <h2>{{$t('report')}}</h2>
           </div>
           <div class="open-indicator" v-show="arrowVisible"></div>
         </div>
@@ -105,9 +105,9 @@
             for(var k = 0; k < colorBoxes.length; k++){
               colorBoxes[k].style.height = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
             }
-            var hFours = this.$el.querySelectorAll(".color1 h4, .color2 h4, .color3 h4")
-            for(var l = 0; l < hFours.length; l++){
-              hFours[l].style.width = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
+            var hTwos = this.$el.querySelectorAll(".color1 h2, .color2 h2, .color3 h2")
+            for(var l = 0; l < hTwos.length; l++){
+              hTwos[l].style.width = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
             }
           });
         }
@@ -246,7 +246,7 @@ li{
   /*line-height: 100%;*/
   margin-bottom: .25em;
 }
-.contentMap h4{
+.contentMap h2{
   text-align:center;
   padding:10px 0 10px;
   text-transform: uppercase;
@@ -256,7 +256,7 @@ li{
 .colorBar2{border-bottom:4px solid #d3cad2;}
 .colorBar3{border-bottom:4px solid #d6c7c3;}
 
-contentMap.closed h4.colorBar1, contentMap.closed h4.colorBar2, contentMap.closed h4.colorBar3{
+contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.closed h2.colorBar3{
   padding-top:4em;
   text-transform: uppercase;
   border-bottom-width: 5em;
@@ -291,7 +291,7 @@ contentMap.closed h4.colorBar1, contentMap.closed h4.colorBar2, contentMap.close
     color: white;
   }
   
-  .color1 h4, .color2 h4, .color3 h4{
+  .color1 h2, .color2 h2, .color3 h2{
     transform: rotate(-90deg);
     transform-origin: right top;
     font-size: 0.95em;

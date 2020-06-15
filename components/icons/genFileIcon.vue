@@ -6,7 +6,7 @@
     <polyline class="icon3" points="96.19 1.84 96.19 50.25 138.02 50.25" />
     <polygon class="icon3" points="96.62 1.84 5.72 1.84 5.72 161.38 138.06 161.38 138.06 49.18 96.62 1.84" />
     <text class="icon5" transform="translate(20.44 91.92)">{{line1}}</text>
-    <text class="icon4" transform="translate(35.4 112.12)">{{line2}}</text>
+    <text class="icon4" transform="translate(25 112.12)">{{line2}}</text>
   </svg>
 </template>
 <script type="text/javascript">

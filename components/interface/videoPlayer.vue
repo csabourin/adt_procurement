@@ -217,6 +217,7 @@ export default {
       const videoPlayer = this.$refs.videoplayer
       this.accessiblePopup = true
       videoPlayer.pause()
+      this.isPaused=true
       this.$bvModal.show(this.modalArray[i])
     },
     showModal(i) {

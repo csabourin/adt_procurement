@@ -215,7 +215,7 @@
         </b-card>
       </div>
     </section>
-    <section>
+    <div>
         <continue-popup id="purpose"></continue-popup>
         <b-modal no-stacking id="financialCycle" @hide="resumePlay()" okOnly>
             <template v-slot:modal-header="{ close }">
@@ -292,7 +292,7 @@
             <budgetQuiz />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-    </section>
+    </div>
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
       <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />

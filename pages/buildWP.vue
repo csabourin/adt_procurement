@@ -102,7 +102,7 @@
       </div>
       </ul>
     </section>
-    <section>
+    <div>
       <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>
           <template v-slot:modal-header="{ close }">
               <h3 class="h5">
@@ -202,7 +202,7 @@
           <planQuiz />
           <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
-    </section>
+    </div>
     <div class="bottomNav planSection">
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
       <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />

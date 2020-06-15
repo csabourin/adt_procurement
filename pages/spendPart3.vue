@@ -95,7 +95,7 @@
         </b-card>
       </div>
     </section>
-    <section>
+    <div>
       <b-modal no-stacking id="ContinuousMonitoring" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
@@ -136,7 +136,7 @@
         <spendQuiz />
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
-    </section>
+    </div>
     <div class="bottomNav spendSection">
       <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
       <microlearning path="spendKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('KeyMessages')" />

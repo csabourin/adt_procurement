@@ -19,7 +19,7 @@
         </b-card>
       </div>
     </section>
-    <section>
+    <div>
       <b-modal no-stacking id="whatIsFSR" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
@@ -60,7 +60,7 @@
         <UpdatingAnnualForecast />
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
-    </section>
+    </div>
     <div class="bottomNav reportSection">
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
       <microlearning :completion="$store.state.currentPlaying.kmReport" path="reportKey" time="5" size="140" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" />

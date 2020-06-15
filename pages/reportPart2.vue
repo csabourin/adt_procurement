@@ -19,7 +19,7 @@
         </b-card>
       </div>
     </section>
-    <section>
+    <div>
       <b-modal no-stacking id="externalGovtReports" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
@@ -82,7 +82,7 @@
         <reportQuiz />
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
-    </section>
+    </div>
     <div class="bottomNav reportSection">
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
       <microlearning :completion="$store.state.currentPlaying.kmReport" path="reportKey" size="140" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" time="5" />

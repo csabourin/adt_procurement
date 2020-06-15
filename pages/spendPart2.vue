@@ -3,7 +3,7 @@
     <h1 class="pageTitle" v-html="$t('ExerciseFinancialAuthority')" />
     
     <section>
-      <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_d6fi3b4p/flavorId/0_fqnpevih/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_cd1vdsky/flavorId/0_8g2zh6bx/name/a.mp4" chapters chapterFile="SpendPart2.vtt" ccFile="SpendPart2_captions.vtt" posterFile="spendPart2_poster.png" :restartAt="parseInt(thatPoint)" toResume="setSpendPart2" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
+      <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_d6fi3b4p/flavorId/0_fqnpevih/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_cd1vdsky/flavorId/0_3z2qwwf8/name/a.mp4" chapters chapterFile="SpendPart2.vtt" ccFile="SpendPart2_captions.vtt" posterFile="spendPart2_poster.png" :restartAt="parseInt(thatPoint)" toResume="setSpendPart2" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
       <div role="tablist" class="transcriptionBox">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">

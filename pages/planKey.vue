@@ -11,7 +11,7 @@
           <span v-if="$i18n.locale=='en'">
             <h3>Build a Work Plan</h3>
             <ul>
-              <li>A work plan is a detailed schedule of the activities to be carried out, resources to be consumed, and results to be achieved over a one-year period, usually a fiscal year for a responsibility center.</li>
+              <li>A work plan is a detailed schedule of the activities to be carried out, resources to be consumed, and results to be achieved over a one-year period, usually a fiscal year for a responsibility centre.</li>
               <li>To build a work plan, you review the activities from the previous year's work plan, budget and reports to identify lessons learned and what needs to be carried over in order to identify possible trends.&nbsp;</li>
               <li>Specifically, with input from your team, you define and prioritize the work and activities of your unit, assigning resources and timelines to each activity, making sure the activities align with the organizational priorities and conducting a risk assessment.</li>
             </ul>
@@ -198,7 +198,7 @@ h3 {
   font-weight: 500;
   color: #608a93;
   background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);
-  quotes: "“""”";
+  quotes: """";
   padding: 1em;
 }
 

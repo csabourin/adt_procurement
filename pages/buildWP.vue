@@ -117,7 +117,7 @@
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
-      <p class="review">{{ $t('gotItContent') }}</p>
+      <p>{{ $t('gotItContent') }}</p>
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
@@ -290,9 +290,9 @@ export default {
 <i18n>{
   "en":{
   "gotIt":"Continue to next segment",
-  "gotItContent": "There will eventually be a paragraph here that explains the fact that a popup appears everytime a section of the video is completed, containing an exercise, resources or a simple instruction notifying the user that the section is completed.",
+  "gotItContent": "Pop-ups will appear throughout the course to indicate what comes next, such as a video, an exercise, a list of links or a job aid.",
   "activityLinks":"Reference: External Links",
-  "gotoLinks":"These links are also available in the Toolbox",
+  "gotoLinks":"For more information, feel free to consult the following links. These links are also available in the Toolbox.",
   "partsofWPTitle":"Activity: Parts of a Work Plan",
   "completewpDrafttitle":"Activity: Prepare a Work Plan",
   "completewptitle":"Activity: Complete the Work plan",
@@ -307,7 +307,7 @@ export default {
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
   "activityLinks":"Référence: Liens externes",
-  "gotoLinks":"Ces liens se retrouvent aussi dans la boite à outils",
+  "gotoLinks":"Pour plus d'information, veuillez consulter les liens suivants. Ces liens sont également disponibles dans la boîte à outils.",
   "partsofWPTitle":"Activité: Parties d’un plan de travail",
   "completewpDrafttitle":"Activité: Préparer un plan de travail",
   "completewptitle":"Activité: Compléter le plan de travail",
@@ -316,7 +316,7 @@ export default {
   "InRealLife":"Dans la vraie vie",
   "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>  <p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l’intranet pour voir quels mod&egrave;les sont utilisés.</p>  <p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
   "gotIt":"Continuer au segment suivant.",
-  "gotItContent": "Il y aura éventuellement un paragraphe ici qui expliquera le fait qu'une fenêtre apparaît chaque fois qu'une section de la vidéo est complétée, contenant un exercice, des ressources ou une simple instruction notifiant à l'utilisateur que la section est terminée.",
+  "gotItContent": "Les fenêtres contextuelles apparaissent tout au long du cours pour indiquer ce qui vient ensuite comme une autre vidéo, un exercice, une liste de liens, une aide à l’emploi, etc.",
   "transcriptText":"",
   "planSectionBar": "PLANIFICATION"
   }

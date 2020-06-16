@@ -121,7 +121,7 @@
       "en":
       {
           "pwpInstructions": "Looking at your draft, you notice that some items may have been dropped into the wrong location or may be missing. Update your draft accordingly.",
-          "pwpTitle": "Choose the best option for each section of this work plan by selecting the most appropriate answer.",
+          "pwpTitle": "Choose the best option for each section of this work plan.",
           "pwpGovtPri": "Government priorities",
           "pwpDeptPri": "Departmental priorities",
           "pwpDirPri": "Directorate priorities",
@@ -148,63 +148,63 @@
           "pM1_1": "<ul><li>Implement flexible work hours</li></ul>",
           "pR1_1": "<ul><li>1 administrative assistant</li></ul>",
           "pR1_2": "<ul><li>manager</li></ul>",
-          "pA2": "Issue commercial fishing licenses",
-          "pSA2": "<ul><li>Review applicant requests</li><li>Check reliability</li><li>Issue licenses</li><li>Conduct inspections</li></ul>",
+          "pA2": "Issue commercial fishing licences",
+          "pSA2": "<ul><li>Review applicant requests</li><li>Check reliability</li><li>Issue licences</li><li>Conduct inspections</li></ul>",
           "pD2_1": "Issue license within 30 days of request",
-          "pD2_2": "Issue 500 licenses per year",
+          "pD2_2": "Issue 500 licences per year",
           "pR2": "<ul><li>Overfishing</li></ul>",
           "pM2": "<li>Protect habitat</li><li>Place catching limits</li><li>Implement fishing seasons</li>",
           "pRes2": "<li>1 officer</li><li>2 analysts</li><li>1 junior officer</li>",
-          "pA3": "Renew commercial fishing licenses",
+          "pA3": "Renew commercial fishing licences",
           "pSA3": "<li>Review applicant renewal requests</li><li>Issue renewal license</li>",
           "pD3": "<li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year </li>",
           "pRes3": "<li>1 officer</li><li>1 junior analyst</li>",
           "q1":
           {
-              "text": "Currently, “Implement flexible work hours” is a <span class='bolder'>mitigation</span> strategy for the following risks: overfishing, habitat degradation, environmental disaster, climate change. Where should it appear in the work plan?",
+              "text": "Currently, “Implement flexible work hours” is a <span class='bolder'>mitigation</span> strategy for the overfishing risk. Where should it appear in the work plan?",
               "options":
               {
-                  "1": "Keep it as a mitigation strategy for “Overfishing.”",
-                  "2": "It should be a mitigation strategy for “Staff turnover.”",
+                  "1": "Keep it as a mitigation strategy for the “Overfishing.” risk",
+                  "2": "It should be a mitigation strategy for  the “Staff turnover.” risk",
                   "3": "Remove “Implement flexible work hours” completely."
               },
               "feedback":
               {
-                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Actually, flexible work hours relates better to the “Management and administration of the directorate”.",
+                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Actually, &ldquo;Implement flexible work hours&rdquo; relates better to the “Management and administration of the directorate” activity.",
                   "2": "<span class='v-right' /> <strong>Correct!</strong>",
                   "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Actually, “Implement flexible work hours” is a valid strategy to attract and retain employees."
               }
           },
           "q2":
           {
-              "text": "The following <span class='bolder'>deliverable</span> is missing from your work plan: “Issue 500 licenses per year.” With which activity should you place it?",
+              "text": "The following <span class='bolder'>deliverable</span> is missing from your work plan: “Issue 500 licences per year.” With which activity should you place it?",
               "options":
               {
                   "1": "Manage and administer the directorate",
-                  "2": "Issue commercial fishing licenses",
-                  "3": "Renew commercial fishing licenses"
+                  "2": "Issue commercial fishing licences",
+                  "3": "Renew commercial fishing licences"
               },
               "feedback":
               {
-                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> This deliverable relates to issuing commercial fishing licenses.",
+                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> This deliverable relates to the “Issue commercial fishing licences” activity.",
                   "2": "<span class='v-right' /> <strong>Correct!</strong>",
-                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> This deliverable relates to issuing commercial fishing licenses."
+                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> This deliverable relates to the “Issue commercial fishing licences” activity."
               }
           },
           "q3":
           {
-              "text": "Looking under the <span class='bolder'>resources</span> column, you notice that the manager position is missing. Under which activity should you place it?",
+              "text": "Looking under <span class='bolder'>Resources</span>, you notice that the manager position is missing. With which activity should you place it?",
               "options":
               {
                   "1": "Manage and administer the directorate",
-                  "2": "Issue commercial fishing licenses",
-                  "3": "Renew commercial fishing licenses"
+                  "2": "Issue commercial fishing licences",
+                  "3": "Renew commercial fishing licences"
               },
               "feedback":
               {
                   "1": "<span class='v-right' /> <strong>Correct!</strong>",
-                  "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager position would be reflected under “Manage and administer the directorate.”",
-                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  A manager position would be reflected under “Manage and administer directorate.”"
+                  "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The manager position should appear with the “Manage and administer the directorate” activity.",
+                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The manager position should appear with the “Manage and administer the directorate” activity."
               }
           }
       },
@@ -212,9 +212,9 @@
       {
           "pwpInstructions": "En regardant votre brouillon, vous remarquez que certains items peuvent avoir été placés au mauvais endroit ou manquer. Mettez à jour votre brouillon en conséquence. ",
           "pwpTitle": "Choisissez la meilleure option pour chaque partie du plan de travail.",
-          "pwpGovtPri": "<strong>Priorités du gouvernement &mdash;</strong>",
-          "pwpDeptPri": "<strong>Priorités ministérielles &mdash;</strong>",
-          "pwpDirPri": "<strong>Priorités de la direction &mdash;</strong>",
+          "pwpGovtPri": "<strong>Priorités du gouvernement</strong>",
+          "pwpDeptPri": "<strong>Priorités ministérielles</strong>",
+          "pwpDirPri": "<strong>Priorités de la direction</strong>",
           "titleActivities": "Activités",
           "titleSubActivities": "Sous-activités",
           "titleDeliverables": "Livrables",
@@ -233,7 +233,7 @@
           "pR1": "<ul><li>Roulement du personnel</li></ul>",
           "low": "<ul><li>Faible</li></ul>",
           "high": "<ul><li>&Eacute;levé</li></ul>",
-          "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l’excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li></ul>",
+          "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l’excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li></ul>",
           "pM1_1": "Mettre en &oelig;uvre des horaires de travail flexibles",
           "pR1_1": "<ul><li>1 adjoint administratif</li></ul>",
           "pR1_2": "<ul><li>gestionnaire</li></ul>",
@@ -250,16 +250,16 @@
           "pRes3": "<li>1 agent</strong></li><li>1 analyste subalterne</li>",
           "q1":
           {
-              "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d’<span class='bolder'>atténuation</span> de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
+              "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d’<span class='bolder'>atténuation</span> du risque de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
               "options":
               {
-                  "1": "Gardez-la comme stratégie d’atténuation pour la &laquo; Surpêche &raquo;.",
-                  "2": "Il devrait faire partie de la stratégie d’atténuation &laquo; Roulement du personnel &raquo;.",
+                  "1": "Gardez-la comme stratégie d’atténuation du risque pour la &laquo; Surpêche &raquo;.",
+                  "2": "Il devrait faire partie de la stratégie d’atténuation du risque &laquo; Roulement du personnel &raquo;.",
                   "3": "Enlever complètement &laquo; Horaires de travail flexibles &raquo;."
               },
               "feedback":
               {
-                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, les heures de travail flexibles se rapportent plus à la &laquo; Gestion et à administration de la direction &raquo;.",
+                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, les heures de travail flexibles se rapportent plus à l'activité &laquo; Gérer et administrer de la direction &raquo;.",
                   "2": "<span class='v-right' />  <strong>Correct!</strong>",
                   "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, &laquo; Horaires de travail flexibles &raquo; est une stratégie valable pour attirer et retenir les employés."
               }
@@ -275,9 +275,9 @@
               },
               "feedback":
               {
-                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne la délivrance de permis de p&ecirc;che commerciale.",
+                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne l'activité de «&nbsp;Délivrer des permis de p&ecirc;che commerciale.",
                   "2": "<span class='v-right' />  <strong>Correct!</strong>",
-                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne la délivrance de permis de p&ecirc;che commerciale."
+                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne l'activité de «&nbsp;Délivrer des permis de p&ecirc;che commerciale."
               }
           },
           "q3":
@@ -321,6 +321,11 @@
 
 </script>
 <style type="text/css" scoped>
+  
+  .workplan-table .row:nth-child(1) h3:after, .workplan-table .row:nth-child(2) h3:after, .workplan-table .row:nth-child(3) h3:after {
+    display: none;
+  }
+  
 .tableColoured {
   table-layout: fixed;
   width: 100%;

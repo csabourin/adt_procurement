@@ -23,7 +23,7 @@ export default {
   playIcon: "Play icon",
   pencilIcon: "Activity icon",
   home: "Home",
-  checkAll: "Check all that could apply.",
+  checkAll: "Check all that apply.",
   selectRight: "Select the correct answer.",
   pleaseAnswer: "Please answer the question!",
   KeyMessages: "Key Messages",
@@ -68,7 +68,7 @@ export default {
   
   //Last year's Budget
   bExample:"Last Year's Budget",
-  bLine1:"Last Year's",
+  bLine1:"",
   bLine2:"Budget",
   
   //Last year's Reports

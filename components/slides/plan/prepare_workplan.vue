@@ -49,11 +49,11 @@
             <p v-if="dirPri && q3Submit"><span v-html="$t('a3-'+dirPri)" /></p>
           </b-col>
         </b-row>
-        <b-row>
+        <!--<b-row>
           <b-col class="encadrage">
             <h3 v-html="$t('titleActivities')"></h3>
           </b-col>
-        </b-row>     
+        </b-row>-->     
         <b-row>
           <b-col cols="2" class="text-center" style="margin-top: 30px;">
             <download :filename="$t('fileName.buildWPProcessMap')" :HTMLFilename="$t('fileName.buildWPProcessMapHTML')" size=128 iconColor="planBackground" :title="$t('DownloadProcessMap')" :line1="$t('ProcessMapLn1')" :line2="$t('ProcessMapLn2')" :lineTag="$t('buildWPProcessMapExample')" :fileSize="this.$i18n.locale == 'en' ? '121' : '114'" name="buildWPProcessMap" />
@@ -119,7 +119,7 @@
 <i18n>{
     "en":
     {
-      "pwpInstructions": "Your director shares with you this coming year’s priorities for your directorate: “Protect aquatic ecosystems, sustain fisheries and manage the issuing of licenses.”",
+      "pwpInstructions": "Your director shares with you this coming year’s priorities for your directorate: “Protect aquatic ecosystems, sustain fisheries, and manage the issuing of licences.”",
       "pwpTitle": "Select the best answer.",
       "pwpGovtPri": "<strong>Government priorities</strong>",
       "pwpDeptPri": "<strong>Departmental priorities</strong>",
@@ -133,7 +133,7 @@
       "titleImpact": "Impact",
       "titleMitigation": "Mitigation",
       "titleResources": "Resources",
-      "qDisabled": "Please select one",
+      "qDisabled": "Please select one.",
       "q1":
       {
           "1": "To make Canada a leader of international efforts to combat climate change and reduce greenhouse emissions.",
@@ -143,17 +143,17 @@
       "q1a":
       {
           "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority for the government, our scope is more about fisheries, not climate change.",
-          "2": "<span class='v-right' /> <strong>Correct!</strong> Our priority is to protect the fisheries so they are still around in 40 years for our grandchildren!",
+          "2": "<span class='v-right' /> <strong>Correct!</strong> Our priority is to protect the fisheries so that they are still around in 40 years for our grandchildren!",
           "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority for the government, your unit’s scope is more about fisheries, not protecting the oceans."
       },
       "q2-1": "To contribute to an environmentally, economically and socially sustainable Canadian aquaculture sector by developing new federal legislation.",
       "q2-2": "To ensure access to safe harbours, respond to on-water incidents and minimize or avoid negative impacts of environmental disasters on Canada’s oceans.",
-      "q2-3": "To support prosperous and sustainable commercial, Indigenous and recreational fisheries, aquaculture and other oceans industries.",
+      "q2-3": "To support prosperous and sustainable commercial, Indigenous and recreational fisheries, aquaculture and other ocean industries.",
       "a2-1": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority, our scope is more about fisheries.",
       "a2-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority, our scope is more about fisheries.",
       "a2-3": "<span class='v-right' /> <strong>Correct!</strong> Our scope is about fisheries",
       "q3-1": "To manage the commercial domestic fisheries.",
-      "q3-2": "To protect endangered species in the great lakes.",
+      "q3-2": "To protect endangered species in the Great Lakes.",
       "q3-3": "To eliminate the encroachment of invasive species.",
       "a3-1": "<span class='v-right' /> <strong>Correct!</strong>",
       "a3-2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries.",
@@ -189,11 +189,11 @@
       },
       "q2-1": "Contribuer à la durabilité environnementale, économique et sociale du secteur de l’aquaculture canadien en élaborant de nouvelles lois fédérales.",
       "q2-2": "Garantir l’accès à des ports sûrs, intervenir en cas d’incident sur l’eau et minimiser ou éviter les impacts négatifs sur les océans du Canada suite à des catastrophes environnementales.",
-      "q2-3": "Soutenir une pêche commerciale, autochtone et récréative qui soit productive et durable, l’aquaculture, et d’autres industries maritimes.",
+      "q2-3": "Soutenir une pêche commerciale, autochtone et récréative qui soit productive et durable, l’aquaculture, et d’autres industries océaniqus.",
       "a2-1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",
       "a2-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",
       "a2-3": "<span class='v-right' /> <strong>Correct!</strong> Notre responsabilité est de nous occuper des pêches.",
-      "q3-1": "Gérer les pêches commerciales.",
+      "q3-1": "Gérer les pêches commerciales intérieures.",
       "q3-2": "Protéger les espèces en voie de disparition dans les Grands Lacs.",
       "q3-3": "Éliminer la prolifération des espèces envahissantes.",
       "a3-1": "<span class='v-right' /> <strong>Correct!</strong>",
@@ -222,6 +222,11 @@
 
 </script>
 <style type="text/css" scoped>
+  
+  .workplan-table .row:nth-child(1) h3:after, .workplan-table .row:nth-child(2) h3:after, .workplan-table .row:nth-child(3) h3:after {
+    display: none;
+  }
+  
 .scrollMe {
   width: 100%;
   overflow-x: auto;

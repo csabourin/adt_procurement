@@ -10,13 +10,14 @@
           <b-tab title="Question 5"><radioQuiz :question="$t('q5')" qId="5" /></b-tab>
           <b-tab title="Question 6"><radioQuiz :question="$t('q6')" qId="6" /></b-tab>
           <b-tab title="Question 7"><radioQuiz :question="$t('q7')" qId="7" /></b-tab>
-          <b-tab title="Question 8"><radioQuiz :question="$t('q8')" qId="8" /></b-tab>
-          <b-tab title="Question 9"><checkboxQuiz :question="$t('q9')" qId="9" :Answer='["1","2","3"]' /></b-tab>
+          <b-tab title="Question 8"><checkboxQuiz :question="$t('q8')" qId="8" :Answer='["1","2","3"]' /></b-tab>
+          <b-tab title="Question 9"><checkboxQuiz :question="$t('q9')" qId="9" :Answer='["3","4","5"]' /></b-tab>
           <b-tab title="Question 10"><radioQuiz :question="$t('q10')" qId="10" /></b-tab>
-          <b-tab title="Question 11"><checkboxQuiz :question="$t('q11')" qId="11" :Answer='["3","4","5"]' /></b-tab>
+          <b-tab title="Question 11"><radioQuiz :question="$t('q11')" qId="11" /></b-tab>
           <b-tab title="Question 12"><radioQuiz :question="$t('q12')" qId="12" /></b-tab>
           <b-tab title="Question 13"><radioQuiz :question="$t('q13')" qId="13" /></b-tab>
           <b-tab title="Question 14"><radioQuiz :question="$t('q14')" qId="14" /></b-tab>
+          <b-tab title="Question 15"><radioQuiz :question="$t('q15')" qId="15" /></b-tab>
         </b-tabs>
       </b-card>
       <!-- Control buttons-->
@@ -82,7 +83,7 @@ export default {
     "q3": {
       "text": "A departmental priority in your work plan originates all the way back to:",
       "options": {
-        "1": "The Directorate’s plan",
+        "1": "The directorate’s plan",
         "2": "The Departmental plan",
         "3": "The Speech from the Throne"
       },
@@ -116,27 +117,14 @@ export default {
         "4": "The Departmental Plan"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the mandate letter to the minister responsible for the department.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the mandate letter to the minister responsible for the department.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines their expectations and objectives in the mandate letter to the minister responsible for the department.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines their expectations and objectives in the mandate letter to the minister responsible for the department.",
         "3": "<span class='v-right' /> <strong>Correct!</strong> The Prime Minister outlines their expectations and objectives in the mandate letter to the minister responsible for the department.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines his expectations and objectives in the mandate letter to the minister responsible for the department."
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines their expectations and objectives in the mandate letter to the minister responsible for the department."
       }
     },
     "q6": {
-      "text": "How often does a manager need to recertify in order to be able to continue to exercise their financial authority?",
-      "options": {
-        "1": "Every year",
-        "2": "Every 2 years",
-        "3": "Every 5 years"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> "
-      }
-    },
-    "q7": {
-      "text": "To conduct a 360 scan, you must do the following.",
+      "text": "To conduct a 360&deg; scan, you must do the following.",
       "options": {
         "1": "Get a sense of the current situation by examining what was done in the recent past.",
         "2": "Look at previous work plans, budgets and reports.",
@@ -145,14 +133,14 @@ export default {
         "5": "All of the above."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360 review.",
-        "5": "<span class='v-right' /> <strong>Correct!</strong>  You must do all these activities to conduct a 360 review."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360&deg; review.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360&deg; review.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360&deg; review.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360&deg; review.",
+        "5": "<span class='v-right' /> <strong>Correct!</strong>  You must do all these activities to conduct a 360&deg; review."
       }
     },
-    "q8": {
+    "q7": {
       "text": "Choose the priorities to which your work plan activities should link, starting with the top.",
       "options": {
         "1": "Departmental priorities, directorate priorities, government priorities",
@@ -165,7 +153,7 @@ export default {
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities."
       }
     },
-    "q9": {
+    "q8": {
       "text": "Which situations would cause you to update your work plan?",
       "options": {
         "1": "A new director is nominated",
@@ -179,22 +167,7 @@ export default {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> The nomination of a new director, the departure of an employee and mandatory training being pushed back to the next year all require an update to the work plan."
       }
     },
-    "q10": {
-      "text": "What is a work plan?",
-      "options": {
-        "1": "A daily to-do list",
-        "2": "The activities to be carried out over a fiscal year",
-        "3": "The amounts of money to be spent ",
-        "4": "A summary of what you have accomplished"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year."
-      }
-    },
-    "q11": {
+    "q9": {
       "text": "What are a manager’s responsibilities?",
       "options": {
         "1": "To establish government wide priorities",
@@ -208,7 +181,7 @@ export default {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager is responsible for planning their unit’s activities, using public funds to carry out their unit’s activities and reporting on the status of their unit’s activities."
       }
     },
-    "q12": {
+    "q10": {
       "text": "What are deliverables?",
       "options": {
         "1": "The work tasks to be accomplished to support your directorate’s priorities.",
@@ -221,7 +194,7 @@ export default {
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are the resources. Deliverables are specific and tangible items you should be able to check off your list when you accomplish them."
       }
     },
-    "q13": {
+    "q11": {
       "text": "Which activities should you include in your new work plan?",
       "options": {
         "1": "Ongoing activities, new activities, completed activities",
@@ -238,6 +211,32 @@ export default {
         "5": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included."
       }
     },
+    "q12": {
+      "text": "Which of the following is an example of a government priority?",
+      "options": {
+        "1": "Modernize and renew the organization’s workforce to better serve Canadians",
+        "2": "Work with Canadians in all areas of the economy across the country to improve conditions for investment",
+        "3": "Implement activity based workstations to improve team collaboration and communication"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Work with Canadians in all areas of the economy across the country to improve conditions for investment.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Broad goal and commitment statements such as this are usually reserved for government priorities.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Work with Canadians in all areas of the economy across the country to improve conditions for investment."
+      }
+    },
+    "q13": {
+      "text": "Which of the following is an example of a sub-activity?",
+      "options": {
+        "1": "Buy and distribute tablets",
+        "2": "Usage of tablets by employees",
+        "3": "Equip employees with new digital tools to promote mobility"
+      },
+      "feedback": {
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Sub-activities are activities broken into smaller parts.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Buy and distribute tablets.” Sub-activities are activities broken into smaller parts.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Buy and distribute tablets.” Sub-activities are activities broken into smaller parts."
+      }
+    },
     "q14": {
       "text": "Which are considered risks?",
       "options": {
@@ -252,6 +251,19 @@ export default {
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Well managed fish stocks are not risks. Overfishing and staff turnover are risks.",
         "4": "<span class='v-right' /> <strong>Correct!</strong>"
       }
+    },
+    "q15": {
+      "text": "How often does a manager need to recertify in order to be able to continue to exercise their financial authority?",
+      "options": {
+        "1": "Every year",
+        "2": "Every 2 years",
+        "3": "Every 5 years"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> "
+      }
     }
   },
   "fr": {
@@ -265,10 +277,10 @@ export default {
         "4": "Un résumé de ce que vous avez accompli"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable. ",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable. ",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable. "
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong>",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités à réaliser sur une période d'un an.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable."
       }
     },
     "q2": {
@@ -327,19 +339,6 @@ export default {
       }
     },
     "q6": {
-      "text": "À quelle fréquence un gestionnaire doit-il renouveler son attestation pour pouvoir continuer à exercer ses pouvoirs financiers ?",
-      "options": {
-        "1": "Chaque année",
-        "2": "Tous les 2 ans",
-        "3": "Tous les 5 ans"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les 5 ans.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les 5 ans.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> "
-      }
-    },
-    "q7": {
       "text": "Pour effectuer un aperçu à 360 degrés, vous devez procéder comme il est indiqué ci-dessous : ",
       "options": {
         "1": "Se faire une idée de la situation actuelle en examinant ce qui a été fait dans un passé récent.",
@@ -356,7 +355,7 @@ export default {
         "5": "<span class='v-right' /> <strong>Correct!</strong>  Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés."
       }
     },
-    "q8": {
+    "q7": {
       "text": "Choisissez les priorités auxquelles les activités du plan de travail devraient se rattacher, en commençant par le haut.",
       "options": {
         "1": "Priorités ministérielles, priorités de la Direction, priorités du gouvernement",
@@ -369,7 +368,7 @@ export default {
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du haut sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction."
       }
     },
-    "q9": {
+    "q8": {
       "text": "Quelles situations vous amèneraient à mettre à jour le plan de travail?",
       "options": {
         "1": "Un nouvel administrateur est nommé.",
@@ -383,22 +382,7 @@ export default {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> La nomination d’un nouvel administrateur, le départ d’un employé et le report de la formation obligatoire à l’année suivante exigent tous une mise à jour du plan de travail."
       }
     },
-    "q10": {
-      "text": "Qu’est-ce qu’un plan de travail?",
-      "options": {
-        "1": "Une liste quotidienne des tâches à accomplir",
-        "2": "Les activités à réaliser au cours d’un exercice comptable",
-        "3": "Les sommes d’argent à dépenser",
-        "4": "Un résumé de ce que vous avez accompli"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d’activités qui s’échelonneront au cours d’un exercice comptable.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d’activités à réaliser sur une période d’un an, et non de sommes d’argent à dépenser.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d’activités qui s’échelonneront au cours d’un exercice comptable."
-      }
-    },
-    "q11": {
+    "q9": {
       "text": "Quelles sont les responsabilités d’un gestionnaire?",
       "options": {
         "1": "Établir des priorités à l’échelle du gouvernement",
@@ -412,7 +396,7 @@ export default {
         "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un gestionnaire est responsable de la planification des activités de son unité, de l’utilisation des fonds publics pour mener à bien les activités de son unité et de la production de rapports sur l’état des activités de son unité."
       }
     },
-    "q12": {
+    "q10": {
       "text": "Que sont les livrables?",
       "options": {
         "1": "Les tâches de travail à accomplir pour appuyer les priorités de votre direction.",
@@ -422,17 +406,17 @@ export default {
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les livrables sont plus précis et tangibles que les activités.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce sont les ressources. Les livrables font partie des éléments précis et tangibles que vous devriez cocher sur votre liste lorsque vous les réalisez."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce sont les ressources. Les livrables font partie des éléments précis et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les réalisez."
       }
     },
-    "q13": {
+    "q11": {
       "text": "Quelles activités devriez-vous inclure dans votre nouveau plan de travail?",
       "options": {
         "1": "Activités en cours, nouvelles activités, activités terminées",
         "2": "Activités en cours, nouvelles activités",
         "3": "Nouvelles activités, activités terminées",
         "4": "Nouvelles activités, activités terminées, activités du projet",
-        "4": "Activités en cours, activités terminées, activités du projet"
+        "5": "Activités en cours, activités terminées, activités du projet"
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
@@ -442,19 +426,58 @@ export default {
         "5": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses."
       }
     },
+    "q12": {
+      "text": "Lequel des éléments suivants est un exemple d’une priorité gouvernementale?",
+      "options": {
+        "1": "Moderniser et renouveler les effectifs de l'organisation pour mieux servir les Canadiens ",
+        "2": "Travailler avec les Canadiens dans tous les secteurs de l'économie à travers le pays pour améliorer les conditions d'investissement",
+        "3": "Mettre en place des postes de travail basés sur les activités pour améliorer la collaboration et la communication au sein des équipes"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est «&nbsp;Travailler avec les Canadiens dans tous les secteurs de l'économie à travers le pays pour améliorer les conditions d'investissement&nbsp;». ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> De telles déclarations d'objectifs et d'engagements généraux sont généralement réservées aux priorités du gouvernement.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est «&nbsp;Travailler avec les Canadiens dans tous les secteurs de l'économie à travers le pays pour améliorer les conditions d'investissement&nbsp;». "
+      }
+    },
+    "q13": {
+      "text": "Lequel des éléments suivants est un exemple de sous-activité?",
+      "options": {
+        "1": "Acheter et distribuer des tablettes",
+        "2": "L’utilisation de tablettes par les employés",
+        "3": "Doter les salariés de nouveaux outils numériques pour favoriser la mobilité"
+      },
+      "feedback": {
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Les sous-activités sont des activités divisées en plus petites parties.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est «&nbsp;Acheter et distribuer des tablettes&nbsp;». Les sous-activités sont des activités divisées en plus petites parties.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est «&nbsp;Acheter et distribuer des tablettes&nbsp;». Les sous-activités sont des activités divisées en plus petites parties."
+      }
+    },
     "q14": {
       "text": "Quels sont les risques considérés?",
       "options": {
         "1": "Panne d’électricité de 15 minutes, bogues mineurs de logiciels",
         "2": "Droits de permis, gestion des pêches",
         "3": "Pannes d’électricité, stocks de poissons bien gérés",
-        "4": "Surpêche, rotation du personnel"
+        "4": "Surpêche, roulement du personnel"
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Une panne de courant de 15 minutes ne devrait pas être suffisante pour être considérée comme un risque. Par contre, la surpêche et le roulement du personnel sont des risques.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce ne sont pas des risques.  Par contre, la surpêche et le roulement du personnel sont des risques.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les stocks de poissons bien gérés ne sont pas des risques.  Par contre, la surpêche et le roulement du personnel sont des risques.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce ne sont pas des risques. Par contre, la surpêche et le roulement du personnel sont des risques.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les stocks de poissons bien gérés ne sont pas des risques. Par contre, la surpêche et le roulement du personnel sont des risques.",
         "4": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
+    "q15": {
+      "text": "À quelle fréquence un gestionnaire doit-il renouveler son attestation pour pouvoir continuer à exercer ses pouvoirs financiers ?",
+      "options": {
+        "1": "Chaque année",
+        "2": "Tous les 2 ans",
+        "3": "Tous les 5 ans"
+      },
+      "feedback": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les 5 ans.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les 5 ans.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> "
       }
     }
   }

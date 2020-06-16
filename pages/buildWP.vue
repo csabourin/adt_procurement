@@ -35,13 +35,13 @@
                 <p>To build a work plan, it helps to understand the historical and cultural context of your unit by asking yourself a series of questions. This is what we call the 360 Scan.<br />Here is a fictional example of last year’s work plan, budget and report. Try to apply the questions in the 360 Scan document to this fictional example. <br />You may access the 360 Scan document at any time from the File icon at the top right.</p>
                 <hr>
                 <h2>Prepare a Work Plan</h2>
-                <p>At this point, you understand the context, both historically and culturally and are in a position to craft this year’s work plan! Imagine that your director shares with you this coming year’s priorities for your directorate: protect aquatic ecosystems, sustain fisheries and manage the issuing of licenses.</p>
+                <p>At this point, you understand the context, both historically and culturally and are in a position to craft this year’s work plan! Imagine that your director shares with you this coming year’s priorities for your directorate: protect aquatic ecosystems, sustain fisheries and manage the issuing of licences.</p>
                 <hr>
                 <h2>Complete the Work Plan</h2>
                 <p>To help you wrap your mind around how to fill out the other sections of the work plan, let’s continue with the fisheries scenario. Looking at your draft, you notice that some items may have been dropped into the wrong location or may be missing. Update your draft accordingly.</p>
                 <hr>
                 <h2>Adjust the Work Plan</h2>
-                <p>Alright. Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. Three things: new software implementation to speed up the issuing of licenses; new policy that now requires licenses to be issued in 15 days, not 30 days, starting November 1; a decision to not replace a retiring employee. The following exercise will help you adjust your work plan according to this new information.</p>
+                <p>Alright. Your director tells you that they have been to a steering committee and that they now have new information that should be reflected in your work plan. Three things: new software implementation to speed up the issuing of licences; new policy that now requires licences to be issued in 15 days, not 30 days, starting November 1; a decision to not replace a retiring employee. The following exercise will help you adjust your work plan according to this new information.</p>
                 <hr>
                 <h2>In Real Life</h2>
                 <p>Let’s take what you have learned into real life. Your organization will have their own ways of doing things. Take a time out from the course to scan your intranet to see which templates are used. Connect with your colleagues, your director, or financial officer, and chat about work plans.</p>
@@ -54,7 +54,7 @@
                    <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->
               </span>
               <span v-if="$i18n.locale=='fr'">
-                <p>Dans la présente section, vous apprendrez ce qui suit : </p>
+                <p>Dans la présente section, vous apprendrez ce qui suit&nbsp;:</p>
                 <ul>
                   <li>interpréter un plan de travail; </li>
                   <li>effectuer un aperçu à 360 degrés;</li>
@@ -93,7 +93,7 @@
                 <p>&laquo; Pour vous aider à vous faire une idée de la fa&ccedil;on de remplir les autres sections du plan de travail, continuons avec le scénario des p&ecirc;ches. En regardant votre brouillon, vous remarquez que certains items peuvent avoir été déposés au mauvais endroit ou manquer. Mettez à jour votre brouillon en conséquence. &raquo;</p>
                 <hr>
                 <h2>Ajuster le plan de travail</h2>
-                <p>&laquo; D’accord. Votre directeur vous dit qu’il a siégé à un comité directeur et qu’il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois choses : la mise en &oelig;uvre d’un nouveau logiciel pour accélérer l’émission de licences; une nouvelle politique qui exige maintenant que les licences soient émises en 15 jours, et non plus en 30 jours, à compter du 1er novembre; une décision de ne pas remplacer un employé qui prend sa retraite. L'exercice suivant vous aidera à ajuster votre plan de travail en fonction de ces nouvelles informations. &raquo;</p>
+                <p>&laquo; D’accord. Votre directeur vous dit qu’il a siégé à un comité directeur et qu’il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois choses : la mise en &oelig;uvre d’un nouveau logiciel pour accélérer l’émission de licences; une nouvelle politique qui exige que maintenant les licences soient émises en 15 jours, et non plus en 30 jours, à compter du 1er novembre; une décision de ne pas remplacer un employé qui prend sa retraite. L'exercice suivant vous aidera à ajuster votre plan de travail en fonction de ces nouvelles informations. &raquo;</p>
                 <hr>
                 <h2>Dans la vraie vie</h2>
                 <p>&laquo; Appliquez ce que vous avez appris dans la vraie vie. Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l’intranet pour voir quels mod&egrave;les sont utilisés. Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter de plans de travail. &raquo;</p>
@@ -295,7 +295,7 @@ export default {
   "gotoLinks":"For more information, feel free to consult the following links. These links are also available in the Toolbox.",
   "partsofWPTitle":"Activity: Parts of a Work Plan",
   "completewpDrafttitle":"Activity: Prepare a Work Plan",
-  "completewptitle":"Activity: Complete the Work plan",
+  "completewptitle":"Activity: Complete the Work Plan",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "scan360Title":"Activity: Apply the 360 scan",
   "InRealLife":"In Real Life",

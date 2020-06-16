@@ -28,10 +28,10 @@
         <b-col class="encadrage" sm="12">
           <h3 v-html="$t('titleActivities')"></h3>
           <!--p v-html="$t('pwpPlanAct')"></p-->
-          <p v-html="$t('pwpPlanAct')"></p>
+          <p v-html="$t('pwpPlanAct')" style="margin-left: 10px; margin-top: 10px;"></p>
 
           <h4 v-html="$t('titleSubActivities')">Sous activités</h4>
-          <p v-html="$t('pwpPlanSubAct')">
+          <p v-html="$t('pwpPlanSubAct')" style="margin-left: 5px;">
           <ul>
             <li>Superviser, surveiller et former le personnel</li>
             <li>Planifier le travail</li>
@@ -40,7 +40,7 @@
           </ul>
           </p>
           <h4 v-html="$t('titleDeliverables')">Livrables</h4>
-          <p v-html="$t('pwpPlanDelivs')">
+          <p v-html="$t('pwpPlanDelivs')" style="margin-left: 5px;">
             <ul>
               <li>Gestion des activités de délivrance de permis</li>
               <li>Réception ouverte de 9 h à 17 h</li>
@@ -48,13 +48,13 @@
           </p>
           
           <h4 v-html="$t('titleRisk')">Risque</h4>
-          <p v-html="$t('pwpPlanRisk')">Roulement du personnel</p>
+          <p v-html="$t('pwpPlanRisk')" style="margin-left: 5px;">Roulement du personnel</p>
           <h4 v-html="$t('titleLikelihood')">Probabilité</h4>
-          <p v-html="$t('pwpPlanLikely')">Faible</p>
+          <p v-html="$t('pwpPlanLikely')" style="margin-left: 5px;">Faible</p>
           <h4 v-html="$t('titleImpact')">Impact</h4>
-          <p v-html="$t('pwpPlanImpact')">Élevé</p>
+          <p v-html="$t('pwpPlanImpact')" style="margin-left: 5px;">Élevé</p>
           <h4 v-html="$t('titleMitigation')">Atténuation</h4>
-          <p v-html="$t('pwpPlanMitigat')">
+          <p v-html="$t('pwpPlanMitigat')" style="margin-left: 5px;">
             <ul>
               <li>Établir un plan de relève</li>
               <li>Établir des bassins de dotation collective</li>
@@ -65,7 +65,7 @@
             </ul>
            </p>
           <h4 v-html="$t('titleResources')">Resources</h4>
-          <p v-html="$t('pwpPlanRes')">
+          <p v-html="$t('pwpPlanRes')" style="margin-left: 5px;">
             <ul>
               <li>1 adjoint administratif</li>
               <li>gestionnaire</li>
@@ -163,7 +163,7 @@
   "dwnPlanLine1":"Work Plan",
   "dwnPlanLine2":"Template",
   "pwpGovtPriTitle":"Government priorities",
-  "pwpGovtPri":"In the Speech from the throne, a new government sets out its agenda. This includes its broad goals and commitments and how it will reach them.",
+  "pwpGovtPri":"In the Speech from the throne, a newly elected government sets out its agenda. This includes its broad goals and commitments and how it will reach them.",
   "pwpDeptPriTitle":"Departmental priorities",
   "pwpDeptPri":"What your department sets out to do to support the government’s priorities.",
   "pwpDirPriTitle":"Directorate priorities",
@@ -183,27 +183,34 @@
   "titleMitigation":"Mitigation",
   "pwpPlanMitigat":"Actions to counteract the potential risks.",
   "titleResources":"Resources",
-  "pwpPlanRes":"The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
+  "pwpPlanRes":"The budget, personnel (full time equivalent “FTE”), consultants, buildings and materials required to carry out the directorate activities."
   },
   "fr":{
   "pwpTitle":"Prenez un moment pour explorer les différentes sections d’un plan de travail.",
   "downloadPlan":"Télécharger un modèle Word du plan de travail",
   "dwnPlanLine1":"Plan de",
   "dwnPlanLine2":"travail",
-  "pwpGovtPriTitle":"Priorités gouvernementales",
-  "pwpGovtPri":"Dans le discours du Trône, un nouveau gouvernement présente son programme. Il s’agit notamment de ses objectifs généraux et de ses engagements, et de la façon dont il les atteindra.",
+  "pwpGovtPriTitle":"Priorités du gouvernement",
+  "pwpGovtPri":"Dans le discours du Trône, un nouveau gouvernement établit son programme. Il s’agit de ses objectifs généraux et de ses engagements, et de la façon dont il les atteindra.",
   "pwpDeptPriTitle":"Priorités ministérielles",
   "pwpDeptPri":"Ce que votre ministère entend faire pour appuyer les priorités du gouvernement.",
   "pwpDirPriTitle":"Priorités de la direction",
   "titleActivities":"Activités",
-  "pwpDirPri":"Ce que votre direction générale entend faire pour appuyer les priorités ministérielles.","titleActivities":"Activités",
-  "pwpPlanAct":"Les tâches à accomplir pour appuyer les priorités de votre direction. Cela comprend des indicateurs de rendement et des normes de service pour chaque tâche.","titleSubActivities":"Sous-activités",
-  "pwpPlanSubAct":"La tâche est divisée en plus petites parties.","titleDeliverables":"Livrables",
+  "pwpDirPri":"Ce que votre direction entend faire pour appuyer les priorités ministérielles.",
+  "titleActivities":"Activités",
+  "pwpPlanAct":"Les tâches à accomplir pour appuyer les priorités de votre direction. Cela comprend des indicateurs de rendement et des normes de service pour chaque tâche.",
+  "titleSubActivities":"Sous-activités",
+  "pwpPlanSubAct":"La tâche est divisée en plus petites parties.",
+  "titleDeliverables":"Livrables",
   "pwpPlanDelivs":"Les éléments spécifiques et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les avez terminés.","titleRisk":"Risque",
-  "pwpPlanRisk":"Événements susceptibles d’influer sur l’activité et sur sa capacité d’atteindre et d’atteindre ses objectifs et les résultats escomptés.","titleLikelihood":"Probabilité",
-  "pwpPlanLikely":"Un jugement approximatif permettant de déterminer si le risque se concrétisera ou pas.","titleImpact":"Impact",
-  "pwpPlanImpact":"La perte potentielle associée à un risque.","titleMitigation":"Atténuation",
-  "pwpPlanMitigat":"Actions pour contrer les risques potentiels.","titleResources":"Resources",
+  "pwpPlanRisk":"Événements potentiels susceptibles d’influer sur l’activité et sur sa capacité d’atteindre et de réaliser ses objectifs et les résultats attendus.",
+  "titleLikelihood":"Probabilité",
+  "pwpPlanLikely":"Un jugement approximatif permettant de déterminer si le risque se concrétisera ou pas.",
+  "titleImpact":"Impact",
+  "pwpPlanImpact":"La perte potentielle associée à un risque.",
+  "titleMitigation":"Atténuation",
+  "pwpPlanMitigat":"Actions pour contrer les risques potentiels.",
+  "titleResources":"Ressources",
   "pwpPlanRes":"Le budget, le personnel (équivalent temps plein (ETP)), les consultants, les bâtiments et le matériel nécessaire à la réalisation des activités de la direction."
   }
   }

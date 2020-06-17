@@ -24,7 +24,7 @@
       </div>
     </b-card>
     <b-row>
-      <b-col cols="2" class="text-center">
+      <b-col cols="3" lg="2" class="text-center">
         <download :filename="$t('fileName.procurementInstruments')" :HTMLFilename="$t('fileName.procurementInstrumentsHTML')" size=128 iconColor="spendBackground" :title="$t('DownloadProcurementInstruments')" :line1="$t('procurementInstrumentsLn1')" :line2="$t('procurementInstrumentsLn2')" :lineTag="$t('procurementInstrumentsExample')" :fileSize="this.$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
       </b-col>
     </b-row>

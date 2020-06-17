@@ -2,7 +2,7 @@
   <div>
     <matchingExercise :question="$t('q1')" qId="1" />
     <b-row>
-      <b-col cols="2" class="text-center">
+      <b-col cols="3" lg="2" class="text-center">
           <download :filename="$t('fileName.extReports')" :HTMLFilename="$t('fileName.extReportsHTML')" size=128 iconColor="reportBackground" :title="$t('DownloadExtReports')" :line1="$t('extReportsLn1')" :line2="$t('extReportsLn2')" :lineTag="$t('extReportsExample')" :fileSize="this.$i18n.locale == 'en' ? '138' : '124'" name="extReports" />
         </b-col>
      </b-row>

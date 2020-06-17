@@ -20,40 +20,40 @@
               <b-card-text>
                 <b-row>
                   <b-col cols="12"><h4>{{$t('plan')}}</h4></b-col>
-                  <b-col cols="2" class="text-center">
+                  <b-col cols="3" lg="2" class="text-center">
                     <download :filename="$t('fileName.threeSixty')"  :HTMLFilename="$t('fileName.threeSixtyHTML')" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" :lineTag="$t('threeSixtyExample')" :fileSize="this.$i18n.locale == 'en' ? '118' : '124'" name="threeSixty" />
                   </b-col>
-                  <b-col cols="2" class="text-center">
+                  <b-col cols="3" lg="2" class="text-center">
                     <download :filename="$t('fileName.WorkPlanTemplate')" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" :lineTag="$t('WPExample')" :fileSize="this.$i18n.locale == 'en' ? '15.9' : '17,5'" name="WorkPlanTemplate" />
                   </b-col>
-                  <b-col cols="2" class="text-center">
+                  <b-col cols="3" lg="2" class="text-center">
                     <download :filename="$t('fileName.buildWPProcessMap')" :HTMLFilename="$t('fileName.buildWPProcessMapHTML')" size=128 iconColor="planBackground" :title="$t('DownloadProcessMap')" :line1="$t('ProcessMapLn1')" :line2="$t('ProcessMapLn2')" :lineTag="$t('buildWPProcessMapExample')" :fileSize="this.$i18n.locale == 'en' ? '121' : '114'" name="buildWPProcessMap" />
                   </b-col>
-                  <b-col cols="2" class="text-center">
+                  <b-col cols="3" lg="2" class="text-center">
                     <download :filename="$t('fileName.newBudget')" :HTMLFilename="$t('fileName.newBudgetHTML')" size=128 iconColor="planBackground" :title="$t('DownloadNewBudget')" :line1="$t('newBudgetLn1')" :line2="$t('newBudgetLn2')" :lineTag="$t('newBudgetExample')" :fileSize="this.$i18n.locale == 'en' ? '129' : '131'" name="newBudget" />
                   </b-col>
-                  <b-col cols="2" class="text-center">
+                  <b-col cols="3" lg="2" class="text-center">
                     <download :filename="$t('fileName.cycle')" :HTMLFilename="$t('fileName.cycleHTML')" size=128 iconColor="Scan360Background" :title="$t('DownloadCycle')" :line1="$t('cycleLn1')" :line2="$t('cycleLn2')" :lineTag="$t('cycleExample')" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" name="cycle" />
                   </b-col>
                 </b-row>
                 <b-row>
                   <b-col cols="12"><h4>{{$t('spend')}}</h4></b-col>
-                  <b-col cols="2" class="text-center">
+                  <b-col cols="3" lg="2" class="text-center">
                     <download :filename="$t('fileName.procurementInstruments')" :HTMLFilename="$t('fileName.procurementInstrumentsHTML')" size=128 iconColor="spendBackground" :title="$t('DownloadProcurementInstruments')" :line1="$t('procurementInstrumentsLn1')" :line2="$t('procurementInstrumentsLn2')" :lineTag="$t('procurementInstrumentsExample')" :fileSize="this.$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
                   </b-col>
-                  <b-col cols="2" class="text-center">
+                  <b-col cols="3" lg="2" class="text-center">
                     <download :filename="$t('fileName.s32s34')" :HTMLFilename="$t('fileName.s32s34HTML')" size=128 iconColor="spendBackground" :title="$t('Downloads32s34')" :line1="$t('s32s34Ln1')" :line2="$t('s32s34Ln2')" :lineTag="$t('s32s34Example')" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" class="review" name="s32s34" />
                   </b-col>
                 </b-row>
                 <b-row>
                   <b-col cols="12"><h4>{{$t('report')}}</h4></b-col>
-                  <b-col cols="2" class="text-center">
+                  <b-col cols="3" lg="2" class="text-center">
                     <download :filename="$t('fileName.FSRRoadmap')" :HTMLFilename="$t('fileName.FSRRoadmapHTML')" size=128 iconColor="reportBackground" :title="$t('DownloadFSRRoadmap')" :line1="$t('FSRRoadmapLn1')" :line2="$t('FSRRoadmapLn2')" :lineTag="$t('FSRRoadmapExample')" :fileSize="this.$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
                   </b-col>
-                  <b-col cols="2" class="text-center">
+                  <b-col cols="3" lg="2" class="text-center">
                     <download :filename="$t('fileName.prepareFSR')" :HTMLFilename="$t('fileName.prepareFSRHTML')" size=128 iconColor="reportBackground" :title="$t('DownloadPrepareFSR')" :line1="$t('prepareFSRLn1')" :line2="$t('prepareFSRLn2')" :lineTag="$t('prepareFSRExample')" :fileSize="this.$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
                   </b-col>
-                  <b-col cols="2" class="text-center">
+                  <b-col cols="3" lg="2" class="text-center">
                     <download :filename="$t('fileName.extReports')" :HTMLFilename="$t('fileName.extReportsHTML')" size=128 iconColor="reportBackground" :title="$t('DownloadExtReports')" :line1="$t('extReportsLn1')" :line2="$t('extReportsLn2')" :lineTag="$t('extReportsExample')" :fileSize="this.$i18n.locale == 'en' ? '138' : '124'" name="extReports" />
                   </b-col>
                 </b-row>

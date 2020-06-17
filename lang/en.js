@@ -134,6 +134,7 @@ export default {
     threeSixtyHTML: "360_Scan.html",
     WorkPlanTemplate:"WorkPlan_Template.docx",
     WorkPlan_lastYear: "WorkPlan_lastYear.pdf",
+    WorkPlan_lastYearHTML: "../lastYearsWP/en.html",
     Budget_lastYear: "Budget_lastYear.xlsx",
     ReportLast: "Report_lastYear.docx",
     buildWPProcessMap: "Building_WP_Process_Map.pdf",

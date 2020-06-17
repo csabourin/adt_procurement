@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("fonts/calibri.ttf") format("truetype"), url("fonts/calibri.woff") format("woff"), url("fonts/calibri.eot") format("embedded-opentype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Calibri";
+  src: url("fonts/calibri-bold.ttf") format("truetype"), url("fonts/calibri-bold.woff") format("woff"), url("fonts/calibri-bold.eot") format("embedded-opentype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Calibri";
+  src: url("fonts/calibri-italic.ttf") format("truetype"), url("fonts/calibri-italic.woff") format("woff"), url("fonts/calibri-italic.eot") format("embedded-opentype");
+  font-weight: 500;
+  font-style: italic; }
+html, body {
+  font-family: "Calibri" !important;
+  font-weight: 500;
+  font-style: normal; }
+
+strong {
+  font-weight: 700 !important; }
+
+h1 {
+  font-weight: 700 !important;
+  font-style: normal; }
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .container table ul {
+    margin-bottom: 0; }
+  .container table, .container table td, .container table th {
+    border-collapse: separate;
+    border-spacing: 0; }
+  .container table td, .container table th {
+    padding: 10px 15px; }
+  .container table td {
+    border-bottom: 5px solid #D9D9D9;
+    vertical-align: top; }
+    .container table td[headers*="act"] {
+      border-left: 5px solid #698FA2; }
+    .container table td[headers*="sub"] {
+      border-left: 5px solid #66C996; }
+    .container table td[headers*="del"] {
+      border-left: 5px solid #7D89CB; }
+    .container table td[headers*="risk"] {
+      border-left: 5px solid #BCC171; }
+    .container table td[headers*="like"] {
+      border-left: 5px solid #7C5D76; }
+    .container table td[headers*="imp"] {
+      border-left: 5px solid #5C7296; }
+    .container table td[headers*="mit"] {
+      border-left: 5px solid #D27AA5; }
+    .container table td[headers*="res"] {
+      border-left: 5px solid #F38D62; }
+  .container table th {
+    font-weight: 700;
+    text-align: center; }
+    .container table th#govPri {
+      background-color: #F3E6F1;
+      border-top: 5px solid #770070; }
+    .container table th#depPri {
+      background-color: #E5F2F2;
+      border-top: 5px solid #007978; }
+    .container table th#dirPri {
+      background-color: #E9DFDD;
+      border-top: 5px solid #761301; }
+    .container table th#act {
+      background-color: #E1E9ED;
+      border-top: 5px solid #698FA2;
+      border-left: 5px solid #698FA2; }
+    .container table th#sub {
+      background-color: #D1E7DB;
+      border-top: 5px solid #66C996;
+      border-left: 5px solid #66C996; }
+    .container table th#del {
+      background-color: #DFE2F3;
+      border-top: 5px solid #7D89CB;
+      border-left: 5px solid #7D89CB; }
+    .container table th#risk {
+      background-color: #F0F2DD;
+      border-top: 5px solid #BCC171;
+      border-left: 5px solid #BCC171; }
+    .container table th#like {
+      background-color: #F3E6F1;
+      border-top: 5px solid #7C5D76;
+      border-left: 5px solid #7C5D76; }
+    .container table th#imp {
+      background-color: #D6DBE5;
+      border-top: 5px solid #5C7296;
+      border-left: 5px solid #5C7296; }
+    .container table th#mit {
+      background-color: #E7D1DB;
+      border-top: 5px solid #D27AA5;
+      border-left: 5px solid #D27AA5; }
+    .container table th#res {
+      background-color: #F0E0DB;
+      border-top: 5px solid #F38D62;
+      border-left: 5px solid #F38D62; }

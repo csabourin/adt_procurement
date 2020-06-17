@@ -29,6 +29,7 @@
         <b-col class="text-center" cols="3">
           <download
            :filename="$t('fileName.WorkPlan_lastYear')"
+           :HTMLFilename="$t('fileName.WorkPlan_lastYearHTML')"
            iconColor="planBackground"
            size=128 :title="$t('wpExample')"
            :line1="$t('wpLine1')"

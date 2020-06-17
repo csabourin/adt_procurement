@@ -135,6 +135,7 @@ export default {
     threeSixtyHTML: "Apercu_360.html",
     WorkPlanTemplate:"Exemple_Plan_de_travail.docx",
     WorkPlan_lastYear: "Plan_de_travail_annee_derniere.pdf",
+    WorkPlan_lastYearHTML: "../lastYearsWP/fr.html",
     Budget_lastYear: "Budget_annee_derniere.xlsx",
     ReportLast: "Rapport_annee_derniere.docx",
     buildWPProcessMap: "Elaboration_plan_de_travail-Schema_du_processus.pdf",

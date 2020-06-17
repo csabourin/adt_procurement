@@ -74,7 +74,7 @@
               <download :filename="$t('fileName.WorkPlanTemplate')" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" :lineTag="$t('WPExample')" :fileSize="this.$i18n.locale == 'en' ? '15.9' : '17,5'" name="WorkPlanTemplate" />
             </b-col>
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.WorkPlan_lastYear')" iconColor="planBackground" size=128 :title="$t('wpExample')" :line1="$t('wpLine1')" :line2="$t('wpLine2')" :lineTag="$t('wpExample')" :fileSize="this.$i18n.locale == 'en' ? '120' : '120'" name="WorkPlan_lastYear" />
+              <download :filename="$t('fileName.WorkPlan_lastYear')" :HTMLFilename="$t('fileName.WorkPlan_lastYearHTML')" iconColor="planBackground" size=128 :title="$t('wpExample')" :line1="$t('wpLine1')" :line2="$t('wpLine2')" :lineTag="$t('wpExample')" :fileSize="this.$i18n.locale == 'en' ? '120' : '120'" name="WorkPlan_lastYear" />
             </b-col>
             <b-col cols="3" lg="2" class="text-center">
               <download :filename="$t('fileName.Budget_lastYear')" iconColor="spendBackground" size=128 :title="$t('bExample')" :line1="$t('bLine1')" :line2="$t('bLine2')" :lineTag="$t('bExample')" :fileSize="this.$i18n.locale == 'en' ? '9.96' : '9,62'" name="Budget_lastYear" />

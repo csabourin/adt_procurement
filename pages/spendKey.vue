@@ -58,10 +58,10 @@
           <h3>{{$t('fileSet')}}</h3>
           <b-row style="margin-top: 30px;">
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.procurementInstruments')" :HTMLFilename="$t('fileName.procurementInstrumentsHTML')" size=128 iconColor="spendBackground" :title="$t('DownloadProcurementInstruments')" :line1="$t('procurementInstrumentsLn1')" :line2="$t('procurementInstrumentsLn2')" :lineTag="$t('procurementInstrumentsExample')" :fileSize="this.$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
+              <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
             </b-col>
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.s32s34')" :HTMLFilename="$t('fileName.s32s34HTML')" size=128 iconColor="spendBackground" :title="$t('Downloads32s34')" :line1="$t('s32s34Ln1')" :line2="$t('s32s34Ln2')" :lineTag="$t('s32s34Example')" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" class="review" name="s32s34" />
+              <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34"class="review"  />
             </b-col>
           </b-row>
         </b-col>

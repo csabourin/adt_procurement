@@ -19,7 +19,7 @@
     </div>
     <b-row>
       <b-col cols="3" lg="2" class="text-center">
-        <download :filename="$t('fileName.prepareFSR')" :HTMLFilename="$t('fileName.prepareFSRHTML')" size=128 iconColor="reportBackground" :title="$t('DownloadPrepareFSR')" :line1="$t('prepareFSRLn1')" :line2="$t('prepareFSRLn2')" :lineTag="$t('prepareFSRExample')" :fileSize="this.$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
+        <download :texts="$t('prepareFSR')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
       </b-col>
     </b-row>
   </div>

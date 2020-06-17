@@ -1,8 +1,8 @@
 <template functionnal>
   <span>
-    <a :href="require('~/assets/'+ $i18n.locale +'/'+ filename)" :download="filename" :class="opened ? ['openHighlight', 'download'] : 'download'" @click="opened = true">
-      <genericFile :iconStyle="iconColor" :iconWidth=size :title="$t(title)" :line1="$t(line1)" :line2="$t(line2)" aria-hidden="true" class="icon" />
-      <span v-html="$t(lineTag)"></span>
+    <a :href="require('~/assets/'+ $i18n.locale +'/'+ texts.filename)" :download="texts.filename" :class="opened ? ['openHighlight', 'download'] : 'download'" @click="opened = true" :title="texts.download">
+      <genericFile :iconStyle="iconColor" :iconWidth=size :title="texts.download" :line1="texts.line1" :line2="texts.line2" aria-hidden="true" class="icon" />
+      <span v-html="texts.name"></span>
       <span class="v-inv" v-if="downloadOK">{{$t('download')}}</span>
       <font-awesome-icon icon="download" role="presentation" />
       <span class="v-inv" v-if="opened">{{$t('viewed')}}</span>
@@ -10,7 +10,7 @@
         <font-awesome-icon icon="check" size="2x" role="presentation" />
       </div>
     </a>
-    <HTMLJobaidLink :filename="HTMLFilename" v-if="HTMLFilename" @click.native="opened = true" :title="$t('title') + lineTag + $t('quote')" />
+    <HTMLJobaidLink :filename="texts.HTMLFilename" v-if="texts.HTMLFilename" @click.native="opened = true" :title="$t('HTMLTitle') + texts.name + $t('quote')" />
   </span>
 </template>
 <script type="text/javascript">
@@ -20,14 +20,9 @@ export default {
   props: {
     size: { type: String, default: "64" },
     iconColor: { type: String, default: "planBackground" },
-    filename: { type: String, default: "" },
-    HTMLFilename: { type: String, default: "" },
-    title: { type: String, default: "" },
-    line1: { type: String, default: "" },
-    line2: { type: String, default: "" },
-    lineTag: { type: String, default: "" },
     fileSize: { type: String, default: "" },
-    name: { type: String, default: "" }
+    name: { type: String, default: "" },
+    texts: { type: Object, default: {} }
   },
   components: {
     genericFile,
@@ -95,13 +90,13 @@ export default {
   },
   methods:{
     findType(){
-      if(this.filename.indexOf(".pdf") >= 0){
+      if(this.texts.filename.indexOf(".pdf") >= 0){
         return {name: "PDF", longName: "Adobe Portable Document Format", mime: "application/pdf"};
       }
-      else if(this.filename.indexOf(".docx") >= 0){
+      else if(this.texts.filename.indexOf(".docx") >= 0){
         return {name: "DOCX", longName: "Microsoft Word (OpenXML)", mime: "application/vnd.openxmlformats-officedocument.wordprocessing"};
       }
-      else if(this.filename.indexOf(".xlsx") >= 0){
+      else if(this.texts.filename.indexOf(".xlsx") >= 0){
         return {name: "XLSX", longName: "Microsoft Excel (OpenXML)", mime: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"};
       }
     },
@@ -227,14 +222,14 @@ export default {
       "kb": "<abbr title='kylobyte'>KB</abbr>",
       "download": " (this document will be downloaded)",
       "viewed": " (you have already viewed this document)",
-      "title": "Open the web version of “",
+      "HTMLTitle": "Open the web version of “",
       "quote": "”"
     },
     "fr":{
       "kb": "&nbsp;<abbr title='kylo-octet'>Ko</abbr>",
       "download": " (ce document sera téléchargé)",
       "viewed": " (vous avez déjà consulté ce document)",
-      "title": "Ouvrir la version web de « ",
+      "HTMLTitle": "Ouvrir la version web de « ",
       "quote": " »"
     }
   }

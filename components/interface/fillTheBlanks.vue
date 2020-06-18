@@ -1,59 +1,99 @@
 <template>
   <span>
     <i18n path="genSentence">
-    <span v-for="hole in numHoles">
-    <label class="v-inv" :for="'q'+hole"> {{$t('label')}}</label>
-    <select v-model="Q[hole]" :id="'q'+hole">
-      <option disabled value=''>{{$t('qDisabled')}}</option>
-      <option v-for="(term,index) in termList" :key="index" :value="index" v-html="term" />
-    </select>
-    </span>
+      <span v-for="(hole,index) in blanks" :key="index">
+        <label class="v-inv" :for="qid+index"> {{$t('labelled')}}</label>
+        <select v-model="answerArray[index]" :id="qid+index" @change="q1Submit=false">
+          <option disabled value='' v-html="$t('disabledOption')"></option>
+          <option v-for="(term,index) in termList" :key="index" :value="index" v-html="term" />
+        </select>
+      </span>
     </i18n>
-    <p>{{Q}}</p>
     <p>
-      <b-button @click="q1Submit=true" :disabled="!Q1 || q1Submit">{{$t('submit')}}</b-button>
+      <b-button @click="submitAnswer" :disabled="q1Submit || answerArray.length < blanks">{{$t('submit')}}</b-button>
     </p>
-    <p v-if="Q1">
-      <span class="v-right" v-if="Q1=='1' && q1Submit"><strong>Correct!</strong></span>
-      <span v-else-if="q1Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
+    <p v-if="isAcceptable(answerArray)">
+      <span class="v-right" v-if="arraysMatch(answerArray,answer) && q1Submit"><strong>Correct!</strong> {{feedback.right}}</span>
+      <span v-else-if="q1Submit" class="v-wrong"><strong>Incorrect.</strong> {{feedback.wrong}}</span></p>
+      {{getTheSentence}}
   </span>
 </template>
 <script type="text/javascript">
 export default {
-	mounted(){
-		this.$i18n.setLocaleMessage(this.$i18n.locale, {genSentence:this.sentence})
-	},
+  data() {
+    return {
+      answerArray: [],
+      q1Submit: false,
+      index: 0,
+      Quest3: false
+    }
+  },
+  computed: {
+    getTheSentence() {
+       this.$i18n.mergeLocaleMessage(this.$i18n.locale, { genSentence: this.sentence })
+    }
+  },
   props: {
-    numHoles:{type:Number,
-    	default:4},
+  	qid:{type:String,
+  		default:"q0"},
+    answer: {
+      type: Array,
+      default: () => { return [] }
+    },
+    blanks: {
+      type: Number,
+      default: 1
+    },
     sentence: {
       type: String,
-      default: `Empty {0}{1} and {2}{3} here`
+      default: "Empty {0} here"
     },
     termList: {
       type: Object,
       default: () => { return { "0": "Empty" } }
+    },
+    feedback: {
+      type: Object,
+      default: () => { return { "right": "Ok","wrong":"Nope" } }
     }
   },
-  data() {
-    return {
-      var1: "blue",
-      Q: [],
-      q1Submit: true
+  methods: {
+    arraysMatch(arr1, arr2) {
+      if (arr1.length !== arr2.length) return false
+      const arrayOne = arr1.concat().sort()
+      for (let i in arrayOne) {
+        if (arrayOne[i] !== arr2[i]) return false
+      }
+      return true
+    },
+    isAcceptable(arr1) {
+      return ((Array.isArray(arr1) && arr1.length))
+    },
+    submitAnswer() {
+      this.q1Submit = true
+      this.$emit('response', this.Quest3)
     }
   }
 }
 
 </script>
+<style type="text/css" scoped>
+select {
+  border: 0;
+  border-bottom: 1px solid black;
+}
+</style>
 <i18n>
-  {
-  "en": {
-  "qDisabled": "Choose",
-  "label": "Select an option to complete the sentence"
-  },
+{
   "fr": {
-  "qDisabled": "Choisissez",
-  "label": "Sélectionnez une option pour compléter la phrase"
+    "labelled": "Sélectionnez une option pour compléter la phrase",
+    "disabledOption": "Choisissez",
+    "genSentence":"Vide {0} ici"
+  },
+  "en": {
+    "labelled": "Select an option to complete the sentence",
+    "disabledOption": "Choose",
+    "genSentence":"Empty {0} here"
   }
-  }
+}
 </i18n>

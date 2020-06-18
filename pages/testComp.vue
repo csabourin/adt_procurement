@@ -1,10 +1,7 @@
 <template>
   <div>
     <h1>Test Page</h1>
-    <i18n path="q1.sentence">
-      <fillTheBlanks :termList="$t('q1.choices')" />
-      <fillTheBlanks :termList="$t('q1.choices')" />
-    </i18n>
+      <fillTheBlanks :termList="$t('q1.choices')" :sentence="$t('q1.sentence')" />
     <hr>
   </div>
 </template>
@@ -13,7 +10,9 @@ import fillTheBlanks from "~/components/interface/fillTheBlanks"
 export default {
   components: {
     fillTheBlanks
-  }
+  },
+  data(){return
+  	var1:"someting"}
 }
 
 </script>

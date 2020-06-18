@@ -1,10 +1,15 @@
 <template>
   <span>
-    <label class="v-inv" for="q1"> {{$t('label')}}</label>
-    <select v-model="Q1" @change="$emit('selected',Q1)" id="q1">
+    <i18n path="genSentence">
+    <span v-for="hole in numHoles">
+    <label class="v-inv" :for="'q'+hole"> {{$t('label')}}</label>
+    <select v-model="Q[hole]" :id="'q'+hole">
       <option disabled value=''>{{$t('qDisabled')}}</option>
       <option v-for="(term,index) in termList" :key="index" :value="index" v-html="term" />
     </select>
+    </span>
+    </i18n>
+    <p>{{Q}}</p>
     <p>
       <b-button @click="q1Submit=true" :disabled="!Q1 || q1Submit">{{$t('submit')}}</b-button>
     </p>
@@ -15,13 +20,12 @@
 </template>
 <script type="text/javascript">
 export default {
-  data() {
-    return {
-      Q1: 0,
-      q1Submit: true
-    }
-  },
+	mounted(){
+		this.$i18n.setLocaleMessage(this.$i18n.locale, {genSentence:this.sentence})
+	},
   props: {
+    numHoles:{type:Number,
+    	default:4},
     sentence: {
       type: String,
       default: `Empty {0}{1} and {2}{3} here`
@@ -31,10 +35,11 @@ export default {
       default: () => { return { "0": "Empty" } }
     }
   },
-  i18n: {
-    messages: {
-      en: { passed: "sentence {0}{1}" },
-      fr: { passed: "phrase {0}{1}" }
+  data() {
+    return {
+      var1: "blue",
+      Q: [],
+      q1Submit: true
     }
   }
 }
@@ -44,13 +49,11 @@ export default {
   {
   "en": {
   "qDisabled": "Choose",
-  "label": "Select an option to complete the sentence",
-  "sentence":" Empty {0}{1} sentence"
+  "label": "Select an option to complete the sentence"
   },
   "fr": {
   "qDisabled": "Choisissez",
-  "label": "Sélectionnez une option pour compléter la phrase",
-  "sentence":"{0}{1} Phrase vide"
+  "label": "Sélectionnez une option pour compléter la phrase"
   }
   }
 </i18n>

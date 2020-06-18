@@ -1,20 +1,8 @@
-<i18n>
-  {
-   "fr": {
-  "label": "Sélectionnez une option pour compléter la phrase",
-  "disabledOption": "Choisissez"
-  },
-  "en": {
-  "label": "Select an option to complete the sentence",
-  "disabledOption": "Choose"
-  }
-  }
-</i18n>
 <template>
   <span>
     <i18n path="genSentence">
       <span v-for="(hole,index) in numHoles" :key="index">
-        <label class="v-inv" :for="'q'+hole"> {{$t('label')}}</label>
+        <label class="v-inv" :for="'q'+hole"> {{$t('labelled')}}</label>
         <select v-model="answerArray[index]" :id="'q'+hole" @change="q1Submit=false">
           <option disabled value='' v-html="$t('disabledOption')"></option>
           <option v-for="(term,index) in termList" :key="index" :value="index" v-html="term" />
@@ -42,7 +30,7 @@ export default {
   },
   computed: {
     getTheSentence() {
-      this.$i18n.setLocaleMessage(this.$i18n.locale, { genSentence: this.sentence })
+       this.$i18n.mergeLocaleMessage(this.$i18n.locale, { genSentence: this.sentence })
     }
   },
   props: {
@@ -56,7 +44,7 @@ export default {
     },
     sentence: {
       type: String,
-      default: `Empty {0}{1} and {2}{3} here`
+      default: "Empty {0} here"
     },
     termList: {
       type: Object,
@@ -93,3 +81,17 @@ select {
   border-bottom: 1px solid black;
 }
 </style>
+<i18n>
+{
+  "fr": {
+    "labelled": "Sélectionnez une option pour compléter la phrase",
+    "disabledOption": "Choisissez",
+    "genSentence":"Vide {0} ici"
+  },
+  "en": {
+    "labelled": "Select an option to complete the sentence",
+    "disabledOption": "Choose",
+    "genSentence":"Empty {0} here"
+  }
+}
+</i18n>

@@ -1,174 +1,49 @@
-<template>
-  <span>
-    <fieldset>
-      <legend>
-        <p v-html="$t('instructions')" />
-      </legend>
-      <b-card>
-        <b-tabs v-model="tabIndex">
-          <b-tab title="Question 1">
-            <p>&nbsp;</p>
-            <p>
-              <label class="v-inv" for="q1"> {{$t('label')}}</label>
-              <select v-model="Q1" @change="q1Submit=false" id="q1">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-              </select> {{$t('sentences[0]')}}
-            </p>
-            <p><b-button @click="q1Submit=true" :disabled="!Q1 || q1Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q1"><span class="v-right" v-if="Q1=='2' && q1Submit"><strong>Correct!</strong></span><span v-else-if="q1Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-            <hr>
-            <p>
-              <label class="v-inv" for="q2"> {{$t('label')}}</label>
-              <select v-model="Q2" @change="q2Submit=false" id="q2">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-              </select> {{$t('sentences[1]')}}
-            </p>
-            <p><b-button @click="q2Submit=true" :disabled="!Q2 || q2Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q2"><span class="v-right" v-if="Q2=='1' && q2Submit"><strong>Correct!</strong></span><span v-else-if="q2Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-            <hr>
-            <i18n path="sentences[2]" tag="p">
-              <label class="v-inv" for="q3"> {{$t('label')}}</label>
-              <select v-model="Q3" @change="q3Submit=false" id="q3">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-              </select>
-            </i18n>
-            <p><b-button @click="q3Submit=true" :disabled="!Q3 || q3Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q3"><span class="v-right" v-if="Q3=='1' && q3Submit"><strong>Correct!</strong></span><span v-else-if="q3Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-            <hr>
-            <i18n path="sentences[3]" tag="p">
-              <label class="v-inv" for="q4"> {{$t('label')}}</label>
-              <select v-model="Q4" @change="q4Submit=false" id="q4">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-              </select>
-            </i18n>
-            <p><b-button @click="q4Submit=true" :disabled="!Q4 || q4Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q4"><span class="v-right" v-if="Q4=='3' && q4Submit"><strong>Correct!</strong></span><span v-else-if="q4Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-            <hr>
-            <i18n path="sentences[4]" tag="p">
-              <label class="v-inv" for="q5a"> {{$t('label')}}</label>
-              <select v-model="Q5a" @change="q5Submit=false" id="q5a">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-              </select>
-              <label class="v-inv" for="q5b"> {{$t('label')}}</label>
-              <select v-model="Q5b" @change="q5Submit=false" id="q5b">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-              </select>
-            </i18n>
-            <p><b-button @click="q5Submit=true" :disabled="!Q5a || !Q5b || q5Submit">{{$t('submit')}}</b-button></p>
-            <p><span v-if="Q5a && Q5b"><span class="v-right" v-if="((Q5a=='1' && Q5b=='2') || (Q5a=='2' && Q5b=='1')) && q5Submit"><strong>Correct!</strong></span><span v-else-if="q5Submit" class="v-wrong"><strong>Incorrect.</strong></span></span></p>
-            <hr>
-            <p>
-              <label class="v-inv" for="q6"> {{$t('label')}}</label>
-              <select v-model="Q6" @change="q6Submit=false" id="q6">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-              </select> {{$t('sentences[5]')}}
-            </p>
-            <p><b-button @click="q6Submit=true" :disabled="!Q6 || q6Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q6"><span class="v-right" v-if="Q6=='3' && q6Submit"><strong>Correct!</strong></span><span v-else-if="q6Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-            <hr>
-            <p>
-              <label class="v-inv" for="q7"> {{$t('label')}}</label>
-              <select v-model="Q7" @change="q7Submit=false" id="q7">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[0]')" :key="index" :value="index" v-html="term" />
-              </select> {{$t('sentences[6]')}}
-            </p>
-            <p><b-button @click="q7Submit=true" :disabled="!Q7 || q7Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q7"><span class="v-right" v-if="Q7=='4' && q7Submit"><strong>Correct!</strong></span><span v-else-if="q7Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-          </b-tab>
-          <b-tab title="Question 2">
-            <p>&nbsp;</p>
-            <i18n path="sentences[7]" tag="p">
-              <label class="v-inv" for="q8"> {{$t('label')}}</label>
-              <select v-model="Q8" @change="q8Submit=false" id="q8">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[1]')" :key="index" :value="index" v-html="term" />
-              </select>
-            </i18n>
-            <p><b-button @click="q8Submit=true" :disabled="!Q8 || q8Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q8"><span class="v-right" v-if="Q8=='1' && q8Submit"> <strong>Correct!</strong></span><span v-else-if="q8Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-            <hr>
-            <i18n path="sentences[8]" tag="p">
-              <label class="v-inv" for="q9"> {{$t('label')}}</label>
-              <select v-model="Q9" @change="q9Submit=false" id="q9">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[1]')" :key="index" :value="index" v-html="term" />
-              </select>
-            </i18n>
-            <p><b-button @click="q9Submit=true" :disabled="!Q9 || q9Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q9"><span class="v-right" v-if="Q9=='3' && q9Submit"> <strong>Correct!</strong></span><span v-else-if="q9Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-            <hr>
-            <i18n path="sentences[9]" tag="p">
-              <label class="v-inv" for="q10"> {{$t('label')}}</label>
-              <select v-model="Q10" @change="q10Submit=false" id="q10">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[1]')" :key="index" :value="index" v-html="term" />
-              </select>
-            </i18n>
-            <p><b-button @click="q10Submit=true" :disabled="!Q10 || q10Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q10"><span class="v-right" v-if="Q10=='2' && q10Submit"> <strong>Correct!</strong></span><span v-else-if="q10Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-          </b-tab>
-          <b-tab title="Question 3">
-            <p>&nbsp;</p>
-            <i18n path="sentences[10]" tag="p">
-              <label class="v-inv" for="q11"> {{$t('label')}}</label>
-              <select v-model="Q11" @change="q11Submit=false" id="q11">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[2]')" :key="index" :value="index" v-html="term" />
-              </select>
-            </i18n>
-            <p><b-button @click="q11Submit=true" :disabled="!Q11 || q11Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q11"><span class="v-right" v-if="Q11=='1' && q11Submit"> <strong>Correct!</strong></span><span v-else-if="q11Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-            <hr>
-            <i18n path="sentences[11]" tag="p">
-              <label class="v-inv" for="q12"> {{$t('label')}}</label>
-              <select v-model="Q12" @change="q12Submit=false" id="q12">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(term,index) in $t('keyTerms[2]')" :key="index" :value="index" v-html="term" />
-              </select>
-            </i18n>
-            <p><b-button @click="q12Submit=true" :disabled="!Q12 || q12Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="Q12"><span class="v-right" v-if="Q12=='2' && q12Submit"><strong>Correct!</strong></span><span v-else-if="q12Submit" class="v-wrong"><strong>Incorrect.</strong></span></p>
-            </p>
-          </b-tab>
-        </b-tabs>
-        <!-- Control buttons-->
-        <div class="text-center">
-          <b-button-group class="mt-2">
-            <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-            <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=2">{{$t('nextPage')}}</b-button>
-          </b-button-group>
-        </div>
-      </b-card>
-    </fieldset>
-  </span>
+<template><span>
+  <fieldset>
+    <legend>
+      <p v-html="$t('instructions')" />
+    </legend>
+    <b-card>
+      <b-tabs v-model="tabIndex">
+        <b-tab title="Question 1">
+          <fillTheBlanks :blanks="1" :sentence="$t('q1.sentence')" :termList="$t('q1.choices')" :answer="['2']" :feedback="$t('q1.feedback')" qid="q1" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q2.sentence')" :termList="$t('q2.choices')" :answer="['1']" :feedback="$t('q2.feedback')" qid="q2" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q3.sentence')" :termList="$t('q3.choices')" :answer="['1']" :feedback="$t('q3.feedback')" qid="q3" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q4.sentence')" :termList="$t('q4.choices')" :answer="['3']" :feedback="$t('q4.feedback')" qid="q4" /><hr>
+          <fillTheBlanks :blanks="2" :sentence="$t('q5.sentence')" :termList="$t('q5.choices')" :answer="['1','2']" :feedback="$t('q5.feedback')" qid="q5" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q6.sentence')" :termList="$t('q6.choices')" :answer="['3']" :feedback="$t('q6.feedback')" qid="q6" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q7.sentence')" :termList="$t('q7.choices')" :answer="['4']" :feedback="$t('q7.feedback')" qid="q7" />
+        </b-tab>
+        <b-tab title="Question 2">
+          <fillTheBlanks :blanks="1" :sentence="$t('q8.sentence')" :termList="$t('q8.choices')" :answer="['1']" :feedback="$t('q8.feedback')" qid="q8" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q9.sentence')" :termList="$t('q9.choices')" :answer="['2']" :feedback="$t('q9.feedback')" qid="q9" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q10.sentence')" :termList="$t('q10.choices')" :answer="['3']" :feedback="$t('q10.feedback')" qid="q10" />
+        </b-tab>
+        <b-tab title="Question 3">
+          <fillTheBlanks :blanks="1" :sentence="$t('q11.sentence')" :termList="$t('q11.choices')" :answer="['1']" :feedback="$t('q11.feedback')" qid="q11" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q12.sentence')" :termList="$t('q12.choices')" :answer="['2']" :feedback="$t('q12.feedback')" qid="q12" />
+        </b-tab>
+      </b-tabs>
+      <!-- Control buttons-->
+      <div class="text-center">
+        <b-button-group class="mt-2">
+          <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+          <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=2">{{$t('nextPage')}}</b-button>
+        </b-button-group>
+      </div>
+    </b-card>
+  </fieldset>
+</span>
 </template>
 <script type="text/javascript">
+  import fillTheBlanks from "~/components/interface/fillTheBlanks"
 export default {
-  data() {
-    return {
-      tabIndex:0,
-      Q1: '',
-      Q2: '',
-      Q3: '',
-      Q4: '',
-      Q5a: '',
-      Q5b: '',
-      Q6: '',
-      Q7: '',
-      Q8: '',
-      Q9: '',
-      Q10: '',
-      Q11: '',
-      Q12: '',
-      q1Submit:false, q2Submit:false, q3Submit:false, q4Submit:false, q5Submit:false, q6Submit:false, q7Submit:false,q8Submit:false,q9Submit:false, q10Submit:false,q11Submit:false,q12Submit:false
+  components: {
+    fillTheBlanks
+  },
+  data(){
+    return{
+      tabIndex:0
     }
   },
   methods:{
@@ -181,80 +56,314 @@ export default {
   }
 }
 </script>
-<i18n>{
+<i18n>
+  {
   "en": {
-  "qDisabled": "Choose",
-  "instructions": "Here's a chance for you to confirm your knowledge of budgets and costs. Select the best choice to fill in the blanks.",
-  "label": "Select an option to complete the sentence",
-  "keyTerms": [
-  {
-  "1": "Operating &amp; Maintenance (O&amp;M)",
-  "2": "Salary",
-  "3": "Grants and Contributions (Gs&amp;Cs)",
-  "4": "Capital"
-  },
-  {
-  "1": "Non-discretionary",
-  "2": "Notes",
-  "3": "Discretionary"
-  },
-  {
-  "1": "a predetermined budget amount",
-  "2": "$0"
-  }
-  ],
-  "sentences": [
-  "includes indeterminate, term and casual positions, overtime, performance pay and leave cash-outs.",
-  "includes items such as travel, training, translation, office supplies, etc.",
-  "Temp help is considered a contract and paid out of {0}{1}.",
-  "Money given to non-governmental organizations for refugee settlement, like language classes, would come out of the {0}{1} budget.",
-  "The operating budget consists of both {0}{1} and {2}{3}.",
-  "is money that is provided to entities outside of the federal government to advance the department's mandate.",
-  "is for items that will depreciate over time, such as a new addition to an existing building, vehicles, etc.",
-  "{0}{1} costs are essential for delivering on your activities, and if cut will result in you not being able to deliver on them.",
-  "{0}{1} costs are less likely to have a negative impact on delivering your activities.",
-  "A best practice is to include a {0}{1} column in your budget requirements to remind you how you arrived at your figures.",
-  "If you have reference levels, you start with {0}{1}. ",
-  "If you don't have reference levels, you start with {0}{1}."
-  ]
+    "instructions": "Here's a chance for you to confirm your knowledge of budgets and costs. Select the best choice to fill in the blanks.",
+    "q1": {
+      "sentence": "{0} includes indeterminate, term and casual positions, overtime, performance pay and leave cash-outs.",
+      "choices": {
+        "1": "Operating &amp; Maintenance (O&amp;M)",
+        "2": "Salary",
+        "3": "Grants and Contributions (Gs&amp;Cs)",
+        "4": "Capital"
+      },
+      "feedback": {
+        "right": "The Salary budget contains these items.",
+        "wrong": "The Salary budget contains these items."
+      }
+    },
+    "q2": {
+      "sentence": "{0} includes items such as travel, training, translation, office supplies, etc.",
+      "choices": {
+        "1": "Operating &amp; Maintenance (O&amp;M)",
+        "2": "Salary",
+        "3": "Grants and Contributions (Gs&amp;Cs)",
+        "4": "Capital"
+      },
+      "feedback": {
+        "right": "The Operating & Maintenance (O&M) budget contains these items.",
+        "wrong": "The Operating & Maintenance (O&M) budget contains these items."
+      }
+    },
+    "q3": {
+      "sentence": "Temp help is considered a contract and paid out of {0}.",
+      "choices": {
+        "1": "Operating &amp; Maintenance (O&amp;M)",
+        "2": "Salary",
+        "3": "Grants and Contributions (Gs&amp;Cs)",
+        "4": "Capital"
+      },
+      "feedback": {
+        "right": "The Operating & Maintenance (O&M) budget would have a line item for a temp help contract. ",
+        "wrong": "The Operating & Maintenance (O&M) budget would have a line item for a temp help contract. "
+      }
+    },
+    "q4": {
+      "sentence": "Money given to non-governmental organizations for refugee settlement, like language classes, would come out of the {0} budget.",
+      "choices": {
+        "1": "Operating &amp; Maintenance (O&amp;M)",
+        "2": "Salary",
+        "3": "Grants and Contributions (Gs&amp;Cs)",
+        "4": "Capital"
+      },
+      "feedback": {
+        "right": "These funds would come from the Grants and Contributions (Gs&Cs) budget.",
+        "wrong": "These funds would come from the Grants and Contributions (Gs&Cs) budget."
+      }
+    },
+    "q5": {
+      "sentence": "The operating budget consists of both {0} and {1}.",
+      "choices": {
+        "1": "Operating &amp; Maintenance (O&amp;M)",
+        "2": "Salary",
+        "3": "Grants and Contributions (Gs&amp;Cs)",
+        "4": "Capital"
+      },
+      "feedback": {
+        "right": "The Operating budget consists of both Salary and Operating & Maintenance (O&M).",
+        "wrong": "The Operating budget consists of both Salary and Operating & Maintenance (O&M)."
+      }
+    },
+    "q6": {
+      "sentence": "{0} is money that is provided to entities outside of the federal government to advance the department's mandate.",
+      "choices": {
+        "1": "Operating &amp; Maintenance (O&amp;M)",
+        "2": "Salary",
+        "3": "Grants and Contributions (Gs&amp;Cs)",
+        "4": "Capital"
+      },
+      "feedback": {
+        "right": "These funds would come from the Grants and Contributions (Gs&Cs) budget.",
+        "wrong": "These funds would come from the Grants and Contributions (Gs&Cs) budget."
+      }
+    },
+    "q7": {
+      "sentence": "{0} is for items that will depreciate over time, such as a new addition to an existing building, vehicles, etc.",
+      "choices": {
+        "1": "Operating &amp; Maintenance (O&amp;M)",
+        "2": "Salary",
+        "3": "Grants and Contributions (Gs&amp;Cs)",
+        "4": "Capital"
+      },
+      "feedback": {
+        "right": "These funds would come from the Capital budget.",
+        "wrong": "These funds would come from the Capital budget."
+      }
+    },
+    "q8": {
+      "sentence": "{0} costs are essential for delivering on your activities, and if cut will result in you not being able to deliver on them.",
+      "choices": {
+        "1": "Non-discretionary",
+        "2": "Notes",
+        "3": "Discretionary"
+      },
+      "feedback": {
+        "right": "Essential costs are non-discretionary. ",
+        "wrong": "Essential costs are non-discretionary. "
+      }
+    },
+    "q9": {
+      "sentence": "{0} costs are less likely to have a negative impact on delivering your activities.",
+      "choices": {
+        "1": "Non-discretionary",
+        "2": "Notes",
+        "3": "Discretionary"
+      },
+      "feedback": {
+        "right": "These costs would be discretionary. ",
+        "wrong": "These costs would be discretionary. "
+      }
+    },
+    "q10": {
+      "sentence": "A best practice is to include a {0} column in your budget requirements to remind you how you arrived at your figures.",
+      "choices": {
+        "1": "Non-discretionary",
+        "2": "Notes",
+        "3": "Discretionary"
+      },
+      "feedback": {
+        "right": "A notes column will help you keep track of your budget requirements. It may not be something you submit but it’s good to have in your “back pocket.” ",
+        "wrong": "A notes column will help you keep track of your budget requirements. It may not be something you submit but it’s good to have in your “back pocket.” "
+      }
+    },
+    "q11": {
+      "sentence": "If you have reference levels, you start with {0}. ",
+      "choices": {
+        "1": "a predetermined budget amount",
+        "2": "$0"
+      },
+      "feedback": {
+        "right": "You have a predetermined budget amount for your budget, and will need to determine if it is enough, too too little, or too much. Some departments provide reference levels and others don’t. ",
+        "wrong": "You have a predetermined budget amount for your budget, and will need to determine if it is enough, too too little, or too much. Some departments provide reference levels and others don’t. "
+      }
+    },
+    "q12": {
+      "sentence": "If you don't have reference levels, you start with {0}.",
+      "choices": {
+        "1": "a predetermined budget amount",
+        "2": "$0"
+      },
+      "feedback": {
+        "right": "Your starting point is $0. For continuing activities, you can use last year’s and the current year’s ",
+        "wrong": "Your starting point is $0. For continuing activities, you can use last year’s and the current year’s "
+      }
+    }
   },
   "fr": {
-  "qDisabled": "Choisissez",
-  "instructions": "Voici l&rsquo;occasion pour vous de confirmer votre connaissance des budgets et des coûts. Sélectionnez le meilleur choix pour remplir les blancs. ",
-  "label": "Sélectionnez une option pour compléter la phrase",
-  "keyTerms": [
-  {
-  "1": "Fonctionnement et entretien (F et E)",
-  "2": "Salaires",
-  "3": "Subventions et contributions (S et C)",
-  "4": "Immobilisations"
-  },
-  {
-  "1": "non discrétionnaires",
-  "2": "discrétionnaires",
-  "3": "Notes"
-  },
-  {
-  "1": "un montant prédéterminé prévu au budget",
-  "2": "0$"
+    "instructions": "Voici l&rsquo;occasion pour vous de confirmer votre connaissance des budgets et des coûts. Sélectionnez le meilleur choix pour remplir les blancs. ",
+    "q1": {
+      "sentence": "{0} comprend les postes de durée indéterminée, déterminée et occasionnelle, les heures supplémentaires, la rémunération au rendement et les congés.",
+      "choices": {
+        "1": "Fonctionnement et entretien (F et E)",
+        "2": "Salaires",
+        "3": "Subventions et contributions (S et C)",
+        "4": "Immobilisations"
+      },
+      "feedback": {
+        "right": "Le budget salarial comprend ces postes.",
+        "wrong": "Le budget salarial comprend ces postes."
+      }
+    },
+    "q2": {
+      "sentence": "{0} comprend des articles comme les voyages, la formation, la traduction, les fournitures de bureau, etc.",
+      "choices": {
+        "1": "Fonctionnement et entretien (F et E)",
+        "2": "Salaires",
+        "3": "Subventions et contributions (S et C)",
+        "4": "Immobilisations"
+      },
+      "feedback": {
+        "right": "Le budget de fonctionnement et d'entretien (F et E) comprend ces postes.",
+        "wrong": "Le budget de fonctionnement et d'entretien (F et E) comprend ces postes."
+      }
+    },
+    "q3": {
+      "sentence": "L’aide temporaire est considérée comme un contrat et est payée à même {0}.",
+      "choices": {
+        "1": "Fonctionnement et entretien (F et E)",
+        "2": "Salaires",
+        "3": "Subventions et contributions (S et C)",
+        "4": "Immobilisations"
+      },
+      "feedback": {
+        "right": "Le budget de fonctionnement et d'entretien (F et E) comprendrait un poste pour un contrat d'aide temporaire.",
+        "wrong": "Le budget de fonctionnement et d'entretien (F et E) comprendrait un poste pour un contrat d'aide temporaire."
+      }
+    },
+    "q4": {
+      "sentence": "L’argent donné aux organisations non gouvernementales pour l’établissement des réfugiés, comme les cours de langue, proviendrait du budget de {0}",
+      "choices": {
+        "1": "Fonctionnement et entretien (F et E)",
+        "2": "Salaires",
+        "3": "Subventions et contributions (S et C)",
+        "4": "Immobilisations"
+      },
+      "feedback": {
+        "right": "Ces fonds proviendraient du budget des subventions et contributions (S et C)",
+        "wrong": "Ces fonds proviendraient du budget des subventions et contributions (S et C)"
+      }
+    },
+    "q5": {
+      "sentence": "Le budget de fonctionnement comprend {0} et {1}.",
+      "choices": {
+        "1": "Fonctionnement et entretien (F et E)",
+        "2": "Salaires",
+        "3": "Subventions et contributions (S et C)",
+        "4": "Immobilisations"
+      },
+      "feedback": {
+        "right": "Le budget de fonctionnement comprend les salaires et le fonctionnement et l'entretien (F et E)",
+        "wrong": "Le budget de fonctionnement comprend les salaires et le fonctionnement et l'entretien (F et E)"
+      }
+    },
+    "q6": {
+      "sentence": "{0} est de l’argent qui est fourni à des entités extérieures au gouvernement fédéral, pour répondre au mandat du ministère.",
+      "choices": {
+        "1": "Fonctionnement et entretien (F et E)",
+        "2": "Salaires",
+        "3": "Subventions et contributions (S et C)",
+        "4": "Immobilisations"
+      },
+      "feedback": {
+        "right": "Ces fonds proviendraient du budget des subventions et contributions (S et C)",
+        "wrong": "Ces fonds proviendraient du budget des subventions et contributions (S et C)"
+      }
+    },
+    "q7": {
+      "sentence": "{0} s’applique aux articles qui se déprécieront avec le temps, comme une annexe à un bâtiment, des véhicules, etc.",
+      "choices": {
+        "1": "Fonctionnement et entretien (F et E)",
+        "2": "Salaires",
+        "3": "Subventions et contributions (S et C)",
+        "4": "Immobilisations"
+      },
+      "feedback": {
+        "right": "Ces fonds proviendraient du budget des immobilisations.",
+        "wrong": "Ces fonds proviendraient du budget des immobilisations."
+      }
+    },
+    "q8": {
+      "sentence": "Les coûts {0} sont essentiels à l’exécution de vos activités et, si des compressions budgétaires peuvent vous empêcher de les exécuter, vous pourriez ne pas être en mesure de les faire.",
+      "choices": {
+        "1": "non discrétionnaires",
+        "2": "discrétionnaires",
+        "3": "Notes"
+      },
+      "feedback": {
+        "right": "Les coûts essentiels sont non discrétionnaires. ",
+        "wrong": "Les coûts essentiels sont non discrétionnaires. "
+      }
+    },
+    "q9": {
+      "sentence": "Les coûts {0} sont moins susceptibles d’avoir une incidence négative sur l’exécution de vos activités.",
+      "choices": {
+        "1": "non discrétionnaires",
+        "2": "discrétionnaires",
+        "3": "Notes"
+      },
+      "feedback": {
+        "right": " Ces coûts seraient discrétionnaires.",
+        "wrong": " Ces coûts seraient discrétionnaires."
+      }
+    },
+    "q10": {
+      "sentence": "Une pratique exemplaire consiste à inclure une colonne supplémentaire {0} dans vos besoins budgétaires pour vous rappeler comment vous êtes arrivé aux chiffres que vous avez obtenus.",
+      "choices": {
+        "1": "non discrétionnaires",
+        "2": "discrétionnaires",
+        "3": "Notes"
+      },
+      "feedback": {
+        "right": "Une colonne Notes vous aidera à faire le suivi de vos besoins budgétaires.Vous ne soumettez peut-être pas ces notes, mais c'est bien de les avoir.",
+        "wrong": "Une colonne Notes vous aidera à faire le suivi de vos besoins budgétaires.Vous ne soumettez peut-être pas ces notes, mais c'est bien de les avoir."
+      }
+    },
+    "q11": {
+      "sentence": "Si vous avez des niveaux de référence, vous commencez par {0}.",
+      "choices": {
+        "1": "un montant prédéterminé prévu au budget",
+        "2": "0 $"
+      },
+      "feedback": {
+        "right": "Vous avez un montant prédéterminé prévu à votre budget et vous devrez déterminer s'il est suffisant, ou bien trop peu ou trop élevé. Certains ministères fournissent des niveaux de référence et d'autres pas.",
+        "wrong": "Vous avez un montant prédéterminé prévu à votre budget et vous devrez déterminer s'il est suffisant, ou bien trop peu ou trop élevé. Certains ministères fournissent des niveaux de référence et d'autres pas."
+      }
+    },
+    "q12": {
+      "sentence": "Si vous n’avez pas de niveaux de référence, vous commencez par {0}.",
+      "choices": {
+        "1": "un montant prédéterminé prévu au budget",
+        "2": "0 $"
+      },
+      "feedback": {
+        "right": "Pour les activités continues, vous pouvez utiliser les chiffres de l'année dernière et de l'année en cours pour répondre à vos besoins budgétaires. Pour les nouvelles activités, vous devez en estimer les coûts.",
+        "wrong": "Pour les activités continues, vous pouvez utiliser les chiffres de l'année dernière et de l'année en cours pour répondre à vos besoins budgétaires. Pour les nouvelles activités, vous devez en estimer les coûts."
+      }
+    }
   }
-  ],
-  "sentences": [
-  "comprend les postes de durée indéterminée, déterminée et occasionnelle, les heures supplémentaires, la rémunération au rendement et les congés.",
-  "comprend des articles comme les voyages, la formation, la traduction, les fournitures de bureau, etc.",
-  "L’aide temporaire est considérée comme un contrat et est payée à même {0}{1}.",
-  "L’argent donné aux organisations non gouvernementales pour l’établissement des réfugiés, comme les cours de langue, proviendrait du budget de {0}{1}",
-  "Le budget de fonctionnement comprend {0}{1} et {2}{3}.",
-  "est de l’argent qui est fourni à des entités extérieures au gouvernement fédéral, pour répondre au mandat du ministère.",
-  "s’applique aux articles qui se déprécieront avec le temps, comme une annexe à un bâtiment, des véhicules, etc.",
-  "Les coûts {0}{1} sont essentiels à l’exécution de vos activités et, si des compressions budgétaires peuvent vous empêcher de les exécuter, vous pourriez ne pas être en mesure de les faire.",
-  "Les coûts {0}{1} sont moins susceptibles d’avoir une incidence négative sur l’exécution de vos activités.",
-  "Une pratique exemplaire consiste à inclure une colonne supplémentaire {0}{1} dans vos besoins budgétaires pour vous rappeler comment vous êtes arrivé aux chiffres que vous avez obtenus.",
-  "Si vous avez des niveaux de référence, vous commencez par {0}{1}.",
-  "Si vous n’avez pas de niveaux de référence, vous commencez par {0}{1}."
-  ]
-  }
-  }</i18n>
+}
+</i18n>
 <style type="text/css" scoped>
 select {
   border: 0;

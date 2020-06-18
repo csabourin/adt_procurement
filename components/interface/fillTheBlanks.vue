@@ -1,5 +1,6 @@
 <template>
   <span>
+  	<p>&nbsp;</p>
     <i18n path="genSentence">
       <span v-for="(hole,index) in blanks" :key="index">
         <label class="v-inv" :for="qid+index"> {{$t('labelled')}}</label>
@@ -10,7 +11,7 @@
       </span>
     </i18n>
     <p>
-      <b-button @click="submitAnswer" :disabled="q1Submit || answerArray.length < blanks">{{$t('submit')}}</b-button>
+      <br/><b-button @click="submitAnswer" :disabled="q1Submit || answerArray.length < blanks">{{$t('submit')}}</b-button>
     </p>
     <p v-if="isAcceptable(answerArray)">
       <span class="v-right" v-if="arraysMatch(answerArray,answer) && q1Submit"><strong>Correct!</strong> {{feedback.right}}</span>
@@ -24,8 +25,7 @@ export default {
     return {
       answerArray: [],
       q1Submit: false,
-      index: 0,
-      Quest3: false
+      index: 0
     }
   },
   computed: {
@@ -71,7 +71,7 @@ export default {
     },
     submitAnswer() {
       this.q1Submit = true
-      this.$emit('response', this.Quest3)
+      this.$emit('response', this.arraysMatch(this.answerArray,this.answer))
     }
   }
 }

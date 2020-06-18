@@ -104,12 +104,18 @@
         </b-col>
       </b-row>
     </b-container>
-    <div class="bottomNav planSection">
+    <div class="bottomNav generalSection" v-if="chosenScenario == 'refresh'">
+      <div class="generalSectionBar"><span>{{$t('KeyMessages')}}</span></div>
+      <microlearning path="planKey" time="5" youAreHere size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('plan')" class="plan" />
+      <microlearning path="spendKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessP.svg" :text="$t('spend')" class="spend" />
+      <microlearning path="reportKey" time="5" size="140" :completion="$store.state.currentPlaying.kmReport" imagePath="KeyMessP.svg" :text="$t('report')" class="report" />
+    </div>
+    <div class="bottomNav planSection" v-else>
       <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
       <microlearning path="buildWP" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" />
       <microlearning size="140" path="createBudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
       <microlearning path="planKey" time="5" youAreHere size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
-      <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" />
+      <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" />
     </div>
   </div>
 </template>
@@ -134,6 +140,14 @@ export default {
     },
     planCompleted() {
       return this.$store.getters['plan/getScore']
+    },
+    chosenScenario: {
+      set(scenario) {
+        this.$store.commit('currentPlaying/setChosenScenario', scenario);
+      },
+      get() { 
+        return this.$store.state.currentPlaying.chosenScenario;
+      }
     }
   },
   mounted() {

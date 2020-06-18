@@ -87,8 +87,8 @@
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
       <microlearning :completion="$store.state.currentPlaying.reportPart1_player" path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
       <microlearning youAreHere :completion="$store.state.currentPlaying.reportPart2_player" path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" :text="$t('ContributeReporting')" />
-      <microlearning :completion="$store.state.currentPlaying.kmReport" path="reportKey" size="140" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" time="5" />
-      <microlearning :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" />
+      <microlearning :completion="$store.state.currentPlaying.kmReport" path="reportKey" size="140" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" time="5" :highlighted="chosenScenario == 'refresh'" />
+      <microlearning :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" />
     </div>
   </div>
 </template>
@@ -114,6 +114,14 @@ export default {
   computed: {
     thatPoint() {
       return this.$store.state.currentPlaying.reportPart2
+    },
+    chosenScenario: {
+      set(scenario) {
+        this.$store.commit('currentPlaying/setChosenScenario', scenario);
+      },
+      get() { 
+        return this.$store.state.currentPlaying.chosenScenario;
+      }
     }
   },
   methods: {

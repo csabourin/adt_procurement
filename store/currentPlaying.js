@@ -20,7 +20,8 @@ export const state = () => ({
   spendPart3_player: parseInt(window.localStorage.getItem("spendPart3_player"),10) || 0,
   reportPart1_player: parseInt(window.localStorage.getItem("reportPart1_player"),10) || 0,
   reportPart2_player: parseInt(window.localStorage.getItem("reportPart2"),10) || 0,
-  currentModule: window.localStorage.getItem("currentModule") || ""
+  currentModule: window.localStorage.getItem("currentModule") || "",
+  chosenScenario: window.localStorage.getItem("chosenScenario") || "takeCourse"
 })
 
 export const mutations = {
@@ -107,5 +108,9 @@ export const mutations = {
   setCurrentModule(state, module) {
     window.localStorage.setItem("currentModule", module)
     state.currentModule = module
+  },
+  setChosenScenario(state, scenario) {
+    window.localStorage.setItem("chosenScenario", scenario)
+    state.chosenScenario = scenario
   }
 }

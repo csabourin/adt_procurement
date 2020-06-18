@@ -49,108 +49,122 @@ export default {
   Excelled: "You have aced this test, congratulations! You can go back to the",
   
   // -------- Text for icons --------
-  //360 scan
-  t360Line1: "360°",
-  t360Line2: "Scan",
-  threeSixtyExample: "360° Scan",
-  download360: "Download the 360° Scan",
+  threeSixty:{
+    line1: "360°",
+    line2: "Scan",
+    name: "360° Scan",
+    download: "Download the 360° Scan",
+    filename: "360_Scan.pdf",
+    HTMLFilename: "360_Scan.html"
+  },
   
-  //WP Template
-  downloadPlan: "Download a Word template of the work plan",
-  dwnPlanLine1: "Work Plan",
-  dwnPlanLine2: "Template",
-  WPExample: "Work Plan Template",
+  WPTemplate:{
+    line1: "Work Plan",
+    line2: "Template",
+    name: "Work Plan Template",
+    download: "Download a Word template of the work plan",
+    filename: "WorkPlan_Template.docx",
+  },
   
-  //Last year's WP
-  wpExample:"Last Year's Work Plan",
-  wpLine1:"Last Year's",
-  wpLine2:"Work Plan",
+  WPLastYear:{
+    line1:"Last Year's",
+    line2:"Work Plan",
+    name:"Last Year's Work Plan",
+    download: "Download last year's work plan",
+    filename: "WorkPlan_lastYear.pdf",
+    HTMLFilename: "../lastYearsWP/en.html"
+  },
   
-  //Last year's Budget
-  bExample:"Last Year's Budget",
-  bLine1:"",
-  bLine2:"Budget",
+  budgetLastYear:{
+    line1:"",
+    line2:"Budget",
+    name:"Last Year's Budget",
+    download: "Download last year's budget",
+    filename: "Budget_lastYear.xlsx",
+  },
   
-  //Last year's Reports
-  rExample:"Last Year's Reports",
-  rLine1:"Last Year's",
-  rLine2:"Reports",
+  reportsLastYear:{
+    rLine1:"Last Year's",
+    rLine2:"Reports",
+    name:"Last Year's Reports",
+    download: "Download last year's reports",
+    filename: "Report_lastYear.docx",
+  },
 
-  //Building a Work Plan: Process Map
-  buildWPProcessMapExample: "Building a Work Plan: Process Map",
-  DownloadProcessMap: "Download the process map for building a Work Plan",
-  ProcessMapLn1: "Process",
-  ProcessMapLn2: "Map",
+  buildWPProcessMap:{
+    line1: "Process",
+    line2: "Map",
+    name: "Building a Work Plan: Process Map",
+    download: "Download the process map for building a Work Plan",
+    filename: "Building_WP_Process_Map.pdf",
+    HTMLFilename: "../BuildingWPProcessMap/en.html"
+  },
   
-  //How to create a new Budget
-  newBudgetExample: "How to Create a New Budget",
-  DownloadNewBudget: "Download the guide on how to create a new budget",
-  newBudgetLn1: "Create a",
-  newBudgetLn2: "Budget",
+  newBudget:{
+    line1: "Create a",
+    line2: "Budget",
+    name: "How to Create a New Budget",
+    download: "Download the guide on how to create a new budget",
+    filename: "How_to_Create_a_New_Budget.pdf",
+    HTMLFilename: "HowCreateNewBudget_EN.html"
+  },
   
-  //Financial Cycle
-  cycleExample: "The Financial Cycle of the Government of Canada",
-  DownloadCycle: "Download the financial cycle of the government of Canada",
-  cycleLn1: "Financial",
-  cycleLn2: "Cycle",
+  cycle:{
+    line1: "Financial",
+    line2: "Cycle",
+    name: "The Financial Cycle of the Government of Canada",
+    download: "Download the financial cycle of the government of Canada",
+    filename: "Financial_Cycle.pdf",
+    HTMLFilename: "../financialCycle/en.html"
+  },
   
-  //Commonly Used Procurement Instruments
-  procurementInstrumentsExample: "Commonly Used Procurement Instruments",
-  DownloadProcurementInstruments: "Download the document on commonly used procurement instruments",
-  procurementInstrumentsLn1: "Procurement",
-  procurementInstrumentsLn2: "",
+  procurementInstruments:{
+    line1: "Procurement",
+    line2: "",
+    name: "Commonly Used Procurement Instruments",
+    download: "Download the document on commonly used procurement instruments",
+    filename: "Commonly_Used_Procurement_Instruments.pdf",
+    HTMLFilename: "SpendCommonlyUsedProcurementInstruments_EN.html"
+  },
   
-  //Section32/34
-  s32s34Example: "Section 32 vs. Section 34",
-  Downloads32s34: "Download the document on sections 32 and 34",
-  s32s34Ln1: "Section",
-  s32s34Ln2: "32/34",
+  s32s34:{
+    line1: "Section",
+    line2: "32/34",
+    name: "Section 32 vs. Section 34",
+    download: "Download the document on sections 32 and 34",
+    filename: "Section32_Section34.pdf",
+    HTMLFilename: "../s32s34/en.html"
+  },
   
-  //FSR Roadmap
-  FSRRoadmapExample: "Financial Situation Reporting: Roadmap",
-  DownloadFSRRoadmap: "Download the roadmap on financial situation reporting",
-  FSRRoadmapLn1: "FSR",
-  FSRRoadmapLn2: "Roadmap",
+  FSRRoadmap:{
+    line1: "FSR",
+    line2: "Roadmap",
+    name: "Financial Situation Reporting: Roadmap",
+    download: "Download the roadmap on financial situation reporting",
+    filename: "Financial_Situation_Reporting_Roadmap.pdf",
+    HTMLFilename: "../ReportFSReportingRoadmap/en.html"
+  },
   
-  //Prepare FSR 
-  prepareFSRExample: "Prepare the Financial Situation Report",
-  DownloadPrepareFSR: "Download the document about preparing the financial situation report",
-  prepareFSRLn1: "Prepare",
-  prepareFSRLn2: "FSR",
+  prepareFSR:{
+    line1: "Prepare",
+    line2: "FSR",
+    name: "Prepare the Financial Situation Report",
+    download: "Download the document about preparing the financial situation report",
+    filename: "Prepare_the_Financial_Situation_Report.pdf",
+    HTMLFilename: "Report_PrepareFinancialSituation_EN.html"
+  },
   
-  //External Reports
-  extReportsExample: "External Reports",
-  DownloadExtReports: "Download the document about external reports",
-  extReportsLn1: "External",
-  extReportsLn2: "Reports",
+  extReports:{
+    line1: "External",
+    line2: "Reports",
+    name: "External Reports",
+    download: "Download the document about external reports",
+    filename: "External_Reports.pdf",
+    HTMLFilename: "Report_External_Reports_EN.html"
+  },
   
   fileFolder: "Download files and tools",
   congratulations:"<h3>Congratulations!</h3><p>You have successfully completed this course.</p><p>Exit the course by closing this window.</p>",
   courseComplete:"Course Completed",
   close: "Close",
-  
-  fileName:{
-    threeSixty: "360_Scan.pdf",
-    threeSixtyHTML: "360_Scan.html",
-    WorkPlanTemplate:"WorkPlan_Template.docx",
-    WorkPlan_lastYear: "WorkPlan_lastYear.pdf",
-    Budget_lastYear: "Budget_lastYear.xlsx",
-    ReportLast: "Report_lastYear.docx",
-    buildWPProcessMap: "Building_WP_Process_Map.pdf",
-    buildWPProcessMapHTML: "../BuildingWPProcessMap/en.html",
-    newBudget: "How_to_Create_a_New_Budget.pdf",
-    newBudgetHTML: "HowCreateNewBudget_EN.html",
-    cycle: "Financial_Cycle.pdf",
-    cycleHTML: "../financialCycle/en.html",
-    procurementInstruments: "Commonly_Used_Procurement_Instruments.pdf",
-    procurementInstrumentsHTML: "SpendCommonlyUsedProcurementInstruments_EN.html",
-    s32s34: "Section32_Section34.pdf",
-    s32s34HTML: "../s32s34/en.html",
-    FSRRoadmap: "Financial_Situation_Reporting_Roadmap.pdf",
-    FSRRoadmapHTML: "../ReportFSReportingRoadmap/en.html",
-    prepareFSR: "Prepare_the_Financial_Situation_Report.pdf",
-    prepareFSRHTML: "Report_PrepareFinancialSituation_EN.html",
-    extReports: "External_Reports.pdf",
-    extReportsHTML: "Report_External_Reports_EN.html"
-  }
 }

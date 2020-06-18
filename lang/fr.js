@@ -51,107 +51,121 @@ export default {
   Excelled: "Vous avez réussi ce test, félicitations ! Vous pouvez retourner à l’",
   
   // Texte pour icones
-  //360 Scan
-  t360Line1: "Aperçu",
-  t360Line2: "360",
-  threeSixtyExample: "Aperçu à 360 degrés",
-  download360: "Télécharger l'aperçu à 360 degrés",
+  threeSixty:{
+    line1: "Aperçu",
+    line2: "360",
+    name: "Aperçu à 360 degrés",
+    download: "Télécharger l'aperçu à 360 degrés",
+    filename: "Apercu_360.pdf",
+    HTMLFilename: "Apercu_360.html"
+  },
   
-  //WP Template
-  downloadPlan: "Télécharger un modèle Word du plan de travail",
-  dwnPlanLine1: "Plan de",
-  dwnPlanLine2: "travail",
-  WPExample: "Modèle de plan de travail",
+  WPTemplate:{
+    line1: "Plan de",
+    line2: "travail",
+    name: "Modèle de plan de travail",
+    download: "Télécharger un modèle Word du plan de travail",
+    filename: "Exemple_Plan_de_travail.docx",
+  },
   
-  //Last year's WP
-  wpLine1:"Plan de",
-  wpLine2:"travail",
-  wpExample:"Plan de travail de l’année dernière",
+  WPLastYear:{
+    line1: "Plan de",
+    line2: "travail",
+    name: "Plan de travail de l’année dernière",
+    download: "Télécharger le plan de travail de l’année dernière",
+    filename: "Plan_de_travail_annee_derniere.pdf",
+    HTMLFilename: "../lastYearsWP/fr.html"
+  },
   
-  //Last year's Budget
-  bExample:"Budget de l’année dernière",
-  bLine1:" ",
-  bLine2:"Budget",
+  budgetLastYear:{
+    line1: " ",
+    line2: "Budget",
+    name: "Budget de l’année dernière",
+    download: "Télécharger le budget de l’année dernière",
+    filename: "Budget_annee_derniere.xlsx",
+  },
   
-  //Last year's Reports
-  rExample:"Rapports de l’année dernière",
-  rLine1:" ",
-  rLine2:"Rapports",
+  reportsLastYear:{
+    line1: " ",
+    line2: "Rapports",
+    name: "Rapports de l’année dernière",
+    download: "Télécharger les rapports de l’année dernière",
+    filename: "Rapport_annee_derniere.docx",
+  },
   
-  //Building a Work Plan: Process Map
-  buildWPProcessMapExample: "Élaboration d’un plan de travail&nbsp;: Schéma du processus",
-  DownloadProcessMap: "Télécharger le shéma du processus pour l'élaboration d'un plan de travail",
-  ProcessMapLn1: "Schéma du",
-  ProcessMapLn2: "processus",
+  buildWPProcessMap:{
+    line1: "Schéma du",
+    line2: "processus",
+    name: "Élaboration d’un plan de travail&nbsp;: Schéma du processus",
+    download: "Télécharger le shéma du processus pour l'élaboration d'un plan de travail",
+    filename: "Elaboration_plan_de_travail-Schema_du_processus.pdf",
+    HTMLFilename: "../BuildingWPProcessMap/fr.html"
+  },
   
-  //How to create a new Budget
-  newBudgetExample: "Comment créer un nouveau budget",
-  DownloadNewBudget: "Télécharger le guide sur comment créer un nouveau budget",
-  newBudgetLn1: "Créer un",
-  newBudgetLn2: "Budget",
+  newBudget:{
+    line1: "Créer un",
+    line2: "Budget",
+    name: "Comment créer un nouveau budget",
+    download: "Télécharger le guide sur comment créer un nouveau budget",
+    filename: "Comment_creer_un_nouveau_budget.pdf",
+    HTMLFilename: "HowCreateNewBudget_FR.html"
+  },
   
-  //Financial Cycle
-  cycleExample: "Le cycle financier du Government du Canada",
-  DownloadCycle: "Télécharger le cycle financier du gouvernement du Canada",
-  cycleLn1: "Cycle",
-  cycleLn2: "financier",
+  cycle:{
+    line1: "Cycle",
+    line2: "financier",
+    name: "Le cycle financier du Government du Canada",
+    download: "Télécharger le cycle financier du gouvernement du Canada",
+    filename: "Cycle_financier.pdf",
+    HTMLFilename: "../financialCycle/fr.html"
+  },
   
-  //Commonly Used Procurement Instruments
-  procurementInstrumentsExample: "Instruments de passation de marchés communément utilisés",
-  DownloadProcurementInstruments: "Télécharger le document sur les instruments de passation de marchés communément utilisés",
-  procurementInstrumentsLn1: "Passation de",
-  procurementInstrumentsLn2: "marchés",
+  procurementInstruments:{
+    line1: "Passation de",
+    line2: "marchés",
+    name: "Instruments de passation de marchés communément utilisés",
+    download: "Télécharger le document sur les instruments de passation de marchés communément utilisés",
+    filename: "Instruments_de_passation_de_marches_communement_utilises.pdf",
+    HTMLFilename: "SpendCommonlyUsedProcurementInstruments_FR.html"
+  },
   
-  //Section32/34
-  s32s34Example: "Article 32 vs. Article 34",
-  Downloads32s34: "Télécharger le document sur les articles 32 et 34",
-  s32s34Ln1: "Article",
-  s32s34Ln2: "32/34",
+  s32s34:{
+    line1: "Article",
+    line2: "32/34",
+    name: "Article 32 vs. Article 34",
+    download: "Télécharger le document sur les articles 32 et 34",
+    filename: "Article32_Article34.pdf",
+    HTMLFilename: "../s32s34/fr.html"
+  },
   
-  //FSR Roadmap
-  FSRRoadmapExample: "Rapport sur la situation financière&nbsp;: Schéma",
-  DownloadFSRRoadmap: "Télécharger le schéma sur le rapport sur la situation financière",
-  FSRRoadmapLn1: "RSF",
-  FSRRoadmapLn2: "Schéma",
+  FSRRoadmap:{
+    line1: "RSF",
+    line2: "Schéma",
+    name: "Rapport sur la situation financière&nbsp;: Schéma",
+    download: "Télécharger le schéma sur le rapport sur la situation financière",
+    filename: "Rapport_sur_la_situation_financiere_Schema.pdf",
+    HTMLFilename: "../ReportFSReportingRoadmap/fr.html"
+  },
   
-  //Prepare FSR 
-  prepareFSRExample: "Préparer le rapport sur la situation financière",
-  DownloadPrepareFSR: "Télécharger le document sur comment préparer le rapport sur la situation financière",
-  prepareFSRLn1: "Préparer",
-  prepareFSRLn2: "RSF",
+  prepareFSR:{
+    line1: "Préparer",
+    line2: "RSF",
+    name: "Préparer le rapport sur la situation financière",
+    download: "Télécharger le document sur comment préparer le rapport sur la situation financière",
+    filename: "Preparer_le_rapport_sur_la_situation_financiere.pdf",
+    HTMLFilename: "Report_PrepareFinancialSituation_FR.html"
+  },
   
-  //External Reports
-  extReportsExample: "Rapports externes",
-  DownloadExtReports: "Télécharger le document sur les rapports externes",
-  extReportsLn1: "Rapports",
-  extReportsLn2: "externes",
+  extReports:{
+    line1: "Rapports",
+    line2: "externes",
+    name: "Rapports externes",
+    download: "Télécharger le document sur les rapports externes",
+    filename: "Rapports_externes.pdf",
+    HTMLFilename: "Report_External_Reports_FR.html"
+  },
     
   congratulations:"<h3>Félicitations!</h3><p>Vous avez réussi ce cours.</p><p>Quittez le cours en fermant cette fenêtre.</p>",
   courseComplete:"Cours complété",
   close: "Fermer",
-  
-  fileName:{
-    threeSixty: "Apercu_360.pdf",
-    threeSixtyHTML: "Apercu_360.html",
-    WorkPlanTemplate:"Exemple_Plan_de_travail.docx",
-    WorkPlan_lastYear: "Plan_de_travail_annee_derniere.pdf",
-    Budget_lastYear: "Budget_annee_derniere.xlsx",
-    ReportLast: "Rapport_annee_derniere.docx",
-    buildWPProcessMap: "Elaboration_plan_de_travail-Schema_du_processus.pdf",
-    buildWPProcessMapHTML: "../BuildingWPProcessMap/fr.html",
-    newBudget: "Comment_creer_un_nouveau_budget.pdf",
-    newBudgetHTML: "HowCreateNewBudget_FR.html",
-    cycle: "Cycle_financier.pdf",
-    cycleHTML: "../financialCycle/fr.html",
-    procurementInstruments: "Instruments_de_passation_de_marches_communement_utilises.pdf",
-    procurementInstrumentsHTML: "SpendCommonlyUsedProcurementInstruments_FR.html",
-    s32s34: "Article32_Article34.pdf",
-    s32s34HTML: "../s32s34/fr.html",
-    FSRRoadmap: "Rapport_sur_la_situation_financiere_Schema.pdf",
-    FSRRoadmapHTML: "../ReportFSReportingRoadmap/fr.html",
-    prepareFSR: "Preparer_le_rapport_sur_la_situation_financiere.pdf",
-    prepareFSRHTML: "Report_PrepareFinancialSituation_FR.html",
-    extReports: "Rapports_externes.pdf",
-    extReportsHTML: "Report_External_Reports_FR.html"
-  }
 }

@@ -1,7 +1,7 @@
 <template>
   <span>
     <div style="float:right">
-      <!--<download :filename="$t('fileName.WorkPlanTemplate')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" iconStyle="planBackground" size="64" :title="$t('downloadPlan')" name="WorkPlanTemplate" />-->
+      <!--<download :texts="$t('WPTemplate')" size="64" iconStyle="planBackground" :fileSize="this.$i18n.locale == 'en' ? '15.9' : '17,5'" name="WorkPlanTemplate" />-->
     </div>
     <h2 v-html="$t('pwpTitle')"></h2>
 

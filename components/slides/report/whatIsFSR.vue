@@ -4,7 +4,7 @@
     <matchingExercise :question="$t('q1')" qId="1" />
     <b-row>
       <b-col cols="3" lg="2" class="text-center">
-        <download :filename="$t('fileName.FSRRoadmap')" :HTMLFilename="$t('fileName.FSRRoadmapHTML')" size=128 iconColor="reportBackground" :title="$t('DownloadFSRRoadmap')" :line1="$t('FSRRoadmapLn1')" :line2="$t('FSRRoadmapLn2')" :lineTag="$t('FSRRoadmapExample')" :fileSize="this.$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
+        <download :texts="$t('FSRRoadmap')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
       </b-col>
     </b-row>
   </div>

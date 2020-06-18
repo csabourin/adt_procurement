@@ -68,28 +68,28 @@
           <h3>{{$t('fileSet')}}</h3>
           <b-row style="margin-top: 30px;">
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.threeSixty')" :HTMLFilename="$t('fileName.threeSixtyHTML')" iconColor="Scan360Background" size=128 :title="$t('download360')" :line1="$t('t360Line1')" :line2="$t('t360Line2')" :lineTag="$t('threeSixtyExample')" :fileSize="this.$i18n.locale == 'en' ? '118' : '124'" name="threeSixty" />
+              <download :texts="$t('threeSixty')" size=128 iconColor="Scan360Background" :fileSize="this.$i18n.locale == 'en' ? '118' : '124'" name="threeSixty" />
             </b-col>
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.WorkPlanTemplate')" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" :lineTag="$t('WPExample')" :fileSize="this.$i18n.locale == 'en' ? '15.9' : '17,5'" name="WorkPlanTemplate" />
+              <download :texts="$t('WPTemplate')" size=128 iconColor="planBackground" :fileSize="this.$i18n.locale == 'en' ? '15.9' : '17,5'" name="WorkPlanTemplate" />
             </b-col>
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.WorkPlan_lastYear')" iconColor="planBackground" size=128 :title="$t('wpExample')" :line1="$t('wpLine1')" :line2="$t('wpLine2')" :lineTag="$t('wpExample')" :fileSize="this.$i18n.locale == 'en' ? '120' : '120'" name="WorkPlan_lastYear" />
+              <download :texts="$t('WPLastYear')" size=128 iconColor="planBackground" :fileSize="this.$i18n.locale == 'en' ? '120' : '120'" name="WorkPlan_lastYear" />
             </b-col>
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.Budget_lastYear')" iconColor="spendBackground" size=128 :title="$t('bExample')" :line1="$t('bLine1')" :line2="$t('bLine2')" :lineTag="$t('bExample')" :fileSize="this.$i18n.locale == 'en' ? '9.96' : '9,62'" name="Budget_lastYear" />
+              <download :texts="$t('budgetLastYear')" size=128  iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '9.96' : '9,62'" name="Budget_lastYear" />
             </b-col>
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.ReportLast')" iconColor="reportBackground" size=128 :title="$t('rExample')" :line1="$t('rLine1')" :line2="$t('rLine2')" :lineTag="$t('rExample')" :fileSize="this.$i18n.locale == 'en' ? '16.6' : '19,4'" name="ReportLast" />
+              <download :texts="$t('reportsLastYear')" iconColor="reportBackground" size=128 :title="$t('rExample')" :line1="$t('rLine1')" :line2="$t('rLine2')" :lineTag="$t('rExample')" :fileSize="this.$i18n.locale == 'en' ? '16.6' : '19,4'" name="ReportLast" />
             </b-col>
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.buildWPProcessMap')" :HTMLFilename="$t('fileName.buildWPProcessMapHTML')" size=128 iconColor="planBackground" :title="$t('DownloadProcessMap')" :line1="$t('ProcessMapLn1')" :line2="$t('ProcessMapLn2')" :lineTag="$t('buildWPProcessMapExample')" :fileSize="this.$i18n.locale == 'en' ? '121' : '114'" name="buildWPProcessMap" />
+              <download :texts="$t('buildWPProcessMap')" size=128 iconColor="planBackground" :fileSize="this.$i18n.locale == 'en' ? '121' : '114'" name="buildWPProcessMap" />
             </b-col>
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.newBudget')" :HTMLFilename="$t('fileName.newBudgetHTML')" size=128 iconColor="planBackground" :title="$t('DownloadNewBudget')" :line1="$t('newBudgetLn1')" :line2="$t('newBudgetLn2')" :lineTag="$t('newBudgetExample')" :fileSize="this.$i18n.locale == 'en' ? '129' : '131'" name="newBudget" />
+              <download :texts="$t('newBudget')" size=128 iconColor="planBackground" :fileSize="this.$i18n.locale == 'en' ? '129' : '131'" name="newBudget" />
             </b-col>
             <b-col cols="3" lg="2" class="text-center">
-              <download :filename="$t('fileName.cycle')" :HTMLFilename="$t('fileName.cycleHTML')" size=128 iconColor="Scan360Background" :title="$t('DownloadCycle')" :line1="$t('cycleLn1')" :line2="$t('cycleLn2')" :lineTag="$t('cycleExample')" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" name="cycle" />
+              <download :texts="$t('cycle')" size=128 iconColor="Scan360Background" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" name="cycle" />
             </b-col>
           </b-row>
         </b-col>

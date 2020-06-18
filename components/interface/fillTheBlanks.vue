@@ -1,10 +1,22 @@
+<i18n>
+  {
+   "fr": {
+  "label": "Sélectionnez une option pour compléter la phrase",
+  "disabledOption": "Choisissez"
+  },
+  "en": {
+  "label": "Select an option to complete the sentence",
+  "disabledOption": "Choose"
+  }
+  }
+</i18n>
 <template>
   <span>
     <i18n path="genSentence">
       <span v-for="(hole,index) in numHoles" :key="index">
         <label class="v-inv" :for="'q'+hole"> {{$t('label')}}</label>
-        <select v-model="Q[index]" :id="'q'+hole" @change="q1Submit=false">
-          <option disabled value=''>{{$t('disabledOption')}}</option>
+        <select v-model="answerArray[index]" :id="'q'+hole" @change="q1Submit=false">
+          <option disabled value='' v-html="$t('disabledOption')"></option>
           <option v-for="(term,index) in termList" :key="index" :value="index" v-html="term" />
         </select>
       </span>
@@ -15,7 +27,7 @@
     <p v-if="isAcceptable(answerArray)">
       <span class="v-right" v-if="arraysMatch(answerArray,answer) && q1Submit"><strong>Correct!</strong> {{feedback.right}}</span>
       <span v-else-if="q1Submit" class="v-wrong"><strong>Incorrect.</strong> {{feedback.wrong}}</span></p>
-      {{switchLocale}}
+      {{getTheSentence}}
   </span>
 </template>
 <script type="text/javascript">
@@ -29,7 +41,7 @@ export default {
     }
   },
   computed: {
-    switchLocale() {
+    getTheSentence() {
       this.$i18n.setLocaleMessage(this.$i18n.locale, { genSentence: this.sentence })
     }
   },
@@ -81,15 +93,3 @@ select {
   border-bottom: 1px solid black;
 }
 </style>
-<i18n>
-  {
-  "en": {
-  "label": "Select an option to complete the sentence",
-  "disabledOption": "Choose"
-  },
-  "fr": {
-  "label": "Sélectionnez une option pour compléter la phrase",
-  "disabledOption": "Choisissez"
-  }
-  }
-</i18n>

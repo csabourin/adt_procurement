@@ -1,16 +1,16 @@
 <template>
   <span>
     <i18n path="genSentence">
-      <span v-for="(hole,index) in numHoles" :key="index">
-        <label class="v-inv" :for="'q'+hole"> {{$t('labelled')}}</label>
-        <select v-model="answerArray[index]" :id="'q'+hole" @change="q1Submit=false">
+      <span v-for="(hole,index) in blanks" :key="index">
+        <label class="v-inv" :for="qid+index"> {{$t('labelled')}}</label>
+        <select v-model="answerArray[index]" :id="qid+index" @change="q1Submit=false">
           <option disabled value='' v-html="$t('disabledOption')"></option>
           <option v-for="(term,index) in termList" :key="index" :value="index" v-html="term" />
         </select>
       </span>
     </i18n>
     <p>
-      <b-button @click="q1Submit=true" :disabled="q1Submit || answerArray.length < numHoles">{{$t('submit')}}</b-button>
+      <b-button @click="submitAnswer" :disabled="q1Submit || answerArray.length < blanks">{{$t('submit')}}</b-button>
     </p>
     <p v-if="isAcceptable(answerArray)">
       <span class="v-right" v-if="arraysMatch(answerArray,answer) && q1Submit"><strong>Correct!</strong> {{feedback.right}}</span>
@@ -34,11 +34,13 @@ export default {
     }
   },
   props: {
+  	qid:{type:String,
+  		default:"q0"},
     answer: {
       type: Array,
       default: () => { return [] }
     },
-    numHoles: {
+    blanks: {
       type: Number,
       default: 1
     },

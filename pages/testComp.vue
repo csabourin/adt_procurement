@@ -1,8 +1,7 @@
 <template>
   <div>
     <h1>Test Page</h1>
-      <fillTheBlanks :termList="$t('q1.choices')" :sentence="$t('q1.sentence')" :numHoles="2" :answer="[ '1', '2' ]" :feedback="$t('q1.feedback')" />
-    <hr>
+      <fillTheBlanks :blanks="2" :sentence="$t('q1.sentence')" :termList="$t('q1.choices')" :answer="[ '1', '2' ]" :feedback="$t('q1.feedback')" qid="q1" />
   </div>
 </template>
 <script type="text/javascript">
@@ -29,8 +28,8 @@ export default {
             },
             "feedback":
             {
-                "wrong": "The Salary budget contains these items.",
-                "right": "The Salary budget contains these items."
+                "wrong": "The Operating budget consists of both Salary and Operating & Maintenance (O&M).",
+                "right": "The Operating budget consists of both Salary and Operating & Maintenance (O&M)."
             }
         }
     },
@@ -48,8 +47,8 @@ export default {
             },
             "feedback":
             {
-                "wrong": "Le budget salarial comprend ces postes.",
-                "right": "Le budget salarial comprend ces postes."
+                "wrong": "Le budget de fonctionnement comprend les salaires et le fonctionnement et l'entretien (F et E)",
+                "right": "Le budget de fonctionnement comprend les salaires et le fonctionnement et l'entretien (F et E)"
             }
         }
     }

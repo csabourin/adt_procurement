@@ -43,6 +43,12 @@ export default {
   TestSpend: "<span class='v-inv'>Spend: </span>Test",
   TestReport: "<span class='v-inv'>Report: </span>Test",
   MarkCompleted: "Mark as completed",
+  
+  chooseScenario: "Choose you scenario",
+  takeCourse: "I want to take the course",
+  refresh: "I want to refresh my knowledge",
+  justExam: "I just want to take the exam",
+  
   // Text for Exams
   notPassed: "You have not passed this test. You can revise your answers and then try again.",
   Passed: "You have passed this test, you can revise your answers and try to improve your score or go to the",

@@ -1,65 +1,68 @@
 <template>
   <div class="mainWindow">
     <p>&nbsp;</p>
-      <videoplayer enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_a9sopjk0/flavorId/0_xwd6dtx5/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_0olxxf6u/flavorId/0_ynuanlxw/name/a.mp4" posterFile="video_poster.PNG" ccFile="intro_captions.vtt" toResume="setHomepage" :restartAt="thatPoint" />
-       <div role="tablist" class="transcriptionBox">
-    <b-card no-body class="mb-1 text-left">
-      <b-card-header header-tag="p" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.translationbox variant="light" class="text-left" >{{$t('IntroTranscript')}}</b-button>
-      </b-card-header>
-      <b-collapse id="translationbox" accordion="translation-box" role="tabpanel">
-        <b-card-body>
-          <b-card-text ><span v-html="$t('transcriptText')"></span></b-card-text>
-        </b-card-body>
-      </b-collapse>
-    </b-card>
-  </div>
-<p>&nbsp;</p>
-  <b-alert show="true">
-        <div v-if="$i18n.locale=='en'">
-          <p>Thank you for following this new course “Responsible Use of Public Funds.” As this is a work in progress, we are seeking your feedback on the learning experience. We appreciate you taking a few minutes to tell us what worked well, any issues you faced and what we can fix to make it better. It will take you 5 to 10 minutes to complete the questionnaire.</p>
-          <p><externalLink link="https://csps-efpc.sondage-survey.ca/f/s.aspx?s=f594eb12-9bd2-4cde-bed9-5d3220a7113b&lang=EN">Questionnaire</externalLink></p>
-          
-        </div>
-        <div v-if="$i18n.locale=='fr'">
-          <p>Merci de suivre le nouveau produit d’apprentissage intitulé « La saine gestion des fonds publics ». Comme celui-ci est dans une phase test, nous aimerions obtenir vos commentaires sur votre expérience d’apprentissage, particulièrement en ce qui a trait à ce qui a bien été, les défis que vous avez rencontrés et vos suggestions pour améliorer l’expérience. Remplir le questionnaire devrait vous prendre entre 5 et 10 minutes.</p>
-          <p><externalLink link="https://csps-efpc.sondage-survey.ca/f/s.aspx?s=f594eb12-9bd2-4cde-bed9-5d3220a7113b&lang=FR">Questionnaire</externalLink></p>
-          
-        </div>
-      </b-alert>
+    <videoplayer enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_a9sopjk0/flavorId/0_xwd6dtx5/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_0olxxf6u/flavorId/0_ynuanlxw/name/a.mp4" posterFile="video_poster.PNG" ccFile="intro_captions.vtt" toResume="setHomepage" :restartAt="thatPoint" />
+    <div role="tablist" class="transcriptionBox">
+      <b-card no-body class="mb-1 text-left">
+        <b-card-header header-tag="p" class="p-1" role="tab">
+          <b-button block href="#" v-b-toggle.translationbox variant="light" class="text-left" >{{$t('IntroTranscript')}}</b-button>
+        </b-card-header>
+        <b-collapse id="translationbox" accordion="translation-box" role="tabpanel">
+          <b-card-body>
+            <b-card-text><span v-html="$t('transcriptText')"></span></b-card-text>
+          </b-card-body>
+        </b-collapse>
+      </b-card>
+    </div>
+    <p>&nbsp;</p>
+    <b-alert show="true">
+      <div v-if="$i18n.locale=='en'">
+        <p>Thank you for following this new course “Responsible Use of Public Funds.” As this is a work in progress, we are seeking your feedback on the learning experience. We appreciate you taking a few minutes to tell us what worked well, any issues you faced and what we can fix to make it better. It will take you 5 to 10 minutes to complete the questionnaire.</p>
+        <p><externalLink link="https://csps-efpc.sondage-survey.ca/f/s.aspx?s=f594eb12-9bd2-4cde-bed9-5d3220a7113b&lang=EN">Questionnaire</externalLink></p>
+      </div>
+      <div v-if="$i18n.locale=='fr'">
+        <p>Merci de suivre le nouveau produit d’apprentissage intitulé « La saine gestion des fonds publics ». Comme celui-ci est dans une phase test, nous aimerions obtenir vos commentaires sur votre expérience d’apprentissage, particulièrement en ce qui a trait à ce qui a bien été, les défis que vous avez rencontrés et vos suggestions pour améliorer l’expérience. Remplir le questionnaire devrait vous prendre entre 5 et 10 minutes.</p>
+        <p><externalLink link="https://csps-efpc.sondage-survey.ca/f/s.aspx?s=f594eb12-9bd2-4cde-bed9-5d3220a7113b&lang=FR">Questionnaire</externalLink></p>
+      </div>
+    </b-alert>
+    <p>&nbsp;</p>
     
-     <p>&nbsp;</p>
+    <b-button-group class="mt-2" :aria-label="$t('chooseScenario')">
+      <b-button @click="chosenScenario = 'takeCourse'" :disabled="chosenScenario == 'takeCourse'">{{$t('takeCourse')}}</b-button>
+      <b-button @click="chosenScenario = 'refresh'" :disabled="chosenScenario == 'refresh'">{{$t('refresh')}}</b-button>
+      <b-button @click="chosenScenario = 'justExam'" :disabled="chosenScenario == 'justExam'">{{$t('justExam')}}</b-button>
+    </b-button-group>
+    
     <h2 class="sideTitle planTitle">{{$t('plan')}}</h2>
     <div role="navigation" class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }" :aria-label="$t('plan') + ' - Navigation'">
-      
-      <microlearning path="buildWP" time="20"  imagePath="BuildWP.svg" :text="$t('BuildWorkPlan')" :completion="$store.state.currentPlaying.buildWP_player"  />
+      <microlearning path="buildWP" time="20"  imagePath="BuildWP.svg" :text="$t('BuildWorkPlan')" :completion="$store.state.currentPlaying.buildWP_player" />
       <microlearning time="20" path="createBudget" imagePath="CreateBud.svg" :text="$t('CreateBudget')" :completion="$store.state.currentPlaying.createBudget_player" />
-      <microlearning path="planKey" time="5" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')"  :completion="$store.state.currentPlaying.kmPlan"/>
-      <microlearning time="15" path="exam1" imagePath="P-Test.svg" :text="$t('TestPlan')" :completion="parseInt(planCompleted)" />
+      <microlearning path="planKey" time="5" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')"  :completion="$store.state.currentPlaying.kmPlan" :highlighted="chosenScenario == 'refresh'" />
+      <microlearning time="15" path="exam1" imagePath="P-Test.svg" :text="$t('TestPlan')" :completion="parseInt(planCompleted)" :highlighted="chosenScenario == 'justExam'" />
     </div>
     <hr class="planHr">
     <h2 class="sideTitle spendTitle">{{$t('spend')}}</h2>
     <div role="navigation" class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }" :aria-label="$t('spend') + ' - Navigation'">
-      
       <microlearning imagePath="InitiateAuthSpending.svg" path="spendPart1" time="20" :text="$t('InitiateAuthorizeSpending')"  :completion="$store.state.currentPlaying.spendPart1_player" />
       <microlearning imagePath="ExerciseFinancialAuthority.svg" path="spendPart2" time="20" :text="$t('ExerciseFinancialAuthority')"  :completion="$store.state.currentPlaying.spendPart2_player" />
       <microlearning time="20" path="spendPart3" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')"  :completion="$store.state.currentPlaying.spendPart3_player" />
-      <microlearning path="spendKey" time="5" imagePath="KeyMessS.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend"/>
-      <microlearning time="15" path="exam2"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)"/>
+      <microlearning path="spendKey" time="5" imagePath="KeyMessS.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" />
+      <microlearning time="15" path="exam2"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" />
     </div>
     <hr class="spendHr">
     <h2 class="sideTitle reportTitle">{{$t('report')}}</h2>
     <div role="navigation" class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }" :aria-label="$t('report') + ' - Navigation'">
-      
       <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" :completion="$store.state.currentPlaying.reportPart1_player"/>
       <microlearning imagePath="R-Contribute.svg"  path="reportPart2" time="20" :text="$t('ContributeReporting')" :completion="$store.state.currentPlaying.reportPart2_player" />
-      <microlearning imagePath="KeyMessR.svg" path="reportKey" time="5" :text="$t('KeyMessagesReport')" :completion="$store.state.currentPlaying.kmReport" />
-      <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('TestReport')" :completion="parseInt(reportCompleted)" />
+      <microlearning imagePath="KeyMessR.svg" path="reportKey" time="5" :text="$t('KeyMessagesReport')" :completion="$store.state.currentPlaying.kmReport" :highlighted="chosenScenario == 'refresh'" />
+      <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('TestReport')" :completion="parseInt(reportCompleted)" :highlighted="chosenScenario == 'justExam'" />
     </div>
     <hr class="reportHr">
   </div>
 </template>
+
 <script type="text/javascript">
+  
 import planbgBarUrl from "~/components/plan_phase_bar.svg"
 import spendbgBarUrl from "~/components/spend_phase_bar.svg"
 import reportbgBarUrl from "~/components/report_phase_bar.svg"
@@ -67,6 +70,7 @@ import microlearning from "~/components/microlearning"
 import hamburger from "~/components/hamburger"
 import videoplayer from "~/components/interface/videoPlayer"
 import externalLink from "~/components/externalLink"
+  
 export default {
   data() {
     return {
@@ -98,130 +102,140 @@ export default {
       if(this.planCompleted>=80 && this.spendCompleted>=80&&this.reportCompleted>=80){
         return true
       }
+    },
+    chosenScenario: {
+      set(scenario) {
+        this.$store.commit('currentPlaying/setChosenScenario', scenario);
+      },
+      get() { 
+        return this.$store.state.currentPlaying.chosenScenario;
+      }
     }
   }
 }
 
 </script>
+
 <style scoped>
-.pageTitle {
-  font-size: 50px;
-  margin-top: 1em;
-}
+  
+  .pageTitle {
+    font-size: 50px;
+    margin-top: 1em;
+  }
 
-.planHr {
-  border-top: 3px dashed #d1dfe1;
-}
+  .planHr {
+    border-top: 3px dashed #d1dfe1;
+  }
 
-.spendHr {
-  border-top: 3px dashed #cac1ca;
-  ;
-}
+  .spendHr {
+    border-top: 3px dashed #cac1ca;
+    ;
+  }
 
-.reportHr {
-  border-top: 3px dashed #d6c5c1;
-}
+  .reportHr {
+    border-top: 3px dashed #d6c5c1;
+  }
 
-.sideTitle {
-  font-size: 35px;
-  font-family: 'Roboto Medium', sans-serif;
-  font-weight: 800;
-  clear: both;
-  text-transform: uppercase;
-  text-align: left;
-  margin-bottom: -1em;
-  margin-left: 50px;
-}
+  .sideTitle {
+    font-size: 35px;
+    font-family: 'Roboto Medium', sans-serif;
+    font-weight: 800;
+    clear: both;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: -1em;
+    margin-left: 50px;
+  }
 
-.mainWindow {
-  text-align: center;
-}
+  .mainWindow {
+    text-align: center;
+  }
 
-#introVideo {
-  width: 60vw;
-}
+  #introVideo {
+    width: 60vw;
+  }
 
-.videoContain {
-  width: 60vw;
-  margin: auto;
-}
+  .videoContain {
+    width: 60vw;
+    margin: auto;
+  }
 
-.courseSection {
-  clear: left;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  background-position-y: 9em;
-  background-position-x: 12em;
-  background-repeat: no-repeat;
-}
+  .courseSection {
+    clear: left;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-position-y: 9em;
+    background-position-x: 12em;
+    background-repeat: no-repeat;
+  }
 
-.planTitle {
-  color: #587C84;
-}
+  .planTitle {
+    color: #587C84;
+  }
 
-.spendTitle {
-  color: #7d677d;
-}
+  .spendTitle {
+    color: #7d677d;
+  }
 
-.reportTitle {
-  color: #865F56;
-}
-
-
-.iconText {
-  color: #fff;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.sideText:before {
-  content: "“";
-  color: #fff;
-  float: left;
-  font-size: 60px;
-}
+  .reportTitle {
+    color: #865F56;
+  }
 
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  .iconText {
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
-.links {
-  padding-top: 15px;
-}
+  .sideText:before {
+    content: "“";
+    color: #fff;
+    float: left;
+    font-size: 60px;
+  }
 
-details {
-  text-align: left
-}
+
+  .subtitle {
+    font-weight: 300;
+    font-size: 42px;
+    color: #526488;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+  }
+
+  .links {
+    padding-top: 15px;
+  }
+
+  details {
+    text-align: left
+  }
 
 </style>
 
 <i18n>
+  
   {
-  "en":{
-  "welcomeText": "Investing money is the process of committing resources in a strategic way to accomplish a specific objective.” ― Alan Gotthardt",
-  "letsbegin": "Let's Begin",
-  "IntroTranscript":"Introduction video transcript",
-  "transcriptText":"<p>Welcome! You’re in the right place if you’re a Manager looking to learn about how to make responsible use of public funds - to plan, spend and report. There are many reasons why Managers like you come to this course.</p><p><br />As a new Manager, I am new at all things related to Financial Delegation and I need to learn everything there is to know about my financial responsibilities.</p><p><br />I’ve been a Manager for most of my career but I am new to government. I want to leverage my experience by connecting what I already know about finance to government.</p><p>&nbsp;<br />I just came back from a parental leave and I could really use a refresher on my financial responsibilities and find out what might have changed since I left.</p><p>&nbsp;<br />I’m an experienced Manager in government. As per the policy, I need to recertify every 5 years in order to be able to continue to exercise my financial delegation. I really just want to get to the test please. <br />Boxes merge back into a single one</p><p>&nbsp;<br />Whatever the reason that brought you here, you’re in charge of your learning.Think of this as &ldquo;a choose your own adventure&rdquo; kind of experience and take what you need in order to succeed. If all you need is to take the test because you’re already pretty familiar with the content, then, by all means, start with that.</p><p>&nbsp;</p><p>If you just need an overview or a refresher, then simply review the intro sections of each phase to get the key highlights and tools.</p><p>Also, you will find nifty features on your screen - like the file section on the top right, where you can find tools and reference materials to help you on the job. <br />Show intro sections path</p><p>&nbsp;<br />If you’re learning this for the first time, then take the time to go through the sections and do the in-depth learning activities, as well as the tools and resources. We promise it’s worth the effort and that you’ll be well prepared to take the test.</p><p>&nbsp;<br />You’re probably wondering about the test, so here’s how it works.</p><p>As per Treasury Board requirements, succeeding the test for this course is mandatory before you can exercise financial deletion.</p><p>There are three parts to the test - one at the end of each phase - plan, spend and report.</p><p>The passing grade is 80%, per part.</p><p>Each part should take you around 15 to 20 minutes.</p><p>You may access the course materials during the test and you may challenge the test as many times as you need.</p><p>&nbsp;<br />In the end, how you use this course is up to you! This course will remain accessible to you so you can come back and consult the different sections and tools when you need to on the job!</p><p>&nbsp;<br />We are rooting for you to succeed because when you steward public funds well, you succeed in your career. And, perhaps even more importantly, you serve Canadians well, with transparency and accountability. And that’s the bottom line.</p>",
-  "objectives":"Objectives",
-  "HowTo":"How to Navigate"
-
-  },
-  "fr":
-  {
-  "welcomeText": "Bienvenue",
-  "letsbegin": "Commençons",
-"IntroTranscript":"Transcription de la vidéo d'introduction",
-  "transcriptText":"<p>Bienvenue! Vous &ecirc;tes au bon endroit si vous &ecirc;tes un gestionnaire qui cherche à apprendre comment utiliser de fa&ccedil;on responsable les fonds publics - pour la <strong>planification</strong>, les <strong>dépenses </strong>et les <strong>rapports</strong>. Il y a plusieurs raisons pour lesquelles des gestionnaires comme vous pourraient suivre ce cours.</p> <ul>   <li>En tant que nouveau gestionnaire, je suis nouveau à la délégation financi&egrave;re et j’ai besoin d’apprendre tout ce qu’il y à savoir sur mes responsabilités financi&egrave;res.</li> </ul> <ul>   <li>J’ai été gestionnaire pendant la majeure partie de ma carri&egrave;re, mais je suis nouveau au gouvernement. Je veux mettre à profit mon expérience en faisant le lien entre ce que je sais déjà au sujet des finances et le gouvernement.</li> </ul> <ul>   <li>Je reviens tout juste d’un congé parental et j’aurais vraiment besoin d’un rappel de mes responsabilités financi&egrave;res et de ce qui aurait pu changer depuis mon départ.&nbsp;</li> </ul> <ul>   <li>Je suis un gestionnaire d’expérience au gouvernement. Conformément à la politique, je dois renouveler ma certification tous les 5 ans afin de pouvoir continuer à exercer ma délégation financi&egrave;re. Je veux juste faire le test, s’il vous pla&icirc;t.</li> </ul> <p>Quelle que soit la raison qui vous a amené ici, vous &ecirc;tes responsable de votre apprentissage, considérez cela comme une expérience de type &ldquo;choisissez votre propre aventure&rdquo; et prenez ce dont vous avez besoin pour réussir. Si tout ce dont vous avez besoin, c’est de passer le test parce que vous &ecirc;tes déjà assez familier avec le contenu, alors, sentez-vous libre de commencer par là.</p> <p>Si vous n’avez besoin que d’une vue d’ensemble ou d’un rafra&icirc;chissement, passez simplement en revue les sections d’introduction de chaque phase pour obtenir les points saillants et les outils clés.</p> <p>De plus, vous trouverez d’astucieuses fonctions à l’écran - comme la <strong>bo&icirc;te à outils en haut à droite</strong>, o&ugrave; vous trouverez des outils et des documents de référence pour vous aider dans votre travail.</p> <p>Si vous apprenez cela pour la premi&egrave;re fois, prenez le temps de <strong>parcourir les sections,</strong> de <strong>faire les activités d’apprentissage en profondeur</strong>, et d’<strong>examiner les outils et les ressources</strong>. Nous vous promettons que cela en vaut la peine!</p> <p>Vous vous posez probablement des questions au sujet du test, alors voici comment &ccedil;a marche.</p> <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen pour ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> <p>Le test comporte<strong> trois parties</strong> - une à la fin de chaque phase - <strong>planification</strong>, <strong>dépenses</strong> et <strong>rapports</strong>.&nbsp;</p> <p>La note de passage est de<strong> 80%, par partie</strong>.&nbsp;</p> <p>Chaque partie devrait vous prendre environ <strong>15-20 minutes</strong>.&nbsp;</p> <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p> <p>En fin de compte, c’est à vous de décider comment vous allez utiliser ce cours! Ce cours vous restera accessible pour que vous puissiez revenir et consulter les différentes sections et outils lorsque vous en aurez besoin pour vos fonctions!&nbsp;</p> <p>Nous vous encourageons à réussir parce que lorsque vous gérez bien les fonds publics, vous réussissez dans votre carri&egrave;re. Et, ce qui est peut-&ecirc;tre encore plus important, vous servez bien les Canadiens, avec transparence et responsabilité. Et c’est là l’essentiel.</p>",
-  "objectives":"Objectifs",
-  "HowTo":"Comment naviguer ce cours"
+    "en":{
+      "welcomeText": "Investing money is the process of committing resources in a strategic way to accomplish a specific objective.” ― Alan Gotthardt",
+      "letsbegin": "Let's Begin",
+      "IntroTranscript":"Introduction video transcript",
+      "transcriptText":"<p>Welcome! You’re in the right place if you’re a Manager looking to learn about how to make responsible use of public funds - to plan, spend and report. There are many reasons why Managers like you come to this course.</p><p><br />As a new Manager, I am new at all things related to Financial Delegation and I need to learn everything there is to know about my financial responsibilities.</p><p><br />I’ve been a Manager for most of my career but I am new to government. I want to leverage my experience by connecting what I already know about finance to government.</p><p>&nbsp;<br />I just came back from a parental leave and I could really use a refresher on my financial responsibilities and find out what might have changed since I left.</p><p>&nbsp;<br />I’m an experienced Manager in government. As per the policy, I need to recertify every 5 years in order to be able to continue to exercise my financial delegation. I really just want to get to the test please. <br />Boxes merge back into a single one</p><p>&nbsp;<br />Whatever the reason that brought you here, you’re in charge of your learning.Think of this as &ldquo;a choose your own adventure&rdquo; kind of experience and take what you need in order to succeed. If all you need is to take the test because you’re already pretty familiar with the content, then, by all means, start with that.</p><p>&nbsp;</p><p>If you just need an overview or a refresher, then simply review the intro sections of each phase to get the key highlights and tools.</p><p>Also, you will find nifty features on your screen - like the file section on the top right, where you can find tools and reference materials to help you on the job. <br />Show intro sections path</p><p>&nbsp;<br />If you’re learning this for the first time, then take the time to go through the sections and do the in-depth learning activities, as well as the tools and resources. We promise it’s worth the effort and that you’ll be well prepared to take the test.</p><p>&nbsp;<br />You’re probably wondering about the test, so here’s how it works.</p><p>As per Treasury Board requirements, succeeding the test for this course is mandatory before you can exercise financial deletion.</p><p>There are three parts to the test - one at the end of each phase - plan, spend and report.</p><p>The passing grade is 80%, per part.</p><p>Each part should take you around 15 to 20 minutes.</p><p>You may access the course materials during the test and you may challenge the test as many times as you need.</p><p>&nbsp;<br />In the end, how you use this course is up to you! This course will remain accessible to you so you can come back and consult the different sections and tools when you need to on the job!</p><p>&nbsp;<br />We are rooting for you to succeed because when you steward public funds well, you succeed in your career. And, perhaps even more importantly, you serve Canadians well, with transparency and accountability. And that’s the bottom line.</p>",
+      "objectives":"Objectives",
+      "HowTo":"How to Navigate"
+    },
+    "fr":{
+      "welcomeText": "Bienvenue",
+      "letsbegin": "Commençons",
+      "IntroTranscript":"Transcription de la vidéo d'introduction",
+      "transcriptText":"<p>Bienvenue! Vous &ecirc;tes au bon endroit si vous &ecirc;tes un gestionnaire qui cherche à apprendre comment utiliser de fa&ccedil;on responsable les fonds publics - pour la <strong>planification</strong>, les <strong>dépenses </strong>et les <strong>rapports</strong>. Il y a plusieurs raisons pour lesquelles des gestionnaires comme vous pourraient suivre ce cours.</p> <ul>   <li>En tant que nouveau gestionnaire, je suis nouveau à la délégation financi&egrave;re et j’ai besoin d’apprendre tout ce qu’il y à savoir sur mes responsabilités financi&egrave;res.</li> </ul> <ul>   <li>J’ai été gestionnaire pendant la majeure partie de ma carri&egrave;re, mais je suis nouveau au gouvernement. Je veux mettre à profit mon expérience en faisant le lien entre ce que je sais déjà au sujet des finances et le gouvernement.</li> </ul> <ul>   <li>Je reviens tout juste d’un congé parental et j’aurais vraiment besoin d’un rappel de mes responsabilités financi&egrave;res et de ce qui aurait pu changer depuis mon départ.&nbsp;</li> </ul> <ul>   <li>Je suis un gestionnaire d’expérience au gouvernement. Conformément à la politique, je dois renouveler ma certification tous les 5 ans afin de pouvoir continuer à exercer ma délégation financi&egrave;re. Je veux juste faire le test, s’il vous pla&icirc;t.</li> </ul> <p>Quelle que soit la raison qui vous a amené ici, vous &ecirc;tes responsable de votre apprentissage, considérez cela comme une expérience de type &ldquo;choisissez votre propre aventure&rdquo; et prenez ce dont vous avez besoin pour réussir. Si tout ce dont vous avez besoin, c’est de passer le test parce que vous &ecirc;tes déjà assez familier avec le contenu, alors, sentez-vous libre de commencer par là.</p> <p>Si vous n’avez besoin que d’une vue d’ensemble ou d’un rafra&icirc;chissement, passez simplement en revue les sections d’introduction de chaque phase pour obtenir les points saillants et les outils clés.</p> <p>De plus, vous trouverez d’astucieuses fonctions à l’écran - comme la <strong>bo&icirc;te à outils en haut à droite</strong>, o&ugrave; vous trouverez des outils et des documents de référence pour vous aider dans votre travail.</p> <p>Si vous apprenez cela pour la premi&egrave;re fois, prenez le temps de <strong>parcourir les sections,</strong> de <strong>faire les activités d’apprentissage en profondeur</strong>, et d’<strong>examiner les outils et les ressources</strong>. Nous vous promettons que cela en vaut la peine!</p> <p>Vous vous posez probablement des questions au sujet du test, alors voici comment &ccedil;a marche.</p> <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen pour ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> <p>Le test comporte<strong> trois parties</strong> - une à la fin de chaque phase - <strong>planification</strong>, <strong>dépenses</strong> et <strong>rapports</strong>.&nbsp;</p> <p>La note de passage est de<strong> 80%, par partie</strong>.&nbsp;</p> <p>Chaque partie devrait vous prendre environ <strong>15-20 minutes</strong>.&nbsp;</p> <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p> <p>En fin de compte, c’est à vous de décider comment vous allez utiliser ce cours! Ce cours vous restera accessible pour que vous puissiez revenir et consulter les différentes sections et outils lorsque vous en aurez besoin pour vos fonctions!&nbsp;</p> <p>Nous vous encourageons à réussir parce que lorsque vous gérez bien les fonds publics, vous réussissez dans votre carri&egrave;re. Et, ce qui est peut-&ecirc;tre encore plus important, vous servez bien les Canadiens, avec transparence et responsabilité. Et c’est là l’essentiel.</p>",
+      "objectives":"Objectifs",
+      "HowTo":"Comment naviguer ce cours"
     }
   }
+  
 </i18n>

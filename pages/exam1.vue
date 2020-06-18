@@ -167,8 +167,18 @@
       <transition name="fade">
       <p v-if="allDone"><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
     </transition>
-    <div class="bottomNav planSection">
+    <div class="bottomNav generalSection" v-if="chosenScenario == 'justExam'">
+      <div class="generalSectionBar"><span>{{$t('Test')}}</span></div>
+      <microlearning path="exam1" time="5" youAreHere size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" />
+      <microlearning path="exam2" time="5" size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="P-Test.svg" :text="$t('spend')" class="spend" />
+      <microlearning path="exam3" time="5" size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="P-Test.svg" :text="$t('report')" class="report" />
+    </div>
+    <div class="bottomNav planSection" v-else>
       <div class="planSectionBar"><span>{{$t('plan')}}</span></div>
+      <microlearning path="buildWP" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" />
+      <microlearning size="140" path="createBudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
+      <microlearning path="planKey" time="5"  size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" :highlighted="chosenScenario == 'refresh'" />
+      <microlearning size="140" path="exam1" time="15" youAreHere :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" />
     </div>
     <!-- Debugging section -->
     <div v-if="debugging">
@@ -189,6 +199,7 @@
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
+import microlearning from "~/components/microlearning"
 export default {
   name: "examOne",
   data() {
@@ -200,7 +211,8 @@ export default {
   },
   components: {
     radioQuiz,
-    checkboxQuiz
+    checkboxQuiz,
+    microlearning
   },
   methods: {
 
@@ -273,6 +285,14 @@ export default {
     },
     quizLocked() {
       return this.$store.state.plan.quizLocked
+    },
+    chosenScenario: {
+      set(scenario) {
+        this.$store.commit('currentPlaying/setChosenScenario', scenario);
+      },
+      get() { 
+        return this.$store.state.currentPlaying.chosenScenario;
+      }
     }
   },
   watch: {
@@ -286,10 +306,10 @@ export default {
 }
 </script>
 <style type="text/css" scoped>
-.planSection {
+/*.planSection {
   position: relative;
   height: 100px;
-}
+}*/
 
 .planSectionBar {
   text-transform: uppercase;

@@ -604,6 +604,37 @@ img {
   margin-left: 15px;
 }
 
+  .generalSectionBar {
+    position: absolute;
+    background-color: rgba(96, 114, 147, 0.7);
+    width: 100vw;
+    height: 30px;
+    text-align: left;
+    left: -15px;
+    top: 38%;
+  }
+
+  .generalSectionBar span {
+    padding: 2px 10px 0;
+    color: #4d4d4d;
+    font-weight: bold;
+    background-color: #fff;
+    display: inline-block;
+    height: 100%;
+    margin-left: 15px;
+    text-transform: uppercase;
+  }
+  
+  .generalSection .plan .timeEstimate{
+    background-color: #587C84;
+  }
+  .generalSection .spend .timeEstimate{
+    background-color: #7d677d;
+  }
+  .generalSection .report .timeEstimate{
+    background-color: #865F56;
+  }
+  
 .rightSide {
   display: flex;
   align-content: flex-end;

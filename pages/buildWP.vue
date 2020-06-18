@@ -214,8 +214,8 @@
     
     <microlearning path="buildWP" youAreHere imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" />
     <microlearning size="140" path="createBudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" />
-    <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" />
-    <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" />
+    <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" :highlighted="chosenScenario == 'refresh'" />
+    <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" />
   </div>
 </div>
 </template>
@@ -259,6 +259,14 @@ export default {
   computed:{
     thatPoint(){
       return this.$store.state.currentPlaying.buildWP
+    },
+    chosenScenario: {
+      set(scenario) {
+        this.$store.commit('currentPlaying/setChosenScenario', scenario);
+      },
+      get() { 
+        return this.$store.state.currentPlaying.chosenScenario;
+      }
     }
   }
 }

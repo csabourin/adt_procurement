@@ -45,6 +45,12 @@ export default {
   fileFolder: "Fichiers et outils à télécharger",
   downloadPlan: "Télécharger un modèle Word du plan de travail",
   download360: "Télécharger l'aperçu 360",
+  
+  chooseScenario: "Choisissez votre scénario",
+  takeCourse: "Je veux prendre le cours",
+  refresh: "Je veux rafraîchir mes connaissances",
+  justExam: "Je veux seulement prendre le test",
+  
   // Texte pour les tests
   notPassed: "Vous n’avez pas réussi ce test. Vous pouvez réviser vos réponses et réessayer.",
   Passed: "Vous avez réussi ce test, vous pouvez réviser vos réponses et essayer d’améliorer votre score ou aller à la page d’",

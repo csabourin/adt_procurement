@@ -1,13 +1,14 @@
 <template>
   <div class="learningElement">
     <nuxt-link :to="localePath(path)">
-      <div class="box" :style="boxSize" style="color:#212529">
+      <div :class="highlighted ? ['highlighted', 'box'] : 'box'" :style="boxSize" style="color:#212529">
         <div class="completed" :style="completionBar" :data-percent="completion"></div>
         <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span><span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span></span></div>
       </div>
       <p class="text-left" :style="'width:'+size+'px'">
         <span v-html="text" />
       </p>
+      <p v-if="highlighted" class="v-inv">{{$t('highlighted')}}</p>
       <div v-if="youAreHere" class="floatOver"><img :alt="$t('youAreHere')" :src="require('~/assets/YouAreHere.svg')"></div>
     </nuxt-link>
   </div>
@@ -34,6 +35,10 @@ export default {
       default: "disabledTile.png"
     },
     youAreHere: {
+      type: Boolean,
+      default: false
+    },
+    highlighted: {
       type: Boolean,
       default: false
     }
@@ -128,16 +133,22 @@ a:focus {
   text-align: left;
   /*border-radius: 0 0 15px 15px;*/
 }
+  
+  .box.highlighted{
+    border: 3px solid black;
+  }
 
 </style>
 <i18n>
 
   {
     "en": {
-      "youAreHere": "You are on this page"
+      "youAreHere": "You are on this page",
+      "highlighted": "You should focus on this page as part of the scenario you chose."
     },
     "fr": {
-      "youAreHere": "Vous êtes sur cette page"
+      "youAreHere": "Vous êtes sur cette page",
+      "highlighted": "Vous devriez vous concentrer sur cette page dans le cadre du scénario que vous avez choisi."
     }
   }
 

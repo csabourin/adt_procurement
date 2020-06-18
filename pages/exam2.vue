@@ -168,10 +168,21 @@
       <p v-if="allDone"><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
     </transition>
     
-    <div class="bottomNav spendSection">
-      <div class="spendSectionBar"><span>{{$t('spend')}}</span></div>
-    
+    <div class="bottomNav generalSection" v-if="chosenScenario == 'justExam'">
+      <div class="generalSectionBar"><span>{{$t('Test')}}</span></div>
+      <microlearning path="exam1" time="5" size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" />
+      <microlearning path="exam2" time="5" youAreHere size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="P-Test.svg" :text="$t('spend')" class="spend" />
+      <microlearning path="exam3" time="5" size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="P-Test.svg" :text="$t('report')" class="report" />
     </div>
+    <div class="bottomNav spendSection" v-else>
+      <div class="spendSectionBar"><span>{{$t('spend')}}</span></div>
+      <microlearning path="spendPart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('InitiateAuthorizeSpending')" />
+      <microlearning path="spendPart2" imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('ExerciseFinancialAuthority')" />
+      <microlearning path="spendPart3" size="140" time="20" :completion="$store.state.currentPlaying.spendPart3_player" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
+      <microlearning path="spendKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('KeyMessages')" />
+      <microlearning path="exam2" size="140" time="15" youAreHere imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" />
+    </div>
+
     <!-- Debugging section -->
     <div v-if="debugging">
       <p>{{allDone}}</p>
@@ -194,6 +205,7 @@
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
+import microlearning from "~/components/microlearning"
 export default {
   name: "examTwo",
   data() {
@@ -205,7 +217,8 @@ export default {
   },
   components: {
     radioQuiz,
-    checkboxQuiz
+    checkboxQuiz,
+    microlearning
   },
   methods: {
 
@@ -278,6 +291,14 @@ export default {
     },
     quizLocked() {
       return this.$store.state.spend.quizLocked
+    },
+    chosenScenario: {
+      set(scenario) {
+        this.$store.commit('currentPlaying/setChosenScenario', scenario);
+      },
+      get() { 
+        return this.$store.state.currentPlaying.chosenScenario;
+      }
     }
   },
   watch: {
@@ -301,10 +322,10 @@ export default {
   background-color: #7d677d;
   color:#fff;
 }
-.spendSection {
+/*.spendSection {
   position: relative;
   height: 100px;
-}
+}*/
 
 .spendSectionBar {
   text-transform: uppercase;

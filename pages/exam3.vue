@@ -110,9 +110,21 @@
         <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button>
       </p>
     </transition>
-    <div class="bottomNav reportSection">
-      <div class="reportSectionBar"><span>{{$t('report')}}</span></div>
+
+    <div class="bottomNav generalSection" v-if="chosenScenario == 'justExam'">
+      <div class="generalSectionBar"><span>{{$t('Test')}}</span></div>
+      <microlearning path="exam1" time="5" size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" />
+      <microlearning path="exam2" time="5" size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="P-Test.svg" :text="$t('spend')" class="spend" />
+      <microlearning path="exam3" time="5" youAreHere size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="P-Test.svg" :text="$t('report')" class="report" />
     </div>
+    <div class="bottomNav reportSection" v-else>
+      <div class="reportSectionBar"><span>{{$t('report')}}</span></div>
+      <microlearning :completion="$store.state.currentPlaying.reportPart1_player" path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
+      <microlearning :completion="$store.state.currentPlaying.reportPart2_player" path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" :text="$t('ContributeReporting')" />
+      <microlearning :completion="$store.state.currentPlaying.kmReport" path="reportKey" size="140" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" time="5" :highlighted="chosenScenario == 'refresh'" />
+      <microlearning youAreHere :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" />
+    </div>
+
     <!-- Debugging section -->
     <div v-if="debugging">
       <p>{{allDone}}</p>
@@ -137,6 +149,7 @@
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
+import microlearning from "~/components/microlearning"
 export default {
   name: "examThree",
   data() {
@@ -148,7 +161,8 @@ export default {
   },
   components: {
     radioQuiz,
-    checkboxQuiz
+    checkboxQuiz,
+    microlearning
   },
   methods: {
     resetQuiz() {
@@ -220,6 +234,14 @@ export default {
     },
     quizLocked() {
       return this.$store.state.report.quizLocked
+    },
+    chosenScenario: {
+      set(scenario) {
+        this.$store.commit('currentPlaying/setChosenScenario', scenario);
+      },
+      get() { 
+        return this.$store.state.currentPlaying.chosenScenario;
+      }
     }
   },
   watch: {
@@ -247,10 +269,10 @@ export default {
   color: #fff;
 }
 
-.reportSection {
+/*.reportSection {
   position: relative;
   height: 100px;
-}
+}*/
 
 .reportSectionBar {
   text-transform: uppercase;

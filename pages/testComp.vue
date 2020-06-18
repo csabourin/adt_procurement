@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Test Page</h1>
-      <fillTheBlanks :termList="$t('q1.choices')" :sentence="$t('q1.sentence')" />
+      <fillTheBlanks :termList="$t('q1.choices')" :sentence="$t('q1.sentence')" :numHoles="2" :answer="[ '1', '2' ]" :feedback="$t('q1.feedback')" />
     <hr>
   </div>
 </template>
@@ -10,11 +10,8 @@ import fillTheBlanks from "~/components/interface/fillTheBlanks"
 export default {
   components: {
     fillTheBlanks
-  },
-  data(){return
-  	var1:"someting"}
+  }
 }
-
 </script>
 <i18n>
 	{
@@ -22,7 +19,7 @@ export default {
     {
         "q1":
         {
-            "sentence": "The train is {0} when the moon is {1}",
+            "sentence": "The operating budget consists of both {0} and {1}.",
             "choices":
             {
                 "1": "Operating &amp; Maintenance (O&amp;M)",
@@ -32,8 +29,8 @@ export default {
             },
             "feedback":
             {
-                "wrong": "Incorrect",
-                "right": "Correct"
+                "wrong": "The Salary budget contains these items.",
+                "right": "The Salary budget contains these items."
             }
         }
     },
@@ -41,7 +38,7 @@ export default {
     {
         "q1":
         {
-            "sentence": "Le train est {0} quand la lune est {1}",
+            "sentence": "Le budget de fonctionnement comprend {0} et {1}.",
             "choices":
             {
                 "1": "Fonctionnement et entretien (F et E)",
@@ -51,8 +48,8 @@ export default {
             },
             "feedback":
             {
-                "wrong": "Incorrect",
-                "right": "Correct"
+                "wrong": "Le budget salarial comprend ces postes.",
+                "right": "Le budget salarial comprend ces postes."
             }
         }
     }

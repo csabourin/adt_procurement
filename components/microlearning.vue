@@ -10,8 +10,11 @@
           <span>&nbsp; {{typeText}}</span>
         </div>
         <transition name="highlight-fade">
-          <div class="highlight" v-show="!highlighted && chosenScenario != 'takeCourse' && !noGrey"></div>
+          <div class="grey hide" v-show="!highlighted && chosenScenario != 'takeCourse' && !noGrey && completion != '100'"></div>
         </transition>
+        
+        <div class="grey complete" v-show="completion == '100'"></div>
+        <font-awesome-icon icon="check" size="2x" role="presentation" class="check" v-if="completion == '100'" />
         <div class="completed" :style="completionBar" :data-percent="completionBar.width" v-if="completion > 0"></div>
       </div>
       <p class="text-left" :style="'width:'+size+'px'">
@@ -65,10 +68,13 @@ export default {
     }
   },
   methods:{
-    setHighlight(){
+    setGrey(){
       this.$nextTick(function() {
-        this.$el.querySelector("div.highlight").style.height = this.size + "px";
-        this.$el.querySelector("div.highlight").style.width = this.size + "px";
+        var greys = this.$el.querySelectorAll("div.grey");
+        for(var i = 0; i < greys.length; i++){
+          greys[i].style.height = this.size + "px";
+          greys[i].style.width = this.size + "px";
+        }
       });
     },
     addMargin(){
@@ -134,18 +140,20 @@ export default {
   watch:{
     highlighted: function(value){
       if(value){
-        this.setHighlight();
+        this.setGrey();
       }
       this.addMargin()
     }
   },
   mounted: function(){
-    this.setHighlight();
+    this.setGrey();
   }
 }
 
 </script>
+
 <style type="text/css" scoped>
+  
 a {
   color: #212529;
 }
@@ -226,11 +234,18 @@ a:focus {
     transform: scale(1.05);
   }
   
-  .box:not(.highlighted) .highlight{
+  .box .grey{
     position: absolute;
     left: 0px;
     top: 0px;
+  }
+  
+  .grey.hide{
     background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .grey.complete{
+    background-color: rgba(255, 255, 255, 0.5);
   }
   
   .highlight-fade-enter{
@@ -253,7 +268,12 @@ a:focus {
     transform: scale(0.9);
     transition: all 0.3s;
   }
-
+  
+  svg.check{
+    position: absolute;
+    right: -5%;
+    top: -5%;
+  }
 
 </style>
 <i18n>

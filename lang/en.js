@@ -138,8 +138,8 @@ export default {
   s32s34:{
     line1: "Section",
     line2: "32/34",
-    name: "Section 32 vs. Section 34",
-    download: "Download the document on sections 32 and 34",
+    name: "Guide for Quick Reference: Sections 32 and 34",
+    download: "Download the guide for quick reference on sections 32 and 34",
     filename: "Section32_Section34.pdf",
     HTMLFilename: "../s32s34/en.html"
   },

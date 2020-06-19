@@ -140,8 +140,8 @@ export default {
   s32s34:{
     line1: "Article",
     line2: "32/34",
-    name: "Article 32 vs. Article 34",
-    download: "Télécharger le document sur les articles 32 et 34",
+    name: "Guide de référence rapide : articles 32 et 34",
+    download: "Télécharger le guide de référence rapide sur les articles 32 et 34",
     filename: "Article32_Article34.pdf",
     HTMLFilename: "../s32s34/fr.html"
   },

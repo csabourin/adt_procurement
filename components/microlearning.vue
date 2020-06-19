@@ -2,9 +2,12 @@
   <div class="learningElement">
     <nuxt-link :to="localePath(path)">
       <div :class="highlighted ? ['highlighted', 'box'] : 'box'" :style="boxSize" style="color:#212529">
-        <div class="completed" :style="completionBar" :data-percent="completion"></div>
-        <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span><span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span></span></div>
+        <div class="timeEstimate">
+          <span v-if="time">&nbsp; {{time}} Minutes <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span>
+            <span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span></span>
+        </div>
       </div>
+      <div class="completed" :style="completionBar" :data-percent="completionBar.width"></div>
       <p class="text-left" :style="'width:'+size+'px'">
         <span v-html="text" />
       </p>
@@ -48,9 +51,7 @@ export default {
       return require('~/assets/' + pic)
     },
     completionBar() {
-      return {
-        width: `${this.completion}%`
-      }
+      if (this.completion) { return { width: `${this.completion}%` } } else { return {} }
     },
     boxSize() {
 
@@ -86,7 +87,7 @@ a:focus {
 .completed {
   position: absolute;
   left: 0;
-  bottom: 1.7em;
+  top: 0px;
   height: 10px;
   background-color: currentColor;
 }
@@ -96,9 +97,9 @@ a:focus {
   background-color: rgba(255, 255, 255, .8);
   position: absolute;
   right: 0;
-  bottom: 0;
-  font-size: 12px;
-  content: attr(data-percent)"%";
+  bottom: -2px;
+  font-size: 10px;
+  content: attr(data-percent);
 }
 
 .learningElement {
@@ -133,23 +134,29 @@ a:focus {
   text-align: left;
   /*border-radius: 0 0 15px 15px;*/
 }
-  
-  .box.highlighted{
-    border: 3px solid black;
-  }
+
+.box.highlighted {
+  border: 4px solid rgba(96, 114, 147, 1);
+  border-radius: 3px;
+  animation: border-pulsate 3s infinite;
+}
+
+@keyframes border-pulsate {
+    0%   { border-color: rgba(96, 114, 147, 1); }
+    50%  { border-color: rgba(96, 114, 147, 0.25); }
+    100% { border-color: rgba(96, 114, 147, 1); }
+}
 
 </style>
 <i18n>
-
   {
-    "en": {
-      "youAreHere": "You are on this page",
-      "highlighted": "You should focus on this page as part of the scenario you chose."
-    },
-    "fr": {
-      "youAreHere": "Vous êtes sur cette page",
-      "highlighted": "Vous devriez vous concentrer sur cette page dans le cadre du scénario que vous avez choisi."
-    }
+  "en": {
+  "youAreHere": "You are on this page",
+  "highlighted": "You should focus on this page as part of the scenario you chose."
+  },
+  "fr": {
+  "youAreHere": "Vous êtes sur cette page",
+  "highlighted": "Vous devriez vous concentrer sur cette page dans le cadre du scénario que vous avez choisi."
   }
-
+  }
 </i18n>

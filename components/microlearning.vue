@@ -10,10 +10,10 @@
           <span>&nbsp; {{typeText}}</span>
         </div>
         <transition name="highlight-fade">
-          <div class="grey hide" v-show="!highlighted && chosenScenario != 'takeCourse' && !noGrey && completion != '100'"></div>
+          <div class="grey hide" v-show="!highlighted && chosenScenario != 'takeCourse' && !noGrey"></div>
         </transition>
         
-        <div class="grey complete" v-show="completion == '100'"></div>
+        <!--<div class="grey complete" v-show="completion == '100'"></div>-->
         <font-awesome-icon icon="check" size="2x" role="presentation" class="check" v-if="completion == '100'" />
         <div class="completed" :style="completionBar" :data-percent="completionBar.width" v-if="completion > 0"></div>
       </div>

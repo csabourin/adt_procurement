@@ -1,4 +1,4 @@
-<template><span>
+<template>
   <fieldset>
     <legend>
       <p v-html="$t('instructions')" />
@@ -33,7 +33,6 @@
       </div>
     </b-card>
   </fieldset>
-</span>
 </template>
 <script type="text/javascript">
   import fillTheBlanks from "~/components/interface/fillTheBlanks"

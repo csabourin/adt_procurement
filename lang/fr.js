@@ -22,6 +22,8 @@ export default {
   reset: "Effacer",
   playIcon: "Jouer la vidéo",
   pencilIcon: "Icône d’activité",
+  quizIcon: "Icône de quiz",
+  continueIcon: "Icône « continuer »",
   checkAll: "Choisissez toutes les réponses qui s’appliquent.",
   selectRight: "Choisissez la bonne réponse&nbsp;:",
   pleaseAnswer: "Veuillez r&eacute;pondre &agrave; la question!",

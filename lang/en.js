@@ -22,6 +22,8 @@ export default {
   reset: "Reset",
   playIcon: "Play icon",
   pencilIcon: "Activity icon",
+  quizIcon: "Quiz icon",
+  continueIcon: "Continue icon",
   home: "Home",
   checkAll: "Check all that apply.",
   selectRight: "Select the correct answer.",

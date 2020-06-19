@@ -2,9 +2,12 @@
   <div class="learningElement">
     <nuxt-link :to="localePath(path)">
       <div :class="highlighted ? ['highlighted', 'box'] : 'box'" :style="boxSize" style="color:#212529">
-        <div class="timeEstimate">
-          <span v-if="time">&nbsp; {{time}} Minutes <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span>
-            <span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span></span>
+        <div class="timeEstimate" :style="size < 150 ? 'font-size: 13px;' : ''">
+          <span v-if="time" style="font-weight: 700;">&nbsp; {{$t('about')}} {{time}} Minutes 
+            <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span>
+            <span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span>
+          </span><br />
+          <span>&nbsp; {{typeText}}</span>
         </div>
         <transition name="highlight-fade">
           <div class="highlight" v-show="!highlighted && chosenScenario != 'takeCourse' && !noGrey"></div>
@@ -51,6 +54,14 @@ export default {
     noGrey: {
       type: Boolean,
       default: false
+    },
+    type: {
+      type: String,
+      default: "video"
+    },
+    questionNum: {
+      type: String,
+      default: "0"
     }
   },
   methods:{
@@ -87,10 +98,20 @@ export default {
       }
     },
     boxSize() {
-      return {
-        width: this.size + "px",
-        height: this.size + "px",
-        backgroundImage: "url(" + require('~/assets/' + this.imagePath) + ")"
+      if(this.imagePath == "InitiateAuthSpending.svg" || this.imagePath == "R-Test.svg"){
+        return {
+          width: this.size + "px",
+          height: this.size + "px",
+          backgroundImage: "url(" + require('~/assets/' + this.imagePath) + ")",
+          backgroundPosition: "50%"
+        }
+      }
+      else{
+        return {
+          width: this.size + "px",
+          height: this.size + "px",
+          backgroundImage: "url(" + require('~/assets/' + this.imagePath) + ")"
+        }
       }
     },
     chosenScenario: {
@@ -99,6 +120,14 @@ export default {
       },
       get() { 
         return this.$store.state.currentPlaying.chosenScenario;
+      }
+    },
+    typeText: function(){
+      if(this.type == "exam"){
+        return this.questionNum + " questions";
+      }
+      else{
+        return this.$t(this.type);
       }
     }
   },
@@ -168,7 +197,7 @@ a:focus {
   border: 1px solid hsl(42, 10%, 74%);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position-y: 25%;
   transition: all 0.3s;
   margin-bottom: 10px;
 }
@@ -182,10 +211,13 @@ a:focus {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1.75em;
+  /*height: 3em;*/
   color: white;
   text-align: left;
   /*border-radius: 0 0 15px 15px;*/
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
   
   .box.highlighted{
@@ -226,13 +258,21 @@ a:focus {
 </style>
 <i18n>
   {
-  "en": {
-  "youAreHere": "You are on this page",
-  "highlighted": "You should focus on this page as part of the scenario you chose."
-  },
-  "fr": {
-  "youAreHere": "Vous êtes sur cette page",
-  "highlighted": "Vous devriez vous concentrer sur cette page dans le cadre du scénario que vous avez choisi."
-  }
+    "en": {
+      "youAreHere": "You are on this page",
+      "highlighted": "You should focus on this page as part of the scenario you chose.",
+      "about": "About",
+  
+      "video": "Video and activities",
+      "keyMessages": "Notions and files"
+    },
+    "fr": {
+      "youAreHere": "Vous êtes sur cette page",
+      "highlighted": "Vous devriez vous concentrer sur cette page dans le cadre du scénario que vous avez choisi.",
+      "about": "Environ",
+  
+      "video": "Vidéo et activités",
+      "keyMessages": "Notions et fichiers"
+    }
   }
 </i18n>

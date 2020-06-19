@@ -113,16 +113,16 @@
 
     <div class="bottomNav generalSection" v-if="chosenScenario == 'justExam'">
       <div class="generalSectionBar"><span>{{$t('justExamShort')}}</span></div>
-      <microlearning path="exam1" time="5" size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" noGrey />
-      <microlearning path="exam2" time="5" size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="P-Test.svg" :text="$t('spend')" class="spend" noGrey />
-      <microlearning path="exam3" time="5" youAreHere size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="P-Test.svg" :text="$t('report')"  class="report" noGrey />
+      <microlearning path="exam1" time="5" size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" noGrey type="exam" questionNum="20" />
+      <microlearning path="exam2" time="5" size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="S-Test.svg" :text="$t('spend')" class="spend" noGrey type="exam" questionNum="20" />
+      <microlearning path="exam3" time="5" youAreHere size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="R-Test.svg" :text="$t('report')"  class="report" noGrey type="exam" questionNum="10" />
     </div>
     <div class="bottomNav reportSection" v-else>
       <div class="reportSectionBar"><span>{{$t('report')}}</span></div>
-      <microlearning :completion="$store.state.currentPlaying.reportPart1_player" path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" />
-      <microlearning :completion="$store.state.currentPlaying.reportPart2_player" path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" :text="$t('ContributeReporting')" />
-      <microlearning :completion="$store.state.currentPlaying.kmReport" path="reportKey" size="140" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" time="5" :highlighted="chosenScenario == 'refresh'" />
-      <microlearning youAreHere :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" />
+      <microlearning :completion="$store.state.currentPlaying.reportPart1_player" path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" type="video" />
+      <microlearning :completion="$store.state.currentPlaying.reportPart2_player" path="reportPart2" imagePath="R-Contribute.svg" size="140" time="20" :text="$t('ContributeReporting')" type="video" />
+      <microlearning :completion="$store.state.currentPlaying.kmReport" path="reportKey" size="140" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" time="5" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+      <microlearning youAreHere :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" type="exam" questionNum="10" />
     </div>
 
     <!-- Debugging section -->

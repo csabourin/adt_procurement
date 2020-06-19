@@ -170,17 +170,17 @@
     
     <div class="bottomNav generalSection" v-if="chosenScenario == 'justExam'">
       <div class="generalSectionBar"><span>{{$t('justExamShort')}}</span></div>
-      <microlearning path="exam1" time="5" size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" noGrey />
-      <microlearning path="exam2" time="5" youAreHere size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="P-Test.svg" :text="$t('spend')"  class="spend" noGrey />
-      <microlearning path="exam3" time="5" size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="P-Test.svg" :text="$t('report')" class="report" noGrey />
+      <microlearning path="exam1" time="5" size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" noGrey type="exam" questionNum="20" />
+      <microlearning path="exam2" time="5" youAreHere size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="S-Test.svg" :text="$t('spend')"  class="spend" noGrey type="exam" questionNum="20" />
+      <microlearning path="exam3" time="5" size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="R-Test.svg" :text="$t('report')" class="report" noGrey  type="exam" questionNum="10"/>
     </div>
     <div class="bottomNav spendSection" v-else>
       <div class="spendSectionBar"><span>{{$t('spend')}}</span></div>
-      <microlearning path="spendPart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('InitiateAuthorizeSpending')" />
-      <microlearning path="spendPart2" imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('ExerciseFinancialAuthority')" />
-      <microlearning path="spendPart3" size="140" time="20" :completion="$store.state.currentPlaying.spendPart3_player" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" />
-      <microlearning path="spendKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('KeyMessages')" />
-      <microlearning path="exam2" size="140" time="15" youAreHere imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" />
+      <microlearning path="spendPart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('InitiateAuthorizeSpending')" type="video" />
+      <microlearning path="spendPart2" imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('ExerciseFinancialAuthority')" type="video" />
+      <microlearning path="spendPart3" size="140" time="20" :completion="$store.state.currentPlaying.spendPart3_player" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" type="video" />
+      <microlearning path="spendKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('KeyMessages')" type="keyMessages" />
+      <microlearning path="exam2" size="140" time="15" youAreHere imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
     </div>
 
     <!-- Debugging section -->

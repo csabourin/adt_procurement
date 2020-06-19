@@ -99,10 +99,10 @@
       </b-row>
     </b-container>
     <div class="bottomNav generalSection" v-if="chosenScenario == 'refresh'">
-      <div class="generalSectionBar"><span>{{$t('KeyMessages')}}</span></div>
-      <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('plan')" class="plan" />
-      <microlearning path="spendKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessP.svg" :text="$t('spend')" class="spend" />
-      <microlearning path="reportKey" time="5" youAreHere size="140" :completion="$store.state.currentPlaying.kmReport" imagePath="KeyMessP.svg" :text="$t('report')" class="report" />
+      <div class="generalSectionBar"><span>{{$t('refreshShort')}}</span></div>
+      <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('plan')" class="plan" noGrey />
+      <microlearning path="spendKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessP.svg" :text="$t('spend')" class="spend" noGrey />
+      <microlearning path="reportKey" time="5" youAreHere size="140" :completion="$store.state.currentPlaying.kmReport" imagePath="KeyMessP.svg" :text="$t('report')" class="report" noGrey />
     </div>
     <div class="bottomNav reportSection" v-else>
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>

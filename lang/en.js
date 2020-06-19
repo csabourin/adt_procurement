@@ -48,6 +48,8 @@ export default {
   takeCourse: "I want to take the course",
   refresh: "I want to refresh my knowledge",
   justExam: "I just want to take the exam",
+  refreshShort: "Refresh my Knowledge",
+  justExamShort: "Take the Exam",
   
   // Text for Exams
   notPassed: "You have not passed this test. You can revise your answers and then try again.",

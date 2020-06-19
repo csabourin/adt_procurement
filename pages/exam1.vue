@@ -168,10 +168,10 @@
       <p v-if="allDone"><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
     </transition>
     <div class="bottomNav generalSection" v-if="chosenScenario == 'justExam'">
-      <div class="generalSectionBar"><span>{{$t('Test')}}</span></div>
-      <microlearning path="exam1" time="5" youAreHere size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" />
-      <microlearning path="exam2" time="5" size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="P-Test.svg" :text="$t('spend')" class="spend" />
-      <microlearning path="exam3" time="5" size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="P-Test.svg" :text="$t('report')" class="report" />
+      <div class="generalSectionBar"><span>{{$t('justExamShort')}}</span></div>
+      <microlearning path="exam1" time="5" youAreHere size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" noGrey />
+      <microlearning path="exam2" time="5" size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="P-Test.svg" :text="$t('spend')" class="spend" noGrey />
+      <microlearning path="exam3" time="5" size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="P-Test.svg" :text="$t('report')" class="report" noGrey />
     </div>
     <div class="bottomNav planSection" v-else>
       <div class="planSectionBar"><span>{{$t('plan')}}</span></div>

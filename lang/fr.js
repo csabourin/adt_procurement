@@ -50,6 +50,8 @@ export default {
   takeCourse: "Je veux prendre le cours",
   refresh: "Je veux rafraîchir mes connaissances",
   justExam: "Je veux seulement prendre le test",
+  refreshShort: "Rafraîchir mes connaissances",
+  justExamShort: "Prendre le test",
   
   // Texte pour les tests
   notPassed: "Vous n’avez pas réussi ce test. Vous pouvez réviser vos réponses et réessayer.",

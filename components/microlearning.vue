@@ -2,11 +2,14 @@
   <div class="learningElement">
     <nuxt-link :to="localePath(path)">
       <div :class="highlighted ? ['highlighted', 'box'] : 'box'" :style="boxSize" style="color:#212529">
-        <div class="completed" :style="completionBar" :data-percent="completion"></div>
-        <div class="timeEstimate"><span v-if="time">&nbsp; {{time}} Minutes <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span><span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span></span></div>
+        <div class="timeEstimate">
+          <span v-if="time">&nbsp; {{time}} Minutes <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span>
+            <span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span></span>
+        </div>
         <transition name="highlight-fade">
           <div class="highlight" v-show="!highlighted && chosenScenario != 'takeCourse' && !noGrey"></div>
         </transition>
+        <div class="completed" :style="completionBar" :data-percent="completionBar.width" v-if="completion > 0"></div>
       </div>
       <p class="text-left" :style="'width:'+size+'px'">
         <span v-html="text" />
@@ -53,19 +56,34 @@ export default {
   methods:{
     setHighlight(){
       this.$nextTick(function() {
-        console.log(this.$el.innerHTML)
         this.$el.querySelector("div.highlight").style.height = this.size + "px";
         this.$el.querySelector("div.highlight").style.width = this.size + "px";
       });
     },
+    addMargin(){
+      if (this.completion) {
+        this.$nextTick(function() {
+          var element = this.$el.querySelector(".box")
+          var arr = element.className.split(" ");
+          var name = "margin";
+          if (arr.indexOf(name) == -1) {
+            element.className += " " + name;
+          }
+        });
+      }
+    }
   },
   computed: {
     getImgUrl(pic) {
       return require('~/assets/' + pic)
     },
     completionBar() {
-      return {
-        width: `${this.completion}%`
+      this.addMargin()
+      if (this.completion) {
+        return { width: `${this.completion}%` }
+      }
+      else {
+        return {}
       }
     },
     boxSize() {
@@ -89,12 +107,11 @@ export default {
       if(value){
         this.setHighlight();
       }
+      this.addMargin()
     }
   },
   mounted: function(){
     this.setHighlight();
-    
-    console.log(this.chosenScenario);
   }
 }
 
@@ -119,7 +136,7 @@ a:focus {
 .completed {
   position: absolute;
   left: 0;
-  bottom: 1.7em;
+  bottom: -15px;
   height: 10px;
   background-color: currentColor;
 }
@@ -129,9 +146,9 @@ a:focus {
   background-color: rgba(255, 255, 255, .8);
   position: absolute;
   right: 0;
-  bottom: 0;
-  font-size: 12px;
-  content: attr(data-percent)"%";
+  bottom: -2px;
+  font-size: 10px;
+  content: attr(data-percent);
 }
 
 .learningElement {
@@ -142,7 +159,6 @@ a:focus {
 }
 
 .box {
-  overflow: hidden;
   background-color: #fff;
   display: flex;
   align-items: bottom;
@@ -150,12 +166,16 @@ a:focus {
   border-radius: 2px;
   position: relative;
   border: 1px solid hsl(42, 10%, 74%);
-  margin-bottom: .5em;
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: center;
   transition: all 0.3s;
+  margin-bottom: 10px;
 }
+  
+  .box.margin{
+    margin-bottom: 25px;
+  }
 
 .timeEstimate {
   position: absolute;
@@ -202,18 +222,17 @@ a:focus {
     transition: all 0.3s;
   }
 
+
 </style>
 <i18n>
-
   {
-    "en": {
-      "youAreHere": "You are on this page",
-      "highlighted": "You should focus on this page as part of the scenario you chose."
-    },
-    "fr": {
-      "youAreHere": "Vous êtes sur cette page",
-      "highlighted": "Vous devriez vous concentrer sur cette page dans le cadre du scénario que vous avez choisi."
-    }
+  "en": {
+  "youAreHere": "You are on this page",
+  "highlighted": "You should focus on this page as part of the scenario you chose."
+  },
+  "fr": {
+  "youAreHere": "Vous êtes sur cette page",
+  "highlighted": "Vous devriez vous concentrer sur cette page dans le cadre du scénario que vous avez choisi."
   }
-
+  }
 </i18n>

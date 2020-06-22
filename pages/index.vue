@@ -1,63 +1,71 @@
 <template>
   <div class="mainWindow">
-    <p>&nbsp;</p>
-    <videoplayer enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_a9sopjk0/flavorId/0_xwd6dtx5/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_0olxxf6u/flavorId/0_ynuanlxw/name/a.mp4" posterFile="video_poster.PNG" ccFile="intro_captions.vtt" toResume="setHomepage" :restartAt="thatPoint" />
-    <div role="tablist" class="transcriptionBox">
-      <b-card no-body class="mb-1 text-left">
-        <b-card-header header-tag="p" class="p-1" role="tab">
-          <b-button block href="#" v-b-toggle.translationbox variant="light" class="text-left" >{{$t('IntroTranscript')}}</b-button>
-        </b-card-header>
-        <b-collapse id="translationbox" accordion="translation-box" role="tabpanel">
-          <b-card-body>
-            <b-card-text><span v-html="$t('transcriptText')"></span></b-card-text>
-          </b-card-body>
-        </b-collapse>
-      </b-card>
-    </div>
-    <p>&nbsp;</p>
-    <b-alert show="true">
-      <div v-if="$i18n.locale=='en'">
-        <p>Thank you for following this new course “Responsible Use of Public Funds.” As this is a work in progress, we are seeking your feedback on the learning experience. We appreciate you taking a few minutes to tell us what worked well, any issues you faced and what we can fix to make it better. It will take you 5 to 10 minutes to complete the questionnaire.</p>
-        <p><externalLink link="https://csps-efpc.sondage-survey.ca/f/s.aspx?s=f594eb12-9bd2-4cde-bed9-5d3220a7113b&lang=EN">Questionnaire</externalLink></p>
-      </div>
-      <div v-if="$i18n.locale=='fr'">
-        <p>Merci de suivre le nouveau produit d’apprentissage intitulé « La saine gestion des fonds publics ». Comme celui-ci est dans une phase test, nous aimerions obtenir vos commentaires sur votre expérience d’apprentissage, particulièrement en ce qui a trait à ce qui a bien été, les défis que vous avez rencontrés et vos suggestions pour améliorer l’expérience. Remplir le questionnaire devrait vous prendre entre 5 et 10 minutes.</p>
-        <p><externalLink link="https://csps-efpc.sondage-survey.ca/f/s.aspx?s=f594eb12-9bd2-4cde-bed9-5d3220a7113b&lang=FR">Questionnaire</externalLink></p>
-      </div>
-    </b-alert>
-    <p>&nbsp;</p>
-    
-    <b-button-group class="mt-2" :aria-label="$t('chooseScenario')">
-      <b-button @click="chosenScenario = 'takeCourse'" :disabled="chosenScenario == 'takeCourse'">{{$t('takeCourse')}}</b-button>
-      <b-button @click="chosenScenario = 'refresh'" :disabled="chosenScenario == 'refresh'">{{$t('refresh')}}</b-button>
-      <b-button @click="chosenScenario = 'justExam'" :disabled="chosenScenario == 'justExam'">{{$t('justExam')}}</b-button>
-    </b-button-group>
-    
-    <h2 class="sideTitle planTitle">{{$t('plan')}}</h2>
-    <div role="navigation" class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }" :aria-label="$t('plan') + ' - Navigation'">
-      <microlearning path="buildWP" time="20"  imagePath="BuildWP.svg" :text="$t('BuildWorkPlan')" :completion="$store.state.currentPlaying.buildWP_player" type="video" />
-      <microlearning time="20" path="createBudget" imagePath="CreateBud.svg" :text="$t('CreateBudget')" :completion="$store.state.currentPlaying.createBudget_player" type="video" />
-      <microlearning path="planKey" time="5" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')"  :completion="$store.state.currentPlaying.kmPlan" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-      <microlearning time="15" path="exam1" imagePath="P-Test.svg" :text="$t('TestPlan')" :completion="parseInt(planCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
-    </div>
-    <hr class="planHr">
-    <h2 class="sideTitle spendTitle">{{$t('spend')}}</h2>
-    <div role="navigation" class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }" :aria-label="$t('spend') + ' - Navigation'">
-      <microlearning imagePath="InitiateAuthSpending.svg" path="spendPart1" time="20" :text="$t('InitiateAuthorizeSpending')"  :completion="$store.state.currentPlaying.spendPart1_player" type="video" />
-      <microlearning imagePath="ExerciseFinancialAuthority.svg" path="spendPart2" time="20" :text="$t('ExerciseFinancialAuthority')"  :completion="$store.state.currentPlaying.spendPart2_player" type="video" />
-      <microlearning time="20" path="spendPart3" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')"  :completion="$store.state.currentPlaying.spendPart3_player" type="video" />
-      <microlearning path="spendKey" time="5" imagePath="KeyMessS.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-      <microlearning time="15" path="exam2"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
-    </div>
-    <hr class="spendHr">
-    <h2 class="sideTitle reportTitle">{{$t('report')}}</h2>
-    <div role="navigation" class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }" :aria-label="$t('report') + ' - Navigation'">
-      <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" :completion="$store.state.currentPlaying.reportPart1_player" type="video" />
-      <microlearning imagePath="R-Contribute.svg"  path="reportPart2" time="20" :text="$t('ContributeReporting')" :completion="$store.state.currentPlaying.reportPart2_player" type="video" />
-      <microlearning imagePath="KeyMessR.svg" path="reportKey" time="5" :text="$t('KeyMessagesReport')" :completion="$store.state.currentPlaying.kmReport" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-      <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('TestReport')" :completion="parseInt(reportCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="10" />
-    </div>
-    <hr class="reportHr">
+    <b-row align-h="center">
+      <b-col cols="12" lg="8" xl="7">
+        <p>&nbsp;</p>
+        <videoplayer enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_a9sopjk0/flavorId/0_xwd6dtx5/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_0olxxf6u/flavorId/0_ynuanlxw/name/a.mp4" posterFile="video_poster.PNG" ccFile="intro_captions.vtt" toResume="setHomepage" :restartAt="thatPoint" />
+        <div role="tablist" class="transcriptionBox" style="width: 100%;">
+          <b-card no-body class="mb-1 text-left">
+            <b-card-header header-tag="p" class="p-1" role="tab">
+              <b-button block href="#" v-b-toggle.translationbox variant="light" class="text-left" >{{$t('IntroTranscript')}}</b-button>
+            </b-card-header>
+            <b-collapse id="translationbox" accordion="translation-box" role="tabpanel">
+              <b-card-body>
+                <b-card-text><span v-html="$t('transcriptText')"></span></b-card-text>
+              </b-card-body>
+            </b-collapse>
+          </b-card>
+        </div>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col>
+        <p>&nbsp;</p>
+        <b-alert show="true">
+          <div v-if="$i18n.locale=='en'">
+            <p>Thank you for following this new course “Responsible Use of Public Funds.” As this is a work in progress, we are seeking your feedback on the learning experience. We appreciate you taking a few minutes to tell us what worked well, any issues you faced and what we can fix to make it better. It will take you 5 to 10 minutes to complete the questionnaire.</p>
+            <p><externalLink link="https://csps-efpc.sondage-survey.ca/f/s.aspx?s=f594eb12-9bd2-4cde-bed9-5d3220a7113b&lang=EN">Questionnaire</externalLink></p>
+          </div>
+          <div v-if="$i18n.locale=='fr'">
+            <p>Merci de suivre le nouveau produit d’apprentissage intitulé « La saine gestion des fonds publics ». Comme celui-ci est dans une phase test, nous aimerions obtenir vos commentaires sur votre expérience d’apprentissage, particulièrement en ce qui a trait à ce qui a bien été, les défis que vous avez rencontrés et vos suggestions pour améliorer l’expérience. Remplir le questionnaire devrait vous prendre entre 5 et 10 minutes.</p>
+            <p><externalLink link="https://csps-efpc.sondage-survey.ca/f/s.aspx?s=f594eb12-9bd2-4cde-bed9-5d3220a7113b&lang=FR">Questionnaire</externalLink></p>
+          </div>
+        </b-alert>
+        <p>&nbsp;</p>
+
+        <b-button-group class="mt-2" :aria-label="$t('chooseScenario')">
+          <b-button @click="chosenScenario = 'takeCourse'" :disabled="chosenScenario == 'takeCourse'">{{$t('takeCourse')}}</b-button>
+          <b-button @click="chosenScenario = 'refresh'" :disabled="chosenScenario == 'refresh'">{{$t('refresh')}}</b-button>
+          <b-button @click="chosenScenario = 'justExam'" :disabled="chosenScenario == 'justExam'">{{$t('justExam')}}</b-button>
+        </b-button-group>
+
+        <h2 class="sideTitle planTitle">{{$t('plan')}}</h2>
+        <div role="navigation" class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }" :aria-label="$t('plan') + ' - Navigation'">
+          <microlearning path="buildWP" time="20"  imagePath="BuildWP.svg" :text="$t('BuildWorkPlan')" :completion="$store.state.currentPlaying.buildWP_player" type="video" />
+          <microlearning time="20" path="createBudget" imagePath="CreateBud.svg" :text="$t('CreateBudget')" :completion="$store.state.currentPlaying.createBudget_player" type="video" />
+          <microlearning path="planKey" time="5" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')"  :completion="$store.state.currentPlaying.kmPlan" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+          <microlearning time="15" path="exam1" imagePath="P-Test.svg" :text="$t('TestPlan')" :completion="parseInt(planCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+        </div>
+        <hr class="planHr">
+        <h2 class="sideTitle spendTitle">{{$t('spend')}}</h2>
+        <div role="navigation" class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }" :aria-label="$t('spend') + ' - Navigation'">
+          <microlearning imagePath="InitiateAuthSpending.svg" path="spendPart1" time="20" :text="$t('InitiateAuthorizeSpending')"  :completion="$store.state.currentPlaying.spendPart1_player" type="video" />
+          <microlearning imagePath="ExerciseFinancialAuthority.svg" path="spendPart2" time="20" :text="$t('ExerciseFinancialAuthority')"  :completion="$store.state.currentPlaying.spendPart2_player" type="video" />
+          <microlearning time="20" path="spendPart3" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')"  :completion="$store.state.currentPlaying.spendPart3_player" type="video" />
+          <microlearning path="spendKey" time="5" imagePath="KeyMessS.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+          <microlearning time="15" path="exam2"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+        </div>
+        <hr class="spendHr">
+        <h2 class="sideTitle reportTitle">{{$t('report')}}</h2>
+        <div role="navigation" class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }" :aria-label="$t('report') + ' - Navigation'">
+          <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" :completion="$store.state.currentPlaying.reportPart1_player" type="video" />
+          <microlearning imagePath="R-Contribute.svg"  path="reportPart2" time="20" :text="$t('ContributeReporting')" :completion="$store.state.currentPlaying.reportPart2_player" type="video" />
+          <microlearning imagePath="KeyMessR.svg" path="reportKey" time="5" :text="$t('KeyMessagesReport')" :completion="$store.state.currentPlaying.kmReport" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+          <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('TestReport')" :completion="parseInt(reportCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="10" />
+        </div>
+        <hr class="reportHr">
+      </b-col>
+    </b-row>
   </div>
 </template>
 

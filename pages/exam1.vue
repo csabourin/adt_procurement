@@ -169,9 +169,9 @@
     </transition>
     <div class="bottomNav generalSection" v-if="chosenScenario == 'justExam'">
       <div class="generalSectionBar"><span>{{$t('justExamShort')}}</span></div>
-      <microlearning path="exam1" time="5" youAreHere size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" noGrey type="exam" questionNum="20" />
-      <microlearning path="exam2" time="5" size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="S-Test.svg" :text="$t('spend')" class="spend" noGrey type="exam" questionNum="20" />
-      <microlearning path="exam3" time="5" size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="R-Test.svg" :text="$t('report')" class="report" noGrey  type="exam" questionNum="10"/>
+      <microlearning path="exam1" time="15" youAreHere size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" noGrey type="exam" questionNum="20" />
+      <microlearning path="exam2" time="15" size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="S-Test.svg" :text="$t('spend')" class="spend" noGrey type="exam" questionNum="20" />
+      <microlearning path="exam3" time="15" size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="R-Test.svg" :text="$t('report')" class="report" noGrey  type="exam" questionNum="10"/>
     </div>
     <div class="bottomNav planSection" v-else>
       <div class="planSectionBar"><span>{{$t('plan')}}</span></div>

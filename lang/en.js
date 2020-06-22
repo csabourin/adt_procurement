@@ -94,8 +94,8 @@ export default {
   },
   
   reportsLastYear:{
-    rLine1:"Last Year's",
-    rLine2:"Reports",
+    line1:"Last Year's",
+    line2:"Reports",
     name:"Last Year's Reports",
     download: "Download last year's reports",
     filename: "Report_lastYear.docx",

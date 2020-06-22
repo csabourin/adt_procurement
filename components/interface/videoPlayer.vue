@@ -46,12 +46,10 @@
     <ul v-if="chapters" class="bar" ref="linkBar">
       <li v-for="(item,index) in navBarTracks" :class="['chaptersLink '+ isItPlaying(index),$store.state.currentPlaying.currentModule]">
         <p>{{ item }}</p><br>
-        
         <a :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
-        
         <button v-if="modalArray[index] && (navBarTracks[index] == 'Quiz' || navBarTracks[index] == 'Try It!' || navBarTracks[index] == 'Essayez-le!')" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpQuiz')"><img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="48" height="48"></button>
         <button v-else-if="modalArray[index]" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
-        <nuxt-link v-else :to="nextPage" class="playButton"><img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" width="48" height="48"  :title="$t('continue')"><span class="v-inv">{{$t('continue')}}</span></nuxt-link>
+        <nuxt-link v-else :to="nextPage" class="playButton"><img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" width="48" height="48" :title="$t('continue')"><span class="v-inv">{{$t('continue')}}</span></nuxt-link>
       </li>
     </ul>
     <!-- Used for troublehooting video set debugging to true in data-->
@@ -131,7 +129,7 @@ export default {
     }
   },
   computed: {
-    videoUrl(){ return this.$i18n.locale == 'en' ? this.enVideoFile : this.frVideoFile},
+    videoUrl() { return this.$i18n.locale == 'en' ? this.enVideoFile : this.frVideoFile },
     solidOrRegular() {
       return this.CCactive ? 'far' : 'fas'
     },
@@ -148,19 +146,19 @@ export default {
     trackNumber() {
       if (this.chapters) { return 1 } else { return 0 }
     },
-    nextPage(){
+    nextPage() {
       var links = [];
-      
+
       var menus = document.querySelectorAll("menu");
-      for(var i = 0; i < menus.length; i++){
+      for (var i = 0; i < menus.length; i++) {
         var menuLinks = menus[i].querySelectorAll("a")
-        for(var j = 0; j < menuLinks.length; j++){
+        for (var j = 0; j < menuLinks.length; j++) {
           links.push(menuLinks[j].getAttribute("href"));
         }
       }
-      
-      for(var k = 0; k < links.length; k++){
-        if(links[k] == this.$route.path){
+
+      for (var k = 0; k < links.length; k++) {
+        if (links[k] == this.$route.path) {
           return links[k + 1];
         }
       }
@@ -200,11 +198,12 @@ export default {
       this.canPlay = false
     },
     readCaptions(e) {
-      const v = e.target.parentNode
-      const tt = v.textTracks[this.trackNumber]
-      const cuesThere = tt.activeCues
-      if (cuesThere.length > 0) { this.Captions = tt.activeCues[0].text } else { this.Captions = "" }
-
+      if (this.$refs.videoplayer) {
+        const v = e.target.parentNode
+        const tt = v.textTracks[this.trackNumber]
+        const cuesThere = tt.activeCues
+        if (cuesThere.length > 0) { this.Captions = tt.activeCues[0].text } else { this.Captions = "" }
+      }
     },
     showCC() {
       this.CCactive = !this.CCactive
@@ -217,16 +216,16 @@ export default {
     },
     generate() {
       this.$nextTick(() => {
-        if(this.$refs.videoplayer){
-        this.navBarTracks = []
-        const c = this.$refs.videoplayer.textTracks[0].cues
-        for (let i = 0; i < c.length; i++) {
-          this.navBarTracks.push(c[i].text)
-          this.startTime[i] = c[i].startTime
-          this.endTime[i] = Math.floor(c[i].endTime)
-          this.startTime.push(this.startTime[this.startTime.length - 1])
+        if (this.$refs.videoplayer) {
+          this.navBarTracks = []
+          const c = this.$refs.videoplayer.textTracks[0].cues
+          for (let i = 0; i < c.length; i++) {
+            this.navBarTracks.push(c[i].text)
+            this.startTime[i] = c[i].startTime
+            this.endTime[i] = Math.floor(c[i].endTime)
+            this.startTime.push(this.startTime[this.startTime.length - 1])
+          }
         }
-      }
       })
       this.resumePosition()
     },
@@ -240,7 +239,7 @@ export default {
       const videoPlayer = this.$refs.videoplayer
       this.accessiblePopup = true
       videoPlayer.pause()
-      this.isPaused=true
+      this.isPaused = true
       this.$bvModal.show(this.modalArray[i])
     },
     showModal(i) {
@@ -278,14 +277,15 @@ export default {
       })
     },
     resumePosition() {
-      if(this.$refs.videoplayer){
-      this.canPlay = true
-      this.totalTime = this.$refs.videoplayer.duration
-      this.$refs.videoplayer.volume = this.setVolume / 100
-      const savedPosition = this.startTime[this.restartAt]
-      if (savedPosition) {
-        this.$refs.videoplayer.currentTime = savedPosition
-      }}
+      if (this.$refs.videoplayer) {
+        this.canPlay = true
+        this.totalTime = this.$refs.videoplayer.duration
+        this.$refs.videoplayer.volume = this.setVolume / 100
+        const savedPosition = this.startTime[this.restartAt]
+        if (savedPosition) {
+          this.$refs.videoplayer.currentTime = savedPosition
+        }
+      }
     },
     update(e) {
       let currentTime = e.target.currentTime
@@ -462,6 +462,7 @@ video {
 .chaptersLink.plan:before {
   background-color: #587C84;
 }
+
 .chaptersLink.spend:before {
   background-color: #7d677d;
 }
@@ -661,7 +662,7 @@ progress {
 .videoControls:active {
   color: #b54142;
 }
-  
+
 .videoControls:focus {
   outline: 1px dashed white;
 }
@@ -692,10 +693,10 @@ progress {
   border-bottom: 1px solid #4d4d4d;
 }
 
-progress:focus{
+progress:focus {
   outline: 1px dashed white;
 }
-  
+
 progress::-webkit-progress-bar {
   background: #000;
   border-radius: 50px;

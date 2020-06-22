@@ -916,6 +916,11 @@ img {
   border-color: #365A62;
 }
 
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #000000;
+}
 
 /* ***************************************
  * new table style for build a workplan

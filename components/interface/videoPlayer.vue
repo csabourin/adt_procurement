@@ -95,7 +95,6 @@ export default {
       playToPercent: 0,
       totalTime: 0,
       CCactive: false,
-      videoUrl: this.$i18n.locale == 'en' ? this.enVideoFile : this.frVideoFile,
       posterUrl: require('~/assets/' + this.$i18n.locale + '/' + this.posterFile),
       currentFrame: 0,
       accessiblePopup: false,
@@ -132,6 +131,7 @@ export default {
     }
   },
   computed: {
+    videoUrl(){ return this.$i18n.locale == 'en' ? this.enVideoFile : this.frVideoFile},
     solidOrRegular() {
       return this.CCactive ? 'far' : 'fas'
     },
@@ -217,6 +217,7 @@ export default {
     },
     generate() {
       this.$nextTick(() => {
+        if(this.$refs.videoplayer){
         this.navBarTracks = []
         const c = this.$refs.videoplayer.textTracks[0].cues
         for (let i = 0; i < c.length; i++) {
@@ -225,6 +226,7 @@ export default {
           this.endTime[i] = Math.floor(c[i].endTime)
           this.startTime.push(this.startTime[this.startTime.length - 1])
         }
+      }
       })
       this.resumePosition()
     },
@@ -276,13 +278,14 @@ export default {
       })
     },
     resumePosition() {
+      if(this.$refs.videoplayer){
       this.canPlay = true
       this.totalTime = this.$refs.videoplayer.duration
       this.$refs.videoplayer.volume = this.setVolume / 100
       const savedPosition = this.startTime[this.restartAt]
       if (savedPosition) {
         this.$refs.videoplayer.currentTime = savedPosition
-      }
+      }}
     },
     update(e) {
       let currentTime = e.target.currentTime

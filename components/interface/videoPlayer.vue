@@ -46,9 +46,23 @@
     <ul v-if="chapters" class="bar" ref="linkBar">
       <li v-for="(item,index) in navBarTracks" :class="['chaptersLink '+ isItPlaying(index),$store.state.currentPlaying.currentModule]">
         <p>{{ item }}</p><br>
+        
+        <!-- Play button -->
         <a :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
-        <button v-if="modalArray[index] && (navBarTracks[index] == 'Quiz' || navBarTracks[index] == 'Try It!' || navBarTracks[index] == 'Essayez-le!')" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpQuiz')"><img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="48" height="48"></button>
+        
+        <!-- If the popup is a quiz -->
+        <button v-if="modalArray[index] && isInArray(index, currentPageQuiz)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpQuiz')"><img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="48" height="48"></button>
+        
+        <!-- If the popup is a reference -->
+        <button v-else-if="modalArray[index] && isInArray(index, currentPageReferences)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpReference') + ' - ' + navBarTracks[index]"><img src="~/assets/ReferenceIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
+        
+        <!-- If the popup is an info -->
+        <button v-else-if="modalArray[index] && isInArray(index, currentPageInfos)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpInfo') + ' - ' + navBarTracks[index]"><img src="~/assets/InfoIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
+        
+        <!-- If the popup is an activity -->
         <button v-else-if="modalArray[index]" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
+        
+        <!-- Continue to next page button -->
         <nuxt-link v-else :to="nextPage" class="playButton"><img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" width="48" height="48" :title="$t('continue')"><span class="v-inv">{{$t('continue')}}</span></nuxt-link>
       </li>
     </ul>
@@ -104,7 +118,45 @@ export default {
       isPlayingSoon: 0,
       byFrame: 0,
       justSeeked: false,
-      Captions: ""
+      Captions: "",
+      
+      popups: {
+        buildWP: {
+          references: [1],
+          infos: [0],
+          quiz: [8]
+        },
+        createBudget: {
+          references: [1],
+          infos: [0],
+          quiz: [7]
+        },
+        spendPart1: {
+          references: [],
+          infos: [],
+          quiz: [4]
+        },
+        spendPart2: {
+          references: [],
+          infos: [],
+          quiz: []
+        },
+        spendPart3: {
+          references: [],
+          infos: [],
+          quiz: [3]
+        },
+        reportPart1: {
+          references: [],
+          infos: [],
+          quiz: []
+        },
+        reportPart2: {
+          references: [],
+          infos: [],
+          quiz: [3]
+        }
+      },
     }
   },
   filters: {
@@ -161,6 +213,72 @@ export default {
         if (links[k] == this.$route.path) {
           return links[k + 1];
         }
+      }
+    },
+    currentPageReferences(){
+      var path = this.$route.path;
+      var pos = path.indexOf(this.$i18n.locale) + 3;
+      var currentPage = path.substr(pos);
+      
+      switch(currentPage){
+        case "buildWP":
+          return this.popups.buildWP.references;
+        case "createBudget":
+          return this.popups.createBudget.references;
+        case "spendPart1":
+          return this.popups.spendPart1.references;
+        case "spendPart2":
+          return this.popups.spendPart2.references;
+        case "spendPart3":
+          return this.popups.spendPart3.references;
+        case "reportPart1":
+          return this.popups.reportPart1.references;
+        case "reportPart2":
+          return this.popups.reportPart2.references;
+      }
+    },
+    currentPageInfos(){
+      var path = this.$route.path;
+      var pos = path.indexOf(this.$i18n.locale) + 3;
+      var currentPage = path.substr(pos);
+      
+      switch(currentPage){
+      case "buildWP":
+          return this.popups.buildWP.infos;
+        case "createBudget":
+          return this.popups.createBudget.infos;
+        case "spendPart1":
+          return this.popups.spendPart1.infos;
+        case "spendPart2":
+          return this.popups.spendPart2.infos;
+        case "spendPart3":
+          return this.popups.spendPart3.infos;
+        case "reportPart1":
+          return this.popups.reportPart1.infos;
+        case "reportPart2":
+          return this.popups.reportPart2.infos;
+      }
+    },
+    currentPageQuiz(){
+      var path = this.$route.path;
+      var pos = path.indexOf(this.$i18n.locale) + 3;
+      var currentPage = path.substr(pos);
+      
+      switch(currentPage){
+      case "buildWP":
+          return this.popups.buildWP.quiz;
+        case "createBudget":
+          return this.popups.createBudget.quiz;
+        case "spendPart1":
+          return this.popups.spendPart1.quiz;
+        case "spendPart2":
+          return this.popups.spendPart2.quiz;
+        case "spendPart3":
+          return this.popups.spendPart3.quiz;
+        case "reportPart1":
+          return this.popups.reportPart1.quiz;
+        case "reportPart2":
+          return this.popups.reportPart2.quiz;
       }
     }
   },
@@ -348,6 +466,14 @@ export default {
       } else {
         this.$refs.videoplayer.pause()
       }
+    },
+    isInArray(val, arr){
+      for (var i = 0; i < arr.length; i++){
+        if(arr[i] == val){
+          return true;
+        }
+      }
+      return false;
     }
   }
 }
@@ -367,6 +493,8 @@ export default {
   "hide":"Hide ",
   "closedcaptionning":"Closed Captions",
   "jumpModalPartsWP":"Jump to activity",
+  "jumpReference":"Jump to reference",
+  "jumpInfo":"Jump to information box",
   "jumpQuiz":"Jump to quiz",
   "playSegment":"Play video segment",
   "continue":"Continue to next section",
@@ -384,6 +512,8 @@ export default {
   "hide":"Cacher le ",
   "closedcaptionning":"sous-titrage codé",
   "jumpModalPartsWP":"Sauter à l’activité",
+  "jumpReference":"Sauter à la référence",
+  "jumpInfo":"Sauter à la boîte d'information",
   "jumpQuiz":"Sauter au quiz",
   "playSegment":"Faire jouer le segment vidéo",
   "continue":"Continuer à la section suivante",

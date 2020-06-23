@@ -54,10 +54,10 @@
         <button v-if="modalArray[index] && isInArray(index, currentPageQuiz)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpQuiz')"><img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="48" height="48"></button>
         
         <!-- If the popup is a reference -->
-        <button v-else-if="modalArray[index] && isInArray(index, currentPageReferences)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpReference') + ' - ' + navBarTracks[index]"><img src="~/assets/ReferenceIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
+        <button v-else-if="modalArray[index] && isInArray(index, currentPageReferences)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpReference') + ' - ' + navBarTracks[index]"><img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="48" height="48"></button>
         
         <!-- If the popup is an info -->
-        <button v-else-if="modalArray[index] && isInArray(index, currentPageInfos)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpInfo') + ' - ' + navBarTracks[index]"><img src="~/assets/InfoIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
+        <button v-else-if="modalArray[index] && isInArray(index, currentPageInfos)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpInfo') + ' - ' + navBarTracks[index]"><img src="~/assets/InfoIcon.svg" :alt="$t('infoIcon')" width="48" height="48"></button>
         
         <!-- If the popup is an activity -->
         <button v-else-if="modalArray[index]" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>

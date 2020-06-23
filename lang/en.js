@@ -24,6 +24,8 @@ export default {
   pencilIcon: "Activity icon",
   quizIcon: "Quiz icon",
   continueIcon: "Continue icon",
+  referenceIcon: "Reference icon",
+  infoIcon: "Information icon",
   home: "Home",
   checkAll: "Check all that apply.",
   selectRight: "Select the correct answer.",

@@ -1051,6 +1051,12 @@ img {
     position: relative;
     width: 100%;;
 }
+  
+  
+  
+  .modal-header h3.h5{
+    line-height: 28px;
+  }
 
 
 a:hover,

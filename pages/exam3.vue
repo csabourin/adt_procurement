@@ -105,7 +105,7 @@
       </b-button-group>
     </div>
     <transition name="fade">
-      <p v-if="allDone">
+      <p>
         <b-button @click="markTest">{{$t('markTest')}}</b-button>
         <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button>
       </p>
@@ -144,6 +144,18 @@
       </p>
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
+
+    <b-modal id="missingQuestions" size="lg" okOnly>
+      <p class='pageTitle'>{{$t('unanswered')}}</p>
+      <p v-if="$i18n.locale=='en'">Your test cannot be marked because the following question(s) has/have not been answered:</p>
+      <p v-if="$i18n.locale=='fr'">Votre examen ne peut pas être gradé, puisque la/les question(s) suivante(s) n'a/n'ont pas été répondue(s)</p>
+      
+      <ul>
+        <li v-for="question, index in unansweredQuestions" :key="question">Question {{question}}</li>
+      </ul>
+      
+      <template v-slot:modal-ok>{{$t('close')}}</template>
+    </b-modal>
   </div>
 </template>
 <script type="text/javascript">
@@ -177,8 +189,13 @@ export default {
         });
     },
     markTest() {
-      this.$store.commit('report/lockQuiz')
-      this.$bvModal.show('Completed')
+      if(this.allDone){
+        this.$store.commit('plan/lockQuiz');
+        this.$bvModal.show('Completed');
+      }
+      else{
+        this.$bvModal.show('missingQuestions');
+      }
     },
     checkPercentage() {
       var count = 0;
@@ -242,6 +259,15 @@ export default {
       get() { 
         return this.$store.state.currentPlaying.chosenScenario;
       }
+    },
+    unansweredQuestions(){
+      var unanswered = [];
+      for (var i = 0; i < this.numQuestions; i++){
+        if(!this.answerScore[i]){
+          unanswered.push(i+1);
+        }
+      }
+      return unanswered;
     }
   },
   watch: {
@@ -339,6 +365,7 @@ export default {
   "testComplete": "Test Completed",
   "tryAgain": "Try Again",
   "scoreIs": "Your final score is",
+  "unanswered":"Unanswered Question(s)",
   "questionNav": "Question Navigation",
   "Questions": {
   "q1": {
@@ -498,6 +525,7 @@ export default {
       "testComplete": "Examen complété",
       "tryAgain": "Essayer de nouveau",
       "scoreIs": "Votre note finale est de",
+      "unanswered":"Question(s) non-répondue(s)",
       "questionNav": "Navigation Questions",
       "Questions": {
       "q1": {

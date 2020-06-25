@@ -142,7 +142,7 @@ export default {
     this.setCheckPosition();
     
     this.$root.$on('bv::collapse::state', (collapseId, isJustShown) => {
-      if(collapseId == "toolbox-1" && isJustShown){
+      if((collapseId == "toolbox-1" || collapseId == "filesbox") && isJustShown){
         this.setCheckPosition();
       }
     });

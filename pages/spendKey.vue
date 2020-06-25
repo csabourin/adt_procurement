@@ -53,17 +53,19 @@
       </b-row>
       <b-row>
         <b-col>
-          <br>
-          <hr>
-          <h3>{{$t('fileSet')}}</h3>
-          <b-row style="margin-top: 30px;">
-            <b-col cols="3" lg="2" class="text-center">
-              <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
-            </b-col>
-            <b-col cols="3" lg="2" class="text-center">
-              <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-            </b-col>
-          </b-row>
+          <keyMessagesFiles>
+            <template v-slot:title>{{$t('fileSet')}}</template>
+            <template v-slot:content>
+              <b-row>
+                <b-col cols="3" lg="2" class="text-center">
+                  <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
+                </b-col>
+                <b-col cols="3" lg="2" class="text-center">
+                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                </b-col>
+              </b-row>
+            </template>
+          </keyMessagesFiles>
         </b-col>
       </b-row>
       <b-row>
@@ -97,11 +99,13 @@ var seenKey
 import download from "~/components/fileDownload"
 import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 import microlearning from "~/components/microlearning"
+import keyMessagesFiles from "~/components/keyMessagesFiles"
 export default {
   components: {
     microlearning,
     download,
-    HTMLJobaidLink
+    HTMLJobaidLink,
+    keyMessagesFiles
   },
   computed:{
     chosenScenario: {
@@ -126,15 +130,11 @@ export default {
   "en":
   {
   "keyPlanQuote": "Accountability breeds response-ability",
-  "fileSet": "Files in this section",
-  "downloadPlan": "Download a Word template of the work plan",
   "spendSectionBar": "SPEND"
   },
   "fr":
   {
   "keyPlanQuote": "La responsabilité engendre l’habileté.",
-  "fileSet": "Fichiers dans cette section",
-  "downloadPlan": "Télécharger un modèle Word du plan de travail",
   "spendSectionBar": "DÉPENSES"
   }
   }</i18n>

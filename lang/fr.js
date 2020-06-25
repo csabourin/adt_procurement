@@ -33,6 +33,7 @@ export default {
   KeyMessagesPlan: "<span class='v-inv'>Planification&nbsp;: </span>Messages clés",
   KeyMessagesSpend: "<span class='v-inv'>Dépenses&nbsp;: </span>Messages clés",
   KeyMessagesReport: "<span class='v-inv'>Rapports&nbsp;: </span>Messages clés",
+  fileSet: "Fichiers utilisés dans cette section",
   BuildWorkPlan: "Élaborer un plan de travail",
   CreateBudget: "Créer un budget",
   InitiateAuthorizeSpending: "Engager et autoriser des dépenses (art.&nbsp;32)",

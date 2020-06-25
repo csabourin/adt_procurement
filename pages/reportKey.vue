@@ -72,20 +72,22 @@
       </b-row>
       <b-row>
         <b-col>
-          <br>
-          <hr>
-          <h3>{{$t('fileSet')}}</h3>
-          <b-row style="margin-top: 30px;">
-            <b-col cols="3" lg="2" class="text-center">
-              <download :texts="$t('FSRRoadmap')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
-            </b-col>
-            <b-col cols="3" lg="2" class="text-center">
-              <download :texts="$t('prepareFSR')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
-            </b-col>
-            <b-col cols="3" lg="2" class="text-center">
-              <download :texts="$t('extReports')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '138' : '124'" name="extReports" />
-            </b-col>
-         </b-row>
+          <keyMessagesFiles>
+            <template v-slot:title>{{$t('fileSet')}}</template>
+            <template v-slot:content>
+              <b-row>
+                <b-col cols="3" lg="2" class="text-center">
+                  <download :texts="$t('FSRRoadmap')" size=128 iconColor="reportBackground" :fileSize="$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
+                </b-col>
+                <b-col cols="3" lg="2" class="text-center">
+                  <download :texts="$t('prepareFSR')" size=128 iconColor="reportBackground" :fileSize="$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
+                </b-col>
+                <b-col cols="3" lg="2" class="text-center">
+                  <download :texts="$t('extReports')" size=128 iconColor="reportBackground" :fileSize="$i18n.locale == 'en' ? '138' : '124'" name="extReports" />
+                </b-col>
+             </b-row>
+            </template>
+          </keyMessagesFiles>
         </b-col>
       </b-row>
       <b-row>
@@ -118,11 +120,13 @@
 import download from "~/components/fileDownload"
 import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 import microlearning from "~/components/microlearning"
+  import keyMessagesFiles from "~/components/keyMessagesFiles"
 export default {
   components: {
     microlearning,
     download,
-    HTMLJobaidLink
+    HTMLJobaidLink,
+    keyMessagesFiles
   },
   computed:{
     chosenScenario: {
@@ -147,15 +151,11 @@ export default {
   "en":
   {
   "keyPlanQuote": " Reports should tell the public the story of our performance. ",
-  "fileSet": "Files in this section",
-  "downloadPlan": "Download a Word template of the work plan",
   "reportSectionBar": "SPEND"
   },
   "fr":
   {
   "keyPlanQuote": " Les rapports devraient faire part de notre performance au public.",
-  "fileSet": "Fichiers dans cette section",
-  "downloadPlan": "Télécharger un modèle Word du plan de travail",
   "reportSectionBar": "DÉPENSES"
   }
   }</i18n>

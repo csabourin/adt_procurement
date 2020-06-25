@@ -48,7 +48,7 @@ export default {
   TestReport: "<span class='v-inv'>Report: </span>Test",
   MarkCompleted: "Mark as completed",
   
-  chooseScenario: "Choose you scenario",
+  chooseScenarioLabel: "Choose you scenario",
   takeCourse: "I want to take the course",
   refresh: "I want to refresh my knowledge",
   justExam: "I just want to take the exam",

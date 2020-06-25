@@ -50,7 +50,7 @@ export default {
   downloadPlan: "Télécharger un modèle Word du plan de travail",
   download360: "Télécharger l'aperçu 360",
   
-  chooseScenario: "Choisissez votre scénario",
+  chooseScenarioLabel: "Choisissez votre scénario",
   takeCourse: "Je veux prendre le cours",
   refresh: "Je veux rafraîchir mes connaissances",
   justExam: "Je veux seulement prendre le test",

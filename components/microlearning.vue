@@ -3,11 +3,8 @@
     <nuxt-link :to="localePath(path)">
       <div :class="highlighted ? ['highlighted', 'box'] : 'box'" :style="boxSize" style="color:#212529">
         <div class="timeEstimate" :style="size < 150 ? 'font-size: 13px;' : ''">
-          <span v-if="time" style="font-weight: 700;">&nbsp; {{$t('about')}} {{time}} Minutes 
-            <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span>
-            <span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span>
-          </span><br />
-          <span>&nbsp; {{typeText}}</span>
+          <span v-html="text" />
+          
         </div>
         <transition name="highlight-fade">
           <div class="grey hide" v-show="!highlighted && chosenScenario != 'takeCourse' && !noGrey"></div>
@@ -18,7 +15,11 @@
         <div class="completed" :style="completionBar" :data-percent="completionBar.width" v-if="completion > 0"></div>
       </div>
       <p class="text-left" :style="'width:'+size+'px'">
-        <span v-html="text" />
+        <span v-if="time">{{$t('about')}} {{time}} Minutes 
+            <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span>
+            <span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span>
+          </span><br />
+          <span>{{typeText}}</span>
       </p>
       <p v-if="highlighted" class="v-inv">{{$t('highlighted')}}</p>
       <div v-if="youAreHere" class="floatOver"><img :alt="$t('youAreHere')" :src="require('~/assets/YouAreHere.svg')"></div>
@@ -226,6 +227,8 @@ a:focus {
   font-size: 14px;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 5px;
+  line-height: 1em;
 }
   
   .box.highlighted{

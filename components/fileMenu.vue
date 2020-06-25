@@ -13,7 +13,7 @@
       <div role="tablist">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.toolbox-1 class="fileHead" variant="light"><img src="~/assets/FilesIcon.svg" width="50" height="50">{{$t('files')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-1 class="fileHead" variant="light"><img src="~/assets/FilesIcon.svg" width="50" height="50"> {{$t('files')}}</b-button>
           </b-card-header>
           <b-collapse id="toolbox-1" accordion="my-toolbox" role="tabpanel">
             <b-card-body>

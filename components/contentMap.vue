@@ -3,6 +3,11 @@
     <transition appear mode="out-in" name="fade">
       <div>
         <div v-show="currentState">
+          <menu style="list-style: none; margin-top: 30px;">
+            <li role="menuitem">
+              <nuxt-link :to="localePath('index')" v-html="$t('homePage')" />
+            </li>
+          </menu>
           <span ref="item"><h2 class="colorBar1">{{$t('plan')}}</h2></span>    
           <menu style="list-style: none">
             <li role="menuitem">
@@ -136,19 +141,19 @@
       },
       findModule(page){
         var module = "home";
-        var menu1Links = this.$el.querySelectorAll("menu")[0].querySelectorAll("a")
+        var menu1Links = this.$el.querySelectorAll("menu")[1].querySelectorAll("a")
         for(var n = 0; n < menu1Links.length; n++){
           if(page.path == menu1Links[n].getAttribute("href")){
             module = "plan";
           }
         }
-        var menu2Links = this.$el.querySelectorAll("menu")[1].querySelectorAll("a")
+        var menu2Links = this.$el.querySelectorAll("menu")[2].querySelectorAll("a")
         for(var o = 0; o < menu2Links.length; o++){
           if(page.path == menu2Links[o].getAttribute("href")){
             module = "spend";
           }
         }
-        var menu3Links = this.$el.querySelectorAll("menu")[2].querySelectorAll("a")
+        var menu3Links = this.$el.querySelectorAll("menu")[3].querySelectorAll("a")
         for(var p = 0; p < menu3Links.length; p++){
           if(page.path == menu3Links[p].getAttribute("href")){
             module = "report";
@@ -234,9 +239,10 @@
   border-left-width:4px;
   padding:4px 16px 4px 15px;
 }
-.contentMap menu:nth-of-type(1) a.nuxt-link-exact-active {border-left-color:#587C84;}
-.contentMap menu:nth-of-type(2) a.nuxt-link-exact-active {border-left-color:#7D677D;}
-.contentMap menu:nth-of-type(3) a.nuxt-link-exact-active {border-left-color:#865F56;}
+.contentMap menu:nth-of-type(1) a.nuxt-link-exact-active {border-left-color:#7384A6;}
+.contentMap menu:nth-of-type(2) a.nuxt-link-exact-active {border-left-color:#587C84;}
+.contentMap menu:nth-of-type(3) a.nuxt-link-exact-active {border-left-color:#7D677D;}
+.contentMap menu:nth-of-type(4) a.nuxt-link-exact-active {border-left-color:#865F56;}
 
 .contentMap menu {
     padding:0;

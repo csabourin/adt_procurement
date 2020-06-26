@@ -181,4 +181,5 @@ export default {
   congratulations:"<h3>Félicitations!</h3><p>Vous avez réussi ce cours.</p><p>Quittez le cours en fermant cette fenêtre.</p>",
   courseComplete:"Cours complété",
   close: "Fermer",
+  continueButton: "Continuer"
 }

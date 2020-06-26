@@ -119,6 +119,7 @@ export default {
       byFrame: 0,
       justSeeked: false,
       Captions: "",
+      changeButton: false,
       
       popups: {
         buildWP: {
@@ -361,15 +362,23 @@ export default {
       this.$bvModal.show(this.modalArray[i])
     },
     showModal(i) {
-
+      this.accessiblePopup = false;
       if (!this.$refs.videoplayer.paused) {
         this.$refs.videoplayer.pause()
         if (this.startTime[i + 1]) {
           this.$refs.videoplayer.currentTime = this.startTime[i + 1]
         }
-        this.$bvModal.show(this.modalArray[i])
+        
+        this.$root.$on('bv::modal::shown', (bvEvent, modalId) => {
+          if(modalId == this.modalArray[i] && this.changeButton){
+            document.getElementById(this.modalArray[i]).querySelector(".btn").innerHTML = this.$i18n.t('continueButton');
+            this.changeButton = false;
+          }
+        });
+        
+        this.changeButton = true;
+        this.$bvModal.show(this.modalArray[i]);
       }
-
     },
     seek(e) {
       const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;

@@ -14,7 +14,7 @@
             </figcaption>
           </transition>
           <div ref="video-controls" class="controls" data-state="hidden">
-            <progress tabindex="0" @click="setTime" ref="progress" :title="Math.ceil(PlayTime)+'%'" :value="PlayTime" min="0" max="100" @keyup.arrow-left="goBackwards" @keyup.arrow-right="goForward">
+            <progress tabindex="0" @click="setTime" ref="progress" @mousemove="changeTime" @mouseover="changeTime" :title="mousePosition|formatTime" :value="PlayTime" min="0" max="100" @keyup.arrow-left="goBackwards" @keyup.arrow-right="goForward">
               <span class="progress" ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
             <button class="videoControls" ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
@@ -96,30 +96,30 @@ export default {
   },
   data() {
     return {
-      debugging: false,
-      setVolume: this.$store.state.currentPlaying.volume,
-      oldVolume: this.$store.state.currentPlaying.volume,
-      isMuted: false,
-      isPaused: true,
-      ready: false,
-      canPlay: false,
-      PlayTime: 0,
-      playToPercent: 0,
-      totalTime: 0,
-      CCactive: false,
-      posterUrl: require('~/assets/' + this.$i18n.locale + '/' + this.posterFile),
-      currentFrame: 0,
       accessiblePopup: false,
-      startTime: [],
+      byFrame: 0,
+      canPlay: false,
+      Captions: "",
+      CCactive: false,
+      currentFrame: 0,
+      debugging: false,
       endTime: [],
       hasPlayed: {},
-      navBarTracks: [],
+      isMuted: false,
+      isPaused: true,
       isPlayingNow: 0,
       isPlayingSoon: 0,
-      byFrame: 0,
       justSeeked: false,
-      Captions: "",
-      
+      mousePosition:0,
+      navBarTracks: [],
+      oldVolume: this.$store.state.currentPlaying.volume,
+      PlayTime: 0,
+      playToPercent: 0,
+      posterUrl: require('~/assets/' + this.$i18n.locale + '/' + this.posterFile),
+      ready: false,
+      setVolume: this.$store.state.currentPlaying.volume,
+      startTime: [],
+      totalTime: 0,
       popups: {
         buildWP: {
           references: [1],
@@ -474,6 +474,13 @@ export default {
         }
       }
       return false;
+    },
+    changeTime(e){
+      let rect = e.target.getBoundingClientRect()
+      let rectSize=rect.right-rect.left
+      let mousePos=e.clientX-rect.left
+      let toPercent=mousePos/rectSize*this.totalTime
+      this.mousePosition=toPercent
     }
   }
 }

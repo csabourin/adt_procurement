@@ -4,7 +4,8 @@
     <b-container>
       <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible fade>
         <div v-if="$i18n.locale=='en'">
-          <p><strong>NOTE:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
+          <h3>Instructions</h3>
+          <p><strong>Note:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
           <p>For some of the questions in this test, you play the role of a manager of a call center. You will be given scenarios based on this situation.&nbsp;</p>
           <!-- <p>As per Treasury Board requirements, passing the test for this course is mandatory before you can exercise financial delegation.&nbsp;</p> -->
           <p>There are three sections to the test - one for each phase: Plan, Spend and Report<!-- planning, spending and reporting -->.</p>
@@ -13,7 +14,8 @@
           <p>You can access course materials during the test and you can take it as many times as you need.</p>
         </div>
         <div v-if="$i18n.locale=='fr'">
-          <p><strong>NOTE :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons à compléter les tests pour planifier, dépenser et faire un rapport et nous vous invitons à nous faire part de vos commentaires sur les questions et les fonctionnalités. Vos commentaires nous aideront à rendre le tout plus efficace.</p>
+          <h3>Instructions</h3>
+          <p><strong>Note :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons à compléter les tests pour planifier, dépenser et faire un rapport et nous vous invitons à nous faire part de vos commentaires sur les questions et les fonctionnalités. Vos commentaires nous aideront à rendre le tout plus efficace.</p>
           <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d’un responsable de centre d’appels. Des scénarios basés sur cette situation vous seront proposés.</p>
           <!-- <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> -->
           <p>Le test comporte trois parties - une à la fin de chaque phase - planification, dépenses et rapports.&nbsp;</p>
@@ -393,6 +395,14 @@ export default {
 .filled.Qactive {
   background-color: #B3C295
 }
+  
+  .alert{
+    padding-top: 1.5rem;
+  }
+  
+  .alert h3{
+    font-size: 22px;
+  }
 
 </style>
 <i18n>{

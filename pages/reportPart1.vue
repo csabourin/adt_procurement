@@ -2,22 +2,32 @@
   <div>
     <h2 class="pageTitle" v-html="$t('ConductPeriodicVarianceReporting')" />
     <section>
-      <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_qgu8jn1b/flavorId/0_a3zbiwxm/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_wjg0b6iw/flavorId/0_20jqf1w0/name/a.mp4" chapters chapterFile="ReportPart1.vtt" ccFile="ReportPart1_captions.vtt" posterFile="reportPart1_poster.png" :restartAt="parseInt(thatPoint)" toResume="setReportPart1" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
-      <div role="tablist" class="transcriptionBox">
-        <b-card no-body class="mb-1">
-          <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.cbTranscript-1 variant="light">{{$t('transcript')}}</b-button>
-          </b-card-header>
-          <b-collapse id="cbTranscript-1" role="tabpanel">
-            <b-card-body>
-              <b-card-text>
-                <span v-if="$i18n.locale=='en'">Transcripts here</span>
-                <span v-if="$i18n.locale=='fr'">Transcription ici</span>
-              </b-card-text>
-            </b-card-body>
-          </b-collapse>
-        </b-card>
-      </div>
+      <b-row>
+        <b-col>
+          <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_qgu8jn1b/flavorId/0_a3zbiwxm/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_wjg0b6iw/flavorId/0_20jqf1w0/name/a.mp4" chapters chapterFile="ReportPart1.vtt" ccFile="ReportPart1_captions.vtt" posterFile="reportPart1_poster.png" :restartAt="parseInt(thatPoint)" toResume="setReportPart1" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
+        </b-col>
+      </b-row>
+      <b-container>
+        <b-row>
+          <b-col>
+            <div role="tablist" class="transcriptionBox">
+              <b-card no-body class="mb-1">
+                <b-card-header header-tag="header" class="p-1" role="tab">
+                  <b-button block href="#" v-b-toggle.cbTranscript-1 variant="light">{{$t('transcript')}}</b-button>
+                </b-card-header>
+                <b-collapse id="cbTranscript-1" role="tabpanel">
+                  <b-card-body>
+                    <b-card-text>
+                      <span v-if="$i18n.locale=='en'">Transcripts here</span>
+                      <span v-if="$i18n.locale=='fr'">Transcription ici</span>
+                    </b-card-text>
+                  </b-card-body>
+                </b-collapse>
+              </b-card>
+            </div>
+          </b-col>
+        </b-row>
+      </b-container>
     </section>
     <div>
       <b-modal no-stacking id="whatIsFSR" @hide="resumePlay()" size="xl" okOnly>

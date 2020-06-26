@@ -514,7 +514,7 @@ img {
 }
 
 .transcriptionBox {
-  width: 60vw;
+  width: 100%;
   margin: auto;
 }
 

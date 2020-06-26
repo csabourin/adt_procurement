@@ -2,7 +2,7 @@
   <div>
     <h2 class="pageTitle">{{$t('Test')}}</h2>
     <b-container>
-      <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible fade>
+      <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible fade :dismiss-label="$t('dismiss')">
         <div v-if="$i18n.locale=='en'">
           <h3>Instructions</h3>
           <p><strong>Note:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
@@ -422,7 +422,8 @@ export default {
 </style>
 <i18n>{
   "en": {
-  "warnReset":"This will erase your answer and score for this test, are you certain?",
+    "dismiss": "Dismiss",
+    "warnReset":"This will erase your answer and score for this test, are you certain?",
     "Answered": "Answered",
     "markTest": "Mark my test",
     "testComplete": "Test Completed",
@@ -728,7 +729,8 @@ export default {
     }
   },
   "fr": {
-  "warnReset":"Ceci effacera vos réponses et les résultats de ce test. Voulez-vous continer?",
+    "dismiss": "Faire disparaître",
+    "warnReset":"Ceci effacera vos réponses et les résultats de ce test. Voulez-vous continer?",
     "Answered": "Répondue",
     "markTest": "Grader mon examen",
     "testComplete": "Examen complété",

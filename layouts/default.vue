@@ -1057,6 +1057,17 @@ img {
   .modal-header h3.h5{
     line-height: 28px;
   }
+  
+  
+  .alert.alert-info button.close{
+    color: black!important;
+    opacity: 1;
+    font-size: 30px;
+  }
+  
+  .alert.alert-info button.close:hover, .alert.alert-info button.close:focus{
+    opacity: 0.6
+  }
 
 
 a:hover,

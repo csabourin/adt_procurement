@@ -2,33 +2,38 @@
   <div>
     <h2 class="pageTitle">{{$t('Test')}}</h2>
     <b-container>
-      <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible fade :dismiss-label="$t('dismiss')">
-        <div v-if="$i18n.locale=='en'">
-          <h3>Instructions</h3>
-          <p><strong>Note:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
-          <p>For some of the questions in this test, you play the role of a manager of a call center. You will be given scenarios based on this situation.&nbsp;</p>
-          <!-- <p>As per Treasury Board requirements, passing the test for this course is mandatory before you can exercise financial delegation.&nbsp;</p> -->
-          <p>There are three sections to the test - one for each phase: Plan, Spend and Report<!-- planning, spending and reporting -->.</p>
-          <p>The passing grade is 80% for each of these sections.</p>
-          <p>Each section should take you around 15 to 20 minutes to complete.&nbsp;</p>
-          <p>You can access course materials during the test and you can take it as many times as you need.</p>
-        </div>
-        <div v-if="$i18n.locale=='fr'">
-          <h3>Instructions</h3>
-          <p><strong>Note :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons à compléter les tests pour planifier, dépenser et faire un rapport et nous vous invitons à nous faire part de vos commentaires sur les questions et les fonctionnalités.&nbsp; Vos commentaires nous aideront à rendre le tout plus efficace.</p>
-          <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d’un responsable de centre d’appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
-          <!-- <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> -->
-          <p>Le test comporte trois parties - une à la fin de chaque phase - planification, dépenses et rapports.&nbsp;</p>
-          <p>La note de passage est de 80%, par partie.&nbsp;</p>
-          <p>Chaque partie devrait vous prendre environ 15-20 minutes.&nbsp;</p>
-          <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p>
-        </div>
-      </b-alert>
-      <p v-if="AlertIsDismissed"><b-button @click="AlertIsDismissed=false">{{$t('ShowInstructions')}}</b-button></p>
-      <p>Question {{tabIndex+1}} / {{numQuestions}}</p>
-      <!--<div class="progressBar">
-        <a href="#" @click.prevent="tabIndex=index" :title="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-for="(square,index) in numQuestions" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-html="index+1" />
-      </div>-->
+      <b-row>
+        <b-col class="col-12">
+          <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible fade :dismiss-label="$t('dismiss')">
+            <div v-if="$i18n.locale=='en'">
+              <h3>Instructions</h3>
+              <p><strong>Note:</strong> This course and the final tests are currently in draft mode and will not officially count towards mandatory training requirements during this phase. We invite you to complete the tests for plan, spend and report and we welcome your feedback on the questions and functionality.&nbsp; Your input will help to make this more effective.</p>
+              <p>For some of the questions in this test, you play the role of a manager of a call center. You will be given scenarios based on this situation.&nbsp;</p>
+              <!-- <p>As per Treasury Board requirements, passing the test for this course is mandatory before you can exercise financial delegation.&nbsp;</p> -->
+              <p>There are three sections to the test - one for each phase: Plan, Spend and Report<!-- planning, spending and reporting -->.</p>
+              <p>The passing grade is 80% for each of these sections.</p>
+              <p>Each section should take you around 15 to 20 minutes to complete.&nbsp;</p>
+              <p>You can access course materials during the test and you can take it as many times as you need.</p>
+            </div>
+            <div v-if="$i18n.locale=='fr'">
+              <h3>Instructions</h3>
+              <p><strong>Note :</strong> Ce cours et les tests finaux sont actuellement en mode brouillon et ne compteront pas officiellement dans les exigences de formation obligatoire pendant cette phase. Nous vous invitons à compléter les tests pour planifier, dépenser et faire un rapport et nous vous invitons à nous faire part de vos commentaires sur les questions et les fonctionnalités.&nbsp; Vos commentaires nous aideront à rendre le tout plus efficace.</p>
+              <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d’un responsable de centre d’appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
+              <!-- <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p> -->
+              <p>Le test comporte trois parties - une à la fin de chaque phase - planification, dépenses et rapports.&nbsp;</p>
+              <p>La note de passage est de 80%, par partie.&nbsp;</p>
+              <p>Chaque partie devrait vous prendre environ 15-20 minutes.&nbsp;</p>
+              <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p>
+            </div>
+          </b-alert>
+          <!--<p v-if="AlertIsDismissed"><b-button @click="AlertIsDismissed=false">{{$t('ShowInstructions')}}</b-button></p>-->
+          <p v-if="AlertIsDismissed"><button @click="AlertIsDismissed=false" class="instructionsBtn" v-b-tooltip.right.hover.focus :title="$t('ShowInstructions')"><span class="v-inv">{{$t('ShowInstructions')}}</span></button></p>
+          <p>Question {{tabIndex+1}} / {{numQuestions}}</p>
+          <!--<div class="progressBar">
+            <a href="#" @click.prevent="tabIndex=index" :title="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-for="(square,index) in numQuestions" :class="['square',{'filled':answerScore[index],'Qactive':tabIndex==index}]" :aria-label="'Question '+parseInt(square) +((answerScore[index])? ': '+$t('Answered'):'')" v-html="index+1" />
+          </div>-->
+        </b-col>
+      </b-row>
       <b-row>
         <b-col class="col-12">
           <b-card no-body>
@@ -158,17 +163,21 @@
           </b-card>
         </b-col>
       </b-row>
+      <b-row>
+        <b-col>
+          <!-- Control buttons-->
+          <div class="text-center">
+            <b-button-group class="mt-2" :aria-label="$t('questionNav')">
+              <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+              <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
+            </b-button-group>
+          </div>
+            <transition name="fade">
+            <p><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
+          </transition>
+        </b-col>
+      </b-row>
     </b-container>
-    <!-- Control buttons-->
-    <div class="text-center">
-      <b-button-group class="mt-2" :aria-label="$t('questionNav')">
-        <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-        <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
-      </b-button-group>
-    </div>
-      <transition name="fade">
-      <p><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
-    </transition>
     
     <div class="bottomNav generalSection" v-if="chosenScenario == 'justExam'">
       <div class="generalSectionBar"><span>{{$t('justExamShort')}}</span></div>
@@ -417,6 +426,21 @@ export default {
   
   .alert h3{
     font-size: 22px;
+  }
+  
+  .instructionsBtn{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url('~assets/instructionsIcon.svg') center center no-repeat;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  .instructionsBtn:hover, .instructionsBtn:focus{
+    opacity: 0.8;
+    outline: none;
   }
 
 </style>

@@ -514,7 +514,7 @@ img {
 }
 
 .transcriptionBox {
-  width: 60vw;
+  width: 100%;
   margin: auto;
 }
 
@@ -522,17 +522,17 @@ img {
   text-align: left;
 }
 
-.planSection .timeEstimate {
+.planSection .inside {
   background-color: #587C84;
 }
 
 
-.spendSection .timeEstimate {
+.spendSection .inside {
   background-color: #7d677d;
 }
 
 
-.reportSection .timeEstimate {
+.reportSection .inside {
   background-color: #865F56;
 }
 
@@ -625,13 +625,13 @@ img {
     text-transform: uppercase;
   }
   
-  .generalSection .plan .timeEstimate{
+  .generalSection .plan .inside{
     background-color: #587C84;
   }
-  .generalSection .spend .timeEstimate{
+  .generalSection .spend .inside{
     background-color: #7d677d;
   }
-  .generalSection .report .timeEstimate{
+  .generalSection .report .inside{
     background-color: #865F56;
   }
   
@@ -1056,6 +1056,17 @@ img {
   
   .modal-header h3.h5{
     line-height: 28px;
+  }
+  
+  
+  .alert.alert-info button.close{
+    color: black!important;
+    opacity: 1;
+    font-size: 30px;
+  }
+  
+  .alert.alert-info button.close:hover, .alert.alert-info button.close:focus{
+    opacity: 0.6
   }
 
 

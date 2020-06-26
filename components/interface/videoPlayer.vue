@@ -43,29 +43,38 @@
         </figure>
       </b-col>
     </b-row>
-    <ul v-if="chapters" class="bar" ref="linkBar">
-      <li v-for="(item,index) in navBarTracks" :class="['chaptersLink '+ isItPlaying(index),$store.state.currentPlaying.currentModule]">
-        <p>{{ item }}</p><br>
-        
-        <!-- Play button -->
-        <a :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
-        
-        <!-- If the popup is a quiz -->
-        <button v-if="modalArray[index] && isInArray(index, currentPageQuiz)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpQuiz')"><img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="48" height="48"></button>
-        
-        <!-- If the popup is a reference -->
-        <button v-else-if="modalArray[index] && isInArray(index, currentPageReferences)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpReference') + ' - ' + navBarTracks[index]"><img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="48" height="48"></button>
-        
-        <!-- If the popup is an info -->
-        <button v-else-if="modalArray[index] && isInArray(index, currentPageInfos)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpInfo') + ' - ' + navBarTracks[index]"><img src="~/assets/InfoIcon.svg" :alt="$t('infoIcon')" width="48" height="48"></button>
-        
-        <!-- If the popup is an activity -->
-        <button v-else-if="modalArray[index]" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
-        
-        <!-- Continue to next page button -->
-        <nuxt-link v-else :to="nextPage" class="playButton"><img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" width="48" height="48" :title="$t('continue')"><span class="v-inv">{{$t('continue')}}</span></nuxt-link>
-      </li>
-    </ul>
+    <b-row>
+      <b-col>
+        <h3 v-if="chapters">{{$t('segmentsTitle')}}</h3>
+        </b-col>
+    </b-row>
+    <b-row align-h="center">
+      <b-col>
+        <ul v-if="chapters" class="bar" ref="linkBar">
+          <li v-for="(item,index) in navBarTracks" :class="['chaptersLink '+ isItPlaying(index),$store.state.currentPlaying.currentModule]">
+            <p>{{ item }}</p><br>
+
+            <!-- Play button -->
+            <a :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
+
+            <!-- If the popup is a quiz -->
+            <button v-if="modalArray[index] && isInArray(index, currentPageQuiz)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpQuiz')"><img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="48" height="48"></button>
+
+            <!-- If the popup is a reference -->
+            <button v-else-if="modalArray[index] && isInArray(index, currentPageReferences)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpReference') + ' - ' + navBarTracks[index]"><img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="48" height="48"></button>
+
+            <!-- If the popup is an info -->
+            <button v-else-if="modalArray[index] && isInArray(index, currentPageInfos)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpInfo') + ' - ' + navBarTracks[index]"><img src="~/assets/InfoIcon.svg" :alt="$t('infoIcon')" width="48" height="48"></button>
+
+            <!-- If the popup is an activity -->
+            <button v-else-if="modalArray[index]" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
+
+            <!-- Continue to next page button -->
+            <nuxt-link v-else :to="nextPage" class="playButton"><img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" width="48" height="48" :title="$t('continue')"><span class="v-inv">{{$t('continue')}}</span></nuxt-link>
+          </li>
+        </ul>
+      </b-col>
+    </b-row>
     <!-- Used for troublehooting video set debugging to true in data-->
     <div v-if="debugging">
       <span>currentFrame :{{currentFrame}}</span><br><span>startTime : {{startTime}}</span><br>
@@ -120,6 +129,8 @@ export default {
       setVolume: this.$store.state.currentPlaying.volume,
       startTime: [],
       totalTime: 0,
+      Captions: "",
+      changeButton: false,
       popups: {
         buildWP: {
           references: [1],
@@ -361,15 +372,23 @@ export default {
       this.$bvModal.show(this.modalArray[i])
     },
     showModal(i) {
-
+      this.accessiblePopup = false;
       if (!this.$refs.videoplayer.paused) {
         this.$refs.videoplayer.pause()
         if (this.startTime[i + 1]) {
           this.$refs.videoplayer.currentTime = this.startTime[i + 1]
         }
-        this.$bvModal.show(this.modalArray[i])
+        
+        this.$root.$on('bv::modal::shown', (bvEvent, modalId) => {
+          if(modalId == this.modalArray[i] && this.changeButton){
+            document.getElementById(this.modalArray[i]).querySelector(".btn").innerHTML = this.$i18n.t('continueButton');
+            this.changeButton = false;
+          }
+        });
+        
+        this.changeButton = true;
+        this.$bvModal.show(this.modalArray[i]);
       }
-
     },
     seek(e) {
       const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
@@ -505,7 +524,8 @@ export default {
   "jumpQuiz":"Jump to quiz",
   "playSegment":"Play video segment",
   "continue":"Continue to next section",
-  "sr_transcriptlocation":"The transcript can be found after the chapters list."
+  "sr_transcriptlocation":"The transcript can be found after the chapters list.",
+  "segmentsTitle": "Video Segments"
   },
   "fr":{
   "play":"Jouer",
@@ -524,7 +544,8 @@ export default {
   "jumpQuiz":"Sauter au quiz",
   "playSegment":"Faire jouer le segment vidéo",
   "continue":"Continuer à la section suivante",
-  "sr_transcriptlocation":"Le transcript peut être trouvé après la liste des chapitres."
+  "sr_transcriptlocation":"Le transcript peut être trouvé après la liste des chapitres.",
+  "segmentsTitle": "Segments vidéo"
   }
   }
 </i18n>
@@ -545,19 +566,48 @@ video {
   margin-top: 3px;
 }
 
-.bar {
-  counter-reset: WPepisode;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  position: relative;
-  color: #CCC;
-  justify-content: flex-start
-}
+  .bar {
+    counter-reset: WPepisode;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    position: relative;
+    color: #CCC;
+    justify-content: flex-start;
+    padding: 0;
+    margin-left: -0.5%;
+    margin-right: -0.5%;
+  }
 
-.bar>li {
-  list-style-type: none;
-}
+  .bar>li {
+    list-style-type: none;
+    flex: 0 0 19%;
+  }
+  
+  @media (max-width: 1400px){
+    .bar>li {
+      flex: 0 0 24%;
+    }
+  }
+  
+  @media (max-width: 1200px){
+    .bar>li {
+      flex: 0 0 32.3333333333%;
+    }
+  }
+  
+  @media (max-width: 992px){
+    .bar>li {
+      flex: 0 0 49%;
+    }
+  }
+  
+  @media (max-width: 650px){
+    .bar>li {
+      flex: 0 0 99%;
+    }
+  }
+  
 
 .bar>li>p {
   display: inline-block;
@@ -568,7 +618,7 @@ video {
   position: relative;
   align-content: flex-start;
   text-align: center;
-  width: 200px;
+  /*width: 200px;*/
   height: 171px;
   overflow: hidden;
   padding: 1.8em 1.5em;
@@ -579,7 +629,7 @@ video {
   background-size: cover;
   border-radius: 2px;
   border: 1px solid #c3bfb6;
-  margin: 5px 5px 10px;
+  margin: 0 0.5% 10px 0.5%;
   font-weight: bolder;
 }
 

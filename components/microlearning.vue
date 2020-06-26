@@ -2,9 +2,8 @@
   <div class="learningElement">
     <nuxt-link :to="localePath(path)">
       <div :class="highlighted ? ['highlighted', 'box'] : 'box'" :style="boxSize" style="color:#212529">
-        <div class="timeEstimate" :style="size < 150 ? 'font-size: 13px;' : ''">
+        <div class="inside" :style="size < 150 ? 'font-size: 13px;' : ''">
           <span v-html="text" />
-          
         </div>
         <transition name="highlight-fade">
           <div class="grey hide" v-show="!highlighted && chosenScenario != 'takeCourse' && !noGrey"></div>
@@ -12,9 +11,9 @@
         
         <!--<div class="grey complete" v-show="completion == '100'"></div>-->
         <font-awesome-icon icon="check" size="2x" role="presentation" class="check" v-if="completion == '100'" />
-        <div class="completed" :style="completionBar" :data-percent="completionBar.width" v-if="completion > 0"></div>
+        <div class="completed" :style="completionBar" :data-percent="completionBar.width" v-if="completion > 0 && type != 'keyMessages'"></div>
       </div>
-      <p class="text-left" :style="'width:'+size+'px'">
+      <p class="text-left under" :style="size < 150 ? 'font-size: 13px; width:'+size+'px' : 'width:'+size+'px'">
         <span v-if="time">{{$t('about')}} {{time}} Minutes 
             <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span>
             <span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span>
@@ -79,7 +78,7 @@ export default {
       });
     },
     addMargin(){
-      if (this.completion) {
+      if (this.completion && this.type != "keyMessages") {
         this.$nextTick(function() {
           var element = this.$el.querySelector(".box")
           var arr = element.className.split(" ");
@@ -155,13 +154,26 @@ export default {
 
 <style type="text/css" scoped>
   
-a {
-  color: #212529;
-}
-
-a:focus {
-  text-decoration: underline;
-}
+  a {
+    color: #212529;
+    transition: transform 0.2s;
+    display: block;
+    text-decoration: none;
+  }
+  
+  a:hover, a:focus{
+    text-decoration: none;
+    outline: none;
+  }
+  
+  a:hover{
+    transform: scale(0.98);
+  }
+  
+  a:focus{
+    transform: scale(0.95);
+  }
+  
 
 .floatOver {
   position: absolute;
@@ -215,21 +227,25 @@ a:focus {
     margin-bottom: 25px;
   }
 
-.timeEstimate {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  /*height: 3em;*/
-  color: white;
-  text-align: left;
-  /*border-radius: 0 0 15px 15px;*/
-  font-size: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  line-height: 1em;
-}
+  .inside {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*height: 3em;*/
+    color: white;
+    text-align: left;
+    /*border-radius: 0 0 15px 15px;*/
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 7px;
+    line-height: normal;
+  }
+  
+  .under{
+    font-size: 15px;
+    line-hieght: normal;
+  }
   
   .box.highlighted{
     /*border: 3px solid black;*/

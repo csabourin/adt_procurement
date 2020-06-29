@@ -55,22 +55,22 @@
             <p>{{ item }}</p><br>
 
             <!-- Play button -->
-            <a :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48" :title="$t('playSegment') + ' - ' +navBarTracks[index]"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
+            <a :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :title="$t('playSegment') + ' - ' +navBarTracks[index]" v-b-tooltip.hover.bottom="$t('playSegment')"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
 
             <!-- If the popup is a quiz -->
-            <button v-if="modalArray[index] && isInArray(index, currentPageQuiz)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpQuiz')"><img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="48" height="48"></button>
+            <button v-if="modalArray[index] && isInArray(index, currentPageQuiz)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpQuiz') + ' - ' + navBarTracks[index]" v-b-tooltip.hover.bottom="$t('jumpQuiz')"><img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="48" height="48"></button>
 
             <!-- If the popup is a reference -->
-            <button v-else-if="modalArray[index] && isInArray(index, currentPageReferences)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpReference') + ' - ' + navBarTracks[index]"><img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="48" height="48"></button>
+            <button v-else-if="modalArray[index] && isInArray(index, currentPageReferences)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpReference') + ' - ' + navBarTracks[index]" v-b-tooltip.hover.bottom="$t('jumpReference')"><img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="48" height="48"></button>
 
             <!-- If the popup is an info -->
-            <button v-else-if="modalArray[index] && isInArray(index, currentPageInfos)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpInfo') + ' - ' + navBarTracks[index]"><img src="~/assets/InfoIcon.svg" :alt="$t('infoIcon')" width="48" height="48"></button>
+            <button v-else-if="modalArray[index] && isInArray(index, currentPageInfos)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpInfo') + ' - ' + navBarTracks[index]" v-b-tooltip.hover.bottom="$t('jumpInfo')"><img src="~/assets/InfoIcon.svg" :alt="$t('infoIcon')" width="48" height="48"></button>
 
             <!-- If the popup is an activity -->
-            <button v-else-if="modalArray[index]" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
+            <button v-else-if="modalArray[index]" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' + navBarTracks[index]" v-b-tooltip.hover.bottom="$t('jumpModalPartsWP')"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
 
             <!-- Continue to next page button -->
-            <nuxt-link v-else :to="nextPage" class="playButton"><img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" width="48" height="48" :title="$t('continue')"><span class="v-inv">{{$t('continue')}}</span></nuxt-link>
+            <nuxt-link v-else :to="nextPage.link" class="playButton" :title="$t('continue') + ' - ' + nextPage.title" v-b-tooltip.hover.bottom="$t('continue')"><img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" width="48" height="48"><span class="v-inv">{{$t('continue') + ' - ' + nextPage.title}}</span></nuxt-link>
           </li>
         </ul>
       </b-col>
@@ -211,18 +211,20 @@ export default {
     },
     nextPage() {
       var links = [];
+      var titles = []
 
       var menus = document.querySelectorAll("menu");
       for (var i = 0; i < menus.length; i++) {
         var menuLinks = menus[i].querySelectorAll("a")
         for (var j = 0; j < menuLinks.length; j++) {
           links.push(menuLinks[j].getAttribute("href"));
+          titles.push(menuLinks[j].innerHTML);
         }
       }
 
       for (var k = 0; k < links.length; k++) {
         if (links[k] == this.$route.path) {
-          return links[k + 1];
+          return { title: titles[k + 1], link: links[k + 1] };
         }
       }
     },

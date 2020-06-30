@@ -54,7 +54,7 @@ export default {
   head() {
     return {
       htmlAttrs: { lang: this.$i18n.locale},
-      title: (this.$i18n.locale=="en") ? "Responsible Use of Public Funds - " + this.currentPage :"La saine gestion des fonds publics"
+      title: (this.$i18n.locale=="en") ? "Responsible Use of Public Funds - " + this.currentPage :"La saine gestion des fonds publics - " + this.currentPage
     }
   },
   data() {

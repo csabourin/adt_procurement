@@ -383,7 +383,7 @@ export default {
         
         this.$root.$on('bv::modal::shown', (bvEvent, modalId) => {
           if(modalId == this.modalArray[i] && this.changeButton){
-            document.getElementById(this.modalArray[i]).querySelector(".btn").innerHTML = this.$i18n.t('continueButton');
+            document.getElementById(this.modalArray[i]).querySelector(".modal-footer .btn").innerHTML = this.$i18n.t('continueButton');
             this.changeButton = false;
           }
         });

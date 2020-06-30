@@ -18,8 +18,69 @@
                 <b-collapse id="cbTranscript-1" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
-                      <span v-if="$i18n.locale=='en'">Transcripts here</span>
-                      <span v-if="$i18n.locale=='fr'">Transcription ici</span>
+                      <span v-if="$i18n.locale=='en'">
+                        <h2>External Government Reports</h2>
+                        <p>The Government of Canada regularly publishes reports to keep Canadians informed on its spending and on the results it achieves using public funds.</p>
+                        <p>As a manager, it's unlikely that you will be required to write these reports yourself.</p>
+                        <p>However, the work you do may be included in these reports.</p>
+                        <p>For example, you may be asked to report on how well your programs achieved their intended results.</p>
+                        <p>As such, you must continuously track your performance and results and compare them with what was planned.</p>
+                        <p>Let’s do a quick activity to get more familiar with the terminology!</p>
+                        <h2>Identify Results</h2>
+                        <p>Fiscal year-end is when reporting closes the loop on work plans within the organization, and when we present globally, the results we achieved in the Departmental Results Report.</p>
+                        <p>As the fiscal year is a cycle, last year’s results will inform planning for the next fiscal year.</p>
+                        <p>You need to demonstrate how your performance compares with what you set out in your work plan, and explain any variances.</p>
+                        <p>In most departments, your Planning or Finance section will reach out to you to request this information.</p>
+                        <p>Demonstrating your performance means showing whether you met the indicators as set out in the PIPs, the performance information profiles.</p>
+                        <p>These identify more concretely each program’s core responsibility and results to be achieved.</p>
+                        <p>Some departments review performance information profiles throughout the year to see if targets are on track or at risk of not being achieved.</p>
+                        <p>In the next activity, you will have the opportunity to practise reporting</p>
+                        <p>on whether your targets were met.</p>
+                        <h2>In Real Life</h2>
+                        <p>Let’s take what you have learned into real life.</p>
+                        <p>Look up your organization’s performance information profiles and its external reports, such as the Departmental Results Report.</p>
+                        <p>Your organization will have their own ways of doing financial situation reports, and reporting on spending and results.</p>
+                        <p>Talk to your Finance or Planning section and your director.</p>
+                        <p>Ask them:</p>
+                        <p>What do we call our financial situation reports, and what do they look like?</p>
+                        <p>Where can I find them?</p>
+                        <p>How frequently do we prepare them?</p>
+                        <p>Do we complete these reports in the financial system or in a spreadsheet?</p>
+                        <p>What is my role?</p>
+                        <p>And, what information will I provide to feed into external reports?</p>
+                        <p>Let’s try this quiz to see what you remember from the Report section.</p>
+                      </span>
+                      <span v-if="$i18n.locale=='fr'">
+                        <h2>Rapports externes du gouvernement</h2>
+                        <p>Le gouvernement du Canada publie régulièrement des rapports pour tenir les Canadiens au courant de ses dépenses et des résultats qu’il a obtenus grâce aux fonds publics.</p>
+                        <p>En tant que gestionnaire, il est peu probable que vous ayez à rédiger ces rapports vous-même.</p>
+                        <p>Cependant, le travail que vous faites peut être inclus dans ces rapports.</p>
+                        <p>Par exemple, on vous demandera peut-être d’indiquer dans quelle mesure vos programmes ont atteint les résultats visés à l’origine.</p>
+                        <p>Pour ce faire, vous devez effectuer un suivi continu de votre rendement et de vos résultats par rapport à ce qui avait été planifié.</p>
+                        <p>Voici une petite activité pour vous familiariser avec la terminologie nécessaire!</p>
+                        <h2>Démontrer les résultats</h2>
+                        <p>La fin de l’exercice financier est le moment où la production de rapports ferme la boucle des plans de travail de l’organisation et permet de présenter, de manière globale, les résultats de l’année dans le Rapport résultats ministériel.</p>
+                        <p>Comme l’exercice financier est un cycle, les résultats de l’an dernier permettront la planification de l’année qui vient.</p>
+                        <p>Vous devrez faire état de votre rendement par rapport à ce qui avait été prévu dans votre plan de travail et justifier tout écart.</p>
+                        <p>Dans la plupart des ministères, la section de la Planification ou des Finances communiquera avec vous pour vous demander ces renseignements.</p>
+                        <p>Démontrer votre rendement signifie démontrer si vous avez atteint les indicateurs établis dans le PIR - les profils de l’information sur le rendement.</p>
+                        <p>Celles-ci déterminent de façon plus concrète la responsabilité fondamentale de chaque programme et les résultats à atteindre.</p>
+                        <p>Certains ministères examinent les profils de l’information sur le rendement tout au long de l’année pour voir si les chiffres cibles sont en bonne voie d’être atteints ou s’ils risquent de ne pas l’être.</p>
+                        <p>L’activité suivante vous permettra de vous exercer à rapporter si les objectifs ont été atteints.</p>
+                        <h2>Dans la vraie vie</h2>
+                        <p>Appliquons ce que vous avez appris dans la vraie vie.</p>
+                        <p>Cherchez les profils de l’information sur le rendement de votre organisation et ses rapports externes, comme Le rapport sur les résultats ministériels.</p>
+                        <p>Votre organisation aura sa propre façon de produire des rapports sur la situation financière et de rendre compte de ses dépenses et de ses résultats.</p>
+                        <p>Parlez-en à votre section des Finances ou de la Planification et à votre directeur.</p>
+                        <p>Demandez-leur :</p>
+                        <p>Comment s’appellent nos rapports sur la situation financière et à quoi ressemblent-ils?</p>
+                        <p>À quel endroit puis-je les trouver?</p>
+                        <p>À quelle fréquence préparons-nous des rapports sur la situation financière?</p>
+                        <p>Doit-on remplir ces rapports dans le système financier ou dans un tableur?</p>
+                        <p>Quel est mon rôle?</p>
+                        <p>Et quelles informations vais-je fournir pour alimenter les rapports externes?</p>
+                        <p>Essayez ce quiz pour voir ce dont vous vous souvenez dans la section Rapport!</p>
+                      </span>
                     </b-card-text>
                   </b-card-body>
                 </b-collapse>

@@ -54,7 +54,7 @@ export default {
   head() {
     return {
       htmlAttrs: { lang: this.$i18n.locale},
-      title: (this.$i18n.locale=="en") ? "Responsible Use of Public Funds - " + this.currentPage :"La saine gestion des fonds publics - " + this.currentPage
+      title: (this.$i18n.locale=="en") ? "Responsible Use of Public Funds - " + this.currentPage : "La saine gestion des fonds publics - " + this.currentPage
     }
   },
   data() {
@@ -110,6 +110,7 @@ export default {
           var title = titles[k]
           title = title.replace("<span class=\"v-inv\">", "")
           title = title.replace("</span>", "")
+          title = title.replace("&nbsp;", " ")
           return title; 
         }
       }

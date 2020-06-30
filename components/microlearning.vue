@@ -11,14 +11,14 @@
         
         <!--<div class="grey complete" v-show="completion == '100'"></div>-->
         <font-awesome-icon icon="check" size="2x" role="presentation" class="check" v-if="completion == '100'" />
-        <div class="completed" :style="completionBar" :data-percent="completionBar.width" v-if="completion > 0 && type != 'keyMessages'"></div>
+        <div class="completed" :style="completionBar" :data-percent="completionBar.width" v-if="completion > 0 && type != 'keyMessages'" aria-hidden="true"></div>
       </div>
       <p class="text-left under" :style="size < 150 ? 'font-size: 13px; width:'+size+'px' : 'width:'+size+'px'">
         <span v-if="time">{{$t('about')}} {{time}} Minutes 
-            <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span>
-            <span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span>
-          </span><br />
-          <span>{{typeText}}</span>
+          <span class="v-inv" v-if="$i18n.locale=='en' && completion">({{completion}}% complete)</span>
+          <span class="v-inv" v-if="$i18n.locale=='fr' && completion">(complété à {{completion}}%)</span>
+        </span><br />
+        <span>{{typeText}}</span>
       </p>
       <p v-if="highlighted" class="v-inv">{{$t('highlighted')}}</p>
       <div v-if="youAreHere" class="floatOver"><img :alt="$t('youAreHere')" :src="require('~/assets/YouAreHere.svg')"></div>

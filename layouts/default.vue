@@ -54,7 +54,7 @@ export default {
   head() {
     return {
       htmlAttrs: { lang: this.$i18n.locale},
-      title: (this.$i18n.locale=="en") ? "Responsible Use of Public Funds":"La saine gestion des fonds publics"
+      title: (this.$i18n.locale=="en") ? "Responsible Use of Public Funds - " + this.currentPage :"La saine gestion des fonds publics"
     }
   },
   data() {
@@ -91,7 +91,29 @@ export default {
     },
     availableLocales() {
       return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
-    }
+    },
+    currentPage() {
+      var links = [];
+      var titles = []
+
+      var menus = document.querySelectorAll("menu");
+      for (var i = 0; i < menus.length; i++) {
+        var menuLinks = menus[i].querySelectorAll("a")
+        for (var j = 0; j < menuLinks.length; j++) {
+          links.push(menuLinks[j].getAttribute("href"));
+          titles.push(menuLinks[j].innerHTML);
+        }
+      }
+
+      for (var k = 0; k < links.length; k++) {
+        if (links[k] == this.$route.path) {
+          var title = titles[k]
+          title = title.replace("<span class=\"v-inv\">", "")
+          title = title.replace("</span>", "")
+          return title; 
+        }
+      }
+    },
   },
   methods: {
     ShowMenu() {

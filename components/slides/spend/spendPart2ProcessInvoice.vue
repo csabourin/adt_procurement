@@ -53,21 +53,21 @@
               </table>
             </div>
             <div class="tableScrollLTL" v-if="$i18n.locale=='fr'">
-              <table border="1">
+              <table border="1" class="qTable">
                 <thead>
                   <tr>
-                    <td colspan="2" id="1" scope="col">
+                    <th colspan="2" id="1" scope="col">
                       <p><strong>Fonds</strong></p>
-                    </td>
-                    <td colspan="2" id="2" scope="col">
+                    </th>
+                    <th colspan="2" id="2" scope="col">
                       <p><strong>Centre financier</strong></p>
-                    </td>
-                    <td colspan="2" id="3" scope="col">
+                    </th>
+                    <th colspan="2" id="3" scope="col">
                       <p><strong>Grand livre général</strong></p>
-                    </td>
-                    <td colspan="2" id="4" scope="col">
+                    </th>
+                    <th colspan="2" id="4" scope="col">
                       <p><strong>Inventaire des programmes</strong></p>
-                    </td>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -123,7 +123,7 @@
     background-color: #7D677D;
     color: #fff;
   }
-  .qTable td{
+  .qTable td, .qTable th{
     padding:.5em;
   }
   .qTable td:nth-child(n+3):nth-child(-n+4),

@@ -3,23 +3,17 @@
     <b-container>
       <b-row>
         <b-col>
-          <b-card>
-            <b-tabs content>
-              <b-tab title="Question">
-                <radioQuiz :question="$t('q1')" qId="1" />
-                <windowPortal :open="openCard" @close="openCard = false">
-                  <b-container style="margin-top: 25px; margin-bottom: 25px;">
-                    <b-row>
-                      <b-col>
-                        <signatureCard />
-                      </b-col>
-                    </b-row>
-                </b-container>
-                </windowPortal>
-                <p><b-button @click="openCard = true">{{$t('openCard')}}</b-button></p>
-              </b-tab>
-            </b-tabs>
-          </b-card>
+          <radioQuiz :question="$t('q1')" qId="1" />
+          <windowPortal :open="openCard" @close="openCard = false">
+            <b-container style="margin-top: 25px; margin-bottom: 25px;">
+              <b-row>
+                <b-col>
+                  <signatureCard />
+                </b-col>
+              </b-row>
+          </b-container>
+          </windowPortal>
+          <p><b-button @click="openCard = true">{{$t('openCard')}}</b-button></p>
         </b-col>
         <!--<b-col>
           <signatureCard />

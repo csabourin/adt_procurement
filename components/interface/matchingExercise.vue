@@ -22,7 +22,7 @@
           </ol>
         </b-col>
         <b-col>
-        	<b-button style="float:left" :disabled="!Answered[item[1]] || Submitted[item[1]]" @click="submitAnswer(item[1])">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
+        	<b-button style="float:left; margin-right: 10px;" :disabled="!Answered[item[1]] || Submitted[item[1]]" @click="submitAnswer(item[1])">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
         	<p v-if="Submitted[item[1]]"> <span class="v-right" v-if="Answered[item[1]]==parseInt(item[1])+1" > Correct!</span>
     	<span class="v-wrong" v-if="Answered[item[1]]!=parseInt(item[1])+1" > Incorrect </span>
     </p>

@@ -178,7 +178,6 @@
           this.setClosedMenuHeight();
           
           this.$el.style.whiteSpace = "nowrap";
-          console.log(this.$el.style.whiteSpace)
         }
         else{
           var that = this;

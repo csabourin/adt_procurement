@@ -29,10 +29,12 @@
             <button class="videoControls" ref="forward" @click="goForward" type="button" :aria-label="$t('forward')" :title="$t('forward')">
               <font-awesome-icon icon="forward" role="presentation" />
             </button>
+            <span class="showVolume">
             <button class="videoControls" ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')" :aria-label="isMuted?$t('unmute'):$t('mute')">
               <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" role="presentation" />
             </button>
-            <label><input class="setVolume" type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'"><span class="v-inv">Volume</span></label>
+            <label><input     class="setVolume" type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'"><span class="v-inv">Volume</span></label>
+            </span>
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
             <p class="mediaTime">{{isPlayingNow | formatTime}} / {{totalTime | formatTime}}</p>
             <button class="videoControls" :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')">
@@ -765,8 +767,8 @@ input[type=range]::-webkit-slider-thumb {
   border: 1px solid #707070;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  height: 1.3em;
-  margin-top: -9px;
+  height: 0.7em;
+  margin-top: -5px;
   width: 10px
 }
 
@@ -802,6 +804,36 @@ input[type=range]::-ms-thumb {
   border: 1px solid #707070;
   height: 1.3em;
   width: 10px
+}
+
+.showVolume{
+  position: relative;
+  display: flex;
+  float:left;
+  transition: all 1s;
+  align-items:center;
+
+}
+
+.showVolume input[type=range]{
+  position:absolute;
+  top:0;
+  left:0;
+  width:1px;
+  height:1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  transition: width 0.5s, opacity 0.5s;
+  opacity: 0;
+}
+
+.showVolume:hover input[type=range],
+.showVolume input[type=range]:focus{
+  position:relative;
+  height:1em;
+  width: min-content;
+  overflow: inherit;
+  opacity: 1;
 }
 
 .setVolume:focus {
@@ -840,7 +872,7 @@ progress {
 }
 
 .videoControls {
-  margin: .6em 1em;
+  margin: .6em 3px;
   background-color: #000;
   color: #fff;
 }

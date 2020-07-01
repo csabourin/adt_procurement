@@ -14,7 +14,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
     "@nuxtjs/axios": "^5.10.3",
     "acorn-dynamic-import": "^4.0.0",
     "animate.css": "^3.7.2",

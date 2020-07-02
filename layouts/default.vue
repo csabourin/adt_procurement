@@ -675,6 +675,12 @@ img {
   color: #4D4D4D;
   letter-spacing: -1px;
   text-align: center;
+  padding-top: 20px;
+}
+
+.mainTitle {
+  font-size: 30px;
+  padding: 0;
   position: relative;
   padding-left: 60px;
   left: -60px;
@@ -682,10 +688,6 @@ img {
   height: 80px;
   line-height: 80px;
   margin: 0;
-}
-
-.mainTitle {
-  font-size: 30px;
 }
 
 .mainTitle img {

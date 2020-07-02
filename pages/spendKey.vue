@@ -3,11 +3,11 @@
     <h2 class="pageTitle">{{$t('KeyMessages')}}</h2>
     <p><img src="~/assets/KeyMessS.svg" alt="" role="presentation" width="250px"></p>
     <p>&nbsp;</p>
-    <span class="spend"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q><footer>&mdash; Stephen R. Covey</footer></span>
+    <p class="quote spend"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q><footer>&mdash; Stephen R. Covey</footer></p>
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
-        <b-col><span v-if="$i18n.locale=='en'">
+        <b-col cols="12" lg><span v-if="$i18n.locale=='en'">
             <h3>Initiate Expenditures and Authorize Commitments</h3>
             <ul>
               <li>When you decide to obtain goods or services that will result in the eventual spending of funds, such as the decision to hire staff, order supplies, or authorize travel, you are initiating an expenditure.</li>
@@ -27,8 +27,8 @@
               </ul>
           </span>
         </b-col>
-        <b-col cols="1"></b-col>
-        <b-col><span v-if="$i18n.locale=='en'">
+        <b-col cols="1" class="d-none d-lg-block"></b-col>
+        <b-col cols="12" lg><span v-if="$i18n.locale=='en'">
             <h3>Exercise Financial Authority</h3>
             <ul>
               <li>When you certify that the work has been performed as required, and services and supplies have been satisfactorily rendered, this is known as section 34.</li>
@@ -139,17 +139,21 @@ export default {
   }
   }</i18n>
 <style type="text/css" scoped>
-span.spend:before {
-  background-color: #cac1ca;
-  content: " ";
-  width: 100vw;
-  height: 2em;
-  display: block;
+
+p.quote.spend{
+  position: relative;
+}
+  
+p.quote.spend:before {
   position: absolute;
+  content: " ";
+  background-color: #cac1ca;
+  width: 100%;
+  height: 32px;
   left: 0;
+  top: calc(50% - 9px);
   z-index: -1;
   margin: 0;
-  margin-top: 30px;
 }
 
 h3 {
@@ -160,12 +164,17 @@ h3 {
 .bigQuote {
   font-size: 36px;
   padding-bottom: 2em;
-  font-family: 'Roboto Medium', Roboto;
+  font-family: "Roboto", Roboto;
   font-weight: 500;
   color: #7d677d;
-  background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);
-  quotes: "“""”";
+  /*background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);*/
+  background-color: white;
+  quotes: """";
   padding: 1em;
+  display: block;
+  margin: auto;
+  width: 90%;
+  line-height: normal;
 }
 
 [lang=en] .bigQuote {

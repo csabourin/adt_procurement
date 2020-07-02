@@ -3,11 +3,11 @@
     <h2 class="pageTitle">{{$t('KeyMessages')}}</h2>
     <p><img src="~/assets/KeyMessP.svg" alt="" role="presentation" height="275"></p>
     <p>&nbsp;</p>
-    <span class="plan"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></span>
+    <p class="quote plan"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></p>
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
-        <b-col>
+        <b-col cols="12" lg>
           <span v-if="$i18n.locale=='en'">
             <h3>Build a Work Plan</h3>
             <ul>
@@ -25,8 +25,8 @@
             </ul>
           </span>
         </b-col>
-        <b-col cols="1"></b-col>
-        <b-col>
+        <b-col cols="1" class="d-none d-lg-block"></b-col>
+        <b-col cols="12" lg>
           <span v-if="$i18n.locale=='en'">
             <h3>Create a Budget</h3>
             <ul>
@@ -177,17 +177,21 @@ export default {
   }
 </i18n>
 <style type="text/css" scoped>
-span.plan:before {
-  background-color: #d1dfe1;
-  content: " ";
-  width: 100vw;
-  height: 2em;
-  display: block;
+  
+p.quote.plan{
+  position: relative;
+}
+  
+p.quote.plan:before {
   position: absolute;
+  content: " ";
+  background-color: #d1dfe1;
+  width: 100%;
+  height: 32px;
   left: 0;
+  top: calc(50% - 9px);
   z-index: -1;
   margin: 0;
-  margin-top: 30px;
 }
 
 h3 {
@@ -198,12 +202,17 @@ h3 {
 .bigQuote {
   font-size: 36px;
   padding-bottom: 2em;
-  font-family: 'Roboto Medium', Roboto;
+  font-family: "Roboto", Roboto;
   font-weight: 500;
   color: #608a93;
-  background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);
+  /*background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);*/
+  background-color: white;
   quotes: """";
   padding: 1em;
+  display: block;
+  margin: auto;
+  width: 90%;
+  line-height: normal;
 }
 
 [lang=en] .bigQuote {

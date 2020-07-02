@@ -172,8 +172,8 @@
               <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
             </b-button-group>
           </div>
-            <transition name="fade">
-            <p><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
+          <transition name="fade">
+            <p style="margin-top: 30px;"><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
           </transition>
         </b-col>
       </b-row>
@@ -692,7 +692,7 @@ export default {
         }
       },
       "q17": {
-        "text": "Your budget contains the following line item:<br> <div class='tableScrollLTS'> <table class='qTable'> <tbody> <tr><th>&nbsp;</th><th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Travel</p> </td> <td> <p>$8,400</p> </td> <td> <p>$0</p> </td> <td> <p>$2,400</p> </td> <td> <p>$8,400</p> </td> </tr> </tbody> </table> </div> <br>You approved $1,500 in travel for an employee. Looking at the provided line item, which columns would be increased?",
+        "text": "Your budget contains the following line item:<br> <div class='tableScrollLTM'> <table class='qTable'> <tbody> <tr><th>&nbsp;</th><th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Travel</p> </td> <td> <p>$8,400</p> </td> <td> <p>$0</p> </td> <td> <p>$2,400</p> </td> <td> <p>$8,400</p> </td> </tr> </tbody> </table> </div> <br>You approved $1,500 in travel for an employee. Looking at the provided line item, which columns would be increased?",
         "options": {
           "1": "Year-to-Date Actuals and Annual Forecasted Expenditures",
           "2": "Annual Forecasted Expenditures and Commitments",
@@ -707,7 +707,7 @@ export default {
         }
       },
       "q18": {
-        "text": "Your budget contains the provided line items:<br><table class='qTable'> <tbody> <tr> <th>&nbsp;</th> <th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Salary</p> </td> <td> <p>$60,000</p> </td> <td> <p>$20,000</p> </td> <td> <p>$40,000</p> </td> <td> <p>$60,000</p> </td> </tr> </tbody> </table><br>You just remembered that an employee has gone on leave without pay for two months. His yearly salary is $60,000. Where would you change the amount to $50,000?",
+        "text": "Your budget contains the provided line items:<br> <div class='tableScrollLTM'> <table class='qTable'> <tbody> <tr> <th>&nbsp;</th> <th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Salary</p> </td> <td> <p>$60,000</p> </td> <td> <p>$20,000</p> </td> <td> <p>$40,000</p> </td> <td> <p>$60,000</p> </td> </tr> </tbody> </table> </div> <br>You just remembered that an employee has gone on leave without pay for two months. His yearly salary is $60,000. Where would you change the amount to $50,000?",
         "options": {
           "1": "Budget",
           "2": "Commitments",
@@ -1028,7 +1028,7 @@ export default {
         }
       },
       "q17": {
-        "text": "Votre budget contient le poste fourni :<br><div class='tableScrollLTS'><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>Dépenses réelles depuis le début de l’exercice</p></th><th><p>Dépenses annuelles prévues</p></th></tr><tr><td><p>Voyages</p></td><td><p>8&nbsp;400&nbsp;$</p></td><td><p>0 $</p></td><td><p>2&nbsp;400&nbsp;$</p></td><td><p>8&nbsp;400&nbsp;$</p></td></tr></tbody></table> </div><br>Vous avez approuvé un déplacement de 1&nbsp;500&nbsp;$ pour un employé. En regardant le poste budgétaire fourni, quelles colonnes seraient augmentées?",
+        "text": "Votre budget contient le poste fourni :<br><div class='tableScrollLTM'><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>Dépenses réelles depuis le début de l’exercice</p></th><th><p>Dépenses annuelles prévues</p></th></tr><tr><td><p>Voyages</p></td><td><p>8&nbsp;400&nbsp;$</p></td><td><p>0 $</p></td><td><p>2&nbsp;400&nbsp;$</p></td><td><p>8&nbsp;400&nbsp;$</p></td></tr></tbody></table> </div><br>Vous avez approuvé un déplacement de 1&nbsp;500&nbsp;$ pour un employé. En regardant le poste budgétaire fourni, quelles colonnes seraient augmentées?",
         "options": {
           "1": "Dépenses annuelles prévues et dépenses réelles depuis le début de l’exercice",
           "2": "Prévisions annuelles des dépenses et des engagements",
@@ -1043,7 +1043,7 @@ export default {
         }
       },
       "q18": {
-        "text": "Votre budget contient les postes individuels fournis :<br><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>Dépenses réelles depuis le début de l’exercice</p></th><th><p>Dépenses annuelles prévues</p></th></tr><tr><td><p>Salaire</p></td><td><p>60&nbsp;000&nbsp;$</p></td><td><p>20&nbsp;000&nbsp;$</p></td><td><p>40&nbsp;000&nbsp;$</p></td><td><p>60&nbsp;000&nbsp;$</p></td></tr></tbody></table><br>Vous venez de vous rappeler qu’un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60&nbsp;000&nbsp;$. Où changeriez-vous le montant à 50&nbsp;000&nbsp;$?",
+        "text": "Votre budget contient les postes individuels fournis :<br> <div class='tableScrollLTM'> <table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>Dépenses réelles depuis le début de l’exercice</p></th><th><p>Dépenses annuelles prévues</p></th></tr><tr><td><p>Salaire</p></td><td><p>60&nbsp;000&nbsp;$</p></td><td><p>20&nbsp;000&nbsp;$</p></td><td><p>40&nbsp;000&nbsp;$</p></td><td><p>60&nbsp;000&nbsp;$</p></td></tr></tbody></table></div> <br>Vous venez de vous rappeler qu’un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60&nbsp;000&nbsp;$. Où changeriez-vous le montant à 50&nbsp;000&nbsp;$?",
         "options": {
           "1": "Budget",
           "2": "Engagements",

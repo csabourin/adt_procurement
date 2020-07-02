@@ -5,17 +5,17 @@
     </div>
     <b-container fluid style="overflow:hidden;">
       <b-row class="navBar" role="banner">
-        <b-col cols="5" sm="3" class="text-left" style="display: flex; align-items: center;">
+        <b-col cols="5" sm="3" class="text-left">
           <hamburger @menu-toggle="ShowMenu" :MenuShowing="MenuShowing" style="margin-right: 10px;" />
           <nuxt-link :to="localePath('index')">
             <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
           </nuxt-link>
           <button class="successIcon" v-b-modal.completionModal v-if="courseComplete"><img src="~/assets/successIcon.png" width="50" height="50" role="presentation" alt=""><strong class="completeCaption" v-html="$t('courseComplete')" /></button>
         </b-col>
-        <b-col cols="2" sm="6">
+        <b-col cols="2" sm="6" style="justify-content: center;">
           <h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')" role="presentation"> {{$t('finRoles')}}</h1>
         </b-col>
-        <b-col cols="5" sm="3" class="text-right" style="display: flex; align-items: center; justify-content: flex-end">
+        <b-col cols="5" sm="3" class="text-right" style="justify-content: flex-end">
           <fileMenu />
           <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
             <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" :lang="locale.code" v-bind:iconTitle="locale.name" />
@@ -505,6 +505,11 @@ html[lang="fr"] a.external:after{
   width: 100%;
   margin: 0;
 }
+  
+.row.navBar > div{
+  display: flex;
+  align-items: center;
+}
 
 .row {
   margin: 0;
@@ -683,7 +688,6 @@ img {
   padding: 0;
   position: relative;
   padding-left: 60px;
-  left: -60px;
   display: inline-block;
   height: 80px;
   line-height: 80px;

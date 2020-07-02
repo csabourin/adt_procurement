@@ -186,7 +186,7 @@ h3 {
 .bigQuote {
   font-size: 36px;
   padding-bottom: 2em;
-  font-family: 'Roboto Medium', Roboto;
+  font-family: "Roboto", Roboto;
   font-weight: 500;
   color: #865f56;
   /*background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);*/

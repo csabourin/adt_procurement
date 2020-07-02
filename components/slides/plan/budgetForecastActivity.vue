@@ -234,7 +234,8 @@ export default {
 }
 .questionMark {
   display: block;
-  font-family: Roboto Medium, Sans Serif;
+  font-family: "Roboto", Sans Serif;
+  font-weight: 500;
   font-size: 36px;
   position: absolute;
   background-color: #dfe49e;

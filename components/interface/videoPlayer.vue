@@ -2,7 +2,7 @@
   <b-container>
     <b-row>
       <b-col>
-        <figure style="clear:both;position:relative;background-color: #000;padding: 0 0 2em;">
+        <figure style="clear:both;position:relative;background-color: #000;">
           <Spinner v-if="!canPlay" />
           <video :id="vId" @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadedmetadata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
@@ -29,15 +29,15 @@
             <button class="videoControls" ref="forward" @click="goForward" type="button" :aria-label="$t('forward')" :title="$t('forward')">
               <font-awesome-icon icon="forward" role="presentation" />
             </button>
-            <span class="showVolume">
-            <button class="videoControls" ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')" :aria-label="isMuted?$t('unmute'):$t('mute')">
-              <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" role="presentation" />
-            </button>
-            <label><input     class="setVolume" type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'"><span class="v-inv">Volume</span></label>
-            </span>
             <!-- <button type="button" data-state="go-fullscreen"><i class="fas fa-compress"></i></button> -->
             <p class="mediaTime">{{isPlayingNow | formatTime}} / {{totalTime | formatTime}}</p>
-            <button class="videoControls" :aria-pressed="CCactive" @click="showCC" style="float:right" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')">
+            <span class="showVolume">
+              <button class="videoControls" ref="mute" @click="isMuted=!isMuted" type="button" :title="isMuted?$t('unmute'):$t('mute')" :aria-label="isMuted?$t('unmute'):$t('mute')">
+                <font-awesome-icon :icon="isMuted?'volume-mute':'volume-up'" role="presentation" />
+              </button>
+              <label><input class="setVolume" type="range" v-model="setVolume" :title="'Volume: '+setVolume+'%'" :aria-label="'Volume: '+setVolume+'%'"><span class="v-inv">Volume</span></label>
+            </span>
+            <button class="videoControls" :aria-pressed="CCactive" style="margin-left: auto;" @click="showCC" type="button" :title="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')" :aria-label="(CCactive?$t('hide'):$t('show'))+$t('closedcaptionning')">
               <font-awesome-icon :icon="[solidOrRegular,'closed-captioning']" role="presentation" />
             </button>
           </div>
@@ -565,11 +565,11 @@ video {
 .mediaTime {
   color: #fff;
   background-color: #000;
-  float: left;
   position: relative;
   display: inline-block;
   padding: .5em;
-  margin-top: 3px;
+  margin: 0px;
+  flex: 0 0 auto;
 }
 
   .bar {
@@ -742,7 +742,10 @@ button.accessibilityButton {
   opacity: 0;
 }
 
-
+label{
+  margin: 0;
+}
+  
 input[type=range] {
   -webkit-appearance: none;
   background: 0 0;
@@ -750,6 +753,7 @@ input[type=range] {
   height: 2.5em;
   padding: 0;
   width: 7em;
+  margin: 0;
 }
 
 input[type=range]:focus {
@@ -809,10 +813,9 @@ input[type=range]::-ms-thumb {
 .showVolume{
   position: relative;
   display: flex;
-  float:left;
   transition: all 1s;
   align-items:center;
-
+  width: 180px;
 }
 
 .showVolume input[type=range]{
@@ -906,7 +909,7 @@ progress::-moz-progress-bar {
 }
 
 progress {
-  width: 100%;
+  flex: 0 0 100%;
   height: 14px;
   margin: 0 auto;
   display: block;
@@ -928,6 +931,7 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
   border-radius: 50px;
+  transition: width 1s;
   background:
     linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
@@ -945,25 +949,24 @@ video,
 audio,
 .controls {
   width: 100%;
-}
-
-.controls {
-  height: 36px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 button {
   display: block;
-  float: left;
   border: 0;
   margin-right: 3px;
   width: 40px;
   cursor: pointer;
+  flex: 0 0 auto;
 }
 
 input[type=range] {
-  float: left;
   margin-left: 5px;
-  margin-top: 2px;
+  flex: 0 0 auto;
 }
 
 /*button:hover,
@@ -980,7 +983,6 @@ button:active {
   display: inline-block;
   line-height: 36px;
   width: 45px;
-  float: right;
 }
 
 video {

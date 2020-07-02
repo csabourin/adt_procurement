@@ -113,7 +113,7 @@
           </b-button-group>
         </div>
         <transition name="fade">
-          <p>
+          <p style="margin-top: 30px;">
             <b-button @click="markTest">{{$t('markTest')}}</b-button>
             <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button>
           </p>

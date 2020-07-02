@@ -172,8 +172,8 @@
               <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
             </b-button-group>
           </div>
-            <transition name="fade">
-            <p><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
+          <transition name="fade">
+            <p style="margin-top: 30px;"><b-button @click="markTest">{{$t('markTest')}}</b-button> <b-button @click="resetQuiz">{{$t('tryAgain')}}</b-button></p>
           </transition>
         </b-col>
       </b-row>

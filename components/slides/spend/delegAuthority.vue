@@ -9,7 +9,7 @@
       </b-tabs>
       <!-- Control buttons-->
       <div class="text-center">
-        <b-button-group class="mt-2">
+        <b-button-group :aria-label="$t('questionNav')" class="mt-2">
           <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
           <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=3">{{$t('nextPage')}}</b-button>
         </b-button-group>

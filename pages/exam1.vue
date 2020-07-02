@@ -440,7 +440,6 @@ export default {
     "tryAgain": "Try Again",
     "scoreIs":"Your final score is",
     "unanswered":"Unanswered Question(s)",
-    "questionNav": "Question Navigation",
     "Questions": {
       "q1": {
         "text": "Which of the following is <span class='bolder' style='text-transform: uppercase;'>not</span> included in a work plan?",
@@ -749,7 +748,6 @@ export default {
     "tryAgain": "Essayer de nouveau",
     "scoreIs":"Votre note finale est de",
     "unanswered":"Question(s) non-répondue(s)",
-    "questionNav": "Navigation Questions",
     "Questions": {
       "q1": {
         "text": "Lequel des éléments suivants n’est <span class='bolder' style='text-transform:uppercase'>PAS</span> inclus dans un plan de travail?",

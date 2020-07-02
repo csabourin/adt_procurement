@@ -48,6 +48,7 @@ export default {
   TestSpend: "<span class='v-inv'>Spend: </span>Test",
   TestReport: "<span class='v-inv'>Report: </span>Test",
   MarkCompleted: "Mark as completed",
+  questionNav: "Question Navigation",
   
   chooseScenarioLabel: "Choose you scenario",
   takeCourse: "I want to take the course",

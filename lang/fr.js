@@ -50,6 +50,7 @@ export default {
   fileFolder: "Fichiers et outils à télécharger",
   downloadPlan: "Télécharger un modèle Word du plan de travail",
   download360: "Télécharger l'aperçu 360",
+  questionNav: "Navigation des questions",
   
   chooseScenarioLabel: "Choisissez votre scénario",
   takeCourse: "Je veux prendre le cours",

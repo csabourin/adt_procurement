@@ -454,7 +454,6 @@ export default {
     "tryAgain": "Try Again",
     "scoreIs": "Your final score is",
     "unanswered":"Unanswered Question(s)",
-    "questionNav": "Question Navigation",
     "Questions": {
       "q1": {
         "text": "You found a chatbot system that meets your needs. An annual license, plus installation and setup costs $5,650 including tax. What is the first step in exercising your spending authority?",
@@ -761,7 +760,6 @@ export default {
     "tryAgain": "Essayer de nouveau",
     "scoreIs": "Votre note finale est de",
     "unanswered":"Question(s) non-répondue(s)",
-    "questionNav": "Navigation Questions",
     "Questions": {
       "q1": {
         "text": "Vous avez trouvé un système de chatbot qui répond à vos besoins. Une licence annuelle, plus les frais d’installation et de configuration, coûte 5&nbsp;650&nbsp;$, taxes incluses. Quelle est la première étape de l’exercice de votre pouvoir de dépenser?",

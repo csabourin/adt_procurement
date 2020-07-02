@@ -7,9 +7,9 @@
 </template>
 <style type="text/css" scoped>
 .ui-hamburger-02 {
-  top:.5em;
-  width: 50px;
-  height: 26px;
+  /*top:.5em;*/
+  width: 25px;
+  height: 20px;
   border: none;
   position: relative;
   background: linear-gradient(to bottom, #4D4D4D, #4D4D4D);

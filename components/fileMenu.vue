@@ -1,6 +1,6 @@
 <template functionnal>
   <span>
-    <a href="javascript:" v-b-modal.fileFolder>
+    <a href="javascript:" v-b-modal.fileFolder style="display: inline-block">
       <fileIcon :title="$t('fileFolder')" width="44" />
     </a>
     <b-modal id="fileFolder" okOnly size="xl">

@@ -5,8 +5,8 @@
     </div>
     <b-container fluid style="overflow:hidden;">
       <b-row class="navBar" role="banner">
-        <b-col cols="5" sm="3" class="text-left">
-          <hamburger @menu-toggle="ShowMenu" :MenuShowing="MenuShowing" />
+        <b-col cols="5" sm="3" class="text-left" style="display: flex; align-items: center;">
+          <hamburger @menu-toggle="ShowMenu" :MenuShowing="MenuShowing" style="margin-right: 10px;" />
           <nuxt-link :to="localePath('index')">
             <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
           </nuxt-link>
@@ -15,7 +15,7 @@
         <b-col cols="2" sm="6">
           <h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')" role="presentation"> {{$t('finRoles')}}</h1>
         </b-col>
-        <b-col cols="5" sm="3" class="text-right">
+        <b-col cols="5" sm="3" class="text-right" style="display: flex; align-items: center; justify-content: flex-end">
           <fileMenu />
           <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
             <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" :lang="locale.code" v-bind:iconTitle="locale.name" />
@@ -502,7 +502,6 @@ html[lang="fr"] a.external:after{
   color: #000;
   text-align: right;
   box-shadow: rgba(0, 0, 0, .5) 0px 3px 8px;
-  align-items: flex-start;
   width: 100%;
   margin: 0;
 }
@@ -676,16 +675,23 @@ img {
   color: #4D4D4D;
   letter-spacing: -1px;
   text-align: center;
-  padding-top: 20px;
+  position: relative;
+  padding-left: 60px;
+  left: -60px;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
 }
 
 .mainTitle {
   font-size: 30px;
-  margin-top: -0.15em
 }
 
 .mainTitle img {
-  vertical-align: -60%;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 22px);
 }
 
 .scrollMe {
@@ -694,14 +700,19 @@ img {
   white-space: nowrap;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 850px) {
   .mainTitle {
     font-size: 18px;
-    margin-top: -0.15em
   }
 
   h1 img {
     vertical-align: middle;
+  }
+}
+  
+  @media only screen and (max-width: 768px) {
+  .mainTitle {
+    font-size: 16px;
   }
 }
 

@@ -928,6 +928,7 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
   border-radius: 50px;
+  transition: width 1s;
   background:
     linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),

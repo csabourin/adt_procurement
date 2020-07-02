@@ -3,19 +3,19 @@
     <h3>{{ $t('instructions') }}</h3>
     <b-container>
       <b-row>
-        <b-col class="text-center" cols="3">
+        <b-col class="text-center" cols="6" md="4" lg="2">
           <download :texts="$t('threeSixty')" size=128 iconColor="Scan360Background" :title="$t('download360')" :fileSize="this.$i18n.locale == 'en' ? '118' : '124'" name="threeSixty" />
         </b-col>
-        <b-col class="text-center" cols="3">
+        <b-col class="text-center" cols="6" md="4" lg="2">
           <download :texts="$t('WPTemplate')" size="128" iconColor="planBackground" :fileSize="this.$i18n.locale == 'en' ? '15.9' : '17,5'" name="WorkPlanTemplate" />
         </b-col>
-        <b-col class="text-center" cols="3">
+        <b-col class="text-center" cols="6" md="4" lg="2">
           <download :texts="$t('WPLastYear')" size=128 iconColor="planBackground" :fileSize="this.$i18n.locale == 'en' ? '120' : '120'" name="WorkPlan_lastYear" />
         </b-col>
-        <b-col class="text-center" cols="3">
+        <b-col class="text-center" cols="6" md="4" lg="2">
           <download :texts="$t('budgetLastYear')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '9.96' : '9,62'" name="Budget_lastYear" />
         </b-col>
-        <b-col class="text-center" cols="3">
+        <b-col class="text-center" cols="6" md="4" lg="2">
           <download :texts="$t('reportsLastYear')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '16.6' : '19,4'" name="ReportLast" />
         </b-col>
       </b-row>

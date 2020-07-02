@@ -68,28 +68,28 @@
             <template v-slot:title>{{$t('fileSet')}}</template>
             <template v-slot:content>
               <b-row>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('threeSixty')" size=128 iconColor="Scan360Background" :fileSize="$i18n.locale == 'en' ? '118' : '124'" name="threeSixty" />
                 </b-col>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('WPTemplate')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '15.9' : '17,5'" name="WorkPlanTemplate" />
                 </b-col>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('WPLastYear')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '120' : '120'" name="WorkPlan_lastYear" />
                 </b-col>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('budgetLastYear')" size=128  iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '9.96' : '9,62'" name="Budget_lastYear" />
                 </b-col>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('reportsLastYear')" iconColor="reportBackground" size=128 :title="$t('rExample')" :line1="$t('rLine1')" :line2="$t('rLine2')" :lineTag="$t('rExample')" :fileSize="$i18n.locale == 'en' ? '16.6' : '19,4'" name="ReportLast" />
                 </b-col>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('buildWPProcessMap')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '121' : '114'" name="buildWPProcessMap" />
                 </b-col>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('newBudget')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '129' : '131'" name="newBudget" />
                 </b-col>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('cycle')" size=128 iconColor="Scan360Background" :fileSize="$i18n.locale == 'en' ? '61.6' : '62,6'" name="cycle" />
                 </b-col>
               </b-row>

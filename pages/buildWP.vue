@@ -151,7 +151,7 @@
       <partsOfWorkPlan />
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
-    <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="lg" okOnly>
+    <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="xl" okOnly>
       <template v-slot:modal-header="{ close }">
         <h3 class="h5">
           <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">

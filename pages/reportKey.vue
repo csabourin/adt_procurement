@@ -76,13 +76,13 @@
             <template v-slot:title>{{$t('fileSet')}}</template>
             <template v-slot:content>
               <b-row>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('FSRRoadmap')" size=128 iconColor="reportBackground" :fileSize="$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
                 </b-col>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('prepareFSR')" size=128 iconColor="reportBackground" :fileSize="$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
                 </b-col>
-                <b-col cols="3" lg="2" class="text-center">
+                <b-col cols="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('extReports')" size=128 iconColor="reportBackground" :fileSize="$i18n.locale == 'en' ? '138' : '124'" name="extReports" />
                 </b-col>
              </b-row>

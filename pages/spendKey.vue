@@ -129,7 +129,7 @@ export default {
 <i18n>{
   "en":
   {
-  "keyPlanQuote": "Accountability breeds response-ability",
+  "keyPlanQuote": "Accountability breeds response-ability.",
   "spendSectionBar": "SPEND"
   },
   "fr":

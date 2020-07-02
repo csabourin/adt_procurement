@@ -299,7 +299,7 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
   .color1 h2, .color2 h2, .color3 h2{
     transform: rotate(-90deg);
     transform-origin: right top;
-    font-size: 0.95em;
+    font-size: 16px;
     position: absolute;
     line-height: 60px;
     top: 0%;
@@ -309,9 +309,13 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
     margin: 0;
     display: block;
     width: 200px;
-    
   }
   
+  @media (max-width: 992px){
+    .color1 h2, .color2 h2, .color3 h2{
+      font-size: 13px;
+    }
+  }
   
   .closedMenuBox{
     position: relative;

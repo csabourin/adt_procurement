@@ -1,5 +1,5 @@
 <template >
-<svg width="600" height="800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700">
  <g>
   <title>{{$t('Invoice')}}</title>
   <path d="m-1,-1l614,0l0,794l-614,0l0,-794z" fill="none"/>

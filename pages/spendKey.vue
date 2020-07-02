@@ -7,7 +7,7 @@
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
-        <b-col><span v-if="$i18n.locale=='en'">
+        <b-col cols="12" lg><span v-if="$i18n.locale=='en'">
             <h3>Initiate Expenditures and Authorize Commitments</h3>
             <ul>
               <li>When you decide to obtain goods or services that will result in the eventual spending of funds, such as the decision to hire staff, order supplies, or authorize travel, you are initiating an expenditure.</li>
@@ -27,8 +27,8 @@
               </ul>
           </span>
         </b-col>
-        <b-col cols="1"></b-col>
-        <b-col><span v-if="$i18n.locale=='en'">
+        <b-col cols="1" class="d-none d-lg-block"></b-col>
+        <b-col cols="12" lg><span v-if="$i18n.locale=='en'">
             <h3>Exercise Financial Authority</h3>
             <ul>
               <li>When you certify that the work has been performed as required, and services and supplies have been satisfactorily rendered, this is known as section 34.</li>

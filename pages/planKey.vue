@@ -7,7 +7,7 @@
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
-        <b-col>
+        <b-col cols="12" lg>
           <span v-if="$i18n.locale=='en'">
             <h3>Build a Work Plan</h3>
             <ul>
@@ -25,8 +25,8 @@
             </ul>
           </span>
         </b-col>
-        <b-col cols="1"></b-col>
-        <b-col>
+        <b-col cols="1" class="d-none d-lg-block"></b-col>
+        <b-col cols="12" lg>
           <span v-if="$i18n.locale=='en'">
             <h3>Create a Budget</h3>
             <ul>

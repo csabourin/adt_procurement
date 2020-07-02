@@ -8,7 +8,7 @@
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
-        <b-col><span v-if="$i18n.locale=='en'">
+        <b-col cols="12" lg xl="5"><span v-if="$i18n.locale=='en'">
             <h3>Prepare the financial situation report</h3>
             <ul>
               <li>Financial situation reports:</li>
@@ -35,8 +35,8 @@
             </ul>
           </span>
         </b-col>
-        <b-col cols="1"></b-col>
-        <b-col><span v-if="$i18n.locale=='en'">
+        <b-col cols="1" class="d-none d-xl-block"></b-col>
+        <b-col cols="12" lg xl="5"><span v-if="$i18n.locale=='en'">
             <h3>Contribute to external reporting</h3>
             <ul>
               <li>The finances and results of government services and programs are reported regularly to Parliament and Canadians through a variety of reports:&nbsp;</li>

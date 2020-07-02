@@ -81,5 +81,6 @@ export default {
   margin-top: 1em;
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 </style>

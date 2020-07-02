@@ -3,7 +3,7 @@
     <h2 class="pageTitle">{{$t('KeyMessages')}}</h2>
     <p><img src="~/assets/KeyMessP.svg" alt="" role="presentation" height="275"></p>
     <p>&nbsp;</p>
-    <span class="plan"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></span>
+    <p class="quote plan"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></p>
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
@@ -177,17 +177,21 @@ export default {
   }
 </i18n>
 <style type="text/css" scoped>
-span.plan:before {
-  background-color: #d1dfe1;
-  content: " ";
-  width: 100vw;
-  height: 2em;
-  display: block;
+  
+p.quote.plan{
+  position: relative;
+}
+  
+p.quote.plan:before {
   position: absolute;
+  content: " ";
+  background-color: #d1dfe1;
+  width: 100%;
+  height: 32px;
   left: 0;
+  top: calc(50% - 9px);
   z-index: -1;
   margin: 0;
-  margin-top: 30px;
 }
 
 h3 {
@@ -201,9 +205,14 @@ h3 {
   font-family: 'Roboto Medium', Roboto;
   font-weight: 500;
   color: #608a93;
-  background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);
+  /*background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);*/
+  background-color: white;
   quotes: """";
   padding: 1em;
+  display: block;
+  margin: auto;
+  width: 90%;
+  line-height: normal;
 }
 
 [lang=en] .bigQuote {

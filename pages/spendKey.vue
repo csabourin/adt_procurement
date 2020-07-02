@@ -3,7 +3,7 @@
     <h2 class="pageTitle">{{$t('KeyMessages')}}</h2>
     <p><img src="~/assets/KeyMessS.svg" alt="" role="presentation" width="250px"></p>
     <p>&nbsp;</p>
-    <span class="spend"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q><footer>&mdash; Stephen R. Covey</footer></span>
+    <p class="quote spend"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q><footer>&mdash; Stephen R. Covey</footer></p>
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
@@ -139,17 +139,21 @@ export default {
   }
   }</i18n>
 <style type="text/css" scoped>
-span.spend:before {
-  background-color: #cac1ca;
-  content: " ";
-  width: 100vw;
-  height: 2em;
-  display: block;
+
+p.quote.spend{
+  position: relative;
+}
+  
+p.quote.spend:before {
   position: absolute;
+  content: " ";
+  background-color: #cac1ca;
+  width: 100%;
+  height: 32px;
   left: 0;
+  top: calc(50% - 9px);
   z-index: -1;
   margin: 0;
-  margin-top: 30px;
 }
 
 h3 {
@@ -163,9 +167,14 @@ h3 {
   font-family: 'Roboto Medium', Roboto;
   font-weight: 500;
   color: #7d677d;
-  background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);
-  quotes: "“""”";
+  /*background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);*/
+  background-color: white;
+  quotes: """";
   padding: 1em;
+  display: block;
+  margin: auto;
+  width: 90%;
+  line-height: normal;
 }
 
 [lang=en] .bigQuote {

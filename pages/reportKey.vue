@@ -4,7 +4,7 @@
     <br>
     <p><img src="~/assets/KeyMessR.svg" alt="" role="presentation" width="250px"></p>
     <p>&nbsp;</p>
-    <span class="spend"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></span>
+    <p class="quote report"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></p>
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
@@ -160,18 +160,23 @@ export default {
   }
   }</i18n>
 <style type="text/css" scoped>
-span.spend:before {
-  background-color: #e5dddc;
-  content: " ";
-  width: 100vw;
-  height: 2em;
-  display: block;
+
+p.quote.report{
+  position: relative;
+}
+  
+p.quote.report:before {
   position: absolute;
+  content: " ";
+  background-color: #e5dddc;
+  width: 100%;
+  height: 32px;
   left: 0;
+  top: calc(50% - 9px);
   z-index: -1;
   margin: 0;
-  margin-top: 30px;
 }
+
 
 h3 {
   font-family: "Roboto Condensed";
@@ -181,12 +186,17 @@ h3 {
 .bigQuote {
   font-size: 36px;
   padding-bottom: 2em;
-  font-family: 'Roboto Medium',Roboto;
-  font-weight:500;
+  font-family: 'Roboto Medium', Roboto;
+  font-weight: 500;
   color: #865f56;
-  background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);
-  quotes: "“""”";
+  /*background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);*/
+  background-color: white;
+  quotes: """";
   padding: 1em;
+  display: block;
+  margin: auto;
+  width: 90%;
+  line-height: normal;
 }
 
 [lang=en] .bigQuote {

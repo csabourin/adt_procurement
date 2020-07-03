@@ -540,7 +540,6 @@ export default {
       
       this.$nextTick(function(){
         that.tipheight = el.offsetHeight;
-        console.log(that.tipheight)
         el.style.height = 0;
         
         done();

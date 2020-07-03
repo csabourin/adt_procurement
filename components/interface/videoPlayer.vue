@@ -2,7 +2,7 @@
   <b-container>
     <b-row>
       <b-col>
-        <figure style="clear:both;position:relative;background-color: #000;">
+        <figure style="clear:both;position:relative;background-color: #000; margin-bottom: 0;">
           <Spinner v-if="!canPlay" />
           <video :id="vId" @waiting="loading" @cuechange="readCaptions" @click="setPlaying" ref="videoplayer" :src="videoUrl" :poster="posterUrl" playsinline @loadedmetadata="resumePosition" @timeupdate="update" @ended="isPaused=!isPaused">
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
@@ -45,10 +45,18 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row>
+    <transition @enter="tipEnter" @after-enter="tipAfterEnter" @leave="tipLeave" :css="false">
+      <b-row v-if="videoDone" class="tipRow">
+        <b-col>
+          <tip aria-live="polite" v-if="$i18n.locale=='en'">Select the continue icon button ( <img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" style="display: inline; width: 30px; height: 30px;" /> ) in the video segments below to continue to the next section.</tip>
+          <tip aria-live="polite" v-if="$i18n.locale=='fr'">Sélectionnez le bouton de l'icône «&nbsp;continuer&nbsp;» ( <img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" style="display: inline; width: 30px; height: 30px;" /> ) dans les segments vidéo ci-dessous pour continuer à la section suivante.</tip>
+        </b-col>
+      </b-row>
+    </transition>
+    <b-row style="margin-top: 20px;">
       <b-col>
         <h3 v-if="chapters">{{$t('segmentsTitle')}}</h3>
-        </b-col>
+      </b-col>
     </b-row>
     <b-row align-h="center">
       <b-col>
@@ -57,7 +65,7 @@
             <p>{{ item }}</p><br>
 
             <!-- Play button -->
-            <a :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :title="$t('playSegment') + ' - ' +navBarTracks[index]" v-b-tooltip.hover.bottom="$t('playSegment')"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
+            <a v-if="modalArray[index]" :href="'#'+vId" @click="seek" class="playButton" :key="index" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :title="$t('playSegment') + ' - ' +navBarTracks[index]" v-b-tooltip.hover.bottom="$t('playSegment')"><img src="~/assets/VideoIcon.svg" :data-start="Math.ceil(startTime[index]+0.5)+.01" :data-end="endTime[index]" :alt="$t('playIcon')" width="48" height="48"><span class="v-inv">{{$t('playSegment')}}: {{navBarTracks[index]}}</span></a>
 
             <!-- If the popup is a quiz -->
             <button v-if="modalArray[index] && isInArray(index, currentPageQuiz)" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpQuiz') + ' - ' + navBarTracks[index]" v-b-tooltip.hover.bottom="$t('jumpQuiz')"><img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="48" height="48"></button>
@@ -87,11 +95,21 @@
     <!-- Used for troublehooting video -->
   </b-container>
 </template>
+
 <script type="text/javascript">
 import Spinner from "~/components/icons/Spinner"
+import tip from "~/components/tip"
 export default {
   components: {
-    Spinner
+    Spinner,
+    tip
+  },
+  head () {
+    return {
+      script: [
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js' }
+      ]
+    }
   },
   props: {
     vId: { type: String, default: 'mainPlayer' },
@@ -170,6 +188,8 @@ export default {
           quiz: [3]
         }
       },
+      videoDone: false,
+      tipheight: 0
     }
   },
   filters: {
@@ -324,6 +344,14 @@ export default {
         this.oldVolume = this.setVolume
       }
       this.$store.commit('currentPlaying/setVolume', volume)
+    },
+    PlayTime(time){
+      if(time >= 99.5 && this.chapters){
+        this.videoDone = true;
+      }
+      else{
+        this.videoDone = false;
+      }
     }
   },
   methods: {
@@ -506,7 +534,25 @@ export default {
       let mousePos=e.clientX-rect.left
       let toPercent=mousePos/rectSize*this.totalTime
       this.mousePosition=toPercent
-    }
+    },
+    tipEnter(el, done) {
+      var that = this;
+      
+      this.$nextTick(function(){
+        that.tipheight = el.offsetHeight;
+        console.log(that.tipheight)
+        el.style.height = 0;
+        
+        done();
+      });
+    },
+    tipAfterEnter(el) {
+      var height = this.tipheight
+      Velocity(el, { height: height + "px" }, {duration: 300});
+    },
+    tipLeave(el, done) {
+      Velocity(el, { height: "0px" }, { duration: 300 }, { complete: done });
+    },
   }
 }
 
@@ -988,5 +1034,10 @@ button:active {
 video {
   margin-bottom: -5px;
 }
+  
+  .tipRow{
+    transition: height 0.3s; 
+    overflow: hidden;
+  }
 
 </style>

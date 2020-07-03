@@ -4,7 +4,7 @@
     <b-container fluid>
     	<p>&nbsp;</p>
       <b-row v-for="(item,index) in this.questionList" :key="'row0'+index">
-        <b-col cols="5" >
+        <b-col cols="12" md="5">
           <ul>
             <li class="questions" >
               <p>
@@ -16,12 +16,12 @@
             </li>
           </ul>
         </b-col>
-        <b-col cols="4">
+        <b-col cols="6" md="4">
           <ol class="AnswerNums" type="A" :start="index+1">
             <li class="answers"><p :id="'AnswerKey'+parseInt(index+1)">{{question.dotsRight[index]}}</p></li>
           </ol>
         </b-col>
-        <b-col>
+        <b-col cols="6" md>
         	<b-button style="float:left; margin-right: 10px;" :disabled="!Answered[item[1]] || Submitted[item[1]]" @click="submitAnswer(item[1])">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
         	<p v-if="Submitted[item[1]]"> <span class="v-right" v-if="Answered[item[1]]==parseInt(item[1])+1" > Correct!</span>
     	<span class="v-wrong" v-if="Answered[item[1]]!=parseInt(item[1])+1" > Incorrect </span>
@@ -119,6 +119,12 @@ ol {
 .questions {
   text-align: right;
   list-style: none;
+}
+  
+@media(max-width: 768px){
+  .questions {
+    text-align: left;
+  }
 }
 
 .answer {

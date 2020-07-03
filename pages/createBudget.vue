@@ -234,7 +234,7 @@
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
             <b-row align-h="center">
-              <b-col cols="4" class="text-center">
+              <b-col cols="12" md="4" class="text-center">
                 <download :texts="$t('cycle')" size=128 iconColor="Scan360Background" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" name="cycle" class="review" />
               </b-col>
             </b-row>

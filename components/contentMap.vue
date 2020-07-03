@@ -67,7 +67,7 @@
           <div class="color3">
             <h2>{{$t('report')}}</h2>
           </div>
-          <div class="open-indicator" v-show="arrowVisible"></div>
+          <div class="open-indicator d-none d-sm-block" v-if="arrowVisible"></div>
         </div>
       </div>
     </transition>

@@ -193,6 +193,12 @@ export default {
     background-position-x: 12em;
     background-repeat: no-repeat;
   }
+  
+  @media (max-width: 576px){
+    .courseSection {
+      background: none!important;
+    }
+  }
 
   .planTitle {
     color: #587C84;

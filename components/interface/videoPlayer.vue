@@ -616,6 +616,12 @@ video {
   margin: 0px;
   flex: 0 0 auto;
 }
+  
+@media(max-width: 576px){
+  .mediaTime{
+    font-size: 0.8em;
+  }
+}
 
   .bar {
     counter-reset: WPepisode;
@@ -923,6 +929,13 @@ progress {
   margin: .6em 3px;
   background-color: #000;
   color: #fff;
+}
+  
+@media(max-width: 576px){
+  .videoControls{
+    font-size: 0.7em;
+    width: auto;
+  }
 }
 
 .videoControls:hover,

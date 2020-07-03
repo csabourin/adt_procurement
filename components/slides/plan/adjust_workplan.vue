@@ -111,7 +111,7 @@
 <i18n>{
   "en":
   {
-    "pwpInstructions": "Your director has been to a steering committee and now has new information that should be reflected in your work plan. Here are theç 3 new pieces of information: ",
+    "pwpInstructions": "Your director has been to a steering committee and now has new information that should be reflected in your work plan. Here are the 3 new pieces of information: ",
     "thing1": "New software will be implemented to speed up the issuing of licences ",
     "thing2": "A new policy now requires licences to be issued in 15 days, not 30 days, starting November 1 and",
     "thing3": "There’s been a decision not to replace a retiring employee.",

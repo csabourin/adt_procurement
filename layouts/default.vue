@@ -13,7 +13,7 @@
           <button class="successIcon" v-b-modal.completionModal v-if="courseComplete"><img src="~/assets/successIcon.png" width="50" height="50" role="presentation" alt=""><strong class="completeCaption" v-html="$t('courseComplete')" /></button>
         </b-col>
         <b-col cols="2" sm="6" style="justify-content: center;">
-          <h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')" role="presentation"> {{$t('finRoles')}}</h1>
+          <h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')" role="presentation"> <span class="d-none d-sm-block">{{$t('finRoles')}}</span> <span class="v-inv d-block d-sm-none">{{$t('finRoles')}}</span></h1>
         </b-col>
         <b-col cols="5" sm="3" class="text-right" style="justify-content: flex-end">
           <fileMenu />
@@ -24,7 +24,7 @@
       </b-row>
       <b-row>
         <!-- <transition-group tag="div" name="fade" class="grid"> -->
-        <b-col :class="MenuShowing?['col-4', 'col-md-3','sideMenu']:['closedMenu','sideMenu']">
+        <b-col :class="MenuShowing?['col-12', 'col-sm-4', 'col-md-3','sideMenu']:['closedMenu','sideMenu']">
           <transition appear mode="in-out" name="fade">
             <content-map :currentState="MenuShowing" @menu-toggle="ShowMenu"/>
           </transition>
@@ -523,7 +523,12 @@ html[lang="fr"] a.external:after{
 .col.closedMenu.sideMenu{ 
   width: 75px;
   max-width: 75px;
-  margin-right: 50px;
+}
+  
+@media (min-width: 576px){
+  .col.closedMenu.sideMenu{ 
+    margin-right: 50px;
+  }
 }
 
 h2,
@@ -565,6 +570,18 @@ img {
 
 .bottomNav {
   position: relative;
+  padding-left: 10%;
+}
+  
+@media(max-width: 992px){
+  .bottomNav{
+    padding-left: 20%;
+  }
+}
+  @media(max-width: 576px){
+  .bottomNav{
+    padding-left: 40%;
+  }
 }
 
 .bottomNav:before {
@@ -652,6 +669,32 @@ img {
     text-transform: uppercase;
   }
   
+  @media(max-width: 1200px){
+    .generalSectionBar, .planSectionBar, .spendSectionBar, .reportSectionBar{
+      top: 50px!important;
+      left: 25px!important;
+      width: 30px!important;
+      height: 100%!important;
+    }
+    .generalSectionBar span, .planSectionBar span, .spendSectionBar span, .reportSectionBar span{
+      padding: 10px 2px!important;
+      margin-left: 0!important;
+      margin-top: 30px!important;
+      height: auto!important;
+      display: block!important;
+      width: 100px!important;
+      text-align: center!important;
+      position: relative!important;
+      left: calc(50% - 50px)!important;
+    }
+  }
+  
+  @media(max-width: 576px){
+    .generalSectionBar span, .planSectionBar span, .spendSectionBar span, .reportSectionBar span{
+      font-size: 14px;
+    }
+  }
+  
   .generalSection .plan .inside{
     background-color: #587C84;
   }
@@ -669,6 +712,12 @@ img {
 
 .container-fluid {
   padding: 0;
+}
+  
+@media(max-width: 576px){
+  .container{
+    padding: 0;
+  }
 }
 
 .pageTitle,

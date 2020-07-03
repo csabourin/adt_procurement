@@ -207,6 +207,12 @@ export default {
   float: left;
   margin: 50px 25px;
 }
+  
+@media (max-width: 1200px){
+  .learningElement {
+    margin-bottom: 0px;
+  }
+}
 
 .box {
   background-color: #fff;

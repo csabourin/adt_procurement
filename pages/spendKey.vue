@@ -57,10 +57,10 @@
             <template v-slot:title>{{$t('fileSet')}}</template>
             <template v-slot:content>
               <b-row>
-                <b-col cols="6" md="4" lg="2" class="text-center">
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
                 </b-col>
-                <b-col cols="6" md="4" lg="2" class="text-center">
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
                 </b-col>
               </b-row>
@@ -169,12 +169,18 @@ h3 {
   color: #7d677d;
   /*background-image: linear-gradient(transparent 30%, white 30%, white 85%, transparent 85%, transparent 100%);*/
   background-color: white;
-  quotes: """";
+  quotes: """""";
   padding: 1em;
   display: block;
   margin: auto;
   width: 90%;
   line-height: normal;
+}
+  
+@media(max-width: 768px){
+  .bigQuote {
+    font-size: 30px;
+  }
 }
 
 [lang=en] .bigQuote {

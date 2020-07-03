@@ -242,9 +242,9 @@ export default {
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
-  "DataComparisonTitle":"Activité: Comparaison des données",
-  "ContinuousMonitoringTitle":"Activité: Suivi continu",
-  "YearEndProceduresTitle":"Activité: Procédures de fin d’année",
+  "DataComparisonTitle":"Activité : Comparaison des données",
+  "ContinuousMonitoringTitle":"Activité : Suivi continu",
+  "YearEndProceduresTitle":"Activité : Procédures de fin d’année",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l’activité",
   "playSegment":"Faire jouer le segment vidéo",

@@ -131,8 +131,8 @@
                         <p>La facture approuvée est ensuite envoyée au service des finances qui paiera la facture, conformément à l’article 33. </p>
                         <p>Gardez à l’esprit les éléments suivants: </p>
                         <ul>
-                          <li>vous ne pouvez pas autoriser les articles 33 et 34 pour la même transaction ou facture; un agent financier exécutera l’article 33 ; </li>
-                          <li>vous ne pouvez pas autoriser l’application de l’article 41 pour un contrat et de l’article 34 lié au même contrat; un agent d’approvisionnement exécutera l’article 41; </li>
+                          <li>vous ne pouvez pas autoriser les articles 33 et 34 pour la même transaction ou facture; un agent financier exécutera l’article 33; </li>
+                          <li>vous ne pouvez pas autoriser l’application de l’article 41 pour un contrat et de l’article 34 lié au même contrat; un agent d’approvisionnement exécutera l’article 41;</li>
                           <li>vous ne pouvez pas non plus autoriser une transaction pour laquelle vous pourriez être perçu comme ayant un avantage personnel.</li>
                         </ul>
 
@@ -375,9 +375,9 @@ button.accessibilityButton {
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
-  "CertAuthorityTitle":"Activité: Autorité de certification",
-  "ProcessInvoiceTitle":"Activité: Traitement de la facture",
-  "AccuracyInvoiceTitle":"Activité: Exactitude de la facture",
+  "CertAuthorityTitle":"Activité : Autorité de certification",
+  "ProcessInvoiceTitle":"Activité : Traitement de la facture",
+  "AccuracyInvoiceTitle":"Activité : Exactitude de la facture",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l’activité",
   "playSegment":"Faire jouer le segment vidéo",

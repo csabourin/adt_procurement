@@ -2,7 +2,7 @@
 	<div>
     <b-container>
       <b-row>
-        <b-col xl="7" lg="6"><SalesInvoice /></b-col>
+        <b-col xl="7" lg="6" style="border: 1px solid #212529;"><SalesInvoice /></b-col>
         <b-col>
 		 <b-card>
       <p v-html="$t('instructions')" />
@@ -62,7 +62,7 @@
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "You will need to contact the supplier to correct the invoice as there are five pairs of glasses you have not received as there are five pairs of glasses you have not received. "
+      "conclusion": "You will need to contact the supplier to correct the invoice as there are five pairs of glasses you have not received. "
     },
     "q2": {
       "text": "You ordered highlighters in the amount of $10.00 from XYZ Enterprises. Looking at the invoice provided, should you pay it?",
@@ -104,7 +104,7 @@
       "conclusion": "Vous devrez contacter le fournisseur pour faire corriger la facture, car vous n’avez pas reçu 5 paires."
     },
     "q2": {
-      "text": "Vous avez commandé des surligneurs d’une valeur de 10$ auprès de l’Entreprise XYZ. En regardant la facture fournie, devriez-vous la payer?",
+      "text": "Vous avez commandé des surligneurs d’une valeur de 10&nbsp;$ auprès de l’Entreprise XYZ. En regardant la facture fournie, devriez-vous la payer?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -116,7 +116,7 @@
       "conclusion": "Si vous regardez attentivement, vous avez commandé chez Entreprise XYZ, mais la facture indique Entreprise ABC."
     },
     "q3": {
-      "text": "Vous avez commandé des lunettes roses au prix de 20 $ la paire. En regardant la facture fournie, devriez-vous la payer?",
+      "text": "Vous avez commandé des lunettes roses au prix de 20&nbsp;$ la paire. En regardant la facture fournie, devriez-vous la payer?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -125,7 +125,7 @@
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": " Si vous regardez bien, vous avez commandé des lunettes roses à 20 $ la paire. La facture indique 25 $ l’unité. Vous devrez communiquer avec le fournisseur pour faire corriger la facture."
+      "conclusion": " Si vous regardez bien, vous avez commandé des lunettes roses à 20&nbsp;$ la paire. La facture indique 25&nbsp;$ l’unité. Vous devrez communiquer avec le fournisseur pour faire corriger la facture."
     }
   }
 }</i18n>

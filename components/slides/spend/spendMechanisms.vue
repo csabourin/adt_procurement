@@ -187,7 +187,7 @@ export default {
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": "Les contrats concurrentiels sont surtout utilisés pour des besoins de plus grande valeur ou de plus grande complexité lorsque des offres à commandes ou des arrangements en matière d’approvisionnement ne sont pas en place.<br>Vous en apprendrez davantage sur ces options et lignes directrices dans le module Approvisionnement."
+      "conclusion": "Les contrats concurrentiels sont surtout utilisés pour des besoins de plus grande valeur ou de plus grande complexité lorsque des offres à commandes ou des arrangements en matière d’approvisionnement ne sont pas mis en place ou ne peuvent répondre au besoin. <br>Vous en apprendrez davantage sur ces options et lignes directrices dans le module Approvisionnement."
     }
   }
 }</i18n>

@@ -244,9 +244,9 @@ export default {
   "reportSectionBar": "REPORT"
   },
   "fr":{
-  "externalGovtReports":"Activité: Rapports externes du gouvernement",
-  "IdentifyResultsTitle":"Activité: Démontrer les résultats",
-  "inRealLifeTitle":"Activité: Dans la vraie vie",
+  "externalGovtReports":"Activité : Rapports externes du gouvernement",
+  "IdentifyResultsTitle":"Activité : Démontrer les résultats",
+  "inRealLifeTitle":"Activité : Dans la vraie vie",
   "TakeTheQuiz":"Répondez au questionnaire",
   "transcriptText":"",
   "reportSectionBar": "RAPPORTS"

@@ -243,10 +243,10 @@ export default {
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
-  "KeyPeriodsFSRTitle":"Activité: Périodes clés pour les rapports sur la situation financière",
-  "whatIsFSR":"Activité: Qu’est-ce qu’un rapport sur la situation financière?",
-  "FSRActivitiesTitle":"Activité: Activités pour le Rapport sur la situation financière",
-  "UpdatingAnnualForecastTitle":"Activité: Mise à jour des prévisions annuelles",
+  "KeyPeriodsFSRTitle":"Activité : Périodes clés pour les rapports sur la situation financière",
+  "whatIsFSR":"Activité : Qu’est-ce qu’un rapport sur la situation financière?",
+  "FSRActivitiesTitle":"Activité : Activités pour le Rapport sur la situation financière",
+  "UpdatingAnnualForecastTitle":"Activité : Mise à jour des prévisions annuelles",
   "transcriptText":"",
   "reportSectionBar": "RAPPORTS"
   }

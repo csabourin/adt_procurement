@@ -45,14 +45,14 @@ export default {
 <i18n>{
   "en": {
     "q1": {
-      "text": "You are shopping around to buy two dry erase boards. Is this a soft commmitment or a hard commitment?",
+      "text": "You are shopping around to buy two dry erase boards. Is this a soft commitment or a hard commitment?",
       "options": {
-        "1": "Soft Commitment",
-        "2": "Hard Commitment"
+        "1": "Soft commitment",
+        "2": "Hard commitment"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Correct!</strong>",
-        "2": "<span class='v-right' /><strong>Incorrect.</strong>"
+        "1": "<span class='v-right' /><strong>Correct!</strong>",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
       "conclusion": "This is a soft commitment because you have not yet made an arrangement with a supplier but have an idea of the cost."
     },
@@ -70,7 +70,7 @@ export default {
         "3": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
         "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
       },
-      "conclusion": "Given that you bought a low number of items, it would be considered an expenditure.<br>Don’t forget, your organisation may use a different financial structure, find out how your coding works!"
+      "conclusion": "Given that you bought a low number of items, it would be considered an expenditure.<br>Don’t forget, your organization may use a different financial structure. Find out how your coding works!"
     }
   },
   "fr": {

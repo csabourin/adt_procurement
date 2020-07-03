@@ -13,20 +13,20 @@
               <p>Commitment</p>
             </th>
             <th id="3" scope="col">
-              <p>Year to Date Actuals</p>
+              <p>Year-to-Date Actuals</p>
             </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td headers="1">
-              <p>$44,900</p>
+              <p class="text-right">$44,900</p>
             </td>
             <td headers="2">
-              <p>$15,000</p>
+              <p class="text-right">$15,000</p>
             </td>
             <td headers="3">
-              <p>$29,000</p>
+              <p class="text-right">$29,000</p>
             </td>
           </tr>
         </tbody>
@@ -52,13 +52,13 @@
         <tbody>
           <tr>
             <td headers="1">
-              <p>44&nbsp;900$</p>
+              <p class="text-right">44&nbsp;900$</p>
             </td>
             <td headers="2">
-              <p>15&nbsp;000$</p>
+              <p class="text-right">15&nbsp;000$</p>
             </td>
             <td headers="3">
-              <p>29&nbsp;000$</p>
+              <p class="text-right">29&nbsp;000$</p>
             </td>
           </tr>
         </tbody>
@@ -90,6 +90,9 @@
         </b-tab>
         <b-tab title="Question 4">
           <radioQuiz :question="$t('q4')" qId="4" />
+        </b-tab>
+        <b-tab title="Question 5">
+          <radioQuiz :question="$t('q5')" qId="5" />
         </b-tab>
       </b-tabs>
         <!-- Control buttons-->
@@ -198,10 +201,22 @@
           "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
         },
         "conclusion": "Given that it is only $2,000 for 10 microscopes, it is an expenditure. If you had purchased more microscopes or at a higher unit price, it could have been considered an asset. Consult your department to find out your limits."
+      },
+      "q5": {
+        "text": "A training course is required on how to use the new microscopes. Can you approve your own training course expense?",
+        "options": {
+          "1": "Yes",
+          "2": "No"
+        },
+        "feedback": {
+          "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+          "2": "<span class='v-right' /> <strong>Correct!</strong>"
+        },
+        "conclusion": "Since the purchase can be perceived as a personal benefit, you will have to ask your direct supervisor to approve the training course expense."
       }
     },
     "fr": {
-      "openCard": "Ouvrir le specimen de carte de signature",
+      "openCard": "Ouvrir le spécimen de carte de signature",
       "q1": {
         "text": "Avez-vous assez d’argent pour payer les microscopes?",
         "options": {
@@ -255,6 +270,18 @@
           "4": "<span class='v-wrong' /> <strong>Incorrect</strong>."
         },
         "conclusion": "Étant donné qu’il ne s’agit que de 2&nbsp;000&nbsp;$ pour 10 microscopes, c’est une dépense. Si vous aviez acheté davantage de microscopes ou si vous les aviez achetés à un prix unitaire plus élevé, cela aurait pu être considéré comme un actif. Consultez votre ministère pour connaître vos limites."
+      },
+      "q5": {
+        "text": "Un cours de formation est nécessaire sur la façon d'utiliser les nouveaux microscopes. Pouvez-vous approuver vos propres frais de formation?",
+        "options": {
+          "1": "Oui",
+          "2": "Non"
+        },
+        "feedback": {
+          "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
+          "2": "<span class='v-right' /> <strong>Correct!</strong>"
+        },
+        "conclusion": "Comme l'achat peut être perçu comme un avantage personnel, vous devrez demander à votre supérieur direct d'approuver la dépense du cours de formation."
       }
     }
   }

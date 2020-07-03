@@ -8,7 +8,7 @@
    <path d="m495.7,321.6c0,0 0,278.2 0,278.2m-80.9,-0.4c0,0 81.3,0 81.3,0m-81.3,-18.6c0,0 81.3,0 81.3,0m-81.3,-18.5c0,0 81.3,0 81.3,0m-81.3,-18.6c0,0 81.3,0 81.3,0m-81.3,-18.5c0,0 81.3,0 81.3,0m-484.3,-18.5c0,0 484.3,0 484.3,0m-484.3,-166.9c0,0 484.3,0 484.3,0m-0.4,-79.6c0,0 0,37.1 0,37.1m-483.9,-0.3c0,0 484.3,0 484.3,0m-484.3,-18.6c0,0 484.3,0 484.3,0m-80.9,43.2c0,0 0,278.2 0,278.2m0,-339.6c0,0 0,37.1 0,37.1m-80.6,24.3c0,0 0,185.4 0,185.4m0,-246.8c0,0 0,37.1 0,37.1m-80.6,-37.1c0,0 0,37.1 0,37.1m-80.6,-37.1c0,0 0,37.1 0,37.1m-80.6,24.3c0,0 0,185.4 0,185.4m0,-246.8c0,0 0,37.1 0,37.1m-80.6,24.3c0,0 0,185.4 0,185.4m0,-246.8c0,0 0,37.1 0,37.1" stroke-width="0.7" stroke-miterlimit="10" stroke="#3c3c3c" fill="none"/>
    <path d="m11.8,320.9c0,0 484.3,0 484.3,0m-484.3,-61.4c0,0 484.3,0 484.3,0" stroke-width="1.4" stroke-miterlimit="10" stroke="#3c3c3c" fill="none"/>
    <text x="15" y="38" font-size="16.7" font-family="Arial" font-weight="700">{{$t('ABC')}}</text>
-   <text x="371" y="33" font-size="26" font-family="Arial" font-weight="900" fill="gray">{{$t('Invoice')}}</text>
+   <text :x="this.$i18n.locale == 'en' ? 371 : 365" y="33" font-size="26" font-family="Arial" font-weight="900" fill="gray">{{$t('Invoice')}}</text>
    <text x="15" y="51" font-size="9.3" font-family="Arial" font-weight="700" font-style="italic">{{$t('tagline')}}</text>
    <text x="337" y="64" font-size="9.3" font-family="Arial" font-weight="700">{{$t('date')}}</text>
    <text x="418" y="64" font-size="9.3" font-family="Arial" font-weight="500">{{$t('18-10-19')}}</text>

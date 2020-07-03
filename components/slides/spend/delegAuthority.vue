@@ -4,7 +4,7 @@
       <b-tabs content v-model="tabIndex">
         <b-tab title="Question 1"><radioQuiz :question="$t('q1')" qId="1"/></b-tab>
         <b-tab title="Question 2"><radioQuiz :question="$t('q2')" qId="2" /></b-tab>
-        <b-tab title="Question 3"><checkboxQuiz :question="$t('q3')" qId="3" :Answer="['3']"/></b-tab>
+        <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" :Answer="['3']"/></b-tab>
         <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
       </b-tabs>
       <!-- Control buttons-->
@@ -80,7 +80,7 @@
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
       },
-      "conclusion": "As per the delegation of financial authority chart, the manager does not have authority to initiate hospitality. So the correct answer is $0. For more information on hospitality, visit the <a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228' target='_blank'>Directive on Travel, Hospitality, Conference and Event Expenditures</a>."
+      "conclusion": "As per the delegation of financial signing authority chart, the manager does not have authority to initiate hospitality. So the correct answer is $0. For more information on hospitality, visit the <a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228' target='_blank'>Directive on Travel, Hospitality, Conference and Event Expenditures</a>."
     },
     "q2": {
       "text": "What is the lowest position that could approve the hospitality?",
@@ -99,7 +99,7 @@
       "conclusion": ""
     },
     "q3": {
-      "text": "Multiple departmental employees are travelling to an event. Using the departmental financial delegation chart provided, who would you ask to approve a $23,000 amount (section 32) made up of travel and event registration costs?",
+      "text": "Multiple departmental employees are travelling to an event. Using the departmental delegation of authorities chart provided, who would you ask to approve a $23,000 amount (section 32) made up of travel and event registration costs?",
       "options": {
         "1": "Director",
         "2": "Director General",
@@ -176,7 +176,7 @@
     "q4": {
       "text": "Que signifie 'P' ou 'Plein' dans le tableau fourni?",
       "options": {
-        "1": "Tout est possible Vous pouvez approuver le montant de votre choix.",
+        "1": "Tout est possible! Vous pouvez approuver le montant de votre choix.",
         "2": "Vous ne pouvez approuver qu’un montant prédéfini. "
       },
       "feedback": {

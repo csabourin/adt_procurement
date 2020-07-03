@@ -76,7 +76,7 @@
                       <p>N001</p>
                     </td>
                     <td headers="1">
-                      <p>Salaire</p>
+                      <p>Salaires</p>
                     </td>
                     <td headers="2">
                       <p>C4346</p>
@@ -178,7 +178,7 @@ export default {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "2": "<span class='v-right' /><strong>Correct!</strong>"
   },
-  "conclusion": "The Fund is coded incorrectly to Salary, it should be coded to Operations and Maintenance. The General Ledger is coded incorrectly to Travel. It should be to Office Supplies. You should correct the financial coding before certifying under section 34."
+  "conclusion": "The Fund is coded incorrectly to Salary, it should be coded to Operations and Maintenance. The General Ledger is coded incorrectly to Travel. It should be coded to Office Supplies. You should correct the financial coding before certifying under section 34."
   },
   "q2": {
   "text": "Can a manager approve their own $15 parking claim?",

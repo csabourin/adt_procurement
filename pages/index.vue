@@ -43,12 +43,12 @@
           
     <b-row align-h="center" style="margin-bottom: 30px;">
       <b-col cols="12" lg="8" xl="7">
-        <b-button-group class="mt-2 d-none d-sm-block" :aria-label="$t('chooseScenarioLabel')" style="width: 100%;">
+        <b-button-group class="mt-2 d-none d-sm-flex" :aria-label="$t('chooseScenarioLabel')" style="width: 100%;">
           <b-button @click="chosenScenario = 'takeCourse'" :disabled="chosenScenario == 'takeCourse'">{{$t('takeCourse')}}</b-button>
           <b-button @click="chosenScenario = 'refresh'" :disabled="chosenScenario == 'refresh'">{{$t('refresh')}}</b-button>
           <b-button @click="chosenScenario = 'justExam'" :disabled="chosenScenario == 'justExam'">{{$t('justExam')}}</b-button>
         </b-button-group>
-        <b-button-group class="mt-2 d-block d-sm-none" :aria-label="$t('chooseScenarioLabel')" style="width: 100%;" vertical>
+        <b-button-group class="mt-2 d-flex d-sm-none" :aria-label="$t('chooseScenarioLabel')" style="width: 100%;" vertical>
           <b-button @click="chosenScenario = 'takeCourse'" :disabled="chosenScenario == 'takeCourse'">{{$t('takeCourse')}}</b-button>
           <b-button @click="chosenScenario = 'refresh'" :disabled="chosenScenario == 'refresh'">{{$t('refresh')}}</b-button>
           <b-button @click="chosenScenario = 'justExam'" :disabled="chosenScenario == 'justExam'">{{$t('justExam')}}</b-button>

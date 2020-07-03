@@ -682,10 +682,10 @@ img {
       margin-top: 30px!important;
       height: auto!important;
       display: block!important;
-      width: 150px!important;
+      width: 120px!important;
       text-align: center!important;
       position: relative!important;
-      left: calc(50% - 75px)!important;
+      left: calc(50% - 60px)!important;
     }
   }
   

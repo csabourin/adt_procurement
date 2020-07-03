@@ -43,7 +43,12 @@
           
     <b-row align-h="center" style="margin-bottom: 30px;">
       <b-col cols="12" lg="8" xl="7">
-        <b-button-group class="mt-2" :aria-label="$t('chooseScenarioLabel')" style="width: 100%;">
+        <b-button-group class="mt-2 d-none d-sm-block" :aria-label="$t('chooseScenarioLabel')" style="width: 100%;">
+          <b-button @click="chosenScenario = 'takeCourse'" :disabled="chosenScenario == 'takeCourse'">{{$t('takeCourse')}}</b-button>
+          <b-button @click="chosenScenario = 'refresh'" :disabled="chosenScenario == 'refresh'">{{$t('refresh')}}</b-button>
+          <b-button @click="chosenScenario = 'justExam'" :disabled="chosenScenario == 'justExam'">{{$t('justExam')}}</b-button>
+        </b-button-group>
+        <b-button-group class="mt-2 d-block d-sm-none" :aria-label="$t('chooseScenarioLabel')" style="width: 100%;" vertical>
           <b-button @click="chosenScenario = 'takeCourse'" :disabled="chosenScenario == 'takeCourse'">{{$t('takeCourse')}}</b-button>
           <b-button @click="chosenScenario = 'refresh'" :disabled="chosenScenario == 'refresh'">{{$t('refresh')}}</b-button>
           <b-button @click="chosenScenario = 'justExam'" :disabled="chosenScenario == 'justExam'">{{$t('justExam')}}</b-button>
@@ -169,6 +174,19 @@ export default {
     text-align: left;
     margin-bottom: -1em;
     margin-left: 50px;
+  }
+  
+  @media(max-width: 768px){
+    .sideTitle {
+      margin-left: 25px;
+    }
+  }
+  
+  @media(max-width: 576px){
+    .sideTitle {
+      margin-left: 0px;
+      font-size: 32px;
+    }
   }
 
   .mainWindow {

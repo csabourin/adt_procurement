@@ -59,7 +59,8 @@ export default {
   },
   data() {
     return {
-      MenuShowing: false
+      MenuShowing: false,
+      currentPage: ""
     }
   },
   components: {
@@ -92,29 +93,6 @@ export default {
     availableLocales() {
       return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     },
-    currentPage() {
-      var links = [];
-      var titles = []
-
-      var menus = document.querySelectorAll("menu");
-      for (var i = 0; i < menus.length; i++) {
-        var menuLinks = menus[i].querySelectorAll("a")
-        for (var j = 0; j < menuLinks.length; j++) {
-          links.push(menuLinks[j].getAttribute("href"));
-          titles.push(menuLinks[j].innerHTML);
-        }
-      }
-
-      for (var k = 0; k < links.length; k++) {
-        if (links[k] == this.$route.path) {
-          var title = titles[k]
-          title = title.replace("<span class=\"v-inv\">", "")
-          title = title.replace("</span>", "")
-          title = title.replace("&nbsp;", " ")
-          return title; 
-        }
-      }
-    },
   },
   methods: {
     ShowMenu() {
@@ -133,6 +111,30 @@ export default {
           current.setAttribute("aria-current", "page");
         });
       });
+    },
+    getCurrentPageTitle(){
+      var links = [];
+      var titles = []
+
+      var menus = document.querySelectorAll("menu");
+      for (var i = 0; i < menus.length; i++) {
+        var menuLinks = menus[i].querySelectorAll("a")
+        for (var j = 0; j < menuLinks.length; j++) {
+          links.push(menuLinks[j].getAttribute("href"));
+          titles.push(menuLinks[j].innerHTML);
+        }
+      }
+
+      for (var k = 0; k < links.length; k++) {
+        if (links[k] == this.$route.path) {
+          var title = titles[k]
+          title = title.replace("<span class=\"v-inv\">", "")
+          title = title.replace("</span>", "")
+          title = title.replace("&nbsp;", " ")
+          console.log(title);
+          this.currentPage = title; 
+        }
+      }
     }
   },
   watch: {
@@ -151,10 +153,16 @@ export default {
         // setAriaCurrent in navigation only after focus management
         this.setAriaCurrent();
       });
+      
+      this.getCurrentPageTitle()
     },
   },
   mounted() {
     this.setAriaCurrent();
+    
+    this.$nextTick(function() {
+      this.getCurrentPageTitle();
+    });
   }
 }
 

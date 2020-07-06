@@ -167,8 +167,8 @@ export default {
 
   .sideTitle {
     font-size: 35px;
-    font-family: 'Roboto Medium', sans-serif;
-    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     clear: both;
     text-transform: uppercase;
     text-align: left;

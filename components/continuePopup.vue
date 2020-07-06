@@ -8,8 +8,8 @@
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
     </template>
     <b-row align-h="center">
-      <b-col cols="4">
-        <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" class="img-fluid review" style="margin-bottom: 15px; margin-top: 10px;">
+      <b-col cols="12" md="9">
+        <img src="~/assets/continuePopup.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
       </b-col>
     </b-row>
     <b-row>

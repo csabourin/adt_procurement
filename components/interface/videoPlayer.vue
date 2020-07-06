@@ -8,6 +8,12 @@
             <track :key="'chap'+$i18n.locale" v-if="chapterFile" kind="chapters" :src="chapterUrl" @load="generate" default="">
             <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions" @cuechange="readCaptions">
           </video>
+          <transition name="overlay-fade" appear>
+            <div class="overlay" v-show="showPlayOverlay"><font-awesome-icon icon="play" role="presentation" size="5x" /></div>
+          </transition>
+          <transition name="overlay-fade" appear>
+            <div class="overlay done" v-show="videoDone"><font-awesome-icon icon="check" role="presentation" size="5x" /><p class="text-center">{{$t('videoDone')}}</p></div>
+          </transition>
           <transition name="expand">
             <figcaption class="CC" v-if="CCactive">
               <p aria-live="polite">{{Captions}}</p>
@@ -189,7 +195,8 @@ export default {
         }
       },
       videoDone: false,
-      tipheight: 0
+      tipheight: 0,
+      showPlayOverlay: false
     }
   },
   filters: {
@@ -346,7 +353,7 @@ export default {
       this.$store.commit('currentPlaying/setVolume', volume)
     },
     PlayTime(time){
-      if(time >= 99.5 && this.chapters){
+      if(time >= 99.7 && this.chapters){
         this.videoDone = true;
       }
       else{
@@ -389,6 +396,9 @@ export default {
         }
       })
       this.resumePosition()
+      
+      this.showPlayOverlay = true;
+      this.setOverlayHeight()
     },
     resumePlay() {
       if (!this.accessiblePopup) {
@@ -511,7 +521,8 @@ export default {
       }
     },
     setPlaying() {
-      this.isPaused = !this.isPaused
+      this.isPaused = !this.isPaused;
+      this.showPlayOverlay = false;
       if (!this.isPaused) {
         this.$refs.videoplayer.play()
       } else {
@@ -552,6 +563,19 @@ export default {
     tipLeave(el, done) {
       Velocity(el, { height: "0px" }, { duration: 300 }, { complete: done });
     },
+    setOverlayHeight(){
+      if (this.$refs.videoplayer) {
+        var videoHeight = this.$refs.videoplayer.offsetHeight;
+        var overlays = document.querySelectorAll(".overlay");
+        for(var l = 0; l < overlays.length; l++){
+          console.log(overlays[l])
+          overlays[l].style.height = videoHeight + "px";
+        }
+      }
+    }
+  },
+  mounted(){
+    window.onresize  = this.setOverlayHeight;
   }
 }
 
@@ -575,8 +599,9 @@ export default {
   "jumpQuiz":"Jump to quiz",
   "playSegment":"Play video segment",
   "continue":"Continue to next section",
-  "sr_transcriptlocation":"The transcript can be found after the chapters list.",
-  "segmentsTitle": "Video Segments"
+  "sr_transcriptlocation":"The transcript can be found after the segments list.",
+  "segmentsTitle": "Video Segments",
+  "videoDone": "You have video this section."
   },
   "fr":{
   "play":"Jouer",
@@ -595,8 +620,9 @@ export default {
   "jumpQuiz":"Sauter au quiz",
   "playSegment":"Faire jouer le segment vidéo",
   "continue":"Continuer à la section suivante",
-  "sr_transcriptlocation":"Le transcript peut être trouvé après la liste des chapitres.",
-  "segmentsTitle": "Segments vidéo"
+  "sr_transcriptlocation":"Le transcript peut être trouvé après la liste des segments.",
+  "segmentsTitle": "Segments vidéo",
+  "videoDone": "Vous avez complété cette section."
   }
   }
 </i18n>
@@ -1050,6 +1076,51 @@ video {
   .tipRow{
     transition: height 0.3s; 
     overflow: hidden;
+  }
+  
+  
+  .overlay{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    
+    transition: opacity 0.3s;
+  }
+  
+  .overlay.done{
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 1s;
+  }
+  
+  .overlay > svg{
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 35px);
+    color: white;
+  }
+  
+  .overlay > p{
+    position: absolute;
+    top: calc(50% + 70px);
+    color: white;
+    display: block;
+    width: 100%;
+  }
+  
+  .overlay-fade-enter{
+    opacity: 0;
+  }
+  .overlay-fade-enter-to{
+    opacity: 1;
+  }
+  .overlay-fade-leave{
+    opacity: 1;
+  }
+  .overlay-fade-leave-to{
+    opacity: 0;
   }
 
 </style>

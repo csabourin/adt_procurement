@@ -20,6 +20,15 @@
                 <b-card-body>
                   <b-card-text>
                     <span v-if="$i18n.locale=='en'">
+                      <p>In this section, you will learn to:</p>
+                      <ul>
+                        <li>Interpret a work plan</li>
+                        <li>Make a 360 degree scan</li>
+                        <li>Incorporate Government priorities into a work plan</li>
+                        <li>Adjust a work plan according to new information</li>
+                      </ul>
+                      <p>This section should take you approximately 20 minutes to complete.</p>
+                      <hr>
                       <h2>The Purpose of a Work Plan</h2>
                       <p>A work plan is a living document in which you define and prioritize your unit’s activities. Think of it as a to-do list for the upcoming year. It helps communicate how you assign resources and set timelines. It is the cornerstone of your planning process because it supports your budget and reporting activities.&nbsp;</p>
                       <p>Typically you wouldn’t start from scratch. You would simply review last year's work plan, budget and reports to identify what needs to be kept, added or removed for the new year.</p>
@@ -69,6 +78,7 @@
                         <li>ajuster un plan de travail en fonction des nouveaux renseignements.</li>
                       </ul>
                       <p>Il vous faudra environ 20 minutes pour compléter cette section.</p>
+                      <hr>
                       <h2>Le but d’un plan de travail</h2>
                       <p>&laquo; Un plan de travail est un document évolutif dans lequel vous définissez et hiérarchisez les activités de votre unité. Considérez-le comme une liste de choses à faire pour l’année à venir. Il vous aide à communiquer la fa&ccedil;on dont vous affectez les ressources et fixez des échéances. C’est la pierre angulaire de votre processus de planification, car elle soutient votre budget et vos activités de production de rapports.&nbsp;</p>
                       <p>D’habitude, on ne part pas de zéro. Vous n’auriez qu’à examiner le plan de travail, le budget et les rapports de l’année derni&egrave;re pour déterminer ce qui doit &ecirc;tre conservé, ajouté ou supprimé pour la nouvelle année.</p>

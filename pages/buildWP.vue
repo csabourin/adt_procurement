@@ -126,7 +126,16 @@
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
-      <p>{{ $t('gotItContent') }}</p>
+      <b-row align-h="center">
+        <b-col cols="12" md="9">
+          <img src="~/assets/purposeWP.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
+        </b-col>
+      </b-row>
+      <b-row >
+        <b-col>
+          <p>{{ $t('gotItContent') }}</p>
+        </b-col>
+      </b-row>
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>

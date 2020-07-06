@@ -5,17 +5,17 @@
     </div>
     <b-container fluid style="overflow:hidden;">
       <b-row class="navBar" role="banner">
-        <b-col cols="5" sm="3" class="text-left">
+        <b-col cols="5" sm="2" class="text-left">
           <hamburger @menu-toggle="ShowMenu" :MenuShowing="MenuShowing" style="margin-right: 10px;" />
           <nuxt-link :to="localePath('index')">
             <homebutton v-bind:iconWidth="50" v-bind:iconTitle="$t('homePage')" />
           </nuxt-link>
           <button class="successIcon" v-b-modal.completionModal v-if="courseComplete"><img src="~/assets/successIcon.png" width="50" height="50" role="presentation" alt=""><strong class="completeCaption" v-html="$t('courseComplete')" /></button>
         </b-col>
-        <b-col cols="2" sm="6" style="justify-content: center;">
+        <b-col cols="2" sm="8" style="justify-content: center;">
           <h1 class="mainTitle"><img src="../components/SymbolicIdentifier.svg" width="55" :alt="$t('symbolicIdentifier')" role="presentation"> <span class="d-none d-sm-block">{{$t('finRoles')}}</span> <span class="v-inv d-block d-sm-none">{{$t('finRoles')}}</span></h1>
         </b-col>
-        <b-col cols="5" sm="3" class="text-right" style="justify-content: flex-end">
+        <b-col cols="5" sm="2" class="text-right" style="justify-content: flex-end">
           <fileMenu />
           <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
             <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" :lang="locale.code" v-bind:iconTitle="locale.name" />
@@ -761,20 +761,10 @@ img {
   overflow-x: auto;
   white-space: nowrap;
 }
-
-@media only screen and (max-width: 850px) {
-  .mainTitle {
-    font-size: 18px;
-  }
-
-  h1 img {
-    vertical-align: middle;
-  }
-}
   
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .mainTitle {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 

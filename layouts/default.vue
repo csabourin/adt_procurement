@@ -126,7 +126,7 @@ export default {
       }
 
       for (var k = 0; k < links.length; k++) {
-        if (links[k] == this.$route.path || links[k] == this.$route.path.slice(0, -1)) {
+        if (links[k] == this.$route.path || links[k] == this.$route.path.slice(0, -1) || links[k].toLowerCase() == this.$route.path || links[k].toLowerCase() == this.$route.path.slice(0, -1)) {
           var title = titles[k]
           title = title.replace("<span class=\"v-inv\">", "")
           title = title.replace("</span>", "")

@@ -281,14 +281,23 @@
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
         <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('InRealLife')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <span v-html="$t('IRLText')"></span>
-            <template v-slot:modal-ok>{{$t('close')}}</template>
+          <template v-slot:modal-header="{ close }">
+            <h3 class="h5">
+              <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('InRealLife')}}
+            </h3>
+            <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <b-row align-h="center">
+            <b-col cols="12" md="9">
+              <img src="~/assets/inRealLifeBudget.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <p v-html="$t('IRLText')"></p>
+            </b-col>
+          </b-row>
+          <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
         <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">

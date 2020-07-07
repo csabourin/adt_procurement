@@ -228,14 +228,14 @@
         <continue-popup id="purpose"></continue-popup>
         <b-modal no-stacking id="financialCycle" @hide="resumePlay()" okOnly>
             <template v-slot:modal-header="{ close }">
-                <h3 class="h5 review">
+                <h3 class="h5">
                     <img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="32" height="32"> {{$t('financialCycle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
             <b-row align-h="center">
               <b-col cols="12" md="4" class="text-center">
-                <download :texts="$t('cycle')" size=128 iconColor="Scan360Background" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" name="cycle" class="review" />
+                <download :texts="$t('cycle')" size=128 iconColor="Scan360Background" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" name="cycle" />
               </b-col>
             </b-row>
             <template v-slot:modal-ok>{{$t('close')}}</template>
@@ -389,7 +389,7 @@ export default {
   "submitBudgetTitle":"Activity: Submit and Adjust your Budget",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "AnalyzeBudgetKT":"Activity: Analyze a Budget - Key Terms",
-  "financialCycle":"Activity: Financial Cycle of the Government of Canada",
+  "financialCycle":"Reference: Financial Cycle of the Government of Canada",
   "budgetAnalyzeActivity":"Activity: Analyze Past And Current Year’s Budget",
   "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
   "InRealLife":"In Real Life",
@@ -405,7 +405,7 @@ export default {
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",
   "AnalyzeBudgetKT":"Activité : Analyser un budget - Termes clés",
-  "financialCycle":"Activité : Le cycle financier",
+  "financialCycle":"Référence : Le cycle financier",
   "budgetAnalyzeActivity":"Activité : Analyser les budgets précédents et en cours",
   "submitBudgetTitle":"Activité : Soumettre et ajuster votre budget ",
   "forecastBudgetTitle":"Activité : Prévoyez vos besoins budgétaires",

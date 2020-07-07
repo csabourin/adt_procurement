@@ -14,7 +14,7 @@
     </b-row>
     <b-row>
       <b-col>
-        <p class="text-center review" v-html="$t('content')"></p>
+        <p class="text-center" v-html="$t('content')"></p>
       </b-col>
     </b-row>
     <template v-slot:modal-ok>{{$t('close')}}</template>

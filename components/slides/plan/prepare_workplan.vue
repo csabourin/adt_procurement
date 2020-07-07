@@ -8,45 +8,68 @@
       <b-container class="workplan-table wp-table-1">
         <b-row>
           <b-col class="encadrage">
-            <h3 v-html="$t('pwpGovtPri')" id="pwpGovtPriLabel"></h3>
-            <p>
-              <select v-model='govtPri' @change="q1Submit=false" aria-labelledby="pwpGovtPriLabel">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option v-for="(answer, index) in $t('q1')" :value="index">{{answer}}</option>
-              </select> 
-            </p>
+            <fieldset>
+              <legend><h3 v-html="$t('pwpGovtPri')" id="pwpGovtPriLabel" style="margin-bottom: 10px;"></h3></legend>
+              <!--<ol type="a">
+                <li v-for="(answer, index) in $t('q1')" :id="index">{{answer}}</li>
+              </ol>
+              <p>
+                <select v-model='govtPri' @change="q1Submit=false" aria-labelledby="pwpGovtPriLabel">
+                  <option disabled value=''>{{$t('qDisabled')}}</option>
+                  <option v-for="(answer, index) in $t('q1')" :value="index" :aria-labelledby="index" v-html="genCharArray('a', Object.keys($i18n.t('q1')).length)[index]"></option>
+                </select> 
+              </p>-->
+              <p v-for="(answer, index) in $t('q1')" :key="index">
+                <input type="radio" v-model="govtPri" name="govtPri" :id="'q1_' + index" :value="index" @click="q1Submit=false">
+                <label :for="'q1_' + index" v-html="answer" aria-hidden="false" />
+              </p> 
+            </fieldset>
             <p style="display: block; margin-top: 10px; margin-bottom: 10px;"><b-button @click="q1Submit=true" :disabled="!govtPri || q1Submit">{{$t('submit')}}</b-button></p>
             <p v-if="govtPri && q1Submit"> <span v-html="$t('q1a.'+govtPri)" /></p>
           </b-col>
         </b-row>
         <b-row>
           <b-col class="encadrage">
-            <h3 v-html="$t('pwpDeptPri')" id="pwpDeptPriLabel"></h3>
-            <p>
-              <select v-model='deptPri' @change="q2Submit=false" aria-labelledby="pwpDeptPriLabel">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option value="1">{{$t('q2-1')}}</option>
-                <option value="2">{{$t('q2-2')}}</option>
-                <option value="3">{{$t('q2-3')}}</option>
-              </select> 
-            </p>
+            <fieldset>
+              <legend><h3 v-html="$t('pwpDeptPri')" id="pwpDeptPriLabel" style="margin-bottom: 10px;"></h3></legend>
+              <!--<ol type="a">
+                <li v-for="(answer, index) in $t('q2')" :id="index">{{answer}}</li>
+              </ol>
+              <p>
+                <select v-model='deptPri' @change="q2Submit=false" aria-labelledby="pwpDeptPriLabel">
+                  <option disabled value=''>{{$t('qDisabled')}}</option>
+                  <option v-for="(answer, index) in $t('q2')" :value="index" :aria-labelledby="index" v-html="genCharArray('a', Object.keys($i18n.t('q2')).length)[index]"></option>
+                </select> 
+              </p>-->
+              <p v-for="(answer, index) in $t('q2')" :key="index">
+                <input type="radio" v-model="deptPri" name="deptPri" :id="'q2_' + index" :value="index" @click="q2Submit=false">
+                <label :for="'q2_' + index" v-html="answer" aria-hidden="false" />
+              </p>
+            </fieldset>
             <p style="display: block; margin-top: 10px; margin-bottom: 10px;"><b-button @click="q2Submit=true" :disabled="!deptPri || q2Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="deptPri && q2Submit"> <span v-html="$t('a2-'+deptPri)" /></p>
+            <p v-if="deptPri && q2Submit"> <span v-html="$t('q2a.'+deptPri)" /></p>
           </b-col>
         </b-row>
         <b-row>
           <b-col class="encadrage">
-            <h3 v-html="$t('pwpDirPri')" id="pwpDirPriLabel"></h3>
-            <p>
-              <select v-model='dirPri' @change="q3Submit=false" aria-labelledby="pwpDirPriLabel">
-                <option disabled value=''>{{$t('qDisabled')}}</option>
-                <option value="1">{{$t('q3-1')}}</option>
-                <option value="2">{{$t('q3-2')}}</option>
-                <option value="3">{{$t('q3-3')}}</option>
-              </select> 
-            </p>
+            <fieldset>
+              <legend><h3 v-html="$t('pwpDirPri')" id="pwpDirPriLabel" style="margin-bottom: 10px;"></h3></legend>
+              <!--<ol type="a">
+                <li v-for="(answer, index) in $t('q3')" :id="index">{{answer}}</li>
+              </ol>
+              <p>
+                 <select v-model='dirPri' @change="q3Submit=false" aria-labelledby="pwpDirPriLabel">
+                  <option disabled value=''>{{$t('qDisabled')}}</option>
+                  <option v-for="(answer, index) in $t('q3')" :value="index" :aria-labelledby="index" v-html="genCharArray('a', Object.keys($i18n.t('q3')).length)[index]"></option>
+                </select> 
+              </p>-->
+              <p v-for="(answer, index) in $t('q3')" :key="index">
+                <input type="radio" v-model="dirPri" name="dirPri" :id="'q3_' + index" :value="index" @click="q3Submit=false">
+                <label :for="'q3_' + index" v-html="answer" aria-hidden="false" />
+              </p>
+            </fieldset>
             <p style="display: block; margin-top: 10px; margin-bottom: 10px;"><b-button @click="q3Submit=true" :disabled="!dirPri || q3Submit">{{$t('submit')}}</b-button></p>
-            <p v-if="dirPri && q3Submit"><span v-html="$t('a3-'+dirPri)" /></p>
+            <p v-if="dirPri && q3Submit"><span v-html="$t('q3a.'+dirPri)" /></p>
           </b-col>
         </b-row>
         <!--<b-row>
@@ -134,30 +157,36 @@
       "titleMitigation": "Mitigation",
       "titleResources": "Resources",
       "qDisabled": "Please select one.",
-      "q1":
-      {
+      "q1": {
           "1": "To make Canada a leader of international efforts to combat climate change and reduce greenhouse emissions.",
           "2": "To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations.",
           "3": "To implement and further develop the Oceans Protection Plan and restore annual federal funding for freshwater research."
       },
-      "q1a":
-      {
+      "q1a": {
           "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority for the government, our scope is more about fisheries, not climate change.",
           "2": "<span class='v-right' /> <strong>Correct!</strong> Our priority is to protect the fisheries so that they are still around in 40 years for our grandchildren!",
           "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority for the government, your unit’s scope is more about fisheries, not protecting the oceans."
       },
-      "q2-1": "To contribute to an environmentally, economically and socially sustainable Canadian aquaculture sector by developing new federal legislation.",
-      "q2-2": "To ensure access to safe harbours, respond to on-water incidents and minimize or avoid negative impacts of environmental disasters on Canada’s oceans.",
-      "q2-3": "To support prosperous and sustainable commercial, Indigenous and recreational fisheries, aquaculture and other ocean industries.",
-      "a2-1": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority, our scope is more about fisheries.",
-      "a2-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority, our scope is more about fisheries.",
-      "a2-3": "<span class='v-right' /> <strong>Correct!</strong> Our scope is about fisheries",
-      "q3-1": "To manage the commercial domestic fisheries.",
-      "q3-2": "To protect endangered species in the Great Lakes.",
-      "q3-3": "To eliminate the encroachment of invasive species.",
-      "a3-1": "<span class='v-right' /> <strong>Correct!</strong>",
-      "a3-2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries.",
-      "a3-3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries." 
+      "q2":{
+        "1": "To contribute to an environmentally, economically and socially sustainable Canadian aquaculture sector by developing new federal legislation.",
+        "2": "To ensure access to safe harbours, respond to on-water incidents and minimize or avoid negative impacts of environmental disasters on Canada’s oceans.",
+        "3": "To support prosperous and sustainable commercial, Indigenous and recreational fisheries, aquaculture and other ocean industries."
+      },
+      "q2a": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority, our scope is more about fisheries.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority, our scope is more about fisheries.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> Our scope is about fisheries"
+      },
+      "q3": {
+        "1": "To manage the commercial domestic fisheries.",
+        "2": "To protect endangered species in the Great Lakes.",
+        "3": "To eliminate the encroachment of invasive species."
+      },
+      "q3a": {
+        "1": "<span class='v-right' /> <strong>Correct!</strong>",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  While this is a great priority, our scope is more about fisheries." 
+      }  
     },
     "fr":
     {
@@ -175,30 +204,36 @@
       "titleMitigation": "Atténuation",
       "titleResources": "Resources",
       "qDisabled": "Veuillez faire un choix",
-      "q1":
-      {
+      "q1": {
           "1": "Faire du Canada un chef de file international de lutte contre les changements climatiques et réduire les émissions de gaz à effet de serre.",
           "2": "Servir les Canadiens en assurant l’utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
           "3": "Mettre en œuvre et développer davantage le Plan de protection des océans et rétablir le financement fédéral annuel pour la recherche sur l’eau douce."
       },
-      "q1a":
-      {
+      "q1a": {
           "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante pour le gouvernement, notre responsabilité porte davantage sur la pêche que sur les changements climatiques.",
           "2": "<span class='v-right' /> <strong>Correct!</strong> Notre priorité est de protéger la pêche pour qu’elle existe encore dans 40 ans pour nos petits-enfants!",
           "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante pour le gouvernement, votre unité s’occupe davantage de la pêche que de la protection des océans."
       },
-      "q2-1": "Contribuer à la durabilité environnementale, économique et sociale du secteur de l’aquaculture canadien en élaborant de nouvelles lois fédérales.",
-      "q2-2": "Garantir l’accès à des ports sûrs, intervenir en cas d’incident sur l’eau et minimiser ou éviter les impacts négatifs sur les océans du Canada suite à des catastrophes environnementales.",
-      "q2-3": "Soutenir une pêche commerciale, autochtone et récréative qui soit productive et durable, l’aquaculture, et d’autres industries océaniqus.",
-      "a2-1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",
-      "a2-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",
-      "a2-3": "<span class='v-right' /> <strong>Correct!</strong> Notre responsabilité est de nous occuper des pêches.",
-      "q3-1": "Gérer les pêches commerciales intérieures.",
-      "q3-2": "Protéger les espèces en voie de disparition dans les Grands Lacs.",
-      "q3-3": "Éliminer la prolifération des espèces envahissantes.",
-      "a3-1": "<span class='v-right' /> <strong>Correct!</strong>",
-      "a3-2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",
-      "a3-3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches."
+      "q2":{
+        "1": "Contribuer à la durabilité environnementale, économique et sociale du secteur de l’aquaculture canadien en élaborant de nouvelles lois fédérales.",
+        "2": "Garantir l’accès à des ports sûrs, intervenir en cas d’incident sur l’eau et minimiser ou éviter les impacts négatifs sur les océans du Canada suite à des catastrophes environnementales.",
+        "3": "Soutenir une pêche commerciale, autochtone et récréative qui soit productive et durable, l’aquaculture, et d’autres industries océaniqus."
+      },
+      "q2a": {
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> Notre responsabilité est de nous occuper des pêches."
+      },
+      "q3": {
+        "1": "Gérer les pêches commerciales intérieures.",
+        "2": "Protéger les espèces en voie de disparition dans les Grands Lacs.",
+        "3": "Éliminer la prolifération des espèces envahissantes."
+      },
+      "q3a": {
+        "1": "<span class='v-right' /> <strong>Correct!</strong>",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches."
+      }
     }
 }</i18n>
 <script>
@@ -216,6 +251,15 @@
         deptPri: '',
         dirPri: '',
         q1Submit:false,q2Submit:false,q3Submit:false
+      }
+    },
+    methods:{
+      genCharArray(charA, num) {
+        var a = [" "], i = charA.charCodeAt(0), j = charA.charCodeAt(0) + num;
+        for (; i <= j; ++i) {
+          a.push(String.fromCharCode(i))
+        }
+        return a
       }
     }
   }
@@ -266,8 +310,23 @@
 }
 
 .tableColoured select{
-  max-width: 90%;
+  /*max-width: 90%;*/
 }
+  
+.workplan-table select{
+  width: auto!important;
+}
+  
+.workplan-table p{
+  display: block!important;
+  margin: 0;
+  min-height: unset!important;
+}
+  
+/*.workplan-table label{
+  display: inline;
+  margin: 0;
+}*/
 
 .vertical{
   transform: rotate(90deg);

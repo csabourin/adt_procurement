@@ -26,6 +26,7 @@
                         <p>For example, you may be asked to report on how well your programs achieved their intended results.</p>
                         <p>As such, you must continuously track your performance and results and compare them with what was planned.</p>
                         <p>Let’s do a quick activity to get more familiar with the terminology!</p>
+                        <hr>
                         <h2>Identify Results</h2>
                         <p>Fiscal year-end is when reporting closes the loop on work plans within the organization, and when we present globally, the results we achieved in the Departmental Results Report.</p>
                         <p>As the fiscal year is a cycle, last year’s results will inform planning for the next fiscal year.</p>
@@ -36,6 +37,7 @@
                         <p>Some departments review performance information profiles throughout the year to see if targets are on track or at risk of not being achieved.</p>
                         <p>In the next activity, you will have the opportunity to practise reporting</p>
                         <p>on whether your targets were met.</p>
+                        <hr>
                         <h2>In Real Life</h2>
                         <p>Let’s take what you have learned into real life.</p>
                         <p>Look up your organization’s performance information profiles and its external reports, such as the Departmental Results Report.</p>
@@ -49,6 +51,8 @@
                         <p>What is my role?</p>
                         <p>And, what information will I provide to feed into external reports?</p>
                         <p>Let’s try this quiz to see what you remember from the Report section.</p>
+                        <hr>
+                        <h2>Section Completed</h2>
                       </span>
                       <span v-if="$i18n.locale=='fr'">
                         <h2>Rapports externes du gouvernement</h2>
@@ -58,6 +62,7 @@
                         <p>Par exemple, on vous demandera peut-être d’indiquer dans quelle mesure vos programmes ont atteint les résultats visés à l’origine.</p>
                         <p>Pour ce faire, vous devez effectuer un suivi continu de votre rendement et de vos résultats par rapport à ce qui avait été planifié.</p>
                         <p>Voici une petite activité pour vous familiariser avec la terminologie nécessaire!</p>
+                        <hr>
                         <h2>Démontrer les résultats</h2>
                         <p>La fin de l’exercice financier est le moment où la production de rapports ferme la boucle des plans de travail de l’organisation et permet de présenter, de manière globale, les résultats de l’année dans le Rapport résultats ministériel.</p>
                         <p>Comme l’exercice financier est un cycle, les résultats de l’an dernier permettront la planification de l’année qui vient.</p>
@@ -67,6 +72,7 @@
                         <p>Celles-ci déterminent de façon plus concrète la responsabilité fondamentale de chaque programme et les résultats à atteindre.</p>
                         <p>Certains ministères examinent les profils de l’information sur le rendement tout au long de l’année pour voir si les chiffres cibles sont en bonne voie d’être atteints ou s’ils risquent de ne pas l’être.</p>
                         <p>L’activité suivante vous permettra de vous exercer à rapporter si les objectifs ont été atteints.</p>
+                        <hr>
                         <h2>Dans la vraie vie</h2>
                         <p>Appliquons ce que vous avez appris dans la vraie vie.</p>
                         <p>Cherchez les profils de l’information sur le rendement de votre organisation et ses rapports externes, comme Le rapport sur les résultats ministériels.</p>
@@ -80,6 +86,8 @@
                         <p>Quel est mon rôle?</p>
                         <p>Et quelles informations vais-je fournir pour alimenter les rapports externes?</p>
                         <p>Essayez ce quiz pour voir ce dont vous vous souvenez dans la section Rapport!</p>
+                        <hr>
+                        <h2>Section complétée</h2>                        
                       </span>
                     </b-card-text>
                   </b-card-body>

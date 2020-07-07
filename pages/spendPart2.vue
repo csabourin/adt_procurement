@@ -73,7 +73,7 @@
                           <li>may not authorize section 41 for a contract and section 34 related to the same contract; a procurement officer will perform section 41; </li>
                           <li>may not authorize any transaction for which they may be perceived as having a personal benefit.</li>
                         </ul>
-
+                        <hr>
                         <h2>Section Completed</h2>
 
                       </span>
@@ -135,7 +135,7 @@
                           <li>vous ne pouvez pas autoriser l’application de l’article 41 pour un contrat et de l’article 34 lié au même contrat; un agent d’approvisionnement exécutera l’article 41;</li>
                           <li>vous ne pouvez pas non plus autoriser une transaction pour laquelle vous pourriez être perçu comme ayant un avantage personnel.</li>
                         </ul>
-
+                        <hr>
                         <h2>Section complétée</h2>
 
                       </span>

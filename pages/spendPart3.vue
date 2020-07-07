@@ -55,6 +55,7 @@
                         <hr>
                         <h2>Quiz</h2>
                         <p>So now that you know how to initiate expenditures, authorize commitments, exercise financial authority and monitor and control finances, let’s see what you remember by taking this short quiz.</p>
+                        <hr>
                         <h2>Section Completed</h2>
                       </span>
                       <span v-if="$i18n.locale=='fr'">
@@ -94,6 +95,7 @@
                         <hr>
                         <h2>Quiz</h2>
                         <p>Maintenant que vous savez comment engager des dépenses, autoriser des engagements, exercer des pouvoirs financiers, et puis surveiller et contrôler les finances, voyons ce dont vous vous souvenez en répondant à ce petit quiz!</p>
+                        <hr>
                         <h2>Section complétée</h2>
                       </span>
                     </b-card-text>

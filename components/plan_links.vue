@@ -13,7 +13,7 @@
               <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html">Plan ministériels (PM)</externalLink>&nbsp;</li>
             </ul>
           </li>
-          <li><externalLink link="https://www.fin.gc.ca/access/budinfo-fra.asp">Budget fédéral</externalLink></li>
+          <li><externalLink link="https://www.canada.ca/fr/ministere-finances/services/publications/budget-federal.html">Budget fédéral</externalLink></li>
           <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/cadre-responsabilisation-gestion.html">Cadre de responsabilisation de gestion (CRG)</externalLink></li>
           <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/sujets/depenses-prevues.html">Dépenses prévues du gouvernement</externalLink></li>
           <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/rapports-ministeriels-rendement.html">Rapport sur les résultats ministériels (RRM)</externalLink></li>
@@ -39,7 +39,7 @@
             <li><externalLink link="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html">Departmental Plan (DP)</externalLink></li>
           </ul>
         </li>
-        <li><externalLink link="https://www.fin.gc.ca/access/budinfo-eng.asp">Federal Budget</externalLink></li>
+        <li><externalLink link="https://www.canada.ca/en/department-finance/services/publications/federal-budget.html">Federal Budget</externalLink></li>
         <li><externalLink link="https://www.canada.ca/en/treasury-board-secretariat/services/management-accountability-framework.html">Management Accountability Framework (MAF)</externalLink></li>
         <li><externalLink link="https://www.canada.ca/en/treasury-board-secretariat/topics/planned-government-spending.html">Planned Government Spending</externalLink></li>
         <li><externalLink link="https://www.canada.ca/en/treasury-board-secretariat/services/departmental-performance-reports.html">Departmental Results Reports (DRR)</externalLink></li>

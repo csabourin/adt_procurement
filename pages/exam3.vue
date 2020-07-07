@@ -403,7 +403,7 @@ export default {
   "unanswered":"Unanswered Question(s)",
   "Questions": {
   "q1": {
-  "text": "<div class='tableScrollLTM' style='margin-bottom: 15px;'><table class='qTable' style='font-weight: 400;'> <tbody> <tr> <td> <p>Budget </p> </td> <td> <p>Commitments </p> </td> <td> <p>Year-To-Date Actuals</p> </td> <td> <p>Annual Forecast</p> </td> <td> <p>Surplus / Deficit</p> </td> </tr> </tbody> </table> </div> <br>These are the column headings for the financial situation report. How is the surplus / deficit calculated?",
+  "text": "<div class='tableScrollLTM' style='margin-bottom: 15px;'><table class='qTable' style='font-weight: 400;'> <tbody> <tr style='background-color: #865F56; color: white;'> <td> <p>Budget </p> </td> <td> <p>Commitments </p> </td> <td> <p>Year-To-Date Actuals</p> </td> <td> <p>Annual Forecast</p> </td> <td> <p>Surplus / Deficit</p> </td> </tr> </tbody> </table> </div> <br>These are the column headings for the financial situation report. How is the surplus / deficit calculated?",
       "options": {
       "1": "Annual Forecast – Budget",
       "2": "Commitments – Actuals",
@@ -563,7 +563,7 @@ export default {
       "unanswered":"Question(s) non-répondue(s)",
       "Questions": {
       "q1": {
-      "text": "<div class='tableScrollLTM' style='margin-bottom: 15px;'><table class='qTable' style='font-weight: 400;'>        <tbody>          <tr>            <td>              <p>Budget </p>            </td>            <td>              <p>Engagements</p>            </td>            <td>              <p>Réalisations à ce jour</p>            </td>            <td>              <p>Prévisions annuelles</p>            </td>            <td>              <p>Excédent / Déficit</p>            </td>          </tr>          </tbody></table></div> Il s’agit des intitulés de colonne de l’état de la situation financière. Comment l’excédent / le déficit est-il calculé?",
+      "text": "<div class='tableScrollLTM' style='margin-bottom: 15px;'><table class='qTable' style='font-weight: 400;'>        <tbody>          <tr style='background-color: #865F56; color: white;'>            <td>              <p>Budget </p>            </td>            <td>              <p>Engagements</p>            </td>            <td>              <p>Réalisations à ce jour</p>            </td>            <td>              <p>Prévisions annuelles</p>            </td>            <td>              <p>Excédent / Déficit</p>            </td>          </tr>          </tbody></table></div> Il s’agit des intitulés de colonne de l’état de la situation financière. Comment l’excédent / le déficit est-il calculé?",
           "options": {
           "1": "Prévisions annuelles - Budget",
           "2": "Engagements - Réalisations",

@@ -21,7 +21,8 @@ export const state = () => ({
   reportPart1_player: parseInt(window.localStorage.getItem("reportPart1_player"),10) || 0,
   reportPart2_player: parseInt(window.localStorage.getItem("reportPart2"),10) || 0,
   currentModule: window.localStorage.getItem("currentModule") || "",
-  chosenScenario: window.localStorage.getItem("chosenScenario") || "takeCourse"
+  chosenScenario: window.localStorage.getItem("chosenScenario") || "takeCourse",
+  menuShowing: window.localStorage.getItem("menuShowing") || false
 })
 
 export const mutations = {
@@ -112,5 +113,9 @@ export const mutations = {
   setChosenScenario(state, scenario) {
     window.localStorage.setItem("chosenScenario", scenario)
     state.chosenScenario = scenario
+  },
+  setMenuShowing(state, menuShowing) {
+    window.localStorage.setItem("menuShowing", menuShowing)
+    state.menuShowing = menuShowing
   }
 }

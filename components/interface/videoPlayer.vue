@@ -9,7 +9,7 @@
             <track :key="'sub'+$i18n.locale" kind="metadata" :src="ccUrl" :srclang="$i18n.locale" label="captions" @cuechange="readCaptions">
           </video>
           <transition name="overlay-fade" appear>
-            <div class="overlay" v-show="showPlayOverlay"><font-awesome-icon icon="play" role="presentation" size="5x" /></div>
+            <div class="overlay" v-show="showPlayOverlay && !videoDone"><font-awesome-icon icon="play" role="presentation" size="5x" /></div>
           </transition>
           <transition name="overlay-fade" appear>
             <div class="overlay done" v-show="videoDone"><font-awesome-icon icon="check" role="presentation" size="5x" /><p class="text-center">{{$t('videoDone')}}</p></div>
@@ -20,7 +20,10 @@
             </figcaption>
           </transition>
           <div ref="video-controls" class="controls" data-state="hidden">
-            <progress tabindex="0" @click="setTime" ref="progress" @mousemove="changeTime" @mouseover="changeTime" :title="mousePosition|formatTime" :value="PlayTime" min="0" max="100" @keyup.arrow-left="goBackwards" @keyup.arrow-right="goForward">
+            <transition name="tooltip-fade" appear>
+              <div id="timeline-tooltip" v-show="showTooltip">{{ mousePosition | formatTime }}</div>
+            </transition>
+            <progress tabindex="0" @click="setTime" ref="progress" @mousemove="changeTime" @mouseover="changeTime" @mouseout="showTooltip = false" :value="PlayTime" min="0" max="100" @keyup.arrow-left="goBackwards" @keyup.arrow-right="goForward" :aria-label="$t('timeline')">
               <span class="progress" ref="progress-bar" :style="'width:'+PlayTime+'%'"></span>
             </progress>
             <button class="videoControls" ref="playpause" @click="setPlaying" type="button" :aria-label="isPaused?$t('play'):$t('pause')" :title="isPaused?$t('play'):$t('pause')">
@@ -196,7 +199,8 @@ export default {
       },
       videoDone: false,
       tipheight: 0,
-      showPlayOverlay: false
+      showPlayOverlay: false,
+      showTooltip: false
     }
   },
   filters: {
@@ -322,6 +326,14 @@ export default {
         case "reportPart2":
           return this.popups.reportPart2.quiz;
       }
+    },
+    MenuShowing:{
+      get(){
+        return this.$store.state.currentPlaying.menuShowing;
+      },
+      set(val){
+        this.$store.commit('currentPlaying/setMenuShowing', val);
+      }
     }
   },
   watch: {
@@ -359,6 +371,12 @@ export default {
       else{
         this.videoDone = false;
       }
+    },
+    MenuShowing(newVal){
+      var that = this;
+      setTimeout(function(){
+        that.setOverlayHeight();
+      }, 500);
     }
   },
   methods: {
@@ -464,6 +482,10 @@ export default {
         if (savedPosition) {
           this.$refs.videoplayer.currentTime = savedPosition
         }
+        if(!this.chapters){
+          this.showPlayOverlay = true;
+          this.setOverlayHeight()
+        }
       }
     },
     update(e) {
@@ -544,7 +566,10 @@ export default {
       let rectSize=rect.right-rect.left
       let mousePos=e.clientX-rect.left
       let toPercent=mousePos/rectSize*this.totalTime
-      this.mousePosition=toPercent
+      this.mousePosition=toPercent;
+      
+      this.showTooltip = true;
+      this.$el.querySelector("#timeline-tooltip").style.left = (mousePos - 30) + "px";
     },
     tipEnter(el, done) {
       var that = this;
@@ -568,7 +593,6 @@ export default {
         var videoHeight = this.$refs.videoplayer.offsetHeight;
         var overlays = document.querySelectorAll(".overlay");
         for(var l = 0; l < overlays.length; l++){
-          console.log(overlays[l])
           overlays[l].style.height = videoHeight + "px";
         }
       }
@@ -588,6 +612,7 @@ export default {
   "stop":"Stop",
   "forward":"Forward 10 seconds",
   "backward":"Rewind 10 seconds",
+  "timeline": "Video timeline, use the left and right arrows to skip backgwards or forwards 10 seconds",
   "mute":"Mute",
   "unmute":"Unmute",
   "show":"Show ",
@@ -609,6 +634,7 @@ export default {
   "stop":"Arrêter",
   "forward":"Avancer 10 secondes",
   "backward":"Reculer 10 secondes",
+  "timeline": "Barre de temps vidéo, utilisez les flèches gauche et droite pour reculer ou avancer de 10 secondes",
   "mute":"Désactiver le son",
   "unmute":"Activer le son",
   "show":"Afficher le ",
@@ -1037,6 +1063,7 @@ audio,
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 button {
@@ -1121,6 +1148,46 @@ video {
   }
   .overlay-fade-leave-to{
     opacity: 0;
+  }
+  
+  #timeline-tooltip{
+    position: absolute;
+    top: -43px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 12px;
+    width: 60px!important;
+    transition: left 0.2s, top 0.3s, opacity 0.3s;
+    text-align: center;
+  }
+  
+  #timeline-tooltip:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-top: 7px solid rgba(0, 0, 0, 0.7);
+    border-right: 5px solid transparent;
+  }
+  
+  .tooltip-fade-enter{
+    opacity: 0;
+    top: -33px!important;
+  }
+  .tooltip-fade-enter-to{
+    opacity: 1;
+    top: -43px!important;
+  }
+  .tooltip-fade-leave{
+    opacity: 1;
+    top: -43px!important;
+  }
+  .tooltip-fade-leave-to{
+    opacity: 0;
+    top: -33px!important;
   }
 
 </style>

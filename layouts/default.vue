@@ -59,7 +59,6 @@ export default {
   },
   data() {
     return {
-      MenuShowing: false,
       currentPage: ""
     }
   },
@@ -69,7 +68,6 @@ export default {
     hamburger,
     fileMenu,
     contentMap
-
   },
   computed: {
     thatPoint() {
@@ -93,10 +91,18 @@ export default {
     availableLocales() {
       return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     },
+    MenuShowing:{
+      get(){
+        return this.$store.state.currentPlaying.menuShowing;
+      },
+      set(val){
+        this.$store.commit('currentPlaying/setMenuShowing', val);
+      }
+    }
   },
   methods: {
     ShowMenu() {
-      this.MenuShowing = !this.MenuShowing
+      this.MenuShowing = !this.MenuShowing;
     },
     setAriaCurrent() {
       this.$nextTick(function() {

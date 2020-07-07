@@ -353,7 +353,7 @@ export default {
       this.$store.commit('currentPlaying/setVolume', volume)
     },
     PlayTime(time){
-      if(time >= 99.7 && this.chapters){
+      if(time >= 99.5 && this.chapters){
         this.videoDone = true;
       }
       else{
@@ -601,7 +601,7 @@ export default {
   "continue":"Continue to next section",
   "sr_transcriptlocation":"The transcript can be found after the segments list.",
   "segmentsTitle": "Video Segments",
-  "videoDone": "You have video this section."
+  "videoDone": "You have completed this section."
   },
   "fr":{
   "play":"Jouer",

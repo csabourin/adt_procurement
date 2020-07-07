@@ -115,7 +115,7 @@
 
                         <h2>Quiz</h2>
                         <p>We’re at the end of this lesson on how to create a budget! Take a few moments to answer the following questions to see what you remember! </p>
-
+                        <hr>
                         <h2>Section completed</h2>
 
                       </span>
@@ -211,7 +211,7 @@
 
                         <h2>Quiz</h2>
                         <p>Nous sommes à la fin de la leçon sur comment créer un budget! Prenez maintenant quelques instants pour répondre aux quelques questions afin de voir ce que vous avez retenu!</p>
-
+                        <hr>
                         <h2>Section complétée</h2>
 
                       </span>

@@ -31,6 +31,7 @@
                         <p>They will provide support and send out instructions to provide templates, guidelines, links, due dates, etc.</p>
                         <p>Work with your administrative staff to complete these tasks.</p>
                         <p>Let’s see what you already know about FSRs by doing a quick match-up game!</p>
+                        <hr>
                         <h2>Key Periods for Financial Situation Reports</h2>
                         <p>The fiscal year starts on April 1 and is divided by month, into periods.</p>
                         <p>P1 is April, P2 is May, P3 is June, and so forth.</p>
@@ -42,6 +43,7 @@
                         <p>The Treasury Board Secretariat uses data from the P9 report to inform the Department of Finance of government-wide planned spending so that they have a holistic view.</p>
                         <p>Year-end data at P12 is used by your department to report their overall financial results.</p>
                         <p>It also forms part of the Departmental Results Report, or DRR.</p>
+                        <hr>
                         <h2>Financial Situation Report Activities</h2>
                         <p>The most important information you will need to provide in the FSR is your forecast.</p>
                         <p>In other words, you’ll need to estimate the amount of money that you are going to spend to complete your activities before the end of the fiscal year.</p>
@@ -54,12 +56,15 @@
                         <p>Ensure journal vouchers are posted, this will correct the data in the financial system.</p>
                         <p>Close commitments that are no longer required, and reconcile your acquisition card statement against commitments.</p>
                         <p>Now, answer the following questions to the best of your abilities and let’s practise preparing a financial situation report!</p>
+                        <hr>
                         <h2>Updating the Annual Forecast</h2>
                         <p>Another important task when completing your FSR is to review your salary and O&amp;M forecasts.</p>
                         <p>This will allow you to identify shortfalls and pressures that may require approval for additional resources.</p>
                         <p>Or surpluses to signal potential carry forward amounts.</p>
                         <p>You will have to explain the reasons for any variances and provide mitigation strategies for risks.</p>
                         <p>Let’s practise updating the Annual Forecast!</p>
+                        <hr>
+                        <h2>Section Completed</h2>
                       </span>
                       <span v-if="$i18n.locale=='fr'">
                         <h2>Qu'est-ce qu'un rapport sur la situation financière?</h2>
@@ -73,6 +78,7 @@
                         <p>Elle vous offrira du soutien et vous enverra des instructions pour fournir des gabarits, des lignes directrices, des liens, des dates d’échéance, etc.</p>
                         <p>Travaillez avec votre personnel administratif pour accomplir ces tâches.</p>
                         <p>Voyons ce que vous savez déjà sur les RSF en faisant un petit jeu d’association!</p>
+                        <hr>
                         <h2>Périodes clés pour les rapports sur la situation financière</h2>
                         <p>L’exercice financier commence le 1er avril et est divisé, par mois, en périodes.</p>
                         <p>P1 est avril, P2 est mai, P3 est juin, et ainsi de suite.</p>
@@ -84,6 +90,7 @@
                         <p>Le Secrétariat du Conseil du Trésor du Canada utilise les données du rapport P9 pour informer le ministère des Finances des dépenses prévues à l’échelle du gouvernement afin qu’il puisse avoir une vision globale.</p>
                         <p>Les données de fin d’exercice, à P12, sont utilisées par votre ministère pour présenter ses résultats financiers globaux.</p>
                         <p>Il fait également partie du Rapport sur les résultats ministériels, ou RRM.</p>
+                        <hr>
                         <h2>Activités pour le Rapport sur la situation financière</h2>
                         <p>L’information la plus importante que vous devrez fournir dans la revue du système financier est votre prévision budgétaire.</p>
                         <p>En d’autres termes, vous devrez estimer le montant d’argent que vous allez dépenser pour terminer vos activités avant la fin de l’exercice financier.</p>
@@ -104,6 +111,8 @@
                         <p>les insuffisances et les pressions qui peuvent nécessiter l’approbation de ressources supplémentaires ; ou encore des excédents pour indiquer les reports potentiels de fonds.</p>
                         <p>Vous devrez expliquer les raisons de tout écart et fournir des stratégies d’atténuation des risques.</p>
                         <p>Pratiquons-nous la mise à jour des prévisions annuelles!</p>
+                        <hr>
+                        <h2>Section complétée</h2>
                       </span>
                     </b-card-text>
                   </b-card-body>

@@ -74,7 +74,7 @@
 
                         <h2>Try It!</h2>
                         <p>To wrap up this section, let’s take a look at a practice scenario.</p>
-
+                        <hr>
                         <h2>Section Completed</h2>
 
                       </span>
@@ -133,7 +133,7 @@
 
                         <h2>Essayons-le!</h2>
                         <p>Afin de conclure cette section, prenons quelques instants pour appliquer le tout à un scénario fictif. </p>
-
+                        <hr>
                         <h2>Section complétée</h2>
 
                       </span>

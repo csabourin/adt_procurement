@@ -64,6 +64,7 @@
                       <hr>
                       <h2>Take a Quiz</h2>
                       <p>So now that you know how to examine, prepare and adjust a work plan, let’s see what you remember by taking this short quiz.</p>
+                      <hr>
                       <h2>Section Completed</h2>
                       <!-- Used to generate buttons to jump to activity
 
@@ -115,7 +116,9 @@
                       <h2>Dans la vraie vie</h2>
                       <p>&laquo; Appliquez ce que vous avez appris dans la vraie vie. Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l’intranet pour voir quels mod&egrave;les sont utilisés. Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter de plans de travail. &raquo;</p>
                       <hr>
-                      <h2>Répondez à un questionnaire rapide</h2 <p>&laquo; Maintenant que vous savez comment examiner, préparer et ajuster un plan de travail, voyons ce dont vous vous souvenez en répondant à ce petit quiz. &raquo;<h2>Section complétée</h2>
+                      <h2>Répondez à un questionnaire rapide</h2 <p>&laquo; Maintenant que vous savez comment examiner, préparer et ajuster un plan de travail, voyons ce dont vous vous souvenez en répondant à ce petit quiz. &raquo;
+                      <hr>
+                      <h2>Section complétée</h2>
                       </p>
                     </span>
                   </b-card-text>

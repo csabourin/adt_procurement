@@ -13,7 +13,7 @@
           </li>
           <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228">Directive sur les dépenses de voyages, d’accueil, de conférences et d’événements</externalLink>
             <ul>
-              <li><externalLink link="https://intranet.canada.ca/pol/doc-fra.aspx?id=32553">Guide sur les dépenses de voyages, d’accueil, de conférences et d’événements</externalLink></li>
+              <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32553">Guide sur les dépenses de voyages, d’accueil, de conférences et d’événements</externalLink></li>
               <li><externalLink link="https://www.njc-cnm.gc.ca/directive/d10/fr">Directive sur les voyages du Conseil national mixte (CNM)</externalLink></li>
               <li><externalLink link="https://www.gcpedia.gc.ca/wiki/Ensemble_de_politiques_sur_la_gestion_financi%C3%A8re/Conf%C3%A9rence_par_opposition_%C3%A0_formation">Conférence par opposition à formation</externalLink></li>
             </ul>
@@ -38,7 +38,7 @@
           </li>
           <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228">Directive on Travel, Hospitality, Conference and Event Expenditures</externalLink>
             <ul>
-              <li><externalLink link="https://intranet.canada.ca/pol/doc-eng.aspx?id=32553">Guide to Travel, Hospitality, Conference and Event Expenditures</externalLink></li>
+              <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32553">Guide to Travel, Hospitality, Conference and Event Expenditures</externalLink></li>
               <li><externalLink link="https://www.njc-cnm.gc.ca/directive/d10/en">Travel Directive of the National Joint Council (NJC)</externalLink></li>
               <li><externalLink link="https://www.gcpedia.gc.ca/wiki/Financial_Management_Policy_Suite/Conference_versus_training">Determination of training vs. conferences for functional communities</externalLink></li>
             </ul>

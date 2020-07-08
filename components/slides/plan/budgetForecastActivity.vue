@@ -210,6 +210,40 @@ export default {
       q1Answer: "",
       q2Answer: ""
     }
+  },
+  methods:{
+    scroll(collapseId, isJustShown){
+      if(isJustShown && (collapseId == "question-1" || collapseId == "question-2" || collapseId == "question-3")){        
+        var options = {
+          container: '.modal',
+          onStart: function(element) {
+            //console.log(element);
+          },
+          onDone: function(element) {
+            //console.log(element);
+          },
+          onCancel: function() {
+            // scrolling has been interrupted
+          },
+          offset: -50,
+          easing: 'ease-in-out',
+          x: false,
+          y: true
+        }
+        
+        var that = this;
+        setTimeout(function(){
+          that.$scrollTo("#" + collapseId, 500, options);
+        }, 500);
+      }
+    }
+  },
+  mounted(){
+    this.$root.$on('bv::collapse::state', this.scroll);
+    
+    this.$root.$on('bv::modal::hide', (bvEvent, modalId) => {
+      this.$root.$off("bv::collapse::state", this.scroll);
+    });
   }
 }
 

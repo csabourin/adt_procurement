@@ -5,7 +5,7 @@
         <div v-show="currentState">
           <menu style="list-style: none; margin-top: 30px;">
             <li role="menuitem">
-              <nuxt-link :to="localePath('index')" v-html="$t('homePage')" />
+              <nuxt-link :to="localePath('index')" v-html="$t('homePage')" exact />
             </li>
           </menu>
           <span ref="item"><h2 class="colorBar1">{{$t('plan')}}</h2></span>    
@@ -96,7 +96,7 @@
               currents[i].removeAttribute("aria-current");
             }
           }
-          var actives = app.querySelectorAll(".contentMap .nuxt-link-exact-active")
+          var actives = app.querySelectorAll(".contentMap .nuxt-link-active")
           for(var j = 0; j < actives.length; j++){
             actives[j].setAttribute("aria-current", "page");
           }
@@ -229,19 +229,19 @@
   width:100%;
   display: inline-block;
   padding:4px 16px;
-  border-left-width-width:0px;
+  border-left-width:0px;
   border-left-style: solid;
   border-left-color:transparent;
 }
-.contentMap a.nuxt-link-exact-active {
+.contentMap a.nuxt-link-active {
   background-color:#f0f0f0;
   border-left-width:4px;
   padding:4px 16px 4px 15px;
 }
-.contentMap menu:nth-of-type(1) a.nuxt-link-exact-active {border-left-color:#7384A6;}
-.contentMap menu:nth-of-type(2) a.nuxt-link-exact-active {border-left-color:#587C84;}
-.contentMap menu:nth-of-type(3) a.nuxt-link-exact-active {border-left-color:#7D677D;}
-.contentMap menu:nth-of-type(4) a.nuxt-link-exact-active {border-left-color:#865F56;}
+.contentMap menu:nth-of-type(1) a.nuxt-link-active {border-left-color:#7384A6;}
+.contentMap menu:nth-of-type(2) a.nuxt-link-active {border-left-color:#587C84;}
+.contentMap menu:nth-of-type(3) a.nuxt-link-active {border-left-color:#7D677D;}
+.contentMap menu:nth-of-type(4) a.nuxt-link-active {border-left-color:#865F56;}
 
 .contentMap menu {
     padding:0;

@@ -24,7 +24,7 @@
       </div>
     </b-card>
     <b-row>
-      <b-col cols="6" md="3" lg="2" class="text-center">
+      <b-col cols="6" md="4" lg="2" class="text-center">
         <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
       </b-col>
     </b-row>

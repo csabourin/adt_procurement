@@ -3,7 +3,7 @@
     <p><strong>{{$t('header')}}</strong></p>
     <matchingExercise :question="$t('q1')" qId="1" />
     <b-row>
-      <b-col cols="6" md="3" lg="2" class="text-center">
+      <b-col cols="6" md="4" lg="2" class="text-center">
         <download :texts="$t('FSRRoadmap')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
       </b-col>
     </b-row>

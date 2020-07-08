@@ -18,7 +18,7 @@
       </b-button-group>
     </div>
     <b-row style="margin-top: 25px;">
-      <b-col cols="6" md="3" lg="2" class="text-center">
+      <b-col cols="6" md="4" lg="2" class="text-center">
         <download :texts="$t('prepareFSR')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
       </b-col>
     </b-row>

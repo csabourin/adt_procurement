@@ -78,7 +78,7 @@
           </b-col>
         </b-row>-->     
         <b-row>
-          <b-col cols="6" md="3" lg="2" class="text-center" style="margin-top: 30px;">
+          <b-col cols="6" md="4" lg="2" class="text-center" style="margin-top: 30px;">
             <download :texts="$t('buildWPProcessMap')" size=128 iconColor="planBackground" :fileSize="this.$i18n.locale == 'en' ? '121' : '114'" name="buildWPProcessMap" />
           </b-col>
         </b-row>

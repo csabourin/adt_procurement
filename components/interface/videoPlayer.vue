@@ -466,8 +466,10 @@ export default {
       this.$store.commit('currentPlaying/' + this.toResume, this.currentFrame)
       this.$nextTick(function() {
         this.isPaused = false
+        var that = this;
         setTimeout(function() {
           videoPlayer.play()
+          that.showPlayOverlay = false;
         }, 250)
         this.justSeeked = false
 

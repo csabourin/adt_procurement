@@ -46,8 +46,8 @@ export default {
     }
   },
   "fr": {
-    "q1": {
     "header":"Voyons ce que vous savez déjà au sujet de rapports sur la situation financière.",
+    "q1": {
       "dotsRight": [
         "Budget",
         "Engagements",

@@ -217,6 +217,9 @@
 
   height:100%;
   color:#4d4d4d;
+}
+  
+.contentMap.closed{
   white-space: nowrap;
 }
   

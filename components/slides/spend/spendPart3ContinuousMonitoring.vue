@@ -67,9 +67,9 @@ export default {
     "q2": {
       "text": "The start date for your new employee has been pushed back a month. So they will only be working the remaining six months of the fiscal year instead of seven months. Their salary is $70,000. What do you do?",
       "options": {
-        "1": "Reduce the actual expenditures by $5,833 ($70,000 &divide; 12 months &times; 1 month).",
-        "2": "Reduce commitment expenditures by $40,833 ($70,000 &divide; 12 months &times; 7 months).",
-        "3": "Reduce annual forecast expenditures by $5,833 ($70,000 &divide; 12 months &times; 1 month)."
+        "1": "Reduce the actual expenditures by $5,833 ($70,000 &divide; 12 months &nbsp;&times;&nbsp; 1 month).",
+        "2": "Reduce commitment expenditures by $40,833 ($70,000 &divide; 12 months &nbsp;&times;&nbsp; 7 months).",
+        "3": "Reduce annual forecast expenditures by $5,833 ($70,000 &divide; 12 months &nbsp;&times;&nbsp; 1 month)."
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>. Since the employee has not yet started, the expenditures cannot be reduced. ",
@@ -97,9 +97,15 @@ export default {
     "q2": {
       "text": "La date d’entrée en fonction de votre nouvel employé a été repoussée d’un mois. Il ne travaillera donc que les six mois restants de l’exercice au lieu de sept mois. Son salaire est de 70&nbsp;000&nbsp;$. Qu’est-ce que vous faites?",
       "options": {
+<<<<<<< Updated upstream
         "1": "Réduire les dépenses réelles de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ &divide; 12 mois &times; 1 mois).",
         "2": "Réduire les dépenses d’engagement de 40&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ &divide; 12 mois &times; 7 mois).",
         "3": "Réduire les dépenses annuelles prévues de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ &divide; 12 mois &times; 1 mois)."
+=======
+        "1": "Réduire les dépenses réelles de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ &divide; 12 mois &nbsp;&times;&nbsp; 1 mois).",
+        "2": "Réduire les dépenses d’engagement de 40&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ &divide; 12 mois &nbsp;&times;&nbsp; 7 mois).",
+        "3": "Réduire les dépenses annuelles prévues de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ &&divide;divide; 12 mois &nbsp;&times;&nbsp; 1 mois)."
+>>>>>>> Stashed changes
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>. Étant donné que l’employé n’a pas encore commencé, les dépenses ne peuvent pas être réduites.",

@@ -22,7 +22,7 @@ export const state = () => ({
   reportPart2_player: parseInt(window.localStorage.getItem("reportPart2"),10) || 0,
   currentModule: window.localStorage.getItem("currentModule") || "",
   chosenScenario: window.localStorage.getItem("chosenScenario") || "takeCourse",
-  menuShowing: window.localStorage.getItem("menuShowing") || false
+  menuShowing: window.localStorage.getItem("menuShowing") === "true" ? true : false || false
 })
 
 export const mutations = {

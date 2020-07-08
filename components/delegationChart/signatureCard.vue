@@ -807,7 +807,7 @@
     ]
   },
   "fr": {
-    "title": "Specimen de carte de signature",
+    "title": "Spécimen de carte de signature",
     "tableLine": [
       "",
       "Formulaire de délégation<br>Acceptation de pouvoirs financiers délégués par le ministre et la sous-ministre/présidente",

@@ -227,9 +227,9 @@ export default {
       },
       "feedback": {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong> There is no need to reduce the budget as you may need this budget to pay overtime or to hire a casual. You would change the amount under “Annual Forecasted Expenditures” to $55,000.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Although you could decrease your commitments, you would only reduce it by $5,000. $20,000 - ($60,000 &divide; 12 months&times;1 month) = $15,000. You would change the amount under “Annual Forecasted Expenditures” to $55,000.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Although you could decrease your commitments, you would only reduce it by $5,000. $20,000 - ($60,000 &divide; 12 months&nbsp;&times;&nbsp;1 month) = $15,000. You would change the amount under “Annual Forecasted Expenditures” to $55,000.",
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong> There is no need to adjust the actuals because the employee did not get paid yet. You would change the amount under “Annual Forecasted Expenditures” to $55,000.",
-        "4": "<span class='v-right' /><strong>Correct!</strong> You need to reduce your Annual Forecast Expenditures by one month. $60,000 &divide; 12 months&times;11 months = $55,000. "
+        "4": "<span class='v-right' /><strong>Correct!</strong> You need to reduce your Annual Forecast Expenditures by one month. $60,000 &divide; 12 months&nbsp;&times;&nbsp;11 months = $55,000. "
       },
       "conclusion": ""
     },
@@ -259,9 +259,9 @@ export default {
       },
       "feedback": {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n’est pas nécessaire de réduire le budget, car vous pourriez en avoir besoin pour payer des heures supplémentaires ou pour embaucher un employé occasionnel. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Même si vous pouviez réduire vos engagements, vous ne les réduiriez que de 5&nbsp;000&nbsp;$. 20&nbsp;000&nbsp;$ - (60&nbsp;000&nbsp;$ &divide; 12 mois&times;1 mois) = 15&nbsp;000&nbsp;$. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Même si vous pouviez réduire vos engagements, vous ne les réduiriez que de 5&nbsp;000&nbsp;$. 20&nbsp;000&nbsp;$ - (60&nbsp;000&nbsp;$ &divide; 12 mois&nbsp;&times;&nbsp;1 mois) = 15&nbsp;000&nbsp;$. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$.",
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n’est pas nécessaire d’ajuster les dépenses réelles parce que l’employé n’a pas encore été payé. Vous changeriez le montant sous «Dépenses annuelles prévues» à 55&nbsp;000&nbsp;$. ",
-        "4": "<span class='v-right' /><strong>Correct!</strong> Vous devez réduire vos dépenses annuelles prévues d’un mois. 60&nbsp;000&nbsp;$ &divide; 12 mois&times;11 mois = 55&nbsp;000&nbsp;$."
+        "4": "<span class='v-right' /><strong>Correct!</strong> Vous devez réduire vos dépenses annuelles prévues d’un mois. 60&nbsp;000&nbsp;$ &divide; 12 mois&nbsp;&times;&nbsp;11 mois = 55&nbsp;000&nbsp;$."
       },
       "conclusion": ""
     },

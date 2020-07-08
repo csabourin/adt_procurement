@@ -321,7 +321,7 @@ export default {
       },
       "title": "Travel ",
       "introduction": "<div class='tableScrollLTL'><table border='1' class='trainTable'> <thead> <tr class='qTable'> <th id='1' scope='col'> <p>Travel</p> </th> <th id='2' scope='col'> <p>Budget (A)</p> </th> <th id='3' scope='col'> <p>Actual (B)</p> </th> <th id='4' scope='col'> <p>Variance (C=B-A)</p> </th> <th id='5' scope='col'> <p>Variance Explanation</p> </th> </tr> </thead> <tbody> <tr> <th id='11' scope='row' headers='1'> <p>Previous year&nbsp;</p> </th> <td headers='2 11'> <p>$18,000</p> </td> <td headers='3 11'> <p>$16,000</p> </td> <td headers='4 11'> <p style='color:#af0000;'>($2,000)</p> </td> <td headers='5 11'> <p>Employee on leave without pay, and another did not travel.</p> </td> </tr> </tbody> <thead> <tr class='qTable'> <th id='6' scope='col'>&nbsp;</th> <th id='7' scope='col'> <p>Budget</p> </th> <th id='8' scope='col'> <p>YTD Actual</p> </th> <th id='9' scope='col'> <p>Annual Forecast</p> </th> <th id='10' scope='col'>&nbsp;</th> </tr> </thead> <tbody> <tr> <th id='12' scope='row' headers='6'> <p>Current year at P6</p> </th> <td headers='7 12'> <p>$18,000</p> </td> <td headers='8 12'> <p>$9,000</p> </td> <td headers='9 12'> <p>$18,000</p> </td> <td headers='10 12'>&nbsp;</td> </tr> </tbody> </table></div> <p>Historically, you have&nbsp;</p> <ul> <li>spent $10,000 on travel to conduct inspections</li> <li>budgeted a total of $8,000 for general travel. However, you know that 80% of work can now be done virtually.</li> </ul>",
-      "conclusion": "<p>We need to conduct inspections as part of our business, hence $10,000 is non-discretionary. As per the Directive on Travel, Hospitality, Conference, and Event Expenditures, travel should be avoided where appropriate. We will not request a budget for the 80% that can be done virtually. Since there is no indication of what the remaining general travel is for, it could be non-discretionary or discretionary.&nbsp;</p> <p><a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228' target='_blank' rel='external' aria-aspopup='true' class='external'>Directive</a></p>"
+      "conclusion": "<p>We need to conduct inspections as part of our business, hence $10,000 is non-discretionary. As per the <a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228' target='_blank' rel='external' aria-aspopup='true' class='external'>Directive on Travel, Hospitality, Conference, and Event Expenditures</a>, travel should be avoided where appropriate. We will not request a budget for the 80% that can be done virtually. Since there is no indication of what the remaining general travel is for, it could be non-discretionary or discretionary.&nbsp;</p>"
     },
     "actInstructions": "Select any question marks and answer the question that appears",
     "budgetTableFill1": "Line Item",
@@ -388,7 +388,7 @@ export default {
     "budgetTableFill62": "$0",
     "budgetTableFill63": "$3,000",
     "budgetTableFill64": " ",
-    "budgetTableFill65": "new software, annual cost $1,000&times;3 FTEs",
+    "budgetTableFill65": "new software, annual cost $1,000&nbsp;&times;&nbsp;3 FTEs",
     "budgetTableFill66": "Material and Supplies",
     "budgetTableFill67": "$1,961",
     "budgetTableFill68": "$2,000",
@@ -451,7 +451,7 @@ export default {
         "right": "<span class='v-right'/> <strong>Correct!</strong> "
       },
       "title": "Voyage",
-      "conclusion": "<p>Nous devons effectuer des inspections dans le cadre de nos activités, de sorte que 10&nbsp;000&nbsp;$ ne sont pas discrétionnaires. Conformément à la Directive sur les dépenses de voyage, d’accueil, de conférence et d’événement, les déplacements devraient être évités lorsque cela est possible. Nous ne demanderons pas un budget pour les 80 p. 100 qui peuvent être réalisés virtuellement. Étant donné qu’il n’y a aucune indication de la raison pour laquelle il reste de l’argent pour les voyages, ces sommes pourraient être non discrétionnaires ou discrétionnaires.</p> <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank' rel='external' aria-aspopup='true' class='external'>Directive</a>"
+      "conclusion": "<p>Nous devons effectuer des inspections dans le cadre de nos activités, de sorte que 10&nbsp;000&nbsp;$ ne sont pas discrétionnaires. Conformément à la <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=27228' target='_blank' rel='external' aria-aspopup='true' class='external'>Directive sur les dépenses de voyages, d’accueil, de conférences et d’événements</a>, les déplacements devraient être évités lorsque cela est possible. Nous ne demanderons pas un budget pour les 80 p. 100 qui peuvent être réalisés virtuellement. Étant donné qu’il n’y a aucune indication de la raison pour laquelle il reste de l’argent pour les voyages, ces sommes pourraient être non discrétionnaires ou discrétionnaires.</p>"
     },
     "actInstructions": "Sélectionnez les points d’interrogation et répondez à la question qui apparaît. ",
     "budgetTableFill1": "Poste individuel",
@@ -518,7 +518,7 @@ export default {
     "budgetTableFill62": "0$",
     "budgetTableFill63": "3&nbsp;000&nbsp;$",
     "budgetTableFill64": " ",
-    "budgetTableFill65": "nouveau logiciel, coût annuel 1&nbsp;000&nbsp;$&times;3 ETP",
+    "budgetTableFill65": "nouveau logiciel, coût annuel 1&nbsp;000&nbsp;$&nbsp;&times;&nbsp;3 ETP",
     "budgetTableFill66": "Fournitures de bureau",
     "budgetTableFill67": "1&nbsp;961&nbsp;$",
     "budgetTableFill68": "2&nbsp;000&nbsp;$",

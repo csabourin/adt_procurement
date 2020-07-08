@@ -99,7 +99,7 @@ export default {
       "options": {
         "1": "Réduire les dépenses réelles de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ &divide; 12 mois &times; 1 mois).",
         "2": "Réduire les dépenses d’engagement de 40&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ &divide; 12 mois &times; 7 mois).",
-        "3": "Réduire les dépenses annuelles prévues de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ &&divide;divide; 12 mois &times; 1 mois)."
+        "3": "Réduire les dépenses annuelles prévues de 5&nbsp;833&nbsp;$ (70&nbsp;000&nbsp;$ &divide; 12 mois &times; 1 mois)."
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>. Étant donné que l’employé n’a pas encore commencé, les dépenses ne peuvent pas être réduites.",

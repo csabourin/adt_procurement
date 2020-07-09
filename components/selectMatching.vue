@@ -5,26 +5,29 @@
         <p><strong class="question">{{question.text}}</strong></p>
       </legend>
       <b-container>
-        <b-row v-for="(option,index) in question.options" :key="index">
-          <b-col cols="6" md="3">
-            <label v-html="option" :for="exId + '_q' + index"></label>
-          </b-col>
-          <b-col cols="6" md="3">
-            <select v-model="selectId[index - 1]" @change="submitted[index - 1] = false" :id="exId + '_q' + index">
-              <option disabled value="">{{$t('qDisabled')}}</option>
-              <option :value="oIndex" v-for="(match, oIndex) in question.matching" :key="oIndex">{{match}}</option>
-            </select>
-          </b-col>
-          <b-col cols="6" md="3">
-            <b-button @click="submitAnswer(index - 1)" :disabled="!selectId[index - 1] || submitted[index - 1]">{{$t('submit')}}</b-button>
-          </b-col>
-          <b-col cols="6" md="3">
-            <span>
-              <div v-if="selectId[index - 1] == match[index - 1] && submitted[index - 1]" v-html="question.feedback.right"/>
-              <div v-else-if="submitted[index - 1]" v-html="question.feedback.wrong" />
-            </span>
-          </b-col>
-        </b-row>
+        <div v-for="(option,index) in question.options" :key="index">
+          <b-row>
+            <b-col cols="6" md="3">
+              <label v-html="option" :for="exId + '_q' + index"></label>
+            </b-col>
+            <b-col cols="6" md="3">
+              <select v-model="selectId[index - 1]" @change="submitted[index - 1] = false" :id="exId + '_q' + index">
+                <option disabled value="">{{$t('qDisabled')}}</option>
+                <option :value="oIndex" v-for="(match, oIndex) in question.matching" :key="oIndex">{{match}}</option>
+              </select>
+            </b-col>
+            <b-col cols="6" md="3">
+              <b-button @click="submitAnswer(index - 1)" :disabled="!selectId[index - 1] || submitted[index - 1]">{{$t('submit')}}</b-button>
+            </b-col>
+            <b-col cols="6" md="3">
+              <span>
+                <div v-if="selectId[index - 1] == match[index - 1] && submitted[index - 1]" v-html="question.feedback.right"/>
+                <div v-else-if="submitted[index - 1]" v-html="question.feedback.wrong" />
+              </span>
+            </b-col>
+          </b-row>
+          <hr v-if="index < Object.keys(question.options).length" style="margin-bottom: 30px;" />
+        </div>
       </b-container>
       <div></div>
     </fieldset>

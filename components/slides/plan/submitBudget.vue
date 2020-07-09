@@ -1,14 +1,42 @@
 <template>
-	<span>
-		<checkboxQuiz :question="$t('q1')" qId="1" :Answer='["1","2","3"]'/>
-		<hr>
-		<checkboxQuiz :question="$t('q2')" qId="2" :Answer='["1","2"]'/>
-	</span>
+  <span>
+	  <div>
+      <b-card>
+        <b-tabs v-model="tabIndex">
+		      <b-tab title="Question 1"><checkboxQuiz :question="$t('q1')" qId="1" :Answer='["1","2","3"]'/></b-tab>
+          <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["1","2"]'/></b-tab>
+        </b-tabs>
+      </b-card>
+      <!-- Control buttons-->
+      <div class="text-center">
+        <b-button-group :aria-label="$t('questionNav')" class="mt-2">
+          <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+          <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=1">{{$t('nextPage')}}</b-button>
+        </b-button-group>
+      </div>
+    </div>
+  </span>
 </template>
 <script type="text/javascript">
+  
 	import checkboxQuiz from "~/components/checkboxQuiz"
-export default {
-  components: { checkboxQuiz }}
+  export default {
+    components: { checkboxQuiz },
+    data() {
+      return {
+        tabIndex: 0
+      }
+    },
+    methods:{
+      focus(){
+        setTimeout(function(){
+          document.querySelector(".tab-pane.active .pure-radiobutton fieldset, .tab-pane.active .pure-checkbox fieldset, .tab-pane.active .workplan-table").setAttribute("tabindex", 0);
+          document.querySelector(".tab-pane.active .pure-radiobutton fieldset, .tab-pane.active .pure-checkbox fieldset, .tab-pane.active .workplan-table").focus();
+        }, 300);
+      }
+    }
+  }
+  
 </script>
 <i18n>{
   "en": {

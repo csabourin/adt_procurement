@@ -1,31 +1,35 @@
 <template>
   <fieldset>
   	<legend><strong v-html="$t('instructions')"></strong></legend>
-    <b-container fluid>
-    	<p>&nbsp;</p>
-      <b-row v-for="(item,index) in this.questionList" :key="'row0'+index">
-        <b-col cols="12" md="5">
+    <b-container fluid style="margin-top: 30px;">
+      <b-row>
+        <b-col cols="7" lg="6">
           <ul>
-            <li class="questions" >
-              <p>
+            <li class="questions" v-for="(item,index) in this.questionList" :key="'question'+index">
+              <div style="flex: 1 1 0;">
                 <label :for="'select'+index">{{item[0]}}</label>
                 <select :id="'select'+index" v-model="Answered[item[1]]" @change="Submitted[item[1]]=false">
                   <option v-for="(option,index) in AnswerList" :aria-labelledby="index !== 0 ? 'AnswerKey'+(index) : ''" :value="index" :disabled="!index" :selected="index===0">{{option}}</option>
                 </select>
-              </p>
+              </div>
+              <div style="flex: 0 0 auto;">
+                <b-button :disabled="!Answered[item[1]] || Submitted[item[1]]" @click="submitAnswer(item[1])">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
+              </div>
+              <div style="flex: 0 0 100%; margin-top: 15px;">
+                <p v-if="Submitted[item[1]]">
+                  <span class="v-right" v-if="Answered[item[1]]==parseInt(item[1])+1" > Correct!</span>
+                  <span class="v-wrong" v-if="Answered[item[1]]!=parseInt(item[1])+1" > Incorrect </span>
+                </p>
+              </div>
             </li>
           </ul>
         </b-col>
-        <b-col cols="6" md="4">
+        <b-col cols="5" lg="5" offset-lg="1">
           <ol class="AnswerNums" type="A" :start="index+1">
-            <li class="answers"><p :id="'AnswerKey'+parseInt(index+1)">{{question.dotsRight[index]}}</p></li>
+            <li class="answers" v-for="(item,index) in this.questionList" :key="'answer'+index">
+              <p :id="'AnswerKey'+parseInt(index+1)">{{question.dotsRight[index]}}</p>
+            </li>
           </ol>
-        </b-col>
-        <b-col cols="6" md>
-        	<b-button style="float:left; margin-right: 10px;" :disabled="!Answered[item[1]] || Submitted[item[1]]" @click="submitAnswer(item[1])">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
-        	<p v-if="Submitted[item[1]]"> <span class="v-right" v-if="Answered[item[1]]==parseInt(item[1])+1" > Correct!</span>
-    	<span class="v-wrong" v-if="Answered[item[1]]!=parseInt(item[1])+1" > Incorrect </span>
-    </p>
         </b-col>
       </b-row>
     </b-container>
@@ -119,6 +123,17 @@ ol {
 .questions {
   text-align: right;
   list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+  
+.questions > div{
+  padding-left: 10px;
+  padding-right: 10px;
 }
   
 @media(max-width: 768px){

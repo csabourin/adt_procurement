@@ -22,7 +22,7 @@
         </b-tab>
         <b-tab title="Question 7">
           <div v-if="$i18n.locale=='en'">
-            <p>Using the P5 Annual Forecast column as a reference, complete the P6 Annual Forecast column in the provided financial situation report.&nbsp;</p>
+            <p style="margin-top: 15px;">Using the P5 Annual Forecast column as a reference, complete the P6 Annual Forecast column in the provided financial situation report.&nbsp;</p>
             <div class="tableScrollLTL">
               <table border="1" class="qTable">
                 <thead>
@@ -69,7 +69,7 @@
             </div>
           </div>
           <div v-if="$i18n.locale=='fr'">
-          	<p>En utilisant la colonne P5 Prévisions annuelles comme référence, remplissez la colonne P6 Prévisions annuelles dans le rapport sur la situation financière fourni.&nbsp;</p>
+          	<p style="margin-top: 15px;">En utilisant la colonne P5 Prévisions annuelles comme référence, remplissez la colonne P6 Prévisions annuelles dans le rapport sur la situation financière fourni.&nbsp;</p>
             <div class="tableScrollLTL">
               <table border="1" class="qTable">
                 <thead>

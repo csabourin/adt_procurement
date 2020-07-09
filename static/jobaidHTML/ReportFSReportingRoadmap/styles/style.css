@@ -1,348 +1,562 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,700|Roboto:400,700&display=swap");
+/* line 3, style.scss */
 html, body {
   margin: 0px;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
+/* line 8, style.scss */
 .banner {
   background: url("../img/ReportFSReportingRoadmap.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
-  position: relative; }
-  .banner.fr {
-    background: url("../img/ReportFSReportingRoadmap_fr.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat; }
+  position: relative;
+}
+/* line 16, style.scss */
+.banner.fr {
+  background: url("../img/ReportFSReportingRoadmap_fr.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/* line 22, style.scss */
+.banner h1 {
+  position: absolute;
+  right: 5%;
+  top: 25px;
+  margin-top: 0;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: white;
+}
+@media (max-width: 1200px) {
+  /* line 22, style.scss */
   .banner h1 {
-    position: absolute;
-    right: 5%;
-    top: 25px;
-    margin-top: 0;
-    font-family: "Open Sans";
-    font-weight: 300;
-    font-size: 26px;
-    text-transform: uppercase;
-    color: white; }
-    @media (max-width: 1200px) {
-      .banner h1 {
-        top: 15px; } }
-    @media (max-width: 992px) {
-      .banner h1 {
-        top: 10px;
-        font-size: 20px; } }
+    top: 15px;
+  }
+}
+@media (max-width: 992px) {
+  /* line 22, style.scss */
+  .banner h1 {
+    top: 10px;
+    font-size: 20px;
+  }
+}
 
+/* line 43, style.scss */
 #content {
   padding: 50px 70px 50px 70px;
-  color: #5d5d5d; }
-  @media (max-width: 1400px) {
-    #content {
-      padding: 50px 30px 50px 10px; } }
-  #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-    font-family: "Open Sans Condensed";
-    font-weight: 700; }
-    #content h1 .bigger, #content h2 .bigger, #content h3 .bigger, #content h4 .bigger, #content h5 .bigger, #content h6 .bigger {
-      font-size: 1.2em; }
-  #content h1 {
-    font-size: 32px; }
-  #content h1.special {
-    border-bottom: 5px solid #ded2cf;
-    margin-left: 10px; }
-  #content .graph {
-    font-family: "Roboto";
-    padding-top: 50px;
-    font-weight: 700;
-    margin-top: 5px;
-    padding-bottom: 50px; }
-    #content .graph .background-shape {
-      padding: 0px 15px 15px 50px;
-      margin-right: 40px;
-      margin-bottom: 25px; }
-      #content .graph .background-shape .title {
-        width: calc(100% + 72px);
-        padding-left: 50px;
-        margin-left: -50px;
-        clip-path: polygon(0% 0%, 97% 0%, 100% 100%, 3% 100%); }
-        @media (max-width: 1600px) {
-          #content .graph .background-shape .title {
-            width: calc(100% + 70px); } }
-        @media (max-width: 1400px) {
-          #content .graph .background-shape .title {
-            padding-left: 30px; } }
-        #content .graph .background-shape .title.large {
-          width: calc(100% + 81px);
-          clip-path: polygon(0% 0%, 94% 0%, 100% 100%, 6% 100%); }
-          @media (max-width: 1600px) {
-            #content .graph .background-shape .title.large {
-              width: calc(100% + 75px);
-              clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%); } }
-        #content .graph .background-shape .title.large-3 {
-          width: calc(100% + 90px);
-          clip-path: polygon(0% 0%, 91% 0%, 100% 100%, 9% 100%); }
-          @media (max-width: 1600px) {
-            #content .graph .background-shape .title.large-3 {
-              width: calc(100% + 75px);
-              clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%); } }
-        @media (max-width: 1400px) {
-          #content .graph .background-shape .title.large-2 {
-            width: calc(100% + 81px);
-            clip-path: polygon(0% 0%, 92% 0%, 100% 100%, 8% 100%); } }
-      #content .graph .background-shape.col-2 {
-        max-width: calc(16.666667% - 40px); }
-      #content .graph .background-shape:after {
-        content: "";
-        position: absolute;
-        right: -40px;
-        top: 0;
-        width: 0;
-        height: 0;
-        border-left: 40px solid #d7d9d8;
-        border-top: 135px solid transparent;
-        border-bottom: 65px solid transparent; }
-        @media (max-width: 1400px) {
-          #content .graph .background-shape:after {
-            border-left: 40px solid #d7d9d8;
-            border-top: 160px solid transparent;
-            border-bottom: 90px solid transparent; } }
-      #content .graph .background-shape:before {
-        content: "";
-        position: absolute;
-        left: 0px;
-        top: 0;
-        width: 0;
-        height: 0;
-        border-left: 40px solid #fff;
-        border-top: 135px solid transparent;
-        border-bottom: 65px solid transparent; }
-        @media (max-width: 1400px) {
-          #content .graph .background-shape:before {
-            border-left: 40px solid #fff;
-            border-top: 160px solid transparent;
-            border-bottom: 90px solid transparent; } }
-      #content .graph .background-shape.color-1:after {
-        border-left-color: #865f56; }
-      #content .graph .background-shape.color-2:after {
-        border-left-color: #9e7f78; }
-      #content .graph .background-shape.color-3:after {
-        border-left-color: #b19993; }
-      #content .graph .background-shape.color-4:after {
-        border-left-color: #d6c7c3; }
-      #content .graph .background-shape.color-5:after {
-        border-left-color: #eae3e1; }
-    #content .graph .background-shape-inverted {
-      padding: 0px 50px 15px 20px;
-      margin-left: 40px;
-      margin-bottom: 25px; }
-      @media (max-width: 1400px) {
-        #content .graph .background-shape-inverted {
-          padding-left: 10px; } }
-      #content .graph .background-shape-inverted .title {
-        width: calc(100% + 78px);
-        padding-right: 50px;
-        padding-left: 35px;
-        margin-right: -50px;
-        clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 100%);
-        position: relative;
-        z-index: 1;
-        margin-left: -28px;
-        text-transform: uppercase; }
-        #content .graph .background-shape-inverted .title.large {
-          margin-left: -35px;
-          width: calc(100% + 86px);
-          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%); }
-          @media (max-width: 1600px) {
-            #content .graph .background-shape-inverted .title.large {
-              margin-left: -30px;
-              width: calc(100% + 79px);
-              clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%); } }
-          @media (max-width: 1400px) {
-            #content .graph .background-shape-inverted .title.large {
-              margin-left: -18px;
-              width: calc(100% + 68px);
-              clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%); } }
-        #content .graph .background-shape-inverted .title.large-3 {
-          margin-left: -44px;
-          width: calc(100% + 95px);
-          clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%); }
-          @media (max-width: 1600px) {
-            #content .graph .background-shape-inverted .title.large-3 {
-              width: calc(100% + 75px);
-              clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%); } }
-        @media (max-width: 1400px) {
-          #content .graph .background-shape-inverted .title.large-2 {
-            margin-left: -22px;
-            width: calc(100% + 72px);
-            clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%); } }
-        @media (max-width: 1400px) {
-          #content .graph .background-shape-inverted .title {
-            padding-left: 20px; } }
-      #content .graph .background-shape-inverted.col-2 {
-        max-width: calc(16.666667% - 40px); }
-      #content .graph .background-shape-inverted:after {
-        content: "";
-        position: absolute;
-        left: -40px;
-        top: 0;
-        width: 0;
-        height: 0;
-        border-right: 40px solid #d7d9d8;
-        border-top: 135px solid transparent;
-        border-bottom: 65px solid transparent; }
-        @media (max-width: 1400px) {
-          #content .graph .background-shape-inverted:after {
-            border-right: 40px solid #d7d9d8;
-            border-top: 160px solid transparent;
-            border-bottom: 90px solid transparent; } }
-      #content .graph .background-shape-inverted:before {
-        content: "";
-        position: absolute;
-        right: 0px;
-        top: 0;
-        width: 0;
-        height: 0;
-        border-right: 40px solid #fff;
-        border-top: 135px solid transparent;
-        border-bottom: 65px solid transparent; }
-        @media (max-width: 1400px) {
-          #content .graph .background-shape-inverted:before {
-            border-right: 40px solid #fff;
-            border-top: 160px solid transparent;
-            border-bottom: 90px solid transparent; } }
-      #content .graph .background-shape-inverted.color-1:after {
-        border-right-color: #865f56; }
-      #content .graph .background-shape-inverted.color-2:after {
-        border-right-color: #9e7f78; }
-      #content .graph .background-shape-inverted.color-3:after {
-        border-right-color: #b19993; }
-      #content .graph .background-shape-inverted.color-4:after {
-        border-right-color: #d6c7c3; }
-      #content .graph .background-shape-inverted.color-5:after {
-        border-right-color: #eae3e1; }
-    #content .graph .background-shape-inverted, #content .graph .background-shape {
-      position: relative;
-      height: 200px;
-      top: 27px;
-      z-index: 1; }
-      @media (max-width: 1400px) {
-        #content .graph .background-shape-inverted, #content .graph .background-shape {
-          height: 250px; } }
-      #content .graph .background-shape-inverted.color-1, #content .graph .background-shape.color-1 {
-        background-color: #865f56;
-        color: #fff; }
-        #content .graph .background-shape-inverted.color-1 .title, #content .graph .background-shape.color-1 .title {
-          background-color: #9e7f78;
-          color: #fff; }
-      #content .graph .background-shape-inverted.color-2, #content .graph .background-shape.color-2 {
-        background-color: #9e7f78;
-        color: #fff; }
-        #content .graph .background-shape-inverted.color-2 .title, #content .graph .background-shape.color-2 .title {
-          background-color: #b19993;
-          color: #000; }
-      #content .graph .background-shape-inverted.color-3, #content .graph .background-shape.color-3 {
-        background-color: #b19993;
-        color: #fff; }
-        #content .graph .background-shape-inverted.color-3 .title, #content .graph .background-shape.color-3 .title {
-          background-color: #9e7f78;
-          color: #fff; }
-      #content .graph .background-shape-inverted.color-4, #content .graph .background-shape.color-4 {
-        background-color: #d6c7c3;
-        color: #000; }
-        #content .graph .background-shape-inverted.color-4 .title, #content .graph .background-shape.color-4 .title {
-          background-color: #b19993;
-          color: #000; }
-      #content .graph .background-shape-inverted.color-5, #content .graph .background-shape.color-5 {
-        background-color: #eae3e1;
-        color: #000; }
-        #content .graph .background-shape-inverted.color-5 .title, #content .graph .background-shape.color-5 .title {
-          background-color: #d6c7c3;
-          color: #000; }
-      #content .graph .background-shape-inverted.no-title, #content .graph .background-shape.no-title {
-        height: 200px;
-        line-height: 200px; }
-        @media (max-width: 1400px) {
-          #content .graph .background-shape-inverted.no-title, #content .graph .background-shape.no-title {
-            height: 250px;
-            line-height: 250px; } }
-        #content .graph .background-shape-inverted.no-title p, #content .graph .background-shape.no-title p {
-          display: inline-block;
-          vertical-align: middle;
-          line-height: normal; }
-      #content .graph .background-shape-inverted p, #content .graph .background-shape-inverted ul, #content .graph .background-shape-inverted ol, #content .graph .background-shape p, #content .graph .background-shape ul, #content .graph .background-shape ol {
-        margin-top: 0px;
-        font-size: 0.9em;
-        margin-left: 0px; }
-        @media (max-width: 1600px) {
-          #content .graph .background-shape-inverted p, #content .graph .background-shape-inverted ul, #content .graph .background-shape-inverted ol, #content .graph .background-shape p, #content .graph .background-shape ul, #content .graph .background-shape ol {
-            font-size: 0.9em; } }
-        @media (max-width: 1200px) {
-          #content .graph .background-shape-inverted p, #content .graph .background-shape-inverted ul, #content .graph .background-shape-inverted ol, #content .graph .background-shape p, #content .graph .background-shape ul, #content .graph .background-shape ol {
-            font-size: 0.8em;
-            word-break: break-all; } }
-      #content .graph .background-shape-inverted p:last-of-type, #content .graph .background-shape p:last-of-type {
-        margin-bottom: 5px; }
-      #content .graph .background-shape-inverted ul, #content .graph .background-shape-inverted ol, #content .graph .background-shape ul, #content .graph .background-shape ol {
-        margin-top: 0px;
-        padding-left: 15px;
-        width: 115%; }
-      #content .graph .background-shape-inverted .title, #content .graph .background-shape .title {
-        position: relative;
-        z-index: 1;
-        text-transform: uppercase;
-        font-size: 20px; }
-        @media (min-width: 1600px) {
-          #content .graph .background-shape-inverted .title.smaller, #content .graph .background-shape .title.smaller {
-            font-size: 13px;
-            height: 48px;
-            padding-top: 7px; } }
-        @media (max-width: 1600px) {
-          #content .graph .background-shape-inverted .title, #content .graph .background-shape .title {
-            font-size: 13px; } }
-        @media (min-width: 1400px) {
-          #content .graph .background-shape-inverted .title br.small-only, #content .graph .background-shape .title br.small-only {
-            display: none; } }
-    #content .graph .loop {
-      background: url("../img/loop.png") right top;
-      background-size: 275%;
-      background-repeat: no-repeat;
-      background-position-y: 105px;
-      height: 230px;
-      padding-top: 27px;
-      padding-left: 20px; }
-      @media (max-width: 1400px) {
-        #content .graph .loop {
-          height: 300px;
-          background-position-y: 139px; } }
-      #content .graph .loop p {
-        text-transform: uppercase;
-        font-size: 0.9em; }
-    #content .graph .loop-down {
-      background: url("../img/loop-down.png") right bottom;
-      background-size: 79%;
-      background-repeat: no-repeat;
-      height: 160px; }
-      @media (max-width: 1600px) {
-        #content .graph .loop-down {
-          background-position: right top; } }
-    #content .graph .loop-inverted {
-      background: url("../img/loop-inverted.png") left top;
-      background-size: 275%;
-      background-repeat: no-repeat;
-      height: 230px;
-      background-position-y: 105px;
-      padding-top: 27px;
-      padding-left: 20px; }
-      @media (max-width: 1400px) {
-        #content .graph .loop-inverted {
-          height: 300px;
-          background-position-y: 139px; } }
-    #content .graph .loop-down-inverted {
-      background: url("../img/loop-down-inverted.png") left bottom;
-      background-size: 79%;
-      background-repeat: no-repeat;
-      height: 160px; }
-      @media (max-width: 1600px) {
-        #content .graph .loop-down-inverted {
-          background-position: left top; } }
+  color: #5d5d5d;
+}
+@media (max-width: 1400px) {
+  /* line 43, style.scss */
+  #content {
+    padding: 50px 30px 50px 10px;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 43, style.scss */
+  #content {
+    padding: 0;
+  }
+}
+/* line 53, style.scss */
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+}
+/* line 57, style.scss */
+#content h1 .bigger, #content h2 .bigger, #content h3 .bigger, #content h4 .bigger, #content h5 .bigger, #content h6 .bigger {
+  font-size: 1.2em;
+}
+/* line 61, style.scss */
+#content h1 {
+  font-size: 32px;
+}
+/* line 64, style.scss */
+#content h1.special {
+  border-bottom: 5px solid #ded2cf;
+  margin-left: 10px;
+}
+/* line 69, style.scss */
+#content .graph {
+  font-family: "Roboto";
+  padding-top: 50px;
+  font-weight: 700;
+  margin-top: 5px;
+  padding-bottom: 50px;
+}
+/* line 76, style.scss */
+#content .graph .background-shape {
+  padding: 0px 15px 15px 50px;
+  margin-right: 40px;
+  margin-bottom: 25px;
+}
+/* line 81, style.scss */
+#content .graph .background-shape .title {
+  width: calc(100% + 72px);
+  padding-left: 50px;
+  margin-left: -50px;
+  clip-path: polygon(0% 0%, 97% 0%, 100% 100%, 3% 100%);
+}
+@media (max-width: 1600px) {
+  /* line 81, style.scss */
+  #content .graph .background-shape .title {
+    width: calc(100% + 70px);
+  }
+}
+@media (max-width: 1400px) {
+  /* line 81, style.scss */
+  #content .graph .background-shape .title {
+    padding-left: 30px;
+  }
+}
+/* line 93, style.scss */
+#content .graph .background-shape .title.large {
+  width: calc(100% + 81px);
+  clip-path: polygon(0% 0%, 94% 0%, 100% 100%, 6% 100%);
+}
+@media (max-width: 1600px) {
+  /* line 93, style.scss */
+  #content .graph .background-shape .title.large {
+    width: calc(100% + 75px);
+    clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+  }
+}
+/* line 102, style.scss */
+#content .graph .background-shape .title.large-3 {
+  width: calc(100% + 90px);
+  clip-path: polygon(0% 0%, 91% 0%, 100% 100%, 9% 100%);
+}
+@media (max-width: 1600px) {
+  /* line 102, style.scss */
+  #content .graph .background-shape .title.large-3 {
+    width: calc(100% + 75px);
+    clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+  }
+}
+@media (max-width: 1400px) {
+  /* line 112, style.scss */
+  #content .graph .background-shape .title.large-2 {
+    width: calc(100% + 81px);
+    clip-path: polygon(0% 0%, 92% 0%, 100% 100%, 8% 100%);
+  }
+}
+/* line 118, style.scss */
+#content .graph .background-shape.col-2 {
+  max-width: calc(16.666667% - 40px);
+}
+/* line 122, style.scss */
+#content .graph .background-shape:after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 40px solid #d7d9d8;
+  border-top: 135px solid transparent;
+  border-bottom: 65px solid transparent;
+}
+@media (max-width: 1400px) {
+  /* line 122, style.scss */
+  #content .graph .background-shape:after {
+    border-left: 40px solid #d7d9d8;
+    border-top: 160px solid transparent;
+    border-bottom: 90px solid transparent;
+  }
+}
+/* line 139, style.scss */
+#content .graph .background-shape:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 40px solid #fff;
+  border-top: 135px solid transparent;
+  border-bottom: 65px solid transparent;
+}
+@media (max-width: 1400px) {
+  /* line 139, style.scss */
+  #content .graph .background-shape:before {
+    border-left: 40px solid #fff;
+    border-top: 160px solid transparent;
+    border-bottom: 90px solid transparent;
+  }
+}
+/* line 156, style.scss */
+#content .graph .background-shape.color-1:after {
+  border-left-color: #865f56;
+}
+/* line 159, style.scss */
+#content .graph .background-shape.color-2:after {
+  border-left-color: #9e7f78;
+}
+/* line 162, style.scss */
+#content .graph .background-shape.color-3:after {
+  border-left-color: #b19993;
+}
+/* line 165, style.scss */
+#content .graph .background-shape.color-4:after {
+  border-left-color: #d6c7c3;
+}
+/* line 168, style.scss */
+#content .graph .background-shape.color-5:after {
+  border-left-color: #eae3e1;
+}
+/* line 172, style.scss */
+#content .graph .background-shape-inverted {
+  padding: 0px 50px 15px 20px;
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+@media (max-width: 1400px) {
+  /* line 172, style.scss */
+  #content .graph .background-shape-inverted {
+    padding-left: 10px;
+  }
+}
+/* line 180, style.scss */
+#content .graph .background-shape-inverted .title {
+  width: calc(100% + 78px);
+  padding-right: 50px;
+  padding-left: 35px;
+  margin-right: -50px;
+  clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 100%);
+  position: relative;
+  z-index: 1;
+  margin-left: -28px;
+  text-transform: uppercase;
+}
+/* line 191, style.scss */
+#content .graph .background-shape-inverted .title.large {
+  margin-left: -35px;
+  width: calc(100% + 86px);
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+@media (max-width: 1600px) {
+  /* line 191, style.scss */
+  #content .graph .background-shape-inverted .title.large {
+    margin-left: -30px;
+    width: calc(100% + 79px);
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  }
+}
+@media (max-width: 1400px) {
+  /* line 191, style.scss */
+  #content .graph .background-shape-inverted .title.large {
+    margin-left: -18px;
+    width: calc(100% + 68px);
+    clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+  }
+}
+/* line 207, style.scss */
+#content .graph .background-shape-inverted .title.large-3 {
+  margin-left: -44px;
+  width: calc(100% + 95px);
+  clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);
+}
+@media (max-width: 1600px) {
+  /* line 207, style.scss */
+  #content .graph .background-shape-inverted .title.large-3 {
+    width: calc(100% + 75px);
+    clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+  }
+}
+@media (max-width: 1400px) {
+  /* line 218, style.scss */
+  #content .graph .background-shape-inverted .title.large-2 {
+    margin-left: -22px;
+    width: calc(100% + 72px);
+    clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
+  }
+}
+@media (max-width: 1400px) {
+  /* line 180, style.scss */
+  #content .graph .background-shape-inverted .title {
+    padding-left: 20px;
+  }
+}
+/* line 228, style.scss */
+#content .graph .background-shape-inverted.col-2 {
+  max-width: calc(16.666667% - 40px);
+}
+/* line 231, style.scss */
+#content .graph .background-shape-inverted:after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-right: 40px solid #d7d9d8;
+  border-top: 135px solid transparent;
+  border-bottom: 65px solid transparent;
+}
+@media (max-width: 1400px) {
+  /* line 231, style.scss */
+  #content .graph .background-shape-inverted:after {
+    border-right: 40px solid #d7d9d8;
+    border-top: 160px solid transparent;
+    border-bottom: 90px solid transparent;
+  }
+}
+/* line 248, style.scss */
+#content .graph .background-shape-inverted:before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-right: 40px solid #fff;
+  border-top: 135px solid transparent;
+  border-bottom: 65px solid transparent;
+}
+@media (max-width: 1400px) {
+  /* line 248, style.scss */
+  #content .graph .background-shape-inverted:before {
+    border-right: 40px solid #fff;
+    border-top: 160px solid transparent;
+    border-bottom: 90px solid transparent;
+  }
+}
+/* line 265, style.scss */
+#content .graph .background-shape-inverted.color-1:after {
+  border-right-color: #865f56;
+}
+/* line 268, style.scss */
+#content .graph .background-shape-inverted.color-2:after {
+  border-right-color: #9e7f78;
+}
+/* line 271, style.scss */
+#content .graph .background-shape-inverted.color-3:after {
+  border-right-color: #b19993;
+}
+/* line 274, style.scss */
+#content .graph .background-shape-inverted.color-4:after {
+  border-right-color: #d6c7c3;
+}
+/* line 277, style.scss */
+#content .graph .background-shape-inverted.color-5:after {
+  border-right-color: #eae3e1;
+}
+/* line 281, style.scss */
+#content .graph .background-shape-inverted, #content .graph .background-shape {
+  position: relative;
+  height: 200px;
+  top: 27px;
+  z-index: 1;
+}
+@media (max-width: 1400px) {
+  /* line 281, style.scss */
+  #content .graph .background-shape-inverted, #content .graph .background-shape {
+    height: 250px;
+  }
+}
+/* line 290, style.scss */
+#content .graph .background-shape-inverted.color-1, #content .graph .background-shape.color-1 {
+  background-color: #865f56;
+  color: #fff;
+}
+/* line 294, style.scss */
+#content .graph .background-shape-inverted.color-1 .title, #content .graph .background-shape.color-1 .title {
+  background-color: #9e7f78;
+  color: #fff;
+}
+/* line 299, style.scss */
+#content .graph .background-shape-inverted.color-2, #content .graph .background-shape.color-2 {
+  background-color: #9e7f78;
+  color: #fff;
+}
+/* line 303, style.scss */
+#content .graph .background-shape-inverted.color-2 .title, #content .graph .background-shape.color-2 .title {
+  background-color: #b19993;
+  color: #000;
+}
+/* line 308, style.scss */
+#content .graph .background-shape-inverted.color-3, #content .graph .background-shape.color-3 {
+  background-color: #b19993;
+  color: #fff;
+}
+/* line 312, style.scss */
+#content .graph .background-shape-inverted.color-3 .title, #content .graph .background-shape.color-3 .title {
+  background-color: #9e7f78;
+  color: #fff;
+}
+/* line 317, style.scss */
+#content .graph .background-shape-inverted.color-4, #content .graph .background-shape.color-4 {
+  background-color: #d6c7c3;
+  color: #000;
+}
+/* line 321, style.scss */
+#content .graph .background-shape-inverted.color-4 .title, #content .graph .background-shape.color-4 .title {
+  background-color: #b19993;
+  color: #000;
+}
+/* line 326, style.scss */
+#content .graph .background-shape-inverted.color-5, #content .graph .background-shape.color-5 {
+  background-color: #eae3e1;
+  color: #000;
+}
+/* line 330, style.scss */
+#content .graph .background-shape-inverted.color-5 .title, #content .graph .background-shape.color-5 .title {
+  background-color: #d6c7c3;
+  color: #000;
+}
+/* line 335, style.scss */
+#content .graph .background-shape-inverted.no-title, #content .graph .background-shape.no-title {
+  height: 200px;
+  line-height: 200px;
+}
+@media (max-width: 1400px) {
+  /* line 335, style.scss */
+  #content .graph .background-shape-inverted.no-title, #content .graph .background-shape.no-title {
+    height: 250px;
+    line-height: 250px;
+  }
+}
+/* line 343, style.scss */
+#content .graph .background-shape-inverted.no-title p, #content .graph .background-shape.no-title p {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+/* line 349, style.scss */
+#content .graph .background-shape-inverted p, #content .graph .background-shape-inverted ul, #content .graph .background-shape-inverted ol, #content .graph .background-shape p, #content .graph .background-shape ul, #content .graph .background-shape ol {
+  margin-top: 0px;
+  font-size: 0.9em;
+  margin-left: 0px;
+}
+@media (max-width: 1600px) {
+  /* line 349, style.scss */
+  #content .graph .background-shape-inverted p, #content .graph .background-shape-inverted ul, #content .graph .background-shape-inverted ol, #content .graph .background-shape p, #content .graph .background-shape ul, #content .graph .background-shape ol {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 349, style.scss */
+  #content .graph .background-shape-inverted p, #content .graph .background-shape-inverted ul, #content .graph .background-shape-inverted ol, #content .graph .background-shape p, #content .graph .background-shape ul, #content .graph .background-shape ol {
+    font-size: 0.7em;
+    word-break: break-all;
+  }
+}
+/* line 362, style.scss */
+#content .graph .background-shape-inverted p:last-of-type, #content .graph .background-shape p:last-of-type {
+  margin-bottom: 5px;
+}
+/* line 365, style.scss */
+#content .graph .background-shape-inverted ul, #content .graph .background-shape-inverted ol, #content .graph .background-shape ul, #content .graph .background-shape ol {
+  margin-top: 0px;
+  padding-left: 15px;
+  width: 115%;
+}
+/* line 370, style.scss */
+#content .graph .background-shape-inverted .title, #content .graph .background-shape .title {
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+@media (min-width: 1600px) {
+  /* line 377, style.scss */
+  #content .graph .background-shape-inverted .title.smaller, #content .graph .background-shape .title.smaller {
+    font-size: 13px;
+    height: 48px;
+    padding-top: 7px;
+  }
+}
+@media (max-width: 1600px) {
+  /* line 370, style.scss */
+  #content .graph .background-shape-inverted .title, #content .graph .background-shape .title {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1400px) {
+  /* line 387, style.scss */
+  #content .graph .background-shape-inverted .title br.small-only, #content .graph .background-shape .title br.small-only {
+    display: none;
+  }
+}
+/* line 393, style.scss */
+#content .graph .loop {
+  background: url("../img/loop.png") right top;
+  background-size: 275%;
+  background-repeat: no-repeat;
+  background-position-y: 105px;
+  height: 230px;
+  padding-top: 27px;
+  padding-left: 20px;
+}
+@media (max-width: 1400px) {
+  /* line 393, style.scss */
+  #content .graph .loop {
+    height: 300px;
+    background-position-y: 139px;
+  }
+}
+/* line 406, style.scss */
+#content .graph .loop p {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+/* line 411, style.scss */
+#content .graph .loop-down {
+  background: url("../img/loop-down.png") right bottom;
+  background-size: 79%;
+  background-repeat: no-repeat;
+  height: 160px;
+}
+@media (max-width: 1600px) {
+  /* line 411, style.scss */
+  #content .graph .loop-down {
+    background-position: right top;
+  }
+}
+/* line 421, style.scss */
+#content .graph .loop-inverted {
+  background: url("../img/loop-inverted.png") left top;
+  background-size: 275%;
+  background-repeat: no-repeat;
+  height: 230px;
+  background-position-y: 105px;
+  padding-top: 27px;
+  padding-left: 20px;
+}
+@media (max-width: 1400px) {
+  /* line 421, style.scss */
+  #content .graph .loop-inverted {
+    height: 300px;
+    background-position-y: 139px;
+  }
+}
+/* line 435, style.scss */
+#content .graph .loop-down-inverted {
+  background: url("../img/loop-down-inverted.png") left bottom;
+  background-size: 79%;
+  background-repeat: no-repeat;
+  height: 160px;
+}
+@media (max-width: 1600px) {
+  /* line 435, style.scss */
+  #content .graph .loop-down-inverted {
+    background-position: left top;
+  }
+}
+/* line 448, style.scss */
+#content .d-block .card-deck .card {
+  flex: 1 1 25%;
+  margin-bottom: 30px;
+}
 
+/* line 456, style.scss */
 footer {
-  padding: 20px 70px 20px 70px; }
+  padding: 20px 70px 20px 70px;
+}
+
+/*# sourceMappingURL=style.css.map */

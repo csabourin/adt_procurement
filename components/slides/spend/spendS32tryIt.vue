@@ -5,7 +5,7 @@
       <p>First, let’s check your budget.</p>
       <table border='1'>
         <thead>
-          <tr style="background-color: #d9d2e9;">
+          <tr style="background-color: #7D677D; color: white;">
             <th id="1" scope="col">
               <p>Budget</p>
             </th>
@@ -37,7 +37,7 @@
       <p>D’abord, vérifions votre budget.</p>
       <table border='1'>
         <thead>
-          <tr style="background-color: #d9d2e9;">
+          <tr style="background-color: #7D677D; color: white;">
             <th id="1" scope="col">
               <p>Budget</p>
             </th>

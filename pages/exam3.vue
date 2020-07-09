@@ -200,9 +200,10 @@ export default {
         });
     },
     markTest() {
-      if(this.allDone){
+      if(this.allAnswered){
         this.$store.commit('report/lockQuiz');
         this.$bvModal.show('Completed');
+        this.$store.commit('report/setComplete', this.checkPercentage())
       }
       else{
         this.$bvModal.show('missingQuestions');
@@ -279,16 +280,12 @@ export default {
         }
       }
       return unanswered;
+    },
+    allAnswered(){
+      const answers = Object.keys(this.answerScore).length
+      return answers === this.numQuestions
     }
   },
-  watch: {
-    answerScore() {
-      const answers = Object.keys(this.answerScore).length
-      if (answers === this.numQuestions) {
-        this.$store.commit('report/setComplete', this.checkPercentage())
-      }
-    }
-  }
 }
 
 </script>

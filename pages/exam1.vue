@@ -301,7 +301,7 @@ export default {
     }
   },
   computed: {
-      allDone(){
+    allDone(){
       return this.$store.getters['plan/getScore']
     },
     AlertIsDismissed: {

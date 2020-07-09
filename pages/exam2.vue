@@ -261,7 +261,7 @@ export default {
     },
     markTest() {
       if(this.allDone){
-        this.$store.commit('plan/lockQuiz');
+        this.$store.commit('spend/lockQuiz');
         this.$bvModal.show('Completed');
       }
       else{
@@ -306,7 +306,7 @@ export default {
     }
   },
   computed: {
-      allDone(){
+    allDone(){
       return this.$store.getters['spend/getScore']
     },
     AlertIsDismissed: {

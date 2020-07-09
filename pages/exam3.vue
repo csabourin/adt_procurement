@@ -201,7 +201,7 @@ export default {
     },
     markTest() {
       if(this.allDone){
-        this.$store.commit('plan/lockQuiz');
+        this.$store.commit('report/lockQuiz');
         this.$bvModal.show('Completed');
       }
       else{

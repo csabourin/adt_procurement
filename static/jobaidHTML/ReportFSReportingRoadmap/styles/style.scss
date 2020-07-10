@@ -47,6 +47,9 @@ html, body{
     @media (max-width: 1400px){
         padding: 50px 30px 50px 10px;
     }
+    @media (max-width: 1200px){
+        padding: 0;
+    }
     h1, h2, h3, h4, h5, h6{
         font-family: "Open Sans Condensed";
         font-weight: 700;
@@ -349,10 +352,10 @@ html, body{
                 margin-left: 0px;
                 
                 @media (max-width: 1600px){
-                    font-size: 0.9em;
+                    font-size: 0.8em;
                 }
                 @media (max-width: 1200px){
-                    font-size: 0.8em;
+                    font-size: 0.7em;
                     word-break: break-all;
                 }
             }
@@ -437,6 +440,14 @@ html, body{
             
             @media (max-width: 1600px){
                 background-position: left top; 
+            }
+        }
+    }
+    .d-block{
+        .card-deck{
+            .card{
+                flex: 1 1 25%;
+                margin-bottom: 30px;
             }
         }
     }

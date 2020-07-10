@@ -221,6 +221,10 @@ h2{
             font-size: 18px;
             text-transform: uppercase;
             left: 30px;
+          
+            @media(max-width: 991px){
+                left: 5px;
+            }
             
             &:before{
                 content: "";

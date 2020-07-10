@@ -175,6 +175,9 @@ h2 {
       font-size: 18px;
       text-transform: uppercase;
       left: 30px; }
+      @media (max-width: 991px) {
+        .container.reversed .before .budgetBox {
+          left: 5px; } }
       .container.reversed .before .budgetBox:before {
         content: "";
         position: absolute;

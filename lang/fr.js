@@ -153,10 +153,10 @@ export default {
   },
   
   FSRRoadmap:{
-    line1: "RSF",
-    line2: "Schéma",
-    name: "Rapport sur la situation financière&nbsp;: Schéma",
-    download: "Télécharger le schéma sur le rapport sur la situation financière",
+    line1: "Feuille",
+    line2: "de route",
+    name: "Rapport sur la situation financière&nbsp;: Feuille de route",
+    download: "Télécharger la feuille de route sur le rapport sur la situation financière",
     filename: "Rapport_sur_la_situation_financiere_Schema.pdf",
     HTMLFilename: "../ReportFSReportingRoadmap/fr.html"
   },

@@ -253,5 +253,9 @@ export default {
     bottom: 0;
     transform-origin: 84% -50%;
   }
+  
+  header .btn:hover, header .btn:focus{
+    text-decoration: none;
+  }
 
 </style>

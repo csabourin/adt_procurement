@@ -1,6 +1,6 @@
 <template>
   <span class="pure-radiobutton">
-    <fieldset tabindex="0">
+    <fieldset tabindex="0" style="margin-bottom: 15px;">
       <legend><strong class="question" v-html="question.text" /></legend>
       <p v-html="$t('selectRight')" />
       <ol type="1">
@@ -9,10 +9,9 @@
       </ol>
       <b-button :disabled="q1Submitted || lock || !Quest1" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
     </fieldset>
-    <p>&nbsp;</p>
     <!--<p aria-live="polite" v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>-->
-    <p tabindex="0" aria-live="assertive" v-if="Quest1 && q1Submitted" v-html="question.feedback[Quest1]" />
-    <p tabindex="0" aria-live="assertive" v-if="Quest1 && q1Submitted && question.conclusion" v-html="question.conclusion" />
+    <p tabindex="0" aria-live="assertive" v-if="Quest1 && q1Submitted" v-html="question.feedback[Quest1]" style="margin-bottom: 20px;" />
+    <p tabindex="0" aria-live="assertive" v-if="Quest1 && q1Submitted && question.conclusion" v-html="question.conclusion" style="margin-bottom: 20px;" />
   </span>
 </template>
 <script type="text/javascript">

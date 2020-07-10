@@ -1,6 +1,6 @@
 <template>
   <span class="pure-checkbox">
-    <fieldset tabindex="0">
+    <fieldset tabindex="0" style="margin-bottom: 15px;">
       <legend><strong class="question" v-html="question.text" /><p>{{$t('checkAll')}}</p></legend>
       <ol type="1">
         <li v-for="(item,index) in question.options" :key="index">
@@ -9,9 +9,8 @@
       </ol>
       <b-button :disabled="q2Submitted || !isAcceptable(Quest2)" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
     </fieldset>
-    <p>&nbsp;</p>
     <!--<p v-if="!isAcceptable(Quest2) && q2Submitted" v-html="$t('pleaseAnswer')"></p>-->
-    <span v-if="isAcceptable(Quest2) && q2Submitted">
+    <span v-if="isAcceptable(Quest2) && q2Submitted"  style="margin-bottom: 20px;">
       <p v-if="arraysMatch(Quest2,Answer)"><span v-html="question.feedback.right" /></p>
       <p v-else> <span v-html="question.feedback.wrong" /></p>
       <p v-if="Quest2 && q2Submitted && question.conclusion" v-html="question.conclusion" />

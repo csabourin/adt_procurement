@@ -589,7 +589,6 @@ export default {
       Velocity(el, { height: height + "px" }, {duration: 300});
     },
     tipLeave(el, done) {
-      console.log("leave")
       Velocity(el, { height: "0px" }, { duration: 300 });
       setTimeout(function(){
         done();

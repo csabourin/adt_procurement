@@ -54,8 +54,8 @@
         </figure>
       </b-col>
     </b-row>
-    <transition @enter="tipEnter" @after-enter="tipAfterEnter" @leave="tipLeave" :css="false">
-      <b-row v-if="videoDone" class="tipRow">
+    <transition @enter="tipEnter" @after-enter="tipAfterEnter" @leave="tipLeave" @after-leave="tipAfterLeave" :css="false">
+      <b-row v-show="videoDone" class="tipRow">
         <b-col>
           <tip aria-live="polite" v-if="$i18n.locale=='en'">Select the continue icon button ( <img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" style="display: inline; width: 30px; height: 30px;" /> ) in the video segments below to continue to the next section.</tip>
           <tip aria-live="polite" v-if="$i18n.locale=='fr'">Sélectionnez le bouton de l'icône «&nbsp;continuer&nbsp;» ( <img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" style="display: inline; width: 30px; height: 30px;" /> ) dans les segments vidéo ci-dessous pour continuer à la section suivante.</tip>
@@ -575,11 +575,12 @@ export default {
     },
     tipEnter(el, done) {
       var that = this;
+      el.style.display = "flex";
       
       this.$nextTick(function(){
         that.tipheight = el.offsetHeight;
         el.style.height = 0;
-        
+
         done();
       });
     },
@@ -588,7 +589,16 @@ export default {
       Velocity(el, { height: height + "px" }, {duration: 300});
     },
     tipLeave(el, done) {
-      Velocity(el, { height: "0px" }, { duration: 300 }, { complete: done });
+      console.log("leave")
+      Velocity(el, { height: "0px" }, { duration: 300 });
+      setTimeout(function(){
+        done();
+      }, 300)
+    },
+    tipAfterLeave(el) {
+      var height = this.tipheight
+      el.style.height = height + "px";
+      el.style.display = "none";
     },
     setOverlayHeight(){
       if (this.$refs.videoplayer) {
@@ -1103,7 +1113,7 @@ video {
 }
   
   .tipRow{
-    transition: height 0.3s; 
+    /*transition: height 0.3s; */
     overflow: hidden;
   }
   

@@ -358,7 +358,7 @@ export default {
   },
   computed:{
     thatPoint(){
-      return parseInt(this.$store.state.currentPlaying.createBudget)
+      return this.$store.state.currentPlaying.createBudget
     },
     chosenScenario: {
       set(scenario) {

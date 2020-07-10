@@ -366,22 +366,32 @@ html, body{
             padding: 15px;
             margin-bottom: 10px;
             margin-top: 10px;
-            min-height: 150px;
+            text-align: center;
+            font-weight: 700;
+            
+            p:last-child{
+                margin-bottom: 0;
+            }
         }
         .between{
             position: relative;
-            height: 60px;
-            line-height: 20px;
             padding-top: 10px;
             padding-bottom: 10px;
             top: calc(50% - 25px);
             text-align: center;
             background-color: #EEF1EE;
+            margin-bottom: 50px;
             
-            @media(max-width: 768px){
-                &.large{
-                    height: 80px;
-                }
+            .arrow {
+                content: "";
+                position: absolute;
+                bottom: -40px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-top: 40px solid #EEF1EE;
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
             }
         }
     }

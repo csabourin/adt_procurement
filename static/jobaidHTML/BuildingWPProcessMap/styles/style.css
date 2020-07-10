@@ -1,276 +1,423 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,700|Roboto:400,700&display=swap");
+/* line 3, style.scss */
 html, body {
   margin: 0px;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
+/* line 8, style.scss */
 .banner {
-  background: url("../img/BuildingWPProcessMap.jpg");
+  background-image: url("../img/BuildingWPProcessMap.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
-  position: relative; }
-  .banner.fr {
-    background: url("../img/BuildingWPProcessMap_fr.jpg"); }
+  position: relative;
+}
+/* line 16, style.scss */
+.banner.fr {
+  background-image: url("../img/BuildingWPProcessMap_fr.jpg");
+}
+/* line 20, style.scss */
+.banner h1 {
+  position: absolute;
+  right: 5%;
+  top: 25px;
+  margin-top: 0;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: white;
+}
+@media (max-width: 1200px) {
+  /* line 20, style.scss */
   .banner h1 {
-    position: absolute;
-    right: 5%;
-    top: 25px;
-    margin-top: 0;
-    font-family: "Open Sans";
-    font-weight: 300;
-    font-size: 26px;
-    text-transform: uppercase;
-    color: white; }
-    @media (max-width: 1200px) {
-      .banner h1 {
-        top: 15px; } }
-    @media (max-width: 992px) {
-      .banner h1 {
-        top: 10px;
-        font-size: 20px; } }
+    top: 15px;
+  }
+}
+@media (max-width: 992px) {
+  /* line 20, style.scss */
+  .banner h1 {
+    top: 10px;
+    font-size: 20px;
+  }
+}
 
+/* line 41, style.scss */
 #content {
   padding: 50px 70px 50px 70px;
-  color: #5d5d5d; }
-  #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-    font-family: "Open Sans Condensed";
-    font-weight: 700; }
-    #content h1 .bigger, #content h2 .bigger, #content h3 .bigger, #content h4 .bigger, #content h5 .bigger, #content h6 .bigger {
-      font-size: 1.2em; }
-  #content h1 {
-    font-size: 32px; }
-  #content h2.special {
-    border-bottom: 5px solid #aabec2;
-    margin-left: 10px;
-    text-transform: uppercase; }
-  #content .graph {
-    font-family: "Roboto";
-    padding-top: 50px; }
-    #content .graph .col-2 p, #content .graph .col-3 p, #content .graph .col-1 p {
-      font-weight: 700;
-      margin-top: 5px; }
-    #content .graph .col-2.line-end, #content .graph .col-3.line-end, #content .graph .col-1.line-end {
-      position: relative; }
-      #content .graph .col-2.line-end:before, #content .graph .col-3.line-end:before, #content .graph .col-1.line-end:before {
-        content: "";
-        position: absolute;
-        width: 30%;
-        right: -10%;
-        height: 50px;
-        top: calc(50% - 25px);
-        background: url("../img/line-end.png") center right;
-        background-size: cover;
-        background-repeat: no-repeat; }
-    #content .graph .col-2.line, #content .graph .col-3.line, #content .graph .col-1.line {
-      background: url("../img/line.png") center 49%;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      height: 80px;
-      margin-top: 27px;
-      position: relative;
-      z-index: 2;
-      padding-left: 0px;
-      position: relative;
-      left: 37px; }
-      #content .graph .col-2.line p, #content .graph .col-3.line p, #content .graph .col-1.line p {
-        text-transform: uppercase;
-        font-size: 0.9em; }
-        #content .graph .col-2.line p.smaller, #content .graph .col-3.line p.smaller, #content .graph .col-1.line p.smaller {
-          font-size: 0.7em; }
-    #content .graph .col-2.no-line, #content .graph .col-3.no-line, #content .graph .col-1.no-line {
-      height: 80px;
-      margin-top: 54px;
-      position: relative;
-      z-index: 2;
-      padding-left: 7px;
-      position: relative;
-      left: 37px; }
-      #content .graph .col-2.no-line p, #content .graph .col-3.no-line p, #content .graph .col-1.no-line p {
-        text-transform: uppercase;
-        font-size: 0.9em; }
-        #content .graph .col-2.no-line p.smaller, #content .graph .col-3.no-line p.smaller, #content .graph .col-1.no-line p.smaller {
-          font-size: 0.7em; }
-    #content .graph .col-2.line-inverted, #content .graph .col-3.line-inverted, #content .graph .col-1.line-inverted {
-      background: url("../img/line-inverted.png") center 49%;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      height: 80px;
-      margin-top: 27px;
-      position: relative;
-      z-index: 2;
-      padding-left: 37px;
-      position: relative;
-      right: 37px; }
-      #content .graph .col-2.line-inverted p, #content .graph .col-3.line-inverted p, #content .graph .col-1.line-inverted p {
-        text-transform: uppercase;
-        font-size: 0.9em; }
-        #content .graph .col-2.line-inverted p.smaller, #content .graph .col-3.line-inverted p.smaller, #content .graph .col-1.line-inverted p.smaller {
-          font-size: 0.7em; }
-    #content .graph .col-2.background-shape, #content .graph .col-3.background-shape, #content .graph .col-1.background-shape {
-      height: 80px;
-      position: relative;
-      background: #d7d9d8;
-      top: 27px;
-      padding-left: 50px;
-      z-index: 1; }
-      #content .graph .col-2.background-shape:before, #content .graph .col-3.background-shape:before, #content .graph .col-1.background-shape:before {
-        content: "";
-        position: absolute;
-        right: -40px;
-        top: 0;
-        width: 0;
-        height: 0;
-        border-left: 40px solid #d7d9d8;
-        border-top: 40px solid transparent;
-        border-bottom: 40px solid transparent; }
-      #content .graph .col-2.background-shape:after, #content .graph .col-3.background-shape:after, #content .graph .col-1.background-shape:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 0;
-        height: 0;
-        border-left: 40px solid white;
-        border-top: 40px solid transparent;
-        border-bottom: 40px solid transparent; }
-    #content .graph .col-2.background-shape-inverted, #content .graph .col-3.background-shape-inverted, #content .graph .col-1.background-shape-inverted {
-      height: 80px;
-      position: relative;
-      background: #d7d9d8;
-      top: 27px;
-      padding-right: 50px;
-      padding-left: 0px;
-      z-index: 1; }
-      #content .graph .col-2.background-shape-inverted.large, #content .graph .col-3.background-shape-inverted.large, #content .graph .col-1.background-shape-inverted.large {
-        height: 170px;
-        margin-bottom: 30px; }
-      #content .graph .col-2.background-shape-inverted:before, #content .graph .col-3.background-shape-inverted:before, #content .graph .col-1.background-shape-inverted:before {
-        content: "";
-        position: absolute;
-        left: -40px;
-        top: 0;
-        width: 0;
-        height: 0;
-        border-right: 40px solid #d7d9d8;
-        border-top: 40px solid transparent;
-        border-bottom: 40px solid transparent; }
-      #content .graph .col-2.background-shape-inverted:after, #content .graph .col-3.background-shape-inverted:after, #content .graph .col-1.background-shape-inverted:after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 0;
-        height: 0;
-        border-right: 40px solid white;
-        border-top: 40px solid transparent;
-        border-bottom: 40px solid transparent; }
-    #content .graph .col-2.background-shape-inverted, #content .graph .col-2.background-shape, #content .graph .col-3.background-shape-inverted, #content .graph .col-3.background-shape, #content .graph .col-1.background-shape-inverted, #content .graph .col-1.background-shape {
-      position: relative; }
-      #content .graph .col-2.background-shape-inverted p, #content .graph .col-2.background-shape-inverted ul, #content .graph .col-2.background-shape-inverted ol, #content .graph .col-2.background-shape p, #content .graph .col-2.background-shape ul, #content .graph .col-2.background-shape ol, #content .graph .col-3.background-shape-inverted p, #content .graph .col-3.background-shape-inverted ul, #content .graph .col-3.background-shape-inverted ol, #content .graph .col-3.background-shape p, #content .graph .col-3.background-shape ul, #content .graph .col-3.background-shape ol, #content .graph .col-1.background-shape-inverted p, #content .graph .col-1.background-shape-inverted ul, #content .graph .col-1.background-shape-inverted ol, #content .graph .col-1.background-shape p, #content .graph .col-1.background-shape ul, #content .graph .col-1.background-shape ol {
-        margin-top: 15px;
-        font-size: 0.8em;
-        margin-left: 50px;
-        width: calc(100% - 50px); }
-      #content .graph .col-2.background-shape-inverted p:last-of-type, #content .graph .col-2.background-shape p:last-of-type, #content .graph .col-3.background-shape-inverted p:last-of-type, #content .graph .col-3.background-shape p:last-of-type, #content .graph .col-1.background-shape-inverted p:last-of-type, #content .graph .col-1.background-shape p:last-of-type {
-        margin-bottom: 5px; }
-      #content .graph .col-2.background-shape-inverted ul, #content .graph .col-2.background-shape-inverted ol, #content .graph .col-2.background-shape ul, #content .graph .col-2.background-shape ol, #content .graph .col-3.background-shape-inverted ul, #content .graph .col-3.background-shape-inverted ol, #content .graph .col-3.background-shape ul, #content .graph .col-3.background-shape ol, #content .graph .col-1.background-shape-inverted ul, #content .graph .col-1.background-shape-inverted ol, #content .graph .col-1.background-shape ul, #content .graph .col-1.background-shape ol {
-        margin-top: 0px;
-        padding-left: 15px;
-        width: 115%; }
-      #content .graph .col-2.background-shape-inverted .icon-left, #content .graph .col-2.background-shape .icon-left, #content .graph .col-3.background-shape-inverted .icon-left, #content .graph .col-3.background-shape .icon-left, #content .graph .col-1.background-shape-inverted .icon-left, #content .graph .col-1.background-shape .icon-left {
-        float: left;
-        width: 40px;
-        height: 40px;
-        left: 50px;
-        margin-top: 20px; }
-        #content .graph .col-2.background-shape-inverted .icon-left.letter, #content .graph .col-2.background-shape .icon-left.letter, #content .graph .col-3.background-shape-inverted .icon-left.letter, #content .graph .col-3.background-shape .icon-left.letter, #content .graph .col-1.background-shape-inverted .icon-left.letter, #content .graph .col-1.background-shape .icon-left.letter {
-          background: url("../img/letter-icon.png") center center;
-          background-size: contain; }
-        #content .graph .col-2.background-shape-inverted .icon-left.framework, #content .graph .col-2.background-shape .icon-left.framework, #content .graph .col-3.background-shape-inverted .icon-left.framework, #content .graph .col-3.background-shape .icon-left.framework, #content .graph .col-1.background-shape-inverted .icon-left.framework, #content .graph .col-1.background-shape .icon-left.framework {
-          background: url("../img/framework-icon.png") center center;
-          background-size: contain; }
-        #content .graph .col-2.background-shape-inverted .icon-left.plan, #content .graph .col-2.background-shape .icon-left.plan, #content .graph .col-3.background-shape-inverted .icon-left.plan, #content .graph .col-3.background-shape .icon-left.plan, #content .graph .col-1.background-shape-inverted .icon-left.plan, #content .graph .col-1.background-shape .icon-left.plan {
-          background: url("../img/plan-icon.png") center center;
-          background-size: contain; }
-        #content .graph .col-2.background-shape-inverted .icon-left.priorities, #content .graph .col-2.background-shape .icon-left.priorities, #content .graph .col-3.background-shape-inverted .icon-left.priorities, #content .graph .col-3.background-shape .icon-left.priorities, #content .graph .col-1.background-shape-inverted .icon-left.priorities, #content .graph .col-1.background-shape .icon-left.priorities {
-          background: url("../img/priorities-icon.png") center center;
-          background-size: contain; }
-        #content .graph .col-2.background-shape-inverted .icon-left.calendar, #content .graph .col-2.background-shape .icon-left.calendar, #content .graph .col-3.background-shape-inverted .icon-left.calendar, #content .graph .col-3.background-shape .icon-left.calendar, #content .graph .col-1.background-shape-inverted .icon-left.calendar, #content .graph .col-1.background-shape .icon-left.calendar {
-          background: url("../img/calendar-icon.png") center center;
-          background-size: contain; }
-        #content .graph .col-2.background-shape-inverted .icon-left.scan, #content .graph .col-2.background-shape .icon-left.scan, #content .graph .col-3.background-shape-inverted .icon-left.scan, #content .graph .col-3.background-shape .icon-left.scan, #content .graph .col-1.background-shape-inverted .icon-left.scan, #content .graph .col-1.background-shape .icon-left.scan {
-          background: url("../img/scan-icon.png") center center;
-          background-size: contain; }
-        #content .graph .col-2.background-shape-inverted .icon-left.updated, #content .graph .col-2.background-shape .icon-left.updated, #content .graph .col-3.background-shape-inverted .icon-left.updated, #content .graph .col-3.background-shape .icon-left.updated, #content .graph .col-1.background-shape-inverted .icon-left.updated, #content .graph .col-1.background-shape .icon-left.updated {
-          background: url("../img/updated-icon.png") center center;
-          background-size: contain; }
-        #content .graph .col-2.background-shape-inverted .icon-left.submit, #content .graph .col-2.background-shape .icon-left.submit, #content .graph .col-3.background-shape-inverted .icon-left.submit, #content .graph .col-3.background-shape .icon-left.submit, #content .graph .col-1.background-shape-inverted .icon-left.submit, #content .graph .col-1.background-shape .icon-left.submit {
-          background: url("../img/submit-icon.png") center center;
-          background-size: contain; }
-    #content .graph .col-2.loop, #content .graph .col-3.loop, #content .graph .col-1.loop {
-      background: url("../img/loop.png") right top;
-      background-size: 275%;
-      background-repeat: no-repeat;
-      background-position-y: 59px;
-      height: 150px;
-      padding-top: 27px;
-      padding-left: 20px; }
-      #content .graph .col-2.loop p, #content .graph .col-3.loop p, #content .graph .col-1.loop p {
-        text-transform: uppercase;
-        font-size: 0.9em; }
-    #content .graph .col-2.loop-arrow, #content .graph .col-3.loop-arrow, #content .graph .col-1.loop-arrow {
-      background: url("../img/loop-arrow.png") right top;
-      background-size: 76%;
-      background-repeat: no-repeat;
-      background-position-y: 31px;
-      background-position-x: 99.5%;
-      height: 150px;
-      padding-top: 27px;
-      padding-left: 20px; }
-      @media (max-width: 1400px) {
-        #content .graph .col-2.loop-arrow, #content .graph .col-3.loop-arrow, #content .graph .col-1.loop-arrow {
-          background-position-y: 41px; } }
-      #content .graph .col-2.loop-arrow p, #content .graph .col-3.loop-arrow p, #content .graph .col-1.loop-arrow p {
-        text-transform: uppercase;
-        font-size: 0.9em; }
-    #content .graph .col-2.loop-down, #content .graph .col-3.loop-down, #content .graph .col-1.loop-down {
-      background: url("../img/loop-down.png") right bottom;
-      background-size: 275%;
-      background-repeat: no-repeat;
-      height: 85px; }
-    #content .graph .col-2.loop-inverted, #content .graph .col-3.loop-inverted, #content .graph .col-1.loop-inverted {
-      background: url("../img/loop-inverted.png") left top;
-      background-size: 93%;
-      background-repeat: no-repeat;
-      background-position-x: 190px;
-      background-position-y: 61px;
-      height: 200px;
-      padding-top: 27px;
-      padding-right: 20px; }
-      #content .graph .col-2.loop-inverted p, #content .graph .col-3.loop-inverted p, #content .graph .col-1.loop-inverted p {
-        text-transform: uppercase;
-        font-size: 0.9em;
-        text-align: right; }
-    #content .graph .col-2.loop-down-inverted, #content .graph .col-3.loop-down-inverted, #content .graph .col-1.loop-down-inverted {
-      background: url("../img/loop-down-inverted.png") left bottom;
-      background-size: 93%;
-      background-repeat: no-repeat;
-      height: 75px;
-      background-position-x: 190px; }
-    #content .graph .col-2.side-line, #content .graph .col-3.side-line, #content .graph .col-1.side-line {
-      background: url("../img/side-line.png") left bottom;
-      background-size: 11%;
-      background-repeat: no-repeat;
-      height: 150px;
-      background-position-x: 99.5%; }
-    #content .graph .col-2.arrows-below, #content .graph .col-3.arrows-below, #content .graph .col-1.arrows-below {
-      background: url("../img/arrows-below.png") center top;
-      background-size: 95%;
-      background-repeat: no-repeat;
-      height: 150px;
-      position: relative;
-      z-index: 0; }
+  color: #5d5d5d;
+}
+/* line 45, style.scss */
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+}
+/* line 49, style.scss */
+#content h1 .bigger, #content h2 .bigger, #content h3 .bigger, #content h4 .bigger, #content h5 .bigger, #content h6 .bigger {
+  font-size: 1.2em;
+}
+/* line 53, style.scss */
+#content h1 {
+  font-size: 32px;
+}
+/* line 56, style.scss */
+#content h2.special {
+  border-bottom: 5px solid #aabec2;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+/* line 63, style.scss */
+#content .graph {
+  font-family: "Roboto";
+  padding-top: 50px;
+}
+/* line 68, style.scss */
+#content .graph .col-2 p, #content .graph .col-3 p, #content .graph .col-1 p {
+  font-weight: 700;
+  margin-top: 5px;
+}
+/* line 73, style.scss */
+#content .graph .col-2.line-end, #content .graph .col-3.line-end, #content .graph .col-1.line-end {
+  position: relative;
+}
+/* line 76, style.scss */
+#content .graph .col-2.line-end:before, #content .graph .col-3.line-end:before, #content .graph .col-1.line-end:before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  right: -10%;
+  height: 50px;
+  top: calc(50% - 25px);
+  background: url("../img/line-end.png") center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 88, style.scss */
+#content .graph .col-2.line, #content .graph .col-3.line, #content .graph .col-1.line {
+  background: url("../img/line.png") center 49%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 80px;
+  margin-top: 27px;
+  position: relative;
+  z-index: 2;
+  padding-left: 0px;
+  position: relative;
+  left: 37px;
+}
+/* line 100, style.scss */
+#content .graph .col-2.line p, #content .graph .col-3.line p, #content .graph .col-1.line p {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+/* line 104, style.scss */
+#content .graph .col-2.line p.smaller, #content .graph .col-3.line p.smaller, #content .graph .col-1.line p.smaller {
+  font-size: 0.7em;
+}
+/* line 109, style.scss */
+#content .graph .col-2.no-line, #content .graph .col-3.no-line, #content .graph .col-1.no-line {
+  height: 80px;
+  margin-top: 54px;
+  position: relative;
+  z-index: 2;
+  padding-left: 7px;
+  position: relative;
+  left: 37px;
+}
+/* line 118, style.scss */
+#content .graph .col-2.no-line p, #content .graph .col-3.no-line p, #content .graph .col-1.no-line p {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+/* line 122, style.scss */
+#content .graph .col-2.no-line p.smaller, #content .graph .col-3.no-line p.smaller, #content .graph .col-1.no-line p.smaller {
+  font-size: 0.7em;
+}
+/* line 127, style.scss */
+#content .graph .col-2.line-inverted, #content .graph .col-3.line-inverted, #content .graph .col-1.line-inverted {
+  background: url("../img/line-inverted.png") center 49%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 80px;
+  margin-top: 27px;
+  position: relative;
+  z-index: 2;
+  padding-left: 37px;
+  position: relative;
+  right: 37px;
+}
+/* line 139, style.scss */
+#content .graph .col-2.line-inverted p, #content .graph .col-3.line-inverted p, #content .graph .col-1.line-inverted p {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+/* line 143, style.scss */
+#content .graph .col-2.line-inverted p.smaller, #content .graph .col-3.line-inverted p.smaller, #content .graph .col-1.line-inverted p.smaller {
+  font-size: 0.7em;
+}
+/* line 148, style.scss */
+#content .graph .col-2.background-shape, #content .graph .col-3.background-shape, #content .graph .col-1.background-shape {
+  height: 80px;
+  position: relative;
+  background: #d7d9d8;
+  top: 27px;
+  padding-left: 50px;
+  z-index: 1;
+}
+/* line 157, style.scss */
+#content .graph .col-2.background-shape:before, #content .graph .col-3.background-shape:before, #content .graph .col-1.background-shape:before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 40px solid #d7d9d8;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+}
+/* line 168, style.scss */
+#content .graph .col-2.background-shape:after, #content .graph .col-3.background-shape:after, #content .graph .col-1.background-shape:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 40px solid white;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+}
+/* line 180, style.scss */
+#content .graph .col-2.background-shape-inverted, #content .graph .col-3.background-shape-inverted, #content .graph .col-1.background-shape-inverted {
+  height: 80px;
+  position: relative;
+  background: #d7d9d8;
+  top: 27px;
+  padding-right: 50px;
+  padding-left: 0px;
+  z-index: 1;
+}
+/* line 190, style.scss */
+#content .graph .col-2.background-shape-inverted.large, #content .graph .col-3.background-shape-inverted.large, #content .graph .col-1.background-shape-inverted.large {
+  height: 170px;
+  margin-bottom: 30px;
+}
+/* line 195, style.scss */
+#content .graph .col-2.background-shape-inverted:before, #content .graph .col-3.background-shape-inverted:before, #content .graph .col-1.background-shape-inverted:before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-right: 40px solid #d7d9d8;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+}
+/* line 206, style.scss */
+#content .graph .col-2.background-shape-inverted:after, #content .graph .col-3.background-shape-inverted:after, #content .graph .col-1.background-shape-inverted:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-right: 40px solid white;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+}
+/* line 218, style.scss */
+#content .graph .col-2.background-shape-inverted, #content .graph .col-2.background-shape, #content .graph .col-3.background-shape-inverted, #content .graph .col-3.background-shape, #content .graph .col-1.background-shape-inverted, #content .graph .col-1.background-shape {
+  position: relative;
+}
+/* line 221, style.scss */
+#content .graph .col-2.background-shape-inverted p, #content .graph .col-2.background-shape-inverted ul, #content .graph .col-2.background-shape-inverted ol, #content .graph .col-2.background-shape p, #content .graph .col-2.background-shape ul, #content .graph .col-2.background-shape ol, #content .graph .col-3.background-shape-inverted p, #content .graph .col-3.background-shape-inverted ul, #content .graph .col-3.background-shape-inverted ol, #content .graph .col-3.background-shape p, #content .graph .col-3.background-shape ul, #content .graph .col-3.background-shape ol, #content .graph .col-1.background-shape-inverted p, #content .graph .col-1.background-shape-inverted ul, #content .graph .col-1.background-shape-inverted ol, #content .graph .col-1.background-shape p, #content .graph .col-1.background-shape ul, #content .graph .col-1.background-shape ol {
+  margin-top: 15px;
+  font-size: 0.8em;
+  margin-left: 50px;
+  width: calc(100% - 50px);
+}
+/* line 227, style.scss */
+#content .graph .col-2.background-shape-inverted p:last-of-type, #content .graph .col-2.background-shape p:last-of-type, #content .graph .col-3.background-shape-inverted p:last-of-type, #content .graph .col-3.background-shape p:last-of-type, #content .graph .col-1.background-shape-inverted p:last-of-type, #content .graph .col-1.background-shape p:last-of-type {
+  margin-bottom: 5px;
+}
+/* line 230, style.scss */
+#content .graph .col-2.background-shape-inverted ul, #content .graph .col-2.background-shape-inverted ol, #content .graph .col-2.background-shape ul, #content .graph .col-2.background-shape ol, #content .graph .col-3.background-shape-inverted ul, #content .graph .col-3.background-shape-inverted ol, #content .graph .col-3.background-shape ul, #content .graph .col-3.background-shape ol, #content .graph .col-1.background-shape-inverted ul, #content .graph .col-1.background-shape-inverted ol, #content .graph .col-1.background-shape ul, #content .graph .col-1.background-shape ol {
+  margin-top: 0px;
+  padding-left: 15px;
+  width: 115%;
+}
+/* line 236, style.scss */
+#content .graph .col-2.background-shape-inverted .icon-left, #content .graph .col-2.background-shape .icon-left, #content .graph .col-3.background-shape-inverted .icon-left, #content .graph .col-3.background-shape .icon-left, #content .graph .col-1.background-shape-inverted .icon-left, #content .graph .col-1.background-shape .icon-left {
+  float: left;
+  width: 40px;
+  height: 40px;
+  left: 50px;
+  margin-top: 20px;
+}
+/* line 243, style.scss */
+#content .graph .col-2.background-shape-inverted .icon-left.letter, #content .graph .col-2.background-shape .icon-left.letter, #content .graph .col-3.background-shape-inverted .icon-left.letter, #content .graph .col-3.background-shape .icon-left.letter, #content .graph .col-1.background-shape-inverted .icon-left.letter, #content .graph .col-1.background-shape .icon-left.letter {
+  background: url("../img/letter-icon.png") center center;
+  background-size: contain;
+}
+/* line 247, style.scss */
+#content .graph .col-2.background-shape-inverted .icon-left.framework, #content .graph .col-2.background-shape .icon-left.framework, #content .graph .col-3.background-shape-inverted .icon-left.framework, #content .graph .col-3.background-shape .icon-left.framework, #content .graph .col-1.background-shape-inverted .icon-left.framework, #content .graph .col-1.background-shape .icon-left.framework {
+  background: url("../img/framework-icon.png") center center;
+  background-size: contain;
+}
+/* line 251, style.scss */
+#content .graph .col-2.background-shape-inverted .icon-left.plan, #content .graph .col-2.background-shape .icon-left.plan, #content .graph .col-3.background-shape-inverted .icon-left.plan, #content .graph .col-3.background-shape .icon-left.plan, #content .graph .col-1.background-shape-inverted .icon-left.plan, #content .graph .col-1.background-shape .icon-left.plan {
+  background: url("../img/plan-icon.png") center center;
+  background-size: contain;
+}
+/* line 255, style.scss */
+#content .graph .col-2.background-shape-inverted .icon-left.priorities, #content .graph .col-2.background-shape .icon-left.priorities, #content .graph .col-3.background-shape-inverted .icon-left.priorities, #content .graph .col-3.background-shape .icon-left.priorities, #content .graph .col-1.background-shape-inverted .icon-left.priorities, #content .graph .col-1.background-shape .icon-left.priorities {
+  background: url("../img/priorities-icon.png") center center;
+  background-size: contain;
+}
+/* line 259, style.scss */
+#content .graph .col-2.background-shape-inverted .icon-left.calendar, #content .graph .col-2.background-shape .icon-left.calendar, #content .graph .col-3.background-shape-inverted .icon-left.calendar, #content .graph .col-3.background-shape .icon-left.calendar, #content .graph .col-1.background-shape-inverted .icon-left.calendar, #content .graph .col-1.background-shape .icon-left.calendar {
+  background: url("../img/calendar-icon.png") center center;
+  background-size: contain;
+}
+/* line 263, style.scss */
+#content .graph .col-2.background-shape-inverted .icon-left.scan, #content .graph .col-2.background-shape .icon-left.scan, #content .graph .col-3.background-shape-inverted .icon-left.scan, #content .graph .col-3.background-shape .icon-left.scan, #content .graph .col-1.background-shape-inverted .icon-left.scan, #content .graph .col-1.background-shape .icon-left.scan {
+  background: url("../img/scan-icon.png") center center;
+  background-size: contain;
+}
+/* line 267, style.scss */
+#content .graph .col-2.background-shape-inverted .icon-left.updated, #content .graph .col-2.background-shape .icon-left.updated, #content .graph .col-3.background-shape-inverted .icon-left.updated, #content .graph .col-3.background-shape .icon-left.updated, #content .graph .col-1.background-shape-inverted .icon-left.updated, #content .graph .col-1.background-shape .icon-left.updated {
+  background: url("../img/updated-icon.png") center center;
+  background-size: contain;
+}
+/* line 271, style.scss */
+#content .graph .col-2.background-shape-inverted .icon-left.submit, #content .graph .col-2.background-shape .icon-left.submit, #content .graph .col-3.background-shape-inverted .icon-left.submit, #content .graph .col-3.background-shape .icon-left.submit, #content .graph .col-1.background-shape-inverted .icon-left.submit, #content .graph .col-1.background-shape .icon-left.submit {
+  background: url("../img/submit-icon.png") center center;
+  background-size: contain;
+}
+/* line 277, style.scss */
+#content .graph .col-2.loop, #content .graph .col-3.loop, #content .graph .col-1.loop {
+  background: url("../img/loop.png") right top;
+  background-size: 275%;
+  background-repeat: no-repeat;
+  background-position-y: 59px;
+  height: 150px;
+  padding-top: 27px;
+  padding-left: 20px;
+}
+/* line 286, style.scss */
+#content .graph .col-2.loop p, #content .graph .col-3.loop p, #content .graph .col-1.loop p {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+/* line 291, style.scss */
+#content .graph .col-2.loop-arrow, #content .graph .col-3.loop-arrow, #content .graph .col-1.loop-arrow {
+  background: url("../img/loop-arrow.png") right top;
+  background-size: 76%;
+  background-repeat: no-repeat;
+  background-position-y: 31px;
+  background-position-x: 99.5%;
+  height: 150px;
+  padding-top: 27px;
+  padding-left: 20px;
+}
+@media (max-width: 1400px) {
+  /* line 291, style.scss */
+  #content .graph .col-2.loop-arrow, #content .graph .col-3.loop-arrow, #content .graph .col-1.loop-arrow {
+    background-position-y: 41px;
+  }
+}
+/* line 305, style.scss */
+#content .graph .col-2.loop-arrow p, #content .graph .col-3.loop-arrow p, #content .graph .col-1.loop-arrow p {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+/* line 310, style.scss */
+#content .graph .col-2.loop-down, #content .graph .col-3.loop-down, #content .graph .col-1.loop-down {
+  background: url("../img/loop-down.png") right bottom;
+  background-size: 275%;
+  background-repeat: no-repeat;
+  height: 85px;
+}
+/* line 316, style.scss */
+#content .graph .col-2.loop-inverted, #content .graph .col-3.loop-inverted, #content .graph .col-1.loop-inverted {
+  background: url("../img/loop-inverted.png") left top;
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position-x: 190px;
+  background-position-y: 61px;
+  height: 200px;
+  padding-top: 27px;
+  padding-right: 40px;
+}
+/* line 326, style.scss */
+#content .graph .col-2.loop-inverted p, #content .graph .col-3.loop-inverted p, #content .graph .col-1.loop-inverted p {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  text-align: right;
+}
+/* line 331, style.scss */
+#content .graph .col-2.loop-inverted p.smaller, #content .graph .col-3.loop-inverted p.smaller, #content .graph .col-1.loop-inverted p.smaller {
+  font-size: 0.8em;
+}
+/* line 336, style.scss */
+#content .graph .col-2.loop-down-inverted, #content .graph .col-3.loop-down-inverted, #content .graph .col-1.loop-down-inverted {
+  background: url("../img/loop-down-inverted.png") left bottom;
+  background-size: 93%;
+  background-repeat: no-repeat;
+  height: 75px;
+  background-position-x: 190px;
+}
+/* line 344, style.scss */
+#content .graph .col-2.side-line, #content .graph .col-3.side-line, #content .graph .col-1.side-line {
+  background: url("../img/side-line.png") left bottom;
+  background-size: 11%;
+  background-repeat: no-repeat;
+  height: 150px;
+  background-position-x: 99.5%;
+}
+/* line 352, style.scss */
+#content .graph .col-2.arrows-below, #content .graph .col-3.arrows-below, #content .graph .col-1.arrows-below {
+  background: url("../img/arrows-below.png") center top;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  height: 150px;
+  position: relative;
+  z-index: 0;
+}
+/* line 363, style.scss */
+#content .d-block .box {
+  height: 100%;
+  background-color: #d7d9d8;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-height: 150px;
+}
+/* line 371, style.scss */
+#content .d-block .between {
+  position: relative;
+  height: 60px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: calc(50% - 25px);
+  text-align: center;
+  background-color: #EEF1EE;
+}
+@media (max-width: 768px) {
+  /* line 382, style.scss */
+  #content .d-block .between.large {
+    height: 80px;
+  }
+}
 
+/* line 390, style.scss */
 footer {
-  padding: 20px 70px 20px 70px; }
+  padding: 20px 70px 20px 70px;
+}
+
+/*# sourceMappingURL=style.css.map */

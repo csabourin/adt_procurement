@@ -108,10 +108,10 @@ export default {
   },
   
   buildWPProcessMap:{
-    line1: "Schéma du",
+    line1: "Schéma de",
     line2: "processus",
-    name: "Élaboration d’un plan de travail&nbsp;: Schéma du processus",
-    download: "Télécharger le shéma du processus pour l'élaboration d'un plan de travail",
+    name: "Élaboration d’un plan de travail&nbsp;: schéma de processus",
+    download: "Télécharger le shéma de processus pour l'élaboration d'un plan de travail",
     filename: "Elaboration_plan_de_travail-Schema_du_processus.pdf",
     HTMLFilename: "../BuildingWPProcessMap/fr.html"
   },

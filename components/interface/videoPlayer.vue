@@ -415,7 +415,7 @@ export default {
       })
       this.resumePosition()
       
-      this.showPlayOverlay = true;
+      this.showPlayOverlay = false;
       this.setOverlayHeight()
     },
     resumePlay() {
@@ -485,7 +485,7 @@ export default {
           this.$refs.videoplayer.currentTime = savedPosition
         }
         if(!this.chapters){
-          this.showPlayOverlay = true;
+          this.showPlayOverlay = false;
           this.setOverlayHeight()
         }
       }

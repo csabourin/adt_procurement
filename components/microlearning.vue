@@ -196,9 +196,11 @@ export default {
   background-color: rgba(255, 255, 255, .8);
   position: absolute;
   right: 0;
-  bottom: -2px;
+  bottom: 0px;
   font-size: 10px;
   content: attr(data-percent);
+  height: 10px;
+  line-height: 10px;
 }
 
 .learningElement {

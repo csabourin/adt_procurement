@@ -22,7 +22,7 @@
               <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/etablissement-rapports-depenses/divulgation-proactive-ministeres-organismes.html">Divulgation proactive par ordre de ministères ou d’organismes</externalLink>&nbsp;</li>
             </ul>
           </li>
-          <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/presentations-conseil-tresor/guide.html">Guide détaillé à l’intention des rédacteurs</externalLink></li>
+          <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/presentations-conseil-tresor/guide.html">Guide à l’intention des rédacteurs de présentations au Conseil du Trésor</externalLink></li>
           <li><externalLink link="https://www.canada.ca/fr/conseil-prive/services/publications/memoires-cabinet.html">Guide et gabarits pour Mémoires au Cabinet</externalLink></li>
         </ul>
       </div>
@@ -34,7 +34,7 @@
         <li><externalLink link="http://laws-lois.justice.gc.ca/eng/acts/f-11/">Financial Administration Act</externalLink></li>
         <li><externalLink link="https://www.canada.ca/en/government/system/priorities.html">Government Priorities</externalLink>
           <ul>
-            <li><externalLink link="https://pm.gc.ca/eng/mandate-letters">Ministerial Mandate Letters</externalLink></li>
+            <li><externalLink link="https://pm.gc.ca/en/mandate-letters">Ministerial Mandate Letters</externalLink></li>
             <li><externalLink link="https://www.canada.ca/en/privy-council/campaigns/speech-throne.html">Speech from the Throne</externalLink></li>
             <li><externalLink link="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html">Departmental Plan (DP)</externalLink></li>
           </ul>

@@ -20,7 +20,7 @@
           </li>
           <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32504">Directive sur les paiements</externalLink></li>
           <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14662">Directive sur la réinstallation du CNM</externalLink></li>
-          <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32502">Directive sur l’imputation et les autorisations financières spéciales</externalLink></li>
+          <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32502">Directive sur l’imputation et les autorisations financières spéciales</externalLink></li>
           <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32505">Directive sur la gestion des fonds publics et des comptes débiteurs</externalLink></li>
         </ul>
       </div>

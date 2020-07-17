@@ -20,9 +20,11 @@ export default {
   router: {
     // PREPROD/Learning Services/GT test/ADT-testing-mimetypes → base: '/ProdContent/cninv000000000016765/'
     // PROD/Learning Services/GT test/tdumas/ADT-testing-mimetypes → base: '/ProdContent/cninv000000000017653/'
+    // PROD/Learning Services/GT test/ADT_finance/ADT_test → base: '/ProdContent/cninv000000000018107/'
     
     // base: '/ProdContent/cninv000000000016763/'
     // base: '/ProdContent/cninv000000000017454/'
+    // base: '/ProdContent/cninv000000000018107/'
     // base: '/adt_finance-R1/'
   },
   /*

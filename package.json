@@ -8,7 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "package": "npm run generate && cd dist && tar.exe -a -c -f ../G380_%date%_en.zip * && powershell -Command \"(gc imsmanifest.xml) -replace 'en/', 'fr/' | Out-File -encoding ASCII imsmanifest.xml\" && tar.exe -a -c -f ../G380_%date%_fr.zip * && del /f/q/s *.* > NUL && cd .. && rmdir /q/s dist && echo packages created!"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",

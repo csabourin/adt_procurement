@@ -141,21 +141,42 @@
       },
       findModule(page){
         var module = "home";
-        var menu1Links = this.$el.querySelectorAll("menu")[1].querySelectorAll("a")
+        var menu1Links = this.$el.querySelectorAll("menu")[1].querySelectorAll("a");
+        
+        var href, pos;
+        
         for(var n = 0; n < menu1Links.length; n++){
-          if(page.path == menu1Links[n].getAttribute("href") || page.path.slice(0, -1) == menu1Links[n].getAttribute("href") || page.path == menu1Links[n].getAttribute("href").toLowerCase() || page.path.slice(0, -1) == menu1Links[n].getAttribute("href").toLowerCase()){
+          href = menu1Links[n].getAttribute("href");
+          if(href.indexOf("cninv")){
+            pos = href.indexOf("cninv");
+            pos = href.indexOf("/", pos);
+            href = href.substr(pos);
+          }
+          if(page.path == href || page.path.slice(0, -1) == href || page.path == href.toLowerCase() || page.path.slice(0, -1) == href.toLowerCase()){
             module = "plan";
           }
         }
         var menu2Links = this.$el.querySelectorAll("menu")[2].querySelectorAll("a")
         for(var o = 0; o < menu2Links.length; o++){
-          if(page.path == menu2Links[o].getAttribute("href") || page.path.slice(0, -1) == menu2Links[o].getAttribute("href") || page.path == menu2Links[o].getAttribute("href").toLowerCase() || page.path.slice(0, -1) == menu2Links[o].getAttribute("href").toLowerCase()){
+          href = menu2Links[o].getAttribute("href");
+          if(href.indexOf("cninv")){
+            pos = href.indexOf("cninv");
+            pos = href.indexOf("/", pos);
+            href = href.substr(pos);
+          }
+          if(page.path == href || page.path.slice(0, -1) == href || page.path == href.toLowerCase() || page.path.slice(0, -1) == href.toLowerCase()){
             module = "spend";
           }
         }
         var menu3Links = this.$el.querySelectorAll("menu")[3].querySelectorAll("a")
         for(var p = 0; p < menu3Links.length; p++){
-          if(page.path == menu3Links[p].getAttribute("href") || page.path.slice(0, -1) == menu3Links[p].getAttribute("href") || page.path == menu3Links[p].getAttribute("href").toLowerCase() || page.path.slice(0, -1) == menu3Links[p].getAttribute("href").toLowerCase()){
+          href = menu3Links[p].getAttribute("href");
+          if(href.indexOf("cninv")){
+            pos = href.indexOf("cninv");
+            pos = href.indexOf("/", pos);
+            href = href.substr(pos);
+          }
+          if(page.path == href || page.path.slice(0, -1) == href || page.path == href.toLowerCase() || page.path.slice(0, -1) == href.toLowerCase()){
             module = "report";
           }
         } 

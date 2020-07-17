@@ -256,10 +256,17 @@ export default {
       }
 
       for (var k = 0; k < links.length; k++) {
-        if (links[k] == this.$route.path) {
-          return { title: titles[k + 1], link: links[k + 1] };
+        if (links[k].indexOf(this.$route.path) >= 0) {
+          var link = links[k + 1];
+          if(link.indexOf("cninv")){
+            var pos = link.indexOf("cninv");
+            pos = link.indexOf("/", pos);
+            link = link.substr(pos);
+          }
+          return { title: titles[k + 1], link: link };
         }
-      }
+      }  
+      return { title: "", link: "" };
     },
     currentPageReferences(){
       var path = this.$route.path;

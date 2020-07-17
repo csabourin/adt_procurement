@@ -17,6 +17,9 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+# generate English and French SCORM packages (LMS' base URL needs to be set in nuxt.config.js prior to running this command)
+$ npm run package
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

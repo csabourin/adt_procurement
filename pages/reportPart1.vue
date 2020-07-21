@@ -19,7 +19,7 @@
                   <b-card-body>
                     <b-card-text>
                       <span v-if="$i18n.locale=='en'">
-                        <h2>What is a Financial Situation Report?</h2>
+                        <h2>What Is a Financial Situation Report?</h2>
                         <p>A financial situation report, or FSR, is a document that provides senior management with the most up-to-date financial picture and the best estimates of forecast spending.</p>
                         <p>This document supports them in making informed decisions to properly address budget shortfalls or pressures and reallocate surpluses.</p>
                         <p>Your department may have a different name for this report.</p>
@@ -244,7 +244,7 @@ export default {
 <i18n>{
   "en":{
   "KeyPeriodsFSRTitle":"Activity: Key Periods for Financial Situation Reports",
-  "whatIsFSR":"Activity: What is a Financial Situation Report?",
+  "whatIsFSR":"Activity: What Is a Financial Situation Report?",
   "FSRActivitiesTitle":"Activity: Financial Situation Report Activities",
   "UpdatingAnnualForecastTitle":"Activity: Updating the Annual Forecast",
   "transcriptText":"",

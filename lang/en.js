@@ -40,7 +40,7 @@ export default {
   InitiateAuthorizeSpending: "Initiate and Authorize Commitments",
   ExerciseFinancialAuthority: "Exercise Financial Authority",
   MonitorControlFinances: "Monitor and Control Finances",
-  ConductPeriodicVarianceReporting: "Prepare the Financial Situation Report",
+  ConductPeriodicVarianceReporting: "Prepare Financial Situation Reports",
   ContributeReporting: "Contribute to External Reporting",
   Test: "Test",
   ShowInstructions:"Show Instructions",
@@ -162,7 +162,7 @@ export default {
   prepareFSR:{
     line1: "Prepare",
     line2: "FSR",
-    name: "Prepare the Financial Situation Report",
+    name: "Prepare Financial Situation Reports",
     download: "Download the document about preparing the financial situation report",
     filename: "Prepare_the_Financial_Situation_Report.pdf",
     HTMLFilename: "Report_PrepareFinancialSituation_EN.html"

@@ -40,7 +40,7 @@
                         <p>For example, they could decide to reallocate funds to different priorities.</p>
                         <p>P9 (December) is often the last opportunity to influence year-end results.</p>
                         <p>Departments may ask managers to provide a forecast in P9 that is within a certain percentage of the year-end amount.</p>
-                        <p>The Treasury Board Secretariat uses data from the P9 report to inform the Department of Finance of government-wide planned spending so that they have a holistic view.</p>
+                        <p>The Treasury Board of Canada Secretariat uses data from the P9 report to inform the Department of Finance Canada of government-wide planned spending so that they have a holistic view.</p>
                         <p>Year-end data at P12 is used by your department to report their overall financial results.</p>
                         <p>It also forms part of the Departmental Results Report, or DRR.</p>
                         <hr>
@@ -49,7 +49,7 @@
                         <p>In other words, you’ll need to estimate the amount of money that you are going to spend to complete your activities before the end of the fiscal year.</p>
                         <p>You can request that your administrative professional pull a detailed financial report from the financial system with information on the budget, commitments and actual expenditures.</p>
                         <p>You will compare this to the FSR.</p>
-                        <p>Here are some of the things you can do to get a good sense of where you’re at, which will allow you to make solid estimates for the rest of the year:</p>
+                        <p>Here are some of the things that you can do to get a good sense of where you’re at, which will allow you to make solid estimates for the rest of the year:</p>
                         <p>Ensure that salary forecasts are accurate and up to date.</p>
                         <p>Account for any incoming or outgoing funding.</p>
                         <p>Follow up on travel claims and outstanding invoices.</p>
@@ -59,8 +59,8 @@
                         <hr>
                         <h2>Updating the Annual Forecast</h2>
                         <p>Another important task when completing your FSR is to review your salary and O&amp;M forecasts.</p>
-                        <p>This will allow you to identify shortfalls and pressures that may require approval for additional resources.</p>
-                        <p>Or surpluses to signal potential carry forward amounts.</p>
+                        <p>This will allow you to identify shortfalls and pressures that may require approval for additional resources</p>
+                        <p>or surpluses to signal potential carry forward amounts.</p>
                         <p>You will have to explain the reasons for any variances and provide mitigation strategies for risks.</p>
                         <p>Let’s practise updating the Annual Forecast!</p>
                         <hr>
@@ -87,12 +87,12 @@
                         <p>Par exemple, ils pourraient décider de réaffecter des fonds à différentes priorités.</p>
                         <p>P9 (décembre) est souvent la dernière occasion d’influencer les résultats de fin d’année.</p>
                         <p>Les ministères peuvent demander aux gestionnaires de fournir une prévision en P9 qui se situe dans un certain pourcentage du montant de fin d’année.</p>
-                        <p>Le Secrétariat du Conseil du Trésor du Canada utilise les données du rapport P9 pour informer le ministère des Finances des dépenses prévues à l’échelle du gouvernement afin qu’il puisse avoir une vision globale.</p>
+                        <p>Le Secrétariat du Conseil du Trésor du Canada utilise les données du rapport P9 pour informer le ministère des Finances du Canada des dépenses prévues à l’échelle du gouvernement afin qu’il puisse avoir une vision globale.</p>
                         <p>Les données de fin d’exercice, à P12, sont utilisées par votre ministère pour présenter ses résultats financiers globaux.</p>
                         <p>Il fait également partie du Rapport sur les résultats ministériels, ou RRM.</p>
                         <hr>
-                        <h2>Activités pour le Rapport sur la situation financière</h2>
-                        <p>L’information la plus importante que vous devrez fournir dans la revue du système financier est votre prévision budgétaire.</p>
+                        <h2>Activités pour le rapport sur la situation financière</h2>
+                        <p>L’information la plus importante que vous devrez fournir dans le RSF est votre prévision budgétaire.</p>
                         <p>En d’autres termes, vous devrez estimer le montant d’argent que vous allez dépenser pour terminer vos activités avant la fin de l’exercice financier.</p>
                         <p>Vous pouvez demander à votre professionnel de l’administration d’extraire du système financier un rapport financier détaillé contenant des informations sur le budget, les engagements et les dépenses réelles.</p>
                         <p>Vous le comparerez au RSF.</p>
@@ -105,12 +105,12 @@
                         <p>cela corrigera les données dans le système financier.</p>
                         <p>Annuler les engagements qui ne sont plus nécessaires.</p>
                         <p>Et réconcilier votre relevé de carte d’achat avec vos engagements.</p>
-                        <p>Maintenant, répondez aux questions suivantes au mieux de votre capacités afin de vous exercer à préparer un rapport sur la situation financière!</p>
+                        <p>Maintenant, répondez aux questions suivantes au mieux de votre capacité afin de vous exercer à préparer un rapport sur la situation financière!</p>
                         <p>Une autre tâche importante à faire lorsque vous remplissez votre RSF est d’examiner votre salaire et vos prévisions de F et E.</p>
                         <p>Cela vous permettra d’identifier :</p>
-                        <p>les insuffisances et les pressions qui peuvent nécessiter l’approbation de ressources supplémentaires ; ou encore des excédents pour indiquer les reports potentiels de fonds.</p>
+                        <p>les insuffisances et les pressions qui peuvent nécessiter l’approbation de ressources supplémentaires; ou encore des excédents pour indiquer les reports potentiels de fonds.</p>
                         <p>Vous devrez expliquer les raisons de tout écart et fournir des stratégies d’atténuation des risques.</p>
-                        <p>Pratiquons-nous la mise à jour des prévisions annuelles!</p>
+                        <p>Pratiquons maintenant la mise à jour des prévisions annuelles!</p>
                         <hr>
                         <h2>Section complétée</h2>
                       </span>
@@ -254,7 +254,7 @@ export default {
   "TakeTheQuiz":"Répondez au questionnaire",
   "KeyPeriodsFSRTitle":"Activité : Périodes clés pour les rapports sur la situation financière",
   "whatIsFSR":"Activité : Qu’est-ce qu’un rapport sur la situation financière?",
-  "FSRActivitiesTitle":"Activité : Activités pour le Rapport sur la situation financière",
+  "FSRActivitiesTitle":"Activité : Activités pour le rapport sur la situation financière",
   "UpdatingAnnualForecastTitle":"Activité : Mise à jour des prévisions annuelles",
   "transcriptText":"",
   "reportSectionBar": "RAPPORTS"

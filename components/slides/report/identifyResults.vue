@@ -118,10 +118,10 @@ export default {
         "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "right": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Les indicateurs de performance sont généralement exprimés en pourcentages et en chiffres. Les postes budgétaires ne sont pas des indicateurs de rendement."
+      "conclusion": "Les indicateurs de rendement sont généralement exprimés en pourcentages et en chiffres. Les postes budgétaires ne sont pas des indicateurs de rendement."
     },
     "q2": {
-      "text": "Compte tenu du scénario fourni, quels résultats fourniriez-vous pour le Rapport ministériel sur les résultats?",
+      "text": "Compte tenu du scénario fourni, quels résultats fourniriez-vous pour le Rapport sur les résultats ministériels?",
       "options": {
         "1": "Les permis de pêche ont été délivrés dans les 15 jours suivant la demande, 95 % du temps.",
         "2": "Un nouveau logiciel de suivi météorologique a été acheté.",
@@ -147,9 +147,9 @@ export default {
       "conclusion": "Vous êtes à la moitié de l’année, mais vous n’avez renouvelé qu’un quart de l’objectif fixé pour les permis de pêche. Cet objectif risque de ne pas être atteint."
     },
     "q4": {
-      "text": "C’est maintenant la fin de l’année. Vous avez délivré 400 permis. Comment expliquez-vous l’écart aux Finances? Sélectionnez tout ce qui pourrait s’appliquer.",
+      "text": "C’est maintenant la fin de l’année. Vous avez délivré 400 permis. Comment expliquez-vous l’écart aux Finances?",
       "options": {
-        "1": "Le personnel clé est parti inopinément.",
+        "1": "Le personnel clé est parti sans préavis.",
         "2": "Il y a eu un retard dans la mise en œuvre du nouveau logiciel. ",
         "3": "Vous deviez former le personnel au nouveau logiciel."
       },

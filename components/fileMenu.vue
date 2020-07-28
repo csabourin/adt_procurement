@@ -89,16 +89,12 @@
                     <dd>It’s a method of classifying transactions that allows an organization to capture financial information. It is the common language that permits accounting and financial data to be identified, aggregated, and reported for planning, resource allocation, management control, and evaluation purposes.</dd>
                   </dl>
                   <dl>
-                    <dt>Responsibility centre</dt>
-                    <dd>It’s an identifier associated with a manager or unit within an organization, to which budget commitments and expenditures can be recorded. </dd>
+                    <dt>Fund</dt>
+                    <dd>A budget made available for a particular purpose; for example, salary, operating, and capital.</dd>
                   </dl>
                   <dl>
                     <dt>General ledger</dt>
                     <dd>It’s the lowest level to which expenditures get coded. </dd>
-                  </dl>
-                  <dl>
-                    <dt>Fund</dt>
-                    <dd>A budget made available for a particular purpose; for example, salary, operating, and capital.</dd>
                   </dl>
                   <dl>
                     <dt>Internal order</dt>
@@ -108,31 +104,51 @@
                     <dt>Program inventory</dt>
                     <dd>Identifies the programs that contribute to the department’s Core Responsibilities and Results.</dd>
                   </dl>
+                  <dl>
+                    <dt>Responsibility centre</dt>
+                    <dd>It’s an identifier associated with a manager or unit within an organization, to which budget commitments and expenditures can be recorded. </dd>
+                  </dl>
+                  <dl>
+                    <dt>Result</dt>
+                    <dd>An external consequence attributed, in part, to an organization, policy, program, or initiative. Results are set within various control areas of the organization.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Target</dt>
+                    <dd>A measurable performance or success level that an organization, program, or initiative plans to achieve within a specified time period. Targets can be either quantitative or qualitative.</dd>
+                  </dl>
                 </span>
                 <span v-if="$i18n.locale=='fr'">
                   <dl>
-                    <dt>Structure de codage</dt>
-                    <dd>Il s’agit d’une méthode de classification des transactions qui permet à une organisation de saisir l’information financière. C’est le langage commun qui permet de déterminer, d’agréger et de rapporter les données comptables et financières à des fins de planification, d’affectation des ressources, de contrôle de gestion et d’évaluation.</dd>
-                  </dl>
-                  <dl>
                     <dt>Centre de responsabilité</dt>
                     <dd>Il s’agit d’un identificateur associé à un gestionnaire ou à une unité au sein d’une organisation, pour lequel des engagements et des dépenses budgétaires peuvent être enregistrés.</dd>
-                  </dl>
-                  <dl>
-                    <dt>Grand livre général</dt>
-                    <dd>C’est le niveau le plus bas auquel les dépenses sont codées. </dd>
                   </dl>
                   <dl>
                     <dt>Fonds</dt>
                     <dd>Un budget mis à disposition à des fins particulières. Par exemple : salaires, fonctionnement, capital.</dd>
                   </dl>
                   <dl>
-                    <dt>Ordre interne</dt>
-                    <dd>Il s’agit d’un mini projet autonome dans lequel vous pouvez suivre les dépenses.</dd>
+                    <dt>Grand livre général</dt>
+                    <dd>C’est le niveau le plus bas auquel les dépenses sont codées. </dd>
                   </dl>
                   <dl>
                     <dt>Inventaire des programmes</dt>
                     <dd>Détermine les programmes qui contribuent aux responsabilités essentielles et aux résultats du ministère.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Objectif</dt>
+                    <dd>Performance mesurable ou degré de succès qu’une organisation, un programme ou une initiative prévoit atteindre dans une période de temps donnée. Les objectifs peuvent être quantitatifs ou qualitatifs.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Ordre interne</dt>
+                    <dd>Il s’agit d’un mini projet autonome dans lequel vous pouvez suivre les dépenses.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Résultat</dt>
+                    <dd>Une conséquence externe, attribuée, en partie, à une organisation, une politique, un programme ou une initiative. Les résultats sont fixés grâce à divers  domaines de contrôle de l’organisation.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Structure de codage</dt>
+                    <dd>Il s’agit d’une méthode de classification des transactions qui permet à une organisation de saisir l’information financière. C’est le langage commun qui permet de déterminer, d’agréger et de rapporter les données comptables et financières à des fins de planification, d’affectation des ressources, de contrôle de gestion et d’évaluation.</dd>
                   </dl>
                 </span>
               </b-card-text>

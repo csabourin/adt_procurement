@@ -84,7 +84,7 @@
             <b-card-body>
               <b-card-text>
                 <span v-if="$i18n.locale=='en'">
-                  <dl>
+                  <!--<dl>
                     <dt>Coding structure</dt>
                     <dd>It’s a method of classifying transactions that allows an organization to capture financial information. It is the common language that permits accounting and financial data to be identified, aggregated, and reported for planning, resource allocation, management control, and evaluation purposes.</dd>
                   </dl>
@@ -115,10 +115,146 @@
                   <dl>
                     <dt>Target</dt>
                     <dd>A measurable performance or success level that an organization, program, or initiative plans to achieve within a specified time period. Targets can be either quantitative or qualitative.</dd>
+                  </dl>-->
+                  <dl>
+                    <dt>capital budget</dt>
+                    <dd>Long term investments like infrastructure and facilities, that are paid off over time.</dd>
+                  </dl>
+                  <dl>
+                    <dt>coding structure </dt>
+                    <dd>It’s a method of classifying transactions that allows an organization to capture financial information. It is the common language that permits accounting and financial data to be identified, aggregated, and reported for planning, resource allocation, management control, and evaluation purposes.</dd>
+                  </dl>
+                  <dl>
+                    <dt>delegation of financial authority chart</dt>
+                    <dd>Shows your organization’s official spending and financial authorities.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Departmental Results Report</dt>
+                    <dd>A report on what was accomplished against what was planned to be done during the fiscal year in terms of priorities and expected results.</dd>
+                  </dl>
+                  <dl>
+                    <dt>discretionary costs</dt>
+                    <dd>Costs not directly linked to your activities and less likely to have a negative impact on them. If you are asked to reduce or cut costs, you have a quick snapshot of what you can and cannot cut.</dd>
+                  </dl>
+                  <dl>
+                    <dt>fiscal year</dt>
+                    <dd>It starts on April 1 and is divided, by month, into periods. P1 is April, P2 is May, P3 is June, and so forth.</dd>
+                  </dl>
+                  <dl>
+                    <dt>fund </dt>
+                    <dd>A budget made available for a particular purpose; for example, salary, operating, and capital.</dd>
+                  </dl>
+                  <dl>
+                    <dt>general ledger </dt>
+                    <dd>It’s the lowest level to which expenditures get coded.</dd>
+                  </dl>
+                  <dl>
+                    <dt>grants and contributions budget</dt>
+                    <dd>Commonly known as Gs&Cs. Money that is provided to entities outside of the federal government to advance the department’s mandate. Grants are given to the entity whereas with Contributions, the entity is expected to also contribute some money.</dd>
+                  </dl>
+                  <dl>
+                    <dt>expenditure initiation</dt>
+                    <dd>When you decide to obtain goods or services that will result in the eventual spending of funds, such as the decision to hire staff, order supplies, or authorize travel.</dd>
+                  </dl>
+                  <dl>
+                    <dt>financial authorities</dt>
+                    <dd>Are granted to ministers and deputy heads through the Financial Administration Act.</dd>
+                  </dl>
+                  <dl>
+                    <dt>financial situation report</dt>
+                    <dd>It is a document that provides senior management with the most up-to-date financial picture and the best estimates of forecast spending.</dd>
+                  </dl>
+                  <dl>
+                    <dt>internal audit</dt>
+                    <dd>Examines compliance relating to governance, risk management, and control processes and makes recommendations to improve performance, effectiveness, and efficiency of government operations.</dd>
+                  </dl>
+                  <dl>
+                    <dt>internal order </dt>
+                    <dd>It’s a self-contained mini-project in which you can track expenditures.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Management Accountability Framework</dt>
+                    <dd>An annual assessment of management practices and performance, in areas such as finance, people, and IT.</dd>
+                  </dl>
+                  <dl>
+                    <dt>non-discretionary costs</dt>
+                    <dd>Costs essential for delivering on your activities and if cut may result in you not being able to deliver on them.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Payables at Year-End</dt>
+                    <dd>It is an amount owed for goods and/or services delivered in the old fiscal year using old year funds but paid in the new fiscal year when the supplier invoice is received.</dd>
+                  </dl>
+                  <dl>
+                    <dt>performance indicator</dt>
+                    <dd>A criterion for measuring success in the achievement of objectives.</dd>
+                  </dl>
+                  <dl>
+                    <dt>proactive disclosure</dt>
+                    <dd>Published information on departments’ websites related to travel, hospitality, contracts, position reclassifications, wrongdoing, and grants and contributions</dd>
+                  </dl>
+                  <dl>
+                    <dt>Program Evaluation</dt>
+                    <dd>Assesses the performance of programs, initiatives and policies in terms of efficiency, effectiveness, and relevance</dd>
+                  </dl>
+                  <dl>
+                    <dt>program inventory</dt>
+                    <dd>Identifies the programs that contribute to the department’s Core Responsibilities and Results.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Public Accounts of Canada </dt>
+                    <dd>Contain the annual audited and consolidated financial statements of the Government of Canada and information on spending by organizations.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Quarterly financial report </dt>
+                    <dd>A comparison between planned and actual expenditures, published three times a year.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Receivables at Year-End</dt>
+                    <dd>It is an amount due from another department for goods and/or services delivered in the old fiscal year, for which receipt of payment will be in the new fiscal year.</dd>
+                  </dl>
+                  <dl>
+                    <dt>reference levels</dt>
+                    <dd>Predetermined budget amounts. Some departments provide reference levels and others don’t.</dd>
+                  </dl>
+                  <dl>
+                    <dt>responsibility centre </dt>
+                    <dd>It’s an identifier associated with a manager or unit within an organization, to which budget commitments and expenditures can be recorded.</dd>
+                  </dl>
+                  <dl>
+                    <dt>result</dt>
+                    <dd>An external consequence attributed, in part, to an organization, policy, program, or initiative. Results are set within various control areas of the organization.</dd>
+                  </dl>
+                  <dl>
+                    <dt>section 32</dt>
+                    <dd>When you commit an expenditure, you are certifying that the money is available. This is known as section 32 of the Financial Administration Act.</dd>
+                  </dl>
+                  <dl>
+                    <dt>section 33</dt>
+                    <dd>When your financial department ensures that the payment complies with policy requirements, this is known as section 33 of the Financial Administration Act.</dd>
+                  </dl>
+                  <dl>
+                    <dt>section 34</dt>
+                    <dd>When you certify that the work has been performed as required, and services and supplies have been satisfactorily rendered, this is known as section 34 of the Financial Administration Act.</dd>
+                  </dl>
+                  <dl>
+                    <dt>target</dt>
+                    <dd>A measurable performance or success level that an organization, program, or initiative plans to achieve within a specified time period. Targets can be either quantitative or qualitative.</dd>
+                  </dl>
+                  <dl>
+                    <dt>trends</dt>
+                    <dd>Costs in your budget that are either constant, or show a similar pattern year after year.</dd>
+                  </dl>
+                  <dl>
+                    <dt>variance</dt>
+                    <dd>The difference between the budgeted amount and the actual amount spent during the year.</dd>
+                  </dl>
+                  <dl>
+                    <dt>work plan</dt>
+                    <dd>It is a detailed schedule of the activities to be carried out, resources to be consumed, and results to be achieved over a one-year period, usually a fiscal year for a responsibility centre.</dd>
                   </dl>
                 </span>
                 <span v-if="$i18n.locale=='fr'">
-                  <dl>
+                  <!--<dl>
                     <dt>Centre de responsabilité</dt>
                     <dd>Il s’agit d’un identificateur associé à un gestionnaire ou à une unité au sein d’une organisation, pour lequel des engagements et des dépenses budgétaires peuvent être enregistrés.</dd>
                   </dl>
@@ -149,6 +285,142 @@
                   <dl>
                     <dt>Structure de codage</dt>
                     <dd>Il s’agit d’une méthode de classification des transactions qui permet à une organisation de saisir l’information financière. C’est le langage commun qui permet de déterminer, d’agréger et de rapporter les données comptables et financières à des fins de planification, d’affectation des ressources, de contrôle de gestion et d’évaluation.</dd>
+                  </dl>-->
+                  <dl>
+                    <dt>article 32</dt>
+                    <dd>Lorsque vous engagez une dépense, vous certifiez que l’argent est disponible. C’est ce à quoi on fait référence lorsqu’on parle de l’article 32 de la Loi sur la gestion des finances publiques.</dd>
+                  </dl>
+                  <dl>
+                    <dt>article 33</dt>
+                    <dd>Lorsque votre service financier s’assure que le paiement est conforme aux exigences de la politique, il s’agit de l’article 33 de la Loi sur la gestion des finances publiques.</dd>
+                  </dl>
+                  <dl>
+                    <dt>article 34</dt>
+                    <dd>Lorsque vous attestez que les travaux ont été exécutés conformément aux exigences et que les services ont été rendus et les fournitures livrées de façon satisfaisante, il s’agit de l’article 34 de la Loi sur la gestion des finances publiques.</dd>
+                  </dl>
+                  <dl>
+                    <dt>audit interne </dt>
+                    <dd>Examine la conformité aux processus de gouvernance, de gestion des risques et de contrôle et formule des recommandations pour améliorer le rendement, l'efficacité et l'efficience des opérations gouvernementales.</dd>
+                  </dl>
+                  <dl>
+                    <dt>budget des subventions et contributions</dt>
+                    <dd>Communément connues sous le nom de S et C. L'argent qui est fourni à des entités à l'extérieur du gouvernement fédéral pour faire avancer le mandat du ministère. Les subventions sont accordées à l'entité, tandis que les contributions lui permettent d'apporter une contribution financière.</dd>
+                  </dl>
+                  <dl>
+                    <dt>budget d’investissement</dt>
+                    <dd>Des investissements à long terme, comme l'infrastructure et les installations, qui sont amortis au fil du temps.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Cadre de responsabilisation de gestion</dt>
+                    <dd>Une évaluation annuelle des pratiques de gestion et du rendement dans des domaines tels que les finances, les ressources humaines et la TI.</dd>
+                  </dl>
+                  <dl>
+                    <dt>centre de responsabilité</dt>
+                    <dd>Il s’agit d’un identificateur associé à un gestionnaire ou à une unité au sein d’une organisation, pour lequel des engagements et des dépenses budgétaires peuvent être enregistrés.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Comptes publics du Canada</dt>
+                    <dd>Renferment les états financiers vérifiés et consolidés du gouvernement du Canada ainsi que des renseignements sur les dépenses faites par les organisations.</dd>
+                  </dl>
+                  <dl>
+                    <dt>coûts discrétionnaires</dt>
+                    <dd>Coûts non directement liés à vos activités et moins susceptibles d'avoir un impact négatif sur celles-ci. Si on vous demande de réduire ou de diminuer les coûts, vous avez un aperçu rapide de ce que vous pouvez et ne pouvez pas réduire.</dd>
+                  </dl>
+                  <dl>
+                    <dt>coûts non discrétionnaires</dt>
+                    <dd>Les coûts essentiels à la réalisation de vos activités et, en cas de réduction, vous pourriez ne pas être en mesure de les réaliser.</dd>
+                  </dl>
+                  <dl>
+                    <dt>créditeurs à la fin de l’exercice</dt>
+                    <dd>C’est un montant dû pour des biens ou des services fournis dans l’exercice financier précédent, en se servant des fonds de l’exercice financier précédent, mais payés dans le nouvel exercice financier alors qu’on aura reçu la facture du fournisseur.</dd>
+                  </dl>
+                  <dl>
+                    <dt>débiteurs à la fin de l’exercice</dt>
+                    <dd>C’est un montant dû d’un autre ministère pour des biens ou des services fournis dans l’exercice financier précédent pour lesquels le paiement sera fait dans le nouvel exercice financier.</dd>
+                  </dl>
+                  <dl>
+                    <dt>divulgation proactive</dt>
+                    <dd>Publier de l'information sur les sites Web des ministères concernant les voyages, l'accueil, les contrats, les reclassifications de postes, les actes répréhensibles, les subventions et les contributions.</dd>
+                  </dl>
+                  <dl>
+                    <dt>engager une dépense</dt>
+                    <dd>Lorsque vous décidez d'obtenir des biens ou des services qui entraîneront une dépense éventuelle, comme l’embauche de personnel, la commande de fournitures ou l’autorisation de voyager.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Évaluation des programmes</dt>
+                    <dd>Évalue le rendement des programmes, des initiatives et des politiques en termes d'efficience, d'efficacité et de pertinence.</dd>
+                  </dl>
+                  <dl>
+                    <dt>exercice financier</dt>
+                    <dd>Il commence le 1er avril et est divisé, par mois, en périodes. P1 est avril, P2 est mai, P3 est juin, et ainsi de suite.</dd>
+                  </dl>
+                  <dl>
+                    <dt>fonds </dt>
+                    <dd>Un budget mis à disposition à des fins particulières. Par exemple : salaires, fonctionnement, capital.</dd>
+                  </dl>
+                  <dl>
+                    <dt>grand livre général </dt>
+                    <dd>C’est le niveau le plus bas auquel les dépenses sont codées.</dd>
+                  </dl>
+                  <dl>
+                    <dt>indicateur de rendement </dt>
+                    <dd>Un critère pour mesurer le succès dans la réalisation des objectifs.</dd>
+                  </dl>
+                  <dl>
+                    <dt>inventaire des programmes </dt>
+                    <dd>Détermine les programmes qui contribuent aux responsabilités essentielles et aux résultats du ministère.</dd>
+                  </dl>
+                  <dl>
+                    <dt>niveaux de référence </dt>
+                    <dd>Montants budgétaires prédéterminés. Certains ministères fournissent des niveaux de référence et d'autres non.</dd>
+                  </dl>
+                  <dl>
+                    <dt>objectif</dt>
+                    <dd>Performance mesurable ou degré de succès qu’une organisation, un programme ou une initiative prévoit atteindre dans une période de temps donnée. Les objectifs peuvent être quantitatifs ou qualitatifs.</dd>
+                  </dl>
+                  <dl>
+                    <dt>ordre interne</dt>
+                    <dd>Il s’agit d’un mini projet autonome dans lequel vous pouvez suivre les dépenses.</dd>
+                  </dl>
+                  <dl>
+                    <dt>plan de travail</dt>
+                    <dd>Un plan de travail est une liste détaillée des activités à exercer, des ressources à utiliser et des résultats à atteindre au cours d’une période d’un an, laquelle correspond habituellement à un exercice financier pour un centre de responsabilité.</dd>
+                  </dl>
+                  <dl>
+                    <dt>pouvoirs financiers</dt>
+                    <dd>C’est la Loi sur la gestion des finances publiques qui confère aux ministres et aux administrateurs généraux leurs pouvoirs financiers.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Rapport financier trimestriel </dt>
+                    <dd>Une comparaison entre les dépenses prévues et les dépenses réelles publiées 3 fois par an.</dd>
+                  </dl>
+                  <dl>
+                    <dt>rapport sur la situation financière </dt>
+                    <dd>C’est un document qui fournit à la haute direction le portrait financier le plus récent et les meilleures estimations des dépenses prévues.</dd>
+                  </dl>
+                  <dl>
+                    <dt>Rapport sur les résultats ministériels</dt>
+                    <dd>C'est ce qui a été accompli par rapport à ce qui était prévu au cours de l'exercice financier pour ce qui est des priorités et des résultats attendus.</dd>
+                  </dl>
+                  <dl>
+                    <dt>résultat</dt>
+                    <dd>Une conséquence externe, attribuée, en partie, à une organisation, une politique, un programme ou une initiative. Les résultats sont fixés grâce à divers  domaines de contrôle de l’organisation.</dd>
+                  </dl>
+                  <dl>
+                    <dt>structure de codage </dt>
+                    <dd>Il s’agit d’une méthode de classification des transactions qui permet à une organisation de saisir l’information financière. C’est le langage commun qui permet de déterminer, d’agréger et de rapporter les données comptables et financières à des fins de planification, d’affectation des ressources, de contrôle de gestion et d’évaluation.</dd>
+                  </dl>
+                  <dl>
+                    <dt>tableau de délégation des pouvoirs financiers</dt>
+                    <dd>Indique les pouvoirs de dépenser et les pouvoirs financiers officiels de votre organisation.</dd>
+                  </dl>
+                  <dl>
+                    <dt>tendances</dt>
+                    <dd>Coûts dans votre budget qui sont soit constants, soit semblables d'une année à l'autre.</dd>
+                  </dl>
+                  <dl>
+                    <dt>variance</dt>
+                    <dd>La différence entre le montant prévu au budget et le montant réel dépensé au cours de l'exercice.</dd>
                   </dl>
                 </span>
               </b-card-text>

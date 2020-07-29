@@ -5,11 +5,11 @@
     </a>
     <b-modal id="fileFolder" okOnly size="xl">
       <template v-slot:modal-header="{ close }">
-          <h3 class="h5">
-            {{$t('fileFolder')}}
-          </h3>
-          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-        </template>
+        <h3 class="h5">
+          {{$t('fileFolder')}}
+        </h3>
+        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+      </template>
       <div role="tablist">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
@@ -19,7 +19,9 @@
             <b-card-body>
               <b-card-text>
                 <b-row>
-                  <b-col cols="12"><h4>{{$t('plan')}}</h4></b-col>
+                  <b-col cols="12">
+                    <h4>{{$t('plan')}}</h4>
+                  </b-col>
                   <b-col cols="6" md="4" lg="2" class="text-center">
                     <download :texts="$t('threeSixty')" size=128 iconColor="Scan360Background" :fileSize="this.$i18n.locale == 'en' ? '118' : '124'" name="threeSixty" />
                   </b-col>
@@ -37,7 +39,9 @@
                   </b-col>
                 </b-row>
                 <b-row>
-                  <b-col cols="12"><h4>{{$t('spend')}}</h4></b-col>
+                  <b-col cols="12">
+                    <h4>{{$t('spend')}}</h4>
+                  </b-col>
                   <b-col cols="6" md="4" lg="2" class="text-center">
                     <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
                   </b-col>
@@ -46,7 +50,9 @@
                   </b-col>
                 </b-row>
                 <b-row>
-                  <b-col cols="12"><h4>{{$t('report')}}</h4></b-col>
+                  <b-col cols="12">
+                    <h4>{{$t('report')}}</h4>
+                  </b-col>
                   <b-col cols="6" md="4" lg="2" class="text-center">
                     <download :texts="$t('FSRRoadmap')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
                   </b-col>
@@ -404,7 +410,7 @@
                   </dl>
                   <dl>
                     <dt>résultat</dt>
-                    <dd>Une conséquence externe, attribuée, en partie, à une organisation, une politique, un programme ou une initiative. Les résultats sont fixés grâce à divers  domaines de contrôle de l’organisation.</dd>
+                    <dd>Une conséquence externe, attribuée, en partie, à une organisation, une politique, un programme ou une initiative. Les résultats sont fixés grâce à divers domaines de contrôle de l’organisation.</dd>
                   </dl>
                   <dl>
                     <dt>structure de codage </dt>
@@ -429,7 +435,7 @@
         </b-card>
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
-            <b-button block href="#" v-b-toggle.toolbox-4 variant="light"><img alt=""  src="~/assets/HelpIcon.svg" width="50" height="50"> {{$t('help')}}</b-button>
+            <b-button block href="#" v-b-toggle.toolbox-4 variant="light"><img alt="" src="~/assets/HelpIcon.svg" width="50" height="50"> {{$t('help')}}</b-button>
           </b-card-header>
           <b-collapse id="toolbox-4" accordion="my-toolbox" role="tabpanel">
             <b-card-body>
@@ -440,16 +446,17 @@
                   <ul>
                     <li>You can navigate through the sections of the course by using the <strong>menu icon</strong> (<span class="hamburger-example">&nbsp;&nbsp;&nbsp;&nbsp; <span class="v-inv">navigation menu icon example</span></span>) in the top left corner of the screen or by using the &ldquo;tiles&rdquo; found on each screen.</li>
                   </ul>
-                  <img class="img-fluid" src="~/assets/nav-example.PNG" alt="&ldquo;tiles&rdquo; example" />
+                  <img class="img-fluid" src="~/assets/en/nav-example.PNG" alt="&ldquo;tiles&rdquo; example" />
                   <ul>
-                    <li>Select the key messages to review highlights, for a refresher on each topic.</li>
+                    <li>Select the <strong>key messages</strong> to review highlights, for a refresher on each topic.</li>
                     <li>If you’re learning the content for the first time, take the time to <strong>go through each section</strong>. Do the <strong>in-depth learning activities</strong> and review the tools and resources. Each section should take you around 15 to 20 minutes to complete. There are visual cues to show your progress as you move through the course.</li>
                   </ul>
-                  <img class="img-fluid" src="~/assets/progression-example.PNG" alt="visual cues for progression example" />
+                  <img class="img-fluid" src="~/assets/en/progression-example.PNG" alt="visual cues for progression example" />
                   <ul>
-                    <li>Select the <strong>video icon</strong> ( <img src="~/assets/VideoIcon.svg" alt="video icon example" style="display: inline; width: 30px; height: 30px;" /> ) to view the videos in each section, and the <strong>pencil icon</strong> ( <img src="~/assets/ActivityIcon.svg" alt="pencil icon example" style="display: inline; width: 30px; height: 30px;" /> ) to complete an activity.</li>
+                    <li>Select the <strong>video icon</strong> (&nbsp;<img src="~/assets/VideoIcon.svg" alt="video icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) to view the videos in each section, the <strong>pencil icon</strong> (&nbsp;<img src="~/assets/ActivityIcon.svg" alt="pencil icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) to complete an activity, the <strong>letter i icon</strong> (&nbsp;<img src="~/assets/InfoIcon.svg" alt="letter i icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) for more information, the <strong>document icon</strong> (&nbsp;<img src="~/assets/ReferenceIcon.svg" alt="document icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) for reference materials, the <strong>checkmark icon</strong> (&nbsp;<img src="~/assets/QuizIcon.svg" alt="checkmark icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) to jump to the quiz and the <strong>arrow icon</strong> (&nbsp;<img src="~/assets/ContinueIcon.svg" alt="arrow icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) to go to the next section.</li>
                     <li>You can jump to the <strong>test</strong> for each section at any time or complete the tests for the <strong>plan</strong>, <strong>spend</strong> and <strong>report</strong> sections in order as you finish each lesson. The passing grade is <strong>80% for each section</strong>. You can access course materials during the test and retake the test as many times as you need to. </li>
-                    <li>Access the <strong>home</strong> screen at any time by selecting the (<homebutton v-bind:iconWidth="50" iconTitle="home icon example" style="position: relative; top: -12px; left: -6px;" />) icon.</li>
+                    <li>Access the <strong>home</strong> screen at any time by selecting the (<homebutton :iconWidth="50" iconTitle="home icon example" style="position: relative; top: -5px; left: 0px;" />) icon.</li>
+                    <li>Access tools and templates by selecting the <strong>toolbox icon</strong> (&nbsp;<fileIcon alt="exemple de l'icône de la boîte à outils" width="40" />&nbsp;) in the top right corner of your screen.</li>
                   </ul>
                 </span>
                 <span v-if="$i18n.locale=='fr'">
@@ -458,15 +465,17 @@
                   <ul>
                     <li>Vous pouvez naviguer dans les sections du cours en utilisant l’icône du <strong>menu</strong> (<span class="hamburger-example">&nbsp;&nbsp;&nbsp;&nbsp; <span class="v-inv">exemple de l'icône du menu de navigation</span></span>) en haut à gauche de l'écran ou en utilisant les «&nbsp;tuiles&nbsp;» sur chaque écran.</li>
                   </ul>
-                  <img class="img-fluid" src="~/assets/nav-example_fr.PNG" alt="exemple de «&nbsp;tuiles&nbsp;»" />
+                  <img class="img-fluid" src="~/assets/fr/nav-example.PNG" alt="exemple de «&nbsp;tuiles&nbsp;»" />
                   <ul>
                     <li>Choisissez les <strong>messages clés</strong> pour réviser les points saillants, comme rappel sur chaque sujet.</li>
                     <li>Si le contenu est nouveau pour vous, prenez le temps de <strong>parcourir chaque section</strong>. Faites <strong>les activités d'apprentissage en profondeur</strong> et examinez les outils et les ressources. Chaque section devrait vous prendre de 15 à 20 minutes. Des repères visuels s’affichent pour indiquer vos progrès au fur et à mesure que vous avancez dans le cours.</li>
                   </ul>
-                  <img class="img-fluid" src="~/assets/progression-example_fr.PNG" alt="visual cues for progression example" />
+                  <img class="img-fluid" src="~/assets/fr/progression-example.PNG" alt="exemple des indices visuels pour la progression" />
                   <ul></ul>
-                  <li>Choisissez l'<strong>icône de la vidéo</strong> ( <img src="~/assets/VideoIcon.svg" alt="exemple de l'icône de la vidéo" style="display: inline; width: 30px; height: 30px;" /> )  pour visionner les vidéos de chaque section et l'<strong>icône du crayon</strong> ( <img src="~/assets/ActivityIcon.svg" alt="exemple de l'icône du crayon" style="display: inline; width: 30px; height: 30px;" /> ) pour réaliser une activité.</li>
+                  <li>Choisissez l'<strong>icône de la vidéo</strong> (&nbsp;<img src="~/assets/VideoIcon.svg" alt="exemple de l'icône de la vidéo" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour visionner les vidéos de chaque section, l'<strong>icône du crayon</strong> (&nbsp;<img src="~/assets/ActivityIcon.svg" alt="exemple de l'icône du crayon" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour réaliser une activité, l’<strong>icône de la lettre i</strong> (&nbsp;<img src="~/assets/InfoIcon.svg" alt="exemple de l'icône de la lettre i" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour plus d’information, l’<strong>icône des documents</strong> (&nbsp;<img src="~/assets/ReferenceIcon.svg" alt="exemple de l'icône des documents" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour les matériels de référence, l’<strong>icône du crochet</strong> (&nbsp;<img src="~/assets/QuizIcon.svg" alt="exemple de l'icône du crochet" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour sauter au quiz et l’<strong>icône de la flèche</strong> (&nbsp;<img src="~/assets/ContinueIcon.svg" alt="exemple de l'icône de la flèche" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour continuer à la section suivante.</li>
                   <li>Passez au <strong>test</strong> pour chaque section de <strong>planification</strong>, <strong>dépenses</strong> et <strong>rapports</strong> à n'importe quel moment ou faites-les dans l'ordre au fur et à mesure que vous terminez chaque leçon. La note de passage est de <strong>80&nbsp;% pour chacune de ces sections</strong>. Vous pouvez accéder au matériel didactique pendant le test et vous pouvez le reprendre autant de fois que vous le souhaitez.</li>
+                  <li>Accédez à l'écran d'<strong>accueil</strong> à n’importe quel moment en choisissant l'icône (<homebutton :iconWidth="50" iconTitle="exemple de l'icône de l'accueil" style="position: relative; top: -5px; left: 0px;" />).</li>
+                  <li>Accédez aux outils et aux modèles en choisissant l'icône de la <strong>boîte à outils</strong> (&nbsp;<fileIcon alt="exemple de l'icône de la boîte à outils" width="40" />&nbsp;) en haut à droite de l’écran.</li>
                 </span>
               </b-card-text>
             </b-card-body>
@@ -478,28 +487,27 @@
   </span>
 </template>
 <script type="text/javascript">
-import fileIcon from '~/components/icons/FileIcon'
-import download from "~/components/fileDownload"
-import HTMLJobaidLink from "~/components/HTMLJobaidLink"
-import planLinks from "~/components/plan_links"
-import spendLinks from "~/components/spend_links"
-import reportLinks from "~/components/report_links"
-import homebutton from "~/components/icons/home_icon"
-export default {
-  components: {
-    fileIcon,
-    download,
-    planLinks,
-    spendLinks,
-    reportLinks,
-    homebutton,
-    HTMLJobaidLink
+  import fileIcon from '~/components/icons/FileIcon'
+  import download from "~/components/fileDownload"
+  import HTMLJobaidLink from "~/components/HTMLJobaidLink"
+  import planLinks from "~/components/plan_links"
+  import spendLinks from "~/components/spend_links"
+  import reportLinks from "~/components/report_links"
+  import homebutton from "~/components/icons/home_icon"
+  export default {
+    components: {
+      fileIcon,
+      download,
+      planLinks,
+      spendLinks,
+      reportLinks,
+      homebutton,
+      HTMLJobaidLink
+    }
   }
-}
 
 </script>
 <style type="text/css" scoped>
-  
   .card-header a.btn-light {
     text-transform: uppercase;
     color: #4d4d4d;
@@ -507,7 +515,7 @@ export default {
     font-size: 28px;
     text-align: left
   }
-  
+
   .hamburger-example {
     top: 0em;
     width: 50px;
@@ -523,6 +531,7 @@ export default {
     margin-left: 5px;
     margin-right: 5px;
   }
+
   .hamburger-example:before,
   .hamburger-example:after {
     height: 20%;
@@ -533,16 +542,19 @@ export default {
     content: '';
     transition: transform 0.3s ease;
   }
+
   .hamburger-example:before {
     top: 0;
     transform-origin: 91% 150%;
   }
+
   .hamburger-example:after {
     bottom: 0;
     transform-origin: 84% -50%;
   }
-  
-  header .btn:hover, header .btn:focus{
+
+  header .btn:hover,
+  header .btn:focus {
     text-decoration: none;
   }
 

@@ -8,7 +8,7 @@
           <li><externalLink link="https://laws-lois.justice.gc.ca/fra/lois/f-11/">Loi sur la gestion des finances publiques</externalLink></li>
           <li><externalLink link="https://www.canada.ca/fr/gouvernement/systeme/priorites.html">Priorités du gouvernement</externalLink>
             <ul>
-              <li><externalLink link="https://pm.gc.ca/fr/lettres-de-mandat">Lettres de mandat</externalLink> des Ministres</li>
+              <li><externalLink link="https://pm.gc.ca/fr/lettres-de-mandat">Lettres de mandat des Ministres</externalLink></li>
               <li><externalLink link="https://www.canada.ca/fr/conseil-prive/campagnes/discours-trone.html">Discours du Tr&ocirc;ne</externalLink></li>
               <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html">Plan ministériels (PM)</externalLink>&nbsp;</li>
             </ul>
@@ -17,7 +17,7 @@
           <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/cadre-responsabilisation-gestion.html">Cadre de responsabilisation de gestion (CRG)</externalLink></li>
           <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/sujets/depenses-prevues.html">Dépenses prévues du gouvernement</externalLink></li>
           <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/rapports-ministeriels-rendement.html">Rapport sur les résultats ministériels (RRM)</externalLink></li>
-          <li><externalLink link="https://ouvert.canada.ca/fr/divulgation-proactive">Divulgation proactive</externalLink> (à l’échelle du gouvernement)
+          <li><externalLink link="https://ouvert.canada.ca/fr/divulgation-proactive">Divulgation proactive</externalLink>
             <ul>
               <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/etablissement-rapports-depenses/divulgation-proactive-ministeres-organismes.html">Divulgation proactive par ordre de ministères ou d’organismes</externalLink>&nbsp;</li>
             </ul>

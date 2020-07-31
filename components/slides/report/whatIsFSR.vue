@@ -39,7 +39,7 @@ export default {
         "Funds set aside for a specific purpose.",
         "What you have spent up to now.",
         "What you plan on spending for the full fiscal year.",
-        "Budget leftover or shortfall. ",
+        "Budget leftover or shortfall (which means annual forecast minus budget).",
         "Provides details on the budget leftover or shortfall",
         "Situations that may change the results you’ve reported. "
       ]
@@ -62,8 +62,8 @@ export default {
         "Fonds mis de côté à des fins précises.",
         "Ce que vous avez dépensé jusqu’à présent.",
         "Ce que vous prévoyez dépenser pour l’ensemble de l’exercice financier.",
-        "Reste ou manque à gagner dans le budget. ",
-        "Fournit des détails sur le reliquat ou le manque à gagner du budget. ",
+        "Reste ou manque à gagner dans le budget (ce qui signifie dépenses réelles depuis le début de l’année moins le budget). ",
+        "Fournit des détails sur le solde ou le manque à gagner du budget. ",
         "Les situations qui peuvent changer les résultats que vous avez rapportés. "
       ]
     }

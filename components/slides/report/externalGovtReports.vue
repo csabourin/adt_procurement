@@ -31,7 +31,8 @@ export default {
                 "Proactive disclosure ",
                 "Management Accountability Framework (MAF)",
                 "Internal audit ",
-                "Program Evaluation"
+                "Program Evaluation",
+                "Public Accounts of Canada"
             ],
             "dotsLeft": [
                 "A report on what was accomplished against what was planned to be done during the fiscal year in terms of priorities and expected results.",
@@ -39,7 +40,8 @@ export default {
                 "Published information on departments’ websites related to travel, hospitality, contracts, position reclassifications, wrongdoing, and grants and contributions.",
                 "An annual assessment of management practices and performance, in areas such as finance, people, and IT. ",
                 "Examines compliance relating to governance, risk management, and control processes and makes recommendations to improve performance, effectiveness, and efficiency of government operations.",
-                "Assesses the performance of programs, initiatives and policies in terms of efficiency, effectiveness, and relevance."
+                "Assesses the performance of programs, initiatives and policies in terms of efficiency, effectiveness, and relevance.",
+                "Contain the annual audited and consolidated financial statements of the Government of Canada and information on spending by organizations."
             ]
         }
     },
@@ -53,7 +55,8 @@ export default {
                 "Divulgation proactive ",
                 "Cadre de responsabilisation de gestion (CRG)",
                 "Vérification interne ",
-                "Évaluation des programmes"
+                "Évaluation des programmes",
+                "Comptes publics du Canada"
             ],
             "dotsLeft": [
                 "C’est ce qui a été accompli par rapport à ce qui était prévu au cours de l’exercice financier pour ce qui est des priorités et des résultats attendus.",
@@ -61,7 +64,8 @@ export default {
                 "Publier de l’information sur les sites Web des ministères concernant les voyages, l’accueil, les contrats, les reclassifications de postes, les actes répréhensibles, les subventions et les contributions.",
                 "Une évaluation annuelle des pratiques de gestion et du rendement dans des domaines tels que les finances, les ressources humaines et la TI. ",
                 "Examine la conformité aux processus de gouvernance, de gestion des risques et de contrôle et formule des recommandations pour améliorer le rendement, l’efficacité et l’efficience des opérations gouvernementales.",
-                "Évalue le rendement des programmes, des initiatives et des politiques en termes d’efficience, d’efficacité et de pertinence."
+                "Évalue le rendement des programmes, des initiatives et des politiques en termes d’efficience, d’efficacité et de pertinence.",
+                "Renferment les états financiers vérifiés et consolidés du gouvernement du Canada ainsi que des renseignements sur les dépenses faites par les organisations."
             ]
         }
     }

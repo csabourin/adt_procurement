@@ -64,7 +64,7 @@
                         <p>Voici une petite activité pour vous familiariser avec la terminologie nécessaire!</p>
                         <hr>
                         <h2>Démontrer les résultats</h2>
-                        <p>La fin de l’exercice financier est le moment où la production de rapports ferme la boucle des plans de travail de l’organisation et permet de présenter, de manière globale, les résultats de l’année dans le Rapport résultats ministériel.</p>
+                        <p>La fin de l’exercice financier est le moment où la production de rapports ferme la boucle des plans de travail de l’organisation et permet de présenter, de manière globale, les résultats de l’année dans le Rapport sur les résultats ministériel.</p>
                         <p>Comme l’exercice financier est un cycle, les résultats de l’an dernier permettront la planification de l’année qui vient.</p>
                         <p>Vous devrez faire état de votre rendement par rapport à ce qui avait été prévu dans votre plan de travail et justifier tout écart.</p>
                         <p>Dans la plupart des ministères, la section de la Planification ou des Finances communiquera avec vous pour vous demander ces renseignements.</p>

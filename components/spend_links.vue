@@ -33,18 +33,18 @@
           <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32503">Directive on Delegation of Spending and Financial Authorities</externalLink>
             <ul>
               <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32584&amp;section=html">Guide to Delegating and Applying Spending and Financial Authorities</externalLink></li>
-              <li><externalLink link="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_en.html">Delegation of Spending and Financial Signing Authorities Chart</externalLink> (Link to a fictitious chart)</li>
+              <li><externalLink link="https://papp.csps-efpc.gc.ca/ProdContent/cninv000000000015255/index_en.html">Delegation of Spending and Financial Signing Authorities Chart</externalLink> (Link to a sample chart)</li>
             </ul>
           </li>
           <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=27228">Directive on Travel, Hospitality, Conference and Event Expenditures</externalLink>
             <ul>
               <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32553">Guide to Travel, Hospitality, Conference and Event Expenditures</externalLink></li>
-              <li><externalLink link="https://www.njc-cnm.gc.ca/directive/d10/en">Travel Directive of the National Joint Council (NJC)</externalLink></li>
-              <li><externalLink link="https://www.gcpedia.gc.ca/wiki/Financial_Management_Policy_Suite/Conference_versus_training">Determination of training vs. conferences for functional communities</externalLink></li>
+              <li><externalLink link="https://www.njc-cnm.gc.ca/directive/d10/en">National Joint Council (NJC) Travel Directive</externalLink></li>
+              <li><externalLink link="https://www.gcpedia.gc.ca/wiki/Financial_Management_Policy_Suite/Conference_versus_training">Determination of training vs. conferences</externalLink></li>
             </ul>
           </li>
           <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32504">Directive on Payments</externalLink></li>
-          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=14662">NJC Relocation Directive</externalLink></li>
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=14662">Relocation Directive, NJC</externalLink></li>
           <li><externalLink link="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32502">Directive on Charging and Special Financial Authorities</externalLink></li>
           <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32505">Directive on Public Money and Receivables</externalLink></li>
         </ul>

@@ -13,22 +13,22 @@
             <ul>
               <li>Financial situation reports:</li>
               <ul>
-                <li>Provide the most current financial picture of the organization’s finances on a given date</li>
-                <li>Are tools for managers to regularly identify current financials, risks, potential surpluses and/or shortfalls in their budgets</li>
-                <li>Are initiated and led by the Chief Financial Officer</li>
-                <li>Allow the Chief Financial Officer to make recommendations to senior leaders on the financial resources needed to achieve results</li>
+                <li>provide the most current financial picture of the organization’s finances on a given date</li>
+                <li>are tools for managers to regularly identify current financials, risks, potential surpluses and/or shortfalls in their budgets</li>
+                <li>are initiated and led by the Chief Financial Officer</li>
+                <li>allow the Chief Financial Officer to make recommendations to senior leaders on the financial resources needed to achieve results</li>
               </ul>
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
-            <h3><strong>Préparer le Rapport sur la situation financi&egrave;re (RSF)</strong></h3>
+            <h3><strong>Préparer le rapport sur la situation financi&egrave;re</strong></h3>
             <ul>
               <li>Les rapports sur la situation financi&egrave;re :</li>
               <ul>
                 <ul>
                   <li>fournissent le portrait financier le plus récent des finances de l'organisme à une date donnée;</li>
-                  <li>font des outils permettant aux gestionnaires de vérifier réguli&egrave;rement les finances courantes, les risques, les excédents ou les déficits potentiels dans leurs budgets;</li>
-                  <li>sont lancés et dirigés par le chef de la direction financi&egrave;re;</li>
+                  <li>sont des outils permettant aux gestionnaires de vérifier réguli&egrave;rement les finances courantes, les risques, les excédents ou les déficits potentiels dans leurs budgets;</li>
+                  <li>sont lancés et dirigés par le dirigeant principal des finances;</li>
                   <li>permettent au dirigeant principal des finances de faire des recommandations aux cadres supérieurs sur les ressources financi&egrave;res nécessaires pour obtenir des résultats.</li>
                 </ul>
               </ul>
@@ -59,7 +59,7 @@
                 <ul>
                   <li>Comptes publics du Canada</li>
                   <li>Plan ministériel</li>
-                  <li>Rapport ministériel sur les résultats (RRC)</li>
+                  <li>Rapport sur les résultats ministériels (RRM)</li>
                   <li>Rapports financiers trimestriels (RFT)</li>
                   <li>Divulgation proactive&nbsp;</li>
                   <li>Cadre de responsabilisation de gestion (CRG)</li>

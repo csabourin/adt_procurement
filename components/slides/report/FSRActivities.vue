@@ -85,10 +85,10 @@ export default {
   },
   "fr": {
     "q1": {
-      "text": "Vous avez approuvé des demandes de remboursement de frais de voyage de 3&nbsp;000&nbsp;$ pour les employés dans P4. Mais en regardant le rapport des six Présidents, vous constatez que les chiffres réels depuis le début de l’année ne sont que de 1&nbsp;700&nbsp;$. Que faites-vous ?",
+      "text": "Vous avez approuvé des demandes de remboursement de frais de voyage de 3&nbsp;000&nbsp;$ pour les employés dans P4. Mais en regardant le rapport de P6, vous constatez que les chiffres réels depuis le début de l’année ne sont que de 1&nbsp;700&nbsp;$. Que faites-vous?",
       "options": {
         "1": "Changez votre prévision pour 10&nbsp;800&nbsp;$.",
-        "2": "Assurez le suivi des 3&nbsp;000&nbsp;$ auprès du service des finances.",
+        "2": "Assurez le suivi des 3&nbsp;000&nbsp;$ auprès du Service des finances.",
         "3": "Modifier les chiffres réels depuis le début de l’année dans le rapport P6 à 4&nbsp;700&nbsp;$."
       },
       "feedback": {
@@ -110,7 +110,7 @@ export default {
         "2": "<span class='v-wrong' /><strong>Incorrect.</strong>  Vous devez quand même payer les achats approuvés. Vos engagements ne seront pas modifiés.",
         "3": "<span class='v-wrong' /><strong>Incorrect.</strong>  À moins qu’il n’y ait eu une mauvaise utilisation des fonds par l’employé, ce dernier n’aura pas à rembourser les achats approuvés."
       },
-      "conclusion": "Le Service des finances annulera la carte et en délivera une nouvelle. Vous devrez également valider vos dépenses pour vous assurer qu’il n’y a pas de mauvaise utilisation des fonds."
+      "conclusion": "Le Service des finances annulera la carte et en délivrera une nouvelle. Vous devrez également valider vos dépenses pour vous assurer qu’il n’y a pas de mauvaise utilisation des fonds."
     }
   }
 }

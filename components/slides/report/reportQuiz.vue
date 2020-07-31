@@ -22,7 +22,7 @@
         </b-tab>
         <b-tab title="Question 7">
           <div v-if="$i18n.locale=='en'">
-            <p style="margin-top: 15px;">Using the P5 Annual Forecast column as a reference, complete the P6 Annual Forecast column in the provided financial situation report.&nbsp;</p>
+            <p style="margin-top: 15px;">Using the P5 Annual Forecast column as a reference, complete the P6 Annual Forecast column in the financial situation report provided.&nbsp;</p>
             <div class="tableScrollLTL">
               <table border="1" class="qTable">
                 <thead>
@@ -46,12 +46,12 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr class="rightAlignTD">
                     <th id="7" scope="row" headers="1">
                       <p>Travel</p>
                     </th>
                     <td headers="2 7">
-                      <p>$8,000</p>
+                      <p>$9,000</p>
                     </td>
                     <td headers="3 7">
                       <p>$4,000</p>
@@ -93,12 +93,12 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr class="rightAlignTD">
                     <th id="7" scope="row" headers="1">
-                      <p>Voyage</p>
+                      <p>Voyages</p>
                     </th>
                     <td headers="2 7">
-                      <p>8&nbsp;000&nbsp;$</p>
+                      <p>9&nbsp;000&nbsp;$</p>
                     </td>
                     <td headers="3 7">
                       <p>4&nbsp;000&nbsp;$</p>
@@ -163,6 +163,10 @@
     padding: .5em;
   }
   
+  .rightAlignTD td {
+    text-align:right;
+  }
+
 </style>
 <i18n>{
   "en": {
@@ -181,7 +185,7 @@
   "conclusion": "Commitments are funds set aside in your budget for a specific purpose."
   },
   "q2": {
-  "text": "Which reports are “individual departmental accounts of actual performance against their respective plans, priorities, and expected results”?",
+  "text": "Which reports are individual departmental accounts of actual performance against their respective plans, priorities, and expected results?",
   "options": {
   "1": "Departmental Plans",
   "2": "Proactive disclosure reports",
@@ -206,7 +210,7 @@
   "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
-  "conclusion": "The primary purpose of the financial situation report is to provide your Annual Forecast. You should not adjust any of the other fields because they represent a snapshot at a point in time."
+  "conclusion": "The primary purpose of the financial situation report is to provide your Annual Forecast. You should not adjust any of the other fields because they represent a snapshot at a point in time from the information found in the financial system."
   },
   "q4": {
   "text": "The program performance indicators are outlined in the: ",
@@ -220,7 +224,7 @@
   "2": "<span class='v-right' /><strong>Correct!</strong> ",
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Internal audit reports examine compliance relating to governance, risk management, and control processes and make recommendations to improve performance, effectiveness, and efficiency of government operations."
   },
-  "conclusion": "Performance information profiles outline performance indicators and targets, each program's core responsibility and description."
+  "conclusion": "Performance information profiles outline performance indicators and targets, as well as each program’s core responsibility and description."
   },
   "q5": {
   "text": "In addition to influencing year-end results, the Treasury Board of Canada Secretariat uses which period’s financials to inform the Department of Finance Canada on planned spending throughout the government?",
@@ -251,7 +255,7 @@
   "conclusion": ""
   },
   "q7": {
-  "text": "Travel has been pre-approved this morning by the ADM. The estimated cost for the flight, accommodations, local transportation, and incidentals is $2,500. What amount will you put in the P6 Annual Forecast column? ",
+  "text": "A new travel request has been pre-approved this morning by the ADM. This has not yet been committed in the financial system. The estimated cost for the flight, accommodations, local transportation, and incidentals is $2,500. What amount will you put in the P6 Annual Forecast column?",
   "options": {
   "1": "$10,300",
   "2": "$8,200 ",
@@ -276,7 +280,7 @@
   "feedback": {
   "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Les fonds alloués pour l’exercice financier représentent le budget.",
   "2": "<span class='v-right' /><strong>Correct!</strong>",
-  "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Ce que vous avez dépensé jusqu’à présent, représente vos dépenses réelles depuis le début de l’année."
+  "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Ce que vous avez dépensé jusqu’à présent représente vos dépenses réelles depuis le début de l’année."
   },
   "conclusion": "Les engagements sont des fonds mis de côté dans votre budget à des fins précises."
   },
@@ -285,17 +289,17 @@
   "options": {
   "1": "Plans ministériels",
   "2": "Rapports de divulgation proactive ",
-  "3": "Rapports ministériels sur les résultats"
+  "3": "Rapports sur les résultats ministériels"
   },
   "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> La bonne réponse est : les rapports ministériels sur les résultats. Les plans, les priorités et les résultats attendus sont énoncés dans les plans ministériels.",
-  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> La bonne réponse est : les rapports ministériels sur les résultats. Les rapports de divulgation proactive sont des renseignements sur les sites Web des ministères concernant les voyages, l’accueil, les contrats, les reclassifications de postes, les actes répréhensibles, les subventions et les contributions.",
-  "3": "<span class='v-right' /><strong>Correct!</strong> Les rapports ministériels sur les résultats sont des comptes rendus ministériels individuels du rendement réel, pour le dernier exercice terminé, par rapport aux plans, aux priorités et aux résultats attendus énoncés dans les plans ministériels respectifs."
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> La bonne réponse est : les Rapports sur les résultats ministériels. Les plans, les priorités et les résultats attendus sont énoncés dans les plans ministériels.",
+  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> La bonne réponse est : les Rapports sur les résultats ministériels. Les rapports de divulgation proactive sont des renseignements sur les sites Web des ministères concernant les voyages, l’accueil, les contrats, les reclassifications de postes, les actes répréhensibles, les subventions et les contributions.",
+  "3": "<span class='v-right' /><strong>Correct!</strong> Les Rapports sur les résultats ministériels sont des comptes rendus ministériels individuels du rendement réel, pour le dernier exercice terminé, par rapport aux plans, aux priorités et aux résultats attendus énoncés dans les plans ministériels respectifs."
   },
   "conclusion": ""
   },
   "q3": {
-  "text": "Le champ le plus important que vous devez corriger dans l’état de la situation financière est :",
+  "text": "Le domaine le plus important que vous devez corriger dans le rapport sur la situation financière est :",
   "options": {
   "1": "Prévisions annuelles",
   "2": "Engagements",
@@ -306,10 +310,10 @@
   "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
-  "conclusion": "L'objectif principal du rapport sur la situation financière est de fournir vos prévisions annuelles. Vous ne devez pas corriger les autres champs car ils représentent un instantané à un moment donné."
+  "conclusion": "L'objectif principal du rapport sur la situation financière est de fournir vos prévisions annuelles. Vous ne devez pas corriger les autres champs car ils représentent un instantané à un moment donné à partir des informations trouvées dans le système financier."
   },
   "q4": {
-  "text": "Les indicateurs de rendement du programme sont décrits dans le:",
+  "text": "Les indicateurs de rendement du programme sont décrits dans le :",
   "options": {
   "1": "Rapport sur la situation financière ",
   "2": "Profils d’information sur le rendement ",
@@ -320,17 +324,17 @@
   "2": "<span class='v-right' /><strong>Correct!</strong> ",
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong>Les rapports de vérification interne examinent la conformité aux processus de gouvernance, de gestion des risques et de contrôle et font des recommandations pour améliorer le rendement, l’efficacité et l’efficience des opérations gouvernementales."
   },
-  "conclusion": "Les profils d’information sur le rendement décrivent les indicateurs et les cibles de rendement, ainsi que la responsabilité fondamentale et la description du programme."
+  "conclusion": "Les profils de l'information sur le rendement décrivent les indicateurs et les cibles de rendement ainsi que la responsabilité fondamentale et la description du programme."
   },
   "q5": {
   "text": "En plus d’influer sur les résultats de fin d’exercice, quels états financiers le Secrétariat du Conseil du Trésor du Canada utilise-t-il pour informer le ministère des Finances du Canada des dépenses prévues dans l’ensemble du gouvernement?",
   "options": {
-  "1": "P6 (Septembre)",
-  "2": "P9 (Décembre)",
+  "1": "P6 (septembre)",
+  "2": "P9 (décembre)",
   "3": "P12 (fin d’année)"
   },
   "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Les rapports P9 sont utilisés par le Secrétariat du Conseil du Trésor du Canada. P6 (Septembre) donne une bonne image de la situation financière de l’organisation à mi-parcours de l’année et permet à la direction de prendre des décisions pour influencer les résultats de fin d’année.",
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Les rapports P9 sont utilisés par le Secrétariat du Conseil du Trésor du Canada. P6 (septembre) donne une bonne image de la situation financière de l’organisation à mi-parcours de l’année et permet à la direction de prendre des décisions pour influencer les résultats de fin d’année.",
   "2": "<span class='v-right' /><strong>Correct!</strong> P9 sert à influencer les résultats de fin d’exercice, et le Secrétariat du Conseil du Trésor du Canada s’en sert pour informer le ministère des Finances des dépenses prévues dans l’ensemble du gouvernement.",
   "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Les rapports P9 sont utilisés par le Secrétariat du Conseil du Trésor du Canada. Les données de fin d’exercice sont utilisées par les ministères pour présenter leurs résultats financiers globaux."
   },
@@ -345,13 +349,13 @@
   },
   "feedback": {
   "1": "<span class='v-right' /><strong>Correct!</strong> Il s’agit d’un objectif réaliste puisqu’il comprend un pourcentage précis. ",
-  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n’est pas assez précis comme objectif, mais c’est un indicateur de rendement. La bonne réponse est a, car elle inclut un pourcentage précis.",
-  "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n’est ni un objectif ni un indicateur de rendement, car il n’existe aucune mesure concernant les investissements. La bonne réponse est a, car elle inclut un pourcentage précis."
+  "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n'est pas assez précis comme objectif, mais c'est un indicateur de rendement. La bonne réponse est « 80 % des produits ministériels sont mis à jour conformément sur le plan du cycle de vie des produits », car elle inclut un pourcentage précis.",
+  "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Cet énoncé n'est ni un objectif ni un indicateur de rendement, car il n'existe aucune mesure concernant les investissements. La bonne réponse est  « 80 % des produits ministériels sont mis à jour conformément sur le plan du cycle de vie des produits », car elle inclut un pourcentage précis."
   },
   "conclusion": ""
   },
   "q7": {
-  "text": "Les déplacements ont été préapprouvés ce matin par le SMA. Le coût estimatif du vol, de l'hébergement, du transport local et des faux frais est de 2&nbsp;500&nbsp;$. Quel montant inscrirez-vous dans la colonne P6 Prévisions annuelles? ",
+  "text": "Une nouvelle demande de déplacement a été préapprouvée ce matin par le SMA. Ceci n’a pas encore été engagé dans le système financier. Le coût estimatif du vol, de l'hébergement, du transport local et des faux frais est de 2 500 $. Quel montant inscrirez-vous dans la colonne P6 Prévisions annuelles? ",
   "options": {
   "1": "10&nbsp;300&nbsp;$",
   "2": "8&nbsp;200&nbsp;$",

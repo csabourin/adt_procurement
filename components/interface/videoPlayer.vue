@@ -630,7 +630,7 @@ export default {
   "stop":"Stop",
   "forward":"Forward 10 seconds",
   "backward":"Rewind 10 seconds",
-  "timeline": "Video timeline, use the left and right arrows to skip backgwards or forwards 10 seconds",
+  "timeline": "Video timeline, use the left and right arrows to skip backwards or forwards 10 seconds",
   "mute":"Mute",
   "unmute":"Unmute",
   "show":"Show ",

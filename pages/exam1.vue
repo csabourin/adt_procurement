@@ -855,7 +855,7 @@ export default {
         "options": {
           "1": "Modifier les heures d’ouverture du centre d’appel pour qu’il fonctionne 24 heures sur 24, 7 jours sur 7",
           "2": "Système de robot conversationnel en direct opérationnel 99&nbsp;% du temps",
-          "3": "30&nbsp;% des demandes en ligne seraient résolues par chatbot",
+          "3": "30&nbsp;% des demandes en ligne seraient résolues par robot conversationnel ",
           "4": "Les interactions des robots conversationnels seront surveillées par un agent du centre d’appels."
         },
         "feedback": {

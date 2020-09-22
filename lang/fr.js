@@ -27,7 +27,7 @@ export default {
   referenceIcon: "Icône « référence »",
   infoIcon: "Icône « information »",
   checkAll: "Choisissez toutes les réponses qui s’appliquent.",
-  selectRight: "Choisissez la bonne réponse&nbsp;:",
+  selectRight: "Choisissez la bonne réponse.",
   pleaseAnswer: "Veuillez r&eacute;pondre &agrave; la question!",
   KeyMessages: "Messages clés",
   KeyMessagesPlan: "<span class='v-inv'>Planification&nbsp;: </span>Messages clés",
@@ -61,8 +61,8 @@ export default {
   
   // Texte pour les tests
   notPassed: "Vous n’avez pas réussi ce test. Vous pouvez réviser vos réponses et réessayer.",
-  Passed: "Vous avez réussi ce test, vous pouvez réviser vos réponses et essayer d’améliorer votre score ou aller à la page d’",
-  Excelled: "Vous avez réussi ce test, félicitations ! Vous pouvez retourner à l’",
+  Passed: "Vous avez réussi ce test, vous pouvez réviser vos réponses et essayer d’améliorer votre score, ou aller à la page d’accueil.",
+  Excelled: "Vous avez réussi ce test, félicitations! Vous pouvez retourner à la page d’accueil.",
   
   // Texte pour icones
   threeSixty:{

@@ -58,9 +58,9 @@ export default {
   justExamShort: "Take the Exam",
   
   // Text for Exams
-  notPassed: "You have not passed this test. You can revise your answers and then try again.",
-  Passed: "You have passed this test, you can revise your answers and try to improve your score or go to the",
-  Excelled: "You have aced this test, congratulations! You can go back to the",
+  notPassed: "You have not passed the test. You may review your answers and then try again.",
+  Passed: "Congratulations! You have passed the test. You may review your answers and try to improve your score or go to the Home page.",
+  Excelled: "Congratulations! You have passed the test. You can go back to the Home page.",
   
   // -------- Text for icons --------
   threeSixty:{

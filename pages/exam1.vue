@@ -746,7 +746,7 @@ export default {
     "unanswered":"Question(s) sans réponse",
     "Questions": {
       "q1": {
-        "text": "Lequel des éléments suivants n’est <span class='bolder' style='text-transform:uppercase;text-decoration:underline;'>PAS</span> inclus dans un plan de travail?",
+        "text": "Lequel des éléments suivants n’est <span class='bolder' style='text-transform:uppercase;text-decoration:underline;'>pas</span> inclus dans un plan de travail?",
         "options": {
           "1": "Activité",
           "2": "Produit livrable",

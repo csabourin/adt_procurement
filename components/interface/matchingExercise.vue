@@ -17,8 +17,8 @@
               </div>
               <div style="flex: 0 0 100%; margin-top: 15px;">
                 <p v-if="Submitted[item[1]]">
-                  <span class="v-right" v-if="Answered[item[1]]==parseInt(item[1])+1" > Correct!</span>
-                  <span class="v-wrong" v-if="Answered[item[1]]!=parseInt(item[1])+1" > Incorrect </span>
+                  <span aria-live="polite" class="v-right" v-if="Answered[item[1]]==parseInt(item[1])+1" > Correct!</span>
+                  <span aria-live="polite" class="v-wrong" v-if="Answered[item[1]]!=parseInt(item[1])+1" > Incorrect </span>
                 </p>
               </div>
             </li>

@@ -320,7 +320,7 @@ text-align: right;
   "en": {
     "q1": {
       "title": "Salary",
-      "introduction": "<div class='tableScrollLTL'> <table class='qTable finTable' border='1'><thead><tr><th id='1' scope='col'><p>Salary</p></th><th id='2' scope='col'><p>Budget (A)</p></th><th id='3' scope='col'><p>Actual (B)</p></th><th id='4' scope='col'><p>Variance (C=B-A)</p></th><th id='5' scope='col'><p>Variance Explanation</p></th></tr></thead><tbody><tr><th headers='1' id='11' scope='row'><p>Previous year&nbsp;</p></th><td headers='2 11'><p>$460,000</p</td><td headers='3 11'><p>$450,000</p></td><td headers='4 11'><p><span style='color: #AF0000;'>($10,000)</span></p></td><td headers='5 11'><p>An employee was on leave without pay.</p></td></tr></tbody><thead><tr><th id='6' scope='col'>&nbsp;</th><th id='7' scope='col'><p>Budget</p></th><th id='8' scope='col'><p>YTD Actual</p></th><th id='9' scope='col'><p>Annual Forecast</p></th><th id='10' scope='col'></th></tr></thead><tbody><tr><th headers='6' id='12' scope='row'><p>Current year at P6</p></th><td headers='7 12'><p>$475,000</p></td><td headers='8 12'><p>$237,500</p></td><td headers='9 12'><p>$475,000</p></td><td headers='10 12'>&nbsp;</td></tr></tbody></table></div><br><ul><li>An employee’s annual salary is $60,000 per year. You know that they will retire on July 1 of next year and won’t be replaced, and&nbsp;</li><li>You plan on getting a casual employee for 4 months for a total of $13,333.</li></ul>",
+      "introduction": "<div class='tableScrollLTL'> <table class='qTable finTable' border='1'><thead><tr><th id='1' scope='col'><p>Salary</p></th><th id='2' scope='col'><p>Budget (A)</p></th><th id='3' scope='col'><p>Actual (B)</p></th><th id='4' scope='col'><p>Variance (C=B-A)</p></th><th id='5' scope='col'><p>Variance Explanation</p></th></tr></thead><tbody><tr><th headers='1' id='11' scope='row'><p>Previous year&nbsp;</p></th><td headers='2 11'><p>$460,000</p</td><td headers='3 11'><p>$450,000</p></td><td headers='4 11'><p><span style='color: #AF0000;'>($10,000)</span></p></td><td headers='5 11'><p>An employee was on leave without pay.</p></td></tr></tbody><thead><tr><th id='6' scope='col'>&nbsp;</th><th id='7' scope='col'><p>Budget</p></th><th id='8' scope='col'><p>YTD Actual</p></th><th id='9' scope='col'><p>Annual Forecast</p></th><th id='10' scope='col'></th></tr></thead><tbody><tr><th headers='6' id='12' scope='row'><p>Current year at P6</p></th><td headers='7 12'><p>$475,000</p></td><td headers='8 12'><p>$237,500</p></td><td headers='9 12'><p>$475,000</p></td><td headers='10 12'>&nbsp;</td></tr></tbody></table></div><br><ul><li>An employee’s annual salary is $60,000 per year. You know that they will retire on July 1 of next year and won’t be replaced.<li><li>You plan on getting a casual employee for 4 months for a total of $13,333.</li></ul>",
       "text": "What budget will you propose for the next fiscal year?",
       "options": {
         "1": "$415,000 Non-Discretionary and $13,333 Discretionary",
@@ -329,10 +329,10 @@ text-align: right;
         "4": "$475,000 Non-Discretionary&nbsp;"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is <strong>$430,000 Non-Discretionary</strong> and <strong>$13,333 Discretionary</strong>.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is $430,000 Non-Discretionary and $13,333 Discretionary.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is <strong>$430,000 Non-Discretionary</strong> and <strong>$13,333 Discretionary</strong>.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is <strong>$430,000 Non-Discretionary</strong> and <strong>$13,333 Discretionary</strong>."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is $430,000 Non-Discretionary and $13,333 Discretionary.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is $430,000 Non-Discretionary and $13,333 Discretionary."
       },
       "conclusion": "<p> Your starting point is the current year’s budget of $475,000. For the employee who is retiring and not being replaced, you need to subtract 9 months (July to March) of the $60,000 in annual salary ($475,000 - $45,000 = $430,000). Since casual employees are not part of the org chart, they are considered discretionary.&nbsp;</p><p><span>It is important to analyze any variances so the figures in your proposed budget are accurate. To discover the reason for a variance, you could speak with the previous manager, your admin, or your director. A report from Finance may provide the variance explanation.&nbsp;</span></p>"
     },
@@ -350,7 +350,7 @@ text-align: right;
         "2": "<span class='v-right'/> <strong>Correct!</strong> ",
         "3": "<span class='v-wrong'/> <strong>Incorrect.</strong> "
       },
-      "conclusion": "The correct answer is $3,000. The new software will cost $1,000 per officer for 3 officers (3 x $1,000 = $3,000). Training would be covered in a separate line item."
+      "conclusion": "The new software will cost $1,000 per officer for 3 officers (3 x $1,000 = $3,000). Training would be covered in a separate line item."
     },
     "q3": {
       "title": "Office Supplies",
@@ -366,9 +366,9 @@ text-align: right;
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>"
       },
-      "conclusion": "The correct answer is $1,500. This amount was spent last year and also forecasted for the current year; therefore, you would request a budget equal to your spending patterns."
+      "conclusion": "This amount was spent last year and also forecasted for the current year; therefore, you would request a budget equal to your spending patterns."
     },
-    "actInstructions": "Select any question mark and answer the question that appears",
+    "actInstructions": "Select any question mark and answer the question that appears.",
     "budgetTableFill1": "Line Item",
     "budgetTableFill2": "Previous Budget",
     "budgetTableFill3": "Current Budget",
@@ -471,16 +471,16 @@ text-align: right;
       "introduction": "<div class='tableScrollLTL'><table class='qTable finTable' border='1'> <thead> <tr> <th id='1' scope='col'> <p>Salaires</p> </th> <th id='2' scope='col'> <p>Budget (A)</p> </th> <th id='3' scope='col'> <p>Réel (B)</p> </th> <th id='4' scope='col'> <p>Variance (C=B-A)</p> </th> <th id='5' scope='col'> <p>Explication de variance&nbsp;</p> </th> </tr> </thead> <tbody> <tr> <th id='11' scope='row' headers='1'> <p>Année précédente&nbsp;</p> </th> <td headers='2 11'> <p>460&nbsp;000&nbsp;$</p> </td> <td headers='3 11'> <p>450&nbsp;000&nbsp;$</p> </td> <td headers='4 11'> <p><span style='color: #AF0000;'>(10&nbsp;000&nbsp;$)</span></p> </td> <td headers='5 11'> <p>Un employé était en congé sans solde.</p> </td> </tr> </tbody> <thead> <tr> <th id='6' scope='col'>&nbsp;</th> <th id='7' scope='col'> <p>Budget</p> </th> <th id='8' scope='col'> <p>CDA Réel&nbsp;</p> </th> <th id='9' scope='col'> <p>Prévisions annuelles</p> </th> <th id='10' scope='col'>&nbsp;</th> </tr> </thead> <tbody> <tr> <th id='12' scope='row' headers='6'> <p>Année en cours à P6</p> </th> <td headers='7 12'> <p>475&nbsp;000&nbsp;$</p> </td> <td headers='8 12'> <p>237&nbsp;500&nbsp;$</p> </td> <td headers='9 12'> <p>475&nbsp;000&nbsp;$</p> </td> <td headers='10 12'>&nbsp;</td> </tr> </tbody> </table></div> <br> <ul> <li>Le salaire annuel d’un employé est de 60&nbsp;000&nbsp;$ par année. Vous savez qu’il prendra sa retraite le 1er juillet de l’année prochaine et qu’il ne sera pas remplacé.&nbsp;</li> <li>Vous prévoyez embaucher un employé occasionnel pendant 4 mois pour un coût total de 13&nbsp;333&nbsp;$.</li> </ul>",
       "text": "Quel budget proposez-vous pour l’exercice financier suivant?",
       "options": {
-        "1": "$415&nbsp;000&nbsp;$ non discrétionnaires et 13&nbsp;333&nbsp;$ discrétionnaires",
+        "1": "415&nbsp;000&nbsp;$ non discrétionnaires et 13&nbsp;333&nbsp;$ discrétionnaires",
         "2": "430&nbsp;000&nbsp;$ non discrétionnaires et 13&nbsp;333&nbsp;$ discrétionnaires",
         "3": "445&nbsp;000&nbsp;$ non discrétionnaires et 13&nbsp;333&nbsp;$ discrétionnaires",
         "4": "475&nbsp;000&nbsp;$ Non discrétionnaires "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 430&nbsp;000&nbsp;$ non discrétionnaires et 13&nbsp;333&nbsp;$ discrétionnaires.</strong>.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 430&nbsp;000&nbsp;$ non discrétionnaires et 13&nbsp;333&nbsp;$ discrétionnaires</strong>.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 430&nbsp;000&nbsp;$ non discrétionnaires et 13&nbsp;333&nbsp;$ discrétionnaires.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 430&nbsp;000&nbsp;$ non discrétionnaires et 13&nbsp;333&nbsp;$ discrétionnaires.</strong>."
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est 430&nbsp;000&nbsp;$ non discrétionnaires et 13&nbsp;333&nbsp;$ non discrétionnaires</strong>."
       },
       "conclusion": "<p> Votre point de départ est le budget de 475&nbsp;000&nbsp;$ de l’année en cours. Pour l’employé qui prend sa retraite et qui n’est pas remplacé, vous devez soustraire 9 mois (de juillet à mars) du salaire annuel de 60&nbsp;000&nbsp;$ (475&nbsp;000&nbsp;$ à 45&nbsp;000&nbsp;$ = 430&nbsp;000&nbsp;$). Comme les employés occasionnels ne font pas partie de l’organigramme,  les dépenses les concernant sont considérées comme discrétionnaires.</p><p><span>Il est important d’analyser tout écart afin que les chiffres du budget proposé soient exacts. Pour connaître la raison d’un écart, vous pouvez parler avec l’ancien gestionnaire, votre administrateur ou votre directeur. Un rapport du ministère des Finances peut aussi fournir cette explication. </span></p>"
     },
@@ -488,15 +488,15 @@ text-align: right;
       "title": "License de logiciel",
       "introduction": "<p>Vous devrez estimer les coûts des nouvelles activités en fonction de vos besoins budgétaires. Si une activité a été terminée l'année dernière, elle n'apparaîtra pas dans le budget. Cherchez les activités annulées ou retardées, ou toute nouvelle activité qui pourrait ne pas être incluse dans votre niveau de référence, pour vous assurer que vos besoins budgétaires sont exacts.</p><p>Vous n’aviez pas de logiciel dans le budget de l’année dernière ou de l’année en cours. En examinant votre plan de travail, vous savez que vous avez l’intention d’acheter un nouveau logiciel l’an prochain pour la délivrance des permis de pêche. Vous faites des recherches et découvrez que la licence du logiciel coûte 1&nbsp;000&nbsp;$ par an par agent (3 agents l’utiliseront). La formation en ligne coûtera 800 $ par agent.</p>",
       "text": "Quel budget proposez-vous pour le nouveau logiciel pour l’exercice financier suivant?",
-      "conclusion": " La bonne réponse est 3&nbsp;000&nbsp;$. Le nouveau logiciel coûtera 1&nbsp;000&nbsp;$ par agent pour 3 agents (3&nbsp;&times;&nbsp;1&nbsp;000&nbsp;$ = 3&nbsp;000&nbsp;$). La formation ferait l’objet d’un poste distinct. ",
+      "conclusion": "Le nouveau logiciel coûtera 1&nbsp;000&nbsp;$ par agent pour 3 agents (3&nbsp;X&nbsp;1&nbsp;000&nbsp;$ = 3&nbsp;000&nbsp;$). La formation ferait l’objet d’un poste distinct. ",
       "options": {
-        "1": "1000$",
-        "2": "3000$",
-        "3": "5400$"
+        "1": "1 000 $",
+        "2": "3 000 $",
+        "3": "5 400 $"
       },
       "feedback": {
         "1": "<span class='v-wrong'/> <strong>Incorrect.</strong>",
-        "2": "<span class='v-right'/> <strong>Correct!</strong> ",
+        "2": "<span class='v-right'/> <strong>Correct!</strong>",
         "3": "<span class='v-wrong'/> <strong>Incorrect.</strong>"
       }
     },
@@ -514,12 +514,12 @@ text-align: right;
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>"
       },
-      "conclusion": "La bonne réponse est 1&nbsp;500&nbsp;$. Ce montant a été dépensé l’an dernier et a également été prévu pour l’année en cours; par conséquent, vous demandez un budget égal à vos habitudes de dépenses. "
+      "conclusion": "Ce montant a été dépensé l’an dernier et a également été prévu pour l’année en cours; par conséquent, vous demandez un budget égal à vos habitudes de dépenses. "
     },
     "actInstructions": "Sélectionnez n’importe quel point d’interrogation et répondez à la question qui apparaît.",
     "budgetTableFill1": "Poste individuel",
-    "budgetTableFill2": "Budget Précédent",
-    "budgetTableFill3": "Budget Actuel",
+    "budgetTableFill2": "Budget précédent",
+    "budgetTableFill3": "Budget actuel",
     "budgetTableFill4": "Budget proposé",
     "budgetTableFill5": "Notes pour le budget proposé",
     "budgetTableFill6": "&nbsp;",
@@ -593,13 +593,13 @@ text-align: right;
     "budgetTableFill74": "2&nbsp;000&nbsp;$",
     "budgetTableFill75": "2&nbsp;400&nbsp;$",
     "budgetTableFill76": "2&nbsp;000&nbsp;$",
-    "budgetTableFill77": "3 ETP à 800$ chacun pour la formation, 4 ETP à 500$ chacun pour la formation générale",
+    "budgetTableFill77": "3 ETP à 800&nbsp;$ chacun pour la formation, 4 ETP à 500&nbsp;$ chacun pour la formation générale",
     "budgetTableFill78": "Voyage",
     "budgetTableFill79": "18&nbsp;000&nbsp;$",
     "budgetTableFill80": "18&nbsp;000&nbsp;$",
     "budgetTableFill81": "10&nbsp;000&nbsp;$",
     "budgetTableFill82": "1&nbsp;600&nbsp;$",
-    "budgetTableFill83": "10&nbsp;000&nbsp;$ pour effectuer des inspections, 1600$ pour les déplacements généraux",
+    "budgetTableFill83": "10&nbsp;000&nbsp;$ pour effectuer des inspections, 1600&nbsp;$ pour les déplacements généraux",
     "budgetTableFill84": "Aide temporaire",
     "budgetTableFill85": "$10,000",
     "budgetTableFill86": "5&nbsp;000&nbsp;$",

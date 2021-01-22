@@ -151,11 +151,11 @@ export default {
       }
     },
     "q8": {
-      "sentence": "{0} costs are essential for delivering on your activities, and if cut will result in you not being able to deliver on them.",
+      "sentence": "{0} costs are essential for delivering on your activities, and if cut, will result in you not being able to deliver on them.",
       "choices": {
         "1": "Non-discretionary",
-        "2": "Notes",
-        "3": "Discretionary"
+        "2": "Discretionary",
+        "3": "Notes"
       },
       "feedback": {
         "right": "Essential costs are non-discretionary. ",
@@ -166,8 +166,8 @@ export default {
       "sentence": "{0} costs are less likely to have a negative impact on delivering your activities.",
       "choices": {
         "1": "Non-discretionary",
-        "2": "Notes",
-        "3": "Discretionary"
+        "2": "Discretionary",
+        "3": "Notes"
       },
       "feedback": {
         "right": "These costs would be discretionary. ",
@@ -178,8 +178,8 @@ export default {
       "sentence": "A best practice is to include a {0} column in your budget requirements to remind you how you arrived at your figures.",
       "choices": {
         "1": "Non-discretionary",
-        "2": "Notes",
-        "3": "Discretionary"
+        "2": "Discretionary",
+        "3": "Notes"
       },
       "feedback": {
         "right": "A notes column will help you keep track of your budget requirements. It may not be something you submit but it’s good to have in your “back pocket.” ",
@@ -204,15 +204,15 @@ export default {
         "2": "$0"
       },
       "feedback": {
-        "right": "Your starting point is $0. For continuing activities, you can use last year’s and the current year’s ",
-        "wrong": "Your starting point is $0. For continuing activities, you can use last year’s and the current year’s "
+        "right": "Your starting point is $0. For continuing activities, you can use last year’s and the current year’s figures to help with your budget requirements. For new activities, you need to estimate the costs. ",
+        "wrong": "Your starting point is $0. For continuing activities, you can use last year’s and the current year’s figures to help with your budget requirements. For new activities, you need to estimate the costs. "
       }
     }
   },
   "fr": {
     "instructions": "Voici l&rsquo;occasion pour vous de confirmer votre connaissance des budgets et des coûts. Sélectionnez le meilleur choix pour remplir les blancs. ",
     "q1": {
-      "sentence": "{0} omprend les postes permanents, de durée déterminée et de durée occasionnelle, les heures supplémentaires, la rémunération au rendement et les demandes de remboursement des congés.",
+      "sentence": "{0} comprend les postes permanents, de durée déterminée et de durée occasionnelle, les heures supplémentaires, la rémunération au rendement et les demandes de remboursement des congés.",
       "choices": {
         "1": "Fonctionnement et entretien (F et E)",
         "2": "Salaires",
@@ -259,8 +259,8 @@ export default {
         "4": "Immobilisations"
       },
       "feedback": {
-        "right": "Ces fonds proviendraient du budget des subventions et contributions (S et C)",
-        "wrong": "Ces fonds proviendraient du budget des subventions et contributions (S et C)"
+        "right": "Ces fonds proviendraient du budget des subventions et contributions (S et C).",
+        "wrong": "Ces fonds proviendraient du budget des subventions et contributions (S et C)."
       }
     },
     "q5": {
@@ -285,8 +285,8 @@ export default {
         "4": "Immobilisations"
       },
       "feedback": {
-        "right": "Ces fonds proviendraient du budget des subventions et contributions (S et C)",
-        "wrong": "Ces fonds proviendraient du budget des subventions et contributions (S et C)"
+        "right": "Ces fonds proviendraient du budget des subventions et contributions (S et C).",
+        "wrong": "Ces fonds proviendraient du budget des subventions et contributions (S et C)."
       }
     },
     "q7": {

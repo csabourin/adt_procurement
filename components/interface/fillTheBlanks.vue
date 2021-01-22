@@ -5,7 +5,7 @@
       <span v-for="(hole,index) in blanks" :key="index">
         <label class="v-inv" :for="qid+index"> {{$t('labelled')}}</label>
         <select v-model="answerArray[index]" :id="qid+index" @change="q1Submit=false">
-          <option disabled value='' v-html="$t('disabledOption')"></option>
+          <option disabled value='' selected >{{$t('disabledOption')}}</option>
           <option v-for="(term,index) in termList" :key="index" :value="index" v-html="term" />
         </select>
       </span>

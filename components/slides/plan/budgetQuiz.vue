@@ -103,7 +103,7 @@ export default {
       }
     },
     "q1": {
-      "conclusion": "<p><strong>A contract with an agency for temp staff</strong> would be in <strong>Operating - O&amp;M</strong>, and not Operating - Salary, because temp staff are not employees, and contracts are not paid out of Salary.&nbsp;</p><p><strong>Funds provided to a university to study fish habitat </strong>would be in <strong>Grants and Contributions</strong>. The nature of this transaction is such that it is a 1-way payment of money for which the government will not receive any good or service.</p><p><strong>Casual positions or leave cash-outs</strong> would be in <strong>Operating–Salary</strong> because they concern employees.&nbsp;</p><p><strong>Purchase a new fleet of trucks</strong> would be in <strong>Capital </strong>because they are assets that would depreciate over time.</p>"
+      "conclusion": "<p><strong>A contract with an agency for temporary staff</strong> would be in <strong>Operating -O&amp;M</strong>, and not Operating-Salary, because temporary staff are not employees, and contracts are not paid out of Salary.&nbsp;</p><p><strong>Funds provided to a university to study fish habitat </strong>would be in <strong>Grants and Contributions</strong>. The nature of this transaction is such that it is a 1-way payment of money for which the government will not receive any good or service.</p><p><strong>Casual positions or leave cash-outs</strong> would be in <strong>Operating–Salary</strong> because they concern employees.&nbsp;</p><p><strong>Purchase a new fleet of trucks</strong> would be in <strong>Capital </strong>because they are assets that would depreciate over time.</p>"
     },
     "q2content": {
       "text": "Match the activity to its status. ",
@@ -208,6 +208,25 @@ export default {
     }
   },
   "fr": {
+  "q1content": {
+      "text": "Faites correspondre le poste au budget auquel il appartient. ",
+      "options": {
+        "1": "Un contrat avec une agence d'intérim",
+        "2": "Fonds versés à une université pour étudier l'habitat du poisson",
+        "3": "Les postes occasionnels ou les encaissements de congés",
+        "4": "Achat d’un nouveau parc de camions"
+      },
+      "matching": {
+        "1": "Fonctionnement – Salaires ",
+        "2": "Fonctionnement – F et E",
+        "3": "Subventions et contributions",
+        "4": "Immobilisation "
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
+    },
     "qDisabled": "Choisissez",
     "q1a": {
       "text": "Faites correspondre le poste au budget auquel il appartient.",
@@ -274,7 +293,26 @@ export default {
       }
     },
     "q1": {
-      "conclusion": "<p><strong>Un contrat avec une agence pour le personnel temporaire</strong> devrait se trouver sous <strong>Fonctionnement - F&amp;E</strong>, et non pas sous Fonctionnement - Salaires, parce que le personnel temporaire n’a pas le status d'un employé et que les contrats ne sont pas payés à m&ecirc;me le poste de salaires.&nbsp;</p><p><strong>Les fonds allant à une université pour étudier l'habitat du poisson</strong> seraient fournis sous forme de <strong>subventions et de contributions</strong>. La nature de cette transaction est telle qu’il s’agit d’un paiement à sens unique pour lequel le gouvernement ne recevra aucun bien ni service.</p><p><strong>Les postes occasionnels ou les encaissements de congés</strong> se trouveraient dans la catégorie <strong>Fonctionnement - Salaires</strong> parce qu’ils concernent des employés.&nbsp;</p><p><strong>L’achat d’un nouveau parc de camions</strong> se trouverait sous <strong>Capital </strong>parce que ce sont des biens qui se déprécient avec le temps.</p>"
+      "conclusion": "<p><strong>Un contrat avec une agence d’intérim</strong> devrait se trouver sous <strong>Fonctionnement - F et E</strong>, et non pas sous Fonctionnement - Salaires, parce que le personnel temporaire n’a pas le statut d'employé et que les contrats ne sont pas payés à même le poste des salaires.&nbsp;</p><p><strong>Les fonds allant à une université pour étudier l'habitat du poisson</strong> seraient fournis sous forme de <strong>subventions et de contributions</strong>. La nature de cette transaction est telle qu’il s’agit d’un paiement à sens unique pour lequel le gouvernement ne recevra aucun bien ni service.</p><p><strong>Les postes occasionnels ou les demandes de remboursement des congés</strong> se trouveraient dans la catégorie <strong>Fonctionnement - Salaires</strong> parce qu’ils concernent des employés.&nbsp;</p><p><strong>L’achat d’un nouveau parc de camions</strong> se trouverait sous <strong>Immobilisations  </strong>parce que ce sont des biens qui se déprécient avec le temps.</p>"
+    },
+        "q2content": {
+      "text": "Faites correspondre l'activité à son statut. ",
+      "options": {
+        "1": "Délivrance des permis de pêche.",
+        "2": "L'année prochaine, vous allez acheter un logiciel pour remplacer un processus manuel.",
+        "3": "Les sommes prévues pour un déménagement de bureaux ont été dépensées l'an dernier.",
+        "4": "Les consultations à l'échelle du Canada ont été interrompues plus tôt dans l’année."
+      },
+      "matching": {
+        "1": "Éliminée progressivement",
+        "2": "Annulée",
+        "3": "Continue",
+        "4": "Nouvelle "
+      },
+      "feedback": {
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
+        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+      }
     },
     "q2a": {
       "text": "Faites correspondre l’activité à son statut.",
@@ -340,7 +378,7 @@ export default {
         "right": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },
-    "q2":{"conclusion":"<p><strong>L'émission de permis de p&ecirc;che</strong> est une activité <strong>continue</strong>; c’est l’une de vos principales activités chaque année.&nbsp;</p><p><strong>L’année prochaine, vous allez acheter un logiciel pour remplacer un processus manuel,</strong> est une <strong>nouvelle</strong> activité, car cette activité n'était pas dans les plans précédents.</p><p><strong>Les co&ucirc;ts d’un déménagement de bureau qui a été effectué l’an dernier</strong> sont <strong>éliminés progressivement</strong>, car cette activité est terminée.&nbsp;</p><p><strong>Les consultations à travers le Canada ont été interrompues plus t&ocirc;t cette année</strong>, c’est une activité <strong>annulée</strong>, car les consultations ont été interrompues, donc non terminées.</p>"},
+    "q2":{"conclusion":"<p><strong>L'émission de permis de pêche</strong> est une activité <strong>continue</strong>; c’est l’une de vos principales activités chaque année.&nbsp;</p><p><strong>L’année prochaine, vous allez acheter un logiciel pour remplacer un processus manuel,</strong> c'est une <strong>nouvelle</strong> activité, car cette activité n'était pas dans les plans précédents.</p><p><strong>Les coûts d’un déménagement de bureau qui a été effectué l’an dernier</strong> sont <strong>éliminés progressivement</strong>, car cette activité est terminée.&nbsp;</p><p><strong>Les consultations à travers le Canada ont été interrompues plus t&ocirc;t cette année</strong>, c’est une activité <strong>annulée</strong>, car les consultations ont été interrompues, donc non terminées.</p>"},
     "q3": {
       "text": "Un employé prendra sa retraite après 8 mois l’année prochaine, donc vous estimez son salaire comme étant :",
       "options": {
@@ -363,7 +401,7 @@ export default {
         "4": "Le budget de formation a été dépassé de 6&nbsp;000&nbsp;$ l’an dernier."
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong> ",
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Il s'agit d'une tendance parce que l'augmentation est la même depuis quelques années. ",
 
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Le budget des voyages a augmenté de 3 % année après année ». Il s’agit d’une tendance parce que l’augmentation est la même depuis quelques années.",
 

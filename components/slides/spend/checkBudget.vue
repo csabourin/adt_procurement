@@ -317,7 +317,7 @@
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong>.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>"
       },
-      "conclusion": "Il n’y a pas assez d’argent dans votre budget approuvé. Si on ne vous donne pas plus d’argent ou si vous n’effectuez pas une conversion de salaire, vous ne pouvez pas embaucher le consultant."
+      "conclusion": "Il n’y a pas assez d’argent dans votre budget approuvé. Si on ne vous donne pas plus d'argent ou si vous n’effectuez pas une conversion de salaire, vous ne pouvez pas embaucher le consultant."
     },
     "q3": {
       "text": "Vous avez acheté tous les meubles dont vous aurez besoin pour l’année au coût de 900&nbsp;$. Vous aimeriez acheter 100&nbsp;$ de plus en fournitures de bureau. Pouvez-vous utiliser l’argent initialement alloué pour le mobilier?",

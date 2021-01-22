@@ -163,7 +163,7 @@
   "dwnPlanLine1":"Work Plan",
   "dwnPlanLine2":"Template",
   "pwpGovtPriTitle":"Government priorities",
-  "pwpGovtPri":"In the Speech from the throne, a newly elected government sets out its agenda. This includes its broad goals and commitments and how it will reach them.",
+  "pwpGovtPri":"In the Speech from the Throne, a newly elected government sets out its agenda. This includes its broad goals and commitments and how it will reach them.",
   "pwpDeptPriTitle":"Departmental priorities",
   "pwpDeptPri":"What your department sets out to do to support the government’s priorities.",
   "pwpDirPriTitle":"Directorate priorities",

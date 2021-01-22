@@ -58,6 +58,9 @@ export default {
   justExam: "Je veux seulement prendre le test",
   refreshShort: "Rafraîchir mes connaissances",
   justExamShort: "Prendre le test",
+
+  navigationMenu: "Menu de Navigation",
+  languageToggle: "Selectionner ici pour aller à la page en anglais",
   
   // Texte pour les tests
   notPassed: "Vous n’avez pas réussi ce test. Vous pouvez réviser vos réponses et réessayer.",
@@ -110,7 +113,7 @@ export default {
   buildWPProcessMap:{
     line1: "Schéma de",
     line2: "processus",
-    name: "Élaboration d’un plan de travail&nbsp;: schéma de processus",
+    name: "Élaboration d’un plan de travail&nbsp;: Schéma du processus",
     download: "Télécharger le shéma de processus pour l'élaboration d'un plan de travail",
     filename: "Elaboration_plan_de_travail-Schema_du_processus.pdf",
     HTMLFilename: "../BuildingWPProcessMap/fr.html"

@@ -160,14 +160,14 @@
       "options":
       {
         "1": "With the “Manage and administer the directorate” activity under “Deliverables”",
-        "2": "With the “Issue commercial fishing licenses” activity under “Mitigation”",
-        "3": "With the “Renew commercial fishing licenses” activity Under “Sub-activities”"
+        "2": "With the “Issue commercial fishing licences activity under “Mitigation”",
+        "3": "With the “Renew commercial fishing licences” activity Under “Sub-activities”"
       },
       "feedback":
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> While “Implementation of the new software” could in certain cases be a “Mitigation” strategy, in this work plan it is a “Deliverable.”",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While “Implementation of the new software” could in certain cases be a “Mitigation” strategy, in this work plan it is a “Deliverable.”"
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While “Implementation of the new software” could in certain cases be a “Sub-activity” strategy, in this work plan it is a “Deliverable.”"
       }
     },
     "q2":
@@ -220,8 +220,8 @@
   },
   "fr":
   {
-    "pwpInstructions": "Votre directeur vous dit qu’il a siégé à un comité directeur et qu’il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Trois nouveaux renseignements : ",
-    "thing1": "la mise en œuvre d’un nouveau logiciel pour accélérer la délivrance de permis;",
+    "pwpInstructions": "Votre directeur vous dit qu’il a participé à un comité directeur et qu’il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Voici les trois nouveaux renseignements :",
+    "thing1": "un nouveau logiciel sera installé pour accélérer la délivrance des permis;",
     "thing2": "une nouvelle politique qui exige maintenant que les permis soient délivrés en 15 jours, et non plus en 30 jours, à compter du 1er novembre;",
     "thing3": "une décision de ne pas remplacer un employé qui prend sa retraite.",
     "pwpTitle": "Ajustez votre plan de travail en choisissant la meilleure réponse aux questions suivantes&nbsp;:",
@@ -275,8 +275,8 @@
       "feedback":
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",        
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être une stratégie d’atténuation dans certains cas, dans ce plan de travail, il s’agit d’un «&nbsp;Livrable&nbsp;».",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Alors que la « Mise en œuvre du nouveau logiciel » pourrait être une « Sous-activité » dans certains cas, dans ce plan de travail, il s’agit d’un « Livrable »."
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être dans certains cas une stratégie d’atténuation dans certains cas, dans ce plan de travail, il s’agit d’un «&nbsp;Livrable&nbsp;».",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la « Mise en œuvre du nouveau logiciel » ppourrait dans certains cas être une « Sous-activité », dans ce plan de travail, il s’agit d’un « Livrable »."
       }
     },
     "q2":
@@ -285,7 +285,7 @@
       "options":
       {
         "1": "Laissez &laquo;&nbsp;Délivrer les renouvellements de permis dans les 30 jours suivant la demande&nbsp;&raquo; tel quel.",
-        "2": "Enlevez &laquo;&nbsp;Délivrer les renouvellements de permis dans les 30 jours suivant la demande&nbsp;&raquo;.",
+        "2": "Enlevez &laquo;&nbsp;Délivrer les renouvellements de permis dans les 30 jours suivant la demande&nbsp;&raquo; du plan de travail.",
         "3": "Changez-le pour &laquo;&nbsp;Délivrer les renouvellements de permis dans les 15 jours suivant la demande&nbsp;&raquo;."
       },
       "feedback":
@@ -297,12 +297,12 @@
     },
     "q3":
     {
-      "text": "Avez-vous besoin d’ajuster vos Ressources étant donné que l’agent qui délivre les permis prend sa retraite?",
+      "text": "Avez-vous besoin d'ajuster la section des Ressources étant donné que l’agent qui délivre les permis prend sa retraite?",
       "options":
       {
         "1": "Je dois ajouter du personnel.",
-        "2": "Je peux laisser les Ressources telles quelles.",
-        "3": "Je dois enlever un employé du plan de travail."
+        "2": "Je peux laisser la section « Ressources » telle quelle.",
+        "3": "Je dois enlever un employé du plan de travail sous « Ressources »."
       },
       "feedback":
       {
@@ -314,7 +314,7 @@
 
     "q4":
     {
-      "text": "Avez-vous besoin d’indiquer le besoin de formation des agents?",
+      "text": "Devriez-vous indiquer le besoin de formation des agents?",
       "options":
       {
         "1": "Oui, avec l’activité &laquo;&nbsp;Gérer et administrer la direction&nbsp;&raquo; sous &laquo;&nbsp;Livrables&nbsp;&raquo;.",

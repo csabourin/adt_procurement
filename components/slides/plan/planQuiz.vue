@@ -62,65 +62,65 @@ export default {
         "4": "A summary of what you have accomplished"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year. ",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan is made up of all the activities to be carried out over a fiscal year. ",
         "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year. ",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan are activities to be carried out over a fiscal year. "
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan is made up of all the activities to be carried out over a fiscal year. ",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Incorrect. The work plan is made up of all the activities to be carried out over a fiscal year. "
       }
     },
     "q2": {
       "text": "Which elements should you consider when drafting your new work plan? ",
       "options": {
         "1": "Government priorities, departmental priorities and directorate priorities",
-        "2": "Previous year’s work plan, budget, reports",
-        "3": "Your fellow manager’s work plan from last year"
+        "2": "Previous year’s work plan, budget and, reports",
+        "3": "Your colleague’s work plan from last year"
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> You should consider government priorities, departmental priorities and directorate priorities as well as the previous year’s work plan, budget, reports when drafting your new work plan. Unless the activities of your fellow manager have been transferred to your team, you would not take them into account. "
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> You should consider government priorities, departmental priorities and directorate priorities as well as the previous year’s work plan, budget and reports when drafting your new work plan. Unless the activities of your colleague have been transferred to your team, you would not take them into account. "
       }
     },
     "q3": {
-      "text": "A departmental priority in your work plan originates all the way back to:",
+      "text": "A departmental priority in your work plan goes all the way back to:",
       "options": {
-        "1": "The directorate’s plan",
-        "2": "The Departmental plan",
-        "3": "The Speech from the Throne"
+        "1": "the directorate’s plan",
+        "2": "the Departmental Plan",
+        "3": "the Speech from the Throne"
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the Government lays out its priorities. ",
         "3": "<span class='v-right' /> <strong>Correct!</strong>  It’s a good idea to start your view of the big picture with the Speech from the Throne."
       }
     },
     "q4": {
-      "text": "To find your department’s core responsibilities, expected results and indicators, you would look to:",
+      "text": "To find your department’s core responsibilities, expected results and indicators, you would look at:",
       "options": {
-        "1": "The directorate’s plan",
-        "2": "The Departmental Plan",
-        "3": "The Speech from the Throne",
-        "4": "The sector’s plan"
+        "1": "the directorate’s plan",
+        "2": "the Departmental Plan",
+        "3": "the Speech from the Throne",
+        "4": "the sector’s plan"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found within the Departmental Plan."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found in the Departmental Plan.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Your department’s core responsibilities, expected results and indicators are found in the Departmental Plan.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found in the Departmental Plan.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found in the Departmental Plan."
       }
     },
     "q5": {
       "text": "The Prime Minister sets out their expectations and objectives for your department in: ",
       "options": {
-        "1": "The Speech from the Throne",
-        "2": "The Departmental Results Framework",
-        "3": "The mandate letter",
-        "4": "The Departmental Plan"
+        "1": "the Speech from the Throne",
+        "2": "the Departmental Results Framework",
+        "3": "the mandate letter",
+        "4": "the Departmental Plan"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines their expectations and objectives in the mandate letter to the minister responsible for the department.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines their expectations and objectives in the mandate letter to the minister responsible for the department.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines the expectations and objectives for your department in the mandate letter to the minister responsible.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines the expectations and objectives for your department in the mandate letter to the minister responsible.",
         "3": "<span class='v-right' /> <strong>Correct!</strong> The Prime Minister outlines their expectations and objectives in the mandate letter to the minister responsible for the department.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines their expectations and objectives in the mandate letter to the minister responsible for the department."
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines the expectations and objectives for your department in the mandate letter to the minister responsible."
       }
     },
     "q6": {
@@ -129,7 +129,7 @@ export default {
         "1": "Get a sense of the current situation by examining what was done in the recent past.",
         "2": "Look at previous work plans, budgets and reports.",
         "3": "Identify challenges from the previous years.",
-        "4": "Get a sense of the cultural context in your department/branch/directorate.",
+        "4": "Get a sense of the cultural context in your department, branch or directorate.",
         "5": "All of the above."
       },
       "feedback": {
@@ -141,7 +141,7 @@ export default {
       }
     },
     "q7": {
-      "text": "Choose the priorities to which your work plan activities should link, starting with the top.",
+      "text": "Choose the priorities your work plan activities should link to, starting from the top.",
       "options": {
         "1": "Departmental priorities, directorate priorities, government priorities",
         "2": "Government priorities, departmental priorities, directorate priorities",
@@ -159,7 +159,7 @@ export default {
         "1": "A new director is nominated",
         "2": "An employee leaves ",
         "3": "Mandatory training is pushed to next year",
-        "4": "Over 500 licenses have been issued ",
+        "4": "Over 500 licences have been issued ",
         "5": "Your software gets an update"
       },
       "feedback": {
@@ -170,15 +170,15 @@ export default {
     "q9": {
       "text": "What are a manager’s responsibilities?",
       "options": {
-        "1": "To establish government wide priorities",
+        "1": "To establish government-wide priorities",
         "2": "To negotiate government contracts",
-        "3": "To plan their unit’s activities",
-        "4": "To use public funds to carry out their unit’s activities",
-        "5": "To report on the status of their unit’s activities"
+        "3": "To plan the unit’s activities",
+        "4": "To use public funds to carry out the unit’s activities",
+        "5": "To report on the status of the unit’s activities"
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager is responsible for planning their unit’s activities, using public funds to carry out their unit’s activities and reporting on the status of their unit’s activities."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager is responsible for planning the unit’s activities, using public funds to carry out the unit’s activities and reporting on the status of the unit’s activities."
       }
     },
     "q10": {
@@ -216,12 +216,12 @@ export default {
       "options": {
         "1": "Modernize and renew the organization’s workforce to better serve Canadians",
         "2": "Work with Canadians in all areas of the economy across the country to improve conditions for investment",
-        "3": "Implement activity based workstations to improve team collaboration and communication"
+        "3": "Implement activity-based workstations to improve team collaboration and communication"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Work with Canadians in all areas of the economy across the country to improve conditions for investment.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Broad goal and commitment statements such as this are usually reserved for government priorities.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Work with Canadians in all areas of the economy across the country to improve conditions for investment."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Work with Canadians in all areas of the economy across the country to improve conditions for investment.”",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Broad goal and commitment statements such as this one are usually reserved for government priorities.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Work with Canadians in all areas of the economy across the country to improve conditions for investment.”"
       }
     },
     "q13": {
@@ -238,22 +238,22 @@ export default {
       }
     },
     "q14": {
-      "text": "Which are considered risks?",
+      "text": "Which of the following are considered to be risks?",
       "options": {
-        "1": "A 15 minute power failure, minor software bugs",
-        "2": "Licensing Fees, fisheries management",
-        "3": "Power failures, well managed fish stocks",
+        "1": "A 15-minute power failure, minor software bugs",
+        "2": "Licensing fees, fisheries management",
+        "3": "Power failures, well-managed fish stocks",
         "4": "Overfishing, staff turnover"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> A 15 minute power failure should not be sufficient to be considered a risk. Overfishing and staff turnover are risks.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  A 15-minute power failure shouldn’t be significant enough to be considered a risk. Overfishing and staff turnover are risks.",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are not risks. Overfishing and staff turnover are risks.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Well managed fish stocks are not risks. Overfishing and staff turnover are risks.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Well-managed fish stocks are not risks. Overfishing and staff turnover are risks.",
         "4": "<span class='v-right' /> <strong>Correct!</strong>"
       }
     },
     "q15": {
-      "text": "How often does a manager need to recertify in order to be able to continue to exercise their financial authority?",
+      "text": "How often does a manager need to recertify to be able to continue to exercise their financial authority?",
       "options": {
         "1": "Every year",
         "2": "Every 2 years",
@@ -292,7 +292,7 @@ export default {
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devriez tenir compte des priorités gouvernementales, ministérielles et de la direction, ainsi que du plan de travail, du budget et des rapports de l’année précédente lorsque vous rédigez votre nouveau plan de travail. À moins que les activités de votre collègue gestionnaire n’aient été transférées à votre équipe, vous n’en tiendrez pas compte. "
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Incorrect. Vous devriez tenir compte des priorités gouvernementales, ministérielles et de la direction, ainsi que du plan de travail, du budget et des rapports de l'année précédente lorsque vous rédigez votre nouveau plan de travail. À moins que les activités de votre collègue n'aient été transférées à votre équipe, vous n’en tiendrez pas compte. "
       }
     },
     "q3": {
@@ -305,7 +305,7 @@ export default {
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> C’est une bonne idée de commencer votre vision d’ensemble en consultant les priorités énoncées dans le discours du Trône."
+        "3": "<span class='v-right' /> <strong>Correct!</strong> Pour comprendre la vue d’ensemble, commencez en consultant les priorités énoncées dans le discours du Trône."
       }
     },
     "q4": {
@@ -332,10 +332,10 @@ export default {
         "4": "le plan ministériel"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre indique ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable du ministère."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  Correct! Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère."
       }
     },
     "q6": {
@@ -429,9 +429,9 @@ export default {
     "q12": {
       "text": "Lequel des éléments suivants est un exemple d’une priorité gouvernementale?",
       "options": {
-        "1": "Moderniser et renouveler les effectifs de l'organisation pour mieux servir les Canadiens ",
-        "2": "Travailler avec les Canadiens dans tous les secteurs de l'économie à travers le pays pour améliorer les conditions d'investissement",
-        "3": "Mettre en place des postes de travail basés sur les activités pour améliorer la collaboration et la communication au sein des équipes"
+        "1": "Moderniser et renouveler les effectifs de l'organisation pour mieux servir les Canadiens.",
+        "2": "Travailler avec les Canadiens dans tous les secteurs de l'économie à travers le pays pour améliorer les conditions d'investissement.",
+        "3": "Mettre en place des postes de travail basés sur les activités pour améliorer la collaboration et la communication au sein des équipes."
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est «&nbsp;Travailler avec les Canadiens dans tous les secteurs de l'économie à travers le pays pour améliorer les conditions d'investissement&nbsp;». ",

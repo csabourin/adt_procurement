@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2 class="pageTitle">
+    <h1 class="pageTitle">
       {{ $t('CreateBudget')}}
-    </h2>
+    </h1>
     <section>
       <b-row>
         <b-col>
@@ -23,46 +23,36 @@
                       <!-- Used to jump to activities<button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->
                       <span v-if="$i18n.locale=='en'">
 
-                        <h2>Introduction</h2>
-                        <p>In this lesson, you will learn how to create a budget that is in line with your work plan. People who have been doing this for a while will tell you that these two things - the work plan and the budget - are often done at the same time in a single step. However, in order to help you learn how to do each of these tasks well, we separated them. </p>
-                        <p>Creating a budget involves three main tasks: analyzing the available information, forecasting your budget requirements, and submitting your proposed budget. </p>
-                        <p>Analyzing means taking a good look at last year’s work plan and financial reports. If you have access to prior years, it’s a good idea to look at those, as well as the current financials, context and priorities of your organization. </p>
-                        <p>Forecasting means estimating costs and identifying those costs that may change significantly over the fiscal year.</p>
-                        <p>Once your budget requirements are complete, you submit your proposed budget. You may be asked to make adjustments before final approval.</p>
-                        <p>Ready to dive further into each of these steps? Great! Just before we do that, though, let’s take a moment to learn about how the government financial cycle works so that you can tie it in with your own work as a Manager. </p>
+                        <h2>1. Introduction</h2>
+                        <p>In this lesson, you will learn how to create a budget that aligns with your work plan. People who have been doing this for a while will tell you that these 2 things—the work plan and the budget—are often done at the same time in a single step. However, in order to help you learn how to do each of these tasks well, we’ve separated them. </p>
+                        <p>Creating a budget involves 3 main tasks: analyzing the available information, forecasting the budget requirements, and submitting your proposed budget. </p>
+                        <p>Analyzing means taking a good look at last year’s work plan and financial reports. If you have access to previous years, it’s a good idea to look at those, as well as the current financials, new initiatives, context and priorities for your organization.</p>
+                        <p>Forecasting means estimating costs and identifying costs that may change significantly over the fiscal year.</p>
+                        <p>Once your budget requirements are complete, submit your proposed budget to upper management. It will then be moved up to the departmental level. You may be asked to make adjustments before final approval.</p>
+                        <p>Ready to dive further into each of these steps? Great! Just before we do that, though, let’s take a moment to learn how the government financial cycle works, so that you can tie it in with your own work as a manager.</p>
 
                         <hr>
 
                         <h2>The Financial Cycle of the Government of Canada</h2>
-                        <p>Let’s look at how you create your budget requirements in the larger context of the Financial Cycle of the Government of Canada.</p>
-                        <p>The fiscal year of Government runs from April 1 to March 31.</p>
-                        <p>As you can see, some activities are at both the government-wide level and organization level.</p>
-                        <p>Key activities happen to prepare for the next fiscal year, others are happening during the fiscal year, and others occur after it is over.</p>
+                        <p>Let’s look at how you create your budget requirements in the larger context of the financial cycle of the Government of Canada.</p>
+                        <p>The government fiscal year runs from April 1 to March 31.</p>
+                        <p>Some activities exist at both the government-wide level and at the organizational level. Key activities happen in preparation for the next fiscal year, others happen  during the fiscal year, and others occur after the year has ended.</p>
                         <p>As a manager, you’re building your work plan and budget requirements for the next fiscal year in the fall.</p>
-                        <p>You could be responsible for a new program being established through a Budget proposal or a Memorandum to Cabinet. </p>
-                        <p>These are discussed at the Finance Committee pre-budget consultations.</p>
-                        <p>When the new program is announced in the Federal budget, you would then need to prepare a Treasury Board submission, and seek approval to access the funding.</p>
-                        <p>Interim Supply provides the initial funding to kick off the year while waiting for Parliament to approve the Full Supply.</p>
-                        <p>Now where do you fit in?</p>
-                        <p>Your work plan feeds into your organization’s Departmental Plan. </p>
-                        <p>And your budget rolls up into the Main Estimates, which present the resources required by each organization to fulfill its mandate and cover its priorities for the coming fiscal year. </p>
-                        <p>Full Supply, based on the Main Estimates, is approved around the end of June.</p>
-                        <p>From the moment that Full Supply has been approved, starting budgets are officialized for each department.</p>
-                        <p>Budgets are formalized into departmental financial systems, and business plans are reflected in the performance agreements of managers and employees. </p>
-                        <p>Parliament can grant additional spending powers during the year, through Supplementary Estimates.</p>
-                        <p>They may have an impact on your department, which may affect your budget.</p>
-                        <p>You will spend the money in your budget throughout the year.   </p>
-                        <p>This eventually makes its way, at a high level, into the Public Accounts of Canada. </p>
-                        <p>Towards the end of the year, you are asked for information on the results you achieved on the activities in your work plan.  </p>
-                        <p>This becomes part of your organization's Departmental Results Report. </p>
-                        <p>And by then, you’re already starting your work plan and budget requirements for the next fiscal year. </p>
-
+                        <p>You could be responsible for a new program being established through a budget proposal or a memorandum to Cabinet. These are discussed in the Standing Committee on Finance pre-budget consultations.</p>
+                        <p>When the new program is announced in the federal budget, you would then need to prepare a Treasury Board submission, and seek approval to access the funding.</p>
+                        <p>To start off the fiscal year, there’s an interim supply, which provides initial funding to kick off the year. This is usually three twelfths of your budget. You’ll get this while waiting for Parliament to approve the full supply.</p>
+                        <p>Now where do you fit in? Your work plan feeds into your organization’s Departmental Plan. And your budget moves up into the main estimates, which present the resources allocated to each organization to fulfill its mandate and cover its priorities for the coming fiscal year. </p>
+                        <p>Full supply is based on the main estimates and gets approved around the end of June. From the moment full supply has been approved, starting budgets are made official for each department. Budgets are formalized into departmental financial systems, and business plans are reflected in the performance agreements of managers and employees.</p>
+                        <p>Parliament can grant additional spending powers during the year, through supplementary estimates. They have an impact on your department, which may affect your budget.</p>
+                        <p>You spend the money in your budget throughout the year. This eventually makes its way, at a higher level, into the Public Accounts of Canada. </p>
+                        <p>Towards the end of the year, you will be asked for information on the results you achieved on the activities in your work plan. This becomes part of your organization's Departmental Results Report.</p>
+                        <p>And by then, you will already be starting your work plan and budget requirements for the next fiscal year.</p>
                         <hr>
 
-                        <h2>Analyze a Budget - Key Terms</h2>
-                        <p>Now that you have a better sense of the financial cycle of the Government of Canada and of how it relates to your work as a manager, let’s go back to our Analyze-Forecast-Submit workflow to creating a budget. </p>
+                        <h2>3. Analyze a Budget - Key Terms</h2>
+                        <p>Now that you have a better sense of the financial cycle of the Government of Canada, and how it relates to your work as a manager, let’s go back to our analyze-forecast-submit workflow to create a budget.</p>
                         <p>The more often you do this, the more accurate your budget will be. Don’t worry, your ability to make precise forecasts will increase with experience. You got this!</p>
-                        <p>The following activity will allow you to examine the key terms regarding budgets. </p>
+                        <p>In the following activity, you will look at the key terms regarding budgets.</p>
 
                         <hr>
 
@@ -121,46 +111,36 @@
                       </span>
                       <span v-if="$i18n.locale=='fr'">
 
-                        <h2>Introduction</h2>
-                        <p>Dans cette leçon, vous apprendrez comment créer un budget conforme à votre plan de travail. Les gens qui le font depuis un certain temps vous diront que ces deux choses - le plan de travail et le budget - se font souvent en même temps et en une seule étape. Cependant, afin de vous aider à apprendre à bien faire chacune de ces tâches, nous les avons séparées. </p>
-                        <p>La création d’un budget implique trois tâches principales : analyser les informations disponibles, prévoir vos besoins budgétaires et soumettre votre budget proposé. </p>
-                        <p>Analyser, c’est bien examiner le plan de travail et les rapports financiers de l’an dernier. Si vous avez accès aux années antérieures, il est bon de les examiner, ainsi que les finances, le contexte et les priorités actuels de votre organisation. </p>
-                        <p>Prévoir, c’est estimer les coûts et identifier les coûts qui peuvent changer de façon significative au cours de l’exercice financier.</p>
-                        <p>Une fois vos besoins budgétaires complétés, vous soumettez votre budget proposé. Il se peut qu’on vous demande d’apporter des ajustements avant l’approbation finale.</p>
-                        <p>Prêt à plonger plus loin dans chacune de ces étapes ? Super ! Mais juste avant cela, prenons un moment pour en savoir plus sur le fonctionnement du cycle financier du gouvernement afin que vous puissiez le relier à votre propre travail en tant que gestionnaire.</p>
+                        <h2>1. Introduction</h2>
+                        <p>Dans cette leçon, vous apprendrez comment créer un budget conforme à votre plan de travail. Les gens qui le font depuis un certain temps vous diront que ces 2 choses — le plan de travail et le budget — se font souvent en même temps en une seule étape. Cependant, afin de vous aider à bien faire chacune de ces tâches, nous les avons séparées.</p>
+                        <p>La création du budget implique 3 tâches principales : analyser les informations disponibles, prévoir vos besoins budgétaires et soumettre votre budget proposé.</p>
+                        <p>Analyser, c'est bien examiner le plan de travail et les rapports financiers de l'an dernier. Si vous avez accès aux années antérieures, il est bon de les examiner, ainsi que les finances, nouvelles initiatives, le contexte et les priorités actuels de votre organisation.</p>
+                        <p>Prévoir, c'est estimer les coûts et déterminer les coûts qui pourraient changer de façon significative au cours de l'exercice financier.</p>
+                        <p>Une fois ces besoins budgétaires établis, vous soumettez votre proposition de budget à la haute direction. Il sera ensuite regroupé au niveau du ministère. Il se peut qu'on vous demande d'apporter des ajustements avant l'approbation finale.</p>
+                        <p>Prêt à plonger dans chacune de ces étapes? Super! Mais juste avant, prenons un moment pour en savoir plus sur le fonctionnement du cycle financier du gouvernement afin que vous puissiez le relier à votre propre travail de gestionnaire.</p>
 
                         <hr>
 
-                        <h2>Le cycle financier du gouvernement du Canada</h2>
-                        <p>Voyons comment vous créez vos besoins budgétaires dans le contexte plus large du cycle financier du gouvernement du Canada.</p>
+                        <h2>2. Le cycle financier du gouvernement du Canada</h2>
+                        <p>Voyons comment créer vos besoins budgétaires dans le contexte plus large du cycle financier du gouvernement du Canada.</p>
                         <p>L'exercice financier du gouvernement va du 1er avril au 31 mars.</p>
-                        <p>Comme vous pouvez le constater, certaines activités se déroulent à la fois à l’échelle du gouvernement et de l'organisation.</p>
-                        <p>Des activités clés se préparent pour le prochain exercice, d’autres se déroulent au cours de l’exercice et d’autres encore après la fin de celui-ci.</p>
-                        <p>En tant que gestionnaire, vous élaborez votre plan de travail et vos exigences budgétaires pour le prochain exercice financier à l’automne.</p>
-                        <p>Vous pourriez être responsable d’un nouveau programme établi par le biais d’une proposition budgétaire ou d’un mémoire au Cabinet. </p>
-                        <p>Ces questions sont discutées lors des consultations prébudgétaires du Comité des finances.</p>
-                        <p>Lorsque le nouveau programme sera annoncé dans le budget fédéral, vous devrez alors préparer une présentation au Conseil du Trésor et demander l’autorisation d’accéder au financement.</p>
-                        <p>Les crédits provisoires fournissent le financement initial pour lancer l’année en attendant que le Parlement approuve les crédits intérimaires.</p>
-                        <p>Maintenant, où vous situez vous ?</p>
-                        <p>Votre plan de travail est intégré au plan ministériel de votre organisation. </p>
-                        <p>De plus, votre budget se retrouve dans le Budget principal des dépenses, qui présente les ressources dont chaque organisme a besoin pour remplir son mandat et couvrir ses priorités pour le prochain exercice financier. </p>
-                        <p>Les crédits complets, fondés sur le Budget principal des dépenses, sont approuvés vers la fin de juin.</p>
-                        <p>À partir du moment où l'Approvisionnement intégral a été approuvé, les budgets de départ sont officialisés pour chaque ministère.</p>
-                        <p>Les budgets sont officialisés dans les systèmes financiers ministériels et les plans d’activités sont reflétés dans les ententes de rendement des gestionnaires et des employés. </p>
-                        <p>Le Parlement peut accorder des pouvoirs de dépenser supplémentaires au cours de l’exercice, au moyen du Budget supplémentaire des dépenses.</p>
-                        <p>Elles peuvent avoir une incidence sur votre ministère, ce qui peut avoir une incidence sur votre budget.</p>
-                        <p>Vous dépenserez l’argent dans votre budget tout au long de l’année.   </p>
-                        <p>Cela finit par se retrouver, à un niveau élevé, dans les Comptes publics du Canada. </p>
-                        <p>Vers la fin de l’année, on vous demande des renseignements sur les résultats obtenus par rapport aux activités prévues dans votre plan de travail.  </p>
-                        <p>Cela fait partie du rapport ministériel sur les résultats de votre organisation. </p>
-                        <p>Et d’ici là, vous commencez déjà votre plan de travail et vos exigences budgétaires pour le prochain exercice financier. </p>
-
+                        <p>Certaines activités se déroulent à la fois à l'échelle du gouvernement et de l'organisation. Des activités clés se préparent pour l’exercice suivant, d'autres se déroulent au cours de l'exercice et d'autres encore après la fin de celui-ci.</p>
+                        <p>Comme gestionnaire, vous élaborez à l’automne votre plan de travail et vos besoins budgétaires pour l’exercice financier suivant.</p>
+                        <p>Vous pourriez être responsable d'un nouveau programme établi par le biais d'une proposition budgétaire ou d'un mémoire au Cabinet. Ces questions sont discutées lors de consultations prébudgétaires du Comité permanent des finances.</p>
+                        <p>Lorsque le nouveau programme sera annoncé dans le budget fédéral, vous devrez alors préparer une présentation au Conseil du Trésor et demander l'autorisation d'accéder au financement.</p>
+                        <p>Pour lancer l'année, les crédits provisoires fournissent le financement initial, généralement les trois douzièmes de votre budget, en attendant que le Parlement approuve les crédits intérimaires.</p>
+                        <p>Maintenant, où vous situez-vous? Votre plan de travail est intégré au plan ministériel de votre organisation. De plus, votre budget se retrouve dans le Budget principal des dépenses, qui présente les ressources allouées à chaque organisation pour remplir son mandat et couvrir ses priorités pour l'exercice financier suivant.</p>
+                        <p>Les crédits complets, fondés sur le Budget principal des dépenses, sont approuvés vers la fin juin. À partir du moment où l'approvisionnement intégral a été approuvé, les budgets de départ sont officialisés pour chaque ministère. Les budgets sont officialisés dans les systèmes financiers ministériels et les plans d'activités sont reflétés dans les ententes de rendement des gestionnaires et des employés.</p>
+                        <p>Le Parlement peut accorder des pouvoirs de dépenser supplémentaires au cours de l'exercice, au moyen du Budget supplémentaire des dépenses. Elles peuvent avoir une incidence sur votre ministère, ce qui peut avoir une incidence sur votre budget.</p>
+                        <p>Vous dépensez l'argent dans votre budget tout au long de l'année. Cela finit par se retrouver, à un niveau élevé, dans les Comptes publics du Canada. </p>
+                        <p>Vers la fin de l'année, on vous demande des renseignements sur les résultats obtenus par rapport aux activités prévues dans votre plan de travail. Cela fait partie du rapport ministériel sur les résultats de votre organisation. </p>
+                        <p>Et d'ici là, vous commencez déjà votre plan de travail et les besoins budgétaires pour le prochain exercice financier.</p>
                         <hr>
 
-                        <h2>Analyser un budget - Termes clés</h2>
-                        <p>Maintenant que vous avez une meilleure idée du cycle financier du gouvernement du Canada et de la façon dont il est lié à votre travail de gestionnaire, revenons à notre processus d’analyse, de prévision et de présentation de budget. </p>
-                        <p>Ne vous inquiétez pas, votre capacité à faire des prévisions précises  augmentera avec l’expérience. Vous y arriverez !</p>
-                        <p>L'activité suivante vous permettra d’examiner les termes clés concernant les budgets. </p>
+                        <h2>3. Analyser un budget - Termes clés</h2>
+                        <p>Maintenant que vous avez une meilleure idée du cycle financier du gouvernement du Canada et de la façon dont il est relié à votre travail de gestionnaire, revenons à notre processus d'analyse, de prévision et de présentation de budget. </p>
+                        <p>Votre budget deviendra de plus en plus précis à force de le faire. Ne vous inquiétez pas, votre aptitude à faire des prévisions précises augmentera avec l'expérience. Vous y arriverez!</p>
+                        <p>L'activité suivante vous permettra d'examiner les termes clés des budgets.</p>
 
                         <hr>
 

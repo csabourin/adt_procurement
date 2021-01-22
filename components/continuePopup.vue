@@ -55,7 +55,7 @@ export default {
     },
     "fr":{
       "title": "Continuer au segment suivant.",
-      "content": "Vous avez complété cette section, continuez à la prochaine&nbsp;!"
+      "content": "Vous avez complété cette section, continuez à la prochaine!"
     }
   }
 </i18n>

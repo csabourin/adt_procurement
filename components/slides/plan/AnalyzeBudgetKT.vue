@@ -86,7 +86,7 @@ export default {
       }
     },
     "q3": {
-      "sentence": "Temp help is considered a contract and paid out of {0}.",
+      "sentence": "Temporary help is considered a contract and paid out of {0}.",
       "choices": {
         "1": "Operating &amp; Maintenance (O&amp;M)",
         "2": "Salary",
@@ -94,8 +94,8 @@ export default {
         "4": "Capital"
       },
       "feedback": {
-        "right": "The Operating & Maintenance (O&M) budget would have a line item for a temp help contract. ",
-        "wrong": "The Operating & Maintenance (O&M) budget would have a line item for a temp help contract. "
+        "right": "The Operating & Maintenance (O&M) budget would have a line item for a temporarys help contract. ",
+        "wrong": "The Operating & Maintenance (O&M) budget would have a line item for a temporary help contract. "
       }
     },
     "q4": {
@@ -212,7 +212,7 @@ export default {
   "fr": {
     "instructions": "Voici l&rsquo;occasion pour vous de confirmer votre connaissance des budgets et des coûts. Sélectionnez le meilleur choix pour remplir les blancs. ",
     "q1": {
-      "sentence": "{0} comprend les postes de durée indéterminée, déterminée et occasionnelle, les heures supplémentaires, la rémunération au rendement et les congés.",
+      "sentence": "{0} omprend les postes permanents, de durée déterminée et de durée occasionnelle, les heures supplémentaires, la rémunération au rendement et les demandes de remboursement des congés.",
       "choices": {
         "1": "Fonctionnement et entretien (F et E)",
         "2": "Salaires",

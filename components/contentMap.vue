@@ -8,7 +8,7 @@
               <nuxt-link :to="localePath('index')" v-html="$t('homePage')" exact />
             </li>
           </menu>
-          <span ref="item"><h2 class="colorBar1">{{$t('plan')}}</h2></span>    
+          <span ref="item"><h2 class="colorBar1"><span class="v-inv">{{$t('navigationMenu')}}</span> {{$t('plan')}}</h2></span>    
           <menu style="list-style: none">
             <li role="menuitem">
               <nuxt-link :to="localePath('buildWP')" v-html="$t('BuildWorkPlan')" />
@@ -23,7 +23,7 @@
               <nuxt-link :to="localePath('exam1')" v-html="$t('TestPlan')" />
             </li>
           </menu>
-          <h2 class="colorBar2">{{$t('spend')}}</h2>
+          <h2 class="colorBar2"><span class="v-inv">{{$t('navigationMenu')}}</span> {{$t('spend')}}</h2>
           <menu style="list-style: none">
             <li role="menuitem">
               <nuxt-link :to="localePath('spendPart1')" v-html="$t('InitiateAuthorizeSpending')" />
@@ -41,7 +41,7 @@
               <nuxt-link :to="localePath('exam2')" v-html="$t('TestSpend')" />
             </li>
           </menu>
-          <h2 class="colorBar3">{{$t('report')}}</h2>
+          <h2 class="colorBar3"><span class="v-inv">{{$t('navigationMenu')}}</span> {{$t('report')}}</h2>
           <menu style="list-style: none">
             <li role="menuitem">
               <nuxt-link :to="localePath('reportPart1')" v-html="$t('ConductPeriodicVarianceReporting')" />

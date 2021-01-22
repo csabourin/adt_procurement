@@ -39,7 +39,7 @@
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
-            <h3>Établir un budget</h3>
+            <h3>Créer un budget</h3>
             <ul>
               <li>Essentiellement, les budgets représentent la conversion des plans de travail en termes financiers. En d’autres mots, le budget représente le montant que vous prévoyez dépenser pour réaliser les activités de votre plan de travail.</li>
               <!--
@@ -47,13 +47,13 @@
                 <li>Les budgets correspondent essentiellement aux plans de travail exprimés en termes financiers. Autrement dit, le budget représente le montant que vous prévoyez dépenser pour réaliser votre plan.</li>
               -->
 
-              <li>Pour créer votre budget, vous devez analyser les informations de diverses sources, prévoir vos nouveaux besoins budgétaires et soumettre votre nouveau budget pour approbation à la direction.</li>
+              <li>Habituellement, les budgets comprennent les coûts de fonctionnement et d'entretien (F et E) et les coûts salariaux. Selon le mandat de votre ministère, certains budgets peuvent également inclure des montants d'immobilisations et de subventions et contributions.</li>
               <!--
                 NOUVELLE VERSION? (CSPS-TD)
                 <li>Pour créer un budget, vous passez en revue le budget de l’année précédente afin de déterminer quels salaires, quelles dépenses de fonctionnement et d’entretien et, dans certains cas, de capital et des subventions et contributions vous devrez conserver, éliminer ou ajouter.</li>
               -->
 
-              <li>Habituellement, les budgets comprennent les co&ucirc;ts de fonctionnement et d’entretien (F et E) et les co&ucirc;ts salariaux. Selon le mandat de votre minist&egrave;re, certains budgets peuvent également inclure des montants d’immobilisations et de subventions et contributions.</li>
+              <li>Pour créer votre budget, vous devez analyser les informations de diverses sources, prévoir vos nouveaux besoins budgétaires et soumettre votre nouveau budget pour approbation à la direction.</li>
               <!--
                 NOUVELLE VERSION? (CSPS-TD)
                 <li>Vous comparez le budget de l’année précédente au nouveau plan de travail en vous assurant que toutes les dépenses liées aux activités sont prises en compte. Vous prévoyez les dépenses et soumettez le nouveau budget proposé pour approbation, en y apportant des modifications tout au long de l’année à mesure que les activités évoluent.</li>

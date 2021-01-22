@@ -18,6 +18,7 @@
         <b-col cols="5" sm="2" class="text-right" style="justify-content: flex-end">
           <fileMenu />
           <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
+            <span class="v-inv">{{$t('languageToggle')}}</span>
             <langswitch v-bind:iconWidth="60" v-bind:displayLang="locale.code" :lang="locale.code" v-bind:iconTitle="locale.name" />
           </nuxt-link>
         </b-col>
@@ -1192,6 +1193,10 @@ img {
     opacity: 0.6
   }
 
+  /* Background for not-collapsed buttons  */
+  /*.not-collapsed{
+    background-color:black;
+  }*/
 
 a:hover,
 a:focus {

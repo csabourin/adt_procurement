@@ -164,8 +164,8 @@
               "text": "Currently, “Implement flexible work hours” is a <span class='bolder'>mitigation</span> strategy for the overfishing risk. Where should it appear in the work plan?",
               "options":
               {
-                  "1": "Keep it as a mitigation strategy for the “Overfishing.” risk",
-                  "2": "It should be a mitigation strategy for  the “Staff turnover.” risk",
+                  "1": "Keep it as a mitigation strategy for the “Overfishing” risk.",
+                  "2": "It should be a mitigation strategy for  the “Staff turnover” risk.",
                   "3": "Remove “Implement flexible work hours” completely."
               },
               "feedback":
@@ -253,13 +253,13 @@
               "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d’<span class='bolder'>atténuation</span> du risque de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
               "options":
               {
-                  "1": "Gardez-la comme stratégie d’atténuation du risque pour la &laquo; Surpêche &raquo;.",
+                  "1": "Gardez-la comme stratégie d’atténuation du risque de &laquo; Surpêche &raquo;.",
                   "2": "Il devrait faire partie de la stratégie d’atténuation du risque &laquo; Roulement du personnel &raquo;.",
                   "3": "Enlever complètement &laquo; Horaires de travail flexibles &raquo;."
               },
               "feedback":
               {
-                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, les heures de travail flexibles se rapportent plus à l'activité &laquo; Gérer et administrer de la direction &raquo;.",
+                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, les heures de travail flexibles se rapportent plus à l'activité &laquo; Gérer et administrer la direction &raquo;.",
                   "2": "<span class='v-right' />  <strong>Correct!</strong>",
                   "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> En fait, &laquo; Horaires de travail flexibles &raquo; est une stratégie valable pour attirer et retenir les employés."
               }
@@ -275,9 +275,9 @@
               },
               "feedback":
               {
-                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne l'activité de «&nbsp;Délivrer des permis de p&ecirc;che commerciale.",
+                  "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne l’activité de &laquo; Délivrer des permis de pêche commerciale &raquo;.",
                   "2": "<span class='v-right' />  <strong>Correct!</strong>",
-                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne l'activité de «&nbsp;Délivrer des permis de p&ecirc;che commerciale."
+                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce livrable concerne  l’activité de &laquo; Délivrer des permis de pêche commerciale &raquo;."
               }
           },
           "q3":
@@ -292,8 +292,8 @@
               "feedback":
               {
                   "1": "<span class='v-right' /> <strong>Correct!</strong>",
-                  "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un poste de gestionnaire serait sous sous la rubrique &laquo; Gérer et administrer la direction &raquo;.",
-                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Un poste de gestionnaire serait sous sous la rubrique &laquo; Gérer et administrer la direction &raquo;."
+                  "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>   Le poste de gestionnaire devrait apparaître avec l’activité &laquo; Gérer et administrer la direction &raquo;.",
+                  "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Le poste de gestionnaire devrait apparaître avec l’activité &laquo; Gérer et administrer la direction &raquo;."
 
               }
           }

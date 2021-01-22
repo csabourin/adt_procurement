@@ -40,7 +40,7 @@ export default {
   InitiateAuthorizeSpending: "Initiate and Authorize Commitments",
   ExerciseFinancialAuthority: "Exercise Financial Authority",
   MonitorControlFinances: "Monitor and Control Finances",
-  ConductPeriodicVarianceReporting: "Prepare Financial Situation Reports",
+  ConductPeriodicVarianceReporting: "Prepare the Financial Situation Reports",
   ContributeReporting: "Contribute to External Reporting",
   Test: "Test",
   ShowInstructions:"Show Instructions",
@@ -56,6 +56,9 @@ export default {
   justExam: "I just want to take the exam",
   refreshShort: "Refresh my Knowledge",
   justExamShort: "Take the Exam",
+
+  navigationMenu: "Navigation menu",
+  languageToggle: "Select here to go to the French page",
   
   // Text for Exams
   notPassed: "You have not passed the test. You may review your answers and then try again.",
@@ -81,26 +84,26 @@ export default {
   },
   
   WPLastYear:{
-    line1:"Last Year's",
-    line2:"Work Plan",
-    name:"Last Year's Work Plan",
+    line1:"Last year's",
+    line2:"work plan (Annex A)",
+    name:"Last year’s work plan (Annex A)",
     download: "Download last year's work plan",
     filename: "WorkPlan_lastYear.pdf",
     HTMLFilename: "../lastYearsWP/en.html"
   },
   
   budgetLastYear:{
-    line1:"",
-    line2:"Budget",
-    name:"Last Year's Budget",
+    line1:"Last year's",
+    line2:"budget (Annex D)",
+    name:"Last year’s budget (Annex D)",
     download: "Download last year's budget",
     filename: "Budget_lastYear.xlsx",
   },
   
   reportsLastYear:{
-    line1:"Last Year's",
-    line2:"Reports",
-    name:"Last Year's Reports",
+    line1:"Last year's",
+    line2:"reports (Annex E)",
+    name:"Last year’s report(s) (Annex E)",
     download: "Download last year's reports",
     filename: "Report_lastYear.docx",
   },

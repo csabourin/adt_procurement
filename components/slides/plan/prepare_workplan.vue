@@ -142,8 +142,8 @@
 <i18n>{
     "en":
     {
-      "pwpInstructions": "Your director shares with you this coming year’s priorities for your directorate: “Protect aquatic ecosystems, sustain fisheries, and manage the issuing of licences.”",
-      "pwpTitle": "Select the best answer.",
+      "pwpInstructions": "Your director shares this coming year’s priorities for your directorate: “Protect aquatic ecosystems, sustain fisheries, and manage the issuing of licences.”",
+      "pwpTitle": "Please select one",
       "pwpGovtPri": "<strong>Government priorities</strong>",
       "pwpDeptPri": "<strong>Departmental priorities</strong>",
       "pwpDirPri": "<strong>Directorate priorities</strong>",
@@ -164,7 +164,7 @@
       },
       "q1a": {
           "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority for the government, our scope is more about fisheries, not climate change.",
-          "2": "<span class='v-right' /> <strong>Correct!</strong> Our priority is to protect the fisheries so that they are still around in 40 years for our grandchildren!",
+          "2": "<span class='v-right' /> <strong>Correct!</strong> Our priority is to protect the fisheries so that they are still around in 40 years for the next generation!",
           "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While this is a great priority for the government, your unit’s scope is more about fisheries, not protecting the oceans."
       },
       "q2":{
@@ -211,13 +211,13 @@
       },
       "q1a": {
           "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante pour le gouvernement, notre responsabilité porte davantage sur la pêche que sur les changements climatiques.",
-          "2": "<span class='v-right' /> <strong>Correct!</strong> Notre priorité est de protéger la pêche pour qu’elle existe encore dans 40 ans pour nos petits-enfants!",
+          "2": "<span class='v-right' /> <strong>Correct!</strong> Notre priorité est de protéger la pêche pour qu’elle existe encore dans 40 ans la prochaine génération",
           "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante pour le gouvernement, votre unité s’occupe davantage de la pêche que de la protection des océans."
       },
       "q2":{
         "1": "Contribuer à la durabilité environnementale, économique et sociale du secteur de l’aquaculture canadien en élaborant de nouvelles lois fédérales.",
         "2": "Garantir l’accès à des ports sûrs, intervenir en cas d’incident sur l’eau et minimiser ou éviter les impacts négatifs sur les océans du Canada suite à des catastrophes environnementales.",
-        "3": "Soutenir une pêche commerciale, autochtone et récréative qui soit productive et durable, l’aquaculture, et d’autres industries océaniqus."
+        "3": "Soutenir une pêche commerciale, autochtone et récréative qui soit productive et durable, l’aquaculture, et d’autres industries océaniques."
       },
       "q2a": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante, notre responsabilité porte davantage sur les pêches.",

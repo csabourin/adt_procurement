@@ -33,7 +33,7 @@
 
                         <hr>
 
-                        <h2>2. The Financial Cycle of the Government of Canada</h2>
+                        <h2>3. The Financial Cycle of the Government of Canada</h2>
                         <p>Let’s look at how you create your budget requirements in the larger context of the financial cycle of the Government of Canada.</p>
                         <p>The government fiscal year runs from April 1 to March 31.</p>
                         <p>Some activities exist at both the government-wide level and at the organizational level. Key activities happen in preparation for the next fiscal year, others happen  during the fiscal year, and others occur after the year has ended.</p>

@@ -93,11 +93,11 @@ export default {
 <i18n>
   {
   "en":{
-  "instructions":"Match the items on the left with the corresponding answer to the right.",
+  "instructions":"Match the term to the definition.",
   "incomplete":"Please answer every questions"
   },
   "fr":{
-  "instructions":"Associez les items de gauche avec leur réponse correspondante à droite.",
+  "instructions":"Faites correspondre le terme à la définition.",
   "incomplete":"Veuillez répondre à chaque question."
   }
   }

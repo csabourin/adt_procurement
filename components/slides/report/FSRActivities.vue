@@ -107,10 +107,10 @@ export default {
       },
       "feedback": {
         "1": "<span class='v-right' /><strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>  Vous devez quand même payer les achats approuvés. Vos engagements ne seront pas modifiés.",
-        "3": "<span class='v-wrong' /><strong>Incorrect.</strong>  À moins qu’il n’y ait eu une mauvaise utilisation des fonds par l’employé, ce dernier n’aura pas à rembourser les achats approuvés."
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>  Vous devez quand même payer les achats approuvés. Vos Engagements ne seront pas modifiés. Le Service des finances annulera la carte et en délivrera une nouvelle. Vous devrez également valider vos dépenses pour vous assurer qu'il n'y a pas de mauvaise utilisation des fonds.",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong>  À moins qu'il n'y ait eu une mauvaise utilisation des fonds par l'employé, ce dernier n'aura pas à rembourser les achats approuvés. Le Service des finances  annulera la carte et en délivrera une nouvelle. Vous devrez également valider vos dépenses pour vous assurer qu'il n'y a pas de mauvaise utilisation des fonds."
       },
-      "conclusion": "Le Service des finances annulera la carte et en délivrera une nouvelle. Vous devrez également valider vos dépenses pour vous assurer qu’il n’y a pas de mauvaise utilisation des fonds."
+      "conclusion": "Le Service des finances annulera la carte et en délivrera une nouvelle. Vous devrez également valider vos dépenses pour vous assurer qu'il n'y a pas de mauvaise utilisation des fonds."
     }
   }
 }

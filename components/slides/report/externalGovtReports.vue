@@ -50,7 +50,7 @@ export default {
         "q1":
         {
             "dotsRight": [
-                "Rapport ministériel sur les résultats",
+                "Rapport sur les résultats ministériels",
                 "Rapports financiers trimestriels (RFT)",
                 "Divulgation proactive ",
                 "Cadre de responsabilisation de gestion (CRG)",

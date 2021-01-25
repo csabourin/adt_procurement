@@ -27,7 +27,7 @@
               <ul>
                 <ul>
                   <li>fournissent le portrait financier le plus récent des finances de l'organisme à une date donnée;</li>
-                  <li>sont des outils permettant aux gestionnaires de vérifier réguli&egrave;rement les finances courantes, les risques, les excédents ou les déficits potentiels dans leurs budgets;</li>
+                  <li>sont des outils permettant aux gestionnaires de vérifier régulièrement les finances courantes, les risques, les excédents ou les déficits potentiels dans leurs budgets;</li>
                   <li>sont lancés et dirigés par le dirigeant principal des finances;</li>
                   <li>permettent au dirigeant principal des finances de faire des recommandations aux cadres supérieurs sur les ressources financi&egrave;res nécessaires pour obtenir des résultats.</li>
                 </ul>

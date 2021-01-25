@@ -42,39 +42,39 @@
                         <p>* may not authorize sections 33 and 34 for the same transaction or invoice; a financial officer will perform section 33; <br />* may not authorize section 41 for a contract and section 34 related to the same contract; a procurement officer will perform section 41; <br />* may not authorize any transaction for which they may be perceived as having a personal benefit.</p>
                         <p>&nbsp;</p> -->
 
-                        <h2>Certification Authority</h2>
+                        <h2>1. Certification Authority</h2>
                         <p>In general, no invoice should be paid until all goods are received or services performed.</p>
-                        <p>Exercising your certification authority under Section 34 essentially means that you pause to attest that the goods and services that you received match the invoice to be paid. </p>
-                        <p>While perhaps other people on your team may be able to make that assessment, it is you, as the delegated manager, who bears the weight of the accountability. As such, you need to make sure that the invoice is accurate, that the financial coding is also accurate. </p>
-                        <p>Of course, you can only do this if you have the proper authority to make that assessment so be sure to check that too!</p>
+                        <p>Exercising your certification authority under section 34 of the Financial Administration Act essentially means that you pause to attest that the goods and services you received match the invoice.</p>
+                        <p>While other people on your team may be able to make that assessment, it is you, as the delegated manager, who bears the weight of the accountability. As such, you need to make sure that the invoice is accurate—and that the financial coding is also accurate.</p>
+                        <p>Of course, you can only do this if you have the proper authority to make that assessment. So be sure to check that too!</p>
 
                         <hr>
 
-                        <h2>Accuracy of Invoice</h2>
-                        <p>Before signing off on an invoice to attest of its accuracy, the manager, usually with the help of their administrative staff, verifies the accuracy of the invoice or claim by looking at the following elements: </p>
+                        <h2>2. Accuracy of Invoice</h2>
+                        <p>Before signing off on an invoice, the manager, usually with the help of their administrative staff, verifies the accuracy of an invoice or claim by looking at the following elements:</p>
                         <ul>
-                          <li>The date issued: verify that the invoice was issued on or after the order date. Or, in the case of a contract, that it was issued during the contract period</li>
-                          <li>Quantities: confirm that the items claimed line up with items ordered </li>
-                          <li>Taxes: validate that the amount for taxes is accurate</li>
-                          <li>Supplier or payee: make sure that their information is  accurate and that the supplier or payee is eligible for payment</li>
-                          <li>Status: Verify that the invoice has not already been paid</li>
+                          <li>The date issued – verify that the invoice was issued on or after the order date; or, in the case of a contract, that it was issued during the contract period.</li>
+                          <li>Quantities – confirm that the items claimed line up with the items ordered. </li>
+                          <li>Taxes – validate that the amount for taxes is accurate and has appropriate GST or PST numbers.</li>
+                          <li>Supplier or payee – make sure that their information is  accurate and that the supplier or payee is eligible for payment.</li>
+                          <li>And status – verify that the invoice has not already been paid</li>
                         </ul>
                         <p>You may need to go back to the supplier to correct the invoice before you can sign section 34.</p>
                         <p>Invoices must be paid within 30 days from the time the department receives the invoice to avoid interest charges.</p>
 
                         <hr>
 
-                        <h2>Processing the Invoice</h2>
-                        <p>Once the invoice is validated, the manager verifies the financial coding and approves section 34. This approval is done either via a signature on paper or electronically, depending on the practices in your department. </p>
-                        <p>The approved invoice is then sent to the finance unit, who will pay the invoice, pursuant to section 33. </p>
-                        <p>Keep in mind that you</p>
+                        <h2>3. Processing the Invoice</h2>
+                        <p>Once the invoice is validated, the manager verifies the financial coding and approves section 34. This approval is done with a signature either on paper or electronically, depending on the practices of your department. </p>
+                        <p>The approved invoice is then sent to the Finance unit, who will pay the invoice pursuant to section 33. </p>
+                        <p>Keep in mind:</p>
                         <ul>
-                          <li>may not authorize sections 33 and 34 for the same transaction or invoice; a financial officer will perform section 33; </li>
-                          <li>may not authorize section 41 for a contract and section 34 related to the same contract; a procurement officer will perform section 41; </li>
-                          <li>may not authorize any transaction for which they may be perceived as having a personal benefit.</li>
+                          <li>you are not allowed to authorize sections 33 and 34 for the same transaction or invoice; a financial officer will perform section 33. </li>
+                          <li>You are not allowed to authorize section 41 for a contract and section 34 related to the same contract; a procurement officer will perform section 41. </li>
+                          <li>You are not allowed to authorize any transaction for which you may be perceived as having a personal benefit.</li>
                         </ul>
                         <hr>
-                        <h2>Section Completed</h2>
+                        <h2>4. Section Completed</h2>
 
                       </span>
                       <span v-if="$i18n.locale=='fr'">
@@ -104,39 +104,39 @@
                         <li>vous ne pouvez autoriser aucune transaction pour laquelle vous pouvez &ecirc;tre per&ccedil;u comme ayant un avantage personnel.</li>
                         </ul> -->
 
-                        <h2>Autorité de certification</h2>
-                        <p>De manière générale, aucune facture ne doit être payée tant que les biens n’aient pas été reçus ou que les services n’aient été rendus.</p>
-                        <p>Exercer votre autorité de certification en vertu de l’article 34 de la LGFP signifie, essentiellement, que vous devez prendre un moment pour attester que les biens et services que vous avez reçus correspondent bien à la facture à payer. </p>
-                        <p>Bien qu’en principe d’autres personnes de votre équipe pourraient faire cette évaluation, c’est à vous, en tant que gestionnaire délégué que revient le poids de cette responsabilité. </p>
-                        <p>Bien entendu, vous ne pouvez faire cette attestation que si vous avez bel et bien la délégation de la faire. Assurez-vous de vérifier que c’est bien le cas!</p>
+                        <h2>1. Autorité de certification</h2>
+                        <p>De manière générale, aucune facture ne doit être payée tant que les biens n’ont pas été reçus ou que les services n’ont été rendus.</p>
+                        <p>Exercer votre autorité de certification en vertu de l'article 34 sur la Loi sur la gestion des finances publiques (LGFP) signifie, essentiellement, que vous devez prendre un moment pour attester que les biens et services que vous avez reçus correspondent bien à la facture. </p>
+                        <p>Bien que d’autres personnes de votre équipe pourraient faire cette évaluation, c’est à vous, en tant que gestionnaire délégué que revient le poids de cette responsabilité. Vous devez donc vous assurer que la facture et le codage financier sont exacts. </p>
+                        <p>Bien entendu, vous ne pouvez faire cette attestation que si vous avez bel et bien reçu la délégation pour le faire. Vérifiez que c’est bien le cas! </p>
 
                         <hr>
 
-                        <h2>Exactitude de la facture</h2>
-                        <p>Avant d’attester de l’exactitude d’une facture, le gestionnaire, habituellement avec l’aide de son personnel administratif, vérifie l’exactitude de la facture ou de la réclamation des éléments suivants: </p>
+                        <h2>2. Exactitude de la facture</h2>
+                        <p>Avant de signer une facture, le gestionnaire, habituellement avec l'aide de son personnel administratif, vérifie l'exactitude de la facture ou de la réclamation en examinant les éléments suivants :  </p>
                         <ul>
-                          <li>La date d’émission: on s’assure que la facture a été émise à la date de commande ou après celle-ci. Ou encore, s’il s’agit d’un contrat, on doit vérifier que la facture a bel et bien  été émise pendant la durée du contrat. </li>
-                          <li>Les quantités: on vérifie à ce que le nombre d’article réclamés corresponde bien aux articles commandés </li>
-                          <li>Les taxes: on valide que le montant pour les taxes est exact</li>
-                          <li>Le fournisseur ou le bénéficiaire : on s’assure que l’information est exacte et que le fournisseur ou le  bénéficiaire est admissible au paiement</li>
-                          <li>Statut: on vérifie que la facture n’a pas déjà été payée</li>
+                          <li>La date d'émission : on s’assure que la facture a été émise à la date de commande ou après celle-ci. Ou encore, s’il s’agit d’un contrat, on doit vérifier que la facture a bel et bien été émise pendant la durée du contrat. </li>
+                          <li>Les quantités : on vérifie que le nombre d’articles réclamés corresponde bien aux articles commandés.</li>
+                          <li>Les taxes : on valide que le montant indiqué pour les taxes est exact et que le bon numéro de TPS ou de TVH est inscrit.</li>
+                          <li>Le fournisseur ou le bénéficiaire : on s’assure que l’information est exacte et que le fournisseur ou le bénéficiaire sont admissibles au paiement.</li>
+                          <li>Et le statut : on vérifie que la facture n'a pas déjà été payée.</li>
                         </ul>
-                        <p>Il se peut que vous deviez retourner au fournisseur pour faire corriger la facture avant de signer l’article 34.</p>
-                        <p>Les factures doivent être payées dans les 30 jours suivant la réception de la facture par le ministère afin d’éviter les frais d’intérêt.</p>
+                        <p>Il se peut que vous deviez retourner voir le fournisseur pour faire corriger la facture avant de signer l'article 34.</p>
+                        <p>Les factures doivent être payées dans les 30 jours suivant la réception de la facture par le ministère afin d'éviter de payer des intérêts.</p>
 
                         <hr>
 
-                        <h2>Traitement de la facture</h2>
-                        <p>Une fois la facture validée, le gestionnaire vérifie le codage financier et approuve l’article 34. L’approbation se fait soit sur papier ou encore par voie électronique, selon les pratiques habituelles dans votre ministère.</p>
-                        <p>La facture approuvée est ensuite envoyée au service des finances qui paiera la facture, conformément à l’article 33. </p>
-                        <p>Gardez à l’esprit les éléments suivants: </p>
+                        <h2>3. Traitement de la facture</h2>
+                        <p>Une fois la facture validée, le gestionnaire vérifie le codage financier et approuve l'article 34. L’approbation se fait soit sur papier ou encore par voie électronique, selon les pratiques habituelles dans votre ministère.</p>
+                        <p>La facture approuvée est ensuite envoyée au service des finances qui paiera la facture, conformément à l'article 33. </p>
+                        <p>Gardez à l'esprit les éléments suivants : </p>
                         <ul>
-                          <li>vous ne pouvez pas autoriser les articles 33 et 34 pour la même transaction ou facture; un agent financier exécutera l’article 33; </li>
-                          <li>vous ne pouvez pas autoriser l’application de l’article 41 pour un contrat et de l’article 34 lié au même contrat; un agent d’approvisionnement exécutera l’article 41;</li>
-                          <li>vous ne pouvez pas non plus autoriser une transaction pour laquelle vous pourriez être perçu comme ayant un avantage personnel.</li>
+                          <li>vous ne pouvez pas autoriser les articles 33 et 34 pour la même transaction ou facture; un agent financier exécutera l'article 33; </li>
+                          <li>vous ne pouvez pas autoriser l'application de l'article 41 pour un contrat et l'article 34 lié au même contrat; un agent d'approvisionnement exécutera l'article 41;</li>
+                          <li>et vous ne pouvez autoriser aucune transaction pour laquelle vous pouvez être considéré comme profiter d’un avantage personnel.</li>
                         </ul>
                         <hr>
-                        <h2>Section complétée</h2>
+                        <h2>4. Section complétée</h2>
 
                       </span>
                     </b-card-text>

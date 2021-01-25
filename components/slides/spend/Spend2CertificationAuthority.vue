@@ -50,7 +50,7 @@
     "en": {
       "openCard": "Open the specimen signature card",
       "q1": {
-        "text": "Looking at the specimen signature card provided, what is the maximum amount that a manager could approve under section 34 to certify the granting of an award?",
+        "text": "Looking at the specimen signature card provided , what is the maximum amount that a manager could approve under section 34 to certify the granting of an award?",
         "options": {
           "1": "$0",
           "2": "$300",
@@ -69,7 +69,7 @@
     "fr": {
       "openCard": "Ouvrir le spécimen de carte de signature",
       "q1": {
-        "text": "En examinant la carte de signature fournie, quel est le montant maximal qu’un gestionnaire pourrait approuver pour attester l'attribution d'un prix en vertu de l’article 34?",
+        "text": "En examinant la carte de signature fournie, quel est le montant maximal qu'un gestionnaire pourrait approuver pour attester l’attribution d’un prix en vertu de l’article 34?",
         "options": {
           "1": "0&nbsp;$",
           "2": "300&nbsp;$",

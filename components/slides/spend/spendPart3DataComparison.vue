@@ -4,7 +4,7 @@
       <b-card>
         <b-tabs content v-model="tabIndex">
         <b-tab title="Question 1">
-          <p>&nbsp;</p>
+          <p>Votre budget comprend le poste de dépense suivant :</p>
           <div class="tableScrollLTS" v-if="$i18n.locale=='fr'">
             <table border="1" class="qTable">
               <thead>
@@ -45,6 +45,7 @@
               </tbody>
             </table>
           </div>
+          <p>Your budget contains the following line item:</p>
           <div class="tableScrollLTS" v-if="$i18n.locale=='en'">
             <table border="1" class="qTable">
               <thead>
@@ -88,7 +89,7 @@
           <radioQuiz :question="$t('q1')" qId="1" />
         </b-tab>
         <b-tab title="Question 2">
-          <p>&nbsp;</p>
+          <p>Votre budget comprend les postes de dépenses suivants :</p>
           <div class="tableScrollLTS" v-if="$i18n.locale=='fr'">
             <table border="1" class="qTable">
               <thead>
@@ -129,6 +130,7 @@
               </tbody>
             </table>
           </div>
+          <p>Your budget contains the following line item:</p>
           <div class="tableScrollLTS" v-if="$i18n.locale=='en'">
             <table border="1" class="qTable">
               <thead>
@@ -220,37 +222,37 @@ export default {
     "q1": {
       "text": "You just remembered that an employee has gone on leave without pay for one month. His yearly salary is $60,000. Where would you change the amount to $55,000?",
       "options": {
-        "1": "Under “Budget”",
-        "2": "Under “Commitments”",
-        "3": "Under “Year-to-Date Actual”",
-        "4": "Under “Annual Forecasted Expenditures”"
+        "1": "Under Budget",
+        "2": "Under Commitments",
+        "3": "Under Year-to-Date Actual",
+        "4": "Under Annual Forecasted Expenditures"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> There is no need to reduce the budget as you may need this budget to pay overtime or to hire a casual. You would change the amount under “Annual Forecasted Expenditures” to $55,000.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Although you could decrease your commitments, you would only reduce it by $5,000. $20,000 - ($60,000 &divide; 12 months&nbsp;&times;&nbsp;1 month) = $15,000. You would change the amount under “Annual Forecasted Expenditures” to $55,000.",
-        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> There is no need to adjust the actuals because the employee did not get paid yet. You would change the amount under “Annual Forecasted Expenditures” to $55,000.",
-        "4": "<span class='v-right' /><strong>Correct!</strong> You need to reduce your Annual Forecast Expenditures by one month. $60,000 &divide; 12 months&nbsp;&times;&nbsp;11 months = $55,000. "
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> There is no need to reduce the budget as you may need this budget to pay overtime or to hire a casual. You would change the amount under Annual Forecasted Expenditures to $55,000.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Although you could decrease your commitments, you would only reduce it by $5,000. $20,000 - ($60,000 &divide; 12 months&nbsp;&times;&nbsp;1 month) = $15,000. You would change the amount under Annual Forecasted Expenditures to $55,000.",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> There is no need to adjust the actuals because the employee did not get paid yet. You would change the amount under Annual Forecasted Expenditures to $55,000.",
+        "4": "<span class='v-right' /><strong>Correct!</strong> You need to reduce your Annual Forecasted Expenditures by one month. $60,000 &divide; 12 months&nbsp;&times;&nbsp;11 months = $55,000. "
       },
       "conclusion": ""
     },
     "q2": {
-      "text": "You approved a $1,500 learning plan of a new employee. Looking at the provided line item, which columns must be updated?",
+      "text": "In addition to the existing forecasted training, you approved a $1,500 learning plan for a new employee. Looking at the line item provided, which information must be updated?",
       "options": {
-        "1": "Increase “Commitments” and “Budget”",
-        "2": "Increase “Commitments” and “Year-to-Date Actual”",
-        "3": "Increase “Commitments” and “Annual Forecasted Expenditures”"
+        "1": "Increase Commitments and Budget”",
+        "2": "Increase Commitments and Year-to-Date Actual”",
+        "3": "Increase Commitments and Annual Forecasted Expenditures”"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> There is no need to increase or decrease the budget. You would change the amount under “Commitments” to $1,500 to record a soft commitment and increase your “Annual Forecasted Expenditures” amount by $1,500.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> You would not increase or decrease the “Year-to-Date Actual” because you have not paid for the course. You would change the amount under “Commitments” to $1,500 to record a soft commitment and increase your “Annual Forecasted Expenditures” amount by $1,500.",
-        "3": "<span class='v-right' /><strong>Correct!</strong> You would change the amount under “Commitments” to $1,500 to record a soft commitment and increase your “Annual Forecasted Expenditures” amount by $1,500."
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> There is no need to increase or decrease the budget. You would change the amount under Commitments to $1,500, to record a soft commitment, and increase the amount of your Annual Forecasted Expenditures by $1,500.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> You would not increase or decrease the Year-to-Date Actuals because you have not yet paid for the course. You would change the amount under Commitments, to $1,500, to record a soft commitment, and increase the amount of your Annual Forecasted Expenditures by $1,500.",
+        "3": "<span class='v-right' /><strong>Correct!</strong> You would change the amount under Commitments to $1,500, to record a soft commitment, and increase the amount of your Annual Forecasted Expenditures by $1,500."
       },
       "conclusion": ""
     }
   },
   "fr": {
     "q1": {
-      "text": "Vous venez de vous rappeler qu’un employé est en congé non payé depuis un mois. Son salaire annuel est de 60&nbsp;000&nbsp;$. Où changeriez-vous le montant à 55&nbsp;000&nbsp;$?",
+      "text": "Vous venez de vous rappeler qu'un employé est en congé sans solde depuis un mois. Son salaire annuel est de 60&nbsp;000&nbsp;$. Où changeriez-vous le montant à 55&nbsp;000&nbsp;$?",
       "options": {
         "1": "Sous « Budget »",
         "2": "Sous « Engagements »",
@@ -258,24 +260,24 @@ export default {
         "4": "Sous « Dépenses annuelles prévues »"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n’est pas nécessaire de réduire le budget, car vous pourriez en avoir besoin pour payer des heures supplémentaires ou pour embaucher un employé occasionnel. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Même si vous pouviez réduire vos engagements, vous ne les réduiriez que de 5&nbsp;000&nbsp;$. 20&nbsp;000&nbsp;$ - (60&nbsp;000&nbsp;$ &divide; 12 mois&nbsp;&times;&nbsp;1 mois) = 15&nbsp;000&nbsp;$. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$.",
-        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n’est pas nécessaire d’ajuster les dépenses réelles parce que l’employé n’a pas encore été payé. Vous changeriez le montant sous «Dépenses annuelles prévues» à 55&nbsp;000&nbsp;$. ",
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n’est pas nécessaire de réduire le budget, car vous pourriez en avoir besoin pour payer des heures supplémentaires ou pour embaucher un employé occasionnel. Vous changeriez le montant sous « Dépenses annuelles prévues » pour 55&nbsp;000&nbsp;$.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Même si vous pouviez réduire vos engagements, vous ne les réduiriez que de 5&nbsp;000&nbsp;$. 20&nbsp;000&nbsp;$ - (60&nbsp;000&nbsp;$ &divide; 12 mois&nbsp;X&nbsp;1 mois) = 15&nbsp;000&nbsp;$. Vous changeriez le montant sous « Dépenses annuelles prévues » pour 55&nbsp;000&nbsp;$.",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Il n’est pas nécessaire d’ajuster les dépenses réelles parce que l’employé n’a pas encore été payé. Vous changeriez le montant sous « Dépenses annuelles prévues » à 55&nbsp;000&nbsp;$. ",
         "4": "<span class='v-right' /><strong>Correct!</strong> Vous devez réduire vos dépenses annuelles prévues d’un mois. 60&nbsp;000&nbsp;$ &divide; 12 mois&nbsp;&times;&nbsp;11 mois = 55&nbsp;000&nbsp;$."
       },
       "conclusion": ""
     },
     "q2": {
-      "text": "Vous avez approuvé un plan d’apprentissage de 1&nbsp;500&nbsp;$ pour un nouvel employé. En examinant l’objet de dépenses fourni, quelles colonnes doivent être mises à jour?",
+      "text": "n plus des formations prévues actuelles, vous avez approuvé un plan d'apprentissage de 1&nbsp;500&nbsp;$ pour un nouvel employé. En examinant le poste de dépenses fourni, quelle information doit être mise à jour?",
       "options": {
         "1": "Augmenter « Engagements » et « Budget »",
         "2": "Augmenter « Engagements » et « Dépenses réelles à ce jour »",
         "3": "Augmenter « Engagements » et « Dépenses annuelles prévues »"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Incorrect. Il n’est pas nécessaire d’augmenter ou de diminuer le budget. Vous changeriez le montant sous  «Engagements » à 1&nbsp;500&nbsp;$ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1&nbsp;500&nbsp;$.",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Vous n’augmenteriez pas ou ne diminueriez pas les    « Dépenses réelles à ce jour » parce que vous n’avez pas payé pour le cours. Vous changeriez le montant sous « Engagements » à 1&nbsp;500&nbsp;$ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1&nbsp;500&nbsp;$",
-        "3": "<span class='v-right' /><strong>Correct!</strong> Vous changeriez le montant sous  «Engagements » à   1&nbsp;500&nbsp;$ pour enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues »  de 1&nbsp;500&nbsp;$."
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> l n'est pas nécessaire d'augmenter ou de diminuer le budget. Vous changeriez le montant sous « Engagements » pour 1&nbsp;500&nbsp;$ afin d’enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1&nbsp;500&nbsp;$.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Vous n'augmenteriez pas ou ne diminueriez pas les « Dépenses réelles à ce jour » parce que vous n'avez pas payé le cours. Vous changeriez le montant sous « Engagements » pour 1&nbsp;500&nbsp;$ afin d’enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues » de 1&nbsp;500&nbsp;$.",
+        "3": "<span class='v-right' /><strong>Correct!</strong> Vous changeriez le montant sous  « Engagements » pour   1&nbsp;500&nbsp;$ afin d’enregistrer un engagement préalable des fonds et augmenteriez le montant de vos « Dépenses annuelles prévues »  de 1&nbsp;500&nbsp;$."
       },
       "conclusion": ""
     }

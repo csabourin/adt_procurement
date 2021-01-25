@@ -64,7 +64,7 @@
     </transition>
     <b-row style="margin-top: 20px;">
       <b-col>
-        <h3 v-if="chapters">{{$t('segmentsTitle')}}</h3>
+        <h2 v-if="chapters">{{$t('segmentsTitle')}}</h2>
       </b-col>
     </b-row>
     <b-row align-h="center">
@@ -760,7 +760,7 @@ video {
   font-weight: bolder;
 }
 
-.chaptersLink:before {
+/*.chaptersLink:before {
   counter-increment: WPepisode;
   content: counter(WPepisode);
   position: absolute;
@@ -771,9 +771,9 @@ video {
   border-radius: 0 0 0 30px;
   padding: .1em .25em 0 .5em;
   color: white;
-}
+}*/
 
-.chaptersLink.plan:before {
+/*.chaptersLink.plan:before {
   background-color: #587C84;
 }
 
@@ -791,7 +791,7 @@ video {
 
 .chaptersLink.isPlaying:before {
   background-color: #b54142;
-}
+}*/
 
 .chaptersLink.isPlaying:after {
   content: "";
@@ -939,6 +939,7 @@ input[type=range]::-ms-thumb {
   width: 180px;
 }
 
+/* To have volume bar invisible until hover
 .showVolume input[type=range]{
   position:absolute;
   top:0;
@@ -950,6 +951,7 @@ input[type=range]::-ms-thumb {
   transition: width 0.5s, opacity 0.5s;
   opacity: 0;
 }
+*/
 
 .showVolume:hover input[type=range],
 .showVolume input[type=range]:focus{

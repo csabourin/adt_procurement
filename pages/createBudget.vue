@@ -23,7 +23,7 @@
                       <!-- Used to jump to activities<button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->
                       <span v-if="$i18n.locale=='en'">
 
-                        <h2>1. Introduction</h2>
+                        <h2>2. Introduction</h2>
                         <p>In this lesson, you will learn how to create a budget that aligns with your work plan. People who have been doing this for a while will tell you that these 2 things—the work plan and the budget—are often done at the same time in a single step. However, in order to help you learn how to do each of these tasks well, we’ve separated them. </p>
                         <p>Creating a budget involves 3 main tasks: analyzing the available information, forecasting the budget requirements, and submitting your proposed budget. </p>
                         <p>Analyzing means taking a good look at last year’s work plan and financial reports. If you have access to previous years, it’s a good idea to look at those, as well as the current financials, new initiatives, context and priorities for your organization.</p>

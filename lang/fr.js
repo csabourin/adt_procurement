@@ -111,7 +111,7 @@ export default {
   },
   
   buildWPProcessMap:{
-    line1: "Schéma de",
+    line1: "Schéma du",
     line2: "processus",
     name: "Élaboration d’un plan de travail&nbsp;: Schéma du processus",
     download: "Télécharger le shéma de processus pour l'élaboration d'un plan de travail",

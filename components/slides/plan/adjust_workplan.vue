@@ -167,7 +167,7 @@
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> While “Implementation of the new software” could in certain cases be a “Mitigation” strategy, in this work plan it is a “Deliverable.”",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While “Implementation of the new software” could in certain cases be a “Sub-activity” strategy, in this work plan it is a “Deliverable.”"
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> While “Implementation of the new software” could in certain cases be a “Sub-activity”, in this work plan it is a “Deliverable.”"
       }
     },
     "q2":
@@ -275,8 +275,8 @@
       "feedback":
       {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",        
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être dans certains cas une stratégie d’atténuation dans certains cas, dans ce plan de travail, il s’agit d’un «&nbsp;Livrable&nbsp;».",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la « Mise en œuvre du nouveau logiciel » ppourrait dans certains cas être une « Sous-activité », dans ce plan de travail, il s’agit d’un « Livrable »."
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la «&nbsp;Mise en œuvre du nouveau logiciel&nbsp;» puisse être dans certains cas une stratégie d'atténuation, dans ce plan de travail, il s'agit d'un «&nbsp;Livrable&nbsp;».",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien que la « Mise en œuvre du nouveau logiciel » pourrait dans certains cas être une « Sous-activité », dans ce plan de travail, il s’agit d’un « Livrable »."
       }
     },
     "q2":

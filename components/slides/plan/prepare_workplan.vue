@@ -211,7 +211,7 @@
       },
       "q1a": {
           "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante pour le gouvernement, notre responsabilité porte davantage sur la pêche que sur les changements climatiques.",
-          "2": "<span class='v-right' /> <strong>Correct!</strong> Notre priorité est de protéger la pêche pour qu’elle existe encore dans 40 ans la prochaine génération",
+          "2": "<span class='v-right' /> <strong>Correct!</strong> Notre priorité est de protéger la pêche pour qu'elle existe encore dans 40 ans pour la prochaine génération.",
           "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Bien qu’il s’agisse d’une priorité importante pour le gouvernement, votre unité s’occupe davantage de la pêche que de la protection des océans."
       },
       "q2":{

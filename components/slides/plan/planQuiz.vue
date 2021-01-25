@@ -81,16 +81,16 @@ export default {
       }
     },
     "q3": {
-      "text": "A departmental priority in your work plan goes all the way back to:",
+      "text": "A departmental priority in your work plan goes back to:",
       "options": {
         "1": "the directorate’s plan",
         "2": "the Departmental Plan",
         "3": "the Speech from the Throne"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the government lays out its priorities. ",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the Government lays out its priorities. ",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the Government lays out its priorities. ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  It’s a good idea to start your view of the big picture with the Speech from the Throne."
+        "3": "<span class='v-right' /> <strong>Correct!</strong>  To understand the big picture, start by looking at the priorities set out in the  Speech from the Throne."
       }
     },
     "q4": {
@@ -277,10 +277,10 @@ export default {
         "4": "Un résumé de ce que vous avez accompli"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué de toutes les activités qui s'échelonneront au cours d'un exercice comptable.",
         "2": "<span class='v-right' /> <strong>Correct!</strong>",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités à réaliser sur une période d'un an.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué d'activités qui s'échelonneront au cours d'un exercice comptable."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Le plan de travail est constitué de toutes les activités à réaliser sur une période d'un an.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Le plan de travail est constitué  de toutes les activités qui s'échelonneront au cours d'un exercice comptable."
       }
     },
     "q2": {
@@ -334,7 +334,7 @@ export default {
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère.",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  Correct! Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère.",
         "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère."
       }
     },

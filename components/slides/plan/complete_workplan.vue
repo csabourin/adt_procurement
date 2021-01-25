@@ -253,7 +253,7 @@
               "text": "Actuellement, &laquo; Horaires de travail flexibles &raquo; est une stratégie d’<span class='bolder'>atténuation</span> du risque de la surpêche. Où devrait-elle apparaître dans le plan de travail?",
               "options":
               {
-                  "1": "Gardez-la comme stratégie d’atténuation du risque de &laquo; Surpêche &raquo;.",
+                  "1": "Gardez-la comme stratégie d’atténuation du risque de la &laquo; Surpêche &raquo;.",
                   "2": "Il devrait faire partie de la stratégie d’atténuation du risque &laquo; Roulement du personnel &raquo;.",
                   "3": "Enlever complètement &laquo; Horaires de travail flexibles &raquo;."
               },

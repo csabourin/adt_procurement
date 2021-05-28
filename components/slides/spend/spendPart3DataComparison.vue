@@ -4,8 +4,9 @@
       <b-card>
         <b-tabs content v-model="tabIndex">
         <b-tab title="Question 1">
-          <p>Votre budget comprend le poste de dépense suivant :</p>
+          
           <div class="tableScrollLTS" v-if="$i18n.locale=='fr'">
+            <p>Votre budget comprend le poste de dépense suivant :</p>
             <table border="1" class="qTable">
               <thead>
                 <tr>
@@ -89,8 +90,9 @@
           <radioQuiz :question="$t('q1')" qId="1" />
         </b-tab>
         <b-tab title="Question 2">
-          <p>Votre budget comprend les postes de dépenses suivants :</p>
+          
           <div class="tableScrollLTS" v-if="$i18n.locale=='fr'">
+            <p>Votre budget comprend les postes de dépenses suivants :</p>
             <table border="1" class="qTable">
               <thead>
                 <tr>
@@ -130,8 +132,9 @@
               </tbody>
             </table>
           </div>
-          <p>Your budget contains the following line item:</p>
+          
           <div class="tableScrollLTS" v-if="$i18n.locale=='en'">
+            <p>Your budget contains the following line item:</p>
             <table border="1" class="qTable">
               <thead>
                 <tr>

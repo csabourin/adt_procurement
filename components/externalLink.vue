@@ -1,5 +1,5 @@
 <template functionnal>
-  <a target="_blank" rel="external" aria-aspopup="true" class="external" :href="link" :title="theTitle"><slot /></a>
+  <a target="_blank" rel="external" aria-haspopup="true" class="external" :href="link" :title="theTitle"><slot /></a>
 </template>
 
 <script type="text/javascript">

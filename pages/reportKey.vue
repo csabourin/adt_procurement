@@ -11,27 +11,27 @@
         <b-col cols="12" lg xl="5"><span v-if="$i18n.locale=='en'">
             <h3>Prepare the financial situation report</h3>
             <ul>
-              <li>Financial situation reports:</li>
+              <li>Financial situation reports:
               <ul>
                 <li>provide the most current financial picture of the organization’s finances on a given date</li>
                 <li>are tools for managers to regularly identify current financials, risks, potential surpluses and/or shortfalls in their budgets</li>
                 <li>are initiated and led by the Chief Financial Officer</li>
                 <li>allow the Chief Financial Officer to make recommendations to senior leaders on the financial resources needed to achieve results</li>
               </ul>
+              </li>
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
             <h3><strong>Préparer le rapport sur la situation financi&egrave;re</strong></h3>
             <ul>
-              <li>Les rapports sur la situation financi&egrave;re :</li>
+              <li>Les rapports sur la situation financi&egrave;re :
               <ul>
-                <ul>
                   <li>fournissent le portrait financier le plus récent des finances de l'organisme à une date donnée;</li>
                   <li>sont des outils permettant aux gestionnaires de vérifier régulièrement les finances courantes, les risques, les excédents ou les déficits potentiels dans leurs budgets;</li>
                   <li>sont lancés et dirigés par le dirigeant principal des finances;</li>
                   <li>permettent au dirigeant principal des finances de faire des recommandations aux cadres supérieurs sur les ressources financi&egrave;res nécessaires pour obtenir des résultats.</li>
-                </ul>
               </ul>
+              </li>
             </ul>
           </span>
         </b-col>
@@ -39,7 +39,7 @@
         <b-col cols="12" lg xl="5"><span v-if="$i18n.locale=='en'">
             <h3>Contribute to external reporting</h3>
             <ul>
-              <li>The finances and results of government services and programs are reported regularly to Parliament and Canadians through a variety of reports:&nbsp;</li>
+              <li>The finances and results of government services and programs are reported regularly to Parliament and Canadians through a variety of reports:&nbsp;
               <ul>
                 <li>Public Accounts of Canada</li>
                 <li>Departmental Plan</li>
@@ -49,23 +49,23 @@
                 <li>Management Accountability Framework (MAF)</li>
                 <li>Internal audit and evaluation reports</li>
               </ul>
+              </li>
               <li>Managers contribute to these government reports by providing information on the performance outcomes and results of their activities.</li>
             </ul>
           </span><span v-if="$i18n.locale=='fr'">
             <h3><strong>Contribuer à l’établissement de rapports externes</strong></h3>
             <ul>
-              <li>Les finances et les résultats des services et des programmes gouvernementaux font l'objet de rapports réguliers au Parlement et à la population canadienne dans divers rapports :&nbsp;</li>
-              <ul>
+              <li>Les finances et les résultats des services et des programmes gouvernementaux font l'objet de rapports réguliers au Parlement et à la population canadienne dans divers rapports :&nbsp;
                 <ul>
-                  <li>Comptes publics du Canada</li>
-                  <li>Plan ministériel</li>
-                  <li>Rapport sur les résultats ministériels (RRM)</li>
-                  <li>Rapports financiers trimestriels (RFT)</li>
-                  <li>Divulgation proactive&nbsp;</li>
-                  <li>Cadre de responsabilisation de gestion (CRG)</li>
-                  <li>Rapports de vérification interne et d’évaluation</li>
+                    <li>Comptes publics du Canada</li>
+                    <li>Plan ministériel</li>
+                    <li>Rapport sur les résultats ministériels (RRM)</li>
+                    <li>Rapports financiers trimestriels (RFT)</li>
+                    <li>Divulgation proactive&nbsp;</li>
+                    <li>Cadre de responsabilisation de gestion (CRG)</li>
+                    <li>Rapports de vérification interne et d’évaluation</li>
                 </ul>
-              </ul>
+              </li>
               <li>Les gestionnaires contribuent à ces rapports gouvernementaux en fournissant de l'information sur les résultats de rendement et les résultats de leurs activités.</li>
             </ul>
           </span></b-col>

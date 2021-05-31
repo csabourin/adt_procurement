@@ -1,7 +1,6 @@
 <template>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 3 54.5 41.75" :width="iconWidth" :height="iconWidth">
-    <!--<title>{{ title }}</title>-->
-    <title>{{$t('fileFolder')}}</title>
+    <title>{{ title }}</title>
   <g >
       <rect class="cls-1" x="1.1" y="8.05" width="52" height="33" />
       <rect class="cls-2" x="1" y="7.75" width="52.5" height="33" />

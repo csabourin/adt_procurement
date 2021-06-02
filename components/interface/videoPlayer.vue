@@ -256,7 +256,7 @@ export default {
       }
 
       for (var k = 0; k < links.length; k++) {
-        var linkToString = links.map(item=>item.toLowerCase());
+        var linkToString = links.map(item=>item.toLowerCase()); //To account that the browser is dumb and lower case the links >:(
         if (linkToString[k].indexOf(this.$route.path.toLowerCase()) >= 0) {
           var link = links[k + 1];
           if(link.indexOf("cninv")){

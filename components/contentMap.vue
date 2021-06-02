@@ -11,10 +11,10 @@
           <span ref="item"><h2 class="colorBar1"><span class="v-inv">{{$t('navigationMenu')}}</span> {{$t('plan')}}</h2></span>    
           <menu style="list-style: none">
             <li role="menuitem">
-              <nuxt-link :to="localePath('buildWP')" v-html="$t('BuildWorkPlan')" />
+              <nuxt-link :to="localePath('buildwp')" v-html="$t('BuildWorkPlan')" />
             </li>
             <li role="menuitem">
-              <nuxt-link :to="localePath('createBudget')" v-html="$t('CreateBudget')" />
+              <nuxt-link :to="localePath('createbudget')" v-html="$t('CreateBudget')" />
             </li>
             <li role="menuitem">
               <nuxt-link :to="localePath('planKey')" v-html="$t('KeyMessagesPlan')" />

@@ -244,11 +244,11 @@ export default {
     },
     nextPage() {
       var links = [];
-      var titles = []
+      var titles = [];
 
       var menus = document.querySelectorAll("menu");
       for (var i = 0; i < menus.length; i++) {
-        var menuLinks = menus[i].querySelectorAll("a")
+        var menuLinks = menus[i].querySelectorAll("a");
         for (var j = 0; j < menuLinks.length; j++) {
           links.push(menuLinks[j].getAttribute("href"));
           titles.push(menuLinks[j].innerHTML);
@@ -266,7 +266,7 @@ export default {
           return { title: titles[k + 1], link: link };
         }
       }  
-      return { title: "", link: "" };
+      return { title: "", link: "www.google.com" };
     },
     currentPageReferences(){
       var path = this.$route.path;

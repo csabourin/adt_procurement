@@ -256,7 +256,8 @@ export default {
       }
 
       for (var k = 0; k < links.length; k++) {
-        if (links[k].indexOf(this.$route.path) >= 0) {
+        var linkToString = links.map(item=>item.toLowerCase());
+        if (linkToString[k].indexOf(this.$route.path.toLowerCase()) >= 0) {
           var link = links[k + 1];
           if(link.indexOf("cninv")){
             var pos = link.indexOf("cninv");
@@ -266,7 +267,7 @@ export default {
           return { title: titles[k + 1], link: link };
         }
       }  
-      return { title: "", link: "www.google.com" };
+      return { title: "", link: "" };
     },
     currentPageReferences(){
       var path = this.$route.path;

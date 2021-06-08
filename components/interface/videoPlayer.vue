@@ -89,7 +89,7 @@
             <button v-else-if="modalArray[index]" class="activityButton" @click.prevent="accessibleModal(index)" :title="$t('jumpModalPartsWP') + ' - ' + navBarTracks[index]" v-b-tooltip.hover.bottom="$t('jumpModalPartsWP')"><img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="48" height="48"></button>
 
             <!-- Continue to next page button -->
-            <nuxt-link v-else :to="nextPage.link" class="playButton" :title="$t('continue') + ' - ' + nextPage.title" v-b-tooltip.hover.bottom="$t('continue')"><img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" width="48" height="48"><span class="v-inv">{{$t('continue') + ' - ' + nextPage.title}}</span></nuxt-link>
+            <nuxt-link v-else :to="nextPage.link" class="playButton" :title="$t('continue') + ' - ' + nextPage.title" v-b-tooltip.hover.bottom="$t('continue')"><img src="~/assets/ContinueIcon.svg" :alt="$t('continueIcon')" width="48" height="48"><!--<span class="v-inv">{{$t('continue') + ' - ' + nextPage.title}}</span>--></nuxt-link>
           </li>
         </ul>
       </b-col>

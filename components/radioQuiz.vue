@@ -9,9 +9,11 @@
       </ol>
       <b-button :disabled="q1Submitted || lock || !Quest1" @click="submitAnswer">{{(exam)?$t('submitTo'):$t('submit')}}</b-button>
     </fieldset>
-    <!--<p aria-live="polite" v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>-->
-    <p tabindex="0" aria-live="polite" v-if="Quest1 && q1Submitted" v-html="question.feedback[Quest1]" style="margin-bottom: 20px;" />
-    <p tabindex="0" aria-live="polite" v-if="Quest1 && q1Submitted && question.conclusion" v-html="question.conclusion" style="margin-bottom: 20px;" />
+    <!--<p aria-live="polite" v-if="!Quest1 && q1Submitted" v-html="$t('pleaseAnswer')"></p>--> <!-- What is that? @Davyd-Kristopher -->
+    <div aria-live="polite">
+      <p tabindex="0" v-if="Quest1 && q1Submitted" v-html="question.feedback[Quest1]" style="margin-bottom: 20px;" />
+      <p tabindex="0" v-if="Quest1 && q1Submitted && question.conclusion" v-html="question.conclusion" style="margin-bottom: 20px;" />
+    </div>
   </span>
 </template>
 <script type="text/javascript">

@@ -423,7 +423,7 @@ export default {
       })
       this.resumePosition()
       
-      this.showPlayOverlay = false;
+      this.showPlayOverlay = false
       this.setOverlayHeight()
     },
     resumePlay() {

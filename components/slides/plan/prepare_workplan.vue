@@ -25,7 +25,9 @@
               </p> 
             </fieldset>
             <p style="display: block; margin-top: 10px; margin-bottom: 10px;"><b-button @click="q1Submit=true" :disabled="!govtPri || q1Submit">{{$t('submit')}}</b-button></p>
+            <div aria-live="polite">
             <p v-if="govtPri && q1Submit"> <span v-html="$t('q1a.'+govtPri)" /></p>
+            </div>
           </b-col>
         </b-row>
         <b-row>
@@ -47,7 +49,9 @@
               </p>
             </fieldset>
             <p style="display: block; margin-top: 10px; margin-bottom: 10px;"><b-button @click="q2Submit=true" :disabled="!deptPri || q2Submit">{{$t('submit')}}</b-button></p>
+            <div aria-live="polite">
             <p v-if="deptPri && q2Submit"> <span v-html="$t('q2a.'+deptPri)" /></p>
+            </div>
           </b-col>
         </b-row>
         <b-row>
@@ -69,7 +73,9 @@
               </p>
             </fieldset>
             <p style="display: block; margin-top: 10px; margin-bottom: 10px;"><b-button @click="q3Submit=true" :disabled="!dirPri || q3Submit">{{$t('submit')}}</b-button></p>
+            <div aria-live="polite"> <!-- added a aria live polite to all the answers to make sure the screen-reader reads them first when they pop-up -->
             <p v-if="dirPri && q3Submit"><span v-html="$t('q3a.'+dirPri)" /></p>
+            </div>
           </b-col>
         </b-row>
         <!--<b-row>

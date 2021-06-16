@@ -42,7 +42,7 @@
             </tbody>
             <thead>
               <tr class="qTable">
-                <th v-html="$t('budgetTableFill18')" id="budgetTableFill18" scope="col" headers="budgetTableFill1" colspan="6"></th>
+                <th v-html="$t('budgetTableFill18')" id="budgetTableFill18" scope="col" colspan="6"></th>
               </tr>
             </thead>
             <tbody>
@@ -55,7 +55,7 @@
                 <td v-html="$t('budgetTableFill29')" headers="budgetTableFill5 budgetTableFill18"></td>
               </tr>-->
               <tr>
-                <th v-html="$t('budgetTableFill30')" id="budgetTableFill30" scope="row" headers="budgetTableFill1 budgetTableFill18"></th>
+                <th v-html="$t('budgetTableFill30')" id="budgetTableFill30" scope="row"></th>
                 <td v-html="$t('budgetTableFill31')" headers="budgetTableFill2 budgetTableFill18 budgetTableFill30"></td>
                 <td v-html="$t('budgetTableFill32')" headers="budgetTableFill3 budgetTableFill18 budgetTableFill30"></td>
                 <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill18 budgetTableFill30">
@@ -66,7 +66,7 @@
                 <td v-html="$t('budgetTableFill35')" headers="budgetTableFill5 budgetTableFill18 budgetTableFill30"></td>
               </tr>
               <tr>
-                <th v-html="$t('budgetTableFill36')" id="budgetTableFill36" scope="row" headers="budgetTableFill1 budgetTableFill18"></th>
+                <th v-html="$t('budgetTableFill36')" id="budgetTableFill36" scope="row"></th>
                 <td v-html="$t('budgetTableFill37')" headers="budgetTableFill2 budgetTableFill18 budgetTableFill36"></td>
                 <td v-html="$t('budgetTableFill38')" headers="budgetTableFill3 budgetTableFill18 budgetTableFill36"></td>
                 <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill18 budgetTableFill36"><span v-html="$t('budgetTableFill39')" /></td>
@@ -97,7 +97,7 @@
                 <td v-html="$t('budgetTableFill59')" headers="budgetTableFill5 budgetTableFill48"></td>
               </tr>-->
               <tr>
-                <th v-html="$t('budgetTableFill60')" id="budgetTableFill60" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
+                <th v-html="$t('budgetTableFill60')" id="budgetTableFill60" scope="row"></th>
                 <td v-html="$t('budgetTableFill61')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill60"></td>
                 <td v-html="$t('budgetTableFill62')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill60"></td>
                 <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill60"><span v-html="$t('budgetTableFill63')">$3,000</span></td>
@@ -105,7 +105,7 @@
                 <td v-html="$t('budgetTableFill65')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill60"></td>
               </tr>
               <tr>
-                <th v-html="$t('budgetTableFill66')" id="budgetTableFill66" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
+                <th v-html="$t('budgetTableFill66')" id="budgetTableFill66" scope="row"></th>
                 <td v-html="$t('budgetTableFill67')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill66"></td>
                 <td v-html="$t('budgetTableFill68')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill66"></td>
                 <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill66"><span v-html="$t('budgetTableFill69')" /></td>
@@ -113,7 +113,7 @@
                 <td v-html="$t('budgetTableFill71')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill66"></td>
               </tr>
               <tr>
-                <th v-html="$t('budgetTableFill72')" id="budgetTableFill72" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
+                <th v-html="$t('budgetTableFill72')" id="budgetTableFill72" scope="row"></th>
                 <td v-html="$t('budgetTableFill73')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill72"></td>
                 <td v-html="$t('budgetTableFill74')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill72"></td>
                 <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill72" aria-live="polite"><strong v-if="q1Answer" v-html="$t('budgetTableFill75')"></strong><a v-else v-b-toggle.question-1 href="javascript:" class="questionMark">?</a></td>
@@ -121,7 +121,7 @@
                 <td v-html="$t('budgetTableFill77')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill72"></td>
               </tr>
               <tr>
-                <th v-html="$t('budgetTableFill78')" id="budgetTableFill78" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
+                <th v-html="$t('budgetTableFill78')" id="budgetTableFill78" scope="row"></th>
                 <td v-html="$t('budgetTableFill79')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill78"></td>
                 <td v-html="$t('budgetTableFill80')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill78"></td>
                 <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill78" aria-live="polite"><strong v-if="q2Answer" v-html="$t('budgetTableFill81')"></strong></td>
@@ -129,7 +129,7 @@
                 <td v-html="$t('budgetTableFill83')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill78"></td>
               </tr>
               <tr>
-                <th v-html="$t('budgetTableFill84')" id="budgetTableFill84" scope="row" headers="budgetTableFill1 budgetTableFill48"></th>
+                <th v-html="$t('budgetTableFill84')" id="budgetTableFill84" scope="row"></th>
                 <td v-html="$t('budgetTableFill85')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill84"></td>
                 <td v-html="$t('budgetTableFill86')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill84"></td>
                 <td v-html="$t('budgetTableFill87')" headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill84"></td>
@@ -137,7 +137,7 @@
                 <td v-html="$t('budgetTableFill89')" headers="budgetTableFill5 budgetTableFill48 budgetTableFill84"></td>
               </tr>
               <tr>
-                <th><strong v-html="$t('budgetTableFill90')" id="budgetTableFill90" scope="row" headers="budgetTableFill1 budgetTableFill48"></strong></th>
+                <th><strong v-html="$t('budgetTableFill90')" id="budgetTableFill90" scope="row"></strong></th>
                 <td v-html="$t('budgetTableFill91')" headers="budgetTableFill2 budgetTableFill48 budgetTableFill90"></td>
                 <td v-html="$t('budgetTableFill92')" headers="budgetTableFill3 budgetTableFill48 budgetTableFill90"></td>
                 <td headers="budgetTableFill4 budgetTableFill9 budgetTableFill48 budgetTableFill90">

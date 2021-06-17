@@ -1,10 +1,18 @@
 <template>
-  <div role="tablist" id="files-acc" style="width: 100%;">
+  <!-- <div role="tablist" id="files-acc" style="width: 100%;">
     <h3 v-b-toggle.filesbox :style="'line-height: calc(' + iconSize + 'px - 20%);'"><img src="~/assets/FilesIcon.svg" :width="iconSize" :height="iconSize" alt=""> <slot name="title" /> <font-awesome-icon icon="minus-circle" class="when-open" role="presentation"></font-awesome-icon> <font-awesome-icon icon="plus-circle" class="when-closed" role="presentation"></font-awesome-icon></h3>
     <b-collapse id="filesbox" accordion="files-acc" role="tabpanel" style="padding-top: 30px;" :visible="openDefault">
       <slot name="content" />
     </b-collapse>
   </div>
+  Changed the accordeon from custom built to <details> for good practice (to avoid messing around with role attributes)
+  -->
+  <details id="files-acc" style="width: 100%;">
+    <summary v-b-toggle.filesbox :style="'line-height: calc(' + iconSize + 'px - 20%);'"><img src="~/assets/FilesIcon.svg" :width="iconSize" :height="iconSize" alt=""> <slot name="title" /> <font-awesome-icon icon="minus-circle" class="when-open" role="presentation"></font-awesome-icon> <font-awesome-icon icon="plus-circle" class="when-closed" role="presentation"></font-awesome-icon></summary>
+    <b-collapse id="filesbox" accordion="files-acc" role="tabpanel" style="padding-top: 30px;" :visible="openDefault">
+      <slot name="content" />
+    </b-collapse>
+  </details>
 </template>
 
 <script type="text/javascript">
@@ -25,7 +33,11 @@
 
 <style scoped>
 
-  h3{
+  details summary::-webkit-details-marker {
+  display:none;
+}
+
+  summary{
     font-family: "Roboto Condensed";
     font-size: 1.5em;
     position: relative;
@@ -34,17 +46,17 @@
     transition: all 0.2s;
   }
   
-  h3 svg{
+  summary svg{
     position: absolute;
     right: 15px;
     top: calc(50% - 12px);
   }
   
-  h3:hover, h3:focus{
+  summary:hover, summary:focus{
     background-color: rgba(0, 0, 0, 0.05);
   }
   
-  h3:focus{
+  summary:focus{
     outline: none;
   }
   
@@ -52,6 +64,7 @@
   .not-collapsed > .when-closed {
     display: none;
   }
+
 
 </style>
 

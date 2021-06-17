@@ -33,7 +33,7 @@
 
 <style scoped>
 
-  details summary::-webkit-details-marker {
+  summary::-webkit-details-marker {
   display:none;
 }
 
@@ -44,6 +44,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 15px;
     transition: all 0.2s;
+    list-style: none;
   }
   
   summary svg{

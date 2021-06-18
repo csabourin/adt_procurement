@@ -172,6 +172,7 @@ export default {
   
   a:focus{
     transform: scale(0.95);
+    outline: black solid 1.5px;
   }
   
 

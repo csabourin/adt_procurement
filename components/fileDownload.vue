@@ -169,10 +169,14 @@ export default {
     transition: opacity 0.2s; 
   }
   
-  a.download:hover, a.download:focus{
+  a.download:hover{
     text-decoration: none;
     opacity: 0.85;
     /*outline: none;*/
+  }
+
+  a.download:focus{
+    outline: black solid 2px;
   }
   
   a.download:hover svg.icon, a.download:focus svg.icon{
@@ -201,6 +205,10 @@ export default {
     /*background-color: rgba(0, 0, 0, 0.1);*/
     animation: fadein 0.2s;
   }
+
+  a.download.openHighlight .highlight:focus{
+      outline: black 1.5px solid;
+    }
   a.download.openHighlight .highlight svg{
     position: absolute;
     top: calc(10% - 16px);

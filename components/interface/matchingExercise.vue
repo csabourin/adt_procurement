@@ -3,7 +3,14 @@
   	<legend><strong v-html="$t('instructions')"></strong></legend>
     <b-container fluid style="margin-top: 30px;">
       <b-row>
-        <b-col cols="7" lg="6">
+        <b-col cols="5" lg="5" offset-lg="2">
+          <ol class="AnswerNums" type="A" :start="index+1">
+            <li class="answers" v-for="(item,index) in this.questionList" :key="'answer'+index">
+              <p :id="'AnswerKey'+parseInt(index+1)">{{question.dotsRight[index]}}</p>
+            </li>
+          </ol>
+        </b-col>
+        <b-col cols="7" lg="5">
           <ul>
             <li class="questions" v-for="(item,index) in this.questionList" :key="'question'+index">
               <div style="flex: 1 1 0;">
@@ -23,13 +30,6 @@
               </div>
             </li>
           </ul>
-        </b-col>
-        <b-col cols="5" lg="5" offset-lg="1">
-          <ol class="AnswerNums" type="A" :start="index+1">
-            <li class="answers" v-for="(item,index) in this.questionList" :key="'answer'+index">
-              <p :id="'AnswerKey'+parseInt(index+1)">{{question.dotsRight[index]}}</p>
-            </li>
-          </ol>
         </b-col>
       </b-row>
     </b-container>

@@ -10,6 +10,11 @@
         </b-tab>
       </b-tabs>
     </b-card>
+     <b-row style="margin-top: 25px;">
+      <b-col cols="6" md="4" lg="2" class="text-center">
+        <download :texts="$t('prepareFSR')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
+      </b-col>
+    </b-row>
     <!-- Control buttons-->
     <div class="text-center">
       <b-button-group :aria-label="$t('questionNav')" class="mt-2">
@@ -17,11 +22,7 @@
         <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=1">{{$t('nextPage')}}</b-button>
       </b-button-group>
     </div>
-    <b-row style="margin-top: 25px;">
-      <b-col cols="6" md="4" lg="2" class="text-center">
-        <download :texts="$t('prepareFSR')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
-      </b-col>
-    </b-row>
+   
   </div>
 </template>
 <script type="text/javascript">

@@ -41,7 +41,7 @@
       </b-col>
     </b-row>
           
-    <b-row align-h="center" style="margin-bottom: 30px;">
+    <!-- <b-row align-h="center" style="margin-bottom: 30px;">
       <b-col cols="12" lg="8" xl="7">
         <b-button-group class="mt-2 d-none d-sm-flex" :aria-label="$t('chooseScenarioLabel')" style="width: 100%;">
           <b-button @click="chosenScenario = 'takeCourse'" :disabled="chosenScenario == 'takeCourse'">{{$t('takeCourse')}}</b-button>
@@ -53,6 +53,22 @@
           <b-button @click="chosenScenario = 'refresh'" :disabled="chosenScenario == 'refresh'">{{$t('refresh')}}</b-button>
           <b-button @click="chosenScenario = 'justExam'" :disabled="chosenScenario == 'justExam'">{{$t('justExam')}}</b-button>
         </b-button-group>
+      </b-col>
+    </b-row> 
+    Replaced the accordion with texts -Alex Seguin, 2021
+    -->
+    <b-row>
+      <b-col cols="4">
+        <h3 class="text-left">{{$t('takeCourse')}}</h3>
+        <p class="text-left">{{$t('takeCourseText')}}</p>
+      </b-col>
+      <b-col cols="4">
+        <h3 class="text-left">{{$t('refreshKnowledge')}}</h3>
+        <p class="text-left">{{$t('refreshKnowledgeText')}}</p>
+      </b-col>
+      <b-col cols="4">
+        <h3 class="text-left">{{$t('takeExam')}}</h3>
+        <p class="text-left">{{$t('takeExamText')}}</p>
       </b-col>
     </b-row>
 
@@ -275,7 +291,13 @@ export default {
       "transcriptText":"<p>Welcome! You’re in the right place if you’re a manager looking to learn about how to make responsible use of public funds—for <strong>planning</strong>, <strong>spending</strong> and <strong>reporting</strong>. There are many reasons why managers like you might take this course.</p><ul><li>You might be a new manager who’s  new at financial delegation and you need to learn everything there is to know about your financial responsibilities.</li><li>You could be an experienced manager, but new to government and looking to leverage your experience by connecting what you already know about finance to the realm of government.</li><li>Maybe you just came back from a parental leave and  you could really use a refresher on your financial responsibilities and what might have changed since you left. </li><li>Or perhaps you’re an experienced manager in government and you need to recertify every 5 years in order to continue exercising your financial delegation. Maybe you just really want to get to the test!</li></ul><p>Whatever brought you here, you’re in charge of your own learning. Think of this as a &ldquo;choose your own adventure&rdquo; kind of experience and take what you need in order to succeed. If all you need is to take the test because you’re already pretty familiar with the content, then, by all means, start with that.</p><p>If you just need an overview or a refresher, then simply review the key messages of each phase to get the key highlights and tools.</p><p>You'll also want to make use of the handy features on your screen, like <strong>the toolbox on the top right</strong>, which has tools and resources to help you on the job.</p><p>If you’re learning this for the first time, then take the time to <strong>go through each section, do the in-depth learning activities</strong>, and <strong>review the tools and resources</strong>. We promise it’s worth the effort!</p><p>You’re probably wondering about the test.</p><p>Passing the test for this course is mandatory before you can exercise financial delegation.</p><p>There are <strong>3 sections</strong> to the test—1 for each phase: <strong>planning,</strong> <strong>spending</strong> and <strong>reporting</strong>. </p><p>The passing grade is <strong>80% for each of the sections</strong>.</p><p>Each section should take you around <strong>15 to 20 minutes to complete</strong>. </p><p>You can access course materials during the test and you can take it as many times as you need.</p><p>IIn the end, how you use this course is really up to you! It will remain accessible to you so you can come back to consult different sections and tools, whatever you need on the job!</p><p>We’re rooting for you! Because when you steward public funds well, you succeed in your career. And, more importantly, you serve Canadians well, with transparency and accountability. And that’s the bottom line.</p>",
       "objectives":"Objectives",
       "HowTo":"How to Navigate",
-      "chooseScenario": "Choose a scenario based on which type of learning journey you want to take. A path will be proposed to you, showing you which sections you should focus on."
+      "chooseScenario":"Pick one of the following three options based on which type of learning journey you want to take.",
+      "takeCourse":"I want to take the full course",
+      "takeCourseText":"To take the full course start with the first module of the Plan section by selecting “Build a Work Plan” and continue to move through section by section to complete the entire course.",
+      "refreshKnowledge":"I want to refresh my knowledge",
+      "refreshKnowledgeText":"For this option, focus on reviewing the Key Messages in each of the Plan, Spend and Report sections.",
+      "takeExam":"I just want to take the test",
+      "takeExamText":"For this option, you will do three tests, one in the Plan section, one in the Spend section and one in the Report section."
     },
     "fr":{
       "welcomeText": "Bienvenue",
@@ -284,7 +306,13 @@ export default {
       "transcriptText":"<p>Bienvenue! Vous êtes au bon endroit si vous êtes un gestionnaire qui cherche à apprendre comment utiliser de façon responsable les fonds publics - pour la <strong>planification</strong>, les <strong>dépenses</strong> et les <strong>rapports</strong>. Il y a de nombreuses raisons pour lesquelles des gestionnaires comme vous pourraient vouloir suivre ce cours.</p> <ul><li>Par exemple, si vous êtes un nouveau gestionnaire, vous aurez à apprendre de A à Z comment exercer vos responsabilités financières, incluant votre délégation financière. </li><li>Ou peut-être avez-vous déjà été gestionnaire de carrière, mais ailleurs qu’au gouvernement et que vous avez simplement besoin d’une mise à niveau pour mettre à profit votre expérience financière dans le contexte du gouvernement.</li><li>Peut-être revenez-vous d’un congé parental - et que vous avez simplement besoin de vous rafraîchir la mémoire et d’être mis au courant de ce qui a pu changer en votre absence.</li><li>Ou encore, peut-être êtes-vous un gestionnaire d’expérience au gouvernement et vous aimeriez accéder directement au test afin de renouveler votre certification tel qu’il vous est requis de le faire à tous les 5 ans afin de pouvoir continuer à exercer votre délégation financière.</li> </ul> <p>Quelle que soit la raison qui ait pu vous mener ici, vous êtes responsable de votre propre apprentissage. Considérez cela comme une expérience de type « choisissez votre propre aventure » et retirez-en ce dont vous avez besoin pour réussir. Si tout ce dont vous avez besoin, c’est de passer le test parce que le contenu vous est déjà assez familier, alors, sentez-vous bien libre de commencer par là.</p> <p>Si vous n’avez besoin que d'une vue d’ensemble ou d’une remise en mémoire, passez simplement en revue les messages clés de chaque phase pour obtenir les points saillants et les outils clés.</p> <p>De plus, vous trouverez d’astucieuses fonctions à l’écran - comme la <strong>boîte à outils en haut à droite</strong> - où vous trouverez des outils et des documents de référence pour vous aider dans votre travail.</p> <p>Si vous apprenez cela pour la première fois, prenez le temps de <strong>parcourir les sections</strong>, de <strong>faire les activités d’apprentissage en profondeur</strong>, et d’<strong>examiner les outils et les ressources</strong>. Nous vous promettons que cela en vaut la peine!</p> <p>Vous vous posez probablement des questions au sujet du test.</p> <p>Il est obligatoire de réussir l’examen de ce cours afin de pouvoir exercer la délégation financière.</p> <p>Le test comporte <stron>3 parties</stron> — une à la fin de chaque phase : <strong>planification</strong>, <strong>dépenses</strong> et <strong>rapports</strong>.</p> <p>La note de passage est de <strong>80 % par partie</strong>.</p> <p>Chaque partie devrait vous prendre environ <strong>15 à 20 minutes</strong>.</p> <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p> <p>En fin de compte, c’est à vous de décider comment vous allez utiliser ce cours! Il restera accessible pour que vous puissiez revenir et consulter les différentes sections et outils lorsque vous en aurez besoin pour votre travail! </p> <p>Nous vous souhaitons de réussir le cours parce que lorsque vous gérez bien les fonds publics, vous réussissez dans votre carrière. Et, ce qui est peut-être encore plus important, vous servez bien les Canadiens, avec transparence et responsabilité. Et c’est ça l’essentiel.</p>",
       "objectives":"Objectifs",
       "HowTo":"Comment naviguer ce cours",
-      "chooseScenario": "Choisissez un scénario en fonction du type de parcours d'apprentissage que vous voulez suivre. Un parcours vous sera proposé en vous indiquant sur quelles sections vous devriez vous concentrer."
+      "chooseScenario":"Choisissez l’une des trois options suivantes en fonction du type de parcours d’apprentissage que vous voulez suivre.",
+      "takeCourse":"Je veux prendre la totalité du cours",
+      "takeCourseText":"Pour prendre la totalité du cours, commencez par le premier module de la section Planification en choisissant « Élaborer un plan de travail » et continuez à avancer, section par section pour terminer le cours complet.",
+      "refreshKnowledge":"Je veux rafraîchir mes connaissances",
+      "refreshKnowledgeText":"Avec cette option, vous examinerez les Messages clés dans chacune des sections Planification, Dépenses et Rapports.",
+      "takeExam":"Je veux seulement prendre le test",
+      "takeExamText":"Avec cette option, vous ferez trois tests, un dans la section Planification, un dans la section Dépenses et un dans la section Rapports."
     }
   }
   

@@ -13,10 +13,12 @@
     <p>
       <br/><b-button @click="submitAnswer" :disabled="q1Submit || answerArray.length < blanks">{{$t('submit')}}</b-button>
     </p>
-    <p v-if="isAcceptable(answerArray)">
-      <span class="v-right" v-if="arraysMatch(answerArray,answer) && q1Submit"><strong>Correct!</strong> {{feedback.right}}</span>
-      <span v-else-if="q1Submit" class="v-wrong"><strong>Incorrect.</strong> {{feedback.wrong}}</span></p>
-      {{getTheSentence}}
+    <div aria-live="polite">
+      <p v-if="isAcceptable(answerArray)">
+        <span class="v-right" v-if="arraysMatch(answerArray,answer) && q1Submit"><strong>Correct!</strong> {{feedback.right}}</span>
+        <span v-else-if="q1Submit" class="v-wrong"><strong>Incorrect.</strong> {{feedback.wrong}}</span></p>
+        {{getTheSentence}}
+    </div>
   </span>
 </template>
 <script type="text/javascript">

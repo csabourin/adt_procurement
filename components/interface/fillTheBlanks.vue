@@ -1,10 +1,10 @@
 <template>
-  <span>
+  <span :id="qid+index+'label'">
   	<p>&nbsp;</p>
     <i18n path="genSentence">
       <span v-for="(hole,index) in blanks" :key="index">
         <label class="v-inv" :for="qid+index"> {{$t('labelled')}}</label>
-        <select v-model="answerArray[index]" :id="qid+index" @change="q1Submit=false">
+        <select v-model="answerArray[index]" :id="qid+index" @change="q1Submit=false" :aria-describedby="qid+index+'label'">
           <option disabled value='' selected >{{$t('disabledOption')}}</option>
           <option v-for="(term,index) in termList" :key="index" :value="index" v-html="term" />
         </select>
@@ -13,10 +13,12 @@
     <p>
       <br/><b-button @click="submitAnswer" :disabled="q1Submit || answerArray.length < blanks">{{$t('submit')}}</b-button>
     </p>
-    <p v-if="isAcceptable(answerArray)">
-      <span class="v-right" v-if="arraysMatch(answerArray,answer) && q1Submit"><strong>Correct!</strong> {{feedback.right}}</span>
-      <span v-else-if="q1Submit" class="v-wrong"><strong>Incorrect.</strong> {{feedback.wrong}}</span></p>
-      {{getTheSentence}}
+    <div aria-live="polite">
+      <p v-if="isAcceptable(answerArray)">
+        <span class="v-right" v-if="arraysMatch(answerArray,answer) && q1Submit"><strong>Correct!</strong> {{feedback.right}}</span>
+        <span v-else-if="q1Submit" class="v-wrong"><strong>Incorrect.</strong> {{feedback.wrong}}</span></p>
+        {{getTheSentence}}
+    </div>
   </span>
 </template>
 <script type="text/javascript">

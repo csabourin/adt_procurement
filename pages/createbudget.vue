@@ -22,7 +22,8 @@
                     <b-card-text>
                       <!-- Used to jump to activities<button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->
                       <span v-if="$i18n.locale=='en'">
-
+                        <p>In this lesson, you will learn how to create a budget that aligns with your work plan. People who have been doing this for a while will tell you that these 2 things—the work plan and the budget—are often done at the same time in a single step. However, in order to help you learn how to do each of these tasks well, we’ve separated them.</p> 
+                        <p>Creating a budget involves 3 main tasks: analyzing the available information, forecasting the budget requirements, and submitting your proposed budget.</p>
                         <h2>1. Introduction</h2>
                         <p>In this lesson, you will learn how to create a budget that aligns with your work plan. People who have been doing this for a while will tell you that these 2 things—the work plan and the budget—are often done at the same time in a single step. However, in order to help you learn how to do each of these tasks well, we’ve separated them. </p>
                         <p>Creating a budget involves 3 main tasks: analyzing the available information, forecasting the budget requirements, and submitting your proposed budget. </p>
@@ -30,7 +31,7 @@
                         <p>Forecasting means estimating costs and identifying costs that may change significantly over the fiscal year.</p>
                         <p>Once your budget requirements are complete, submit your proposed budget to upper management. It will then be moved up to the departmental level. You may be asked to make adjustments before final approval.</p>
                         <p>Ready to dive further into each of these steps? Great! Just before we do that, though, let’s take a moment to learn how the government financial cycle works, so that you can tie it in with your own work as a manager.</p>
-
+                        <p>[A Continue to the next segment pop-up text box appears.]</p>
                         <hr>
 
                         <h2>2. The Financial Cycle of the Government of Canada</h2>
@@ -47,30 +48,32 @@
                         <p>You spend the money in your budget throughout the year. This eventually makes its way, at a higher level, into the Public Accounts of Canada. </p>
                         <p>Towards the end of the year, you will be asked for information on the results you achieved on the activities in your work plan. This becomes part of your organization's Departmental Results Report.</p>
                         <p>And by then, you will already be starting your work plan and budget requirements for the next fiscal year.</p>
+                        <p>[A Reference: Financial Cycle of the Government of Canada pop-up text box appears.]</p>
                         <hr>
 
                         <h2>3. Analyze a Budget - Key Terms</h2>
                         <p>Now that you have a better sense of the financial cycle of the Government of Canada, and how it relates to your work as a manager, let’s go back to our analyze-forecast-submit workflow to create a budget.</p>
                         <p>The more often you do this, the more accurate your budget will be. Don’t worry, your ability to make precise forecasts will increase with experience. You got this!</p>
                         <p>In the following activity, you will look at the key terms regarding budgets.</p>
-
+                        <p>[Onscreen text showing the Try It! instruction for the Analyze a Budget - Key Terms  activity.]</p>
                         <hr>
 
                         <h2>4. Analyze Available Information</h2>
                         <p>You’re now familiar with the key terms. You will have a chance to create your proposed budget by using information from last year and this year. Click on any question marks you see and a question will appear. Once you’ve answered it, the correct figure will appear in the budget. </p>
+                        <p>[Onscreen text showing the Try It! instruction for the Analyze Available Information activity.]</p>
 
                         <hr>
 
                         <h2>5. Forecast Your Budget Requirements</h2>
                         <p>After getting all the information you can from last year’s and the current year’s budget, you find that you still need to forecast some budget requirements. Let’s continue creating your proposed budget. Click on any question marks you see and a question will appear. Once you’ve answered it, the correct figure will appear in the budget.</p>
-
+                        <p>[Onscreen text showing the Try It! instruction for the Forecast Budget Requirements activity.]</p>        
                         <hr>
 
                         <h2>6. Submit Your Proposed Budget and Make Adjustments</h2>
                         <p>Now you’re ready to submit your budget to your director. You may be asked to explain assumptions you made, how your figures were estimated, and how your budget will allow you to fulfil your priorities. Always keep in mind that your expenditures must stay in line with the departmental mandate and priorities.</p>
                         <p>If your director asks about costs, the budget notes in your “back pocket” will remind you how you reached them. You may need to make adjustments before you get final approval.</p>
                         <p>During the meeting, if your director asks you to adjust your budget, you may also need to update your work plan.</p>
-                        <p>You may not have enough budget in O&M but find that you could move that amount over from Salary. Though not common, you can convert some funds from Salary to O&M, or vice versa. You just need to factor in the Employee Benefit Plan— or the EBP—amount in your calculations. For example, some departments use 27% for the EBP. This means that $100,000 in Salary equals $127,000 in O&M. Or vice versa. Talk to your financial management advisor if you think that this might be something you need to do.</p>
+                        <p>You may not have enough budget in O&M but find that you could move that amount over from Salary. Though not common, you can convert some funds from Salary to O&M, or vice versa. You just need to factor in the Employee Benefit Plan— or the EBP—amount in your calculations. For example, some departments use 27% for the EBP. This means that $100,000 in Salary equals $127,000 in O&M. Or vice versa. Talk to your financial management advisor if you think that this is something you might need to do.</p>
                         <p>You may also need other funding sources in your budget to cover the priorities in your work plan. Here are a few more examples of what you could do.</p>
                         <ul>
                           <li>Get extra money from other managers.</li>
@@ -81,7 +84,8 @@
                         <p>A Treasury Board Submission is a document used to seek Treasury Board approval for a program-execution strategy and/or funding authorities for an initiative that the organization would otherwise not be able to undertake or that is outside its delegated authorities. For more information, look in the toolbox.</p>
                         <p>A memorandum to Cabinet is used at any time of the year by ministers who wish to consult with their ministerial colleagues in Cabinet and reach a Cabinet decision. For more information, look in the toolbox.</p>
                         <p>In case you’re wondering what an interdepartmental settlement is, it refers to a transfer of funds between any two departments or agencies that operate within the Consolidated Revenue Fund. Examples are: language testing performed by the Public Service Commission, or translation by the Translation Bureau within the Public Services and Procurement Canada.</p>
-                        <p>The following activity will allow you to adjust your proposed budget. </p>
+                        <p>In the following activity, you will adjust your proposed budget. </p>
+                        <p>[Onscreen text showing the Try It! instruction for the Submit and Adjust your Budget activity.]</p>
 
                         <hr>
 
@@ -90,25 +94,30 @@
                         <p>Let’s bring what you have learned into real life. Your organization will have their own ways of responding to budget requirements. Take time out from the course and talk to your financial management advisor and director. Ask them the following questions: </p>
                         <ul>
                           <li>Do we have a budget template?</li>
-                          <li>What budgets do we have? For example,</li>
+                          <li>What budgets do we have? For example,
                           <ul>
                             <li>Operating budgets, which includes Salary and O&M</li>
                             <li>Grants & Contributions, or Gs&Cs and</li>
                             <li>Capital</li>
-                          </ul>
+                          </ul></li>
                           <li>And finally, ask if the capital budget is managed centrally or by each manager? </li>
                         </ul>
+                        <p>[An In Real Life pop-up text box appears.]</p>
 
                         <hr>
 
                         <h2>8. Quiz</h2>
                         <p>We’re at the end of this lesson on how to create a budget! Take a few moments to answer the following questions to see what you remember! </p>
+                        <p>[Onscreen text showing the Take the Quiz! instruction for the Quiz activity.]</p>
                         <hr>
                         <h2>9. Section completed</h2>
+                        <p>[Onscreen text showing Section Completed instruction.]</p>
 
                       </span>
                       <span v-if="$i18n.locale=='fr'">
-
+                        <p>Dans cette leçon, vous apprendrez comment créer un budget conforme à votre plan de travail. Les gens qui le font depuis un certain temps vous diront que ces 2 choses — le plan de travail et le budget — se font souvent en même temps en une seule étape. Cependant, afin de vous aider à bien faire chacune de ces tâches, nous les avons séparées.</p> 
+                        <p>La création du budget implique 3 tâches principales : analyser les informations disponibles, prévoir vos besoins budgétaires et soumettre votre budget proposé.</p>
+                        
                         <h2>1. Introduction</h2>
                         <p>Dans cette leçon, vous apprendrez comment créer un budget conforme à votre plan de travail. Les gens qui le font depuis un certain temps vous diront que ces 2 choses — le plan de travail et le budget — se font souvent en même temps en une seule étape. Cependant, afin de vous aider à bien faire chacune de ces tâches, nous les avons séparées.</p>
                         <p>La création du budget implique 3 tâches principales : analyser les informations disponibles, prévoir vos besoins budgétaires et soumettre votre budget proposé.</p>
@@ -116,6 +125,7 @@
                         <p>Prévoir, c'est estimer les coûts et déterminer les coûts qui pourraient changer de façon significative au cours de l'exercice financier.</p>
                         <p>Une fois ces besoins budgétaires établis, vous soumettez votre proposition de budget à la haute direction. Il sera ensuite regroupé au niveau du ministère. Il se peut qu'on vous demande d'apporter des ajustements avant l'approbation finale.</p>
                         <p>Prêt à plonger dans chacune de ces étapes? Super! Mais juste avant, prenons un moment pour en savoir plus sur le fonctionnement du cycle financier du gouvernement afin que vous puissiez le relier à votre propre travail de gestionnaire.</p>
+                        <p>[Une fenêtre contextuelle Continuer au segment suivant apparaît.]</p>
 
                         <hr>
 
@@ -133,26 +143,30 @@
                         <p>Vous dépensez l'argent dans votre budget tout au long de l'année. Cela finit par se retrouver, à un niveau élevé, dans les Comptes publics du Canada. </p>
                         <p>Vers la fin de l'année, on vous demande des renseignements sur les résultats obtenus par rapport aux activités prévues dans votre plan de travail. Cela fait partie du rapport ministériel sur les résultats de votre organisation. </p>
                         <p>Et d'ici là, vous commencez déjà votre plan de travail et les besoins budgétaires pour le prochain exercice financier.</p>
+                        <p>[Une fenêtre contextuelle Référence : Le cycle financier du Gouvernement du Canada apparaît.]</p>
                         <hr>
 
                         <h2>3. Analyser un budget - Termes clés</h2>
                         <p>Maintenant que vous avez une meilleure idée du cycle financier du gouvernement du Canada et de la façon dont il est relié à votre travail de gestionnaire, revenons à notre processus d'analyse, de prévision et de présentation de budget. </p>
                         <p>Votre budget deviendra de plus en plus précis à force de le faire. Ne vous inquiétez pas, votre aptitude à faire des prévisions précises augmentera avec l'expérience. Vous y arriverez!</p>
                         <p>L'activité suivante vous permettra d'examiner les termes clés des budgets.</p>
+                        <p>[Texte à l’écran indiquant l'instruction Essayez-le! pour l’activité Analyser un budget - Termes clés.]</p>
 
                         <hr>
 
                         <h2>4. Analyser l'information disponible</h2>
                         <p>Maintenant, vous connaissez les termes clés. Vous aurez l'occasion de créer votre budget proposé en utilisant l'information de l'année dernière et de cette année. Cliquez sur les points d'interrogation que vous verrez à l’écran et une question apparaîtra. Une fois que vous y aurez répondu, le chiffre exact apparaîtra dans le budget.</p>
+                        <p>[Texte à l’écran indiquant l'instruction Essayez-le! pour l’activité Analyser l’information disponible.]</p>
 
                         <hr>
 
-                        <h2>5. Prévoyez vos besoins budgétaires</h2>
+                        <h2>5. Prévoir vos besoins budgétaires</h2>
                         <p>Après avoir obtenu tous les renseignements que vous pouvez à partir des budgets de l'année dernière et de l'année en cours, vous constatez qu'il vous faut encore prévoir certains besoins budgétaires. Cliquez sur les points d'interrogation que vous voyez à l’écran et une question apparaîtra. Une fois que vous y aurez répondu, le chiffre correct apparaîtra dans le budget.</p>
+                        <p>[Texte à l’écran indiquant l'instruction Essayez-le! pour l’activité Prévoir vos besoins budgétaires.]</p>
 
                         <hr>
 
-                        <h2>6. Soumettez votre budget proposé et apportez les ajustements nécessaires</h2>
+                        <h2>6. Soumettre votre budget proposé et apporter les ajustements nécessaires</h2>
                         <p>Vous êtes maintenant prêt à soumettre votre budget à votre directeur. On vous demandera peut-être d'expliquer les hypothèses que vous avez utilisées, comment vos chiffres ont été estimés et comment votre budget vous permettra de respecter vos priorités. Gardez toujours à l'esprit que vos dépenses doivent rester conformes au mandat et aux priorités du ministère.</p>
                         <p>Si votre directeur vous pose des questions sur les coûts, les notes budgétaires que vous vous serez gardées vous rappelleront comment vous les avez atteints. Il se peut que vous ayez besoin de faire des ajustements avant d'obtenir l'approbation finale.</p>
                         <p>Si, au cours de la réunion, votre directeur vous demande d'ajuster votre budget, vous devrez peut-être aussi mettre à jour votre plan de travail. </p>
@@ -163,10 +177,11 @@
                           <li>Utilisez un surplus inexploité que votre administrateur pourrait avoir. Selon le ministère, certaines réserves sont conservées au niveau du DG, du SMA ou du ministère.</li>
                           <li>Ou encore, présentez une demande au Conseil du Trésor ou un mémoire au Cabinet.</li>
                         </ul>
+                        <p>La présentation au Conseil du Trésor est un document utilisé pour obtenir l'approbation du Conseil du Trésor pour une stratégie d'exécution de programme ou des autorisations de financement pour une initiative que l'organisation ne serait pas en mesure d'entreprendre autrement ou qui ne relève pas de ses pouvoirs délégués. Pour plus d'informations, consultez la boîte à outils.</p>
                         <p>Un mémoire au Cabinet est utilisé en tout temps de l'année par les ministres qui souhaitent consulter leurs collègues ministériels et prendre une décision du Cabinet. Pour plus d'informations, consultez la boîte à outils.</p>
-                        <p>Un mémoire au Cabinet est utilisé en tout temps de l’année par les ministres qui souhaitent consulter leurs collègues ministériels et prendre une décision du Cabinet. Pour plus d’informations, consultez la boîte à outils. </p>
                         <p>Au cas où vous vous demanderiez ce qu'est un règlement interministériel, il s'agit d'un transfert de sommes entre deux ministères ou organismes qui fonctionnent dans le cadre du Trésor. Par exemple, pensez aux tests linguistiques faits par la Commission de la fonction publique ou encore les services du Bureau de la traduction sous Services publics et Approvisionnements Canada. </p>
                         <p>L'activité qui suit vous permettra d'ajuster votre budget proposé. </p>
+                        <p>[Texte à l’écran indiquant l'instruction Essayez-le! pour l’activité Soumettre et ajuster votre budget.]</p>
 
                         <hr>
 
@@ -174,21 +189,24 @@
                         <p>Appliquons ce que vous avez appris dans la vraie vie. Votre organisation aura sa propre façon de répondre aux besoins budgétaires. Prenez un moment pour parler à votre conseiller en gestion financière et à votre directeur, posez-leur les questions suivantes : </p>
                         <ul>
                           <li>Avons-nous un modèle de budget?</li>
-                          <li>De quel budget disposons-nous?</li>
+                          <li>De quel budget disposons-nous? Par exemple,
                           <ul>
                             <li>Fonctionnement, incluant salaires et F et E</li>
                             <li>subventions et contributions</li>
                             <li>et immobilisations</li>
-                          </ul>
-                          <li>Et finalement, le budget d'investissement est-il géré de façon centralisée ou individuellement par chaque gestionnaire? </li>
+                          </ul></li>
+                          <li>Et finalement, le budget d’immobilisations est-il géré de façon centralisée ou individuellement par chaque gestionnaire? </li>
                         </ul>
+                        <p>[Une fenêtre contextuelle Dans la vraie vie apparaît.]</p>
 
                         <hr>
 
                         <h2>8. Quiz</h2>
                         <p>Nous sommes à la fin de la leçon sur la façon de créer un budget! Prenez maintenant quelques instants pour répondre aux questions suivantes afin de voir ce que vous avez retenu!</p>
+                        <p>[Texte à l’écran indiquant l’instruction Répondez au quiz pour l’activité Quiz.]</p>
                         <hr>
                         <h2>9. Section complétée</h2>
+                        <p>[Texte à l’écran indiquant l’instruction Section complétée.]</p>
 
                       </span>
                     </b-card-text>

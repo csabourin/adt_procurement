@@ -1,9 +1,13 @@
 <template>
-  <nav :class="currentState ? 'contentMap' : ['contentMap', 'closed']" :aria-label="currentState ? $t('navMenuExpanded') : $t('navMenuCollapsed')">
+  <nav :class="currentState ? 'contentMap' : ['contentMap', 'closed']" :aria-label="currentState ? $t('navMenuCollapsed') : $t('navMenuExpanded')">
     <transition appear mode="out-in" name="fade">
       <div>
         <div v-show="currentState">
           <menu style="list-style: none; margin-top: 30px;">
+            <button @click="setParentOpen" class="closeSideMenuButton" id="closeSideMenuButton">X
+            <span class="v-inv" v-if="MenuShowing">{{$t('navMenuCollapse')}}</span>
+            <span class="v-inv" v-else>{{$t('navMenuExpand')}}</span>
+          </button>
             <li role="menuitem">
               <nuxt-link :to="localePath('index')" v-html="$t('homePage')" exact />
             </li>
@@ -57,7 +61,10 @@
             </li>
           </menu>
         </div>
-        <div v-show="!currentState" class="clickMe closedMenuBox" @click="setParentOpen" @mouseover="arrowVisible = true" @mouseout="arrowVisible = false">
+        <div class="clickMe closedMenuBox">
+        <a v-show="!currentState" @click="setParentOpen" @mouseover="arrowVisible = true" @mouseout="arrowVisible = false" href="#closeSideMenuButton" id="sideMenuClosed">
+          <span class="v-inv" v-if="MenuShowing">{{$t('navMenuCollapse')}}</span>
+          <span class="v-inv" v-else>{{$t('navMenuExpand')}}</span>
           <div class="color1">
             <h2>{{$t('plan')}}</h2>
           </div>
@@ -68,6 +75,7 @@
             <h2>{{$t('report')}}</h2>
           </div>
           <div class="open-indicator d-none d-sm-block" v-if="arrowVisible"></div>
+        </a>
         </div>
       </div>
     </transition>
@@ -257,6 +265,9 @@
   border-left-style: solid;
   border-left-color:transparent;
 }
+.closedMenuBox a {
+  padding: 0px;
+}
 .contentMap a.nuxt-link-active {
   background-color:#f0f0f0;
   border-left-width:4px;
@@ -374,6 +385,17 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
     background: rgb(220, 220, 220);
     transform: skew(-25deg, 0deg);
   }
+
+  .closeSideMenuButton {
+    width: 25px;
+    height: 20px;
+    border: none;
+    position: relative;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+  }
   
   @keyframes blink {
     0%   { opacity: 0; right: -35px; }
@@ -383,3 +405,15 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
   }
   
 </style>
+<i18n>
+  {
+    "en":{
+    "navMenuCollapse":"Collapse Navigation Menu",
+    "navMenuExpand":"Expand Navigation Menu"
+  },
+    "fr":{
+    "navMenuCollapse":"Réduire le menu de navigation",
+    "navMenuExpand":"Développer le menu de navigation"
+  }
+  }
+</i18n>

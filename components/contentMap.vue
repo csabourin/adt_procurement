@@ -5,9 +5,8 @@
         <div v-show="currentState">
           <menu style="list-style: none; margin-top: 30px;">
             <button @click="setParentOpen" class="closeSideMenuButton" id="closeSideMenuButton">X
-            <span class="v-inv" v-if="MenuShowing">{{$t('navMenuCollapse')}}</span>
-            <span class="v-inv" v-else>{{$t('navMenuExpand')}}</span>
-          </button>
+              <span class="v-inv">{{$t('navMenuCollapse')}}</span>
+            </button>
             <li role="menuitem">
               <nuxt-link :to="localePath('index')" v-html="$t('homePage')" exact />
             </li>
@@ -63,8 +62,7 @@
         </div>
         <div class="clickMe closedMenuBox">
         <a v-show="!currentState" @click="setParentOpen" @mouseover="arrowVisible = true" @mouseout="arrowVisible = false" href="#closeSideMenuButton" id="sideMenuClosed">
-          <span class="v-inv" v-if="MenuShowing">{{$t('navMenuCollapse')}}</span>
-          <span class="v-inv" v-else>{{$t('navMenuExpand')}}</span>
+          <span class="v-inv">{{$t('navMenuExpand')}}</span>
           <div class="color1">
             <h2>{{$t('plan')}}</h2>
           </div>

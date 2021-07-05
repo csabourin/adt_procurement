@@ -1,10 +1,10 @@
 <template>
-  <nav :class="currentState ? 'contentMap' : ['contentMap', 'closed']" :aria-label="currentState ? $t('navMenuCollapsed') : $t('navMenuExpanded')">
+  <nav :class="currentState ? 'contentMap' : ['contentMap', 'closed']" :aria-label="currentState ? $t('navMenuExpanded') : $t('navMenuCollapsed')" aria-live="polite">
     <transition appear mode="out-in" name="fade">
       <div>
         <div v-show="currentState">
           <menu style="list-style: none; margin-top: 30px;">
-            <button @click="setParentOpen" class="closeSideMenuButton" id="closeSideMenuButton">X
+            <button @click="setParentOpen" class="closeSideMenuButton" id="closeSideMenuButton">
               <span class="v-inv">{{$t('navMenuCollapse')}}</span>
             </button>
             <li role="menuitem">
@@ -61,8 +61,8 @@
           </menu>
         </div>
         <div class="clickMe closedMenuBox">
-        <a v-show="!currentState" @click="setParentOpen" @mouseover="arrowVisible = true" @mouseout="arrowVisible = false" href="#closeSideMenuButton" id="sideMenuClosed">
-          <span class="v-inv">{{$t('navMenuExpand')}}</span>
+          <a v-show="!currentState" @click="setParentOpen" @mouseover="arrowVisible = true" @mouseout="arrowVisible = false" href="#closeSideMenuButton" id="sideMenuClosed" :aria-label="$t('navMenuExpand')" aria-live="polite">
+          <!-- <span class="v-inv">{{$t('navMenuExpand')}}</span> -->
           <div class="color1">
             <h2>{{$t('plan')}}</h2>
           </div>
@@ -73,7 +73,7 @@
             <h2>{{$t('report')}}</h2>
           </div>
           <div class="open-indicator d-none d-sm-block" v-if="arrowVisible"></div>
-        </a>
+          </a>
         </div>
       </div>
     </transition>
@@ -384,7 +384,7 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
     transform: skew(-25deg, 0deg);
   }
 
-  .closeSideMenuButton {
+  /*.closeSideMenuButton {
     width: 25px;
     height: 20px;
     border: none;
@@ -393,7 +393,35 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
     cursor: pointer;
     text-decoration: none;
     font-size: 30px;
-  }
+  }*/
+
+  .closeSideMenuButton { /* Bouton pour fermer le side menu (code a été emprunté d'hamburger.vue) */
+  /*top:.5em;*/
+  width: 30px;
+  height: 20px;
+  border: none;
+  position: relative;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.closeSideMenuButton:before,
+.closeSideMenuButton:after {
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #4D4D4D;
+  content: '';
+  transition: transform 0.3s ease;
+}
+
+.closeSideMenuButton:before {
+  transform: rotate(-45deg);
+}
+.closeSideMenuButton:after {
+  transform: rotate(45deg);
+}
   
   @keyframes blink {
     0%   { opacity: 0; right: -35px; }

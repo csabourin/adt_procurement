@@ -3,10 +3,10 @@
     <transition appear mode="out-in" name="fade">
       <div>
         <div v-show="currentState">
+          <button @click="setParentOpen" class="closeSideMenuButton" id="closeSideMenuButton">
+            <span class="v-inv">{{$t('navMenuCollapse')}}</span>
+          </button>
           <menu style="list-style: none; margin-top: 30px;">
-            <button @click="setParentOpen" class="closeSideMenuButton" id="closeSideMenuButton">
-              <span class="v-inv">{{$t('navMenuCollapse')}}</span>
-            </button>
             <li role="menuitem">
               <nuxt-link :to="localePath('index')" v-html="$t('homePage')" exact />
             </li>
@@ -404,6 +404,9 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
   background: none;
   cursor: pointer;
   text-decoration: none;
+  outline-offset: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 .closeSideMenuButton:before,
 .closeSideMenuButton:after {

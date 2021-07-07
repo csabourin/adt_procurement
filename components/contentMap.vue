@@ -32,16 +32,16 @@
           <h2 class="colorBar2"><span class="v-inv">{{$t('navigationMenu')}}</span> {{$t('spend')}}</h2>
           <menu style="list-style: none">
             <li role="menuitem">
-              <nuxt-link :to="localePath('spendPart1')" v-html="$t('InitiateAuthorizeSpending')" />
+              <nuxt-link :to="localePath('procurePart1')" v-html="$t('InitiateAuthorizeSpending')" />
             </li>
             <li role="menuitem">
-              <nuxt-link :to="localePath('spendPart2')" v-html="$t('ExerciseFinancialAuthority')" />
+              <nuxt-link :to="localePath('procurePart2')" v-html="$t('ExerciseFinancialAuthority')" />
             </li>
             <li role="menuitem">
-              <nuxt-link :to="localePath('spendPart3')" v-html="$t('MonitorControlFinances')" />
+              <nuxt-link :to="localePath('procurePart3')" v-html="$t('MonitorControlFinances')" />
             </li>
             <li role="menuitem">
-              <nuxt-link :to="localePath('spendKey')" v-html="$t('KeyMessagesSpend')" />
+              <nuxt-link :to="localePath('procureKey')" v-html="$t('KeyMessagesSpend')" />
             </li>
             <li role="menuitem">
               <nuxt-link :to="localePath('exam2')" v-html="$t('TestSpend')" />

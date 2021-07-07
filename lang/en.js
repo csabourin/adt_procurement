@@ -1,5 +1,8 @@
 // English translation
 export default {
+  AnalyzeGoods:"Analyze Goods, Services and Construction Needs",
+  ForecastBudget:"Forecast Budget Requirements",
+  BudgetAuthorities:" Budgets and Authorities",
   finRoles: "Responsible Use of Public Funds",
   symbolicIdentifier: "Symbolic Identifier",
   skipToMain:"Skip to main content",

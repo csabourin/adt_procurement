@@ -76,8 +76,9 @@
       <b-col>
         <h2 class="sideTitle planTitle">{{$t('plan')}}</h2>
         <div role="navigation" class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }" :aria-label="$t('plan') + ' - Navigation'">
-          <microlearning path="buildwp" time="20"  imagePath="BuildWP.svg" :text="$t('BuildWorkPlan')" :completion="$store.state.currentPlaying.buildWP_player" type="video" />
-          <microlearning time="20" path="createbudget" imagePath="CreateBud.svg" :text="$t('CreateBudget')" :completion="$store.state.currentPlaying.createBudget_player" type="video" />
+          <microlearning path="analyzegoods" time="20"  imagePath="BuildWP.svg" :text="$t('AnalyzeGoods')" :completion="$store.state.currentPlaying.buildWP_player" type="video" />
+          <microlearning time="20" path="forecastbudget" imagePath="CreateBud.svg" :text="$t('ForecastBudget')" :completion="$store.state.currentPlaying.createBudget_player" type="video" />
+          <microlearning time="20" path="budgetauthorities" imagePath="CreateBud.svg" :text="$t('BudgetAuthorities')" :completion="$store.state.currentPlaying.createBudget_player" type="video" />
           <microlearning path="planKey" time="5" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')"  :completion="$store.state.currentPlaying.kmPlan" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
           <microlearning time="15" path="exam1" imagePath="P-Test.svg" :text="$t('TestPlan')" :completion="parseInt(planCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
         </div>

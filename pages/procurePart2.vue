@@ -149,14 +149,14 @@
       </b-container>
     </section>
     <div>
-        <b-modal no-stacking id="CertificationAuthority" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="SolicitationDocs" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
                     <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('CertAuthorityTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <CertificationAuthority />
+            <SolicitationDocs />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
         <b-modal id="AccuracyOfInvoice" @hide="resumePlay()" size="xl" okOnly>
@@ -193,20 +193,20 @@
 <script type="text/javascript">
   import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import CertificationAuthority from '~/components/slides/spend/Spend2CertificationAuthority'
+import SolicitationDocs from '~/components/slides/spend/Procure2SolicitationDocs'
 import AccuracyInvoice from '~/components/slides/spend/Spend2AccuracyInvoice'
 import ProcessInvoice from '~/components/slides/spend/spendPart2ProcessInvoice'
 export default {
   data() {
     return {
-      modalArray: ["CertificationAuthority", "AccuracyOfInvoice", "ProcessingInvoice"]
+      modalArray: ["SolicitationDocs", "AccuracyOfInvoice", "ProcessingInvoice"]
     }
   },
   components: {
     videoPlayer,
     microlearning,
     AccuracyInvoice,
-    CertificationAuthority,
+    SolicitationDocs,
     ProcessInvoice
   },
   computed:{

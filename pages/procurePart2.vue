@@ -364,20 +364,26 @@ button.accessibilityButton {
 <i18n>{
   "en":{
   "TakeTheQuiz":"Take the Quiz",
-  "AccuracyInvoiceTitle":"Activity: Accuracy of Invoice",
-  "CertAuthorityTitle":"Activity: Certification Authority",
-  "ProcessInvoiceTitle":"Activity: Processing the Invoice",
+  "CertAuthorityTitle":"Activity: Solicitation Documents – Key Terms",
+  "AccuracyInvoiceTitle":"Activity: Evaluate and Negotiate",
+  "ProcessInvoiceTitle":"Activity: Contract Approval",
+  "ContractAwardTitle":"Activity: Contract Award",
+  "InRealLifeTitle":"In Real Life",
+  "Quiz":"Quiz",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
   "playSegment":"Play video segment",
   "transcriptText":"",
-  "spendSectionBar": "SPEND"
+  "spendSectionBar": "PROCURE"
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
-  "CertAuthorityTitle":"Activité : Autorité de certification",
-  "ProcessInvoiceTitle":"Activité : Traitement de la facture",
+  "CertAuthorityTitle":"Activité : Documents d’invitation à soumissionner – Termes clés",
   "AccuracyInvoiceTitle":"Activité : Exactitude de la facture",
+  "ProcessInvoiceTitle":"Activité : Approbation du contrat",
+  "ContractAwardTitle":"Activité : Attribution du contrat",
+  "InRealLifeTitle":"Dans la vraie vie",
+  "Quiz":"Quiz",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l’activité",
   "playSegment":"Faire jouer le segment vidéo",

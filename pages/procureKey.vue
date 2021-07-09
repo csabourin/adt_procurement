@@ -5,7 +5,7 @@
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
-        <b-col cols="6" lg><span v-if="$i18n.locale=='en'">
+        <b-col cols="12" lg><span v-if="$i18n.locale=='en'">
             <h3>Technical and Bid Requirements and Procurement Strategy</h3>
             <ul>
               <li>You identify and define your requirements while taking into account any special considerations or other concerns, such as accessibility, Indigenous procurement and green procurement.</li>
@@ -22,7 +22,9 @@
               </ul>
           </span>
         </b-col>
-        <b-col cols="6" lg><span v-if="$i18n.locale=='en'">
+      </b-row>
+      <b-row>
+        <b-col cols="12" lg><span v-if="$i18n.locale=='en'">
             <h3>Solicit, Evaluate, Approve and Award Competitive Contracts</h3>
             <ul>
               <li>With the help of a procurement specialist, you prepare the bid solicitation documents and solicit the bid.</li>
@@ -39,8 +41,8 @@
                 <li>Enfin, une fois le contrat approuvé, le spécialiste en approvisionnement en fera l’attribution.</li>
               </ul>
           </span></b-col>
-          </b-row>
-          <b-row>
+      </b-row>
+      <b-row>
           <b-col cols="12" lg><span v-if="$i18n.locale=='en'">
             <h3>Administer, Pay and Close-Out Contract</h3>
             <ul>
@@ -56,7 +58,7 @@
                 <li>Finalement, une fois le contrat achevé, le spécialiste en approvisionnement procédera à la clôture du contrat.</li>
               </ul>
           </span></b-col>
-          </b-row>
+      </b-row>
       <b-row>
         <b-col>
           <keyMessagesFiles>
@@ -65,6 +67,24 @@
               <b-row>
                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
                 </b-col>
                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />

@@ -169,14 +169,14 @@
             <EvaluateNegotiate />
           <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal id="ProcessingInvoice" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal id="ContractApproval" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
                     <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('ProcessInvoiceTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <ProcessInvoice />
+            <ContractApproval />
           <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
     </div>
@@ -193,13 +193,13 @@
 <script type="text/javascript">
   import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import SolicitationDocs from '~/components/slides/spend/Procure2SolicitationDocs'
-import EvaluateNegotiate from '~/components/slides/spend/Procure2EvaluateNegotiate'
-import ProcessInvoice from '~/components/slides/spend/spendPart2ProcessInvoice'
+import SolicitationDocs from '~/components/slides/spend/procurePart2SolicitationDocs'
+import EvaluateNegotiate from '~/components/slides/spend/procurePart2EvaluateNegotiate'
+import ContractApproval from '~/components/slides/spend/procurePart2ContractApproval'
 export default {
   data() {
     return {
-      modalArray: ["SolicitationDocs", "AccuracyOfInvoice", "ProcessingInvoice"]
+      modalArray: ["SolicitationDocs", "EvaluateNegotiate", "ContractApproval"]
     }
   },
   components: {
@@ -207,7 +207,7 @@ export default {
     microlearning,
     EvaluateNegotiate,
     SolicitationDocs,
-    ProcessInvoice
+    ContractApproval
   },
   computed:{
     thatPoint(){

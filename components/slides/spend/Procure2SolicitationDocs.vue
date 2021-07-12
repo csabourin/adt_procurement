@@ -3,6 +3,7 @@
     <b-container>
       <b-row>
         <b-col>
+          <b-card>
           <p>{{$t('introText')}}</p>
           <b-tabs content v-model="tabIndex">
             <b-tab title="Question 1">
@@ -21,6 +22,13 @@
               <radioQuiz :question="$t('q5')" qId="5" />
             </b-tab>
           </b-tabs>
+          <!-- Control buttons-->
+          <div class="text-center">
+            <b-button-group :aria-label="$t('questionNav')" class="mt-2">
+              <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+              <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=4">{{$t('nextPage')}}</b-button>
+            </b-button-group>
+          </div>
           <!--<windowPortal :open="openCard" @close="openCard = false">
             <b-container style="margin-top: 25px; margin-bottom: 25px;">
               <b-row>
@@ -31,6 +39,7 @@
           </b-container>
           </windowPortal>
           <p><b-button @click="openCard = true">{{$t('openCard')}}</b-button></p>-->
+          </b-card>
         </b-col>
         <!--<b-col>
           <signatureCard />
@@ -54,9 +63,16 @@
     },
     data(){
       return{
-        openCard: false
+        tabIndex: 0
       }
       
+    },
+    methods:{
+      focus(){
+        setTimeout(function(){
+          document.querySelector(".tab-pane.active .pure-radiobutton fieldset, .tab-pane.active .pure-checkbox fieldset").focus();
+        }, 300);
+      }
     }
   }
 

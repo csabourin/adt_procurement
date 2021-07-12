@@ -159,14 +159,14 @@
             <SolicitationDocs />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal id="AccuracyOfInvoice" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal id="EvaluateNegotiate" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
                     <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('AccuracyInvoiceTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <AccuracyInvoice />
+            <EvaluateNegotiate />
           <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
         <b-modal id="ProcessingInvoice" @hide="resumePlay()" size="xl" okOnly>
@@ -194,7 +194,7 @@
   import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
 import SolicitationDocs from '~/components/slides/spend/Procure2SolicitationDocs'
-import AccuracyInvoice from '~/components/slides/spend/Spend2AccuracyInvoice'
+import EvaluateNegotiate from '~/components/slides/spend/Procure2EvaluateNegotiate'
 import ProcessInvoice from '~/components/slides/spend/spendPart2ProcessInvoice'
 export default {
   data() {
@@ -205,7 +205,7 @@ export default {
   components: {
     videoPlayer,
     microlearning,
-    AccuracyInvoice,
+    EvaluateNegotiate,
     SolicitationDocs,
     ProcessInvoice
   },

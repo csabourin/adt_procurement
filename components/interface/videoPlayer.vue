@@ -171,17 +171,17 @@ export default {
           infos: [0],
           quiz: [7]
         },
-        spendPart1: {
+        procurePart1: {
           references: [],
           infos: [],
           quiz: [4]
         },
-        spendPart2: {
+        procurePart2: {
           references: [],
           infos: [],
           quiz: []
         },
-        spendPart3: {
+        procurePart3: {
           references: [],
           infos: [],
           quiz: [3]
@@ -279,12 +279,12 @@ export default {
           return this.popups.buildWP.references;
         case "createBudget":
           return this.popups.createBudget.references;
-        case "spendPart1":
-          return this.popups.spendPart1.references;
-        case "spendPart2":
-          return this.popups.spendPart2.references;
-        case "spendPart3":
-          return this.popups.spendPart3.references;
+        case "procurePart1":
+          return this.popups.procurePart1.references;
+        case "procurePart2":
+          return this.popups.procurePart2.references;
+        case "procurePart3":
+          return this.popups.procurePart3.references;
         case "reportPart1":
           return this.popups.reportPart1.references;
         case "reportPart2":
@@ -301,12 +301,12 @@ export default {
           return this.popups.buildWP.infos;
         case "createBudget":
           return this.popups.createBudget.infos;
-        case "spendPart1":
-          return this.popups.spendPart1.infos;
-        case "spendPart2":
-          return this.popups.spendPart2.infos;
-        case "spendPart3":
-          return this.popups.spendPart3.infos;
+        case "procurePart1":
+          return this.popups.procurePart1.infos;
+        case "procurePart2":
+          return this.popups.procurePart2.infos;
+        case "procurePart3":
+          return this.popups.procurePart3.infos;
         case "reportPart1":
           return this.popups.reportPart1.infos;
         case "reportPart2":
@@ -323,12 +323,12 @@ export default {
           return this.popups.buildWP.quiz;
         case "createBudget":
           return this.popups.createBudget.quiz;
-        case "spendPart1":
-          return this.popups.spendPart1.quiz;
-        case "spendPart2":
-          return this.popups.spendPart2.quiz;
-        case "spendPart3":
-          return this.popups.spendPart3.quiz;
+        case "procurePart1":
+          return this.popups.procurePart1.quiz;
+        case "procurePart2":
+          return this.popups.procurePart2.quiz;
+        case "procurePart3":
+          return this.popups.procurePart3.quiz;
         case "reportPart1":
           return this.popups.reportPart1.quiz;
         case "reportPart2":

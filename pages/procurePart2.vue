@@ -149,6 +149,16 @@
       </b-container>
     </section>
     <div>
+        <b-modal no-stacking id="procureLinks" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('Introduction')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <procureLinks />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
         <b-modal no-stacking id="SolicitationDocs" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
@@ -179,6 +189,46 @@
             <ContractApproval />
           <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
+        <b-modal no-stacking id="ContractAward" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('ContractAwardTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <ContractAward />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
+          <template v-slot:modal-header="{ close }">
+            <h3 class="h5">
+              <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
+                {{$t('InRealLife')}}
+            </h3>
+            <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <b-row align-h="center">
+            <b-col cols="12" md="9">
+              <img src="~/assets/inRealLifeWP.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <p>{{$t('IRLProcureText')}}</p>
+            </b-col>
+          </b-row>
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="Quiz" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('IntroTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <Quiz />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
     </div>
     <div class="bottomNav spendSection">
       <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
@@ -192,22 +242,26 @@
 </template>
 <script type="text/javascript">
   import videoPlayer from '~/components/interface/videoPlayer'
-import microlearning from '~/components/microlearning'
-import SolicitationDocs from '~/components/slides/spend/procurePart2SolicitationDocs'
-import EvaluateNegotiate from '~/components/slides/spend/procurePart2EvaluateNegotiate'
-import ContractApproval from '~/components/slides/spend/procurePart2ContractApproval'
+  import microlearning from '~/components/microlearning'
+  import procureLinks from '~/components/procure_links'
+  import SolicitationDocs from '~/components/slides/spend/procurePart2SolicitationDocs'
+  import EvaluateNegotiate from '~/components/slides/spend/procurePart2EvaluateNegotiate'
+  import ContractApproval from '~/components/slides/spend/procurePart2ContractApproval'
+  import ContractAward from '~/components/slides/spend/procurePart2ContractAward'
 export default {
   data() {
     return {
-      modalArray: ["SolicitationDocs", "EvaluateNegotiate", "ContractApproval"]
+      modalArray: ["procureLinks", "SolicitationDocs", "EvaluateNegotiate", "ContractApproval", "ContractAward", "reallife"]
     }
   },
   components: {
     videoPlayer,
     microlearning,
+    procureLinks,
     EvaluateNegotiate,
     SolicitationDocs,
-    ContractApproval
+    ContractApproval,
+    ContractAward
   },
   computed:{
     thatPoint(){
@@ -363,32 +417,38 @@ button.accessibilityButton {
 </style>
 <i18n>{
   "en":{
+  "Introduction": "References: External Links",
   "TakeTheQuiz":"Take the Quiz",
   "CertAuthorityTitle":"Activity: Solicitation Documents – Key Terms",
   "AccuracyInvoiceTitle":"Activity: Evaluate and Negotiate",
   "ProcessInvoiceTitle":"Activity: Contract Approval",
   "ContractAwardTitle":"Activity: Contract Award",
   "InRealLifeTitle":"In Real Life",
+  "InRealLife":"In Real Life",
+  "IRLProcureText":"Take what you have learned into real life! Your organization will have their own ways of doing things. Take some time out from the course to see how the solicitation process works in your department.",
   "Quiz":"Quiz",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
   "playSegment":"Play video segment",
-  "transcriptText":"",
+  "transcriptText":"Your organization will have their own ways of doing things. Take some time out from the course to see how the solicitation process works in your department.",
   "spendSectionBar": "PROCURE"
   },
   "fr":{
+  "Introduction": "References: External Links",
   "TakeTheQuiz":"Répondez au questionnaire",
   "CertAuthorityTitle":"Activité : Documents d’invitation à soumissionner – Termes clés",
   "AccuracyInvoiceTitle":"Activité : Exactitude de la facture",
   "ProcessInvoiceTitle":"Activité : Approbation du contrat",
   "ContractAwardTitle":"Activité : Attribution du contrat",
   "InRealLifeTitle":"Dans la vraie vie",
+  "InRealLife":"Dans la vraie vie",
+  "IRLProcureText":"Appliquez ce que vous avez appris dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment le processus de demande de soumissions fonctionne dans votre ministère.",
   "Quiz":"Quiz",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l’activité",
   "playSegment":"Faire jouer le segment vidéo",
   "transcriptText":"",
-  "spendSectionBar": "DÉPENSES"
+  "spendSectionBar": "ACHAT"
   }
   }
 </i18n>

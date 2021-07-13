@@ -2,7 +2,6 @@
   <span>
     <div v-if="$i18n.locale=='fr'">
       <div>
-        <p>{{$t('toolboxTitle')}}</p>
         <h4>Achat</h4>
         <ul class="list-unstyled">
           <li><externalLink link="https://achatsetventes.gc.ca/">Lien à achatsetventes.ca</externalLink></li>
@@ -23,7 +22,6 @@
       </div>
     </div>
     <div v-if="$i18n.locale=='en'">
-      <p>{{$t('toolboxTitle')}}</p>
       <div>
         <h4>Procure</h4>
         <ul class="list-unstyled">
@@ -63,13 +61,3 @@
     font-weight: bold;
   }
 </style>
-<i18n>{
-  "en":{
-    "toolboxTitle": "For more information, feel free to consult the following links. These links are also available in the Toolbox."
-  },
-  "fr":{
-    "toolboxTitle": "Pour plus d’informations, n’hésitez pas à consulter les liens suivants. Ces liens sont également disponibles dans la boîte à outils."
-  }
-  
-}
-</i18n>

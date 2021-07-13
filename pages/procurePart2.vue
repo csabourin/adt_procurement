@@ -156,6 +156,7 @@
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
+            <p>{{$t('toolboxTitle')}}</p>
             <procureLinks />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
@@ -418,6 +419,7 @@ button.accessibilityButton {
 <i18n>{
   "en":{
   "Introduction": "References: External Links",
+  "toolboxTitle": "For more information, feel free to consult the following links. These links are also available in the Toolbox.",
   "TakeTheQuiz":"Take the Quiz",
   "CertAuthorityTitle":"Activity: Solicitation Documents – Key Terms",
   "AccuracyInvoiceTitle":"Activity: Evaluate and Negotiate",
@@ -436,6 +438,7 @@ button.accessibilityButton {
   "fr":{
   "Introduction": "References: External Links",
   "TakeTheQuiz":"Répondez au questionnaire",
+  "toolboxTitle": "Pour plus d’informations, n’hésitez pas à consulter les liens suivants. Ces liens sont également disponibles dans la boîte à outils.",
   "CertAuthorityTitle":"Activité : Documents d’invitation à soumissionner – Termes clés",
   "AccuracyInvoiceTitle":"Activité : Exactitude de la facture",
   "ProcessInvoiceTitle":"Activité : Approbation du contrat",

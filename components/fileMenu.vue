@@ -76,7 +76,7 @@
             <b-card-body>
               <b-card-text>
                 <planLinks />
-                <spendLinks />
+                <procureLinks />
                 <reportLinks />
               </b-card-text>
             </b-card-body>
@@ -491,7 +491,7 @@
   import download from "~/components/fileDownload"
   import HTMLJobaidLink from "~/components/HTMLJobaidLink"
   import planLinks from "~/components/plan_links"
-  import spendLinks from "~/components/spend_links"
+  import procureLinks from "~/components/procure_links"
   import reportLinks from "~/components/report_links"
   import homebutton from "~/components/icons/home_icon"
   export default {
@@ -499,7 +499,7 @@
       fileIcon,
       download,
       planLinks,
-      spendLinks,
+      procureLinks,
       reportLinks,
       homebutton,
       HTMLJobaidLink

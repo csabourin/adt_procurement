@@ -1,5 +1,6 @@
 // English translation
 export default {
+  lifeCycle:"Life Cycle Materiel Management",
   AnalyzeGoods:"Analyze Goods, Services and Construction Needs",
   ForecastBudget:"Forecast Budget Requirements",
   BudgetAuthorities:" Budgets and Authorities",
@@ -19,6 +20,7 @@ export default {
   transcript: "Transcript",
   plan: "Plan",
   spend: "Procure",
+  manage:"Manage",
   report: "Report",
   previousPage: "Previous",
   nextPage: "Next",
@@ -41,6 +43,7 @@ export default {
   KeyMessagesPlan: "<span class='v-inv'>Plan:</span> Key Messages",
   KeyMessagesSpend: "<span class='v-inv'>Procure:</span> Key Messages",
   KeyMessagesReport: "<span class='v-inv'>Report:</span> Key Messages",
+  KeyMessagesManage: "<span class='v-inv'>Manage:</span> Key Messages",
   fileSet: "Files used in this section",
   BuildWorkPlan: "Build a Work Plan",
   CreateBudget: "Create a Budget",
@@ -54,6 +57,7 @@ export default {
   TestPlan: "<span class='v-inv'>Plan:</span> Test",
   TestSpend: "<span class='v-inv'>Procure:</span> Test",
   TestReport: "<span class='v-inv'>Report:</span> Test",
+  TestManage: "<span class='v-inv'>Manage:</span> Test",
   MarkCompleted: "Mark as completed",
   questionNav: "Question Navigation",
   

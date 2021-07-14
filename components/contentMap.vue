@@ -47,6 +47,18 @@
               <nuxt-link :to="localePath('exam2')" v-html="$t('TestSpend')" />
             </li>
           </menu>
+          <h2 class="colorBar2"><span class="v-inv">{{$t('navigationMenu')}}</span> {{$t('manage')}}</h2>
+          <menu style="list-style: none">
+            <li role="menuitem">
+              <nuxt-link :to="localePath('managePart1')" v-html="$t('lifeCycle')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('manageKey')" v-html="$t('KeyMessagesManage')" />
+            </li>
+            <li role="menuitem">
+              <nuxt-link :to="localePath('manageExam')" v-html="$t('TestManage')" />
+            </li>
+          </menu>
           <h2 class="colorBar3"><span class="v-inv">{{$t('navigationMenu')}}</span> {{$t('report')}}</h2>
           <menu style="list-style: none">
             <li role="menuitem">

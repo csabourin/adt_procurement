@@ -91,6 +91,15 @@
           <microlearning path="spendKey" time="5" imagePath="KeyMessS.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
           <microlearning time="15" path="exam2"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
         </div>
+
+        <hr class="manageProcurement">
+        <h2 class="sideTitle spendTitle">{{$t('manage')}}</h2>
+        <div role="navigation" class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }" :aria-label="$t('spend') + ' - Navigation'">
+          <microlearning imagePath="InitiateAuthSpending.svg" path="managePart1" time="20" :text="$t('lifeCycle')"  :completion="$store.state.currentPlaying.spendPart1_player" type="video" />
+          <microlearning path="manageKey" time="5" imagePath="KeyMessS.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+          <microlearning time="15" path="manageExam"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+        </div>
+
         <hr class="spendHr">
         <h2 class="sideTitle reportTitle">{{$t('report')}}</h2>
         <div role="navigation" class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }" :aria-label="$t('report') + ' - Navigation'">

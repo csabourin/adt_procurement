@@ -1,5 +1,10 @@
 // Traduction française
 export default {
+  lifecycle:"Life Cycle Materiel Management",
+  manage:"Gestion",
+  AnalyzeGoods:"Analyser les besoins en biens, en services et en construction ",
+  ForecastBudget:"Prévoir les besoins budgétaires ",
+  BudgetAuthorities:" Budgets et pouvoirs ",
   searchBar: "Recherche",
   symbolicIdentifier: "Identificateur symbolique",
   finRoles: "La saine gestion des fonds publics",
@@ -40,7 +45,7 @@ export default {
   fileSet: "Fichiers utilisés dans cette section",
   BuildWorkPlan: "Élaborer un plan de travail",
   CreateBudget: "Créer un budget",
-  InitiateAuthorizeSpending: "Engager et autoriser des dépenses",
+  InitiateAuthorizeSpending: "Les exigences techniques et relatives à l’offre et la stratégie d’approvisionnement",
   ExerciseFinancialAuthority: "Exercer l'autorité financière",
   MonitorControlFinances: "Surveiller et contrôler les finances",
   ConductPeriodicVarianceReporting: "Préparer le rapport sur la situation financière",

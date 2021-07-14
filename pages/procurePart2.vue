@@ -220,14 +220,14 @@
           </b-row>
           <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal no-stacking id="Quiz" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="ProcurePart2Quiz" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('IntroTitle')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('Quiz')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <Quiz />
+            <ProcurePart2Quiz />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
     </div>
@@ -249,10 +249,11 @@
   import EvaluateNegotiate from '~/components/slides/spend/procurePart2EvaluateNegotiate'
   import ContractApproval from '~/components/slides/spend/procurePart2ContractApproval'
   import ContractAward from '~/components/slides/spend/procurePart2ContractAward'
+  import ProcurePart2Quiz from '~/components/slides/spend/procurePart2Quiz'
 export default {
   data() {
     return {
-      modalArray: ["procureLinks", "SolicitationDocs", "EvaluateNegotiate", "ContractApproval", "ContractAward", "reallife"]
+      modalArray: ["procureLinks", "SolicitationDocs", "EvaluateNegotiate", "ContractApproval", "ContractAward", "reallife", "ProcurePart2Quiz"]
     }
   },
   components: {
@@ -262,7 +263,8 @@ export default {
     EvaluateNegotiate,
     SolicitationDocs,
     ContractApproval,
-    ContractAward
+    ContractAward,
+    ProcurePart2Quiz
   },
   computed:{
     thatPoint(){

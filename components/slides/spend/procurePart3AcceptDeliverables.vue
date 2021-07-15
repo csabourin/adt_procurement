@@ -1,6 +1,8 @@
 <template>
   <span>
     <div>
+      <br>
+      <p>{{$t('Introduction')}}</p>
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1"><radioQuiz :question="$t('q1')" qId="1" /></b-tab>
@@ -51,8 +53,9 @@ export default {
 </script>
 <i18n>{
   "en": {
+    "Introduction": "Answer the following questions:",
     "q1": {
-      "text": "Are year-end procedures the same for managers across government?",
+      "text": "Can you proceed to paying the contract before the payment terms are met?",
       "options": {
         "1": "Yes",
         "2": "No"
@@ -61,10 +64,10 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Your Finance section will establish your department’s year-end procedures."
+      "conclusion": "You can only proceed to paying the contract as per the basis of payment once the payment terms are met."
     },
     "q2": {
-      "text": "You received an invoice on April 1 after goods were delivered in March. Should you create a Payable at Year-End (PAYE)?",
+      "text": "Can you pay the contract if the work is 90% completed?",
       "options": {
         "1": "Yes",
         "2": "No"
@@ -73,10 +76,10 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": " A PAYE is not required because departments usually have a period of time in April in which they can pay invoices with old year funds. "
+      "conclusion": "You can only proceed to paying the contract once the work has been performed in its entirety."
     },
     "q3": {
-      "text": "You have received the goods but not the invoice for $50. Do you create a Payable at Year-End (PAYE)?",
+      "text": "You have received 12 of the 15 desk chairs that you had ordered. Can you proceed to pay the full invoice?",
       "options": {
         "1": "Yes",
         "2": "No"
@@ -85,12 +88,13 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "You will not create a PAYE because the amount is unimportant. Your department’s year-end procedures will inform you of the materiality of your amounts. If the invoice is dated after March 31, you will be paying out of new year funds."
+      "conclusion": "You can only proceed to paying the full amount of the contract once the 15 chairs have been received."
     }
   },
   "fr": {
+    "Introduction": "Répondez aux questions suivantes : ",
     "q1": {
-      "text": "Les procédures de fin d’exercice sont-elles les mêmes pour tous les gestionnaires du gouvernement?",
+      "text": "Pouvez-vous procéder au paiement du contrat avant que les conditions de paiement soient respectées?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -99,10 +103,10 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Votre section des finances établira les procédures de fin d’exercice de votre ministère."
+      "conclusion": "Vous ne pouvez effectuer le paiement prévu au contrat qu’une fois les modalités de paiement respectées."
     },
     "q2": {
-      "text": "Vous avez reçu une facture le 1er avril après la livraison des marchandises en mars. Devriez-vous créer un créditeur à la fin de l’exercice (CAFE)?",
+      "text": "Pouvez-vous payer le contrat si les travaux sont achevés à 90 %?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -111,10 +115,10 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Un CAFE n'est pas nécessaire parce que les ministères ont habituellement une période de temps en avril au cours de laquelle ils peuvent payer leurs factures avec les fonds de l'exercice précédent."
+      "conclusion": "Vous pouvez seulement procéder au paiement du contrat lorsque le travail est complètement achevé."
     },
     "q3": {
-      "text": "Vous avez reçu les marchandises mais pas la facture de  50 $. Créez-vous un créditeur à la fin de l’exercice (CAFE)?",
+      "text": "Vous avez reçu 12 des 15 chaises de bureau que vous aviez commandées. Pouvez-vous procéder au paiement de la facture dans son intégralité?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -123,7 +127,7 @@ export default {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Vous ne créerez pas de CAFE parce que le montant n'est pas important. Les procédures de fin d'exercice de votre ministère vous informeront de l'importance relative de vos montants. Si la facture est datée d’après le 31 mars, vous paierez à même les fonds du nouvel exercice."
+      "conclusion": "Vous ne pourrez régler la facture que lorsque les 15 chaises auront été reçues."
     }
   }
 }</i18n>

@@ -108,44 +108,93 @@
       </b-container>
     </section>
     <div>
-      <b-modal no-stacking id="ContinuousMonitoring" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal no-stacking id="Introduction" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('ContinuousMonitoringTitle')}}
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('Introduction')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
-        <ContinuousMonitoring />
+
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
-      <b-modal id="DataComparison" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal no-stacking id="AdministerContract" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('DataComparisonTitle')}}
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('AdministerContractTitle')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
-        <DataComparison />
+        <AdministerContract />
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
-      <b-modal id="YearEndProcedures" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal id="RecordsMaintained" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('YearEndProceduresTitle')}}
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('RecordsMaintainedTitle')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
-        <YearEndProcedures />
+        <RecordsMaintained />
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
-      <b-modal id="spendQuizModal" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal id="AcceptDeliverables" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('AcceptDeliverablesTitle')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
-        <spendQuiz />
+        <AcceptDeliverables />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal id="CertificationPaymentAuthorities" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('CertificationPaymentAuthoritiesTitle')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
+        <CertificationPaymentAuthorities />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal id="CloseOutContract" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('CloseOutContractTitle')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
+        <CloseOutContract />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal id="InRealLife" @hide="resumePlay()" okOnly>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('IRLtext')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
+        <b-row align-h="center">
+            <b-col cols="12" md="9">
+              <img src="~/assets/inRealLifeWP.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <p>{{$t('IRLProcurePart3Text')}}</p>
+            </b-col>
+          </b-row>
+        <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal id="procurePart3Quiz" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
+        <procurePart3Quiz />
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
     </div>
@@ -162,23 +211,27 @@
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import ContinuousMonitoring from '~/components/slides/spend/spendPart3ContinuousMonitoring'
-import DataComparison from '~/components/slides/spend/spendPart3DataComparison'
-import YearEndProcedures from '~/components/slides/spend/spendPart3YearEnd'
-import spendQuiz from '~/components/slides/spend/spendPart3Quiz'
+import AdministerContract from '~/components/slides/spend/procurePart3AdministerContract'
+import RecordsMaintained from '~/components/slides/spend/procurePart3RecordsMaintained'
+import AcceptDeliverables from '~/components/slides/spend/procurePart3AcceptDeliverables'
+import CertificationPaymentAuthorities from '~/components/slides/spend/procurePart3ECPA'
+import CloseOutContract from '~/components/slides/spend/procurePart3CloseOutContract'
+import procurePart3Quiz from '~/components/slides/spend/spendPart3Quiz'
 export default {
   data() {
     return {
-      modalArray: ["ContinuousMonitoring", "DataComparison", "YearEndProcedures", "spendQuizModal"]
+      modalArray: ["Introduction", "AdministerContract", "RecordsMaintained", "AcceptDeliverables", "CertificationPaymentAuthorities", "CloseOutContract", "InRealLife", "procurePart3Quiz"]
     }
   },
   components: {
     videoPlayer,
     microlearning,
-    ContinuousMonitoring,
-    DataComparison,
-    YearEndProcedures,
-    spendQuiz
+    AdministerContract,
+    RecordsMaintained,
+    AcceptDeliverables,
+    CertificationPaymentAuthorities,
+    CloseOutContract,
+    procurePart3Quiz
   },
   computed: {
     thatPoint() {
@@ -232,26 +285,36 @@ export default {
 </style>
 <i18n>{
   "en":{
+  "Introduction": "Introduction",
   "TakeTheQuiz":"Take the Quiz",
-  "DataComparisonTitle":"Activity: Data Comparison",
-  "ContinuousMonitoringTitle":"Activity: Continuous Monitoring",
-  "YearEndProceduresTitle":"Activity: Year-End Procedures",
+  "RecordsMaintainedTitle":"Activity: Ensure Records Are Maintained",
+  "AdministerContractTitle":"Activity: Administer the Contract",
+  "AcceptDeliverablesTitle":"Activity: Accept Deliverables",
+  "CertificationPaymentAuthoritiesTitle": "Activity: Exercise Payment Authority",
+  "CloseOutContractTitle": "Activity: Close Out the Contract",
+  "IRLtext": "In Real Life",
+  "IRLProcurePart3Text": "Take what you have learned into real life! Your organization will have their own ways of doing things. Take time out from the course to see how contracts are administered, paid out and closed in your department. And don’t forget to check the Toolbox for a job aid on the procurement process!",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
   "playSegment":"Play video segment",
   "transcriptText":"",
-  "spendSectionBar": "SPEND"
+  "spendSectionBar": "PROCURE"
   },
   "fr":{
+  "Introduction": "Introduction",
   "TakeTheQuiz":"Répondez au questionnaire",
-  "DataComparisonTitle":"Activité : Comparaison des données",
-  "ContinuousMonitoringTitle":"Activité : Suivi continu",
-  "YearEndProceduresTitle":"Activité : Procédures de fin d’année",
+  "RecordsMaintainedTitle":"Activité : Assurer la tenue des dossiers",
+  "AdministerContractTitle":"Activité : Administrer le contrat",
+  "YearEndProceduresTitle":"Activité : Accepter les produits livrables",
+  "CertificationPaymentAuthoritiesTitle": "Activité :  Exercice du pouvoir de paiement",
+  "CloseOutContractTitle": "Activité : Clôture de contrat",
+  "IRLtext": "Dans la vraie vie",
+  "IRLProcurePart3Text": "Appliquez ce que vous avez appris dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment les contrats sont administrés, payés et clôturés au sein de votre ministère. Et n’oubliez pas de consulter la boîte à outils pour obtenir un aide-mémoire sur le processus d’approvisionnement!",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l’activité",
   "playSegment":"Faire jouer le segment vidéo",
   "transcriptText":"",
-  "spendSectionBar": "DÉPENSES"
+  "spendSectionBar": "ACHAT"
   }
   }
 </i18n>

@@ -223,7 +223,7 @@
         <b-modal no-stacking id="ProcurePart2Quiz" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('Quiz')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
@@ -430,7 +430,6 @@ button.accessibilityButton {
   "InRealLifeTitle":"In Real Life",
   "InRealLife":"In Real Life",
   "IRLProcureText":"Take what you have learned into real life! Your organization will have their own ways of doing things. Take some time out from the course to see how the solicitation process works in your department.",
-  "Quiz":"Quiz",
   "gotIt":"Continue to next segment",
   "jumpModalParts":"Jump to activity",
   "playSegment":"Play video segment",
@@ -448,7 +447,6 @@ button.accessibilityButton {
   "InRealLifeTitle":"Dans la vraie vie",
   "InRealLife":"Dans la vraie vie",
   "IRLProcureText":"Appliquez ce que vous avez appris dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment le processus de demande de soumissions fonctionne dans votre ministère.",
-  "Quiz":"Quiz",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalParts":"Sauter à l’activité",
   "playSegment":"Faire jouer le segment vidéo",

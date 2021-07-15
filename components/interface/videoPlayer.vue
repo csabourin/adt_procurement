@@ -179,12 +179,12 @@ export default {
         procurePart2: {
           references: [],
           infos: [],
-          quiz: []
+          quiz: [6]
         },
         procurePart3: {
           references: [],
           infos: [],
-          quiz: [3]
+          quiz: [7]
         },
         reportPart1: {
           references: [],

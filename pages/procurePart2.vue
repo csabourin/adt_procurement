@@ -437,7 +437,7 @@ button.accessibilityButton {
   "spendSectionBar": "PROCURE"
   },
   "fr":{
-  "Introduction": "References: External Links",
+  "Introduction": "Références : Liens externes",
   "TakeTheQuiz":"Répondez au questionnaire",
   "toolboxTitle": "Pour plus d’informations, n’hésitez pas à consulter les liens suivants. Ces liens sont également disponibles dans la boîte à outils.",
   "CertAuthorityTitle":"Activité : Documents d’invitation à soumissionner – Termes clés",

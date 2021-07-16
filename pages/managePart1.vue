@@ -222,7 +222,7 @@
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import checkBudget from '~/components/slides/spend/checkBudget'
+import checkBudget from '~/components/slides/spend/procurePart1SpecialNeeds'
 import delegAuthority from '~/components/slides/spend/delegAuthority'
 import spendMechanisms from '~/components/slides/spend/spendMechanisms'
 import RecordingFinancialSystem from '~/components/slides/spend/RecordingFinancialSystem'

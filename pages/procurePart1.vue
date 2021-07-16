@@ -148,14 +148,35 @@
       </b-container>
     </section>
     <div>
-        <b-modal no-stacking id="checkYourBudget" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="procureLinks" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('checkBudget')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('Introduction')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <checkBudget />
+            <p>{{$t('toolboxTitle')}}</p>
+            <procureLinks />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="prepareDocs" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('prepareDocsTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <prepareDocs />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal id="specialNeeds" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('specialNeedsTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <specialNeeds />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
         <b-modal id="delegAuth" @hide="resumePlay()" size="xl" okOnly>
@@ -222,7 +243,9 @@
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import checkBudget from '~/components/slides/spend/checkBudget'
+import procureLinks from '~/components/procure_links'
+import prepareDocs from '~/components/slides/spend/procurePart1PrepareDocs'
+import specialNeeds from '~/components/slides/spend/procurePart1SpecialNeeds'
 import delegAuthority from '~/components/slides/spend/delegAuthority'
 import spendMechanisms from '~/components/slides/spend/spendMechanisms'
 import RecordingFinancialSystem from '~/components/slides/spend/RecordingFinancialSystem'
@@ -230,14 +253,16 @@ import spendS32tryIt from '~/components/slides/spend/spendS32tryIt'
 export default {
   data() {
     return {
-      modalArray: ["checkYourBudget", "delegAuth", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"]
+      modalArray: ["procureLinks", "prepareDocs", "specialNeeds", "delegAuth", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"]
     }
   },
   components: {
     videoPlayer,
     microlearning,
+    procureLinks,
+    prepareDocs,
     delegAuthority,
-    checkBudget,
+    specialNeeds,
     spendMechanisms,
     spendS32tryIt,
     RecordingFinancialSystem
@@ -396,29 +421,33 @@ button.accessibilityButton {
 </style>
 <i18n>{
   "en":{
+  "Introduction": "References: External Links",
+  "toolboxTitle": "For more information, feel free to consult the following links. These links are also available in the Toolbox.",
   "TakeTheQuiz":"Take the Quiz",
   "tryItTitle":"Activity: Try it!",
   "adjustwptitle":"Activity: Adjust the Work plan",
-  "delegateAuthority":"Activity: Delegation of Authority",
-  "checkBudget":"Activity: Check Your Budget",
+  "specialNeedsTitle":"Activity: Special Requirements and Other Considerations",
+  "prepareDocsTitle":"Activity: Analyze Your Requirements",
   "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
   "RecordingTitle":"Activity: Recording in the Financial System",
   "gotIt":"Continue to next segment",
   "transcriptText":"",
-  "spendSectionBar": "SPEND"
+  "spendSectionBar": "PROCURE"
   },
   "fr":{
+  "Introduction": "Références : Liens externes",
+  "toolboxTitle": "Pour plus d’informations, n’hésitez pas à consulter les liens suivants. Ces liens sont également disponibles dans la boîte à outils.",
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",
-  "delegateAuthority":"Activité : Délégation des pouvoirs",
-  "checkBudget":"Activité : Vérifiez votre budget",
+  "specialNeedsTitle":"Activité : Besoins particuliers et autres considérations",
+  "prepareDocsTitle":"Activité : Analysez vos besoins",
   "tryItTitle":"Activité : Essayons-le!",
   "forecastBudgetTitle":"Activité : Prévoyez vos besoins budgétaires",
   "RecordingTitle":"Activité : Enregistrement dans le système financier",
   "gotIt":"Continuer au segment suivant.",
   "transcriptText":"",
-  "spendSectionBar": "DÉPENSES"
+  "spendSectionBar": "ACHAT"
   }
   }
 </i18n>

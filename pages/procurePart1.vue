@@ -179,44 +179,61 @@
             <specialNeeds />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal id="delegAuth" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal id="describeNeed" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('delegateAuthority')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('describeNeedTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <delegAuthority />
+            <describeNeed />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal id="spendMechanisms" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal id="transparentFairProcurement" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('forecastBudgetTitle')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('transparentFairProcurementTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <spendMechanisms />
+            <div v-if="$i18n.locale=='fr'">
+              <p>Vous voudrez peut-être consulter les comités de vérification interne et d’examen permanent de votre organisation pour obtenir plus d’information.</p>
+              <p>Pour en savoir plus sur les organismes d’approvisionnement, n’hésitez pas à consulter les liens suivants. Ces liens sont également présentés dans la boîte à outils.</p>
+              <ul>
+                <li><a href="http://opo-boa.gc.ca/index-fra.html" target="_blank" alt="Bureau de l’ombudsman de l’approvisionnement">Bureau de l’ombudsman de l’approvisionnement</a></li>
+                <li><a href="https://www.citt-tcce.gc.ca/" target="_blank" alt="Tribunal canadien du commerce extérieur">Tribunal canadien du commerce extérieur</a></li>
+                <li><a href="https://www.fct-cf.gc.ca/fr/accueil" target="_blank" alt="Cour fédérale">Cour fédérale</a></li>
+              </ul>
+            </div>
+            <div v-if="$i18n.locale=='en'">
+              <p>You may want to consult your organization’s own Internal Audit and Standing Review Committees for further information.</p>
+              <p>For more information on procurement entities, feel free to consult the following links. These links are also available in the Toolbox.</p>
+              <ul>
+                <li><a href="http://opo-boa.gc.ca/index-eng.html" target="_blank" alt="Office of the Procurement Ombudsman">Office of the Procurement Ombudsman</a></li>
+                <li><a href="https://www.citt-tcce.gc.ca/" target="_blank" alt="Canadian International Trade Tribunal">Canadian International Trade Tribunal</a></li>
+                <li><a href="https://www.fct-cf.gc.ca/en/home" target="_blank" alt="Federal Court">Federal Court</a></li>
+              </ul>
+            </div>
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal no-stacking id="spendS32tryIt" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="consultProcurementSpecialist" @hide="resumePlay()" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('tryItTitle')}}
+                    <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('consultProcurementSpecialistTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <spendS32tryIt />
+            {{$t('consultProcurementSpecialistText')}}
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal no-stacking id="RecordingFinancialSystem" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="consultStakeholders" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('RecordingTitle')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('consultStakeholdersTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <RecordingFinancialSystem />
+            <consultStakeholders />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
         <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
@@ -246,14 +263,12 @@ import microlearning from '~/components/microlearning'
 import procureLinks from '~/components/procure_links'
 import prepareDocs from '~/components/slides/spend/procurePart1PrepareDocs'
 import specialNeeds from '~/components/slides/spend/procurePart1SpecialNeeds'
-import delegAuthority from '~/components/slides/spend/delegAuthority'
-import spendMechanisms from '~/components/slides/spend/spendMechanisms'
-import RecordingFinancialSystem from '~/components/slides/spend/RecordingFinancialSystem'
-import spendS32tryIt from '~/components/slides/spend/spendS32tryIt'
+import describeNeed from '~/components/slides/spend/procurePart1DescribeNeed'
+import consultStakeholders from '~/components/slides/spend/procurePart1ConsultStakeholders'
 export default {
   data() {
     return {
-      modalArray: ["procureLinks", "prepareDocs", "specialNeeds", "delegAuth", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"]
+      modalArray: ["procureLinks", "prepareDocs", "specialNeeds", "describeNeed", "transparentFairProcurement", "consultProcurementSpecialist","consultStakeholders"]
     }
   },
   components: {
@@ -261,11 +276,9 @@ export default {
     microlearning,
     procureLinks,
     prepareDocs,
-    delegAuthority,
+    describeNeed,
     specialNeeds,
-    spendMechanisms,
-    spendS32tryIt,
-    RecordingFinancialSystem
+    consultStakeholders,
   },
   computed:{
     thatPoint(){
@@ -428,7 +441,10 @@ button.accessibilityButton {
   "adjustwptitle":"Activity: Adjust the Work plan",
   "specialNeedsTitle":"Activity: Special Requirements and Other Considerations",
   "prepareDocsTitle":"Activity: Analyze Your Requirements",
-  "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
+  "describeNeedTitle":"Activity: Describe What You Need",
+  "transparentFairProcurementTitle": "References: External Links",
+  "consultProcurementSpecialistTitle": "Activity: Consult a Procurement Specialist",
+  "consultProcurementSpecialistText": "Find out who your procurement specialists are! Consult your department’s delegation chart. Understand what the procurement limits are.",
   "RecordingTitle":"Activity: Recording in the Financial System",
   "gotIt":"Continue to next segment",
   "transcriptText":"",
@@ -443,7 +459,10 @@ button.accessibilityButton {
   "specialNeedsTitle":"Activité : Besoins particuliers et autres considérations",
   "prepareDocsTitle":"Activité : Analysez vos besoins",
   "tryItTitle":"Activité : Essayons-le!",
-  "forecastBudgetTitle":"Activité : Prévoyez vos besoins budgétaires",
+  "describeNeedTitle":"Activité : Décrire ce dont vous avez besoin",
+  "transparentFairProcurementTitle": "Références : Liens externes",
+  "consultProcurementSpecialistTitle": "Activité : Consulter un spécialiste en approvisionnement",
+  "consultProcurementSpecialistText": "Découvrez qui sont vos spécialistes en approvisionnement! Consultez le tableau de délégation des pouvoirs de votre ministère. Prenez connaissance des limites d’approvisionnement.",
   "RecordingTitle":"Activité : Enregistrement dans le système financier",
   "gotIt":"Continuer au segment suivant.",
   "transcriptText":"",

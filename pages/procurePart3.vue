@@ -118,11 +118,11 @@
         <p>{{$t('part3IntroductionText')}}</p>
         <hr>
         <p><b>{{$t('documentText')}}</b></p>
-        <b-row>
-          <b-col cols="6" md="4" lg="2" class="text-center">
-            <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-          </b-col>
-        </b-row>
+        <windowPortal :open="openChart" @close="openChart = false">
+          <delegAutorityEn v-if="$i18n.locale=='en'" />
+          <delegAutorityFr v-if="$i18n.locale=='fr'" />
+        </windowPortal>
+        <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
       <b-modal no-stacking id="AdministerContract" @hide="resumePlay()" size="xl" okOnly>
@@ -218,8 +218,9 @@
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import download from "~/components/fileDownload"
-import HTMLJobaidLink from "~/components/HTMLJobaidLink"
+import delegAutorityEn from "~/components/delegationChart/delegchart_en"
+import delegAutorityFr from "~/components/delegationChart/delegchart_fr"
+import windowPortal from "~/components/newWindow"
 import AdministerContract from '~/components/slides/spend/procurePart3AdministerContract'
 import RecordsMaintained from '~/components/slides/spend/procurePart3RecordsMaintained'
 import AcceptDeliverables from '~/components/slides/spend/procurePart3AcceptDeliverables'
@@ -229,14 +230,16 @@ import procurePart3Quiz from '~/components/slides/spend/spendPart3Quiz'
 export default {
   data() {
     return {
+      openChart: false,
       modalArray: ["Introduction", "AdministerContract", "RecordsMaintained", "AcceptDeliverables", "CertificationPaymentAuthorities", "CloseOutContract", "InRealLife", "procurePart3Quiz"]
     }
   },
   components: {
     videoPlayer,
     microlearning,
-    download,
-    HTMLJobaidLink,
+    delegAutorityEn,
+    delegAutorityFr,
+    windowPortal,
     AdministerContract,
     RecordsMaintained,
     AcceptDeliverables,
@@ -299,6 +302,7 @@ export default {
   "Introduction": "Introduction",
   "part3IntroductionText": "For more information, feel free to consult the following document. This document is also available in the Toolbox.",
   "documentText": "Document",
+  "openChartButton": "Open the delegation of spending and financial signing authorities chart",
   "TakeTheQuiz":"Take the Quiz",
   "RecordsMaintainedTitle":"Activity: Ensure Records Are Maintained",
   "AdministerContractTitle":"Activity: Administer the Contract",
@@ -317,6 +321,7 @@ export default {
   "Introduction": "Introduction",
   "part3IntroductionText": "Pour plus d’informations, n’hésitez pas à consulter le document suivant. Il est également disponible dans la boîte à outils.",
   "documentText": "Document",
+  "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
   "TakeTheQuiz":"Répondez au questionnaire",
   "RecordsMaintainedTitle":"Activité : Assurer la tenue des dossiers",
   "AdministerContractTitle":"Activité : Administrer le contrat",

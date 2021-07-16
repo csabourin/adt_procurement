@@ -115,7 +115,14 @@
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
-
+        <p>{{$t('part3IntroductionText')}}</p>
+        <hr>
+        <p><b>{{$t('documentText')}}</b></p>
+        <b-row>
+          <b-col cols="6" md="4" lg="2" class="text-center">
+            <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+          </b-col>
+        </b-row>
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
       <b-modal no-stacking id="AdministerContract" @hide="resumePlay()" size="xl" okOnly>
@@ -211,6 +218,8 @@
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
+import download from "~/components/fileDownload"
+import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 import AdministerContract from '~/components/slides/spend/procurePart3AdministerContract'
 import RecordsMaintained from '~/components/slides/spend/procurePart3RecordsMaintained'
 import AcceptDeliverables from '~/components/slides/spend/procurePart3AcceptDeliverables'
@@ -226,6 +235,8 @@ export default {
   components: {
     videoPlayer,
     microlearning,
+    download,
+    HTMLJobaidLink,
     AdministerContract,
     RecordsMaintained,
     AcceptDeliverables,
@@ -286,6 +297,8 @@ export default {
 <i18n>{
   "en":{
   "Introduction": "Introduction",
+  "part3IntroductionText": "For more information, feel free to consult the following document. This document is also available in the Toolbox.",
+  "documentText": "Document",
   "TakeTheQuiz":"Take the Quiz",
   "RecordsMaintainedTitle":"Activity: Ensure Records Are Maintained",
   "AdministerContractTitle":"Activity: Administer the Contract",
@@ -302,6 +315,8 @@ export default {
   },
   "fr":{
   "Introduction": "Introduction",
+  "part3IntroductionText": "Pour plus d’informations, n’hésitez pas à consulter le document suivant. Il est également disponible dans la boîte à outils.",
+  "documentText": "Document",
   "TakeTheQuiz":"Répondez au questionnaire",
   "RecordsMaintainedTitle":"Activité : Assurer la tenue des dossiers",
   "AdministerContractTitle":"Activité : Administrer le contrat",

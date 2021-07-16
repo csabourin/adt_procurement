@@ -156,12 +156,12 @@ export default {
   "en":
   {
   "keyPlanQuote": "Accountability breeds response-ability.",
-  "spendSectionBar": "SPEND"
+  "spendSectionBar": "PROCURE"
   },
   "fr":
   {
   "keyPlanQuote": "La responsabilité engendre l’habileté.",
-  "spendSectionBar": "DÉPENSES"
+  "spendSectionBar": "ACHAT"
   }
   }</i18n>
 <style type="text/css" scoped>

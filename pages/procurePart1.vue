@@ -236,14 +236,14 @@
             <consultStakeholders />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="procurementStrategy" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}
+                    <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('procurementStrategyTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <budgetQuiz />
+            <procurementStrategy />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
     </div>
@@ -265,10 +265,11 @@ import prepareDocs from '~/components/slides/spend/procurePart1PrepareDocs'
 import specialNeeds from '~/components/slides/spend/procurePart1SpecialNeeds'
 import describeNeed from '~/components/slides/spend/procurePart1DescribeNeed'
 import consultStakeholders from '~/components/slides/spend/procurePart1ConsultStakeholders'
+import procurementStrategy from '~/components/slides/spend/procurePart1ProcurementStrategy'
 export default {
   data() {
     return {
-      modalArray: ["procureLinks", "prepareDocs", "specialNeeds", "describeNeed", "transparentFairProcurement", "consultProcurementSpecialist","consultStakeholders"]
+      modalArray: ["procureLinks", "prepareDocs", "specialNeeds", "describeNeed", "transparentFairProcurement", "consultProcurementSpecialist", "consultStakeholders", "procurementStrategy"]
     }
   },
   components: {
@@ -279,6 +280,7 @@ export default {
     describeNeed,
     specialNeeds,
     consultStakeholders,
+    procurementStrategy
   },
   computed:{
     thatPoint(){
@@ -445,7 +447,8 @@ button.accessibilityButton {
   "transparentFairProcurementTitle": "References: External Links",
   "consultProcurementSpecialistTitle": "Activity: Consult a Procurement Specialist",
   "consultProcurementSpecialistText": "Find out who your procurement specialists are! Consult your department’s delegation chart. Understand what the procurement limits are.",
-  "RecordingTitle":"Activity: Recording in the Financial System",
+  "consultStakeholdersTitle": "Activity: Consult Stakeholders",
+  "procurementStrategyTitle": "Activity: Procurement Strategies and Instruments – Key Terms",
   "gotIt":"Continue to next segment",
   "transcriptText":"",
   "spendSectionBar": "PROCURE"
@@ -463,7 +466,8 @@ button.accessibilityButton {
   "transparentFairProcurementTitle": "Références : Liens externes",
   "consultProcurementSpecialistTitle": "Activité : Consulter un spécialiste en approvisionnement",
   "consultProcurementSpecialistText": "Découvrez qui sont vos spécialistes en approvisionnement! Consultez le tableau de délégation des pouvoirs de votre ministère. Prenez connaissance des limites d’approvisionnement.",
-  "RecordingTitle":"Activité : Enregistrement dans le système financier",
+  "consultStakeholdersTitle": "Activité : Identifier les parties prenantes",
+  "procurementStrategyTitle": "Activité : Stratégies et instruments d’approvisionnement – Termes clés",
   "gotIt":"Continuer au segment suivant.",
   "transcriptText":"",
   "spendSectionBar": "ACHAT"

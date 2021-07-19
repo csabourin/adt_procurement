@@ -2,6 +2,18 @@
   <span>
     <p>{{ $t('pwpInstructions') }}</p>
     <p>{{ $t('watchVideos') }}</p>
+    <div v-if="$i18n.locale=='en'">
+      <ul>
+        <li><a href='https://www.youtube.com/watch?v=iZaUMrn-H6g' target='_blank' alt='The Accessible Canada Act and Government Procurement'>The Accessible Canada Act and Government Procurement</a></li>
+        <li><a href='https://www.youtube.com/watch?v=Uyjxws7a1_Q' target='_blank' alt='What does it mean to consider accessibility in government procurement?'>What does it mean to consider accessibility in government procurement?</a></li>
+      </ul>
+    </div>
+    <div v-if="$i18n.locale=='fr'">
+      <ul>
+        <li><a href='https://www.youtube.com/watch?v=uSJonxterP0' target='_blank' alt='La Loi canadienne sur l’accessibilité et l’approvisionnement fédéral'>La Loi canadienne sur l’accessibilité et l’approvisionnement fédéral</a></li>
+        <li><a href='https://www.youtube.com/watch?v=HG2vDzuuK54' target='_blank' alt='Que signifie tenir compte de l’accessibilité dans les approvisionnements du gouvernement?'>Que signifie tenir compte de l’accessibilité dans les approvisionnements du gouvernement?</a></li>
+      </ul>
+    </div>
     <p><strong v-html="$t('pwpTitle')"></strong></p>
        <div>
     <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">

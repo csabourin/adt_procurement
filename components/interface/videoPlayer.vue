@@ -174,7 +174,7 @@ export default {
         procurePart1: {
           references: [],
           infos: [],
-          quiz: [4]
+          quiz: [9]
         },
         procurePart2: {
           references: [],

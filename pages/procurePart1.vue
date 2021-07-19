@@ -159,14 +159,14 @@
             <procureLinks />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal no-stacking id="prepareDocs" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="defineNeeds" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('prepareDocsTitle')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('defineNeedsTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <prepareDocs />
+            <defineNeeds />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
         <b-modal id="specialNeeds" @hide="resumePlay()" size="xl" okOnly>
@@ -239,7 +239,7 @@
         <b-modal no-stacking id="procurementStrategy" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('procurementStrategyTitle')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('procurementStrategyTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
@@ -249,7 +249,7 @@
         <b-modal no-stacking id="InRealLife" @hide="resumePlay()" okOnly>
             <template v-slot:modal-header="{ close }">
             <h3 class="h5">
-              <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
+              <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32">
                 {{$t('InRealLifeTitle')}}
             </h3>
             <button type="button" aria-label="Close" class="close" @click="close()">×</button>
@@ -291,7 +291,7 @@
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
 import procureLinks from '~/components/procure_links'
-import prepareDocs from '~/components/slides/spend/procurePart1PrepareDocs'
+import defineNeeds from '~/components/slides/spend/procurePart1DefineNeeds'
 import specialNeeds from '~/components/slides/spend/procurePart1SpecialNeeds'
 import describeNeed from '~/components/slides/spend/procurePart1DescribeNeed'
 import consultStakeholders from '~/components/slides/spend/procurePart1ConsultStakeholders'
@@ -300,14 +300,14 @@ import part1Quiz from '~/components/slides/spend/procurePart1Quiz'
 export default {
   data() {
     return {
-      modalArray: ["procureLinks", "prepareDocs", "specialNeeds", "describeNeed", "transparentFairProcurement", "consultProcurementSpecialist", "consultStakeholders", "procurementStrategy", "InRealLife", "Quiz"]
+      modalArray: ["procureLinks", "defineNeeds", "specialNeeds", "describeNeed", "transparentFairProcurement", "consultProcurementSpecialist", "consultStakeholders", "procurementStrategy", "InRealLife", "Quiz"]
     }
   },
   components: {
     videoPlayer,
     microlearning,
     procureLinks,
-    prepareDocs,
+    defineNeeds,
     describeNeed,
     specialNeeds,
     consultStakeholders,
@@ -474,7 +474,7 @@ button.accessibilityButton {
   "tryItTitle":"Activity: Try it!",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "specialNeedsTitle":"Activity: Special Requirements and Other Considerations",
-  "prepareDocsTitle":"Activity: Analyze Your Requirements",
+  "defineNeedsTitle":"Activity: Analyze Your Requirements",
   "describeNeedTitle":"Activity: Describe What You Need",
   "transparentFairProcurementTitle": "References: External Links",
   "consultProcurementSpecialistTitle": "Activity: Consult a Procurement Specialist",
@@ -483,7 +483,7 @@ button.accessibilityButton {
   "procurementStrategyTitle": "Activity: Procurement Strategies and Instruments – Key Terms",
   "InRealLifeTitle": "In Real Life",
   "IRLProcurePart1Text": "Take what you have learned into real life! Your organization will have its own ways of doing things. Take a time out from the course to see which procurement strategies you will use the most often. Find the templates your department uses and look up examples of previous purchases. These will help guide you when it comes time for you to choose a procurement strategy.",
-  "QuizTitle": "Quiz",
+  "QuizTitle": "Take the Quiz",
   "gotIt":"Continue to next segment",
   "transcriptText":"",
   "spendSectionBar": "PROCURE"
@@ -495,7 +495,7 @@ button.accessibilityButton {
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",
   "specialNeedsTitle":"Activité : Besoins particuliers et autres considérations",
-  "prepareDocsTitle":"Activité : Analysez vos besoins",
+  "defineNeedsTitle":"Activité : Analysez vos besoins",
   "tryItTitle":"Activité : Essayons-le!",
   "describeNeedTitle":"Activité : Décrire ce dont vous avez besoin",
   "transparentFairProcurementTitle": "Références : Liens externes",
@@ -505,7 +505,7 @@ button.accessibilityButton {
   "procurementStrategyTitle": "Activité : Stratégies et instruments d’approvisionnement – Termes clés",
   "InRealLifeTitle": "Dans la vraie vie",
   "IRLProcurePart1Text": "Appliquez maintenant ce que vous avez appris - dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir quelles sont les stratégies d’approvisionnement que vous utiliserez le plus souvent. Trouvez les modèles utilisés par votre ministère et recherchez des exemples d’achats antérieurs à titre indicatif. Cela vous sera utile lorsque viendra le temps pour vous de choisir une stratégie d’approvisionnement.",
-  "QuizTitle": "Quiz",
+  "QuizTitle": "Répondez au questionnaire",
   "gotIt":"Continuer au segment suivant.",
   "transcriptText":"",
   "spendSectionBar": "ACHAT"

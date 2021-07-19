@@ -226,7 +226,7 @@ import RecordsMaintained from '~/components/slides/spend/procurePart3RecordsMain
 import AcceptDeliverables from '~/components/slides/spend/procurePart3AcceptDeliverables'
 import CertificationPaymentAuthorities from '~/components/slides/spend/procurePart3ECPA'
 import CloseOutContract from '~/components/slides/spend/procurePart3CloseOutContract'
-import procurePart3Quiz from '~/components/slides/spend/spendPart3Quiz'
+import procurePart3Quiz from '~/components/slides/spend/procurePart3Quiz'
 export default {
   data() {
     return {

@@ -246,6 +246,36 @@
             <procurementStrategy />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
+        <b-modal no-stacking id="InRealLife" @hide="resumePlay()" okOnly>
+            <template v-slot:modal-header="{ close }">
+            <h3 class="h5">
+              <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
+                {{$t('InRealLifeTitle')}}
+            </h3>
+            <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <b-row align-h="center">
+            <b-col cols="12" md="9">
+              <img src="~/assets/inRealLifeWP.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <p>{{$t('IRLProcurePart1Text')}}</p>
+            </b-col>
+          </b-row>
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="Quiz" @hide="resumePlay()" size="xl" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('QuizTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <part1Quiz />
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
     </div>
     <div class="bottomNav spendSection">
       <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
@@ -266,10 +296,11 @@ import specialNeeds from '~/components/slides/spend/procurePart1SpecialNeeds'
 import describeNeed from '~/components/slides/spend/procurePart1DescribeNeed'
 import consultStakeholders from '~/components/slides/spend/procurePart1ConsultStakeholders'
 import procurementStrategy from '~/components/slides/spend/procurePart1ProcurementStrategy'
+import part1Quiz from '~/components/slides/spend/procurePart1Quiz'
 export default {
   data() {
     return {
-      modalArray: ["procureLinks", "prepareDocs", "specialNeeds", "describeNeed", "transparentFairProcurement", "consultProcurementSpecialist", "consultStakeholders", "procurementStrategy"]
+      modalArray: ["procureLinks", "prepareDocs", "specialNeeds", "describeNeed", "transparentFairProcurement", "consultProcurementSpecialist", "consultStakeholders", "procurementStrategy", "InRealLife", "Quiz"]
     }
   },
   components: {
@@ -280,7 +311,8 @@ export default {
     describeNeed,
     specialNeeds,
     consultStakeholders,
-    procurementStrategy
+    procurementStrategy,
+    part1Quiz
   },
   computed:{
     thatPoint(){
@@ -449,6 +481,9 @@ button.accessibilityButton {
   "consultProcurementSpecialistText": "Find out who your procurement specialists are! Consult your department’s delegation chart. Understand what the procurement limits are.",
   "consultStakeholdersTitle": "Activity: Consult Stakeholders",
   "procurementStrategyTitle": "Activity: Procurement Strategies and Instruments – Key Terms",
+  "InRealLifeTitle": "In Real Life",
+  "IRLProcurePart1Text": "Take what you have learned into real life! Your organization will have its own ways of doing things. Take a time out from the course to see which procurement strategies you will use the most often. Find the templates your department uses and look up examples of previous purchases. These will help guide you when it comes time for you to choose a procurement strategy.",
+  "QuizTitle": "Quiz",
   "gotIt":"Continue to next segment",
   "transcriptText":"",
   "spendSectionBar": "PROCURE"
@@ -468,6 +503,9 @@ button.accessibilityButton {
   "consultProcurementSpecialistText": "Découvrez qui sont vos spécialistes en approvisionnement! Consultez le tableau de délégation des pouvoirs de votre ministère. Prenez connaissance des limites d’approvisionnement.",
   "consultStakeholdersTitle": "Activité : Identifier les parties prenantes",
   "procurementStrategyTitle": "Activité : Stratégies et instruments d’approvisionnement – Termes clés",
+  "InRealLifeTitle": "Dans la vraie vie",
+  "IRLProcurePart1Text": "Appliquez maintenant ce que vous avez appris - dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir quelles sont les stratégies d’approvisionnement que vous utiliserez le plus souvent. Trouvez les modèles utilisés par votre ministère et recherchez des exemples d’achats antérieurs à titre indicatif. Cela vous sera utile lorsque viendra le temps pour vous de choisir une stratégie d’approvisionnement.",
+  "QuizTitle": "Quiz",
   "gotIt":"Continuer au segment suivant.",
   "transcriptText":"",
   "spendSectionBar": "ACHAT"

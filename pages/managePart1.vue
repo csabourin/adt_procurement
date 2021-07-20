@@ -4,7 +4,7 @@
     <section>
       <b-row>
         <b-col>
-          <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_kuavebpz/flavorId/0_kl36sx20/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_55v2xnk5/flavorId/0_7yp7dcyb/name/a.mp4" chapters chapterFile="SpendPart1.vtt" ccFile="SpendPart1_captions.vtt" posterFile="spendPart1_poster.png" :restartAt="parseInt(thatPoint)" toResume="setSpendPart1" :modalArray="modalArray" @timeupdate="updatePercent($event)"/>
+          <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_kuavebpz/flavorId/0_kl36sx20/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_55v2xnk5/flavorId/0_7yp7dcyb/name/a.mp4" chapters chapterFile="ManagePart1.vtt" ccFile="SpendPart1_captions.vtt" posterFile="spendPart1_poster.png" :restartAt="parseInt(thatPoint)" toResume="setSpendPart1" :modalArray="modalArray" @timeupdate="updatePercent($event)"/>
         </b-col>
       </b-row>
       <b-container>
@@ -148,99 +148,121 @@
       </b-container>
     </section>
     <div>
-        <b-modal no-stacking id="checkYourBudget" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="Introduction" @hide="resumePlay()" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('checkBudget')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('introductionTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <checkBudget />
+              <div v-if="$i18n.locale=='fr'">
+                <p>Pour plus d’informations, n’hésitez pas à consulter le <a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14671" target="_blank" alt="Guide de gestion du matériel">Guide de gestion du matériel</a>. Ce lien est également accessible dans la boîte à outils.</p>
+              </div>
+              <div v-if="$i18n.locale=='en'">
+                <p>For more information, feel free to consult the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=14671" target="_blank" alt="Guide to Management of Materiel">Guide to Management of Materiel</a>. This link is also available in the Toolbox.</p>
+              </div>
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal id="delegAuth" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal id="Planning" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('delegateAuthority')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('planningTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <delegAuthority />
+            <planning />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal id="spendMechanisms" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal id="Acquisition" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('forecastBudgetTitle')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('acquisitionTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <spendMechanisms />
+            <acquisition />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal no-stacking id="spendS32tryIt" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="operationUseMaintenance" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('tryItTitle')}}
+                    <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('operationUseMaintenanceTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <spendS32tryIt />
+            <operationUseMaintenance />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal no-stacking id="RecordingFinancialSystem" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="reallocationDivestment" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('RecordingTitle')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('reallocationDivestmentTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <RecordingFinancialSystem />
+            <reallocationDivestment />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
+        <b-modal no-stacking id="InRealLife" @hide="resumePlay()" okOnly>
+            <template v-slot:modal-header="{ close }">
+                <h3 class="h5">
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('IRLTitle')}}
+                </h3>
+                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+            </template>
+            <b-row align-h="center">
+            <b-col cols="12" md="9">
+              <img src="~/assets/inRealLifeWP.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <p>{{$t('IRLProcureText')}}</p>
+            </b-col>
+          </b-row>
+            <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
+        <b-modal no-stacking id="Quiz" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
                     <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <budgetQuiz />
+            <manageQuiz />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
     </div>
     <div class="bottomNav spendSection">
       <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
-      <microlearning youAreHere path="procurePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('InitiateAuthorizeSpending')" type="video" />
-      <microlearning path="procurePart2"  imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('ExerciseFinancialAuthority')" type="video" />
-      <microlearning path="procurePart3" size="140" time="20" :completion="$store.state.currentPlaying.spendPart3_player" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" type="video" />
-      <microlearning path="procureKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('KeyMessages')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-      <microlearning path="exam2" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+      <microlearning youAreHere path="managePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('lifeCycle')" type="video" />
+      <microlearning path="manageKey"  imagePath="KeyMessS.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('KeyMessages')" type="video" />
+      <microlearning path="exam3" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
     </div>
   </div>
 </template>
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import checkBudget from '~/components/slides/spend/procurePart1SpecialNeeds'
-import delegAuthority from '~/components/slides/spend/procurePart1DescribeNeed'
-import spendMechanisms from '~/components/slides/spend/spendMechanisms'
-import RecordingFinancialSystem from '~/components/slides/spend/RecordingFinancialSystem'
-import spendS32tryIt from '~/components/slides/spend/spendS32tryIt'
+import planning from '~/components/slides/manage/managePart1Planning'
+import acquisition from '~/components/slides/manage/managePart1Acquisition'
+import operationUseMaintenance from '~/components/slides/manage/managePart1OUM'
+import reallocationDivestment from '~/components/slides/manage/managePart1ReallocationDivestment'
+import manageQuiz from '~/components/slides/manage/managePart1Quiz'
 export default {
   data() {
     return {
-      modalArray: ["checkYourBudget", "delegAuth", "spendMechanisms", "RecordingFinancialSystem","spendS32tryIt"]
+      modalArray: ["Introduction","Planning","Acquisition","operationUseMaintenance","reallocationDivestment","InRealLife","Quiz"]
     }
   },
   components: {
     videoPlayer,
     microlearning,
-    delegAuthority,
-    checkBudget,
-    spendMechanisms,
-    spendS32tryIt,
-    RecordingFinancialSystem
+    planning,
+    acquisition,
+    operationUseMaintenance,
+    reallocationDivestment,
+    manageQuiz
   },
   computed:{
     thatPoint(){
@@ -398,27 +420,30 @@ button.accessibilityButton {
   "en":{
   "TakeTheQuiz":"Take the Quiz",
   "tryItTitle":"Activity: Try it!",
-  "adjustwptitle":"Activity: Adjust the Work plan",
-  "delegateAuthority":"Activity: Delegation of Authority",
-  "checkBudget":"Activity: Check Your Budget",
-  "forecastBudgetTitle":"Activity: Forecast Budget Requirements",
-  "RecordingTitle":"Activity: Recording in the Financial System",
+  "introductionTitle": "References: External Links",
+  "planningTitle": "Activity: Planning",
+  "acquisitionTitle": "Activity: Acquisition",
+  "operationUseMaintenanceTitle": "Activity: Operation, Use and Maintenance",
+  "reallocationDivestmentTitle": "Activity: Reallocation or Divestment",
+  "IRLTitle": "In Real Life",
+  "IRLProcureText": "Take what you have learned into real life! Your organization will have its own ways of doing things. Take a time out from the course to see how the life cycle materiel management process works in your department.",
   "gotIt":"Continue to next segment",
   "transcriptText":"",
-  "spendSectionBar": "SPEND"
+  "spendSectionBar": "MANAGE"
   },
   "fr":{
   "TakeTheQuiz":"Répondez au questionnaire",
-  "completewptitle":"Activité : Compléter le plan de travail",
-  "adjustwptitle":"Activité : Ajuster le plan de travail",
-  "delegateAuthority":"Activité : Délégation des pouvoirs",
-  "checkBudget":"Activité : Vérifiez votre budget",
   "tryItTitle":"Activité : Essayons-le!",
-  "forecastBudgetTitle":"Activité : Prévoyez vos besoins budgétaires",
-  "RecordingTitle":"Activité : Enregistrement dans le système financier",
+  "introductionTitle": "Référence : Liens externes",
+  "planningTitle": "Activité : Planification",
+  "acquisitionTitle": "Activité : Acquisition",
+  "operationUseMaintenanceTitle": "Activité : Exploitation, utilisation et entretien",
+  "reallocationDivestmentTitle": "Activité : Réaffectation ou dessaisissement",
+  "IRLTitle": "Dans la vraie vie",
+  "IRLProcureText": "Appliquez ce que vous avez appris dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez une pause durant le cours pour voir comment le processus de gestion du cycle de vie du matériel fonctionne dans votre ministère.",
   "gotIt":"Continuer au segment suivant.",
   "transcriptText":"",
-  "spendSectionBar": "DÉPENSES"
+  "spendSectionBar": "GESTION"
   }
   }
 </i18n>

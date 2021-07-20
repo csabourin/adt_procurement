@@ -1,6 +1,6 @@
 // Traduction française
 export default {
-  lifecycle:"Life Cycle Materiel Management",
+  lifeCycle:"Gestion du cycle de vie du matériel",
   manage:"Gestion",
   AnalyzeGoods:"Analyser les besoins en biens, en services et en construction ",
   ForecastBudget:"Prévoir les besoins budgétaires ",
@@ -42,6 +42,7 @@ export default {
   KeyMessagesPlan: "<span class='v-inv'>Planification&nbsp;:</span> Messages clés",
   KeyMessagesSpend: "<span class='v-inv'>Achat&nbsp;:</span> Messages clés",
   KeyMessagesReport: "<span class='v-inv'>Rapports&nbsp;:</span> Messages clés",
+  KeyMessagesManage: "<span class='v-inv'>Gestion&nbsp;:</span> Messages clés",
   fileSet: "Fichiers utilisés dans cette section",
   BuildWorkPlan: "Élaborer un plan de travail",
   CreateBudget: "Créer un budget",

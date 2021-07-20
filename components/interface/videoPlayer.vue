@@ -186,6 +186,11 @@ export default {
           infos: [],
           quiz: [7]
         },
+        managePart1: {
+          references: [],
+          infos: [],
+          quiz: [6]
+        },
         reportPart1: {
           references: [],
           infos: [],
@@ -285,6 +290,8 @@ export default {
           return this.popups.procurePart2.references;
         case "procurePart3":
           return this.popups.procurePart3.references;
+        case "managePart1":
+          return this.popups.managePart1.references;
         case "reportPart1":
           return this.popups.reportPart1.references;
         case "reportPart2":
@@ -307,6 +314,8 @@ export default {
           return this.popups.procurePart2.infos;
         case "procurePart3":
           return this.popups.procurePart3.infos;
+        case "managePart1":
+          return this.popups.managePart1.infos;
         case "reportPart1":
           return this.popups.reportPart1.infos;
         case "reportPart2":
@@ -329,6 +338,8 @@ export default {
           return this.popups.procurePart2.quiz;
         case "procurePart3":
           return this.popups.procurePart3.quiz;
+        case "managePart1":
+          return this.popups.managePart1.quiz;
         case "reportPart1":
           return this.popups.reportPart1.quiz;
         case "reportPart2":

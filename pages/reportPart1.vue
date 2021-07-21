@@ -106,44 +106,90 @@
       </b-container>
     </section>
     <div>
-      <b-modal no-stacking id="whatIsFSR" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal no-stacking id="Introduction" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('whatIsFSR')}}
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('introductionTitle')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
-        <whatIsFSR />
+        <div v-if="$i18n.locale=='fr'">
+              <p>Pour obtenir de plus amples renseignements, nous vous invitons à consulter les liens qui suivent : </p>
+              <ul>
+                <li><a href="http://opo-boa.gc.ca/index-fra.html" target="_blank" alt="Bureau de l’ombudsman de l’approvisionnement">Bureau de l’ombudsman de l’approvisionnement</a></li>
+                <li><a href="https://www.citt-tcce.gc.ca/" target="_blank" alt="Tribunal canadien du commerce extérieur">Tribunal canadien du commerce extérieur</a></li>
+                <li><a href="https://www.fct-cf.gc.ca/fr/accueil" target="_blank" alt="Cour fédérale">Cour fédérale</a></li>
+              </ul>
+              <p>Vous les retrouverez également dans la boîte à outils.</p>
+            </div>
+            <div v-if="$i18n.locale=='en'">
+              <p>For more information, feel free to consult the following links:</p>
+              <ul>
+                <li><a href="http://opo-boa.gc.ca/index-eng.html" target="_blank" alt="Office of the Procurement Ombudsman">Office of the Procurement Ombudsman</a></li>
+                <li><a href="https://www.citt-tcce.gc.ca/" target="_blank" alt="Canadian International Trade Tribunal">Canadian International Trade Tribunal</a></li>
+                <li><a href="https://www.fct-cf.gc.ca/en/home" target="_blank" alt="Federal Court">Federal Court</a></li>
+              </ul>
+              <p>You can also find them in the Toolbox.</p>
+            </div>
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
-      <b-modal id="keyPeriods" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal id="inappropriatePractices" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('KeyPeriodsFSRTitle')}}
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('inappropriatePracticesTitle')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
-        <keyPeriods />
+        <inappropriatePractices />
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
-      <b-modal id="FSRActivities" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal id="complaintMechanisms" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('FSRActivitiesTitle')}}
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('complaintMechanismsTitle')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
-        <FSRActivities />
+        <complaintMechanisms />
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
-      <b-modal id="UpdatingAnnualForecast" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal id="reportingRequirements" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('UpdatingAnnualForecastTitle')}}
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('reportingRequirementsTitle')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
-        <UpdatingAnnualForecast />
+        <reportingRequirements />
+        <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal id="InRealLife" @hide="resumePlay()" okOnly>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('inRealLifeTitle')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
+        <b-row align-h="center">
+            <b-col cols="12" md="9">
+              <img src="~/assets/inRealLifeWP.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <p>{{$t('IRLReportPart1Text')}}</p>
+            </b-col>
+          </b-row>
+        <template v-slot:modal-ok>{{$t('close')}}</template>
+      </b-modal>
+      <b-modal id="Quiz" @hide="resumePlay()" size="xl" okOnly>
+        <template v-slot:modal-header="{ close }">
+          <h3 class="h5">
+            <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('TakeTheQuiz')}}
+          </h3>
+          <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+        </template>
+        <part1Quiz />
         <template v-slot:modal-ok>{{$t('close')}}</template>
       </b-modal>
     </div>
@@ -158,23 +204,25 @@
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import whatIsFSR from '~/components/slides/report/whatIsFSR'
-import UpdatingAnnualForecast from '~/components/slides/report/UpdatingAnnualForecast'
-import FSRActivities from '~/components/slides/report/FSRActivities'
+import inappropriatePractices from '~/components/slides/report/reportPart1InappropriatePractices'
+import complaintMechanisms from '~/components/slides/report/reportPart1ComplaintMechanisms'
+import reportingRequirements from '~/components/slides/report/reportPart1ReportingRequirements'
+import part1Quiz from '~/components/slides/report/reportPart1Quiz'
 import keyPeriods from '~/components/slides/report/keyPeriods'
 export default {
   data() {
     return {
-      modalArray: ["whatIsFSR", "keyPeriods", "FSRActivities", "UpdatingAnnualForecast"]
+      modalArray: ["Introduction", "inappropriatePractices", "complaintMechanisms", "reportingRequirements", "InRealLife", "Quiz"]
     }
   },
   components: {
     videoPlayer,
     microlearning,
-    whatIsFSR,
-    FSRActivities,
-    keyPeriods,
-    UpdatingAnnualForecast
+    inappropriatePractices,
+    complaintMechanisms,
+    reportingRequirements,
+    part1Quiz,
+    keyPeriods
   },
   computed: {
     thatPoint() {
@@ -224,21 +272,26 @@ export default {
 </style>
 <i18n>{
   "en":{
-  "KeyPeriodsFSRTitle":"Activity: Key Periods for Financial Situation Reports",
-  "whatIsFSR":"Activity: What Is a Financial Situation Report?",
-  "FSRActivitiesTitle":"Activity: Financial Situation Report Activities",
-  "UpdatingAnnualForecastTitle":"Activity: Updating the Annual Forecast",
+  "TakeTheQuiz": "Take the Quiz",
+  "introductionTitle": "References: External Links",
+  "inappropriatePracticesTitle": "Activity: Inappropriate practices",
+  "complaintMechanismsTitle": "Activity: Complaint Mechanisms",
+  "reportingRequirementsTitle": "Activity: Reporting Requirements",
+  "inRealLifeTitle": "In Real Life",
+  "IRLReportPart1Text": "Take what you have learned into real life! Your organization will have its own ways of doing things. Take time out from the course to see which complaint mechanisms are used by your organization as well as which reports will need to be supported.",
   "transcriptText":"",
   "reportSectionBar": "REPORT"
   },
   "fr":{
-  "TakeTheQuiz":"Répondez au questionnaire",
-  "KeyPeriodsFSRTitle":"Activité : Périodes clés pour les rapports sur la situation financière",
-  "whatIsFSR":"Activité : Qu’est-ce qu’un rapport sur la situation financière?",
-  "FSRActivitiesTitle":"Activité : Activités pour le rapport sur la situation financière",
-  "UpdatingAnnualForecastTitle":"Activité : Mise à jour des prévisions annuelles",
+  "TakeTheQuiz": "Répondez au questionnaire",
+  "introductionTitle": "Référence : Liens externes",
+  "inappropriatePracticesTitle": "Activité : Pratiques inappropriées",
+  "complaintMechanismsTitle": "Activité : Mécanismes de plainte",
+  "reportingRequirementsTitle": "Activité : Exigences en matière de rapports",
+  "inRealLifeTitle": "Dans la vraie vie",
+  "IRLReportPart1Text": "Appliquez ce que vous avez appris dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez une pause durant le cours pour voir quels mécanismes de plainte sont utilisés par votre organisation et quels rapports devront être soutenus.",
   "transcriptText":"",
-  "reportSectionBar": "RAPPORTS"
+  "reportSectionBar": "RAPPORT"
   }
   }
 </i18n>

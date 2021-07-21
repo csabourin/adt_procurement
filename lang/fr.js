@@ -2,6 +2,7 @@
 export default {
   lifeCycle:"Gestion du cycle de vie du matériel",
   manage:"Gestion",
+  ReportsTitle: "Rapports",
   AnalyzeGoods:"Analyser les besoins en biens, en services et en construction ",
   ForecastBudget:"Prévoir les besoins budgétaires ",
   BudgetAuthorities:" Budgets et pouvoirs ",

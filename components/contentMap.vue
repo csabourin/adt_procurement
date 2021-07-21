@@ -62,10 +62,7 @@
           <h2 class="colorBar3"><span class="v-inv">{{$t('navigationMenu')}}</span> {{$t('report')}}</h2>
           <menu style="list-style: none">
             <li role="menuitem">
-              <nuxt-link :to="localePath('reportPart1')" v-html="$t('ConductPeriodicVarianceReporting')" />
-            </li>
-            <li role="menuitem">
-              <nuxt-link :to="localePath('reportPart2')" v-html="$t('ContributeReporting')" />
+              <nuxt-link :to="localePath('reportPart1')" v-html="$t('ReportsTitle')" />
             </li>
             <li role="menuitem">
               <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessagesReport')" />

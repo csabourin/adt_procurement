@@ -2,41 +2,111 @@
   <span>
     <div class="pure-radiobutton pure-checkbox">
   <b-card>
+    <b-container class="workplan-table wp-table-1">
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpGovtPri')"></h3>
+          <p v-html="$t('govtPriorities')"></p>
+        
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpDeptPri')"></h3>
+          <p v-html="$t('deptPriorities')"></p>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('pwpDirPri')"></h3>
+          <p v-html="$t('dirPriorities')"></p>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="encadrage">
+          <h3 v-html="$t('titleActivities')"></h3>
+        </b-col>
+      </b-row>
+
+        <!---------------------- ACTIVITY 1 -->      
+      <b-row>
+        <b-col class="encadrage" sm="12" xl="4">
+          <h4 v-html="$t('pA1')"></h4>
+          <h5 v-html="$t('titleSubActivities')">Sous activités</h5>
+          <p v-html="$t('psA1')"></p>
+          <h5 v-html="$t('titleDeliverables')">Livrables</h5>
+          <p v-html="$t('pD1')"></p>
+          <h5 v-html="$t('titleRisk')">Risque</h5>
+          <p v-html="$t('pR1')">Roulement du personnel</p>
+          <h5 v-html="$t('titleLikelihood')">Probabilité</h5>
+          <p v-html="$t('low')">Faible</p>
+          <h5 v-html="$t('titleImpact')">Impact</h5>
+          <p v-html="$t('high')">Élevé</p>
+          <h5 v-html="$t('titleMitigation')">Atténuation</h5>
+          <p v-html="$t('pM1')"></p>
+          <h5 v-html="$t('titleResources')">Resources</h5>
+          <p v-html="$t('pR1_1')"></p>
+        </b-col>
+        
+        <!---------------------- ACTIVITY 2 --> 
+        <b-col class="encadrage" sm="12" xl="4">
+          <h4 v-html="$t('pA2')"></h4>
+          <h5 v-html="$t('titleSubActivities')">Sous activités</h5>
+          <p v-html="$t('pSA2')"></p>
+          <h5 v-html="$t('titleDeliverables')">Livrables</h5>
+          <p v-html="$t('pD2_1w')" ></p>
+          <h5 v-html="$t('titleRisk')">Risque</h5>
+          <p v-html="$t('pR2')">Roulement du personnel</p>
+          <h5 v-html="$t('titleLikelihood')">Probabilité</h5>
+          <p v-html="$t('low')">Faible</p>
+          <h5 v-html="$t('titleImpact')">Impact</h5>
+          <p v-html="$t('high')">Élevé</p>
+          <h5 v-html="$t('titleMitigation')">Atténuation</h5>
+          <p v-html="$t('pM2')"></p>
+          <h5 v-html="$t('titleResources')">Resources</h5>
+          <p v-html="$t('pRes2')"></p>
+        </b-col>
+
+
+        
+        <!---------------------- ACTIVITY 3 --> 
+        <b-col class="encadrage" sm="12" xl="4">
+          <h4 v-html="$t('pA3')"></h4>
+          <h5 v-html="$t('titleSubActivities')">Sous activités</h5>
+          <p v-html="$t('pSA3')"></p>
+          <h5 v-html="$t('titleDeliverables')">Livrables</h5>
+          <p v-html="$t('pD3')"></p>
+          
+          <h5 v-html="$t('titleRisk')">Risque</h5>
+          <p v-html="$t('pR2')"></p>
+          <h5 v-html="$t('titleLikelihood')">Probabilité</h5>
+          <p v-html="$t('low')">Faible</p>
+          <h5 v-html="$t('titleImpact')">Impact</h5>
+          <p v-html="$t('high')">Élevé</p>
+          <h5 v-html="$t('titleMitigation')">Atténuation</h5>
+          <p v-html="$t('pM2')"></p>
+          <h5 v-html="$t('titleResources')">Resources</h5>
+          <p v-html="$t('pRes3')">
+          </p>
+        </b-col>
+        
+      </b-row>
+    </b-container>
+    <hr><p>{{$t('introText')}}</p>
     <b-tabs v-model="tabIndex">
-      <b-tab title="Question 1">
-        <!-- <p><strong v-html="$t('q1a.text')" /></p> -->
-        <selectMatching :question="$t('q1content')" :match="q1Match" @response="Q1 = $event" exId="ex1" />
-        <p v-if="Q1[0] && Q1[1] && Q1[2] && Q1[3]" v-html="$t('q1.conclusion')" />
-      </b-tab>
-      <b-tab title="Question 2">
-        <selectMatching :question="$t('q2content')" :match="q2Match" @response="Q2 = $event" exId="ex2" />
-        <p v-if="Q2[0] && Q2[1] && Q2[2] && Q2[3]" v-html="$t('q2.conclusion')" />
-      </b-tab>
-      <b-tab title="Question 3">
-        <radioQuiz :question="$t('q3')" qId="3" />
-      </b-tab>
-      <b-tab title="Question 4">
-        <radioQuiz :question="$t('q4')" qId="4" />
-      </b-tab>
-      <b-tab title="Question 5">
-        <checkboxQuiz :question="$t('q5')" qId="5" :Answer="['1','2','3']" />
-      </b-tab>
-      <b-tab title="Question 6">
-        <radioQuiz :question="$t('q6')" qId="6" />
-      </b-tab>
-      <b-tab title="Question 7">
-        <radioQuiz :question="$t('q7')" qId="7" />
-      </b-tab>
-      <b-tab title="Question 8">
-        <radioQuiz :question="$t('q8')" qId="8" />
-      </b-tab>
+        <b-tab title="Question 1"><checkboxQuiz :question="$t('q1')" qId="1" :Answer='["1","2","3"]' /></b-tab>
+        <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["1","3","4"]' /></b-tab>
+        <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
+        <b-tab title="Question 4"><checkboxQuiz :question="$t('q4')" qId="4" :Answer='["1","3","4"]' /></b-tab>
+        <b-tab title="Question 5"><checkboxQuiz :question="$t('q5')" qId="5" :Answer='["1","3","4"]' /></b-tab>
+        <b-tab title="Question 6"><radioQuiz :question="$t('q6')" qId="6" /></b-tab>
     </b-tabs>
   </b-card>
   <!-- Control buttons-->
   <div class="text-center">
     <b-button-group :aria-label="$t('questionNav')" class="mt-2">
       <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-      <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=7">{{$t('nextPage')}}</b-button>
+      <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=5">{{$t('nextPage')}}</b-button>
     </b-button-group>
   </div>
 </div>
@@ -45,17 +115,14 @@
 <script type="text/javascript">
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
-import selectMatching from "~/components/selectMatching"
 export default {
-  components: { radioQuiz, checkboxQuiz, selectMatching },
+  components: { 
+    radioQuiz, 
+    checkboxQuiz 
+    },
   data() {
-    return {
-      tabIndex: 0,
-      Q1: [],
-      Q2: [],
-      
-      q1Match: [2,3,1,4],
-      q2Match: [3,4,1,2]
+  return {
+      tabIndex: 0
     }
   },
   methods:{
@@ -70,6 +137,50 @@ export default {
 </script>
 <i18n>{
   "en": {
+    "introText": "Looking at the work plan provided, you realize that you must buy a vehicle as well as computer tablets to be able to conduct inspections. Answer the following questions.",
+    "pwpInstructions": "Your director has been to a steering committee and now has new information that should be reflected in your work plan. Here are the 3 new pieces of information: ",
+    "thing1": "New software will be implemented to speed up the issuing of licences ",
+    "thing2": "A new policy now requires licences to be issued in 15 days, not 30 days, starting November 1 and",
+    "thing3": "There’s been a decision not to replace a retiring employee.",
+    "pwpTitle": "Adjust your work plan by selecting the best answer to the following questions.",
+    "pwpGovtPri": "Government priorities",
+    "pwpDeptPri": "Departmental priorities",
+    "pwpDirPri": "Directorate priorities",
+    "titleActivities": "Activities",
+    "pwpPlanAct": "Activities",
+    "titleSubActivities": "Sub-activities",
+    "titleDeliverables": "Deliverables",
+    "titleRisk": "Risk",
+    "titleLikelihood": "Likelihood",
+    "titleImpact": "Impact",
+    "titleMitigation": "Mitigation",
+    "titleResources": "Resources",
+    "qDisabled": "Please select one",
+    "govtPriorities": "To serve Canadians by securing the prosperous and sustainable use of aquatic ecosystems for future generations",
+    "deptPriorities": "To support prosperous and sustainable commercial, Indigenous and recreational fisheries, aquaculture and other oceans industries",
+    "dirPriorities": "To manage the commercial domestic fisheries",
+    "pA1": "Manage and administer the directorate",
+    "psA1": "<ul><li>Supervise, monitor and train staff&nbsp;</li><li>Schedule work&nbsp;</li><li>Provide clerical support&nbsp;</li><li>Move office to new location </li></ul>",
+    "pD1": "<ul><li>Management of licencing activities</li><li>Reception covered from 9 to 5</li></ul>",
+    "pD1add":"Training for all officers on the new fisheries software",
+    "pD2add":"Implementation of new fisheries software",
+    "pR1": "<ul><li>Staff turnover</li></ul>",
+    "low": "<ul><li>Low</li></ul>",
+    "high": "<ul><li>High</li></ul>",
+    "pM1": "<ul><li>Establish succession plan</li><li>Establish collective staffing pools</li><li>Recognize excellent work</li><li>Celebrate successes</li><li>Involve employees in decision-making</li><li>Implement flexible work hours</li></ul>",
+    "pM1_1": "Implement flexible work hours",
+    "pR1_1": "<ul><li>1 administrative assistant</li></ul>",
+    "pR1_2": "<ul><li>Manager</li></ul>",
+    "pA2": "Issue commercial fishing licenses",
+    "pSA2": "<ul><li>Review applicant requests</li><li>Check reliability</li><li>Issue licenses</li><li>Conduct inspections</li></ul>",
+    "pD2_1w": "<ul><li>Issue license within 30 days of request</li><li>Issue 500 licenses per year</li></ul>",
+    "pR2": "<ul><li>Overfishing</li></ul>",
+    "pM2": "<ul><li>Protect habitat</li><li>Place catching limits</li><li>Implement fishing seasons</li></ul>",
+    "pRes2": "<ul><li>1 officer</li><li>2 analysts</li><li>1 junior officer</li></ul>",
+    "pA3": "Renew commercial fishing licenses",
+    "pSA3": "<ul><li>Review applicant renewal requests</li><li>Issue renewal license</li></ul>",
+    "pD3": "<ul><li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year </li></ul>",
+    "pRes3": "<ul><li>1 officer</li><li>1 junior analyst</li><ul>",
     "qDisabled": "Choose",
     "pwpGovtPri": "<strong>Government priorities</strong>",
     "pwpDeptPri": "<strong>Departmental priorities</strong>",
@@ -83,383 +194,220 @@ export default {
     "titleImpact": "Impact",
     "titleMitigation": "Mitigation",
     "titleResources": "Resources",
-    "q1content": {
-      "text": "Match the item to the budget in which it belongs. ",
-      "options": {
-        "1": "A contract with an agency for temp staff",
-        "2": "Funds provided to a university to study fish habitat",
-        "3": "Casual positions or leave cash-outs",
-        "4": "Purchase a new fleet of trucks"
-      },
-      "matching": {
-        "1": "Operating–Salary ",
-        "2": "Operating–O&M ",
-        "3": "Grants & Contributions",
-        "4": "Capital "
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
     "q1": {
-      "conclusion": "<p><strong>A contract with an agency for temporary staff</strong> would be in <strong>Operating -O&amp;M</strong>, and not Operating-Salary, because temporary staff are not employees, and contracts are not paid out of Salary.&nbsp;</p><p><strong>Funds provided to a university to study fish habitat </strong>would be in <strong>Grants and Contributions</strong>. The nature of this transaction is such that it is a 1-way payment of money for which the government will not receive any good or service.</p><p><strong>Casual positions or leave cash-outs</strong> would be in <strong>Operating–Salary</strong> because they concern employees.&nbsp;</p><p><strong>Purchase a new fleet of trucks</strong> would be in <strong>Capital </strong>because they are assets that would depreciate over time.</p>"
-    },
-    "q2content": {
-      "text": "Match the activity to its status. ",
+      "text": "When buying a vehicle, which costs do you need to consider?",
       "options": {
-        "1": "Issuing fishing licenses.",
-        "2": "Next year, you are going to purchase software to replace a paper process.",
-        "3": "Costs for an office move that was completed last year.",
-        "4": "Consultations across Canada were stopped earlier this year."
+        "1": "Maintenance costs ",
+        "2": "Repair costs",
+        "3": "Operating costs",
+        "4": "Installation costs"
       },
-      "matching": {
-        "1": "Sunsetted",
-        "2": "Cancelled",
-        "3": "Continuing",
-        "4": "New"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+       "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> When buying a vehicle, you need to consider maintenance costs such as oil changes, repair costs such as a broken fan belt and operating costs such as gas. ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> When buying a vehicle, you need to consider maintenance costs such as oil changes, repair costs such as a broken fan belt and operating costs such as gas."
       }
     },
-    "q2": {
-      "conclusion": "<p><strong>Issuing fishing licenses</strong> is a <strong>continuing </strong>activity; it’s 1 of your main activities each year.&nbsp;</p><p><strong>Next year, you are going to purchase software to replace a paper process</strong> is a <strong>new </strong>activity, as you did not have this activity in previous plans.</p><p><strong>Costs for an office move that was completed last year</strong> is a <strong>sunsetted </strong>activity because it finished last year.&nbsp;</p><p><strong>Consultations across Canada were stopped earlier this year</strong> is a <strong>cancelled </strong>activity as the consultations were stopped and not completed.</p>"
+      "q2": {
+      "text": "You need to purchase five computer tablets. Which costs do you need to consider?",
+      "options": {
+        "1": "Disposal costs",
+        "2": "Incentive costs ",
+        "3": "Maintenance costs",
+        "4": "Safeguarding costs"
+      },
+       "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> When purchasing five computer tablets, you need to consider disposal costs, maintenance costs and safeguarding costs.  ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> When purchasing five computer tablets, you need to consider disposal costs, maintenance costs and safeguarding costs."
+      }
     },
     "q3": {
-      "text": "An employee will be retiring after 8 months next year, so you estimate their salary as:",
+      "text": "Where can you go to estimate how much your computer tablets will cost?",
       "options": {
-        "1": "Full salary",
-        "2": "¾ of their salary",
-        "3": "⅔ of their salary "
+        "1": "Consult a catalogue",
+        "2": "Do an internet search",
+        "3": "Look at previous purchases",
+        "4": "Guesstimate"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is ⅔ of their salary. They will earn 8/12 of their salary or ⅔. ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is ⅔ of their salary. They will earn 8/12 of their salary or ⅔. ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  They will earn 8/12 of their salary or ⅔."
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques."
       }
     },
     "q4": {
-      "text": "An example of a trend is…",
+      "text": "Dropping and breaking a computer tablet is an example of...",
       "options": {
-        "1": "The budget for travel has increased year over year by a factor of 3%. ",
-        "2": "An activity related to renewing fishing licenses was delayed due to Arctic weather. ",
-        "3": "Less was spent on conferences last year because an employee left part-way through the year, so they didn’t attend a conference as planned.",
-        "4": "The training budget was overspent by $6,000 last year."
+        "1": "Mitigation",
+        "2": "Risk",
+        "3": "Likelihood",
+        "4": "Impact"
       },
-      "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong> This is a trend because the increase has been the same percentage for a few years",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “The budget for travel has increased year over year by a factor of 3%.” This is a trend because the increase has been the same percentage for a few years.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is The budget for travel has increased year over year by a factor of 3%. This is a trend because the increase has been the same percentage for a few years.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is The budget for travel has increased year over year by a factor of 3%. This is a trend because the increase has been the same percentage for a few years."
+       "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Dropping and breaking a computer tablet is an example of risk. ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Dropping and breaking a computer tablet is an example of risk."
       }
     },
     "q5": {
-      "text": "How would you use the information from trends in your budget requirements?",
+      "text": "A risk mitigation strategy for dropping and breaking a computer tablet could be... ",
       "options": {
-        "1": "Use last year’s actual expenditures as a starting point to create my budget requirements.",
-        "2": "Use last year’s budget as a starting point to create my budget requirements. ",
-        "3": "Add last year’s numbers plus the projected increase in next year’s budget requirements."
+        "1": "Buying a shatter-proof cover",
+        "2": "Keeping an old laptop for backup",
+        "3": "Purchasing a warranty for the computer tablet",
+        "4": "Not allowing computer tablets to be taken out of the office "
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> All are correct. The trends you see may vary so how you use them in your budget requirements will differ.",
-        "right": "<span class='v-right' /> <strong>Correct!</strong> The trends you see may vary so how you use them in your budget requirements will differ."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Buying a shatter-proof cover, keeping an old laptop for backup and purchasing insurance for the tablet are all examples of risk mitigation strategies.",
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Buying a shatter-proof cover, keeping an old laptop for backup and purchasing insurance for the tablet are all examples of risk mitigation strategies."
       }
     },
     "q6": {
-      "text": "An example of a financial variance is …",
+      "text": "Which of the following activities is <u>NOT</u> done during a risk assessment? ",
       "options": {
-        "1": "$1,500 per employee used to calculate total training budget.",
-        "2": "A surplus in the relocation budget of $10,000.",
-        "3": "Issuing fishing licenses in 15 days."
+        "1": "Identify the events that could stop you from delivering your activities",
+        "2": "Identify the potential loss associated with the event",
+        "3": "Determine the probability of the event happening or not",
+        "4": "Identify next year’s activities and budget",
+        "5": "Identify the actions you can take to lower the potential of that event happening"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “a surplus in the relocation budget of $10,000,” as $10,000 is the difference between budget and actual expenditures. ",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> $10,000 is the difference between budget and actual expenditures.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is a surplus in the relocation budget of $10,000, as $10,000 is the difference between budget and actual expenditures."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
+        "4": "<span class='v-right' /> <strong>Correct!</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
+        "5": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques."
       }
-    },
-    "q7": {
-      "text": "Last year’s travel variance was due to a new departmental priority to conduct a 3-year cross-Canada consultation, which resulted in more trips. Will you put this in your budget requirements for next year?",
-      "options": {
-        "1": "Yes.",
-        "2": "No."
-      },
-      "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “yes.”"
-      },
-      "conclusion":" Consultations started last year, are continuing in the current year, and should end next year."
-    },
-    "q8": {
-      "text": "Non-discretionary costs are: ",
-      "options": {
-        "1": "Costs that are not directly linked to your activities and therefore are less likely to have a negative impact on them.",
-        "2": "Costs you planned for at the beginning of the fiscal year and that were incurred over the year.",
-        "3": "Costs that are essential for delivering on your activities and, if cut, may result in not being able to deliver those activities."
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “costs that are essential for delivering on your activities and, if cut, may result in not being able to deliver those activities.”",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “costs that are essential for delivering on your activities and, if cut, may result in not being able to deliver those activites.”",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> "
-      },
-      "conclusion":"Non-discretionary costs, if reduced or cut, will seriously affect your ability to deliver on priorities."
     }
   },
   "fr": {
-  "q1content": {
-      "text": "Faites correspondre le poste au budget auquel il appartient. ",
+    "introText": "En regardant le plan de travail fourni, vous vous rendez compte que vous devez acheter un véhicule ainsi que des tablettes informatiques pour pouvoir effectuer des inspections. Répondez aux questions suivantes.",
+    "pwpInstructions": "Votre directeur vous dit qu’il a participé à un comité directeur et qu’il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Voici les trois nouveaux renseignements :",
+    "thing1": "un nouveau logiciel sera installé pour accélérer la délivrance des permis;",
+    "thing2": "une nouvelle politique qui exige maintenant que les permis soient délivrés en 15 jours, et non plus en 30 jours, à compter du 1er novembre;",
+    "thing3": "une décision de ne pas remplacer un employé qui prend sa retraite.",
+    "pwpTitle": "Ajustez votre plan de travail en choisissant la meilleure réponse aux questions suivantes&nbsp;:",
+    "pwpGovtPri": "Priorités du gouvernement",
+    "pwpDeptPri": "Priorités ministérielles",
+    "pwpDirPri": "Priorités de la direction",
+    "titleActivities": "Activités",
+    "titleSubActivities": "Sous-activités",
+    "titleDeliverables": "Livrables",
+    "titleRisk": "Risque",
+    "titleLikelihood": "Probabilité",
+    "titleImpact": "Impact",
+    "titleMitigation": "Atténuation",
+    "titleResources": "Ressources",
+    "qDisabled": "Veuillez faire un choix",
+    "govtPriorities": "Servir les Canadiens en assurant l’utilisation prospère et durable des écosystèmes aquatiques pour les générations futures.",
+    "deptPriorities": "Soutenir des pêches commerciales, autochtones et récréatives prospères et durables, l’aquaculture et d’autres industries maritimes.",
+    "dirPriorities": "Gérer les pêches commerciales.",
+    "pA1": "Gérer et administrer la direction&nbsp;",
+    "psA1": "<ul><li> Superviser, surveiller et former le personnel&nbsp;<li> Planifier le travail&nbsp;</li><li> Fournir du soutien administratif&nbsp;</li><li> Déménagement des bureaux dans de nouveaux locaux</li></ul>",
+    "pD1": "<ul><li>Gestion des activités de délivrance de permis</li><li> Réception ouverte de 9&nbsp;h à 17&nbsp;h</li></ul>",
+    "pD1add":"Formation de tous les agents sur le nouveau logiciel de gestion des pêches",
+    "pD2add":"Lancement d’un nouveau logiciel de gestion des pêches",
+    "pR1": "<ul><li>Roulement du personnel</li></ul>",
+    "low": "<ul><li>Faible</li></ul>",
+    "high": "<ul><li>&Eacute;levé</li></ul>",
+    "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l’excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li><li>Horaires de travail flexibles</li</ul>",
+    "pM1_1": "<ul><li>Mettre en &oelig;uvre des horaires de travail flexibles</li></ul>",
+    "pR1_1": "<ul><li>1 adjoint administratif</li><li>gestionnaire</li></ul>",
+    "pA2": "Délivrer des permis de p&ecirc;che commerciale",
+    "pSA2": "<ul><li>Examiner les dossiers des demandeurs</li><li>Vérifier la fiabilité</li><li>Délivrer des permis</li><li>Effectuer des inspections</li></ul>",
+    "pD2_1w": "<ul><li>Délivrer le permis dans les 30 jours suivant la demande</li></ul>",
+    "pD2_1r": "<ul><li>Délivrer le permis dans les 15 jours suivant la demande</li></ul>",
+    "pD2_2": "<ul><li>Délivrer 500 permis par an</li></ul>",
+    "pR2": "<ul><li>Surp&ecirc;che</li></ul>",
+    "pM2": "<ul><li> Protéger l'habitat</li><li> Fixer des limites de capture</li><li> Lancer les saisons de p&ecirc;che</li></ul>",
+    "pRes2": "<ul><li>1 agent</li><li>2 analystes</li><li>1 agent subalterne</li></ul>",
+    "pA3": "Renouveler les permis de p&ecirc;che commerciale",
+    "pSA3": "<ul><li> Examiner les dossiers de renouvellement des demandeurs</li><li> Délivrer des renouvellements de permis&nbsp;</li></li></ul>",
+    "pD3": "<ul><li> Délivrer les renouvellements de permis dans les 30 jours suivant la demande</li><li> Délivrer 300  renouvellements de permis par an</li></ul>",
+    "pRes3": "<ul><li>1 agent</li><li>1 analyste subalterne</li></ul>",
+  
+  "q1": {
+      "text": "Lors de l’achat d’un véhicule, quels sont des exemples de coûts que vous devez considérer?",
       "options": {
-        "1": "Un contrat avec une agence d'intérim",
-        "2": "Fonds versés à une université pour étudier l'habitat du poisson",
-        "3": "Les postes occasionnels ou les encaissements de congés",
-        "4": "Achat d’un nouveau parc de camions"
+        "1": "Frais d’entretien",
+        "2": "Coûts de réparation",
+        "3": "Coûts d’exploitation",
+        "4": "Frais d’installation"
       },
-      "matching": {
-        "1": "Fonctionnement – Salaires ",
-        "2": "Fonctionnement – F et E",
-        "3": "Subventions et contributions",
-        "4": "Immobilisation "
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> ",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+       "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Lorsque vous achetez un véhicule, vous devez tenir compte des frais d’entretien, tels que les vidanges d’huile, les coûts de réparation, comme une courroie de ventilateur cassée, et les frais d’entretien, comme l’achat d'essence. ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Lorsque vous achetez un véhicule, vous devez tenir compte des frais d’entretien, tels que les vidanges d’huile, les coûts de réparation, comme une courroie de ventilateur cassée, et les frais d’entretien, comme l’achat d'essence."
       }
     },
-    "qDisabled": "Choisissez",
-    "q1a": {
-      "text": "Faites correspondre le poste au budget auquel il appartient.",
+      "q2": {
+      "text": "Vous devez acheter 5 tablettes informatiques. Quels sont des exemples de coûts que vous devez considérer?",
       "options": {
-        "1": "Un contrat avec une agence d’intérim"
+        "1": "Coûts d’aliénation",
+        "2": "Coûts des mesures d’encouragement",
+        "3": "Frais d'entretien",
+        "4": "Coûts de sauvegarde"
       },
-      "matching": {
-        "1": "Fonctionnement - Salaires",
-        "2": "Fonctionnement - F et E",
-        "3": "Subventions et contributions",
-        "4": "Capital"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
+       "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Lorsque vous achetez 5 tablettes informatiques, vous devez tenir compte des coûts d'aliénation, des frais d’entretien et des coûts de sauvegarde.",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Lorsque vous achetez 5 tablettes informatiques, vous devez tenir compte des coûts d'aliénation, des frais d’entretien et des coûts de sauvegarde."
       }
     },
-    "q1b": {
-      "text": " ",
-      "options": {
-        "2": "Fonds versés à une université pour étudier l'habitat du poisson"
-      },
-      "matching": {
-        "1": "Fonctionnement - Salaires",
-        "2": "Fonctionnement - F et E",
-        "3": "Subventions et contributions",
-        "4": "Capital"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q1c": {
-      "text": " ",
-      "options": {
-        "3": "Les postes occasionnels ou les encaissements de congés"
-      },
-      "matching": {
-        "1": "Fonctionnement - Salaires",
-        "2": "Fonctionnement - F et E",
-        "3": "Subventions et contributions",
-        "4": "Capital"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q1d": {
-      "text": " ",
-      "options": {
-        "4": "Achat d’un nouveau parc de camions"
-      },
-      "matching": {
-        "1": "Fonctionnement - Salaires",
-        "2": "Fonctionnement - F et E",
-        "3": "Subventions et contributions",
-        "4": "Capital"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q1": {
-      "conclusion": "<p><strong>Un contrat avec une agence d’intérim</strong> devrait se trouver sous <strong>Fonctionnement - F et E</strong>, et non pas sous Fonctionnement - Salaires, parce que le personnel temporaire n’a pas le statut d'employé et que les contrats ne sont pas payés à même le poste des salaires.&nbsp;</p><p><strong>Les fonds allant à une université pour étudier l'habitat du poisson</strong> seraient fournis sous forme de <strong>subventions et de contributions</strong>. La nature de cette transaction est telle qu’il s’agit d’un paiement à sens unique pour lequel le gouvernement ne recevra aucun bien ni service.</p><p><strong>Les postes occasionnels ou les demandes de remboursement des congés</strong> se trouveraient dans la catégorie <strong>Fonctionnement - Salaires</strong> parce qu’ils concernent des employés.&nbsp;</p><p><strong>L’achat d’un nouveau parc de camions</strong> se trouverait sous <strong>Immobilisations  </strong>parce que ce sont des biens qui se déprécient avec le temps.</p>"
-    },
-        "q2content": {
-      "text": "Faites correspondre l'activité à son statut. ",
-      "options": {
-        "1": "Délivrance des permis de pêche.",
-        "2": "L'année prochaine, vous allez acheter un logiciel pour remplacer un processus manuel.",
-        "3": "Les sommes prévues pour un déménagement de bureaux ont été dépensées l'an dernier.",
-        "4": "Les consultations à l'échelle du Canada ont été interrompues plus tôt dans l’année."
-      },
-      "matching": {
-        "1": "Éliminée progressivement",
-        "2": "Annulée",
-        "3": "Continue",
-        "4": "Nouvelle "
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q2a": {
-      "text": "Faites correspondre l’activité à son statut.",
-      "options": {
-        "1": "Délivrance des permis de pêche."
-      },
-      "matching": {
-        "1": "Éliminé progressivement",
-        "2": "Annulé",
-        "3": "Continu",
-        "4": "Nouveau"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q2b": {
-      "text": " ",
-      "options": {
-        "2": "L’année prochaine, vous allez acheter un logiciel pour remplacer un processus manuel."
-      },
-      "matching": {
-        "1": "Éliminé progressivement",
-        "2": "Annulé",
-        "3": "Continu",
-        "4": "Nouveau"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q2c": {
-      "text": " ",
-      "options": {
-        "3": "Les sommes prévues pour un déménagement de bureaux ont été dépensées l’an dernier."
-      },
-      "matching": {
-        "1": "Éliminé progressivement",
-        "2": "Annulé",
-        "3": "Continu",
-        "4": "Nouveau"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q2d": {
-      "text": " ",
-      "options": {
-        "4": "Les consultations à l’échelle du Canada ont été interrompues plus tôt dans l'année"
-      },
-      "matching": {
-        "1": "Éliminé progressivement",
-        "2": "Annulé",
-        "3": "Continu",
-        "4": "Nouveau"
-      },
-      "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong>",
-        "right": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q2":{"conclusion":"<p><strong>L'émission de permis de pêche</strong> est une activité <strong>continue</strong>; c’est l’une de vos principales activités chaque année.&nbsp;</p><p><strong>L’année prochaine, vous allez acheter un logiciel pour remplacer un processus manuel,</strong> c'est une <strong>nouvelle</strong> activité, car cette activité n'était pas dans les plans précédents.</p><p><strong>Les coûts d’un déménagement de bureau qui a été effectué l’an dernier</strong> sont <strong>éliminés progressivement</strong>, car cette activité est terminée.&nbsp;</p><p><strong>Les consultations à travers le Canada ont été interrompues plus t&ocirc;t cette année</strong>, c’est une activité <strong>annulée</strong>, car les consultations ont été interrompues, donc non terminées.</p>"},
     "q3": {
-      "text": "Un employé prendra sa retraite après 8 mois l’année prochaine, donc vous estimez son salaire comme étant :",
+      "text": "Où pouvez-vous aller pour estimer le coût de vos tablettes informatiques? ",
       "options": {
-        "1": "salaire complet",
-        "2": "¾ de son salaire",
-        "3": "⅔ de son salaire"
+        "1": "Consulter un catalogue",
+        "2": "Faire une recherche sur Internet",
+        "3": "Examiner les achats précédents",
+        "4": "Deviner"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est ⅔ de son salaire. Il gagnera 8/12 de son salaire, soit ⅔.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est ⅔ de son salaire. Il gagnera 8/12 de son salaire, soit ⅔.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  Il gagnera 8/12 de son salaire, soit ⅔."
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques."
       }
     },
     "q4": {
-      "text": "Un exemple de tendance est ...",
+      "text": "La chute et le bri d’une tablette informatique est un exemple de...",
       "options": {
-        "1": "Le budget des voyages a augmenté de 3 % année après année.",
-        "2": "Une activité liée au renouvellement des permis de pêche a été retardée en raison des conditions météorologiques dans l'Arctique.",
-        "3": "L’an dernier, on a consacré moins d’argent aux conférences parce qu’un employé, parti au milieu d'année, n’a pas assisté à des conférences comme prévu.",
-        "4": "Le budget de formation a été dépassé de 6&nbsp;000&nbsp;$ l’an dernier."
+        "1": "Atténuation",
+        "2": "Risque ",
+        "3": "Probabilité",
+        "4": "Impact"
       },
-      "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong> Il s'agit d'une tendance parce que l'augmentation est la même depuis quelques années. ",
-
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Le budget des voyages a augmenté de 3 % année après année ». Il s’agit d’une tendance parce que l’augmentation est la même depuis quelques années.",
-
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Le budget des voyages a augmenté de 3 % année après année ». Il s’agit d’une tendance parce que l’augmentation est la même depuis quelques années.",
-
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Le budget des voyages a augmenté de 3 % année après année ». Il s’agit d’une tendance parce que l’augmentation est la même depuis quelques années."
+       "feedback": {
+        "right": "<span class='v-right' /> <strong>Correct!</strong> La chute et le bri d’une tablette informatique est un exemple de risque. ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> La chute et le bri d’une tablette informatique est un exemple de risque."
       }
     },
     "q5": {
-      "text": "Comment utiliseriez-vous l’information tirée des tendances de vos besoins budgétaires?",
+      "text": "Une stratégie d'atténuation des risques pour faire la chute et le bri d’une tablette informatique pourrait être...",
       "options": {
-        "1": "Utiliser les dépenses réelles de l’année dernière comme point de départ pour créer mes besoins budgétaires.",
-        "2": "Utiliser le budget de l’année dernière comme point de départ pour créer mes besoins budgétaires.",
-        "3": "Ajoutez les chiffres de l’an dernier et l’augmentation prévue des besoins budgétaires de l’an prochain."
+        "1": "Acheter un boîtier incassable",
+        "2": "Conserver un vieux portable pour dépanner",
+        "3": "Acheter une garantie pour la tablette informatique",
+        "4": "Interdire de sortir les tablettes d'ordinateur du bureau"
       },
       "feedback": {
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Tous les réponses sont exactes. Les tendances que vous voyez peuvent varier, de sorte que la façon dont vous les utilisez dans vos besoins budgétaires peut changer. ",
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les tendances que vous voyez peuvent varier, de sorte que la façon dont vous les utilisez dans vos besoins budgétaires peut changer."
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Acheter un boîtier incassable, conserver un vieux portable pour dépanner et acheter une garantie pour la tablette informatique sont tous des exemples de stratégies d’atténuation des risques.",
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Acheter un boîtier incassable, conserver un vieux portable pour dépanner et acheter une garantie pour la tablette informatique sont tous des exemples de stratégies d’atténuation des risques."
       }
     },
     "q6": {
-      "text": "Un exemple d’écart est …",
+      "text": "Parmi les activités suivantes, laquelle n’est PAS effectuée lors d’une évaluation des risques?",
       "options": {
-        "1": "1&nbsp;500&nbsp;$ par employé est utilisé pour calculer le budget total de formation.",
-        "2": "Un surplus de 10&nbsp;000&nbsp;$ dans le budget de réinstallation.",
-        "3": "Délivrance des permis de pêche en 15 jours. "
+        "1": "Identifier les événements qui pourraient vous empêcher de réaliser vos activités",
+        "2": "Identifier la perte potentielle associée à l'événement",
+        "3": "Deviner si l'événement aura lieu ou non",
+        "4": "Identifier les activités et le budget de l'année prochaine ",
+        "5": "Identifier les actions que vous pouvez entreprendre pour réduire le risque que cet événement se produise "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Un surplus de 10&nbsp;000&nbsp;$ dans le budget de réinstallation », car 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles. ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est « Un surplus de 10&nbsp;000&nbsp;$ dans le budget de réinstallation », car 10&nbsp;000&nbsp;$ est la différence entre le budget et les dépenses réelles."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
+        "4": "<span class='v-right' /> <strong>Correct!</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
+        "5": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques."
       }
-    },
-    "q7": {
-      "text": "L'écart par rapport à l’an dernier s’explique par une nouvelle priorité ministérielle, soit la tenue d’une consultation de 3 ans à l’échelle du Canada, qui a entraîné un plus grand nombre de déplacements. En ferez-vous état dans votre budget de l’année prochaine ?",
-      "options": {
-        "1": "Oui",
-        "2": "Non"
-      },
-      "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  La bonne réponse est Oui. "
-      },
-      "conclusion":"Les consultations ont commencé l’année dernière, se poursuivent pendant l’année en cours et devraient se terminer l’année prochaine."
-    },
-    "q8": {
-      "text": "Les coûts non discrétionnaires sont :",
-      "options": {
-        "1": "Les coûts ne sont pas directement liés à vos activités et sont donc moins susceptibles d’avoir un impact négatif sur celles-ci.",
-        "2": "Coûts que vous avez budgétés au début de l’exercice et qui ont été engagés au cours de l’exercice.",
-        "3": "Les fonds qui sont essentiels à la réalisation de vos activités et qui, s’ils sont réduits, pourraient vous empêcher de les réaliser. "
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est « Les coûts qui sont essentiels à la réalisation de vos activités » et qui, s’ils sont réduits, pourraient vous empêcher de les réaliser.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est « Les coûts qui sont essentiels à la réalisation de vos activités » et qui, s’ils sont réduits, pourraient vous empêcher de les réaliser.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> "
-      },
-      "conclusion":" Les fonds non discrétionnaires, s’ils sont réduits ou éliminés, affecteront sérieusement votre capacité à respecter vos priorités."
     }
   }
 }</i18n>

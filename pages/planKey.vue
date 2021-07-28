@@ -9,51 +9,72 @@
       <b-row>
         <b-col cols="12" lg>
           <span v-if="$i18n.locale=='en'">
-            <h3>Build a Work Plan</h3>
+            <h3>Analyze Goods, Services and Construction Needs</h3>
             <ul>
-              <li>A work plan is a detailed schedule of the activities to be carried out, resources to be consumed, and results to be achieved over a one-year period, usually a fiscal year for a responsibility centre.</li>
-              <li>To build a work plan, you review the activities from the previous year's work plan, budget and reports to identify lessons learned and what needs to be carried over in order to identify possible trends.&nbsp;</li>
-              <li>Specifically, with input from your team, you define and prioritize the work and activities of your unit, assigning resources and timelines to each activity, making sure the activities align with the organizational priorities and conducting a risk assessment.</li>
+              <li>Procurement is the process of acquiring goods, services and construction from providers. Don’t forget to include your procurement specialist early in your planning.</li>
+              <li>You review your work plan to identify your goods, services and construction needs.</li>
+              <li>Finally, you verify if the goods, services or construction needed already exist and are available.</li>
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
-            <h3>Élaborer un plan de travail</h3>
+            <h3>Analyser les besoins en biens, en services et en construction</h3>
             <ul>
-              <li>Un plan de travail est une liste détaillée des activités à exercer, des ressources à utiliser et des résultats à atteindre au cours d’une période d’un an, laquelle correspond habituellement à un exercice financier pour un centre de responsabilité.</li>
-              <li>Pour élaborer un plan de travail, vous passez en revue les activités inscrites dans le plan de travail, le budget et les rapports de l’année précédente afin de prendre note des leçons apprises et les mesures à reporter afin de cerner les tendances possibles.&nbsp;</li>
-              <li>Plus précisément, avec l’aide de votre équipe, vous définissez et priorisez le travail et les activités de votre unité, attribuez des ressources et des échéanciers à chaque activité, veillez à ce que les activités s’alignent aux priorités organisationnelles et effectuez une évaluation des risques.&nbsp;</li>
+              <li>L’approvisionnement est le processus qui consiste à acquérir des biens, des services et des services de construction auprès de fournisseurs. N’oubliez pas de faire appel à votre spécialiste en approvisionnement dès le début de la planification.</li>
+              <li>Vous devez examiner votre plan de travail pour relever vos besoins en biens, en services et en services de construction.</li>
+              <li>Pour terminer, vous devez vérifier si les biens, les services ou les services de construction requis existent déjà et s’ils sont disponibles.</li>
             </ul>
           </span>
         </b-col>
         <b-col cols="1" class="d-none d-lg-block"></b-col>
         <b-col cols="12" lg>
           <span v-if="$i18n.locale=='en'">
-            <h3>Create a Budget</h3>
+            <h3>Forecast Budget Requirements</h3>
             <ul>
-              <li>Budgets are essentially the conversion of the work plans into financial terms. In other words, the budget represents how much you forecast to spend to achieve your work plan activities.</li>
+              <li>Before making any procurement decisions, you estimate the costs of the goods, services and construction you plan to acquire, including accessibility and life-cycle costs.</li>
 
-              <li>Typically, budgets will include operating and maintenance (O&M) and salary costs. Depending on the mandate of your department, some budgets may also include capital and grants and contributions amounts.</li>
-
-              <li>To create your budget, you must analyze information from various sources, forecast your new budget requirements and submit your new budget for approval to upper management.</li>
+              <li>When work plan activities cannot be delivered because goods, services and construction cannot be procured, you conduct a risk assessment and identify mitigation strategies. </li>
 
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
-            <h3>Créer un budget</h3>
+            <h3>Prévoir les besoins budgétaires</h3>
             <ul>
-              <li>Essentiellement, les budgets représentent la conversion des plans de travail en termes financiers. En d’autres mots, le budget représente le montant que vous prévoyez dépenser pour réaliser les activités de votre plan de travail.</li>
+              <li>Avant de prendre toute décision en matière d’approvisionnement, vous devez estimer les coûts des biens, des services et des services de construction que vous prévoyez acquérir, y compris les coûts liés à l’accessibilité et au cycle de vie.</li>
+
+              <li>Lorsque les activités du plan de travail ne peuvent pas être réalisées parce qu’il n’est pas possible de se procurer des biens, des services ou des services de construction, vous devez mener une évaluation des risques et définir des stratégies d’atténuation.</li>
+
+            </ul>
+          </span>
+        </b-col>
+         <b-col cols="1" class="d-none d-lg-block"></b-col>
+        <b-col cols="12" lg>
+          <span v-if="$i18n.locale=='en'">
+            <h3>Budget and Authorities </h3>
+            <ul>
+              <li>Before beginning to procure goods, services and construction, make sure you have enough funds in your budget.</li>
+
+              <li>You should also identify who has the delegated financial and spending (that is, expenditure initiation and transaction) authorities to initiate and commit the funds for goods, services or construction.</li>
+
+              <li>Once the proper financial and spending (i.e. expenditure initiation and transaction) delegation authorities approvals have been received, you procure the needed goods, services and construction.</li>
+
+            </ul>
+          </span>
+          <span v-if="$i18n.locale=='fr'">
+            <h3>Budget et pouvoirs</h3>
+            <ul>
+              <li>Avant de vous procurer des biens, des services et des services de construction, assurez‑vous que vous avez les fonds nécessaires dans votre budget.</li>
               <!--
                 NOUVELLE VERION? (CSPS-TD)
                 <li>Les budgets correspondent essentiellement aux plans de travail exprimés en termes financiers. Autrement dit, le budget représente le montant que vous prévoyez dépenser pour réaliser votre plan.</li>
               -->
 
-              <li>Habituellement, les budgets comprennent les coûts de fonctionnement et d'entretien (F et E) et les coûts salariaux. Selon le mandat de votre ministère, certains budgets peuvent également inclure des montants d'immobilisations et de subventions et contributions.</li>
+              <li>Vous devez aussi indiquer qui possède les pouvoirs délégués en matière de finances et de dépenses (c.‑à‑d. le pouvoir d’engager des dépenses et d’effectuer des transactions) afin d’engager les fonds destinés aux biens, aux services ou aux services de construction.</li>
               <!--
                 NOUVELLE VERSION? (CSPS-TD)
                 <li>Pour créer un budget, vous passez en revue le budget de l’année précédente afin de déterminer quels salaires, quelles dépenses de fonctionnement et d’entretien et, dans certains cas, de capital et des subventions et contributions vous devrez conserver, éliminer ou ajouter.</li>
               -->
 
-              <li>Pour créer votre budget, vous devez analyser les informations de diverses sources, prévoir vos nouveaux besoins budgétaires et soumettre votre nouveau budget pour approbation à la direction.</li>
+              <li>Lorsque vous avez reçu les autorisations appropriées de la personne investie des pouvoirs délégués en matière de finances et de dépenses (c.‑à‑d. le pouvoir d’engager des dépenses et d’effectuer des transactions), vous pouvez vous procurer les biens, les services et les services de construction dont vous avez besoin. </li>
               <!--
                 NOUVELLE VERSION? (CSPS-TD)
                 <li>Vous comparez le budget de l’année précédente au nouveau plan de travail en vous assurant que toutes les dépenses liées aux activités sont prises en compte. Vous prévoyez les dépenses et soumettez le nouveau budget proposé pour approbation, en y apportant des modifications tout au long de l’année à mesure que les activités évoluent.</li>

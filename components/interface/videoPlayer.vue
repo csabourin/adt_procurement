@@ -161,15 +161,20 @@ export default {
       Captions: "",
       changeButton: false,
       popups: {
-        buildWP: {
-          references: [1],
+        analyzegoods: {
+          references: [],
           infos: [0],
-          quiz: [8]
+          quiz: [4]
         },
-        createBudget: {
-          references: [1],
+        forecastbudget: {
+          references: [],
           infos: [0],
-          quiz: [7]
+          quiz: [4]
+        },
+        budgetauthorities: {
+          references: [],
+          infos: [0],
+          quiz: [4]
         },
         procurePart1: {
           references: [],
@@ -280,10 +285,12 @@ export default {
       var currentPage = path.substr(pos);
       
       switch(currentPage){
-        case "buildWP":
-          return this.popups.buildWP.references;
-        case "createBudget":
-          return this.popups.createBudget.references;
+        case "analyzegoods":
+          return this.popups.analyzegoods.references;
+        case "forecastbudget":
+          return this.popups.forecastbudget.references;
+        case "budgetauthorities":
+          return this.popups.budgetauthorities.references;
         case "procurePart1":
           return this.popups.procurePart1.references;
         case "procurePart2":
@@ -304,10 +311,12 @@ export default {
       var currentPage = path.substr(pos);
       
       switch(currentPage){
-      case "buildWP":
-          return this.popups.buildWP.infos;
-        case "createBudget":
-          return this.popups.createBudget.infos;
+      case "analyzegoods":
+          return this.popups.analyzegoods.infos;
+        case "forecastbudget":
+          return this.popups.forecastbudget.infos;
+        case "budgetauthorities":
+          return this.popups.budgetauthorities.infos;
         case "procurePart1":
           return this.popups.procurePart1.infos;
         case "procurePart2":
@@ -328,10 +337,12 @@ export default {
       var currentPage = path.substr(pos);
       
       switch(currentPage){
-      case "buildWP":
-          return this.popups.buildWP.quiz;
-        case "createBudget":
-          return this.popups.createBudget.quiz;
+      case "analyzegoods":
+          return this.popups.analyzegoods.quiz;
+        case "forecastbudget":
+          return this.popups.forecastbudget.quiz;
+          case "budgetauthorities":
+          return this.popups.budgetauthorities.quiz;
         case "procurePart1":
           return this.popups.procurePart1.quiz;
         case "procurePart2":

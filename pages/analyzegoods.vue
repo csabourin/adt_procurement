@@ -1,11 +1,11 @@
 <template><div>
   <h2 class="pageTitle">
-    {{ $t('BuildWorkPlan')}}
+    {{ $t('AnalyzeGoods')}}
   </h2>
   <section>
     <b-row>
       <b-col>
-        <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_99dima2k/flavorId/0_zhrf5f52/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_iazbfh85/flavorId/0_j64obzqm/name/a.mp4" chapters chapterFile="chapters.vtt" posterFile="buildworkplan.png" ccFile="buildWP_captions.vtt" :restartAt="thatPoint" toResume="setBuildWP" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
+        <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_u9rm6fc2/flavorId/0_vxoqve1p/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_09guhq5q/flavorId/0_dbr8ey5p/name/a.mp4" chapters chapterFile="chapters.vtt" posterFile="buildworkplan.png" ccFile="analyzegoodsCC.vtt" :restartAt="thatPoint" toResume="setBuildWP" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
       </b-col>
     </b-row>
     <b-container>
@@ -23,17 +23,17 @@
                       <h2>Introduction</h2>
                       <p>In this section, you will learn to:</p>
                       <ul>
-                        <li>interpret a work plan</li>
-                        <li>make a 360 degree scan</li>
-                        <li>incorporate Government priorities into a work plan and</li>
-                        <li>adjust a work plan according to new information</li>
+                        <li>analyze a work plan,</li>
+                        <li>identify goods, services and construction needs, and </li>
+                        <li>verify if goods, services and construction already exist within government.</li>
                       </ul>
-                      <p>This section should take you approximately 20 minutes to complete.</p>
+                      <p>This section should take you approximately 15 minutes to complete.</p>
                       <hr>
-                      <h2>1. The Purpose of a Work Plan</h2>
-                      <p>A <strong>work plan</strong> is a living document in which you define and prioritize your unit’s activities. Think of it as a to-do list for the upcoming year. It helps you to communicate how you’ll be assigning resources and managing timelines. It’s the cornerstone of your planning process because it supports your budget and reporting activities.</p>
-                      <p>Typically, you wouldn’t start from scratch. You would simply <strong>review last year's work plan, budget and reports to identify what needs to be kept, added or removed for the new year</strong>.</p>
-                      <p>But even before putting together your work plan, it’s useful to step out of your role and look at the big picture.</p>
+                      <h2>1. Analyze Needs</h2>
+                      <p>To find out which goods, services and construction you may need, start by reviewing your work plan. Look at your activities and sub-activities. Do you have the resources needed to deliver them?</p>
+                      <p>If you do, that’s great!</p>
+                      <p>If you do not, which goods or services are missing?</p>
+                      <p>Looking at the work plan provided, identify which goods and services you will need to procure by answering the following questions.</p>
                       <p>[A Continue to the next segment pop-up text box appears.]</p>
                       <hr>
                       <h2>2. Align your Work Plan with Government Priorities</h2>
@@ -172,112 +172,64 @@
     </b-container>
   </section>
   <div>
-    <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>
-      <template v-slot:modal-header="{ close }">
-        <h3 class="h5">
-          <img src="~/assets/InfoIcon.svg" :alt="$t('infoIcon')" width="32" height="32">
-          {{ $t('gotIt') }}
-        </h3>
-        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-      </template>
-      <b-row align-h="center">
-        <b-col cols="12" md="9">
-          <img src="~/assets/purposeWP.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
-        </b-col>
-      </b-row>
-      <b-row >
-        <b-col>
-          <p>{{ $t('gotItContent') }}</p>
-        </b-col>
-      </b-row>
-      <template v-slot:modal-ok>{{$t('close')}}</template>
-    </b-modal>
-    <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
+   <!--1--> <b-modal no-stacking id="purpose" @hide="resumePlay()" size="xl" okOnly>
       <template v-slot:modal-header="{ close }">
         <h3 class="h5">
           <img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="32" height="32"> {{$t('activityLinks')}}
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
-      <p>{{$t('gotoLinks')}}</p>
-      <planLinks /><!-- {{ $t('gotIt') }} -->
+      <div v-if="$i18n.locale=='fr'">
+      <p>Pour une revue des plans de travail, voir la section <strong>Élaborer un plan de travail</strong> du cours <a href="https://adtfinance.netlify.app/fr"> La saine gestion des fonds publics</a>. Ce lien est également disponible dans la boîte à outils.</p>
+      </div>
+      <div v-if="$i18n.locale=='en'">
+      <p>For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href="https://adtfinance.netlify.app/en">Responsible Use of Public Funds</a> course. This link is also available in the Toolbox.  </p>
+      </div>
+      <!--<planLinks /> {{ $t('gotIt') }} -->
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
-    <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
+   <!--2--> <b-modal no-stacking id="analyzeNeeds" @hide="resumePlay()" size="xl" okOnly>
       <template v-slot:modal-header="{ close }">
         <h3 class="h5">
           <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('partsofWPTitle')}}
+          {{$t('analyzeNeedsTitle')}}
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
-      <partsOfWorkPlan />
+      <analyzeNeeds />
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
-    <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="xl" okOnly>
+    <!--3--><b-modal no-stacking id="identifyExisting" @hide="resumePlay()" size="xl" okOnly>
       <template v-slot:modal-header="{ close }">
         <h3 class="h5">
           <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('scan360Title')}}
+          {{$t('identifyExistingTitle')}}
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
-      <test360 />
+      <identifyExisting />
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
-    <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly>
-      <template v-slot:modal-header="{ close }">
-        <h3 class="h5">
-          <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('completewpDrafttitle')}}
-        </h3>
-        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-      </template>
-      <prepareWorkPlan />
-      <template v-slot:modal-ok>{{$t('close')}}</template>
-    </b-modal>
-    <b-modal no-stacking id="completewp" @hide="resumePlay()" size="xl" okOnly>
-      <template v-slot:modal-header="{ close }">
-        <h3 class="h5">
-          <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('completewptitle')}}
-        </h3>
-        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-      </template>
-      <completeWorkplan />
-      <template v-slot:modal-ok>{{$t('close')}}</template>
-    </b-modal>
-    <b-modal no-stacking id="adjustwp" @hide="resumePlay()" size="xl" okOnly>
-      <template v-slot:modal-header="{ close }">
-        <h3 class="h5">
-          <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('adjustwptitle')}}
-        </h3>
-        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-      </template>
-      <adjustWorkplan />
-      <template v-slot:modal-ok>{{$t('close')}}</template>
-    </b-modal>
-    <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
-      <template v-slot:modal-header="{ close }">
-        <h3 class="h5">
-          <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('InRealLife')}}
-        </h3>
-        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-      </template>
-      <b-row align-h="center">
-        <b-col cols="12" md="9">
-          <img src="~/assets/inRealLifeWP.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          <p v-html="$t('IRLText')"></p>
-        </b-col>
-      </b-row>
-      <template v-slot:modal-ok>{{$t('close')}}</template>
-    </b-modal>
+    <!--4--><b-modal no-stacking id="InRealLife" @hide="resumePlay()" okOnly>
+            <template v-slot:modal-header="{ close }">
+            <h3 class="h5">
+              <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32">
+                {{$t('InRealLifeTitle')}}
+            </h3>
+            <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+          </template>
+          <b-row align-h="center">
+            <b-col cols="12" md="9">
+              <img src="~/assets/inRealLifeWP.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <p>{{$t('IRLPlanPt1Text')}}</p>
+            </b-col>
+          </b-row>
+          <template v-slot:modal-ok>{{$t('close')}}</template>
+        </b-modal>
     <b-modal no-stacking id="quiz" @hide="resumePlay()" size="xl" okOnly>
       <template v-slot:modal-header="{ close }">
         <h3 class="h5">
@@ -293,9 +245,10 @@
   <div class="bottomNav planSection">
     <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
     
-    <microlearning path="buildwp" youAreHere imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" type="video" />
-    <microlearning size="140" path="createbudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" type="video" />
-    <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+    <microlearning path="analyzegoods" youAreHere imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('AnalyzeGoods')" type="video" />
+    <microlearning path="forecastbudget" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('ForecastBudget')" type="video" />
+    <microlearning size="140" path="budgetauthorities" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('BudgetAuthorities')" type="video" />
+    <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
     <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
   </div>
 </div>
@@ -303,29 +256,23 @@
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import partsOfWorkPlan from '~/components/slides/plan/parts_workplan'
 import planLinks from '~/components/plan_links'
-import prepareWorkPlan from '~/components/slides/plan/prepare_workplan'
-import completeWorkplan from '~/components/slides/plan/complete_workplan'
-import adjustWorkplan from '~/components/slides/plan/adjust_workplan'
-import test360 from '~/components/slides/plan/test360'
+import analyzeNeeds from '~/components/slides/plan/AnalyzeNeeds'
 import planQuiz from '~/components/slides/plan/planQuiz'
 import continuePopup from '~/components/continuePopup'
+import identifyExisting from '~/components/slides/plan/identifyExisting'
 export default {
   data() {
     return {
-      modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"]
+      modalArray: ["purpose", "analyzeNeeds", "identifyExisting", "InRealLife", "quiz"]
     }
   },
   components: {
     microlearning,
     videoPlayer,
     planLinks,
-    test360,
-    partsOfWorkPlan,
-    prepareWorkPlan,
-    completeWorkplan,
-    adjustWorkplan,
+    analyzeNeeds,
+    identifyExisting,
     planQuiz,
     continuePopup
   },
@@ -378,32 +325,32 @@ export default {
 </style>
 <i18n>{
   "en":{
+  "InRealLifeTitle":"In Real Life ",
+  "IRLPlanPt1Text":"Take what you have learned into real life! Your organization will have its own ways of doing things. Take a time out from the course to see how goods and services needs are identified in your department. You may find that you already have access to certain resources through various teams such as Security, Shared Travel Services, Accommodations, Shared Services Canada, Training and Accessibility and Duty to Accommodate, to name but a few.",
   "gotIt":"Continue to next segment",
   "gotItContent": "Pop-ups will appear throughout the course to indicate what comes next, such as a video, an exercise, a list of links or a job aid.",
   "activityLinks":"Reference: External Links",
-  "gotoLinks":"For more information, feel free to consult the following links. These links are also available in the Toolbox.",
-  "partsofWPTitle":"Activity: Parts of a Work Plan",
+  "gotoLinks":"For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href:'https://adtfinance.netlify.app/en/buildwp'>Responsible Use of Public Funds</a> course. This link is also available in the Toolbox.  ",
+  "analyzeNeedsTitle":"Activity: Analyze Your Resource Needs",
   "completewpDrafttitle":"Activity: Prepare a Work Plan",
   "completewptitle":"Activity: Complete the Work Plan",
   "adjustwptitle":"Activity: Adjust the Work plan",
-  "scan360Title":"Apply the 360° scan",
-  "InRealLife":"In Real Life",
-  "IRLText":"<p>Take what you have learned into real life!</p><p>Your organization will have their own ways of doing things. Take a time-out from the course to scan your intranet to see which templates are used.</p><p>Connect with your colleagues, your director, or financial officer, and chat about work plans.</p> ",
+  "identifyExistingTitle":"Identify Existing Resources",
   "TakeTheQuiz":"Take the Quiz",
   "transcriptText":"",
   "planSectionBar": "PLAN"
   },
   "fr":{
+  "InRealLifeTitle":"Dans la vraie vie ",
+  "IRLPlanPt1Text":"<p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de consulter l’intranet pour voir comment les besoins en matière de biens et services sont identifiés au sein de votre ministère. Vous verrez peut-être que vous avez déjà accès à certaines ressources par l’intermédiaire de diverses équipes telles que la Sécurité, les Services de voyage partagés, les Aménagements, Services partagés Canada, la formation et l’accessibilité et l’obligation de prendre des mesures d’adaptation, pour n’en nommer que quelques-unes.</p>",
   "TakeTheQuiz":"Répondez au questionnaire",
   "activityLinks":"Référence : Liens externes",
-  "gotoLinks":"Pour plus d'information, veuillez consulter les liens suivants. Ces liens sont également disponibles dans la boîte à outils.",
-  "partsofWPTitle":"Activité : Parties d’un plan de travail",
+  "gotoLinks":"Pour une revue des plans de travail, voir la section Élaborer un plan de travail du cours La saine gestion des fonds publics. Ce lien est également disponible dans la boîte à outils.",
+  "analyzeNeedsTitle":"Activité :  Analysez vos besoins en matière de ressources",
   "completewpDrafttitle":"Activité : Préparer un plan de travail",
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",
-  "scan360Title":"Activité : Aperçu à 360 degrés",
-  "InRealLife":"Dans la vraie vie",
-  "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>  <p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l’intranet pour voir quels mod&egrave;les sont utilisés.</p>  <p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
+  "identifyExistingTitle":"Activité : Identifier les ressources existantes",
   "gotIt":"Passer au segment suivant.",
   "gotItContent": "Les fenêtres contextuelles apparaissent tout au long du cours pour indiquer ce qui vient ensuite comme une vidéo, un exercice, une liste de liens ou une aide à l’emploi.",
   "transcriptText":"",

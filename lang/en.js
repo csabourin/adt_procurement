@@ -46,7 +46,7 @@ export default {
   KeyMessagesReport: "<span class='v-inv'>Report:</span> Key Messages",
   KeyMessagesManage: "<span class='v-inv'>Manage:</span> Key Messages",
   fileSet: "Files used in this section",
-  BuildWorkPlan: "Build a Work Plan",
+  budgetAuthorities: "Budgets and Authorities",
   CreateBudget: "Create a Budget",
   InitiateAuthorizeSpending: "Technical and Bid Requirements and Procurement Strategy",
   ExerciseFinancialAuthority: "Solicit, Evaluate, Approve and Award",

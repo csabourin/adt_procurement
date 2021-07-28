@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1 class="pageTitle">
-      {{ $t('CreateBudget')}}
+      {{ $t('ForecastBudget')}}
     </h1>
     <section>
       <b-row>
         <b-col>
-          <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_38mk4oxi/flavorId/0_9vv38k5m/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_cyj2h9a9/flavorId/0_hyl9pwxo/name/a.mp4" chapters chapterFile="BudgetChapters.vtt" ccFile="CreateBudget_captions.vtt" posterFile="createBudget_poster.png" :restartAt="thatPoint" toResume="setCreateBudget" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
+          <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_5vmdf8c6/flavorId/0_d0abo662/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_imr7h4hm/flavorId/0_5t09682o/name/a.mp4" chapters chapterFile="BudgetChapters.vtt" ccFile="forecastBudgetCC.vtt" posterFile="createBudget_poster.png" :restartAt="thatPoint" toResume="setCreateBudget" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
         </b-col>
       </b-row>
       <b-container>
@@ -219,31 +219,42 @@
       </b-container>
     </section>
     <div>
-        <continue-popup id="purpose"></continue-popup>
-        <b-modal no-stacking id="financialCycle" @hide="resumePlay()" okOnly>
+        <!--1--> <b-modal no-stacking id="purpose" @hide="resumePlay()" size="xl" okOnly>
+      <template v-slot:modal-header="{ close }">
+        <h3 class="h5">
+          <img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="32" height="32"> {{$t('activityLinks')}}
+        </h3>
+        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+      </template>
+      <div v-if="$i18n.locale=='fr'">
+      <p>Pour une revue des budgets, voir la section <strong>Créer un budget</strong> du cours <a href="https://adtfinance.netlify.app/fr"> La saine gestion des fonds publics</a>. Ce lien est également disponible dans la boîte à outils.</p>
+      </div>
+      <div v-if="$i18n.locale=='en'">
+      <p>For a review of budgets, see the <strong>Create a Budget</strong> module of the <a href="https://adtfinance.netlify.app/en">Responsible Use of Public Funds</a> course. This link is also available in the Toolbox.  </p>
+      </div>
+      <template v-slot:modal-ok>{{$t('close')}}</template>
+    </b-modal>
+    <b-modal no-stacking id="estimateCost" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="32" height="32"> {{$t('financialCycle')}}
+                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('estimateCost')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
-            <b-row align-h="center">
-              <b-col cols="12" md="4" class="text-center">
-                <download :texts="$t('cycle')" size=128 iconColor="Scan360Background" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" name="cycle" />
-              </b-col>
-            </b-row>
+            <estimateCost />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
-        <b-modal no-stacking id="budgetKeyTerms" @hide="resumePlay()" size="xl" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('AnalyzeBudgetKT')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <AnalyzeBudgetKT />
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
+       <b-modal no-stacking id="conductRisk" @hide="resumePlay()" size="xl" okOnly>
+      <template v-slot:modal-header="{ close }">
+        <h3 class="h5">
+          <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
+          {{$t('conductRiskTitle')}}
+        </h3>
+        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
+      </template>
+      <conductRisk />
+      <template v-slot:modal-ok>{{$t('close')}}</template>
+    </b-modal>
         <b-modal id="budgetAnalyze" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
@@ -262,16 +273,6 @@
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
             <budgetForecastActivity />
-            <template v-slot:modal-ok>{{$t('close')}}</template>
-        </b-modal>
-        <b-modal no-stacking id="submitBudget" @hide="resumePlay()" size="xl" okOnly>
-            <template v-slot:modal-header="{ close }">
-                <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('submitBudgetTitle')}}
-                </h3>
-                <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-            </template>
-            <submitBudget />
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
         <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
@@ -304,22 +305,21 @@
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
     </div>
-    <div class="bottomNav planSection">
-      <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
-      <microlearning path="buildwp" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" type="video" />
-      <microlearning youAreHere size="140" path="createbudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" type="video" />
-      <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-      <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
-    </div>
+     <div class="bottomNav planSection">
+    <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
+    <microlearning path="analyzegoods" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('AnalyzeGoods')" type="video" />
+    <microlearning path="forecastbudget" youAreHere imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('ForecastBudget')" type="video" />
+    <microlearning size="140" path="budgetauthorities" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('BudgetAuthorities')" type="video" />
+    <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+    <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+  </div>
   </div>
 </template>
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import budgetAnalyzeActivity from '~/components/slides/plan/budgetAnalyseActivity'
-import budgetForecastActivity from '~/components/slides/plan/budgetForecastActivity'
-import AnalyzeBudgetKT from '~/components/slides/plan/AnalyzeBudgetKT'
-import submitBudget from '~/components/slides/plan/submitBudget'
+import conductRisk from '~/components/slides/plan/conductRisk'
+import estimateCost from '~/components/slides/plan/estimateCost'
 import budgetQuiz from '~/components/slides/plan/budgetQuiz'
 import continuePopup from '~/components/continuePopup'
 import download from "~/components/fileDownload"
@@ -327,16 +327,14 @@ import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 export default {
   data() {
     return {
-      modalArray: ["purpose", "financialCycle", "budgetKeyTerms", "budgetAnalyze", "forecastBudget","submitBudget", "reallife", "quiz"]
+      modalArray: ["purpose", "estimateCost", "conductRisk", "reallife", "quiz"]
     }
   },
   components: {
     videoPlayer,
     microlearning,
-    AnalyzeBudgetKT,
-    budgetAnalyzeActivity,
-    budgetForecastActivity,
-    submitBudget,
+    estimateCost,
+    conductRisk,
     budgetQuiz,
     continuePopup,
     download,
@@ -389,14 +387,13 @@ export default {
 <i18n>{
   "en":{
   "TakeTheQuiz":"Take the Quiz",
-  "submitBudgetTitle":"Activity: Submit and Adjust your Budget",
   "adjustwptitle":"Activity: Adjust the Work plan",
-  "AnalyzeBudgetKT":"Activity: Analyze a Budget - Key Terms",
-  "financialCycle":"Reference: Financial Cycle of the Government of Canada",
+  "conductRiskTitle":"Activity: Multiple Choice ",
+  "estimateCost":"Activity: Estimate Costs – Key Terms",
   "budgetAnalyzeActivity":"Activity: Analyze Available Information",
   "forecastBudgetTitle":"Activity: Forecast Your Budget Requirements",
   "InRealLife":"In Real Life",
-  "IRLText":"<p>Your organization will have their own ways of doing budget requirements. Take time out from the course and talk to your financial management advisor and director. Ask them:&nbsp;</p><ul><li>Do we have a budget template?</li><li>What budgets do we have?</li><ul><li>Operating, which includes Salary and O&amp;M</li><li>Operating and Gs&amp;Cs</li><li>Operating and Capital</li></ul><li>Is the capital budget managed centrally or by each manager?</li></ul>",
+  "IRLText":"<p>Take what you have learned into real life!</p><p>Your organization will have its own ways of doing things. Take a time out from the course to see how budgets are forecasted in your department.</p><p>Connect with your colleagues, director or financial management advisor, and chat about existing financial resources for your procurement needs.</p>",
   "gotIt":"Continue to next segment",
   "jumpModalPartsWP":"Jump to activity",
   "playSegment":"Play video segment",
@@ -407,13 +404,12 @@ export default {
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",
-  "AnalyzeBudgetKT":"Activité : Analyser un budget - Termes clés",
-  "financialCycle":"Référence : Le cycle financier",
+  "conductRiskTitle":"Activité : Choix multiple ",
+  "estimateCost":"Activité : Estimer les coûts – Termes clés ",
   "budgetAnalyzeActivity":"Activité : Analyser les budgets précédents et en cours",
-  "submitBudgetTitle":"Activité : Soumettre et ajuster votre budget ",
   "forecastBudgetTitle":"Activité : Prévoyez vos besoins budgétaires",
   "InRealLife":"Dans la vraie vie",
-  "IRLText":"<p>Votre organisation aura sa propre fa&ccedil;on de faire les exigences budgétaires. Prenez congé du cours et parlez à votre conseiller en gestion financi&egrave;re et à votre directeur. Demandez-leur :&nbsp;</p><ul><li>Avons-nous un mod&egrave;le de budget?</li><li>Quels sont nos budgets?</li><ul><li>Fonctionnement, inclus salaire et F&amp;E</li><li>Fonctionnement et subventions et contributions</li><li>Fonctionnement et immobilisations</li></ul><li>Le budget d’investissement est-il géré de fa&ccedil;on centralisée ou par chaque gestionnaire?</li></ul>",
+  "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie! </p><p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps pour voir comment les budgets sont établis au sein votre ministère.</p><p>Consultez vos collègues, votre directeur ou votre conseiller en gestion financière, et discutez des ressources financières existantes pour vos besoins en matière d'approvisionnement.</p>",
   "gotIt":"Continuer au segment suivant.",
   "jumpModalPartsWP":"Sauter à l’activité",
   "playSegment":"Faire jouer le segment vidéo",

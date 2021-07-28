@@ -1,11 +1,11 @@
 <template><div>
   <h2 class="pageTitle">
-    {{ $t('BuildWorkPlan')}}
+    {{ $t('budgetAuthorities')}}
   </h2>
   <section>
     <b-row>
       <b-col>
-        <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_99dima2k/flavorId/0_zhrf5f52/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_iazbfh85/flavorId/0_j64obzqm/name/a.mp4" chapters chapterFile="chapters.vtt" posterFile="buildworkplan.png" ccFile="buildWP_captions.vtt" :restartAt="thatPoint" toResume="setBuildWP" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
+        <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_xdt2qiui/flavorId/0_2fyvamsz/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_w69dhzvn/flavorId/0_3eh75pfc/name/a.mp4" chapters chapterFile="PlanPt3.vtt" posterFile="buildworkplan.png" ccFile="budgetAuthoritiesCC.vtt" :restartAt="thatPoint" toResume="setBuildWP" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
       </b-col>
     </b-row>
     <b-container>
@@ -172,24 +172,19 @@
     </b-container>
   </section>
   <div>
-    <b-modal no-stacking id="purpose" @hide="resumePlay()" okOnly>
+    <b-modal no-stacking id="purpose" @hide="resumePlay()" size="xl" okOnly>
       <template v-slot:modal-header="{ close }">
         <h3 class="h5">
-          <img src="~/assets/InfoIcon.svg" :alt="$t('infoIcon')" width="32" height="32">
-          {{ $t('gotIt') }}
+          <img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="32" height="32"> {{$t('activityLinks')}}
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
-      <b-row align-h="center">
-        <b-col cols="12" md="9">
-          <img src="~/assets/purposeWP.svg" alt="" class="img-fluid" style="margin-bottom: 15px; margin-top: 10px;">
-        </b-col>
-      </b-row>
-      <b-row >
-        <b-col>
-          <p>{{ $t('gotItContent') }}</p>
-        </b-col>
-      </b-row>
+      <div v-if="$i18n.locale=='fr'">
+       <p>For a review of delegation of authorities, see the <strong>Engager et autoriser des dépenses</strong> et <strong>Exercer l’autorité financière</strong> du cours <a href="https://adtfinance.netlify.app/fr"> La saine gestion des fonds publics</a>. Ce lien est également disponible dans la boîte à outils.</p>
+      </div>
+      <div v-if="$i18n.locale=='en'">
+      <p>For a review of delegation of authorities, see the <strong>Initiate and Authorize Commitments</strong> and <strong>Exercise Financial Authority</strong> modules of the  <a href="https://adtfinance.netlify.app/en">Responsible Use of Public Funds</a> course. This link is also available in the Toolbox.  </p>
+      </div>
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
@@ -200,62 +195,29 @@
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
       <p>{{$t('gotoLinks')}}</p>
-      <planLinks /><!-- {{ $t('gotIt') }} -->
+    <planLinks /><!-- {{ $t('gotIt') }} -->
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
-    <b-modal no-stacking id="partsofwp" @hide="resumePlay()" size="xl" okOnly>
+    <b-modal no-stacking id="checkBudget" @hide="resumePlay()" size="xl" okOnly>
       <template v-slot:modal-header="{ close }">
         <h3 class="h5">
           <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('partsofWPTitle')}}
+          {{$t('checkBudgetTitle')}}
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
-      <partsOfWorkPlan />
+      <checkBudget />
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
-    <b-modal no-stacking id="threesixty" @hide="resumePlay()" size="xl" okOnly>
+    <b-modal no-stacking id="financialAuthorities" @hide="resumePlay()" size="xl" okOnly>
       <template v-slot:modal-header="{ close }">
         <h3 class="h5">
           <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('scan360Title')}}
+          {{$t('financialAuthoritiesTitle')}}
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
-      <test360 />
-      <template v-slot:modal-ok>{{$t('close')}}</template>
-    </b-modal>
-    <b-modal no-stacking id="completedraft" @hide="resumePlay()" size="xl" okOnly>
-      <template v-slot:modal-header="{ close }">
-        <h3 class="h5">
-          <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('completewpDrafttitle')}}
-        </h3>
-        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-      </template>
-      <prepareWorkPlan />
-      <template v-slot:modal-ok>{{$t('close')}}</template>
-    </b-modal>
-    <b-modal no-stacking id="completewp" @hide="resumePlay()" size="xl" okOnly>
-      <template v-slot:modal-header="{ close }">
-        <h3 class="h5">
-          <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('completewptitle')}}
-        </h3>
-        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-      </template>
-      <completeWorkplan />
-      <template v-slot:modal-ok>{{$t('close')}}</template>
-    </b-modal>
-    <b-modal no-stacking id="adjustwp" @hide="resumePlay()" size="xl" okOnly>
-      <template v-slot:modal-header="{ close }">
-        <h3 class="h5">
-          <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
-          {{$t('adjustwptitle')}}
-        </h3>
-        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-      </template>
-      <adjustWorkplan />
+      <financialAuthorities />
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
@@ -286,16 +248,17 @@
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
-      <planQuiz />
+      <AuthoritieQuiz />
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
   </div>
-  <div class="bottomNav planSection">
+ <div class="bottomNav planSection">
     <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
     
-    <microlearning path="buildwp" youAreHere imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" type="video" />
-    <microlearning size="140" path="createbudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" type="video" />
-    <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+    <microlearning path="analyzegoods" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('AnalyzeGoods')" type="video" />
+    <microlearning path="forecastbudget" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('ForecastBudget')" type="video" />
+    <microlearning size="140" path="budgetauthorities" youAreHere time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('BudgetAuthorities')" type="video" />
+    <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
     <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
   </div>
 </div>
@@ -303,30 +266,24 @@
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
-import partsOfWorkPlan from '~/components/slides/plan/parts_workplan'
+import checkBudget from '~/components/slides/plan/checkBudget'
 import planLinks from '~/components/plan_links'
-import prepareWorkPlan from '~/components/slides/plan/prepare_workplan'
-import completeWorkplan from '~/components/slides/plan/complete_workplan'
-import adjustWorkplan from '~/components/slides/plan/adjust_workplan'
-import test360 from '~/components/slides/plan/test360'
-import planQuiz from '~/components/slides/plan/planQuiz'
+import financialAuthorities from '~/components/slides/plan/financialAuthorities'
+import AuthoritieQuiz from '~/components/slides/plan/AuthoritieQuiz'
 import continuePopup from '~/components/continuePopup'
 export default {
   data() {
     return {
-      modalArray: ["purpose", "alignworkplan", "partsofwp", "threesixty", "completedraft", "completewp", "adjustwp", "reallife", "quiz"]
+      modalArray: ["purpose", "checkBudget", "financialAuthorities", "reallife", "quiz"]
     }
   },
   components: {
+    financialAuthorities,
     microlearning,
     videoPlayer,
     planLinks,
-    test360,
-    partsOfWorkPlan,
-    prepareWorkPlan,
-    completeWorkplan,
-    adjustWorkplan,
-    planQuiz,
+    checkBudget,
+    AuthoritieQuiz,
     continuePopup
   },
   methods: {
@@ -382,13 +339,13 @@ export default {
   "gotItContent": "Pop-ups will appear throughout the course to indicate what comes next, such as a video, an exercise, a list of links or a job aid.",
   "activityLinks":"Reference: External Links",
   "gotoLinks":"For more information, feel free to consult the following links. These links are also available in the Toolbox.",
-  "partsofWPTitle":"Activity: Parts of a Work Plan",
+  "checkBudgetTitle":"Activity: Check Your Budget",
   "completewpDrafttitle":"Activity: Prepare a Work Plan",
   "completewptitle":"Activity: Complete the Work Plan",
   "adjustwptitle":"Activity: Adjust the Work plan",
-  "scan360Title":"Apply the 360° scan",
+  "financialAuthoritiesTitle":"Activity: Delegation of Spending and Financial Signing Authorities",
   "InRealLife":"In Real Life",
-  "IRLText":"<p>Take what you have learned into real life!</p><p>Your organization will have their own ways of doing things. Take a time-out from the course to scan your intranet to see which templates are used.</p><p>Connect with your colleagues, your director, or financial officer, and chat about work plans.</p> ",
+  "IRLText":"<p>Take what you have learned into real life!</p><pYour organization will have its own ways of doing things. Take a time out from the course to consult your budgets and your organization’s financial signing authority chart.</p><p>What are your department’s procurement spending limits? Do you need to consult Public Services and Procurement Canada? Does your department have its own set of procurement rules, such as the Department of National Defence or the Department of Justice?</p> ",
   "TakeTheQuiz":"Take the Quiz",
   "transcriptText":"",
   "planSectionBar": "PLAN"
@@ -397,13 +354,13 @@ export default {
   "TakeTheQuiz":"Répondez au questionnaire",
   "activityLinks":"Référence : Liens externes",
   "gotoLinks":"Pour plus d'information, veuillez consulter les liens suivants. Ces liens sont également disponibles dans la boîte à outils.",
-  "partsofWPTitle":"Activité : Parties d’un plan de travail",
+  "checkBudgetTitle":"Activité : Vérifier votre budget ",
   "completewpDrafttitle":"Activité : Préparer un plan de travail",
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",
-  "scan360Title":"Activité : Aperçu à 360 degrés",
+  "financialAuthoritiesTitle":"Activité : Délégation des pouvoirs de dépenser et de signer des documents financiers",
   "InRealLife":"Dans la vraie vie",
-  "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>  <p>Votre organisation aura sa propre fa&ccedil;on de faire les choses. Prenez le temps de consulter l’intranet pour voir quels mod&egrave;les sont utilisés.</p>  <p>Communiquez avec vos coll&egrave;gues, votre directeur ou votre agent financier pour discuter des plans de travail. </p>",
+  "IRLText":"<p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p><p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps pour consulter vos budgets et le tableau de délégation des pouvoirs de signature en matière financière de votre organisation.</p><p>Quelles sont les limites de dépenses de votre ministère en approvisionnement? Avez-vous besoin de consulter Services publics et Approvisionnement Canada? Votre ministère a-t-il son propre ensemble de règles en approvisionnement, comme le ministère de la Défense nationale ou le ministère de la Justice?</p>",
   "gotIt":"Passer au segment suivant.",
   "gotItContent": "Les fenêtres contextuelles apparaissent tout au long du cours pour indiquer ce qui vient ensuite comme une vidéo, un exercice, une liste de liens ou une aide à l’emploi.",
   "transcriptText":"",

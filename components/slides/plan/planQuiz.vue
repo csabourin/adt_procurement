@@ -3,38 +3,36 @@
     <div>
       <b-card>
         <b-tabs v-model="tabIndex">
-          <b-tab title="Question 1"><radioQuiz :question="$t('q1')" qId="1" /></b-tab>
-          <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["1","2"]' /></b-tab>
+          <b-tab title="Question 1"><fillTheBlanks :blanks="1" :sentence="$t('q1.sentence')" :termList="$t('q1.choices')" :answer="['2']" :feedback="$t('q1.feedback')" qid="q1" /></b-tab>
+          <b-tab title="Question 2"><radioQuiz :question="$t('q2')" qId="2" /></b-tab>
           <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
           <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
           <b-tab title="Question 5"><radioQuiz :question="$t('q5')" qId="5" /></b-tab>
           <b-tab title="Question 6"><radioQuiz :question="$t('q6')" qId="6" /></b-tab>
-          <b-tab title="Question 7"><radioQuiz :question="$t('q7')" qId="7" /></b-tab>
-          <b-tab title="Question 8"><checkboxQuiz :question="$t('q8')" qId="8" :Answer='["1","2","3"]' /></b-tab>
-          <b-tab title="Question 9"><checkboxQuiz :question="$t('q9')" qId="9" :Answer='["3","4","5"]' /></b-tab>
-          <b-tab title="Question 10"><radioQuiz :question="$t('q10')" qId="10" /></b-tab>
-          <b-tab title="Question 11"><radioQuiz :question="$t('q11')" qId="11" /></b-tab>
-          <b-tab title="Question 12"><radioQuiz :question="$t('q12')" qId="12" /></b-tab>
-          <b-tab title="Question 13"><radioQuiz :question="$t('q13')" qId="13" /></b-tab>
-          <b-tab title="Question 14"><radioQuiz :question="$t('q14')" qId="14" /></b-tab>
-          <b-tab title="Question 15"><radioQuiz :question="$t('q15')" qId="15" /></b-tab>
+          <b-tab title="Question 7"><checkboxQuiz :question="$t('q7')" qId="7" :Answer='["1","2","3","4"]' /></b-tab>
+          <b-tab title="Question 8"><checkboxQuiz :question="$t('q8')" qId="8" :Answer='["1","2"]' /></b-tab>
         </b-tabs>
       </b-card>
       <!-- Control buttons-->
       <div class="text-center">
         <b-button-group :aria-label="$t('questionNav')" class="mt-2">
           <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-          <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=14">{{$t('nextPage')}}</b-button>
+          <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=7">{{$t('nextPage')}}</b-button>
         </b-button-group>
       </div>
     </div>
   </span>
 </template>
 <script type="text/javascript">
+import fillTheBlanks from "~/components/interface/fillTheBlanks"
 import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
 export default {
-  components: { radioQuiz, checkboxQuiz },
+  components: { 
+    radioQuiz, 
+    checkboxQuiz, 
+    fillTheBlanks
+     },
   data() {
     return {
       tabIndex: 0
@@ -52,105 +50,105 @@ export default {
 </script>
 <i18n>{
   "en": {
-    "qDisabled": "Choose",
-        "q1": {
-      "text": "What is a work plan?",
-      "options": {
-        "1": "A daily to-do list",
-        "2": "The activities to be carried out over a fiscal year",
-        "3": "The amounts of money to be spent ",
-        "4": "A summary of what you have accomplished"
+    "q1": {
+      "sentence": "Refer to your {0} when you want to identify which goods and services you need to deliver your activities. ",
+      "choices": {
+        "1": "budget",
+        "2": "work plan",
+        "3": "colleagues",
+        "4": "director"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan is made up of all the activities to be carried out over a fiscal year. ",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The work plan is made up of all the activities to be carried out over a fiscal year. ",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Incorrect. The work plan is made up of all the activities to be carried out over a fiscal year. "
+        "right": "To identify the goods and the services you need to deliver your activities, you begin by consulting your work plan. ",
+        "wrong": "To identify the goods and the services you need to deliver your activities, you begin by consulting your work plan. "
       }
     },
     "q2": {
-      "text": "Which elements should you consider when drafting your new work plan? ",
+      "text": "Before booking a work-related flight, who should you consult? ",
       "options": {
-        "1": "Government priorities, departmental priorities and directorate priorities",
-        "2": "Previous year’s work plan, budget and, reports",
-        "3": "Your colleague’s work plan from last year"
+        "1": "Accommodations  ",
+        "2": "Security",
+        "3": "Shared Services Canada",
+        "4": "Shared Travel Services"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> You should consider government priorities, departmental priorities and directorate priorities as well as the previous year’s work plan, budget and reports when drafting your new work plan. Unless the activities of your colleague have been transferred to your team, you would not take them into account. "
+        "1": "<span class='v-wrong' /> <strong>Incorrect</strong> Before booking a work-related flight, you should consult the Shared Travel Services.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Before booking a work-related flight, you should consult the Shared Travel Services.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Before booking a work-related flight, you should consult the Shared Travel Services.",
+        "4": "<span class='v-right' /> <strong>Correct!</strong> Before booking a work-related flight, you should consult the Shared Travel Services. "
       }
     },
     "q3": {
-      "text": "A departmental priority in your work plan goes back to:",
+      "text": "Your employee needs specialized software to process client requests. What would you do?",
       "options": {
-        "1": "the directorate’s plan",
-        "2": "the Departmental Plan",
-        "3": "the Speech from the Throne"
+        "1": "Contact Information Technologies Services",
+        "2": "Contact Information Management Services",
+        "3": "Contact Financial Services",
+        "4": "Contact Human Resources"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the Government lays out its priorities. ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Departmental priorities flow from the Speech from the Throne, where the Government lays out its priorities. ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong>  To understand the big picture, start by looking at the priorities set out in the  Speech from the Throne."
+        "1": "<span class='v-right' /> <strong>Correct.</strong> To obtain specialized software, you should contact your Information Technology Services. ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> To obtain specialized software, you should contact your Information Technology Services. ",
+        "3": "<span class='v-right' /> <strong>Incorrect.</strong>  To obtain specialized software, you should contact your Information Technology Services.",
+        "3": "<span class='v-right' /> <strong>Incorrect.</strong>  To obtain specialized software, you should contact your Information Technology Services."
       }
     },
     "q4": {
-      "text": "To find your department’s core responsibilities, expected results and indicators, you would look at:",
+      "text": "What is a work plan?",
       "options": {
-        "1": "the directorate’s plan",
-        "2": "the Departmental Plan",
-        "3": "the Speech from the Throne",
-        "4": "the sector’s plan"
+        "1": "A daily to-do list",
+        "2": "A summary of what you have accomplished",
+        "3": "The activities to be carried out over the fiscal year",
+        "4": "The amounts of money to be spent"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found in the Departmental Plan.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Your department’s core responsibilities, expected results and indicators are found in the Departmental Plan.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found in the Departmental Plan.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Your department’s core responsibilities, expected results and indicators are found in the Departmental Plan."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> A work plan is a list of activities to be carried out over a fiscal year.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> A work plan is a list of activities to be carried out over a fiscal year.",
+        "3": "<span class='v-right' /> <strong>Correct!.</strong> A work plan is a list of activities to be carried out over a fiscal year.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> A work plan is a list of activities to be carried out over a fiscal year."
       }
     },
     "q5": {
-      "text": "The Prime Minister sets out their expectations and objectives for your department in: ",
+      "text": "Which of the following items are <u>NOT</u> found in your work plan? ",
       "options": {
-        "1": "the Speech from the Throne",
-        "2": "the Departmental Results Framework",
-        "3": "the mandate letter",
-        "4": "the Departmental Plan"
+        "1": "Activities ",
+        "2": "Budget amounts",
+        "3": "Mitigation strategies",
+        "4": "Priorities"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines the expectations and objectives for your department in the mandate letter to the minister responsible.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines the expectations and objectives for your department in the mandate letter to the minister responsible.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> The Prime Minister outlines their expectations and objectives in the mandate letter to the minister responsible for the department.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> The Prime Minister outlines the expectations and objectives for your department in the mandate letter to the minister responsible."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Budget amounts are not found in your work plan. ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Budget amounts are not found in your work plan. ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Budget amounts are not found in your work plan. ",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Budget amounts are not found in your work plan. "
       }
     },
     "q6": {
-      "text": "To conduct a 360&deg; scan, you must do the following.",
+      "text": "To identify which goods and services you will need, which section of your work plan would you consult the most?",
       "options": {
-        "1": "Get a sense of the current situation by examining what was done in the recent past.",
-        "2": "Look at previous work plans, budgets and reports.",
-        "3": "Identify challenges from the previous years.",
-        "4": "Get a sense of the cultural context in your department, branch or directorate.",
-        "5": "All of the above."
+        "1": "Deliverables",
+        "2": "Sub-activities",
+        "3": "Priorities",
+        "4": "Risks"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360&deg; review.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360&deg; review.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360&deg; review.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> You must do all these activities to conduct a 360&deg; review.",
-        "5": "<span class='v-right' /> <strong>Correct!</strong>  You must do all these activities to conduct a 360&deg; review."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> To find out which goods and services that you will need, you will consult the sub-activities section of your work plan the most.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> To find out which goods and services that you will need, you will consult the sub-activities section of your work plan the most.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> To find out which goods and services that you will need, you will consult the sub-activities section of your work plan the most.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> To find out which goods and services that you will need, you will consult the sub-activities section of your work plan the most."
       }
     },
     "q7": {
-      "text": "Choose the priorities your work plan activities should link to, starting from the top.",
+      "text": "You ran out of advertising posters. Before you contact a supplier to print more, what should you do?",
       "options": {
-        "1": "Departmental priorities, directorate priorities, government priorities",
-        "2": "Government priorities, departmental priorities, directorate priorities",
-        "3": "Directorate priorities, government priorities, departmental priorities"
+        "1": "Check the stockroom for more posters",
+        "2": "Use a similar poster if acceptable",
+        "3": "Ask the other units if they have posters to spare",
+        "4": "Project the poster using a computer and projector"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The priorities starting from the top are: Government priorities, departmental priorities, directorate priorities."
+        "right": "<span class='v-right' /> <strong>Correct!</strong> These are all valid options for replacing the missing posters. Remember! There is no reason why you cannot use a reasonable substitute! ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are all valid options for replacing the missing posters. Remember! There is no reason why you cannot use a reasonable substitute!"
       }
     },
     "q8": {
@@ -159,325 +157,128 @@ export default {
         "1": "A new director is nominated",
         "2": "An employee leaves ",
         "3": "Mandatory training is pushed to next year",
-        "4": "Over 500 licences have been issued ",
-        "5": "Your software gets an update"
+        "4": "Over 500 licences have been issued "
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> The nomination of a new director, the departure of an employee and mandatory training being pushed back to the next year all require an update to the work plan."
-      }
-    },
-    "q9": {
-      "text": "What are a manager’s responsibilities?",
-      "options": {
-        "1": "To establish government-wide priorities",
-        "2": "To negotiate government contracts",
-        "3": "To plan the unit’s activities",
-        "4": "To use public funds to carry out the unit’s activities",
-        "5": "To report on the status of the unit’s activities"
-      },
-      "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> A manager is responsible for planning the unit’s activities, using public funds to carry out the unit’s activities and reporting on the status of the unit’s activities."
-      }
-    },
-    "q10": {
-      "text": "What are deliverables?",
-      "options": {
-        "1": "The work tasks to be accomplished to support your directorate’s priorities.",
-        "2": "The specific and tangible items you should be able to check off your list when you accomplish them.",
-        "3": "The budget, personnel, consultants, buildings and materials required to carry out the directorate activities."
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Deliverables are more specific and tangible than the activities.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are the resources. Deliverables are specific and tangible items you should be able to check off your list when you accomplish them."
-      }
-    },
-    "q11": {
-      "text": "Which activities should you include in your new work plan?",
-      "options": {
-        "1": "Ongoing activities, new activities, completed activities",
-        "2": "Ongoing activities, new activities",
-        "3": "New activities, completed activities",
-        "4": "New activities, completed activities, project activities",
-        "5": "Ongoing activities, completed activities, project activities"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included.",
-        "5": "<span class='v-wrong' /> <strong>Incorrect.</strong> Only ongoing activities and new activities should be included."
-      }
-    },
-    "q12": {
-      "text": "Which of the following is an example of a government priority?",
-      "options": {
-        "1": "Modernize and renew the organization’s workforce to better serve Canadians",
-        "2": "Work with Canadians in all areas of the economy across the country to improve conditions for investment",
-        "3": "Implement activity-based workstations to improve team collaboration and communication"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Work with Canadians in all areas of the economy across the country to improve conditions for investment.”",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Broad goal and commitment statements such as this one are usually reserved for government priorities.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Work with Canadians in all areas of the economy across the country to improve conditions for investment.”"
-      }
-    },
-    "q13": {
-      "text": "Which of the following is an example of a sub-activity?",
-      "options": {
-        "1": "Buy and distribute tablets",
-        "2": "Usage of tablets by employees",
-        "3": "Equip employees with new digital tools to promote mobility"
-      },
-      "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong> Sub-activities are activities broken into smaller parts.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Buy and distribute tablets.” Sub-activities are activities broken into smaller parts.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The correct answer is “Buy and distribute tablets.” Sub-activities are activities broken into smaller parts."
-      }
-    },
-    "q14": {
-      "text": "Which of the following are considered to be risks?",
-      "options": {
-        "1": "A 15-minute power failure, minor software bugs",
-        "2": "Licensing fees, fisheries management",
-        "3": "Power failures, well-managed fish stocks",
-        "4": "Overfishing, staff turnover"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  A 15-minute power failure shouldn’t be significant enough to be considered a risk. Overfishing and staff turnover are risks.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> These are not risks. Overfishing and staff turnover are risks.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Well-managed fish stocks are not risks. Overfishing and staff turnover are risks.",
-        "4": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q15": {
-      "text": "How often does a manager need to recertify to be able to continue to exercise their financial authority?",
-      "options": {
-        "1": "Every year",
-        "2": "Every 2 years",
-        "3": "Every 5 years"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Managers need to recertify every 5 years.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> "
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Scanning your documents instead of keeping paper copies and sending your existing files to archives to make more room are both valid options for eliminating the need to buy another filing cabinet. Remember! There is no reason why you cannot use a reasonable substitute! ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Scanning your documents instead of keeping paper copies and sending your existing files to archives to make more room are both valid options for eliminating the need to buy another filing cabinet. Remember! There is no reason why you cannot use a reasonable substitute!"
       }
     }
   },
   "fr": {
-    "qDisabled": "Choisissez",
+    "qDisabled": "Sélectionnez le meilleur choix pour remplir les blancs",
         "q1": {
-      "text": "Qu'est-ce qu'un plan de travail?",
-      "options": {
-        "1": "Une liste quotidienne des tâches à accomplir",
-        "2": "Les activités à réaliser au cours d'un exercice comptable",
-        "3": "Les sommes d'argent à dépenser",
-        "4": "Un résumé de ce que vous avez accompli"
+      "sentence": "Reportez-vous à {0} lorsque vous souhaitez identifier les biens et les services dont vous avez besoin pour réaliser vos activités. ",
+      "choices": {
+        "1": "votre budget",
+        "2": "votre plan de travail ",
+        "3": "vos collègues ",
+        "4": "votre directeur"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le plan de travail est constitué de toutes les activités qui s'échelonneront au cours d'un exercice comptable.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong>",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Le plan de travail est constitué de toutes les activités à réaliser sur une période d'un an.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Le plan de travail est constitué  de toutes les activités qui s'échelonneront au cours d'un exercice comptable."
+       "right": "Pour identifier les biens et les services dont vous avez besoin pour réaliser vos activités, vous commencez par consulter votre plan de travail. ",
+        "wrong": "Pour identifier les biens et les services dont vous avez besoin pour réaliser vos activités, vous commencez par consulter votre plan de travail. "
       }
     },
     "q2": {
-      "text": "Quels éléments devez-vous prendre en compte lors de l’élaboration de votre nouveau plan de travail? ",
+      "text": "Avant de réserver un billet d’avion pour le travail, à qui devez-vous vous adresser?",
       "options": {
-        "1": "Priorités gouvernementales, priorités ministérielles et priorités de la Direction ",
-        "2": "Plan de travail, budget et rapports de l’année précédente",
-        "3": "Le plan de travail de votre collègue gestionnaire de l’année dernière"
+        "1": "Aménagements",
+        "2": "Sécurité",
+        "3": "Services partagés Canada",
+        "4": "Services de voyage partagés"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Incorrect. Vous devriez tenir compte des priorités gouvernementales, ministérielles et de la direction, ainsi que du plan de travail, du budget et des rapports de l'année précédente lorsque vous rédigez votre nouveau plan de travail. À moins que les activités de votre collègue n'aient été transférées à votre équipe, vous n’en tiendrez pas compte. "
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avant de réserver un billet d’avion pour le travail, vous devriez consulter les Services de voyage partagés.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avant de réserver un billet d’avion pour le travail, vous devriez consulter les Services de voyage partagés.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avant de réserver un billet d’avion pour le travail, vous devriez consulter les Services de voyage partagés.",
+        "4": "<span class='v-right' /> <strong>Correct!</strong> Pour comprendre la vue d’ensemble, commencez en consultant les priorités énoncées dans le discours du Trône."
       }
     },
     "q3": {
-      "text": "Une priorité ministérielle du plan de travail remonte au :",
+      "text": "Votre employé a besoin d’un logiciel spécialisé pour traiter les demandes des clients. Que feriez-vous?",
       "options": {
-        "1": "plan de la Direction ",
-        "2": "plan ministériel",
-        "3": "discours du Trône"
+        "1": "Communiquer avec les Services des technologies de l’information",
+        "2": "Communiquer avec les Services de gestion de l’information",
+        "3": "Communiquer avec les Services financiers ",
+        "4": "Communiquer avec les Ressources humaines"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités ministérielles découlent du discours du Trône, dans lequel le gouvernement énonce ses priorités.  ",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> Pour comprendre la vue d’ensemble, commencez en consultant les priorités énoncées dans le discours du Trône."
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Pour obtenir un logiciel spécialisé, vous devriez communiquer avec les Services des technologies de l’information.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour obtenir un logiciel spécialisé, vous devriez communiquer avec les Services des technologies de l’information.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour comprendre la vue d’ensemble, commencez en consultant les priorités énoncées dans le discours du Trône.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour obtenir un logiciel spécialisé, vous devriez communiquer avec les Services des technologies de l’information."
       }
     },
     "q4": {
-      "text": "Pour trouver les principales responsabilités de votre ministère, les résultats escomptés et les indicateurs, vous devriez vous tourner vers :",
+      "text": "Qu’est-ce qu’un plan de travail?",
       "options": {
-        "1": "le plan de la Direction ",
-        "2": "le Plan ministériel",
-        "3": "le discours du Trône",
-        "4": "le plan du secteur"
+        "1": "Une liste quotidienne des tâches à accomplir",
+        "2": "Les activités à réaliser au cours d’un exercice financier",
+        "3": "Les sommes d’argent à dépenser",
+        "4": "Un résumé de ce que vous avez accompli"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel. ",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel. ",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les responsabilités fondamentales, les résultats escomptés et les indicateurs de votre ministère se trouvent dans le Plan ministériel. "
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un plan de travail est une série d’activités à réaliser au cours d’un exercice financier. ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un plan de travail est une série d’activités à réaliser au cours d’un exercice financier.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> Un plan de travail est une série d’activités à réaliser au cours d’un exercice financier. ",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un plan de travail est une série d’activités à réaliser au cours d’un exercice financier. "
       }
     },
     "q5": {
-      "text": "Le premier ministre énonce ses attentes et ses objectifs pour votre ministère dans : ",
+      "text": "Parmi les éléments suivants, quels sont ceux qui ne se trouvent PAS dans votre plan de travail?",
       "options": {
-        "1": "le discours du Trône",
-        "2": "le Cadre ministériel des résultats ",
-        "3": "la lettre de mandat",
-        "4": "le plan ministériel"
+        "1": "Les activités",
+        "2": "Les montants de budget",
+        "3": "Les stratégies d’atténuation",
+        "4": "Les priorités"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le premier ministre décrit ses attentes et ses objectifs dans la lettre de mandat adressée au ministre responsable de votre ministère."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les montants de budget ne se trouvent pas dans votre plan de travail.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Les montants de budget ne se trouvent pas dans votre plan de travail.",
+        "3": "<span class='v-right' /> <strong>Incorrect</strong> Les montants de budget ne se trouvent pas dans votre plan de travail.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les montants de budget ne se trouvent pas dans votre plan de travail."
       }
     },
     "q6": {
-      "text": "Pour effectuer un aperçu à 360 degrés, vous devez procéder comme il est indiqué ci-dessous : ",
+      "text": "Pour identifier les biens et les services dont vous aurez besoin, quelle section de votre plan de travail consulteriez-vous le plus?",
       "options": {
-        "1": "Se faire une idée de la situation actuelle en examinant ce qui a été fait dans un passé récent.",
-        "2": "Examinez les plans de travail, budgets et rapports antérieurs.",
-        "3": "Identifier les défis des années précédentes.",
-        "4": "Se faire une idée du contexte culturel de son ministère, de sa direction générale ou de sa direction.",
-        "5": "Toutes ces réponses."
+        "1": "Les livrables",
+        "2": "Les sous-activités",
+        "3": "Les priorités",
+        "4": "Les risques"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés.",
-        "5": "<span class='v-right' /> <strong>Correct!</strong>  Vous devez faire toutes ces activités pour effectuer un aperçu à 360 degrés."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour savoir quels sont les biens et les services dont vous aurez besoin, vous consulterez surtout la section des sous-activités de votre plan de travail.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Pour savoir quels sont les biens et les services dont vous aurez besoin, vous consulterez surtout la section des sous-activités de votre plan de travail.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour savoir quels sont les biens et les services dont vous aurez besoin, vous consulterez surtout la section des sous-activités de votre plan de travail.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour savoir quels sont les biens et les services dont vous aurez besoin, vous consulterez surtout la section des sous-activités de votre plan de travail."
       }
     },
     "q7": {
-      "text": "Choisissez les priorités auxquelles les activités du plan de travail devraient se rattacher, en commençant par le haut.",
+      "text": "Vous n’avez plus d’affiches publicitaires. Avant de contacter un fournisseur pour en faire imprimer d’autres, que devriez-vous faire?",
       "options": {
-        "1": "Priorités ministérielles, priorités de la Direction, priorités du gouvernement",
-        "2": "Priorités gouvernementales, priorités ministérielles, priorités de la Direction",
-        "3": "Priorités de la Direction, priorités gouvernementales, priorités ministérielles"
+        "1": "Vérifier à l’entrepôt s'il y a d’autres affiches en stock",
+        "2": "Utiliser une affiche similaire si c’est acceptable",
+        "3": "Demander aux autres unités si elles ont des affiches en surplus",
+        "4": "Projeter l’affiche à l’aide d’un ordinateur et d’un projecteur"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du haut sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les priorités à partir du haut sont : Priorités gouvernementales, priorités ministérielles, priorités de la Direction."
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Toutes ces options sont valables pour remplacer les affiches manquantes. N’oubliez pas! Il n’y a aucune raison pour laquelle vous ne pouvez pas utiliser un substitut raisonnable. ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Toutes ces options sont valables pour remplacer les affiches manquantes. N’oubliez pas! Il n’y a aucune raison pour laquelle vous ne pouvez pas utiliser un substitut raisonnable. "
       }
     },
     "q8": {
-      "text": "Quelles situations vous amèneraient à mettre à jour le plan de travail?",
+      "text": "Votre classeur est plein. Quelle serait une solution de rechange appropriée à l’achat d’un autre classeur?",
       "options": {
-        "1": "Un nouvel administrateur est nommé.",
-        "2": "Un employé s’en va.",
-        "3": "La formation obligatoire est reportée à l’année prochaine.",
-        "4": "Plus de 500 permis ont été délivrés.",
-        "5": "Votre logiciel fait l’objet d’une mise à jour."
+        "1": "Numériser les documents au lieu de conserver des copies papier",
+        "2": "Envoyer les dossiers existants aux archives pour faire plus de place",
+        "3": "Empiler les dossiers supplémentaires sur le dessus des armoires",
+        "4": "Déchiqueter les dossiers, car quelqu’un doit les avoir conservés quelque part"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> La nomination d’un nouvel administrateur, le départ d’un employé et le report de la formation obligatoire à l’année suivante exigent tous une mise à jour du plan de travail."
-      }
-    },
-    "q9": {
-      "text": "Quelles sont les responsabilités d’un gestionnaire?",
-      "options": {
-        "1": "Établir des priorités à l’échelle du gouvernement",
-        "2": "Négocier les contrats gouvernementaux",
-        "3": "Planifier les activités de son unité",
-        "4": "Utiliser les fonds publics pour mener à bien les activités de son unité",
-        "5": "Faire rapport de l’état d’avancement des activités de son unité"
-      },
-      "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un gestionnaire est responsable de la planification des activités de son unité, de l’utilisation des fonds publics pour mener à bien les activités de son unité et de la production de rapports sur l’état des activités de son unité."
-      }
-    },
-    "q10": {
-      "text": "Que sont les livrables?",
-      "options": {
-        "1": "Les tâches de travail à accomplir pour appuyer les priorités de votre direction.",
-        "2": "Les éléments spécifiques et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les réalisez.",
-        "3": "Le budget, le personnel, les consultants, les bâtiments et le matériel nécessaires à l’exécution des activités de la direction."
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les livrables sont plus précis et tangibles que les activités.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce sont les ressources. Les livrables font partie des éléments précis et tangibles que vous devriez être en mesure de cocher sur votre liste lorsque vous les réalisez."
-      }
-    },
-    "q11": {
-      "text": "Quelles activités devriez-vous inclure dans votre nouveau plan de travail?",
-      "options": {
-        "1": "Activités en cours, nouvelles activités, activités terminées",
-        "2": "Activités en cours, nouvelles activités",
-        "3": "Nouvelles activités, activités terminées",
-        "4": "Nouvelles activités, activités terminées, activités du projet",
-        "5": "Activités en cours, activités terminées, activités du projet"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses.",
-        "5": "<span class='v-wrong' /> <strong>Incorrect.</strong> Seules les activités en cours et les nouvelles activités devraient être incluses."
-      }
-    },
-    "q12": {
-      "text": "Lequel des éléments suivants est un exemple d’une priorité gouvernementale?",
-      "options": {
-        "1": "Moderniser et renouveler les effectifs de l'organisation pour mieux servir les Canadiens.",
-        "2": "Travailler avec les Canadiens dans tous les secteurs de l'économie à travers le pays pour améliorer les conditions d'investissement.",
-        "3": "Mettre en place des postes de travail basés sur les activités pour améliorer la collaboration et la communication au sein des équipes."
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est «&nbsp;Travailler avec les Canadiens dans tous les secteurs de l'économie à travers le pays pour améliorer les conditions d'investissement&nbsp;». ",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> De telles déclarations d'objectifs et d'engagements généraux sont généralement réservées aux priorités du gouvernement.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est «&nbsp;Travailler avec les Canadiens dans tous les secteurs de l'économie à travers le pays pour améliorer les conditions d'investissement&nbsp;». "
-      }
-    },
-    "q13": {
-      "text": "Lequel des éléments suivants est un exemple de sous-activité?",
-      "options": {
-        "1": "Acheter et distribuer des tablettes",
-        "2": "L’utilisation de tablettes par les employés",
-        "3": "Doter les salariés de nouveaux outils numériques pour favoriser la mobilité"
-      },
-      "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong> Les sous-activités sont des activités divisées en plus petites parties.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est «&nbsp;Acheter et distribuer des tablettes&nbsp;». Les sous-activités sont des activités divisées en plus petites parties.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> La bonne réponse est «&nbsp;Acheter et distribuer des tablettes&nbsp;». Les sous-activités sont des activités divisées en plus petites parties."
-      }
-    },
-    "q14": {
-      "text": "Quels sont les risques considérés?",
-      "options": {
-        "1": "Panne d’électricité de 15 minutes, bogues mineurs de logiciels",
-        "2": "Droits de permis, gestion des pêches",
-        "3": "Pannes d’électricité, stocks de poissons bien gérés",
-        "4": "Surpêche, roulement du personnel"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Une panne de courant de 15 minutes ne devrait pas être suffisante pour être considérée comme un risque. Par contre, la surpêche et le roulement du personnel sont des risques.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Ce ne sont pas des risques. Par contre, la surpêche et le roulement du personnel sont des risques.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les stocks de poissons bien gérés ne sont pas des risques. Par contre, la surpêche et le roulement du personnel sont des risques.",
-        "4": "<span class='v-right' /> <strong>Correct!</strong>"
-      }
-    },
-    "q15": {
-      "text": "À quelle fréquence un gestionnaire doit-il renouveler son attestation pour pouvoir continuer à exercer ses pouvoirs financiers ?",
-      "options": {
-        "1": "Chaque année",
-        "2": "Tous les 2 ans",
-        "3": "Tous les 5 ans"
-      },
-      "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les 5 ans.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les gestionnaires doivent renouveler leur accréditation tous les 5 ans.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> "
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Numériser les documents au lieu de conserver des copies papier et envoyer les dossiers existants aux archives pour faire plus de place sont deux options valables pour éviter d’acheter un autre classeur. N’oubliez pas! Il n’y a aucune raison pour laquelle vous ne pouvez pas utiliser une solution de rechange raisonnable! ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Numériser les documents au lieu de conserver des copies papier et envoyer les dossiers existants aux archives pour faire plus de place sont deux options valables pour éviter d’acheter un autre classeur. N’oubliez pas! Il n’y a aucune raison pour laquelle vous ne pouvez pas utiliser une solution de rechange raisonnable!"
       }
     }
   }

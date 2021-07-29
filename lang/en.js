@@ -3,7 +3,7 @@ export default {
   lifeCycle:"Life Cycle Materiel Management",
   AnalyzeGoods:"Analyze Goods, Services and Construction Needs",
   ForecastBudget:"Forecast Budget Requirements",
-  ReportsTitle: "Reporting",
+  ReportsTitle: "Prepare the Financial Situation Reports",
   BudgetAuthorities:" Budgets and Authorities",
   finRoles: "Responsible Use of Public Funds",
   symbolicIdentifier: "Symbolic Identifier",
@@ -61,7 +61,7 @@ export default {
   TestManage: "<span class='v-inv'>Manage:</span> Test",
   MarkCompleted: "Mark as completed",
   questionNav: "Question Navigation",
-  
+  ReportsTitle2: "Contribute to External Reporting",
   chooseScenarioLabel: "Choose you scenario",
   takeCourse: "I want to take the course",
   refresh: "I want to refresh my knowledge",

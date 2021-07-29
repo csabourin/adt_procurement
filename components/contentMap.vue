@@ -65,6 +65,9 @@
               <nuxt-link :to="localePath('reportPart1')" v-html="$t('ReportsTitle')" />
             </li>
             <li role="menuitem">
+              <nuxt-link :to="localePath('reportPart2')" v-html="$t('ReportsTitle2')" />
+            </li>
+            <li role="menuitem">
               <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessagesReport')" />
             </li>
             <li role="menuitem">
@@ -80,6 +83,9 @@
           </div>
           <div class="color2">
             <h2>{{$t('spend')}}</h2>
+          </div>
+         <div class="color2">
+            <h2>{{$t('manage')}}</h2>
           </div>
           <div class="color3">
             <h2>{{$t('report')}}</h2>
@@ -151,6 +157,9 @@
             case "spend":
               that.$el.querySelector(".color2").classList.add("highlighted");
               break;
+            case "manage":
+              that.$el.querySelector(".color2").classList.add("highlighted");
+              break;
             case "report":
               that.$el.querySelector(".color3").classList.add("highlighted");
               break;
@@ -187,8 +196,20 @@
           }
         }
         var menu3Links = this.$el.querySelectorAll("menu")[3].querySelectorAll("a")
-        for(var p = 0; p < menu3Links.length; p++){
-          href = menu3Links[p].getAttribute("href");
+        for(var o = 0; o < menu3Links.length; o++){
+          href = menu3Links[o].getAttribute("href");
+          if(href.indexOf("cninv")){
+            pos = href.indexOf("cninv");
+            pos = href.indexOf("/", pos);
+            href = href.substr(pos);
+          }
+          if(page.path == href || page.path.slice(0, -1) == href || page.path == href.toLowerCase() || page.path.slice(0, -1) == href.toLowerCase()){
+            module = "manage";
+          }
+        }
+        var menu4Links = this.$el.querySelectorAll("menu")[4].querySelectorAll("a")
+        for(var p = 0; p < menu4Links.length; p++){
+          href = menu4Links[p].getAttribute("href");
           if(href.indexOf("cninv")){
             pos = href.indexOf("cninv");
             pos = href.indexOf("/", pos);

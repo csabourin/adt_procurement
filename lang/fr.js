@@ -2,7 +2,7 @@
 export default {
   lifeCycle:"Gestion du cycle de vie du matériel",
   manage:"Gestion",
-  ReportsTitle: "Rapports",
+  ReportsTitle: "Préparer le rapport sur la situation financière ",
   AnalyzeGoods:"Analyser les besoins en biens, en services et en construction ",
   ForecastBudget:"Prévoir les besoins budgétaires ",
   BudgetAuthorities:" Budgets et pouvoirs ",
@@ -53,6 +53,7 @@ export default {
   ConductPeriodicVarianceReporting: "Préparer le rapport sur la situation financière",
   ContributeReporting: "Contribuer à l’établissement de rapports externes",
   Test: "Test",
+  ReportsTitle2: "Contribuer à l’établissement de rapports externes",
   ShowInstructions:"Afficher les instructions",
   TestPlan: "<span class='v-inv'>Planification&nbsp;:</span> Test",
   TestSpend: "<span class='v-inv'>Achat&nbsp;:</span> Test",

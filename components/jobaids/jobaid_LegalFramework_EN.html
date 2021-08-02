@@ -2,79 +2,182 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Untitled Document</title>
 <style>
-    
+
+    * {
+    box-sizing: border-box;
+    padding: 2px;
+    }
+    .col-05{width: 6.66%}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    h1 {
+        color:rgb(134, 95, 86);
+    }
+
+    h2 {
+        color: rgb(134, 95, 86);
+    }
+
+    h3{
+        font-weight: normal;
+    }
+
+    .titleBox{
+        background-color: rgb(134, 95, 86);
+        color: white;
+        text-align: center;
+        padding: 1px;
+    }
+
+    ul{
+        list-style: none;
+    }
+    ul li::before{
+        content: "\2022";
+        color: rgb(134, 95, 86); /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    .sectionBox{
+        background-color: rgb(234, 222, 218);
+        padding: 10px;
+    }
+    .sectionBox b{
+        color: rgb(134, 95, 86);
+    }
+    .sectionBox ul{
+        padding-left: 15px;
+    }
+
+    .partTable{
+        border: 2px solid rgb(215, 186, 174);
+        padding: 0px;
+    }
+    .partTable th{
+        color:rgb(134, 95, 86);
+    }
+    .partTable td{
+        text-align: center;
+        padding: 5px;
+    }
+    .partTableRow{
+        background-color: rgb(215, 186, 174);
+    }
+
+    .textBox{
+        background-color:rgb(234, 222, 218);
+        text-align: center;
+        margin: 5px;
+        padding: 2px;
+    }
+
 </style>
 </head>
 
 <body>
-    <div>
-        <div>
+    <div class="row">
+        <div class="col-6">
             <h1>Legal Framework</h1>
         </div>
-        <div>
+        <div class="col-6">
             <p><b>Disclaimer</b></p>
             <p>Please note that the information presented here has been summarized. In case of discrepancy between the content and relevant policies and regulations, the policies and regulations will take precedence.</p>
         </div>
+    </div>
         <h2>Legislation, Regulations and Policies</h2>
         <p>In addition to the objectives and principles of procurement, contracting activities are also governed by numerous pieces of legislation, regulations, policies, directives, land claims agreements, and trade agreements. Let’s look at some of the key ones and how they impact procurement activities.</p>
 
         <!-- TITRE 1 -->
-        <div>
+        <div class="titleBox">
             <h3><i>Financial Administration Act</i></h3>
         </div>
         <p>The <i>Financial Administration Act</i> provides the legal framework for the collection and expenditure of public funds.</p>
+        <br />
 
-
-        <div>
-            <p><b>Section 32</b> states that before you sign a certification, you must ensure that the funds are available to pay a contractor in the fiscal year in which the work will occur, and you must keep financial records of this transaction.</p>
+        <div class="row">
+            <div class="col-4 sectionBox">
+                <p><b>Section 32</b> states that before you sign a certification, you must ensure that the funds are available to pay a contractor in the fiscal year in which the work will occur, and you must keep financial records of this transaction.</p>
+            </div>
+            <div class="col-05"></div>
+            <div class="col-2 sectionBox">
+                <p><b>Section 33</b> states that finance officers must ensure that both section 32 certification and section 34 certification have been duly granted and applied before they can authorize payment to a contractor.</p>
+            </div>
+            <div class="col-05"></div>
+            <div class="col-4 sectionBox">
+                <p><b>Section 34</b> states that you must verify that the Crown has received what it was supposed to receive under a contract and that the price is in accordance with the contract; or that a payment in advance of getting a final deliverable is in accordance with the terms of a contract, before you certify section 34.</p>
+            </div>
         </div>
-        <div>
-            <p><b>Section 33</b> states that finance officers must ensure that both section 32 certification and section 34 certification have been duly granted and applied before they can authorize payment to a contractor.</p>
+        <div class="col-12"></div>
+        <div class="row">
+            <div class="col-3 sectionBox">
+                <p><b>Section 41</b> states that the Governor in Council may make regulations with respect to the conditions under which contracts may be entered into, and that the value of contracts cannot be more than allowed, unless approved by the Treasury Board or Governor in Council.</p>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-8 sectionBox">
+                <p><b>Section 80</b> provides that anyone who takes the following actions is guilty of an indictable offence and liable on conviction to a fine of up to $5,000 and imprisonment for a term of up to five years:</p>
+                <ul>
+                    <li>Receives compensation or rewards for the performance of any official duty, except as by law prescribed</li>
+                    <li>Conspires or creates opportunity for any person to defraud Her Majesty</li>
+                    <li>Permits any contravention of the law by any other person</li>
+                    <li>Willfully makes or signs a false entry in any book</li>
+                    <li>Fails to report, in writing, knowledge or information of the contravention of this Act or any acts of fraud to a superior officer</li>
+                    <li>Demands, accepts or attempts to collect as payment or gift, money or other items of value, for the compromise of any charge or complaint for any contravention of the law</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <p><b>Section 34</b> states that you must verify that the Crown has received what it was supposed to receive under a contract and that the price is in accordance with the contract; or that a payment in advance of getting a final deliverable is in accordance with the terms of a contract, before you certify section 34.</p>
-        </div>
-
-
-        <div>
-            <p><b>Section 41</b> states that the Governor in Council may make regulations with respect to the conditions under which contracts may be entered into, and that the value of contracts cannot be more than allowed, unless approved by the Treasury Board or Governor in Council.</p>
-        </div>
-        <div>
-            <p><b>Section 80</b> provides that anyone who takes the following actions is guilty of an indictable offence and liable on conviction to a fine of up to $5,000 and imprisonment for a term of up to five years:</p>
-            <ul>
-                <li>Receives compensation or rewards for the performance of any official duty, except as by law prescribed</li>
-                <li>Conspires or creates opportunity for any person to defraud Her Majesty</li>
-                <li>Permits any contravention of the law by any other person</li>
-                <li>Willfully makes or signs a false entry in any book</li>
-                <li>Fails to report, in writing, knowledge or information of the contravention of this Act or any acts of fraud to a superior officer</li>
-                <li>Demands, accepts or attempts to collect as payment or gift, money or other items of value, for the compromise of any charge or complaint for any contravention of the law</li>
-            </ul>
-        </div>
-
 
         <p>For more information, consult the <a href="https://laws-lois.justice.gc.ca/eng/acts/f-11/page-1.html" target="_blank" alt="Link to the Financial Administration Act web page"><i>Financial Administration Act</i></a>.</p>
 
         <!-- TITRE 2 -->
-        <div>
+        <div class="titleBox">
             <h3><i>Criminal Code of Canada</i></h3>
         </div>
         <p>The <i>Criminal Code of Canada</i> states that any official or employee who takes any of the following actions is guilty of an indictable offence and liable to imprisonment for a term of up to five years or an offence punishable on summary conviction:</p>
-        <div>
-            <img />
-        </div>
-        <div>
-            <ul>
-                <li>Demands or accepts a benefit of any kind as consideration for cooperation, influence or an act or omission in connection with the transaction of business with the government</li>
-                <li>Accepts a commission, reward, advantage or benefit from someone who has dealings with the government, unless they have the consent in writing of the head of the branch of government that employs them or of which they are an official</li>
-                <li>Any official who, in connection with the duties of their office, commits fraud or a breach of trust</li>
-            </ul>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <img src="jobaids_images/hammer.jpg" width="100%"/>
+            </div>
+            <div class="col-9">
+                <ul>
+                    <li>Demands or accepts a benefit of any kind as consideration for cooperation, influence or an act or omission in connection with the transaction of business with the government</li>
+                    <li>Accepts a commission, reward, advantage or benefit from someone who has dealings with the government, unless they have the consent in writing of the head of the branch of government that employs them or of which they are an official</li>
+                    <li>Any official who, in connection with the duties of their office, commits fraud or a breach of trust</li>
+                </ul>
+            </div>
         </div>
         <p>For more information, consult <a href="https://laws-lois.justice.gc.ca/eng/acts/C-46/section-121.html" target="_blank" alt="Link to the section 121 web page">section 121</a> and <a href="https://laws-lois.justice.gc.ca/eng/acts/C-46/section-122.html" target="_blank" alt="Link to the section 122 web page">section 122</a> of the <i>Criminal Code of Canada</i>.</p>
 
         <!-- TITRE 3 -->
-        <div>
+        <div class="titleBox">
             <h3><i>Department of Public Works and Government Services Act</i></h3>
         </div>
         <p>The <i>Department of Public Works and Government Services Act</i> grants the mandate to provide goods and materiel and other services to organizations to support and assist them in meeting their obligations. This includes planning for and the acquisition of supplies and services, and the provision of office accommodation and other facilities. 
@@ -83,84 +186,97 @@
         <p>For more information, consult the <a href="https://www.fct-cf.gc.ca/en/home" target="_blank" alt="Link to the Department of Public Works and Government Services Act web page"><i>Department of Public Works and Government Services Act</i></a>.</p>
 
         <!-- TITRE 4 -->
-        <div>
-            <h3><i>Government Contracts Regulations</i>></h3>
+        <div class="titleBox">
+            <h3><i>Government Contracts Regulations</i></h3>
         </div>
         <p>The <i>Government Contracts Regulations</i> (GCRs) are divided into three parts. You must know the contents of each of these three parts as they will impact the procurement decisions you make, including whether to open a competitive process or enter into a sole-source contract.</p>
-        <div>
-            <table>
-                <tr>
-                    <th>Part 1</th>
-                </tr>
-                <tr>
-                    <td>Sets out the conditions for entering into a contract. It outlines the requirement for soliciting bids and exceptions, advanced payments and progress payments.</td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <table>
-                <tr>
-                    <th>Part 2</th>
-                </tr>
-                <tr>
-                    <td>Sets out the conditions for entering into a contract. It outlines the requirement for soliciting bids and exceptions, advanced payments and progress payments.</td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <table>
-                <tr>
-                    <th>Part 3</th>
-                </tr>
-                <tr>
-                    <td>Sets out the conditions for entering into a contract. It outlines the requirement for soliciting bids and exceptions, advanced payments and progress payments.</td>
-                </tr>
-            </table>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3">
+                <table class="partTable">
+                    <tr class="partTableRow">
+                        <th>Part 1</th>
+                    </tr>
+                    <tr>
+                        <td>Sets out the conditions for entering into a contract. It outlines the requirement for soliciting bids and exceptions, advanced payments and progress payments.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-05"></div>
+            <div class="col-3">
+                <table class="partTable">
+                    <tr class="partTableRow">
+                        <th>Part 2</th>
+                    </tr>
+                    <tr>
+                        <td>Sets out the conditions for bid and contract security, such as bid bond, payment bond, performance bond or non-negotiable security deposit.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-05"></div>
+            <div class="col-3">
+                <table class="partTable">
+                    <tr class="partTableRow">
+                        <th>Part 3</th>
+                    </tr>
+                    <tr>
+                        <td>Sets out the terms deemed to be in every construction, goods or service contract that provides for payment by the Crown.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-1"></div>
         </div>
         <p>The GCRs will apply to the majority of goods, services and construction contracts that are entered into, except in the following examples:</p>
-        <div>
-            <ul>
-                <li>Contracts entered into by the National Film Board</li>
-                <li>Contracts for the construction of buildings entered into under the <i>Veterans’ Land Act</i></li>
-                <li>Contracts entered into under the <i>Indian Act</i> that involve Indian monies as defined in that Act</li>
-                <li>Contracts for the performance of legal services</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Contracts for the fit-up of an office or residential accommodation pursuant to the <i>Federal Real Property and Federal Immovables Act</i> or the <i>Federal Real Property and Federal Immovables Act</i> Regulations</li>
-                <li>Arrangements under an Interchange Canada Agreement</li>
-                <li>Contracts for operational reasons, to fulfil an interim requirement for defence supplies or services or to ensure logistical capabilities on an interim basis</li>
-            </ul>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <ul>
+                    <li>Contracts entered into by the National Film Board</li>
+                    <li>Contracts for the construction of buildings entered into under the <i>Veterans’ Land Act</i></li>
+                    <li>Contracts entered into under the <i>Indian Act</i> that involve Indian monies as defined in that Act</li>
+                    <li>Contracts for the performance of legal services</li>
+                </ul>
+            </div>
+            <div class="col-5">
+                <ul>
+                    <li>Contracts for the fit-up of an office or residential accommodation pursuant to the <i>Federal Real Property and Federal Immovables Act</i> or the <i>Federal Real Property and Federal Immovables Act</i> Regulations</li>
+                    <li>Arrangements under an Interchange Canada Agreement</li>
+                    <li>Contracts for operational reasons, to fulfil an interim requirement for defence supplies or services or to ensure logistical capabilities on an interim basis</li>
+                </ul>
+            </div>
+            <div class="col-1"></div>
         </div>
         <p>Furthermore, the <i>Government Contracts Regulations</i> require that all suppliers be given an opportunity to bid for contracts unless the requirement meets one of the exceptions, and that all contracts include terms that are declarations made by a contractor regarding corruption, collusion, lobbying and public disclosure.</p>
         <p>For more information, consult the <a href="https://laws-lois.justice.gc.ca/eng/regulations/sor-87-402/" target="_blank" alt="Link to the Government Contracts Regulations web page"><i>Government Contracts Regulations</i></a>.</p>
 
         <!-- TITRE 5 -->
-        <div>
+        <div class="titleBox">
             <h3>Policy on the Planning and Management of Investments</h3>
         </div>
         <p>The Policy on the Planning and Management of Investments sets the direction for the planning and management of assets and acquired services to ensure that these activities provide value for money and demonstrate sound stewardship in program delivery to Canadians. It explains the requirements for meeting these objectives and ensuring that:</p>
-        <div>
-            <ul>
-                <li>assets and services are well managed</li>
-                <li>decisions are based on an assessment of full-cycle costs</li>
-                <li>governance and oversight are effective</li>
-                <li>integrated and collaborative practices are in place</li>
-                <li>employees have the knowledge, experience and skills to carry out their responsibilities in planning and managing assets and services</li>
-            </ul>
-        </div>
-        <div>
-            <img />
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-7">
+                <ul>
+                    <li>assets and services are well managed</li>
+                    <li>decisions are based on an assessment of full-cycle costs</li>
+                    <li>governance and oversight are effective</li>
+                    <li>integrated and collaborative practices are in place</li>
+                    <li>employees have the knowledge, experience and skills to carry out their responsibilities in planning and managing assets and services</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <img src="jobaids_images/money.jpg" width="50%"/>
+            </div>
         </div>
         <p>For more information, consult the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32593" target="_blank" alt="Link to the Policy on the Planning and Management of Investments web page">Policy on the Planning and Management of Investments</a> and the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32594" target="_blank" alt="Link to the Directive on the Management of Projects and Programmes web page">Directive on the Management of Projects and Programmes</a>.</p>
 
         <!-- TITRE 6 -->
-        <div>
+        <div class="titleBox">
             <h3>Contracting Policy</h3>
         </div>
         <p>The Contracting Policy explains the requirements for meeting the contracting objective, including that:</p>
-        <ul>
+        <ul style="padding-left: 30px">
             <li>contracts or contractual arrangements that exceed departmental contracting authority limits as set out in Appendix C of the Policy require Treasury Board approval before they can be signed</li>
             <li>limits are lower for non-competitive contracts directed to a particular bidder</li>
             <li>the use of Public Services and Procurement Canada standing offers is mandatory for goods and services that organizations require on a regular basis (listed in Schedule 4 of  Appendix C)</li>
@@ -169,31 +285,39 @@
         <p>For more information, consult the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=14494" target="_blank" alt="Link to the Contracting Policy web page">Contracting Policy</a>.</p>
 
         <!-- TITRE 7 -->
-        <div>
+        <div class="titleBox">
             <h3>Policy on Management of Materiel</h3>
         </div>
         <p>The objective of the Policy on Management of Materiel is to ensure that materiel is managed by departments in a sustainable and financially responsible manner that supports the cost-effective and efficient delivery of government programs. It outlines the requirements for ensuring that materiel is managed in the interest of:</p>
-        <div>
-            <p>due diligence</p>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4 textBox">
+                <p>due diligence</p>
+            </div>
+            <div class="col-4 textBox">
+                <p>maximum long-term economic advantage for the Crown</p>
+            </div>
+            <div class="col-2"></div>
         </div>
-        <div>
-            <p>maximum long-term economic advantage for the Crown</p>
-        </div>
-        
-        <div>
-            <p>protection and preservation of Canadian heritage and the </p>
-        </div>
-        <div>
-            <p>fairness and transparency</p>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4 textBox">
+                <p>protection and preservation of Canadian heritage and the </p>
+            </div>
+            <div class="col-4 textBox">
+                <p>fairness and transparency</p>
+            </div>
+            <div class="col-2"></div>
         </div>
         <p>For more information, consult the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12062" target="_blank" alt="Link to the Policy on Management of Materiel web page">Policy on Management of Materiel</a>.</p>
 
         <!-- TITRE 8 -->
-        <div>
+        <div class="titleBox">
             <h3>Policy on Management of Real Property</h3>
         </div>
         <p>The objective of the Policy on Management of Real Property is to ensure that real property is managed in a sustainable and financially responsible manner throughout its life cycle, and to support the cost-effective and efficient delivery of government programs. It outlines the requirements for ensuring that real property is managed in the interest of:</p>
-        <ul>
+        <ul style="padding-left: 30px">
             <li>maximizing the long-term economic advantage for the Crown and the best value for Canadians</li>
             <li>allowing barrier-free access and use of federal real property and services that ensure inclusiveness and non-discrimination</li>
             <li>cultural and environmental stewardship that contributes to the preservation and protection of our heritage and the environment</li>
@@ -203,29 +327,32 @@
     </div>
 
     <!-- TITRE 9 -->
-    <div>
+    <div class="titleBox">
         <h3>Policy on Green Procurement</h3>
     </div>
     <p>The Policy on Green Procurement seeks to:</p>
-    <div>
-        <img />
-    </div>
-    <div>
-        <ul>
-            <li>reduce the environmental impacts of government operations</li>
-            <li>promote environmental stewardship</li>
-            <li>adapt to climate change by integrating environmental considerations in the procurement process</li>
-        </ul>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-3">
+            <img src="jobaids_images/leaf.jpg" width="50%" />
+        </div>
+        <div class="col-7">
+            <ul>
+                <li>reduce the environmental impacts of government operations</li>
+                <li>promote environmental stewardship</li>
+                <li>adapt to climate change by integrating environmental considerations in the procurement process</li>
+            </ul>
+        </div>
     </div>
     <p>The Policy also targets specific environmental outcomes where procurement can be used effectively to mitigate the impact of or adaptation to climate change and support the protection of biodiversity, natural areas, air, soil and water.</p>
     <p>For more information, consult the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32573" target="_target" alt="Link the Policy on Green Procurement web page">Policy on Green Procurement</a>.</p>
 
     <!-- TITRE 10 -->
-    <div>
+    <div class="titleBox">
         <h3>Trade Agreements</h3>
     </div>
     <p>Many trade agreements have a role in developing Canada’s trade network. The two most important are:</p>
-    <ol>
+    <ol style="padding-left: 30px">
         <li><i>World Trade Organization</i> – <i>Agreement on Government Procurement</i> (WTO – AGP)</li>
         <li><i>Canadian Free Trade Agreement (CFTA)</i></li>
     </ol>
@@ -233,82 +360,109 @@
     <p>For more information, consult <a href="https://www.wto.org/english/tratop_e/gproc_e/gp_gpa_e.htm" target="_blank" alt="Link to the World Trade Organization – Agreement on Government Procurement web page">WTO – AGP</a> or <a href="https://www.cfta-alec.ca/" target="_blank" alt="Link to the Canadian Free Trade Agreement web page">CFTA</a>.</p>
 
     <!-- TITRE 11 -->
-    <div>
+    <div class="titleBox">
         <h3>Modern Treaties/Comprehensive Land Claims Agreements</h3>
     </div>
-    <div>
-        <img />
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2">
+            <img src="jobaids_images/scroll.jpg" width="75%" />
+        </div>
+        <div class="col-9">
+            <p>Modern treaties/Comprehensive Land Claims Agreements (CLCAs) have been negotiated to ensure the fair treatment of Indigenous interests with respect to cultural, social, political and economic rights, including rights to lands and to fish and hunt and practise their culture. Although some modern treaties/CLCAs include measures dealing with procurement, these measures are not identical in all the various agreements. However, they are all aimed at enhancing the economic opportunities of the Indigenous group benefiting from the agreement, usually through increased possibilities of competing successfully for contracts in their settlement areas or of participating in employment, training or subcontracting opportunities.</p>
+        </div>
     </div>
-    <div>
-        <p>Modern treaties/Comprehensive Land Claims Agreements (CLCAs) have been negotiated to ensure the fair treatment of Indigenous interests with respect to cultural, social, political and economic rights, including rights to lands and to fish and hunt and practise their culture. Although some modern treaties/CLCAs include measures dealing with procurement, these measures are not identical in all the various agreements. However, they are all aimed at enhancing the economic opportunities of the Indigenous group benefiting from the agreement, usually through increased possibilities of competing successfully for contracts in their settlement areas or of participating in employment, training or subcontracting opportunities.</p>
-    </div>
+    
     <p>Where there is a final delivery of a good or service, including construction, to a land claim area or an area requiring access to modern treaty/CLCA land, a contracting authority must be consulted to help determine which modern treaty/CLCA obligations apply and how to satisfy them. This is because each modern treaty/CLCA has different requirements for government procurement, depending on the agreement.</p>
     <p>For more information, consult <a href="https://buyandsell.gc.ca/policy-and-guidelines/supply-manual/section/9/35" target="_blank" alt="Link to the chapter 9.35 of the Buyandsell.gc.ca Supply Manual web page">chapter 9.35</a> of the Buyandsell.gc.ca Supply Manual or view the <a href="https://www.rcaanc-cirnac.gc.ca/DAM/DAM-CIRNAC-RCAANC/DAM-STSRCD/STAGING/texte-text/map_room_modern_treaties_comprehensiveLandClaims_1614110848855_eng.pdf" target="_blank" alt="Link to the modern treaties and self-government agreements map pdf file">modern treaties and self-government agreements map</a>.</p>
 
     <!-- TITRE 12 -->
-    <div>
+    <div class="titleBox">
         <h3>Directive on Government Contracts, including Real Property Leases, in the Nunavut Settlement Area</h3>
     </div>
-    <div>
-        <p>The Directive on Government Contracts, including Real Property Leases, in the Nunavut Settlement Area establishes requirements for government contracts, including real property leases, in the Nunavut Settlement Area. This includes obligations around planning, monitoring and reporting, as well as mechanisms such as limiting bidding to Inuit firms and including Inuit and Nunavut Benefits Criteria in some situations.</p>
-        <p>A contracting authority must be consulted for advice on implementing the requirements of the Directive if the deliverables, or a portion of the deliverables, include final performance or delivery in the Nunavut Settlement Area.</p>
-    </div>
-    <div>
-        <img />
+    
+    <div class="row">
+        <div class="col-8">
+            <p>The Directive on Government Contracts, including Real Property Leases, in the Nunavut Settlement Area establishes requirements for government contracts, including real property leases, in the Nunavut Settlement Area. This includes obligations around planning, monitoring and reporting, as well as mechanisms such as limiting bidding to Inuit firms and including Inuit and Nunavut Benefits Criteria in some situations.</p>
+            <p>A contracting authority must be consulted for advice on implementing the requirements of the Directive if the deliverables, or a portion of the deliverables, include final performance or delivery in the Nunavut Settlement Area.</p>
+        </div>
+        <div class="col-4">
+            <img src="jobaids_images/nunavut.jpg" width="50%" />
+        </div>
     </div>
     <p>For more information, consult the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32610" target="_blank" alt="Link to the Directive on Government Contracts, including Real Property Leases, in the Nunavut Settlement Area web page">Directive on Government Contracts, including Real Property Leases, in the Nunavut Settlement Area</a>.</p>
 
     <!-- TITRE 13 -->
-    <div>
+    <div class="titleBox">
         <h3>Indigenous Business</h3>
     </div>
     <p>The Procurement Strategy for Aboriginal Business (PSAB) consists of measures intended to increase the number of Indigenous firms competing for and winning federal contracts. One of the primary components of the PSAB is “set-asides,” where procurements are taken out of the normal context and reserved for Indigenous businesses. Mandatory set-asides are for procurements over $5,000 for which Indigenous populations are the primary recipients; voluntary set-asides are other procurements voluntarily set aside by organizations.</p>
     <p>Your organization sets annual targets for contracts with Indigenous businesses that may impact your procurement. Your procurement specialist will inform you of the process for PSAB set-asides.</p>
+    <p>For more information, consult the <a href="https://www.sac-isc.gc.ca/eng/1100100032802/1610723869356" target="_blank" alt="Link to the Procurement Strategy for Aboriginal Business web page">Procurement Strategy for Aboriginal Business</a>.</p>
+
+    <!-- TITRE 13 -->
+    <div class="titleBox">
+        <h3>Policy on Government Security</h3>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="jobaids_images/lock.png" width="25%" />
+        </div>
+        <div class="col-8">
+            <p>According to the Policy on Government Security, organizations are responsible for protecting sensitive information and assets under their control. You must consult with the departmental security officer on the security requirements to impose on a contractor when the contractor will have access to or produce sensitive information or assets.</p>
+        </div>
+    </div>
+    <p>Organizations must complete the Security Requirements Checklist for contracts, standing offers or supply arrangements that contain a security requirement. The completed checklist must accompany all requisitions and related contractual documents that contain security requirements. It does not replace the necessary clauses in the contract that specify security requirements.</p>
     <p>For more information, consult the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16578" target="_blank" alt="Link to the Procurement Strategy for Aboriginal Business web page">Procurement Strategy for Aboriginal Business</a>.</p>
 
     <!-- TITRE 14 -->
-    <div>
+    <div class="titleBox">
         <h3>Common Services Policy</h3>
     </div>
     <p>The Common Services Policy ensures that organizations can acquire responsive, cost-effective support for the delivery of their programs. It provides that client-service organizations offer services to client organizations to support the timely, effective and economical delivery of programs to the public. The Policy identifies Public Services and Procurement Canada as both a provider of mandatory common services (under Appendix E) and of optional common services (under Appendix F).</p>
     <p>For more information, consult the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12025" target="_blank" alt="Link to the Common Services Policy web page">Common Services Policy</a>.</p>
 
     <!-- TITRE 15 -->
-    <div>
+    <div class="titleBox">
         <h3><i>Defence Production Act</i></h3>
     </div>
     <p>Of particular interest for those procuring on behalf of the Department of National Defence, the Defence Production Act gives the Minister of Public Services and Procurement Canada the exclusive authority to buy or otherwise acquire defence supplies and construct defence projects.</p>
     <p>For more information, consult the <a href="https://laws-lois.justice.gc.ca/eng/acts/D-1/" target="_blank" alt="Link to the Defence Production Act"><i>Defence Production Act</i></a>.</p>
 
     <!-- TITRE 16 -->
-    <div>
+    <div class="titleBox">
         <h3><i>Accessible Canada Act</i></h3>
     </div>
     <p>The <i>Accessible Canada Act</i> benefits all persons, especially persons with disabilities, by identifying and removing barriers and preventing the creation of new barriers, in the following areas:</p>
-    <div>
-        <ul>
-            <li>Employment</li>
-            <li>The built environment</li>
-            <li>Information and communication technologies</li>
-            <li>Communication, other than information and communication technologies</li>
-        </ul>
-    </div>
-    <div>
-        <ul>
-            <li>Procurement of goods, services and facilities</li>
-            <li>Design and delivery of programs and services</li>
-            <li>Transportation</li>
-            <li>Areas designated under regulations</li>
-        </ul>
+    <div class="row">
+        <div class="col-6">
+            <ul>
+                <li>Employment</li>
+                <li>The built environment</li>
+                <li>Information and communication technologies</li>
+                <li>Communication, other than information and communication technologies</li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <ul>
+                <li>Procurement of goods, services and facilities</li>
+                <li>Design and delivery of programs and services</li>
+                <li>Transportation</li>
+                <li>Areas designated under regulations</li>
+            </ul>
+        </div>
     </div>
     <p>The Act also requires, where appropriate, that departments include accessibility criteria when specifying requirements for goods and services and ensure that deliverables incorporate accessibility features.</p>
     <p>For more information, consult the <a href="https://laws-lois.justice.gc.ca/eng/acts/A-0.6/page-13.html#h-1154416" target="_blank" alt="Link to the Accessible Canada Act web page"><i>Accessible Canada Act</i></a>.</p>
     
-    <div>
-        <img />
-    </div>
-    <div>
-        <img />
+    <div class="row">
+        <div class="col-3">
+            <img src="jobaids_images/Canada.png" width="100%"/>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3">
+            <img src="jobaids_images/CSPS.png" width="100%"/>
+        </div>
     </div>
 </body>
 </html>

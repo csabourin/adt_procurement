@@ -6,13 +6,13 @@
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">
-            <checkboxQuiz :question="$t('q1')" qId="1" :Answer='["2"]'/>
+            <radioQuiz :question="$t('q1')" qId="1" />
           </b-tab>
           <b-tab title="Question 2">
-            <checkboxQuiz :question="$t('q2')" qId="2" :Answer='["2"]'/>
+            <radioQuiz :question="$t('q2')" qId="2" />
           </b-tab>
           <b-tab title="Question 3">
-            <checkboxQuiz :question="$t('q3')" qId="3" :Answer='["4"]'/>
+            <radioQuiz :question="$t('q3')" qId="3" />
           </b-tab>
         </b-tabs>
         <!-- Control buttons-->
@@ -89,8 +89,10 @@ export default {
   "4": "Travel Services"
   },
   "feedback": {
-  "right": "<span class='v-right' /><strong>Correct!</strong>",
-  "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+  "2": "<span class='v-right' /><strong>Correct!</strong>",
+  "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+  "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
   "conclusion": "When drafting your procurement requirements for software to ensure compatibility with networks, you should consult your Information Technology Services."
   },
@@ -103,8 +105,10 @@ export default {
   "4": "Shared Services Canada"
   },
   "feedback": {
-    "right": "<span class='v-right' /><strong>Correct!</strong>",
-    "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+    "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+    "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+    "3": "<span class='v-right' /><strong>Correct!</strong>",
+    "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
   "conclusion": "When drafting your security requirements for a consultant, you should consult Security."
   },
@@ -117,8 +121,10 @@ export default {
   "4": "Public Services and Procurement Canada"
   },
   "feedback": {
-    "right": "<span class='v-right' /><strong>Correct!</strong>",
-    "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+    "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+    "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+    "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+    "4": "<span class='v-right' /><strong>Correct!</strong>"
   },
   "conclusion": "When planning public opinion research, you should consult Public Services and Procurement Canada."
   }
@@ -134,9 +140,10 @@ export default {
   "4": "Services de voyage"
   },
   "feedback": {
-  "right": "<span class='v-right' /><strong>Correct!</strong>",
-  "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+  "2": "<span class='v-right' /><strong>Correct!</strong>",
+  "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+  "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
   "conclusion": "Lors de la rédaction de vos demandes d’achat de logiciels, vous devez consulter vos services des technologies de l’information pour assurer la compatibilité avec les réseaux."
   },
@@ -149,8 +156,10 @@ export default {
   "4": "Services partagés Canada"
   },
   "feedback": {
-  "right": "<span class='v-right' /><strong>Correct!</strong>",
-  "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+    "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+    "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+    "3": "<span class='v-right' /><strong>Correct!</strong>",
+    "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
   "conclusion": "Lors de la rédaction de vos exigences en matière de sécurité pour obtenir les services d’un consultant, vous devriez consulter la sécurité."
   },
@@ -163,8 +172,10 @@ export default {
   "4": "Services publics et Approvisionnement Canada"
   },
   "feedback": {
-  "right": "<span class='v-right' /><strong>Correct!</strong>",
-  "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+  "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+  "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+  "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+  "4": "<span class='v-right' /><strong>Correct!</strong>"
   },
   "conclusion": "Lorsque vous planifiez une recherche sur l’opinion publique, vous devriez consulter Services publics et Approvisionnement Canada."
   }

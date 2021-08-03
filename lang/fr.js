@@ -47,7 +47,7 @@ export default {
   fileSet: "Fichiers utilisés dans cette section",
   budgetAuthorities: "Budgets et pouvoirs",
   CreateBudget: "Créer un budget",
-  InitiateAuthorizeSpending: "Les exigences techniques et relatives à l’offre et la stratégie d’approvisionnement",
+  InitiateAuthorizeSpending: "Exigences techniques et de soumission et stratégie d’approvisionnement",
   ExerciseFinancialAuthority: "Exercer l'autorité financière",
   MonitorControlFinances: "Surveiller et contrôler les finances",
   ConductPeriodicVarianceReporting: "Préparer le rapport sur la situation financière",

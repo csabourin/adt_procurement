@@ -9,25 +9,29 @@
        <b-tabs v-model="tabIndex">
         <b-tab title="Question 1">
           <fillTheBlanks :blanks="1" :sentence="$t('q1.sentence')" :termList="$t('q1.choices')" :answer="['1']" :feedback="$t('q1.feedback')" qid="q1" /><hr>
-          <fillTheBlanks :blanks="1" :sentence="$t('q2.sentence')" :termList="$t('q2.choices')" :answer="['3']" :feedback="$t('q2.feedback')" qid="q2" /><hr>
         </b-tab>
         <b-tab title="Question 2">
-          <fillTheBlanks :blanks="2" :sentence="$t('q3.sentence')" :termList="$t('q3.choices')" :answer="['1','3']" :feedback="$t('q3.feedback')" qid="q3" /><hr>
-          <fillTheBlanks :blanks="2" :sentence="$t('q4.sentence')" :termList="$t('q4.choices')" :answer="['2','4']" :feedback="$t('q4.feedback')" qid="q4" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q2.sentence')" :termList="$t('q2.choices')" :answer="['3']" :feedback="$t('q2.feedback')" qid="q2" /><hr>
         </b-tab>
         <b-tab title="Question 3">
-          <fillTheBlanks :blanks="1" :sentence="$t('q5.sentence')" :termList="$t('q5.choices')" :answer="['3']" :feedback="$t('q5.feedback')" qid="q5" /><hr>
+          <fillTheBlanks :blanks="2" :sentence="$t('q3.sentence')" :termList="$t('q3.choices')" :answer="['1','3']" :feedback="$t('q3.feedback')" qid="q3" /><hr>
         </b-tab>
         <b-tab title="Question 4">
-          <fillTheBlanks :blanks="1" :sentence="$t('q6.sentence')" :termList="$t('q6.choices')" :answer="['4']" :feedback="$t('q6.feedback')" qid="q6" /><hr>
+         <fillTheBlanks :blanks="2" :sentence="$t('q4.sentence')" :termList="$t('q4.choices')" :answer="['2','4']" :feedback="$t('q4.feedback')" qid="q4" /><hr>
         </b-tab>
         <b-tab title="Question 5">
-          <fillTheBlanks :blanks="1" :sentence="$t('q7.sentence')" :termList="$t('q7.choices')" :answer="['1']" :feedback="$t('q7.feedback')" qid="q7" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q5.sentence')" :termList="$t('q5.choices')" :answer="['3']" :feedback="$t('q5.feedback')" qid="q5" /><hr>
         </b-tab>
         <b-tab title="Question 6">
-          <fillTheBlanks :blanks="1" :sentence="$t('q8.sentence')" :termList="$t('q8.choices')" :answer="['2']" :feedback="$t('q8.feedback')" qid="q8" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q6.sentence')" :termList="$t('q6.choices')" :answer="['4']" :feedback="$t('q6.feedback')" qid="q6" /><hr>
         </b-tab>
         <b-tab title="Question 7">
+          <fillTheBlanks :blanks="1" :sentence="$t('q7.sentence')" :termList="$t('q7.choices')" :answer="['1']" :feedback="$t('q7.feedback')" qid="q7" /><hr>
+        </b-tab>
+        <b-tab title="Question 8">
+          <fillTheBlanks :blanks="1" :sentence="$t('q8.sentence')" :termList="$t('q8.choices')" :answer="['2']" :feedback="$t('q8.feedback')" qid="q8" /><hr>
+        </b-tab>
+        <b-tab title="Question 9">
           <fillTheBlanks :blanks="1" :sentence="$t('q9.sentence')" :termList="$t('q9.choices')" :answer="['1']" :feedback="$t('q9.feedback')" qid="q9" /><hr>
         </b-tab>
        </b-tabs>

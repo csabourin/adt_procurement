@@ -1,7 +1,7 @@
 <template>
   <span>
     <div>
-      {{$t('Scenario')}}
+      <p v-html="$t('Scenario')"></p>
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">
@@ -75,7 +75,7 @@ export default {
 </script>
 <i18n>{
   "en": {
-  "Scenario": "Two of your work plan’s sub-activities are to issue licences and conduct inspections. Many commercial fishers are confused about when to renew their licences and how to comply with regulations. You decide your unit needs an information video.",
+  "Scenario": "<p><b>Scenario</b></p><p>Two of your work plan’s sub-activities are to issue licences and conduct inspections. Many commercial fishers are confused about when to renew their licences and how to comply with regulations. You decide your unit needs an information video.</p><p>Answer the following questions.</p>",
   "openChartButton": "Open the delegation of spending and financial signing authorities chart",
   "q1": {
   "text": "Given the scenario, what could be some of the special considerations regarding the production of the information video?",
@@ -107,7 +107,7 @@ export default {
   }
   },
   "fr": {
-  "Scenario": "Deux des sous-activités de votre plan de travail consistent à délivrer des permis et à mener des inspections. De nombreux pêcheurs commerciaux sont confus en ce qui concerne la date de renouvellement de leur permis et la façon de se conformer aux règlements. Vous déterminez que votre unité a besoin d’une vidéo d’information.",
+  "Scenario": "<p><b>Scénario</b></p><p>Deux des sous-activités de votre plan de travail consistent à délivrer des permis et à mener des inspections. De nombreux pêcheurs commerciaux sont confus en ce qui concerne la date de renouvellement de leur permis et la façon de se conformer aux règlements. Vous déterminez que votre unité a besoin d’une vidéo d’information.</p><p>Répondez aux questions suivantes : </p>",
   "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
   "q1": {
   "text": "Compte tenu du scénario, quels pourraient être certains des aspects particuliers à prendre en considération concernant la production de la vidéo d’information?",

@@ -151,7 +151,7 @@
         <b-modal no-stacking id="procureLinks" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('Introduction')}}
+                    <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('Introduction')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
@@ -192,7 +192,7 @@
         <b-modal id="transparentFairProcurement" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('transparentFairProcurementTitle')}}
+                    <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('transparentFairProcurementTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
@@ -219,7 +219,7 @@
         <b-modal no-stacking id="consultProcurementSpecialist" @hide="resumePlay()" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/QuizIcon.svg" :alt="$t('quizIcon')" width="32" height="32"> {{$t('consultProcurementSpecialistTitle')}}
+                    <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('consultProcurementSpecialistTitle')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
@@ -473,8 +473,8 @@ button.accessibilityButton {
   "TakeTheQuiz":"Take the Quiz",
   "tryItTitle":"Activity: Try it!",
   "adjustwptitle":"Activity: Adjust the Work plan",
-  "specialNeedsTitle":"Activity: Special Requirements and Other Considerations",
-  "defineNeedsTitle":"Activity: Analyze Your Requirements",
+  "specialNeedsTitle":"Activity: Special Needs and Other Considerations",
+  "defineNeedsTitle":"Activity: Define Your Needs",
   "describeNeedTitle":"Activity: Describe What You Need",
   "transparentFairProcurementTitle": "References: External Links",
   "consultProcurementSpecialistTitle": "Activity: Consult a Procurement Specialist",
@@ -495,13 +495,13 @@ button.accessibilityButton {
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",
   "specialNeedsTitle":"Activité : Besoins particuliers et autres considérations",
-  "defineNeedsTitle":"Activité : Analysez vos besoins",
+  "defineNeedsTitle":"Activité : Décrire ce dont on a besoin",
   "tryItTitle":"Activité : Essayons-le!",
   "describeNeedTitle":"Activité : Décrire ce dont vous avez besoin",
   "transparentFairProcurementTitle": "Références : Liens externes",
   "consultProcurementSpecialistTitle": "Activité : Consulter un spécialiste en approvisionnement",
   "consultProcurementSpecialistText": "Découvrez qui sont vos spécialistes en approvisionnement! Consultez le tableau de délégation des pouvoirs de votre ministère. Prenez connaissance des limites d’approvisionnement.",
-  "consultStakeholdersTitle": "Activité : Identifier les parties prenantes",
+  "consultStakeholdersTitle": "Activité : Consulter les parties prenantes",
   "procurementStrategyTitle": "Activité : Stratégies et instruments d’approvisionnement – Termes clés",
   "InRealLifeTitle": "Dans la vraie vie",
   "IRLProcurePart1Text": "Appliquez maintenant ce que vous avez appris - dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir quelles sont les stratégies d’approvisionnement que vous utiliserez le plus souvent. Trouvez les modèles utilisés par votre ministère et recherchez des exemples d’achats antérieurs à titre indicatif. Cela vous sera utile lorsque viendra le temps pour vous de choisir une stratégie d’approvisionnement.",

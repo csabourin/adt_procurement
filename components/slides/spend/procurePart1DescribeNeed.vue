@@ -12,7 +12,7 @@
             <checkboxQuiz :question="$t('q2')" qId="2" :Answer='["1","2","3","5"]'/>
           </b-tab>
           <b-tab title="Question 3">
-            <checkboxQuiz :question="$t('q3')" qId="3" :Answer='["2"]'/>
+            <radioQuiz :question="$t('q3')" qId="3" />
           </b-tab>
         </b-tabs>
         <!-- Control buttons-->
@@ -119,8 +119,10 @@ export default {
     "4": "What will be produced at the next stage"
     },
     "feedback": {
-      "right": "<span class='v-right' /><strong>Correct!</strong>",
-      "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+      "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+      "2": "<span class='v-right' /><strong>Correct!</strong>",
+      "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+      "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
     },
     "conclusion": "In your statement of requirement, you should not include the name of the potential supplier, as this is not yet known."
     }
@@ -158,7 +160,7 @@ export default {
     "conclusion": "Vos spécifications fonctionnelles devraient inclure les exigences opérationnelles suivantes : doit être en mesure de produire des rapports, doit avoir une base de données consultable, doit avoir des modèles à remplir et doit être accessible aux personnes utilisant des lecteurs d’écran. Elles énoncent ce qui doit être fait, mais pas comment le faire."
     },
     "q3": {
-    "text": "Lequel des éléments suivants ne devrait PAS être inclus dans votre énoncé des besoins pour engager un consultant?",
+    "text": "Lequel des éléments suivants ne devrait <u>PAS</u> être inclus dans votre énoncé des besoins pour engager un consultant?",
     "options": {
     "1": "Évaluation du risque",
     "2": "Nom du fournisseur potentiel",
@@ -166,8 +168,10 @@ export default {
     "4": "Ce qui sera produit à la prochaine étape"
     },
     "feedback": {
-      "right": "<span class='v-right' /><strong>Correct!</strong>",
-      "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+      "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+      "2": "<span class='v-right' /><strong>Correct!</strong>",
+      "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+      "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
     },
     "conclusion": "Dans votre énoncé des exigences, vous ne devez pas inclure le nom du fournisseur potentiel, car ce nom n’est pas encore connu."
     }

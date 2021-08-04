@@ -3,6 +3,8 @@
     <b-container>
       <b-row>
         <b-col>
+          <br />
+          <p><b>{{$t('answerQuiz')}}</b></p>
           <b-card>
           <b-tabs content v-model="tabIndex">
             <b-tab title="Question 1">
@@ -87,6 +89,7 @@
   
   {
     "en": {
+      "answerQuiz": "Take the Quiz",
       "q1": {
         "text": "Which of the following specifications sets the operational requirements of an item or an installation? In other words, which describes what the final installed product must be able to do?",
         "options": {
@@ -223,6 +226,7 @@
       }
     },
     "fr": {
+      "answerQuiz": "Répondez au quiz.",
        "q1": {
         "text": "Parmi les normes et spécifications suivantes, lesquelles définissent les exigences opérationnelles d’un élément ou d’une installation? En d’autres termes, lesquelles décrivent ce que le produit final installé doit être capable de faire?",
         "options": {

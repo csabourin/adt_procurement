@@ -2,7 +2,7 @@
 	<div>
     <b-container>
       <b-row>
-        <b-col xl="6" lg="6" style="border: 1px solid #212529;"><SalesInvoice /></b-col>
+        <b-col xl="7" lg="6" style="border: 1px solid #212529;"><SalesInvoice /></b-col>
         <b-col>
 		 <b-card>
       <p>{{$t('Introduction')}}</p>
@@ -101,7 +101,7 @@
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
         "2": "<span class='v-right' /><strong>Correct!</strong>"
       },
-      "conclusion": "Vous ne devriez pas payer la facture, car elle est inexacte. La facture doit être retournée au fournisseur pour être corrigée avant d’être payée. Elle devrait indiquer 25 paires de lunettes roses à 20 $ l’unité."
+      "conclusion": "Vous ne devriez pas payer la facture, car elle est inexacte. La facture doit être retournée au fournisseur pour être corrigée avant d’être payée. Elle devrait indiquer 25 paires de lunettes roses à 20&nbsp;$ l’unité."
     },
     "q2": {
       "text": "Vous avez commandé 5 surligneurs à pois et avez reçu 5 surligneurs jaunes. Devriez-vous payer la facture?",

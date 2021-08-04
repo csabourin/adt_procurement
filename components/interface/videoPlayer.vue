@@ -193,13 +193,13 @@ export default {
         },
         managePart1: {
           references: [],
-          infos: [],
+          infos: [0, 5],
           quiz: [6]
         },
         reportPart1: {
           references: [],
-          infos: [],
-          quiz: []
+          infos: [0, 4],
+          quiz: [5]
         },
         reportPart2: {
           references: [],

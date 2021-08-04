@@ -130,7 +130,7 @@ export default {
   "conclusion": "Records should be maintained to track inventory holdings and locations, consumption, usage, repairs, and costs."
   },
   "q5": {
-  "text": "Who usually performs the payment authority step, pursuant to section 33?",
+  "text": "What should be done with materiel that is no longer cost-effective to operate?",
   "options": {
   "1": "Dispose of the materiel",
   "2": "Keep the materiel",

@@ -2,7 +2,7 @@
 export default {
   lifeCycle:"Gestion du cycle de vie du matériel",
   manage:"Gestion",
-  ReportsTitle: "Préparer le rapport sur la situation financière ",
+  ReportsTitle: "Rapports",
   AnalyzeGoods:"Analyser les besoins en biens, en services et en construction ",
   ForecastBudget:"Prévoir les besoins budgétaires ",
   BudgetAuthorities:" Budgets et pouvoirs ",
@@ -50,7 +50,7 @@ export default {
   InitiateAuthorizeSpending: "Exigences techniques et de soumission et stratégie d’approvisionnement",
   ExerciseFinancialAuthority: "Solliciter, évaluer, approuver et accorder des contrats concurrentiels",
   MonitorControlFinances: "Administration, paiement et clôture du contrat",
-  ConductPeriodicVarianceReporting: "Préparer le rapport sur la situation financière",
+  ConductPeriodicVarianceReporting: "Rapports",
   ContributeReporting: "Contribuer à l’établissement de rapports externes",
   Test: "Test",
   ReportsTitle2: "Contribuer à l’établissement de rapports externes",

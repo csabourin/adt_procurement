@@ -72,7 +72,7 @@
   
   {
     "en": {
-      "introText": "Answer the following questions:",
+      "introText": "Answer the following questions.",
       "q1": {
         "text": "Due to the proactive disclosure of contracts, which of the following contracting activities must be made available to the public?",
         "options": {

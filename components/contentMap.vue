@@ -65,9 +65,6 @@
               <nuxt-link :to="localePath('reportPart1')" v-html="$t('ReportsTitle')" />
             </li>
             <li role="menuitem">
-              <nuxt-link :to="localePath('reportPart2')" v-html="$t('ReportsTitle2')" />
-            </li>
-            <li role="menuitem">
               <nuxt-link :to="localePath('reportKey')" v-html="$t('KeyMessagesReport')" />
             </li>
             <li role="menuitem">

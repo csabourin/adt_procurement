@@ -72,7 +72,7 @@
   
   {
     "en": {
-      "introText": "Answer the following questions:",
+      "introText": "Answer the following questions.",
       "q1": {
         "text": "Can the authorities that provide oversight of federal public service procurement be both internal and external organizations?",
         "options": {

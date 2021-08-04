@@ -177,7 +177,7 @@
       <b-modal id="InRealLife" @hide="resumePlay()" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('IRLtext')}}
+            <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('IRLtext')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
@@ -324,6 +324,7 @@ export default {
   "TakeTheQuiz":"Répondez au quiz",
   "RecordsMaintainedTitle":"Activité : Assurer la tenue des dossiers",
   "AdministerContractTitle":"Activité : Administrer le contrat",
+  "AcceptDeliverablesTitle":"Activité : Accepter les livrables",
   "YearEndProceduresTitle":"Activité : Accepter les produits livrables",
   "CertificationPaymentAuthoritiesTitle": "Activité :  Exercice du pouvoir de paiement",
   "CloseOutContractTitle": "Activité : Clôture de contrat",

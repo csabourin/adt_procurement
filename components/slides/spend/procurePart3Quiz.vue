@@ -1,6 +1,8 @@
 <template>
   <span>
     <div>
+      <br />
+      <p>{{$t("introText")}}</p>
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">
@@ -71,6 +73,7 @@ export default {
 </script>
 <i18n>{
   "en": {
+  "introText": "Answer the following questions.",
   "q1": {
   "text": "The contract has been awarded. What are your next steps, in the correct order?",
   "options": {
@@ -159,6 +162,7 @@ export default {
   }
   },
   "fr": {
+  "introText": "Répondez aux questions suivantes : ",
   "q1": {
   "text": "Le contrat a été accordé. Quelles sont, dans le bon ordre, les prochaines étapes que vous devez suivre?",
   "options": {

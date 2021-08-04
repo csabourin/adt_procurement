@@ -53,7 +53,7 @@ export default {
 </script>
 <i18n>{
   "en": {
-    "Introduction": "Answer the following questions:",
+    "Introduction": "Answer the following questions.",
     "q1": {
       "text": "Who is responsible for closing the contract?",
       "options": {
@@ -130,7 +130,7 @@ export default {
       "conclusion": "Tous les paiements doivent être versés à l’entrepreneur avant la clôture du contrat."
     },
     "q3": {
-      "text": "Laquelle des conditions suivantes ne permettrait PAS la clôture du contrat?",
+      "text": "Laquelle des conditions suivantes ne permettrait <u>PAS</u> la clôture du contrat?",
       "options": {
         "1": "Tous les produits livrables ont été acceptés.",
         "2": "Aucun paiement à l’entrepreneur n’est en attente.",

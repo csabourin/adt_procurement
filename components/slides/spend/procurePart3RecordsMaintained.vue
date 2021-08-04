@@ -53,7 +53,7 @@ export default {
 </script>
 <i18n>{
   "en": {
-    "Introduction": "Answer the following questions:",
+    "Introduction": "Answer the following questions.",
     "q1": {
       "text": "Good contract monitoring and record keepings helps to avoid which problems?",
       "options": {

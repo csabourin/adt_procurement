@@ -2,7 +2,7 @@
 	<div>
     <b-container>
       <b-row>
-        <b-col xl="7" lg="6" style="border: 1px solid #212529;"><SalesInvoice /></b-col>
+        <b-col xl="6" lg="6" style="border: 1px solid #212529;"><SalesInvoice /></b-col>
         <b-col>
 		 <b-card>
       <p>{{$t('Introduction')}}</p>
@@ -123,7 +123,7 @@
       },
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>"
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>"
       },
       "conclusion": "Vous devriez payer la facture, car les postes étaient exacts et le fournisseur a facturé le bon montant de taxe."
     }

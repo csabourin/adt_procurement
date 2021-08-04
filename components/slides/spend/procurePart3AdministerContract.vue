@@ -55,7 +55,7 @@ export default {
 </script>
 <i18n>{
   "en": {
-    "Introduction": "Answer the following questions:",
+    "Introduction": "Answer the following questions.",
     "q1": {
       "text": "The manager is responsible for which of the following contract-administration activities?",
       "options": {
@@ -128,8 +128,8 @@ export default {
     }
   },
   "fr": {
+    "Introduction": "Répondez aux questions suivantes : ",
     "q1": {
-      "Introduction": "Répondez aux questions suivantes : ",
       "text": "Parmi les activités d’administration des contrats suivantes, lesquelles relèvent du gestionnaire?",
       "options": {
         "1": "Veiller à ce que les dates de livraison soient respectées",

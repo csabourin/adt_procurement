@@ -49,7 +49,7 @@ export default {
   budgetAuthorities: "Budgets and Authorities",
   CreateBudget: "Create a Budget",
   InitiateAuthorizeSpending: "Technical and Bid Requirements and Procurement Strategy",
-  ExerciseFinancialAuthority: "Solicit, Evaluate, Approve and Award",
+  ExerciseFinancialAuthority: "Solicit, Evaluate, Approve and Award Competitive Contracts",
   MonitorControlFinances: "Administer, Pay and Close Out Contract",
   ConductPeriodicVarianceReporting: "Prepare the Financial Situation Reports",
   ContributeReporting: "Contribute to External Reporting",

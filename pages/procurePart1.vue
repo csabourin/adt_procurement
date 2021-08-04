@@ -491,7 +491,7 @@ button.accessibilityButton {
   "fr":{
   "Introduction": "Références : Liens externes",
   "toolboxTitle": "Pour plus d’informations, n’hésitez pas à consulter les liens suivants. Ces liens sont également disponibles dans la boîte à outils.",
-  "TakeTheQuiz":"Répondez au questionnaire",
+  "TakeTheQuiz":"Répondez au quiz",
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",
   "specialNeedsTitle":"Activité : Besoins particuliers et autres considérations",

@@ -1,10 +1,12 @@
 <template>
   <span>
     <div>
+      <br />
+      <p>{{$t('introductionText')}}</p>
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">
-            <radioQuiz :question="$t('q1')" qId="1" />
+            <checkboxQuiz :question="$t('q1')" qId="1" :Answer="['2', '3', '4']" />
           </b-tab>
           <b-tab title="Question 2">
             <radioQuiz :question="$t('q2')" qId="2" />
@@ -23,11 +25,6 @@
       <delegAutorityFr v-if="$i18n.locale=='fr'" />
     </windowPortal>
     <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
-    <b-row>
-      <b-col cols="6" md="4" lg="2" class="text-center">
-        <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-      </b-col>
-    </b-row>
     </div>
   </span>
 </template>
@@ -95,6 +92,7 @@ export default {
 </script>
 <i18n>{
   "en": {
+  "introductionText": "Answer the following questions.",
   "openChartButton": "Open the delegation of spending and financial signing authorities chart",
   "q1": {
   "text": "Using the Delegation of Spending and Financial Signing Authorities Chart provided, who can approve a temporary help contract transaction of $23,000?",
@@ -105,14 +103,13 @@ export default {
   "4": "Deputy head"
   },
   "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-  "2": "<span class='v-right' /><strong>Correct!</strong>",
-  "3": "<span class='v-right' /><strong>Correct!</strong>",
-  "4": "<span class='v-right' /><strong>Correct!</strong>"
+  "right": "<span class='v-right' /><strong>Correct!</strong>",
+  "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
   "conclusion": "A director general, a deputy head and an assistant deputy minister are the ones who can approve a $23,000 temporary help contract transaction."
   },
   "q2": {
+  "introductionText": "Répondez aux questions suivantes : ",
   "text": "Using the delegation of spending and financial signing authorities chart provided, what is the lowest position that could approve the purchase of a $1,200 cordless drill on an acquisition card?",
   "options": {
   "1": "Manager",

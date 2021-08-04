@@ -111,13 +111,12 @@
       <b-modal no-stacking id="Introduction" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('Introduction')}}
+            <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('Introduction')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
         <p>{{$t('part3IntroductionText')}}</p>
         <hr>
-        <p><b>{{$t('documentText')}}</b></p>
         <windowPortal :open="openChart" @close="openChart = false">
           <delegAutorityEn v-if="$i18n.locale=='en'" />
           <delegAutorityFr v-if="$i18n.locale=='fr'" />
@@ -299,7 +298,7 @@ export default {
 </style>
 <i18n>{
   "en":{
-  "Introduction": "Introduction",
+  "Introduction": "References: External Links",
   "part3IntroductionText": "For more information, feel free to consult the following document. This document is also available in the Toolbox.",
   "documentText": "Document",
   "openChartButton": "Open the delegation of spending and financial signing authorities chart",
@@ -318,11 +317,11 @@ export default {
   "spendSectionBar": "PROCURE"
   },
   "fr":{
-  "Introduction": "Introduction",
+  "Introduction": "Référence : Liens externes",
   "part3IntroductionText": "Pour plus d’informations, n’hésitez pas à consulter le document suivant. Il est également disponible dans la boîte à outils.",
   "documentText": "Document",
   "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
-  "TakeTheQuiz":"Répondez au questionnaire",
+  "TakeTheQuiz":"Répondez au quiz",
   "RecordsMaintainedTitle":"Activité : Assurer la tenue des dossiers",
   "AdministerContractTitle":"Activité : Administrer le contrat",
   "YearEndProceduresTitle":"Activité : Accepter les produits livrables",

@@ -32,11 +32,6 @@
                 <delegAutorityFr v-if="$i18n.locale=='fr'" />
               </windowPortal>
                 <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
-                <b-row>
-                    <b-col cols="6" md="4" lg="2" class="text-center">
-                        <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                    </b-col>
-                </b-row>
             </b-tab>
           </b-tabs>
           <!-- Control buttons-->
@@ -107,7 +102,7 @@
   {
     "en": {
       "openChartButton": "Open the delegation of spending and financial signing authorities chart",
-      "introText": "Here’s a chance for you to confirm your knowledge of various types of solicitation documents. Answer the following questions.",
+      "introText": "Answer the following questions.",
       "scenario1":"You are a manager of a team providing internal information management services within your organization. You are responsible for managing the budget and have delegated financial authority. Your organization’s spending dollar limit per transaction is $2,500 when using an acquisition card.",
       "scenario2":"You are a manager responsible for providing goods and services during natural disasters. Your department needs to purchase 10,000 sandbags in response to a flooding emergency. You are responsible for managing the budget and have delegated financial and transaction (i.e. contracting) authority.",
       "scenario3":"You require the services of a consultant to conduct an independent review of the accounts payable processes in the department. You believe that this review could be achieved by one expert consultant. You know a former public servant in receipt of a pension who is qualified and available immediately to perform this task at a daily rate of $1,200. You estimate that given the daily rate and expected duration of the contract, the value of the contract would be just over $50,000.",
@@ -174,7 +169,7 @@
         "conclusion": "To acquire 10,000 sandbags, you would prepare a purchase description specification, providing a brief but accurate description of the desired production."
       },
       "q5": {
-        "text": "For which of the following situations could you use a sole-source contract, as outlined in the Government Contracts Regulations?",
+        "text": "For which of the following situations could you use a sole-source contract, as outlined in the <i>Government Contracts Regulations</i>?",
         "options": {
           "1": "The purchase of cots to set up an emergency shelter following a tornado",
           "2": "The development services of a Department of National Defence secret database",
@@ -216,7 +211,7 @@
     },
     "fr": {
       "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
-      "introText": "Voici l’occasion d’évaluer votre connaissance des différents types de documents d’invitation à soumissionner. Répondez aux questions suivantes : ",
+      "introText": "Répondez aux questions suivantes :  ",
       "scenario1":"Vous êtes le gestionnaire d’une équipe fournissant des services de gestion de l’information interne au sein de votre organisation. Vous êtes responsable de la gestion du budget, et les pouvoirs financiers vous ont été délégués. La limite de dépenses par transaction fixée par votre organisation est de 2 500 $ lorsque vous utilisez une carte d’achat.",
       "scenario2":"Vous êtes un gestionnaire responsable de la fourniture de biens et de services en cas de catastrophe naturelle. Votre ministère doit acheter d’urgence 10 000 sacs de sable pour lutter contre une inondation. Vous êtes responsable de la gestion du budget et vous disposez des pouvoirs financiers et d’exécuter une opération (c.-à-d. l'attribution de contrats).",
       "scenario3":"Vous avez besoin des services d’un consultant pour effectuer un examen indépendant du processus des comptes fournisseurs au sein du ministère. Vous croyez que cet examen pourrait être réalisé par un expert-conseil. Vous connaissez un ancien fonctionnaire qui touche une pension et qui est qualifié et disponible immédiatement pour effectuer cette tâche à un taux quotidien de 1 200 $. Vous estimez que, compte tenu du taux quotidien et de la durée prévue du contrat, la valeur du contrat serait légèrement supérieure à 50 000 $.",
@@ -283,7 +278,7 @@
         "conclusion": "Pour acquérir les 10 000 sacs de sable, vous devez préparer une description de l’achat, fournissant une description brève, mais précise du produit souhaité."
       },
       "q5": {
-        "text": "Pour laquelle des situations suivantes pourriez-vous utiliser un contrat à fournisseur unique, comme indiqué dans le Règlement sur les marchés de l’État?",
+        "text": "Pour laquelle des situations suivantes pourriez-vous utiliser un contrat à fournisseur unique, comme indiqué dans le <i>Règlement sur les marchés de l’État</i>?",
         "options": {
           "1": "L’achat de lits portatifs pour fournir un abri d’urgence à la suite d’une tornade",
           "2": "Les services de conception d’une base de données secrète du ministère de la Défense nationale",

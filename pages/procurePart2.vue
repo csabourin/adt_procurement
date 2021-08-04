@@ -152,7 +152,7 @@
         <b-modal no-stacking id="procureLinks" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32"> {{$t('Introduction')}}
+                    <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('Introduction')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
@@ -203,7 +203,7 @@
         <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
           <template v-slot:modal-header="{ close }">
             <h3 class="h5">
-              <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
+              <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32">
                 {{$t('InRealLife')}}
             </h3>
             <button type="button" aria-label="Close" class="close" @click="close()">×</button>
@@ -438,10 +438,10 @@ button.accessibilityButton {
   },
   "fr":{
   "Introduction": "Références : Liens externes",
-  "TakeTheQuiz":"Répondez au questionnaire",
+  "TakeTheQuiz":"Répondez au quiz",
   "toolboxTitle": "Pour plus d’informations, n’hésitez pas à consulter les liens suivants. Ces liens sont également disponibles dans la boîte à outils.",
   "CertAuthorityTitle":"Activité : Documents d’invitation à soumissionner – Termes clés",
-  "AccuracyInvoiceTitle":"Activité : Exactitude de la facture",
+  "AccuracyInvoiceTitle":"Activité : Évaluer et négocier",
   "ProcessInvoiceTitle":"Activité : Approbation du contrat",
   "ContractAwardTitle":"Activité : Attribution du contrat",
   "InRealLifeTitle":"Dans la vraie vie",

@@ -183,12 +183,12 @@ export default {
         },
         procurePart2: {
           references: [],
-          infos: [],
+          infos: [0, 5],
           quiz: [6]
         },
         procurePart3: {
           references: [],
-          infos: [],
+          infos: [0],
           quiz: [7]
         },
         managePart1: {

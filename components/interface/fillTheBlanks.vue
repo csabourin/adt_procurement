@@ -62,7 +62,7 @@ export default {
   methods: {
     arraysMatch(arr1, arr2) {
       if (arr1.length !== arr2.length) return false
-      const arrayOne = arr1.concat().sort()
+      const arrayOne = arr1.concat()
       for (let i in arrayOne) {
         if (arrayOne[i] !== arr2[i]) return false
       }

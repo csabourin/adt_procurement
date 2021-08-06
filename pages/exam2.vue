@@ -7,12 +7,11 @@
           <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible fade :dismiss-label="$t('dismiss')">
             <div v-if="$i18n.locale=='en'">
               <h3>Instructions</h3>
-              <p>For some of the questions in this test, you play the role of a manager of a call center. You will be given scenarios based on this situation.&nbsp;</p>
-               <p>As per Treasury Board requirements, passing the test for this course is mandatory before you can exercise financial delegation.&nbsp;</p>
-              <p>There are three sections to the test - one for each phase: Plan, Spend and Report<!-- planning, spending and reporting -->.</p>
+               <p>As per Treasury Board requirements, you must pass this test before you can exercise financial delegation.</p>
+              <p>The test is made up of four sections, one for each phase: Plan, Procure, Manage, and Report.<!-- planning, spending and reporting -->.</p>
               <p>The passing grade is 80% for each of these sections.</p>
-              <p>Each section should take you around 15 to 20 minutes to complete.&nbsp;</p>
-              <p>You can access course materials during the test and you can take it as many times as you need.</p>
+              <p>Each section should take you around 20 to 25 minutes to complete.</p>
+              <p>You are allowed to consult course materials during the test. You may take it as many times as you need to get a passing grade.</p>
             </div>
             <div v-if="$i18n.locale=='fr'">
               <h3>Instructions</h3>
@@ -41,31 +40,31 @@
                   <span class="v-inv">Question </span>01
                 </template>
                 <!-- calculateAnswer($event,correctAnswer,qId) -->
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q1')" qId="0" :refill="Refill('0')" @response="calculateAnswer($event,3,0)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q1')" qId="0" :refill="Refill('0')" @response="calculateAnswer($event,1,0)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[1]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>02
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q2')" qId="1" :refill="Refill('1')" @response="calculateAnswer($event,2,1)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q2')" qId="1" :refill="Refill('1')" @response="calculateAnswer($event,1,1)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[2]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>03
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q3')" qId="2" :refill="Refill('2')" @response="calculateAnswer($event,1,2)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q3')" qId="2" :refill="Refill('2')" @response="calculateAnswer($event,3,2)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[3]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>04
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,4,3)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,2,3)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[4]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>05
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q5')" qId="4" :refill="Refill('4')" @response="calculateAnswer($event,4,4)" />
+                 <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q5')" qId="4" :refill="Refill('4')" @response="arraysMatch($event,['1','3'],4)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[5]}]">
                 <template v-slot:title>
@@ -77,13 +76,13 @@
                 <template v-slot:title>
                   <span class="v-inv">Question </span>07
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q7')" qId="6" :refill="Refill('6')" @response="calculateAnswer($event,2,6)" />
+                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q7')" qId="6" :refill="Refill('6')" @response="arraysMatch($event,['1','2','4'],6)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[7]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>08
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q8')" qId="7" :refill="Refill('7')" @response="calculateAnswer($event,3,7)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q8')" qId="7" :refill="Refill('7')" @response="calculateAnswer($event,2,7)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[8]}]">
                 <template v-slot:title>
@@ -101,61 +100,31 @@
                 <template v-slot:title>
                   <span class="v-inv">Question </span>11
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q11')" qId="10" :refill="Refill('10')" @response="calculateAnswer($event,2,10)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q11')" qId="10" :refill="Refill('10')" @response="calculateAnswer($event,1,10)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[11]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>12
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q12')" qId="11" :refill="Refill('11')" @response="calculateAnswer($event,1,11)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q12')" qId="11" :refill="Refill('11')" @response="calculateAnswer($event,2,11)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[12]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>13
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q13')" qId="12" :refill="Refill('12')" @response="calculateAnswer($event,2,12)" />
+                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q13')" qId="12" :refill="Refill('12')" @response="arraysMatch($event,['2','3','3'],12)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[13]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>14
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q14')" qId="13" :refill="Refill('13')" @response="calculateAnswer($event,3,13)" />
+                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q14')" qId="13" :refill="Refill('13')" @response="arraysMatch($event,['1','2'],13)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[14]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>15
                 </template>
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q15')" qId="14" :refill="Refill('14')" @response="calculateAnswer($event,3,14)" />
-              </b-tab>
-              <b-tab :title-link-class="[{'filled':answerScore[15]}]">
-                <template v-slot:title>
-                  <span class="v-inv">Question </span>16
-                </template>
-                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q16')" qId="15" :refill="Refill('15')" @response="arraysMatch($event,['1','2','4'],15)" />
-              </b-tab>
-              <b-tab :title-link-class="[{'filled':answerScore[16]}]">
-                <template v-slot:title>
-                  <span class="v-inv">Question </span>17
-                </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q17')" qId="16" :refill="Refill('16')" @response="calculateAnswer($event,2,16)" />
-              </b-tab>
-              <b-tab :title-link-class="[{'filled':answerScore[17]}]">
-                <template v-slot:title>
-                  <span class="v-inv">Question </span>18
-                </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q18')" qId="17" :refill="Refill('17')" @response="calculateAnswer($event,4,17)" />
-              </b-tab>
-              <b-tab :title-link-class="[{'filled':answerScore[18]}]">
-                <template v-slot:title>
-                  <span class="v-inv">Question </span>19
-                </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q19')" qId="18" :refill="Refill('18')" @response="calculateAnswer($event,2,18)" />
-              </b-tab>
-              <b-tab :title-link-class="[{'filled':answerScore[19]}]">
-                <template v-slot:title>
-                  <span class="v-inv">Question </span>20
-                </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q20')" qId="19" :refill="Refill('19')" @response="calculateAnswer($event,3,19)" />
               </b-tab>
             </b-tabs>
           </b-card>
@@ -167,7 +136,7 @@
           <div class="text-center">
             <b-button-group class="mt-2" :aria-label="$t('questionNav')">
               <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-              <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
+              <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=14">{{$t('nextPage')}}</b-button>
             </b-button-group>
           </div>
           <transition name="fade">
@@ -182,8 +151,8 @@
     
     <div class="bottomNav generalSection" v-if="chosenScenario == 'justExam'">
       <div class="generalSectionBar"><span>{{$t('justExamShort')}}</span></div>
-      <microlearning path="exam1" time="15" size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" noGrey type="exam" questionNum="20" />
-      <microlearning path="exam2" time="15" youAreHere size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="S-Test.svg" :text="$t('spend')"  class="spend" noGrey type="exam" questionNum="20" />
+      <microlearning path="exam1" time="15" size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" noGrey type="exam" questionNum="15" />
+      <microlearning path="exam2" time="15" youAreHere size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="S-Test.svg" :text="$t('spend')"  class="spend" noGrey type="exam" questionNum="15" />
       <microlearning path="exam3" time="15" size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="R-Test.svg" :text="$t('report')" class="report" noGrey  type="exam" questionNum="10"/>
     </div>
     <div class="bottomNav spendSection" v-else>
@@ -192,7 +161,7 @@
       <microlearning path="procurePart2" imagePath="ExerciseFinancialAuthority.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('ExerciseFinancialAuthority')" type="video" />
       <microlearning path="procurePart3" size="140" time="20" :completion="$store.state.currentPlaying.spendPart3_player" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" type="video" />
       <microlearning path="procureKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('KeyMessages')" type="keyMessages" />
-      <microlearning path="exam2" size="140" time="15" youAreHere imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+      <microlearning path="exam2" size="140" time="15" youAreHere imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" />
     </div>
 
     <!-- Debugging section -->
@@ -236,7 +205,7 @@ export default {
     return {
       debugging: false,
       isNull:false,
-      numQuestions: 20
+      numQuestions: 15
     }
   },
   components: {
@@ -499,12 +468,49 @@ export default {
         }
       },
       "q4": {
-        "text": "Which of these expenses does <span class='bolder' style='text-transform: uppercase; text-decoration: underline;'>not</span> require a responsibility centre manager to exercise delegated expenditure initiation authority?",
+        "text": "A standing offer is a contract that binds a government organization and a supplier for the provision of goods or services.",
         "options": {
-          "1": "Hospitality request",
-          "2": "Conference registration fees",
-          "3": "Small expenses such as a $20 purchase of craft materials",
-          "4": "None of the above "
+          "1": "True",
+          "2": "False"
+        },
+        "feedback": {
+          "1": "",
+          "2": ""
+        }
+      },
+      "q5": {
+        "text": "You are preparing a statement of work. Which of the following should be included in the statement of work to avoid creating an employer-employee relationship?",
+        "options": {
+          "1": "The objectives to be attained",
+          "2": "How the work will be carried out ",
+          "3": "Time frame within which the work should be completed"
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": ""
+        }
+      },
+      "q6": {
+        "text": "Who is responsible for determining which goods, services or construction projects are needed and drafting the requirements?",
+        "options": {
+          "1": "The procurement specialist",
+          "2": "The financial advisor",
+          "3": "The manager "
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": ""
+        }
+      },
+      "q7": {
+        "text": "You are in the process of acquiring all-terrain vehicles for locations in the Nunavut Settlement Area. Which of the following items would you need to consider?",
+        "options": {
+          "1": "Modern treaties and Comprehensive Land Claims Agreements",
+          "2": "Specialized shipping requirements ",
+          "3": "Security clearance level of the supplier",
+          "4": "Directive on Government Contracts, including Real Property Leases, in the Nunavut Settlement Area"
         },
         "feedback": {
           "1": "",
@@ -513,8 +519,184 @@ export default {
           "4": ""
         }
       },
+      "q8": {
+        "text": "Buyandsell.gc.ca/tenders is the name of a government-contractor e-tendering service and website. As a manager, you receive a question from a supplier about a solicitation they saw on Buyandsell.gc.ca/tenders. What should you do?",
+        "options": {
+          "1": "Answer the question in writing and copy your procurement manager ",
+          "2": "Direct them to contact the procurement specialist responsible for the solicitation",
+          "3": "Give them the telephone number of the project officer and tell them to call that person "
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": ""
+        }
+      },
+      "q9": {
+        "text": "Regret letters have been sent to unsuccessful bidders informing them that they were not awarded the contract. If an unsuccessful bidder requests a debriefing, who should be the point of contact for them?",
+        "options": {
+          "1": "The manager",
+          "2": "The procurement specialist",
+          "3": "The Governor in Council",
+          "4": "The Minister of Public Services and Procurement Canada"
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": ""
+        }
+      },
+      "q10": {
+        "text": "To screen out bidders who do not have the minimum necessary qualifications and years of experience for undertaking the work, you decide to include mandatory criteria in your solicitation documents. What are mandatory criteria?",
+        "options": {
+          "1": "A contractor selection method",
+          "2": "A bid scoring grid",
+          "3": "A point rating system",
+          "4": "A bid evaluation method"
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": ""
+        }
+      },
+      "q11": {
+        "text": "Who may assist in the development of the bid evaluation criteria and plan, evaluate the bids, and be called upon to support the debriefing of unsuccessful bidders?",
+        "options": {
+          "1": "The members of the bid evaluation team",
+          "2": "The financial officer signing off on the purchase",
+          "3": "The head of the communications team",
+          "4": "The procurement specialist"
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": ""
+        }
+      },
+      "q12": {
+        "text": "Which of the following options describes the breakdown for the assignment of points and sometimes has a minimum pass mark for each category or an overall pass mark?",
+        "options": {
+          "1": "A bid evaluation method",
+          "2": "A bid scoring grid",
+          "3": "A contractor selection method",
+          "4": "A point rating system"
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": ""
+        }
+      },
+      "q13": {
+        "text": "During a debriefing with an unsuccessful bidder, what information can be provided?",
+        "options": {
+          "1": "The proposal information of the successful bid ",
+          "2": "The score of the unsuccessful bidder’s bid",
+          "3": "The outline of the factors and criteria used in the evaluation "
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": ""
+        }
+      },
+      "q14": {
+        "text": "The contract approval process may contain which of the following steps?",
+        "options": {
+          "1": "Having the contract reviewed by legal services",
+          "2": "Performing a cost-analysis review",
+          "3": "Having the delegated authority approve section 35  "
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": ""
+        }
+      },
+      "q15": {
+        "text": "Good contract monitoring and ___________________ leads to good contract management, which helps avoid additional costs and delays, difficulties for contractors and additional work. ",
+        "options": {
+          "1": "employer-employee relationships ",
+          "2": "record keeping",
+          "3": "deliverables"
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": ""
+        }
+      }
+    }
+  },
+  "fr": {
+    "dismiss": "Faire disparaître",
+    "warnReset":"Ceci effacera vos réponses et les résultats de ce test. Voulez-vous continer?",
+    "Answered": "Répondue",
+    "markTest": "Corriger mon test",
+    "testComplete": "Test complété",
+    "tryAgain": "Essayer de nouveau",
+    "scoreIs": "Votre note finale est de",
+    "unanswered":"Question(s) non-répondue(s)",
+    "Questions": {
+      "q1": {
+        "text": "Which contracting document should clearly describe the work to be carried out, the objectives to be attained, and the time frame?",
+        "options": {
+          "1": "The statement of work ",
+          "2": "The terms and conditions of the contract",
+          "3": "The technical evaluation"
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": ""
+        }
+      },
+      "q2": {
+        "text": "Which of the following situations is an emergency in which someone with delegated contracting authority can enter into non-competitive contracts without first obtaining Treasury Board approval?",
+        "options": {
+          "1": "One that would be injurious to the public interest",
+          "2": "One that would prevent attainment of an urgent operational requirement",
+          "3": "One that would seriously disrupt the development of a highly important architectural project"
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": ""
+        }
+      },
+      "q3": {
+        "text": "According to the Government Contracts Regulations, when could a procurement specialist sign a procurement contract without soliciting bids?",
+        "options": {
+          "1": "When a qualified independent consultant has advised the manager that the preferred contractor’s price is competitive with industry standards ",
+          "2": "When the deputy minister has given written permission to contract without the bidding process",
+          "3": "When the need is one of pressing emergency in which delay would be injurious to the public interest",
+          "4": "When the manager has chosen the contractor before for a similar job, using competitive bidding and the contractor’s price has not changed since that time"
+        },
+        "feedback": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": ""
+        }
+      },
+      "q4": {
+        "text": "A standing offer is a contract that binds a government organization and a supplier for the provision of goods or services.",
+        "options": {
+          "1": "True",
+          "2": "False"
+        },
+        "feedback": {
+          "1": "",
+          "2": ""
+        }
+      },
       "q5": {
-        "text": "Your organization’s spending dollar limit when using an acquisition card is $2,500 per transaction. You have found ergonomic chairs that meet both your and your administrative assistant’s needs. The two chairs together are valued at $4,649 including tax. As a manager, what will you do?",
+        "text": "You are preparing a statement of work. Which of the following should be included in the statement of work to avoid creating an employer-employee relationship?",
         "options": {
           "1": "Go ahead and authorize the commitment for both chairs",
           "2": "Authorize the purchase for both chairs using your admin’s acquisition card",
@@ -674,385 +856,6 @@ export default {
           "2": "",
           "3": "",
           "4": ""
-        }
-      },
-      "q16": {
-        "text": "An analysis of variance can help in what ways?",
-        "options": {
-          "1": "It aids in the early reallocation of resources",
-          "2": "It contributes to reducing the amounts lapsed at year-end",
-          "3": "It stops all deficits from happening",
-          "4": "It identifies mitigation strategies for risks"
-        },
-        "feedback": {
-          "right": "",
-          "wrong": ""
-        }
-      },
-      "q17": {
-        "text": "Your budget contains the following line item:<br> <div class='tableScrollLTM'> <table class='qTable'> <tbody> <tr><th>&nbsp;</th><th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Travel</p> </td> <td> <p style='text-align: right;'>$8,400</p> </td> <td> <p style='text-align: right;'>$0</p> </td> <td> <p style='text-align: right;'>$2,400</p> </td> <td> <p style='text-align: right;'>$8,400</p> </td> </tr> </tbody> </table> </div> <br>You are in the process of approving $1,500 in travel for an employee for a new initiative that was not originally included in the budget. Looking at the provided line item, which amounts would need to be increased to account for the additional $1,500?",
-        "options": {
-          "1": "Year-to-Date Actuals and Annual Forecasted Expenditures",
-          "2": "Commitments and Annual Forecasted Expenditures",
-          "3": "Commitments only",
-          "4": "Budget and Year-to-Date Actuals"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q18": {
-        "text": "Your budget contains the provided line items:<br> <div class='tableScrollLTM'> <table class='qTable'> <tbody> <tr> <th>&nbsp;</th> <th> <p>Budget</p> </th> <th> <p>Commitments</p> </th> <th> <p>Year-to-Date Actuals</p> </th> <th> <p>Annual Forecasted Expenditures</p> </th> </tr> <tr> <td> <p>Salary</p> </td> <td> <p style='text-align: right;'>$60,000</p> </td> <td> <p style='text-align: right;'>$20,000</p> </td> <td> <p style='text-align: right;'>$40,000</p> </td> <td> <p style='text-align: right;'>$60,000</p> </td> </tr> </tbody> </table> </div> <br>You just remembered that an employee has gone on leave without pay for two months. His yearly salary is $60,000. Where would you change the amount to $50,000?",
-        "options": {
-          "1": "Budget",
-          "2": "Commitments",
-          "3": "Year-to-Date Actuals",
-          "4": "Annual Forecasted Expenditures"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q19": {
-        "text": "What must you have set up to be able to pay your consultant in the new fiscal year using the budget from the previous fiscal year?",
-        "options": {
-          "1": "Budget carry–forward",
-          "2": "Payable At Year-End",
-          "3": "Receivable At Year-End",
-          "4": "Post-dated cheque"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q20": {
-        "text": "It’s April. As a responsibility centre manager, you must have set up a Payable At Year-End (PAYE) to charge your previous year’s budget with the costs associated with which of the following transactions?",
-        "options": {
-          "1": "All outstanding commitments currently in the system for the previous fiscal year that just ended March 31, under your cost center.",
-          "2": "The annual forecast expenditures that were not spent in the fiscal year that just ended March 31.",
-          "3": "The estimated costs associated with goods and services that were delivered on or prior to March 31. ",
-          "4": "All costs incurred during the first two weeks of the new fiscal year."
-        },
-        "feedback": {
-          "right": "",
-          "wrong": ""
-        }
-      }
-    }
-  },
-  "fr": {
-    "dismiss": "Faire disparaître",
-    "warnReset":"Ceci effacera vos réponses et les résultats de ce test. Voulez-vous continer?",
-    "Answered": "Répondue",
-    "markTest": "Corriger mon test",
-    "testComplete": "Test complété",
-    "tryAgain": "Essayer de nouveau",
-    "scoreIs": "Votre note finale est de",
-    "unanswered":"Question(s) non-répondue(s)",
-    "Questions": {
-      "q1": {
-        "text": "Vous avez trouvé un système de robot conversationnel qui répond à vos besoins. Une licence annuelle, plus les frais d’installation et de configuration, coûte 5&nbsp;650&nbsp;$, taxes incluses. Quelle est la première étape de l’exercice de votre pouvoir de dépenser?",
-        "options": {
-          "1": "Communiquer avec le fournisseur et commandez le système à l’aide de votre carte d’achat",
-          "2": "Demander à votre équipe d’effectuer une recherche approfondie sur le produit ",
-          "3": "Vous assurer d’avoir suffisamment de fonds dans votre budget pour acheter le système",
-          "4": "Commander le système à l’aide d’une commande d’achat"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q2": {
-        "text": "Vous avez dépensé 1&nbsp;800&nbsp;$ de votre budget de 2&nbsp;000&nbsp;$ pour les fournitures de bureau et vous ne prévoyez pas d’autres achats pour l’année. Un employé veut assister à une formation sur les systèmes de clavardage et les frais d’inscription sont de 150 $. Cependant, vous avez dépensé la totalité de votre budget de formation. Qu’allez-vous faire?",
-        "options": {
-          "1": "Dire à l’employé que le budget de formation a été dépensé ",
-          "2": "Utiliser l’argent initialement alloué pour les fournitures de bureau",
-          "3": "Demander à votre directeur des fonds supplémentaires",
-          "4": "Dire à l’employé que vous réexaminerez sa demande au cours du prochain exercice financier"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q3": {
-        "text": "Lequel des énoncés suivants concernant la délégation des pouvoirs financiers est vrai?",
-        "options": {
-          "1": "Les pouvoirs ne peuvent être délégués qu’aux postes.",
-          "2": "Les pouvoirs ne peuvent être délégués qu’à des personnes.",
-          "3": "Les pouvoirs ne peuvent être délégués que par des personnes qui les exercent.",
-          "4": "Les pouvoirs ne peuvent être délégués qu’à certaines classifications."
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q4": {
-        "text": "Laquelle de ces dépenses n’exige <span class='bolder' style='text-transform:uppercase;text-decoration:underline;'>pas</span> qu’un gestionnaire de centre de responsabilité exerce le pouvoir délégué d’engager des dépenses?",
-        "options": {
-          "1": "Demande d’activité d’accueil",
-          "2": "Frais d’inscription à la conférence",
-          "3": "Petites dépenses telles qu’un achat de 20 $ de matériel d’artisanat",
-          "4": "Aucune de ces réponses"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q5": {
-        "text": "La limite de dépenses de votre organisation lorsqu’elle utilise une carte d’achat est de 2&nbsp;500&nbsp;$ par transaction. Vous avez trouvé des chaises ergonomiques qui répondent à vos besoins et à ceux de votre adjointe administrative. Les deux chaises ensemble sont évaluées à 4&nbsp;649&nbsp;$, taxes incluses. En tant que gestionnaire, que devriez-vous faire?",
-        "options": {
-          "1": "Autoriser l’engagement pour les deux chaises",
-          "2": "Autoriser l’achat des deux chaises à l’aide de la carte d’achat de votre administrateur",
-          "3": "Demander à un autre gestionnaire d’acheter les chaises avec sa carte d’achat",
-          "4": "Autoriser la chaise de votre adjointe et demandez à votre superviseur d’autoriser votre chaise"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q6": {
-        "text": "Ce mécanisme de dépense sert à obtenir des biens ou des services à partir d’une liste de fournisseurs préqualifiés, assortis de conditions préétablies. De quoi s'agit-il?",
-        "options": {
-          "1": "Une carte d’achat",
-          "2": "Un contrat concurrentiel",
-          "3": "Une offre à commandes",
-          "4": "Un arrangement en matière d’approvisionnement"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q7": {
-        "text": "Lequel des engagements suivants est un engagement préalable?",
-        "options": {
-          "1": "Lorsque vous faites un arrangement avec un fournisseur connu",
-          "2": "Lorsque vous réservez des fonds avant que le fournisseur ne soit identifié",
-          "3": "Lorsqu’une transaction a été codée dans le système financier",
-          "4": "Lorsque vous avez un protocole d’entente avec un autre ministère"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q8": {
-        "text": "Lequel des éléments suivants ne fait <span class='bolder' style='text-transform:uppercase;text-decoration:underline;'>pas</span> partie d’un système de codage financier? ",
-        "options": {
-          "1": "La composante budgétaire",
-          "2": "Le gestionnaire de centre de responsabilité",
-          "3": "L'indicateur de rendement",
-          "4": "Les détails de la transaction"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q9": {
-        "text": "En tant que gestionnaire autorisant une opération sur votre budget en vertu de l’article 34 de la Loi sur la gestion des finances publiques, il est essentiel que vous&hellip;",
-        "options": {
-          "1": "&hellip;obteniez l’approbation de la haute direction",
-          "2": "&hellip;restiez dans les limites des pouvoirs qui vous sont délégués",
-          "3": "&hellip;aviez le pouvoir de l’article 32 en vertu de la LGFP",
-          "4": "&hellip;demandiez à la section 33 si vous pouvez signer la section 34"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q10": {
-        "text": "M. Wong travaille comme gestionnaire d’un petit ministère et a reçu une délégation de pouvoirs en vertu des articles 32 et 34. Quel instrument formalise les pouvoirs délégués à M. Wong?",
-        "options": {
-          "1": "La Loi sur la gestion des finances publiques",
-          "2": "Les politiques du Conseil du Trésor",
-          "3": "L'organigramme de délégation de l'organisation",
-          "4": "Sa carte de délégation signée"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q11": {
-        "text": "Votre professionnel administratif a reçu une commande de fournitures de bureau, accompagnée d’une facture. La facture comprend 5 tableaux blancs mais il vous dit qu’aucun n’a été reçu. Que devriez-vous faire?",
-        "options": {
-          "1": "Payer la facture maintenant",
-          "2": "Payer la facture après réception des 5 tableaux blancs",
-          "3": "Payer la facture en sachant que les tableaux blancs sont en rupture de stock",
-          "4": "Payer la facture maintenant après avoir parlé avec le fournisseur"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q12": {
-        "text": "Vous recevez une facture pour l’adhésion professionnelle annuelle d’un employé qui doit être payée en septembre. Que devriez-vous faire?",
-        "options": {
-          "1": "Payer maintenant la facture pour l’année entière",
-          "2": "Payer ce qui est dû d’ici la fin de l’exercice financier ",
-          "3": "Payer ce qui est dû d’ici la fin de l’année civile ",
-          "4": "Leur demander de fractionner la facture entre les années civiles"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q13": {
-        "text": "Qui est responsable de l’exactitude du codage financier?",
-        "options": {
-          "1": "L’adjoint administratif qui enregistre les codes financiers",
-          "2": "Les gestionnaires qui ont la délégation des pouvoirs financiers",
-          "3": "L'agent financier qui effectue l’assurance de la qualité du dossier",
-          "4": "Le bureau du directeur financier "
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q14": {
-        "text": "Combien de temps le gouvernement a-t-il pour payer des biens ou des services?",
-        "options": {
-          "1": "Trente jours après l'acceptation des biens",
-          "2": "Trente jours après la signature de l’article 34",
-          "3": "Trente jours après réception de la facture",
-          "4": "Il doit les payer immédiatement"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q15": {
-        "text": "La date de début de votre nouveau salarié a été repoussée. Il ne travaillera que dix mois de l’exercice financier au lieu de douze. Son salaire est de 60&nbsp;000&nbsp;$. Que devez-vous faire?",
-        "options": {
-          "1": "Augmenter le budget de 10&nbsp;000&nbsp;$.",
-          "2": "Réduire les dépenses réelles de 10&nbsp;000&nbsp;$.",
-          "3": "Réduire de 10&nbsp;000&nbsp;$ les dépenses annuelles prévues.",
-          "4": "Augmenter les engagements de 10&nbsp;000&nbsp;$."
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q16": {
-        "text": "De quelle façons une analyse de la variance peut-elle aider?",
-        "options": {
-          "1": "Elle aide à la réaffectation précoce des ressources",
-          "2": "Elle contribue à réduire les montants périmés à la fin de l’exercice",
-          "3": "Elle empêche tous les déficits de se produire ",
-          "4": "Elle identifie les stratégies d’atténuation des risques"
-        },
-        "feedback": {
-          "right": "",
-          "wrong": ""
-        }
-      },
-      "q17": {
-        "text": "Votre budget contient le poste fourni :<br><div class='tableScrollLTM'><table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>Dépenses réelles depuis le début de l’exercice</p></th><th><p>Dépenses annuelles prévues</p></th></tr><tr><td><p>Voyages</p></td><td><p style='text-align: right;'>8&nbsp;400&nbsp;$</p></td><td><p style='text-align: right;'>0 $</p></td><td><p style='text-align: right;'>2&nbsp;400&nbsp;$</p></td><td><p style='text-align: right;'>8&nbsp;400&nbsp;$</p></td></tr></tbody></table> </div><br>Vous êtes en train d’approuver un voyage de 1&nbsp;500&nbsp;$ pour un employé dans le cadre d’une nouvelle initiative qui n’était pas prévue initialement dans le budget. En examinant le poste budgétaire prévu, quels montants devraient être augmentés pour tenir compte des 1&nbsp;500&nbsp;$  supplémentaires?",
-        "options": {
-          "1": "Dépenses réelles depuis le début de l’exercice et dépenses annuelles prévues",
-          "2": "Engagements et prévisions annuelles des dépenses ",
-          "3": "Engagements seulement",
-          "4": "Budget et dépenses réelles depuis le début de l’exercice"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q18": {
-        "text": "Votre budget contient les postes individuels fournis :<br> <div class='tableScrollLTM'> <table class='qTable'><tbody><tr><th>&nbsp;</th><th><p>Budget</p></th><th><p>Engagements</p></th><th><p>Dépenses réelles depuis le début de l’exercice</p></th><th><p>Dépenses annuelles prévues</p></th></tr><tr><td><p>Salaire</p></td><td><p style='text-align: right;'>60&nbsp;000&nbsp;$</p></td><td><p style='text-align: right;'>20&nbsp;000&nbsp;$</p></td><td><p style='text-align: right;'>40&nbsp;000&nbsp;$</p></td><td><p style='text-align: right;'>60&nbsp;000&nbsp;$</p></td></tr></tbody></table></div> <br>Vous venez de vous rappeler qu’un employé est en congé non payé depuis deux mois. Son salaire annuel est de 60&nbsp;000&nbsp;$. Où changeriez-vous le montant à 50&nbsp;000&nbsp;$?",
-        "options": {
-          "1": "Dans le budget",
-          "2": "Dans les engagements",
-          "3": "Dans les dépenses réelles depuis le début de l’exercice",
-          "4": "Dans les dépenses annuelles prévues"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q19": {
-        "text": "Que devez-vous avoir mis en place pour pouvoir payer votre consultant au cours du nouvel exercice en utilisant le budget de l’exercice précédent?",
-        "options": {
-          "1": "Report de budget",
-          "2": "Créditeur à la fin de l’exercice",
-          "3": "Débiteur à la fin de l’exercice",
-          "4": "Chèque postdaté"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q20": {
-        "text": "Nous sommes au mois d’avril. À titre de gestionnaire de centre de responsabilité, vous devez avoir établi un CAFE (créditeur à la fin de l’exercice) pour imputer à votre budget de l’année précédente les coûts associés à laquelle des transactions suivantes?",
-        "options": {
-          "1": "Tous les engagements en cours actuellement dans le système au cours de l’exercice précédent qui vient de se terminer le 31 mars, sous votre centre de coûts.",
-          "2": "Les dépenses annuelles prévues qui n’ont pas eu lieu au cours de l’exercice financier se terminant le 31 mars.",
-          "3": "Les coûts estimatifs associés aux biens et services qui ont été livrés le 31 mars ou avant.",
-          "4": "Tous les coûts engagés au cours des deux premières semaines du nouvel exercice financier."
-        },
-        "feedback": {
-          "right": "",
-          "wrong": ""
         }
       }
     }

@@ -47,7 +47,7 @@
               <nuxt-link :to="localePath('exam2')" v-html="$t('TestSpend')" />
             </li>
           </menu>
-          <h2 class="colorBar2"><span class="v-inv">{{$t('navigationMenu')}}</span> {{$t('manage')}}</h2>
+          <h2 class="colorBar4"><span class="v-inv">{{$t('navigationMenu')}}</span> {{$t('manage')}}</h2>
           <menu style="list-style: none">
             <li role="menuitem">
               <nuxt-link :to="localePath('managePart1')" v-html="$t('lifeCycle')" />
@@ -81,7 +81,7 @@
           <div class="color2">
             <h2>{{$t('spend')}}</h2>
           </div>
-         <div class="color2">
+         <div class="color4">
             <h2>{{$t('manage')}}</h2>
           </div>
           <div class="color3">
@@ -127,11 +127,11 @@
         if(this.currentState == false){
           this.$nextTick(function() {
             var that = this;
-            var colorBoxes = this.$el.querySelectorAll(".color1, .color2, .color3")
+            var colorBoxes = this.$el.querySelectorAll(".color1, .color2, .color3, .color4")
             for(var k = 0; k < colorBoxes.length; k++){
               colorBoxes[k].style.height = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
             }
-            var hTwos = this.$el.querySelectorAll(".color1 h2, .color2 h2, .color3 h2")
+            var hTwos = this.$el.querySelectorAll(".color1 h2, .color2 h2, .color3 h2, .color4 h2")
             for(var l = 0; l < hTwos.length; l++){
               hTwos[l].style.width = ((window.innerHeight - document.querySelector(".navBar").offsetHeight) / 3) + "px";
             }
@@ -142,7 +142,7 @@
         this.$nextTick(function() { 
           var that = this;
 
-          var colorBoxes2 = document.querySelectorAll(".color1, .color2, .color3")
+          var colorBoxes2 = document.querySelectorAll(".color1, .color2, .color3, .color4")
           for(var m = 0; m < colorBoxes2.length; m++){
             colorBoxes2[m].className = colorBoxes2[m].className.replace(/\bhighlighted\b/g, "");
           }
@@ -155,7 +155,7 @@
               that.$el.querySelector(".color2").classList.add("highlighted");
               break;
             case "manage":
-              that.$el.querySelector(".color2").classList.add("highlighted");
+              that.$el.querySelector(".color4").classList.add("highlighted");
               break;
             case "report":
               that.$el.querySelector(".color3").classList.add("highlighted");
@@ -322,6 +322,7 @@ li{
 }
 .colorBar1{border-bottom:4px solid #b4c6ca;}
 .colorBar2{border-bottom:4px solid #d3cad2;}
+.colorBar4{border-bottom:4px solid #536173;}
 .colorBar3{border-bottom:4px solid #d6c7c3;}
 
 contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.closed h2.colorBar3{
@@ -331,7 +332,7 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
   transform: rotate(90deg);
 }
   
-  .color1, .color2, .color3{
+  .color1, .color2, .color3, .color4{
     width: 100%;
     height: 200px;
     position: relative;
@@ -342,6 +343,9 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
   }
   .color2{
     background-color: #d3cad2;
+  }
+  .color4{
+    background-color: #536173;
   }
   .color3{
     background-color: #d6c7c3;
@@ -358,8 +362,11 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
     background-color: #865F56;
     color: white;
   }
-  
-  .color1 h2, .color2 h2, .color3 h2{
+  .color4.highlighted{
+     background-color: #587C84;
+    color: white;
+  }
+  .color1 h2, .color2 h2, .color3 h2, .color4 h2{
     transform: rotate(-90deg);
     transform-origin: right top;
     font-size: 16px;
@@ -375,7 +382,7 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
   }
   
   @media (max-width: 992px){
-    .color1 h2, .color2 h2, .color3 h2{
+    .color1 h2, .color2 h2, .color3 h2 .color4 h2{
       font-size: 13px;
     }
   }

@@ -78,11 +78,11 @@
       <microlearning path="spendKey" time="5" youAreHere size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('spend')" class="spend" noGrey type="keyMessages" />
       <microlearning path="reportKey" time="5" size="140" :completion="$store.state.currentPlaying.kmReport" imagePath="KeyMessR.svg" :text="$t('report')" class="report" noGrey type="keyMessages" />
     </div>
-    <div class="bottomNav spendSection" v-else>
+    <div class="bottomNav manageSection" v-else>
       <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
       <microlearning path="managePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('lifeCycle')" type="video" />
        <microlearning time="5" youAreHere path="procureKey" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('KeyMessages')" type="keyMessages" />
-      <microlearning path="exam2" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+      <microlearning path="manageExam" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
     </div>
   </div>
 </template>
@@ -131,7 +131,24 @@ export default {
   }
   }</i18n>
 <style type="text/css" scoped>
-
+.spendSectionBar {
+  position: absolute;
+  background-color: #536173;
+  width: 100vw;
+  height: 30px;
+  text-align: left;
+  left:-15px;
+  top:38%;
+}
+.spendSectionBar span {
+  padding:2px 10px 0;
+  color: #4d4d4d;
+  font-weight: bold;
+  background-color: #fff;
+  display: inline-block;
+  height:100%;
+  margin-left:15px;
+}
 p.quote.spend{
   position: relative;
 }

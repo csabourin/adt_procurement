@@ -233,11 +233,11 @@
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
     </div>
-    <div class="bottomNav spendSection">
+    <div class="bottomNav manageSection">
       <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
       <microlearning youAreHere path="managePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('lifeCycle')" type="video" />
       <microlearning path="manageKey"  imagePath="KeyMessS.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('KeyMessages')" type="video" />
-      <microlearning path="exam3" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+      <microlearning path="manageExam" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
     </div>
   </div>
 </template>
@@ -399,7 +399,7 @@ button.accessibilityButton {
 }
 .spendSectionBar {
   position: absolute;
-  background-color: #cac1ca;
+  background-color: #536173;
   width: 100vw;
   height: 30px;
   text-align: left;

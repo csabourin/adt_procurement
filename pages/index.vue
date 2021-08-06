@@ -76,25 +76,25 @@
       <b-col>
         <h2 class="sideTitle planTitle">{{$t('plan')}}</h2>
         <div role="navigation" class="courseSection planSection" :style="{ backgroundImage: `url(${planbgBarUrl})` }" :aria-label="$t('plan') + ' - Navigation'">
-          <microlearning path="analyzegoods" time="20"  imagePath="BuildWP.svg" :text="$t('AnalyzeGoods')" :completion="$store.state.currentPlaying.buildWP_player" type="video" />
-          <microlearning time="20" path="forecastbudget" imagePath="CreateBud.svg" :text="$t('ForecastBudget')" :completion="$store.state.currentPlaying.createBudget_player" type="video" />
-          <microlearning time="20" path="budgetauthorities" imagePath="CreateBud.svg" :text="$t('BudgetAuthorities')" :completion="$store.state.currentPlaying.createBudget_player" type="video" />
+          <microlearning path="analyzegoods" time="15"  imagePath="BuildWP.svg" :text="$t('AnalyzeGoods')" :completion="$store.state.currentPlaying.buildWP_player" type="video" />
+          <microlearning time="30" path="forecastbudget" imagePath="CreateBud.svg" :text="$t('ForecastBudget')" :completion="$store.state.currentPlaying.createBudget_player" type="video" />
+          <microlearning time="20" path="budgetauthorities" imagePath="ExerciseFinancialAuthority.svg" :text="$t('BudgetAuthorities')" :completion="$store.state.currentPlaying.createBudget_player" type="video" />
           <microlearning path="planKey" time="5" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')"  :completion="$store.state.currentPlaying.kmPlan" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-          <microlearning time="15" path="exam1" imagePath="P-Test.svg" :text="$t('TestPlan')" :completion="parseInt(planCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+          <microlearning time="25" path="exam1" imagePath="P-Test.svg" :text="$t('TestPlan')" :completion="parseInt(planCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" />
         </div>
         <hr class="planHr">
         <h2 class="sideTitle spendTitle">{{$t('spend')}}</h2>
         <div role="navigation" class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }" :aria-label="$t('spend') + ' - Navigation'">
-          <microlearning imagePath="InitiateAuthSpending.svg" path="procurePart1" time="20" :text="$t('InitiateAuthorizeSpending')"  :completion="$store.state.currentPlaying.spendPart1_player" type="video" />
-          <microlearning imagePath="ExerciseFinancialAuthority.svg" path="procurePart2" time="20" :text="$t('ExerciseFinancialAuthority')"  :completion="$store.state.currentPlaying.spendPart2_player" type="video" />
-          <microlearning time="20" path="procurePart3" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')"  :completion="$store.state.currentPlaying.spendPart3_player" type="video" />
+          <microlearning imagePath="InitiateAuthSpending.svg" path="procurePart1" time="45" :text="$t('InitiateAuthorizeSpending')"  :completion="$store.state.currentPlaying.spendPart1_player" type="video" />
+          <microlearning imagePath="ExerciseFinancialAuthority.svg" path="procurePart2" time="30" :text="$t('ExerciseFinancialAuthority')"  :completion="$store.state.currentPlaying.spendPart2_player" type="video" />
+          <microlearning time="30" path="procurePart3" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')"  :completion="$store.state.currentPlaying.spendPart3_player" type="video" />
           <microlearning path="procureKey" time="5" imagePath="KeyMessS.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-          <microlearning time="15" path="exam2"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+          <microlearning time="25" path="exam2"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" />
         </div>
 
         <hr class="manageProcurement">
-        <h2 class="sideTitle spendTitle">{{$t('manage')}}</h2>
-        <div role="navigation" class="courseSection spendSection" :style="{ backgroundImage: `url(${spendbgBarUrl})` }" :aria-label="$t('spend') + ' - Navigation'">
+        <h2 class="sideTitle procureTitle">{{$t('manage')}}</h2>
+        <div role="navigation" class="courseSection manageSection" :style="{ backgroundImage: `url(${manageBarUrl})` }" :aria-label="$t('spend') + ' - Navigation'">
           <microlearning imagePath="InitiateAuthSpending.svg" path="managePart1" time="20" :text="$t('lifeCycle')"  :completion="$store.state.currentPlaying.spendPart1_player" type="video" />
           <microlearning path="manageKey" time="5" imagePath="KeyMessS.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
           <microlearning time="15" path="manageExam"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
@@ -104,7 +104,6 @@
         <h2 class="sideTitle reportTitle">{{$t('report')}}</h2>
         <div role="navigation" class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }" :aria-label="$t('report') + ' - Navigation'">
           <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" :completion="$store.state.currentPlaying.reportPart1_player" type="video" />
-          <microlearning imagePath="R-Contribute.svg"  path="reportPart2" time="20" :text="$t('ContributeReporting')" :completion="$store.state.currentPlaying.reportPart2_player" type="video" />
           <microlearning imagePath="KeyMessR.svg" path="reportKey" time="5" :text="$t('KeyMessagesReport')" :completion="$store.state.currentPlaying.kmReport" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
           <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('TestReport')" :completion="parseInt(reportCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="10" />
         </div>
@@ -118,6 +117,7 @@
   
 import planbgBarUrl from "~/components/plan_phase_bar.svg"
 import spendbgBarUrl from "~/components/spend_phase_bar.svg"
+import manageBarUrl from "~/components/manage_bar.svg"
 import reportbgBarUrl from "~/components/report_phase_bar.svg"
 import microlearning from "~/components/microlearning"
 import hamburger from "~/components/hamburger"
@@ -131,6 +131,7 @@ export default {
       planbgBarUrl,
       spendbgBarUrl,
       reportbgBarUrl,
+      manageBarUrl,
     }
   },
   components: {
@@ -251,7 +252,9 @@ export default {
   .spendTitle {
     color: #7d677d;
   }
-
+  .procureTitle{
+    color: #536173;
+  }
   .reportTitle {
     color: #865F56;
   }

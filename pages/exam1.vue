@@ -7,16 +7,14 @@
           <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible fade :dismiss-label="$t('dismiss')">
             <div v-if="$i18n.locale=='en'">
               <h3>Instructions</h3>
-              <p>For some of the questions in this test, you play the role of a manager of a call centre. You will be given scenarios based on this situation.&nbsp;</p>
-              <p>As per Treasury Board requirements, passing the test for this course is mandatory before you can exercise financial delegation.&nbsp;</p>
-              <p>The test is made up of three sections, one for each phase: Plan, Spend, and Report.<!-- planning, spending and reporting --></p>
+              <p>As per Treasury Board requirements, you must pass this test before you can exercise financial delegation. </p>
+              <p>The test is made up of four sections, one for each phase: Plan, Procure, Manage, and Report.</p>
               <p>The passing grade is 80% for each of these sections.</p>
-              <p>Each section should take you around 15 to 20 minutes to complete.&nbsp;</p>
-              <p>You are allowed to consult course materials during the test. You may take it as many times as you need to get a passing grade.</p>
+              <p>Each section should take you around 20 to 25 minutes to complete.</p>
+              <p>You are allowed to consult course materials during the test. You may take the test as many times as you need to get a passing grade.</p>
             </div>
             <div v-if="$i18n.locale=='fr'">
               <h3>Instructions</h3>
-              <p>Pour certaines des questions de ce test, vous occupez le rôle d’un responsable de centre d’appels. Des scénarios basés sur cette situation vous seront proposés</p>
               <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen de ce cours avant de pouvoir exercer la délégation financière.</p> 
               <p>Le test comporte trois parties - une à la fin de chaque phase: planification, dépenses et rapports.&nbsp;</p>
               <p>La note de passage est de 80&nbsp;%, par partie.</p>
@@ -53,19 +51,19 @@
                 <template v-slot:title>
                   <span class="v-inv">Question </span>03
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q3')" qId="2" :refill="Refill('2')" @response="calculateAnswer($event,2,2)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q3')" qId="2" :refill="Refill('2')" @response="calculateAnswer($event,1,2)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[3]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>04
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,2,3)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q4')" qId="3" :refill="Refill('3')" @response="calculateAnswer($event,1,3)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[4]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>05
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q5')" qId="4" :refill="Refill('4')" @response="calculateAnswer($event,3,4)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q5')" qId="4" :refill="Refill('4')" @response="calculateAnswer($event,2,4)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[5]}]">
                 <template v-slot:title>
@@ -77,43 +75,43 @@
                 <template v-slot:title>
                   <span class="v-inv">Question </span>07
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q7')" qId="6" :refill="Refill('6')" @response="calculateAnswer($event,1,6)" />
+                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q7')" qId="6" :refill="Refill('6')" @response="arraysMatch($event,['1','2','3'],6)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[7]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>08
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q8')" qId="7" :refill="Refill('7')" @response="calculateAnswer($event,3,7)" />
+                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q8')" qId="7" :refill="Refill('7')" @response="calculateAnswer($event,['1','3'],7)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[8]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>09
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q9')" qId="8" :refill="Refill('8')" @response="calculateAnswer($event,2,8)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q9')" qId="8" :refill="Refill('8')" @response="calculateAnswer($event,1,8)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[9]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>10
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q10')" qId="9" :refill="Refill('9')" @response="calculateAnswer($event,4,9)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q10')" qId="9" :refill="Refill('9')" @response="calculateAnswer($event,3,9)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[10]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>11
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q11')" qId="10" :refill="Refill('10')" @response="calculateAnswer($event,1,10)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q11')" qId="10" :refill="Refill('10')" @response="calculateAnswer($event,2,10)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[11]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>12
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q12')" qId="11" :refill="Refill('11')" @response="calculateAnswer($event,4,11)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q12')" qId="11" :refill="Refill('11')" @response="calculateAnswer($event,1,11)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[12]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>13
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q13')" qId="12" :refill="Refill('12')" @response="calculateAnswer($event,3,12)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q13')" qId="12" :refill="Refill('12')" @response="calculateAnswer($event,2,12)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[13]}]">
                 <template v-slot:title>
@@ -127,36 +125,6 @@
                 </template>
                 <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q15')" qId="14" :refill="Refill('14')" @response="calculateAnswer($event,2,14)" />
               </b-tab>
-              <b-tab :title-link-class="[{'filled':answerScore[15]}]">
-                <template v-slot:title>
-                  <span class="v-inv">Question </span>16
-                </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q16')" qId="15" :refill="Refill('15')" @response="calculateAnswer($event,4,15)" />
-              </b-tab>
-              <b-tab :title-link-class="[{'filled':answerScore[16]}]">
-                <template v-slot:title>
-                  <span class="v-inv">Question </span>17
-                </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q17')" qId="16" :refill="Refill('16')" @response="calculateAnswer($event,2,16)" />
-              </b-tab>
-              <b-tab :title-link-class="[{'filled':answerScore[17]}]">
-                <template v-slot:title>
-                  <span class="v-inv">Question </span>18
-                </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q18')" qId="17" :refill="Refill('17')" @response="calculateAnswer($event,3,17)" />
-              </b-tab>
-              <b-tab :title-link-class="[{'filled':answerScore[18]}]">
-                <template v-slot:title>
-                  <span class="v-inv">Question </span>19
-                </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q19')" qId="18" :refill="Refill('18')" @response="calculateAnswer($event,1,18)" />
-              </b-tab>
-              <b-tab :title-link-class="[{'filled':answerScore[19]}]">
-                <template v-slot:title>
-                  <span class="v-inv">Question </span>20
-                </template>
-                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q20')" qId="19" :refill="Refill('19')" @response="arraysMatch($event,['1','2','3'],19)" />
-              </b-tab>
             </b-tabs>
           </b-card>
         </b-col>
@@ -167,7 +135,7 @@
           <div class="text-center">
             <b-button-group class="mt-2" :aria-label="$t('questionNav')">
               <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-              <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=19">{{$t('nextPage')}}</b-button>
+              <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=14">{{$t('nextPage')}}</b-button>
             </b-button-group>
           </div>
           <transition name="fade">
@@ -186,13 +154,15 @@
       <microlearning path="exam2" time="15" size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="S-Test.svg" :text="$t('spend')" class="spend" noGrey type="exam" questionNum="20" />
       <microlearning path="exam3" time="15" size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="R-Test.svg" :text="$t('report')" class="report" noGrey  type="exam" questionNum="10"/>
     </div>
-    <div class="bottomNav planSection" v-else>
-      <div class="planSectionBar"><span>{{$t('plan')}}</span></div>
-      <microlearning path="buildwp" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" type="video" />
-      <microlearning size="140" path="createbudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" type="video" />
-      <microlearning path="planKey" time="5"  size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-      <microlearning size="140" path="exam1" time="15" youAreHere :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" type="exam" questionNum="20" />
-    </div>
+   <div class="bottomNav planSection">
+    <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
+    
+    <microlearning path="analyzegoods" youAreHere imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('AnalyzeGoods')" type="video" />
+    <microlearning path="forecastbudget" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('ForecastBudget')" type="video" />
+    <microlearning size="140" path="budgetauthorities" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('BudgetAuthorities')" type="video" />
+    <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+    <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+  </div>
     <!-- Debugging section -->
     <div v-if="debugging">
       <p>Alldone: {{allDone}}</p>
@@ -231,7 +201,7 @@ export default {
     return {
       debugging: false,
       isNull:false,
-      numQuestions: 20
+      numQuestions: 15
     }
   },
   components: {
@@ -440,87 +410,77 @@ export default {
     "unanswered":"Unanswered question(s)",
     "Questions": {
       "q1": {
-        "text": "Which of the following is <span class='bolder' style='text-transform: uppercase; text-decoration: underline;'>not</span> included in a work plan?",
+        "text": "<p>You are the manager of a team of laboratory technicians tasked with a new priority: analyzing 1,000 water samples. You currently do not have the space, equipment or extra employees required to carry out this new activity. You have been given a budget of $250,000 to set up the new laboratory.</p><p> What should you do next? </p>",
         "options": {
-          "1": "Activity",
-          "2": "Deliverable",
-          "3": "Results",
-          "4": "Risk"
+          "1": "Purchase testing equipment from a standing offer on buyandsell.gc.ca ",
+          "2": "Hire a new laboratory technician from an existing staffing pool ",
+          "3": "Identify the resources needed to operate a water analysis laboratory "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q2": {
-        "text": "Where are government priorities first announced?",
+        "text": "<p>To carry out the activity of analyzing water samples, you will need help setting up a laboratory. This should take approximately six weeks. No one within your department knows how to set up a water analysis laboratory.</p> <p>Given the scenario, what is your requirement? </p>",
         "options": {
-          "1": "In the Federal Budget",
-          "2": "In the Speech from the Throne",
-          "3": "In a Mandate Letter",
-          "4": "In a Treasury Board directive"
+          "1": "Ask another manager to help you and your team set up the water analysis laboratory ",
+          "2": "Enter into a contract with a water analysis expert to help you set up the water analysis laboratory ",
+          "3": "Hire a full-time employee to help you set up the water analysis laboratory"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q3": {
-        "text": "Where would you find detailed information on what your organization does and what it plans to do over the next three years?",
+        "text": "Identify the steps needed to determine your requirements.",
         "options": {
-          "1": "Mandate Letter",
-          "2": "Departmental Plan",
-          "3": "Departmental Results Report",
-          "4": "Management Accountability Framework"
+          "1": "Look at the activities and sub-activities in your work plan, identify which resources are missing to carry out your activities and check to see if the goods and services you require are already at your disposal ",
+          "2": "Verify that you have sufficient funds in your budget and identify which resources are missing to carry out your activities ",
+          "3": "Check to see if the goods and services you require are already at your disposal, look at the activities and sub-activities in your work plan and verify that you have sufficient funds in your budget"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q4": {
-        "text": "Your 360-degree scan reiterates for you that your organization has a low risk tolerance. At the same time, the Deputy Minister wants to see more innovation. What is the best course of action to take as these opposing forces impact your work plan? ",
+        "text": "Which of the following authorities can only be carried out by a financial specialist or officer?",
         "options": {
-          "1": "Wait until others have successfully implemented an innovation project ",
-          "2": "Start a small-scale innovation project and learn from it",
-          "3": "Commence a highly visible innovation project with current staffing levels",
-          "4": "Keep things as they are"
+          "1": "Payment authority - Section 33 – Financial Administration Act",
+          "2": "Certification authority - Section 34 – Financial Administration Act  ",
+          "3": "Commitment authority - Section 32 – Financial Administration Act "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q5": {
-        "text": "Which part of the work plan should be updated with &ldquo;Establish collective staffing pools&rdquo; to address call centre risks like high turnover and challenges in staffing?",
+        "text": "<p>You are a manager of a team providing internal information-management services within your organization. You are responsible for managing the budget and have delegated financial authority. Your organization’s spending dollar limit per transaction is $2,500 when using an acquisition card.</p><p>Following an ergonomic assessment conducted on you and an employee, the specialist recommends that you both replace your office chairs. He tells you that he has several models of chairs that would suit your needs that he purchases wholesale and sells privately. </p> <p>What should be your first step in acquiring the ergonomic chairs?</p>",
         "options": {
-          "1": "Likelihood",
-          "2": "Impact",
-          "3": "Mitigation",
-          "4": "Resources"
+          "1": "Conduct an online search for the best ergonomic chair for your needs within the dollar limits of your acquisition card  ",
+          "2": "Check with your accommodations groups to see if they have a chair that would suit your needs ",
+          "3": "Ask the ergonomist about the chair models he has for sale that are within the dollar limits of your acquisition card "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q6": {
-        "text": "Last year, you did not meet your target of answering calls within 30 seconds. Call centres are becoming more automated, an approach favoured by senior management. Which activity is the most appropriate to take as you draft your work plan?",
+        "text": "Three new employees are joining your team. How will you find a workspace for them? ",
         "options": {
-          "1": "Incorporate digital solutions",
-          "2": "Change the target",
-          "3": "Hire more staff",
-          "4": "Conduct team meetings"
+          "1": "Consult the accommodations team ",
+          "2": "Find an empty workstation on the floor and ask them to sit there ",
+          "3": "Consult Shared Services Canada ",
+          "4": "Use one of the boardrooms since it is rarely used"
         },
         "feedback": {
           "1": "",
@@ -530,27 +490,25 @@ export default {
         }
       },
       "q7": {
-        "text": "You’d like to find out if clients are satisfied with the live support provided by the call centre. What deliverable would be added to the activity “Offer live support to clients” to address this?",
+        "text": "You have the budget and financial delegated authority needed to purchase new protective clothing. Before consulting the standing offers, which of the following should you do first? ",
         "options": {
-          "1": "Create a client satisfaction survey",
-          "2": "Resolve a call, text or chat within 2 minutes ",
-          "3": "One call, text or chat out of 10 is escalated for resolution",
-          "4": "Answer calls within 30 seconds"
+          "1": "Check available surplus or inventory ",
+          "2": "Obtain protective clothing from another unit",
+          "3": "Use a similar product such as a protective barrier",
+          "4": "Order protective clothing on sale from Amazon"
         },
         "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
+          "right": "",
+          "wrong": ""
         }
       },
       "q8": {
-        "text": "You have added a new activity to your work plan: &quot;Offering support to clients through automated means.&quot; One sub-activity is “Implementing a chatbot system.” The chatbot would respond to customer requests online without involving a live agent, 24 hours per day. What deliverable would be added to the work plan for this activity?",
+        "text": "How could you estimate the potential costs of your goods, services or construction needs? ",
         "options": {
-          "1": "Change call centre operational hours to 24/7",
-          "2": "Live chat system operational 99% of the time",
-          "3": "30% of online requests resolved by chatbot",
-          "4": "Chatbot interactions will be monitored by a call centre agent "
+          "1": "Perform an internet search",
+          "2": "Hire a consultant to perform the estimate",
+          "3": "Consult an up-to-date purchasing catalogue",
+          "4": "Understate costs to ensure approval"
         },
         "feedback": {
           "1": "",
@@ -560,57 +518,49 @@ export default {
         }
       },
       "q9": {
-        "text": "With any online technology like the chatbot system there is the risk of a privacy breach. To which item could &quot;Secure firewall and encryption&quot; be added in the work plan?",
+        "text": "When acquiring a truck, which of the following costs should you include in your purchase estimates?",
         "options": {
-          "1": "Resource",
-          "2": "Mitigation",
-          "3": "Impact",
-          "4": "Directorate priority"
+          "1": "The purchase cost and all other related costs should be included ",
+          "2": "Only the gas costs and maintenance costs should be included",
+          "3": "The purchasing cost is the sole cost to be included"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q10": {
-        "text": "Which of the following would be a risk for the new activity “Offer support to clients through automated means”? ",
+        "text": "What are a manager’s obligations under section 34 of the Financial Administration Act as they relate to the acquisition of goods and services and the management of associated contracts? ",
         "options": {
-          "1": "Staff turnover ",
-          "2": "Not meeting the performance standard ",
-          "3": "Operational hours not staffed",
-          "4": "System breakdown "
+          "1": "ensure there is an appropriation to which payment may be charged prior to entering into a contract.",
+          "2": "ensure that the charges against appropriations are made on approved requisitions.",
+          "3": "certify, before making payment, that the work has been performed or the goods supplied according to the terms of the contract."
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q11": {
-        "text": "Temporary help to deliver day-to-day activities is paid out of which budget? ",
+        "text": "When costing procurement needs, managers do not need to consider life cycle and disposal costs in the planning stages.",
         "options": {
-          "1": "Operating and Maintenance (O&M)",
-          "2": "Salary",
-          "3": "Grants and Contributions (Gs&Cs)",
-          "4": "Capital"
+          "1": "True",
+          "2": "False"
         },
         "feedback": {
           "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
+          "2": ""
         }
       },
       "q12": {
-        "text": "Which of the following details the total projected expenditures of a federal organization for the upcoming fiscal year?",
+        "text": "The electricity bill for your unit’s storage shed is an example of which kind of cost?",
         "options": {
-          "1": "Departmental Results Report",
-          "2": "Interim Supply",
-          "3": "Supplementary Estimates",
-          "4": "Departmental Plan"
+          "1": "Consumption cost",
+          "2": "Monitoring cost",
+          "3": "Maintenance cost",
+          "4": "Reallocation cost"
         },
         "feedback": {
           "1": "",
@@ -620,69 +570,11 @@ export default {
         }
       },
       "q13": {
-        "text": "Information on the results you achieved on the activities in your work plan would make its way into a year-end report for your organization. What is this report called?",
+        "text": "Which document should you consult to find out which positions in your department have delegated contracting authority for services?",
         "options": {
-          "1": "Full Supply",
-          "2": "Public Accounts",
-          "3": "Departmental Results Report",
-          "4": "Departmental Plan"
-        },
-        "feedback": {
-          "wrong": "",
-          "right": ""
-        }
-      },
-      "q14": {
-        "text": "Your information technology infrastructure costs have increased 10% per year for the past few years. If your current costs are $20,000, what amount will you put in your budget requirements for next year? ",
-        "options": {
-          "1": "$20,000",
-          "2": "$20,200",
-          "3": "$22,000 ",
-          "4": "$22,220"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q15": {
-        "text": "For last year’s office supplies, you set aside $3,000; $2,500 was spent. For the current year, you are forecasting to spend $2,500. What amount will you put in your budget requirements for next year?",
-        "options": {
-          "1": "$2,000",
-          "2": "$2,500",
-          "3": "$3,000 ",
-          "4": "$5,500"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q16": {
-        "text": "You have consistently budgeted $8,000 year after year for call centre agent training. But last year, you spent $5,000 on training. This year, you’re forecasting to spend $10,500. What would you budget for next year?",
-        "options": {
-          "1": "The amount you forecast to spend this year ($10,500)",
-          "2": "The amount you spent last year ($5,000) with a note of your forecast ($10,500)",
-          "3": "The amount you’ve asked for year after year ($8,000), then justify any overspending",
-          "4": "The amount you forecast after having examined why there’s been a fluctuation"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q17": {
-        "text": "You don’t have enough funds in O&M to cover your budget needs, so you decide to transfer $100,000 from Salary to O&M. Which statement is correct?",
-        "options": {
-          "1": "Salary to O&M can be transferred dollar for dollar ($100,000 in salary equals $100,000 in O&M)",
-          "2": "You can complete the transfer but must factor in the Employee Benefit Plan amount",
-          "3": "You cannot transfer from Salary to O&M or vice versa"
+          "1": "Policy on the Planning and Management of Investments",
+          "2": "Organizational delegation instrument",
+          "3": "Directive on Delegation of Spending and Financial Authorities "
         },
         "feedback": {
           "1": "",
@@ -690,47 +582,30 @@ export default {
           "3": ""
         }
       },
-      "q18": {
-        "text": "The current year’s Salary budget is $760,000. You’re creating a new IT Analyst position to be staffed next year. The annual salary will be $60,000. You’ll need time to hire them and you estimate they will start in June and only work 10 months. What will your Salary budget requirement be next year (assuming everything else remains the same)? ",
+      "q14": {
+        "text": "This section of the Financial Administration Act governs the conditions for contract awards in the Government of Canada.",
         "options": {
-          "1": "$760,000",
-          "2": "$800,000",
-          "3": "$810,000",
-          "4": "$820,000"
+          "1": "Section 32",
+          "2": "Section 33",
+          "3": "Section 41"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
-      "q19": {
-        "text": "The chatbot system implementation will incur $15,000 in information technology costs for hosting, which will be provided by another department on a cost-recovery basis. This will be formalized in a memorandum of understanding between organizations. What will the hosting costs be in your budget?",
+      "q15": {
+        "text": "Who has the exclusive authority to acquire goods on behalf of the Government of Canada?",
         "options": {
-          "1": "$15,000 Non-Discretionary ",
-          "2": "$15,000 Discretionary ",
-          "3": "$15,000 Grants and Contributions",
-          "4": "$15,000 Capital"
+          "1": "Minister of Finance",
+          "2": "Minister of Public Services and Procurement Canada",
+          "3": "President of the Treasury Board"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q20": {
-        "text": "You’ve submitted your budget requirements and your director asks you to cut travel costs from $20,000 to $12,000. What action could you take?",
-        "options": {
-          "1": "Cut some discretionary costs",
-          "2": "Explore video conferencing options ",
-          "3": "Change the budget requirement to $12,000",
-          "4": "Ask Finance to find $8,000"
-        },
-        "feedback": {
-          "right": "",
-          "wrong": ""
+          "3": ""
         }
       }
     }
@@ -746,102 +621,77 @@ export default {
     "unanswered":"Question(s) sans réponse",
     "Questions": {
       "q1": {
-        "text": "Lequel des éléments suivants n’est <span class='bolder' style='text-transform:uppercase;text-decoration:underline;'>pas</span> inclus dans un plan de travail?",
+        "text": "<p>You are the manager of a team of laboratory technicians tasked with a new priority: analyzing 1,000 water samples. You currently do not have the space, equipment or extra employees required to carry out this new activity. You have been given a budget of $250,000 to set up the new laboratory.</p><p> What should you do next? </p>",
         "options": {
-          "1": "Activité",
-          "2": "Produit livrable",
-          "3": "Résultats",
-          "4": "Risque"
+          "1": "Purchase testing equipment from a standing offer on buyandsell.gc.ca ",
+          "2": "Hire a new laboratory technician from an existing staffing pool ",
+          "3": "Identify the resources needed to operate a water analysis laboratory "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q2": {
-        "text": "Où les priorités du gouvernement sont-elles d’abord annoncées?",
+        "text": "<p>To carry out the activity of analyzing water samples, you will need help setting up a laboratory. This should take approximately six weeks. No one within your department knows how to set up a water analysis laboratory.</p> <p>Given the scenario, what is your requirement? </p>",
         "options": {
-          "1": "Dans le budget fédéral",
-          "2": "Dans le discours du Trône",
-          "3": "Dans une lettre de mandat",
-          "4": "Dans une directive du Conseil du Trésor"
+          "1": "Ask another manager to help you and your team set up the water analysis laboratory ",
+          "2": "Enter into a contract with a water analysis expert to help you set up the water analysis laboratory ",
+          "3": "Hire a full-time employee to help you set up the water analysis laboratory"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q3": {
-        "text": "Où trouveriez-vous des renseignements détaillés sur ce que votre organisation fait et ce qu’elle prévoit faire au cours des trois prochaines années?",
+        "text": "Identify the steps needed to determine your requirements.",
         "options": {
-          "1": "Lettre de mandat",
-          "2": "Plan ministériel",
-          "3": "Rapport ministériel sur les résultats ",
-          "4": "Cadre de responsabilisation de gestion"
+          "1": "Look at the activities and sub-activities in your work plan, identify which resources are missing to carry out your activities and check to see if the goods and services you require are already at your disposal ",
+          "2": "Verify that you have sufficient funds in your budget and identify which resources are missing to carry out your activities ",
+          "3": "Check to see if the goods and services you require are already at your disposal, look at the activities and sub-activities in your work plan and verify that you have sufficient funds in your budget"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q4": {
-        "text": "Votre analyse à 360 degrés réitère pour vous que votre organisation a une faible tolérance au risque. En même temps, le sous-ministre veut voir plus d’innovation. Quelle est la meilleure ligne de conduite à adopter, alors que ces forces opposées ont une incidence sur votre plan de travail?",
+        "text": "Which of the following authorities can only be carried out by a financial specialist or officer?",
         "options": {
-          "1": "Attendre que d’autres aient mis en œuvre avec succès un projet d’innovation",
-          "2": "Lancer un projet d’innovation à petite échelle et en tirer des leçons",
-          "3": "Lancer un projet d’innovation très visible avec les effectifs actuels.",
-          "4": "Garder les choses telles qu’elles sont"
+          "1": "Payment authority - Section 33 – Financial Administration Act",
+          "2": "Certification authority - Section 34 – Financial Administration Act  ",
+          "3": "Commitment authority - Section 32 – Financial Administration Act "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q5": {
-        "text": "Quelle partie du plan de travail devrait être mise à jour avec l'activité &laquo;Établir des bassins de dotation collective&raquo; pour tenir compte des risques liés aux centres d’appels, comme le roulement élevé du personnel et les défis en dotation?",
+        "text": "<p>You are a manager of a team providing internal information-management services within your organization. You are responsible for managing the budget and have delegated financial authority. Your organization’s spending dollar limit per transaction is $2,500 when using an acquisition card.</p><p>Following an ergonomic assessment conducted on you and an employee, the specialist recommends that you both replace your office chairs. He tells you that he has several models of chairs that would suit your needs that he purchases wholesale and sells privately. </p> <p>What should be your first step in acquiring the ergonomic chairs?</p>",
         "options": {
-          "1": "Probabilité",
-          "2": "Impact",
-          "3": "Atténuation",
-          "4": "Ressources"
+          "1": "Conduct an online search for the best ergonomic chair for your needs within the dollar limits of your acquisition card  ",
+          "2": "Check with your accommodations groups to see if they have a chair that would suit your needs ",
+          "3": "Ask the ergonomist about the chair models he has for sale that are within the dollar limits of your acquisition card "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q6": {
-        "text": "L’an dernier, vous n’avez pas atteint votre objectif de répondre aux appels en moins de 30 secondes. La haute direction privilégie de plus en plus les centres d’appels automatisés. Quelle est l’approche la plus appropriée lorsque vous rédigez votre plan de travail?",
+        "text": "Three new employees are joining your team. How will you find a workspace for them? ",
         "options": {
-          "1": "Incorporer des solutions numériques",
-          "2": "Changer la cible",
-          "3": "Embaucher plus de personnel",
-          "4": "Mener des réunions d’équipe"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },  
-      "q7": {
-        "text": "Vous aimeriez savoir si les clients sont satisfaits de l’assistance en direct fournie par le centre d’appels. Quel produit livrable serait ajouté à l’activité &laquo; Offrir un soutien en direct aux clients &raquo; pour répondre à cette question? ",
-        "options": {
-          "1": "Créer un sondage auprès des clients après le soutien",
-          "2": "Résoudre un appel, un message texte ou un clavardage en moins de 2 minutes",
-          "3": "Un appel, un message texte ou un clavardage sur 10 est souligné pour résolution",
-          "4": "Répondre aux appels en moins de 30 secondes"
+          "1": "Consult the accommodations team ",
+          "2": "Find an empty workstation on the floor and ask them to sit there ",
+          "3": "Consult Shared Services Canada ",
+          "4": "Use one of the boardrooms since it is rarely used"
         },
         "feedback": {
           "1": "",
@@ -850,13 +700,26 @@ export default {
           "4": ""
         }
       },
-      "q8": {
-        "text": "Vous avez ajouté une nouvelle activité à votre plan de travail: &laquo; Offrir un soutien aux clients par des moyens automatisés &raquo;. L’une des sous-activités est la &laquo; Mise en place d’un système de robot conversationnel &raquo;.  Le robot conversationnel répondrait aux demandes des clients en ligne sans faire intervenir un agent en direct, 24 heures sur 24. Quel livrable serait ajouté au plan de travail pour cette activité?",
+      "q7": {
+        "text": "You have the budget and financial delegated authority needed to purchase new protective clothing. Before consulting the standing offers, which of the following should you do first? ",
         "options": {
-          "1": "Modifier les heures d’ouverture du centre d’appel pour qu’il fonctionne 24 heures sur 24, 7 jours sur 7",
-          "2": "Système de robot conversationnel en direct opérationnel 99&nbsp;% du temps",
-          "3": "30&nbsp;% des demandes en ligne seraient résolues par robot conversationnel ",
-          "4": "Les interactions des robots conversationnels seront surveillées par un agent du centre d’appels."
+          "1": "Check available surplus or inventory ",
+          "2": "Obtain protective clothing from another unit",
+          "3": "Use a similar product such as a protective barrier",
+          "4": "Order protective clothing on sale from Amazon"
+        },
+        "feedback": {
+          "right": "",
+          "wrong": ""
+        }
+      },
+      "q8": {
+        "text": "How could you estimate the potential costs of your goods, services or construction needs? ",
+        "options": {
+          "1": "Perform an internet search",
+          "2": "Hire a consultant to perform the estimate",
+          "3": "Consult an up-to-date purchasing catalogue",
+          "4": "Understate costs to ensure approval"
         },
         "feedback": {
           "1": "",
@@ -866,57 +729,49 @@ export default {
         }
       },
       "q9": {
-        "text": "Avec n’importe quelle technologie en ligne, comme le système de robot conversationnel, il y a le risque d’une atteinte à la vie privée.  À quel titre l’activité &laquo; Pare-feu sécurisé et chiffrement &raquo; pourrait-elle être ajoutée au plan de travail?",
+        "text": "When acquiring a truck, which of the following costs should you include in your purchase estimates?",
         "options": {
-          "1": "Ressource",
-          "2": "Atténuation",
-          "3": "Impact",
-          "4": "Priorité de la Direction"
+          "1": "The purchase cost and all other related costs should be included ",
+          "2": "Only the gas costs and maintenance costs should be included",
+          "3": "The purchasing cost is the sole cost to be included"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q10": {
-        "text": "Lequel des éléments suivants constituerait un risque pour la nouvelle activité &laquo;Offrir un soutien aux clients par des moyens automatisés&raquo;?",
+        "text": "What are a manager’s obligations under section 34 of the Financial Administration Act as they relate to the acquisition of goods and services and the management of associated contracts? ",
         "options": {
-          "1": "Roulement de personnel",
-          "2": "Ne répond pas à la norme de rendement",
-          "3": "Heures d’ouverture non dotées en personnel",
-          "4": "Panne du système"
+          "1": "ensure there is an appropriation to which payment may be charged prior to entering into a contract.",
+          "2": "ensure that the charges against appropriations are made on approved requisitions.",
+          "3": "certify, before making payment, that the work has been performed or the goods supplied according to the terms of the contract."
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q11": {
-        "text": "L’aide temporaire pour mener à bien les activités quotidiennes est payée à partir de quel budget?",
+        "text": "When costing procurement needs, managers do not need to consider life cycle and disposal costs in the planning stages.",
         "options": {
-          "1": "Fonctionnement et entretien (F et E)",
-          "2": "Salaire",
-          "3": "Subventions et contributions (S et C)",
-          "4": "Immobilisations"
+          "1": "True",
+          "2": "False"
         },
         "feedback": {
           "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
+          "2": ""
         }
       },
       "q12": {
-        "text": "Lequel des éléments suivants détaille le total des dépenses prévues pour le prochain exercice financier d’une organisation fédérale?",
+        "text": "The electricity bill for your unit’s storage shed is an example of which kind of cost?",
         "options": {
-          "1": "Rapport ministériel sur les résultats",
-          "2": "Approvisionnements provisoires",
-          "3": "Budget supplémentaire des dépenses",
-          "4": "Plan ministériel"
+          "1": "Consumption cost",
+          "2": "Monitoring cost",
+          "3": "Maintenance cost",
+          "4": "Reallocation cost"
         },
         "feedback": {
           "1": "",
@@ -926,72 +781,11 @@ export default {
         }
       },
       "q13": {
-        "text": "Les informations sur les résultats que vous avez obtenus dans le cadre des activités prévues dans votre plan de travail figureront dans un rapport de fin d’année pour votre organisation. Quel est le nom de ce rapport?",
+        "text": "Which document should you consult to find out which positions in your department have delegated contracting authority for services?",
         "options": {
-          "1": "Approvisionnement complet",
-          "2": "Comptes publics",
-          "3": "Rapport ministériel sur les résultats ",
-          "4": "Plan ministériel"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q14": {
-        "text": "Vos coûts d’infrastructure informatique ont augmenté de 10&nbsp;% par an au cours des dernières années. Si vos coûts actuels sont de 20&nbsp;000&nbsp;$, quel montant inscrirez-vous dans votre budget pour l’année prochaine? ",
-        "options": {
-          "1": "20&nbsp;000&nbsp;$",
-          "2": "20&nbsp;200&nbsp;$",
-          "3": "22&nbsp;000&nbsp;$",
-          "4": "22&nbsp;200&nbsp;$"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q15": {
-        "text": "Pour les fournitures de bureau de l’an dernier, vous avez mis de côté 3&nbsp;000&nbsp;$, et 2&nbsp;500&nbsp;$ ont été dépensés. Pour l’année en cours, vous prévoyez dépenser 2&nbsp;500&nbsp;$. Quel montant allez-vous mettre dans votre budget pour l’année prochaine?",
-        "options": {
-          "1": "2&nbsp;000&nbsp;$",
-          "2": "2&nbsp;500&nbsp;$",
-          "3": "3&nbsp;000&nbsp;$",
-          "4": "5&nbsp;500&nbsp;$"
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q16": {
-        "text": "Vous avez prévu un budget de 8&nbsp;000&nbsp;$ année après année pour la formation des agents de centre d’appels. L’année dernière, vous avez dépensé 5&nbsp;000&nbsp;$ en formation. Cette année, vous prévoyez dépenser 10&nbsp;500&nbsp;$. Quel budget prévoyez-vous pour l’année prochaine?",
-        "options": {
-          "1": "Le montant que vous prévoyez dépenser cette année (10&nbsp;500&nbsp;$)",
-          "2": "Le montant que vous avez dépensé l’année dernière (5&nbsp;000&nbsp;$) avec une note de votre prévision (10&nbsp;500&nbsp;$)",
-          "3": "Le même montant que vous avez demandé année après année (8&nbsp;000&nbsp;$) puis vous justifiez tout dépassement",
-          "4": "Le montant que vous prévoyez après avoir examiné les raisons de la fluctuation "
-        },
-        "feedback": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q17": {
-        "text": "Vous n’avez pas assez de fonds en F et E pour couvrir vos besoins budgétaires et vous décidez de transférer 100&nbsp;000&nbsp;$ de salaires à F et E. Quelle déclaration est la bonne?",
-        "options": {
-          "1": "Il est possible de transférer le salaire en F et E, dollar pour dollar (100&nbsp;000&nbsp;$ en salaire équivaut à 100&nbsp;000&nbsp;$ en F et E)",
-          "2": "Vous pouvez effectuer le transfert, mais vous devez tenir compte du montant de Régime d’avantages sociaux des employés",
-          "3": "Vous ne pouvez pas transférer de salaire à F et E ou inversement"
-          
+          "1": "Policy on the Planning and Management of Investments",
+          "2": "Organizational delegation instrument",
+          "3": "Directive on Delegation of Spending and Financial Authorities "
         },
         "feedback": {
           "1": "",
@@ -999,49 +793,33 @@ export default {
           "3": ""
         }
       },
-      "q18": {
-        "text": "Le budget salarial de l’année en cours est de 760&nbsp;000&nbsp;$. Vous créez un nouveau poste d’analyste en TI qui sera doté l’an prochain. Le salaire annuel sera de 60&nbsp;000&nbsp;$. Vous aurez besoin de temps pour combler les postes et vous estimez que les employés commenceront en juin et ne travailleront que 10 mois. Quel sera votre budget salarial pour l’année prochaine (en supposant que tout le reste demeure inchangé)?",
+      "q14": {
+        "text": "This section of the Financial Administration Act governs the conditions for contract awards in the Government of Canada.",
         "options": {
-          "1": "760&nbsp;000&nbsp;$",
-          "2": "800&nbsp;000&nbsp;$",
-          "3": "810&nbsp;000&nbsp;$",
-          "4": "820&nbsp;000&nbsp;$"
+          "1": "Section 32",
+          "2": "Section 33",
+          "3": "Section 41"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
-      "q19": {
-        "text": "La mise en œuvre du système de robot conversationnel entraînera des coûts de 15 000 $ en Technologies de l’informatique pour l’hébergement, qui seront fournis par un autre ministère selon le principe du recouvrement des coûts. Cela sera officialisé dans un protocole d’entente entre les organisations. Quels seront les frais d’hébergement dans votre budget?",
+      "q15": {
+        "text": "Who has the exclusive authority to acquire goods on behalf of the Government of Canada?",
         "options": {
-          "1": "15&nbsp;000&nbsp;$ non discrétionnaire ",
-          "2": "15&nbsp;000&nbsp;$ discrétionnaire ",
-          "3": "15&nbsp;000&nbsp;$ subventions et contributions",
-          "4": "15&nbsp;000&nbsp;$ immobilisations"
+          "1": "Minister of Finance",
+          "2": "Minister of Public Services and Procurement Canada",
+          "3": "President of the Treasury Board"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
-        }
-      },
-      "q20": {
-        "text": "Vous avez soumis vos exigences budgétaires et votre directeur vous demande de réduire le coût de vos déplacements de 20&nbsp;000&nbsp;$ à 12&nbsp;000&nbsp;$. Quelles mesures pourriez-vous prendre? ",
-        "options": {
-          "1": "Réduire certains coûts discrétionnaires ",
-          "2": "Explorer les options de vidéoconférence",
-          "3": "Modifier les exigences budgétaires à 12&nbsp;000&nbsp;$",
-          "4": "Demander au service des finances de trouver 8&nbsp;000&nbsp;$."
-        },
-        "feedback": {
-          "right": "",
-          "wrong": ""
+          "3": ""
         }
       }
+    
     }
   }
 }</i18n>

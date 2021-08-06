@@ -577,6 +577,9 @@ img {
   background-color: #7d677d;
 }
 
+.manageSection .inside {
+  background-color: #536173;
+}
 
 .reportSection .inside {
   background-color: #865F56;
@@ -653,6 +656,29 @@ img {
 }
 
 .spendSectionBar span {
+  padding: 2px 10px 0;
+  color: #4d4d4d;
+  font-weight: bold;
+  background-color: #fff;
+  display: inline-block;
+  height: 100%;
+  margin-left: 15px;
+}
+.manageSection {
+  position: relative;
+}
+
+.manageSectionBar {
+  position: absolute;
+  background-color: #cac1ca;
+  width: 100vw;
+  height: 30px;
+  text-align: left;
+  left: -15px;
+  top: 38%;
+}
+
+.manageSectionBar span {
   padding: 2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;

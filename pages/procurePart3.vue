@@ -108,10 +108,10 @@
       </b-container>
     </section>
     <div>
-      <b-modal no-stacking id="Introduction" @hide="resumePlay()" size="xl" okOnly>
+      <b-modal no-stacking id="introduction" @hide="resumePlay()" size="xl" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('Introduction')}}
+            <img src="~/assets/infoicon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('introduction')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
@@ -177,7 +177,7 @@
       <b-modal id="InRealLife" @hide="resumePlay()" okOnly>
         <template v-slot:modal-header="{ close }">
           <h3 class="h5">
-            <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('IRLtext')}}
+            <img src="~/assets/infoicon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('IRLtext')}}
           </h3>
           <button type="button" aria-label="Close" class="close" @click="close()">×</button>
         </template>
@@ -230,7 +230,7 @@ export default {
   data() {
     return {
       openChart: false,
-      modalArray: ["Introduction", "AdministerContract", "RecordsMaintained", "AcceptDeliverables", "CertificationPaymentAuthorities", "CloseOutContract", "InRealLife", "procurePart3Quiz"]
+      modalArray: ["introduction", "AdministerContract", "RecordsMaintained", "AcceptDeliverables", "CertificationPaymentAuthorities", "CloseOutContract", "InRealLife", "procurePart3Quiz"]
     }
   },
   components: {
@@ -298,7 +298,7 @@ export default {
 </style>
 <i18n>{
   "en":{
-  "Introduction": "References: External Links",
+  "introduction": "References: External Links",
   "part3IntroductionText": "For more information, feel free to consult the following document. This document is also available in the Toolbox.",
   "documentText": "Document",
   "openChartButton": "Open the delegation of spending and financial signing authorities chart",
@@ -317,7 +317,7 @@ export default {
   "spendSectionBar": "PROCURE"
   },
   "fr":{
-  "Introduction": "Référence : Liens externes",
+  "introduction": "Référence : Liens externes",
   "part3IntroductionText": "Pour plus d’informations, n’hésitez pas à consulter le document suivant. Il est également disponible dans la boîte à outils.",
   "documentText": "Document",
   "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",

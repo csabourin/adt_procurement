@@ -97,7 +97,7 @@
         <div role="navigation" class="courseSection manageSection" :style="{ backgroundImage: `url(${manageBarUrl})` }" :aria-label="$t('spend') + ' - Navigation'">
           <microlearning imagePath="InitiateAuthSpending.svg" path="managePart1" time="20" :text="$t('lifeCycle')"  :completion="$store.state.currentPlaying.spendPart1_player" type="video" />
           <microlearning path="manageKey" time="5" imagePath="KeyMessR.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-          <microlearning time="15" path="manageExam"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+          <microlearning time="10" path="manageExam"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" />
         </div>
 
         <hr class="spendHr">
@@ -105,7 +105,7 @@
         <div role="navigation" class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }" :aria-label="$t('report') + ' - Navigation'">
           <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" :completion="$store.state.currentPlaying.reportPart1_player" type="video" />
           <microlearning imagePath="KeyMessR.svg" path="reportKey" time="5" :text="$t('KeyMessagesReport')" :completion="$store.state.currentPlaying.kmReport" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-          <microlearning imagePath="R-Test.svg" path="exam3" time="15" :text="$t('TestReport')" :completion="parseInt(reportCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="10" />
+          <microlearning imagePath="R-Test.svg" path="exam3" time="10" :text="$t('TestReport')" :completion="parseInt(reportCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" />
         </div>
         <hr class="reportHr">
       </b-col>

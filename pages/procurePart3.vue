@@ -320,7 +320,7 @@ export default {
   "Introduction": "Référence : Liens externes",
   "part3IntroductionText": "Pour plus d’informations, n’hésitez pas à consulter le document suivant. Il est également disponible dans la boîte à outils.",
   "documentText": "Document",
-  "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
+  "openChartButton": "Ouvrir le tableau de délégation des pouvoirs de dépenser et de signer des documents financiers",
   "TakeTheQuiz":"Répondez au quiz",
   "RecordsMaintainedTitle":"Activité : Assurer la tenue des dossiers",
   "AdministerContractTitle":"Activité : Administrer le contrat",

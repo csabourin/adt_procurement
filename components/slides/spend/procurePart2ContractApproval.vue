@@ -127,7 +127,8 @@ export default {
   }
   },
   "fr": {
-  "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
+  "introductionText": "Répondez aux questions suivantes : ",
+  "openChartButton": "Ouvrir le tableau de délégation des pouvoirs de dépenser et de signer des documents financiers",
   "q1": {
   "text": "À l’aide du tableau de délégation des pouvoirs de dépenser et de signer des documents financiers fourni, indiquez qui peut approuver la conclusion d’un contrat de service d’aide temporaire de 23 000 $?",
   "options": {
@@ -137,11 +138,8 @@ export default {
   "4": "Administrateur général"
   },
   "feedback": {
-  "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-  "2": "<span class='v-right' /><strong>Correct!</strong>",
-  "3": "<span class='v-right' /><strong>Correct!</strong>",
-  "4": "<span class='v-right' /><strong>Correct!</strong>"
-
+  "right": "<span class='v-right' /><strong>Correct!</strong>",
+  "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
   },
   "conclusion": "Les directeurs généraux, les administrateurs généraux et les sous-ministres adjoints sont ceux qui peuvent approuver la conclusion d’un contrat de service d’aide temporaire de 23 000 $."
   },

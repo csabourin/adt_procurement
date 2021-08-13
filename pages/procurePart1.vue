@@ -156,7 +156,46 @@
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
             <p>{{$t('toolboxTitle')}}</p>
-            <procureLinks />
+            <div v-if="$i18n.locale=='fr'">
+              <div>
+                  <ul class="list-unstyled">
+                    <li><externalLink link="https://achatsetventes.gc.ca/">Achatsetventes.ca</externalLink></li>
+                    <li><externalLink link="https://achatsetventes.gc.ca/applications/Application-sur-les-offres-a-commande-et-arrangements-en-matiere-d-approvisionnement-appli-OCAMA">Application sur les offres à commandes et arrangements en matière d’approvisionnement (Appli OCAMA)</externalLink>
+                    <li><externalLink link="https://www.gcpedia.gc.ca/wiki/Fiches_d%27information_sur_les_approvisionnements_-_DPPA">Fiches d'information sur les approvisionnements – GCpédia</externalLink>
+                    <li><externalLink link="https://achatsetventes.gc.ca/politiques-et-lignes-directrices/guide-des-approvisionnements/section/1/55/10">Instruments préconcurrentiels d'achat</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=28230">Ligne directrice sur les ententes contractuelles</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32593">Politique sur la planification et la gestion des investissements</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14494">Politique sur les marchés</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14494#appC">Politique sur les marchés, Appendice C – Directive sur les marchés</externalLink></li>
+                    <li><externalLink link="https://laws-lois.justice.gc.ca/fra/reglements/DORS-87-402/">Règlement sur les marchés de l’État (DORS/87-402)</externalLink></li>
+                      <ul>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/fra/reglements/DORS-87-402/page-2.html">Règlement sur les marchés de l’État (DORS/87-402) Partie 1</externalLink></li>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/fra/reglements/DORS-87-402/page-2.html#h-894217">Règlement sur les marchés de l’État (DORS/87-402) Partie 2</externalLink></li>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/fra/reglements/DORS-87-402/page-2.html#h-894235">Règlement sur les marchés de l’État (DORS/87-402) Partie 3</externalLink></li>
+                      </ul>
+                  </ul>
+                </div>
+              </div>
+              <div v-if="$i18n.locale=='en'">
+                <div>
+                  <ul class="list-unstyled">
+                    <li><externalLink link="https://buyandsell.gc.ca/">Buyandsell.gc.ca</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=14494">Contracting Policy</externalLink>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=14494#appC">Contracting Policy, Appendix C – Contracts Directive</externalLink>
+                    <li><externalLink link="https://laws-lois.justice.gc.ca/eng/regulations/SOR-87-402/">Government Contracts Regulations (SOR/87-402)</externalLink></li>
+                      <ul>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/eng/regulations/SOR-87-402/page-2.html#h-4">Government Contracts Regulations (SOR/87-402) – Part 1</externalLink></li>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/eng/regulations/SOR-87-402/page-2.html#h-905898">Government Contracts Regulations (SOR/87-402) – Part 2</externalLink></li>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/eng/regulations/SOR-87-402/page-2.html#h-905917">Government Contracts Regulations (SOR/87-402) – Part 3</externalLink></li>
+                      </ul>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28230">Guidelines on Contractual Arrangements</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32593">Policy on the Planning and Management of Investments</externalLink></li>
+                    <li><externalLink link="https://buyandsell.gc.ca/policy-and-guidelines/supply-manual/section/1/55/10">Pre-Competed Procurement Instruments</externalLink></li>
+                    <li><externalLink link="https://www.gcpedia.gc.ca/wiki/Procurement_Information_Nuggets_-_APPD">Procurement Information Nuggets – GCpedia</externalLink></li>
+                    <li><externalLink link="https://buyandsell.gc.ca/applications/standing-offers-and-supply-arrangements-application-SOSA-App">Standing Offers and Supply Arrangements Application (SOSA App)</externalLink></li>
+                  </ul>
+                </div>
+              </div>
             <template v-slot:modal-ok>{{$t('close')}}</template>
         </b-modal>
         <b-modal no-stacking id="defineNeeds" @hide="resumePlay()" size="xl" okOnly>
@@ -290,6 +329,7 @@
 <script type="text/javascript">
 import videoPlayer from '~/components/interface/videoPlayer'
 import microlearning from '~/components/microlearning'
+import externalLink from "~/components/externalLink"
 import procureLinks from '~/components/procure_links'
 import defineNeeds from '~/components/slides/spend/procurePart1DefineNeeds'
 import specialNeeds from '~/components/slides/spend/procurePart1SpecialNeeds'
@@ -306,6 +346,7 @@ export default {
   components: {
     videoPlayer,
     microlearning,
+    externalLink,
     procureLinks,
     defineNeeds,
     describeNeed,
@@ -495,9 +536,9 @@ button.accessibilityButton {
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",
   "specialNeedsTitle":"Activité : Besoins particuliers et autres considérations",
-  "defineNeedsTitle":"Activité : Décrire ce dont on a besoin",
+  "defineNeedsTitle":"Activité : Définir ses besoins",
   "tryItTitle":"Activité : Essayons-le!",
-  "describeNeedTitle":"Activité : Décrire ce dont vous avez besoin",
+  "describeNeedTitle":"Activité : Décrire ce dont on a besoin",
   "transparentFairProcurementTitle": "Références : Liens externes",
   "consultProcurementSpecialistTitle": "Activité : Consulter un spécialiste en approvisionnement",
   "consultProcurementSpecialistText": "Découvrez qui sont vos spécialistes en approvisionnement! Consultez le tableau de délégation des pouvoirs de votre ministère. Prenez connaissance des limites d’approvisionnement.",

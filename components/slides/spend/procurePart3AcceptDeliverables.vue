@@ -53,7 +53,7 @@ export default {
 </script>
 <i18n>{
   "en": {
-    "Introduction": "Answer the following questions:",
+    "Introduction": "Answer the following questions.",
     "q1": {
       "text": "Can you proceed to paying the contract before the payment terms are met?",
       "options": {

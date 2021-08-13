@@ -7,34 +7,37 @@
         <li><a href='https://www.youtube.com/watch?v=iZaUMrn-H6g' target='_blank' alt='The Accessible Canada Act and Government Procurement'>The <i>Accessible Canada Act</i> and Government Procurement</a></li>
         <li><a href='https://www.youtube.com/watch?v=Uyjxws7a1_Q' target='_blank' alt='What does it mean to consider accessibility in government procurement?'>What does it mean to consider accessibility in government procurement?</a></li>
       </ul>
-      <p>Answer the following questions</p>
+      <p><b>Answer the following questions.</b></p>
     </div>
     <div v-if="$i18n.locale=='fr'">
       <ul>
         <li><a href='https://www.youtube.com/watch?v=uSJonxterP0' target='_blank' alt='La Loi canadienne sur l’accessibilité et l’approvisionnement fédéral'>La <i>Loi canadienne sur l’accessibilité</i> et l’approvisionnement fédéral</a></li>
         <li><a href='https://www.youtube.com/watch?v=HG2vDzuuK54' target='_blank' alt='Que signifie tenir compte de l’accessibilité dans les approvisionnements du gouvernement?'>Que signifie tenir compte de l’accessibilité dans les approvisionnements du gouvernement?</a></li>
       </ul>
-      <p>Répondez aux questions suivantes : </p>
+      <p><b>Répondez aux questions suivantes : </b></p>
     </div>
-    <p><strong v-html="$t('pwpTitle')"></strong></p>
        <div>
     <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
     <b-tab title="Question 1">
       <br>
+      <p><b>{{ $t('Scenario') }}</b></p>
       <p>{{ $t('Scenario1') }}</p>
       <radioQuiz :question="$t('q1')" qId="1"/>
     </b-tab>
     <b-tab title="Question 2">
       <br>
+      <p><b>{{ $t('Scenario') }}</b></p>
       <p>{{ $t('Scenario1') }}</p>
       <radioQuiz :question="$t('q2')" qId="2"/>
     </b-tab>
     <b-tab title="Question 3">
       <br>
+      <p><b>{{ $t('Scenario') }}</b></p>
       <p>{{ $t('Scenario2') }}</p>
       <radioQuiz :question="$t('q3')" qId="3"/>
     </b-tab>
     <b-tab title="Question 4">
+      <p><b>{{ $t('Scenario') }}</b></p>
       <p>{{ $t('Scenario2') }}</p>
       <checkboxQuiz :question="$t('q4')" qId="4" :Answer='["1","2","3","4"]'/>
     </b-tab>
@@ -186,6 +189,7 @@
           "pSA3": "<ul><li>Review applicant renewal requests</li><li>Issue renewal license</li></ul>",
           "pD3": "<ul><li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year</li></ul>",
           "pRes3": "<ul><li>1 officer</li><li>1 junior analyst</li></ul>",
+          "Scenario": "Scenario",
           "Scenario1": "Looking at the work plan provided, you realize that you must redesign the outdated inspection process if your team is to continue its sub-activity of conducting inspections. You decide that you need help. The redesign should take 6 months to complete. There are no business process experts within your department.",
           "Scenario2": "Looking at the work plan provided, you must open a temporary licensing office for 2 weeks in a remote location where there are no government buildings.",
           "q1":
@@ -296,6 +300,7 @@
           "pSA3": "<ul><li> Examiner les dossiers de renouvellement des demandeurs</li><li> Délivrer des renouvellements de permis&nbsp;</li></ul>",
           "pD3": "<ul><li> Émettre les renouvellements de permis dans les 30 jours suivant la demande</li><li> Émettre 300  renouvellements de permis par an</li></ul>",
           "pRes3": "<ul><li>1 agent</strong></li><li>1 analyste subalterne</li><ul>",
+          "Scénario": "Scenario",
           "Scenario1": "En étudiant le plan de travail fourni, vous vous rendez compte que vous devez repenser le processus d’inspection devenu obsolète si votre équipe veut continuer sa sous-activité d’inspection. Vous constatez que vous avez besoin d’aide. La refonte devrait prendre six mois. Il n’y a pas de spécialiste des processus opérationnels au sein de votre ministère.",
           "Scenario2": "En étudiant le plan de travail fourni, vous constatez que vous devez ouvrir un bureau de permis temporaire pendant deux semaines dans un endroit éloigné, où il n’y a pas de bâtiment gouvernemental.",
           "q1":

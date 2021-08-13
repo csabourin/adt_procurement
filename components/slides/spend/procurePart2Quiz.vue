@@ -8,14 +8,14 @@
           <b-tabs content v-model="tabIndex">
             <b-tab title="Question 1">
               <br>
-              <p>{{$t('scenario1')}}</p>
+              <p v-html="$t('scenario1')"></p>
               <hr>
               <radioQuiz :question="$t('q1')" qId="1" />
               <radioQuiz :question="$t('q2')" qId="2" />
             </b-tab>
             <b-tab title="Question 2">
               <br>
-              <p>{{$t('scenario2')}}</p>
+              <p v-html="$t('scenario2')"></p>
               <hr>
               <radioQuiz :question="$t('q3')" qId="3" />
               <radioQuiz :question="$t('q4')" qId="4" />
@@ -23,7 +23,7 @@
             </b-tab>
             <b-tab title="Question 3">
               <br>
-              <p>{{$t('scenario3')}}</p>
+              <p v-html="$t('scenario3')"></p>
               <hr>
               <radioQuiz :question="$t('q6')" qId="6" />
               <radioQuiz :question="$t('q7')" qId="7" />
@@ -103,9 +103,9 @@
     "en": {
       "openChartButton": "Open the delegation of spending and financial signing authorities chart",
       "introText": "Answer the following questions.",
-      "scenario1":"You are a manager of a team providing internal information management services within your organization. You are responsible for managing the budget and have delegated financial authority. Your organization’s spending dollar limit per transaction is $2,500 when using an acquisition card.",
-      "scenario2":"You are a manager responsible for providing goods and services during natural disasters. Your department needs to purchase 10,000 sandbags in response to a flooding emergency. You are responsible for managing the budget and have delegated financial and transaction (i.e. contracting) authority.",
-      "scenario3":"You require the services of a consultant to conduct an independent review of the accounts payable processes in the department. You believe that this review could be achieved by one expert consultant. You know a former public servant in receipt of a pension who is qualified and available immediately to perform this task at a daily rate of $1,200. You estimate that given the daily rate and expected duration of the contract, the value of the contract would be just over $50,000.",
+      "scenario1":"<p><b>Scenario</b></p><p>You are a manager of a team providing internal information management services within your organization. You are responsible for managing the budget and have delegated financial authority. Your organization’s spending dollar limit per transaction is $2,500 when using an acquisition card.</p>",
+      "scenario2":"<p><b>Scenario</b></p>You are a manager responsible for providing goods and services during natural disasters. Your department needs to purchase 10,000 sandbags in response to a flooding emergency. You are responsible for managing the budget and have delegated financial and transaction (i.e. contracting) authority.</p>",
+      "scenario3":"<p><b>Scenario</b></p>You require the services of a consultant to conduct an independent review of the accounts payable processes in the department. You believe that this review could be achieved by one expert consultant. You know a former public servant in receipt of a pension who is qualified and available immediately to perform this task at a daily rate of $1,200. You estimate that given the daily rate and expected duration of the contract, the value of the contract would be just over $50,000.</p>",
       "q1": {
         "text": "Following an ergonomic assessment conducted on you and an employee, the specialist recommends that you both replace your desk chairs. He tells you that he has several models of chairs that would suit your needs that he purchases wholesale and sells privately. You check with Accommodations and there are no chairs that suit your needs. What do you do next?",
         "options": {
@@ -210,11 +210,11 @@
       }
     },
     "fr": {
-      "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
+      "openChartButton": "Ouvrir le tableau de délégation des pouvoirs de dépenser et de signer des documents financiers",
       "introText": "Répondez aux questions suivantes :  ",
-      "scenario1":"Vous êtes le gestionnaire d’une équipe fournissant des services de gestion de l’information interne au sein de votre organisation. Vous êtes responsable de la gestion du budget, et les pouvoirs financiers vous ont été délégués. La limite de dépenses par transaction fixée par votre organisation est de 2 500 $ lorsque vous utilisez une carte d’achat.",
-      "scenario2":"Vous êtes un gestionnaire responsable de la fourniture de biens et de services en cas de catastrophe naturelle. Votre ministère doit acheter d’urgence 10 000 sacs de sable pour lutter contre une inondation. Vous êtes responsable de la gestion du budget et vous disposez des pouvoirs financiers et d’exécuter une opération (c.-à-d. l'attribution de contrats).",
-      "scenario3":"Vous avez besoin des services d’un consultant pour effectuer un examen indépendant du processus des comptes fournisseurs au sein du ministère. Vous croyez que cet examen pourrait être réalisé par un expert-conseil. Vous connaissez un ancien fonctionnaire qui touche une pension et qui est qualifié et disponible immédiatement pour effectuer cette tâche à un taux quotidien de 1 200 $. Vous estimez que, compte tenu du taux quotidien et de la durée prévue du contrat, la valeur du contrat serait légèrement supérieure à 50 000 $.",
+      "scenario1":"<p><b>Scénario</b></p><p>Vous êtes le gestionnaire d’une équipe fournissant des services de gestion de l’information interne au sein de votre organisation. Vous êtes responsable de la gestion du budget, et les pouvoirs financiers vous ont été délégués. La limite de dépenses par transaction fixée par votre organisation est de 2 500 $ lorsque vous utilisez une carte d’achat.</p>",
+      "scenario2":"<p><b>Scénario</b></p><p>Vous êtes un gestionnaire responsable de la fourniture de biens et de services en cas de catastrophe naturelle. Votre ministère doit acheter d’urgence 10 000 sacs de sable pour lutter contre une inondation. Vous êtes responsable de la gestion du budget et vous disposez des pouvoirs financiers et d’exécuter une opération (c.-à-d. l'attribution de contrats).</p>",
+      "scenario3":"<p><b>Scénario</b></p><p>Vous avez besoin des services d’un consultant pour effectuer un examen indépendant du processus des comptes fournisseurs au sein du ministère. Vous croyez que cet examen pourrait être réalisé par un expert-conseil. Vous connaissez un ancien fonctionnaire qui touche une pension et qui est qualifié et disponible immédiatement pour effectuer cette tâche à un taux quotidien de 1 200 $. Vous estimez que, compte tenu du taux quotidien et de la durée prévue du contrat, la valeur du contrat serait légèrement supérieure à 50 000 $.</p>",
        "q1": {
         "text": "À la suite d’une évaluation ergonomique réalisée pour vous et un employé, le spécialiste recommande le remplacement de vos deux chaises de bureau. Il vous explique que plusieurs modèles de chaises qu’il achète en gros et vend en privé répondraient à vos besoins. Vous vérifiez auprès des Services d’aménagement, et il n’y a pas de chaises qui correspondent à vos besoins. Que faites-vous?",
         "options": {

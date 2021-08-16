@@ -300,7 +300,7 @@
           "pSA3": "<ul><li> Examiner les dossiers de renouvellement des demandeurs</li><li> Délivrer des renouvellements de permis&nbsp;</li></ul>",
           "pD3": "<ul><li> Émettre les renouvellements de permis dans les 30 jours suivant la demande</li><li> Émettre 300  renouvellements de permis par an</li></ul>",
           "pRes3": "<ul><li>1 agent</strong></li><li>1 analyste subalterne</li><ul>",
-          "Scénario": "Scenario",
+          "Scénario": "Scénario",
           "Scenario1": "En étudiant le plan de travail fourni, vous vous rendez compte que vous devez repenser le processus d’inspection devenu obsolète si votre équipe veut continuer sa sous-activité d’inspection. Vous constatez que vous avez besoin d’aide. La refonte devrait prendre six mois. Il n’y a pas de spécialiste des processus opérationnels au sein de votre ministère.",
           "Scenario2": "En étudiant le plan de travail fourni, vous constatez que vous devez ouvrir un bureau de permis temporaire pendant deux semaines dans un endroit éloigné, où il n’y a pas de bâtiment gouvernemental.",
           "q1":

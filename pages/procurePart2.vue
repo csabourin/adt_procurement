@@ -283,6 +283,7 @@
 <script type="text/javascript">
   import videoPlayer from '~/components/interface/videoPlayer'
   import microlearning from '~/components/microlearning'
+  import externalLink from "~/components/externalLink"
   import procureLinks from '~/components/procure_links'
   import SolicitationDocs from '~/components/slides/spend/procurePart2SolicitationDocs'
   import EvaluateNegotiate from '~/components/slides/spend/procurePart2EvaluateNegotiate'
@@ -298,6 +299,7 @@ export default {
   components: {
     videoPlayer,
     microlearning,
+    externalLink,
     procureLinks,
     EvaluateNegotiate,
     SolicitationDocs,

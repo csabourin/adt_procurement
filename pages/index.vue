@@ -95,9 +95,9 @@
         <hr class="manageProcurement">
         <h2 class="sideTitle procureTitle">{{$t('manage')}}</h2>
         <div role="navigation" class="courseSection manageSection" :style="{ backgroundImage: `url(${manageBarUrl})` }" :aria-label="$t('spend') + ' - Navigation'">
-          <microlearning imagePath="InitiateAuthSpending.svg" path="managePart1" time="20" :text="$t('lifeCycle')"  :completion="$store.state.currentPlaying.spendPart1_player" type="video" />
-          <microlearning path="manageKey" time="5" imagePath="KeyMessR.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-          <microlearning time="10" path="manageExam"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" />
+          <microlearning imagePath="manage1.svg" path="managePart1" time="20" :text="$t('lifeCycle')"  :completion="$store.state.currentPlaying.spendPart1_player" type="video" />
+          <microlearning path="manageKey" time="5" imagePath="manage2.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+          <microlearning time="10" path="manageExam"  imagePath="managetest.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" />
         </div>
 
         <hr class="spendHr">

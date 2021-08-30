@@ -1,4 +1,5 @@
 export default {
+  rootDir : './',
 // mode: 'spa',
   /*
    ** Headers of the page

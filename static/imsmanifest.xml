@@ -10,10 +10,10 @@
 
       <organization identifier="ORGE441F">
 
-         <title>Power Builders</title>
+         <title>Authority Delegation Training</title>
 
          <item identifier="E441F_I01" identifierref="RE441F_S01"  isvisible="true">
-            <title>Commodity</title>
+            <title>Procurement</title>
             <metadata>
                <schema>ADL SCORM</schema>
                <schemaversion>1.2</schemaversion>
@@ -27,12 +27,12 @@
    </organizations>
    <resources>
 
-      <resource identifier="RE441F_S01" type="webcontent" adlcp:scormtype="sco" href="en/">
+      <resource identifier="RE441F_S01" type="webcontent" adlcp:scormtype="sco" href="index.html">
          <metadata>
             <schema>ADL SCORM</schema>
             <schemaversion>1.2</schemaversion>
          </metadata>
-         <file href="en/" />
+         <file href="index.html" />
       </resource>
    </resources>
 </manifest>

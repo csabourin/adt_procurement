@@ -20,7 +20,10 @@ export default {
   },
   router: {
 <<<<<<< HEAD
+<<<<<<< HEAD
     //mode:"hash",
+=======
+>>>>>>> parent of f184248 (Updated to support Brightspace & SCORM)
 =======
 >>>>>>> parent of f184248 (Updated to support Brightspace & SCORM)
     // PREPROD/Learning Services/GT test/ADT-testing-mimetypes → base: '/ProdContent/cninv000000000016765/'
@@ -31,7 +34,11 @@ export default {
     // base: '/ProdContent/cninv000000000017454/'
     // base: '/ProdContent/cninv000000000018107/'
 <<<<<<< HEAD
+<<<<<<< HEAD
     // base: './'
+=======
+    // base: '/adt_finance-R1/'
+>>>>>>> parent of f184248 (Updated to support Brightspace & SCORM)
 =======
     // base: '/adt_finance-R1/'
 >>>>>>> parent of f184248 (Updated to support Brightspace & SCORM)

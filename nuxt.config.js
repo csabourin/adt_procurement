@@ -19,10 +19,7 @@ export default {
     ]
   },
   router: {
-<<<<<<< HEAD
     //mode:"hash",
-=======
->>>>>>> parent of f184248 (Updated to support Brightspace & SCORM)
     // PREPROD/Learning Services/GT test/ADT-testing-mimetypes → base: '/ProdContent/cninv000000000016765/'
     // PROD/Learning Services/GT test/tdumas/ADT-testing-mimetypes → base: '/ProdContent/cninv000000000017653/'
     // PROD/Learning Services/GT test/ADT_finance/ADT_test → base: '/ProdContent/cninv000000000018107/'
@@ -30,11 +27,7 @@ export default {
     // base: '/ProdContent/cninv000000000016763/'
     // base: '/ProdContent/cninv000000000017454/'
     // base: '/ProdContent/cninv000000000018107/'
-<<<<<<< HEAD
     // base: './'
-=======
-    // base: '/adt_finance-R1/'
->>>>>>> parent of f184248 (Updated to support Brightspace & SCORM)
   },
   /*
    ** Customize the progress-bar color

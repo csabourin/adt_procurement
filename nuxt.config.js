@@ -1,6 +1,6 @@
 export default {
-  rootDir : './',
-// mode: 'spa',
+  // rootDir : './',
+  ssr: false,
   /*
    ** Headers of the page
    */
@@ -110,37 +110,41 @@ export default {
     silentTranslationWarn: true,
     silentFallbackWarn: true
   },
-  /*
+   /*
    ** Build configuration
    */
-  build: {
+   build: {
     loaders: {
+      esModule: false,
       rules: [{
-        test: /\.(ico)(\?.*)?$/,
-        loader: 'url-loader',
-        options: {
-          name: '[path][name].[ext]'
-      }
-
-    }]},
+      test: /\.(vtt)$/i,
+      loader:  'file-loader',
+      options:{esModule: false}
+      },
+      
+  ]},
     /*
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-    //    if(!ctx.isDev) {
-    //   config.output.publicPath = '_nuxt/'
-    // }
+        if(!ctx.isDev) {
+       config.output.publicPath = '_nuxt/'
+     }
       config.module.rules.push({
+        test: /\.(vtt)$/i,
+        loader:  'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+          esModule: false
+        }
+      },
+      {
         test: /\.(pdf|docx|xlsx)(\?.*)?$/,
         loader: 'file-loader',
         options: {
-          name: '[path][name].[ext]'
+          name: '[path][name].[ext]',
+          esModule: false
         }
-      },{
-        test: /\.(vtt)$/i,
-        use: [{
-          loader: 'file-loader'
-        }]
       })
     }
   }

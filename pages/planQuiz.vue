@@ -3,7 +3,7 @@
     <div>
       <b-card>
         <b-tabs v-model="tabIndex">
-          <b-tab title="Question 1"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["2","3"]' /></b-tab>
+          <b-tab title="Question 1"><hr style="border:white;"><p>{{$t('introText')}}</p><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["2","3"]' /></b-tab>
           <b-tab title="Question 2">
             <p v-html="$t('q1.text')" />
             <span>
@@ -136,6 +136,7 @@ export default {
 </script>
 <i18n>{
   "en": {
+    "introText":"Select the best choice to fill in the blank.",
     "qDisabled": "Choose",
     "pwpGovtPri": "<strong>Government priorities</strong>",
     "pwpDeptPri": "<strong>Departmental priorities</strong>",
@@ -351,6 +352,7 @@ export default {
     }
   },
   "fr": {
+    "introText":"Select the best choice to fill in the blank.",
     "qDisabled": "Choisissez",
     "pwpGovtPri": "<strong>Priorités du gouvernement</strong>",
     "pwpDeptPri": "<strong>Priorités ministérielles</strong>",

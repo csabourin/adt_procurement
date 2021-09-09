@@ -98,8 +98,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Delivery costs are the costs necessary to transport goods from their place of production to their place of consumption.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Delivery costs are the costs necessary to transport goods from their place of production to their place of consumption."
+        "right": "Delivery costs are the costs necessary to transport goods from their place of production to their place of consumption.",
+        "wrong": " Delivery costs are the costs necessary to transport goods from their place of production to their place of consumption."
       }
     },
     "q2": {
@@ -120,8 +120,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Incentive costs are the costs linked to a measure, often economic, that encourages a person or an organization to act in a particular way, such as finishing a project before schedule.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Incentive costs are the costs linked to a measure, often economic, that encourages a person or an organization to act in a particular way, such as finishing a project before schedule."
+        "right": "Incentive costs are the costs linked to a measure, often economic, that encourages a person or an organization to act in a particular way, such as finishing a project before schedule.",
+        "wrong": " Incentive costs are the costs linked to a measure, often economic, that encourages a person or an organization to act in a particular way, such as finishing a project before schedule."
       }
     },
     "q3": {
@@ -142,8 +142,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Energy costs are the costs associated with the production, distribution and use of power sources such as electricity or natural gas.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Energy costs are the costs associated with the production, distribution and use of power sources such as electricity or natural gas."
+        "right": "Energy costs are the costs associated with the production, distribution and use of power sources such as electricity or natural gas.",
+        "wrong": " Energy costs are the costs associated with the production, distribution and use of power sources such as electricity or natural gas."
       }
     },
     "q4": {
@@ -164,8 +164,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Installation costs are the costs associated with setting up something, such as a complex piece of equipment.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Installation costs are the costs associated with setting up something, such as a complex piece of equipment."
+        "right": "Installation costs are the costs associated with setting up something, such as a complex piece of equipment.",
+        "wrong": " Installation costs are the costs associated with setting up something, such as a complex piece of equipment."
       }
     },
     "q5": {
@@ -186,8 +186,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Operating costs are the costs associated with using, maintaining and repairing a product throughout its useful life, less its estimated residual value at the time of disposal.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Operating costs are the costs associated with using, maintaining and repairing a product throughout its useful life, less its estimated residual value at the time of disposal."
+        "right": "Operating costs are the costs associated with using, maintaining and repairing a product throughout its useful life, less its estimated residual value at the time of disposal.",
+        "wrong": " Operating costs are the costs associated with using, maintaining and repairing a product throughout its useful life, less its estimated residual value at the time of disposal."
       }
     },
     "q6": {
@@ -208,8 +208,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Disposal costs are the costs associated with getting rid of something, such as a broken and unrepairable chair that will end up as solid waste.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Disposal costs are the costs associated with getting rid of something, such as a broken and unrepairable chair that will end up as solid waste. "
+        "right": "Disposal costs are the costs associated with getting rid of something, such as a broken and unrepairable chair that will end up as solid waste.",
+        "wrong": " Disposal costs are the costs associated with getting rid of something, such as a broken and unrepairable chair that will end up as solid waste. "
       }
     },
     "q7": {
@@ -230,8 +230,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Transitional costs are the costs associated with a period of change, such as a switch between a new and an old supplier, where ones ramps up while the other ramps down.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Transitional costs are the costs associated with a period of change, such as a switch between a new and an old supplier, where ones ramps up while the other ramps down."
+        "right": "Transitional costs are the costs associated with a period of change, such as a switch between a new and an old supplier, where ones ramps up while the other ramps down.",
+        "wrong": " Transitional costs are the costs associated with a period of change, such as a switch between a new and an old supplier, where ones ramps up while the other ramps down."
       }
     },
     "q8": {
@@ -252,8 +252,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Reallocation costs are the costs associated with moving something to a new area or location, such as when one group transfers an asset to another group.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Reallocation costs are the costs associated with moving something to a new area or location, such as when one group transfers an asset to another group."
+        "right": "Reallocation costs are the costs associated with moving something to a new area or location, such as when one group transfers an asset to another group.",
+        "wrong": " Reallocation costs are the costs associated with moving something to a new area or location, such as when one group transfers an asset to another group."
       }
     },
     "q9": {
@@ -274,8 +274,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Consumption costs are the costs associated with the amount of goods and services used, such as the cost of energy consumed by households.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Consumption costs are the costs associated with the amount of goods and services used, such as the cost of energy consumed by households."
+        "right": "Consumption costs are the costs associated with the amount of goods and services used, such as the cost of energy consumed by households.",
+        "wrong": " Consumption costs are the costs associated with the amount of goods and services used, such as the cost of energy consumed by households."
       }
     },
     "q10": {
@@ -296,8 +296,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Monitoring costs are the costs associated with the regular surveillance or the progress accomplished over time of an activity, such as checking the progress of a construction project.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Consumption costs are the costs associated with the regular surveillance or the progress accomplished over time of an activity, such as checking the progress of a construction project."
+        "right": "Monitoring costs are the costs associated with the regular surveillance or the progress accomplished over time of an activity, such as checking the progress of a construction project.",
+        "wrong": " Consumption costs are the costs associated with the regular surveillance or the progress accomplished over time of an activity, such as checking the progress of a construction project."
       }
     },
     "q11": {
@@ -318,8 +318,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Maintenance costs are the costs associated with keeping a resource in good condition, such as a road, a building, a vehicle, or a machine, by regularly checking it and repairing it when needed.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Maintenance costs are the costs associated with keeping a resource in good condition, such as a road, a building, a vehicle, or a machine, by regularly checking it and repairing it when needed."
+        "right": "Maintenance costs are the costs associated with keeping a resource in good condition, such as a road, a building, a vehicle, or a machine, by regularly checking it and repairing it when needed.",
+        "wrong": " Maintenance costs are the costs associated with keeping a resource in good condition, such as a road, a building, a vehicle, or a machine, by regularly checking it and repairing it when needed."
       }
     },
     "q12": {
@@ -340,8 +340,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Repair costs are the costs associated with restoring an asset to a previous operating condition.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Repair costs are the costs associated with restoring an asset to a previous operating condition."
+        "right": "Repair costs are the costs associated with restoring an asset to a previous operating condition.",
+        "wrong": " Repair costs are the costs associated with restoring an asset to a previous operating condition."
       }
     },
     "q13": {
@@ -362,8 +362,8 @@ export default {
         "13": "transitional costs"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Safeguarding costs are the costs associated with protecting something from harm or damage with an appropriate measure.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Safeguarding costs are the costs associated with protecting something from harm or damage with an appropriate measure."
+        "right": "Safeguarding costs are the costs associated with protecting something from harm or damage with an appropriate measure.",
+        "wrong": " Safeguarding costs are the costs associated with protecting something from harm or damage with an appropriate measure."
       }
     }
   },
@@ -387,8 +387,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les coûts de livraison sont les coûts nécessaires pour transporter les marchandises de leur lieu de production à leur lieu de consommation.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les coûts de livraison sont les coûts nécessaires pour transporter les marchandises de leur lieu de production à leur lieu de consommation."
+        "right": "Les coûts de livraison sont les coûts nécessaires pour transporter les marchandises de leur lieu de production à leur lieu de consommation.",
+        "wrong": " Les coûts de livraison sont les coûts nécessaires pour transporter les marchandises de leur lieu de production à leur lieu de consommation."
       }
     },
     "q2": {
@@ -409,8 +409,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les coûts des mesures d’encouragement sont des coûts liés à une mesure, souvent économique, qui encourage ou décourage une personne ou une organisation à agir dans une direction particulière, telle qu’une prime pour avoir terminé un projet avant la date prévue ou une pénalité pour un projet en retard.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les coûts des mesures d’encouragement sont des coûts liés à une mesure, souvent économique, qui encourage ou décourage une personne ou une organisation à agir dans une direction particulière, telle qu’une prime pour avoir terminé un projet avant la date prévue ou une pénalité pour un projet en retard."
+        "right": "Les coûts des mesures d’encouragement sont des coûts liés à une mesure, souvent économique, qui encourage ou décourage une personne ou une organisation à agir dans une direction particulière, telle qu’une prime pour avoir terminé un projet avant la date prévue ou une pénalité pour un projet en retard.",
+        "wrong": " Les coûts des mesures d’encouragement sont des coûts liés à une mesure, souvent économique, qui encourage ou décourage une personne ou une organisation à agir dans une direction particulière, telle qu’une prime pour avoir terminé un projet avant la date prévue ou une pénalité pour un projet en retard."
       }
     },
     "q3": {
@@ -431,8 +431,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les coûts énergétiques sont des coûts liés à la production, à la distribution et à l’utilisation de sources d’énergie telles que l’électricité ou le gaz naturel.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les coûts énergétiques sont des coûts liés à la production, à la distribution et à l’utilisation de sources d’énergie telles que l’électricité ou le gaz naturel."
+        "right": "Les coûts énergétiques sont des coûts liés à la production, à la distribution et à l’utilisation de sources d’énergie telles que l’électricité ou le gaz naturel.",
+        "wrong": " Les coûts énergétiques sont des coûts liés à la production, à la distribution et à l’utilisation de sources d’énergie telles que l’électricité ou le gaz naturel."
       }
     },
     "q4": {
@@ -453,8 +453,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les frais d’installation sont coûts liés à la mise en place de quelque chose, comme une pièce d’équipement complexe.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les frais d’installation sont coûts liés à la mise en place de quelque chose, comme une pièce d’équipement complexe."
+        "right": "Les frais d’installation sont des coûts liés à la mise en place de quelque chose, comme une pièce d’équipement complexe.",
+        "wrong": "Les frais d’installation sont des coûts liés à la mise en place de quelque chose, comme une pièce d’équipement complexe."
       }
     },
     "q5": {
@@ -475,8 +475,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les coût d’exploitation sont coûts liés à l’utilisation, à l’entretien et à la réparation d’un produit tout au long de sa vie utile, déduction faite de sa valeur résiduelle estimée au moment de son aliénation.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les coût d’exploitation sont coûts liés à l’utilisation, à l’entretien et à la réparation d’un produit tout au long de sa vie utile, déduction faite de sa valeur résiduelle estimée au moment de son aliénation."
+        "right": "Les coûts d’exploitation sont des coûts liés à l’utilisation, à l’entretien et à la réparation d’un produit tout au long de sa vie utile, déduction faite de sa valeur résiduelle estimée au moment de son aliénation.",
+        "wrong": "Les coûts d’exploitation sont des coûts liés à l’utilisation, à l’entretien et à la réparation d’un produit tout au long de sa vie utile, déduction faite de sa valeur résiduelle estimée au moment de son aliénation."
       }
     },
     "q6": {
@@ -497,8 +497,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les coût d’aliénation sont coûts liés à la mise au rebus d’un article quelconque, comme une chaise cassée et irréparable qui finira comme déchet solide.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les coût d’aliénation sont coûts liés à la mise au rebus d’un article quelconque, comme une chaise cassée et irréparable qui finira comme déchet solide."
+        "right": "Les coûts d’aliénation sont des coûts liés à la mise au rebus d’un article quelconque, comme une chaise cassée et irréparable qui finira comme déchet solide.",
+        "wrong": " Les coûts d’aliénation sont des coûts liés à la mise au rebus d’un article quelconque, comme une chaise cassée et irréparable qui finira comme déchet solide."
       }
     },
     "q7": {
@@ -519,8 +519,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les frais de transition sont coûts liés à une période de changement, comme le passage d’un nouveau fournisseur à un ancien, où l’un débute ses opérations tandis que l’autre termine ses opérations.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les frais de transition sont coûts liés à une période de changement, comme le passage d’un nouveau fournisseur à un ancien, où l’un débute ses opérations tandis que l’autre termine ses opérations."
+        "right": "Les frais de transition sont des coûts liés à une période de changement, comme le passage d’un nouveau fournisseur à un ancien, où l’un débute ses opérations tandis que l’autre termine ses opérations.",
+        "wrong": " Les frais de transition sont des coûts liés à une période de changement, comme le passage d’un nouveau fournisseur à un ancien, où l’un débute ses opérations tandis que l’autre termine ses opérations."
       }
     },
     "q8": {
@@ -541,8 +541,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les frais de répartition sont des coûts liés au déplacement d’un bien vers un nouvel endroit ou un nouveau lieu, par exemple lorsqu’un groupe transfère un actif à un autre groupe.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les frais de répartition sont des coûts liés au déplacement d’un bien vers un nouvel endroit ou un nouveau lieu, par exemple lorsqu’un groupe transfère un actif à un autre groupe."
+        "right": "Les frais de répartition sont des coûts liés au déplacement d’un bien vers un nouvel endroit ou un nouveau lieu, par exemple lorsqu’un groupe transfère un actif à un autre groupe.",
+        "wrong": " Les frais de répartition sont des coûts liés au déplacement d’un bien vers un nouvel endroit ou un nouveau lieu, par exemple lorsqu’un groupe transfère un actif à un autre groupe."
       }
     },
     "q9": {
@@ -563,8 +563,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les coûts de consommation sont des coûts associés à la quantité de biens et de services utilisés, tels que le coût de l’énergie consommée par les ménages.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les coûts de consommation sont des coûts associés à la quantité de biens et de services utilisés, tels que le coût de l’énergie consommée par les ménages."
+        "right": "Les coûts de consommation sont des coûts associés à la quantité de biens et de services utilisés, tels que le coût de l’énergie consommée par les ménages.",
+        "wrong": " Les coûts de consommation sont des coûts associés à la quantité de biens et de services utilisés, tels que le coût de l’énergie consommée par les ménages."
       }
     },
     "q10": {
@@ -585,8 +585,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les coûts de contrôle sont des coûts liés à la surveillance régulière ou aux progrès accomplis au fil du temps d’une activité telle que la vérification de l’avancement d’un projet de construction.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les coûts de contrôle sont des coûts liés à la surveillance régulière ou aux progrès accomplis au fil du temps d’une activité telle que la vérification de l’avancement d’un projet de construction."
+        "right": "Les coûts de contrôle sont des coûts liés à la surveillance régulière ou aux progrès accomplis au fil du temps d’une activité telle que la vérification de l’avancement d’un projet de construction.",
+        "wrong": " Les coûts de contrôle sont des coûts liés à la surveillance régulière ou aux progrès accomplis au fil du temps d’une activité telle que la vérification de l’avancement d’un projet de construction."
       }
     },
     "q11": {
@@ -607,8 +607,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les frais d’entretien sont des coûts liés au maintien en bon état d’une ressource, telle qu’une route, un bâtiment, un véhicule ou une machine, en la contrôlant régulièrement et en la réparant si nécessaire.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les frais d’entretien sont des coûts liés au maintien en bon état d’une ressource, telle qu’une route, un bâtiment, un véhicule ou une machine, en la contrôlant régulièrement et en la réparant si nécessaire."
+        "right": "Les frais d’entretien sont des coûts liés au maintien en bon état d’une ressource, telle qu’une route, un bâtiment, un véhicule ou une machine, en la contrôlant régulièrement et en la réparant si nécessaire.",
+        "wrong": " Les frais d’entretien sont des coûts liés au maintien en bon état d’une ressource, telle qu’une route, un bâtiment, un véhicule ou une machine, en la contrôlant régulièrement et en la réparant si nécessaire."
       }
     },
     "q12": {
@@ -629,8 +629,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Les coûts de réparation sont des coûts liés à la remise en état d’un bien dans un état de fonctionnement antérieur.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les coûts de réparation sont des coûts liés à la remise en état d’un bien dans un état de fonctionnement antérieur."
+        "right": "Les coûts de réparation sont des coûts liés à la remise en état d’un bien dans un état de fonctionnement antérieur.",
+        "wrong": " Les coûts de réparation sont des coûts liés à la remise en état d’un bien dans un état de fonctionnement antérieur."
       }
     },
     "q13": {
@@ -651,8 +651,8 @@ export default {
         "13": "frais de transition"
       },
       "feedback": {
-       "right": "<span class='v-right' /> <strong>Correct!</strong> Les coûts de sauvegarde sont des coûts associés à la protection d’un bien contre les préjudices ou les dommages par une mesure appropriée.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les coûts de sauvegarde sont des coûts associés à la protection d’un bien contre les préjudices ou les dommages par une mesure appropriée."
+       "right": "Les coûts de sauvegarde sont des coûts associés à la protection d’un bien contre les préjudices ou les dommages par une mesure appropriée.",
+        "wrong": " Les coûts de sauvegarde sont des coûts associés à la protection d’un bien contre les préjudices ou les dommages par une mesure appropriée."
       }
     }
   }

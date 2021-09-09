@@ -6,7 +6,7 @@
     <section>
       <b-row>
         <b-col>
-          <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_5vmdf8c6/flavorId/0_d0abo662/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_imr7h4hm/flavorId/0_5t09682o/name/a.mp4" chapters chapterFile="BudgetChapters.vtt" ccFile="forecastBudgetCC.vtt" posterFile="createBudget_poster.png" :restartAt="thatPoint" toResume="setCreateBudget" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
+          <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_5vmdf8c6/flavorId/0_d0abo662/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_imr7h4hm/flavorId/0_5t09682o/name/a.mp4" chapters chapterFile="BudgetChapters.vtt" ccFile="forecastBudgetCC.vtt" posterFile="forecastBudget.png" :restartAt="thatPoint" toResume="setforecast" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
         </b-col>
       </b-row>
       <b-container>
@@ -215,11 +215,11 @@
     </div>
      <div class="bottomNav planSection">
     <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
-    <microlearning path="analyzegoods" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('AnalyzeGoods')" type="video" />
-    <microlearning path="forecastbudget" youAreHere imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('ForecastBudget')" type="video" />
-    <microlearning size="140" path="budgetauthorities" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('BudgetAuthorities')" type="video" />
+    <microlearning path="analyzegoods" imagePath="BuildWP.svg" size="140" time="15" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('AnalyzeGoods')" type="video" />
+    <microlearning path="forecastbudget" youAreHere imagePath="CreateBud.svg" size="140" time="30" :completion="$store.state.currentPlaying.forecast_player" :text="$t('ForecastBudget')" type="video" />
+    <microlearning size="140" path="budgetauthorities" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="ExerciseFinancialAuthority.svg" :text="$t('BudgetAuthorities')" type="video" />
     <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-    <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+    <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" />
   </div>
   </div>
 </template>
@@ -253,12 +253,12 @@ export default {
       this.$refs.vp.resumePlay()
     },
     updatePercent(e){
-      this.$store.commit('currentPlaying/setCreateBudget_player',e)
+      this.$store.commit('currentPlaying/setforecast_player',e)
     }
   },
   computed:{
     thatPoint(){
-      return this.$store.state.currentPlaying.createBudget
+      return this.$store.state.currentPlaying.forecast
     },
     chosenScenario: {
       set(scenario) {
@@ -294,6 +294,7 @@ export default {
 </style>
 <i18n>{
   "en":{
+  "activityLinks":"References: External Links ",
   "TakeTheQuiz":"Take the Quiz",
   "adjustwptitle":"Activity: Adjust the Work plan",
   "conductRiskTitle":"Activity: Multiple Choice ",
@@ -309,6 +310,7 @@ export default {
   "planSectionBar": "PLAN"
   },
   "fr":{
+  "activityLinks":"Référence : Liens externes ",
   "TakeTheQuiz":"Répondez au questionnaire",
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",

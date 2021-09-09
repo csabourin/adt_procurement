@@ -128,19 +128,15 @@
         </b-col>
       </b-row>
     </b-container>
-    <div class="bottomNav generalSection" v-if="chosenScenario == 'refresh'">
-      <div class="generalSectionBar"><span>{{$t('refreshShort')}}</span></div>
-      <microlearning path="planKey" time="5" youAreHere size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('plan')" class="plan" noGrey type="keyMessages" />
-      <microlearning path="spendKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('spend')" class="spend" noGrey type="keyMessages" />
-      <microlearning path="reportKey" time="5" size="140" :completion="$store.state.currentPlaying.kmReport" imagePath="KeyMessR.svg" :text="$t('report')" class="report" noGrey type="keyMessages" />
-    </div>
-    <div class="bottomNav planSection" v-else>
-      <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
-      <microlearning path="buildwp" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('BuildWorkPlan')" type="video" />
-      <microlearning size="140" path="createbudget" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('CreateBudget')" type="video" />
-      <microlearning path="planKey" time="5" youAreHere size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessages')" type="keyMessages" />
-      <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
-    </div>
+    <div class="bottomNav planSection">
+    <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
+    
+    <microlearning path="analyzegoods" imagePath="BuildWP.svg" size="140" time="15" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('AnalyzeGoods')" type="video" />
+    <microlearning path="forecastbudget" imagePath="CreateBud.svg" size="140" time="30" :completion="$store.state.currentPlaying.forecast_player" :text="$t('ForecastBudget')" type="video" />
+    <microlearning size="140" path="budgetauthorities" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="ExerciseFinancialAuthority.svg" :text="$t('BudgetAuthorities')" type="video" />
+    <microlearning path="planKey" youAreHere time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
+    <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" />
+  </div>
   </div>
 </template>
 <script type="text/javascript">
@@ -160,13 +156,7 @@ export default {
     externalLink,
     keyMessagesFiles
   },
-  computed: {
-    pageComplete() {
-      return this.$store.state.currentPlaying.kmPlan
-    },
-    planCompleted() {
-      return this.$store.getters['plan/getScore']
-    },
+  computed:{
     chosenScenario: {
       set(scenario) {
         this.$store.commit('currentPlaying/setChosenScenario', scenario);

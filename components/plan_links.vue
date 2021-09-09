@@ -4,6 +4,7 @@
       <div>
         <h4>Planification</h4>
         <ul>
+          <li><externalLink link="https://adtfinance.netlify.app/fr">La saine gestion des fonds publics</externalLink></li>
           <li><externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/system-gestion-depenses/cycle-rapports.html">Le cycle des rapports sur les dépenses gouvernementales</externalLink></li>
           <li><externalLink link="https://laws-lois.justice.gc.ca/fra/lois/f-11/">Loi sur la gestion des finances publiques</externalLink></li>
           <li><externalLink link="https://www.canada.ca/fr/gouvernement/systeme/priorites.html">Priorités du gouvernement</externalLink>
@@ -30,6 +31,7 @@
     <div v-if="$i18n.locale=='en'">
       <h4>Plan</h4>
       <ul class="list-unstyled">
+        <li><externalLink link="https://adtfinance.netlify.app/en">Responsible Use of Public Funds</externalLink></li>
         <li><externalLink link="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/expenditure-management-system/reporting-cycle.html">The Reporting Cycle for Government Expenditures</externalLink></li>
         <li><externalLink link="http://laws-lois.justice.gc.ca/eng/acts/f-11/">Financial Administration Act</externalLink></li>
         <li><externalLink link="https://www.canada.ca/en/government/system/priorities.html">Government Priorities</externalLink>

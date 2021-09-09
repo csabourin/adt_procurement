@@ -7,6 +7,7 @@ export const state = () => ({
   kmSpend: parseInt(window.localStorage.getItem("kmSpend"),10) || 0,
   kmReport: parseInt(window.localStorage.getItem("kmReport"),10) || 0,
   buildWP: parseInt(window.localStorage.getItem("buildWP"),10) || 0,
+  forecast: parseInt(window.localStorage.getItem("forecast"),10) || 0,
   createBudget: parseInt(window.localStorage.getItem("createBudget"),10) || 0,
   spendPart1: parseInt(window.localStorage.getItem("spendPart1"),10) || 0,
   spendPart2: parseInt(window.localStorage.getItem("spendPart2"),10) || 0,
@@ -15,6 +16,7 @@ export const state = () => ({
   reportPart2: parseInt(window.localStorage.getItem("reportPart2"),10) || 0,
   buildWP_player: parseInt(window.localStorage.getItem("buildWP_player"),10) || 0,
   createBudget_player: parseInt(window.localStorage.getItem("createBudget_player"),10) || 0,
+  forecast_player: parseInt(window.localStorage.getItem("forecast_player"),10) || 0,
   spendPart1_player: parseInt(window.localStorage.getItem("spendPart1_player"),10) || 0,
   spendPart2_player: parseInt(window.localStorage.getItem("spendPart2_player"),10) || 0,
   spendPart3_player: parseInt(window.localStorage.getItem("spendPart3_player"),10) || 0,
@@ -54,6 +56,10 @@ export const mutations = {
     window.localStorage.setItem("buildWP", playing)
     state.buildWP = playing
   },
+  setforecast(state, playing) {
+    window.localStorage.setItem("forecast", playing)
+    state.forecast = playing
+  },
   setCreateBudget(state, playing) {
     window.localStorage.setItem("createBudget", playing)
     state.createBudget = playing
@@ -81,6 +87,10 @@ export const mutations = {
   setBuildWP_player(state, playing) {
     window.localStorage.setItem("buildWP_player", playing)
     state.buildWP_player = playing
+  },
+  setforecast_player(state, playing) {
+    window.localStorage.setItem("forecast_player", playing)
+    state.forecast_player = playing
   },
   setCreateBudget_player(state, playing) {
     window.localStorage.setItem("createBudget_player", playing)

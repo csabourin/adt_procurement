@@ -10,7 +10,7 @@
           <fillTheBlanks :blanks="1" :sentence="$t('q2.sentence')" :termList="$t('q2.choices')" :answer="['3']" :feedback="$t('q2.feedback')" qid="q2" /><hr>
           <fillTheBlanks :blanks="1" :sentence="$t('q3.sentence')" :termList="$t('q3.choices')" :answer="['1']" :feedback="$t('q3.feedback')" qid="q3" /><hr>
           <fillTheBlanks :blanks="1" :sentence="$t('q4.sentence')" :termList="$t('q4.choices')" :answer="['6']" :feedback="$t('q4.feedback')" qid="q4" /><hr>
-          <fillTheBlanks :blanks="2" :sentence="$t('q5.sentence')" :termList="$t('q5.choices')" :answer="['5']" :feedback="$t('q5.feedback')" qid="q5" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q5.sentence')" :termList="$t('q5.choices')" :answer="['5']" :feedback="$t('q5.feedback')" qid="q5" /><hr>
           <fillTheBlanks :blanks="1" :sentence="$t('q6.sentence')" :termList="$t('q6.choices')" :answer="['2']" :feedback="$t('q6.feedback')" qid="q6" /><hr>
         </b-tab>
       </b-tabs>
@@ -48,7 +48,7 @@ export default {
 <i18n>
   {
   "en": {
-    "instructions": "Identify potential existing sources for the following list of goods or services.",
+    "instructions": "<p><b>Identify potential existing sources for the following list of goods or services.</b></p><p>Select the best choice to fill in the blanks. </p>",
     "q1": {
       "sentence": "All your pens have run dry. A trip to one of your unit’s {0} is a good place to look for replacements.  ",
       "choices": {
@@ -60,8 +60,8 @@ export default {
         "6": "workstation supply closets"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q2": {
@@ -75,8 +75,8 @@ export default {
         "6": "workstation supply closets"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q3": {
@@ -90,8 +90,8 @@ export default {
         "6": "workstation supply closets"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q4": {
@@ -105,8 +105,8 @@ export default {
         "6": "workstation supply closets"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q5": {
@@ -120,12 +120,12 @@ export default {
         "6": "workstation supply closets"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q6": {
-      "sentence": "You need a flip chart stand for a few days. The easiest way to get one is to see if you can borrow one from the {0} .",
+      "sentence": "You need a flip chart stand for a few days. The easiest way to get one is to see if you can borrow one from the {0}.",
       "choices": {
         "1": "Accommodations Services ",
         "2": "boardrooms ",
@@ -135,15 +135,15 @@ export default {
         "6": "workstation supply closets"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     }
   },
   "fr": {
-    "instructions": "Identifiez les sources potentielles existantes pour la liste de biens ou de services suivante.",
+    "instructions": "<p><b>Identifiez les sources potentielles existantes pour la liste de biens ou de services suivante.</b></p><p>Sélectionnez le meilleur choix pour remplir les blancs.</p>",
     "q1": {
-      "sentence": "Tous vos stylos n’ont plus d’encre. Un passage à l’une des {0} de votre unité est un bon endroit pour trouver des remplaçants.",
+      "sentence": "Tous vos stylos n’ont plus d’encre. Un passage à l’un(e) des {0} de votre unité est un bon endroit pour trouver des remplaçants.",
       "choices": {
         "1": "Services d’aménagement",
         "2": "salles de conférence",
@@ -153,8 +153,8 @@ export default {
         "6": "placards de rangement d’équipements de postes de travail"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q2": {
@@ -168,8 +168,8 @@ export default {
         "6": "placards de rangement d’équipements de postes de travail"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q3": {
@@ -183,8 +183,8 @@ export default {
         "6": "placards de rangement d’équipements de postes de travail"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q4": {
@@ -198,8 +198,8 @@ export default {
         "6": "placards de rangement d’équipements de postes de travail"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q5": {
@@ -213,8 +213,8 @@ export default {
         "6": "placards de rangement d’équipements de postes de travail"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q6": {
@@ -228,8 +228,8 @@ export default {
         "6": "placards de rangement d’équipements de postes de travail"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     }
   }

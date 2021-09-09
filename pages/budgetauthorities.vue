@@ -5,7 +5,7 @@
   <section>
     <b-row>
       <b-col>
-        <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_xdt2qiui/flavorId/0_2fyvamsz/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_w69dhzvn/flavorId/0_3eh75pfc/name/a.mp4" chapters chapterFile="PlanPt3.vtt" posterFile="buildworkplan.png" ccFile="budgetAuthoritiesCC.vtt" :restartAt="thatPoint" toResume="setBuildWP" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
+        <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_xdt2qiui/flavorId/0_2fyvamsz/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_w69dhzvn/flavorId/0_3eh75pfc/name/a.mp4" chapters chapterFile="PlanPt3.vtt" posterFile="BudgetAuthorities.png" ccFile="budgetAuthoritiesCC.vtt" :restartAt="thatPoint" toResume="setcreateBudget" :modalArray="modalArray" @timeupdate="updatePercent($event)" />
       </b-col>
     </b-row>
     <b-container>
@@ -202,11 +202,11 @@
  <div class="bottomNav planSection">
     <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>
     
-    <microlearning path="analyzegoods" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('AnalyzeGoods')" type="video" />
-    <microlearning path="forecastbudget" imagePath="BuildWP.svg" size="140" time="20" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('ForecastBudget')" type="video" />
-    <microlearning size="140" path="budgetauthorities" youAreHere time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="CreateBud.svg" :text="$t('BudgetAuthorities')" type="video" />
+    <microlearning path="analyzegoods" imagePath="BuildWP.svg" size="140" time="15" :completion="$store.state.currentPlaying.buildWP_player" :text="$t('AnalyzeGoods')" type="video" />
+    <microlearning path="forecastbudget" imagePath="CreateBud.svg" size="140" time="30" :completion="$store.state.currentPlaying.forecast_player" :text="$t('ForecastBudget')" type="video" />
+    <microlearning size="140" path="budgetauthorities" youAreHere time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="ExerciseFinancialAuthority.svg" :text="$t('BudgetAuthorities')" type="video" />
     <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-    <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+    <microlearning size="140" path="exam1" time="15" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" />
   </div>
 </div>
 </template>
@@ -238,12 +238,12 @@ export default {
       this.$refs.vp.resumePlay()
     },
     updatePercent(e){
-      this.$store.commit('currentPlaying/setBuildWP_player',e)
+      this.$store.commit('currentPlaying/setBudget_player',e)
     }
   },
   computed:{
     thatPoint(){
-      return this.$store.state.currentPlaying.buildWP
+      return this.$store.state.currentPlaying.createBudget
     },
     chosenScenario: {
       set(scenario) {

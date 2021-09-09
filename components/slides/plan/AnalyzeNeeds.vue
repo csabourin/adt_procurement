@@ -91,14 +91,16 @@
         </b-col>
         
       </b-row>
+      <hr style="border:white;">
     </b-container>
       <b-tabs v-model="tabIndex">
         <b-tab title="Question 1">
+          <hr style="border:white;"><p><b>{{$t('introText')}}</b></p><p>{{$t('introText2')}}</p>
           <fillTheBlanks :blanks="1" :sentence="$t('q1.sentence')" :termList="$t('q1.choices')" :answer="['4']" :feedback="$t('q1.feedback')" qid="q1" /><hr>
           <fillTheBlanks :blanks="1" :sentence="$t('q2.sentence')" :termList="$t('q2.choices')" :answer="['3']" :feedback="$t('q2.feedback')" qid="q2" /><hr>
           <fillTheBlanks :blanks="1" :sentence="$t('q3.sentence')" :termList="$t('q3.choices')" :answer="['2']" :feedback="$t('q3.feedback')" qid="q3" /><hr>
           <fillTheBlanks :blanks="1" :sentence="$t('q4.sentence')" :termList="$t('q4.choices')" :answer="['7']" :feedback="$t('q4.feedback')" qid="q4" /><hr>
-          <fillTheBlanks :blanks="2" :sentence="$t('q5.sentence')" :termList="$t('q5.choices')" :answer="['5']" :feedback="$t('q5.feedback')" qid="q5" /><hr>
+          <fillTheBlanks :blanks="1" :sentence="$t('q5.sentence')" :termList="$t('q5.choices')" :answer="['5']" :feedback="$t('q5.feedback')" qid="q5" /><hr>
           <fillTheBlanks :blanks="1" :sentence="$t('q6.sentence')" :termList="$t('q6.choices')" :answer="['6']" :feedback="$t('q6.feedback')" qid="q6" /><hr>
           <fillTheBlanks :blanks="1" :sentence="$t('q7.sentence')" :termList="$t('q7.choices')" :answer="['1']" :feedback="$t('q7.feedback')" qid="q7" />
         </b-tab>
@@ -175,19 +177,20 @@ export default {
     "high": "<ul><li>High</li></ul>",
     "pM1": "<ul><li>Establish succession plan</li><li>Establish collective staffing pools</li><li>Recognize excellent work</li><li>Celebrate successes</li><li>Involve employees in decision-making</li><li>Implement flexible work hours</li><li>Ensure virtual and in-person workplaces are accessible</li></ul>",
     "pM1_1": "Implement flexible work hours",
-    "pR1_1": "<ul><li>1 administrative assistant</li></ul>",
+    "pR1_1": "<ul><li>1 administrative assistant</li><li>1 manager</li></ul>",
     "pR1_2": "<ul><li>Manager</li></ul>",
-    "pA2": "Issue commercial fishing licenses",
-    "pSA2": "<ul><li>Review applicant requests</li><li>Check reliability</li><li>Ensure licences are accessible </li><li>Issue licenses</li><li>Conduct inspections</li></ul>",
-    "pD2_1w": "<ul><li>Issue license within 30 days of request</li><li>Issue 500 licenses per year</li></ul>",
+    "pA2": "Issue commercial fishing licences",
+    "pSA2": "<ul><li>Review applicant requests</li><li>Check reliability</li><li>Ensure licences are accessible </li><li>Issue licences</li><li>Conduct inspections</li></ul>",
+    "pD2_1w": "<ul><li>Issue licence within 30 days of request</li><li>Issue 500 licences per year</li></ul>",
     "pR2": "<ul><li>Overfishing</li></ul>",
     "pM2": "<ul><li>Protect habitat</li><li>Place catching limits</li><li>Implement fishing seasons</li></ul>",
     "pRes2": "<ul><li>1 officer</li><li>2 analysts</li><li>1 junior officer</li></ul>",
-    "pA3": "Renew commercial fishing licenses",
-    "pSA3": "<ul><li>Review applicant renewal requests</li><li>Issue renewal license</li></ul>",
-    "pD3": "<ul><li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year </li></ul>",
+    "pA3": "Renew commercial fishing licences",
+    "pSA3": "<ul><li>Review applicant renewal requests</li><li>Issue renewal licence</li></ul>",
+    "pD3": "<ul><li>Issue licence renewal within 30 days of request</li><li>Issue 300 licence renewals per year </li></ul>",
     "pRes3": "<ul><li>1 officer</li><li>1 junior analyst</li><ul>",
-    "instructions": "Looking at the work plan provided, identify which goods and services you will need to procure by answering the following questions. ",
+    "introText": "For the following sub-activities, identify the goods or services needed.",
+    "introText2": "Select the best choice to fill in the blanks.",
     "q1": {
       "sentence": "To properly set up your new office space, you will {0} to design an accessible floor plan.",
       "choices": {
@@ -197,11 +200,11 @@ export default {
         "4": "contract an interior design consultant ",
         "5": "pay for a training course",
         "6": "purchase ergonomic equipment ",
-        "7": "renew a specialized software subscription} "
+        "7": "renew a specialized software subscription"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q2": {
@@ -213,11 +216,11 @@ export default {
         "4": "contract an interior design consultant ",
         "5": "pay for a training course",
         "6": "purchase ergonomic equipment ",
-        "7": "renew a specialized software subscription} "
+        "7": "renew a specialized software subscription"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q3": {
@@ -229,15 +232,15 @@ export default {
         "4": "contract an interior design consultant ",
         "5": "pay for a training course",
         "6": "purchase ergonomic equipment ",
-        "7": "renew a specialized software subscription} "
+        "7": "renew a specialized software subscription"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q4": {
-      "sentence": "To “Review applicant requests” on the computer, you must {0} each year.",
+      "sentence": "To “Review applicant renewal requests” on the computer, you must {0} each year.",
       "choices": {
         "1": "buy office furniture  ",
         "2": "buy pens and paper",
@@ -245,11 +248,11 @@ export default {
         "4": "contract an interior design consultant ",
         "5": "pay for a training course",
         "6": "purchase ergonomic equipment ",
-        "7": "renew a specialized software subscription} "
+        "7": "renew a specialized software subscription"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q5": {
@@ -261,11 +264,11 @@ export default {
         "4": "contract an interior design consultant ",
         "5": "pay for a training course",
         "6": "purchase ergonomic equipment ",
-        "7": "renew a specialized software subscription} "
+        "7": "renew a specialized software subscription"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q6": {
@@ -277,11 +280,11 @@ export default {
         "4": "contract an interior design consultant ",
         "5": "pay for a training course",
         "6": "purchase ergonomic equipment ",
-        "7": "renew a specialized software subscription} "
+        "7": "renew a specialized software subscription"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q7": {
@@ -293,15 +296,15 @@ export default {
         "4": "contract an interior design consultant ",
         "5": "pay for a training course",
         "6": "purchase ergonomic equipment ",
-        "7": "renew a specialized software subscription} "
+        "7": "renew a specialized software subscription"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q8": {
-      "text": "Here is a list of various goods and services items requiring procurement. Choose all that apply to the “Conduct inspections” activity of your work plan knowing that officers, who may have accessibility needs, must often travel to remote locations to carry out their activities.  ",
+      "text": "Here is a list of various goods and services items requiring procurement. Choose all that apply to the “Conduct inspections” sub-activity of your work plan knowing that officers, who may have accessibility needs, must often travel to remote locations to carry out their activities.  ",
       "options": {
         "1": "Attend a conference ",
         "2": "Buy a plane ticket",
@@ -311,8 +314,8 @@ export default {
         "6": "Rent a car"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Buying a plane ticket, renting a car and buying gas are all activities that can be linked to the “Conduct inspections” activity of your work plan.",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Buying a plane ticket, renting a car and buying gas are all activities that can be linked to the “Conduct inspections” activity of your work plan. "
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Buying a plane ticket, renting a car and buying gas are all activities that can be linked to the “Conduct inspections” sub-activity of your work plan.",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Buying a plane ticket, renting a car and buying gas are all activities that can be linked to the “Conduct inspections” sub-activity of your work plan. "
       }
     }
   },
@@ -345,12 +348,12 @@ export default {
     "pR1": "<ul><li>Roulement du personnel</li></ul>",
     "low": "<ul><li>Faible</li></ul>",
     "high": "<ul><li>&Eacute;levé</li></ul>",
-    "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l’excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li><li>Horaires de travail flexibles</li><li>Veiller à ce que les lieux de travail virtuels et en personne soient accessibles </li></ul>",
+    "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l’excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li><li>Veiller à ce que les lieux de travail virtuels et en personne soient accessibles </li></ul>",
     "pM1_1": "<ul><li>Mettre en &oelig;uvre des horaires de travail flexibles</li></ul>",
-    "pR1_1": "<ul><li>1 adjoint administratif</li><li>gestionnaire</li></ul>",
+    "pR1_1": "<ul><li>1 adjoint administratif</li><li>1 gestionnaire</li></ul>",
     "pA2": "Délivrer des permis de p&ecirc;che commerciale",
     "pSA2": "<ul><li>Examiner les dossiers des demandeurs</li><li>Vérifier la fiabilité</li><li>Veiller à ce que les permis soient accessibles</li><li>Délivrer des permis</li><li>Effectuer des inspections</li></ul>",
-    "pD2_1w": "<ul><li>Délivrer le permis dans les 30 jours suivant la demande</li></ul>",
+    "pD2_1w": "<ul><li>Délivrer le permis dans les 30 jours suivant la demande</li><li>Délivrer 500 permis par an</li></ul>",
     "pD2_1r": "<ul><li>Délivrer le permis dans les 15 jours suivant la demande</li></ul>",
     "pD2_2": "<ul><li>Délivrer 500 permis par an</li></ul>",
     "pR2": "<ul><li>Surp&ecirc;che</li></ul>",
@@ -360,121 +363,122 @@ export default {
     "pSA3": "<ul><li> Examiner les dossiers de renouvellement des demandeurs</li><li> Délivrer des renouvellements de permis&nbsp;</li></li></ul>",
     "pD3": "<ul><li> Délivrer les renouvellements de permis dans les 30 jours suivant la demande</li><li> Délivrer 300  renouvellements de permis par an</li></ul>",
     "pRes3": "<ul><li>1 agent</li><li>1 analyste subalterne</li></ul>",
-    "instructions": "En examinant le plan de travail fourni, identifiez les biens et les services que vous devrez acquérir en répondant aux questions suivantes. ",
+    "introText": "Pour les sous-activités suivantes, identifiez les biens ou services nécessaires.",
+    "introText2": "Sélectionnez le meilleur choix pour remplir les blancs.",
     "q1": {
       "sentence": "Pour que votre nouvel espace de bureau soit bien aménagé, vous devez {0} pour concevoir un plan d’étage accessible.",
       "choices": {
-        "1": "acheter des équipements ergonomiques",
-        "2": "acheter du mobilier de bureau ",
-        "3": "acheter des stylos et du papier",
+        "1": "acheter du mobilier de bureau ",
+        "2": "acheter des stylos et du papier",
+        "3": "passer un contrat avec une société de sécurité ",
         "4": "engager un conseiller en design d’intérieur",
-        "5": "passer un contrat avec une société de sécurité",
-        "6": "payer un cours de formation",
+        "5": "payer un cours de formation  ",
+        "6": "acheter des équipements ergonomiques",
         "7": "renouveler un abonnement à un logiciel spécialisé"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q2": {
       "sentence": "Pendant le déménagement, vous devrez {0} pour contrôler l’accès et sécuriser le lieu de travail.",
       "choices": {
-        "1": "acheter des équipements ergonomiques",
-        "2": "acheter du mobilier de bureau ",
-        "3": "acheter des stylos et du papier",
+        "1": "acheter du mobilier de bureau ",
+        "2": "acheter des stylos et du papier",
+        "3": "passer un contrat avec une société de sécurité ",
         "4": "engager un conseiller en design d’intérieur",
-        "5": "passer un contrat avec une société de sécurité",
-        "6": "payer un cours de formation",
+        "5": "payer un cours de formation  ",
+        "6": "acheter des équipements ergonomiques",
         "7": "renouveler un abonnement à un logiciel spécialisé"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q3": {
       "sentence": "Vous devez {0}  ainsi que d’autres fournitures de bureau pour « Fournir du soutien administratif ».",
       "choices": {
-        "1": "acheter des équipements ergonomiques",
-        "2": "acheter du mobilier de bureau ",
-        "3": "acheter des stylos et du papier",
+        "1": "acheter du mobilier de bureau ",
+        "2": "acheter des stylos et du papier",
+        "3": "passer un contrat avec une société de sécurité ",
         "4": "engager un conseiller en design d’intérieur",
-        "5": "passer un contrat avec une société de sécurité",
-        "6": "payer un cours de formation",
+        "5": "payer un cours de formation  ",
+        "6": "acheter des équipements ergonomiques",
         "7": "renouveler un abonnement à un logiciel spécialisé"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q4": {
       "sentence": "Pour « Examiner les dossiers des demandeurs » sur l’ordinateur, vous devez {0} chaque année.",
       "choices": {
-        "1": "acheter des équipements ergonomiques",
-        "2": "acheter du mobilier de bureau ",
-        "3": "acheter des stylos et du papier",
+        "1": "acheter du mobilier de bureau ",
+        "2": "acheter des stylos et du papier",
+        "3": "passer un contrat avec une société de sécurité ",
         "4": "engager un conseiller en design d’intérieur",
-        "5": "passer un contrat avec une société de sécurité",
-        "6": "payer un cours de formation",
+        "5": "payer un cours de formation  ",
+        "6": "acheter des équipements ergonomiques",
         "7": "renouveler un abonnement à un logiciel spécialisé"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q5": {
       "sentence": "La sous-activité « Superviser, surveiller et former le personnel » vous oblige à {0} pour un nouvel employé.",
       "choices": {
-        "1": "acheter des équipements ergonomiques",
-        "2": "acheter du mobilier de bureau ",
-        "3": "acheter des stylos et du papier",
+        "1": "acheter du mobilier de bureau ",
+        "2": "acheter des stylos et du papier",
+        "3": "passer un contrat avec une société de sécurité ",
         "4": "engager un conseiller en design d’intérieur",
-        "5": "passer un contrat avec une société de sécurité",
-        "6": "payer un cours de formation",
+        "5": "payer un cours de formation  ",
+        "6": "acheter des équipements ergonomiques",
         "7": "renouveler un abonnement à un logiciel spécialisé"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q6": {
       "sentence": "Vous devez vous assurer que votre nouvel employé dispose de l’équipement nécessaire pour répondre à ses besoins d’accessibilité et d’adaptation. Cela peut signifier {0} .",
       "choices": {
-        "1": "acheter des équipements ergonomiques",
-        "2": "acheter du mobilier de bureau ",
-        "3": "acheter des stylos et du papier",
+        "1": "acheter du mobilier de bureau ",
+        "2": "acheter des stylos et du papier",
+        "3": "passer un contrat avec une société de sécurité ",
         "4": "engager un conseiller en design d’intérieur",
-        "5": "passer un contrat avec une société de sécurité",
-        "6": "payer un cours de formation",
+        "5": "payer un cours de formation  ",
+        "6": "acheter des équipements ergonomiques",
         "7": "renouveler un abonnement à un logiciel spécialisé"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q7": {
       "sentence": "Vous devez vous assurer que votre nouvel employé dispose de l’équipement nécessaire pour répondre à ses besoins d’accessibilité et d’adaptation. Cela peut signifier {0} .",
       "choices": {
-        "1": "acheter des équipements ergonomiques",
-        "2": "acheter du mobilier de bureau ",
-        "3": "acheter des stylos et du papier",
+        "1": "acheter du mobilier de bureau ",
+        "2": "acheter des stylos et du papier",
+        "3": "passer un contrat avec une société de sécurité ",
         "4": "engager un conseiller en design d’intérieur",
-        "5": "passer un contrat avec une société de sécurité",
-        "6": "payer un cours de formation",
+        "5": "payer un cours de formation  ",
+        "6": "acheter des équipements ergonomiques",
         "7": "renouveler un abonnement à un logiciel spécialisé"
       },
       "feedback": {
-        "right": "Correct!",
-        "wrong": "Incorrect."
+        "right": "",
+        "wrong": ""
       }
     },
     "q8": {
-      "text": "Voici une liste de divers articles d’approvisionnement en biens et services. Choisissez tous ceux qui s’appliquent à l’activité « Effectuer des inspections » de votre plan de travail, sachant que les agents, qui peuvent avoir des besoins en matière d'accessibilité, doivent souvent se rendre dans des endroits éloignés pour mener à bien leurs activités.",
+      "text": "Voici une liste de divers articles d’approvisionnement en biens et services. Choisissez tous ceux qui s’appliquent à la 7sous-activité  « Effectuer des inspections » de votre plan de travail, sachant que les agents, qui peuvent avoir des besoins en matière d'accessibilité, doivent souvent se rendre dans des endroits éloignés pour mener à bien leurs activités.",
       "options": {
         "1": "Assister à une conférence ",
         "2": "Acheter un billet d’avion",
@@ -484,8 +488,8 @@ export default {
         "6": "Louer une voiture"
       },
       "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> L’achat d’un billet d’avion, la location d’une voiture et l’achat d’essence sont toutes des activités qui peuvent être liées à l’activité « Effectuer des inspections » de votre plan de travail. ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’achat d’un billet d’avion, la location d’une voiture et l’achat d’essence sont toutes des activités qui peuvent être liées à l’activité « Effectuer des inspections » de votre plan de travail. "
+        "right": "<span class='v-right' /> <strong>Correct!</strong> L’achat d’un billet d’avion, la location d’une voiture et l’achat d’essence sont toutes des activités qui peuvent être liées à la <br> sous-activité « Effectuer des inspections » de votre plan de travail. ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’achat d’un billet d’avion, la location d’une voiture et l’achat d’essence sont toutes des activités qui peuvent être liées à la <br> sous-activité « Effectuer des inspections » de votre plan de travail. "
       }
     }
   }

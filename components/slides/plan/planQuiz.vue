@@ -3,7 +3,7 @@
     <div>
       <b-card>
         <b-tabs v-model="tabIndex">
-          <b-tab title="Question 1"><fillTheBlanks :blanks="1" :sentence="$t('q1.sentence')" :termList="$t('q1.choices')" :answer="['2']" :feedback="$t('q1.feedback')" qid="q1" /></b-tab>
+          <b-tab title="Question 1"><hr style="border:white;"><p>{{$t('introText')}}</p><fillTheBlanks :blanks="1" :sentence="$t('q1.sentence')" :termList="$t('q1.choices')" :answer="['2']" :feedback="$t('q1.feedback')" qid="q1" /></b-tab>
           <b-tab title="Question 2"><radioQuiz :question="$t('q2')" qId="2" /></b-tab>
           <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
           <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
@@ -50,6 +50,7 @@ export default {
 </script>
 <i18n>{
   "en": {
+    "introText":"Select the best choice to fill in the blank.",
     "q1": {
       "sentence": "Refer to your {0} when you want to identify which goods and services you need to deliver your activities. ",
       "choices": {
@@ -90,7 +91,7 @@ export default {
         "1": "<span class='v-right' /> <strong>Correct.</strong> To obtain specialized software, you should contact your Information Technology Services. ",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> To obtain specialized software, you should contact your Information Technology Services. ",
         "3": "<span class='v-right' /> <strong>Incorrect.</strong>  To obtain specialized software, you should contact your Information Technology Services.",
-        "3": "<span class='v-right' /> <strong>Incorrect.</strong>  To obtain specialized software, you should contact your Information Technology Services."
+        "4": "<span class='v-right' /> <strong>Incorrect.</strong>  To obtain specialized software, you should contact your Information Technology Services."
       }
     },
     "q4": {
@@ -104,7 +105,7 @@ export default {
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> A work plan is a list of activities to be carried out over a fiscal year.",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> A work plan is a list of activities to be carried out over a fiscal year.",
-        "3": "<span class='v-right' /> <strong>Correct!.</strong> A work plan is a list of activities to be carried out over a fiscal year.",
+        "3": "<span class='v-right' /> <strong>Correct!</strong> A work plan is a list of activities to be carried out over a fiscal year.",
         "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> A work plan is a list of activities to be carried out over a fiscal year."
       }
     },
@@ -152,12 +153,12 @@ export default {
       }
     },
     "q8": {
-      "text": "Which situations would cause you to update your work plan?",
+      "text": "Your filing cabinet is full. What would be a suitable alternative to buying another filing cabinet?",
       "options": {
-        "1": "A new director is nominated",
-        "2": "An employee leaves ",
-        "3": "Mandatory training is pushed to next year",
-        "4": "Over 500 licences have been issued "
+        "1": "Scan your documents instead of keeping paper copies",
+        "2": "Send your existing files to archives to make more room",
+        "3": "Pile your extra files on top of the cabinets ",
+        "4": "Shred the files as someone must have them somewhere "
       },
       "feedback": {
         "right": "<span class='v-right' /> <strong>Correct!</strong> Scanning your documents instead of keeping paper copies and sending your existing files to archives to make more room are both valid options for eliminating the need to buy another filing cabinet. Remember! There is no reason why you cannot use a reasonable substitute! ",
@@ -166,6 +167,7 @@ export default {
     }
   },
   "fr": {
+    "introText":"Sélectionnez le meilleur choix pour remplir le blanc.",
     "qDisabled": "Sélectionnez le meilleur choix pour remplir les blancs",
         "q1": {
       "sentence": "Reportez-vous à {0} lorsque vous souhaitez identifier les biens et les services dont vous avez besoin pour réaliser vos activités. ",
@@ -192,7 +194,7 @@ export default {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avant de réserver un billet d’avion pour le travail, vous devriez consulter les Services de voyage partagés.",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avant de réserver un billet d’avion pour le travail, vous devriez consulter les Services de voyage partagés.",
         "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avant de réserver un billet d’avion pour le travail, vous devriez consulter les Services de voyage partagés.",
-        "4": "<span class='v-right' /> <strong>Correct!</strong> Pour comprendre la vue d’ensemble, commencez en consultant les priorités énoncées dans le discours du Trône."
+        "4": "<span class='v-right' /> <strong>Correct!</strong> Avant de réserver un billet d’avion pour le travail, vous devriez consulter les Services de voyage partagés."
       }
     },
     "q3": {
@@ -206,7 +208,7 @@ export default {
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong> Pour obtenir un logiciel spécialisé, vous devriez communiquer avec les Services des technologies de l’information.",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour obtenir un logiciel spécialisé, vous devriez communiquer avec les Services des technologies de l’information.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour comprendre la vue d’ensemble, commencez en consultant les priorités énoncées dans le discours du Trône.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avant de réserver un billet d’avion pour le travail, vous devriez consulter les Services de voyage partagés.",
         "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour obtenir un logiciel spécialisé, vous devriez communiquer avec les Services des technologies de l’information."
       }
     },
@@ -226,7 +228,7 @@ export default {
       }
     },
     "q5": {
-      "text": "Parmi les éléments suivants, quels sont ceux qui ne se trouvent PAS dans votre plan de travail?",
+      "text": "Parmi les éléments suivants, quels sont ceux qui ne se trouvent <u>PAS</u> dans votre plan de travail?",
       "options": {
         "1": "Les activités",
         "2": "Les montants de budget",
@@ -236,7 +238,7 @@ export default {
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les montants de budget ne se trouvent pas dans votre plan de travail.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> Les montants de budget ne se trouvent pas dans votre plan de travail.",
-        "3": "<span class='v-right' /> <strong>Incorrect</strong> Les montants de budget ne se trouvent pas dans votre plan de travail.",
+        "3": "<span class='v-right' /> <strong>Incorrect.</strong> Les montants de budget ne se trouvent pas dans votre plan de travail.",
         "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Les montants de budget ne se trouvent pas dans votre plan de travail."
       }
     },

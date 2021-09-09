@@ -19,7 +19,7 @@ export default {
     ]
   },
   router: {
-    //mode:"hash",
+    mode:"hash",
     // PREPROD/Learning Services/GT test/ADT-testing-mimetypes → base: '/ProdContent/cninv000000000016765/'
     // PROD/Learning Services/GT test/tdumas/ADT-testing-mimetypes → base: '/ProdContent/cninv000000000017653/'
     // PROD/Learning Services/GT test/ADT_finance/ADT_test → base: '/ProdContent/cninv000000000018107/'

@@ -103,9 +103,9 @@
           "3": "The action of reducing the severity or seriousness of something"
         },
         "feedback": {
-          "1": "<span class='v-right' /><strong>Correct!</strong> L’impact c’est la mesure dans laquelle quelque chose peut affecter quelque chose d'autre.",
-          "2": "<span class='v-wrong' /><strong>Incorrect!</strong> L’impact c’est la mesure dans laquelle quelque chose peut affecter quelque chose d'autre.",
-          "3": "<span class='v-wrong' /><strong>Incorrect.</strong> L’impact c’est la mesure dans laquelle quelque chose peut affecter quelque chose d'autre."
+          "1": "<span class='v-right' /><strong>Correct!</strong> Impact is the extent to which something may affect something else.",
+          "2": "<span class='v-wrong' /><strong>Incorrect!</strong> Impact is the extent to which something may affect something else.",
+          "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Impact is the extent to which something may affect something else."
         }
       },
       "q4": {
@@ -116,9 +116,9 @@
           "3": "A potential event that may affect the activity"
         },
         "feedback": {
-          "1": "<span class='v-right' /><strong>Correct!</strong> La probabilité, c’est la chance que quelque chose se produise ou non.",
-          "2": "<span class='v-wrong' /><strong>Incorrect!</strong> La probabilité, c’est la chance que quelque chose se produise ou non.",
-          "3": "<span class='v-wrong' /><strong>Incorrect.</strong> La probabilité, c’est la chance que quelque chose se produise ou non."
+          "1": "<span class='v-right' /><strong>Correct!</strong> Likelihood is the chance of something happening or not.",
+          "2": "<span class='v-wrong' /><strong>Incorrect!</strong> Likelihood is the chance of something happening or not.",
+          "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Likelihood is the chance of something happening or not."
         }
       },
       "q5": {
@@ -146,7 +146,7 @@
           "right": "<span class='v-right' /><strong>Correct!</strong>",
           "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
         },
-        "conclusion": "If your training budget is reduced, you may have one person attend the training and pass on their knowledge to their colleagues; you may find alternate means of training such as books or eLearning, and you may organize your own internal training sessions. While you could cancel all training, this should be considered only once all other options have been exhausted."
+        "conclusion": "<p>If your training budget is reduced, you may have one person attend the training and pass on their knowledge to their colleagues; you may find alternate means of training such as books or eLearning, and you may organize your own internal training sessions. While you could cancel all training, this should be considered only once all other options have been exhausted.</p><p>For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href:'https://adtfinance.netlify.app/en'>Responsible Use of Public Funds</a> course. This link is also available in the Toolbox.</p>"
       }
     },
     "fr": {
@@ -172,7 +172,7 @@
           "3": "Un rendement mesurable qu’une initiative prévoit d’atteindre"
         },
         "feedback": {
-          "1": "<span class='v-wrong' /><strong>Incorrect.</strong> ML’atténuation c’est l’action de réduire la gravité ou le sérieux d’une chose.",
+          "1": "<span class='v-wrong' /><strong>Incorrect.</strong> L’atténuation c’est l’action de réduire la gravité ou le sérieux d’une chose.",
           "2": "<span class='v-right' /><strong>Correct!</strong> L’atténuation c’est l’action de réduire la gravité ou le sérieux d’une chose.",
           "3": "<span class='v-wrong' /><strong>Incorrect.</strong> L’atténuation c’est l’action de réduire la gravité ou le sérieux d’une chose."
         }
@@ -186,7 +186,7 @@
         },
         "feedback": {
           "1": "<span class='v-right' /><strong>Correct!</strong> L’impact c’est la mesure dans laquelle quelque chose peut affecter quelque chose d'autre.",
-          "2": "<span class='v-wrong' /><strong>Incorrect!</strong> L’impact c’est la mesure dans laquelle quelque chose peut affecter quelque chose d'autre.",
+          "2": "<span class='v-wrong' /><strong>Incorrect.</strong> L’impact c’est la mesure dans laquelle quelque chose peut affecter quelque chose d'autre.",
           "3": "<span class='v-wrong' /><strong>Incorrect.</strong> L’impact c’est la mesure dans laquelle quelque chose peut affecter quelque chose d'autre."
         }
       },
@@ -199,7 +199,7 @@
         },
         "feedback": {
           "1": "<span class='v-right' /><strong>Correct!</strong> La probabilité, c’est la chance que quelque chose se produise ou non.",
-          "2": "<span class='v-wrong' /><strong>Incorrect!</strong> La probabilité, c’est la chance que quelque chose se produise ou non.",
+          "2": "<span class='v-wrong' /><strong>Incorrect.</strong> La probabilité, c’est la chance que quelque chose se produise ou non.",
           "3": "<span class='v-wrong' /><strong>Incorrect.</strong> La probabilité, c’est la chance que quelque chose se produise ou non."
         }
       },
@@ -221,14 +221,14 @@
         "options": {
           "1": "Faire participer une personne à la formation et former ensuite ses collègues",
           "2": "Trouver d'autres moyens de formation tels que les livres ",
-          "3": "Organisez vos propres séances de formation interne",
+          "3": "Organiser vos propres séances de formation interne",
           "4": "Annuler toute formation"
         },
          "feedback": {
           "right": "<span class='v-right' /><strong>Correct!</strong>",
           "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
         },
-        "conclusion": "Si votre budget de formation est réduit, vous pouvez demander à une personne de suivre la formation et de transmettre ses connaissances à ses collègues, vous pouvez trouver d’autres moyens de formation tels que des livres ou l’apprentissage en ligne, et vous pouvez organiser vos propres sessions de formation internes. Bien que vous pourriez annuler toutes les formations, il serait préférable d’éviter cette option jusqu’à ce que toutes les autres options aient été épuisées."
+        "conclusion": "<p>Si votre budget de formation est réduit, vous pouvez demander à une personne de suivre la formation et de transmettre ses connaissances à ses collègues, vous pouvez trouver d’autres moyens de formation tels que des livres ou l’apprentissage en ligne, et vous pouvez organiser vos propres sessions de formation internes. Bien que vous pourriez annuler toutes les formations, il serait préférable d’éviter cette option jusqu’à ce que toutes les autres options aient été épuisées.</p><p>Pour une revue des plans de travail, voir la section <strong>Élaborer un plan de travail</strong> du cours <a href:'https://adtfinance.netlify.app/fr'> La saine gestion des fonds publics</a>. Ce lien est également disponible dans la boîte à outils.</p>"
       }
     }
   }

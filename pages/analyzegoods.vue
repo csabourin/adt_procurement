@@ -299,7 +299,7 @@ export default {
   "IRLPlanPt1Text":"Appliquez maintenant ce que vous avez appris - dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez le temps de consulter l’intranet pour voir comment les besoins en matière de biens et services sont identifiés au sein de votre ministère. Vous verrez peut-être que vous avez déjà accès à certaines ressources par l’intermédiaire de diverses équipes telles que la Sécurité, les Services de voyage partagés, les Aménagements, Services partagés Canada, la formation et l’accessibilité et l’obligation de prendre des mesures d’adaptation, pour n’en nommer que quelques-unes.",
   "TakeTheQuiz":"Répondez au quiz",
   "activityLinks":"Référence : Liens externes",
-  "gotoLinks":"Pour une revue des plans de travail, voir la section Élaborer un plan de travail du cours La saine gestion des fonds publics. Ce lien est également disponible dans la boîte à outils.",
+  "gotoLinks":"Pour une revue des plans de travail, voir la section <strong>Élaborer un plan de travail</strong> du cours <a href:'https://adtfinance.netlify.app/fr/buildwp'> La saine gestion des fonds publics</a>. Ce lien est également disponible dans la boîte à outils.",
   "analyzeNeedsTitle":"Activité :  Analysez vos besoins en matière de ressources",
   "completewpDrafttitle":"Activité : Préparer un plan de travail",
   "completewptitle":"Activité : Compléter le plan de travail",

@@ -168,7 +168,7 @@ export default {
         },
         forecastbudget: {
           references: [],
-          infos: [0],
+          infos: [0,3],
           quiz: [4]
         },
         budgetauthorities: {

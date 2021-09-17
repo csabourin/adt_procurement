@@ -92,13 +92,15 @@
         
       </b-row>
     </b-container>
-    <hr><p>{{$t('introText')}}</p>
+    <hr>
+    <p><strong>{{$t('scenario')}}</strong></p>
+    <p>{{$t('introText')}}</p>
     <b-tabs v-model="tabIndex">
         <b-tab title="Question 1"><checkboxQuiz :question="$t('q1')" qId="1" :Answer='["1","2","3"]' /></b-tab>
         <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["1","3","4"]' /></b-tab>
-        <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
-        <b-tab title="Question 4"><checkboxQuiz :question="$t('q4')" qId="4" :Answer='["1","3","4"]' /></b-tab>
-        <b-tab title="Question 5"><checkboxQuiz :question="$t('q5')" qId="5" :Answer='["1","3","4"]' /></b-tab>
+        <b-tab title="Question 3"><checkboxQuiz :question="$t('q3')" qId="3" :Answer='["1","2","3"]' /></b-tab>
+        <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
+        <b-tab title="Question 5"><checkboxQuiz :question="$t('q5')" qId="5" :Answer='["1","2","3"]' /></b-tab>
         <b-tab title="Question 6"><radioQuiz :question="$t('q6')" qId="6" /></b-tab>
     </b-tabs>
   </b-card>
@@ -137,6 +139,7 @@ export default {
 </script>
 <i18n>{
   "en": {
+    "scenario":"Scenario",
     "introText": "Looking at the work plan provided, you realize that you must buy a vehicle as well as computer tablets to be able to conduct inspections. Answer the following questions.",
     "pwpInstructions": "Your director has been to a steering committee and now has new information that should be reflected in your work plan. Here are the 3 new pieces of information: ",
     "thing1": "New software will be implemented to speed up the issuing of licences ",
@@ -169,17 +172,17 @@ export default {
     "high": "<ul><li>High</li></ul>",
     "pM1": "<ul><li>Establish succession plan</li><li>Establish collective staffing pools</li><li>Recognize excellent work</li><li>Celebrate successes</li><li>Involve employees in decision-making</li><li>Implement flexible work hours</li></ul>",
     "pM1_1": "Implement flexible work hours",
-    "pR1_1": "<ul><li>1 administrative assistant</li></ul>",
+    "pR1_1": "<ul><li>1 administrative assistant</li><li>1 manager</li></ul>",
     "pR1_2": "<ul><li>Manager</li></ul>",
-    "pA2": "Issue commercial fishing licenses",
-    "pSA2": "<ul><li>Review applicant requests</li><li>Check reliability</li><li>Issue licenses</li><li>Conduct inspections</li></ul>",
-    "pD2_1w": "<ul><li>Issue license within 30 days of request</li><li>Issue 500 licenses per year</li></ul>",
+    "pA2": "Issue commercial fishing licences",
+    "pSA2": "<ul><li>Review applicant requests</li><li>Check reliability</li><li>Issue licences</li><li>Conduct inspections</li></ul>",
+    "pD2_1w": "<ul><li>Issue licence within 30 days of request</li><li>Issue 500 licences per year</li></ul>",
     "pR2": "<ul><li>Overfishing</li></ul>",
     "pM2": "<ul><li>Protect habitat</li><li>Place catching limits</li><li>Implement fishing seasons</li></ul>",
     "pRes2": "<ul><li>1 officer</li><li>2 analysts</li><li>1 junior officer</li></ul>",
-    "pA3": "Renew commercial fishing licenses",
-    "pSA3": "<ul><li>Review applicant renewal requests</li><li>Issue renewal license</li></ul>",
-    "pD3": "<ul><li>Issue license renewal within 30 days of request</li><li>Issue 300 license renewals per year </li></ul>",
+    "pA3": "Renew commercial fishing licences",
+    "pSA3": "<ul><li>Review applicant renewal requests</li><li>Issue renewal licence</li></ul>",
+    "pD3": "<ul><li>Issue licence renewal within 30 days of request</li><li>Issue 300 licence renewals per year </li></ul>",
     "pRes3": "<ul><li>1 officer</li><li>1 junior analyst</li><ul>",
     "qDisabled": "Choose",
     "pwpGovtPri": "<strong>Government priorities</strong>",
@@ -229,10 +232,8 @@ export default {
         "4": "Guesstimate"
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques."
+        "right": "<span class='v-right' /> <strong>Correct!</strong> You can consult a catalogue, do an internet search and look at previous purchases to estimate how much your computer tablets will cost.",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> You can consult a catalogue, do an internet search and look at previous purchases to estimate how much your computer tablets will cost."
       }
     },
     "q4": {
@@ -244,8 +245,10 @@ export default {
         "4": "Impact"
       },
        "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Dropping and breaking a computer tablet is an example of risk. ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Dropping and breaking a computer tablet is an example of risk."
+       "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Dropping and breaking a computer tablet is an example of risk. ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Dropping and breaking a computer tablet is an example of risk. ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Dropping and breaking a computer tablet is an example of risk. ",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Dropping and breaking a computer tablet is an example of risk. "
       }
     },
     "q5": {
@@ -271,15 +274,16 @@ export default {
         "5": "Identify the actions you can take to lower the potential of that event happening"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
-        "4": "<span class='v-right' /> <strong>Correct!</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques.",
-        "5": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’identification des activités et du budget de l’année prochaine est liée à l’établissement d’un plan de travail, et non à une évaluation des risques."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Identifying next year’s activities and budget is linked to establishing a work plan, not doing a risk assessment.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Identifying next year’s activities and budget is linked to establishing a work plan, not doing a risk assessment.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Identifying next year’s activities and budget is linked to establishing a work plan, not doing a risk assessment.",
+        "4": "<span class='v-right' /> <strong>Correct!</strong> Identifying next year’s activities and budget is linked to establishing a work plan, not doing a risk assessment.",
+        "5": "<span class='v-wrong' /> <strong>Incorrect.</strong> Identifying next year’s activities and budget is linked to establishing a work plan, not doing a risk assessment."
       }
     }
   },
   "fr": {
+    "scenario":"Scénario",
     "introText": "En regardant le plan de travail fourni, vous vous rendez compte que vous devez acheter un véhicule ainsi que des tablettes informatiques pour pouvoir effectuer des inspections. Répondez aux questions suivantes.",
     "pwpInstructions": "Votre directeur vous dit qu’il a participé à un comité directeur et qu’il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Voici les trois nouveaux renseignements :",
     "thing1": "un nouveau logiciel sera installé pour accélérer la délivrance des permis;",
@@ -309,12 +313,12 @@ export default {
     "pR1": "<ul><li>Roulement du personnel</li></ul>",
     "low": "<ul><li>Faible</li></ul>",
     "high": "<ul><li>&Eacute;levé</li></ul>",
-    "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l’excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li><li>Horaires de travail flexibles</li</ul>",
+    "pM1": "<ul><li>&Eacute;tablir un plan de relève</li><li>Établir des bassins de dotation collective</li><li> Reconna&icirc;tre l’excellence du travail</li><li> Célébrer les succès</li><li> Impliquer les employés dans la prise de décisions</li><li>Horaires de travail flexibles</li></ul>",
     "pM1_1": "<ul><li>Mettre en &oelig;uvre des horaires de travail flexibles</li></ul>",
-    "pR1_1": "<ul><li>1 adjoint administratif</li><li>gestionnaire</li></ul>",
+    "pR1_1": "<ul><li>1 adjoint administratif</li><li>1 gestionnaire</li></ul>",
     "pA2": "Délivrer des permis de p&ecirc;che commerciale",
     "pSA2": "<ul><li>Examiner les dossiers des demandeurs</li><li>Vérifier la fiabilité</li><li>Délivrer des permis</li><li>Effectuer des inspections</li></ul>",
-    "pD2_1w": "<ul><li>Délivrer le permis dans les 30 jours suivant la demande</li></ul>",
+    "pD2_1w": "<ul><li>Délivrer le permis dans les 30 jours suivant la demande</li><li>Délivrer 500 permis par an </li></ul>",
     "pD2_1r": "<ul><li>Délivrer le permis dans les 15 jours suivant la demande</li></ul>",
     "pD2_2": "<ul><li>Délivrer 500 permis par an</li></ul>",
     "pR2": "<ul><li>Surp&ecirc;che</li></ul>",
@@ -360,10 +364,8 @@ export default {
         "4": "Deviner"
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
-        "3": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques."
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques.",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous pouvez consulter un catalogue, faire une recherche sur Internet et examiner les achats précédents pour estimer le coût de vos tablettes informatiques."
       }
     },
     "q4": {
@@ -375,8 +377,10 @@ export default {
         "4": "Impact"
       },
        "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> La chute et le bri d’une tablette informatique est un exemple de risque. ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> La chute et le bri d’une tablette informatique est un exemple de risque."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> La chute et le bri d’une tablette informatique est un exemple de risque.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> La chute et le bri d’une tablette informatique est un exemple de risque.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> La chute et le bri d’une tablette informatique est un exemple de risque. ",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> La chute et le bri d’une tablette informatique est un exemple de risque. "
       }
     },
     "q5": {
@@ -393,7 +397,7 @@ export default {
       }
     },
     "q6": {
-      "text": "Parmi les activités suivantes, laquelle n’est PAS effectuée lors d’une évaluation des risques?",
+      "text": "Parmi les activités suivantes, laquelle n’est <u>PAS</u> effectuée lors d’une évaluation des risques?",
       "options": {
         "1": "Identifier les événements qui pourraient vous empêcher de réaliser vos activités",
         "2": "Identifier la perte potentielle associée à l'événement",

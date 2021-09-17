@@ -311,7 +311,7 @@ export default {
   },
   "fr":{
   "activityLinks":"Référence : Liens externes ",
-  "TakeTheQuiz":"Répondez au questionnaire",
+  "TakeTheQuiz":"Répondez au quiz",
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",
   "conductRiskTitle":"Activité : Choix multiple ",

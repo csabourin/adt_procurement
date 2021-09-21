@@ -72,48 +72,51 @@
                       </span>
                       <span v-if="$i18n.locale=='fr'">
                         <h2>1. Introduction</h2>
-                        <ul>
-                          <li>vérifier votre budget,</li>
-                          <li>faire la distinction entre les pouvoirs de dépenser, les pouvoirs financiers et les pouvoirs en matière d’approvisionnement, et</li>
-                          <li>confirmer qui a le pouvoir d’approbation en consultant les tableaux de délégation des pouvoirs financiers. </li>
-                        </ul>
-                        <p>Il vous faudra environ 20 minutes pour compléter cette section.</p>
+                        <p>[Sur un fond bleu, de fines lignes diagonales oscillent en vagues. Du texte apparaît dans une boîte blanche aux coins arrondis. « Module 2 : Prévoir les besoins budgétaires. 1. Introduction. »] </p>
+                        <p>Dans la présente section, vous apprendrez à estimer les coûts des biens et des services, y compris le coût du cycle de vie lié au maintien et à l’aliénation des biens et des services, et à procéder à une évaluation des risques et à l’élaboration d’une stratégie d’atténuation si les biens ou les services ne sont pas acquis.  </p>
+                        <p>[Deux dessins apparaissent l’un après l’autre : une calculatrice à côté d’une planchette à pince et une ampoule en dessous d’un symbole d’avertissement.]</p>
+                        <p> Cette section devrait vous prendre environ 30 minutes à compléter. </p>
                         <hr>
-
-                        <h2>2. Vérifier votre budget</h2>
-                        <p>Avant de lancer un processus d’approvisionnement, vous devez vérifier que votre budget contient suffisamment de fonds pour couvrir les coûts des biens, des services et des activités de construction que vous prévoyez. Si vous n’avez pas suffisamment de fonds, vous devrez peut-être vous tourner vers d’autres sources pour trouver l’argent nécessaire, par exemple </p>
+                        <h2>2. Estimer les coûts</h2>
+                        <p>[Le contour d’un cercle apparaît. La moitié est remplie en blanc avec les mots « 30 minutes » en dessous. Du texte apparaît dans une boîte blanche aux coins arrondis. « 2. Estimer les coûts ». Le dessin d’une loupe apparaît.] </p>
+                        <p>Avant tout achat, commencez par estimer le coût de vos biens, de vos services ou de vos activités de construction. Cela peut se faire de plusieurs façons, notamment : </p>
                         <ul>
-                          <li>transférer des fonds dans vos propres budgets,</li>
-                          <li>obtenir de l’argent supplémentaire d’autres gestionnaires,</li>
-                          <li>utiliser un surplus inexploité que votre directeur pourrait avoir,</li>
-                          <li>préparer une présentation au Conseil du Trésor ou un mémoire au Cabinet, et </li>
-                          <li>selon votre secteur d’activité, faire appel à un règlement interministériel. </li>
+                          <li>en examinant les achats antérieurs,</li>
+                          <li>en consultant des catalogues d’achat ou des sites Web des fournisseurs,</li>
+                          <li>en effectuant une recherche sur Internet,</li>
+                          <li>en demandant de l’information auprès d’un fournisseur,  </li>
+                          <li>en examinant les possibilités de location, ou </li>
+                          <li>en demandant l’avis d’un expert de Services publics et Approvisionnement Canada. </li>
                         </ul>
-                        <p>L'activité suivante vous aidera à déterminer si vous disposez de fonds suffisants dans votre budget.</p>
+                        <p>[D’autres dessins apparaissent sous la loupe. Un panier d’achats, une page Web, un ordinateur, un message texte au-dessus d’un ordinateur portable, une clé et un drapeau canadien dans un cercle. Un dessin d’une pile de pièces de monnaie apparaît.] </p>
                         <hr>
-
-                        <h2>3. Pouvoirs financiers et pouvoirs en matière d’approvisionnement</h2>
-                        <p>Maintenant que vous savez si vous avez assez d’argent dans votre budget, vérifions si vous avez l’autorité nécessaire pour commencer à acheter les ressources dont vous avez besoin!</p>
-                        <p>Saviez-vous que le Parlement a créé deux catégories de pouvoirs? Une pour les pouvoirs financiers et une autre pour les pouvoirs en matière d’approvisionnement. </p>
-                        <p>Pour exercer votre délégation financière, vous devez réussir le présent cours, soumettre votre carte de délégation signée à votre service des finances et obtenir votre délégation de pouvoir officielle par écrit de la part de votre service des finances.</p>
-                        <p>Les gestionnaires ont généralement deux pouvoirs délégués : l’article 32 pour engager les fonds et l’article 34 pour l’autorité de certification. L’article 32 vous permet de commander des articles de bureau, par exemple, puis l’article 34 vous permet de certifier que vous les avez bel et bien reçus. Pour plus d’information sur les articles 32 et 34, consultez la boîte à outils.</p>
-                        <p>Ensuite, l’article 33 permet à l’unité des finances de payer la facture. Dans certaines situations, par exemple des services d’aide temporaire, vous devrez passer par un processus d’approvisionnement parce que cela implique un contrat. Habituellement, ce serait au groupe de l’approvisionnement de votre organisation à qui reviendraient ces démarches, en vertu de l’article 41 de la Loi sur la gestion des finances publiques.</p>
-                        <p>Pour les pouvoirs en matière d’approvisionnement, ils sont divisés en deux catégories, l’une pour les biens et l’autre pour les services.</p>
-                        <p>En vertu de la Loi sur le ministère des Travaux publics et des Services gouvernementaux, le ministre des Services publics et de l’Approvisionnement, SPAC, a le pouvoir exclusif d’acquérir des biens. Le ministre de la SPAC délègue ensuite ce pouvoir aux ministres pour qu’ils effectuent des achats pour leurs organisations respectives selon des valeurs contractuelles spécifiques. Grâce à leurs instruments de délégation organisationnelle, les pouvoirs en matière de l’approvisionnement sont ensuite délégués aux postes une fois que certaines conditions ont été remplies.</p>
-                        <p>Le Parlement accorde aux ministres le pouvoir de fournir des services d’approvisionnement par le biais des lois habilitantes de leur organisation. Le Conseil du Trésor limite les pouvoirs ministériels par le biais de politiques telles que sa Politique sur les marchés et sa Politique sur les services communs. Les autorités contractantes peuvent également être déléguées à des « postes » par le biais de l’instrument de délégation organisationnelle et peuvent être exercées une fois que certaines conditions ont été remplies.</p>
-                        <p>Pour savoir ce que vous pouvez autoriser et combien vous pouvez utiliser, consultez votre propre carte de délégation signée et le tableau de délégation de votre organisation.</p>
-
+                        <h2>3. Mener une évaluation des risques</h2>
+                        <p>[Le dessin d’une voiture apparaît. Du texte apparaît dans une boîte blanche aux coins arrondis. « 3. Mener une évaluation des risques. » Le dessin d’un plan de travail apparaît. Les titres « Activités », « Risque » et « Atténuation » sont encerclés.]</p>
+                        <p>Vous êtes-vous déjà demandé ce qui se passerait si vous n’étiez pas en mesure de vous procurer les ressources dont vous avez besoin? Lorsque l’approvisionnement n’est pas une option, vous devrez essayer de trouver d’autres moyens d’accomplir vos activités. Vous trouverez généralement des conseils sur la manière d’y parvenir dans les sections de votre plan de travail consacrées aux risques et à l’atténuation des risques.  </p>
+                        <p> [Un dessin représente une loupe au-dessus d’un symbole d’avertissement.] </p> 
+                        <p>Pour procéder à une évaluation des risques et à l’élaboration d’une stratégie d’atténuation, il faut : </p> 
+                        <ul>
+                          <li>identifier les événements qui pourraient vous empêcher de mener à bien vos activités, </li>
+                          <li>estimer si l’événement aura lieu ou non,  </li>
+                          <li>identifier les pertes ou les impacts potentiels liés à l’événement, et </li>
+                          <li>identifier les mesures que vous pouvez prendre pour réduire le risque que cet événement se produise.  </li>
+                        </ul>
+                        <p>[Quatre dessins apparaissent l’un après l’autre : un nuage orageux au-dessus d’un camion de livraison, un point d’interrogation à l’intérieur d’une ampoule, un billet de banque avec des flèches pointant vers le bas et une loupe au-dessus d’un symbole d’avertissement.] </p>
+                        <p>L’exercice suivant vous aidera à identifier les risques associés à vos activités.  </p>
                         <hr>
 
                         <h2>4. Dans la vraie vie</h2>
-                        <p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>
-                        <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de consulter vos budgets et le tableau de délégation des pouvoirs de signature en matière financière de votre organisation. </p>
-                        <p>Quelles sont les limites de dépenses de votre ministère en approvisionnement? Avez-vous besoin de consulter Services publics et Approvisionnement Canada? Votre ministère a-t-il son propre ensemble de règles en approvisionnement, comme le ministère de la Défense nationale ou le ministère de la Justice?</p>
+                        <p>[Du texte apparaît dans une boîte blanche aux coins arrondis. « 4. Dans la vraie vie. » Un dessin représente un stylo écrivant sur une liste de vérification à côté d’une pile de pièces de monnaie.] </p>
+                        <p>Appliquez maintenant ce que vous avez appris - dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez le temps pour voir comment les budgets sont établis au sein votre ministère.</p>
+                        <p>[Un dessin représente un homme et une femme qui parlent ensemble. Une bulle de dialogue avec un symbole de dollar apparaît au-dessus de la tête de l’homme.] </p>
+                        <p>Consultez vos collègues, votre directeur ou votre conseiller en gestion financière, et discutez des ressources financières existantes pour vos besoins en matière d'approvisionnement. </p>
                         <hr>
                         <h2>5. Quiz</h2>
-                        <p>Maintenant que vous savez comment vérifier votre budget, comment faire la distinction entre les pouvoirs financiers et les pouvoirs en matière d’approvisionnement, et comment consulter vos tableaux de délégation financière, voyons ce dont vous vous souvenez en répondant à ce petit quiz.</p>
+                        <p>[Du texte apparaît dans une boîte blanche aux coins arrondis. « 5. Quiz. » Trois dessins avec des coches apparaissent côte à côte : une liste de vérification à côté d’une pile de pièces de monnaie, une loupe au-dessus d’un symbole d’avertissement et un plan de travail.]</p>
+                        <p>Maintenant que vous savez comment déterminer les types de coûts à inclure dans les estimés d'approvisionnement, comment procéder à une évaluation des risques et comment élaborer une stratégie d'atténuation, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
+                        <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une coche. Un dessin représente une main avec un crayon qui remplit un quiz.] </p>
                         <hr>
-                        <h2>9. Section complétée</h2>
+                        <h2>6. Section complétée</h2>
                         <p>[Texte à l’écran indiquant l’instruction Section complétée.]</p>
 
                       </span>

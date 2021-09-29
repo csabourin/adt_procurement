@@ -10,17 +10,16 @@
               <p>As per Treasury Board requirements, you must pass this test before you can exercise financial delegation.  </p>
               <p>The test is made up of four sections, one for each phase: Plan, Procure, Manage, and Report.  </p>
               <p>The passing grade is 80% for each of these sections.</p>
-              <p>Each section should take you around 5 to 10 minutes to complete.</p>
+              <p>This section should take you around 5 to 10 minutes to complete.</p>
               <p>You are allowed to consult course materials during the test. You may take it as many times as you need to get a passing grade.</p>
             </div>
             <div v-if="$i18n.locale=='fr'">
               <h3>Instructions</h3>
-              <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d’un responsable de centre d’appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
-              <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p>
-              <p>Le test comporte trois parties - une à la fin de chaque phase - planification, dépenses et rapports.&nbsp;</p>
-              <p>La note de passage est de 80%, par partie.&nbsp;</p>
-              <p>Chaque partie devrait vous prendre environ 10 à 15 minutes.&nbsp;</p>
-              <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p>
+              <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir le test de ce cours avant de pouvoir exercer la délégation financière.</p>
+              <p>Le test comporte quatre parties — une à la fin de chaque phase : planification, acquisition, gestion et rapports.</p>
+              <p>La note de passage est de 80 %, par partie.</p>
+              <p>Cette partie devrait vous prendre environ 5 à 10 minutes.</p>
+              <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez reprendre le test autant de fois que vous le désirez.</p>
             </div>
           </b-alert>
           <!--<p v-if="AlertIsDismissed"><b-button @click="AlertIsDismissed=false">{{$t('ShowInstructions')}}</b-button></p>-->
@@ -379,7 +378,7 @@ export default {
       }
       },
       "q2": {
-      "text": "If you find yourself entangled in a dispute over the terms and conditions of an existing federal contract, whom should you contact?",
+      "text": "If you find yourself entangled in a dispute over the terms and conditions of an existing federal procurement contract, whom should you contact?",
       "options": {
       "1": "Office of the Procurement Ombudsman ",
       "2": "Canadian International Trade Tribunal",
@@ -422,7 +421,7 @@ export default {
       }
       },
       "q5": {
-      "text": "What quasi-judicial mechanism is available to potential bidders to challenge decisions on federal acquisitions that are subject to trade agreements?  ",
+      "text": "What quasi-judicial mechanism is available to potential bidders to challenge decisions on any aspect of the procurement process that relates to a procurement contract are subject to trade agreements?  ",
       "options": {
       "1": "Complaint under the Canadian International Trade Tribunal.",
       "2": "Complaint under Treasury Board’s Directive on the Management of Procurement.  ",
@@ -447,11 +446,11 @@ export default {
       "unanswered":"Question(s) sans réponse",
       "Questions": {
       "q1": {
-  "text": "A manager is preparing a statement of work and wants to avoid an employer-employee relationship. Which of the following should not be included in the statement of work?",
+  "text": "Un gestionnaire prépare un énoncé des travaux et veut éviter une relation employeur-employé. Parmi les renseignements suivants, lequel ne doit pas figurer dans l’énoncé des travaux?",
       "options": {
-      "1": "Objective and background information",
-      "2": "List of deliverables",
-      "3": "How the work should be carried out"
+      "1": "L’objectif et les renseignements de base",
+      "2": "La liste des résultats attendus",
+      "3": "La façon d’accomplir le travail"
       },
       "feedback": {
       "1": "",
@@ -460,11 +459,11 @@ export default {
       }
       },
       "q2": {
-      "text": "If you find yourself entangled in a dispute over the terms and conditions of an existing federal contract, whom should you contact?",
+      "text": "Si vous êtes touché par un différend relatif aux modalités d’un contrat d’achat fédéral existant, à qui devriez-vous vous adresser?",
       "options": {
-      "1": "Office of the Procurement Ombudsman ",
-      "2": "Canadian International Trade Tribunal",
-      "3": "Auditor General"
+      "1": "Bureau de l’ombudsman de l’approvisionnement",
+      "2": "Tribunal canadien du commerce extérieur",
+      "3": "Vérificateur général"
       },
       "feedback": {
       "1": "",
@@ -473,12 +472,12 @@ export default {
       }
       },
       "q3": {
-      "text": "Which of the following practices should be avoided?",
+      "text": "Laquelle des pratiques suivantes devrait être évitée?",
       "options": {
-      "1": "Contracting with a written contract",
-      "2": "Contract splitting",
-      "3": "Appropriate use of emergency contracting",
-      "4": "Payrolling"
+      "1": "L’attribution d’un contrat avec autorisation écrite",
+      "2": "Le fractionnement d’un contrat",
+      "3": "L’utilisation appropriée de contrats en cas d’urgence",
+      "4": "L’embauchage obligatoire"
       },
       "feedback": {
       "1": "",
@@ -488,12 +487,12 @@ export default {
       }
       },
       "q4": {
-      "text": "This is the activity in which contracts valued at more than $10,000 are posted on the Open Government Portal to meet legal, policy, corporate, and parliamentary needs.",
+      "text": "C’est l’activité dans laquelle des contrats évalués à plus de 10 000 $ sont publiés sur le Portail du gouvernement ouvert afin de répondre à des besoins juridiques, politiques, organisationnels et parlementaires.",
       "options": {
-      "1": "Proactive disclosure",
-      "2": "Internal audit reports",
-      "3": "Contracts with former public servants",
-      "4": "Auditor General Reports "
+      "1": "Divulgation proactive",
+      "2": "Rapports de vérification interne",
+      "3": "Contrats conclus avec d’anciens fonctionnaires",
+      "4": "Rapports du vérificateur général"
       },
       "feedback": {
       "1": "",
@@ -503,16 +502,16 @@ export default {
       }
       },
       "q5": {
-      "text": "What quasi-judicial mechanism is available to potential bidders to challenge decisions on federal acquisitions that are subject to trade agreements?  ",
+      "text": "Quel mécanisme quasi judiciaire s’offre aux soumissionnaires potentiels qui veulent contester les décisions rendues à l’égard de tout aspect du processus d’acquisition qui concerne un contrat d’achat assujetti à des accords commerciaux?",
       "options": {
-      "1": "Added together, the P6 chatbot software commitments and year-to-date actuals are equal to the budget.",
-      "2": "The P6 hospitality commitments and year-to-date actuals together add up to more than the budget.",
-      "3": "The hospitality P5 annual forecast is the same as the P6 budget.",
-      "4": "The chatbot software P5 annual forecast is higher than the P6 budget."
+      "1": "Dépôt d’une plainte auprès du Tribunal canadien du commerce extérieur",
+      "2": "Dépôt d’une plainte en vertu de la Directive sur la gestion de l’approvisionnement du Conseil du Trésor",
+      "3": "Dépôt d’une plainte en vertu des lois habilitantes du ministère "
       },
       "feedback": {
-      "wrong": "",
-      "right": ""
+      "1": "",
+      "2": "",
+      "3": ""
       }
       }
           }

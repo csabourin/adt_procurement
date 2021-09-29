@@ -8,19 +8,17 @@
             <div v-if="$i18n.locale=='en'">
               <h3>Instructions</h3>
                <p>As per Treasury Board requirements, you must pass this test before you can exercise financial delegation.</p>
-              <p>The test is made up of four sections, one for each phase: Plan, Procure, Manage, and Report.<!-- planning, spending and reporting -->.</p>
+              <p>The test is made up of four sections, one for each phase: Plan, Procure, Manage, and Report.<!-- planning, spending and reporting --></p>
               <p>The passing grade is 80% for each of these sections.</p>
               <p>Each section should take you around 20 to 25 minutes to complete.</p>
               <p>You are allowed to consult course materials during the test. You may take it as many times as you need to get a passing grade.</p>
             </div>
             <div v-if="$i18n.locale=='fr'">
               <h3>Instructions</h3>
-              <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d’un responsable de centre d’appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
-              <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p>
-              <p>Le test comporte trois parties - une à la fin de chaque phase: planification, dépenses et rapports.&nbsp;</p>
-              <p>La note de passage est de 80%, par partie.&nbsp;</p>
-              <p>Chaque partie devrait vous prendre environ 15 à 20 minutes.&nbsp;</p>
-              <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p>
+              <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir le test de ce cours avant de pouvoir exercer la délégation financière.</p>
+              <p>La note de passage est de 80 %, par partie.</p>
+              <p>Chaque partie devrait vous prendre environ 20 à 25 minutes.  </p>
+              <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez reprendre le test autant de fois que vous le désirez.</p>
             </div>
           </b-alert>
           <!--<p v-if="AlertIsDismissed"><b-button @click="AlertIsDismissed=false">{{$t('ShowInstructions')}}</b-button></p>-->
@@ -438,27 +436,25 @@ export default {
         }
       },
       "q2": {
-        "text": "You have spent $1,800 out of your $2,000 office supplies budget, and you don’t plan on any other purchases for the year. An employee wants to attend a training event on chatbot systems and the registration fee is $150. However, you have spent all of your training budget. What will you do?",
+        "text": "Which of the following situations is a pressing emergency in which someone with delegated contracting authority can enter into non-competitive contracts",
         "options": {
-          "1": "Tell the employee that the training budget has been spent",
-          "2": "Use the money initially allocated for office supplies",
-          "3": "Ask your director for additional funds",
-          "4": "Tell the employee you will revisit their request next fiscal year"
+          "1": "One that would be injurious to the public interest if delayed ",
+          "2": "One that would prevent attainment of an urgent operational requirement ",
+          "3": "One that would seriously disrupt the development of a highly important architectural project   "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q3": {
-        "text": "Which statement about delegation of financial authority is true?",
+        "text": "According to the Government Contracts Regulations, when could a procurement specialist sign a procurement contract without soliciting bids?",
         "options": {
-          "1": "Authorities can only be delegated to positions",
-          "2": "Authorities can only be delegated to persons",
-          "3": "Authorities can only be delegated by persons exercising them",
-          "4": "Authorities can only be delegated to certain classifications"
+          "1": "When a qualified independent consultant has advised the manager that the preferred contractor’s price is competitive with industry standards ",
+          "2": "When the deputy minister has given written permission to contract without the bidding process ",
+          "3": "When the need is one of pressing emergency in which delay would be injurious to the public interest",
+          "4": "When the manager has chosen the contractor before for a similar job, using competitive bidding and the contractor’s price has not changed since that time"
         },
         "feedback": {
           "1": "",
@@ -479,7 +475,7 @@ export default {
         }
       },
       "q5": {
-        "text": "You are preparing a statement of work. Which of the following should be included in the statement of work to avoid creating an employer-employee relationship?",
+        "text": "You are preparing a statement of work. Which of the following are some of the requirements that should be included in the statement of work to avoid creating an employer-employee relationship?",
         "options": {
           "1": "The objectives to be attained",
           "2": "How the work will be carried out ",
@@ -492,7 +488,7 @@ export default {
         }
       },
       "q6": {
-        "text": "Who is responsible for determining which goods, services or construction projects are needed and drafting the requirements?",
+        "text": "Who is responsible for determining which goods, services or construction activities are needed and drafting the requirements? ",
         "options": {
           "1": "The procurement specialist",
           "2": "The financial advisor",
@@ -505,7 +501,7 @@ export default {
         }
       },
       "q7": {
-        "text": "You are in the process of acquiring all-terrain vehicles for locations in the Nunavut Settlement Area. Which of the following items would you need to consider?",
+        "text": "You are in the process of acquiring all-terrain vehicles, with no security requirements, for locations in the Nunavut Settlement Area. Which of the following items would you need to consider?",
         "options": {
           "1": "Modern treaties and Comprehensive Land Claims Agreements",
           "2": "Specialized shipping requirements ",
@@ -644,11 +640,11 @@ export default {
     "unanswered":"Question(s) non-répondue(s)",
     "Questions": {
       "q1": {
-        "text": "Which contracting document should clearly describe the work to be carried out, the objectives to be attained, and the time frame?",
+        "text": "En matière de passation de marchés, quel document doit faire clairement état des travaux à effectuer, des objectifs à atteindre et des délais à respecter? ",
         "options": {
-          "1": "The statement of work ",
-          "2": "The terms and conditions of the contract",
-          "3": "The technical evaluation"
+          "1": "L’énoncé des travaux ",
+          "2": "Les modalités du marché ",
+          "3": "L’évaluation technique "
         },
         "feedback": {
           "1": "",
@@ -657,11 +653,11 @@ export default {
         }
       },
       "q2": {
-        "text": "Which of the following situations is an emergency in which someone with delegated contracting authority can enter into non-competitive contracts without first obtaining Treasury Board approval?",
+        "text": "Laquelle des situations suivantes est une d’extrême urgence où une personne à qui a été délégué le pouvoir de passation des contrats peut conclure un contrat non concurrentiel?",
         "options": {
-          "1": "One that would be injurious to the public interest",
-          "2": "One that would prevent attainment of an urgent operational requirement",
-          "3": "One that would seriously disrupt the development of a highly important architectural project"
+          "1": "Une situation où un retard serait préjudiciable à l’intérêt public ",
+          "2": "Une situation qui empêcherait la satisfaction d’un besoin opérationnel urgent ",
+          "3": "Une situation qui perturberait grandement l’avancement d’un projet architectural très important"
         },
         "feedback": {
           "1": "",
@@ -670,12 +666,12 @@ export default {
         }
       },
       "q3": {
-        "text": "According to the Government Contracts Regulations, when could a procurement specialist sign a procurement contract without soliciting bids?",
+        "text": "Selon le Règlement sur les marchés de l’État, dans quelles circonstances un spécialiste des acquisitions peut-il conclure un contrat sans lancer d’appel d’offres?",
         "options": {
-          "1": "When a qualified independent consultant has advised the manager that the preferred contractor’s price is competitive with industry standards ",
-          "2": "When the deputy minister has given written permission to contract without the bidding process",
-          "3": "When the need is one of pressing emergency in which delay would be injurious to the public interest",
-          "4": "When the manager has chosen the contractor before for a similar job, using competitive bidding and the contractor’s price has not changed since that time"
+          "1": "Les cas où un expert-conseil indépendant informe le gestionnaire que le prix de l’entrepreneur choisi est concurrentiel par rapport aux normes de l’industrie.",
+          "2": "Les cas où le sous-ministre donne son autorisation par écrit de conclure un contrat sans appel d’offres. ",
+          "3": "Les cas d’extrême urgence où un retard serait préjudiciable à l’intérêt public.",
+          "4": "Les cas où le gestionnaire a déjà conclu, dans le cadre d’un processus d’appel d’offres, un contrat de cette nature avec l’entrepreneur, dont le prix n’a pas augmenté depuis."
         },
         "feedback": {
           "1": "",
@@ -685,10 +681,10 @@ export default {
         }
       },
       "q4": {
-        "text": "A standing offer is a contract that binds a government organization and a supplier for the provision of goods or services.",
+        "text": "Une offre à commandes est un contrat qui lie une organisation gouvernementale et un fournisseur en vue de l’acquisition de biens ou de services. ",
         "options": {
-          "1": "True",
-          "2": "False"
+          "1": "Vrai",
+          "2": "Faux"
         },
         "feedback": {
           "1": "",
@@ -696,42 +692,38 @@ export default {
         }
       },
       "q5": {
-        "text": "You are preparing a statement of work. Which of the following should be included in the statement of work to avoid creating an employer-employee relationship?",
+        "text": "Vous préparez un énoncé des travaux (EDT). Lesquelles des exigences suivantes doivent figurer dans l’EDT pour éviter de créer une relation employeur-employé?",
         "options": {
-          "1": "Go ahead and authorize the commitment for both chairs",
-          "2": "Authorize the purchase for both chairs using your admin’s acquisition card",
-          "3": "Ask another manager to purchase the chairs with their acquisition card",
-          "4": "Authorize your admin’s chair and have your supervisor authorize your chair"
+          "1": "Les objectifs à atteindre ",
+          "2": "La façon dont les travaux seront réalisés ",
+          "3": "Les délais dans lesquels les travaux devraient être réalisés "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q6": {
-        "text": "This spending mechanism is used to obtain goods or services from a list of pre-qualified vendors, with pre-established terms and conditions. What is it?",
+        "text": "Qui est responsable de déterminer quels biens, services ou activités de construction sont requis et de rédiger les exigences? ",
         "options": {
-          "1": "Acquisition Card",
-          "2": "Competitive Contract",
-          "3": "Standing Offer",
-          "4": "Supply Arrangement"
+          "1": "Le spécialiste en approvisionnement ",
+          "2": "Le conseiller financier ",
+          "3": "Le gestionnaire"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q7": {
-        "text": "Which of the following is a soft commitment? ",
+        "text": "Vous avez entrepris le processus d’acquisition de véhicules tout terrain, sans exigences de sécurité, dans la région du Nunavut. Lequel des éléments suivants prendriez-vous en considération?",
         "options": {
-          "1": "When you make an arrangement with a known supplier",
-          "2": "When you reserve funds before the supplier is identified",
-          "3": "When a transaction has been coded in the financial system",
-          "4": "When you have a Memorandum of Understanding with another department"
+          "1": "Les traités modernes et les ententes sur les revendications territoriales globales ",
+          "2": "Les exigences en matière d’expédition spécialisée ",
+          "3": "Le niveau d’autorisation de sécurité du fournisseur ",
+          "4": "La Directive sur les marchés de l’État, incluant les baux immobiliers, dans la région du Nunavut "
         },
         "feedback": {
           "1": "",
@@ -741,27 +733,25 @@ export default {
         }
       },
       "q8": {
-        "text": "Which of the following is <span class='bolder' style='text-transform: uppercase; text-decoration: underline;'>not</span> part of a financial coding system?",
+        "text": "Achatsetventes.gc.ca/appels-d-offres est le nom d’un service électronique gouvernemental d’appels d’offres à l’intention des entrepreneurs et du site Web qui s’y rattache. En votre qualité de gestionnaire, vous recevez une question de la part d’un fournisseur au sujet d’une demande de soumissions affichée sur Achatsetventes.gc.ca/appels-d-offres. Que devriez-vous faire?",
         "options": {
-          "1": "Budget component",
-          "2": "Responsibility centre manager",
-          "3": "Performance indicator",
-          "4": "Transaction details"
+          "1": "Répondre à la question par écrit et envoyer une copie conforme à votre gestionnaire de l’approvisionnement. ",
+          "2": "Lui demander de communiquer avec le spécialiste en approvisionnement responsable de la demande de soumissions. ",
+          "3": "Lui dire de communiquer avec l’agent de projet et lui donner son numéro de téléphone. "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q9": {
-        "text": "As a manager authorizing a transaction against your budget under section 34 of the Financial Administration Act, it is essential that you do which of the following?",
+        "text": "Des lettres de refus ont été envoyées aux soumissionnaires qui n’ont pas été retenus les informant du fait que le contrat ne leur a pas été attribué. Si un soumissionnaire non retenu demande un compte rendu, qui devrait être son point de contact?",
         "options": {
-          "1": "Get approval from senior management",
-          "2": "Stay within your delegated limits",
-          "3": "Have section 32 authority pursuant to the FAA",
-          "4": "Ask section 33 if you can sign section 34"
+          "1": "Le gestionnaire ",
+          "2": "Le spécialiste en approvisionnement",
+          "3": "Le gouverneur en conseil",
+          "4": "Le ministre des Services publics et de l’Approvisionnement du Canada "
         },
         "feedback": {
           "1": "",
@@ -771,12 +761,12 @@ export default {
         }
       },
       "q10": {
-        "text": "Mr. Wong works as a manager for a small department and has delegation under both sections 32 and 34. Which instrument formalizes Mr. Wong’s delegated authorities?",
+        "text": "Pour faire une présélection des fournisseurs qui n’ont pas les qualifications minimales nécessaires et les années d’expérience requises pour entreprendre les travaux, vous décidez d’inclure des critères obligatoires dans vos documents d’appel d’offres. Que sont les critères obligatoires?",
         "options": {
-          "1": "Financial Administration Act",
-          "2": "Treasury Board policies",
-          "3": "The organization’s delegation chart",
-          "4": "His signed delegation card"
+          "1": "Une méthode de sélection d’un entrepreneur ",
+          "2": "Une grille de pointage des soumissions ",
+          "3": "Un système de critères cotés par points ",
+          "4": "Une méthode d’évaluation des soumissions"
         },
         "feedback": {
           "1": "",
@@ -786,12 +776,12 @@ export default {
         }
       },
       "q11": {
-        "text": "Your administrative professional has received an order of office supplies, along with an invoice. The invoice includes 5 whiteboards but she tells you that none were received. What would you do? ",
+        "text": "Qui peut aider à l’élaboration des critères d’évaluation des soumissions et du plan,  évaluer les soumissions et être appelé à soutenir le compte rendu à l’intention des soumissionnaires non retenus?",
         "options": {
-          "1": "Pay the invoice now",
-          "2": "Pay the invoice after all 5 whiteboards are received",
-          "3": "Pay the invoice knowing the whiteboards are back-ordered",
-          "4": "Pay the invoice now after speaking with the supplier"
+          "1": "Les membres de l’équipe d’évaluation des soumissions ",
+          "2": "L’agent financier qui approuve l’achat",
+          "3": "Le chef de l’équipe des communications ",
+          "4": "Le spécialiste en approvisionnement "
         },
         "feedback": {
           "1": "",
@@ -801,12 +791,12 @@ export default {
         }
       },
       "q12": {
-        "text": "You receive an invoice for an employee's annual professional membership due in September. What do you do?",
+        "text": "Parmi les options suivantes, lesquelles décrivent la répartition des points attribués et comportent parfois une note de passage minimale pour chaque catégorie ou une note de passage globale? ",
         "options": {
-          "1": "Pay the invoice for the full year now",
-          "2": "Pay what is due between now and the end of the fiscal year ",
-          "3": "Pay what is due between now and the end of the calendar year",
-          "4": "Ask them to split the invoice between calendar years"
+          "1": "Une méthode d’évaluation des soumissions",
+          "2": "Une grille de pointage des soumissions",
+          "3": "Une méthode de sélection des entrepreneurs ",
+          "4": "Un système de critères cotés par points "
         },
         "feedback": {
           "1": "",
@@ -816,46 +806,42 @@ export default {
         }
       },
       "q13": {
-        "text": "Who is responsible for financial coding accuracy?",
+        "text": "Pendant un compte rendu avec un soumissionnaire non retenu, quels renseignements peuvent être fournis?",
         "options": {
-          "1": "The administrative assistant who records the financial codes",
-          "2": "Managers who have delegated financial authorities",
-          "3": "The financial officer who performs quality assurance of the file",
-          "4": "The Chief Financial Officer’s office"
+          "1": "L’information contenue dans la proposition du soumissionnaire retenu ",
+          "2": "La note obtenue par le soumissionnaire non retenu ",
+          "3": "Un aperçu des facteurs et des critères utilisés dans l’évaluation "
         },
         "feedback": {
-          "wrong": "",
-          "right": ""
+          "1": "",
+          "2": "",
+          "3": ""
         }
       },
       "q14": {
-        "text": "How much time does the government have to pay for the goods?",
+        "text": "Parmi les étapes suivantes, lesquelles peuvent figurer dans le processus d’approbation? ",
         "options": {
-          "1": "Thirty days following acceptance of goods",
-          "2": "Thirty days after signing of Section 34 ",
-          "3": "Thirty days following receipt of the invoice",
-          "4": "Immediately"
+          "1": "Faire examiner le marché par les services juridiques",
+          "2": "Procéder à une analyse des coûts",
+          "3": "Demander à l’autorité déléguée d’approuver l’article 35 "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q15": {
-        "text": "The start date for your new employee has been pushed back. He will only be working 10 months of the fiscal year instead of 12 months. His salary is $60,000. What do you do?",
+        "text": "Une surveillance des contrats et ___________________ de qualité mènent à une bonne gestion des contrats, ce qui aide à éviter des coûts et des délais supplémentaires, des difficultés pour les entrepreneurs et des travaux supplémentaires.",
         "options": {
-          "1": "Increase budget by $10,000",
-          "2": "Reduce the actual expenditures by $10,000",
-          "3": "Reduce annual forecast expenditures by $10,000",
-          "4": "Increase commitments by $10,000"
+          "1": "des relations employeur-employé",
+          "2": "une tenue de dossier",
+          "3": "des produits livrables "
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       }
     }

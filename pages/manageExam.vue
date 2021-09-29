@@ -10,16 +10,15 @@
               <p>As per Treasury Board requirements, you must pass this test before you can exercise financial delegation.</p>
               <p>The test is made up of four sections, one for each phase: Plan, Procure, Manage, and Report.</p>
               <p>The passing grade is 80% for each of these sections.</p>
-              <p>Each section should take you around 5 to 10 minutes to complete.</p>
+              <p>This section should take you around 5 to 10 minutes to complete.</p>
               <p>You are allowed to consult course materials during the test. You may take it as many times as you need to get a passing grade.</p>
             </div>
             <div v-if="$i18n.locale=='fr'">
               <h3>Instructions</h3>
-              <p>Pour certaines des questions de ce test, vous &ecirc;tes dans le r&ocirc;le d’un responsable de centre d’appels. Des scénarios basés sur cette situation vous seront proposés.&nbsp;</p>
-              <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir l’examen de ce cours avant de pouvoir exercer la délégation financi&egrave;re.</p>
-              <p>Le test comporte trois parties - une à la fin de chaque phase - planification, dépenses et rapports.&nbsp;</p>
-              <p>La note de passage est de 80%, par partie.&nbsp;</p>
-              <p>Chaque partie devrait vous prendre environ 10 à 15 minutes.&nbsp;</p>
+              <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir le test de ce cours avant de pouvoir exercer la délégation financière.</p>
+              <p>Le test comporte quatre parties — une à la fin de chaque phase : planification, acquisition, gestion et rapports.</p>
+              <p>La note de passage est de 80 %, par partie.  </p>
+              <p>Cette partie devrait vous prendre environ 5 à 10 minutes.</p>
               <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p>
             </div>
           </b-alert>
@@ -465,11 +464,11 @@ export default {
       "unanswered":"Question(s) sans réponse",
       "Questions": {
       "q1": {
-  "text": " Which phase of the procurement life cycle does the procurement specialist normally lead?",
+       "text": "  Laquelle des étapes du processus d’approvisionnement est généralement menée par le spécialiste en approvisionnement? ",
       "options": {
-      "1": "Planning ",
-      "2": "Acquisition",
-      "3": "Divestiture "
+      "1": "La planification ",
+      "2": "L’acquisition ",
+      "3": "Le dessaisissement  "
       },
       "feedback": {
       "1": "",
@@ -478,12 +477,12 @@ export default {
       }
       },
       "q2": {
-      "text": "During the acquisition phase, managers are responsible for the following. ",
+      "text": "Pendant l’étape de l’acquisition, les gestionnaires sont responsables des tâches suivantes. ",
       "options": {
-      "1": "Acquire the materiel",
-      "2": "Receive and inspect the goods",
-      "3": "Ensure quality assurance and testing is done if applicable",
-      "4": "Dispose of surplus materiel"
+      "1": "Acquérir le matériel ",
+      "2": "Recevoir et inspecter les marchandises",
+      "3": "S’assurer qu’on procède à une assurance de la qualité et à des tests s’il y a lieu ",
+      "4": "Éliminer le matériel excédentaire "
       },
       "feedback": {
       "1": "",
@@ -493,12 +492,12 @@ export default {
       }
       },
       "q3": {
-      "text": "This phase identifies opportunities for replacement, reallocation or disposal of surplus materiel, or of materiel that is no longer cost-effective to operate.",
+      "text": "Cette étape définit des possibilités de remplacement, de réaffectation ou d’élimination du matériel excédentaire ou du matériel dont l’utilisation n’est plus rentable.",
       "options": {
-      "1": "Planning",
+      "1": "Planification",
       "2": "Acquisition",
-      "3": "Operation, use and maintenance",
-      "4": "Divestiture"
+      "3": "Exploitation, utilisation et entretien",
+      "4": "Dessaisissement "
       },
       "feedback": {
       "1": "",
@@ -508,12 +507,12 @@ export default {
       }
       },
       "q4": {
-      "text": "What is the objective of the operation, use and maintenance phase?",
+      "text": "Quel est l’objectif de l’étape d’exploitation, d’utilisation et d’entretien?",
       "options": {
-      "1": "To get the most out of the materiel ",
-      "2": "To make sure the materiel lasts as long as possible based on best value",
-      "3": "To consider the total cost of the product over its life",
-      "4": "To determine the method used to acquire the materiel"
+      "1": "Tirer le maximum du matériel",
+      "2": "S’assurer que le matériel dure le plus longtemps possible en fonction du meilleur rapport qualité-prix ",
+      "3": "Tenir compte du coût total du produit pendant sa durée de vie",
+      "4": "Déterminer la méthode utilisée pour acquérir le matériel"
       },
       "feedback": {
       "1": "",
@@ -523,10 +522,10 @@ export default {
       }
       },
       "q5": {
-      "text": "Maintaining records to track inventory holdings and locations, consumption, usage, repairs, costs and ensuring that the materiel is properly used, repaired and safeguarded are activities of life cycle materiel management.",
+      "text": "Tenir des dossiers pour faire le suivi de l’inventaire des stocks et emplacements, de la consommation, de l’utilisation, des réparations et des coûts et s’assurer que le matériel est utilisé, réparé et conservé de façon appropriée sont des activités de gestion du cycle de vie du matériel.",
       "options": {
-      "1": "True",
-      "2": "False"
+      "1": "Vrai",
+      "2": "Faux"
       },
       "feedback": {
       "1": "",

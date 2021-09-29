@@ -23,48 +23,52 @@
                       <!-- Used to jump to activities<button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->
                       <span v-if="$i18n.locale=='en'">
                         <h2>1. Introduction</h2>
-                        <p>In this section you will learn to </p>
-                        <ul>
-                          <li>verify your budget,</li>
-                          <li>distinguish between spending and financial authorities and procurement authorities, and</li>
-                          <li>confirm who has approval authority through financial delegation charts.</li>
-                        </ul>
-                        <p>This section should take you approximately 20 minutes to complete.</p>
+                        <p>[Against a blue background, thin diagonal lines sway in waves. Text appears in a white box with rounded corners. “Module 2: Forecast Budget Requirements. 1. Introduction.”]</p>
+                        <p>Narrator [N]: In this section, you will learn to determine the types of costs for goods and services to include in the procurement estimates, and to conduct a risk assessment and to draft a mitigation strategy in case the goods or services are not acquired.</p>
+                        <p>[Two drawings appear one after the other: a calculator next to a clipboard, and a lightbulb beneath a warning sign.]</p>
+                        <p>This section should take you approximately 30 minutes to complete.</p>
                         <hr>
                         <h2>2. Check Your Budget</h2>
-                        <p>Before beginning a procurement process, you must check that there are sufficient funds in your budget to cover the costs of the goods, the services and the construction that you are planning. If you don’t have enough funds, you may have to turn to other sources to find the money, such as</p>
+                        <p>[An outline of a circle appears. Half of it is filled in white with the words “30 minutes” underneath. Text appears in a white box with rounded corners. “2. Estimate Costs.” A drawing of a magnifying glass appears.]</p>
+                        <p>Before any purchase, start by estimating how much your goods, services, or construction will cost. This could be done in many ways including:</p>
                         <ul>
-                          <li>transfer funds within your own budgets,</li>
-                          <li>get extra money from other managers,</li>
-                          <li>use an untapped surplus your director might have, </li>
-                          <li>prepare a Treasury Board submission or a memorandum to Cabinet, and, </li>
-                          <li>depending on your business, tap into an interdepartmental settlement. </li>
+                          <li>looking at previous purchases, </li>
+                          <li>consulting purchasing catalogues or supplier websites, </li>
+                          <li>doing an internet search,</li>
+                          <li>gathering information from a supplier, </li>
+                          <li>looking at rental options, or </li>
+                          <li>asking for expert advice from Public Services and Procurement Canada.</li>
                         </ul>
-                        <p>The following activity will help you determine if you have enough funds in your budget.</p>
+                        <p>[More drawings appear beneath the magnifying glass. A shopping cart, a webpage, a computer, a text message above a laptop, a key, and a Canadian flag enclosed in a circle. A drawing of a stack of coins appears.]</p>
+                        <p>Don’t forget to find out if there are any other costs related to your purchase, such as delivery costs, life cycle costs, sustainment costs, and disposal costs. All should be included in your estimate. After all, you wouldn’t want to get a car if you can’t afford the auto insurance, gas, and maintenance!</p>
                         <hr>
 
                         <h2>3. Financial Authorities and Procurement Authorities</h2>
-                        <p>Now that you know if you have enough money in your budget, let’s check to see if you have the proper authority to begin buying the resources that you need!</p>
-                        <p>Did you know that Parliament created two authority streams? It created one for financial authorities and another for procurement authorities.</p>
-                        <p>To exercise your financial authority, you need to successfully complete this course, submit your signed delegation card to your finance unit and receive your formal delegation of authority in writing from your finance unit.</p>
-                        <p>Managers typically have two delegated authorities: section 32 for commitment authority and section 34 for certification authority. Section 32 would allow you to order office supplies, while section 34 would allow you to sign off on having received the supplies. For more information on sections 32 and 34, see the toolbox. </p>
-                        <p>Then, section 33 allows the finance unit to pay for the supplies. In certain situations, for example, temporary help services, you will need to go through a procurement process because it involves a contract. These situations are governed by section 41 of the Financial Administration Act and would typically be managed by the procurement section in your organization.</p>
-                        <p>As for procurement authorities, they are divided into two streams, one for goods and the other for services. </p>
-                        <p>Under the Department of Public Works and Government Services Act, the Minister of Public Services and Procurement Canada, PSPC, has the exclusive authority to acquire goods. The Minister of PSPC then delegates this authority to ministers to make purchases for their respective organizations according to specific contract values. Through their organizational delegation instruments, contracting authority is then delegated to positions once certain conditions have been met.</p>
-                        <p>Parliament grants authority for procurement services to ministers through their organization’s enabling legislation. Treasury Board limits ministerial authorities through policies like its Contracting Policy and Common Services Policy. Contracting authority for services can also be delegated to “positions” through the organizational delegation instrument and can be exercised once certain conditions have been met. </p>
-                        <p>To know what and how much you can authorize, consult your own signed delegation card and your organization’s delegation chart.</p>
-                        <p>Again, the format of these documents will differ depending on where you work. </p>
+                        <p>[A drawing of a car appears. Text appears in a white box with rounded corners. “3. Conduct a Risk Assessment.” A drawing of a work plan appears. The headings “Activities,” “Risk,” and “Mitigation” are circled.]</p>
+                        <p>Ever wonder what would happen if you were unable to procure the resources that you needed? When procurement is not an option, you will need to find other ways to accomplish your activities. Hints on how you can do this are actually found in the risk and mitigation sections of your work plan. </p>
+                        <p>[A drawing depicts a magnifying glass over a warning sign.]</p>
+                        <p>To conduct a risk assessment and draft a mitigation strategy, you:</p>
+                        <ul>
+                          <li>identify any events that could stop you from delivering your activities, </li>
+                          <li>determine the probability as to whether the event will happen or not, </li>
+                          <li>identify any potential losses or impacts associated with the event, and</li>
+                          <li>identify any actions you can take to lower the potential of that event happening.</li>
+                        </ul>
+                        <p>[Four drawings appear one after the other: a storm cloud over a delivery truck, a question mark inside of a lightbulb, a dollar bill with downward pointing arrows, and a magnifying glass over a warning sign.]</p>
+                        <p>The following exercise will help you identify the risks associated with your activities.</p>
                         <hr>
 
                         <h2>4. In Real Life</h2>
-                        <p>Take what you have learned into real life!</p>
-                        <p>Your organization will have its own ways of doing things. Take a time out from the course to consult your budgets and your organization’s financial signing authority chart.</p>
-                        <p>What are your department’s procurement spending limits? Do you need to consult Public Services and Procurement Canada? Does your department have its own set of procurement rules, such as the Department of National Defence or the Department of Justice?</p>
-
+                        <p>[Text appears in a white box with rounded corners. “4. In Real Life.” A drawing depicts a pen writing onto a checklist next to a stack of coins.]</p>
+                        <p>Take what you have learned into real life! Your organization will have its own ways of doing things. Take a time out from the course to see how budgets are forecasted in your department. </p>
+                        <p>[A drawing depicts a man and woman speaking together. A speech bubble with a dollar sign appears over the man’s head.]</p>
+                        <p>Connect with your colleagues, director, or financial management advisor, and chat about existing financial resources for your procurement needs.</p>                       
                         <hr>
 
                         <h2>5. Quiz</h2>
-                        <p>Now that you know how to verify your budget, distinguish between financial and procurement authorities, and consult your financial delegation charts, let’s see what you remember by taking this short quiz.</p>
+                        <p>[Text appears in a white box with rounded corners. “5. Quiz.” Three drawings with check marks appear side-by-side: a checklist next to a stack of coins, a magnifying glass over a warning sign, and a work plan.]</p>
+                        <p>Now that you know how to determine the types of costs to include in the procurement estimates, how to conduct a risk assessment, and how to draft a mitigation strategy, let’s see what you remember by taking this short quiz.</p>
+                        <p>[The words “Take the quiz!” appear next to a check mark. A drawing depicts a hand with a pencil completing a quiz.]</p>
                         <hr>
                         <h2>9. Section completed</h2>
                         <p>[Onscreen text showing Section Completed instruction.]</p>

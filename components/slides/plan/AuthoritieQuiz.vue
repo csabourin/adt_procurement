@@ -2,6 +2,7 @@
   <span>
     <div>
       <b-card>
+        <p v-html="$t('instructions')" />
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1"><checkboxQuiz :question="$t('q1')" qId="1" :Answer='["1","2","4"]' /></b-tab>
           <b-tab title="Question 2">
@@ -38,16 +39,16 @@
                       <p>Software Licence</p>
                     </td>
                     <td colspan="2">
-                      <p>3 000$</p>
+                      <p>$3,000</p>
                     </td>
                     <td style="background-color: hsl(255, 37%, 90%);text-align: right;" colspan="2">
-                      <p>0$</p>
+                      <p>$0</p>
                     </td>
                     <td  colspan="2">
-                      <p>1 500 $</p>
+                      <p>$1,500</p>
                     </td>
                     <td style="background-color: hsl(255, 37%, 90%);text-align: right;" colspan="2">
-                      <p>3 000 $</p>
+                      <p>$3,000</p>
                     </td>
                     <td colspan="2">
                       <p>annual cost $1,000 per licence × 3 FTEs</p>
@@ -86,13 +87,13 @@
                      </tr>
                   <tr>
                     <td style="background-color: hsl(255, 37%, 90%);" colspan="2">
-                      <p>License de logiciel</p>
+                      <p>Licence de logiciel</p>
                     </td>
                     <td colspan="2">
-                      <p>3 000$</p>
+                      <p>3 000 $</p>
                     </td>
                     <td style="background-color: hsl(255, 37%, 90%);text-align: right;" colspan="2">
-                      <p>0$</p>
+                      <p>0 $</p>
                     </td>
                     <td  colspan="2">
                       <p>1 500 $</p>
@@ -214,10 +215,10 @@
                       <p>Conférences</p>
                     </td>
                     <td colspan="2">
-                      <p>15 000$</p>
+                      <p>15 000 $</p>
                     </td>
                     <td style="background-color: hsl(255, 37%, 90%);text-align: right;" colspan="2">
-                      <p>2 500$</p>
+                      <p>2 500 $</p>
                     </td>
                     <td  colspan="2">
                       <p>8 000 $</p>
@@ -234,10 +235,10 @@
                       <p>Meubles</p>
                     </td>
                     <td colspan="2">
-                      <p>1 000$</p>
+                      <p>1 000 $</p>
                     </td>
                     <td style="background-color: hsl(255, 37%, 90%);text-align: right;" colspan="2">
-                      <p>100$</p>
+                      <p>100 $</p>
                     </td>
                     <td  colspan="2">
                       <p>900 $</p>
@@ -255,8 +256,8 @@
             <radioQuiz :question="$t('q3')" qId="3" /></b-tab>
           <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
           <b-tab title="Question 5"><radioQuiz :question="$t('q5')" qId="5" /></b-tab>
-          <b-tab title="Question 6">
-            <windowPortal :open="openChart" @close="openChart = false">
+          <b-tab title="Question 6"><radioQuiz :question="$t('q6')" qId="6" />
+          <windowPortal :open="openChart" @close="openChart = false">
       <delegAutorityEn v-if="$i18n.locale=='en'" />
       <delegAutorityFr v-if="$i18n.locale=='fr'" />
     </windowPortal>
@@ -266,8 +267,18 @@
         <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
       </b-col>
     </b-row>
-            <radioQuiz :question="$t('q6')" qId="6" /></b-tab>
-          <b-tab title="Question 7"><radioQuiz :question="$t('q7')" qId="7" /></b-tab>
+    </b-tab>
+          <b-tab title="Question 7"><radioQuiz :question="$t('q7')" qId="7" />
+            <windowPortal :open="openChart" @close="openChart = false">
+            <delegAutorityEn v-if="$i18n.locale=='en'" />
+            <delegAutorityFr v-if="$i18n.locale=='fr'" />
+            </windowPortal>
+        <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
+    <b-row>
+      <b-col cols="6" md="4" lg="2" class="text-center">
+        <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+      </b-col>
+    </b-row></b-tab>
         </b-tabs>
       </b-card>
       <!-- Control buttons-->
@@ -330,6 +341,7 @@ export default {
 </script>
 <i18n>{
   "en": {
+    "instructions": "Answer the following questions. ",
     "openChartButton": "Open the delegation of spending and financial signing authorities chart",
     "q1": {
       "text": "If you don’t have enough funds, what can you do to secure other sources of money?",
@@ -351,19 +363,19 @@ export default {
         "2": "No"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect</strong> Vous avez seulement assez d'argent pour couvrir le coût des licences de logiciel pour 3 employés.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Vous avez seulement assez d'argent pour couvrir le coût des licences de logiciel pour 3 employés."
+        "1": "<span class='v-wrong' /> <strong>Incorrect</strong> You only have enough money to cover the cost of software licences for three employees.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> You only have enough money to cover the cost of software licences for three employees.4"
       }
     },
     "q3": {
-      "text": "Your employee needs specialized software to process client requests. What would you do?",
+      "text": "Looking at the budget provided, do you have enough funds to buy a $2,500 chair for a new employee? ",
       "options": {
         "1": "Yes",
         "2": "No"
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct.</strong> Vous avez suffisamment de fonds. Comme vous ne prévoyez de dépenser que 10 500 $ des 15 000 $ réservés aux conférences, vous pouvez transférer le solde de 4 500 $ du poste Conférence au poste Meubles.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous avez suffisamment de fonds. Comme vous ne prévoyez de dépenser que 10 500 $ des 15 000 $ réservés aux conférences, vous pouvez transférer le solde de 4 500 $ du poste Conférence au poste Meubles."
+        "1": "<span class='v-right' /> <strong>Correct!</strong> You have enough funds. Since you only plan on spending $10,500 of the $15,000 reserved for conferences, you can transfer the remaining $4,500 conference balance to the furniture line item.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> You have enough funds. Since you only plan on spending $10,500 of the $15,000 reserved for conferences, you can transfer the remaining $4,500 conference balance to the furniture line item."
       }
     },
     "q4": {
@@ -375,14 +387,14 @@ export default {
         "4": "Financial and purchasing authorities"
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>  Le Parlement a créé deux catégories de pouvoir. Une pour les pouvoirs financiers et l’autre pour les pouvoirs en matière d’approvisionnement. ",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Le Parlement a créé deux catégories de pouvoir. Une pour les pouvoirs financiers et l’autre pour les pouvoirs en matière d’approvisionnement. ",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Le Parlement a créé deux catégories de pouvoir. Une pour les pouvoirs financiers et l’autre pour les pouvoirs en matière d’approvisionnement. ",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Le Parlement a créé deux catégories de pouvoir. Une pour les pouvoirs financiers et l’autre pour les pouvoirs en matière d’approvisionnement. "
+        "1": "<span class='v-right' /> <strong>Correct!</strong>  Parliament created two authority streams: one for financial authorities and another for procurement authorities. ",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Parliament created two authority streams: one for financial authorities and another for procurement authorities. ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Parliament created two authority streams: one for financial authorities and another for procurement authorities.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  Parliament created two authority streams: one for financial authorities and another for procurement authorities."
       }
     },
     "q5": {
-      "text": "Which section of the Financial Administration Act covers payment authority?",
+      "text": "Which section of the <em>Financial Administration Act</em> covers payment authority?",
       "options": {
         "1": "Section 32",
         "2": "Section 33",
@@ -390,21 +402,21 @@ export default {
         "4": "Section 41"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  L’article 33 de la Loi sur la gestion des finances publiques couvre les demandes de paiement",
-        "2": "<span class='v-right' /> <strong>Correct!</strong>  L’article 33 de la Loi sur la gestion des finances publiques couvre les demandes de paiement",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  L’article 33 de la Loi sur la gestion des finances publiques couvre les demandes de paiement",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  L’article 33 de la Loi sur la gestion des finances publiques couvre les demandes de paiement"
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Section 33 of the <em>Financial Administration Act</em> covers payment authority. ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Section 33 of the <em>Financial Administration Act</em> covers payment authority. ",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Section 33 of the <em>Financial Administration Act</em> covers payment authority.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Section 33 of the <em>Financial Administration Act</em> covers payment authority."
       }
     },
     "q6": {
-      "text": "Using the delegation of financial signing authority chart provided, can a manager purchase a $5,550 item on their acquisition card? ",
+      "text": "Using the delegation of financial signing authority chart provided, can a manager purchase a $5,550 item on their acquisition card?",
       "options": {
         "1": "Yes",
         "2": "No"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Selon le tableau de délégation des pouvoirs de signature en matière financière, un gestionnaire peut seulement acheter jusqu’à 5 000 $ sur sa carte d’achat. ",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Selon le tableau de délégation des pouvoirs de signature en matière financière, un gestionnaire peut seulement acheter jusqu’à 5 000 $ sur sa carte d’achat."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> As per this delegation of financial signing authority chart, a manager can purchase only up to $5,000 on their acquisition card. ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> As per this delegation of financial signing authority chart, a manager can purchase only up to $5,000 on their acquisition card."
       }
     },
     "q7": {
@@ -416,14 +428,15 @@ export default {
         "4": "Deputy Head "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $",
-        "2": "<span class='v-wrong' /> <strong>Correct!</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $",
-        "3": "<span class='v-wrong' /> <strong>Correct!</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $",
-        "4": "<span class='v-right' /> <strong>Correct!</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $"
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> A Deputy Head is the one who can approve a $300K Competitive Services transaction.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> A Deputy Head is the one who can approve a $300K Competitive Services transaction.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> A Deputy Head is the one who can approve a $300K Competitive Services transaction.",
+        "4": "<span class='v-right' /> <strong>Correct!</strong> A Deputy Head is the one who can approve a $300K Competitive Services transaction."
       }
     }
   },
   "fr": {
+    "instructions": "Répondez aux questions suivantes.",
     "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
     "q1": {
       "text": "Si vous n’avez pas assez de fonds, que pouvez-vous faire pour trouver d’autres sources d’argent?",
@@ -445,7 +458,7 @@ export default {
         "2": "Non"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect</strong> Vous avez seulement assez d'argent pour couvrir le coût des licences de logiciel pour 3 employés.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous avez seulement assez d'argent pour couvrir le coût des licences de logiciel pour 3 employés.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> Vous avez seulement assez d'argent pour couvrir le coût des licences de logiciel pour 3 employés."
       }
     },
@@ -456,7 +469,7 @@ export default {
         "2": "Non"
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct.</strong> Vous avez suffisamment de fonds. Comme vous ne prévoyez de dépenser que 10 500 $ des 15 000 $ réservés aux conférences, vous pouvez transférer le solde de 4 500 $ du poste Conférence au poste Meubles.",
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Vous avez suffisamment de fonds. Comme vous ne prévoyez de dépenser que 10 500 $ des 15 000 $ réservés aux conférences, vous pouvez transférer le solde de 4 500 $ du poste Conférence au poste Meubles.",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Vous avez suffisamment de fonds. Comme vous ne prévoyez de dépenser que 10 500 $ des 15 000 $ réservés aux conférences, vous pouvez transférer le solde de 4 500 $ du poste Conférence au poste Meubles."
       }
     },
@@ -476,7 +489,7 @@ export default {
       }
     },
     "q5": {
-      "text": "Quel article de la Loi sur la gestion des finances publiques couvre les demandes de paiement?",
+      "text": "Quel article de la <em>Loi sur la gestion des finances publiques</em> couvre les demandes de paiement?",
       "options": {
         "1": "Article 32",
         "2": "Article 33",
@@ -484,10 +497,10 @@ export default {
         "4": "Article 41"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong>  L’article 33 de la Loi sur la gestion des finances publiques couvre les demandes de paiement",
-        "2": "<span class='v-right' /> <strong>Correct!</strong>  L’article 33 de la Loi sur la gestion des finances publiques couvre les demandes de paiement",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  L’article 33 de la Loi sur la gestion des finances publiques couvre les demandes de paiement",
-        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  L’article 33 de la Loi sur la gestion des finances publiques couvre les demandes de paiement"
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’article 33 de la <em>Loi sur la gestion des finances</em> publiques couvre les demandes de paiement.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> L’article 33 de la <em>Loi sur la gestion des finances</em> publiques couvre les demandes de paiement.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’article 33 de la <em>Loi sur la gestion des finances</em> publiques couvre les demandes de paiement.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> L’article 33 de la <em>Loi sur la gestion des finances</em> publiques couvre les demandes de paiement."
       }
     },
     "q6": {
@@ -497,8 +510,8 @@ export default {
         "2": "Non"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Selon le tableau de délégation des pouvoirs de signature en matière financière, un gestionnaire peut seulement acheter jusqu’à 5 000 $ sur sa carte d’achat. ",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Selon le tableau de délégation des pouvoirs de signature en matière financière, un gestionnaire peut seulement acheter jusqu’à 5 000 $ sur sa carte d’achat."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Selon le tableau de délégation des pouvoirs de signature en matière financière, un gestionnaire peut seulement acheter jusqu’à 5&nbsp;000 $ sur sa carte d’achat. ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Selon le tableau de délégation des pouvoirs de signature en matière financière, un gestionnaire peut seulement acheter jusqu’à 5&nbsp;000 $ sur sa carte d’achat."
       }
     },
     "q7": {
@@ -510,10 +523,10 @@ export default {
         "4": "Administrateur général"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $",
-        "2": "<span class='v-wrong' /> <strong>Correct!</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $",
-        "3": "<span class='v-wrong' /> <strong>Correct!</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $",
-        "4": "<span class='v-right' /> <strong>Correct!</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $"
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $.",
+        "4": "<span class='v-right' /> <strong>Correct!</strong> Un administrateur général est celui qui peut approuver une transaction Concurrentiels - Services de 300 000 $."
       }
     }
     

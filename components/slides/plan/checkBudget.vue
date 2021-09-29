@@ -154,6 +154,7 @@
       </table>
     </div>
      <b-card>
+       <p v-html="$t('instructions')" />
     <b-tabs content v-model="tabIndex">
       <b-tab title="Question 1"><br><radioQuiz :question="$t('q1')" qId="1"/></b-tab>
       <b-tab title="Question 2"><br><radioQuiz :question="$t('q2')" qId="2" /></b-tab>
@@ -174,6 +175,7 @@
 <i18n>
   {
   "en": {
+    "instructions": "Answer the following questions. ",
     "q1": {
       "text": "Looking at the budget provided, do you have enough funds to cover a new $700 translation request?",
       "options": {
@@ -181,24 +183,22 @@
         "2": "No"
       },
       "feedback": {
-        "1": "<span class='v-right' /><strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-      },
-      "conclusion": "There is more than $700 in your budget for translation services, so you have enough money for the translation request."
+        "1": "<span class='v-right' /><strong>Correct!</strong>There is more than $700 in your budget for translation services, so you have enough money for the translation request.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>There is more than $700 in your budget for translation services, so you have enough money for the translation request."
+      }
     },
     "q2": {
       "text": "Looking at the budget provided, what is the maximum amount you can spend to cover a translation request within your annual forecasted line item? ",
       "options": {
         "1": "$800",
-        "2": "$1.200",
+        "2": "$1,200",
         "3": "$2,500 "
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>.",
-        "2": "<span class='v-wrong' /> <strong>incorrect</strong>",
-        "3": "<span class='v-wrong' /> <strong>incorrect</strong>"
-      },
-      "conclusion": "The maximum amount that you can spend to cover a translation request is $800 (Budget $2,500 – Commitment $500 and YTD Actuals $1,200 = Remaining amount $800)"
+        "1": "<span class='v-right' /> <strong>Correct!</strong> The maximum amount that you can spend to cover a translation request is $800 (Budget $2,500 – Commitment $500 and YTD Actuals $1,200 = Remaining amount $800)",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The maximum amount that you can spend to cover a translation request is $800 (Budget $2,500 – Commitment $500 and YTD Actuals $1,200 = Remaining amount $800)",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The maximum amount that you can spend to cover a translation request is $800 (Budget $2,500 – Commitment $500 and YTD Actuals $1,200 = Remaining amount $800)"
+      }
     },
     "q3": {
       "text": "Looking at the budget provided, do you have enough money in your budget to contract a consultant whose fee is $25,000?",
@@ -207,10 +207,9 @@
         "2": "No. There is not enough money in your approved budget."
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect</strong>",
-        "2": "<span class='v-right' /> <strong>Correct!</strong>."
-      },
-      "conclusion": "There is not enough money in your approved budget. Unless you are given more money or perform a salary conversion, you cannot contract the consultant. Look to other sources of funds."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> There is not enough money in your approved budget. Unless you are given more money or perform a salary conversion, you cannot contract the consultant. Look to other sources of funds.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> There is not enough money in your approved budget. Unless you are given more money or perform a salary conversion, you cannot contract the consultant. Look to other sources of funds."
+      }
     },
     "q4": {
       "text": "You have purchased all the software that you will need for the year at a cost of $1,500. You need to buy extra furniture for new staff. Looking at the budget provided, can you buy the $2,000 in extra furniture with the money initially allocated in software licences?",
@@ -219,10 +218,9 @@
         "2": "No. Once they are allocated to furniture, the funds cannot be moved."
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
-      },
-      "conclusion": "Yes, you can buy the extra furniture by moving money from the software line to the furniture line."
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Yes, you can buy the extra furniture by moving money from the software line to the furniture line.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Yes, you can buy the extra furniture by moving money from the software line to the furniture line."
+      }
     },
     "q5": {
       "text": "You are purchasing a $1,000 desk. With taxes, it will cost $1,115. Looking at the budget provided, do you have enough money to cover the purchase?",
@@ -231,10 +229,9 @@
         "2": "No"
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
-      },
-      "conclusion": "Yes, you have enough money to cover the purchase since you do not factor in the taxes in your budget."
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Yes, you have enough money to cover the purchase since you do not factor in the taxes in your budget.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Yes, you have enough money to cover the purchase since you do not factor in the taxes in your budget."
+      }
     },
     "lines": [
       [
@@ -262,9 +259,9 @@
         "&nbsp;"
       ],
       [
-        "Software License",
+        "Software Licence",
         "$3,000",
-        "$1,500",
+        "$0",
         "$1,500",
         "$3,000",
         "new software, annual cost $1,000&nbsp;&times;&nbsp;3 FTEs"
@@ -328,7 +325,7 @@
       [
         "TOTAL",
         "$44,900",
-        "$15,053",
+        "$13,553",
         "$17,800",
         "$44,100",
         "&nbsp;"
@@ -338,17 +335,17 @@
     "oAndm": "O&M"
   },
   "fr": {
+    "instructions": "Répondez aux questions suivantes.",
     "q1": {
-      "text": "En regardant le budget fourni, avez-vous suffisamment de fonds pour couvrir une nouvelle demande de traduction de 700 $",
+      "text": "En regardant le budget fourni, avez-vous suffisamment de fonds pour couvrir une nouvelle demande de traduction de 700 $ ?",
       "options": {
         "1": "Oui",
         "2": "Non"
       },
       "feedback": {
-        "1": "<span class='v-right' /><strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-      },
-      "conclusion": "Votre budget pour les services de traduction s’élève à plus de 700 $. Vous avez donc suffisamment d’argent pour la demande de traduction."
+        "1": "<span class='v-right' /><strong>Correct!</strong> Votre budget pour les services de traduction s’élève à plus de 700 $. Vous avez donc suffisamment d’argent pour la demande de traduction.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Votre budget pour les services de traduction s’élève à plus de 700 $. Vous avez donc suffisamment d’argent pour la demande de traduction."
+      }
     },
     "q2": {
       "text": "En regardant le budget fourni, quel est le montant maximum que vous pouvez dépenser pour couvrir une demande de traduction selon la prévision annuelle à cet effet?",
@@ -358,11 +355,10 @@
         "3": "2 500 $"
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>.",
-        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>",
-        "3": "<span class='v-wrong' /> <strong>Incorrect</strong>"
-      },
-      "conclusion": "Le montant maximum que vous pouvez dépenser pour couvrir une demande de traduction est de 800 $ (budget 2 500 $ - engagement 500 $ et CDA réel 1 200 $ = montant restant 800 $)."
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Le montant maximum que vous pouvez dépenser pour couvrir une demande de traduction est de 800 $ (budget 2 500 $ - engagement 500 $ et CDA réel 1 200 $ = montant restant 800 $).",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le montant maximum que vous pouvez dépenser pour couvrir une demande de traduction est de 800 $ (budget 2 500 $ - engagement 500 $ et CDA réel 1 200 $ = montant restant 800 $).",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Le montant maximum que vous pouvez dépenser pour couvrir une demande de traduction est de 800 $ (budget 2 500 $ - engagement 500 $ et CDA réel 1 200 $ = montant restant 800 $)."
+      }
     },
     "q3": {
       "text": "En regardant le budget fourni, avez-vous assez d’argent dans votre budget pour conclure un contrat avec un consultant dont les honoraires s’élèvent à 25 000 $?",
@@ -371,10 +367,9 @@
         "2": "Non. Il n’y a pas assez d’argent dans votre budget approuvé. "
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect</strong>",
-        "2": "<span class='v-right' /> <strong>Correct!</strong>."
-      },
-      "conclusion": "Il n’y a pas assez d’argent dans votre budget approuvé. À moins que vous ne receviez plus d’argent ou ne procédiez à une conversion de salaire, vous ne pouvez pas conclure un contrat avec le consultant. Recherchez d’autres sources de financement."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Il n’y a pas assez d’argent dans votre budget approuvé. À moins que vous ne receviez plus d’argent ou ne procédiez à une conversion de salaire, vous ne pouvez pas conclure un contrat avec le consultant. Recherchez d’autres sources de financement.",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Il n’y a pas assez d’argent dans votre budget approuvé. À moins que vous ne receviez plus d’argent ou ne procédiez à une conversion de salaire, vous ne pouvez pas conclure un contrat avec le consultant. Recherchez d’autres sources de financement."
+      }
     },
     "q4": {
       "text": "Vous avez acheté tous les logiciels dont vous aurez besoin pour l’année au prix de 1 500 $. Vous devez acheter des meubles supplémentaires pour les nouveaux employés. En regardant le budget fourni, pouvez-vous acheter les meubles supplémentaires de 2 000 $ avec l’argent initialement alloué aux logiciels?",
@@ -383,10 +378,9 @@
         "2": "Non. Une fois que les fonds sont réservés aux logiciels, ils ne peuvent plus être déplacés."
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
-      },
-      "conclusion": "Oui, vous pouvez acheter les meubles supplémentaires en transférant de l’argent du poste des licences de logiciel à celui des meubles."
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Oui, vous pouvez acheter les meubles supplémentaires en transférant de l’argent du poste des licences de logiciel à celui des meubles.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Oui, vous pouvez acheter les meubles supplémentaires en transférant de l’argent du poste des licences de logiciel à celui des meubles."
+      }
     },
     "q5": {
       "text": "Vous achetez un bureau à 1 000 $. Avec les taxes, il vous en coûtera 1 115 $. En regardant le budget fourni, avez-vous assez d’argent pour couvrir l’achat?",
@@ -395,10 +389,9 @@
         "2": "Non"
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong>",
-        "2": "<span class='v-wrong' /> <strong>Incorrect</strong>."
-      },
-      "conclusion": "Oui, vous avez suffisamment d’argent pour couvrir l’achat puisque vous ne tenez pas compte des taxes dans votre budget."
+        "1": "<span class='v-right' /> <strong>Correct!</strong> Oui, vous avez suffisamment d’argent pour couvrir l’achat puisque vous ne tenez pas compte des taxes dans votre budget.",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Oui, vous avez suffisamment d’argent pour couvrir l’achat puisque vous ne tenez pas compte des taxes dans votre budget."
+      }
     },
     "lines": [
       [
@@ -415,7 +408,7 @@
         "240&nbsp;139&nbsp;$",
         "203&nbsp;194&nbsp;$",
         "443&nbsp;333&nbsp;$",
-        "gestionnaire, 2 agents, 2 analystes, 1 agent jr., 1 analyste jr., 1 administrateur, 1 agent prenant sa retraite le 1er juillet, occasionnel 4 mois"
+        "gestionnaire, 2 agents, 2 analystes, 1 agent subalterne., 1 analyste subalterne., 1 administrateur, 1 agent prenant sa retraite le 1er juillet, occasionnel 4 mois"
       ],
       [
         "TOTAL",
@@ -428,7 +421,7 @@
       [
         "Licence de logiciel",
         "3&nbsp;000&nbsp;$",
-        "1&nbsp;500&nbsp;$",
+        "0$",
         "1&nbsp;500&nbsp;$",
         "3&nbsp;000&nbsp;$",
         "nouveau logiciel, coût annuel 1&nbsp;000&nbsp;$&nbsp;&times;&nbsp;3 ETP"
@@ -479,7 +472,7 @@
         "4&nbsp;000&nbsp;$",
         "1&nbsp;700&nbsp;$",
         "7&nbsp;800&nbsp;$",
-        "Voyage 1 - 1&nbsp;700&nbsp;$ réclamés de 2&nbsp;000&nbsp;$ approuvés <br>Voyage 2 - 2&nbsp;000&nbsp;$ engagés<br>Voyage 3 - 2&nbsp;000&nbsp;$ engagés<br>Voyage 4 - 2&nbsp;000&nbsp;$ Non encore approuvé"
+        "Voyage 1 - 1&nbsp;700&nbsp;$ réclamés de 2&nbsp;000&nbsp;$ approuvés <br>Voyage 2 - 2&nbsp;000&nbsp;$ engagés<br>Voyage 3 - 2&nbsp;000&nbsp;$ engagés<br>Voyage 4 - 2&nbsp;000&nbsp;$ Non encore approuvés"
       ],
       [
         "Aide temporaire",
@@ -492,7 +485,7 @@
       [
         "TOTAL",
         "44&nbsp;900&nbsp;$",
-        "15&nbsp;053&nbsp;$",
+        "13&nbsp;553&nbsp;$",
         "17&nbsp;800&nbsp;$",
         "44&nbsp;100&nbsp;$",
         "&nbsp;"

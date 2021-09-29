@@ -1,6 +1,7 @@
 <template>
 	<div>
     <b-card>
+       <p v-html="$t('instructions')" />
       <b-tabs content v-model="tabIndex">
         <b-tab title="Question 1"><radioQuiz :question="$t('q1')" qId="1"/></b-tab>
         <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["3","4"]' /></b-tab>
@@ -21,11 +22,6 @@
       <delegAutorityFr v-if="$i18n.locale=='fr'" />
     </windowPortal>
     <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
-    <b-row>
-      <b-col cols="6" md="4" lg="2" class="text-center">
-        <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-      </b-col>
-    </b-row>
 	</div>
 </template>
 
@@ -64,6 +60,7 @@
 </script>
 <i18n>{
   "en": {
+    "instructions": "Answer the following questions. ",
     "openChartButton": "Open the delegation of spending and financial signing authorities chart",
     "q1": {
       "text": "Using the delegation of financial signing authority chart provided, identify the maximum amount that a director could approve for a Non-competitive - Services transaction.",
@@ -74,12 +71,11 @@
         "4": "$80,000"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect</strong>",
-        "2": "<span class='v-right' /><strong>Correct!.</strong>",
-        "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-        "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-      },
-      "conclusion": "A director could approve a Non-competitive - Services transaction of up to $5,000."
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> A director could approve a Non-competitive - Services transaction of up to $5,000.",
+        "2": "<span class='v-right' /><strong>Correct!</strong> A director could approve a Non-competitive - Services transaction of up to $5,000.",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> A director could approve a Non-competitive - Services transaction of up to $5,000.",
+        "4": "<span class='v-wrong' /><strong>Incorrect.</strong> A director could approve a Non-competitive - Services transaction of up to $5,000."
+      }
     },
     "q2": {
       "text": "Using the delegation of financial signing authority chart provided, who can approve a $2 million Electronic Bidding - Services transaction?",
@@ -103,15 +99,15 @@
         "4": "Director General"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect</strong>",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-        "3": "<span class='v-right' /><strong>Correct.</strong>",
-        "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-      },
-      "conclusion": "A Designated Procurement Officer is the lowest position that can approve a $175,000 Competitive - Services transaction."
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> A Designated Procurement Officer is the lowest position that can approve a $175,000 Competitive - Services transaction.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> A Designated Procurement Officer is the lowest position that can approve a $175,000 Competitive - Services transaction.",
+        "3": "<span class='v-right' /><strong>Correct.</strong> A Designated Procurement Officer is the lowest position that can approve a $175,000 Competitive - Services transaction.",
+        "4": "<span class='v-wrong' /><strong>Incorrect.</strong> A Designated Procurement Officer is the lowest position that can approve a $175,000 Competitive - Services transaction."
+      }
     }
   },
   "fr": {
+    "instructions": "Répondez aux questions suivantes.",
     "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
     "q1": {
       "text": "À l’aide du tableau de délégation des pouvoirs de signature en matière financière fourni, identifiez le montant maximum qu’un directeur pourrait approuver pour une transaction Non concurrentiels - Services. ",
@@ -122,12 +118,11 @@
         "4": "80 000 $"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect</strong>",
-        "2": "<span class='v-right' /><strong>Correct!.</strong>",
-        "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-        "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-      },
-      "conclusion": "Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $"
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $",
+        "2": "<span class='v-right' /><strong>Correct!</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $",
+        "4": "<span class='v-wrong' /><strong>Incorrect.</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $"
+      }
     },
     "q2": {
       "text": "À l’aide du tableau de délégation des pouvoirs de signature en matière financière fourni, qui peut approuver une transaction de 2 millions de dollars pour une transaction Soumission électronique - Services?  ",
@@ -151,12 +146,11 @@
         "4": "Directeur général"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect</strong>",
-        "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-        "3": "<span class='v-right' /><strong>Correct!.</strong>",
-        "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-      },
-      "conclusion": "Un agent d’acquisition désigné est le poste le plus bas dont le titulaire peut approuver une transaction de 175 000 $ pour une transaction Concurrentiels – Services. "
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Un agent d’acquisition désigné est le poste le plus bas dont le titulaire peut approuver une transaction de 175 000 $ pour une transaction Concurrentiels – Services.",
+        "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Un agent d’acquisition désigné est le poste le plus bas dont le titulaire peut approuver une transaction de 175 000 $ pour une transaction Concurrentiels – Services.",
+        "3": "<span class='v-right' /><strong>Correct!</strong> Un agent d’acquisition désigné est le poste le plus bas dont le titulaire peut approuver une transaction de 175 000 $ pour une transaction Concurrentiels – Services.",
+        "4": "<span class='v-wrong' /><strong>Incorrect.</strong> Un agent d’acquisition désigné est le poste le plus bas dont le titulaire peut approuver une transaction de 175 000 $ pour une transaction Concurrentiels – Services."
+      }
     }
   }
 }</i18n>

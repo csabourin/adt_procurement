@@ -173,7 +173,7 @@ export default {
         },
         budgetauthorities: {
           references: [],
-          infos: [0],
+          infos: [0,3],
           quiz: [4]
         },
         procurePart1: {

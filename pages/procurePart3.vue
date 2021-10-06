@@ -19,44 +19,131 @@
                   <b-card-body>
                     <b-card-text>
                       <span v-if="$i18n.locale=='en'">
-                        <h2>1. Continuous Monitoring</h2>
-                        <p>As a manager, you are responsible for ensuring that all commitments and expenditures are monitored throughout the year and that they are accurately recorded in the financial system.</p>
-                        <p>This monitoring is both at a transactional level and at a strategic level. Depending on the situation, it may involve one or more of the following actions:</p>
+                        <h2>1. Introduction</h2>
+                        <p>[On a purple background with wavy white lines, a title card reads, “Module 6: Administer, Pay and Close Out Contract.” A text box reads, “1. Introduction.”] </p>
+                        <p>In this section you will learn to administer, pay and close out the contract. </p>
+                        <p>[The words “administer,” “pay,” and “close out the contract” appear beside white-outlined drawings of a wrench, coins, and a document.] </p>
+                        <p>This section should take you approximately 30 minutes to complete.</p>
+                        <hr>
+                        <h2>2. Administer the Contract</h2>
+                        <p>[Half of a clock is shaded in. A textbox reads, “2. Administer the Contract.”] </p>
+                        <p>The contract has been awarded. You might think that your work is done, right? Not so fast! There is still more to do!</p>
+                        <p>[A ribbon hangs above an image of a man shaking hands with three people.]</p>
+                        <p>With the help of your procurement specialist, you must now administer the contract that you have just awarded. Let’s take a minute to see who does what.</p>
+                        <p>[The headline “Administer the contract” hangs above a man and woman, who look over a document.]</p>
+                        <p>As the manager, your responsibilities include: </p>
+                        <p>[Thought bubbles pop up around a woman. They each fill with one of the key responsibilities as the narrator recites them.] </p>
                         <ul>
-                          <li>Closing commitments that are no longer required.</li>
-                          <li>Amending contracts for scope, time, and amount.</li>
-                          <li>Updating the salary forecast to reflect your current and planned staffing needs. </li>
-                          <li>Planning for potential budget shortfalls or pressures.</li>
-                          <li>Flagging budget surpluses to senior management.</li>
-                          <li>And making expenditure adjustments.</li>
+                          <li>monitoring the timelines, deliverables, costs, and quality of the work against an agreed-upon work plan and statement of work,</li>
+                          <li>ensuring delivery dates are met, </li>
+                          <li>ensuring contractors are not treated as employees, </li>
+                          <li>attending progress meetings as required,  </li>
+                          <li>managing the contract’s expenditures or burn rate,  </li>
+                          <li>responding to Access to Information requests and ministerial enquiries, and </li>
+                          <li>issuing task authorizations, as required. </li>
                         </ul>
-                        <p>Let’s play with a few examples.</p>
+                        <p>As for the procurement specialist, their responsibilities include: </p>
+                        <p>[As the narrator speaks, thought bubbles with key phrases pop up around a man.] </p>
+                        <ul>
+                          <li>supporting the manager in monitoring contract progress and financing, </li>
+                          <li>attending progress meetings, as required </li>
+                          <li>resolving any disputes, </li>
+                          <li>amending the contract as needed, </li>
+                          <li>performing contract audits, </li>
+                          <li>issuing task authorizations, as needed </li>
+                          <li>supporting the manager in monitoring that delivery dates are met, </li>
+                          <li>assisting the manager in responding to Access to Information requests and ministerial enquiries, and  </li>
+                          <li>overseeing contract termination. </li>
+                        </ul>
+                        <p>Accessibility should be a consideration throughout the procurement process, not only for employees, but also for contractors. As a manager, you may need to engage with contractors about government-created barriers that they are facing when doing the work.  </p>
+                        <p>[The words “Accessibility considerations” are above nine circles with various symbols in them, including a person walking with crutches, a pregnant person pushing a carriage, and an ear with a hearing aid.] </p>
+                        <p>Here is a quick exercise to help you determine your responsibilities.</p>
                         <hr>
-                        <h2>2. Data Comparison</h2>
-                        <p>Taking care of your budget is really important because the decisions you make within your budget may influence your sector, your branch, or even your department.</p>
-                        <p>At the end of the fiscal year, you will need to justify any deficits or surpluses. Depending on your department, you may need to be within a certain percentage of your forecasts.</p>
-                        <p>On one hand, overspending can cause a deficit, which puts a lot of pressure on senior management to find additional sources of funds to compensate.</p>
-                        <p>On the other hand, a surplus should be flagged as early as possible so that your unit doesn’t miss an opportunity to reallocate unused funds to another activity, or another unit.</p>
-                        <p>Monthly reports help you track your financials. They are sometimes called “financial situation reports” or FSRs and are usually produced by the Finance team within your organization.</p>
-                        <p>What is in the FSR needs to match what is actually going on in your unit. If it doesn’t, then you need to take appropriate action to resolve the discrepancy. </p>
-                        <p>In the next activity, you will have a chance to review and adjust your financial situation according to new information.</p>
+                        <h2>3. Ensure Records Are Maintained</h2>
+                        <p>[A textbox reads, “3. Ensure Records Are Maintained.”] </p>
+                        <p>Now that you know who is responsible for what, it’s paperwork time! </p>
+                        <p>[The words “Record maintenance” appear above a filing cabinet.] </p>
+                        <p>Throughout the contract, you must ensure that records are maintained. You will need to keep information such as quality, quantity and timelines for the goods received or the work to be performed.  </p>
+                        <p>Any discrepancies in the work of a contractor to whom a contract has been awarded must also be documented. </p>
+                        <p>[The words “quality,” “quantity,” “timelines,” and “discrepancies” pop up beside the filing cabinet.] </p>
+                        <p>It is important to maintain records so that you can show that what has been purchased has been delivered or that the work has been completed, and you must verify that the goods or services are in accordance with the contract.</p>
+                        <p>[Under the words “Record maintenance,” a hand checks items off a list. Then, two boxes appear on the left side of the screen. A signed contract is on the other side. An equal sign is between the two images.] </p>
+                        <p>If you discover inadequate or deficient work, you must advise the procurement specialist immediately so that they can notify the contractor in writing of these deficiencies.  </p>
+                        <p>[The words “Advise the procurement specialist immediately” appear beside the boxes and contract.] </p>
+                        <p>The written notification from the procurement specialist will remind the contractor of their obligations under the contract and make them aware of the consequences of failing to correct the deficiency within a specific time period. </p>
+                        <p>[Under the words “Record maintenance,” a document is sealed in an envelope, which zooms away.] </p>
+                        <p>Good contract monitoring and record keeping leads to good contract management, which helps avoid additional costs and delays, difficulties for contractors and additional work. </p>
+                        <p>[ Text reads, “Good contract monitoring and record keeping.” An arrow points from these words to text reading “Good contract management,” which has an arrow pointing to “Avoid additional costs, delays and difficulties.”] </p>
+                        <p>After all, an ounce of prevention is worth a pound of cure! </p>
+
                         <hr>
-                        <h2>3. Year-End Procedures</h2>
-                        <p>Since most budgets are allocated by Parliament on an annual basis and must be used within the fiscal year, goods and services must be received on or before March 31.</p>
-                        <p>However, you will most likely have a number of outstanding expenditures that you will not be able to pay before the end of the fiscal year for goods that are in your possession. To help with that, the Finance unit will establish Payables at Year-End or Receivables at Year-End in the financial system after receiving your list of outstanding payables.</p>
-                        <p>A P-A-Y-E is an amount owed for goods and/or services delivered in the old fiscal year using old year funds but paid in the new fiscal year when the supplier invoice is received.</p>
-                        <p>An R-A-Y-E is an amount due from another department for goods and/or services delivered in the old fiscal year, for which receipt of payment will be in the new fiscal year.</p>
-                        <p>Usually, again depending on the practices within your department—Finance will send out year-end instructions about how to establish a P-A-Y-E or an  R-A-Y-E. These instructions will also include specific requirements with respect to the minimum dollar amount and the timeline. </p>
-                        <p>Contracts can be a bit tricky when we are close to the end of the fiscal year. Here are a couple of things to keep in mind:</p>
-                        <ol>
-                          <li>Pay attention to the deadlines set by Procurement. You may not be able to create a purchase order as you approach year-end. </li>
-                          <li>Follow up with suppliers to make sure that the goods or services will be delivered before year-end. If it’s not possible before March 31, the expenditures will have to be paid using new year funding. Talk to Procurement about possible steps. </li>
-                        </ol>
+                        <h2>4. Accept Deliverables</h2>
+                        <p>[A text box reads, “4. Accept Deliverables.”] </p>
+                        <p>Before you pay the contract, there are a few things to do.  </p>
+                        <p>[A signed document and a pile of coins appear under the words “Before you pay.” As the narrator speaks, her key points appear in a list.] </p>
+                        <p>You must first ensure that the terms and conditions of the contract are met.  </p>
+                        <p>You must: </p>
+                        <ul>
+                          <li>check that the goods, services or construction are of the proper quality and in the right quantity, </li>
+                          <li>confirm that the goods were received as ordered,  </li>
+                          <li>confirm that the work was performed, and the services or construction were rendered as per contract, and </li>
+                          <li>if the deliverable is a report or other product, ensure that it is complete and free of errors. </li>
+                        </ul>
+                        <p>Then, once you are satisfied with the deliverable, you must ensure that the payment terms are met. Only once this is done can you proceed to paying the contract. </p>
                         <hr>
-                        <h2>4. Quiz</h2>
-                        <p>So now that you know how to initiate expenditures, authorize commitments, exercise financial authority and monitor and control finances, let’s see what you remember by taking this short quiz.</p>
+                        <h2>5. Exercise Certification and Payment Authorities</h2>
+                        <p>[A text box reads, “5. Exercise Certification and Payment Authorities.” A page appears with Canada’s coat of arms. The page reads, “Consolidation. Financial Administration Act” in English and French.] </p>
+                        <p>As the certification authority under section 34 of the Financial Administration Act, your responsibility is to ensure that: </p>
+                        <p> [An itemized list pops up as the narrator speaks.] </p>
+                        <ul>
+                          <li>the work has been performed,  </li>
+                          <li>that the goods supplied or the service or construction rendered are acceptable,  </li>
+                          <li>that the deliverables and the invoice are in accordance with the contract.  </li>
+                        </ul>
+                        <p>With some types of contracts, this responsibility could be a shared with the procurement specialist. </p>
+                        <p>You will verify the accuracy of the invoice or claim by checking the following elements: </p>
+                        <p>[A list appears on a clipboard as the narrator gives the key points.] </p>
+                        <ul>
+                          <li>The invoice issued is on or after the date the goods or services or construction have been rendered.</li>
+                          <li>The line items claimed on the invoice and amount for each item are accurate: they match the order and are within the contract unit price or per diem, and travel limits. </li>
+                          <li>The currency, GST and HST, and all applicable taxes and fees are accurate. </li>
+                          <li>The supplier or payee information is accurate, and they are eligible for payment. </li>
+                          <li>The amount has not previously been paid. </li>
+                        </ul>
+                        <p>Then you will determine how the invoice will be paid. </p>
+                        <p>[Two arrows point upward on a dollar bill.] </p>
+                        <p>Finally, after reviewing the payment request, the financial officer pays the invoice pursuant to section 33 of the Financial Administration Act. </p>
                         <hr>
-                        <h2>5. Section Completed</h2>
+                        <h2>6. Close Out the Contract</h2>
+                        <p>[The Financial Administration Act page reappears. A text box reads, “6. Close Out the Contract.”] </p>
+                        <p>Once a contract has been completed, the procurement specialist responsible for the file will close the file. Before closing the file, a review will be conducted to ensure the following: </p>
+                        <p>[A contract and a few coins are on a checklist, with a checkmark above them. A magnifying glass hovers over the checklist, and bullet points appear under the words “Closing out review” as the narrator speaks.] </p>
+                        <ul>
+                          <li>All contractual requirements have been met and the manager has received and accepted all deliverables under the contract. </li>
+                          <li>All payments to the contractor and settlement of claims have been made. </li>
+                          <li>No outstanding action is required. </li>
+                          <li>All reporting requirements have been met. </li>
+                          <li>All required documentation is on file. </li>
+                          <li>Amendments to finalization of cost, as required, are complete. </li>
+                        </ul>
+                        <p>Also, if the intellectual property was retained by the Government of Canada, then the appropriate steps need to be taken. </p>
+                        <p>[An arrow points from the words “IF intellectual property retained by the Government of Canada” to “appropriate steps need to be taken.” More arrows connect the narrator’s following statements.] </p>
+                        <p>If a product has a warranty, the file will remain open for the warranty period. If the file is in audit, it will remain open until the final audit report is filed and accepted. If there is a litigation involving the file, it cannot be closed. </p>
+                        <p>A review of any lessons learned, including any audit findings, is also done to improve future procurement activities. </p>
+                        <hr>
+                        <h2>7. In Real Life</h2>
+                        <p>[A text box reads, “7. In Real Life.”] </p>
+                        <p>Take what you have learned into real life! </p>
+                        <p>[A man and woman talk. A speech bubble comes from his mouth. It is filled with a dollar sign.] </p>
+                        <p>Your organization will have their own ways of doing things. Take time out from the course to see how contracts are administered, paid out and closed in your department. And don’t forget to check the Toolbox for a job aid on the procurement process! </p>
+                        <hr>
+                        <h2>8. Quiz</h2>
+                        <p>[A toolbox is labelled “Job Aids.” A text box reads, “8. Quiz.” Three images appear side by side: a wrench, a pile of coins, and a completed checklist.] </p>
+                        <p>Now that you have seen how to administer, pay out and close a contract, let’s see what you remember by taking this short quiz. </p>
+                        <p>[The words “Take the quiz!” appear beside a hand writing on a page. The video fades to black.] </p>
+                        <hr>
+                        <h2>9. Section Completed</h2>
+                        <p>[Onscreen text showing Section Completed instruction.]</p>
                       </span>
                       <span v-if="$i18n.locale=='fr'">
                         <h2>1. Suivi continu </h2>
@@ -226,6 +313,7 @@ import AcceptDeliverables from '~/components/slides/spend/procurePart3AcceptDeli
 import CertificationPaymentAuthorities from '~/components/slides/spend/procurePart3ECPA'
 import CloseOutContract from '~/components/slides/spend/procurePart3CloseOutContract'
 import procurePart3Quiz from '~/components/slides/spend/procurePart3Quiz'
+import Language_icon from '../components/icons/language_icon.vue'
 export default {
   data() {
     return {
@@ -244,7 +332,8 @@ export default {
     AcceptDeliverables,
     CertificationPaymentAuthorities,
     CloseOutContract,
-    procurePart3Quiz
+    procurePart3Quiz,
+    Language_icon
   },
   computed: {
     thatPoint() {

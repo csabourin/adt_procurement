@@ -20,61 +20,102 @@
                     <b-card-text>
                       <!-- <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalParts') + ' - ' +navBarTracks[index]}}</button> -->
                       <span v-if="$i18n.locale=='en'">
-                        <!-- 
-                        <p>Slide 1: Certification Authority <br />***</p>
-                        <p>&ldquo;In general, no invoice should be paid until all goods are received or services performed.</p>
-                        <p>Exercising your certification authority under Section 34 essentially means that you pause to attest that the goods and services that you received match the invoice to be paid.</p>
-                        <p>While perhaps other people on your team may be able to make that assessment, it is you, as the delegated manager, who bears the weight of the accountability. As such, you need to make sure that the invoice is accurate, that the financial coding is also accurate.</p>
-                        <p>Of course, you can only do this if you have the proper authority to make that assessment so be sure to check that too!</p>
-                        <p>***</p>
-                        <p>Slide 2: Accuracy of Invoice</p>
-                        <p>***</p>
-                        <p>Before signing off on an invoice to attest of its accuracy, the manager, usually with the help of their administrative staff, verifies the accuracy of the invoice or claim by looking at the following elements:</p>
-                        <p>* The date issued: verify that the invoice was issued on or after the order date. Or, in the case of a contract, that it was issued during the contract period<br />* Quantities: confirm that the items claimed line up with items ordered <br />* Taxes: validate that the amount for taxes is accurate<br />* Supplier or payee: make sure that their information is accurate and that the supplier or payee is eligible for payment<br />* Status: Verify that the invoice has not already been paid</p>
-                        <p>You may need to go back to the supplier to correct the invoice before you can sign section 34.</p>
-                        <p>Invoices must be paid within 30 days from the time the department receives the invoice to avoid interest charges.</p>
-                        <p>***</p>
-                        <p><br />Slide 3: Processing the Invoice</p>
-                        <p>***</p>
-                        <p>Once the invoice is validated, the manager verifies the financial coding and approves section 34. This approval is done either via a signature on paper or electronically, depending on the practices in your department.</p>
-                        <p>The approved invoice is then sent to the finance unit, who will pay the invoice, pursuant to section 33.</p>
-                        <p>Keep in mind that you</p>
-                        <p>* may not authorize sections 33 and 34 for the same transaction or invoice; a financial officer will perform section 33; <br />* may not authorize section 41 for a contract and section 34 related to the same contract; a procurement officer will perform section 41; <br />* may not authorize any transaction for which they may be perceived as having a personal benefit.</p>
-                        <p>&nbsp;</p> -->
 
-                        <h2>1. Certification Authority</h2>
-                        <p>In general, no invoice should be paid until all goods are received or services performed.</p>
-                        <p>Exercising your certification authority under section 34 of the Financial Administration Act essentially means that you pause to attest that the goods and services you received match the invoice.</p>
-                        <p>While other people on your team may be able to make that assessment, it is you, as the delegated manager, who bears the weight of the accountability. As such, you need to make sure that the invoice is accurate—and that the financial coding is also accurate.</p>
-                        <p>Of course, you can only do this if you have the proper authority to make that assessment. So be sure to check that too!</p>
-
+                        <h2>1. Introduction</h2>
+                        <p>[On a purple background with wavy white lines, a title card reads, “Module 5: Solicit, Evaluate, Approve and Award Competitive Contracts.” A text box reads, “1. Introduction.”] </p>
+                        <p>Narrator: In this section you will learn to initiate the solicitation process, evaluate bids and negotiate, and approve and award competitive contracts. </p>
+                        <p>[The concepts appear on screen as the narrator speaks, alongside white-outline drawings of a hand holding a magnifying glass, two people in a meeting, and a handshake.] </p>
+                        <p>This section should take you approximately 30 minutes to complete. </p>
                         <hr>
-
-                        <h2>2. Accuracy of Invoice</h2>
-                        <p>Before signing off on an invoice, the manager, usually with the help of their administrative staff, verifies the accuracy of an invoice or claim by looking at the following elements:</p>
+                        <h2>2. Prepare Bid Solicitation Documents</h2>
+                        <p>[Half of a clock gets filled in above the words, “30 minutes.” A text box reads, “2. Prepare Bid Solicitation Documents.”] </p>
+                        <p>Now that you have drafted your requirements and prepared either your statement of work or your statement of requirements and chosen your procurement strategy, what’s next? </p>
+                        <p>[The two types of statements appear, each followed by three bubbles. Under Statement of Work, the bubbles are “Deliverables,” “Services,” and “Work.” Under Statement of Requirement, the bubbles are “Problem definition information,” “Initial assessment of risk,” and “Basic financial information.”] </p>
+                        <p>The procurement specialist will develop the acquisition strategies needed to satisfy the requirements you provided.  </p>
+                        <p>[Arrows of varying sizes point to a bullseye target. Beside a figure of a woman, key words appear on screen as the narrator lists them.] </p>
+                        <p>This may include: </p>
                         <ul>
-                          <li>The date issued – verify that the invoice was issued on or after the order date; or, in the case of a contract, that it was issued during the contract period.</li>
-                          <li>Quantities – confirm that the items claimed line up with the items ordered. </li>
-                          <li>Taxes – validate that the amount for taxes is accurate and has appropriate GST or PST numbers.</li>
-                          <li>Supplier or payee – make sure that their information is  accurate and that the supplier or payee is eligible for payment.</li>
-                          <li>And status – verify that the invoice has not already been paid</li>
+                          <li>preparing the bid solicitation documents, </li>
+                          <li>managing the bid evaluation process,</li>
+                          <li>evaluating the financial proposals,</li>
+                          <li>selecting the suppliers,</li>
+                          <li>negotiating the procurement agreements, and </li>
+                          <li>formalizing the procurement agreements. </li>
                         </ul>
-                        <p>You may need to go back to the supplier to correct the invoice before you can sign section 34.</p>
-                        <p>Invoices must be paid within 30 days from the time the department receives the invoice to avoid interest charges.</p>
+                        <p>[Text reads, “Examples of solicitation documents.”]</p>
+                        <p>But before we jump to the activity... Are you curious to see examples of solicitation documents? Why not visit the buyandsell.gc.ca website!</p>
+                        <p>[A hand holds a smartphone. An internet browser displays the Buyandsell webpage.] </p>
+                        <p>You will find many examples from various organizations. And don’t forget! You will have a role to play in answering technical questions from potential suppliers during the solicitation process. </p>
+                        
 
                         <hr>
 
-                        <h2>3. Processing the Invoice</h2>
-                        <p>Once the invoice is validated, the manager verifies the financial coding and approves section 34. This approval is done with a signature either on paper or electronically, depending on the practices of your department. </p>
-                        <p>The approved invoice is then sent to the Finance unit, who will pay the invoice pursuant to section 33. </p>
-                        <p>Keep in mind:</p>
+                        <h2>3. Evaluate and Negotiate</h2>
+                        <p>[A text box reads, “3. Evaluate and Negotiate.” A document slips into an envelope, which flies away.] </p>
+                        <p>The solicitation document has been prepared and distributed. That’s great! Now it’s time for more work!</p>
+                        <p>[Above the image of four people in a meeting, text reads, “Technical bids vs. technical evaluation criteria.”] </p>
+                        <p>Once the bidding closes, the manager, along with their chosen bid evaluation team, evaluates the technical bids against the established technical evaluation criteria.</p>
+                        <p>[A headline reads, “Review criteria.” Key words appear below it as the narrator speaks.] </p>
+                        <p>Some examples of this could involve reviewing proposals to determine if bidders meet criteria such as qualifications and years of experience in the field of work or how the proposed bids meet the accessibility requirements and the design specifications.   </p>
+                        <p>[The figure of the woman appears, with more key words popping up beside her as the narrator lists them.] </p>
+                        <p>The procurement specialist then: </p>
                         <ul>
-                          <li>you are not allowed to authorize sections 33 and 34 for the same transaction or invoice; a financial officer will perform section 33. </li>
-                          <li>You are not allowed to authorize section 41 for a contract and section 34 related to the same contract; a procurement officer will perform section 41. </li>
-                          <li>You are not allowed to authorize any transaction for which you may be perceived as having a personal benefit.</li>
+                          <li>verifies that the bids are complete, </li>
+                          <li>sends the technical portion to the manager and the technical team for review,  </li>
+                          <li>performs the financial evaluation once the technical evaluation is done, and </li>
+                          <li>conducts any negotiations necessary on the manager’s behalf and  </li>
+                          <li>applies the selection methodology. </li>
                         </ul>
+                        <p>[A document is titled “Modern Treaties.”] </p>
+                        <p>For processes that fall within modern treaties, Comprehensive Land Claims Agreements, or the Treasury Board Directive on Government Contracts, including Real Property Leases, in the Nunavut Settlement Area, the evaluation of Indigenous benefits criteria may be considered as part of the bids. </p>
+                        <p>[A question mark pops up inside a lightbulb.] </p>
+                        <p>Did you know that communicating with a supplier during a competitive process, other than through bidders’ conferences and requests for information, could be seen as favouritism or creating an unfair advantage? So, avoid communication with suppliers during a competitive process. Send them to your contract authority instead!</p>
+                        <p>[On a smartphone screen, the word “Supplier” is crossed out. An arrow points to the words “Contract Authority.”] </p>
+                        <p>The following exercise will help you confirm your knowledge of the evaluation and negotiation phase. </p>
+                        <p>[A toolbox is labelled “Job Aids.”] </p>
+                        <p> For more information on the bid evaluation team, see the job aid in the Toolbox. </p>
                         <hr>
-                        <h2>4. Section Completed</h2>
+                        <h4>4. Contract Approval</h4>
+                        <p>[A textbox reads, “4. Contract Approval.”] </p>
+                        <p>Once a bidder has been selected based on their ability to satisfy the requirement, procurement specialists will seek to have the contract approved.  </p>
+                        <p>[Five figures stand in a line. A giant hand picks up one of them, whose arms wave in triumph. A list appears beside the image as the narrator recites the bullet points.] </p>
+                        <p>This involves, when appropriate,  </p>
+                        <ul>
+                          <li>having the contract reviewed by peers or legal services,  </li>
+                          <li>a cost-analysis review, </li>
+                          <li>a risk review if the requirement changed, </li>
+                          <li>a quality assurance review,  </li>
+                          <li>and possibly an approval by a contract review and approval committee, or Treasury Board.  </li>
+                        </ul>
+                        <p>[The words “Contract signatures” hang above two pens signing documents.] </p>
+                        <p>Once this process is completed, the procurement specialist sends out the contract documents for signature by the delegated transaction authority or contracting authority in your organization and then the supplier.  </p>
+                        <p>[“Delegated transaction authority/contracting authority” appears below the first signed document, and “Supplier” under the second.] </p>
+                        <p>In many cases, the procurement officer is the delegated transaction authority or contracting authority who signs the contract. </p>
+                        <p>[A man’s speech bubble is filled with a question mark.] </p>
+                        <p>Are you wondering who will approve the contract? The following activity will help you identify the individuals with the signing authority. </p>
+                        <hr>
+                        <h2>5. Contract Award</h2>
+                        <p>[A text box reads, “5. Contract Award.” Three people shake hands with a man. An award ribbon hangs above them.] </p>
+                        <p>Following contract approval, the procurement specialist will award the contract. Depending on the contract’s value, the specialist may send regret letters to unsuccessful bidders and post a contract award notice on PSPC’s Buyandsell.gc.ca/tenders site to inform the public of the successful bidder.  </p>
+                        <p>[The Buyandsell webpage reappears with the headline “Contract award notice” above it. Four people sit around a conference table.] </p>
+                        <p>Debriefings are provided to unsuccessful bidders on request and should normally include an outline of the factors and criteria used in the evaluation. They are typically led by the procurement specialist, while you play the supporting role of answering technical evaluation questions. </p>
+                        <p>[A figure of a woman appears. Beside her are the words “Bid evaluation” and “Bid score” with checkmarks beside them.] </p>
+                        <p>The only information provided to the bidder is the evaluation of its bid and the score its bid received. Proposal information on any other bidder must not be divulged. </p>
+                        
+                        <hr>
+                        <h2>6. In Real Life</h2>
+                        <p>[The words “Other bidder proposal information” pops up below the other text. This line has an X beside it. On the purple background, a text box reads, “6. In Real Life.”] </p>
+                        <p>Take what you have learned into real life! </p>
+                        <p>[A man and woman talk. A speech bubble leading from his mouth has a dollar sign in it.] </p>
+                        <p>Your organization will have its own ways of doing things. Take some time out from the course to see how the solicitation process works in your department. Maybe your organization has an intranet page on procurement? Or maybe your procurement specialists have the templates that you need? Looking at previously prepared solicitation documents can sometimes help. And don’t forget to check the Toolbox for a Job Aid on the procurement process! </p>
+                        <hr>
+                        <h2>7. Quiz</h2>
+                        <p>[A text box reads, “7. Quiz.” Three images appear side by side: a hand holding a magnifying glass; two people in a meeting, and a handshake.] </p>
+                        <p>Now that you have seen how to initiate the solicitation process, evaluate bids and negotiate, and approve and award competitive contracts, let’s see what you remember by taking this short quiz. </p>
+                        <p>[The words “Take the quiz!” appear beside a hand writing on a page. The video fades to black.] </p>
+                        <hr>
+                        <h2>5. Section Completed</h2>
+                        <p>[Onscreen text showing Section Completed instruction.]</p>
 
                       </span>
                       <span v-if="$i18n.locale=='fr'">

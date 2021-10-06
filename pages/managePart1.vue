@@ -20,62 +20,96 @@
                     <b-card-text>
                       <span v-if="$i18n.locale=='en'">
 
-                        <h2>1. Check your Budget</h2>
-                        <p>Now that you have your approved budget and are beginning to deliver on your work plan, let’s start spending money! </p>
-                        <p>But before initiating and committing any expenditures, you must verify that there are sufficient funds in your budget.</p>
-                        <p>This means you need to review what has been spent or committed to date, along with any other planned expenditures.  </p>
-                        <p>As the year progresses, you will most likely shuffle unused amounts within your budgeted items to find the funds that you need for expenditures. </p>
-                        <p>Don’t forget! The format of your budget may differ from the one used here, depending on where you work.</p>
-
-                        <hr>
-
-                        <h2>2. Delegation of Authority</h2>
-                        <p>Did you know that financial authorities are granted to ministers and deputy heads through the Financial Administration Act, the FAA?</p>
-                        <p>These individuals then delegate authority to positions identified by title through their organization’s delegation of financial signing authorities chart. </p>
-                        <p>To exercise your financial authority, you need to do the following three things: </p>
-                        <ol>
-                          <li>One, successfully complete this course. </li>
-                          <li>Two, submit your signed delegation card to your Finance unit.</li>
-                          <li>And three, receive your formal delegation of authority in writing from your Finance unit.</li>
-                        </ol>
-                        <p>There are several delegated authorities, and managers typically have two.</p>
-                        <p>Section 32 is expenditure initiation and commitment authority, and section 34 is certification authority. Section 32 would allow you to order office supplies, while section 34 would allow you to sign off on having received the supplies.</p>
-                        <p>And then there’s section 33, which allows the Finance unit to pay for the supplies.</p>
-                        <p>In certain situations, for example, temporary help services, you will need to go through a procurement process because it involves a contract. These situations are governed by section 41 of the FAA, and would typically be managed by the Procurement section in your organization.</p>
-                        <p>To know what and how much you can authorize, consult your own signed delegation card and your organization’s delegation chart. </p>
-                        <p>Again, the format of these documents will differ, depending on where you work.</p>
-
-                        <hr>
-
-                        <h2>3. Spending Mechanisms</h2>
-                        <p>You have the money and you have the delegation. Great! </p>
-                        <p>Now you need to determine the best way to get the goods and services in question. </p>
-                        <p>The next activity will give you a chance to learn about spending mechanisms!</p>
-
-                        <hr>
-
-                        <h2>4. Recording in the Financial System</h2>
-                        <p>Once you’ve checked that you have enough money to cover a purchase, you then create either a soft commitment or a hard commitment. </p>
-                        <p>A soft commitment is when you reserve funds before the supplier is identified.</p>
-                        <p>A hard commitment is when you make an arrangement with a known supplier.</p>
-                        <p>Either way, you will need to enter these commitments in the financial system using the department’s unique financial coding.</p>
-                        <p>This financial coding is a system that allows us to keep track of the different kinds of transactions throughout the year. It allows us to identify, among other things: </p>
+                        <h2>1. Introduction</h2>
+                        <p>[On a grey background with wavy white lines, a title card reads, “Module 7: Life Cycle Materiel Management.” A text box reads, “1. Introduction.”]  </p>
+                        <p>Narrator: In this section you will learn about the four phases of the life cycle materiel management: </p>
                         <ul>
-                          <li>which manager is responsible for the financial transaction,</li>
-                          <li>which component of your budget is being used, operating and maintenance, salary, etc.,</li>
-                          <li>the nature of the financial transaction, like if it is revenue, an expenditure, an asset, or a liability,</li>
-                          <li>details of the transaction, </li>
-                          <li>and the activity to which the financial transaction is linked.</li>
+                          <li>planning </li>
+                          <li>acquisition </li>
+                          <li>operation, use and maintenance, and </li>
+                          <li>divestiture</li>
                         </ul>
-                        <p>The financial coding system allows you to better manage your financial transactions and speak to your budget at any moment throughout the year. </p>
-                        <p>Managers often work with administrative professionals or financial officers for this task.</p>
+                        <p>[The four phases appear under the words “In this section.” To their right, four arrows form a circle around the words “Life Cycle Materiel Management.”] </p>
+                        <p>This section should take you approximately 20 minutes to complete. </p>                       
+
+                        <hr>
+                        <h2>2. Planning</h2>
+                        <p>[One third of a clock is shaded in. A text box reads, “2. Planning.”] </p>
+                        <p>You have procured the goods that you need. That’s great! But did you know that you need to manage their life cycle? </p>
+                        <p>[A delivery man pushes a dolly of boxes to a woman, who shakes his hand.] </p>
+                        <p>Life cycle materiel management is the effective and efficient management of assets from the identification of requirements to the divestment of the assets.</p>
+                        <p>[The words “Life Cycle Materiel Management” reappear with the four arrows rotating slowly around them. Below this, an arrow points from the words “Identification of requirements” to “Divestment of assets.”] </p>
+                        <p>Let’s look a little bit more closely at planning, the first phase of the life cycle materiel management. Since planning was covered in the first three modules of this course, here is a quick summary. During the planning process, managers should determine the following. </p>
+                        <p>[A person ponders. Thought bubbles appear above him as the narrator speaks. Each one contains a key point from the following list.]</p>
+                        <ul>
+                          <li>Is there a clear case to buy or to lease? </li>
+                          <li>What are the administration and operational requirements?   </li>
+                          <li>Is a product or its servicing necessary?  </li>
+                          <li>What finished goods (materiel) or raw materials are required?  </li>
+                          <li>Is existing materiel available or appropriate to meet the need? </li>
+                          <li>Is it required in the quantity proposed?  </li>
+                          <li>How was the forecasting done to estimate the requirement? </li>
+                          <li>Is capital or operation funding being used to support the acquisition?   </li>
+                          <li>Which method will be used to acquire the materiel and related support services?   </li>
+                          <li>Can the requirements be satisfied with environmentally-friendly products and products that use resource-saving materials or processes? </li>
+                          <li>Have other relevant questions, like meeting socio-economic criteria set by the government such as modern treaties, land claims and the promotion of Indigenous business, been considered? </li>
+                          <li>Have accessibility considerations been taken into account to identify, remove and prevent new barriers? </li>
+                        </ul>
+                        <p>Materiel acquisition decisions should consider the total cost of the product over the product’s life. </p>
+                        <p>[Four people gather in a meeting. A stack of coins sits across from a box with two arrows around it. The word “vs” is between the two images.] </p>
+                        <p>Once these questions have been answered, you can proceed to the second phase of life cycle materiel management. </p>
+                        
 
                         <hr>
 
-                        <h2>5. Try It!</h2>
-                        <p>To wrap up this section, let’s take a look at a practice scenario.</p>
+                        <h2>3. Acquisition</h2>
+                        <p>[A text box reads, “3. Acquisition.”] </p>
+                        <p>After the planning phase of the life cycle, it’s time for the acquisition phase. This was covered in Modules 4, 5 and 6 of this course.</p>
+                        <p>[A header reads, “Second Phase: Acquisition.” Three businesspeople stand together. Three bullet points appear beside them as the narrator speaks.] </p>
+                        <p>Here managers should: </p>
+                        <ul>
+                          <li>acquire the materiel, </li>
+                          <li>receive and inspect the goods, and </li>
+                          <li>ensure quality assurance and testing is done if applicable.  </li>
+                        </ul>
+                        <p>[A calendar appears, with the words “Public Services and Procurement Canada” and “Trade agreements” beside it.] </p>
+                        <p>Since the acquisition phase for complex or higher valued items often requires the participation of Public Services and Procurement Canada and the application of additional obligations such as trade agreements, longer timelines are often needed to complete the purchase. So, plan early, and give yourself and everyone involved enough time to acquire what you need! </p>
                         <hr>
-                        <h2>6. Section Completed</h2>
+                        <h2>4. Operation, Use, and Maintenance</h2>
+                        <p>[On the calendar, an X is marked on the last day of the month. A text box reads, “4. Operation, Use, and Maintenance.”] </p>
+                        <p>In the operation, use, and maintenance phase of the life cycle materiel management, managers should: </p>
+                        <p>[A bullet point list appears beside three businesspeople.] </p>
+                        <ul>
+                          <li>distribute the materiel so it can be used,</li>
+                          <li>maintain records to track inventory holdings and locations, consumption, usage, repairs, costs, and </li>
+                          <li>ensure that the materiel is properly used, maintained, repaired, and safeguarded.  </li>
+                        </ul>
+                        <p>The objective during this phase is to get the most out of the materiel and to make sure it lasts as long as possible based on the best value. </p>
+                        
+
+                        <hr>
+
+                        <h2>5. Reallocation or Divestment</h2>
+                        <p>[A text box reads, “5. Reallocation or Divestment.”] </p>
+                        <p>In the divestment phase, managers should identify opportunities for replacement, reallocation or disposal of surplus materiel, or of materiel that is no longer cost-effective to operate. </p>
+                        <p>[A header reads, “Fourth Phase: Divestment.” A subheader reads, “Identify opportunities.” Below are two circles. The circle on the left has text in it reading, “Replacement, reallocation or disposal of surplus material.” Text in the right-side circle reads, “Material no longer cost-effective to operate.”]</p>
+                        <p>Managers should always consider alternatives to disposing of products, such as reallocating or refurbishing them.</p>
+                        
+                        <hr>
+
+                        <h2>6. In Real Life</h2>
+                        <p>[The two circles slide together until they become a Venn diagram with an empty overlapping section. A text box reads, “6. In Real Life.”] </p>
+                        <p>Take what you have learned into real life! </p>
+                        <p>[A man and woman talk. A speech bubble comes from his mouth. It is filled with a question mark.] </p>
+                        <p>Your organization will have its own ways of doing things. Take a time out from the course to see how the life cycle materiel management process works in your department. </p>
+                        <hr>
+                        <h2>7. Quiz</h2>
+                        <p>[A text box reads, “7. Quiz.” Four arrows form a circle around the words “Life Cycle Materiel Management.”.] </p>
+                        <p>So now that you know more about the life cycle materiel management process, let’s see what you remember by taking this short quiz. </p>
+                        <p>[The words “Take the quiz!” appear beside a hand writing on a page.] </p>
+                        <hr>
+                        <h2>8. Section Completed</h2>
+                        <p>[Onscreen text showing Section Completed instruction.]</p>
 
                       </span>
                       <span v-if="$i18n.locale=='fr'">

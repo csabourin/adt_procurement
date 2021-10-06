@@ -3,6 +3,7 @@
     <b-container>
       <b-row>
         <b-col>
+          <p><b>{{$t('answerQuiz')}}</b></p>
           <b-card>
           <b-tabs content v-model="tabIndex">
             <b-tab title="Question 1">
@@ -83,6 +84,7 @@
   
   {
     "en": {
+      "answerQuiz": "Answer the following questions.",
       "q1": {
         "text": "What is the name of the inappropriate practice where someone awards multiple contracts to the same contractor either simultaneously or at regular intervals whereby each contract contains a statement of work that represents or could be interpreted as being an individual phase of a larger project to avoid having to seek approval of a larger contract authority for higher limits?",
         "options": {
@@ -91,9 +93,9 @@
           "3": "Inappropriate sole sourcing"
         },
         "feedback": {
-          "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-          "3": "<span class='v-right' /><strong>Correct!</strong>",
-          "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+          "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+          "2": "<span class='v-right' /><strong>Correct!</strong>",
+          "3": "<span class='v-wrong' /><strong>Incorrect.</strong>"
         },
         "conclusion": "This inappropriate practice is an example of contract splitting."
       },
@@ -169,6 +171,7 @@
       }
     },
     "fr": {
+      "answerQuiz": "Répondez aux questions suivantes.",
        "q1": {
         "text": "Quel est le nom de la pratique inappropriée qui consiste à attribuer plusieurs contrats au même entrepreneur, de façon simultanée ou à intervalles réguliers, où chaque contrat comporte un énoncé des travaux qui représente des étapes individuelles d’un plus grand projet, ou qui pourrait être interprété comme tel, afin d’éviter de devoir demander l’approbation d’une autorité contractante plus importante pour des limites plus élevées?",
         "options": {

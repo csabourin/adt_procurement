@@ -1,6 +1,7 @@
 <template>
   <span>
     <div>
+      <p><b>{{$t('answerQuiz')}}</b></p>
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">
@@ -67,6 +68,7 @@ export default {
 </script>
 <i18n>{
   "en": {
+    "answerQuiz": "Answer the following questions.",
   "q1": {
   "text": "What is the first phase of the life cycle materiel management?",
   "options": {
@@ -159,6 +161,7 @@ export default {
   }
   },
   "fr": {
+    "answerQuiz": "Répondez aux questions suivantes.",
   "q1": {
   "text": "Quelle est la première phase de la gestion du cycle de vie du matériel?",
   "options": {

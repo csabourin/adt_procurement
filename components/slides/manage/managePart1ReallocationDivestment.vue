@@ -41,7 +41,7 @@
 </script>
 <i18n>{
   "en": {
-  "Introduction":"Answer the following question by looking at the invoice provided.",
+  "Introduction":"Answer the following question.",
     "q1": {
       "text": "When a product is no longer needed, should managers dispose of it immediately?",
       "options": {
@@ -56,7 +56,7 @@
     }
   },
   "fr": {
-  "Introduction":"Répondez à la question suivante en consultant la facture fournie.",
+  "Introduction":"Répondez à la question suivante.",
     "q1": {
       "text": "Lorsqu’un produit n’est plus nécessaire, les gestionnaires doivent-ils l’éliminer immédiatement?",
       "options": {

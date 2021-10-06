@@ -7,7 +7,7 @@
           <p>{{$t('introText')}}</p>
           <b-tabs content v-model="tabIndex">
             <b-tab title="Question 1">
-              <checkboxQuiz :question="$t('q1')" qId="1" :Answer="['1']"/>
+              <radioQuiz :question="$t('q1')" qId="1"/>
             </b-tab>
             <b-tab title="Question 2">
               <radioQuiz :question="$t('q2')" qId="2"/>
@@ -82,8 +82,10 @@
           "4": "Use materiel"
         },
         "feedback": {
-          "right": "<span class='v-right' /><strong>Correct!</strong>",
-          "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+          "1": "<span class='v-right' /><strong>Correct!</strong>",
+          "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+          "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+          "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
         },
         "conclusion": "During the operation, use and maintenance phase, managers should not dispose of materiel. This activity will come at a later phase."
       },

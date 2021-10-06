@@ -89,7 +89,7 @@
   
   {
     "en": {
-      "answerQuiz": "Take the Quiz",
+      "answerQuiz": "Answer the following questions.",
       "q1": {
         "text": "Which of the following specifications sets the operational requirements of an item or an installation? In other words, which describes what the final installed product must be able to do?",
         "options": {
@@ -226,7 +226,7 @@
       }
     },
     "fr": {
-      "answerQuiz": "Répondez au quiz.",
+      "answerQuiz": "Répondez aux questions suivantes.",
        "q1": {
         "text": "Parmi les normes et spécifications suivantes, lesquelles définissent les exigences opérationnelles d’un élément ou d’une installation? En d’autres termes, lesquelles décrivent ce que le produit final installé doit être capable de faire?",
         "options": {

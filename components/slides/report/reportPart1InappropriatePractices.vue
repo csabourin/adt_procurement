@@ -90,7 +90,7 @@
           "3": "<span class='v-right' /><strong>Correct!</strong>",
           "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
         },
-        "conclusion": "This is an example of contracting without proper authority. Entering into a contract without authority approvals occurs when a representative of the Crown commits the Government of Canada to a contract for goods or service without the prior necessary authority approvals related to Transaction Authority (such as contracting authority) in accordance with the Financial Administration Act and other relevant legislation."
+        "conclusion": "This is an example of contracting without proper authority. Entering into a contract without authority approvals occurs when a representative of the Crown commits the Government of Canada to a contract for goods or service without the prior necessary authority approvals related to Transaction Authority (such as contracting authority) in accordance with the <em>Financial Administration Act</em> and other relevant legislation."
       },
       "q2": {
         "text": "What occurs when a representative of the Crown names a preferred individual to conduct services to a company bidding on proposals for professional service contracts or directs an individual to register with a particular bidder?",
@@ -141,7 +141,7 @@
           "3": "<span class='v-right' /><strong>Correct!</strong>",
           "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
         },
-        "conclusion": "Il s’agit d’un exemple d’attribution d’un contrat sans les pouvoirs nécessaires. Il y a conclusion d’un contrat sans les pouvoirs nécessaires lorsqu’un représentant de l’État engage le gouvernement du Canada dans un contrat de biens ou de services sans avoir obtenu au préalable les autorisations nécessaires liées au pouvoir d’exécuter une opération (comme l’autorité contractante), conformément à la Loi sur la gestion des finances publiques et aux autres lois pertinentes."
+        "conclusion": "Il s’agit d’un exemple d’attribution d’un contrat sans les pouvoirs nécessaires. Il y a conclusion d’un contrat sans les pouvoirs nécessaires lorsqu’un représentant de l’État engage le gouvernement du Canada dans un contrat de biens ou de services sans avoir obtenu au préalable les autorisations nécessaires liées au pouvoir d’exécuter une opération (comme l’autorité contractante), conformément à la <em>Loi sur la gestion des finances publiques</em> et aux autres lois pertinentes."
       },
       "q2": {
         "text": "Que se passe-t-il lorsqu’un représentant de l’État nomme une personne pour fournir des services à une entreprise qui fait une soumission pour des contrats de services professionnels ou qu’il invite une personne à s’inscrire auprès d’un soumissionnaire en particulier?",

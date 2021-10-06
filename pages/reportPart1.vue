@@ -19,43 +19,99 @@
                   <b-card-body>
                     <b-card-text>
                       <span v-if="$i18n.locale=='en'">
-                        <h2>1. What Is a Financial Situation Report?</h2>
-                        <p>A financial situation report, or FSR, is a document that provides senior management with the most up-to-date financial picture and the best estimates of forecast spending. This document supports them in making informed decisions to properly address budget shortfalls or pressures and reallocate surpluses. Your department may have a different name for this report. Find out what it is.</p>
-                        <p>As a manager, you are expected to provide regular updates and forecasts for your responsibility centre throughout the year. You are also required to provide explanations on variances in order to provide accurate information and make sure the financial system is updated.</p>
-                        <p>But don’t worry, you won’t be doing this alone! This is usually led by your organization’s Finance section at specific times in the year. They will provide support and send out instructions to provide templates, guidelines, links, due dates, etc. Work with your administrative staff to complete these tasks. </p>
-                        <p>Let’s see what you already know about FSRs by doing a quick match-up game!</p>
-                        <hr>
-                        <h2>2. Key Periods for Financial Situation Reports</h2>
-                        <p>The fiscal year starts on April 1 and is divided, by month, into periods. P1 is April, P2 is May, P3 is June, and so forth.</p>
-                        <p>Typically, key reporting periods are P6 (September), P9 (December), and a year-end report in P12 (March).</p>
-                        <p>Because P6 (September) is midway through the year, it offers senior management a good picture of the organization's finances and allows them to make decisions that will influence year-end results. For example, they could decide to reallocate funds to different priorities.</p>
-                        <p>P9 (December) is often the last opportunity to influence year-end results. Departments may ask managers to provide a forecast in P9 that is within a certain percentage of the year-end amount. The Treasury Board of Canada Secretariat uses data from the P9 report to inform the Department of Finance Canada of government-wide planned spending so that they have a holistic view.</p>
-                        <p>Year-end data at P12 is used by your department to report their overall financial results. It also forms part of the Departmental Results Report, or DRR.</p>
-                        <hr>
-                        <h2>3. Financial Situation Report Activities</h2>
-                        <p>The most important information you will need to provide in the FSR is your forecast. In other words, you’ll need to estimate the amount of money that you are going to spend to complete your activities before the end of the fiscal year.</p>
-                        <p>You can request that your administrative professional pull a detailed financial report from the financial system with information on the budget, commitments and actual expenditures. You will compare this to the FSR.</p>
-                        <p>Here are some of the things that you can do to get a good sense of where you’re at, which will allow you to make solid estimates for the rest of the year:</p>
+                        <h2>1. Introduction</h2>
+                        <p>[On a brown background with wavy white lines, a title card reads, “Module 8: Reports.” A text box reads, “1. Introduction.”] </p>
+                        <p>Narrator: In this section you will learn about procurement reporting activities. This will include: </p>
+                        <p>[A bullet-point list appears on the screen as the narrator speaks.] </p>
                         <ul>
-                          <li>Ensure that salary forecasts are accurate and up to date.</li>
-                          <li>Account for any incoming or outgoing funding.</li>
-                          <li>Follow up on travel claims and outstanding invoices.</li>
-                          <li>Ensure journal vouchers are posted: this will correct the data in the financial system.</li>
-                          <li>Close commitments that are no longer required and</li>
-                          <li>Reconcile your acquisition card statement against commitments.</li>
+                          <li>inappropriate procurement practices, </li>
+                          <li>complaint mechanisms and </li>
+                          <li>reporting requirements. </li> 
                         </ul>
-                        <p>Now, answer the following questions to the best of your abilities and let’s practise preparing a financial situation report! </p>
+                        <p>[White-outline drawings appear beside each bullet point: a magnifying glass over a page, a flashing warning light, and a checklist, respectively.] </p>
+                        <p>This section should take you approximately 20 minutes to complete. </p>
                         <hr>
-                        <h2>4. Updating the Annual Forecast</h2>
-                        <p>Another important task when completing your FSR is to review your salary and O&M forecasts. This will allow you to identify</p>
+                        <h2>2. Inappropriate Practices</h2>
+                        <p>[One third of a clock is shaded in. A text box reads, “2. Inappropriate Practices.” The image of a magnifying class over a page reappears.] </p>
+                        <p>Before jumping into reporting activities, let’s look at some of the inappropriate procurement practices managers should avoid if they are to remain respectful to the various laws, regulations and policies that apply to procurement. These practices include: </p>
+                        <p>[Three businesspeople are on the left side of the screen. A list appears to the right of them as the narrator speaks.] </p>
                         <ul>
-                          <li>shortfalls and pressures that may require approval for additional resources</li>
-                          <li>or surpluses to signal potential carry forward amounts.</li>
+                          <li>Contracting without a written contract or verbal authorization </li>
+                          <li>Contracting without proper authority </li>
+                          <li>Retroactive or after-the-fact contracting or backdating a contract </li>
+                          <li>Contract splitting </li>
+                          <li>Payrolling </li>
+                          <li>Inappropriate sole-sourcing </li>
+                          <li>Employer-employee relationships </li>
+                          <li>Inappropriate use of emergency contracting </li>
+                          <li>Inappropriate statements of work or evaluation criteria </li>
                         </ul>
-                        <p>You will have to explain the reasons for any variances and provide mitigation strategies for risks.</p>
-                        <p>Let’s practise updating the Annual Forecast!</p>
+                        <p>The following exercise will help you determine what not to do. For definitions, see the What Not To Do job aid in the tool box. </p>
                         <hr>
-                        <h2>5. Section Completed</h2>
+                        <h2>3. Complaint Mechanisms</h2>
+                        <p>[A toolbox fills the screen. This is replaced with a text box reading, “3. Complaint Mechanisms.”] </p>
+                        <p>So, you have seen what you can and cannot do in terms of your decisions and actions in the procurement process, but what if you don’t abide by these rules? What are the repercussions? </p>
+                        <p>[The word “Authorities” appears below a flashing warning light.] </p>
+                        <p>There are different levels of authorities that provide oversight of federal public service procurement to ensure the rules are being followed.  </p>
+                        <p>[Six people stand in a line. An arrow above their heads moves upwards.] </p>
+                        <p>Authorities can be internal or external to organizations. For example, many departments may have ethics advisers or compliance and oversight branches, and interdepartmental governance committees.  </p>
+                        <p>[Three rows of businesspeople form a pyramid, with one person at the top, three in the middle, and six on the bottom.] </p>
+                        <p>These authorities may provide support to resolve issues internally before formal escalation is required.  Authorities with oversight responsibilities for procurement in the federal public service include: </p>
+                        <p>[A list appears beside the figure of a businesswoman.]  </p>
+                        <ul>
+                          <li>the Office of the Procurement Ombudsman,</li>
+                          <li>the Canadian International Trade Tribunal,</li>
+                          <li>the Federal Court,</li>
+                          <li>Internal Audit in departments or delivered centrally through the Office of the Comptroller General,</li>
+                          <li>the Auditor General, and</li>
+                          <li>Standing Review Committees.</li>
+                        </ul>
+                        <p>Their roles differ depending on the nature and monetary amount of the procurement. Curious to know more about these organizations? Why not consult the Oversight job aid in the toolbox? </p>
+                        <hr>
+                        <h2>4. Reporting Requirements</h2>
+                        <p>[The image of the toolbox reappears. A text box reads, “4. Reporting Requirements.”] </p>
+                        <p>Did you know that departments, agencies, and other organizations are responsible for making available various reports on contracting activities for the general public or for use within government?  </p>
+                        <p>[Three images appear, each with a label beneath them. A building with large columns in its façade is labelled “departments.” A large block-style building is labelled “agencies,” and a cityscape is labelled “other organizations.”] </p>
+                        <p>That’s why record keeping is so important and why the data reported on contracts must be accurate.</p>
+                        <p>[A hand checks items off a page, and one drawer from a filing cabinet is open.] </p>
+                        <p>Here is a list of reports for which you may have to provide input.  </p>
+                        <p>[The list appears on a clipboard as the narrator speaks.] </p>
+                        <ul>
+                          <li>Proactive Disclosure of Contracts </li>
+                          <li>Contracts with Former Public Servants </li>
+                          <li>Comprehensive Land Claims Agreements </li>
+                          <li>Procurement Strategy for Aboriginal Business </li>
+                          <li>Treasury Board Directive on Government Contracts, Including Real Property Lease, in the Nunavut Settlement Area </li>
+                          <li>Ownership of Intellectual Property </li>
+                          <li>Auditor General Reports </li>
+                          <li>Internal Audit Reports </li>
+                          <li>Access to Information and Privacy </li>
+                        </ul>
+                        <p>But contract information is not only used in reports.  </p>
+                        <p>[An internet browser displays a Government of Canada webpage titled “Open Government.” It has a space to search data and information. Other sections on the page are labelled “Proactive disclosure” and “Access to information.”] </p>
+                        <p>It is also used for proactive disclosure, which is posted on the Open Government Portal as required to meet legal, policy, corporate, and parliamentary needs. </p>
+                        <p>For example, your contract awards and amendments are made available to the public, due to the proactive disclosure of contracts, when their value is more than $10,000.  </p>
+                        <p>[Two images appear of a pen signing a document. One is labelled “contract award” and the other is labelled “contract amendment.” An arrow points from these to a Canadian maple leaf, which has an arrow pointing to a stack of coins labelled “$10,000+”.] </p>
+                        <p>They are published on the Open Government Portal, thus making government and public service officials accountable to Canadians.  </p>
+                        <p>This reporting is normally done by the procurement specialist or contracting officer.  </p>
+                        <p>[Two businesspeople appear, one with the label “procurement specialist” and the other with the label “contracting officer.”] </p>
+                        <p>Though it may not be your responsibility, it is important that you are aware of these requirements.  </p>
+                        <p>But don’t worry, you won’t be doing this reporting or proactive disclosure alone!  </p>
+                        <p>[Four people sit around a conference table.] </p>
+                        <p>Usually, you will work with your administrative staff or your organization’s procurement team to prepare the information needed. </p>
+                        <hr>
+                        <h2>5. In Real Life</h2>
+                        <p>[A text box reads, “5. In Real Life.” Two people talk. One of them has a speech bubble, which is filled with a question mark.] </p> 
+                        <p>Take what you have learned into real life! </p>
+                        <p>Your organization will have its own ways of doing things. Take time out from the course to see which complaint mechanisms are used by your organization, as well as which reports will need to be supported. </p>
+                        <hr>
+                        <h2>6. Quiz</h2>
+                        <p>[A text box reads, 6. Quiz.” Images appear of the magnifying glass over the page, the flashing warning light, and the checklist.] </p>
+                        <p>So now that you know more about inappropriate procurement practices, complaint mechanisms and reporting, let’s see what you remember by taking this short quiz. </p>
+                        <p>[The words “Take the quiz!” appear beside a hand writing on a page.] </p>
+                        <hr>
+                        <h2>6. Section Completed</h2>
+                        <p>[Onscreen text showing Section Completed instruction.]</p>
                       </span>
                       <span v-if="$i18n.locale=='fr'">
                         <h2>1. Qu'est-ce qu'un rapport sur la situation financière?</h2>
@@ -274,7 +330,7 @@ export default {
   "en":{
   "TakeTheQuiz": "Take the Quiz",
   "introductionTitle": "References: External Links",
-  "inappropriatePracticesTitle": "Activity: Inappropriate practices",
+  "inappropriatePracticesTitle": "Activity: Inappropriate Practices",
   "complaintMechanismsTitle": "Activity: Complaint Mechanisms",
   "reportingRequirementsTitle": "Activity: Reporting Requirements",
   "inRealLifeTitle": "In Real Life",
@@ -286,7 +342,7 @@ export default {
   "TakeTheQuiz": "Répondez au quiz",
   "introductionTitle": "Référence : Liens externes",
   "inappropriatePracticesTitle": "Activité : Pratiques inappropriées",
-  "complaintMechanismsTitle": "Activité : Mécanismes de plainte",
+  "complaintMechanismsTitle": "Activité : Mécanismes de traitement des plaintes",
   "reportingRequirementsTitle": "Activité : Exigences en matière de rapports",
   "inRealLifeTitle": "Dans la vraie vie",
   "IRLReportPart1Text": "Appliquez ce que vous avez appris dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez une pause durant le cours pour voir quels mécanismes de plainte sont utilisés par votre organisation et quels rapports devront être soutenus.",

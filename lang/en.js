@@ -5,7 +5,7 @@ export default {
   ForecastBudget:"Forecast Budget Requirements",
   ReportsTitle: "Reporting",
   BudgetAuthorities:" Budgets and Authorities",
-  finRoles: "Responsible Use of Public Funds",
+  finRoles: "Practising Responsible Procurement",
   symbolicIdentifier: "Symbolic Identifier",
   skipToMain:"Skip to main content",
   searchBar: "Search",

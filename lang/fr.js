@@ -8,7 +8,7 @@ export default {
   BudgetAuthorities:" Budgets et pouvoirs ",
   searchBar: "Recherche",
   symbolicIdentifier: "Identificateur symbolique",
-  finRoles: "La saine gestion des fonds publics",
+  finRoles: "Pratiquer l'approvisionnement responsable ",
   skipToMain:"Passer au contenu principal",
   plan: "Planification",
   spend: "Achat",

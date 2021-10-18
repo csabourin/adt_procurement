@@ -146,6 +146,7 @@ export default {
 <i18n>
   {
   "en": {
+    "instructions":"Looking at the work plan provided, identify which goods and services you will need to procure by answering the following questions. ",
     "pwpInstructions": "Your director has been to a steering committee and now has new information that should be reflected in your work plan. Here are the 3 new pieces of information: ",
     "thing1": "New software will be implemented to speed up the issuing of licences ",
     "thing2": "A new policy now requires licences to be issued in 15 days, not 30 days, starting November 1 and",
@@ -320,6 +321,7 @@ export default {
     }
   },
   "fr": {
+    "instructions":"En examinant le plan de travail fourni, identifiez les biens et les services que vous devrez acquérir en répondant aux questions suivantes.",
     "pwpInstructions": "Votre directeur vous dit qu’il a participé à un comité directeur et qu’il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Voici les trois nouveaux renseignements :",
     "thing1": "un nouveau logiciel sera installé pour accélérer la délivrance des permis;",
     "thing2": "une nouvelle politique qui exige maintenant que les permis soient délivrés en 15 jours, et non plus en 30 jours, à compter du 1er novembre;",
@@ -462,7 +464,7 @@ export default {
       }
     },
     "q7": {
-      "sentence": "Vous devez vous assurer que votre nouvel employé dispose de l’équipement nécessaire pour répondre à ses besoins d’accessibilité et d’adaptation. Cela peut signifier {0} .",
+      "sentence": "Dans le cadre de la sous-activité « Planifier le travail », vous devez vous assurer que votre nouvel employé dispose de l’équipement nécessaire pour répondre à ses besoins d’accessibilité et d’adaptation. Cela peut signifier {0} .",
       "choices": {
         "1": "acheter du mobilier de bureau ",
         "2": "acheter des stylos et du papier",
@@ -478,7 +480,7 @@ export default {
       }
     },
     "q8": {
-      "text": "Voici une liste de divers articles d’approvisionnement en biens et services. Choisissez tous ceux qui s’appliquent à la 7sous-activité  « Effectuer des inspections » de votre plan de travail, sachant que les agents, qui peuvent avoir des besoins en matière d'accessibilité, doivent souvent se rendre dans des endroits éloignés pour mener à bien leurs activités.",
+      "text": "Voici une liste de divers articles d’approvisionnement en biens et services. Choisissez tous ceux qui s’appliquent à la sous-activité  « Effectuer des inspections » de votre plan de travail, sachant que les agents, qui peuvent avoir des besoins en matière d'accessibilité, doivent souvent se rendre dans des endroits éloignés pour mener à bien leurs activités.",
       "options": {
         "1": "Assister à une conférence ",
         "2": "Acheter un billet d’avion",

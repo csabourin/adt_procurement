@@ -188,7 +188,7 @@ export default {
       }
     },
     "q4": {
-      "sentence": "Votre plateau à clavier s’est brisé et vous vous rendez à l’un des {0} pour le remplacer.",
+      "sentence": "Votre plateau à clavier s’est brisé et vous vous rendez à l’un(e) des {0} pour le remplacer.",
       "choices": {
         "1": "Services d’aménagement",
         "2": "salles de conférence",

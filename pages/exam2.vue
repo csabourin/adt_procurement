@@ -8,7 +8,7 @@
             <div v-if="$i18n.locale=='en'">
               <h3>Instructions</h3>
                <p>As per Treasury Board requirements, you must pass this test before you can exercise financial delegation.</p>
-              <p>The test is made up of four sections, one for each phase: Plan, Procure, Manage, and Report.<!-- planning, spending and reporting --></p>
+              <p>The test is made up of four sections, one for each phase: Plan, Procure, Manage, and Report.</p>
               <p>The passing grade is 80% for each of these sections.</p>
               <p>Each section should take you around 20 to 25 minutes to complete.</p>
               <p>You are allowed to consult course materials during the test. You may take it as many times as you need to get a passing grade.</p>
@@ -110,7 +110,7 @@
                 <template v-slot:title>
                   <span class="v-inv">Question </span>13
                 </template>
-                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q13')" qId="12" :refill="Refill('12')" @response="arraysMatch($event,['2','3','3'],12)" />
+                <checkboxQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q13')" qId="12" :refill="Refill('12')" @response="arraysMatch($event,['2','3'],12)" />
               </b-tab>
               <b-tab :title-link-class="[{'filled':answerScore[13]}]">
                 <template v-slot:title>
@@ -421,24 +421,22 @@ export default {
     "unanswered":"Unanswered Question(s)",
     "Questions": {
       "q1": {
-        "text": "You found a chatbot system that meets your needs. An annual license, plus installation and setup, costs $5,650 including tax. What is the first step in exercising your spending authority?",
+        "text": "Which contracting document should clearly describe the work to be carried out, the objectives to be attained, and the time frame? ",
         "options": {
-          "1": "Contact the provider and order the system using your acquisition card",
-          "2": "Ask your team to conduct a thorough product research ",
-          "3": "Ensure that you have sufficient funds in your budget to purchase the system",
-          "4": "Order the system using a purchase order"
+          "1": "The statement of work",
+          "2": "The terms and conditions of the contract ",
+          "3": "The technical evaluation"
         },
         "feedback": {
           "1": "",
           "2": "",
-          "3": "",
-          "4": ""
+          "3": ""
         }
       },
       "q2": {
-        "text": "Which of the following situations is a pressing emergency in which someone with delegated contracting authority can enter into non-competitive contracts",
+        "text": "Which of the following situations is a pressing emergency in which someone with delegated contracting authority can enter into non-competitive contracts?",
         "options": {
-          "1": "One that would be injurious to the public interest if delayed ",
+          "1": "One that would be injurious to public interest if delayed",
           "2": "One that would prevent attainment of an urgent operational requirement ",
           "3": "One that would seriously disrupt the development of a highly important architectural project   "
         },
@@ -488,7 +486,7 @@ export default {
         }
       },
       "q6": {
-        "text": "Who is responsible for determining which goods, services or construction activities are needed and drafting the requirements? ",
+        "text": "Who is responsible for determining which goods, services or construction activities are needed and drafting the requirements?",
         "options": {
           "1": "The procurement specialist",
           "2": "The financial advisor",

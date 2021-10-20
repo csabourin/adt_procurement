@@ -58,6 +58,7 @@ export default {
   TestPlan: "<span class='v-inv'>Planification&nbsp;:</span> Test",
   TestSpend: "<span class='v-inv'>Achat&nbsp;:</span> Test",
   TestReport: "<span class='v-inv'>Rapports&nbsp;:</span> Test",
+  TestManage: "<span class='v-inv'>Manage:</span> Test",
   MarkCompleted: "Visualisation complétée",
   fileFolder: "Fichiers et outils à télécharger",
   downloadPlan: "Télécharger un modèle Word du plan de travail",

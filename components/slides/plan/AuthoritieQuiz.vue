@@ -364,7 +364,7 @@ export default {
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect</strong> You only have enough money to cover the cost of software licences for three employees.",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> You only have enough money to cover the cost of software licences for three employees.4"
+        "2": "<span class='v-right' /> <strong>Correct!</strong> You only have enough money to cover the cost of software licences for three employees."
       }
     },
     "q3": {
@@ -510,8 +510,8 @@ export default {
         "2": "Non"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Selon le tableau de délégation des pouvoirs de signature en matière financière, un gestionnaire peut seulement acheter jusqu’à 5&nbsp;000 $ sur sa carte d’achat. ",
-        "2": "<span class='v-right' /> <strong>Correct!</strong> Selon le tableau de délégation des pouvoirs de signature en matière financière, un gestionnaire peut seulement acheter jusqu’à 5&nbsp;000 $ sur sa carte d’achat."
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Selon le tableau de délégation des pouvoirs de signature en matière financière, un gestionnaire peut seulement acheter jusqu’à 5&nbsp;000&nbsp;$ sur sa carte d’achat. ",
+        "2": "<span class='v-right' /> <strong>Correct!</strong> Selon le tableau de délégation des pouvoirs de signature en matière financière, un gestionnaire peut seulement acheter jusqu’à 5&nbsp;000&nbsp;$ sur sa carte d’achat."
       }
     },
     "q7": {

@@ -2,7 +2,7 @@
 	<div>
     <b-container>
       <b-row>
-        <b-col xl="7" lg="6" style="border: 1px solid #212529;"><SalesInvoice /></b-col>
+        <!--<b-col xl="7" lg="6" style="border: 1px solid #212529;"><SalesInvoice /></b-col>-->
         <b-col>
 		 <b-card>
       <p>{{$t('Introduction')}}</p>

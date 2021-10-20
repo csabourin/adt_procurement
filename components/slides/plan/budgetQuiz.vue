@@ -93,6 +93,9 @@
       </b-row>
     </b-container>
     <hr>
+    <p v-html="$t('instructions')" />
+    
+
     <p><strong>{{$t('scenario')}}</strong></p>
     <p>{{$t('introText')}}</p>
     <b-tabs v-model="tabIndex">
@@ -139,6 +142,7 @@ export default {
 </script>
 <i18n>{
   "en": {
+    "instructions":"Answer the following questions. ",
     "scenario":"Scenario",
     "introText": "Looking at the work plan provided, you realize that you must buy a vehicle as well as computer tablets to be able to conduct inspections. Answer the following questions.",
     "pwpInstructions": "Your director has been to a steering committee and now has new information that should be reflected in your work plan. Here are the 3 new pieces of information: ",
@@ -181,7 +185,7 @@ export default {
     "pM2": "<ul><li>Protect habitat</li><li>Place catching limits</li><li>Implement fishing seasons</li></ul>",
     "pRes2": "<ul><li>1 officer</li><li>2 analysts</li><li>1 junior officer</li></ul>",
     "pA3": "Renew commercial fishing licences",
-    "pSA3": "<ul><li>Review applicant renewal requests</li><li>Issue renewal licence</li></ul>",
+    "pSA3": "<ul><li>Review applicant renewal requests</li><li>Issue licence renewal</li></ul>",
     "pD3": "<ul><li>Issue licence renewal within 30 days of request</li><li>Issue 300 licence renewals per year </li></ul>",
     "pRes3": "<ul><li>1 officer</li><li>1 junior analyst</li><ul>",
     "qDisabled": "Choose",
@@ -283,6 +287,7 @@ export default {
     }
   },
   "fr": {
+    "instructions":"Répondez aux questions suivantes.",
     "scenario":"Scénario",
     "introText": "En regardant le plan de travail fourni, vous vous rendez compte que vous devez acheter un véhicule ainsi que des tablettes informatiques pour pouvoir effectuer des inspections. Répondez aux questions suivantes.",
     "pwpInstructions": "Votre directeur vous dit qu’il a participé à un comité directeur et qu’il dispose maintenant de nouveaux renseignements qui devraient se refléter dans votre plan de travail. Voici les trois nouveaux renseignements :",

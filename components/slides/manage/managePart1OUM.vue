@@ -82,12 +82,11 @@
           "4": "Use materiel"
         },
         "feedback": {
-          "1": "<span class='v-right' /><strong>Correct!</strong>",
-          "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-          "3": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-          "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-        },
-        "conclusion": "During the operation, use and maintenance phase, managers should not dispose of materiel. This activity will come at a later phase."
+          "1": "<span class='v-right' /><strong>Correct!</strong> During the operation, use and maintenance phase, managers should not dispose of materiel. This activity will come at a later phase. ",
+          "2": "<span class='v-wrong' /><strong>Incorrect.</strong> During the operation, use and maintenance phase, managers should not dispose of materiel. This activity will come at a later phase. ",
+          "3": "<span class='v-wrong' /><strong>Incorrect.</strong> During the operation, use and maintenance phase, managers should not dispose of materiel. This activity will come at a later phase. ",
+          "4": "<span class='v-wrong' /><strong>Incorrect.</strong> During the operation, use and maintenance phase, managers should not dispose of materiel. This activity will come at a later phase. "
+        }
       },
       "q2": {
         "text": "During the operation, use and maintenance phase, managers must try to make the products last as long as possible.",
@@ -96,10 +95,9 @@
           "2": "False"
         },
         "feedback": {
-          "1": "<span class='v-right' /><strong>Correct!</strong>",
-          "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-        },
-        "conclusion": "During the operation, use and maintenance phase, managers must try to make the products last as long as possible based on best value."
+          "1": "<span class='v-right' /><strong>Correct!</strong> During the operation, use and maintenance phase, managers must try to make the products last as long as possible based on best value.",
+          "2": "<span class='v-wrong' /><strong>Incorrect.</strong> During the operation, use and maintenance phase, managers must try to make the products last as long as possible based on best value."
+        }
       }
     },
     "fr": {
@@ -113,10 +111,11 @@
           "4": "Utiliser le matériel"
         },
         "feedback": {
-          "right": "<span class='v-right' /><strong>Correct!</strong>",
-          "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-        },
-        "conclusion": "Pendant la phase d’exploitation, d’utilisation et d’entretien, les gestionnaires ne doivent pas éliminer le matériel. Cette activité viendra dans une phase ultérieure."
+          "1": "<span class='v-right' /><strong>Correct!</strong> Pendant la phase d’exploitation, d’utilisation et d’entretien, les gestionnaires ne doivent pas éliminer le matériel. Cette activité viendra dans une phase ultérieure.",
+          "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Pendant la phase d’exploitation, d’utilisation et d’entretien, les gestionnaires ne doivent pas éliminer le matériel. Cette activité viendra dans une phase ultérieure.",
+          "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Pendant la phase d’exploitation, d’utilisation et d’entretien, les gestionnaires ne doivent pas éliminer le matériel. Cette activité viendra dans une phase ultérieure.",
+          "4": "<span class='v-wrong' /><strong>Incorrect.</strong> Pendant la phase d’exploitation, d’utilisation et d’entretien, les gestionnaires ne doivent pas éliminer le matériel. Cette activité viendra dans une phase ultérieure."
+        }
       },
       "q2": {
         "text": "Pendant la phase d’exploitation, d’utilisation et d’entretien, les gestionnaires doivent essayer de faire durer les produits le plus longtemps possible.",
@@ -125,10 +124,9 @@
           "2": "Faux"
         },
         "feedback": {
-          "1": "<span class='v-right' /><strong>Correct!</strong>",
-          "2": "<span class='v-wrong' /><strong>Incorrect.</strong>"
-        },
-        "conclusion": "Pendant la phase d’exploitation, d’utilisation et d’entretien, les gestionnaires doivent essayer de faire durer les produits le plus longtemps possible en fonction du meilleur rapport qualité-prix."
+          "1": "<span class='v-right' /><strong>Correct!</strong> Pendant la phase d’exploitation, d’utilisation et d’entretien, les gestionnaires doivent essayer de faire durer les produits le plus longtemps possible en fonction du meilleur rapport qualité-prix.",
+          "2": "<span class='v-wrong' /><strong>Incorrect.</strong> Pendant la phase d’exploitation, d’utilisation et d’entretien, les gestionnaires doivent essayer de faire durer les produits le plus longtemps possible en fonction du meilleur rapport qualité-prix."
+        }
       }
     }
   }

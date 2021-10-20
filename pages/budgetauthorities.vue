@@ -26,7 +26,7 @@
                       <p>[Three drawings appear one after the other: a magnifying glass over a stack of coins, a man and woman speaking to each other, and a check mark over a clipboard.]</p>
                       <p>This section should take you approximately 20 minutes to complete.</p>
                       <hr>
-                      <h2>2. Estimate Costs</h2>
+                      <h2>2. Check Your Budget</h2>
                       <p>[An outline of a circle appears. A third of it is filled in white with the words “20 minutes” underneath. Text appears in a white box with rounded corners. “2. Check Your Budget.” A drawing of a stack of coins appears.]</p>
                       <p>Before beginning a procurement process, you must check that there are sufficient funds in your budget to cover the costs of the goods, the services, and the construction that you are planning. If you don’t have enough funds, you may have to turn to other sources to find the money such as </p>
                       <ul>
@@ -39,7 +39,7 @@
                       <p>[More drawings appear: a dollar bill with downward pointing arrows, a man and woman speaking together, a man standing next to a surplus sign, a document, and two buildings with an arrow between them.]</p>
                       <p>The following exercise will help you determine if you have enough funds in your budget.</p>
                       <hr>
-                      <h2>3. Conduct a Risk Assessment</h2>
+                      <h2>3. Financial Authorities and Procurement Authorities</h2>
                       <p>[Text appears in a white box with rounded corners. “3. Financial Authorities and Procurement Authorities.” A drawing depicts a check mark next to a stack of coins and paper bills.]</p>
                       <p>Now that you know if you have enough money in your budget, let’s check to see if you have the proper authority to begin buying the resources that you need! </p>
                       <p>[A drawing depicts the Canadian Parliament building.]</p>
@@ -153,11 +153,11 @@
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
-      <div v-if="$i18n.locale=='fr'">
-       <p>For a review of delegation of authorities, see the <strong>Engager et autoriser des dépenses</strong> et <strong>Exercer l’autorité financière</strong> du cours <a href="https://adtfinance.netlify.app/fr"> La saine gestion des fonds publics</a>. Ce lien est également disponible dans la boîte à outils.</p>
-      </div>
       <div v-if="$i18n.locale=='en'">
-      <p>Pour une revue de la délégation des pouvoirs, voir les sections <strong> Engager et autoriser des dépenses</strong> et <strong>Exercer l’autorité financière</strong> du cours <a href="https://adtfinance.netlify.app/fr">La saine gestion des fonds publics</a>. Ce lien est également disponible dans la boîte à outils.</p>
+       <p>For a review of delegation of authorities, see the <strong>Initiate and Authorize Commitments</strong> and <strong>Exercise Financial Authority</strong> modules of the <a href="https://adtfinance.netlify.app/#/en">Using Public Funds Responsibly</a> course. This link is also available in the Toolbox.</p>
+      </div>
+      <div v-if="$i18n.locale=='fr'">
+      <p>Pour une revue de la délégation des pouvoirs, voir les sections <strong> Engager et autoriser des dépenses</strong> et <strong>Exercer l’autorité financière</strong> du cours <a href="https://adtfinance.netlify.app/#/fr">Utiliser les fonds publics de manière responsable</a>. Ce lien est également disponible dans la boîte à outils.</p>
       </div>
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>

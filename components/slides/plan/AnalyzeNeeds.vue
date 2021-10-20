@@ -187,7 +187,7 @@ export default {
     "pM2": "<ul><li>Protect habitat</li><li>Place catching limits</li><li>Implement fishing seasons</li></ul>",
     "pRes2": "<ul><li>1 officer</li><li>2 analysts</li><li>1 junior officer</li></ul>",
     "pA3": "Renew commercial fishing licences",
-    "pSA3": "<ul><li>Review applicant renewal requests</li><li>Issue renewal licence</li></ul>",
+    "pSA3": "<ul><li>Review applicant renewal requests</li><li>Issue licence renewal</li></ul>",
     "pD3": "<ul><li>Issue licence renewal within 30 days of request</li><li>Issue 300 licence renewals per year </li></ul>",
     "pRes3": "<ul><li>1 officer</li><li>1 junior analyst</li><ul>",
     "introText": "For the following sub-activities, identify the goods or services needed.",

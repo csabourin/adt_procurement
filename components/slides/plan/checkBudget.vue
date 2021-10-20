@@ -195,9 +195,9 @@
         "3": "$2,500 "
       },
       "feedback": {
-        "1": "<span class='v-right' /> <strong>Correct!</strong> The maximum amount that you can spend to cover a translation request is $800 (Budget $2,500 – Commitment $500 and YTD Actuals $1,200 = Remaining amount $800)",
-        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The maximum amount that you can spend to cover a translation request is $800 (Budget $2,500 – Commitment $500 and YTD Actuals $1,200 = Remaining amount $800)",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The maximum amount that you can spend to cover a translation request is $800 (Budget $2,500 – Commitment $500 and YTD Actuals $1,200 = Remaining amount $800)"
+        "1": "<span class='v-right' /> <strong>Correct!</strong> The maximum amount that you can spend to cover a translation request is $800 (Budget $2,500 – Commitment $500 and YTD Actuals $1,200 = Remaining amount $800).",
+        "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> The maximum amount that you can spend to cover a translation request is $800 (Budget $2,500 – Commitment $500 and YTD Actuals $1,200 = Remaining amount $800).",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> The maximum amount that you can spend to cover a translation request is $800 (Budget $2,500 – Commitment $500 and YTD Actuals $1,200 = Remaining amount $800)."
       }
     },
     "q3": {
@@ -337,7 +337,7 @@
   "fr": {
     "instructions": "Répondez aux questions suivantes.",
     "q1": {
-      "text": "En regardant le budget fourni, avez-vous suffisamment de fonds pour couvrir une nouvelle demande de traduction de 700 $ ?",
+      "text": "En regardant le budget fourni, avez-vous suffisamment de fonds pour couvrir une nouvelle demande de traduction de 700&nbsp;$?",
       "options": {
         "1": "Oui",
         "2": "Non"
@@ -408,7 +408,7 @@
         "240&nbsp;139&nbsp;$",
         "203&nbsp;194&nbsp;$",
         "443&nbsp;333&nbsp;$",
-        "gestionnaire, 2 agents, 2 analystes, 1 agent subalterne., 1 analyste subalterne., 1 administrateur, 1 agent prenant sa retraite le 1er juillet, occasionnel 4 mois"
+        "gestionnaire, 2 agents, 2 analystes, 1 agent subalterne, 1 analyste subalterne, 1 administrateur, 1 agent prenant sa retraite le 1er juillet, occasionnel 4 mois"
       ],
       [
         "TOTAL",
@@ -421,7 +421,7 @@
       [
         "Licence de logiciel",
         "3&nbsp;000&nbsp;$",
-        "0$",
+        "0&nbsp;$",
         "1&nbsp;500&nbsp;$",
         "3&nbsp;000&nbsp;$",
         "nouveau logiciel, coût annuel 1&nbsp;000&nbsp;$&nbsp;&times;&nbsp;3 ETP"

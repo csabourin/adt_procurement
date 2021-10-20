@@ -112,16 +112,16 @@
     "q1": {
       "text": "À l’aide du tableau de délégation des pouvoirs de signature en matière financière fourni, identifiez le montant maximum qu’un directeur pourrait approuver pour une transaction Non concurrentiels - Services. ",
       "options": {
-        "1": "0$",
+        "1": "0 $",
         "2": "5 000 $",
         "3": "25 000 $",
         "4": "80 000 $"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $",
-        "2": "<span class='v-right' /><strong>Correct!</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $",
-        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $",
-        "4": "<span class='v-wrong' /><strong>Incorrect.</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $"
+        "1": "<span class='v-wrong' /><strong>Incorrect.</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $.",
+        "2": "<span class='v-right' /><strong>Correct!</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $.",
+        "3": "<span class='v-wrong' /><strong>Incorrect.</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $.",
+        "4": "<span class='v-wrong' /><strong>Incorrect.</strong> Un directeur peut approuver une transaction Non concurrentiels – Services jusqu’à 5 000 $."
       }
     },
     "q2": {

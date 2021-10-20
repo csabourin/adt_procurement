@@ -2,7 +2,9 @@
   <span>
     <div>
       <b-card>
+        <p v-html="$t('instructions')" />
         <b-tabs v-model="tabIndex">
+          
           <b-tab title="Question 1"><hr style="border:white;"><p>{{$t('introText')}}</p><fillTheBlanks :blanks="1" :sentence="$t('q1.sentence')" :termList="$t('q1.choices')" :answer="['2']" :feedback="$t('q1.feedback')" qid="q1" /></b-tab>
           <b-tab title="Question 2"><radioQuiz :question="$t('q2')" qId="2" /></b-tab>
           <b-tab title="Question 3"><radioQuiz :question="$t('q3')" qId="3" /></b-tab>
@@ -50,6 +52,7 @@ export default {
 </script>
 <i18n>{
   "en": {
+    "instructions": "Answer the following questions.",
     "introText":"Select the best choice to fill in the blank.",
     "q1": {
       "sentence": "Refer to your {0} when you want to identify which goods and services you need to deliver your activities. ",
@@ -90,8 +93,8 @@ export default {
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct.</strong> To obtain specialized software, you should contact your Information Technology Services. ",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> To obtain specialized software, you should contact your Information Technology Services. ",
-        "3": "<span class='v-right' /> <strong>Incorrect.</strong>  To obtain specialized software, you should contact your Information Technology Services.",
-        "4": "<span class='v-right' /> <strong>Incorrect.</strong>  To obtain specialized software, you should contact your Information Technology Services."
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong>  To obtain specialized software, you should contact your Information Technology Services.",
+        "4": "<span class='v-wrong' /> <strong>Incorrect.</strong>  To obtain specialized software, you should contact your Information Technology Services."
       }
     },
     "q4": {
@@ -167,6 +170,7 @@ export default {
     }
   },
   "fr": {
+    "instructions": "Répondez aux questions suivantes.",
     "introText":"Sélectionnez le meilleur choix pour remplir le blanc.",
     "qDisabled": "Sélectionnez le meilleur choix pour remplir les blancs",
         "q1": {
@@ -208,7 +212,7 @@ export default {
       "feedback": {
         "1": "<span class='v-right' /> <strong>Correct!</strong> Pour obtenir un logiciel spécialisé, vous devriez communiquer avec les Services des technologies de l’information.",
         "2": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour obtenir un logiciel spécialisé, vous devriez communiquer avec les Services des technologies de l’information.",
-        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Avant de réserver un billet d’avion pour le travail, vous devriez consulter les Services de voyage partagés.",
+        "3": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour obtenir un logiciel spécialisé, vous devriez communiquer avec les Services des technologies de l’information.",
         "4": "<span class='v-wrong' /> <strong>Incorrect.</strong> Pour obtenir un logiciel spécialisé, vous devriez communiquer avec les Services des technologies de l’information."
       }
     },

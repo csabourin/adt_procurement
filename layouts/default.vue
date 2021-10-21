@@ -83,8 +83,11 @@ export default {
     spendCompleted() {
       return this.$store.getters['spend/getScore']
     },
+     manageCompleted() {
+      return this.$store.getters['manage/getScore']
+    },
     courseComplete() {
-      if (parseInt(this.planCompleted, 10) >= 80 && parseInt(this.spendCompleted, 10) >= 80 && parseInt(this.reportCompleted, 10) >= 80) {
+      if (parseInt(this.planCompleted, 10) >= 80 && parseInt(this.spendCompleted, 10) >= 80 && parseInt(this.reportCompleted, 10) >= 80 && parseInt(this.manageCompleted, 10) >= 80) {
         this.$store.dispatch('scorm/setSuccess')
         return true
       }
@@ -278,6 +281,22 @@ html {
   }
   
   .exam.plan .card-header li.nav-item a.filled.Qactive{
+    background-color: #B3C295;
+  }
+  
+   .exam.manage .card-header li.nav-item a.filled{
+      background-color: #1f5c69;
+      color: #fff;
+  }
+  
+  .exam.manage .card-header li.nav-item a.Qactive{
+    background-color: #e0e59e;
+    box-shadow: -3px 7px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #fff;
+    color: #000;
+  }
+  
+  .exam.manage .card-header li.nav-item a.filled.Qactive{
     background-color: #B3C295;
   }
   

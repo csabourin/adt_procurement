@@ -268,7 +268,7 @@
         </b-modal>
     </div>
     <div class="bottomNav manageSection">
-      <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
+      <div class="manageSectionBar"><span>{{$t('manageSectionBar')}}</span></div>
       <microlearning youAreHere path="managePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('lifeCycle')" type="video" />
       <microlearning path="manageKey"  imagePath="KeyMessS.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('KeyMessages')" type="video" />
       <microlearning path="manageExam" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
@@ -431,7 +431,7 @@ button.accessibilityButton {
 .spendSection {
   position: relative;
 }
-.spendSectionBar {
+.manageSectionBar {
   position: absolute;
   background-color: #536173;
   width: 100vw;
@@ -440,7 +440,7 @@ button.accessibilityButton {
   left:-15px;
   top:38%;
 }
-.spendSectionBar span {
+.manageSectionBar span {
   padding:2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;
@@ -463,7 +463,7 @@ button.accessibilityButton {
   "IRLProcureText": "Take what you have learned into real life! Your organization will have its own ways of doing things. Take a time out from the course to see how the life cycle materiel management process works in your department.",
   "gotIt":"Continue to next segment",
   "transcriptText":"",
-  "spendSectionBar": "MANAGE"
+  "manageSectionBar": "MANAGE"
   },
   "fr":{
   "TakeTheQuiz":"Répondez au quiz",
@@ -477,7 +477,7 @@ button.accessibilityButton {
   "IRLProcureText": "Appliquez ce que vous avez appris dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez une pause durant le cours pour voir comment le processus de gestion du cycle de vie du matériel fonctionne dans votre ministère.",
   "gotIt":"Continuer au segment suivant.",
   "transcriptText":"",
-  "spendSectionBar": "GESTION"
+  "manageSectionBar": "GESTION"
   }
   }
 </i18n>

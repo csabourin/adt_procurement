@@ -122,7 +122,7 @@
                 <template v-slot:title>
                   <span class="v-inv">Question </span>15
                 </template>
-                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q15')" qId="14" :refill="Refill('14')" @response="calculateAnswer($event,3,14)" />
+                <radioQuiz exam :lock="quizLocked" :forceEmpty="isNull" :question="$t('Questions.q15')" qId="14" :refill="Refill('14')" @response="calculateAnswer($event,2,14)" />
               </b-tab>
             </b-tabs>
           </b-card>
@@ -175,8 +175,8 @@
       <p class='pageTitle'>{{$t('testComplete')}}</p>
       <p>{{$t('scoreIs')}} {{allDone}}%.</p>
       <p v-if="allDone < 80"> {{$t('notPassed')}}</p>
-      <p v-if="allDone >= 80 && allDone<100">{{$t('Passed')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link></p>
-      <p v-if="allDone==100"> {{$t('Excelled')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link></p>
+      <p v-if="allDone >= 80 && allDone<100">{{$t('Passed')}} <nuxt-link :to="localePath('index')">{{$t('homePageTest')}}</nuxt-link></p>
+      <p v-if="allDone==100"> {{$t('Excelled')}} <nuxt-link :to="localePath('index')">{{$t('homePageTest')}}</nuxt-link></p>
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
 

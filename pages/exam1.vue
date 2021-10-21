@@ -173,8 +173,8 @@
       <p class='pageTitle'>{{$t('testComplete')}}</p>
       <p>{{$t('scoreIs')}} {{allDone}}%.</p>
       <p v-if="allDone < 80"> {{$t('notPassed')}}</p>
-      <p v-if="allDone >= 80 && allDone<100">{{$t('Passed')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link></p>
-      <p v-if="allDone==100"> {{$t('Excelled')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link></p>
+      <p v-if="allDone >= 80 && allDone<100">{{$t('Passed')}} <nuxt-link :to="localePath('index')">{{$t('homePageTest')}}</nuxt-link></p>
+      <p v-if="allDone==100"> {{$t('Excelled')}} <nuxt-link :to="localePath('index')">{{$t('homePageTest')}}</nuxt-link></p>
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
 
@@ -676,7 +676,7 @@ export default {
         "text": "<p>Vous êtes le gestionnaire responsable d’une équipe qui fournit des services internes de gestion de l’information à votre organisation. Vous devez gérer le budget et vous êtes délégataire de pouvoirs financiers. Dans votre organisation, la limite établie pour une transaction effectuée au moyen d’une carte d’achat est de 2&nbsp;500 $.</p><p>À la suite d’une évaluation ergonomique faite pour vous et pour un employé, l’ergonome recommande de remplacer vos deux chaises de bureau. L’ergonome vous fait savoir qu’il dispose de plusieurs types de chaises qui pourraient correspondre à vos besoins. Il les a achetées en gros et les vend à titre privé.</p> <p>Quelle devrait être votre première démarche pour l’acquisition des chaises ergonomiques?</p>",
         "options": {
           "1": "Effectuer une recherche sur Google pour trouver la chaise ergonomique qui correspond le mieux à vos besoins et dont le prix respecte la limite qui vous est imposée pour les acquisitions par carte d’achat",
-          "2": "onsulter le groupe des aménagements de votre organisation pour savoir s’il a des chaises qui pourraient correspondre à vos besoins",
+          "2": "Consulter le groupe des aménagements de votre organisation pour savoir s’il a des chaises qui pourraient correspondre à vos besoins",
           "3": "Demander à l’ergonome de vous décrire les différents types de chaises dont il dispose et dont le prix respecte la limite qui vous est imposée pour les acquisitions par carte d’achat"
         },
         "feedback": {

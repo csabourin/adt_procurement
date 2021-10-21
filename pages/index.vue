@@ -94,10 +94,10 @@
 
         <hr class="manageProcurement">
         <h2 class="sideTitle procureTitle">{{$t('manage')}}</h2>
-        <div role="navigation" class="courseSection manageSection" :style="{ backgroundImage: `url(${manageBarUrl})` }" :aria-label="$t('spend') + ' - Navigation'">
-          <microlearning imagePath="manage1.svg" path="managePart1" time="20" :text="$t('lifeCycle')"  :completion="$store.state.currentPlaying.spendPart1_player" type="video" />
+        <div role="navigation" class="courseSection manageSection" :style="{ backgroundImage: `url(${manageBarUrl})` }" :aria-label="$t('manage') + ' - Navigation'">
+          <microlearning imagePath="manage1.svg" path="managePart1" time="20" :text="$t('lifeCycle')"  :completion="$store.state.currentPlaying.managePart1_player" type="video" />
           <microlearning path="manageKey" time="5" imagePath="manage2.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-          <microlearning time="10" path="manageExam"  imagePath="managetest.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" />
+          <microlearning time="10" path="manageExam"  imagePath="managetest.svg" :text="$t('TestManage')" :completion="parseInt(manageCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" />
         </div>
 
         <hr class="spendHr">
@@ -154,8 +154,11 @@ export default {
     spendCompleted(){
       return this.$store.getters['spend/getScore']
     },
+     manageCompleted(){
+      return this.$store.getters['manage/getScore']
+    },
     courseComplete(){
-      if(this.planCompleted>=80 && this.spendCompleted>=80&&this.reportCompleted>=80){
+      if(this.planCompleted>=80 && this.spendCompleted>=80&&this.reportCompleted>=80&& this.manageCompleted>=80){
         return true
       }
     },

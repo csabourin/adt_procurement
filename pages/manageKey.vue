@@ -79,10 +79,10 @@
       <microlearning path="reportKey" time="5" size="140" :completion="$store.state.currentPlaying.kmReport" imagePath="KeyMessR.svg" :text="$t('report')" class="report" noGrey type="keyMessages" />
     </div>
     <div class="bottomNav manageSection" v-else>
-      <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
+      <div class="manageSectionBar"><span>{{$t('manageSectionBar')}}</span></div>
       <microlearning path="managePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('lifeCycle')" type="video" />
        <microlearning time="5" youAreHere path="procureKey" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('KeyMessages')" type="keyMessages" />
-      <microlearning path="manageExam" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+      <microlearning path="manageExam" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['smanage/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
     </div>
   </div>
 </template>
@@ -122,16 +122,16 @@ export default {
   "en":
   {
   "keyPlanQuote": "Accountability breeds response-ability.",
-  "spendSectionBar": "MANAGE"
+  "manageSectionBar": "MANAGE"
   },
   "fr":
   {
   "keyPlanQuote": "La responsabilité engendre l’habileté.",
-  "spendSectionBar": "GESTION"
+  "manageSectionBar": "GESTION"
   }
   }</i18n>
 <style type="text/css" scoped>
-.spendSectionBar {
+.manageSectionBar {
   position: absolute;
   background-color: #536173;
   width: 100vw;
@@ -140,7 +140,7 @@ export default {
   left:-15px;
   top:38%;
 }
-.spendSectionBar span {
+.manageSectionBar span {
   padding:2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;

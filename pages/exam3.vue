@@ -114,9 +114,9 @@
       <p class='pageTitle'>{{$t('testComplete')}}</p>
       <p>{{$t('scoreIs')}} {{allDone}}%.</p>
       <p v-if="allDone < 80"> {{$t('notPassed')}}</p>
-      <p v-if="allDone >= 80 && allDone<100">{{$t('Passed')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link>
+      <p v-if="allDone >= 80 && allDone<100">{{$t('Passed')}} <nuxt-link :to="localePath('index')">{{$t('homePageTest')}}</nuxt-link>
       </p>
-      <p v-if="allDone==100"> {{$t('Excelled')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link>
+      <p v-if="allDone==100"> {{$t('Excelled')}} <nuxt-link :to="localePath('index')">{{$t('homePageTest')}}</nuxt-link>
       </p>
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
@@ -421,11 +421,11 @@ export default {
       }
       },
       "q5": {
-      "text": "What quasi-judicial mechanism is available to potential bidders to challenge decisions on any aspect of the procurement process that relates to a procurement contract are subject to trade agreements?  ",
+      "text": "What quasi-judicial mechanism is available to potential bidders to challenge decisions on any aspect of the procurement process that relates to a procurement contract subject to trade agreements?",
       "options": {
-      "1": "Complaint under the Canadian International Trade Tribunal.",
-      "2": "Complaint under Treasury Board’s Directive on the Management of Procurement.  ",
-      "3": "Complaint under the Department’s enabling legislation. "
+      "1": "Complaint under the Canadian International Trade Tribunal",
+      "2": "Complaint under Treasury Board’s Directive on the Management of Procurement ",
+      "3": "Complaint under the Department’s enabling legislation "
       },
       "feedback": {
       "1": "",

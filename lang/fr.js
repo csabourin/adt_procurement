@@ -14,6 +14,7 @@ export default {
   spend: "Achat",
   report: "Rapport",
   homePage: "Accueil",
+  homePageTest: "page d’accueil.",
   links: "Liens",
   linksAlt:"Selectionner ici pour ouvrir la section contenant des liens",
   files: "Fichiers",
@@ -77,8 +78,8 @@ export default {
   
   // Texte pour les tests
   notPassed: "Vous n’avez pas réussi ce test. Vous pouvez réviser vos réponses et réessayer.",
-  Passed: "Vous avez réussi ce test, vous pouvez réviser vos réponses et essayer d’améliorer votre score, ou aller à la page d’accueil.",
-  Excelled: "Vous avez réussi ce test, félicitations! Vous pouvez retourner à la page d’accueil.",
+  Passed: "Vous avez réussi ce test, vous pouvez réviser vos réponses et essayer d’améliorer votre score, ou aller à la",
+  Excelled: "Vous avez réussi ce test, félicitations! Vous pouvez retourner à la ",
   
   // Texte pour icones
   threeSixty:{

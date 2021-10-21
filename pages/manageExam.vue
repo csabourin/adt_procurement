@@ -33,7 +33,7 @@
       <b-row>
         <b-col class="col-12">
           <b-card no-body>
-            <b-tabs card pills v-model="tabIndex" class="exam report" active-nav-item-class="Qactive">
+            <b-tabs card pills v-model="tabIndex" class="exam manage" active-nav-item-class="Qactive">
               <b-tab :title-link-class="[{'filled':answerScore[0]}]">
                 <template v-slot:title>
                   <span class="v-inv">Question </span>01
@@ -89,17 +89,11 @@
     </b-row>
     </b-container>
 
-    <div class="bottomNav generalSection" v-if="chosenScenario == 'justExam'">
-      <div class="generalSectionBar"><span>{{$t('justExamShort')}}</span></div>
-      <microlearning path="exam1" time="15" size="140" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('plan')" class="plan" noGrey type="exam" questionNum="20" />
-      <microlearning path="exam2" time="15" size="140" :completion="parseInt($store.getters['spend/getScore'],10)" imagePath="S-Test.svg" :text="$t('spend')" class="spend" noGrey type="exam" questionNum="20" />
-      <microlearning path="exam3" time="15" youAreHere size="140" :completion="parseInt($store.getters['report/getScore'],10)" imagePath="R-Test.svg" :text="$t('report')"  class="report" noGrey type="exam" questionNum="10" />
-    </div>
     <div class="bottomNav manageSection">
-      <div class="spendSectionBar"><span>{{$t('spendSectionBar')}}</span></div>
-      <microlearning path="managePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('lifeCycle')" type="video" />
-      <microlearning path="manageKey"  imagePath="KeyMessS.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('KeyMessages')" type="video" />
-      <microlearning youAreHere path="manageExam" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+      <div class="manageSectionBar"><span>{{$t('manageSectionBar')}}</span></div>
+      <microlearning path="managePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.managePart1_player" :text="$t('lifeCycle')" type="video" />
+      <microlearning path="manageKey"  imagePath="KeyMessS.svg" size="140" time="20" :completion="$store.state.currentPlaying.managekey_player" :text="$t('KeyMessages')" type="video" />
+      <microlearning youAreHere path="manageExam" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['manage/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
     </div>
 
     <!-- Debugging section -->
@@ -115,9 +109,9 @@
       <p class='pageTitle'>{{$t('testComplete')}}</p>
       <p>{{$t('scoreIs')}} {{allDone}}%.</p>
       <p v-if="allDone < 80"> {{$t('notPassed')}}</p>
-      <p v-if="allDone >= 80 && allDone<100">{{$t('Passed')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link>
+      <p v-if="allDone >= 80 && allDone<100">{{$t('Passed')}} <nuxt-link :to="localePath('index')">{{$t('homePageTest')}}</nuxt-link>
       </p>
-      <p v-if="allDone==100"> {{$t('Excelled')}} <nuxt-link :to="localePath('index')">{{$t('homePage')}}</nuxt-link>
+      <p v-if="allDone==100"> {{$t('Excelled')}} <nuxt-link :to="localePath('index')">{{$t('homePageTest')}}</nuxt-link>
       </p>
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
@@ -140,7 +134,7 @@ import radioQuiz from "~/components/radioQuiz"
 import checkboxQuiz from "~/components/checkboxQuiz"
 import microlearning from "~/components/microlearning"
 export default {
-  name: "examThree",
+  name: "examManage",
   data() {
     return {
       debugging: false,
@@ -158,7 +152,7 @@ export default {
       this.$bvModal.msgBoxConfirm(this.$t('warnReset'), { cancelTitle: this.$t('cancel') }).then(trigger => {
           if (trigger) {
             this.isNull = !this.isNull
-            this.$store.commit('report/resetQuiz')
+            this.$store.commit('manage/resetQuiz')
           } else {}
         })
         .catch(err => {
@@ -167,9 +161,9 @@ export default {
     },
     markTest() {
       if(this.allAnswered){
-        this.$store.commit('report/lockQuiz');
+        this.$store.commit('manage/lockQuiz');
         this.$bvModal.show('Completed');
-        this.$store.commit('report/setComplete', this.checkPercentage())
+        this.$store.commit('manage/setComplete', this.checkPercentage())
       }
       else{
         this.$bvModal.show('missingQuestions');
@@ -189,22 +183,22 @@ export default {
     },
     calculateAnswer(answer, correct, qId) {
       if (answer == correct) {
-        this.$store.commit('report/setScore', [qId.toString(), "01", answer])
-      } else { this.$store.commit('report/setScore', [qId.toString(), "'10'", answer]) }
+        this.$store.commit('manage/setScore', [qId.toString(), "01", answer])
+      } else { this.$store.commit('manage/setScore', [qId.toString(), "'10'", answer]) }
     },
     arraysMatch(arr1, arr2, qId) {
       if (arr1.length !== arr2.length) {
-        this.$store.commit('report/setScore', [qId.toString(), "'10'", arr1])
+        this.$store.commit('manage/setScore', [qId.toString(), "'10'", arr1])
         return false
       }
       const arrayOne = arr1.concat().sort()
       for (let i in arrayOne) {
         if (arrayOne[i] !== arr2[i]) {
-          this.$store.commit('report/setScore', [qId.toString(), "'10'", arr1])
+          this.$store.commit('manage/setScore', [qId.toString(), "'10'", arr1])
           return false
         }
       }
-      this.$store.commit('report/setScore', [qId.toString(), "01", arr1])
+      this.$store.commit('manage/setScore', [qId.toString(), "01", arr1])
     },
     focus(){
       setTimeout(function(){
@@ -214,21 +208,21 @@ export default {
   },
   computed: {
     allDone() {
-      return this.$store.getters['report/getScore']
+      return this.$store.getters['manage/getScore']
     },
     AlertIsDismissed: {
-      set(AlertIsDismissed) { AlertIsDismissed ? this.$store.commit('report/dismissAlert') : this.$store.commit('report/undismissAlert') },
-      get() { return this.$store.state.report.AlertIsDismissed }
+      set(AlertIsDismissed) { AlertIsDismissed ? this.$store.commit('manage/dismissAlert') : this.$store.commit('manage/undismissAlert') },
+      get() { return this.$store.state.manage.AlertIsDismissed }
     },
     tabIndex: {
-      set(tabIndex) { this.$store.commit('report/setCurrentTab', tabIndex) },
-      get() { return this.$store.state.report.tabIndex }
+      set(tabIndex) { this.$store.commit('manage/setCurrentTab', tabIndex) },
+      get() { return this.$store.state.manage.tabIndex }
     },
     answerScore() {
-      return this.$store.state.report.score
+      return this.$store.state.manage.score
     },
     quizLocked() {
-      return this.$store.state.report.quizLocked
+      return this.$store.state.manage.quizLocked
     },
     chosenScenario: {
       set(scenario) {
@@ -294,7 +288,7 @@ export default {
   height: 100%;
   margin-left: 15px;
 }
-.spendSectionBar {
+.manageSectionBar {
   position: absolute;
   background-color: #536173;
   width: 100vw;
@@ -303,7 +297,7 @@ export default {
   left:-15px;
   top:38%;
 }
-.spendSectionBar span {
+.manageSectionBar span {
   padding:2px 10px 0;
   color: #4d4d4d;
   font-weight: bold;
@@ -381,6 +375,7 @@ export default {
   "tryAgain": "Try Again",
   "scoreIs": "Your final score is",
   "unanswered":"Unanswered Question(s)",
+  "manageSectionBar": "MANAGE",
   "Questions": {
   "q1": {
   "text": " Which phase of the procurement life cycle does the procurement specialist normally lead?",
@@ -462,6 +457,7 @@ export default {
       "tryAgain": "Essayer de nouveau",
       "scoreIs": "Votre note finale est de",
       "unanswered":"Question(s) sans réponse",
+      "manageSectionBar": "GESTION",
       "Questions": {
       "q1": {
        "text": "  Laquelle des étapes du processus d’approvisionnement est généralement menée par le spécialiste en approvisionnement? ",

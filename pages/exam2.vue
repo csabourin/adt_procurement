@@ -447,7 +447,7 @@ export default {
         }
       },
       "q3": {
-        "text": "According to the Government Contracts Regulations, when could a procurement specialist sign a procurement contract without soliciting bids?",
+        "text": "According to the <em>Government Contracts Regulations</em>, when could a procurement specialist sign a procurement contract without soliciting bids?",
         "options": {
           "1": "When a qualified independent consultant has advised the manager that the preferred contractor’s price is competitive with industry standards ",
           "2": "When the deputy minister has given written permission to contract without the bidding process ",
@@ -664,7 +664,7 @@ export default {
         }
       },
       "q3": {
-        "text": "Selon le Règlement sur les marchés de l’État, dans quelles circonstances un spécialiste des acquisitions peut-il conclure un contrat sans lancer d’appel d’offres?",
+        "text": "Selon le <em>Règlement sur les marchés de l’État</em>, dans quelles circonstances un spécialiste des acquisitions peut-il conclure un contrat sans lancer d’appel d’offres?",
         "options": {
           "1": "Les cas où un expert-conseil indépendant informe le gestionnaire que le prix de l’entrepreneur choisi est concurrentiel par rapport aux normes de l’industrie.",
           "2": "Les cas où le sous-ministre donne son autorisation par écrit de conclure un contrat sans appel d’offres. ",

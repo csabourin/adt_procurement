@@ -599,7 +599,7 @@ export default {
         "text": "Who has the exclusive authority to acquire goods on behalf of the Government of Canada?",
         "options": {
           "1": "Minister of Finance",
-          "2": "Minister of Public Services and Procurement Canada",
+          "2": "Minister of Public Services and Procurement",
           "3": "President of the Treasury Board"
         },
         "feedback": {

@@ -116,6 +116,10 @@ export const mutations = {
     window.localStorage.setItem("reportPart2", playing)
     state.reportPart2_player = playing
   },
+  setmanage_player(state, playing) {
+    window.localStorage.setItem("manage", playing)
+    state.reportPart2_player = playing
+  },
   setCurrentModule(state, module) {
     window.localStorage.setItem("currentModule", module)
     state.currentModule = module

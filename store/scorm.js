@@ -30,7 +30,8 @@ export const actions = {
     // intention: initialize cmi.objectives.n.id with the 3 objectives, set passage mark at 80
     setObjective(0, 'plan', 80, 100)
     setObjective(1, 'spend', 80, 100)
-    setObjective(2, 'report', 80, 100)
+    setObjective(2, 'manage', 80, 100)
+    setObjective(3, 'report', 80, 100)
   },
   setScores({ commit, state }, scores) {
 

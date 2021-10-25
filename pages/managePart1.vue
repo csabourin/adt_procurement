@@ -4,7 +4,7 @@
     <section>
       <b-row>
         <b-col>
-          <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_7snp9f2c/flavorId/0_uduucrps/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_agt4e462/flavorId/0_z7j6keoz	/name/a.mp4" chapters chapterFile="ManagePart1.vtt" ccFile="SpendPart1_captions.vtt" posterFile="spendPart1_poster.png" :restartAt="parseInt(thatPoint)" toResume="setSpendPart1" :modalArray="modalArray" @timeupdate="updatePercent($event)"/>
+          <videoPlayer ref="vp" enVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_7snp9f2c/flavorId/0_uduucrps/name/a.mp4" frVideoFile="https://video.csps-efpc.gc.ca/p/101/serveFlavor/entryId/0_agt4e462/flavorId/0_z7j6keoz	/name/a.mp4" chapters chapterFile="ManagePart1.vtt" ccFile="ADT_MODULE4_CAPTION.vtt" posterFile="spendPart1_poster.png" :restartAt="parseInt(thatPoint)" toResume="setmanage" :modalArray="modalArray" @timeupdate="updatePercent($event)"/>
         </b-col>
       </b-row>
       <b-container>
@@ -269,7 +269,7 @@
     </div>
     <div class="bottomNav manageSection">
       <div class="manageSectionBar"><span>{{$t('manageSectionBar')}}</span></div>
-      <microlearning youAreHere path="managePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('lifeCycle')" type="video" />
+      <microlearning youAreHere path="managePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.manage_player" :text="$t('lifeCycle')" type="video" />
       <microlearning path="manageKey"  imagePath="KeyMessS.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('KeyMessages')" type="video" />
       <microlearning path="manageExam" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
     </div>
@@ -300,7 +300,7 @@ export default {
   },
   computed:{
     thatPoint(){
-      return this.$store.state.currentPlaying.spendPart1
+      return this.$store.state.currentPlaying.manage
     },
     chosenScenario: {
       set(scenario) {
@@ -316,7 +316,7 @@ export default {
       this.$refs.vp.resumePlay()
     },
     updatePercent(e){
-      this.$store.commit('currentPlaying/setSpendPart1_player',e)
+      this.$store.commit('currentPlaying/setmanage_player',e)
     }
   }
 }

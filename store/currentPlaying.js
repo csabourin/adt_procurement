@@ -14,6 +14,7 @@ export const state = () => ({
   spendPart3: parseInt(window.localStorage.getItem("spendPart3"),10) || 0,
   reportPart1: parseInt(window.localStorage.getItem("reportPart1"),10) || 0,
   reportPart2: parseInt(window.localStorage.getItem("reportPart2"),10) || 0,
+  manage: parseInt(window.localStorage.getItem("manage"),10) || 0,
   buildWP_player: parseInt(window.localStorage.getItem("buildWP_player"),10) || 0,
   createBudget_player: parseInt(window.localStorage.getItem("createBudget_player"),10) || 0,
   forecast_player: parseInt(window.localStorage.getItem("forecast_player"),10) || 0,
@@ -22,6 +23,7 @@ export const state = () => ({
   spendPart3_player: parseInt(window.localStorage.getItem("spendPart3_player"),10) || 0,
   reportPart1_player: parseInt(window.localStorage.getItem("reportPart1_player"),10) || 0,
   reportPart2_player: parseInt(window.localStorage.getItem("reportPart2"),10) || 0,
+  manage_player: parseInt(window.localStorage.getItem("manage_player"),10) || 0,
   currentModule: window.localStorage.getItem("currentModule") || "",
   chosenScenario: window.localStorage.getItem("chosenScenario") || "takeCourse",
   menuShowing: window.localStorage.getItem("menuShowing") === "true" ? true : false || false
@@ -118,7 +120,7 @@ export const mutations = {
   },
   setmanage_player(state, playing) {
     window.localStorage.setItem("manage", playing)
-    state.reportPart2_player = playing
+    state.manage_player = playing
   },
   setCurrentModule(state, module) {
     window.localStorage.setItem("currentModule", module)

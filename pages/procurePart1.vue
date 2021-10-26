@@ -324,7 +324,7 @@
                         <h2>10. Quiz</h2>
                         <p>Maintenant que vous avez vu comment définir vos besoins en biens, en services et en construction, tenir compte des besoins particuliers et décrire ce dont vous avez besoin, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <hr>
-                        <h2>11. Section completed</h2>
+                        <h2>11. Section complété</h2>
                         <p>[Onscreen text showing Section Completed instruction.]</p>
                       </span>
                     </b-card-text>

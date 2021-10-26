@@ -119,65 +119,80 @@
 
                       </span>
                       <span v-if="$i18n.locale=='fr'">
-                        <!-- <h3>Autorité de certification</h3>
-                        <p>De mani&egrave;re générale, aucune facture ne doit &ecirc;tre payée tant que les biens n’ait été re&ccedil;us ou que les services n’aient été rendus.</p>
-                        <p>Exercer votre autorité de certification en vertu de l’article 34 de la LGFP signifie, essentiellement, que vous devez prendre un moment pour attester que les biens et services que vous avez re&ccedil;us correspondent bien à la facture à payer.</p>
-                        <p>Bien qu’en principe d’autres personnes de votre équipe pourraient faire cette évaluation, c’est à vous, en tant que gestionnaire délégué que revient le poids de cette responsabilité.</p>
-                        <p>Bien entendu, vous ne pouvez faire cette attestation que si vous avez bel et bien la délégation de la faire. Assurez-vous de vérifier que c’est bien le cas!</p>
-                        <h3>Exactitude de la facture</h3>
-                        <p>Avant d’attester de l’exactitude d’une facture, le gestionnaire, habituellement avec l’aide de son personnel administratif, vérifie l’exactitude de la facture ou de la réclamation des éléments suivants:</p>
-                        <ul>
-                        <li>La date d’émission: on s’assure que la facture a été émise à la date de commande ou apr&egrave;s celle-ci. Ou encore, s’il s’agit d’un contrat, on doit vérifier que la facture a bel et bien été émise pendant la durée du contrat.</li>
-                        <li>Les quantités: on vérifie à ce que le nombre d’article réclamés corresponde bien aux articles commandés</li>
-                        <li>Les taxes: on valide que le montant pour les taxes est exact</li>
-                        <li>Le fournisseur ou le bénéficiaire : on s’assure que l’information est exacte et que le fournisseur ou le bénéficiaire est admissible au paiement</li>
-                        <li>Statut: on vérifie que la facture n’a pas déjà été payée</li>
-                        </ul>
-                        <p>Il se peut que vous deviez retourner au fournisseur pour faire corriger la facture avant de signer l’article 34.</p>
-                        <p>Les factures doivent &ecirc;tre payées dans les 30 jours suivant la réception de la facture par le minist&egrave;re afin d’éviter les frais d’intér&ecirc;t.</p>
-                        <h3>Traitement de la facture</h3>
-                        <p><br />Une fois la facture validée, le gestionnaire vérifie le codage financier et approuve l’article 34. L’approbation se fait soit sur papier ou encore par voie électronique, selon les pratiques habituelles dans votre minist&egrave;re.</p>
-                        <p>La facture approuvée est ensuite envoyée au service des finances qui paiera la facture, conformément à l’article 33.</p>
-                        <p>Gardez à l’esprit les éléments suivants:</p>
-                        <ul>
-                        <li>vous ne pouvez pas autoriser les articles 33 et 34 pour la m&ecirc;me transaction ou facture; un agent financier exécutera l’article 33 ;</li>
-                        <li>vous ne pouvez pas autoriser l’application de l’article 41 pour un marché et de l’article 34 lié au m&ecirc;me marché; un agent d’approvisionnement exécutera l’article 41;</li>
-                        <li>vous ne pouvez autoriser aucune transaction pour laquelle vous pouvez &ecirc;tre per&ccedil;u comme ayant un avantage personnel.</li>
-                        </ul> -->
 
-                        <h2>1. Autorité de certification</h2>
-                        <p>De manière générale, aucune facture ne doit être payée tant que les biens n’ont pas été reçus ou que les services n’ont été rendus.</p>
-                        <p>Exercer votre autorité de certification en vertu de l'article 34 sur la Loi sur la gestion des finances publiques (LGFP) signifie, essentiellement, que vous devez prendre un moment pour attester que les biens et services que vous avez reçus correspondent bien à la facture. </p>
-                        <p>Bien que d’autres personnes de votre équipe pourraient faire cette évaluation, c’est à vous, en tant que gestionnaire délégué que revient le poids de cette responsabilité. Vous devez donc vous assurer que la facture et le codage financier sont exacts. </p>
-                        <p>Bien entendu, vous ne pouvez faire cette attestation que si vous avez bel et bien reçu la délégation pour le faire. Vérifiez que c’est bien le cas! </p>
+                        <h2>1. Introduction</h2>
+                        <p>Dans la présente section, vous apprendrez </p>
+                        <ul>
+                          <li>à lancer le processus de demande de soumissions, </li>
+                          <li>à évaluer les offres et à négocier  </li>
+                          <li>ainsi qu’à approuver et à accorder des contrats concurrentiels. </li>
+                        </ul>
+                        <p>Il vous faudra environ 30 minutes pour effectuer cette section.</p>
 
                         <hr>
 
-                        <h2>2. Exactitude de la facture</h2>
-                        <p>Avant de signer une facture, le gestionnaire, habituellement avec l'aide de son personnel administratif, vérifie l'exactitude de la facture ou de la réclamation en examinant les éléments suivants :  </p>
+                        <h2>2. Préparer les documents de demande de soumissions</h2>
+                        <p>Maintenant que vous avez déterminé vos besoins, préparé votre énoncé de travail ou votre énoncé des besoins et choisi votre stratégie d’approvisionnement, quelle est la prochaine étape? </p>
+                        <p>Le spécialiste en approvisionnement élaborera les stratégies d’acquisition nécessaires pour satisfaire aux exigences que vous avez fournies. Les réponses peuvent inclure : </p>
                         <ul>
-                          <li>La date d'émission : on s’assure que la facture a été émise à la date de commande ou après celle-ci. Ou encore, s’il s’agit d’un contrat, on doit vérifier que la facture a bel et bien été émise pendant la durée du contrat. </li>
-                          <li>Les quantités : on vérifie que le nombre d’articles réclamés corresponde bien aux articles commandés.</li>
-                          <li>Les taxes : on valide que le montant indiqué pour les taxes est exact et que le bon numéro de TPS ou de TVH est inscrit.</li>
-                          <li>Le fournisseur ou le bénéficiaire : on s’assure que l’information est exacte et que le fournisseur ou le bénéficiaire sont admissibles au paiement.</li>
-                          <li>Et le statut : on vérifie que la facture n'a pas déjà été payée.</li>
+                          <li>préparer les documents de demande de soumissions; </li>
+                          <li>gérer le processus d’évaluation des soumissions;</li>
+                          <li>évaluer les propositions financières; </li>
+                          <li>sélectionner les fournisseurs; </li>
+                          <li>négocier les ententes d’approvisionnement; </li>
+                          <li>officialiser les ententes d’approvisionnement. </li>
                         </ul>
-                        <p>Il se peut que vous deviez retourner voir le fournisseur pour faire corriger la facture avant de signer l'article 34.</p>
-                        <p>Les factures doivent être payées dans les 30 jours suivant la réception de la facture par le ministère afin d'éviter de payer des intérêts.</p>
+                        <p>Mais avant de passer à l’activité… Êtes-vous curieux de voir des exemples de documents de demande de soumissions? Pourquoi ne pas visiter le site Web Achatsetventes.gc.ca! Vous y trouverez de nombreux exemples provenant de diverses organisations. Et n’oubliez pas: vous aurez un rôle à jouer pour répondre aux questions techniques des fournisseurs potentiels pendant le processus de demande.</p>
 
                         <hr>
 
-                        <h2>3. Traitement de la facture</h2>
-                        <p>Une fois la facture validée, le gestionnaire vérifie le codage financier et approuve l'article 34. L’approbation se fait soit sur papier ou encore par voie électronique, selon les pratiques habituelles dans votre ministère.</p>
-                        <p>La facture approuvée est ensuite envoyée au service des finances qui paiera la facture, conformément à l'article 33. </p>
-                        <p>Gardez à l'esprit les éléments suivants : </p>
+                        <h2>3. Évaluer et négocier</h2>
+                        <p>Le document d’invitation à soumissionner a été préparé et distribué. C’est très bien! Passons maintenant à d’autres tâches. </p>
+                        <p>Une fois les soumissions déposées, le gestionnaire, avec l’équipe d’évaluation des offres choisie, évalue les soumissions techniques par rapport aux critères d’évaluation techniques établis. Par exemple, on pourrait examiner des propositions pour déterminer si les soumissionnaires satisfont à des critères tels que les qualifications et les années d’expérience dans le domaine de travail ou comment les offres proposées satisfont aux exigences d’accessibilité et aux normes de conception.</p>
+                        <p>Ensuite, le spécialiste en approvisionnement </p>
                         <ul>
-                          <li>vous ne pouvez pas autoriser les articles 33 et 34 pour la même transaction ou facture; un agent financier exécutera l'article 33; </li>
-                          <li>vous ne pouvez pas autoriser l'application de l'article 41 pour un contrat et l'article 34 lié au même contrat; un agent d'approvisionnement exécutera l'article 41;</li>
-                          <li>et vous ne pouvez autoriser aucune transaction pour laquelle vous pouvez être considéré comme profiter d’un avantage personnel.</li>
+                          <li>vérifie que les soumissions sont complètes, </li>
+                          <li>envoie la partie technique au gestionnaire et à l’équipe technique pour examen, </li>
+                          <li>effectue l’évaluation financière une fois l’évaluation technique terminée, </li>
+                          <li>mène les négociations nécessaires au nom du gestionnaire </li>
+                          <li>et applique la méthode de sélection. </li>
                         </ul>
+                        <p>Pour les processus qui relèvent des traités modernes, comme les ententes sur des revendications territoriales globales, ou de la Directive sur les marchés de l’État, incluant les baux immobiliers, dans la région du Nunavut, l’évaluation des critères des avantages pour les Autochtones peut être considérée comme faisant partie des soumissions. </p>
+                        <p>Saviez-vous que communiquer avec un fournisseur pendant un processus concurrentiel, autrement que par des réunions de soumissionnaires et des appels d’intérêt, pourrait être considéré comme du favoritisme ou comme une action créant un avantage indu? Évitez donc de communiquer avec les fournisseurs lors d’un processus concurrentiel. Renvoyez-les plutôt à l’autorité chargée du contrat!  </p>
+                        <p>L’activité qui suit vous aidera à évaluer vos connaissances de la phase d’évaluation et de négociation. </p>
+                        <p>Pour obtenir plus d’informations sur l’équipe d’évaluation des soumissions, consultez l’aide‑mémoire dans la boîte à outils. </p>
                         <hr>
-                        <h2>4. Section complétée</h2>
+                        
+                        <h2>4. Approbation de contrat</h2>
+                        <p>Une fois qu’un soumissionnaire aura été choisi en fonction de sa capacité à satisfaire à l’exigence, le spécialiste en approvisionnement demandera l’approbation du contrat. Cela comprend, au besoin   </p>
+                        <ul>
+                          <li>l’examen du contrat par des pairs ou des services juridiques,  </li>
+                          <li>une revue de l’analyse des coûts, </li>
+                          <li>un examen des risques si le besoin a changé, </li>
+                          <li>un examen de l’assurance qualité </li>
+                          <li>et, le cas échéant, l’approbation par un comité d’examen et d’approbation des contrats, ou par le Conseil du Trésor.  </li>
+                        </ul>
+                        <p>Une fois ce processus terminé, le spécialiste en approvisionnement envoie les documents du contrat à l’autorité responsable ayant le pouvoir d’exécuter une opération ou l’autorité contractante de votre organisation, puis au fournisseur. Dans bien des cas, l’agent d’approvisionnement détient le pouvoir délégué en matière de transactions ou est l’autorité contractante et signe le contrat. </p>
+                        <p>Vous vous demandez qui approuvera le contrat? L’activité suivante vous aidera à reconnaître les personnes ayant le pouvoir de signer. </p>
+                        <hr>
+
+                        <h2>4. Attribution du contrat</h2>
+                        <p>Après l’approbation du contrat, le spécialiste en approvisionnement accordera le contrat. Selon la valeur de ce dernier, le spécialiste peut envoyer des lettres de refus aux soumissionnaires non retenus et afficher un avis d'attribution de contrat sur le site Achatsetventes.gc.ca/appels-d-offres de SPAC pour informer le public du soumissionnaire retenu.  </p>
+                        <p>Des séances d’information sont offertes sur demande aux soumissionnaires non retenus et devraient normalement comprendre un aperçu des facteurs et des critères utilisés dans l’évaluation. Elles sont généralement dirigées par le spécialiste en approvisionnement, tandis que vous jouez un rôle de soutien en répondant aux questions d’évaluation technique. </p>
+                        <p>La seule information fournie au soumissionnaire est l’évaluation de son offre et la note accordée à celle-ci. Les renseignements sur les autres soumissionnaires ne doivent pas être divulgués. </p>
+                        <hr>
+
+                        <h2>6. Dans la vraie vie</h2>
+                        <p>Appliquez ce que vous avez appris dans la vraie vie! </p>
+                        <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment le processus de demande de soumissions fonctionne dans votre ministère. Votre organisation possède peut-être une page intranet concernant l’approvisionnement? Ou vos spécialistes en approvisionnement ont peut-être les modèles dont vous avez besoin? L’examen des documents de demande de soumissions préparés par le passé peut parfois aider. Et n’oubliez pas de consulter la boîte à outils où vous trouverez un aide-mémoire sur le processus d’approvisionnement! </p>
+                        <hr>
+
+                        <h2>7. Quiz </h2>
+                        <p>Maintenant que vous avez vu comment lancer le processus de demande de soumissions, évaluer les offres et négocier, ainsi qu’approuver et accorder des contrats concurrentiels, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
+                        <hr>
+
+                        <h2>8. Section complétée</h2>
+
 
                       </span>
                     </b-card-text>

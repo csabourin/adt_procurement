@@ -114,62 +114,75 @@
                       </span>
                       <span v-if="$i18n.locale=='fr'">
 
-                        <h2>1. Vérifiez votre budget</h2>
-                        <p>Maintenant que votre budget est approuvé et que vous avez commencé à mettre en œuvre votre plan de travail, vous pouvez commencer à dépenser!</p>
-                        <p>Avant d’engager des dépenses, toutefois, vous devez vous assurer que les fonds disponibles dans votre budget sont suffisants.</p>
-                        <p>Pour ce faire, vous devez examiner les dépenses qui ont été engagées, dépensées ou prévues. </p>
-                        <p>Au fur et à mesure que l’année avance, vous devrez probablement ajuster votre budget à vos besoins en déplaçant des montants d’un poste budgétaire à un autre au sein même votre budget.</p>
-                        <p>N’oubliez pas que le gabarit utilisé dans votre unité peut différer sensiblement de celui que nous vous présentons ici!</p>
-
-                        <hr>
-
-                        <h2>2. Délégation des pouvoirs</h2>
-                        <p>Saviez-vous que c’est la Loi sur la gestion des finances publiques (LGFP) qui confère aux ministres et aux administrateurs généraux leurs pouvoirs financiers? </p>
-                        <p>Par la suite, ces personnes délèguent, à leur tour, une partie de ces pouvoirs financiers à l’intérieur de leur organisation, par le biais d’un tableau de délégation des pouvoirs de signature en matière financière.</p>
-                        <p>Pour exercer votre délégation financière, vous avez besoin de faire ces 3 choses :</p>
-                        <ol>
-                          <li>Réussir le présent cours</li>
-                          <li>Soumettre votre carte de délégation signée à votre service des finances</li>
-                          <li>obtenir votre délégation de pouvoir officielle par écrit de la part de votre service des finances </li>
-                        </ol>
-                        <p>Il existe divers pouvoirs délégués. Les gestionnaires en ont généralement deux. </p>
-                        <p>L’article 32 permet à une personne déléguée d’engager des fonds et de dépenser tandis que l’article 34 fait référence à l’autorité de certification. L’article 32 vous permet de commander des articles de bureau, par exemple, puis l’article 34 vous permet de certifier que vous les avez bel et bien reçus.</p>
-                        <p>Ensuite, l’article 33 permet à l’unité des finances de payer la facture.</p>
-                        <p>Dans certaines situations, par exemple des services d’aide temporaire, vous devrez passer par un processus d’approvisionnement parce que cela implique un contrat. Habituellement, ce serait au groupe d’Approvisionnement de votre organisation que reviendraient ces démarches, en vertu de l’article 41 de la Loi sur la gestion des finances publiques. </p>
-                        <p>Pour savoir ce que vous pouvez engager, vous devez vous fier à votre carte de délégation signée ainsi qu’au tableau de délégation des pouvoirs de signature en matière financière dans votre organisation.</p>
-                        <p>Encore une fois, le format de ces documents variera selon l’endroit où vous travaillez. </p>
-
-                        <hr>
-
-                        <h2>3. Mécanismes de dépense</h2>
-                        <p>Vous avez l’argent et vous avez la délégation. Super! </p>
-                        <p>Maintenant, vous devez déterminer la meilleure façon d’obtenir les biens et services en question. </p>
-                        <p>L’activité suivante vous donnera l’occasion de vous familiariser avec les mécanismes de dépense!</p>
-
-                        <hr>
-
-                        <h2>4. Enregistrement dans le système financier</h2>
-                        <p>Après avoir vérifié que vous avez assez d’argent pour payer un achat, vous créez soit un engagement préalable, soit un engagement ferme.</p>
-                        <p>Un engagement préalable est pris lorsque vous réservez des fonds alors que vous n’avez pas encore trouvé le fournisseur. </p>
-                        <p>Un engagement ferme est approprié lorsque vous faites affaire avec un fournisseur connu.</p>
-                        <p>Dans un cas comme dans l’autre, vous devrez entrer ces engagements dans le système financier en utilisant le codage financier unique de votre organisation.</p>
-                        <p>Ce codage financier est un système qui permet de faire le suivi des opérations financières tout au long de l’année. Il permet de déterminer, entre autres : </p>
+                        <h2>1. Introduction </h2>
+                        <p>Dans cette section, vous découvrirez les quatre phases de la gestion du cycle de vie du matériel :</p>
                         <ul>
-                          <li>le  gestionnaire responsable des opérations financières; </li>
-                          <li>la composante de votre budget utilisée, par exemple fonctionnement et entretien, salaire, etc.;</li>
-                          <li>la nature de l’opération financière, par exemple  dépenses, recettes, actif, passif;</li>
-                          <li>les détails de la transaction;</li>
-                          <li>et l’activité à laquelle est associée l’opération financière.</li>
+                          <li>Planification  </li>
+                          <li>Acquisition  </li>
+                          <li>Exploitation, utilisation et entretien  </li>
+                          <li>Dessaisissement  </li>
                         </ul>
-                        <p>Le système de codage financier vous permet de bien gérer vos opérations financières et de bien pouvoir répondre de votre budget à n’importe quel moment au cours de l’année. </p>
-                        <p>Les gestionnaires travaillent souvent avec des professionnels de l'administration ou des agents financiers pour cette tâche.</p>
+                        <p>Il vous faudra environ 20 minutes pour effectuer cette section</p>
 
                         <hr>
 
-                        <h2>5. Essayons-le!</h2>
-                        <p>Afin de conclure cette section, prenons quelques instants pour appliquer le tout à un scénario fictif. </p>
+                        <h2>2. Planification </h2>
+                        <p>Vous vous êtes procuré les biens dont vous avez besoin. C’est parfait. Mais saviez-vous que vous devez maintenant gérer leur cycle de vie?  </p>
+                        <p>La gestion du cycle de vie du matériel consiste en la gestion efficace et efficiente des biens, depuis l’identification des besoins jusqu’au dessaisissement des biens.</p>
+                        <p>Examinons d’un peu plus près la planification, première phase de la gestion du cycle de vie du matériel. Puisque la planification a été abordée dans les trois premiers modules de ce cours, en voici un résumé rapide.</p>
+                        <p>Au cours du processus de planification, les gestionnaires doivent déterminer ce qui suit.  </p>
+                        <ul>
+                          <li>Y a-t-il un cas clair d’achat ou de location?  </li>
+                          <li>Quelles sont les exigences administratives et opérationnelles?  </li>
+                          <li>Un produit ou son entretien sont-ils nécessaires?  </li>
+                          <li>Quels sont les produits finis (matériel) ou les matières premières nécessaires?  </li>
+                          <li>Le matériel existant est-il disponible ou approprié pour répondre au besoin?  </li>
+                          <li>A-t-on effectivement besoin de la quantité proposée?  </li>
+                          <li>Comment les prévisions ont-elles été faites pour estimer les besoins?  </li>
+                          <li>Les fonds de capital ou d’exploitation sont-ils utilisés pour soutenir l’acquisition?  </li>
+                          <li>Quelle méthode sera utilisée pour acquérir le matériel et les services de soutien connexes?  </li>
+                          <li>Peut-on répondre aux exigences grâce à des produits sans danger pour l’environnement et à des produits qui utilisent des matériaux ou des procédés économes en ressources?  </li>
+                          <li>D’autres questions pertinentes, comme le respect des critères socio-économiques fixés par le gouvernement, tels que les traités modernes, les revendications territoriales et la promotion des entreprises autochtones, ont-elles été prises en compte?  </li>
+                          <li>Les considérations d’accessibilité ont-elles été prises en compte pour cerner, supprimer et prévenir les nouveaux obstacles?  </li>
+                        </ul>
+                        <p>Les décisions relatives à l’acquisition de matériel doivent tenir compte du coût total du produit pendant sa durée de vie.</p>
+                        <p>Une fois que vous avez répondu à ces questions, vous pouvez passer à la deuxième phase de la gestion du cycle de vie du matériel.</p>
+
                         <hr>
-                        <h2>6. Section complétée</h2>
+
+                        <h2>3. Acquisition </h2>
+                        <p>La phase d’acquisition vient après la phase de planification du cycle de vie. Ce sujet a été traité dans les modules 4, 5 et 6 de ce cours. Ici, les gestionnaires doivent : </p>
+                        <ul>
+                          <li>acquérir le matériel;  </li>
+                          <li>réceptionner et inspecter la marchandise;  </li>
+                          <li>veiller à l’assurance de la qualité et à la mise à l’essai, le cas échéant.  </li>
+                        </ul>
+                        <p>Puisque la phase d’acquisition des articles complexes ou de valeur supérieure nécessite souvent la participation de Services publics et Approvisionnement Canada et l’application d’obligations supplémentaires telles que des accords commerciaux, des délais plus longs sont souvent nécessaires pour effectuer l’achat. Alors, planifiez tôt et donnez-vous, ainsi qu’à toutes les personnes concernées, suffisamment de temps pour acquérir ce dont vous avez besoin! </p>
+
+                        <hr>
+
+                        <h2>4. Exploitation, utilisation et entretien </h2>
+                        <p>Au cours de la phase d’exploitation, d’utilisation et d’entretien de la gestion du cycle de vie du matériel, les gestionnaires doivent :</p>
+                        <ul>
+                          <li>distribuer le matériel pour qu’il puisse être utilisé;</li>
+                          <li>tenir des registres pour suivre les stocks et leur emplacement, la consommation, l’utilisation, les réparations et les coûts;  </li>
+                          <li>s’assurer que le matériel est correctement utilisé, entretenu, réparé et protégé.   </li>
+                        </ul>
+                        <p>L’objectif de cette phase est de tirer le maximum du matériel et de s’assurer qu’il dure le plus longtemps possible en fonction du meilleur rapport qualité-prix. </p>
+                        <hr>
+
+                        <h2>5. Réaffectation ou dessaisissement </h2>
+                        <p>Au cours de la phase de dessaisissement, les gestionnaires doivent déterminer les possibilités de remplacement, de réaffectation ou d’élimination du matériel excédentaire ou du matériel dont l’exploitation n’est plus rentable.  </p>
+                        <p>Les gestionnaires doivent toujours envisager des alternatives à l’élimination des produits, comme leur réaffectation ou leur remise en état. </p>
+                        <hr>
+                        <h2>6. Dans la vraie vie </h2>
+                        <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
+                        <p>Votre organisation aura sa propre façon de faire les choses. Prenez une pause de ce cours pour voir comment le processus de gestion du cycle de vie du matériel fonctionne dans votre ministère. </p>
+                        <hr>
+                        <h2>7. Quiz</h2>
+                        <p>Maintenant que vous en savez plus sur le processus de gestion du cycle de vie du matériel, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
+                        <hr>
+                        <h2>8. Section complétée</h2>
 
                       </span>
                     </b-card-text>

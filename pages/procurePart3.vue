@@ -146,44 +146,105 @@
                         <p>[Onscreen text showing Section Completed instruction.]</p>
                       </span>
                       <span v-if="$i18n.locale=='fr'">
-                        <h2>1. Suivi continu </h2>
-                        <p>En tant que gestionnaire, vous avez la responsabilité de veiller à ce que les engagements et les dépenses soient suivis tout au long de l'année et qu’ils soient enregistrés avec exactitude dans le système financier.</p>
-                        <p>Ce suivi se fait à la fois au niveau transactionnel et au niveau stratégique. Selon la situation, cela se traduit par l’une ou l’autre des actions suivantes :</p>
+                        <h2>1. Introduction</h2>
+                        <p>Dans la présente section, vous apprendrez à administrer, à payer et à clôturer le contrat.  </p>
+                        <p>Il vous faudra environ 30 minutes pour effectuer cette section. </p>
+                        <hr>
+                        
+                        <h2>2. Administrer le contrat</h2>
+                        <p>Le contrat a été accordé. Votre travail est terminé, non? Pas si vite! Vous avez encore du pain sur la planche!</p>
+                        <p>Avec l’aide de votre spécialiste en approvisionnement, vous devez maintenant administrer le contrat que vous venez d'accorder. Prenons une minute pour voir qui fait quoi.   </p>
+
+                        <p>En tant que gestionnaire, vos responsabilités comprennent les suivantes :  </p>
                         <ul>
-                          <li>annuler les engagements qui ne sont plus nécessaires; </li>
-                          <li>modifier les contrats en fonction de leur portée, de leur durée et des montants qui leur sont alloués;</li>
-                          <li>mettre à jour les prévisions salariales pour tenir compte de vos besoins actuels et futurs en matière de dotation; </li>
-                          <li>Planifier pour les insuffisances ou les pressions budgétaires;</li>
-                          <li>signaler les excédents budgétaires à la haute direction;</li>
-                          <li>et apporter des ajustements aux dépenses.</li>
+                          <li>surveiller les échéanciers, les produits livrables, les coûts et la qualité des travaux par rapport au plan de travail et à l’énoncé des travaux établis;   </li>
+                          <li>veiller à ce que les dates de livraison soient respectées;  </li>
+                          <li>veiller à ce que les entrepreneurs ne soient pas traités comme des employés;  </li>
+                          <li>assister aux réunions d’étape au besoin;   </li>
+                          <li>gérer les dépenses ou le taux d’épuisement des fonds du contrat;   </li>
+                          <li>répondre aux demandes d’accès à l’information et aux demandes de renseignements ministériels  </li>
+                          <li>et délivrer des autorisations de tâches, au besoin.  </li>
                         </ul>
-                        <p>Amusons-nous maintenant avec quelques exemples.</p>
+                        <p>Quant au spécialiste en approvisionnement, ses responsabilités comprennent les suivantes :  </p>
+                        <ul>
+                          <li>appuyer le gestionnaire dans le suivi de l’avancement des contrats et du financement;  </li>
+                          <li>assister aux réunions d’étape au besoin;  </li>
+                          <li>résoudre les différends;  </li>
+                          <li>résoudre les différends;  </li>
+                          <li>réaliser des vérifications contractuelles;  </li>
+                          <li>délivrer des autorisations de tâches, au besoin;  </li>
+                          <li>appuyer le gestionnaire dans le contrôle du respect des dates de livraison;  </li>
+                          <li>aider le gestionnaire à répondre aux demandes d’accès à l’information et aux demandes de renseignements ministériels   </li>
+                          <li>et superviser la résiliation du contrat.  </li>
+                        </ul>
+                        <p>L’accessibilité devrait être prise en considération tout au long du processus d’approvisionnement, non seulement pour les employés, mais aussi pour les entrepreneurs. En tant que gestionnaire, vous devrez peut-être discuter avec les entrepreneurs des obstacles créés par le gouvernement auxquels ils se heurtent lorsqu’ils accomplissent le travail.   </p>
+                        <p>Voici une petite activité pour vous aider à déterminer vos responsabilités. </p>
                         <hr>
-                        <h2>2. Comparaison des données</h2>
-                        <p>Il est essentiel de porter une attention particulière et soutenue à votre budget parce que les décisions que vous prenez peuvent avoir une incidence sur votre secteur, votre direction générale, ou même votre ministère. </p>
-                        <p>À la fin de l’exercice financier, vous devez justifier tout déficit ou surplus. Selon le ministère pour lequel vous travaillez, vous pourriez devoir demeurer à l’intérieur d’une marge d’un certain pourcentage de vos prévisions.</p>
-                        <p>D’une part, le fait de dépasser votre budget pourrait causer un déficit, ce qui met beaucoup de pression sur la haute direction pour trouver d'autres sources de financement en compensation.</p>
-                        <p>D’autre part, un surplus devrait être signalé le plus tôt possible sans quoi on pourrait manquer l’occasion de réaffecter les fonds inutilisés à une autre activité ou à une autre unité.</p>
-                        <p>Les rapports mensuels vous aident à suivre vos dépenses. On les appelle parfois « Rapports sur la situation financière » - ou RSF - et sont habituellement produits par l’unité des Finances de votre organisation. </p>
-                        <p>Ce qui se trouve dans votre RSF doit refléter ce qui se passe dans votre unité. Si ce n’est pas le cas, vous devez faire un suivi afin de résoudre cet écart.</p>
-                        <p>Dans l’activité suivante, vous aurez l’occasion de réviser et d’ajuster vos données financières selon les nouvelles informations. </p>
+
+                        <h2>3. Tenir des dossiers </h2>
+                        <p>Maintenant que vous savez qui fait quoi, passons à la paperasse!</p>
+                        <p>Tout au long du contrat, vous devez tenir des dossiers. Vous devez conserver des informations comme la qualité, la quantité et les délais relativement aux biens reçus ou aux travaux à effectuer. Tout écart dans les travaux d’un entrepreneur à qui un contrat a été accordé doit également être consigné.  </p>
+                        <p>Il est important de tenir des dossiers afin de montrer que ce qui a été acheté a été livré ou que le travail a été terminé, et vous devez vérifier que les biens ou les services sont conformes au contrat.    </p>
+                        <p>Si vous découvrez que le travail est inadéquat ou insuffisant, vous devez immédiatement en aviser le spécialiste en approvisionnement afin qu’il puisse en aviser l’entrepreneur par écrit. L’avis écrit du spécialiste en approvisionnement rappellera à l’entrepreneur ses obligations en vertu du contrat et l’informera des conséquences de ne pas corriger l’écart dans un délai précis.</p>
+                        <p>Un bon suivi des contrats et une bonne tenue des dossiers entraînent à une bonne gestion des contrats, ce qui permet d’éviter des coûts et des retards supplémentaires, des difficultés pour les entrepreneurs et davantage de travail.  </p>
+                        <p>Après tout, mieux vaut prévenir que guérir! </p>
                         <hr>
-                        <h2>3. Procédures de fin d’année</h2>
-                        <p>Étant donné que la plupart des budgets sont établis par le Parlement chaque année et qu’ils doivent être utilisés au cours de l'exercice financier, les biens et services doivent être reçus au plus tard le 31 mars.</p>
-                        <p>Il est toutefois fort probable que vous ne soyez pas en mesure de payer le reste de vos dépenses avant la fin de l'exercice financier pour les biens qui sont en votre possession. C'est pourquoi l’unité des Finances établira des créditeurs à la fin de l'exercice (CAFE) ou des débiteurs à la fin de l'exercice (DAFE) après avoir reçu votre liste de payables non réglés.</p>
-                        <p>Un CAFE est un montant dû pour des biens ou des services fournis dans l’exercice financier précédent, en se servant des fonds de l’exercice financier précédent, mais payés dans le nouvel exercice financier alors qu’on aura reçu la facture du fournisseur.</p>
-                        <p>Un DAFE est un montant dû d’un autre ministère pour des biens ou des services fournis dans l’exercice financier précédent pour lesquels le paiement sera fait dans le nouvel exercice financier. </p>
-                        <p>D’habitude, encore une fois selon les pratiques courantes dans votre ministère, vous recevrez des instructions de fin d'année pour l’établissement des CAFE et des DAFE. Ces instructions incluront aussi les critères quant au montant minimal exigé et à l'échéancier.</p>
-                        <p>Lorsqu’on s’approche de la fin de l’exercice financier, les choses peuvent se compliquer un peu en ce qui a trait aux contrats. Voici deux choses à tenir à l’esprit.</p>
-                        <ol>
-                          <li>Portez attention aux délais fixés par le service d’approvisionnement. Il se peut que vous ne puissiez pas créer de commande d'achat en fin d'année.</li>
-                          <li>Faites un suivi auprès des fournisseurs pour vous assurer que les biens ou services seront livrés avant la fin de l'année. Si ce n'est pas possible avant le 31 mars, les dépenses devront être payées en utilisant les fonds de la nouvelle année. Discutez des étapes possibles avec Approvisionnement.</li>
-                        </ol>
+
+                        <h2>4. Accepter les livrables </h2>
+                        <p>Avant d’effectuer le paiement du contrat, vous devez accomplir quelques tâches. En premier lieu, il faut vous assurer que les modalités du contrat ont été respectées. Vous devez :</p>
+                        <ul>
+                          <li>vérifier que la qualité et la quantité des biens, des services ou de la construction sont adéquates;  </li>
+                          <li>confirmer que les biens reçus correspondent à ceux qui ont été commandés;   </li>
+                          <li>confirmer que la construction ou les travaux ont été exécutés ou que les services ont été fournis conformément au contrat;  </li>
+                          <li>si le produit livrable est un rapport ou un autre produit, vous assurer qu’il est complet et exempt d’erreurs.  </li>
+                        </ul>
+                        <p>Une fois que vous êtes satisfait du produit livrable, vous devez vous assurer du respect des modalités de paiement. Ce n’est qu’une fois cette tâche effectuée que vous pourrez procéder au paiement du contrat. </p>
                         <hr>
-                        <h2>4. Quiz</h2>
-                        <p>Maintenant que vous savez comment engager et autoriser des dépenses, exercer des pouvoirs financiers, et surveiller et contrôler les finances, voyons ce dont vous vous souvenez en répondant à ce petit quiz!</p>
+                        <h2>5. Exercice des pouvoirs d’attestation et de payer</h2>
+                        <p>En tant que détenteur du pouvoir d’attestation en vertu de l’article 34 de la Loi sur la gestion des finances publiques, vous avez la responsabilité de vous assurer</p>
+                        <ul>
+                          <li>que les travaux ont été exécutés,   </li>
+                          <li>que les biens fournis, que la construction effectuée ou que les services rendus sont acceptables   </li>
+                          <li>et que les produits livrables et la facture sont conformes au contrat.   </li>
+                        </ul>
+                        <p>Pour certains types de contrats, cette responsabilité pourrait être partagée avec le spécialiste en approvisionnement.  </p>
+                        <p>Vous devrez vérifier l’exactitude de la facture ou de la demande de paiement en confirmant les points suivants. </p>
+                        <ul>
+                          <li>La date de la facture est la date à laquelle les biens ont été livrés, les services rendus ou la construction réalisée, ou est une date ultérieure.   </li>
+                          <li>Les postes réclamés sur la facture et le montant de chaque article sont exacts : ils correspondent à la commande et sont compris dans le prix unitaire ou le tarif journalier et les limites de déplacement.  </li>
+                          <li>La devise, la TPS et la TVH, ainsi que toutes les taxes et tous les frais applicables sont exacts.  </li>
+                          <li>Les informations sur le fournisseur ou le créancier sont exactes, et celui-ci est admissible au paiement.   </li>
+                          <li>Le montant n’a pas été versé auparavant.  </li>
+                        </ul>
+                        <p>Vous déterminerez ensuite comment la facture sera payée.  </p>
+                        <p>Enfin, après examen de la demande de paiement, l’agent financier paie la facture conformément à l’article 33 de la Loi sur la gestion des finances publiques. </p>
                         <hr>
-                        <h2>5. Section complétée</h2>
+
+                        <h2>6. Clôture du contrat </h2>
+                        <p>Une fois le contrat terminé, le spécialiste en approvisionnement responsable du dossier le ferme. Avant la fermeture du dossier, un examen est effectué afin de s'assurer de ce qui suit.  </p>
+                        <ul>
+                        <li>Toutes les exigences contractuelles ont été respectées et le gestionnaire a reçu et accepté toutes les prestations prévues au contrat.  </li>
+                        <li>Tous les paiements à l’entrepreneur et le règlement des demandes de paiement ont été effectués.  </li>
+                        <li>Aucune mesure en suspens n’est requise.  </li>
+                        <li>Toutes les exigences en matière de rapports ont été respectées.  </li>
+                        <li>Toute la documentation requise figure au dossier.  </li>
+                        <li>Les modifications apportées pour établir le coût final, le cas échéant, sont terminées.  </li>
+                        </ul>
+                        <p>De plus :  </p>
+                        <ul>
+                          <li>Si la propriété intellectuelle a été conservée par le gouvernement du Canada, les mesures appropriées doivent être prises.  </li>
+                          <li>Si un produit est assorti d’une garantie, le dossier demeure ouvert pendant la période de garantie.  </li>
+                          <li>Si le dossier est en vérification, il demeurera ouvert jusqu’à ce que le rapport de vérification final soit déposé et accepté.  </li>
+                          <li>S’il y a un litige concernant le dossier, celui-ci ne peut être clôturé.  </li>
+                        </ul>
+                        <p>Un examen de toutes les leçons apprises, y compris les conclusions de la vérification, est également effectué pour améliorer les futures activités d’approvisionnement. </p>
+                        <hr>
+                        <h2>7. Dans la vraie vie</h2>
+                        <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
+                        <p> Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment les contrats sont administrés, payés et clôturés au sein de votre ministère. Et n’oubliez pas de consulter la boîte à outils où vous trouverez un aide-mémoire sur le processus d’approvisionnement! </p>
+                        <hr>
+                        <h2>8. Quiz </h2>
+                        <p>Maintenant que vous avez vu comment administrer, payer et clôturer un contrat, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                       </span>
                     </b-card-text>
                   </b-card-body>

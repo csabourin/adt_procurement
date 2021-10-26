@@ -114,43 +114,70 @@
                         <p>[Onscreen text showing Section Completed instruction.]</p>
                       </span>
                       <span v-if="$i18n.locale=='fr'">
-                        <h2>1. Qu'est-ce qu'un rapport sur la situation financière?</h2>
-                        <p>Un rapport sur la situation financière - ou RSF - est un document qui fournit à la haute direction le portrait financier le plus récent et les meilleures estimations des dépenses prévues. Ce document l’aide à prendre des décisions éclairées pour faire face aux insuffisances ou aux pressions budgétaires et à réaffecter les excédents. Votre ministère peut avoir un nom différent pour ce rapport — renseignez-vous à ce sujet.</p>
-                        <p>En tant que gestionnaire, vous êtes tenu de fournir régulièrement des mises à jour et des prévisions de votre centre de responsabilité tout au long de l’année. Vous devez également fournir des explications sur les écarts afin de fournir des informations précises et vous assurer que le système financier est à jour.</p>
-                        <p>Ne vous inquiétez pas, vous ne ferez pas cela tout seul! Généralement, la section des finances de votre organisation dirigera l’exercice à des moments précis de l’année. Elle vous offrira du soutien et vous enverra des instructions pour fournir des gabarits, des lignes directrices, des liens, des dates d’échéance, etc. Travaillez avec votre personnel administratif pour accomplir ces tâches.</p>
-                        <p>Voyons ce que vous savez déjà sur les RSF en faisant un petit jeu d’association! </p>
-                        <hr>
-                        <h2>2. Périodes clés pour les rapports sur la situation financière</h2>
-                        <p>L'exercice financier commence le 1er avril et est divisé, par mois, en périodes. P1 est avril, P2 est mai, P3 est juin, et ainsi de suite.</p>
-                        <p>En règle générale, les périodes-clé de rapport sont P6 (septembre), P9 (décembre), et un rapport de fin d'année en P12 (mars).</p>
-                        <p>Parce que P6 (septembre) est au milieu de l'année, il offre à la haute direction une bonne vue d’ensemble de la situation financière de l'organisation et lui permet de prendre des décisions qui influenceront les résultats de fin d'année. Par exemple, ils pourraient décider de réaffecter des fonds à différentes priorités.</p>
-                        <p>P9 (décembre) est souvent la dernière occasion d'influencer les résultats de fin d'année. Les ministères peuvent demander aux gestionnaires de fournir une prévision en P9 qui se situe dans un certain pourcentage du montant de fin d'année. Le Secrétariat du Conseil du Trésor du Canada utilise les données du rapport P9 pour informer le ministère des Finances du Canada des dépenses prévues à l'échelle du gouvernement afin qu'il puisse avoir une vision globale.</p>
-                        <p>Les données de fin d'exercice, à P12, sont utilisées par votre ministère pour présenter ses résultats financiers globaux. Il fait également partie du Rapport sur les résultats ministériels, ou RRM.</p>
-                        <hr>
-                        <h2>3. Activités pour le rapport sur la situation financière</h2>
-                        <p>L'information la plus importante que vous devrez fournir dans le RSF est votre prévision budgétaire. En d'autres termes, vous devrez estimer le montant d'argent que vous allez dépenser pour terminer vos activités avant la fin de l'exercice financier.</p>
-                        <p>Vous pouvez demander à votre professionnel de l'administration d'extraire du système financier un rapport financier détaillé contenant des informations sur le budget, les engagements et les dépenses réelles. Vous le comparerez au RSF.</p>
-                        <p>Voici plusieurs choses que vous pouvez faire pour avoir une bonne idée de votre situation actuelle. Cela vous permettra de faire des estimations solides pour le reste de l'année.</p>
+                        <h2>1. Introduction</h2>
+                        <p>Dans cette section, vous découvrirez les activités d’établissement de rapport sur l’approvisionnement. Vous apprendrez quels sont</p>
                         <ul>
-                          <li>Vérifier à ce que les prévisions salariales soient exactes et à jour.</li>
-                          <li>Rendre compte de tout financement entrant ou sortant.</li>
-                          <li>Faire le suivi des demandes de remboursement de frais de voyage et des factures en souffrance.</li>
-                          <li>Vérifier que les pièces de journal soient bien comptabilisées : cela corrigera les données dans le système financier.</li>
-                          <li>Annuler les engagements qui ne sont plus nécessaires.</li>
-                          <li>Et réconcilier votre relevé de carte d'achat avec vos engagements.</li>
+                          <li>les pratiques d’approvisionnement inappropriées,  </li>
+                          <li>les mécanismes de plainte  </li>
+                          <li>et les exigences en matière de production de rapports.  </li>
                         </ul>
-                        <p>Maintenant, répondez aux questions suivantes au mieux de votre capacité afin de vous exercer à préparer un rapport sur la situation financière!</p>
+                       <p>Il vous faudra environ 20 minutes pour effectuer cette section. </p>
                         <hr>
-                        <h2>4. Mise à jour des prévisions annuelles</h2>
-                        <p>Une autre tâche importante à faire lorsque vous remplissez votre FSRRSF est d'examiner votre salaire et vos prévisions de F et E. Cela vous permettra d’identifier :</p>
+                        <h2>2. Pratiques inappropriées</h2>
+                        <p>Avant de passer aux activités d’établissement de rapports, examinons certaines des pratiques d’approvisionnement inappropriées que les gestionnaires doivent éviter s’ils veulent respecter les différentes lois, réglementations et politiques qui s’appliquent à l’approvisionnement. Ces pratiques comprennent :</p>
                         <ul>
-                          <li>les insuffisances et les pressions qui peuvent nécessiter l'approbation de ressources supplémentaires;</li>
-                          <li>ou encore des excédents pour indiquer les reports potentiels de fonds.</li>
+                          <li>l'attribution d’un contrat sans autorisation écrite ou par autorisation verbale,  </li>
+                          <li>l’attribution d’un contrat sans les pouvoirs nécessaires, </li>
+                          <li>un contrat rétroactif ou après-coup ou antidater un contrat,  </li>
+                          <li>le fractionnement d’un contrat,  </li>
+                          <li>l’embauchage obligatoire,  </li>
+                          <li>le recours inapproprié à un fournisseur unique,</li>
+                          <li>les relations employeur-employé,  </li>
+                          <li>l'utilisation inappropriée de contrats en cas d’urgence  </li>
+                          <li>et les énoncés des travaux ou les critères d’évaluation inappropriés  </li>
                         </ul>
-                        <p>Vous devrez expliquer les raisons de tout écart et fournir des stratégies d'atténuation des risques.</p>
-                        <p>Pratiquons maintenant la mise à jour des prévisions annuelles!</p>
+                        <p>L’activité suivante vous aidera à déterminer ce qu’il ne faut pas faire. Pour les définitions, voir l’outil de travail Ce qu’il ne faut pas faire dans la boîte à outils.</p>
                         <hr>
-                        <h2>5. Section complétée</h2>
+                        <h2>3. Mécanismes de traitement des plaintes</h2>
+                        <p>Vous avez appris ce que vous pouvez faire ou non relativement aux décisions et aux mesures à prendre dans le processus d’approvisionnement, mais qu’arrive-t-il si vous ne respectez pas ces règles? Quelles seront les conséquences?  </p>
+                        <p>Il existe différents niveaux d’autorités responsables de la surveillance de l’approvisionnement au sein de la fonction publique fédérale pour s’assurer que les règles sont respectées. Les autorités peuvent être internes aux organisations ou externes à celles-ci. Par exemple, plusieurs ministères pourraient avoir des conseillers en éthique ou des directions de la conformité et de la surveillance, ainsi que des comités de gouvernance interministériels. Ces autorités peuvent contribuer à la résolution des problèmes en interne avant qu’un processus officiel de transmission aux échelons supérieurs ne soit nécessaire.    </p>
+                        <p>Les autorités responsables de la surveillance de l’approvisionnement dans la fonction publique fédérale comprennent :</p>
+                        <ul>
+                          <li>le Bureau de l’ombudsman de l’approvisionnement,</li>
+                          <li>le Tribunal canadien du commerce extérieur,   </li>
+                          <li>la Cour fédérale,</li>
+                          <li>la vérification interne réalisée dans les ministères ou gérée de manière centralisée par le Bureau du contrôleur général,</li>
+                          <li>la vérificatrice générale </li>
+                          <li>et les Comités d’examen permanents.</li>
+                        </ul>
+                        <p>Leurs rôles varient selon la nature et les montants de l’approvisionnement. Vous voulez en savoir plus sur ces organisations? Pourquoi ne pas consulter l’outil de travail sur la surveillance dans la boîte à outils? </p>
+                        <hr>
+                        <h2>4. Exigences en matière de rapports</h2>
+                        <p>Saviez-vous que les ministères, les organismes et d’autres organisations sont chargés de rendre disponibles divers rapports sur les activités de passation de contrats pour le grand public ou pour une utilisation au sein du gouvernement? C’est pourquoi la tenue de registres est si importante et que les données figurant sur les contrats doivent être exactes.   </p>
+                        <p>Voici une liste de rapports pour lesquels vous pourriez avoir à fournir des données :  </p>
+                        <ul>
+                          <li>la divulgation proactive des contrats,</li>
+                          <li>les contrats conclus avec d’anciens fonctionnaires,  </li>
+                          <li>les ententes sur les revendications territoriales globales,  </li>
+                          <li>la Stratégie d’approvisionnement auprès des entreprises autochtones,  </li>
+                          <li>la Directive du Conseil du Trésor sur les marchés de l’État, y compris les baux les immobiliers, dans la région du Nunavut,  </li>
+                          <li>la propriété intellectuelle,  </li>
+                          <li>les rapports de la vérificatrice générale,  </li>
+                          <li>les rapports de vérification interne </li>
+                          <li>et l’accès à l’information et la protection des renseignements personnels.  </li>
+                        </ul>
+                        <p>Toutefois, les renseignements sur les contrats ne sont pas seulement utilisés dans les rapports. Ils sont aussi utilisés pour la divulgation proactive, qui est publiée sur le portail du gouvernement ouvert, selon les besoins juridiques, politiques, organisationnels et parlementaires.  </p>
+                        <p>Par exemple, les attributions et les modifications de vos contrats sont mises à la disposition du public, en vertu de la divulgation proactive des contrats, lorsque leur valeur est supérieure à 10 000 $. Elles sont publiées sur le portail du gouvernement ouvert, rendant ainsi les responsables du gouvernement et les services publics redevables devant les Canadiens.   </p>
+                        <p>Ce rapport est normalement effectué par le spécialiste en approvisionnement ou l’agent de négociation des contrats. Bien que vous n’en soyez pas le responsable, il est important que vous soyez au courant de ces exigences.  </p>
+                        <p>Mais ne vous en faites pas, car vous ne serez pas seul pour accomplir ces tâches liées à la production de ces rapports et à la divulgation proactive. Pour rassembler les renseignements requis, vous pourrez généralement travailler avec votre personnel administratif ou l’équipe de l’approvisionnement de votre organisation. </p>
+                        <hr>
+                        <h2>5. Dans la vraie vie </h2>
+                        <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
+                        <p>Votre organisation aura sa propre façon de faire les choses. Prenez une pause durant le cours pour voir quels mécanismes de plainte sont utilisés par votre organisation et quels rapports devront être soutenus. </p>
+                        <hr>
+                        <h2>6. Quiz </h2>
+                        <p>Maintenant que vous en savez plus sur les pratiques d’approvisionnement inappropriées, les mécanismes de traitement des plaintes et les exigences en matière de rapports, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
+                        <h2>7. Section complétée</h2>
                       </span>
                     </b-card-text>
                   </b-card-body>

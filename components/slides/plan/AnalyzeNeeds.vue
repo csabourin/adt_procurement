@@ -464,7 +464,7 @@ export default {
       }
     },
     "q7": {
-      "sentence": "Dans le cadre de la sous-activité « Planifier le travail », vous devez vous assurer que votre nouvel employé dispose de l’équipement nécessaire pour répondre à ses besoins d’accessibilité et d’adaptation. Cela peut signifier {0} .",
+      "sentence": "Dans le cadre de la sous-activité « Planifier le travail », vous devez vous assurer qu’un nouvel employé dispose du matériel nécessaire et devez {0} .",
       "choices": {
         "1": "acheter du mobilier de bureau ",
         "2": "acheter des stylos et du papier",

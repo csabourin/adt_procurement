@@ -31,7 +31,7 @@
     <div v-if="$i18n.locale=='en'">
       <h4>Plan</h4>
       <ul class="list-unstyled">
-        <li><externalLink link="https://adtfinance.netlify.app/en">Responsible Use of Public Funds</externalLink></li>
+        <li><externalLink link="https://adtfinance.netlify.app/en">Using Public Funds Responsibly course</externalLink></li>
         <li><externalLink link="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/expenditure-management-system/reporting-cycle.html">The Reporting Cycle for Government Expenditures</externalLink></li>
         <li><externalLink link="http://laws-lois.justice.gc.ca/eng/acts/f-11/">Financial Administration Act</externalLink></li>
         <li><externalLink link="https://www.canada.ca/en/government/system/priorities.html">Government Priorities</externalLink>

@@ -137,7 +137,7 @@
       <p>Pour une revue des plans de travail, voir la section <strong>Élaborer un plan de travail</strong> du cours <a href="https://adtfinance.netlify.app/fr"> La saine gestion des fonds publics</a>. Ce lien est également disponible dans la boîte à outils.</p>
       </div>
       <div v-if="$i18n.locale=='en'">
-      <p>For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href="https://adtfinance.netlify.app/en">Responsible Use of Public Funds</a> course. This link is also available in the Toolbox.  </p>
+      <p>For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href="https://adtfinance.netlify.app/en">Using Public Funds Responsibly course</a> course. This link is also available in the Toolbox.  </p>
       </div>
       <!--<planLinks /> {{ $t('gotIt') }} -->
       <template v-slot:modal-ok>{{$t('close')}}</template>
@@ -284,7 +284,7 @@ export default {
   "gotIt":"Continue to next segment",
   "gotItContent": "Pop-ups will appear throughout the course to indicate what comes next, such as a video, an exercise, a list of links or a job aid.",
   "activityLinks":"Reference: External Links",
-  "gotoLinks":"For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href:'https://adtfinance.netlify.app/en/buildwp'>Responsible Use of Public Funds</a> course. This link is also available in the Toolbox.  ",
+  "gotoLinks":"For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href:'https://adtfinance.netlify.app/en/buildwp'>Using Public Funds Responsibly course</a> course. This link is also available in the Toolbox.  ",
   "analyzeNeedsTitle":"Activity: Analyze Your Resource Needs",
   "completewpDrafttitle":"Activity: Prepare a Work Plan",
   "completewptitle":"Activity: Complete the Work Plan",

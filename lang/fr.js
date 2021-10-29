@@ -82,21 +82,61 @@ export default {
   Excelled: "Vous avez réussi ce test, félicitations! Vous pouvez retourner à la ",
   
   // Texte pour icones
-  threeSixty:{
-    line1: "Aperçu",
-    line2: "360",
-    name: "Aperçu à 360 degrés",
-    download: "Télécharger l'aperçu à 360 degrés",
-    filename: "Apercu_360.pdf",
-    HTMLFilename: "Apercu_360.html"
+  ComProcDoc:{
+    line1: "Instruments d’approvisionnement",
+    line2: "les plus couramment utilisés",
+    name: "Instruments d’approvisionnement les plus couramment utilisés ",
+    download: "Télécharger un modèle Word des Instruments d’approvisionnement les plus couramment utilisés  ",
+    filename: "ComProcDoc.docx",
   },
-  
+  WhatNotToDo:{
+    line1: "À ne",
+    line2: "pas faire ",
+    name: "À ne pas faire ",
+    download: "Télécharger un modèle Word de À ne pas faire",
+    filename: "WhatNotToDo.docx",
+  },
+  ProcureProcess:{
+    line1: "Processus",
+    line2: "d’approvisionnement",
+    name: "Processus d’approvisionnement ",
+    download: "Télécharger un modèle Word du Processus d’approvisionnement ",
+    filename: "ProcureProcess.docx",
+  },
+  BidEval:{
+    line1: "Processus d’évaluation",
+    line2: "des soumissions",
+    name: "Processus d’évaluation des soumissions ",
+    download: "Télécharger un modèle Word du Processus d’évaluation des soumissions",
+    filename: "BidEval.docx",
+  },
+  Oversight:{
+    line1: "Surveillance",
+    line2: "",
+    name: "Surveillance ",
+    download: "Télécharger un modèle Word de Surveillance",
+    filename: "Oversight.docx",
+  },
+  LegalFrame:{
+    line1: "Cadre  ",
+    line2: "juridique",
+    name: "Cadre juridique ",
+    download: "Télécharger un modèle Word du Cadre juridique",
+    filename: "LegalFrame.docx",
+  },
   WPTemplate:{
     line1: "Plan de",
     line2: "travail",
     name: "Modèle de plan de travail",
     download: "Télécharger un modèle Word du plan de travail",
     filename: "Exemple_Plan_de_travail.docx",
+  },
+  statementofwork:{
+    line1: "Énoncé",
+    line2: "des travaux",
+    name: "Énoncé des travaux",
+    download: "Télécharger un modèle Word de l'énoncé des travaux",
+    filename: "StatementofWorkExample.docx",
   },
   
   WPLastYear:{
@@ -142,13 +182,12 @@ export default {
     HTMLFilename: "HowCreateNewBudget_FR.html"
   },
   
-  cycle:{
-    line1: "Cycle",
-    line2: "financier",
-    name: "Le cycle financier du Government du Canada",
-    download: "Télécharger le cycle financier du gouvernement du Canada",
-    filename: "Cycle_financier.pdf",
-    HTMLFilename: "../financialCycle/fr.html"
+  SOWSOR:{
+    line1: "Énoncé des travaux, énoncé",
+    line2: "des besoins et descriptions",
+    name: "Énoncé des travaux, énoncé des besoins et descriptions ",
+    download: "Télécharger l'Énoncé des travaux, énoncé des besoins et descriptions ",
+    filename: "SOWSOR.docx"
   },
   
   procurementInstruments:{

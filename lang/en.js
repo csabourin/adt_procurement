@@ -79,21 +79,69 @@ export default {
   Excelled: "Congratulations! You have passed the test. You can go back to the ",
   
   // -------- Text for icons --------
-  threeSixty:{
-    line1: "360°",
-    line2: "Scan",
-    name: "360° Scan",
-    download: "Download the 360° Scan",
-    filename: "360_Scan.pdf",
-    HTMLFilename: "360_Scan.html"
+  ComProcDoc:{
+    line1: "Commonly Used ",
+    line2: "Procurement Instruments",
+    name: "Commonly Used Procurement Instruments",
+    download: "Download the Commonly Used Procurement Instruments",
+    filename: "ComProcDoc.docx",
   },
-  
+ 
+  WhatNotToDo:{
+    line1: "What Not",
+    line2: "To Do",
+    name: "What Not To Do",
+    download: "Download a Word template of What not to do",
+    filename: "WhatNotToDo.docx",
+  },
+  ProcureProcess:{
+    line1: "Procurement",
+    line2: "Process",
+    name: "Procurement Process ",
+    download: "Download a Word template of Procurement Process",
+    filename: "ProcureProcess.docx",
+  },
+  Oversight:{
+    line1: "Oversight",
+    line2: "",
+    name: "Oversight",
+    download: "Download a Word template of Oversight",
+    filename: "Oversight.docx",
+  },
+  BidEval:{
+    line1: "Bid Evaluation",
+    line2: "Process",
+    name: "Bid Evaluation Process ",
+    download: "Download a Word template of Bid Evaluation Process ",
+    filename: "BidEval.docx",
+  },
+  LegalFrame:{
+    line1: "Legal",
+    line2: "Framework",
+    name: "Legal Framework",
+    download: "Download a Word template of Legal Framework ",
+    filename: "LegalFrame.docx",
+  },
   WPTemplate:{
     line1: "Work Plan",
     line2: "Template",
     name: "Work Plan Template",
     download: "Download a Word template of the work plan",
     filename: "WorkPlan_Template.docx",
+  },
+  delegofspending:{
+    line1: " Delegation of Spending",
+    line2: "and Financial Authority Chart",
+    name: "Delegation of Spending and Financial Authority Chart",
+    download: "Download a Word template of the work plan",
+    filename: "delegchart.html",
+  },
+  statementofwork:{
+    line1: " Statements",
+    line2: "of work",
+    name: "Statement of Work ",
+    download: "Download a Word template of statement of work",
+    filename: "StatementofWorkExample.docx",
   },
   
   WPLastYear:{
@@ -139,13 +187,12 @@ export default {
     HTMLFilename: "HowCreateNewBudget_EN.html"
   },
   
-  cycle:{
-    line1: "Financial",
-    line2: "Cycle",
-    name: "The Financial Cycle of the Government of Canada",
-    download: "Download the financial cycle of the government of Canada",
-    filename: "Financial_Cycle.pdf",
-    HTMLFilename: "../financialCycle/en.html"
+  SOWSOR:{
+    line1: "Statements of Work, Statements",
+    line2: "of Requirement and Descriptions",
+    name: "Statements of Work, Statements of Requirement and Descriptions ",
+    download: "Download the Statements of Work, Statements of Requirement and Descriptions ",
+    filename: "SOWSOR.docx"
   },
   
   procurementInstruments:{

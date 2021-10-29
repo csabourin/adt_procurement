@@ -42,20 +42,20 @@ export default {
       },
       get() { 
         switch(this.name){
-          case "threeSixty":
-            return this.$store.state.files.threeSixty;
+          case "SOWSOR":
+            return this.$store.state.files.SOWSOR;
             break;
           case "WorkPlanTemplate":
             return this.$store.state.files.WorkPlanTemplate;
             break;
-          case "buildWPProcessMap":
-            return this.$store.state.files.buildWPProcessMap;
+          case "ComProcDoc":
+            return this.$store.state.files.ComProcDoc;
             break;
-          case "newBudget":
-            return this.$store.state.files.newBudget;
+          case "delegChart":
+            return this.$store.state.files.delegChart;
             break;
-          case "cycle":
-            return this.$store.state.files.cycle;
+          case "statementofwork":
+            return this.$store.state.files.statementofwork;
             break;
           case "procurementInstruments":
             return this.$store.state.files.procurementInstruments;
@@ -75,11 +75,23 @@ export default {
           case "WorkPlan_lastYear":
             return this.$store.state.files.WorkPlan_lastYear;
             break;
-          case "Budget_lastYear":
-            return this.$store.state.files.Budget_lastYear;
+          case "ProcureProcess":
+            return this.$store.state.files.ProcureProcess;
             break;
           case "ReportLast":
             return this.$store.state.files.ReportLast;
+            break;
+          case "WhatNotToDo":
+            return this.$store.state.files.WhatNotToDo;
+            break;
+          case "BidEval":
+            return this.$store.state.files.BidEval;
+            break;
+          case "LegalFrame":
+            return this.$store.state.files.LegalFrame;
+            break;
+          case "Oversight":
+            return this.$store.state.files.Oversight;
             break;
           default:
             console.log("nooooo");
@@ -98,6 +110,9 @@ export default {
       }
       else if(this.texts.filename.indexOf(".xlsx") >= 0){
         return {name: "XLSX", longName: "Microsoft Excel (OpenXML)", mime: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"};
+      }
+      else if(this.texts.filename.indexOf(".html") >= 0){
+        return {name: "HTML", longName: "HyperText Markup Language (HTML) file", mime: "text/html"};
       }
     },
     detectIE() {

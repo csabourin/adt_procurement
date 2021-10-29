@@ -47,14 +47,14 @@
             <h3>Administer, Pay and Close-Out Contract</h3>
             <ul>
               <li>Once the contract has been awarded, you administer it with the help of the procurement specialist, ensuring that work is performed according to the terms and conditions and records are maintained throughout the process.</li>
-              <li>Once the terms and conditions of the contract are met, you accept the deliverables and the delegated financial authority will perform the certification authority (s. 34 of the Financial Administration Act), which will then proceed to finance to perform the payment authority (s. 33 of the Financial Administration Act) and pay the contractor.</li>
+              <li>Once the terms and conditions of the contract are met, you accept the deliverables and the delegated financial authority will perform the certification authority (s. 34 of the <i>Financial Administration Act</i>), which will then proceed to finance to perform the payment authority (s. 33 of the <i>Financial Administration Act</i>) and pay the contractor.</li>
               <li>Finally, once the contract has been completed, the procurement specialist will close the contract.</li>
             </ul>
           </span><span v-if="$i18n.locale=='fr'">
             <h3>Administration, paiement et clôture du contrat</h3>
               <ul>
                 <li>Une fois le contrat attribué, vous devez l’administrer avec l’aide du spécialiste en approvisionnement pour vous assurer que les travaux sont accomplis dans le respect des modalités et que des dossiers sont tenus à jour tout au long du processus.</li>
-                <li>Lorsque les modalités du contrat sont remplies, vous devez accepter les produits livrables. La personne investie des pouvoirs financiers délégués doit exercer son pouvoir d’attestation (article 34 de la Loi sur la gestion des finances publiques), après quoi les Finances exerceront leur pouvoir de paiement (article 33 de la Loi sur la gestion des finances publiques) et paieront l’entrepreneur.</li>
+                <li>Lorsque les modalités du contrat sont remplies, vous devez accepter les produits livrables. La personne investie des pouvoirs financiers délégués doit exercer son pouvoir d’attestation (article 34 de la <i>Loi sur la gestion des finances publiques</i>), après quoi les Finances exerceront leur pouvoir de paiement (article 33 de la <i>Loi sur la gestion des finances publiques</i>) et paieront l’entrepreneur.</li>
                 <li>Finalement, une fois le contrat achevé, le spécialiste en approvisionnement procédera à la clôture du contrat.</li>
               </ul>
           </span></b-col>
@@ -66,28 +66,25 @@
             <template v-slot:content>
               <b-row>
                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
+                  <download :texts="$t('statementofwork')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="statementofwork" />
                 </b-col>
                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                  <download :texts="$t('SOWSOR')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="SOWSOR" />
                 </b-col>
                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                  <download :texts="$t('ComProcDoc')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="ComProcDoc" />
                 </b-col>
                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                  <download :texts="$t('WhatNotToDo')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="WhatNotToDo" />
                 </b-col>
                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                  <download :texts="$t('ProcureProcess')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="ProcureProcess" />
                 </b-col>
                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                  <download :texts="$t('BidEval')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="BidEval" />
                 </b-col>
                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                  <download :texts="$t('LegalFrame')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="LegalFrame" />
                 </b-col>
               </b-row>
             </template>

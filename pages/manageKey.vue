@@ -16,7 +16,7 @@
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
-              <h3>Exigences techniques et de soumission et stratégie d’approvisionnement</h3>
+              <h3>Gestion du cycle de vie du matériel </h3>
               <p>Vous êtes responsable de la gestion efficace et efficiente des biens. La gestion du cycle de vie du matériel comprend quatre étapes : </p>
               <ul>
                 <li>l’évaluation et la planification des besoins en matériel;</li>
@@ -25,41 +25,6 @@
                 <li>la relocalisation ou le dessaisissement du matériel.</li>
               </ul>
           </span>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          <keyMessagesFiles>
-            <template v-slot:title>{{$t('fileSet')}}</template>
-            <template v-slot:content>
-              <b-row>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-              </b-row>
-            </template>
-          </keyMessagesFiles>
         </b-col>
       </b-row>
       <b-row>

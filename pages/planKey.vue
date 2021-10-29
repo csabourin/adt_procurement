@@ -3,83 +3,82 @@
     <h2 class="pageTitle">{{$t('KeyMessages')}}</h2>
     <p><img src="~/assets/KeyMessP.svg" alt="" role="presentation" height="275"></p>
     <p>&nbsp;</p>
-    <p class="quote plan"><q class="bigQuote" :class="{'french-quote':$i18n.locale=='fr'}">{{$t('keyPlanQuote')}}</q></p>
+    
     <p>&nbsp;</p>
     <b-container style="text-align: left">
       <b-row>
         <b-col cols="12" lg>
           <span v-if="$i18n.locale=='en'">
             <h3>Analyze Goods, Services and Construction Needs</h3>
-            <ul>
-              <li>Procurement is the process of acquiring goods, services and construction from providers. Don’t forget to include your procurement specialist early in your planning.</li>
-              <li>You review your work plan to identify your goods, services and construction needs.</li>
-              <li>Finally, you verify if the goods, services or construction needed already exist and are available.</li>
-            </ul>
+              <p>Procurement is the process of acquiring goods, services and construction from providers. Don’t forget to include your procurement specialist early in your planning.</p>
+              <p>You review your work plan to identify your goods, services and construction needs.</p>
+              <p>Finally, you verify if the goods, services or construction needed already exist and are available.</p>
+           
           </span>
           <span v-if="$i18n.locale=='fr'">
             <h3>Analyser les besoins en biens, en services et en construction</h3>
-            <ul>
-              <li>L’approvisionnement est le processus qui consiste à acquérir des biens, des services et des services de construction auprès de fournisseurs. N’oubliez pas de faire appel à votre spécialiste en approvisionnement dès le début de la planification.</li>
-              <li>Vous devez examiner votre plan de travail pour relever vos besoins en biens, en services et en services de construction.</li>
-              <li>Pour terminer, vous devez vérifier si les biens, les services ou les services de construction requis existent déjà et s’ils sont disponibles.</li>
-            </ul>
+           
+              <p>L’approvisionnement est le processus qui consiste à acquérir des biens, des services et des services de construction auprès de fournisseurs. N’oubliez pas de faire appel à votre spécialiste en approvisionnement dès le début de la planification.</p>
+              <p>Vous devez examiner votre plan de travail pour relever vos besoins en biens, en services et en services de construction.</p>
+              <p>Pour terminer, vous devez vérifier si les biens, les services ou les services de construction requis existent déjà et s’ils sont disponibles.</p>
+           
           </span>
         </b-col>
         <b-col cols="1" class="d-none d-lg-block"></b-col>
         <b-col cols="12" lg>
           <span v-if="$i18n.locale=='en'">
             <h3>Forecast Budget Requirements</h3>
-            <ul>
-              <li>Before making any procurement decisions, you estimate the costs of the goods, services and construction you plan to acquire, including accessibility and life-cycle costs.</li>
+           
+              <p>Before making any procurement decisions, you estimate the costs of the goods, services and construction you plan to acquire, including accessibility and life-cycle costs.</p>
 
-              <li>When work plan activities cannot be delivered because goods, services and construction cannot be procured, you conduct a risk assessment and identify mitigation strategies. </li>
+              <p>When work plan activities cannot be delivered because goods, services and construction cannot be procured, you conduct a risk assessment and identify mitigation strategies. </p>
 
-            </ul>
+           
           </span>
           <span v-if="$i18n.locale=='fr'">
             <h3>Prévoir les besoins budgétaires</h3>
-            <ul>
-              <li>Avant de prendre toute décision en matière d’approvisionnement, vous devez estimer les coûts des biens, des services et des services de construction que vous prévoyez acquérir, y compris les coûts liés à l’accessibilité et au cycle de vie.</li>
+           
+              <p>Avant de prendre toute décision en matière d’approvisionnement, vous devez estimer les coûts des biens, des services et des services de construction que vous prévoyez acquérir, y compris les coûts liés à l’accessibilité et au cycle de vie.</p>
 
-              <li>Lorsque les activités du plan de travail ne peuvent pas être réalisées parce qu’il n’est pas possible de se procurer des biens, des services ou des services de construction, vous devez mener une évaluation des risques et définir des stratégies d’atténuation.</li>
+              <p>Lorsque les activités du plan de travail ne peuvent pas être réalisées parce qu’il n’est pas possible de se procurer des biens, des services ou des services de construction, vous devez mener une évaluation des risques et définir des stratégies d’atténuation.</p>
 
-            </ul>
+           
           </span>
         </b-col>
          <b-col cols="1" class="d-none d-lg-block"></b-col>
         <b-col cols="12" lg>
           <span v-if="$i18n.locale=='en'">
             <h3>Budget and Authorities </h3>
-            <ul>
-              <li>Before beginning to procure goods, services and construction, make sure you have enough funds in your budget.</li>
+           
+              <p>Before beginning to procure goods, services and construction, make sure you have enough funds in your budget.</p>
 
-              <li>You should also identify who has the delegated financial and spending (that is, expenditure initiation and transaction) authorities to initiate and commit the funds for goods, services or construction.</li>
+              <p>You should also identify who has the delegated financial and spending (that is, expenditure initiation and transaction) authorities to initiate and commit the funds for goods, services or construction.</p>
 
-              <li>Once the proper financial and spending (i.e. expenditure initiation and transaction) delegation authorities approvals have been received, you procure the needed goods, services and construction.</li>
+              <p>Once the proper financial and spending (i.e. expenditure initiation and transaction) delegation authorities approvals have been received, you procure the needed goods, services and construction.</p>
 
-            </ul>
+           
           </span>
           <span v-if="$i18n.locale=='fr'">
             <h3>Budget et pouvoirs</h3>
-            <ul>
-              <li>Avant de vous procurer des biens, des services et des services de construction, assurez‑vous que vous avez les fonds nécessaires dans votre budget.</li>
+           
+              <p>Avant de vous procurer des biens, des services et des services de construction, assurez‑vous que vous avez les fonds nécessaires dans votre budget.</p>
               <!--
                 NOUVELLE VERION? (CSPS-TD)
-                <li>Les budgets correspondent essentiellement aux plans de travail exprimés en termes financiers. Autrement dit, le budget représente le montant que vous prévoyez dépenser pour réaliser votre plan.</li>
+                <p>Les budgets correspondent essentiellement aux plans de travail exprimés en termes financiers. Autrement dit, le budget représente le montant que vous prévoyez dépenser pour réaliser votre plan.</p>
               -->
 
-              <li>Vous devez aussi indiquer qui possède les pouvoirs délégués en matière de finances et de dépenses (c.‑à‑d. le pouvoir d’engager des dépenses et d’effectuer des transactions) afin d’engager les fonds destinés aux biens, aux services ou aux services de construction.</li>
+              <p>Vous devez aussi indiquer qui possède les pouvoirs délégués en matière de finances et de dépenses (c.‑à‑d. le pouvoir d’engager des dépenses et d’effectuer des transactions) afin d’engager les fonds destinés aux biens, aux services ou aux services de construction.</p>
               <!--
                 NOUVELLE VERSION? (CSPS-TD)
-                <li>Pour créer un budget, vous passez en revue le budget de l’année précédente afin de déterminer quels salaires, quelles dépenses de fonctionnement et d’entretien et, dans certains cas, de capital et des subventions et contributions vous devrez conserver, éliminer ou ajouter.</li>
+                <p>Pour créer un budget, vous passez en revue le budget de l’année précédente afin de déterminer quels salaires, quelles dépenses de fonctionnement et d’entretien et, dans certains cas, de capital et des subventions et contributions vous devrez conserver, éliminer ou ajouter.</p>
               -->
 
-              <li>Lorsque vous avez reçu les autorisations appropriées de la personne investie des pouvoirs délégués en matière de finances et de dépenses (c.‑à‑d. le pouvoir d’engager des dépenses et d’effectuer des transactions), vous pouvez vous procurer les biens, les services et les services de construction dont vous avez besoin. </li>
+              <p>Lorsque vous avez reçu les autorisations appropriées de la personne investie des pouvoirs délégués en matière de finances et de dépenses (c.‑à‑d. le pouvoir d’engager des dépenses et d’effectuer des transactions), vous pouvez vous procurer les biens, les services et les services de construction dont vous avez besoin. </p>
               <!--
                 NOUVELLE VERSION? (CSPS-TD)
-                <li>Vous comparez le budget de l’année précédente au nouveau plan de travail en vous assurant que toutes les dépenses liées aux activités sont prises en compte. Vous prévoyez les dépenses et soumettez le nouveau budget proposé pour approbation, en y apportant des modifications tout au long de l’année à mesure que les activités évoluent.</li>
+                <p>Vous comparez le budget de l’année précédente au nouveau plan de travail en vous assurant que toutes les dépenses liées aux activités sont prises en compte. Vous prévoyez les dépenses et soumettez le nouveau budget proposé pour approbation, en y apportant des modifications tout au long de l’année à mesure que les activités évoluent.</p>
               -->
-            </ul>
+           
           </span>
         </b-col>
       </b-row>
@@ -89,44 +88,21 @@
             <template v-slot:title>{{$t('fileSet')}}</template>
             <template v-slot:content>
               <b-row>
-                <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('threeSixty')" size=128 iconColor="Scan360Background" :fileSize="$i18n.locale == 'en' ? '118' : '124'" name="threeSixty" />
-                </b-col>
-                <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
+                 <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
                   <download :texts="$t('WPTemplate')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '15.9' : '17,5'" name="WorkPlanTemplate" />
                 </b-col>
-                <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('WPLastYear')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '120' : '120'" name="WorkPlan_lastYear" />
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('s32s34')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
                 </b-col>
-                <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('budgetLastYear')" size=128  iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '9.96' : '9,62'" name="Budget_lastYear" />
-                </b-col>
-                <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('reportsLastYear')" iconColor="reportBackground" size=128 :title="$t('rExample')" :line1="$t('rLine1')" :line2="$t('rLine2')" :lineTag="$t('rExample')" :fileSize="$i18n.locale == 'en' ? '16.6' : '19,4'" name="ReportLast" />
-                </b-col>
-                <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('buildWPProcessMap')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '121' : '114'" name="buildWPProcessMap" />
-                </b-col>
-                <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('newBudget')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '129' : '131'" name="newBudget" />
-                </b-col>
-                <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('cycle')" size=128 iconColor="Scan360Background" :fileSize="$i18n.locale == 'en' ? '61.6' : '62,6'" name="cycle" />
-                </b-col>
+              <!--  <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('delegofspending')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '120' : '120'" name="delegChart" />
+                </b-col>-->
               </b-row>
             </template>
           </keyMessagesFiles>
         </b-col>
       </b-row>
-      <b-row>
-        <b-col>
-          <p>&nbsp;</p><span v-if="$i18n.locale=='en'">
-            Find your organization's Departmental Plan here: <externalLink link="https://www.canada.ca/en/treasury-board-secretariat/services/planned-government-spending/reports-plans-priorities.html">Departmental Plans</externalLink></span>
-          <span v-if="$i18n.locale=='fr'">
-            Trouvez le plan ministériel de votre organisation ici : <externalLink link="https://www.canada.ca/fr/secretariat-conseil-tresor/services/depenses-prevues/rapports-plans-priorites.html">Plans ministériels</externalLink>
-          </span></p>
-        </b-col>
-      </b-row>
+      
     </b-container>
     <div class="bottomNav planSection">
     <div class="planSectionBar"><span>{{$t('planSectionBar')}}</span></div>

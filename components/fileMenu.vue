@@ -22,46 +22,46 @@
                   <b-col cols="12">
                     <h4>{{$t('plan')}}</h4>
                   </b-col>
-                  <b-col cols="6" md="4" lg="2" class="text-center">
-                    <download :texts="$t('threeSixty')" size=128 iconColor="Scan360Background" :fileSize="this.$i18n.locale == 'en' ? '118' : '124'" name="threeSixty" />
-                  </b-col>
-                  <b-col cols="6" md="4" lg="2" class="text-center">
-                    <download :texts="$t('WPTemplate')" size=128 iconColor="planBackground" :fileSize="this.$i18n.locale == 'en' ? '15.9' : '17,5'" name="WorkPlanTemplate" />
-                  </b-col>
-                  <b-col cols="6" md="4" lg="2" class="text-center">
-                    <download :texts="$t('buildWPProcessMap')" size=128 iconColor="planBackground" :fileSize="this.$i18n.locale == 'en' ? '121' : '114'" name="buildWPProcessMap" />
-                  </b-col>
-                  <b-col cols="6" md="4" lg="2" class="text-center">
-                    <download :texts="$t('newBudget')" size=128 iconColor="planBackground" :fileSize="this.$i18n.locale == 'en' ? '129' : '131'" name="newBudget" />
-                  </b-col>
-                  <b-col cols="6" md="4" lg="2" class="text-center">
-                    <download :texts="$t('cycle')" size=128 iconColor="Scan360Background" :fileSize="this.$i18n.locale == 'en' ? '61.6' : '62,6'" name="cycle" />
-                  </b-col>
+                  <b-col role="tab" cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('WPTemplate')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '15.9' : '17,5'" name="WorkPlanTemplate" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('s32s34')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                </b-col>
                 </b-row>
                 <b-row>
                   <b-col cols="12">
                     <h4>{{$t('spend')}}</h4>
                   </b-col>
-                  <b-col cols="6" md="4" lg="2" class="text-center">
-                    <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
-                  </b-col>
-                  <b-col cols="6" md="4" lg="2" class="text-center">
-                    <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                  </b-col>
+                  <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('statementofwork')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="statementofwork" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('SOWSOR')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="SOWSOR" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('ComProcDoc')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="ComProcDoc" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('WhatNotToDo')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="WhatNotToDo" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('ProcureProcess')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="ProcureProcess" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('BidEval')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="BidEval" />
+                </b-col>
+                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('LegalFrame')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="LegalFrame" />
+                </b-col>
                 </b-row>
                 <b-row>
                   <b-col cols="12">
                     <h4>{{$t('report')}}</h4>
                   </b-col>
-                  <b-col cols="6" md="4" lg="2" class="text-center">
-                    <download :texts="$t('FSRRoadmap')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '107' : '111'" name="FSRRoadmap" />
-                  </b-col>
-                  <b-col cols="6" md="4" lg="2" class="text-center">
-                    <download :texts="$t('prepareFSR')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '108' : '96,5'" name="prepareFSR" />
-                  </b-col>
-                  <b-col cols="6" md="4" lg="2" class="text-center">
-                    <download :texts="$t('extReports')" size=128 iconColor="reportBackground" :fileSize="this.$i18n.locale == 'en' ? '138' : '124'" name="extReports" />
-                  </b-col>
+                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
+                  <download :texts="$t('Oversight')" size=128 iconColor="reportBackground" :fileSize="$i18n.locale == 'en' ? '134' : '139'" name="Oversight" />
+                </b-col>
                 </b-row>
                 <!-- <download filename="WorkPlan_Template.docx" size=128 iconColor="planBackground" :title="$t('downloadPlan')" :line1="$t('dwnPlanLine1')" :line2="$t('dwnPlanLine2')" /> -->
               </b-card-text>

@@ -6,6 +6,7 @@
     <b-container style="text-align: left">
       <b-row>
         <b-col cols="12" lg><span v-if="$i18n.locale=='en'">
+          <h3>Report</h3>
             <ul>
               <li>You identify and avoid inappropriate procurement practices such as contract splitting and inappropriate sole-sourcing.</li>
               <li>Authorities with oversight responsibilities are in place to address procurement complaints, including the Office of the Procurement Ombudsman and the Canadian International Trade Tribunal.</li>
@@ -13,6 +14,7 @@
             </ul>
           </span>
           <span v-if="$i18n.locale=='fr'">
+            <h3>Rapports </h3>
               <ul>
                 <li>Vous devez repérer et éviter les pratiques d’approvisionnement inadéquates, comme le fractionnement de marchés et le recours inapproprié à un fournisseur unique.</li>
                 <li>Les autorités responsables de la surveillance, dont le Bureau de l’ombudsman de l’approvisionnement et le Tribunal canadien du commerce extérieur, sont là pour répondre aux plaintes relatives à l’approvisionnement.</li>
@@ -28,28 +30,7 @@
             <template v-slot:content>
               <b-row>
                 <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('procurementInstruments')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '134' : '139'" name="procurementInstruments" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-                </b-col>
-                <b-col cols="12" sm="6" md="4" lg="2" class="text-center">
-                  <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
+                  <download :texts="$t('Oversight')" size=128 iconColor="reportBackground" :fileSize="$i18n.locale == 'en' ? '134' : '139'" name="Oversight" />
                 </b-col>
               </b-row>
             </template>

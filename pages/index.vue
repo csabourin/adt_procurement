@@ -309,11 +309,11 @@ export default {
       "HowTo":"How to Navigate",
       "chooseScenario":"Pick one of the following three options based on which type of learning journey you want to take.",
       "takeCourse":"I want to take the full course",
-      "takeCourseText":"To take the full course start with the first module of the Plan section by selecting “Build a Work Plan” and continue to move through section by section to complete the entire course.",
+      "takeCourseText":"To take the full course start with the first module of the Plan section by selecting “Analyze Goods, Services and Construction Needs” and continue to move through section by section to complete the entire course.",
       "refreshKnowledge":"I want to refresh my knowledge",
-      "refreshKnowledgeText":"For this option, focus on reviewing the Key Messages in each of the Plan, Spend and Report sections.",
+      "refreshKnowledgeText":"For this option, focus on reviewing the Key Messages in each of the Plan, Procure, Manage and Report sections. ",
       "takeExam":"I just want to take the test",
-      "takeExamText":"For this option, you will do three tests, one in the Plan section, one in the Spend section and one in the Report section."
+      "takeExamText":"For this option, you will do four tests, one in the Plan section, one in the Procure section, one in the Manage section and one in the Report section."
     },
     "fr":{
       "welcomeText": "Bienvenue",
@@ -324,11 +324,11 @@ export default {
       "HowTo":"Comment naviguer ce cours",
       "chooseScenario":"Choisissez l’une des trois options suivantes en fonction du type de parcours d’apprentissage que vous voulez suivre.",
       "takeCourse":"Je veux prendre la totalité du cours",
-      "takeCourseText":"Pour prendre la totalité du cours, commencez par le premier module de la section Planification en choisissant « Élaborer un plan de travail » et continuez à avancer, section par section pour terminer le cours complet.",
+      "takeCourseText":"Pour prendre la totalité du cours, commencez par le premier module de la section Planification en choisissant « Analyser les besoins en biens, en services et en construction » et continuez à avancer, section par section pour terminer le cours au complet.",
       "refreshKnowledge":"Je veux rafraîchir mes connaissances",
-      "refreshKnowledgeText":"Avec cette option, vous examinerez les Messages clés dans chacune des sections Planification, Dépenses et Rapports.",
+      "refreshKnowledgeText":"Avec cette option, vous examinerez les Messages clés dans chacune des sections Planification, Achat, Gestion et Rapports.  ",
       "takeExam":"Je veux seulement prendre le test",
-      "takeExamText":"Avec cette option, vous ferez trois tests, un dans la section Planification, un dans la section Dépenses et un dans la section Rapports."
+      "takeExamText":"Avec cette option, vous ferez trois tests, un dans la section Planification, un dans la section Achat, un dans la section Gestion et un dans la section Rapports. "
     }
   }
   

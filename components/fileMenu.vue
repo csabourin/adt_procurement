@@ -77,6 +77,7 @@
               <b-card-text>
                 <planLinks />
                 <procureLinks />
+                <manageLinks />
                 <reportLinks />
               </b-card-text>
             </b-card-body>
@@ -441,7 +442,7 @@
             <b-card-body>
               <b-card-text>
                 <span v-if="$i18n.locale=='en'">
-                  <p>This course is organized into three sections: <strong>plan</strong>, <strong>spend</strong> and <strong>report</strong>.</p>
+                  <p>This course is organized into four sections: <strong>plan</strong>, <strong>procure</strong>, <strong>manage</strong> and <strong>report</strong>.</p>
                   <p>You can choose where you want to start the course and how deep you wish to go into the content. Here are a few tips to help orient you.</p>
                   <ul>
                     <li>You can navigate through the sections of the course by using the <strong>menu icon</strong> (<span class="hamburger-example">&nbsp;&nbsp;&nbsp;&nbsp; <span class="v-inv">navigation menu icon example</span></span>) in the top left corner of the screen or by using the &ldquo;tiles&rdquo; found on each screen.</li>
@@ -449,18 +450,18 @@
                   <img class="img-fluid" src="~/assets/en/nav-example.PNG" alt="&ldquo;tiles&rdquo; example" />
                   <ul>
                     <li>Select the <strong>key messages</strong> to review highlights, for a refresher on each topic.</li>
-                    <li>If you’re learning the content for the first time, take the time to <strong>go through each section</strong>. Do the <strong>in-depth learning activities</strong> and review the tools and resources. Each section should take you around 15 to 20 minutes to complete. There are visual cues to show your progress as you move through the course.</li>
+                    <li>If you’re learning the content for the first time, take the time to <strong>go through each section</strong>. Do the <strong>in-depth learning activities</strong> and review the tools and resources. Each section should take you around 15 to 30 minutes to complete. There are visual cues to show your progress as you move through the course.</li>
                   </ul>
                   <img class="img-fluid" src="~/assets/en/progression-example.PNG" alt="visual cues for progression example" />
                   <ul>
                     <li>Select the <strong>video icon</strong> (&nbsp;<img src="~/assets/VideoIcon.svg" alt="video icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) to view the videos in each section, the <strong>pencil icon</strong> (&nbsp;<img src="~/assets/ActivityIcon.svg" alt="pencil icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) to complete an activity, the <strong>letter i icon</strong> (&nbsp;<img src="~/assets/InfoIcon.svg" alt="letter i icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) for more information, the <strong>document icon</strong> (&nbsp;<img src="~/assets/ReferenceIcon.svg" alt="document icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) for reference materials, the <strong>checkmark icon</strong> (&nbsp;<img src="~/assets/QuizIcon.svg" alt="checkmark icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) to jump to the quiz and the <strong>arrow icon</strong> (&nbsp;<img src="~/assets/ContinueIcon.svg" alt="arrow icon example" style="display: inline; width: 30px; height: 30px;" />&nbsp;) to go to the next section.</li>
-                    <li>You can jump to the <strong>test</strong> for each section at any time or complete the tests for the <strong>plan</strong>, <strong>spend</strong> and <strong>report</strong> sections in order as you finish each lesson. The passing grade is <strong>80% for each section</strong>. You can access course materials during the test and retake the test as many times as you need to. </li>
+                    <li>You can jump to the <strong>test</strong> for each section at any time or complete the tests for the <strong>plan</strong>, <strong>procure</strong>, <strong>manage</strong> and <strong>report</strong> sections in order as you finish each lesson. The passing grade is <strong>80% for each section</strong>. You can access course materials during the test and retake the test as many times as you need to. </li>
                     <li>Access the <strong>home</strong> screen at any time by selecting the (<homebutton :iconWidth="50" iconTitle="home icon example" style="position: relative; top: -5px; left: 0px;" />) icon.</li>
                     <li>Access tools and templates by selecting the <strong>toolbox icon</strong> (&nbsp;<fileIcon title="example of the tool box icon" width="40" />&nbsp;) in the top right corner of your screen.</li>
                   </ul>
                 </span>
                 <span v-if="$i18n.locale=='fr'">
-                  <p>Ce cours est organisé en 3 sections : <strong>planification</strong>, <strong>dépenses</strong> et <strong>rapports</strong>. </p>
+                  <p>Ce cours est organisé en quatre sections : <strong>planification</strong>, <strong>achat</strong>, <strong>gestion</strong> et <strong>rapports</strong>. </p>
                   <p>Vous pouvez choisir là où commencer le cours, et décider jusqu'à quel point approfondir le contenu. Voici quelques conseils pour vous orienter&nbsp;:</p>
                   <ul>
                     <li>Vous pouvez naviguer dans les sections du cours en utilisant l’icône du <strong>menu</strong> (<span class="hamburger-example">&nbsp;&nbsp;&nbsp;&nbsp; <span class="v-inv">exemple de l'icône du menu de navigation</span></span>) en haut à gauche de l'écran ou en utilisant les «&nbsp;tuiles&nbsp;» sur chaque écran.</li>
@@ -468,12 +469,12 @@
                   <img class="img-fluid" src="~/assets/fr/nav-example.PNG" alt="exemple de «&nbsp;tuiles&nbsp;»" />
                   <ul>
                     <li>Choisissez les <strong>messages clés</strong> pour réviser les points saillants, comme rappel sur chaque sujet.</li>
-                    <li>Si le contenu est nouveau pour vous, prenez le temps de <strong>parcourir chaque section</strong>. Faites <strong>les activités d'apprentissage en profondeur</strong> et examinez les outils et les ressources. Chaque section devrait vous prendre de 15 à 20 minutes. Des repères visuels s’affichent pour indiquer vos progrès au fur et à mesure que vous avancez dans le cours.</li>
+                    <li>Si le contenu est nouveau pour vous, prenez le temps de <strong>parcourir chaque section</strong>. Faites <strong>les activités d'apprentissage en profondeur</strong> et examinez les outils et les ressources. Chaque section devrait vous prendre de 15 à 30 minutes. Des repères visuels s’affichent pour indiquer vos progrès au fur et à mesure que vous avancez dans le cours.</li>
                   </ul>
                   <img class="img-fluid" src="~/assets/fr/progression-example.PNG" alt="exemple des indices visuels pour la progression" />
                   <ul></ul>
                   <li>Choisissez l'<strong>icône de la vidéo</strong> (&nbsp;<img src="~/assets/VideoIcon.svg" alt="exemple de l'icône de la vidéo" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour visionner les vidéos de chaque section, l'<strong>icône du crayon</strong> (&nbsp;<img src="~/assets/ActivityIcon.svg" alt="exemple de l'icône du crayon" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour réaliser une activité, l’<strong>icône de la lettre i</strong> (&nbsp;<img src="~/assets/InfoIcon.svg" alt="exemple de l'icône de la lettre i" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour plus d’information, l’<strong>icône des documents</strong> (&nbsp;<img src="~/assets/ReferenceIcon.svg" alt="exemple de l'icône des documents" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour les matériels de référence, l’<strong>icône du crochet</strong> (&nbsp;<img src="~/assets/QuizIcon.svg" alt="exemple de l'icône du crochet" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour sauter au quiz et l’<strong>icône de la flèche</strong> (&nbsp;<img src="~/assets/ContinueIcon.svg" alt="exemple de l'icône de la flèche" style="display: inline; width: 30px; height: 30px;" />&nbsp;) pour continuer à la section suivante.</li>
-                  <li>Passez au <strong>test</strong> pour chaque section de <strong>planification</strong>, <strong>dépenses</strong> et <strong>rapports</strong> à n'importe quel moment ou faites-les dans l'ordre au fur et à mesure que vous terminez chaque leçon. La note de passage est de <strong>80&nbsp;% pour chacune de ces sections</strong>. Vous pouvez accéder au matériel didactique pendant le test et vous pouvez le reprendre autant de fois que vous le souhaitez.</li>
+                  <li>Passez au <strong>test</strong> pour chaque section de <strong>planification</strong>, <strong>achat</strong>, <strong>gestion</strong> et <strong>rapports</strong> à n'importe quel moment ou faites-les dans l'ordre au fur et à mesure que vous terminez chaque leçon. La note de passage est de <strong>80&nbsp;% pour chacune de ces sections</strong>. Vous pouvez accéder au matériel didactique pendant le test et vous pouvez le reprendre autant de fois que vous le souhaitez.</li>
                   <li>Accédez à l'écran d'<strong>accueil</strong> à n’importe quel moment en choisissant l'icône (<homebutton :iconWidth="50" iconTitle="exemple de l'icône de l'accueil" style="position: relative; top: -5px; left: 0px;" />).</li>
                   <li>Accédez aux outils et aux modèles en choisissant l'icône de la <strong>boîte à outils</strong> (&nbsp;<fileIcon title="exemple de l'icône de la boîte à outils" width="40" />&nbsp;) en haut à droite de l’écran.</li>
                 </span>
@@ -491,6 +492,7 @@
   import download from "~/components/fileDownload"
   import HTMLJobaidLink from "~/components/HTMLJobaidLink"
   import planLinks from "~/components/plan_links"
+  import manageLinks from "~/components/manage_links"
   import procureLinks from "~/components/procure_links"
   import reportLinks from "~/components/report_links"
   import homebutton from "~/components/icons/home_icon"
@@ -499,6 +501,7 @@
       fileIcon,
       download,
       planLinks,
+      manageLinks,
       procureLinks,
       reportLinks,
       homebutton,

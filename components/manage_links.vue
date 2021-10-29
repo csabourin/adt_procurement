@@ -2,17 +2,19 @@
   <span>
     <div v-if="$i18n.locale=='fr'">
       <div>
-        <h4>Planification</h4>
+        <h4>Gestion</h4>
         <ul class="list-unstyled">
-          <li><externalLink link="https://adtfinance.netlify.app/fr">La saine gestion des fonds publics</externalLink></li>
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14671">Guide de gestion du matériel</externalLink></li>
         </ul>
       </div>
     </div>
     <div v-if="$i18n.locale=='en'">
-      <h4>Plan</h4>
-      <ul class="list-unstyled">
-        <li><externalLink link="https://adtfinance.netlify.app/en">Using Public Funds Responsibly course</externalLink></li>
-      </ul>
+      <div>
+        <h4>Manage</h4>
+        <ul class="list-unstyled">
+          <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=14671">Guide to Management of Materiel</externalLink></li>
+        </ul>
+      </div>
     </div>
   </span>
 </template>

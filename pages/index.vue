@@ -256,7 +256,7 @@ export default {
     color: #7d677d;
   }
   .procureTitle{
-    color: #536173;
+    color: #98A0AA;
   }
   .reportTitle {
     color: #865F56;

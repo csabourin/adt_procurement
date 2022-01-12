@@ -290,7 +290,7 @@ export default {
 }
 .manageSectionBar {
   position: absolute;
-  background-color: #536173;
+  background-color: #98A0AA;
   width: 100vw;
   height: 30px;
   text-align: left;

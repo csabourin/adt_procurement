@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sales Invoice</title>
+<style>
+
+    * {
+    box-sizing: border-box;
+    padding: 2px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    }
+    .col-05{width: 6.66%}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    h1 {
+        color:rgb(88, 124, 132);
+    }
+
+    h2 {
+        color: white;
+        font-size: 19px;
+        font-weight: normal;
+    }
+	
+	.invoice{
+		text-align: center;
+		font-size: 30px;
+	}
+	
+	.invoiceSub{
+		text-align: center;
+	}
+	
+	.list{
+		position: relative;
+		width: 100%;
+		border: 2px black solid;
+		margin: 10px;
+		padding: 50px;
+	}
+	
+	
+	.table1{
+		width: 90%;
+		border-collapse: collapse;
+	}
+	.table1 th{
+		border: 1px solid black;
+		padding: 10px;
+	}
+	.table1 td{
+		border: 1px solid black;
+		padding: 15px;
+		text-align: center;
+	}
+	
+	.table2{
+		width: 90%;
+		border-collapse: collapse;
+	}
+	.table2 th{
+		border: 1px solid black;
+		padding: 10px;
+	}
+	.table2 td{
+		border: 1px solid black;
+		padding: 15px;
+		text-align: center;
+	}
+	
+	.descriptionText{
+		text-align: left!important;
+	}
+	.totalText{
+		text-align: right!important;
+	}
+	
+	.NoBorder{
+		border: none!important;
+	}
+	.NoBorderText{
+		border: none!important;
+		text-align: right!important;
+	}
+</style>
+</head>
+
+<body>
+	<div class="list">
+		<div class="row">
+			<div class="col-4">
+				<p style="font-size: 20px;"><b>ABC Enterprise</b></p>
+				<p><i>We have everything from A to C</i></p>
+			</div>
+			<div class="col-4"></div>
+			<div class="col-4"><p class="invoice">INVOICE</p></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-4">
+				<p>3rd Rock from the Sun Avenue<br />
+				You-Are-Here, Ontario<br />
+				Phone: 123.456.7890 Fax: 123.456.7891</p>
+			</div>
+			<div class="col-4"></div>
+			<div class="col-4">
+				<p class="invoiceSub">INVOICE #007</p>
+				<p class="invoiceSub">DATE: 2019-10-18</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-4">
+				<p><b>BILL TO:</b><br />
+				Boss Number 1<br />
+				Important Department<br />
+				Parliament Hill<br />
+				Ottawa, ON<br />
+				Phone: 123-456-7890<br />
+				</p>
+			</div>
+			<div class="col-4">
+				<p><b>SHIP TO:</b><br />
+				Boss Number 1<br />
+				Important Department<br />
+				Parliament Hill<br />
+				Ottawa, ON<br />
+				Phone: 123-456-7890<br />
+				</p>
+			</div>
+			<div class="col-4">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-4">
+				<p><b>COMMENTS OR SPECIAL INSTRUCTIONS:</b><br />
+				None</p>
+			</div>
+			<div class="col-4">
+				
+			</div>
+			<div class="col-4">
+			</div>
+		</div>
+		
+		<div class="row">
+			<table align="center" class="table1">
+				<tr>
+					<th>SALESPERSON</th>
+					<th>P.O. NUMBER</th>
+					<th>SHIP DATE</th>
+					<th>SHIPPED VIA</th>
+					<th>F.O.B. POINT</th>
+					<th>TERMS</th>
+				</tr>
+				<tr>
+					<td>Bob Sales</td>
+					<td>10203040</td>
+					<td>2019-10-10</td>
+					<td>Snail Mail</td>
+					<td></td>
+					<td>Due on receipt</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+		<div class="row">
+			<table align="center" class="table2">
+				<tr>
+					<th>QUANTITY</th>
+					<th>DESCRIPTION</th>
+					<th>UNIT PRICE</th>
+					<th>TOTAL</th>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td class="descriptionText">Polk-a-dot highlighters</td>
+					<td class="unitText">2.00</td>
+					<td class="totalText">10.00</td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td class="descriptionText">Pairs of rose colored glasses</td>
+					<td class="unitText">25.00</td>
+					<td class="totalText">500.00</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="total">
+					<td class="NoBorder">&nbsp;</td>
+					<td class="NoBorder">&nbsp;</td>
+					<td class="NoBorderText">SUBTOTAL</td>
+					<td class="totalText">$510.00</td>
+				</tr>
+				<tr class="total">
+					<td class="NoBorder">&nbsp;</td>
+					<td class="NoBorder">&nbsp;</td>
+					<td class="NoBorderText">TAX RATE</td>
+					<td class="totalText">13.00%</td>
+				</tr>
+				<tr class="total">
+					<td class="NoBorder">&nbsp;</td>
+					<td class="NoBorder">&nbsp;</td>
+					<td class="NoBorderText">SALES TAX</td>
+					<td class="totalText">66.30</td>
+				</tr>
+				<tr class="total">
+					<td class="NoBorder">&nbsp;</td>
+					<td class="NoBorder">&nbsp;</td>
+					<td class="NoBorderText">SHIPPING &amp; HANDLING</td>
+					<td class="totalText">-</td>
+				</tr>
+				<tr class="total">
+					<td class="NoBorder">&nbsp;</td>
+					<td class="NoBorder">&nbsp;</td>
+					<td class="NoBorderText"><b>TOTAL</b></td>
+					<td class="totalText"><b>$576.30</b></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="row">
+			<p>Make all checks payable to ABC Enterprise <br />
+			If you have any questions concerning this invoice, contact Bob at 123-456-7890 or Bob@ABCEnterprises.ca</p>
+		</div>
+		<br />
+		<div class="row" align="center">
+			<b>THANK YOU FOR YOUR BUSINESS!</b>
+		</div>
+		<br />
+	</div>
+</body>
+</html>

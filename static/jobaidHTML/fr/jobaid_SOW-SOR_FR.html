@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Énoncés des travaux, énoncés des besoins et descriptions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+
+    * {
+    box-sizing: border-box;
+    padding: 2px;
+    font-family: 'Roboto', sans-serif;
+    }
+    .col-05{width: 6.66%}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    h1 {
+        color:rgb(88, 124, 132);
+    }
+
+    h2 {
+        color: white;
+        font-size: 19px;
+        font-weight: normal;
+    }
+
+    .titleBox{
+        background-color: rgb(88, 124, 132);
+        text-align: center;
+        padding: 1px;
+    }
+
+    ul{
+        list-style: none;
+    }
+    ul ul{
+        padding-left: 30px;
+    }
+    ul li::before{
+        content: "\2022";
+        color: rgb(88, 124, 132); /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+    ul ul li::before{
+        content: "\25CB";
+        color: rgb(88, 124, 132); /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    .exampleBox{
+        border: 2px solid rgb(204, 215, 218);
+        width: 100%;
+    }
+    .exampleBox th{
+        background-color: rgb(204, 215, 218);
+        color: rgb(88, 124, 132);
+        padding: 15px;
+        font-size: 20px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .blueText{
+        color: rgb(88, 124, 132);
+    }
+
+    .numberList{
+        counter-reset: item;
+    }
+    .numberList li{
+        display: block;
+    }
+    .numberList li:before{
+        content: counter(item)". ";
+        counter-increment: item;
+        color: rgb(88, 124, 132);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .comptrollerTable{
+        border: 2px solid rgb(88, 124, 132);
+        padding: 0px;
+    }
+    .comptrollerTable th{
+        text-align: left;
+        font-weight: normal;
+        background-color:rgb(204, 215, 218);
+        padding: 20px;
+        border-bottom: 2px solid rgb(88, 124, 132);
+        font-size: 15px;
+    }
+    .comptrollerTable td{
+        padding: 10px;
+        padding-left: 30px;
+    }
+
+    .statementBox{
+        background-color: rgb(204, 215, 218);
+        width: 60%;
+        margin: auto;
+        padding: 10px;
+    }
+
+</style>
+</head>
+
+<body>
+    <div>
+        <h1>Énoncés des travaux, énoncés des besoins et descriptions</h1>
+        <p>Cet outil de travail sert de mise à jour concernant les énoncés des travaux, les énoncés des besoins et les descriptions qu’ils contiennent.</p>
+
+        <!-- TITRE 1 -->
+        <div class="titleBox">
+            <h2>Énoncés des travaux et énoncés des besoins</h2>
+        </div>
+        <br>
+        <div class="statementBox">
+            <p>Un <span class="blueText"><b>énoncé des travaux</b> (EDT)</span> décrit les travaux requis en des termes clairs, concis et explicites. Il comprend les produits livrables ou les services ou travaux requis pour exécuter le contrat.</p>
+        </div>
+        <br>
+        <div class="statementBox">
+            <p>Un <span class="blueText"><b>énoncé des besoins</b> (EDB)</span> est une description du besoin sans préciser la méthode exacte à utiliser.</p>
+        </div>
+        <p>L’énoncé des travaux et l’énoncé des besoins définissent tous deux le problème en cause et comprennent des renseignements qui fourniront un contexte à l’autorité approbatrice. Ils contiennent également une évaluation initiale du risque et des informations financières de base concernant ce qui sera produit à l’étape suivante.</p>
+
+        <!-- TITRE 2 -->
+        <div class="titleBox">
+            <h2>Descriptions</h2>
+        </div>
+		<p>Une <b class="blueText">norme de conception</b> est une description détaillée de l’article à acheter. Elle peut comprendre les dessins et les dimensions, tailles et mesures requises, les matériaux, les propriétés physiques, les résultats des tests de qualité, les considérations environnementales, ergonomiques et esthétiques, les besoins prévus en matière de réparation et d’entretien, le niveau de qualité à atteindre, les normes de sécurité à respecter, etc. Il s’agit du « contenu » de l’article que vous achetez.</p>
+		<p>Les risques associés à l’utilisation des normes de conception sont les suivants : plus les normes sont détaillées, plus les gestionnaires assument la responsabilité de l’exactitude de la conception, ainsi que de toute erreur, omission ou déficience de conception. Par exemple, si un entrepreneur construit un bateau exactement selon le plan de conception et que celui-ci coule lors de sa mise à l’eau, ce n’est pas la faute du constructeur.</p>
+        <table class="exampleBox">
+            <tr>
+                <th>Exemple de norme de conception pour une vidéo</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row">
+                        <div class="col-9">
+                            <p>Le contenu doit être conforme aux politiques, aux directives et aux lignes directrices, telles que : </p>
+                            <ul>
+                                <li>Règles pour l’accessibilité des contenus Web (WCAG) 2.0, niveau AA</li>
+                                <li>Analyse comparative entre les sexes plus (ACS+)</li>
+                                <li>Diversité et inclusion</li>
+                                <li>Français canadien et anglais canadien – Loi sur les langues officielles, chacun des produits suivants nécessite un sous-titrage codé et un texte décrit. Un (1) fichier en haute définition pour chacune des vidéos intégrales en anglais et en français dans les formats suivants : </li>
+                                <ul>
+                                    <li>ProRes 422 (.mov), grande qualité</li>
+                                    <li>MP4 (H.264, AAC), grande qualité</li>
+                                    <li>Fichier de sous-titres (SMIL, XML, SRT)</li>
+                                    <li>Transcription du texte, y compris la description des actions</li>
+                                    <li>MPEG</li>
+                                    <li>Tous les produits doivent être fournis en format 1080p, 29.97fps, à moins d’indication contraire.</li>
+                                    <li>Transcriptions détaillées de toutes les versions des vidéos</li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <img src="jobaids_images/video_play.png" width="50%" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <p>Une <b class="blueText">spécification fonctionnelle</b> définit les exigences opérationnelles d’un article ou d’une installation. En d’autres termes, elle décrit ce que le produit final installé doit être capable de faire. Elle décrit les résultats, les fonctions ou les opérations nécessaires du produit. Il s’agit du « ce qu’il fait » du produit que vous achetez.</p>
+        <p>Risques associés aux spécifications fonctionnelles : charge plus importante pour l’entrepreneur, qui accepte la responsabilité générale de la conception et du respect de l’exigence de performance énoncée dans l’EDT ou l’EDB. La ressource peut faire exactement ce qui a été demandé, mais elle peut ne pas correspondre à ce qui est nécessaire si un élément clé est omis. Par exemple, une équipe d’assaut a besoin d’un petit bateau et il est envisagé d’utiliser un bateau à coque rigide. Deux bateaux répondent à cette exigence : un bateau pneumatique et un bateau à coque rigide. Si la durabilité du bateau pneumatique n’est pas prise en compte dans l’EDT ou l’EDB, cela peut être une source de préoccupation dans une zone de combat.</p>
+        <table class="exampleBox">
+            <tr>
+                <th>Exemple de spécifications fonctionnelles pour un échographe portatif</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row">
+                        <div class="col-9">
+                            <ul>
+                                <li>Il doit s’agir d’un dispositif de système d’exploitation portatif approprié.</li>
+                                <li>Le système d’exploitation portatif doit être doté d’une interface à écran tactile multipoint permettant d’actionner les commandes du système et les touches d’acquisition d’images. Il doit disposer au minimum des fonctions suivantes :</li>
+                                <ul>
+                                    <li>examen de l’image</li>
+                                    <li>enregistrement de l’image</li>
+                                    <li>paramètres du menu du système</li>
+                                    <li>saisie des informations sur le patient</li>
+                                    <li>création d’un rapport</li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <img src="jobaids_images/monitor.png" width="50%" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <p>Les <b class="blueText">normes de conception et les spécifications fonctionnelles combinées</b> incorporent les attributs des normes de performance et des spécifications fonctionnelles.</p>
+        <p>Risques associés aux normes de conception et aux spécifications fonctionnelles combinées : les risques sont plus faibles que si l’on utilisait uniquement la norme ou la spécification.</p>
+        <table class="exampleBox">
+            <tr>
+                <th>Exemple des normes de conception et des spécifications fonctionnelles combinées pour une machine à laver</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row">
+                        <div class="col-9">
+                            <ul>
+                                <li>Toutes les machines à laver doivent être munies d’un tambour en acier inoxydable de qualité commerciale.</li>
+                                <li>Toutes les machines à laver doivent comprendre deux tuyaux d’alimentation en eau tressés faits en acier inoxydable et un tuyau de refoulement d’eau, ainsi que tous les raccords requis.</li>
+                                <li>Toutes les machines à laver doivent avoir un cycle délicat, un cycle normal et un cycle intensif.</li>
+                                <li>Toutes les machines à laver doivent être non empilables.</li>
+                                <li>Les machines doivent être à chargement frontal et munies de commandes à l’avant.</li>
+                                <li>Capacité : minimum 100 livres.</li>
+                                <li>Caractéristiques électriques : 208-240 V, 60 HZ, 1-3 phases.</li>
+                                <li>Dimensions : minimum de 40 pouces de largeur x 50 pouces de profondeur x 56 pouces de hauteur jusqu’à un maximum de 48 pouces de largeur x 58 pouces de profondeur x 70 pouces de hauteur.</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <img src="jobaids_images/washing_machine.png" width="50%" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <p>La <b class="blueText">description de l’achat</b> fournit une description brève mais précise du produit souhaité. Elle répertorie le produit par des normes de référence ou des noms de marque nationaux, internationaux ou industriels (par exemple, une clé de 10 mm, un tournevis Phillips, un « deux-par-quatre »).</p>
+        <p>Risques associés aux descriptions de l’achat : devraient réduire considérablement le risque de ne pas répondre aux exigences.</p>
+        <table class="exampleBox">
+            <tr>
+                <th>Exemple d’une description de l’achat</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row">
+                        <div class="col-9">
+                            <ul>
+                                <li>Clé à fourche de 10 mm</li>
+                                <li>Sapin de Douglas 2 po x 8 po x 16 pi , non traité</li>
+                                <li>Mélange épinette-pin-sapin 2 po x 6 po x 16 pi, traité, brun</li>
+                                <li>Vis pour terrasses de 3 po – taille 8</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <img src="jobaids_images/tools.png" width="50%" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <p>Vous voulez plus d’exemples? Visitez le site Web <a href="https://achatsetventes.gc.ca/" target="_blank" alt="Lien vers le site Web d'Achats et ventes">https://achatsetventes.gc.ca/</a> et faites une recherche parmi les offres pour obtenir des exemples supplémentaires.</p>
+
+		<div class="row">
+			<div class="col-3">
+				<img src="jobaids_images/Canada.png" width="100%"/>
+			</div>
+			<div class="col-6"></div>
+			<div class="col-3">
+				<img src="jobaids_images/CSPS.png" width="100%"/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

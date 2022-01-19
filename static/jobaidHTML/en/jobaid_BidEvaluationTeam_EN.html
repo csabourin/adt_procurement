@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>The Bid Evaluation Process</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+
+    * {
+    box-sizing: border-box;
+    padding: 2px;
+    font-family: 'Roboto', sans-serif;
+    }
+    .col-05{width: 6.66%}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    [class*="col-"] {
+        float: left;
+        padding: 1px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    h1 {
+        color:rgb(120, 125, 59);
+    }
+
+    h2 {
+        color: white;
+        font-size: 19px;
+        font-weight: normal;
+    }
+
+    .titleBox{
+        background-color: rgb(120, 125, 59);
+        text-align: center;
+        padding: 1px;
+    }
+
+    ul{
+        list-style: none;
+    }
+    ul li::before{
+        content: "\2022";
+        color: rgb(120, 125, 59); /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    .numberTable th{
+        background-color: rgb(88, 124, 132);
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 30px;
+    }
+    .numberTable td{
+        background-color: rgb(204, 215, 218);
+        padding: 15px;
+        font-size: 18px;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .numberList{
+        counter-reset: item;
+    }
+    .numberList li{
+        display: block;
+    }
+    .numberList li:before{
+        content: counter(item)". ";
+        counter-increment: item;
+        color: rgb(88, 124, 132);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .mustardTable{
+        border: 2px solid rgb(232, 235, 205);
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .mustardTable th{
+        text-align: left;
+        font-weight: normal;
+        background-color:rgb(232, 235, 205);
+        color: rgb(120, 125, 59);
+        padding: 15px;
+        border-bottom: 2px solid rgb(88, 124, 132);
+        font-size: 20px;
+    }
+    .mustardTable td{
+        padding: 10px;
+        padding-left: 30px;
+    }
+    .mustardTable td ol{
+        list-style-type: lower-alpha;
+    }
+    .mustardTable td ol li span{
+        color: rgb(120, 125, 59);
+        font-size: 18px;
+    }
+    .mustardTable td ul{
+        padding-left: 3%;
+    }
+    .mustardTable td ol ul{
+        padding-left: 3%;
+    }
+
+</style>
+</head>
+
+<body>
+    <div>
+        <h1>The Bid Evaluation Process</h1>
+        <p>The objective of the bid evaluation process is to evaluate all bidders&apos; proposals in an open, fair, transparent and defensible manner. With the help of a procurement specialist, you will establish a bid evaluation team and develop a bid evaluation plan.</p>
+
+        <!-- TITRE 1 -->
+        <div class="titleBox">
+            <h2>Bid Evaluation Team</h2>
+        </div>
+        <p>You should establish your team early in the procurement process. Teams are usually composed of a minimum of three people who are able to:</p>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-9">
+                <ul>
+                    <li>assist in developing the bid evaluation criteria and evaluation plan</li>
+                    <li>evaluate the bids</li>
+                    <li>assist in debriefing unsuccessful bidders</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <img src="jobaids_images/group.png" width="75%" />
+            </div>
+        </div>
+
+        <!-- TITRE 2 -->
+        <div class="titleBox">
+            <h2>Bid Evaluation Plan</h2>
+        </div>
+        <p>The bid evaluation plan is composed of four elements.</p>
+        <table class="mustardTable">
+            <tr>
+                <th><b>1.</b> Establishing a Bid Evaluation Method</th>
+            </tr>
+            <tr>
+                <td class="orderedMustardList">
+                    <ol>
+                        <li><span>Mandatory Criteria Only:</span> The bid must meet all the mandatory criteria specified in the bid solicitation document. This allows your evaluation team to screen out bidders who do not have the minimum necessary competence, experience and capability to undertake the work. The mandatory criteria are written in such a way that the evaluation requires a simple &quot;yes/no&quot; or &quot;met/not met&quot; response.</li>
+                        <li><span>Point-Rated Criteria Only:</span> The bid is scored on how it meets the demonstrated merit criteria; in some cases, the bid must obtain a minimum score on the point-rated criteria to be considered. For example, the evaluation team could award points to bidders with specific professional qualifications or certifications or award points to bidders for their years of experience in a field that exceed the mandatory minimum.</li>
+                        <li><span>Combination of Mandatory and Point-Rated Criteria:</span> The bid must meet all the specified mandatory criteria. Point-rated criteria are used to calculate lowest cost per point, highest technical rating or a combination of highest technical rating and lowest price. The point-rated criteria can also be used to obtain a minimum required score per criterion or an overall passing score.</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+        <table class="mustardTable">
+            <tr>
+                <th><b>2.</b>Establishing a Point Rating System</th>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <div class="row">
+                            <div class="col-10">
+                                <li><span>Create the bid evaluation criteria table:</span> The purpose of the table, which is to be included in the bid solicitation document, is to identify the main evaluation criteria, the related sub-criteria, the rating values assigned to each of the criterion, and the proposed contractor selection method.</li>
+                            </div>
+                            <div class="col-2">
+                                <img src="jobaids_images/clipboard.png" width="50%" />
+                            </div>
+                            <div class="col-12">
+                                <li><span>Assign rating values to evaluation criteria:</span> Rating values are used to assess the competence of the bidder and their technical approach. Higher values are assigned to areas of greater importance that are deemed to be critical to the success of the project. Here are a few guiding principles:</li>
+                                <ul>
+                                    <li>The bid solicitation document must indicate the maximum points that can be scored for each criterion.</li>
+                                    <li>It is recommended that bid proposals achieve either a minimum score for selected evaluation criteria or a minimum overall score (for example, no lower than 75% on individual evaluation criterion or an overall pass mark of 75%).</li>
+                                    <li>To the extent possible, favour objective evaluation criteria that can be quantified (for example, years of experience, number of projects completed, offices in a country or region, and academic qualifications).</li>
+                                    <li>A subjective point rating system is allowed when objective evaluation criteria cannot be used. However, it should be used sparingly and not for heavily weighted factors (for example, evaluating the quality of a graphic design portfolio).</li>
+                                    <li>There may be some overlap among factors that leads to the possibility of double accounting. You should mitigate this risk when assigning points. For example, when accounting for years of experience, if there are mandatory point-rated criteria for the minimum years of work experience in a certain field, you would only award points for the number of years that exceed the mandatory minimum.</li>
+                                    <li>You may make no changes to the number of points assigned to the bid evaluation criteria scoring system after bid closing. If changes are deemed necessary, bids must be resolicited.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+        <table class="mustardTable">
+            <tr>
+                <th><b>3.</b>Choosing a Contractor Selection Method</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>The most common contractor selection methods are:</p>
+                    <div class="row">
+                        <div class="col-10">
+                            <ul>
+                                <li>the lowest-priced bid</li>
+                                <li>the lowest cost-per-point bid</li>
+                                <li>the bid having the highest combined rating of technical merit and price</li>
+                                <li>the bid having the highest technical rating within a stipulated maximum financial budget</li>
+                                <li>some variation of the above-mentioned methods</li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <img src="jobaids_images/checkmark.png" width="50%" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="mustardTable">
+            <tr>
+                <th><b>4.</b>Developing a Detailed Bid Scoring Grid </th>
+            </tr>
+            <tr>
+                <td>
+                    <p>A bid scoring grid must be established as part of the solicitation document. The grid describes the breakdown for:</p>
+                    <ul>
+                        <li>the assignment of points</li>
+                        <li>the minimum pass mark for each category</li>
+                        <li>the overall pass mark</li>
+                        <li>notes or justifications for scores given</li>
+                    </ul>
+                    <p>If a bid fails a mandatory requirement or fails to meet the minimum point-rated score, it must be rejected and not proceed to the contractor selection stage.</p>
+                </td>
+            </tr>
+        </table>
+
+        <!-- TITRE 3 -->
+        <div class="titleBox">
+            <h2>Bid Evaluation</h2>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <img src="jobaids_images/diploma.png" width="50%" style="margin-left: 30%;" />
+            </div>
+            <div class="col-10">
+                <p>Once bidding closes, each member of the bid evaluation team, including you, will independently evaluate the bids against the established criteria using the detailed bid scoring grid and applying the selection method that was determined earlier. This will include evaluating any Indigenous benefits criteria that form part of the bid under an Indigenous Benefits Plan, if applicable (for example, under the Nunavut Directive or under some modern treaties/comprehensive land claim agreements [CLCAs].)</p>
+            </div>
+        </div>
+        <p>After the individual review, the evaluation team will get together to do their formal collective assessment of the proposals in a consensus meeting. Where applicable, proposals will first be evaluated against the list of mandatory requirements specified in the bid solicitation document. Proposals not meeting the mandatory requirements will be declared "Non-responsive" and given no further consideration.</p>
+        <p>All remaining proposals shall then be evaluated against point-rated requirements according to the approved evaluation criteria. A final evaluation summary is prepared and signed-off on by each member of the evaluation team and submitted to the procurement specialist.</p>
+        <p>The procurement specialist will then complete the financial evaluation of the bids and conduct any negotiations necessary on your behalf by applying the selection method. They will also do certain verifications, including ensuring that the bidder possesses the security-clearance level that you identified in the requirement.</p>
+
+        <!-- TITRE 4 -->
+        <div class="titleBox">
+            <h2>Bidder Debriefings</h2>
+        </div>
+        <p>You should debrief unsuccessful bidders on request and normally include an outline of the factors and criteria used in the evaluation. Only provide information on the evaluation of their bid and the score they received, and identify areas where they have opportunities to improve for next time. Do not share the proposal information of any other bidder.</p>
+        <p>For more information on evaluations, consult the <a href="https://www.gcpedia.gc.ca/gcwiki/images/8/8f/Bid_Evaluation_Guide_d%27%C3%A9valuation_des_soumissions_EN_Sept_2014.pdf" target="_blank" alt="Link to the Basic Guide for Bid Evaluation Process">Basic Guide for Bid Evaluation Process</a>, the <a href="http://gcintranet.tpsgc-pwgsc.gc.ca/acquisitions/text/bdvlvlpr-e.html#procedures" target="_blank" alt="Link to Basic Guidelines for Bid Evaluation Process Contractor Selection Methods">Basic Guidelines for Bid Evaluation Process Contractor Selection Methods</a> and <a href="https://buyandsell.gc.ca/for-government/resources-for-government" target="_blank" alt="Link to Resources for Government">Resources for Government</a>.</p>
+
+    <div class="row">
+        <div class="col-3">
+            <img src="jobaids_images/Canada.png" width="100%"/>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3">
+            <img src="jobaids_images/CSPS.png" width="100%"/>
+        </div>
+    </div>
+</body>
+</html>

@@ -597,7 +597,7 @@ img {
 }
 
 .manageSection .inside {
-  background-color: #98A0AA;
+  background-color: #536173;
 }
 
 .reportSection .inside {

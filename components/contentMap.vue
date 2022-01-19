@@ -363,7 +363,7 @@ contentMap.closed h2.colorBar1, contentMap.closed h2.colorBar2, contentMap.close
     color: white;
   }
   .color4.highlighted{
-     background-color: #587C84;
+     background-color: #536173;
     color: white;
   }
   .color1 h2, .color2 h2, .color3 h2, .color4 h2{

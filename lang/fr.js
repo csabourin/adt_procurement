@@ -189,8 +189,8 @@ export default {
   },
   
   SOWSOR:{
-    line1: "EDT,",
-    line2: "EDB",
+    line1: "EDT, EDB,",
+    line2: "descriptions",
     name: "Énoncé des travaux, énoncé des besoins et descriptions ",
     download: "Télécharger l'Énoncé des travaux, énoncé des besoins et descriptions ",
     filename: "Jobaid_SOW_SOR.pdf",

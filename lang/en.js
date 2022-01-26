@@ -194,8 +194,8 @@ export default {
   },
   
   SOWSOR:{
-    line1: "SOR,",
-    line2: "SOW",
+    line1: "SOR, SOW,",
+    line2: "Descriptions",
     name: "Statements of Work, Statements of Requirement and Descriptions ",
     download: "Download the Statements of Work, Statements of Requirement and Descriptions ",
     filename: "Jobaid_SOW_SOR.pdf",

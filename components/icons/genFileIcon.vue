@@ -61,7 +61,7 @@ export default {
 
 .icon4,
 .icon9 {
-  font-size: 22px;
+  font-size: 17px;
 }
 
 .icon4,
@@ -71,7 +71,7 @@ export default {
 }
 
 .icon5 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .icon6 {

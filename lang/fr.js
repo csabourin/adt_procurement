@@ -87,7 +87,7 @@ export default {
     line2: "d’approv.",
     name: "Instruments d’approvisionnement les plus couramment utilisés ",
     download: "Télécharger un modèle Word des Instruments d’approvisionnement les plus couramment utilisés  ",
-    filename: "Jobaid_ProcurementInstruments.pdf",
+    filename: "Jobaid_InstrumentsApprov.pdf",
     HTMLFilename: "Jobaid_ProcurementInstruments.html"
   },
   WhatNotToDo:{
@@ -95,7 +95,7 @@ export default {
     line2: "pas faire ",
     name: "À ne pas faire ",
     download: "Télécharger un modèle Word de À ne pas faire",
-    filename: "Jobaid_WhatNotToDo.pdf",
+    filename: "Jobaid_ANePasFaire.pdf",
     HTMLFilename: "Jobaid_WhatNotToDo.html"
   },
   ProcureProcess:{
@@ -103,7 +103,7 @@ export default {
     line2: "d’approv.",
     name: "Processus d’approvisionnement ",
     download: "Télécharger un modèle Word du Processus d’approvisionnement ",
-    filename: "Jobaid_WhatNotToDo.pdf",
+    filename: "Jobaid_ProcessusApprov.pdf",
     HTMLFilename: "Jobaid_ProcurementProcess.html"
   },
   BidEval:{
@@ -111,7 +111,7 @@ export default {
     line2: "soumissions",
     name: "Processus d’évaluation des soumissions ",
     download: "Télécharger un modèle Word du Processus d’évaluation des soumissions",
-    filename: "Jobaid_BidEvaluationTeam.pdf",
+    filename: "Jobaid_ProcessusEvaluationSoumissions.pdf",
     HTMLFilename: "Jobaid_BidEvaluationTeam.html"
   },
   Oversight:{
@@ -119,7 +119,7 @@ export default {
     line2: "",
     name: "Surveillance ",
     download: "Télécharger un modèle Word de Surveillance",
-    filename: "Jobaid_Oversight.pdf",
+    filename: "Jobaid_ProcessusSurveillance.pdf",
     HTMLFilename: "Jobaid_Oversight.html"
   },
   LegalFrame:{
@@ -127,7 +127,7 @@ export default {
     line2: "juridique",
     name: "Cadre juridique ",
     download: "Télécharger un modèle Word du Cadre juridique",
-    filename: "Jobaid_LegalFramework.pdf",
+    filename: "Jobaid_CadreJuridique.pdf",
     HTMLFilename: "Jobaid_LegalFramework.html"
   },
   WPTemplate:{
@@ -142,7 +142,7 @@ export default {
     line2: "des travaux",
     name: "Énoncé des travaux",
     download: "Télécharger un modèle Word de l'énoncé des travaux",
-    filename: "Jobaid_SOW.pdf"
+    filename: "Jobaid_EDT.pdf"
   },
   
   WPLastYear:{
@@ -193,7 +193,7 @@ export default {
     line2: "descriptions",
     name: "Énoncé des travaux, énoncé des besoins et descriptions ",
     download: "Télécharger l'Énoncé des travaux, énoncé des besoins et descriptions ",
-    filename: "Jobaid_SOW_SOR.pdf",
+    filename: "Jobaid_EDT_EDB.pdf",
     HTMLFilename: "Jobaid_SOW_SOR.html"
   },
   

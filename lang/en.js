@@ -80,11 +80,12 @@ export default {
   
   // -------- Text for icons --------
   ComProcDoc:{
-    line1: "Commonly Used ",
-    line2: "Procurement Instruments",
+    line1: "Procurement",
+    line2: "Instruments",
     name: "Commonly Used Procurement Instruments",
     download: "Download the Commonly Used Procurement Instruments",
-    filename: "ComProcDoc.docx",
+    filename: "Jobaid_ProcurementInstruments.pdf",
+    HTMLFilename: "Jobaid_ProcurementInstruments.html"
   },
  
   WhatNotToDo:{
@@ -92,56 +93,61 @@ export default {
     line2: "To Do",
     name: "What Not To Do",
     download: "Download a Word template of What not to do",
-    filename: "WhatNotToDo.docx",
+    filename: "Jobaid_WhatNotToDo.pdf",
+    HTMLFilename: "Jobaid_WhatNotToDo.html"
   },
   ProcureProcess:{
     line1: "Procurement",
     line2: "Process",
     name: "Procurement Process ",
     download: "Download a Word template of Procurement Process",
-    filename: "ProcureProcess.docx",
+    filename: "Jobaid_ProcurementProcess.pdf",
+    HTMLFilename: "Jobaid_ProcurementProcess.html"
   },
   Oversight:{
     line1: "Oversight",
     line2: "",
     name: "Oversight",
     download: "Download a Word template of Oversight",
-    filename: "Oversight.docx",
+    filename: "Jobaid_Oversight.pdf",
+    HTMLFilename: "Jobaid_Oversight.html"
   },
   BidEval:{
     line1: "Bid Evaluation",
     line2: "Process",
     name: "Bid Evaluation Process ",
     download: "Download a Word template of Bid Evaluation Process ",
-    filename: "BidEval.docx",
+    filename: "Jobaid_BidEvaluationTeam.pdf",
+    HTMLFilename: "Jobaid_BidEvaluationTeam.html"
   },
   LegalFrame:{
     line1: "Legal",
     line2: "Framework",
     name: "Legal Framework",
     download: "Download a Word template of Legal Framework ",
-    filename: "LegalFrame.docx",
+    filename: "Jobaid_LegalFramework.pdf",
+    HTMLFilename: "Jobaid_LegalFramework.html"
   },
   WPTemplate:{
     line1: "Work Plan",
     line2: "Template",
     name: "Work Plan Template",
     download: "Download a Word template of the work plan",
-    filename: "WorkPlan_Template.docx",
+    filename: "WorkPlan_Template.docx"
   },
   delegofspending:{
     line1: " Delegation of Spending",
     line2: "and Financial Authority Chart",
     name: "Delegation of Spending and Financial Authority Chart",
     download: "Download a Word template of the work plan",
-    filename: "delegchart.html",
+    filename: "delegchart.html"
   },
   statementofwork:{
-    line1: " Statements",
-    line2: "of work",
+    line1: "SOW",
+    line2: "",
     name: "Statement of Work ",
     download: "Download a Word template of statement of work",
-    filename: "StatementofWorkExample.docx",
+    filename: "Jobaid_SOW.pdf"
   },
   
   WPLastYear:{
@@ -188,11 +194,12 @@ export default {
   },
   
   SOWSOR:{
-    line1: "Statements of Work, Statements",
-    line2: "of Requirement and Descriptions",
+    line1: "SOR,",
+    line2: "SOW",
     name: "Statements of Work, Statements of Requirement and Descriptions ",
     download: "Download the Statements of Work, Statements of Requirement and Descriptions ",
-    filename: "SOWSOR.docx"
+    filename: "Jobaid_SOW_SOR.pdf",
+    HTMLFilename: "Jobaid_SOW_SOR.html"
   },
   
   procurementInstruments:{

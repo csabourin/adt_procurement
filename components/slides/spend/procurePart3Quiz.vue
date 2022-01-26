@@ -16,8 +16,8 @@
           </b-tab>
           <b-tab title="Question 4">
             <b-row>
-              <b-col xl="7" lg="6" style="border: 1px solid #212529;"><SalesInvoice /></b-col>
               <b-col><radioQuiz :question="$t('q4')" qId="4" /></b-col>
+              <b-col xl="12" lg="12" style="border: 1px solid #212529;"><SalesInvoice /></b-col>
             </b-row>
           </b-tab>
           <b-tab title="Question 5">
@@ -121,7 +121,7 @@ export default {
   "conclusion": "When inadequate or deficient work has been discovered, the procurement specialist must notify the contractor in writing of the deficiencies."
   },
   "q4": {
-  "text": "You ordered and received 5 polk-a-dot highlighters and 20 pairs of rose-coloured glasses from XYZ Enterprises. Based on the invoice provided, would you pay the invoice?",
+  "text": "You ordered and received 5 polk-a-dot highlighters and 20 pairs of rose-coloured glasses from XYZ Enterprises. Based on the invoice provided below, would you pay the invoice?",
   "options": {
   "1": "Yes",
   "2": "No"
@@ -210,7 +210,7 @@ export default {
   "conclusion": "Lorsque des travaux inadéquats ou déficients sont découverts, le spécialiste en approvisionnement en avise l’entrepreneur par écrit."
   },
   "q4": {
-  "text": "Vous avez commandé et reçu 5 surligneurs à pois et 20 paires de lunettes roses d’Entreprise XYZ. Vous avez reçu la facture ci-dessus. Devriez-vous la payer?",
+  "text": "Vous avez commandé et reçu 5 surligneurs à pois et 20 paires de lunettes roses d’Entreprise XYZ. Vous avez reçu la facture ci-dessous. Devriez-vous la payer?",
   "options": {
   "1": "Oui",
   "2": "Non"

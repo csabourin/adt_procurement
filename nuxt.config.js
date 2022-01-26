@@ -1,5 +1,6 @@
 export default {
-  // rootDir : './',
+  rootDir : './',
+  srcDir : './',
   ssr: false,
   /*
    ** Headers of the page
@@ -58,7 +59,7 @@ export default {
     '@nuxtjs/axios',
     ['nuxt-i18n', {
   strategy: 'prefix',
-  defaultLocale: 'fr'
+  defaultLocale: 'en'
 }],
     ['vue-scrollto/nuxt', {container: "#scrollDiv",
      duration: 750,

@@ -147,7 +147,7 @@ export default {
     line2: "",
     name: "Statement of Work ",
     download: "Download a Word template of statement of work",
-    filename: "Jobaid_SOW.pdf"
+    filename: "Jobaid_SOW.docx"
   },
   
   WPLastYear:{

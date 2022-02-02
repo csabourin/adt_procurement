@@ -142,7 +142,7 @@ export default {
     line2: "des travaux",
     name: "Énoncé des travaux",
     download: "Télécharger un modèle Word de l'énoncé des travaux",
-    filename: "Jobaid_EDT.pdf"
+    filename: "Jobaid_EDT.docx"
   },
   
   WPLastYear:{

@@ -62,7 +62,7 @@ export default {
     '@nuxtjs/axios',
     ['nuxt-i18n', {
   strategy: 'prefix',
-  defaultLocale: 'fr'
+  defaultLocale: 'en'
 }],
     ['vue-scrollto/nuxt', {container: "#scrollDiv",
      duration: 750,
@@ -86,6 +86,7 @@ export default {
    */
   axios: {},
   i18n: {
+    detectBrowserLanguage: false,
     strategy: 'prefix',
        useCookie: true,
     // Cookie name
@@ -108,8 +109,8 @@ export default {
     lazy: true,
     loadedLanguages :['en','fr'],
     langDir: 'lang/',
-    defaultLocale: 'fr',
-    fallbackLocale: 'fr',
+    defaultLocale: 'en',
+    fallbackLocale: 'en',
     fallbackRoot: true,
     silentTranslationWarn: true,
     silentFallbackWarn: true

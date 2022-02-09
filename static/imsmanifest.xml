@@ -6,14 +6,14 @@
           xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
                               http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
                               http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
-   <organizations default="ORGE441F">
+   <organizations default="ADTM5">
 
-      <organization identifier="ORGE441F">
+      <organization identifier="ADTM5">
 
-         <title>Authority Delegation Training: Practising Responsible Procurement</title>
+         <title>Formation sur la délégation de pouvoirs : Pratiquer l'approvisionnement responsable</title>
 
          <item identifier="E441F_I01" identifierref="RE441F_S01"  isvisible="true">
-            <title>Authority Delegation Training: Practising Responsible Procurement</title>
+            <title>Formation sur la délégation de pouvoirs : Pratiquer l'approvisionnement responsable</title>
             <metadata>
                <schema>ADL SCORM</schema>
                <schemaversion>1.2</schemaversion>

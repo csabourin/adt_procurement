@@ -46,8 +46,7 @@ export default {
    */
   plugins: [
   '~/plugins/SCORM_API_wrapper.js',
-  '~/plugins/fontawesome.js',
-   { src: '~plugins/ga.js', mode: 'client' }],
+  '~/plugins/fontawesome.js'],
   /*
    ** Nuxt.js dev-modules
    */

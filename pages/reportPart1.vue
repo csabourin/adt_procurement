@@ -115,16 +115,23 @@
                       </span>
                       <span v-if="$i18n.locale=='fr'">
                         <h2>1. Introduction</h2>
-                        <p>Dans cette section, vous découvrirez les activités d’établissement de rapport sur l’approvisionnement. Vous apprendrez quels sont</p>
+                        <p>[Sur un fond brun avec des lignes blanches ondulées, le titre « Module 8 : Rapports » s’affiche. Une boîte de texte indique : « 1. Introduction ».]</p>
+                        <p>Narratrice : Dans cette section, vous découvrirez les activités d’établissement de rapport sur l’approvisionnement.</p>
+                        <p>[Une liste à puces s’affiche pendant que la narratrice parle.]</p>
+                        <p>Vous apprendrez quels sont</p>
                         <ul>
                           <li>les pratiques d’approvisionnement inappropriées,  </li>
                           <li>les mécanismes de plainte  </li>
                           <li>et les exigences en matière de production de rapports.  </li>
                         </ul>
+                      <p>[Un dessin fait de lignes blanches prend forme à côté de chaque puce. Une loupe devant une feuille, un voyant d’alarme clignotant et une liste de vérification.]</p>
                        <p>Il vous faudra environ 20 minutes pour effectuer cette section. </p>
+                       <p>[Le tiers d’une horloge est rempli.]</p>
                         <hr>
                         <h2>2. Pratiques inappropriées</h2>
+                        <p>[Une boîte de texte indique : « 2. Pratiques inappropriées ». La loupe devant la feuille se dessine de nouveau.]</p>
                         <p>Avant de passer aux activités d’établissement de rapports, examinons certaines des pratiques d’approvisionnement inappropriées que les gestionnaires doivent éviter s’ils veulent respecter les différentes lois, réglementations et politiques qui s’appliquent à l’approvisionnement. Ces pratiques comprennent :</p>
+                        <p>[Un dessin de trois personnes s’affiche à gauche de l’écran. Une liste apparaît à droite pendant que la narratrice parle.]</p>
                         <ul>
                           <li>l'attribution d’un contrat sans autorisation écrite ou par autorisation verbale,  </li>
                           <li>l’attribution d’un contrat sans les pouvoirs nécessaires, </li>
@@ -136,12 +143,20 @@
                           <li>l'utilisation inappropriée de contrats en cas d’urgence  </li>
                           <li>et les énoncés des travaux ou les critères d’évaluation inappropriés  </li>
                         </ul>
-                        <p>L’activité suivante vous aidera à déterminer ce qu’il ne faut pas faire. Pour les définitions, voir l’outil de travail Ce qu’il ne faut pas faire dans la boîte à outils.</p>
+                        <p>L’exercice suivant vous aidera à déterminer ce qu’il ne faut pas faire. Pour les définitions, voir l’outil de travail Ce qu’il ne faut pas faire dans la boîte à outils.</p>
+                        <p>[Une boîte à outils se dessine au centre de l’écran.]</p>
+                        
                         <hr>
                         <h2>3. Mécanismes de traitement des plaintes</h2>
+                        <p>[Une boîte de texte qui indique : « 3. Mécanismes de traitement des plaintes ».]</p>
                         <p>Vous avez appris ce que vous pouvez faire ou non relativement aux décisions et aux mesures à prendre dans le processus d’approvisionnement, mais qu’arrive-t-il si vous ne respectez pas ces règles? Quelles seront les conséquences?  </p>
-                        <p>Il existe différents niveaux d’autorités responsables de la surveillance de l’approvisionnement au sein de la fonction publique fédérale pour s’assurer que les règles sont respectées. Les autorités peuvent être internes aux organisations ou externes à celles-ci. Par exemple, plusieurs ministères pourraient avoir des conseillers en éthique ou des directions de la conformité et de la surveillance, ainsi que des comités de gouvernance interministériels. Ces autorités peuvent contribuer à la résolution des problèmes en interne avant qu’un processus officiel de transmission aux échelons supérieurs ne soit nécessaire.    </p>
+                        <p>[Deux cercles se dessinent, celui de gauche contient un crochet, et celui de droite contient un « X » . Le mot « Autorités » s’affiche en dessous d’un volant d’alarme clignotant.]</p>
+                        <p>Il existe différents niveaux d’autorités responsables de la surveillance de l’approvisionnement au sein de la fonction publique fédérale pour s’assurer que les règles sont respectées. Les autorités peuvent être internes aux organisations ou externes à celles-ci. Par exemple, plusieurs ministères pourraient avoir des conseillers en éthique ou des directions de la conformité et de la surveillance, ainsi que des comités de gouvernance interministériels.</p>
+                        <p>[Six personnes forment une ligne. Au-dessus d’elles, une flèche pointe vers le haut.]</p>
+                        <p>Ces autorités peuvent contribuer à la résolution des problèmes en interne avant qu’un processus officiel de transmission aux échelons supérieurs ne soit nécessaire.    </p>
+                        <p>[Trois rangées de personnes forment une pyramide. Six sont à la base, trois sont au milieu et une personne est au sommet de la pyramide.]</p>
                         <p>Les autorités responsables de la surveillance de l’approvisionnement dans la fonction publique fédérale comprennent :</p>
+                        <p>[Une liste apparaît à côté de la silhouette dessinée d’une femme.]</p>
                         <ul>
                           <li>le Bureau de l’ombudsman de l’approvisionnement,</li>
                           <li>le Tribunal canadien du commerce extérieur,   </li>
@@ -151,10 +166,17 @@
                           <li>et les Comités d’examen permanents.</li>
                         </ul>
                         <p>Leurs rôles varient selon la nature et les montants de l’approvisionnement. Vous voulez en savoir plus sur ces organisations? Pourquoi ne pas consulter l’outil de travail sur la surveillance dans la boîte à outils? </p>
+                        <p>[La boîte à outils s’affiche de nouveau.]</p>
+                        
                         <hr>
                         <h2>4. Exigences en matière de rapports</h2>
-                        <p>Saviez-vous que les ministères, les organismes et d’autres organisations sont chargés de rendre disponibles divers rapports sur les activités de passation de contrats pour le grand public ou pour une utilisation au sein du gouvernement? C’est pourquoi la tenue de registres est si importante et que les données figurant sur les contrats doivent être exactes.   </p>
+                        <p>[Une boîte de texte indique : « 4. Exigences en matière de rapports ».]</p>
+                        <p>Saviez-vous que les ministères, les organismes et d’autres organisations sont chargés de rendre disponibles divers rapports sur les activités de passation de contrats pour le grand public ou pour une utilisation au sein du gouvernement?</p>
+                        <p>[Trois énoncés apparaissent, chacun en dessous d’une image. Un bâtiment avec de grosses colonnes est appelé « Ministères », un édifice est appelé « Organismes » et un paysage urbain porte la mention « Autres organisations ».]</p>
+                        <p>C’est pourquoi la tenue de registres est si importante et que les données figurant sur les contrats doivent être exactes.   </p>
+                        <p>[Une main coche des éléments sur une page et l’un des tiroirs d’un classeur est ouvert.]</p>
                         <p>Voici une liste de rapports pour lesquels vous pourriez avoir à fournir des données :  </p>
+                        <p>[Une liste s’affiche sur une planchette à pince pendant que la narratrice parle.]</p>
                         <ul>
                           <li>la divulgation proactive des contrats,</li>
                           <li>les contrats conclus avec d’anciens fonctionnaires,  </li>
@@ -166,17 +188,28 @@
                           <li>les rapports de vérification interne </li>
                           <li>et l’accès à l’information et la protection des renseignements personnels.  </li>
                         </ul>
-                        <p>Toutefois, les renseignements sur les contrats ne sont pas seulement utilisés dans les rapports. Ils sont aussi utilisés pour la divulgation proactive, qui est publiée sur le portail du gouvernement ouvert, selon les besoins juridiques, politiques, organisationnels et parlementaires.  </p>
-                        <p>Par exemple, les attributions et les modifications de vos contrats sont mises à la disposition du public, en vertu de la divulgation proactive des contrats, lorsque leur valeur est supérieure à 10 000 $. Elles sont publiées sur le portail du gouvernement ouvert, rendant ainsi les responsables du gouvernement et les services publics redevables devant les Canadiens.   </p>
-                        <p>Ce rapport est normalement effectué par le spécialiste en approvisionnement ou l’agent de négociation des contrats. Bien que vous n’en soyez pas le responsable, il est important que vous soyez au courant de ces exigences.  </p>
-                        <p>Mais ne vous en faites pas, car vous ne serez pas seul pour accomplir ces tâches liées à la production de ces rapports et à la divulgation proactive. Pour rassembler les renseignements requis, vous pourrez généralement travailler avec votre personnel administratif ou l’équipe de l’approvisionnement de votre organisation. </p>
+                        <p>Toutefois, les renseignements sur les contrats ne sont pas seulement utilisés dans les rapports.</p>
+                        <p>[Un dessin d’un navigateur Internet montre la page Web « Gouvernement ouvert » du site du gouvernement du Canada. Un espace sert à effectuer une recherche de données et d’informations. Les autres sections de la page sont intitulées « Divulgation proactive » et « Accès à l’information ».]</p>
+                        <p>Ils sont aussi utilisés pour la divulgation proactive, qui est publiée sur le portail du gouvernement ouvert, selon les besoins juridiques, politiques, organisationnels et parlementaires.  </p>
+                        <p>Par exemple, les attributions et les modifications de vos contrats sont mises à la disposition du public, en vertu de la divulgation proactive des contrats, lorsque leur valeur est supérieure à 10 000 $.</p>
+                        <p>[Deux dessins d’un crayon signant un contrat s’affichent. En dessous du premier, il est écrit « Attribution du contrat » et, en dessous du second, « Modification du contrat ». Une flèche pointe des dessins vers une feuille d’érable et une autre flèche pointe de la feuille vers une pile de pièces de monnaie sous laquelle il est écrit « Supérieure à 10 000 $ ».]</p>
+                        <p>Elles sont publiées sur le portail du gouvernement ouvert, rendant ainsi les responsables du gouvernement et les services publics redevables devant les Canadiens.   </p>
+                        <p>Ce rapport est normalement effectué par le spécialiste en approvisionnement ou l’agent de négociation des contrats.</p>
+                        <p>[Deux personnes sont dessinées : un « spécialiste en approvisionnement » et une « agente de négociation ».]</p>
+                        <p>Bien que vous n’en soyez pas le responsable, il est important que vous soyez au courant de ces exigences.  </p>
+                        <p>Mais ne vous en faites pas, car vous ne serez pas seul pour accomplir ces tâches liées à la production de ces rapports et à la divulgation proactive.</p>
+                        <p>[Quatre personnes sont assises autour d’une table de réunion.]</p>
+                        <p>Pour rassembler les renseignements requis, vous pourrez généralement travailler avec votre personnel administratif ou l’équipe de l’approvisionnement de votre organisation. </p>
                         <hr>
                         <h2>5. Dans la vraie vie </h2>
+                        <p>[Une boîte de texte indique : « 5. Dans la vraie vie ». Deux personnes discutent. L’une d’entre elles a une bulle de dialogue avec un point d’interrogation.]</p>
                         <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez une pause durant le cours pour voir quels mécanismes de plainte sont utilisés par votre organisation et quels rapports devront être soutenus. </p>
                         <hr>
                         <h2>6. Quiz </h2>
+                        <p>[Une boîte de texte indique : « 6. Quiz ». Les dessins de la loupe devant la feuille, du voyant d’alarme clignotant et de la liste de vérification s’affichent.]</p>
                         <p>Maintenant que vous en savez plus sur les pratiques d’approvisionnement inappropriées, les mécanismes de traitement des plaintes et les exigences en matière de rapports, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
+                        <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille.]</p>
                         <h2>7. Section complétée</h2>
                       </span>
                     </b-card-text>

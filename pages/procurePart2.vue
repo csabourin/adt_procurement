@@ -121,19 +121,24 @@
                       <span v-if="$i18n.locale=='fr'">
 
                         <h2>1. Introduction</h2>
-                        <p>Dans la présente section, vous apprendrez </p>
+                        <p>[Sur un fond mauve avec des lignes blanches ondulées, le titre « Module 5 : Solliciter, évaluer, approuver et accorder des contrats concurrentiels » s’affiche. Une boîte de texte indique : « 1. Introduction ».]</p>
+                        <p>Narratrice : Dans la présente section, vous apprendrez </p>
                         <ul>
                           <li>à lancer le processus de demande de soumissions, </li>
                           <li>à évaluer les offres et à négocier  </li>
                           <li>ainsi qu’à approuver et à accorder des contrats concurrentiels. </li>
                         </ul>
+                        <p>[Les énoncés prononcés par la narratrice s’affichent à l’écran pendant qu’elle parle. À leur droite, des dessins faits de lignes blanches apparaissent l’un après l’autre : une main tenant une loupe, deux personnes en réunion et une poignée de main.]</p>
                         <p>Il vous faudra environ 30 minutes pour effectuer cette section.</p>
-
+                        <p>[La moitié d’une horloge est remplie au-dessus des mots « 30 minutes ». Une boîte de texte indique : « 2. Préparer les documents de demande de soumissions ».]</p>
+                        
                         <hr>
 
                         <h2>2. Préparer les documents de demande de soumissions</h2>
                         <p>Maintenant que vous avez déterminé vos besoins, préparé votre énoncé de travail ou votre énoncé des besoins et choisi votre stratégie d’approvisionnement, quelle est la prochaine étape? </p>
+                        <p>[Les deux types d’énoncés s’affichent au-dessus de trois bulles chacun. En dessous d’« Énoncé de travail », les bulles contiennent les mots « Livrables », « Services » et « Travaux ». En dessous d’« Énoncé des besoins », les bulles contiennent les mots « Définition d’un problème », « Évaluation initiale du risque » et « Informations financières de base ».]</p>
                         <p>Le spécialiste en approvisionnement élaborera les stratégies d’acquisition nécessaires pour satisfaire aux exigences que vous avez fournies. Les réponses peuvent inclure : </p>
+                        <p>[Des flèches de différentes tailles pointent vers une cible. À côté de la silhouette d’une femme, des mots clés apparaissent à l’écran à mesure que la narratrice les prononce.]</p>
                         <ul>
                           <li>préparer les documents de demande de soumissions; </li>
                           <li>gérer le processus d’évaluation des soumissions;</li>
@@ -142,13 +147,21 @@
                           <li>négocier les ententes d’approvisionnement; </li>
                           <li>officialiser les ententes d’approvisionnement. </li>
                         </ul>
-                        <p>Mais avant de passer à l’activité… Êtes-vous curieux de voir des exemples de documents de demande de soumissions? Pourquoi ne pas visiter le site Web Achatsetventes.gc.ca! Vous y trouverez de nombreux exemples provenant de diverses organisations. Et n’oubliez pas: vous aurez un rôle à jouer pour répondre aux questions techniques des fournisseurs potentiels pendant le processus de demande.</p>
-
+                        <p>[Un encadré contient le texte suivant : « Exemples de documents de demande de soumissions ».]</p>
+                        <p>Mais avant de passer à l’activité… Êtes-vous curieux de voir des exemples de documents de demande de soumissions? Pourquoi ne pas visiter le site Web Achatsetventes.gc.ca!</p>
+                        <p>[Une main tient un téléphone intelligent. Une image d’un navigateur Internet montre la page Web « Achatsetventes ».]</p>
+                        <p>Vous y trouverez de nombreux exemples provenant de diverses organisations. Et n’oubliez pas: vous aurez un rôle à jouer pour répondre aux questions techniques des fournisseurs potentiels pendant le processus de demande.</p>
+                        <p>[Une boîte de texte indique : « 3. Évaluer et négocier ». Un document glisse dans une enveloppe qui s’envole ensuite.]</p>
+                        
                         <hr>
 
                         <h2>3. Évaluer et négocier</h2>
                         <p>Le document d’invitation à soumissionner a été préparé et distribué. C’est très bien! Passons maintenant à d’autres tâches. </p>
-                        <p>Une fois les soumissions déposées, le gestionnaire, avec l’équipe d’évaluation des offres choisie, évalue les soumissions techniques par rapport aux critères d’évaluation techniques établis. Par exemple, on pourrait examiner des propositions pour déterminer si les soumissionnaires satisfont à des critères tels que les qualifications et les années d’expérience dans le domaine de travail ou comment les offres proposées satisfont aux exigences d’accessibilité et aux normes de conception.</p>
+                        <p>[Au-dessus d’une image représentant quatre personnes en réunion, il est écrit : « Soumissions techniques par rapport aux critères d’évaluation techniques ».]</p>
+                        <p>Une fois les soumissions déposées, le gestionnaire, avec l’équipe d’évaluation des offres choisie, évalue les soumissions techniques par rapport aux critères d’évaluation techniques établis.</p>
+                        <p>[L’image glisse vers le haut de l’écran et les mots « Critères d’évaluation » s’affichent en dessous. Des mots clés apparaissent pendant que la narratrice parle.]</p>
+                        <p>Par exemple, on pourrait examiner des propositions pour déterminer si les soumissionnaires satisfont à des critères tels que les qualifications et les années d’expérience dans le domaine de travail ou comment les offres proposées satisfont aux exigences d’accessibilité et aux normes de conception.</p>
+                        <p>[La silhouette de la femme revient et d’autres mots clés s’affichent à côté d’elle à mesure que la narratrice les énumère.]</p>
                         <p>Ensuite, le spécialiste en approvisionnement </p>
                         <ul>
                           <li>vérifie que les soumissions sont complètes, </li>
@@ -157,14 +170,20 @@
                           <li>mène les négociations nécessaires au nom du gestionnaire </li>
                           <li>et applique la méthode de sélection. </li>
                         </ul>
+                        <p>[Un document intitulé « Traités modernes » se dessine.]</p>
                         <p>Pour les processus qui relèvent des traités modernes, comme les ententes sur des revendications territoriales globales, ou de la Directive sur les marchés de l’État, incluant les baux immobiliers, dans la région du Nunavut, l’évaluation des critères des avantages pour les Autochtones peut être considérée comme faisant partie des soumissions. </p>
+                        <p>[Une ampoule contenant un point d’interrogation apparaît.]</p>
                         <p>Saviez-vous que communiquer avec un fournisseur pendant un processus concurrentiel, autrement que par des réunions de soumissionnaires et des appels d’intérêt, pourrait être considéré comme du favoritisme ou comme une action créant un avantage indu? Évitez donc de communiquer avec les fournisseurs lors d’un processus concurrentiel. Renvoyez-les plutôt à l’autorité chargée du contrat!  </p>
-                        <p>L’activité qui suit vous aidera à évaluer vos connaissances de la phase d’évaluation et de négociation. </p>
+                        <p>[Sur l’écran d’un téléphone intelligent, le mot « Fournisseur » est marqué d’un X. En dessous, une flèche pointe vers les mots « Autorité chargée du contrat ».]</p>
+                        <p>L’exercice qui suit vous aidera à évaluer vos connaissances de la phase d’évaluation et de négociation. </p>
+                        <p>[Un dessin d’une boîte à outils s’affiche.]</p>
                         <p>Pour obtenir plus d’informations sur l’équipe d’évaluation des soumissions, consultez l’aide‑mémoire dans la boîte à outils. </p>
+                        <p>[Une boîte de texte indique : « 4. Approbation de contrat ».]</p>
                         <hr>
                         
                         <h2>4. Approbation de contrat</h2>
                         <p>Une fois qu’un soumissionnaire aura été choisi en fonction de sa capacité à satisfaire à l’exigence, le spécialiste en approvisionnement demandera l’approbation du contrat. Cela comprend, au besoin   </p>
+                        <p>[Cinq silhouettes se tiennent côte à côte. Une main géante soulève l’une d’entre elles, laquelle lève les bras en signe de triomphe. À côté de l’image, une liste apparaît à mesure que la narratrice en énumère les points.]</p>
                         <ul>
                           <li>l’examen du contrat par des pairs ou des services juridiques,  </li>
                           <li>une revue de l’analyse des coûts, </li>
@@ -172,23 +191,36 @@
                           <li>un examen de l’assurance qualité </li>
                           <li>et, le cas échéant, l’approbation par un comité d’examen et d’approbation des contrats, ou par le Conseil du Trésor.  </li>
                         </ul>
-                        <p>Une fois ce processus terminé, le spécialiste en approvisionnement envoie les documents du contrat à l’autorité responsable ayant le pouvoir d’exécuter une opération ou l’autorité contractante de votre organisation, puis au fournisseur. Dans bien des cas, l’agent d’approvisionnement détient le pouvoir délégué en matière de transactions ou est l’autorité contractante et signe le contrat. </p>
+                        <p>[Les mots « Signatures de contrat » s’affichent au-dessus de deux documents signés.]</p>
+                        <p>Une fois ce processus terminé, le spécialiste en approvisionnement envoie les documents du contrat à l’autorité responsable ayant le pouvoir d’exécuter une opération ou l’autorité contractante de votre organisation, puis au fournisseur.</p>
+                        <p>[Les mots « Autorité responsable ayant le pouvoir d’exécuter/autorité contractante » apparaissent en dessous du premier document signé et le mot « Fournisseur » apparaît en dessous du second.]</p>
+                        <p>Dans bien des cas, l’agent d’approvisionnement détient le pouvoir délégué en matière de transactions ou est l’autorité contractante et signe le contrat. </p>
+                        <p>[La bulle de dialogue d’un homme contient un point d’interrogation.]</p>
                         <p>Vous vous demandez qui approuvera le contrat? L’activité suivante vous aidera à reconnaître les personnes ayant le pouvoir de signer. </p>
+                        <p>[Une boîte de texte indique : « 5. Attribution du contrat ». Trois personnes serrent la main d’un homme. Un ruban de récompense se tient au-dessus d’eux.]</p>
+                        
                         <hr>
 
-                        <h2>4. Attribution du contrat</h2>
+                        <h2>5. Attribution du contrat</h2>
                         <p>Après l’approbation du contrat, le spécialiste en approvisionnement accordera le contrat. Selon la valeur de ce dernier, le spécialiste peut envoyer des lettres de refus aux soumissionnaires non retenus et afficher un avis d'attribution de contrat sur le site Achatsetventes.gc.ca/appels-d-offres de SPAC pour informer le public du soumissionnaire retenu.  </p>
+                        <p>[La page Web « Achatsetventes » s’affiche de nouveau sous les mots « Avis d’attribution de contrat ». Quatre personnes sont assises autour d’une table de réunion.]</p>
                         <p>Des séances d’information sont offertes sur demande aux soumissionnaires non retenus et devraient normalement comprendre un aperçu des facteurs et des critères utilisés dans l’évaluation. Elles sont généralement dirigées par le spécialiste en approvisionnement, tandis que vous jouez un rôle de soutien en répondant aux questions d’évaluation technique. </p>
+                        <p>[La silhouette de la femme réapparaît. À sa droite, les mots « Évaluation de son offre » et « Note à l’offre » sont accompagnés d’un crochet.]</p>
                         <p>La seule information fournie au soumissionnaire est l’évaluation de son offre et la note accordée à celle-ci. Les renseignements sur les autres soumissionnaires ne doivent pas être divulgués. </p>
+                        <p>[Les mots « Renseignements sur les autres soumissionnaires » suivis d’un X s’affichent en dessous des deux autres énoncés. Une boîte de texte indique : « 6. Dans la vraie vie ».]</p>
+                        
                         <hr>
 
                         <h2>6. Dans la vraie vie</h2>
                         <p>Appliquez ce que vous avez appris dans la vraie vie! </p>
+                        <p>[Un homme et une femme discutent. Une bulle de dialogue contenant un symbole de dollar pointe vers l’homme.]</p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment le processus de demande de soumissions fonctionne dans votre ministère. Votre organisation possède peut-être une page intranet concernant l’approvisionnement? Ou vos spécialistes en approvisionnement ont peut-être les modèles dont vous avez besoin? L’examen des documents de demande de soumissions préparés par le passé peut parfois aider. Et n’oubliez pas de consulter la boîte à outils où vous trouverez un aide-mémoire sur le processus d’approvisionnement! </p>
+                        <p>[Une boîte de texte indique : « 7. Quiz ». Trois images apparaissent côte à côte : une main tenant une loupe, deux personnes en réunion et une poignée de main.]</p>
                         <hr>
 
                         <h2>7. Quiz </h2>
                         <p>Maintenant que vous avez vu comment lancer le processus de demande de soumissions, évaluer les offres et négocier, ainsi qu’approuver et accorder des contrats concurrentiels, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
+                        <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille. L’écran devient noir.]</p>
                         <hr>
 
                         <h2>8. Section complétée</h2>

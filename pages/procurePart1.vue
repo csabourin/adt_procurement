@@ -227,7 +227,7 @@
                         <p>[Une liste de vérification remplit l’écran.]</p>
                         <p>Soyez clair sur ce dont vous avez besoin. Si vous avez de la difficulté à définir vos besoins, pourquoi ne pas vous adresser à votre spécialiste en approvisionnement pour obtenir un peu d’aide ou des modèles?</p>
                         <p>[Une main tient un téléphone intelligent.]</p>
-                        <p>Vous pouvez aussi consulter la section pour le gouvernement du site Web <a href="https://achatsetventes.gc.ca/" target="_blank" alt="Lien vers le site web d'Achatsetventes.gc.ca">Achatsetventes.gc.ca</a>, une excellente source d’information.</p>
+                        <p>Vous pouvez aussi consulter la section pour le gouvernement du site Web Achatsetventes.gc.ca, une excellente source d’information.</p>
                         <p>[La page Web « Achatsetventes » s’affiche avec le logo du gouvernement du Canada.]</p>
                         <p>Après tout, si vous demandez un véhicule à moteur, vous ne voulez pas vous retrouver avec une sous‑compacte alors que vous avez vraiment besoin d’une camionnette! </p>
                         <p>[Une voiture sous-compacte roule en dehors de l’écran avant d’être remplacée par une camionnette. Une boîte de texte indique : « 3. Besoins particuliers et autres considérations ».]</p>

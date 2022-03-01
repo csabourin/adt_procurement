@@ -189,6 +189,7 @@
                       <span v-if="$i18n.locale=='fr'">
 
                         <h2>1. Introduction</h2>
+                        <p>[Sur un fond mauve avec des lignes blanches ondulées, le titre « Module 4 : Exigences techniques et de soumission et stratégie d’approvisionnement » s’affiche. Une boîte de texte indique : « 1. Introduction ». Elle est remplacée par les mots « Dans la présente section », dans le haut de l’écran. Une liste à puces s’affiche à mesure que la narratrice en énumère les points. Des dessins faits de lignes blanches apparaissent à sa droite, notamment des boîtes de fournitures, une personne en fauteuil roulant, le symbole de recyclage et une liste de vérification.]</p>
                         <p>Dans la présente section, vous apprendrez </p>
                         <ul>
                           <li>à définir vos besoins en biens, en services et en construction,  </li>
@@ -196,12 +197,17 @@
                           <li>et à décrire ce dont vous avez besoin. </li>
                         </ul>
                         <p>Il vous faudra environ 45 minutes pour compléter cette section. </p>
+                        <p>[Les trois quarts d’une horloge sont remplis au-dessus des mots « 45 minutes ». L’image est remplacée par une boîte de texte qui indique : « 2. Définir ses besoins ».]</p>
 
                         <hr>
 
                         <h2>2. Définir ses besoins</h2>
-                        <p>Pour commencer le processus d’approvisionnement, vous devez déterminer ce dont vous avez besoin ou, pour utiliser la terminologie de l’approvisionnement, vous devez déterminer vos exigences. Personne d’autre ne peut le faire pour vous. Votre équipe connaît vos activités. Elle sait ce dont elle a besoin pour les appuyer. </p>
+                        <p>Pour commencer le processus d’approvisionnement, vous devez déterminer ce dont vous avez besoin ou, pour utiliser la terminologie de l’approvisionnement, vous devez déterminer vos exigences.</p>
+                        <p>[Les mots « Cycle d’approvisionnement » s’affichent. Six cercles entourent le texte, une flèche entre chacun d’entre eux.]</p>
+                        <p>Personne ne peut le faire pour vous puisqu’avec votre équipe, vous seules connaissez vos activités et ce dont vous avez besoin pour être bien soutenu.</p>
+                        <p>[Quatre personnes sont assises autour d’une table de réunion.]</p>
                         <p>Voici une liste de questions qui vous aideront à définir vos besoins.  </p>
+                        <p>[Une femme réfléchit. Au-dessus d’elle, des bulles de pensée apparaissent. Elles contiennent des mots clés tirés des questions ci-dessous, posées par la narratrice.]</p>
                         <ul>
                           <li>Qu’est-ce qui est requis et pourquoi est-ce nécessaire? </li>
                           <li>Le travail peut-il être divisé en tâches, en activités ou en phases? </li>
@@ -218,13 +224,23 @@
                           <li>L’accessibilité a-t-elle été prise en compte? </li>
                           <li>A-t-on recours à l’achat écologique? </li>
                         </ul>
-                        <p>Soyez clair sur ce dont vous avez besoin. Si vous avez de la difficulté à définir vos besoins, pourquoi ne pas vous adresser à votre spécialiste en approvisionnement pour obtenir un peu d’aide ou des modèles? Vous pouvez aussi consulter la section Pour le gouvernement du site Web Achatsetventes.gc.ca, une excellente source d’information. Après tout, si vous demandez un véhicule à moteur, vous ne voulez pas vous retrouver avec une sous‑compacte alors que vous avez vraiment besoin d’une camionnette! </p>
+                        <p>[Une liste de vérification remplit l’écran.]</p>
+                        <p>Soyez clair sur ce dont vous avez besoin. Si vous avez de la difficulté à définir vos besoins, pourquoi ne pas vous adresser à votre spécialiste en approvisionnement pour obtenir un peu d’aide ou des modèles?</p>
+                        <p>[Une main tient un téléphone intelligent.]</p>
+                        <p>Vous pouvez aussi consulter la section pour le gouvernement du site Web <a href="https://achatsetventes.gc.ca/" target="_blank" alt="Lien vers le site web d'Achatsetventes.gc.ca">Achatsetventes.gc.ca</a>, une excellente source d’information.</p>
+                        <p>[La page Web « Achatsetventes » s’affiche avec le logo du gouvernement du Canada.]</p>
+                        <p>Après tout, si vous demandez un véhicule à moteur, vous ne voulez pas vous retrouver avec une sous‑compacte alors que vous avez vraiment besoin d’une camionnette! </p>
+                        <p>[Une voiture sous-compacte roule en dehors de l’écran avant d’être remplacée par une camionnette. Une boîte de texte indique : « 3. Besoins particuliers et autres considérations ».]</p>
 
                         <hr>
 
                         <h2>3. Besoins particuliers et autres considérations</h2>
-                        <p>Lorsque vous définissez vos besoins en matière d’approvisionnement, pensez aux exigences particulières et aux autres considérations. Par exemple, au lieu d’acheter des chaises ordinaires, devriez-vous payer un peu plus cher pour des chaises ergonomiques et plus durables? À long terme, plus de personnes pourront les utiliser et elles n’auront pas à être remplacées aussi souvent. C’est une bonne nouvelle pour votre budget et pour l’environnement!  </p>
+                        <p>Lorsque vous définissez vos besoins en matière d’approvisionnement, pensez aux exigences particulières et aux autres considérations. Par exemple, au lieu d’acheter des chaises ordinaires, devriez-vous payer un peu plus cher pour des chaises ergonomiques et plus durables?</p>
+                        <p>[Une chaise droite se trouve à côté d’une chaise de bureau à roulettes.]</p>
+                        <p>À long terme, plus de personnes pourront les utiliser et elles n’auront pas à être remplacées aussi souvent. C’est une bonne nouvelle pour votre budget et pour l’environnement!  </p>
+                        <p>[Des pièces de monnaie apparaissent à côté du symbole de recyclage.]</p>
                         <p>Voici quelques questions pour vous aider à vous lancer : </p>
+                        <p>[Des mots clés s’affichent sur une planchette à pince à mesure que la narratrice énumère les éléments ci-dessous.]</p>
                         <ul>
                           <li>Quels sont les besoins en matière d’accessibilité ou d’ergonomie?  </li>
                           <li>Avez-vous envisagé de demander conseil à des personnes handicapées? </li>
@@ -243,13 +259,17 @@
                           <li>Le projet se poursuivra-t-il sur plusieurs exercices financiers? </li>
                         </ul>
                         <p>Si vous n’êtes pas sûr d’avoir pris en compte toutes les exigences particulières, communiquez avec votre spécialiste en approvisionnement. Il a probablement déjà vu des achats comme les vôtres et pourra vous aider à cerner vos besoins. </p>
+                        <p>[Deux personnes discutent. Une bulle de dialogue avec un point d’interrogation pointe vers l’une d’entre elles. L’image est remplacée par une boîte de texte qui indique : « 4. Décrire ce dont on a besoin ».]</p>
 
                         <hr>
 
                         <h2>4. Décrire ce dont on a besoin</h2>
                         <p>Vous avez maintenant déterminé ce dont vous avez besoin et établi vos exigences. C’est très bien!  </p>
+                        <p>[Une loupe se dessine par-dessus une liste de vérification.]</p>
                         <p>Passons maintenant à la manière dont vous devez documenter vos décisions. Tout d’abord, vous devez rédiger une description. Il existe cinq façons de procéder. Étudions-les une à une.  </p>
+                        <p>[Une liste s’affiche. Les cinq options y sont inscrites : « Norme de conception », « Spécifications fonctionnelles », « Normes de conception et spécifications fonctionnelles combinées », « Description de l’achat » et « Mesures économiques destinées aux Autochtones ». À côté de la liste, il est écrit : « Choisir parmi les cinq options ».]</p>
                         <p>Une norme de conception est une description détaillée de l’article à acheter. Elle pourrait inclure :  </p>
+                        <p>[Les mots « Norme de conception » apparaissent dans le haut de l’écran. En dessous, des images se dessinent à mesure que la narratrice passe en revue les caractéristiques de l’option, notamment : une boîte, une règle, une chaise de bureau et un cerveau dans la tête d’une personne.]</p>
                         <ul>
                           <li>des dessins ainsi que la taille et les dimensions requises;  </li>
                           <li>les matériaux et les propriétés physiques; </li>
@@ -261,10 +281,13 @@
                           <li>les normes de sécurité à atteindre; etc. </li>
 
                         </ul>
+                        <p>[Le titre suivant est : « Spécifications fonctionnelles ». Une liste de vérification s’affiche en dessous. Elle contient trois sections : production, fonctions et opérations.]</p>
                         <p>Les <strong>spécifications fonctionnelles</strong> définissent les exigences opérationnelles d’un élément ou d’une installation. En d’autres termes, elles décrivent ce que le produit final installé doit être capable de faire. Elles décrivent la production, les fonctions ou les opérations requises de l’article et de l’équipement.  </p>
-                        <p>Les <strong>spécifications fonctionnelles</strong> définissent les exigences opérationnelles d’un élément ou d’une installation. En d’autres termes, elles décrivent ce que le produit final installé doit être capable de faire. Elles décrivent la production, les fonctions ou les opérations requises de l’article et de l’équipement.  </p>
+                        <p>[Le titre d’après est : « Normes de conception et spécifications fonctionnelles combinées ». Un diagramme de Venn est présenté. Dans le cercle de gauche, il est écrit : « Normes de conception » et, dans celui de droite : « Spécifications fonctionnelles ».]</p>
+                        <p>Les <strong>normes de conception et les spécifications fonctionnelles combinées</strong> intègrent les attributs des spécifications fonctionnelles et des normes de conception.</p>
+                        <p>[Le titre suivant est : « Description de l’achat ». Des mots clés sont énumérés en dessous à mesure que la narratrice les prononce. À leur droite, des outils sont dessinés.]</p>
                         <p>La <strong>description de l’achat</strong> fournit une description brève mais exacte de la production désirée. Elle répertorie le produit selon des normes de référence nationales, internationales ou industrielles, telles qu’une clé de 10 mm, un tournevis ou un deux par quatre. </p>7
-
+                        <p>[Le dernier titre est : « Mesures économiques destinées aux Autochtones ». Il est accompagné d’un billet de banque avec deux flèches qui pointent vers le haut.]</p>
                         <p>Les mesures économiques destinées aux Autochtones accroissent les occasions économiques pour les peuples et les entreprises autochtones en augmentant les possibilités d’obtenir des contrats grâce : </p>
                         <ul>
                           <li>à la Stratégie d’approvisionnement auprès des entreprises autochtones, </li> 
@@ -272,60 +295,100 @@
                           <li>et à des mesures économiques ministérielles pour les Autochtones.  </li>
 
                         </ul>
-
+                        <p>[Pour chacune des trois options, une page du site Web du gouvernement du Canada s’affiche à l’écran. Sur le fond mauve, deux encadrés contiennent les mots : « Énoncé de travail » et « Énoncé des besoins ».]</p>
                         <p>Une fois que vous avez préparé la description, vous devez la présenter dans un énoncé de travail ou un énoncé des besoins. Voici un peu plus de renseignements sur chaque option. </p>
                         <p>Un <strong>énoncé de travail</strong> décrit le travail requis en termes clairs, concis et significatifs. Il comprend les produits livrables, les services ou les travaux nécessaires à l’exécution du contrat.  </p>
+                        <p>[Les principaux points prononcés par la narratrice sont écrits en dessous d’« Énoncé de travail ». D’autres mots clés sont écrits en dessous d’« Énoncé des besoins » à mesure que la narratrice les nomme.]</p>
                         <p>Un <strong>énoncé des besoins</strong> est une description de la nécessité sans préciser la méthode exacte à utiliser. Il comprend des informations sur la définition d’un problème qui fourniront le contexte de l’autorité approbatrice, ainsi qu’une évaluation initiale du risque et des informations financières de base concernant ce qui sera produit à la prochaine étape. </p>
+                        <p>[Les mots « Boîte à outils » s’affichent au-dessus d’« Énoncé de travail » et d’« Énoncé des besoins ». Une boîte à outils se dessine entre les deux énoncés.]</p>
                         <p>Puisque vous serez la personne qui préparera l’énoncé des travaux ou l’énoncé des besoins, jetez un œil aux aide-mémoires fournis pour vous aider dans ces étapes dans la boîte à outils à titre indicatif. </p>
+                        <p>[Une boîte de texte indique : « 5. Approvisionnement équitable et transparent ».]</p>
 
                         <hr>
 
                         <h2>5. Approvisionnement équitable et transparent</h2>
-                        <p>Saviez-vous que dans l’exercice de leurs fonctions d’approvisionnement, les gestionnaires doivent se conformer aux lois, aux règlements et aux politiques établis par le gouvernement? Cela signifie que le processus d’approvisionnement est transparent, équitable et ouvert pour les fournisseurs. Que se passe-t-il si les gestionnaires ne respectent pas ces règles? En fait, il existe différents niveaux de pouvoir pour s’assurer du respect des règles.</p>
-                        <p>Il est également important que la relation entre votre organisation et un entrepreneur demeure strictement professionnelle. Les entrepreneurs ne doivent pas être traités comme des employés, car cela serait contraire à la Loi sur l’emploi dans la fonction publique et aux principes de common law relatifs aux relations employeur-employé ou entrerait en conflit avec eux. De plus, les gestionnaires ont la responsabilité d’empêcher qu’une relation employeur-employé se développe pendant la durée du contrat. </p>
+                        <p>Saviez-vous que dans l’exercice de leurs fonctions d’approvisionnement, les gestionnaires doivent se conformer aux lois, aux règlements et aux politiques établis par le gouvernement?</p>
+                        <p>[Une femme ouvre une porte. Trois mots et trois images apparaissent à l’écran. Le mot « Lois » en dessous d’un maillet, « Règlements » en dessous de livres et « Politiques » en dessous d’une feuille et d’un crayon.]</p>
+                        <p>Cela signifie que le processus d’approvisionnement est transparent, équitable et ouvert pour les fournisseurs. Que se passe-t-il si les gestionnaires ne respectent pas ces règles? En fait, il existe différents niveaux de pouvoir pour s’assurer du respect des règles.</p>
+                        <p>[Le mot « Pouvoirs » s’affiche en dessous d’un voyant d’alarme allumé.]</p>
+                        <p>Il est également important que la relation entre votre organisation et un entrepreneur demeure strictement professionnelle.</p>
+                        <p>[Une poignée de main remplit l’écran. Un homme et une femme se tiennent à quelques mètres l’un de l’autre. Les deux ont un dossier entre les mains.]</p>
+                        <p>Les entrepreneurs ne doivent pas être traités comme des employés, car cela serait contraire à la <em>Loi sur l’emploi dans la fonction publique</em> et aux principes de common law relatifs aux relations employeur-employé ou entrerait en conflit avec eux.</p>
+                        <p>[La première page de la Loi sur l’emploi dans la fonction publique est dessinée avec le mot « Codification » et les armoiries du Canada en haut. Le côté droit de la page est en français.]</p>
+                        <p>De plus, les gestionnaires ont la responsabilité d’empêcher qu’une relation employeur-employé se développe pendant la durée du contrat. </p>
+                        <p>[Le dessin d’une boîte à outils apparaît à l’écran.]</p>
                         <p>Pour plus d’informations sur un processus d’approvisionnement transparent, ouvert et équitable, consultez l’aide-mémoire sur « Ce qu’il ne faut pas faire » ainsi que l’aide-mémoire sur le « Cadre juridique ».</p>
+                        <p>[Une boîte de texte indique : « 6. Consulter un spécialiste en approvisionnement ».]</p>
 
                         <hr>
 
                         <h2>6. Consulter un spécialiste en approvisionnement</h2>
                         <p>Bonne nouvelle! On ne s’attend pas à ce que, comme gestionnaire, vous soyez un spécialiste en approvisionnement. Votre organisation disposera de spécialistes en approvisionnement pour vous fournir des conseils et du soutien.  </p>
+                        <p>[Deux personnes discutent. Une bulle de dialogue avec un point d’interrogation pointe vers l’une d’entre elles.]</p>
                         <p>Vous êtes cependant responsable de certaines choses. </p>
                         <ul>
                           <li>Vous devez vous assurer que vous disposez des fonds nécessaires.  </li>
+                          <p>[Un homme tient de l’argent en dessous des mots « Fonds nécessaires ».]</p>
                           <li>Vous devez fournir les exigences techniques et les critères d’évaluation. </li>
+                          <p>[En dessous d’« Exigences techniques et critères d’évaluation », une main fait un crochet sur une liste.]</p>
                           <li>De plus, à la livraison, vous devez confirmer que les biens et les services sont acceptables, conformément au contrat. </li>
+                          <p>[En dessous de « Biens et services sont acceptables », un livreur serre la main d’une femme. Il tient un chariot sur lequel sont empilées des boîtes.]</p>
                         </ul>
                         <p>Alors, quand avez-vous besoin de l’aide d’un spécialiste en approvisionnement? Voici quelques-unes des recommandations générales. </p>
+                        <p>[Une personne en empoigne une autre par la main. Des mots clés apparaissent à leur gauche pendant que la narratrice parle : « Délégation individuelle insuffisante », « Délégation du ministère insuffisante », « Services publics et Approvisionnement Canada ou à Services partagés Canada » et « Approbation par le Conseil du Trésor ».]</p>
                         <ul>
                           <li>Lorsque vous n’avez pas la bonne délégation relativement aux transactions ou aux contrats.  </li>
                           <li>Lorsque votre ministère ne possède pas la délégation lui permettant de se procurer lui-même les biens ou les services. </li>
                           <li>Lorsque l’exigence revient à Services publics et Approvisionnement Canada ou à Services partagés Canada.  </li>
                           <li>Lorsque l’approvisionnement doit être approuvé par le Conseil du Trésor. </li>
                         </ul>
-                        <p>N’oubliez pas : même si vous n’êtes pas obligé de consulter votre spécialiste en approvisionnement relativement aux achats visés par le pouvoir qui vous est délégué, celui-ci est toujours là pour vous guider, répondre à vos questions et vous accompagner. Après tout, pourquoi passer des heures à effectuer des recherches et à créer des documents de toutes pièces alors que votre spécialiste en approvisionnement a des modèles pour vous! </p>
+                        <p>N’oubliez pas : même si vous n’êtes pas obligé de consulter votre spécialiste en approvisionnement relativement aux achats visés par le pouvoir qui vous est délégué, celui-ci est toujours là pour vous guider, répondre à vos questions et vous accompagner.</p>
+                        <p>[Un homme vole en tenant une mallette. Derrière lui, sa cape flotte au vent.]</p>
+                        <p>Après tout, pourquoi passer des heures à effectuer des recherches et à créer des documents de toutes pièces alors que votre spécialiste en approvisionnement a des modèles pour vous! </p>
+                        <p>[Un homme fixe son ordinateur et s’arrache les cheveux. Des livres sont empilés à côté de lui. Une boîte de texte indique : 7. Identifier les parties prenantes ».]</p>
 
                         <hr>
 
                         <h2>7. Consulter les parties prenantes</h2>
-                        <p>Selon ce que vous achetez, vous aurez peut-être besoin de consulter des parties prenantes dans les domaines de la sécurité, des technologies de l’information, des communications et de la traduction, pour n’en nommer que quelques-uns. Après tout, vous ne pouvez pas être un expert dans tous les domaines et vous ne savez pas ce que vous ne savez pas! </p>
-                        <p>En fait, dans certains cas, vous devrez absolument consulter les parties prenantes. Pour les produits essentiels comme la publicité et la recherche sur l’opinion publique, vous devez vous adresser à Services publics et Approvisionnement Canada. Dans le cas des services juridiques, chaque ministère possède ses propres avocats affectés par le ministère de la Justice. Les contrats pour la prestation de services juridiques ne peuvent être conclus que par ou sous l’autorité du ministre de la Justice. </p>
-                        <p>Les personnes handicapées devraient également pouvoir utiliser le service ou l’article fourni, quel que soit leur handicap. Consultez le réseau d’employés handicapés de votre ministère pour obtenir des conseils sur la suppression des obstacles à l’accessibilité pour l’utilisateur final.   </p>
+                        <p>Selon ce que vous achetez, vous aurez peut-être besoin de consulter des parties prenantes dans les domaines de la sécurité, des technologies de l’information, des communications et de la traduction, pour n’en nommer que quelques-uns.</p>
+                        <p>[Des images apparaissent autour d’une femme : un cadenas, un ordinateur portable, un symbole de réseau sans fil et deux bulles de dialogue.]</p>
+                        <p>Après tout, vous ne pouvez pas être un expert dans tous les domaines et vous ne savez pas ce que vous ne savez pas! </p>
+                        <p>En fait, dans certains cas, vous devrez absolument consulter les parties prenantes. Pour les produits essentiels comme la publicité et la recherche sur l’opinion publique, vous devez vous adresser à Services publics et Approvisionnement Canada.</p>
+                        <p>[En dessous du titre « Consulter les parties prenantes », les différentes parties prenantes et les services qu’elles offrent sont reliés par une flèche. Un flèche pointe de « Publicité et recherche sur l’opinion publique » vers « Services publics et Approvisionnement Canada ».]</p>
+                        <p>Dans le cas des services juridiques, chaque ministère possède ses propres avocats affectés par le ministère de la Justice. Les contrats pour la prestation de services juridiques ne peuvent être conclus que par ou sous l’autorité du ministre de la Justice. </p>
+                        <p>[Une flèche pointe de « Services juridiques » vers « Ministère de la Justice » et une autre flèche pointe de « Contrats de services juridiques » vers « Ministre de la Justice ».]</p>
+                        <p>Les personnes handicapées devraient également pouvoir utiliser le service ou l’article fourni, quel que soit leur handicap.</p>
+                        <p>[Neuf cercles dans lesquels se trouvent divers symboles se dessinent, notamment : une personne avec des béquilles, une femme enceinte avec une poussette, et une oreille avec un appareil auditif.]</p>
+                        <p>Consultez le réseau d’employés handicapés de votre ministère pour obtenir des conseils sur la suppression des obstacles à l’accessibilité pour l’utilisateur final.</p>
+                        <p>[Une boîte de texte indique : « 8. Choisir une stratégie d’approvisionnement ». Des crochets apparaissent à côté des mots « Besoins » et « Qui vous devez consulter ».]</p>
                         <hr>
 
                         <h2>8. Choisir une stratégie d’approvisionnement</h2>
-                        <p>Vous avez maintenant défini vos besoins et déterminé qui vous devez consulter. Quelle est la prochaine étape? Eh bien, cela dépend du montant en dollars et de la complexité de ce que vous devez acheter. Soit vous lancez vous-même l’achat d’approvisionnements de faible valeur en utilisant les instruments dont vous disposez, soit vous travaillez avec votre spécialiste en approvisionnement pour déterminer la stratégie à adopter dans le cas d’achats plus complexes et de plus grande valeur. </p>
-                        <p>Peu importe la stratégie d’approvisionnement que vous choisissez, tenez toujours en compte du temps qu’il vous faudra pour terminer le processus d’approvisionnement. Par exemple, les publications sur le site Achatsetventes.gc.ca doivent être affichées pendant au moins 40 jours, selon le cas, si elles sont assujetties à nos accords commerciaux internationaux. Ou, pour les articles complexes ou coûteux tels que les flottes, le processus peut prendre plus d’un an. Alors, veillez à planifier en conséquence! </p>
+                        <p>Vous avez maintenant défini vos besoins et déterminé qui vous devez consulter. Quelle est la prochaine étape? Eh bien, cela dépend du montant en dollars et de la complexité de ce que vous devez acheter.</p>
+                        <p>[Un crayon signe un document à côté d’une pile de pièces de monnaie.]</p>
+                        <p>Soit vous lancez vous-même l’achat d’approvisionnements de faible valeur en utilisant les instruments dont vous disposez, soit vous travaillez avec votre spécialiste en approvisionnement pour déterminer la stratégie à adopter dans le cas d’achats plus complexes et de plus grande valeur. </p>
+                        <p>[Un homme et une femme discutent. Une bulle de dialogue avec un point d’interrogation pointe vers cette dernière.]</p>
+                        <p>Peu importe la stratégie d’approvisionnement que vous choisissez, tenez toujours en compte du temps qu’il vous faudra pour terminer le processus d’approvisionnement.</p>
+                        <p>[Les aiguilles d’une horloge tournent. La dernière case d’un calendrier est marquée d’un X.]</p>
+                        <p>Par exemple, les publications sur le site Achatsetventes.gc.ca doivent être affichées pendant au moins 40 jours, selon le cas, si elles sont assujetties à nos accords commerciaux internationaux. Ou, pour les articles complexes ou coûteux tels que les flottes, le processus peut prendre plus d’un an. Alors, veillez à planifier en conséquence! </p>
+                        <p>[La boîte à outils s’affiche.]</p>
                         <p>L'activité suivante vous aidera à rafraîchir vos connaissances sur les stratégies et les instruments d’approvisionnement. La boîte à outils contient également un aide-mémoire intitulé « Instruments d’approvisionnement couramment utilisés ». </p>
+                        <p>[Une boîte de texte indique : « 9. Dans la vraie vie ». Un homme et une femme discutent. Une bulle de dialogue avec un symbole de dollar pointe vers l’homme.]</p>
+                        
                         <hr>
                         <h2>9. Dans la vraie vie</h2>
                         <p>Appliquez maintenant ce que vous avez appris - dans la vraie vie! </p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir quelles sont les stratégies d’approvisionnement que vous utiliserez le plus souvent. Trouvez les modèles utilisés par votre ministère et recherchez des exemples d’achats antérieurs à titre indicatif. Cela vous sera utile lorsque viendra le temps pour vous de choisir une stratégie d’approvisionnement.  </p>
+                        <p>[Une boîte de texte indique : « 10. Quiz ». Trois listes de vérification s’affichent.]</p>
+                        
                         <hr>
                         <h2>10. Quiz</h2>
                         <p>Maintenant que vous avez vu comment définir vos besoins en biens, en services et en construction, tenir compte des besoins particuliers et décrire ce dont vous avez besoin, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
+                        <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille. L’écran devient noir.]</p>
+                        
                         <hr>
-                        <h2>11. Section complété</h2>
-                        <p>[Onscreen text showing Section Completed instruction.]</p>
+                        <h2>11. Section complétée</h2>
+                        <p>[Texte à l’écran indique la directive Section complétée.]</p>
                       </span>
                     </b-card-text>
                   </b-card-body>

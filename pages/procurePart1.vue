@@ -190,7 +190,7 @@
 
                         <h2>1. Introduction</h2>
                         <p>[Sur un fond mauve avec des lignes blanches ondulées, le titre « Module 4 : Exigences techniques et de soumission et stratégie d’approvisionnement » s’affiche. Une boîte de texte indique : « 1. Introduction ». Elle est remplacée par les mots « Dans la présente section », dans le haut de l’écran. Une liste à puces s’affiche à mesure que la narratrice en énumère les points. Des dessins faits de lignes blanches apparaissent à sa droite, notamment des boîtes de fournitures, une personne en fauteuil roulant, le symbole de recyclage et une liste de vérification.]</p>
-                        <p>Dans la présente section, vous apprendrez </p>
+                        <p>Narratrice : Dans la présente section, vous apprendrez </p>
                         <ul>
                           <li>à définir vos besoins en biens, en services et en construction,  </li>
                           <li>à tenir compte des exigences particulières  </li>

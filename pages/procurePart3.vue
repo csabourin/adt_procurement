@@ -147,15 +147,20 @@
                       </span>
                       <span v-if="$i18n.locale=='fr'">
                         <h2>1. Introduction</h2>
-                        <p>Dans la présente section, vous apprendrez à administrer, à payer et à clôturer le contrat.  </p>
+                        <p>Narratrice : Dans la présente section, vous apprendrez à administrer, à payer et à clôturer le contrat.  </p>
+                        <p>[Les mots « Administrer », « Payer » et « Clôturer le contrat » s’affichent à côté de trois dessins faits de lignes blanches. Ils représentent une clé à fourches, des pièces de monnaie et un document.]</p>
                         <p>Il vous faudra environ 30 minutes pour effectuer cette section. </p>
+                        <p>[La moitié d’une horloge est remplie. Une boîte de texte indique : « 2. Administrer le contrat ».]</p>
+                        
                         <hr>
                         
                         <h2>2. Administrer le contrat</h2>
                         <p>Le contrat a été accordé. Votre travail est terminé, non? Pas si vite! Vous avez encore du pain sur la planche!</p>
+                        <p>[Un ruban de récompense se tient au-dessus d’un homme serrant la main à trois personnes.]</p>
                         <p>Avec l’aide de votre spécialiste en approvisionnement, vous devez maintenant administrer le contrat que vous venez d'accorder. Prenons une minute pour voir qui fait quoi.   </p>
-
+                        <p>[Dans le haut de l’écran, il est écrit : « Administrer le contrat ». En dessous, un homme et une femme examinent un document.]</p>
                         <p>En tant que gestionnaire, vos responsabilités comprennent les suivantes :  </p>
+                        <p>[Des bulles de pensée apparaissent autour d’une femme. Chacune d’entre elles contient une des responsabilités nommées par la narratrice.]</p>
                         <ul>
                           <li>surveiller les échéanciers, les produits livrables, les coûts et la qualité des travaux par rapport au plan de travail et à l’énoncé des travaux établis;   </li>
                           <li>veiller à ce que les dates de livraison soient respectées;  </li>
@@ -166,6 +171,7 @@
                           <li>et délivrer des autorisations de tâches, au besoin.  </li>
                         </ul>
                         <p>Quant au spécialiste en approvisionnement, ses responsabilités comprennent les suivantes :  </p>
+                        <p>Pendant que la narratrice parle, des bulles de pensée contenant des mots clés apparaissent autour d’un homme.]</p>
                         <ul>
                           <li>appuyer le gestionnaire dans le suivi de l’avancement des contrats et du financement;  </li>
                           <li>assister aux réunions d’étape au besoin;  </li>
@@ -178,20 +184,33 @@
                           <li>et superviser la résiliation du contrat.  </li>
                         </ul>
                         <p>L’accessibilité devrait être prise en considération tout au long du processus d’approvisionnement, non seulement pour les employés, mais aussi pour les entrepreneurs. En tant que gestionnaire, vous devrez peut-être discuter avec les entrepreneurs des obstacles créés par le gouvernement auxquels ils se heurtent lorsqu’ils accomplissent le travail.   </p>
+                        <p>[Les mots « Considérations d’accessibilité » figurent au-dessus de neuf cercles dans lesquels se trouvent divers symboles, notamment : une personne avec des béquilles, une femme enceinte avec une poussette et une oreille avec un appareil auditif.]</p>
                         <p>Voici une petite activité pour vous aider à déterminer vos responsabilités. </p>
+                        <p>[Une boîte de texte indique : « 3. Tenir des dossiers ».]</p>
+                        
                         <hr>
 
                         <h2>3. Tenir des dossiers </h2>
                         <p>Maintenant que vous savez qui fait quoi, passons à la paperasse!</p>
+                        <p>[Un classeur se dessine en dessous des mots « Tenue des dossiers ».]</p>
                         <p>Tout au long du contrat, vous devez tenir des dossiers. Vous devez conserver des informations comme la qualité, la quantité et les délais relativement aux biens reçus ou aux travaux à effectuer. Tout écart dans les travaux d’un entrepreneur à qui un contrat a été accordé doit également être consigné.  </p>
+                        <p>[Les mots « Qualité », « Quantité », « Délais » et « Écarts » s’affichent à gauche du classeur.]</p>
                         <p>Il est important de tenir des dossiers afin de montrer que ce qui a été acheté a été livré ou que le travail a été terminé, et vous devez vérifier que les biens ou les services sont conformes au contrat.    </p>
-                        <p>Si vous découvrez que le travail est inadéquat ou insuffisant, vous devez immédiatement en aviser le spécialiste en approvisionnement afin qu’il puisse en aviser l’entrepreneur par écrit. L’avis écrit du spécialiste en approvisionnement rappellera à l’entrepreneur ses obligations en vertu du contrat et l’informera des conséquences de ne pas corriger l’écart dans un délai précis.</p>
+                        <p>[Toujours en dessous des mots « Tenue des dossiers », une main coche les éléments d’une liste. Deux boîtes apparaissent ensuite à la gauche de l’écran. Un contrat signé est à droite. Un signe égal se trouve entre les deux dessins.]</p>
+                        <p>Si vous découvrez que le travail est inadéquat ou insuffisant, vous devez immédiatement en aviser le spécialiste en approvisionnement afin qu’il puisse en aviser l’entrepreneur par écrit.</p>
+                        <p>[Les mots « Immédiatement en aviser le spécialiste en approvisionnement » s’affichent à la gauche des boîtes et du contrat.]</p>
+                        <p>L’avis écrit du spécialiste en approvisionnement rappellera à l’entrepreneur ses obligations en vertu du contrat et l’informera des conséquences de ne pas corriger l’écart dans un délai précis.</p>
+                        <p>[En dessous des mots « Tenue des dossiers », un document est scellé dans une enveloppe, qui glisse ensuite en dehors de l’écran.]</p>
                         <p>Un bon suivi des contrats et une bonne tenue des dossiers entraînent à une bonne gestion des contrats, ce qui permet d’éviter des coûts et des retards supplémentaires, des difficultés pour les entrepreneurs et davantage de travail.  </p>
+                        <p>[À l’écran, il est écrit : « Bon suivi des contrats et bonne tenue des dossiers ». De ces mots pointe une flèche vers un autre énoncé : « Bonne gestion des contrats ». Une autre flèche pointe de ce dernier vers « Éviter des coûts supplémentaires, des retards et des difficultés ».]</p>
                         <p>Après tout, mieux vaut prévenir que guérir! </p>
+                        <p>[Une boîte de texte indique : « 4. Accepter les livrables ».]</p>
+                        
                         <hr>
 
                         <h2>4. Accepter les livrables </h2>
                         <p>Avant d’effectuer le paiement du contrat, vous devez accomplir quelques tâches. En premier lieu, il faut vous assurer que les modalités du contrat ont été respectées. Vous devez :</p>
+                        <p>[Un document signé et une pile de pièces de monnaie se dessinent en dessous des mots « Avant d’effectuer le paiement ». Les points que la narratrice énumère apparaissent à l’écran pendant qu’elle parle.]</p>
                         <ul>
                           <li>vérifier que la qualité et la quantité des biens, des services ou de la construction sont adéquates;  </li>
                           <li>confirmer que les biens reçus correspondent à ceux qui ont été commandés;   </li>
@@ -199,9 +218,12 @@
                           <li>si le produit livrable est un rapport ou un autre produit, vous assurer qu’il est complet et exempt d’erreurs.  </li>
                         </ul>
                         <p>Une fois que vous êtes satisfait du produit livrable, vous devez vous assurer du respect des modalités de paiement. Ce n’est qu’une fois cette tâche effectuée que vous pourrez procéder au paiement du contrat. </p>
+                        <p>[Une boîte de texte indique : « 5. Exercice des pouvoirs d’attestation et de payer ». Une page avec les armoiries du Canada apparaît. Il y est écrit, en français et en anglais : « Codification. Loi sur la gestion des finances publiques ».]</p>
+                        
                         <hr>
                         <h2>5. Exercice des pouvoirs d’attestation et de payer</h2>
                         <p>En tant que détenteur du pouvoir d’attestation en vertu de l’article 34 de la Loi sur la gestion des finances publiques, vous avez la responsabilité de vous assurer</p>
+                        <p>[Une liste à puces s’affiche pendant que la narratrice parle.]</p>
                         <ul>
                           <li>que les travaux ont été exécutés,   </li>
                           <li>que les biens fournis, que la construction effectuée ou que les services rendus sont acceptables   </li>
@@ -209,6 +231,7 @@
                         </ul>
                         <p>Pour certains types de contrats, cette responsabilité pourrait être partagée avec le spécialiste en approvisionnement.  </p>
                         <p>Vous devrez vérifier l’exactitude de la facture ou de la demande de paiement en confirmant les points suivants. </p>
+                        <p>[Une liste s’affiche sur une planchette à pince pendant que la narratrice énumère les principaux points.]</p>
                         <ul>
                           <li>La date de la facture est la date à laquelle les biens ont été livrés, les services rendus ou la construction réalisée, ou est une date ultérieure.   </li>
                           <li>Les postes réclamés sur la facture et le montant de chaque article sont exacts : ils correspondent à la commande et sont compris dans le prix unitaire ou le tarif journalier et les limites de déplacement.  </li>
@@ -217,34 +240,46 @@
                           <li>Le montant n’a pas été versé auparavant.  </li>
                         </ul>
                         <p>Vous déterminerez ensuite comment la facture sera payée.  </p>
+                        <p>[Deux flèches pointent vers le haut sur un billet de banque.]</p>
                         <p>Enfin, après examen de la demande de paiement, l’agent financier paie la facture conformément à l’article 33 de la Loi sur la gestion des finances publiques. </p>
+                        <p>[La page de la Loi sur la gestion des finances publiques s’affiche de nouveau. Une boîte de texte indique : « 6. Clôture du contrat ».]</p>
+                        
                         <hr>
 
                         <h2>6. Clôture du contrat </h2>
                         <p>Une fois le contrat terminé, le spécialiste en approvisionnement responsable du dossier le ferme. Avant la fermeture du dossier, un examen est effectué afin de s'assurer de ce qui suit.  </p>
+                        <p>[Un contrat et quelques pièces de monnaie figurent sur une liste de vérification et un crochet est placé au-dessus d’eux. Une loupe se dessine par-dessus la liste de vérification, qui disparaît pour laisser place à des puces sous les mots « Examen de fermeture ». Pendant ce temps, la narratrice parle.]</p>
                         <ul>
-                        <li>Toutes les exigences contractuelles ont été respectées et le gestionnaire a reçu et accepté toutes les prestations prévues au contrat.  </li>
-                        <li>Tous les paiements à l’entrepreneur et le règlement des demandes de paiement ont été effectués.  </li>
-                        <li>Aucune mesure en suspens n’est requise.  </li>
-                        <li>Toutes les exigences en matière de rapports ont été respectées.  </li>
-                        <li>Toute la documentation requise figure au dossier.  </li>
-                        <li>Les modifications apportées pour établir le coût final, le cas échéant, sont terminées.  </li>
+                          <li>Toutes les exigences contractuelles ont été respectées et le gestionnaire a reçu et accepté toutes les prestations prévues au contrat.  </li>
+                          <li>Tous les paiements à l’entrepreneur et le règlement des demandes de paiement ont été effectués.  </li>
+                          <li>Aucune mesure en suspens n’est requise.  </li>
+                          <li>Toutes les exigences en matière de rapports ont été respectées.  </li>
+                          <li>Toute la documentation requise figure au dossier.  </li>
+                          <li>Les modifications apportées pour établir le coût final, le cas échéant, sont terminées.  </li>
                         </ul>
                         <p>De plus :  </p>
+                        <p>Si la propriété intellectuelle a été conservée par le gouvernement du Canada, les mesures appropriées doivent être prises.  </p>
+                        <p>[Une flèche pointe des mots « Si la propriété intellectuelle a été conservée par le gouvernement du Canada » vers « les mesures appropriées doivent être prises ». D’autres flèches relient les énoncés prononcés par la narratrice.]</p>
                         <ul>
-                          <li>Si la propriété intellectuelle a été conservée par le gouvernement du Canada, les mesures appropriées doivent être prises.  </li>
                           <li>Si un produit est assorti d’une garantie, le dossier demeure ouvert pendant la période de garantie.  </li>
                           <li>Si le dossier est en vérification, il demeurera ouvert jusqu’à ce que le rapport de vérification final soit déposé et accepté.  </li>
                           <li>S’il y a un litige concernant le dossier, celui-ci ne peut être clôturé.  </li>
                         </ul>
                         <p>Un examen de toutes les leçons apprises, y compris les conclusions de la vérification, est également effectué pour améliorer les futures activités d’approvisionnement. </p>
+                        <p>[Une boîte de texte indique : « 7. Dans la vraie vie ».]</p>
+                        
                         <hr>
                         <h2>7. Dans la vraie vie</h2>
                         <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
-                        <p> Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment les contrats sont administrés, payés et clôturés au sein de votre ministère. Et n’oubliez pas de consulter la boîte à outils où vous trouverez un aide-mémoire sur le processus d’approvisionnement! </p>
+                        <p>[Un homme et une femme discutent. Une bulle de dialogue contenant un symbole de dollar pointe vers l’homme.]</p>
+                        <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment les contrats sont administrés, payés et clôturés au sein de votre ministère. Et n’oubliez pas de consulter la boîte à outils où vous trouverez un aide-mémoire sur le processus d’approvisionnement! </p>
+                        <p>[Un dessin d’une boîte à outils s’affiche. Une boîte de texte indique : « 8. Quiz ».]</p>
                         <hr>
                         <h2>8. Quiz </h2>
+                        <p>[Trois images apparaissent côte à côte : une clé à fourches, une pile de pièces de monnaie et une liste de vérification remplie.]</p>
                         <p>Maintenant que vous avez vu comment administrer, payer et clôturer un contrat, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
+                        <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille.] L’écran devient noir.]</p>
+                        <h2>9. Section complétée</h2>
                       </span>
                     </b-card-text>
                   </b-card-body>

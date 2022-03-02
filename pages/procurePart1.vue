@@ -301,7 +301,7 @@
                         <p>[Les principaux points prononcés par la narratrice sont écrits en dessous d’« Énoncé de travail ». D’autres mots clés sont écrits en dessous d’« Énoncé des besoins » à mesure que la narratrice les nomme.]</p>
                         <p>Un <strong>énoncé des besoins</strong> est une description de la nécessité sans préciser la méthode exacte à utiliser. Il comprend des informations sur la définition d’un problème qui fourniront le contexte de l’autorité approbatrice, ainsi qu’une évaluation initiale du risque et des informations financières de base concernant ce qui sera produit à la prochaine étape. </p>
                         <p>[Les mots « Boîte à outils » s’affichent au-dessus d’« Énoncé de travail » et d’« Énoncé des besoins ». Une boîte à outils se dessine entre les deux énoncés.]</p>
-                        <p>Puisque vous serez la personne qui préparera l’énoncé des travaux ou l’énoncé des besoins, jetez un œil aux aide-mémoires fournis pour vous aider dans ces étapes dans la boîte à outils à titre indicatif. </p>
+                        <p>Puisque vous serez la personne qui préparera l’énoncé des travaux ou l’énoncé des besoins, jetez un coup d'œil aux aide-mémoires fournis pour vous aider dans ces étapes dans la boîte à outils à titre indicatif. </p>
                         <p>[Une boîte de texte indique : « 5. Approvisionnement équitable et transparent ».]</p>
 
                         <hr>

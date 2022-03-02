@@ -126,10 +126,10 @@
                         </ul>
                       <p>[Un dessin fait de lignes blanches prend forme à côté de chaque puce. Une loupe devant une feuille, un voyant d’alarme clignotant et une liste de vérification.]</p>
                        <p>Il vous faudra environ 20 minutes pour effectuer cette section. </p>
-                       <p>[Le tiers d’une horloge est rempli.]</p>
+                       <p>[Le tiers d’une horloge est rempli. Une boîte de texte indique : « 2. Pratiques inappropriées ».]</p>
                         <hr>
                         <h2>2. Pratiques inappropriées</h2>
-                        <p>[Une boîte de texte indique : « 2. Pratiques inappropriées ». La loupe devant la feuille se dessine de nouveau.]</p>
+                        <p>[La loupe devant la feuille se dessine de nouveau.]</p>
                         <p>Avant de passer aux activités d’établissement de rapports, examinons certaines des pratiques d’approvisionnement inappropriées que les gestionnaires doivent éviter s’ils veulent respecter les différentes lois, réglementations et politiques qui s’appliquent à l’approvisionnement. Ces pratiques comprennent :</p>
                         <p>[Un dessin de trois personnes s’affiche à gauche de l’écran. Une liste apparaît à droite pendant que la narratrice parle.]</p>
                         <ul>
@@ -144,11 +144,10 @@
                           <li>et les énoncés des travaux ou les critères d’évaluation inappropriés  </li>
                         </ul>
                         <p>L’exercice suivant vous aidera à déterminer ce qu’il ne faut pas faire. Pour les définitions, voir l’outil de travail Ce qu’il ne faut pas faire dans la boîte à outils.</p>
-                        <p>[Une boîte à outils se dessine au centre de l’écran.]</p>
+                        <p>[Une boîte à outils se dessine au centre de l’écran. Une boîte de texte qui indique : « 3. Mécanismes de traitement des plaintes ».]</p>
                         
                         <hr>
                         <h2>3. Mécanismes de traitement des plaintes</h2>
-                        <p>[Une boîte de texte qui indique : « 3. Mécanismes de traitement des plaintes ».]</p>
                         <p>Vous avez appris ce que vous pouvez faire ou non relativement aux décisions et aux mesures à prendre dans le processus d’approvisionnement, mais qu’arrive-t-il si vous ne respectez pas ces règles? Quelles seront les conséquences?  </p>
                         <p>[Deux cercles se dessinent, celui de gauche contient un crochet, et celui de droite contient un « X » . Le mot « Autorités » s’affiche en dessous d’un volant d’alarme clignotant.]</p>
                         <p>Il existe différents niveaux d’autorités responsables de la surveillance de l’approvisionnement au sein de la fonction publique fédérale pour s’assurer que les règles sont respectées. Les autorités peuvent être internes aux organisations ou externes à celles-ci. Par exemple, plusieurs ministères pourraient avoir des conseillers en éthique ou des directions de la conformité et de la surveillance, ainsi que des comités de gouvernance interministériels.</p>
@@ -166,11 +165,10 @@
                           <li>et les Comités d’examen permanents.</li>
                         </ul>
                         <p>Leurs rôles varient selon la nature et les montants de l’approvisionnement. Vous voulez en savoir plus sur ces organisations? Pourquoi ne pas consulter l’outil de travail sur la surveillance dans la boîte à outils? </p>
-                        <p>[La boîte à outils s’affiche de nouveau.]</p>
+                        <p>[La boîte à outils s’affiche de nouveau. Une boîte de texte indique : « 4. Exigences en matière de rapports ».]</p>
                         
                         <hr>
                         <h2>4. Exigences en matière de rapports</h2>
-                        <p>[Une boîte de texte indique : « 4. Exigences en matière de rapports ».]</p>
                         <p>Saviez-vous que les ministères, les organismes et d’autres organisations sont chargés de rendre disponibles divers rapports sur les activités de passation de contrats pour le grand public ou pour une utilisation au sein du gouvernement?</p>
                         <p>[Trois énoncés apparaissent, chacun en dessous d’une image. Un bâtiment avec de grosses colonnes est appelé « Ministères », un édifice est appelé « Organismes » et un paysage urbain porte la mention « Autres organisations ».]</p>
                         <p>C’est pourquoi la tenue de registres est si importante et que les données figurant sur les contrats doivent être exactes.   </p>
@@ -200,14 +198,17 @@
                         <p>Mais ne vous en faites pas, car vous ne serez pas seul pour accomplir ces tâches liées à la production de ces rapports et à la divulgation proactive.</p>
                         <p>[Quatre personnes sont assises autour d’une table de réunion.]</p>
                         <p>Pour rassembler les renseignements requis, vous pourrez généralement travailler avec votre personnel administratif ou l’équipe de l’approvisionnement de votre organisation. </p>
+                        <p>[Une boîte de texte indique : « 5. Dans la vraie vie ».]</p>
+
                         <hr>
                         <h2>5. Dans la vraie vie </h2>
-                        <p>[Une boîte de texte indique : « 5. Dans la vraie vie ». Deux personnes discutent. L’une d’entre elles a une bulle de dialogue avec un point d’interrogation.]</p>
+                        <p>Deux personnes discutent. L’une d’entre elles a une bulle de dialogue avec un point d’interrogation.]</p>
                         <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez une pause durant le cours pour voir quels mécanismes de plainte sont utilisés par votre organisation et quels rapports devront être soutenus. </p>
+                        <p>[Une boîte de texte indique : « 6. Quiz ».]</p>
                         <hr>
                         <h2>6. Quiz </h2>
-                        <p>[Une boîte de texte indique : « 6. Quiz ». Les dessins de la loupe devant la feuille, du voyant d’alarme clignotant et de la liste de vérification s’affichent.]</p>
+                        <p>[Les dessins de la loupe devant la feuille, du voyant d’alarme clignotant et de la liste de vérification s’affichent.]</p>
                         <p>Maintenant que vous en savez plus sur les pratiques d’approvisionnement inappropriées, les mécanismes de traitement des plaintes et les exigences en matière de rapports, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille.]</p>
                         <h2>7. Section complétée</h2>

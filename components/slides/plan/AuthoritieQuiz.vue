@@ -258,20 +258,13 @@
           <b-tab title="Question 5"><radioQuiz :question="$t('q5')" qId="5" /></b-tab>
           <b-tab title="Question 6">
             <br />
+            <p v-html="$t('instructionsChart')" />
             <windowPortal :open="openChart" @close="openChart = false">
               <delegAutorityEn v-if="$i18n.locale=='en'" />
               <delegAutorityFr v-if="$i18n.locale=='fr'" />
             </windowPortal>
             <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
             <radioQuiz :question="$t('q6')" qId="6" />
-          </b-tab>
-          <b-tab title="Question 7">
-            <br />
-            <windowPortal :open="openChart" @close="openChart = false">
-              <delegAutorityEn v-if="$i18n.locale=='en'" />
-              <delegAutorityFr v-if="$i18n.locale=='fr'" />
-            </windowPortal>
-            <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
             <radioQuiz :question="$t('q7')" qId="7" />
           </b-tab>
         </b-tabs>
@@ -337,6 +330,7 @@ export default {
 <i18n>{
   "en": {
     "instructions": "Answer the following questions. ",
+    "instructionsChart": "<strong>You will need to consult the Delegation of Spending and Financial Signing Authorities Chart to answer this question.</strong>",
     "openChartButton": "Open the delegation of spending and financial signing authorities chart",
     "q1": {
       "text": "If you don’t have enough funds, what can you do to secure other sources of money?",
@@ -432,6 +426,7 @@ export default {
   },
   "fr": {
     "instructions": "Répondez aux questions suivantes.",
+    "instructionsChart": "<strong>Veuillez consulter le Tableau de délégation des pouvoirs de dépenser et de signer des documents financiers pour répondre à la question.</strong>",
     "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
     "q1": {
       "text": "Si vous n’avez pas assez de fonds, que pouvez-vous faire pour trouver d’autres sources d’argent?",

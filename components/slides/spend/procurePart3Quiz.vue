@@ -15,10 +15,10 @@
             <radioQuiz :question="$t('q3')" qId="3" />
           </b-tab>
           <b-tab title="Question 4">
-            <b-row>
-              <b-col><radioQuiz :question="$t('q4')" qId="4" /></b-col>
-              <b-col xl="12" lg="12" style="border: 1px solid #212529;"><SalesInvoice /></b-col>
-            </b-row>
+              <br />
+              <p><strong>{{$t("invoiceText")}}</strong></p>
+              <p xl="12" lg="12" style="border: 1px solid #212529;"><SalesInvoice /></p>
+              <radioQuiz :question="$t('q4')" qId="4" />
           </b-tab>
           <b-tab title="Question 5">
             <radioQuiz :question="$t('q5')" qId="5" />
@@ -74,6 +74,7 @@ export default {
 <i18n>{
   "en": {
   "introText": "Answer the following questions.",
+  "invoiceText":"Take a look at the invoice provided below:",
   "q1": {
   "text": "The contract has been awarded. What are your next steps, in the correct order?",
   "options": {
@@ -121,7 +122,7 @@ export default {
   "conclusion": "When inadequate or deficient work has been discovered, the procurement specialist must notify the contractor in writing of the deficiencies."
   },
   "q4": {
-  "text": "You ordered and received 5 polk-a-dot highlighters and 20 pairs of rose-coloured glasses from XYZ Enterprises. Based on the invoice provided below, would you pay the invoice?",
+  "text": "You ordered and received 5 polk-a-dot highlighters and 20 pairs of rose-coloured glasses from XYZ Enterprises. Based on the invoice provided above, would you pay the invoice?",
   "options": {
   "1": "Yes",
   "2": "No"
@@ -163,6 +164,7 @@ export default {
   },
   "fr": {
   "introText": "Répondez aux questions suivantes : ",
+  "invoiceText":"Répondez à la question suivante en consultant la facture fournie ci-dessous.",
   "q1": {
   "text": "Le contrat a été accordé. Quelles sont, dans le bon ordre, les prochaines étapes que vous devez suivre?",
   "options": {
@@ -210,7 +212,7 @@ export default {
   "conclusion": "Lorsque des travaux inadéquats ou déficients sont découverts, le spécialiste en approvisionnement en avise l’entrepreneur par écrit."
   },
   "q4": {
-  "text": "Vous avez commandé et reçu 5 surligneurs à pois et 20 paires de lunettes roses d’Entreprise XYZ. Vous avez reçu la facture ci-dessous. Devriez-vous la payer?",
+  "text": "Vous avez commandé et reçu 5 surligneurs à pois et 20 paires de lunettes roses d’Entreprise XYZ. Vous avez reçu la facture ci-dessus. Devriez-vous la payer?",
   "options": {
   "1": "Oui",
   "2": "Non"

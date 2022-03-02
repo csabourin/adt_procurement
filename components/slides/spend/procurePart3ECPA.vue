@@ -4,7 +4,7 @@
       <b-row>
         <b-col>
 		 <b-card>
-      <p>{{$t('Introduction')}}</p>
+      <p><strong>{{$t('Introduction')}}</strong></p>
       <p style="border: 1px solid #212529;"><SalesInvoice /></p>
     <b-tabs content v-model="tabIndex">
       <b-tab title="Question 1"><radioQuiz :question="$t('q1')" qId="1"/></b-tab>
@@ -51,7 +51,7 @@
 </script>
 <i18n>{
   "en": {
-  "Introduction":"Answer the following questions by looking at the invoice provided above.",
+  "Introduction":"Answer the following questions by looking at the invoice provided below.",
     "q1": {
       "text": "You had ordered 25 pairs of rose-coloured glasses at the unit price of $20 for a total of $500. Should you pay the invoice?",
       "options": {
@@ -90,7 +90,7 @@
     }
   },
   "fr": {
-  "Introduction":"Répondez aux questions suivantes en consultant la facture fournie ci-dessus.",
+  "Introduction":"Répondez aux questions suivantes en consultant la facture fournie ci-dessous.",
     "q1": {
       "text": "Vous aviez commandé 25 paires de lunettes roses au prix unitaire de 20 $ pour un total de 500 $. Devriez-vous payer la facture?",
       "options": {

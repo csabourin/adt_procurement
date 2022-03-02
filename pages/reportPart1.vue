@@ -208,7 +208,7 @@
                         <p>[Une boîte de texte indique : « 6. Quiz ».]</p>
                         <hr>
                         <h2>6. Quiz </h2>
-                        <p>[sLes dessins de la loupe devant la feuille, du voyant d’alarme clignotant et de la liste de vérification s’affichent.]</p>
+                        <p>[Les dessins de la loupe devant la feuille, du voyant d’alarme clignotant et de la liste de vérification s’affichent.]</p>
                         <p>Maintenant que vous en savez plus sur les pratiques d’approvisionnement inappropriées, les mécanismes de traitement des plaintes et les exigences en matière de rapports, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille.]</p>
                         <h2>7. Section complétée</h2>

@@ -202,13 +202,13 @@
 
                         <hr>
                         <h2>5. Dans la vraie vie </h2>
-                        <p>Deux personnes discutent. L’une d’entre elles a une bulle de dialogue avec un point d’interrogation.]</p>
+                        <p>[Deux personnes discutent. L’une d’entre elles a une bulle de dialogue avec un point d’interrogation.]</p>
                         <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez une pause durant le cours pour voir quels mécanismes de plainte sont utilisés par votre organisation et quels rapports devront être soutenus. </p>
                         <p>[Une boîte de texte indique : « 6. Quiz ».]</p>
                         <hr>
                         <h2>6. Quiz </h2>
-                        <p>[Les dessins de la loupe devant la feuille, du voyant d’alarme clignotant et de la liste de vérification s’affichent.]</p>
+                        <p>[sLes dessins de la loupe devant la feuille, du voyant d’alarme clignotant et de la liste de vérification s’affichent.]</p>
                         <p>Maintenant que vous en savez plus sur les pratiques d’approvisionnement inappropriées, les mécanismes de traitement des plaintes et les exigences en matière de rapports, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille.]</p>
                         <h2>7. Section complétée</h2>

@@ -147,6 +147,7 @@
                       </span>
                       <span v-if="$i18n.locale=='fr'">
                         <h2>1. Introduction</h2>
+                        <p>[Sur un fond mauve avec des lignes blanches ondulées, le titre « Module 6 : Administration, paiement et clôture du contrat » s’affiche. Une boîte de texte indique : « 1. Introduction ».]</p>
                         <p>Narratrice : Dans la présente section, vous apprendrez à administrer, à payer et à clôturer le contrat.  </p>
                         <p>[Les mots « Administrer », « Payer » et « Clôturer le contrat » s’affichent à côté de trois dessins faits de lignes blanches. Ils représentent une clé à fourches, des pièces de monnaie et un document.]</p>
                         <p>Il vous faudra environ 30 minutes pour effectuer cette section. </p>
@@ -171,7 +172,7 @@
                           <li>et délivrer des autorisations de tâches, au besoin.  </li>
                         </ul>
                         <p>Quant au spécialiste en approvisionnement, ses responsabilités comprennent les suivantes :  </p>
-                        <p>Pendant que la narratrice parle, des bulles de pensée contenant des mots clés apparaissent autour d’un homme.]</p>
+                        <p>[Pendant que la narratrice parle, des bulles de pensée contenant des mots clés apparaissent autour d’un homme.]</p>
                         <ul>
                           <li>appuyer le gestionnaire dans le suivi de l’avancement des contrats et du financement;  </li>
                           <li>assister aux réunions d’étape au besoin;  </li>
@@ -218,10 +219,11 @@
                           <li>si le produit livrable est un rapport ou un autre produit, vous assurer qu’il est complet et exempt d’erreurs.  </li>
                         </ul>
                         <p>Une fois que vous êtes satisfait du produit livrable, vous devez vous assurer du respect des modalités de paiement. Ce n’est qu’une fois cette tâche effectuée que vous pourrez procéder au paiement du contrat. </p>
-                        <p>[Une boîte de texte indique : « 5. Exercice des pouvoirs d’attestation et de payer ». Une page avec les armoiries du Canada apparaît. Il y est écrit, en français et en anglais : « Codification. Loi sur la gestion des finances publiques ».]</p>
+                        <p>[Une boîte de texte indique : « 5. Exercice des pouvoirs d’attestation et de payer ».]</p>
                         
                         <hr>
                         <h2>5. Exercice des pouvoirs d’attestation et de payer</h2>
+                        <p>[Une page avec les armoiries du Canada apparaît. Il y est écrit, en français et en anglais : « Codification. Loi sur la gestion des finances publiques ».]</p>
                         <p>En tant que détenteur du pouvoir d’attestation en vertu de l’article 34 de la Loi sur la gestion des finances publiques, vous avez la responsabilité de vous assurer</p>
                         <p>[Une liste à puces s’affiche pendant que la narratrice parle.]</p>
                         <ul>
@@ -278,7 +280,7 @@
                         <h2>8. Quiz </h2>
                         <p>[Trois images apparaissent côte à côte : une clé à fourches, une pile de pièces de monnaie et une liste de vérification remplie.]</p>
                         <p>Maintenant que vous avez vu comment administrer, payer et clôturer un contrat, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
-                        <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille.] L’écran devient noir.]</p>
+                        <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille. L’écran devient noir.]</p>
                         <h2>9. Section complétée</h2>
                       </span>
                     </b-card-text>

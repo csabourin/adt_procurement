@@ -137,8 +137,9 @@
                         <h2>2. Préparer les documents de demande de soumissions</h2>
                         <p>Maintenant que vous avez déterminé vos besoins, préparé votre énoncé de travail ou votre énoncé des besoins et choisi votre stratégie d’approvisionnement, quelle est la prochaine étape? </p>
                         <p>[Les deux types d’énoncés s’affichent au-dessus de trois bulles chacun. En dessous d’« Énoncé de travail », les bulles contiennent les mots « Livrables », « Services » et « Travaux ». En dessous d’« Énoncé des besoins », les bulles contiennent les mots « Définition d’un problème », « Évaluation initiale du risque » et « Informations financières de base ».]</p>
-                        <p>Le spécialiste en approvisionnement élaborera les stratégies d’acquisition nécessaires pour satisfaire aux exigences que vous avez fournies. Les réponses peuvent inclure : </p>
+                        <p>Le spécialiste en approvisionnement élaborera les stratégies d’acquisition nécessaires pour satisfaire aux exigences que vous avez fournies.</p>
                         <p>[Des flèches de différentes tailles pointent vers une cible. À côté de la silhouette d’une femme, des mots clés apparaissent à l’écran à mesure que la narratrice les prononce.]</p>
+                        <p>Les réponses peuvent inclure : </p>
                         <ul>
                           <li>préparer les documents de demande de soumissions; </li>
                           <li>gérer le processus d’évaluation des soumissions;</li>

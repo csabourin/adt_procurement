@@ -115,14 +115,17 @@
                       <span v-if="$i18n.locale=='fr'">
 
                         <h2>1. Introduction </h2>
-                        <p>Dans cette section, vous découvrirez les quatre phases de la gestion du cycle de vie du matériel :</p>
+                        <p>[Sur un fond gris avec des lignes blanches ondulées, le titre « Module 7 : Gestion du cycle de vie du matériel » s’affiche. Une boîte de texte indique : « 1. Introduction ».]</p>
+                        <p>Narratrice : Dans cette section, vous découvrirez les quatre phases de la gestion du cycle de vie du matériel :</p>
                         <ul>
                           <li>Planification  </li>
                           <li>Acquisition  </li>
                           <li>Exploitation, utilisation et entretien  </li>
                           <li>Dessaisissement  </li>
                         </ul>
+                        <p>[Les quatre phases s’affichent en dessous des mots « Dans la présente section ». À leur droite, quatre flèches forment un cercle autour des mots « Gestion du cycle de vie du matériel ».]</p>
                         <p>Il vous faudra environ 20 minutes pour effectuer cette section</p>
+                        <p>[Le tiers d’une horloge est rempli. Une boîte de texte indique : « 2. Planification ».]</p>
 
                         <hr>
 

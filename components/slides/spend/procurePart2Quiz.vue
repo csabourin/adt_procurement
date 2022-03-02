@@ -24,14 +24,14 @@
             <b-tab title="Question 3">
               <br>
               <p v-html="$t('scenario3')"></p>
-              <hr>
-              <radioQuiz :question="$t('q6')" qId="6" />
-              <radioQuiz :question="$t('q7')" qId="7" />
               <windowPortal :open="openChart" @close="openChart = false">
                 <delegAutorityEn v-if="$i18n.locale=='en'" />
                 <delegAutorityFr v-if="$i18n.locale=='fr'" />
               </windowPortal>
                 <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
+              <hr>
+              <radioQuiz :question="$t('q6')" qId="6" />
+              <radioQuiz :question="$t('q7')" qId="7" />
             </b-tab>
           </b-tabs>
           <!-- Control buttons-->

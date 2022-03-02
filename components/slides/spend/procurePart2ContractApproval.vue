@@ -3,6 +3,11 @@
     <div>
       <br />
       <p>{{$t('introductionText')}}</p>
+      <windowPortal :open="openChart" @close="openChart = false">
+      <delegAutorityEn v-if="$i18n.locale=='en'" />
+      <delegAutorityFr v-if="$i18n.locale=='fr'" />
+    </windowPortal>
+    <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
       <b-card>
         <b-tabs v-model="tabIndex">
           <b-tab title="Question 1">
@@ -20,11 +25,6 @@
           </b-button-group>
         </div>
       </b-card>
-      <windowPortal :open="openChart" @close="openChart = false">
-      <delegAutorityEn v-if="$i18n.locale=='en'" />
-      <delegAutorityFr v-if="$i18n.locale=='fr'" />
-    </windowPortal>
-    <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
     </div>
   </span>
 </template>
@@ -92,7 +92,7 @@ export default {
 </script>
 <i18n>{
   "en": {
-  "introductionText": "Answer the following questions.",
+  "introductionText": "Answer the following questions. You will need to consult the Delegation of Spending and Financial Signing Authorities Chart.",
   "openChartButton": "Open the delegation of spending and financial signing authorities chart",
   "q1": {
   "text": "Using the Delegation of Spending and Financial Signing Authorities Chart provided, who can approve a temporary help contract transaction of $23,000?",
@@ -109,7 +109,6 @@ export default {
   "conclusion": "A director general, a deputy head and an assistant deputy minister are the ones who can approve a $23,000 temporary help contract transaction."
   },
   "q2": {
-  "introductionText": "Répondez aux questions suivantes : ",
   "text": "Using the delegation of spending and financial signing authorities chart provided, what is the lowest position that could approve the purchase of a $1,200 cordless drill on an acquisition card?",
   "options": {
   "1": "Manager",
@@ -127,7 +126,7 @@ export default {
   }
   },
   "fr": {
-  "introductionText": "Répondez aux questions suivantes : ",
+  "introductionText": "Répondez aux questions suivantes. Veuillez consulter le Tableau de délégation des pouvoirs de dépenser et de signer des documents financiers.",
   "openChartButton": "Ouvrir le tableau de délégation des pouvoirs de dépenser et de signer des documents financiers",
   "q1": {
   "text": "À l’aide du tableau de délégation des pouvoirs de dépenser et de signer des documents financiers fourni, indiquez qui peut approuver la conclusion d’un contrat de service d’aide temporaire de 23 000 $?",

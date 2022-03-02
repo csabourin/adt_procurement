@@ -256,29 +256,24 @@
             <radioQuiz :question="$t('q3')" qId="3" /></b-tab>
           <b-tab title="Question 4"><radioQuiz :question="$t('q4')" qId="4" /></b-tab>
           <b-tab title="Question 5"><radioQuiz :question="$t('q5')" qId="5" /></b-tab>
-          <b-tab title="Question 6"><radioQuiz :question="$t('q6')" qId="6" />
-          <windowPortal :open="openChart" @close="openChart = false">
-      <delegAutorityEn v-if="$i18n.locale=='en'" />
-      <delegAutorityFr v-if="$i18n.locale=='fr'" />
-    </windowPortal>
-    <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
-    <b-row>
-      <b-col cols="6" md="4" lg="2" class="text-center">
-        <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-      </b-col>
-    </b-row>
-    </b-tab>
-          <b-tab title="Question 7"><radioQuiz :question="$t('q7')" qId="7" />
+          <b-tab title="Question 6">
+            <br />
             <windowPortal :open="openChart" @close="openChart = false">
-            <delegAutorityEn v-if="$i18n.locale=='en'" />
-            <delegAutorityFr v-if="$i18n.locale=='fr'" />
+              <delegAutorityEn v-if="$i18n.locale=='en'" />
+              <delegAutorityFr v-if="$i18n.locale=='fr'" />
             </windowPortal>
-        <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
-    <b-row>
-      <b-col cols="6" md="4" lg="2" class="text-center">
-        <download :texts="$t('s32s34')" size=128 iconColor="spendBackground" :fileSize="this.$i18n.locale == 'en' ? '149' : '149'" name="s32s34" />
-      </b-col>
-    </b-row></b-tab>
+            <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
+            <radioQuiz :question="$t('q6')" qId="6" />
+          </b-tab>
+          <b-tab title="Question 7">
+            <br />
+            <windowPortal :open="openChart" @close="openChart = false">
+              <delegAutorityEn v-if="$i18n.locale=='en'" />
+              <delegAutorityFr v-if="$i18n.locale=='fr'" />
+            </windowPortal>
+            <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
+            <radioQuiz :question="$t('q7')" qId="7" />
+          </b-tab>
         </b-tabs>
       </b-card>
       <!-- Control buttons-->

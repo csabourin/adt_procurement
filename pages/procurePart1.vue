@@ -286,7 +286,7 @@
                         <p>[Le titre d’après est : « Normes de conception et spécifications fonctionnelles combinées ». Un diagramme de Venn est présenté. Dans le cercle de gauche, il est écrit : « Normes de conception » et, dans celui de droite : « Spécifications fonctionnelles ».]</p>
                         <p>Les <strong>normes de conception et les spécifications fonctionnelles combinées</strong> intègrent les attributs des spécifications fonctionnelles et des normes de conception.</p>
                         <p>[Le titre suivant est : « Description de l’achat ». Des mots clés sont énumérés en dessous à mesure que la narratrice les prononce. À leur droite, des outils sont dessinés.]</p>
-                        <p>La <strong>description de l’achat</strong> fournit une description brève mais exacte de la production désirée. Elle répertorie le produit selon des normes de référence nationales, internationales ou industrielles, telles qu’une clé de 10 mm, un tournevis ou un deux par quatre. </p>7
+                        <p>La <strong>description de l’achat</strong> fournit une description brève mais exacte de la production désirée. Elle répertorie le produit selon des normes de référence nationales, internationales ou industrielles, telles qu’une clé de 10 mm, un tournevis ou un deux par quatre. </p>
                         <p>[Le dernier titre est : « Mesures économiques destinées aux Autochtones ». Il est accompagné d’un billet de banque avec deux flèches qui pointent vers le haut.]</p>
                         <p>Les mesures économiques destinées aux Autochtones accroissent les occasions économiques pour les peuples et les entreprises autochtones en augmentant les possibilités d’obtenir des contrats grâce : </p>
                         <ul>

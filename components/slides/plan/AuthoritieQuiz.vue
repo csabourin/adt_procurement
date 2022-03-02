@@ -330,7 +330,7 @@ export default {
 <i18n>{
   "en": {
     "instructions": "Answer the following questions. ",
-    "instructionsChart": "<strong>You will need to consult the Delegation of Spending and Financial Signing Authorities Chart to answer this question.</strong>",
+    "instructionsChart": "<strong>You will need to consult the Delegation of Spending and Financial Signing Authorities Chart to answer the following questions.</strong>",
     "openChartButton": "Open the delegation of spending and financial signing authorities chart",
     "q1": {
       "text": "If you don’t have enough funds, what can you do to secure other sources of money?",
@@ -426,7 +426,7 @@ export default {
   },
   "fr": {
     "instructions": "Répondez aux questions suivantes.",
-    "instructionsChart": "<strong>Veuillez consulter le Tableau de délégation des pouvoirs de dépenser et de signer des documents financiers pour répondre à la question.</strong>",
+    "instructionsChart": "<strong>Veuillez consulter le Tableau de délégation des pouvoirs de dépenser et de signer des documents financiers pour répondre aux questions suivantes.</strong>",
     "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
     "q1": {
       "text": "Si vous n’avez pas assez de fonds, que pouvez-vous faire pour trouver d’autres sources d’argent?",

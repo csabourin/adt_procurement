@@ -7,50 +7,13 @@
         <li><a href='https://www.youtube.com/watch?v=iZaUMrn-H6g' target='_blank' alt='The Accessible Canada Act and Government Procurement'>The <i>Accessible Canada Act</i> and Government Procurement</a></li>
         <li><a href='https://www.youtube.com/watch?v=Uyjxws7a1_Q' target='_blank' alt='What does it mean to consider accessibility in government procurement?'>What does it mean to consider accessibility in government procurement?</a></li>
       </ul>
-      <p><b>Answer the following questions.</b></p>
     </div>
     <div v-if="$i18n.locale=='fr'">
       <ul>
         <li><a href='https://www.youtube.com/watch?v=uSJonxterP0' target='_blank' alt='La Loi canadienne sur l’accessibilité et l’approvisionnement fédéral'>La <i>Loi canadienne sur l’accessibilité</i> et l’approvisionnement fédéral</a></li>
         <li><a href='https://www.youtube.com/watch?v=HG2vDzuuK54' target='_blank' alt='Que signifie tenir compte de l’accessibilité dans les approvisionnements du gouvernement?'>Que signifie tenir compte de l’accessibilité dans les approvisionnements du gouvernement?</a></li>
       </ul>
-      <p><b>Répondez aux questions suivantes : </b></p>
     </div>
-       <div>
-    <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
-    <b-tab title="Question 1">
-      <br>
-      <p><b>{{ $t('Scenario') }}</b></p>
-      <p>{{ $t('Scenario1') }}</p>
-      <radioQuiz :question="$t('q1')" qId="1"/>
-    </b-tab>
-    <b-tab title="Question 2">
-      <br>
-      <p><b>{{ $t('Scenario') }}</b></p>
-      <p>{{ $t('Scenario1') }}</p>
-      <radioQuiz :question="$t('q2')" qId="2"/>
-    </b-tab>
-    <b-tab title="Question 3">
-      <br>
-      <p><b>{{ $t('Scenario') }}</b></p>
-      <p>{{ $t('Scenario2') }}</p>
-      <radioQuiz :question="$t('q3')" qId="3"/>
-    </b-tab>
-    <b-tab title="Question 4">
-      <p><b>{{ $t('Scenario') }}</b></p>
-      <p>{{ $t('Scenario2') }}</p>
-      <checkboxQuiz :question="$t('q4')" qId="4" :Answer='["1","2","3","4"]'/>
-    </b-tab>
-  </b-tabs>
-  <!-- Control buttons-->
-        <div class="text-center">
-          <b-button-group :aria-label="$t('questionNav')" class="mt-2">
-            <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
-            <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=1">{{$t('nextPage')}}</b-button>
-          </b-button-group>
-        </div>
-  <hr>
-  </div>
     <b-container class="workplan-table wp-table-1">
       <b-row>
         <b-col class="encadrage">
@@ -140,6 +103,43 @@
         
       </b-row>
     </b-container>
+    <br />
+    <p><strong>{{ $t('Instructions') }}</strong></p>
+       <div>
+    <b-tabs content-class="mt-3" active-nav-item-class="font-weight-bold" v-model="tabIndex">
+    <b-tab title="Question 1">
+      <br>
+      <p><b>{{ $t('Scenario') }}</b></p>
+      <p>{{ $t('Scenario1') }}</p>
+      <radioQuiz :question="$t('q1')" qId="1"/>
+    </b-tab>
+    <b-tab title="Question 2">
+      <br>
+      <p><b>{{ $t('Scenario') }}</b></p>
+      <p>{{ $t('Scenario1') }}</p>
+      <radioQuiz :question="$t('q2')" qId="2"/>
+    </b-tab>
+    <b-tab title="Question 3">
+      <br>
+      <p><b>{{ $t('Scenario') }}</b></p>
+      <p>{{ $t('Scenario2') }}</p>
+      <radioQuiz :question="$t('q3')" qId="3"/>
+    </b-tab>
+    <b-tab title="Question 4">
+      <p><b>{{ $t('Scenario') }}</b></p>
+      <p>{{ $t('Scenario2') }}</p>
+      <checkboxQuiz :question="$t('q4')" qId="4" :Answer='["1","2","3","4"]'/>
+    </b-tab>
+  </b-tabs>
+  <!-- Control buttons-->
+        <div class="text-center">
+          <b-button-group :aria-label="$t('questionNav')" class="mt-2">
+            <b-button @click="[tabIndex--, focus()]" :disabled="tabIndex<=0">{{$t('previousPage')}}</b-button>
+            <b-button @click="[tabIndex++, focus()]" :disabled="tabIndex>=1">{{$t('nextPage')}}</b-button>
+          </b-button-group>
+        </div>
+  <hr>
+  </div>
 
     <!--------------------------------------------------------- END TABLE --> 
 
@@ -149,6 +149,7 @@
   {
       "en":
       {
+          "Instructions": "Answer the following questions.",
           "pwpInstructions": "Look at the work plan provided and identify your requirements by answering the following questions.",
           "watchVideos": "Don’t forget to consider your accessibility needs when planning your requirements! If you need a refresher, watch the following videos:",
           "pwpTitle": "Choose the best option for each section of this work plan.",
@@ -261,6 +262,7 @@
       },
       "fr":
       {
+          "Instructions": "Répondez aux questions suivantes : ",
           "pwpInstructions": "En examinant le plan de travail fourni, définissez vos besoins en répondant aux questions suivantes.",
           "watchVideos": "N'oubliez pas de tenir compte de vos besoins en matière d'accessibilité lorsque vous planifiez vos exigences! Si vous avez besoin d'un aide-mémoire, regardez les vidéos suivantes : ",
           "pwpTitle": "Choisissez la meilleure option pour chaque partie du plan de travail.",

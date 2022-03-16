@@ -5,7 +5,7 @@
       <p>{{$t('Introduction')}}</p>
       <b-card>
         <b-tabs v-model="tabIndex">
-          <b-tab title="Question 1"><checkboxQuiz :question="$t('q1')" qId="1" :Answer='["1","2","3"]'/></b-tab>
+          <b-tab title="Question 1"><checkboxQuiz :question="$t('q1')" qId="1" :Answer='["1","2","4"]'/></b-tab>
           <b-tab title="Question 2"><checkboxQuiz :question="$t('q2')" qId="2" :Answer='["2","3"]'/></b-tab>
           <b-tab title="Question 3"><checkboxQuiz :question="$t('q3')" qId="3" :Answer='["1","2","3","4"]'/></b-tab>
           <b-tab title="Question 4"><checkboxQuiz :question="$t('q4')" qId="4" :Answer='["1","2"]'/></b-tab>

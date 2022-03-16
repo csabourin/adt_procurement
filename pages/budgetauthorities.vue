@@ -25,7 +25,9 @@
                       <p>Narrator [N]: In this section, you will learn to verify your budget, distinguish between spending and financial authorities and procurement authorities, and confirm who has approval authority through financial delegation charts.</p>
                       <p>[Three drawings appear one after the other: a magnifying glass over a stack of coins, a man and woman speaking to each other, and a check mark over a clipboard.]</p>
                       <p>This section should take you approximately 20 minutes to complete.</p>
+                      <p>[An External Links reference pop-up text box appears.]</p>
                       <hr>
+
                       <h2>2. Check Your Budget</h2>
                       <p>[An outline of a circle appears. A third of it is filled in white with the words “20 minutes” underneath. Text appears in a white box with rounded corners. “2. Check Your Budget.” A drawing of a stack of coins appears.]</p>
                       <p>Before beginning a procurement process, you must check that there are sufficient funds in your budget to cover the costs of the goods, the services, and the construction that you are planning. If you don’t have enough funds, you may have to turn to other sources to find the money such as </p>
@@ -38,7 +40,9 @@
                       </ul>
                       <p>[More drawings appear: a dollar bill with downward pointing arrows, a man and woman speaking together, a man standing next to a surplus sign, a document, and two buildings with an arrow between them.]</p>
                       <p>The following exercise will help you determine if you have enough funds in your budget.</p>
+                      <p>[A Check Your Budget activity pop-up text box appears.]</p>
                       <hr>
+
                       <h2>3. Financial Authorities and Procurement Authorities</h2>
                       <p>[Text appears in a white box with rounded corners. “3. Financial Authorities and Procurement Authorities.” A drawing depicts a check mark next to a stack of coins and paper bills.]</p>
                       <p>Now that you know if you have enough money in your budget, let’s check to see if you have the proper authority to begin buying the resources that you need! </p>
@@ -60,21 +64,25 @@
                       <p>[Another tree diagram displays the Canadian Parliament building at the top, and three ministers beneath it. The diagram appears next to a drawing of a man at a counter labelled “Services.”]</p>
                       <p>To know what and how much you can authorize, consult your own signed delegation card and your organization’s delegation chart. Again, the format of these documents will differ depending on where you work.</p>
                       <p>[A drawing of a clip board and pencil appears next to the text “Your delegation card”. A drawing of a chart appears next to the text “Organization’s delegation chart”.]</p>
-
+                      <p>[A Financial Authorities and Procurement Authorities activity pop-up text box appears.]</p>
                       <hr>
+
                       <h2>4. In Real Life</h2>
                       <p>[Text appears in a white box with rounded corners. “4. In Real Life.” A drawing depicts a budget and a chart.]</p>
                       <p>Take what you have learned into real life! Your organization will have its own ways of doing things. Take a time out from the course to consult your budgets and your organization’s financial signing authority chart.</p>
                       <p>[Three drawings appear one after the other: a stack of coins, a Canadian flag enclosed in a circle, and a clipboard.]</p>
                       <p>What are your department’s procurement spending limits? Do you need to consult Public Services and Procurement Canada? Does your department have its own set of procurement rules such as the Department of National Defence or the Department of Justice?</p>
+                      <p>[An In Real Life activity pop-up text box appears.]</p>
                       <hr>
+
                       <h2>5. Quiz</h2>
                       <p>[Text appears in a white box with rounded corners. “5. Quiz.” Three drawings with check marks appear side-by-side: a checklist next to a stack of coins, a man and woman speaking together, and a chart.]</p>
                       <p>Now that you know how to verify your budget, distinguish between financial and procurement authorities, and consult your financial delegation charts, let’s see what you remember by taking this short quiz.</p>
                       <p>[The words “Take the quiz!” appear next to a check mark. A drawing depicts a hand with a pencil completing a quiz.]</p>
+                      <p>[A Take the Quiz activity pop-up text box appears.]</p>
                       <hr>
                       <h2>6. Section Completed</h2>
-                      <p>[Onscreen text showing Section Completed instruction.]</p>
+                      <p>[Onscreen text showing Section Completed instruction]</p>
                       <!-- Used to generate buttons to jump to activity
 
                          <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->

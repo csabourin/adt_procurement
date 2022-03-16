@@ -27,8 +27,10 @@
                         <p>Narrator [N]: In this section, you will learn to determine the types of costs for goods and services to include in the procurement estimates, and to conduct a risk assessment and to draft a mitigation strategy in case the goods or services are not acquired.</p>
                         <p>[Two drawings appear one after the other: a calculator next to a clipboard, and a lightbulb beneath a warning sign.]</p>
                         <p>This section should take you approximately 30 minutes to complete.</p>
+                        <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
-                        <h2>2. Check Your Budget</h2>
+                        
+                        <h2>2. Estimate Costs</h2>
                         <p>[An outline of a circle appears. Half of it is filled in white with the words “30 minutes” underneath. Text appears in a white box with rounded corners. “2. Estimate Costs.” A drawing of a magnifying glass appears.]</p>
                         <p>Before any purchase, start by estimating how much your goods, services, or construction will cost. This could be done in many ways including:</p>
                         <ul>
@@ -41,9 +43,10 @@
                         </ul>
                         <p>[More drawings appear beneath the magnifying glass. A shopping cart, a webpage, a computer, a text message above a laptop, a key, and a Canadian flag enclosed in a circle. A drawing of a stack of coins appears.]</p>
                         <p>Don’t forget to find out if there are any other costs related to your purchase, such as delivery costs, life cycle costs, sustainment costs, and disposal costs. All should be included in your estimate. After all, you wouldn’t want to get a car if you can’t afford the auto insurance, gas, and maintenance!</p>
+                        <p>[An Estimate Costs – Key Terms activity pop-up text box appears.]</p>
                         <hr>
 
-                        <h2>3. Financial Authorities and Procurement Authorities</h2>
+                        <h2>3. Conduct a Risk Assessment</h2>
                         <p>[A drawing of a car appears. Text appears in a white box with rounded corners. “3. Conduct a Risk Assessment.” A drawing of a work plan appears. The headings “Activities,” “Risk,” and “Mitigation” are circled.]</p>
                         <p>Ever wonder what would happen if you were unable to procure the resources that you needed? When procurement is not an option, you will need to find other ways to accomplish your activities. Hints on how you can do this are actually found in the risk and mitigation sections of your work plan. </p>
                         <p>[A drawing depicts a magnifying glass over a warning sign.]</p>
@@ -56,22 +59,25 @@
                         </ul>
                         <p>[Four drawings appear one after the other: a storm cloud over a delivery truck, a question mark inside of a lightbulb, a dollar bill with downward pointing arrows, and a magnifying glass over a warning sign.]</p>
                         <p>The following exercise will help you identify the risks associated with your activities.</p>
+                        <p>[A Multiple-Choice activity pop-up text box appears.]</p>
                         <hr>
 
                         <h2>4. In Real Life</h2>
                         <p>[Text appears in a white box with rounded corners. “4. In Real Life.” A drawing depicts a pen writing onto a checklist next to a stack of coins.]</p>
                         <p>Take what you have learned into real life! Your organization will have its own ways of doing things. Take a time out from the course to see how budgets are forecasted in your department. </p>
                         <p>[A drawing depicts a man and woman speaking together. A speech bubble with a dollar sign appears over the man’s head.]</p>
-                        <p>Connect with your colleagues, director, or financial management advisor, and chat about existing financial resources for your procurement needs.</p>                       
+                        <p>Connect with your colleagues, director, or financial management advisor, and chat about existing financial resources for your procurement needs.</p>
+                        <p>[An In Real Life activity pop-up text box appears.]</p>                       
                         <hr>
 
                         <h2>5. Quiz</h2>
                         <p>[Text appears in a white box with rounded corners. “5. Quiz.” Three drawings with check marks appear side-by-side: a checklist next to a stack of coins, a magnifying glass over a warning sign, and a work plan.]</p>
                         <p>Now that you know how to determine the types of costs to include in the procurement estimates, how to conduct a risk assessment, and how to draft a mitigation strategy, let’s see what you remember by taking this short quiz.</p>
                         <p>[The words “Take the quiz!” appear next to a check mark. A drawing depicts a hand with a pencil completing a quiz.]</p>
+                        <p>[A Take the Quiz activity pop-up text box appears.]</p>
                         <hr>
-                        <h2>9. Section completed</h2>
-                        <p>[Onscreen text showing Section Completed instruction.]</p>
+                        <h2>6. Section completed</h2>
+                        <p>[Onscreen text showing Section Completed instruction]</p>
 
                       </span>
                       <span v-if="$i18n.locale=='fr'">

@@ -26,7 +26,9 @@
                         <p>Narrator: In this section you will learn to initiate the solicitation process, evaluate bids and negotiate, and approve and award competitive contracts. </p>
                         <p>[The concepts appear on screen as the narrator speaks, alongside white-outline drawings of a hand holding a magnifying glass, two people in a meeting, and a handshake.] </p>
                         <p>This section should take you approximately 30 minutes to complete. </p>
+                        <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>2. Prepare Bid Solicitation Documents</h2>
                         <p>[Half of a clock gets filled in above the words, “30 minutes.” A text box reads, “2. Prepare Bid Solicitation Documents.”] </p>
                         <p>Now that you have drafted your requirements and prepared either your statement of work or your statement of requirements and chosen your procurement strategy, what’s next? </p>
@@ -46,8 +48,7 @@
                         <p>But before we jump to the activity... Are you curious to see examples of solicitation documents? Why not visit the buyandsell.gc.ca website!</p>
                         <p>[A hand holds a smartphone. An internet browser displays the Buyandsell webpage.] </p>
                         <p>You will find many examples from various organizations. And don’t forget! You will have a role to play in answering technical questions from potential suppliers during the solicitation process. </p>
-                        
-
+                        <p>[A Solicitation Documents – Key Terms activity pop-up text box appears.]</p>
                         <hr>
 
                         <h2>3. Evaluate and Negotiate</h2>
@@ -73,8 +74,10 @@
                         <p>[On a smartphone screen, the word “Supplier” is crossed out. An arrow points to the words “Contract Authority.”] </p>
                         <p>The following exercise will help you confirm your knowledge of the evaluation and negotiation phase. </p>
                         <p>[A toolbox is labelled “Job Aids.”] </p>
-                        <p> For more information on the bid evaluation team, see the job aid in the Toolbox. </p>
+                        <p>For more information on the bid evaluation team, see the job aid in the Toolbox. </p>
+                        <p>[An Evaluate and Negotiate activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h4>4. Contract Approval</h4>
                         <p>[A textbox reads, “4. Contract Approval.”] </p>
                         <p>Once a bidder has been selected based on their ability to satisfy the requirement, procurement specialists will seek to have the contract approved.  </p>
@@ -93,7 +96,9 @@
                         <p>In many cases, the procurement officer is the delegated transaction authority or contracting authority who signs the contract. </p>
                         <p>[A man’s speech bubble is filled with a question mark.] </p>
                         <p>Are you wondering who will approve the contract? The following activity will help you identify the individuals with the signing authority. </p>
+                        <p>[A Contract Approval activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>5. Contract Award</h2>
                         <p>[A text box reads, “5. Contract Award.” Three people shake hands with a man. An award ribbon hangs above them.] </p>
                         <p>Following contract approval, the procurement specialist will award the contract. Depending on the contract’s value, the specialist may send regret letters to unsuccessful bidders and post a contract award notice on PSPC’s Buyandsell.gc.ca/tenders site to inform the public of the successful bidder.  </p>
@@ -101,21 +106,26 @@
                         <p>Debriefings are provided to unsuccessful bidders on request and should normally include an outline of the factors and criteria used in the evaluation. They are typically led by the procurement specialist, while you play the supporting role of answering technical evaluation questions. </p>
                         <p>[A figure of a woman appears. Beside her are the words “Bid evaluation” and “Bid score” with checkmarks beside them.] </p>
                         <p>The only information provided to the bidder is the evaluation of its bid and the score its bid received. Proposal information on any other bidder must not be divulged. </p>
-                        
+                        <p>[A Contract Award activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>6. In Real Life</h2>
                         <p>[The words “Other bidder proposal information” pops up below the other text. This line has an X beside it. On the purple background, a text box reads, “6. In Real Life.”] </p>
                         <p>Take what you have learned into real life! </p>
                         <p>[A man and woman talk. A speech bubble leading from his mouth has a dollar sign in it.] </p>
                         <p>Your organization will have its own ways of doing things. Take some time out from the course to see how the solicitation process works in your department. Maybe your organization has an intranet page on procurement? Or maybe your procurement specialists have the templates that you need? Looking at previously prepared solicitation documents can sometimes help. And don’t forget to check the Toolbox for a Job Aid on the procurement process! </p>
+                        <p>[An In Real Life activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>7. Quiz</h2>
                         <p>[A text box reads, “7. Quiz.” Three images appear side by side: a hand holding a magnifying glass; two people in a meeting, and a handshake.] </p>
                         <p>Now that you have seen how to initiate the solicitation process, evaluate bids and negotiate, and approve and award competitive contracts, let’s see what you remember by taking this short quiz. </p>
                         <p>[The words “Take the quiz!” appear beside a hand writing on a page. The video fades to black.] </p>
+                        <p>[A Take the Quiz activity pop-up text box appears.]</p>
                         <hr>
-                        <h2>5. Section Completed</h2>
-                        <p>[Onscreen text showing Section Completed instruction.]</p>
+                        
+                        <h2>8. Section Completed</h2>
+                        <p>[Onscreen text showing Section Completed instruction]</p>
 
                       </span>
                       <span v-if="$i18n.locale=='fr'">

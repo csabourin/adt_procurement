@@ -24,7 +24,7 @@
                         <p>[Text appears on a purple background with wavy white lines. It reads, “Module 4: Technical and Bid Requirements and Procurement Strategy.” A textbox reads, “1. Introduction.” This is replaced with the headline, “In this section.” The narrator’s words appear in a bullet point list as she speaks. White graphics appear alongside them, including boxes of supplies, a person at a counter, and a bulldozer.]</p>
                         <p>Narrator: In this section you will learn to define your goods, services and construction needs, consider any special requirements, and describe what you need.</p>
                         <p>This section should take you approximately 45 minutes to complete.</p>
-
+                        <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
 
                         <h2>2. Define Your Needs</h2>
@@ -57,7 +57,7 @@
                         <p>Or visit the For Government section of the Buyandsell.gc.ca website, a great source of information.</p>
                         <p>[The Buyandsell web page appears with the government of Canada logo on it.]</p>
                         <p>After all, if you request a motor vehicle, you don't want to end up with a Smart car when what you really need is a pickup truck! </p>
-
+                        <p>[A Define Your Needs activity pop-up text box appears.]</p>
                         <hr>
 
                         <h2>3. Special Needs and Other Considerations</h2>
@@ -86,7 +86,7 @@
                           <li>Will it carry over multiple fiscal years? </li>
                         </ul>
                         <p>If you are not sure that you have considered all the special requirements, contact your procurement specialist. They will have most likely seen purchases like yours before and can help you with your requirements. </p>
-
+                        <p>[A Special Needs and Other Considerations activity pop-up text box appears.]</p>
                         <hr>
 
                         <h2>4. Describe What You Need</h2>
@@ -113,7 +113,7 @@
                         <p>A <b>statement of requirement</b> is a description of the need without specifying the exact method to be used. It includes problem definition information which will provide context for the approving authority, as well as an initial assessment of risk, and basic financial information regarding what will be produced in the next stage. </p>
                         <p>[The header “Job Aids” appears above “Statement of Work” and “Statement of Requirement.” Between the two is an image of a toolbox.] </p>
                         <p>Since you will be the one preparing either the statement of work or the statement of requirement, have a look at the “Statement of Work Example” and the “Statements of Work, Statements of Requirement and Descriptions” job aids provided in the Toolbox for guidance. </p>
-
+                        <p>[A Describe What You Need activity pop-up text box appears.]</p>
                         <hr>
 
                         <h2>5. Transparent and Fair Procurement</h2>
@@ -128,7 +128,9 @@
                         <p>[An image of a document appears with Canada’s crest, and the words “Public Service Employment Act.”] </p>
                         <p>In addition, managers are responsible for preventing the development of an employer-employee relationship for the duration of the contract. </p>
                         <p>For more information on a transparent, open and fair procurement process, see the job aid on “What Not To Do” as well as the job aid on “Legal Framework”. </p>
+                        <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>6. Consult a Procurement Specialist</h2>
                         <p>[A toolbox appears above the words, “Job Aids.” On the purple background, a text box reads, “6. Consult a Procurement Specialist.”] </p>
                         <p>I have good news for you! As a manager, you are not expected to be an expert in procurement. Your organization will have procurement specialists to provide guidance and support.  </p>
@@ -145,7 +147,9 @@
                         <p>Don’t forget: even if you are not required to consult your procurement specialist for purchases within your delegated authority, they are always there to guide you, answer your questions and support you.  </p>
                         <p>[A person holding a briefcase flies with a cape billowing behind him.] </p>
                         <p>After all, why spend hours doing research and developing documents from scratch when your procurement specialist has templates waiting for you! </p>
+                        <p>[A Consult a Procurement Specialist activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>7. Consult Stakeholders</h2>
                         <p>[A man stares at a computer, pulling at his hair. Books are piled beside him. A title screen reads, “7. Consult Stakeholders.”] </p>
                         <p>Depending on what you are procuring, you may need to consult stakeholders in security, information technology, communications and translation, to name but a few.  </p>
@@ -158,7 +162,9 @@
                         <p>People with a wide range of disabilities may also use the service or item being procured.  </p>
                         <p>[Nine circles appear with various symbols in them, including a person walking with crutches, a pregnant person pushing a carriage, and an ear with a hearing aid.] </p>
                         <p>Be sure to consult your department’s network of employees with disabilities for advice on removing obstacles to accessibility for the end user.   </p>
+                        <p>[A Consult Stakeholders activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>8. Choose a Procurement Strategy</h2>
                         <p>[A text box reads, “8. Choose a Procurement Strategy.” Checkmarks appear beside the words “Requirements” and “Who to consult.”] </p>
                         <p>You have now defined your requirements and figured out who you need to consult. What’s next? Well, that depends on the dollar amount and the complexity of what you need to buy.  </p>
@@ -170,18 +176,24 @@
                         <p>For example, items on the Buyandsell.gc.ca website must be posted for a minimum of 40 days, as applicable, if subject to our international trade agreements. Or, for complex or big-ticket items such as fleets, the process can take over a year. So, please plan accordingly! </p>
                         <p>[The words “Job Aids” appear under a toolbox.] </p>
                         <p>The following exercise will help you to review your knowledge of procurement strategies and instruments. The Toolbox also contains a “Commonly Used Procurement Instruments” job aid. </p>
+                        <p>[A Procurement Strategies and Instruments – Key Terms activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>9. In Real Life</h2>
                         <p>[A textbox reads, “9. In Real Life.” A woman and man speak. A speech bubble with a dollar sign in it leads from his mouth.] </p>
                         <p>Take what you have learned into real life! Your organization will have its own ways of doing things. Take time out from the course to see which procurement strategies you will use most often. Find the templates your department uses and look up examples of previous purchases for guidance. This will be helpful when it comes time for you to choose a procurement strategy.  </p>
+                        <p>[An In Real Life activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>10. Quiz</h2>
                         <p>[A text box reads, “10. Quiz.” Three checklists appear.] </p>
                         <p>Now that you have seen how to define your goods, services and construction needs, consider any special requirements, and describe what you need, let’s see what you remember by taking this short quiz. </p>
                         <p>[Text reads, “Take the quiz!” beside an image of a hand writing on a page. The video fades to black.] </p>
+                        <p>[A Take the Quiz activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>11. Section completed</h2>
-                        <p>[Onscreen text showing Section Completed instruction.]</p>
+                        <p>[Onscreen text showing Section Completed instruction]</p>
 
 
 

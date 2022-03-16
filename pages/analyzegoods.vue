@@ -25,6 +25,7 @@
                       <p>Narrator [N]: In this section, you will learn to analyze a work plan, identify goods, services and construction needs, and verify if goods, services and construction already exist within government.</p>
                       <p>[Three drawings appear one after the other. One depicts a magnifying glass over a document on a clipboard. Another depicts boxes, a bulldozer, and a man at a counter. The third depicts a checklist.]</p>
                       <p>This section should take you approximately 15 minutes to complete. </p>
+                      <p>[An External Links reference pop-up text box appears.]</p>
                       <hr>
                       <h2>2. Analyze Needs</h2>
                       <p>[An outline of a circle appears. A quarter of it is filled in white with the words “15 minutes” underneath. Text appears in a white box with rounded corners. “2. Analyze Needs.” A drawing of a work plan appears. The headings “Activities,” “Sub-activities,” and “Resources” are circled.]</p>
@@ -33,6 +34,7 @@
                       <p>If you do not, which goods or services are missing?</p>
                       <p>[Below the work plan, a checklist appears next to drawings of a pencil, a clipboard, and a box.] </p>
                       <p>Looking at the work plan provided, identify which goods and services you will need to procure by answering the following questions. </p>
+                      <p>[An Analyze Your Resource Needs activity pop-up text box appears.]</p>
                       <!-- <p>[A Continue to the next segment pop-up text box appears.]</p> -->
                       <hr>
                       <h2>3. Identify Existing Resources</h2>
@@ -51,20 +53,23 @@
                       <p>Before initiating any procurement processes, always check to see if the goods and services you require are already at your disposal.</p>
                       <p>[A drawing depicts a pair of hands handing boxes to another pair of hands.] </p>
                       <p>Often, the resources you need are right at your fingertips!</p>
+                      <p>[An Identify Existing Resources activity pop-up text box appears.]</p>
                       <hr>
                       <h2>4. In Real Life</h2>
                       <p>[Text appears in a white box with rounded corners. “4. In Real Life.” A drawing depicts a woman in a hijab talking to a man. A speech bubble with a question mark appears over the man.]</p>
                       <p>Take what you have learned into real life! Your organization will have its own ways of doing things. Take a time out from the course to see how goods and services needs are identified in your department.</p>
                       <p>[The man disappears from the drawing. The words “Shared Resources” appear over the woman.] </p>
                       <p>You may find that you already have access to certain resources through various teams such as Security, Shared Travel Services, Accommodations, Shared Services Canada, Training and Accessibility and Duty to Accommodate, to name but a few. </p>
+                      <p>[An In Real Life activity pop-up text box appears.]</p>
                       <hr>
                       <h2>5. Quiz</h2>
                       <p>[Drawings around the woman depict a lock, airplanes, a desk with a computer, a wi-fi symbol in the shape of a maple leaf, a wheelchair symbol, and a crutch. Text appears in a white box with rounded corners. “5. Quiz.” Three drawings with check marks appear side-by-side. One depicts a pencil filling out a document. Another depicts a magnifying glass over boxes, a bulldozer, and a man at a counter. The third depicts a woman opening a door.]</p>
                       <p>Now that you know how to analyze a work plan, how to identify goods, services and construction needs, and how to compare goods and services needed with existing goods and services on hand, let’s see what you remember by taking this short quiz. </p>
                       <p>[The words “Take the quiz!” appear next to a check mark. A drawing depicts a hand with a pencil completing a quiz.] </p>
+                      <p>[A Take the Quiz activity pop-up text box appears.]</p>
                       <hr>
                       <h2>6. Section Completed</h2>
-                      <p>[Onscreen text showing Section Completed instruction.]</p>
+                      <p>[Onscreen text showing Section Completed instruction]</p>
                       <!-- Used to generate buttons to jump to activity
 
                          <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->

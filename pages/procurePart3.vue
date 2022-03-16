@@ -24,7 +24,9 @@
                         <p>In this section you will learn to administer, pay and close out the contract. </p>
                         <p>[The words “administer,” “pay,” and “close out the contract” appear beside white-outlined drawings of a wrench, coins, and a document.] </p>
                         <p>This section should take you approximately 30 minutes to complete.</p>
+                        <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>2. Administer the Contract</h2>
                         <p>[Half of a clock is shaded in. A textbox reads, “2. Administer the Contract.”] </p>
                         <p>The contract has been awarded. You might think that your work is done, right? Not so fast! There is still more to do!</p>
@@ -58,7 +60,9 @@
                         <p>Accessibility should be a consideration throughout the procurement process, not only for employees, but also for contractors. As a manager, you may need to engage with contractors about government-created barriers that they are facing when doing the work.  </p>
                         <p>[The words “Accessibility considerations” are above nine circles with various symbols in them, including a person walking with crutches, a pregnant person pushing a carriage, and an ear with a hearing aid.] </p>
                         <p>Here is a quick exercise to help you determine your responsibilities.</p>
+                        <p>[An Administer the Contract activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>3. Ensure Records Are Maintained</h2>
                         <p>[A textbox reads, “3. Ensure Records Are Maintained.”] </p>
                         <p>Now that you know who is responsible for what, it’s paperwork time! </p>
@@ -75,8 +79,9 @@
                         <p>Good contract monitoring and record keeping leads to good contract management, which helps avoid additional costs and delays, difficulties for contractors and additional work. </p>
                         <p>[ Text reads, “Good contract monitoring and record keeping.” An arrow points from these words to text reading “Good contract management,” which has an arrow pointing to “Avoid additional costs, delays and difficulties.”] </p>
                         <p>After all, an ounce of prevention is worth a pound of cure! </p>
-
+                        <p>[An Ensure Records Are Maintained activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>4. Accept Deliverables</h2>
                         <p>[A text box reads, “4. Accept Deliverables.”] </p>
                         <p>Before you pay the contract, there are a few things to do.  </p>
@@ -90,7 +95,9 @@
                           <li>if the deliverable is a report or other product, ensure that it is complete and free of errors. </li>
                         </ul>
                         <p>Then, once you are satisfied with the deliverable, you must ensure that the payment terms are met. Only once this is done can you proceed to paying the contract. </p>
+                        <p>[An Accept Deliverables activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>5. Exercise Certification and Payment Authorities</h2>
                         <p>[A text box reads, “5. Exercise Certification and Payment Authorities.” A page appears with Canada’s coat of arms. The page reads, “Consolidation. Financial Administration Act” in English and French.] </p>
                         <p>As the certification authority under section 34 of the Financial Administration Act, your responsibility is to ensure that: </p>
@@ -112,8 +119,10 @@
                         </ul>
                         <p>Then you will determine how the invoice will be paid. </p>
                         <p>[Two arrows point upward on a dollar bill.] </p>
-                        <p>Finally, after reviewing the payment request, the financial officer pays the invoice pursuant to section 33 of the Financial Administration Act. </p>
+                        <p>Finally, after reviewing the payment request, the financial officer pays the invoice pursuant to section 33 of the <em>Financial Administration Act</em>. </p>
+                        <p>[An Exercise Payment Authority activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>6. Close Out the Contract</h2>
                         <p>[The Financial Administration Act page reappears. A text box reads, “6. Close Out the Contract.”] </p>
                         <p>Once a contract has been completed, the procurement specialist responsible for the file will close the file. Before closing the file, a review will be conducted to ensure the following: </p>
@@ -130,20 +139,26 @@
                         <p>[An arrow points from the words “IF intellectual property retained by the Government of Canada” to “appropriate steps need to be taken.” More arrows connect the narrator’s following statements.] </p>
                         <p>If a product has a warranty, the file will remain open for the warranty period. If the file is in audit, it will remain open until the final audit report is filed and accepted. If there is a litigation involving the file, it cannot be closed. </p>
                         <p>A review of any lessons learned, including any audit findings, is also done to improve future procurement activities. </p>
+                        <p>[A Close Out the Contract activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>7. In Real Life</h2>
                         <p>[A text box reads, “7. In Real Life.”] </p>
                         <p>Take what you have learned into real life! </p>
                         <p>[A man and woman talk. A speech bubble comes from his mouth. It is filled with a dollar sign.] </p>
                         <p>Your organization will have their own ways of doing things. Take time out from the course to see how contracts are administered, paid out and closed in your department. And don’t forget to check the Toolbox for a job aid on the procurement process! </p>
+                        <p>[An In Real Life activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>8. Quiz</h2>
                         <p>[A toolbox is labelled “Job Aids.” A text box reads, “8. Quiz.” Three images appear side by side: a wrench, a pile of coins, and a completed checklist.] </p>
                         <p>Now that you have seen how to administer, pay out and close a contract, let’s see what you remember by taking this short quiz. </p>
                         <p>[The words “Take the quiz!” appear beside a hand writing on a page. The video fades to black.] </p>
+                        <p>[A Take the Quiz activity pop-up text box appears.]</p>
                         <hr>
+                        
                         <h2>9. Section Completed</h2>
-                        <p>[Onscreen text showing Section Completed instruction.]</p>
+                        <p>[Onscreen text showing Section Completed instruction]</p>
                       </span>
                       <span v-if="$i18n.locale=='fr'">
                         <h2>1. Introduction</h2>

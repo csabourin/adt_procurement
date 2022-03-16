@@ -264,7 +264,7 @@
                         <p>[Une boîte de texte de l’activité Exercice du pouvoir de paiement apparaît.]</p>
                         <hr>
 
-                        <h2>6. Clôture du contrat </h2>
+                        <h2>6. Clôture de contrat</h2>
                         <p>Une fois le contrat terminé, le spécialiste en approvisionnement responsable du dossier le ferme. Avant la fermeture du dossier, un examen est effectué afin de s'assurer de ce qui suit.  </p>
                         <p>[Un contrat et quelques pièces de monnaie figurent sur une liste de vérification et un crochet est placé au-dessus d’eux. Une loupe se dessine par-dessus la liste de vérification, qui disparaît pour laisser place à des puces sous les mots « Examen de fermeture ». Pendant ce temps, la narratrice parle.]</p>
                         <ul>
@@ -284,7 +284,7 @@
                           <li>S’il y a un litige concernant le dossier, celui-ci ne peut être clôturé.  </li>
                         </ul>
                         <p>Un examen de toutes les leçons apprises, y compris les conclusions de la vérification, est également effectué pour améliorer les futures activités d’approvisionnement. </p>
-                        <p>[Une boîte de texte de l’activité Clôture due contrat apparaît.]</p>
+                        <p>[Une boîte de texte de l’activité Clôture de contrat apparaît.]</p>
                         <hr>
                         
                         <h2>7. Dans la vraie vie</h2>

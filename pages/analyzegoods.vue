@@ -69,7 +69,7 @@
                       <p>[A Take the Quiz activity pop-up text box appears.]</p>
                       <hr>
                       <h2>6. Section Completed</h2>
-                      <p>[Onscreen text showing Section Completed instruction]</p>
+                      <p>[Onscreen text showing Section Completed instruction.]</p>
                       <!-- Used to generate buttons to jump to activity
 
                          <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->
@@ -80,7 +80,9 @@
                       <p>Dans la présente section, vous apprendrez à analyser un plan de travail, à identifier les besoins en matière de biens, de services et de construction, et à voir si les biens et les services existent déjà au gouvernement. </p>
                       <p>[Trois dessins apparaissent l’un après l’autre. L’un représente une loupe au-dessus d’un document sur une planchette à pince. Un autre représente des boîtes, un bouteur et un homme à un comptoir. Le troisième représente une liste de vérification.] </p>
                       <p>Il vous faudra environ 15 minutes pour compléter cette section. </p>
+                      <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                       <hr>
+                      
                       <h2>2. Analyser les besoins</h2>
                       <p>[Le contour d’un cercle apparaît. Le quart est rempli en blanc avec les mots « 15 minutes » en dessous. Du texte apparaît dans une boîte blanche aux coins arrondis. « 2. Analyser les besoins ». Le dessin d’un plan de travail apparaît. Les titres « Activités », « Sous-activités » et « Ressources » sont encerclés.]</p>
                       <p>Pour savoir quels sont les biens, les services et la construction dont vous pourriez avoir besoin, commencez par examiner votre plan de travail. Examinez vos activités et vos sous-activités. Disposez-vous des ressources nécessaires pour les réaliser?</p>
@@ -88,7 +90,9 @@
                       <p>Sinon, quels sont les biens ou les services qui manquent?</p>
                       <p>[Sous le plan de travail, des dessins d’une liste de vérification avec un crayon, d’une planchette à pince et d’une boîte apparaissent.]</p>
                       <p>En examinant le plan de travail fourni, identifiez les biens et les services que vous devrez acquérir en répondant aux questions suivantes. </p>
+                      <p>[Une boîte de texte de l’activité Analysez vos besoins en matière de ressources apparaît.]</p>
                       <hr>
+                      
                       <h2>3. Identifier les ressources existantes</h2>
                       <p>[Du texte apparaît dans une boîte blanche aux coins arrondis. « 3. Identifier les ressources existantes. » Un dessin représente une femme qui ouvre une porte. Un panneau affichant une boîte apparaît à côté de la porte.] </p>
                       <p>Maintenant que vous avez examiné votre plan de travail et identifié tous les biens et les services dont vous aurez besoin pour réaliser vos activités, vérifiez s’ils existent déjà. Posez-vous les questions suivantes.</p>
@@ -104,20 +108,26 @@
                       <p>[Un dessin représente un ordinateur portable et un ordinateur de bureau avec des flèches pointant de l’un à l’autre.] </p>
                       <p>Avant de lancer un processus d’achat, vérifiez toujours si les biens et les services dont vous avez besoin sont déjà à votre disposition.</p>
                       <p>[Un dessin représente une paire de mains remettant des boîtes à une autre paire de mains.] </p>
-                      <p> Souvent, les ressources dont vous avez besoin sont à portée de main!</p>
+                      <p>Souvent, les ressources dont vous avez besoin sont à portée de main!</p>
+                      <p>[Une boîte de texte de l’activité Identifier les ressources existantes apparaît.]</p>
                       <hr>
+                      
                       <h2>4. Dans la vraie vie</h2>
                       <p>[Du texte apparaît dans une boîte blanche aux coins arrondis. « 4. Dans la vraie vie. » Un dessin représente une femme portant un hidjab qui parle à un homme. Une bulle de dialogue avec un point d’interrogation apparaît au-dessus de l’homme.] </p>
                       <p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!  </p>
                       <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment les besoins en matière de biens et services sont identifiés au sein votre ministère.</p>
                       <p>[L’homme disparaît du dessin. Les mots « Ressources partagées » apparaissent au-dessus de la femme.] </p>
                       <p>Vous verrez peut-être que vous avez déjà accès à certaines ressources par l’intermédiaire de diverses équipes telles que la Sécurité, les Services de voyage partagés, les Aménagements, Services partagés Canada, la formation et l’accessibilité et l’obligation de prendre des mesures d’adaptation, pour n’en nommer que quelques-unes. </p>
+                      <p>[Une boîte de texte de l’activité Dans la vraie vie apparaît.]</p>
                       <hr>
+                      
                       <h2>5. Quiz</h2>
                       <p>[Des dessins apparaissent autour de la femme : un cadenas, deux avions, un bureau avec ordinateur, un symbole Wi-Fi en forme de feuille d’érable, un symbole de fauteuil roulant et une béquille. Du texte apparaît dans une boîte blanche aux coins arrondis. « 5. Quiz ». Trois dessins avec des coches apparaissent côte à côte. Le premier représente un crayon qui remplit un document. Le deuxième représente une loupe au-dessus d’une boîte, d’un bouteur, et d’un homme à un comptoir. Le troisième représente une femme qui ouvre une porte.] </p>
                       <p>Maintenant que vous avez appris à analyser un plan de travail, à identifier les besoins en matière de biens, de services et de construction, et à comparer les biens et les services nécessaires avec les biens et les services existants, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                       <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une coche. Un dessin représente une main avec un crayon qui remplit un questionnaire.] </p>
+                      <p>[Une boîte de texte de l’activité Répondez au quiz apparaît.]</p>
                       <hr>
+                      
                       <h2>6. Section complétée</h2>
                       <p>[Texte à l’écran indiquant l’instruction Section complétée.]</p>
                     </span>

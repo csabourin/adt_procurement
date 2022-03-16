@@ -82,7 +82,7 @@
                       <p>[A Take the Quiz activity pop-up text box appears.]</p>
                       <hr>
                       <h2>6. Section Completed</h2>
-                      <p>[Onscreen text showing Section Completed instruction]</p>
+                      <p>[Onscreen text showing Section Completed instruction.]</p>
                       <!-- Used to generate buttons to jump to activity
 
                          <button class="accessibilityButton" v-for="(tracks, index) in navBarTracks" :key="index" @click="accessibleModal(index)">{{$t('jumpModalPartsWP') + ' - ' +navBarTracks[index]}}</button> -->
@@ -90,11 +90,12 @@
                     <span v-if="$i18n.locale=='fr'">
                       <h2>1. Introduction</h2>
                       <p>[Sur un fond bleu, de fines lignes diagonales oscillent en vagues. Du texte apparaît dans une boîte blanche aux coins arrondis. « Module 3 : Budgets et pouvoirs. 1. Introduction. »] </p>
-                      
                       <p>Dans la présente section, vous apprendrez à vérifier votre budget, faire la distinction entre les pouvoirs de dépenser, les pouvoirs financiers et les pouvoirs en matière d’approvisionnement, et confirmer qui a le pouvoir d’approbation en consultant les tableaux de délégation des pouvoirs financiers. </p>
                       <p>[Trois dessins apparaissent l’un après l’autre : une loupe au-dessus d’une pile de pièces de monnaie, un homme et une femme qui se parlent, et une coche à côté d’une planchette à pince.] </p>
                       <p>Il vous faudra environ 20 minutes pour compléter cette section. </p>
+                      <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                       <hr>
+                      
                       <h2>2. Vérifier votre budget</h2>
                       <p>[Le contour d’un cercle apparaît. Le tiers est rempli en blanc avec les mots « 20 minutes » en dessous. Du texte apparaît dans une boîte blanche avec des coins arrondis. « 2. Vérifier votre budget ». Le dessin d’une pile de pièces de monnaie apparaît.] </p>
                       <p>Avant de lancer un processus d’approvisionnement, vous devez vérifier que votre budget contient suffisamment de fonds pour couvrir les coûts des biens, des services et des activités de construction que vous prévoyez. Si vous n’avez pas suffisamment de fonds, vous devrez peut-être vous tourner vers d’autres sources pour trouver l’argent nécessaire, par exemple  </p>
@@ -107,7 +108,9 @@
                       </ul>
                       <p>[D’autres dessins apparaissent : un billet de banque avec des flèches pointant vers le bas, un homme et une femme qui parlent ensemble, un homme debout à côté d’un signe « plus », un document et deux bâtiments avec une flèche entre eux.] </p>
                       <p>L’exercice suivant vous aidera à déterminer si vous disposez de fonds suffisants dans votre budget. </p>
+                      <p>[Une boîte de texte de l’activité Vérifier votre budget apparaît.]</p>
                       <hr>
+                      
                       <h2>3. Pouvoirs financiers et pouvoirs en matière d’approvisionnement</h2>
                       <p>[Du texte s’affiche dans une boîte blanche aux coins arrondis. « 3. Pouvoirs financiers et pouvoirs en matière d’approvisionnement. » Un dessin représente une coche à côté d’une pile de pièces de monnaie et de billets de banque.] </p>
                       <p>Maintenant que vous savez si vous avez assez d’argent dans votre budget, vérifions si vous avez l’autorité nécessaire pour commencer à acheter les ressources dont vous avez besoin! </p>
@@ -128,19 +131,25 @@
                       <p>[Dans un autre diagramme hiérarchique, l’édifice du Parlement canadien est au sommet, et trois ministres sont au deuxième niveau. À la droite de ce diagramme apparaît le dessin d’un homme à un comptoir sous le mot « Services ».] </p>
                       <p>Pour savoir ce que vous pouvez autoriser et combien vous pouvez utiliser, consultez votre propre carte de délégation signée et le tableau de délégation de votre organisation.  </p>
                       <p>Encore une fois, le format de ces documents variera en fonction de votre lieu de travail. </p>
+                      <p>[Une boîte de texte de l’activité Pouvoirs financiers et pouvoirs en matière d’approvisionnement apparaît.]</p>
                       <hr>
+                      
                       <h2>4. Dans la vraie vie</h2>
                       <p>[Du texte apparaît dans une boîte blanche aux coins arrondis. « 4. Dans la vraie vie. » Un dessin représente un budget et un tableau.] </p>
                       <p>Appliquez maintenant ce que vous avez appris - dans la vraie vie!</p>
                       <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de consulter vos budgets et le tableau de délégation des pouvoirs de signature en matière financière de votre organisation.</p>
                       <p>[Trois dessins apparaissent l’un après l’autre : une pile de pièces de monnaie, un drapeau canadien dans un cercle et une planchette à pince.] </p>
                       <p>Quelles sont les limites de dépenses de votre ministère en approvisionnement? Avez-vous besoin de consulter Services publics et Approvisionnement Canada? Votre ministère a-t-il son propre ensemble de règles en approvisionnement, comme le ministère de la Défense nationale ou le ministère de la Justice?  </p>
+                      <p>[Une boîte de texte de l’activité Dans la vraie vie apparaît.]</p>
                       <hr>
+                      
                       <h2>5. Quiz</h2>
                       <p>[Du texte apparaît dans une boîte blanche aux coins arrondis. « 5. Quiz. » Trois dessins avec des coches apparaissent côte à côte : une liste de vérification à côté d’une pile de pièces de monnaie, un homme et une femme qui parlent ensemble et un tableau.] </p>
                       <p>Maintenant que vous savez comment vérifier votre budget, comment faire la distinction entre les pouvoirs financiers et les pouvoirs en matière d’approvisionnement, et comment consulter vos tableaux de délégation financière, voyons ce dont vous vous souvenez en répondant à ce petit quiz.</p>
                       <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une coche. Un dessin représente une main avec un crayon qui remplit un questionnaire.] </p>
+                      <p>[Une boîte de texte de l’activité Répondez au quiz apparaît.]</p>
                       <hr>
+                      
                       <h2>6. Section complétée</h2>
                       <p>[Texte à l’écran indiquant l’instruction Section complétée.]</p>
                     </span>

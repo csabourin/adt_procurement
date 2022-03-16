@@ -29,7 +29,7 @@
                         <p>This section should take you approximately 30 minutes to complete.</p>
                         <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
-                        
+
                         <h2>2. Estimate Costs</h2>
                         <p>[An outline of a circle appears. Half of it is filled in white with the words “30 minutes” underneath. Text appears in a white box with rounded corners. “2. Estimate Costs.” A drawing of a magnifying glass appears.]</p>
                         <p>Before any purchase, start by estimating how much your goods, services, or construction will cost. This could be done in many ways including:</p>
@@ -76,8 +76,8 @@
                         <p>[The words “Take the quiz!” appear next to a check mark. A drawing depicts a hand with a pencil completing a quiz.]</p>
                         <p>[A Take the Quiz activity pop-up text box appears.]</p>
                         <hr>
-                        <h2>6. Section completed</h2>
-                        <p>[Onscreen text showing Section Completed instruction]</p>
+                        <h2>6. Section Completed</h2>
+                        <p>[Onscreen text showing Section Completed instruction.]</p>
 
                       </span>
                       <span v-if="$i18n.locale=='fr'">
@@ -85,8 +85,10 @@
                         <p>[Sur un fond bleu, de fines lignes diagonales oscillent en vagues. Du texte apparaît dans une boîte blanche aux coins arrondis. « Module 2 : Prévoir les besoins budgétaires. 1. Introduction. »] </p>
                         <p>Dans la présente section, vous apprendrez à estimer les coûts des biens et des services, y compris le coût du cycle de vie lié au maintien et à l’aliénation des biens et des services, et à procéder à une évaluation des risques et à l’élaboration d’une stratégie d’atténuation si les biens ou les services ne sont pas acquis.  </p>
                         <p>[Deux dessins apparaissent l’un après l’autre : une calculatrice à côté d’une planchette à pince et une ampoule en dessous d’un symbole d’avertissement.]</p>
-                        <p> Cette section devrait vous prendre environ 30 minutes à compléter. </p>
+                        <p>Cette section devrait vous prendre environ 30 minutes à compléter. </p>
+                        <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                         <hr>
+                        
                         <h2>2. Estimer les coûts</h2>
                         <p>[Le contour d’un cercle apparaît. La moitié est remplie en blanc avec les mots « 30 minutes » en dessous. Du texte apparaît dans une boîte blanche aux coins arrondis. « 2. Estimer les coûts ». Le dessin d’une loupe apparaît.] </p>
                         <p>Avant tout achat, commencez par estimer le coût de vos biens, de vos services ou de vos activités de construction. Cela peut se faire de plusieurs façons, notamment : </p>
@@ -99,7 +101,9 @@
                           <li>en demandant l’avis d’un expert de Services publics et Approvisionnement Canada. </li>
                         </ul>
                         <p>[D’autres dessins apparaissent sous la loupe. Un panier d’achats, une page Web, un ordinateur, un message texte au-dessus d’un ordinateur portable, une clé et un drapeau canadien dans un cercle. Un dessin d’une pile de pièces de monnaie apparaît.] </p>
+                        <p>[Une boîte de texte de l’activité Estimer les coûts - Termes clés apparaît.]</p>
                         <hr>
+                        
                         <h2>3. Mener une évaluation des risques</h2>
                         <p>[Le dessin d’une voiture apparaît. Du texte apparaît dans une boîte blanche aux coins arrondis. « 3. Mener une évaluation des risques. » Le dessin d’un plan de travail apparaît. Les titres « Activités », « Risque » et « Atténuation » sont encerclés.]</p>
                         <p>Vous êtes-vous déjà demandé ce qui se passerait si vous n’étiez pas en mesure de vous procurer les ressources dont vous avez besoin? Lorsque l’approvisionnement n’est pas une option, vous devrez essayer de trouver d’autres moyens d’accomplir vos activités. Vous trouverez généralement des conseils sur la manière d’y parvenir dans les sections de votre plan de travail consacrées aux risques et à l’atténuation des risques.  </p>
@@ -113,6 +117,7 @@
                         </ul>
                         <p>[Quatre dessins apparaissent l’un après l’autre : un nuage orageux au-dessus d’un camion de livraison, un point d’interrogation à l’intérieur d’une ampoule, un billet de banque avec des flèches pointant vers le bas et une loupe au-dessus d’un symbole d’avertissement.] </p>
                         <p>L’exercice suivant vous aidera à identifier les risques associés à vos activités.  </p>
+                        <p>[Une boîte de texte de l’activité Choix multiple apparaît.]</p>
                         <hr>
 
                         <h2>4. Dans la vraie vie</h2>
@@ -120,12 +125,16 @@
                         <p>Appliquez maintenant ce que vous avez appris - dans la vraie vie! Votre organisation aura sa propre façon de faire les choses. Prenez le temps pour voir comment les budgets sont établis au sein votre ministère.</p>
                         <p>[Un dessin représente un homme et une femme qui parlent ensemble. Une bulle de dialogue avec un symbole de dollar apparaît au-dessus de la tête de l’homme.] </p>
                         <p>Consultez vos collègues, votre directeur ou votre conseiller en gestion financière, et discutez des ressources financières existantes pour vos besoins en matière d'approvisionnement. </p>
+                        <p>[Une boîte de texte de l’activité Dans la vraie vie apparaît.]</p>
                         <hr>
+                        
                         <h2>5. Quiz</h2>
                         <p>[Du texte apparaît dans une boîte blanche aux coins arrondis. « 5. Quiz. » Trois dessins avec des coches apparaissent côte à côte : une liste de vérification à côté d’une pile de pièces de monnaie, une loupe au-dessus d’un symbole d’avertissement et un plan de travail.]</p>
                         <p>Maintenant que vous savez comment déterminer les types de coûts à inclure dans les estimés d'approvisionnement, comment procéder à une évaluation des risques et comment élaborer une stratégie d'atténuation, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une coche. Un dessin représente une main avec un crayon qui remplit un quiz.] </p>
+                        <p>[Une boîte de texte de l’activité Répondez au quiz apparaît.]</p>
                         <hr>
+                        
                         <h2>6. Section complétée</h2>
                         <p>[Texte à l’écran indiquant l’instruction Section complétée.]</p>
 

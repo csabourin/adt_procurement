@@ -158,7 +158,7 @@
                         <hr>
                         
                         <h2>9. Section Completed</h2>
-                        <p>[Onscreen text showing Section Completed instruction]</p>
+                        <p>[Onscreen text showing Section Completed instruction.]</p>
                       </span>
                       <span v-if="$i18n.locale=='fr'">
                         <h2>1. Introduction</h2>
@@ -167,7 +167,7 @@
                         <p>[Les mots « Administrer », « Payer » et « Clôturer le contrat » s’affichent à côté de trois dessins faits de lignes blanches. Ils représentent une clé à fourches, des pièces de monnaie et un document.]</p>
                         <p>Il vous faudra environ 30 minutes pour effectuer cette section. </p>
                         <p>[La moitié d’une horloge est remplie. Une boîte de texte indique : « 2. Administrer le contrat ».]</p>
-                        
+                        <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                         <hr>
                         
                         <h2>2. Administrer le contrat</h2>
@@ -203,7 +203,7 @@
                         <p>[Les mots « Considérations d’accessibilité » figurent au-dessus de neuf cercles dans lesquels se trouvent divers symboles, notamment : une personne avec des béquilles, une femme enceinte avec une poussette et une oreille avec un appareil auditif.]</p>
                         <p>Voici une petite activité pour vous aider à déterminer vos responsabilités. </p>
                         <p>[Une boîte de texte indique : « 3. Tenir des dossiers ».]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Administrer le contrat apparaît.]</p>
                         <hr>
 
                         <h2>3. Tenir des dossiers </h2>
@@ -221,7 +221,7 @@
                         <p>[À l’écran, il est écrit : « Bon suivi des contrats et bonne tenue des dossiers ». De ces mots pointe une flèche vers un autre énoncé : « Bonne gestion des contrats ». Une autre flèche pointe de ce dernier vers « Éviter des coûts supplémentaires, des retards et des difficultés ».]</p>
                         <p>Après tout, mieux vaut prévenir que guérir! </p>
                         <p>[Une boîte de texte indique : « 4. Accepter les livrables ».]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Assurer la tenue des dossiers apparaît.]</p>
                         <hr>
 
                         <h2>4. Accepter les livrables </h2>
@@ -235,8 +235,9 @@
                         </ul>
                         <p>Une fois que vous êtes satisfait du produit livrable, vous devez vous assurer du respect des modalités de paiement. Ce n’est qu’une fois cette tâche effectuée que vous pourrez procéder au paiement du contrat. </p>
                         <p>[Une boîte de texte indique : « 5. Exercice des pouvoirs d’attestation et de payer ».]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Accepter les livrables apparaît.]</p>
                         <hr>
+
                         <h2>5. Exercice des pouvoirs d’attestation et de payer</h2>
                         <p>[Une page avec les armoiries du Canada apparaît. Il y est écrit, en français et en anglais : « Codification. Loi sur la gestion des finances publiques ».]</p>
                         <p>En tant que détenteur du pouvoir d’attestation en vertu de l’article 34 de la Loi sur la gestion des finances publiques, vous avez la responsabilité de vous assurer</p>
@@ -260,7 +261,7 @@
                         <p>[Deux flèches pointent vers le haut sur un billet de banque.]</p>
                         <p>Enfin, après examen de la demande de paiement, l’agent financier paie la facture conformément à l’article 33 de la Loi sur la gestion des finances publiques. </p>
                         <p>[La page de la Loi sur la gestion des finances publiques s’affiche de nouveau. Une boîte de texte indique : « 6. Clôture du contrat ».]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Exercice du pouvoir de paiement apparaît.]</p>
                         <hr>
 
                         <h2>6. Clôture du contrat </h2>
@@ -283,20 +284,26 @@
                           <li>S’il y a un litige concernant le dossier, celui-ci ne peut être clôturé.  </li>
                         </ul>
                         <p>Un examen de toutes les leçons apprises, y compris les conclusions de la vérification, est également effectué pour améliorer les futures activités d’approvisionnement. </p>
-                        <p>[Une boîte de texte indique : « 7. Dans la vraie vie ».]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Clôture due contrat apparaît.]</p>
                         <hr>
+                        
                         <h2>7. Dans la vraie vie</h2>
                         <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
                         <p>[Un homme et une femme discutent. Une bulle de dialogue contenant un symbole de dollar pointe vers l’homme.]</p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment les contrats sont administrés, payés et clôturés au sein de votre ministère. Et n’oubliez pas de consulter la boîte à outils où vous trouverez un aide-mémoire sur le processus d’approvisionnement! </p>
                         <p>[Un dessin d’une boîte à outils s’affiche. Une boîte de texte indique : « 8. Quiz ».]</p>
+                        <p>[Une boîte de texte de l’activité Dans la vraie vie apparaît.]</p>
                         <hr>
+                        
                         <h2>8. Quiz </h2>
                         <p>[Trois images apparaissent côte à côte : une clé à fourches, une pile de pièces de monnaie et une liste de vérification remplie.]</p>
                         <p>Maintenant que vous avez vu comment administrer, payer et clôturer un contrat, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille. L’écran devient noir.]</p>
+                        <p>[Une boîte de texte de l’activité Répondez au quiz apparaît.]</p>
+                        <hr>
+
                         <h2>9. Section complétée</h2>
+                        <p>[Texte à l’écran indiquant l’instruction Section complétée.]</p>
                       </span>
                     </b-card-text>
                   </b-card-body>

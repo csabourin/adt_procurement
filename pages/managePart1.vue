@@ -114,7 +114,7 @@
                         <hr>
                         
                         <h2>8. Section Completed</h2>
-                        <p>[Onscreen text showing Section Completed instruction]</p>
+                        <p>[Onscreen text showing Section Completed instruction.]</p>
 
                       </span>
                       <span v-if="$i18n.locale=='fr'">
@@ -131,7 +131,7 @@
                         <p>[Les quatre phases s’affichent en dessous des mots « Dans la présente section ». À leur droite, quatre flèches forment un cercle autour des mots « Gestion du cycle de vie du matériel ».]</p>
                         <p>Il vous faudra environ 20 minutes pour effectuer cette section</p>
                         <p>[Le tiers d’une horloge est rempli. Une boîte de texte indique : « 2. Planification ».]</p>
-
+                        <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                         <hr>
 
                         <h2>2. Planification </h2>
@@ -160,7 +160,7 @@
                         <p>[Quatre personnes sont assises autour d’une table de réunion. Au-dessus d’elles, une pile de pièces de monnaie et une boîte entourée de deux flèches sont dessinées côte à côte. Le mot « contre » est écrit entre les deux.]</p>
                         <p>Une fois que vous avez répondu à ces questions, vous pouvez passer à la deuxième phase de la gestion du cycle de vie du matériel.</p>
                         <p>[Une boîte de texte indique : « 3. Acquisition ».]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Planification apparaît.]</p>
                         <hr>
 
                         <h2>3. Acquisition </h2>
@@ -175,7 +175,7 @@
                         <p>[Un calendrier se dessine et les mots « Services publics et Approvisionnement Canada » et « Accords commerciaux » s’affichent à sa gauche.]</p>
                         <p>Puisque la phase d’acquisition des articles complexes ou de valeur supérieure nécessite souvent la participation de Services publics et Approvisionnement Canada et l’application d’obligations supplémentaires telles que des accords commerciaux, des délais plus longs sont souvent nécessaires pour effectuer l’achat. Alors, planifiez tôt et donnez-vous, ainsi qu’à toutes les personnes concernées, suffisamment de temps pour acquérir ce dont vous avez besoin! </p>
                         <p>[La dernière journée du mois du calendrier est marquée d’un X. Une boîte de texte indique : « 4. Exploitation, utilisation et entretien ».]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Acquisition apparaît.]</p>
                         <hr>
 
                         <h2>4. Exploitation, utilisation et entretien </h2>
@@ -188,6 +188,7 @@
                         </ul>
                         <p>L’objectif de cette phase est de tirer le maximum du matériel et de s’assurer qu’il dure le plus longtemps possible en fonction du meilleur rapport qualité-prix. </p>
                         <p>[Une boîte de texte indique : « 5. Réaffectation ou dessaisissement ».]</p>
+                        <p>[Une boîte de texte de l’activité Exploitation, utilisation et entretien apparaît.]</p>
                         <hr>
 
                         <h2>5. Réaffectation ou dessaisissement </h2>
@@ -195,22 +196,26 @@
                         <p>[Dans le haut de l’écran, il est écrit : « Quatrième phase : Dessaisissement ». Un peu plus bas, il est écrit : « Déterminer les possibilités ». Deux cercles sont dessinés en dessous. Dans celui de gauche, il est écrit : « Remplacement, réaffectation ou élimination du matériel excédentaire » et, dans celui de droite : « Matériel qui n’est plus rentable ».]</p>
                         <p>Les gestionnaires doivent toujours envisager des alternatives à l’élimination des produits, comme leur réaffectation ou leur remise en état. </p>
                         <p>[Les deux cercles glissent l’un vers l’autre jusqu’à former un diagramme de Venn. La partie commune est vide. Une boîte de texte indique : « 6. Dans la vraie vie ».]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Réaffectation ou dessaisissement apparaît.]</p>
                         <hr>
+
                         <h2>6. Dans la vraie vie </h2>
                         <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
                         <p>[Un homme et une femme discutent. Une bulle de dialogue contenant un point d’interrogation pointe vers l’homme.]</p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez une pause de ce cours pour voir comment le processus de gestion du cycle de vie du matériel fonctionne dans votre ministère. </p>
                         <p>[Une boîte de texte indique : « 7. Quiz ».]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Dans la vraie vie apparaît.]</p>
                         <hr>
+
                         <h2>7. Quiz</h2>
                         <p>[Dans un encadré, les mots « Gestion du cycle de vie du matériel » entourés de quatre flèches s’affichent en dessous d’un crochet.]</p>
                         <p>Maintenant que vous en savez plus sur le processus de gestion du cycle de vie du matériel, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille.]</p>
+                        <p>[Une boîte de texte de l’activité Répondez au quiz apparaît.]</p>
                         
                         <hr>
                         <h2>8. Section complétée</h2>
+                        <p>[Texte à l’écran indiquant l’instruction Section complétée.]</p>
 
                       </span>
                     </b-card-text>

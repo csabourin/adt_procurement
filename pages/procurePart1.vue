@@ -193,7 +193,7 @@
                         <hr>
                         
                         <h2>11. Section completed</h2>
-                        <p>[Onscreen text showing Section Completed instruction]</p>
+                        <p>[Onscreen text showing Section Completed instruction.]</p>
 
 
 
@@ -210,7 +210,7 @@
                         </ul>
                         <p>Il vous faudra environ 45 minutes pour compléter cette section. </p>
                         <p>[Les trois quarts d’une horloge sont remplis au-dessus des mots « 45 minutes ». L’image est remplacée par une boîte de texte qui indique : « 2. Définir ses besoins ».]</p>
-
+                        <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                         <hr>
 
                         <h2>2. Définir ses besoins</h2>
@@ -243,7 +243,7 @@
                         <p>[La page Web « Achatsetventes » s’affiche avec le logo du gouvernement du Canada.]</p>
                         <p>Après tout, si vous demandez un véhicule à moteur, vous ne voulez pas vous retrouver avec une sous‑compacte alors que vous avez vraiment besoin d’une camionnette! </p>
                         <p>[Une voiture sous-compacte roule en dehors de l’écran avant d’être remplacée par une camionnette. Une boîte de texte indique : « 3. Besoins particuliers et autres considérations ».]</p>
-
+                        <p>[Une boîte de texte de l’activité Définir ses besoins apparaît.]</p>
                         <hr>
 
                         <h2>3. Besoins particuliers et autres considérations</h2>
@@ -272,7 +272,7 @@
                         </ul>
                         <p>Si vous n’êtes pas sûr d’avoir pris en compte toutes les exigences particulières, communiquez avec votre spécialiste en approvisionnement. Il a probablement déjà vu des achats comme les vôtres et pourra vous aider à cerner vos besoins. </p>
                         <p>[Deux personnes discutent. Une bulle de dialogue avec un point d’interrogation pointe vers l’une d’entre elles. L’image est remplacée par une boîte de texte qui indique : « 4. Décrire ce dont on a besoin ».]</p>
-
+                        <p>[Une boîte de texte de l’activité Besoins particuliers et autres considérations apparaît.]</p>
                         <hr>
 
                         <h2>4. Décrire ce dont on a besoin</h2>
@@ -315,7 +315,7 @@
                         <p>[Les mots « Boîte à outils » s’affichent au-dessus d’« Énoncé de travail » et d’« Énoncé des besoins ». Une boîte à outils se dessine entre les deux énoncés.]</p>
                         <p>Puisque vous serez la personne qui préparera l’énoncé des travaux ou l’énoncé des besoins, jetez un coup d'œil aux aide-mémoires fournis pour vous aider dans ces étapes dans la boîte à outils à titre indicatif. </p>
                         <p>[Une boîte de texte indique : « 5. Approvisionnement équitable et transparent ».]</p>
-
+                        <p>[Une boîte de texte de l’activité Décrire ce dont on a besoin apparaît.]</p>
                         <hr>
 
                         <h2>5. Approvisionnement équitable et transparent</h2>
@@ -331,7 +331,7 @@
                         <p>[Le dessin d’une boîte à outils apparaît à l’écran.]</p>
                         <p>Pour plus d’informations sur un processus d’approvisionnement transparent, ouvert et équitable, consultez l’aide-mémoire sur « Ce qu’il ne faut pas faire » ainsi que l’aide-mémoire sur le « Cadre juridique ».</p>
                         <p>[Une boîte de texte indique : « 6. Consulter un spécialiste en approvisionnement ».]</p>
-
+                        <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                         <hr>
 
                         <h2>6. Consulter un spécialiste en approvisionnement</h2>
@@ -358,7 +358,7 @@
                         <p>[Un homme vole en tenant une mallette. Derrière lui, sa cape flotte au vent.]</p>
                         <p>Après tout, pourquoi passer des heures à effectuer des recherches et à créer des documents de toutes pièces alors que votre spécialiste en approvisionnement a des modèles pour vous! </p>
                         <p>[Un homme fixe son ordinateur et s’arrache les cheveux. Des livres sont empilés à côté de lui. Une boîte de texte indique : 7. Identifier les parties prenantes ».]</p>
-
+                        <p>[Une boîte de texte de l’activité Consulter un spécialiste en approvisionnement apparaît.]</p>
                         <hr>
 
                         <h2>7. Consulter les parties prenantes</h2>
@@ -373,6 +373,7 @@
                         <p>[Neuf cercles dans lesquels se trouvent divers symboles se dessinent, notamment : une personne avec des béquilles, une femme enceinte avec une poussette, et une oreille avec un appareil auditif.]</p>
                         <p>Consultez le réseau d’employés handicapés de votre ministère pour obtenir des conseils sur la suppression des obstacles à l’accessibilité pour l’utilisateur final.</p>
                         <p>[Une boîte de texte indique : « 8. Choisir une stratégie d’approvisionnement ». Des crochets apparaissent à côté des mots « Besoins » et « Qui vous devez consulter ».]</p>
+                        <p>[Une boîte de texte de l’activité Consulter les parties prenantes apparaît.]</p>
                         <hr>
 
                         <h2>8. Choisir une stratégie d’approvisionnement</h2>
@@ -386,21 +387,24 @@
                         <p>[La boîte à outils s’affiche.]</p>
                         <p>L'activité suivante vous aidera à rafraîchir vos connaissances sur les stratégies et les instruments d’approvisionnement. La boîte à outils contient également un aide-mémoire intitulé « Instruments d’approvisionnement couramment utilisés ». </p>
                         <p>[Une boîte de texte indique : « 9. Dans la vraie vie ». Un homme et une femme discutent. Une bulle de dialogue avec un symbole de dollar pointe vers l’homme.]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Stratégies et instruments d’approvisionnement - Termes clés apparaît.]</p>
                         <hr>
+
                         <h2>9. Dans la vraie vie</h2>
                         <p>Appliquez maintenant ce que vous avez appris - dans la vraie vie! </p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir quelles sont les stratégies d’approvisionnement que vous utiliserez le plus souvent. Trouvez les modèles utilisés par votre ministère et recherchez des exemples d’achats antérieurs à titre indicatif. Cela vous sera utile lorsque viendra le temps pour vous de choisir une stratégie d’approvisionnement.  </p>
                         <p>[Une boîte de texte indique : « 10. Quiz ». Trois listes de vérification s’affichent.]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Dans la vraie vie apparaît.]</p>
                         <hr>
+
                         <h2>10. Quiz</h2>
                         <p>Maintenant que vous avez vu comment définir vos besoins en biens, en services et en construction, tenir compte des besoins particuliers et décrire ce dont vous avez besoin, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille. L’écran devient noir.]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Répondez au quiz apparaît.]</p>
                         <hr>
+
                         <h2>11. Section complétée</h2>
-                        <p>[Texte à l’écran indique la directive Section complétée.]</p>
+                        <p>[Texte à l’écran indiquant l’instruction Section complétée.]</p>
                       </span>
                     </b-card-text>
                   </b-card-body>

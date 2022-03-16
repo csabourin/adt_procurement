@@ -141,7 +141,7 @@
                         <p>[Les énoncés prononcés par la narratrice s’affichent à l’écran pendant qu’elle parle. À leur droite, des dessins faits de lignes blanches apparaissent l’un après l’autre : une main tenant une loupe, deux personnes en réunion et une poignée de main.]</p>
                         <p>Il vous faudra environ 30 minutes pour effectuer cette section.</p>
                         <p>[La moitié d’une horloge est remplie au-dessus des mots « 30 minutes ». Une boîte de texte indique : « 2. Préparer les documents de demande de soumissions ».]</p>
-                        
+                        <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                         <hr>
 
                         <h2>2. Préparer les documents de demande de soumissions</h2>
@@ -163,7 +163,7 @@
                         <p>[Une main tient un téléphone intelligent. Une image d’un navigateur Internet montre la page Web « Achatsetventes ».]</p>
                         <p>Vous y trouverez de nombreux exemples provenant de diverses organisations. Et n’oubliez pas: vous aurez un rôle à jouer pour répondre aux questions techniques des fournisseurs potentiels pendant le processus de demande.</p>
                         <p>[Une boîte de texte indique : « 3. Évaluer et négocier ». Un document glisse dans une enveloppe qui s’envole ensuite.]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Documents d’invitation à soumissionner – Termes clés apparaît.]</p>
                         <hr>
 
                         <h2>3. Évaluer et négocier</h2>
@@ -190,6 +190,7 @@
                         <p>[Un dessin d’une boîte à outils s’affiche.]</p>
                         <p>Pour obtenir plus d’informations sur l’équipe d’évaluation des soumissions, consultez l’aide‑mémoire dans la boîte à outils. </p>
                         <p>[Une boîte de texte indique : « 4. Approbation de contrat ».]</p>
+                        <p>[Une boîte de texte de l’activité Évaluer et négocier apparaît.]</p>
                         <hr>
                         
                         <h2>4. Approbation de contrat</h2>
@@ -209,7 +210,7 @@
                         <p>[La bulle de dialogue d’un homme contient un point d’interrogation.]</p>
                         <p>Vous vous demandez qui approuvera le contrat? L’activité suivante vous aidera à reconnaître les personnes ayant le pouvoir de signer. </p>
                         <p>[Une boîte de texte indique : « 5. Attribution du contrat ». Trois personnes serrent la main d’un homme. Un ruban de récompense se tient au-dessus d’eux.]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Dans la vrai vieApprobation du contrat apparaît.]</p>
                         <hr>
 
                         <h2>5. Attribution du contrat</h2>
@@ -219,7 +220,7 @@
                         <p>[La silhouette de la femme réapparaît. À sa droite, les mots « Évaluation de son offre » et « Note à l’offre » sont accompagnés d’un crochet.]</p>
                         <p>La seule information fournie au soumissionnaire est l’évaluation de son offre et la note accordée à celle-ci. Les renseignements sur les autres soumissionnaires ne doivent pas être divulgués. </p>
                         <p>[Les mots « Renseignements sur les autres soumissionnaires » suivis d’un X s’affichent en dessous des deux autres énoncés. Une boîte de texte indique : « 6. Dans la vraie vie ».]</p>
-                        
+                        <p>[Une boîte de texte de l’activité Attribution du contrat apparaît.]</p>
                         <hr>
 
                         <h2>6. Dans la vraie vie</h2>
@@ -227,15 +228,17 @@
                         <p>[Un homme et une femme discutent. Une bulle de dialogue contenant un symbole de dollar pointe vers l’homme.]</p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment le processus de demande de soumissions fonctionne dans votre ministère. Votre organisation possède peut-être une page intranet concernant l’approvisionnement? Ou vos spécialistes en approvisionnement ont peut-être les modèles dont vous avez besoin? L’examen des documents de demande de soumissions préparés par le passé peut parfois aider. Et n’oubliez pas de consulter la boîte à outils où vous trouverez un aide-mémoire sur le processus d’approvisionnement! </p>
                         <p>[Une boîte de texte indique : « 7. Quiz ». Trois images apparaissent côte à côte : une main tenant une loupe, deux personnes en réunion et une poignée de main.]</p>
+                        <p>[Une boîte de texte de l’activité Dans la vraie vie apparaît.]</p>
                         <hr>
 
                         <h2>7. Quiz </h2>
                         <p>Maintenant que vous avez vu comment lancer le processus de demande de soumissions, évaluer les offres et négocier, ainsi qu’approuver et accorder des contrats concurrentiels, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille. L’écran devient noir.]</p>
+                        <p>[Une boîte de texte de l’activité Répondez au quiz apparaît.]</p>
                         <hr>
 
                         <h2>8. Section complétée</h2>
-
+                        <p>[Texte à l’écran indiquant l’instruction Section complétée.]</p>
 
                       </span>
                     </b-card-text>

@@ -7,18 +7,21 @@
           <b-alert :show="!AlertIsDismissed" @dismissed="AlertIsDismissed=true" dismissible fade :dismiss-label="$t('dismiss')">
             <div v-if="$i18n.locale=='en'">
               <h3>Instructions</h3>
-               <p>As per Treasury Board requirements, you must pass this test before you can exercise financial delegation.</p>
+              <p>As per Treasury Board requirements, you must pass this test before you can exercise financial delegation.</p>
               <p>The test is made up of four sections, one for each phase: Plan, Procure, Manage, and Report.</p>
               <p>The passing grade is 80% for each of these sections.</p>
               <p>Each section should take you around 20 to 25 minutes to complete.</p>
               <p>You are allowed to consult course materials during the test. You may take it as many times as you need to get a passing grade.</p>
+              <p>As this is a final test, you will not be provided with feedback on correct or incorrect answers.</p>
             </div>
             <div v-if="$i18n.locale=='fr'">
               <h3>Instructions</h3>
               <p>Conformément aux exigences du Conseil du Trésor, il est obligatoire de réussir le test de ce cours avant de pouvoir exercer la délégation financière.</p>
+              <p>Le test comporte quatre parties — une à la fin de chaque phase : planification, acquisition, gestion et rapports.</p>
               <p>La note de passage est de 80 %, par partie.</p>
               <p>Chaque partie devrait vous prendre environ 20 à 25 minutes.  </p>
               <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez reprendre le test autant de fois que vous le désirez.</p>
+              <p>Comme il s'agit d'un test final, vous ne recevrez pas d'information sur les réponses correctes ou incorrectes.</p>
             </div>
           </b-alert>
           <!--<p v-if="AlertIsDismissed"><b-button @click="AlertIsDismissed=false">{{$t('ShowInstructions')}}</b-button></p>-->

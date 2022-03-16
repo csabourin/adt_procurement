@@ -12,6 +12,7 @@
               <p>The passing grade is 80% for each of these sections.</p>
               <p>This section should take you around 5 to 10 minutes to complete.</p>
               <p>You are allowed to consult course materials during the test. You may take it as many times as you need to get a passing grade.</p>
+              <p>As this is a final test, you will not be provided with feedback on correct or incorrect answers.</p>
             </div>
             <div v-if="$i18n.locale=='fr'">
               <h3>Instructions</h3>
@@ -20,6 +21,7 @@
               <p>La note de passage est de 80 %, par partie.  </p>
               <p>Cette partie devrait vous prendre environ 5 à 10 minutes.</p>
               <p>Vous pouvez accéder au matériel de cours pendant le test et vous pouvez le reprendre autant de fois que vous le désirez.</p>
+              <p>Comme il s'agit d'un test final, vous ne recevrez pas d'information sur les réponses correctes ou incorrectes.</p>
             </div>
           </b-alert>
           <!--<p v-if="AlertIsDismissed"><b-button @click="AlertIsDismissed=false">{{$t('ShowInstructions')}}</b-button></p>-->

@@ -94,11 +94,12 @@
                       <p>Dans la présente section, vous apprendrez à vérifier votre budget, faire la distinction entre les pouvoirs de dépenser, les pouvoirs financiers et les pouvoirs en matière d’approvisionnement, et confirmer qui a le pouvoir d’approbation en consultant les tableaux de délégation des pouvoirs financiers. </p>
                       <p>[Trois dessins apparaissent l’un après l’autre : une loupe au-dessus d’une pile de pièces de monnaie, un homme et une femme qui se parlent, et une coche à côté d’une planchette à pince.] </p>
                       <p>Il vous faudra environ 20 minutes pour compléter cette section. </p>
+                      <p>[Le contour d’un cercle apparaît. Le tiers est rempli en blanc avec les mots « 20 minutes » en dessous.]</p>
                       <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                       <hr>
                       
                       <h2>2. Vérifier votre budget</h2>
-                      <p>[Le contour d’un cercle apparaît. Le tiers est rempli en blanc avec les mots « 20 minutes » en dessous. Du texte apparaît dans une boîte blanche avec des coins arrondis. « 2. Vérifier votre budget ». Le dessin d’une pile de pièces de monnaie apparaît.] </p>
+                      <p>[Du texte apparaît dans une boîte blanche avec des coins arrondis. « 2. Vérifier votre budget ». Le dessin d’une pile de pièces de monnaie apparaît.] </p>
                       <p>Avant de lancer un processus d’approvisionnement, vous devez vérifier que votre budget contient suffisamment de fonds pour couvrir les coûts des biens, des services et des activités de construction que vous prévoyez. Si vous n’avez pas suffisamment de fonds, vous devrez peut-être vous tourner vers d’autres sources pour trouver l’argent nécessaire, par exemple  </p>
                       <ul>
                         <li>transférer des fonds dans vos propres budgets,</li>

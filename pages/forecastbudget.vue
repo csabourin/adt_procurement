@@ -88,11 +88,12 @@
                         <p>Dans la présente section, vous apprendrez à estimer les coûts des biens et des services, y compris le coût du cycle de vie lié au maintien et à l’aliénation des biens et des services, et à procéder à une évaluation des risques et à l’élaboration d’une stratégie d’atténuation si les biens ou les services ne sont pas acquis.  </p>
                         <p>[Deux dessins apparaissent l’un après l’autre : une calculatrice à côté d’une planchette à pince et une ampoule en dessous d’un symbole d’avertissement.]</p>
                         <p>Cette section devrait vous prendre environ 30 minutes à compléter. </p>
+                        <p>[Le contour d’un cercle apparaît. La moitié est remplie en blanc avec les mots « 30 minutes » en dessous.]</p>
                         <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                         <hr>
                         
                         <h2>2. Estimer les coûts</h2>
-                        <p>[Le contour d’un cercle apparaît. La moitié est remplie en blanc avec les mots « 30 minutes » en dessous. Du texte apparaît dans une boîte blanche aux coins arrondis. « 2. Estimer les coûts ». Le dessin d’une loupe apparaît.] </p>
+                        <p>[Du texte apparaît dans une boîte blanche aux coins arrondis. « 2. Estimer les coûts ». Le dessin d’une loupe apparaît.] </p>
                         <p>Avant tout achat, commencez par estimer le coût de vos biens, de vos services ou de vos activités de construction. Cela peut se faire de plusieurs façons, notamment : </p>
                         <ul>
                           <li>en examinant les achats antérieurs,</li>
@@ -103,11 +104,13 @@
                           <li>en demandant l’avis d’un expert de Services publics et Approvisionnement Canada. </li>
                         </ul>
                         <p>[D’autres dessins apparaissent sous la loupe. Un panier d’achats, une page Web, un ordinateur, un message texte au-dessus d’un ordinateur portable, une clé et un drapeau canadien dans un cercle. Un dessin d’une pile de pièces de monnaie apparaît.] </p>
+                        <p>N’oubliez pas de vous renseigner sur les autres coûts liés à votre achat. Les coûts de livraison, du cycle de vie, d’entretien, d’aliénation. Tous doivent être inclus dans votre estimé. Après tout, vous ne voudriez pas vous acheter une voiture si vous n’avez pas les moyens d’en payer l’assurance automobile, l’essence et d’en faire l’entretien!</p>
+                        <p>[Le dessin d’une voiture apparaît.]</p>
                         <p>[Une boîte de texte de l’activité Estimer les coûts - Termes clés apparaît.]</p>
                         <hr>
                         
                         <h2>3. Mener une évaluation des risques</h2>
-                        <p>[Le dessin d’une voiture apparaît. Du texte apparaît dans une boîte blanche aux coins arrondis. « 3. Mener une évaluation des risques. » Le dessin d’un plan de travail apparaît. Les titres « Activités », « Risque » et « Atténuation » sont encerclés.]</p>
+                        <p>[Du texte apparaît dans une boîte blanche aux coins arrondis. « 3. Mener une évaluation des risques. » Le dessin d’un plan de travail apparaît. Les titres « Activités », « Risque » et « Atténuation » sont encerclés.]</p>
                         <p>Vous êtes-vous déjà demandé ce qui se passerait si vous n’étiez pas en mesure de vous procurer les ressources dont vous avez besoin? Lorsque l’approvisionnement n’est pas une option, vous devrez essayer de trouver d’autres moyens d’accomplir vos activités. Vous trouverez généralement des conseils sur la manière d’y parvenir dans les sections de votre plan de travail consacrées aux risques et à l’atténuation des risques.  </p>
                         <p> [Un dessin représente une loupe au-dessus d’un symbole d’avertissement.] </p> 
                         <p>Pour procéder à une évaluation des risques et à l’élaboration d’une stratégie d’atténuation, il faut : </p> 

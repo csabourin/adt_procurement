@@ -24,11 +24,12 @@
                         <p>In this section you will learn to administer, pay and close out the contract. </p>
                         <p>[The words “administer,” “pay,” and “close out the contract” appear beside white-outlined drawings of a wrench, coins, and a document.] </p>
                         <p>This section should take you approximately 30 minutes to complete.</p>
+                        <p>[Half of a clock is shaded in.]</p>
                         <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
                         
                         <h2>2. Administer the Contract</h2>
-                        <p>[Half of a clock is shaded in. A textbox reads, “2. Administer the Contract.”] </p>
+                        <p>[A textbox reads, “2. Administer the Contract.”] </p>
                         <p>The contract has been awarded. You might think that your work is done, right? Not so fast! There is still more to do!</p>
                         <p>[A ribbon hangs above an image of a man shaking hands with three people.]</p>
                         <p>With the help of your procurement specialist, you must now administer the contract that you have just awarded. Let’s take a minute to see who does what.</p>
@@ -120,11 +121,12 @@
                         <p>Then you will determine how the invoice will be paid. </p>
                         <p>[Two arrows point upward on a dollar bill.] </p>
                         <p>Finally, after reviewing the payment request, the financial officer pays the invoice pursuant to section 33 of the <em>Financial Administration Act</em>. </p>
+                        <p>[The <em>Financial Administration Act</em> page reappears.]</p>
                         <p>[An Exercise Payment Authority activity pop-up text box appears.]</p>
                         <hr>
                         
                         <h2>6. Close Out the Contract</h2>
-                        <p>[The Financial Administration Act page reappears. A text box reads, “6. Close Out the Contract.”] </p>
+                        <p>[A text box reads, “6. Close Out the Contract.”] </p>
                         <p>Once a contract has been completed, the procurement specialist responsible for the file will close the file. Before closing the file, a review will be conducted to ensure the following: </p>
                         <p>[A contract and a few coins are on a checklist, with a checkmark above them. A magnifying glass hovers over the checklist, and bullet points appear under the words “Closing out review” as the narrator speaks.] </p>
                         <ul>
@@ -147,11 +149,12 @@
                         <p>Take what you have learned into real life! </p>
                         <p>[A man and woman talk. A speech bubble comes from his mouth. It is filled with a dollar sign.] </p>
                         <p>Your organization will have their own ways of doing things. Take time out from the course to see how contracts are administered, paid out and closed in your department. And don’t forget to check the Toolbox for a job aid on the procurement process! </p>
+                        <p>[A toolbox is labelled “Job Aids.”]</p>
                         <p>[An In Real Life activity pop-up text box appears.]</p>
                         <hr>
                         
                         <h2>8. Quiz</h2>
-                        <p>[A toolbox is labelled “Job Aids.” A text box reads, “8. Quiz.” Three images appear side by side: a wrench, a pile of coins, and a completed checklist.] </p>
+                        <p>[A text box reads, “8. Quiz.” Three images appear side by side: a wrench, a pile of coins, and a completed checklist.] </p>
                         <p>Now that you have seen how to administer, pay out and close a contract, let’s see what you remember by taking this short quiz. </p>
                         <p>[The words “Take the quiz!” appear beside a hand writing on a page. The video fades to black.] </p>
                         <p>[A Take the Quiz activity pop-up text box appears.]</p>

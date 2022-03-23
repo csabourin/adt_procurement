@@ -26,11 +26,12 @@
                         <p>Narrator: In this section you will learn to initiate the solicitation process, evaluate bids and negotiate, and approve and award competitive contracts. </p>
                         <p>[The concepts appear on screen as the narrator speaks, alongside white-outline drawings of a hand holding a magnifying glass, two people in a meeting, and a handshake.] </p>
                         <p>This section should take you approximately 30 minutes to complete. </p>
+                        <p>[Half of a clock gets filled in above the words, “30 minutes.”]</p>
                         <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
                         
                         <h2>2. Prepare Bid Solicitation Documents</h2>
-                        <p>[Half of a clock gets filled in above the words, “30 minutes.” A text box reads, “2. Prepare Bid Solicitation Documents.”] </p>
+                        <p>[A text box reads, “2. Prepare Bid Solicitation Documents.”] </p>
                         <p>Now that you have drafted your requirements and prepared either your statement of work or your statement of requirements and chosen your procurement strategy, what’s next? </p>
                         <p>[The two types of statements appear, each followed by three bubbles. Under Statement of Work, the bubbles are “Deliverables,” “Services,” and “Work.” Under Statement of Requirement, the bubbles are “Problem definition information,” “Initial assessment of risk,” and “Basic financial information.”] </p>
                         <p>The procurement specialist will develop the acquisition strategies needed to satisfy the requirements you provided.  </p>
@@ -106,11 +107,12 @@
                         <p>Debriefings are provided to unsuccessful bidders on request and should normally include an outline of the factors and criteria used in the evaluation. They are typically led by the procurement specialist, while you play the supporting role of answering technical evaluation questions. </p>
                         <p>[A figure of a woman appears. Beside her are the words “Bid evaluation” and “Bid score” with checkmarks beside them.] </p>
                         <p>The only information provided to the bidder is the evaluation of its bid and the score its bid received. Proposal information on any other bidder must not be divulged. </p>
+                        <p>[The words “Other bidder proposal information” pops up below the other text. This line has an X beside it.]</p>
                         <p>[A Contract Award activity pop-up text box appears.]</p>
                         <hr>
                         
                         <h2>6. In Real Life</h2>
-                        <p>[The words “Other bidder proposal information” pops up below the other text. This line has an X beside it. On the purple background, a text box reads, “6. In Real Life.”] </p>
+                        <p>[This line has an X beside it. On the purple background, a text box reads, “6. In Real Life.”] </p>
                         <p>Take what you have learned into real life! </p>
                         <p>[A man and woman talk. A speech bubble leading from his mouth has a dollar sign in it.] </p>
                         <p>Your organization will have its own ways of doing things. Take some time out from the course to see how the solicitation process works in your department. Maybe your organization has an intranet page on procurement? Or maybe your procurement specialists have the templates that you need? Looking at previously prepared solicitation documents can sometimes help. And don’t forget to check the Toolbox for a Job Aid on the procurement process! </p>

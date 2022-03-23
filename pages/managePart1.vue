@@ -30,12 +30,13 @@
                           <li>divestiture</li>
                         </ul>
                         <p>[The four phases appear under the words “In this section.” To their right, four arrows form a circle around the words “Life Cycle Materiel Management.”] </p>
-                        <p>This section should take you approximately 20 minutes to complete. </p>                       
+                        <p>This section should take you approximately 20 minutes to complete. </p>
+                        <p>[One third of a clock is shaded in.]</p>                     
                         <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
                         
                         <h2>2. Planning</h2>
-                        <p>[One third of a clock is shaded in. A text box reads, “2. Planning.”] </p>
+                        <p>[A text box reads, “2. Planning.”] </p>
                         <p>You have procured the goods that you need. That’s great! But did you know that you need to manage their life cycle? </p>
                         <p>[A delivery man pushes a dolly of boxes to a woman, who shakes his hand.] </p>
                         <p>Life cycle materiel management is the effective and efficient management of assets from the identification of requirements to the divestment of the assets.</p>
@@ -74,11 +75,12 @@
                         </ul>
                         <p>[A calendar appears, with the words “Public Services and Procurement Canada” and “Trade agreements” beside it.] </p>
                         <p>Since the acquisition phase for complex or higher valued items often requires the participation of Public Services and Procurement Canada and the application of additional obligations such as trade agreements, longer timelines are often needed to complete the purchase. So, plan early, and give yourself and everyone involved enough time to acquire what you need! </p>
+                        <p>[On the calendar, an X is marked on the last day of the month.]</p>
                         <p>[An Acquisition activity pop-up text box appears.]</p>
                         <hr>
                         
                         <h2>4. Operation, Use, and Maintenance</h2>
-                        <p>[On the calendar, an X is marked on the last day of the month. A text box reads, “4. Operation, Use, and Maintenance.”] </p>
+                        <p>[A text box reads, “4. Operation, Use, and Maintenance.”] </p>
                         <p>In the operation, use, and maintenance phase of the life cycle materiel management, managers should: </p>
                         <p>[A bullet point list appears beside three businesspeople.] </p>
                         <ul>
@@ -95,11 +97,12 @@
                         <p>In the divestment phase, managers should identify opportunities for replacement, reallocation or disposal of surplus materiel, or of materiel that is no longer cost-effective to operate. </p>
                         <p>[A header reads, “Fourth Phase: Divestment.” A subheader reads, “Identify opportunities.” Below are two circles. The circle on the left has text in it reading, “Replacement, reallocation or disposal of surplus material.” Text in the right-side circle reads, “Material no longer cost-effective to operate.”]</p>
                         <p>Managers should always consider alternatives to disposing of products, such as reallocating or refurbishing them.</p>
+                        <p>[The two circles slide together until they become a Venn diagram with an empty overlapping section.]</p>
                         <p>[A Reallocation or Divestment activity pop-up text box appears.]</p>
                         <hr>
 
                         <h2>6. In Real Life</h2>
-                        <p>[The two circles slide together until they become a Venn diagram with an empty overlapping section. A text box reads, “6. In Real Life.”] </p>
+                        <p>[A text box reads, “6. In Real Life.”] </p>
                         <p>Take what you have learned into real life! </p>
                         <p>[A man and woman talk. A speech bubble comes from his mouth. It is filled with a question mark.] </p>
                         <p>Your organization will have its own ways of doing things. Take a time out from the course to see how the life cycle materiel management process works in your department. </p>

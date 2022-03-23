@@ -30,11 +30,12 @@
                         </ul>
                         <p>[White-outline drawings appear beside each bullet point: a magnifying glass over a page, a flashing warning light, and a checklist, respectively.] </p>
                         <p>This section should take you approximately 20 minutes to complete. </p>
+                        <p>[One third of a clock is shaded in.]</p>
                         <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
                         
                         <h2>2. Inappropriate Practices</h2>
-                        <p>[One third of a clock is shaded in. A text box reads, “2. Inappropriate Practices.” The image of a magnifying class over a page reappears.] </p>
+                        <p>[A text box reads, “2. Inappropriate Practices.” The image of a magnifying class over a page reappears.] </p>
                         <p>Before jumping into reporting activities, let’s look at some of the inappropriate procurement practices managers should avoid if they are to remain respectful to the various laws, regulations and policies that apply to procurement. These practices include: </p>
                         <p>[Three businesspeople are on the left side of the screen. A list appears to the right of them as the narrator speaks.] </p>
                         <ul>
@@ -49,11 +50,12 @@
                           <li>Inappropriate statements of work or evaluation criteria </li>
                         </ul>
                         <p>The following exercise will help you determine what not to do. For definitions, see the What Not To Do job aid in the tool box. </p>
+                        <p>[A toolbox fills the screen.]</p>
                         <p>[An Inappropriate Practices activity pop-up text box appears.]</p>
                         <hr>
                         
                         <h2>3. Complaint Mechanisms</h2>
-                        <p>[A toolbox fills the screen. This is replaced with a text box reading, “3. Complaint Mechanisms.”] </p>
+                        <p>[A text box reads, “3. Complaint Mechanisms.”] </p>
                         <p>So, you have seen what you can and cannot do in terms of your decisions and actions in the procurement process, but what if you don’t abide by these rules? What are the repercussions? </p>
                         <p>[The word “Authorities” appears below a flashing warning light.] </p>
                         <p>There are different levels of authorities that provide oversight of federal public service procurement to ensure the rules are being followed.  </p>
@@ -71,11 +73,12 @@
                           <li>Standing Review Committees.</li>
                         </ul>
                         <p>Their roles differ depending on the nature and monetary amount of the procurement. Curious to know more about these organizations? Why not consult the Oversight job aid in the toolbox? </p>
+                        <p>[The image of the toolbox reappears.]</p>
                         <p>[A Complaint Mechanisms activity pop-up text box appears.]</p>
                         <hr>
                         
                         <h2>4. Reporting Requirements</h2>
-                        <p>[The image of the toolbox reappears. A text box reads, “4. Reporting Requirements.”] </p>
+                        <p>[A text box reads, “4. Reporting Requirements.”] </p>
                         <p>Did you know that departments, agencies, and other organizations are responsible for making available various reports on contracting activities for the general public or for use within government?  </p>
                         <p>[Three images appear, each with a label beneath them. A building with large columns in its façade is labelled “departments.” A large block-style building is labelled “agencies,” and a cityscape is labelled “other organizations.”] </p>
                         <p>That’s why record keeping is so important and why the data reported on contracts must be accurate.</p>

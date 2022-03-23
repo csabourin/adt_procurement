@@ -27,11 +27,12 @@
                         <p>Narrator [N]: In this section, you will learn to determine the types of costs for goods and services to include in the procurement estimates, and to conduct a risk assessment and to draft a mitigation strategy in case the goods or services are not acquired.</p>
                         <p>[Two drawings appear one after the other: a calculator next to a clipboard, and a lightbulb beneath a warning sign.]</p>
                         <p>This section should take you approximately 30 minutes to complete.</p>
+                        <p>[An outline of a circle appears. Half of it is filled in white with the words “30 minutes” underneath.]</p>
                         <p>[An External Links reference pop-up text box appears.]</p>
                         <hr>
 
                         <h2>2. Estimate Costs</h2>
-                        <p>[An outline of a circle appears. Half of it is filled in white with the words “30 minutes” underneath. Text appears in a white box with rounded corners. “2. Estimate Costs.” A drawing of a magnifying glass appears.]</p>
+                        <p>[Text appears in a white box with rounded corners. “2. Estimate Costs.” A drawing of a magnifying glass appears.]</p>
                         <p>Before any purchase, start by estimating how much your goods, services, or construction will cost. This could be done in many ways including:</p>
                         <ul>
                           <li>looking at previous purchases, </li>
@@ -43,11 +44,12 @@
                         </ul>
                         <p>[More drawings appear beneath the magnifying glass. A shopping cart, a webpage, a computer, a text message above a laptop, a key, and a Canadian flag enclosed in a circle. A drawing of a stack of coins appears.]</p>
                         <p>Don’t forget to find out if there are any other costs related to your purchase, such as delivery costs, life cycle costs, sustainment costs, and disposal costs. All should be included in your estimate. After all, you wouldn’t want to get a car if you can’t afford the auto insurance, gas, and maintenance!</p>
+                        <p>[A drawing of a car appears.]</p>
                         <p>[An Estimate Costs – Key Terms activity pop-up text box appears.]</p>
                         <hr>
 
                         <h2>3. Conduct a Risk Assessment</h2>
-                        <p>[A drawing of a car appears. Text appears in a white box with rounded corners. “3. Conduct a Risk Assessment.” A drawing of a work plan appears. The headings “Activities,” “Risk,” and “Mitigation” are circled.]</p>
+                        <p>[Text appears in a white box with rounded corners. “3. Conduct a Risk Assessment.” A drawing of a work plan appears. The headings “Activities,” “Risk,” and “Mitigation” are circled.]</p>
                         <p>Ever wonder what would happen if you were unable to procure the resources that you needed? When procurement is not an option, you will need to find other ways to accomplish your activities. Hints on how you can do this are actually found in the risk and mitigation sections of your work plan. </p>
                         <p>[A drawing depicts a magnifying glass over a warning sign.]</p>
                         <p>To conduct a risk assessment and draft a mitigation strategy, you:</p>

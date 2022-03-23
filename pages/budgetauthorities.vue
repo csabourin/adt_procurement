@@ -25,11 +25,12 @@
                       <p>Narrator [N]: In this section, you will learn to verify your budget, distinguish between spending and financial authorities and procurement authorities, and confirm who has approval authority through financial delegation charts.</p>
                       <p>[Three drawings appear one after the other: a magnifying glass over a stack of coins, a man and woman speaking to each other, and a check mark over a clipboard.]</p>
                       <p>This section should take you approximately 20 minutes to complete.</p>
+                      <p>[An outline of a circle appears. A third of it is filled in white with the words “20 minutes” underneath.]</p>
                       <p>[An External Links reference pop-up text box appears.]</p>
                       <hr>
 
                       <h2>2. Check Your Budget</h2>
-                      <p>[An outline of a circle appears. A third of it is filled in white with the words “20 minutes” underneath. Text appears in a white box with rounded corners. “2. Check Your Budget.” A drawing of a stack of coins appears.]</p>
+                      <p>[Text appears in a white box with rounded corners. “2. Check Your Budget.” A drawing of a stack of coins appears.]</p>
                       <p>Before beginning a procurement process, you must check that there are sufficient funds in your budget to cover the costs of the goods, the services, and the construction that you are planning. If you don’t have enough funds, you may have to turn to other sources to find the money such as </p>
                       <ul>
                       <li>transfer funds within your own budget, </li>

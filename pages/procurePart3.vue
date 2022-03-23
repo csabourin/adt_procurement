@@ -169,11 +169,12 @@
                         <p>Narratrice : Dans la présente section, vous apprendrez à administrer, à payer et à clôturer le contrat.  </p>
                         <p>[Les mots « Administrer », « Payer » et « Clôturer le contrat » s’affichent à côté de trois dessins faits de lignes blanches. Ils représentent une clé à fourches, des pièces de monnaie et un document.]</p>
                         <p>Il vous faudra environ 30 minutes pour effectuer cette section. </p>
-                        <p>[La moitié d’une horloge est remplie. Une boîte de texte indique : « 2. Administrer le contrat ».]</p>
+                        <p>[La moitié d’une horloge est remplie.]</p>
                         <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                         <hr>
                         
                         <h2>2. Administrer le contrat</h2>
+                        <p>Une boîte de texte indique : « 2. Administrer le contrat ».]</p>
                         <p>Le contrat a été accordé. Votre travail est terminé, non? Pas si vite! Vous avez encore du pain sur la planche!</p>
                         <p>[Un ruban de récompense se tient au-dessus d’un homme serrant la main à trois personnes.]</p>
                         <p>Avec l’aide de votre spécialiste en approvisionnement, vous devez maintenant administrer le contrat que vous venez d'accorder. Prenons une minute pour voir qui fait quoi.   </p>
@@ -205,11 +206,11 @@
                         <p>L’accessibilité devrait être prise en considération tout au long du processus d’approvisionnement, non seulement pour les employés, mais aussi pour les entrepreneurs. En tant que gestionnaire, vous devrez peut-être discuter avec les entrepreneurs des obstacles créés par le gouvernement auxquels ils se heurtent lorsqu’ils accomplissent le travail.   </p>
                         <p>[Les mots « Considérations d’accessibilité » figurent au-dessus de neuf cercles dans lesquels se trouvent divers symboles, notamment : une personne avec des béquilles, une femme enceinte avec une poussette et une oreille avec un appareil auditif.]</p>
                         <p>Voici une petite activité pour vous aider à déterminer vos responsabilités. </p>
-                        <p>[Une boîte de texte indique : « 3. Tenir des dossiers ».]</p>
                         <p>[Une boîte de texte de l’activité Administrer le contrat apparaît.]</p>
                         <hr>
 
                         <h2>3. Tenir des dossiers </h2>
+                        <p>[Une boîte de texte indique : « 3. Tenir des dossiers ».]</p>
                         <p>Maintenant que vous savez qui fait quoi, passons à la paperasse!</p>
                         <p>[Un classeur se dessine en dessous des mots « Tenue des dossiers ».]</p>
                         <p>Tout au long du contrat, vous devez tenir des dossiers. Vous devez conserver des informations comme la qualité, la quantité et les délais relativement aux biens reçus ou aux travaux à effectuer. Tout écart dans les travaux d’un entrepreneur à qui un contrat a été accordé doit également être consigné.  </p>
@@ -223,11 +224,11 @@
                         <p>Un bon suivi des contrats et une bonne tenue des dossiers entraînent à une bonne gestion des contrats, ce qui permet d’éviter des coûts et des retards supplémentaires, des difficultés pour les entrepreneurs et davantage de travail.  </p>
                         <p>[À l’écran, il est écrit : « Bon suivi des contrats et bonne tenue des dossiers ». De ces mots pointe une flèche vers un autre énoncé : « Bonne gestion des contrats ». Une autre flèche pointe de ce dernier vers « Éviter des coûts supplémentaires, des retards et des difficultés ».]</p>
                         <p>Après tout, mieux vaut prévenir que guérir! </p>
-                        <p>[Une boîte de texte indique : « 4. Accepter les livrables ».]</p>
                         <p>[Une boîte de texte de l’activité Assurer la tenue des dossiers apparaît.]</p>
                         <hr>
 
                         <h2>4. Accepter les livrables </h2>
+                        <p>[Une boîte de texte indique : « 4. Accepter les livrables ».]</p>
                         <p>Avant d’effectuer le paiement du contrat, vous devez accomplir quelques tâches. En premier lieu, il faut vous assurer que les modalités du contrat ont été respectées. Vous devez :</p>
                         <p>[Un document signé et une pile de pièces de monnaie se dessinent en dessous des mots « Avant d’effectuer le paiement ». Les points que la narratrice énumère apparaissent à l’écran pendant qu’elle parle.]</p>
                         <ul>
@@ -237,11 +238,11 @@
                           <li>si le produit livrable est un rapport ou un autre produit, vous assurer qu’il est complet et exempt d’erreurs.  </li>
                         </ul>
                         <p>Une fois que vous êtes satisfait du produit livrable, vous devez vous assurer du respect des modalités de paiement. Ce n’est qu’une fois cette tâche effectuée que vous pourrez procéder au paiement du contrat. </p>
-                        <p>[Une boîte de texte indique : « 5. Exercice des pouvoirs d’attestation et de payer ».]</p>
                         <p>[Une boîte de texte de l’activité Accepter les livrables apparaît.]</p>
                         <hr>
 
                         <h2>5. Exercice des pouvoirs d’attestation et de payer</h2>
+                        <p>[Une boîte de texte indique : « 5. Exercice des pouvoirs d’attestation et de payer ».]</p>
                         <p>[Une page avec les armoiries du Canada apparaît. Il y est écrit, en français et en anglais : « Codification. Loi sur la gestion des finances publiques ».]</p>
                         <p>En tant que détenteur du pouvoir d’attestation en vertu de l’article 34 de la Loi sur la gestion des finances publiques, vous avez la responsabilité de vous assurer</p>
                         <p>[Une liste à puces s’affiche pendant que la narratrice parle.]</p>
@@ -263,11 +264,12 @@
                         <p>Vous déterminerez ensuite comment la facture sera payée.  </p>
                         <p>[Deux flèches pointent vers le haut sur un billet de banque.]</p>
                         <p>Enfin, après examen de la demande de paiement, l’agent financier paie la facture conformément à l’article 33 de la Loi sur la gestion des finances publiques. </p>
-                        <p>[La page de la Loi sur la gestion des finances publiques s’affiche de nouveau. Une boîte de texte indique : « 6. Clôture du contrat ».]</p>
+                        <p>[La page de la Loi sur la gestion des finances publiques s’affiche de nouveau.]</p>
                         <p>[Une boîte de texte de l’activité Exercice du pouvoir de paiement apparaît.]</p>
                         <hr>
 
                         <h2>6. Clôture de contrat</h2>
+                        <p>[Une boîte de texte indique : « 6. Clôture du contrat ».]</p>
                         <p>Une fois le contrat terminé, le spécialiste en approvisionnement responsable du dossier le ferme. Avant la fermeture du dossier, un examen est effectué afin de s'assurer de ce qui suit.  </p>
                         <p>[Un contrat et quelques pièces de monnaie figurent sur une liste de vérification et un crochet est placé au-dessus d’eux. Une loupe se dessine par-dessus la liste de vérification, qui disparaît pour laisser place à des puces sous les mots « Examen de fermeture ». Pendant ce temps, la narratrice parle.]</p>
                         <ul>
@@ -291,14 +293,15 @@
                         <hr>
                         
                         <h2>7. Dans la vraie vie</h2>
+                        <p>[Une boîte de texte indique : « 7. Dans la vraie vie ».]</p>
                         <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
                         <p>[Un homme et une femme discutent. Une bulle de dialogue contenant un symbole de dollar pointe vers l’homme.]</p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir comment les contrats sont administrés, payés et clôturés au sein de votre ministère. Et n’oubliez pas de consulter la boîte à outils où vous trouverez un aide-mémoire sur le processus d’approvisionnement! </p>
-                        <p>[Un dessin d’une boîte à outils s’affiche. Une boîte de texte indique : « 8. Quiz ».]</p>
                         <p>[Une boîte de texte de l’activité Dans la vraie vie apparaît.]</p>
                         <hr>
                         
                         <h2>8. Quiz </h2>
+                        <p>[Un dessin d’une boîte à outils s’affiche. Une boîte de texte indique : « 8. Quiz ».]</p>
                         <p>[Trois images apparaissent côte à côte : une clé à fourches, une pile de pièces de monnaie et une liste de vérification remplie.]</p>
                         <p>Maintenant que vous avez vu comment administrer, payer et clôturer un contrat, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille. L’écran devient noir.]</p>

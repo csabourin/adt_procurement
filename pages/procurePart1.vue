@@ -214,11 +214,12 @@
                           <li>et à décrire ce dont vous avez besoin. </li>
                         </ul>
                         <p>Il vous faudra environ 45 minutes pour compléter cette section. </p>
-                        <p>[Les trois quarts d’une horloge sont remplis au-dessus des mots « 45 minutes ». L’image est remplacée par une boîte de texte qui indique : « 2. Définir ses besoins ».]</p>
+                        <p>[Les trois quarts d’une horloge sont remplis au-dessus des mots « 45 minutes ».]</p>
                         <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                         <hr>
 
                         <h2>2. Définir ses besoins</h2>
+                        <p>[Du texte apparaît dans une boîte blanche avec des coins arrondis. « 2. Définir ses besoins ».]</p>
                         <p>Pour commencer le processus d’approvisionnement, vous devez déterminer ce dont vous avez besoin ou, pour utiliser la terminologie de l’approvisionnement, vous devez déterminer vos exigences.</p>
                         <p>[Les mots « Cycle d’approvisionnement » s’affichent. Six cercles entourent le texte, une flèche entre chacun d’entre eux.]</p>
                         <p>Personne ne peut le faire pour vous puisqu’avec votre équipe, vous seules connaissez vos activités et ce dont vous avez besoin pour être bien soutenu.</p>
@@ -247,11 +248,12 @@
                         <p>Vous pouvez aussi consulter la section pour le gouvernement du site Web Achatsetventes.gc.ca, une excellente source d’information.</p>
                         <p>[La page Web « Achatsetventes » s’affiche avec le logo du gouvernement du Canada.]</p>
                         <p>Après tout, si vous demandez un véhicule à moteur, vous ne voulez pas vous retrouver avec une sous‑compacte alors que vous avez vraiment besoin d’une camionnette! </p>
-                        <p>[Une voiture sous-compacte roule en dehors de l’écran avant d’être remplacée par une camionnette. Une boîte de texte indique : « 3. Besoins particuliers et autres considérations ».]</p>
+                        <p>[Une voiture sous-compacte roule en dehors de l’écran avant d’être remplacée par une camionnette.]</p>
                         <p>[Une boîte de texte de l’activité Définir ses besoins apparaît.]</p>
                         <hr>
 
                         <h2>3. Besoins particuliers et autres considérations</h2>
+                        <p>[Une boîte de texte indique : « 3. Besoins particuliers et autres considérations ».]</p>
                         <p>Lorsque vous définissez vos besoins en matière d’approvisionnement, pensez aux exigences particulières et aux autres considérations. Par exemple, au lieu d’acheter des chaises ordinaires, devriez-vous payer un peu plus cher pour des chaises ergonomiques et plus durables?</p>
                         <p>[Une chaise droite se trouve à côté d’une chaise de bureau à roulettes.]</p>
                         <p>À long terme, plus de personnes pourront les utiliser et elles n’auront pas à être remplacées aussi souvent. C’est une bonne nouvelle pour votre budget et pour l’environnement!  </p>
@@ -276,11 +278,12 @@
                           <li>Le projet se poursuivra-t-il sur plusieurs exercices financiers? </li>
                         </ul>
                         <p>Si vous n’êtes pas sûr d’avoir pris en compte toutes les exigences particulières, communiquez avec votre spécialiste en approvisionnement. Il a probablement déjà vu des achats comme les vôtres et pourra vous aider à cerner vos besoins. </p>
-                        <p>[Deux personnes discutent. Une bulle de dialogue avec un point d’interrogation pointe vers l’une d’entre elles. L’image est remplacée par une boîte de texte qui indique : « 4. Décrire ce dont on a besoin ».]</p>
+                        <p>[Deux personnes discutent. Une bulle de dialogue avec un point d’interrogation pointe vers l’une d’entre elles.]</p>
                         <p>[Une boîte de texte de l’activité Besoins particuliers et autres considérations apparaît.]</p>
                         <hr>
 
                         <h2>4. Décrire ce dont on a besoin</h2>
+                        <p>[Du texte apparaît dans une boîte blanche avec des coins arrondis. « 4. Décrire ce dont on a besoin ».]</p>
                         <p>Vous avez maintenant déterminé ce dont vous avez besoin et établi vos exigences. C’est très bien!  </p>
                         <p>[Une loupe se dessine par-dessus une liste de vérification.]</p>
                         <p>Passons maintenant à la manière dont vous devez documenter vos décisions. Tout d’abord, vous devez rédiger une description. Il existe cinq façons de procéder. Étudions-les une à une.  </p>
@@ -319,11 +322,11 @@
                         <p>Un <strong>énoncé des besoins</strong> est une description de la nécessité sans préciser la méthode exacte à utiliser. Il comprend des informations sur la définition d’un problème qui fourniront le contexte de l’autorité approbatrice, ainsi qu’une évaluation initiale du risque et des informations financières de base concernant ce qui sera produit à la prochaine étape. </p>
                         <p>[Les mots « Boîte à outils » s’affichent au-dessus d’« Énoncé de travail » et d’« Énoncé des besoins ». Une boîte à outils se dessine entre les deux énoncés.]</p>
                         <p>Puisque vous serez la personne qui préparera l’énoncé des travaux ou l’énoncé des besoins, jetez un coup d'œil aux aide-mémoires fournis pour vous aider dans ces étapes dans la boîte à outils à titre indicatif. </p>
-                        <p>[Une boîte de texte indique : « 5. Approvisionnement équitable et transparent ».]</p>
                         <p>[Une boîte de texte de l’activité Décrire ce dont on a besoin apparaît.]</p>
                         <hr>
 
                         <h2>5. Approvisionnement équitable et transparent</h2>
+                        <p>[Une boîte de texte indique : « 5. Approvisionnement équitable et transparent ».]</p>
                         <p>Saviez-vous que dans l’exercice de leurs fonctions d’approvisionnement, les gestionnaires doivent se conformer aux lois, aux règlements et aux politiques établis par le gouvernement?</p>
                         <p>[Une femme ouvre une porte. Trois mots et trois images apparaissent à l’écran. Le mot « Lois » en dessous d’un maillet, « Règlements » en dessous de livres et « Politiques » en dessous d’une feuille et d’un crayon.]</p>
                         <p>Cela signifie que le processus d’approvisionnement est transparent, équitable et ouvert pour les fournisseurs. Que se passe-t-il si les gestionnaires ne respectent pas ces règles? En fait, il existe différents niveaux de pouvoir pour s’assurer du respect des règles.</p>
@@ -335,11 +338,11 @@
                         <p>De plus, les gestionnaires ont la responsabilité d’empêcher qu’une relation employeur-employé se développe pendant la durée du contrat. </p>
                         <p>[Le dessin d’une boîte à outils apparaît à l’écran.]</p>
                         <p>Pour plus d’informations sur un processus d’approvisionnement transparent, ouvert et équitable, consultez l’aide-mémoire sur « Ce qu’il ne faut pas faire » ainsi que l’aide-mémoire sur le « Cadre juridique ».</p>
-                        <p>[Une boîte de texte indique : « 6. Consulter un spécialiste en approvisionnement ».]</p>
                         <p>[Une boîte de texte de référence de Liens externes apparaît.]</p>
                         <hr>
 
                         <h2>6. Consulter un spécialiste en approvisionnement</h2>
+                        <p>[Une boîte de texte indique : « 6. Consulter un spécialiste en approvisionnement ».]</p>
                         <p>Bonne nouvelle! On ne s’attend pas à ce que, comme gestionnaire, vous soyez un spécialiste en approvisionnement. Votre organisation disposera de spécialistes en approvisionnement pour vous fournir des conseils et du soutien.  </p>
                         <p>[Deux personnes discutent. Une bulle de dialogue avec un point d’interrogation pointe vers l’une d’entre elles.]</p>
                         <p>Vous êtes cependant responsable de certaines choses. </p>
@@ -362,11 +365,12 @@
                         <p>N’oubliez pas : même si vous n’êtes pas obligé de consulter votre spécialiste en approvisionnement relativement aux achats visés par le pouvoir qui vous est délégué, celui-ci est toujours là pour vous guider, répondre à vos questions et vous accompagner.</p>
                         <p>[Un homme vole en tenant une mallette. Derrière lui, sa cape flotte au vent.]</p>
                         <p>Après tout, pourquoi passer des heures à effectuer des recherches et à créer des documents de toutes pièces alors que votre spécialiste en approvisionnement a des modèles pour vous! </p>
-                        <p>[Un homme fixe son ordinateur et s’arrache les cheveux. Des livres sont empilés à côté de lui. Une boîte de texte indique : 7. Identifier les parties prenantes ».]</p>
+                        <p>[Un homme fixe son ordinateur et s’arrache les cheveux. Des livres sont empilés à côté de lui.]</p>
                         <p>[Une boîte de texte de l’activité Consulter un spécialiste en approvisionnement apparaît.]</p>
                         <hr>
 
                         <h2>7. Consulter les parties prenantes</h2>
+                        <p>[Une boîte de texte indique : 7. Identifier les parties prenantes ».]</p>
                         <p>Selon ce que vous achetez, vous aurez peut-être besoin de consulter des parties prenantes dans les domaines de la sécurité, des technologies de l’information, des communications et de la traduction, pour n’en nommer que quelques-uns.</p>
                         <p>[Des images apparaissent autour d’une femme : un cadenas, un ordinateur portable, un symbole de réseau sans fil et deux bulles de dialogue.]</p>
                         <p>Après tout, vous ne pouvez pas être un expert dans tous les domaines et vous ne savez pas ce que vous ne savez pas! </p>
@@ -377,11 +381,11 @@
                         <p>Les personnes handicapées devraient également pouvoir utiliser le service ou l’article fourni, quel que soit leur handicap.</p>
                         <p>[Neuf cercles dans lesquels se trouvent divers symboles se dessinent, notamment : une personne avec des béquilles, une femme enceinte avec une poussette, et une oreille avec un appareil auditif.]</p>
                         <p>Consultez le réseau d’employés handicapés de votre ministère pour obtenir des conseils sur la suppression des obstacles à l’accessibilité pour l’utilisateur final.</p>
-                        <p>[Une boîte de texte indique : « 8. Choisir une stratégie d’approvisionnement ». Des crochets apparaissent à côté des mots « Besoins » et « Qui vous devez consulter ».]</p>
                         <p>[Une boîte de texte de l’activité Consulter les parties prenantes apparaît.]</p>
                         <hr>
 
                         <h2>8. Choisir une stratégie d’approvisionnement</h2>
+                        <p>[Une boîte de texte indique : « 8. Choisir une stratégie d’approvisionnement ». Des crochets apparaissent à côté des mots « Besoins » et « Qui vous devez consulter ».]</p>
                         <p>Vous avez maintenant défini vos besoins et déterminé qui vous devez consulter. Quelle est la prochaine étape? Eh bien, cela dépend du montant en dollars et de la complexité de ce que vous devez acheter.</p>
                         <p>[Un crayon signe un document à côté d’une pile de pièces de monnaie.]</p>
                         <p>Soit vous lancez vous-même l’achat d’approvisionnements de faible valeur en utilisant les instruments dont vous disposez, soit vous travaillez avec votre spécialiste en approvisionnement pour déterminer la stratégie à adopter dans le cas d’achats plus complexes et de plus grande valeur. </p>
@@ -391,18 +395,18 @@
                         <p>Par exemple, les publications sur le site Achatsetventes.gc.ca doivent être affichées pendant au moins 40 jours, selon le cas, si elles sont assujetties à nos accords commerciaux internationaux. Ou, pour les articles complexes ou coûteux tels que les flottes, le processus peut prendre plus d’un an. Alors, veillez à planifier en conséquence! </p>
                         <p>[La boîte à outils s’affiche.]</p>
                         <p>L'activité suivante vous aidera à rafraîchir vos connaissances sur les stratégies et les instruments d’approvisionnement. La boîte à outils contient également un aide-mémoire intitulé « Instruments d’approvisionnement couramment utilisés ». </p>
-                        <p>[Une boîte de texte indique : « 9. Dans la vraie vie ». Un homme et une femme discutent. Une bulle de dialogue avec un symbole de dollar pointe vers l’homme.]</p>
                         <p>[Une boîte de texte de l’activité Stratégies et instruments d’approvisionnement - Termes clés apparaît.]</p>
                         <hr>
 
                         <h2>9. Dans la vraie vie</h2>
+                        <p>[Une boîte de texte indique : « 9. Dans la vraie vie ». Un homme et une femme discutent. Une bulle de dialogue avec un symbole de dollar pointe vers l’homme.]</p>
                         <p>Appliquez maintenant ce que vous avez appris - dans la vraie vie! </p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez le temps de voir quelles sont les stratégies d’approvisionnement que vous utiliserez le plus souvent. Trouvez les modèles utilisés par votre ministère et recherchez des exemples d’achats antérieurs à titre indicatif. Cela vous sera utile lorsque viendra le temps pour vous de choisir une stratégie d’approvisionnement.  </p>
-                        <p>[Une boîte de texte indique : « 10. Quiz ». Trois listes de vérification s’affichent.]</p>
                         <p>[Une boîte de texte de l’activité Dans la vraie vie apparaît.]</p>
                         <hr>
 
                         <h2>10. Quiz</h2>
+                        <p>[Une boîte de texte indique : « 10. Quiz ». Trois listes de vérification s’affichent.]</p>
                         <p>Maintenant que vous avez vu comment définir vos besoins en biens, en services et en construction, tenir compte des besoins particuliers et décrire ce dont vous avez besoin, voyons ce dont vous vous souvenez en répondant à ce petit quiz. </p>
                         <p>[Les mots « Répondez au quiz! » apparaissent à côté d’une main qui écrit sur une feuille. L’écran devient noir.]</p>
                         <p>[Une boîte de texte de l’activité Répondez au quiz apparaît.]</p>

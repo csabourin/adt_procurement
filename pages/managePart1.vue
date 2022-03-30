@@ -200,11 +200,12 @@
                         <p>Au cours de la phase de dessaisissement, les gestionnaires doivent déterminer les possibilités de remplacement, de réaffectation ou d’élimination du matériel excédentaire ou du matériel dont l’exploitation n’est plus rentable.  </p>
                         <p>[Dans le haut de l’écran, il est écrit : « Quatrième phase : Dessaisissement ». Un peu plus bas, il est écrit : « Déterminer les possibilités ». Deux cercles sont dessinés en dessous. Dans celui de gauche, il est écrit : « Remplacement, réaffectation ou élimination du matériel excédentaire » et, dans celui de droite : « Matériel qui n’est plus rentable ».]</p>
                         <p>Les gestionnaires doivent toujours envisager des alternatives à l’élimination des produits, comme leur réaffectation ou leur remise en état. </p>
-                        <p>[Les deux cercles glissent l’un vers l’autre jusqu’à former un diagramme de Venn. La partie commune est vide. Une boîte de texte indique : « 6. Dans la vraie vie ».]</p>
+                        <p>[Les deux cercles glissent l’un vers l’autre jusqu’à former un diagramme de Venn. La partie commune est vide.]</p>
                         <p>[Une boîte de texte de l’activité Réaffectation ou dessaisissement apparaît.]</p>
                         <hr>
 
                         <h2>6. Dans la vraie vie </h2>
+                        <p>[Une boîte de texte indique : « 6. Dans la vraie vie ».]</p>
                         <p>Appliquez ce que vous avez appris dans la vraie vie!  </p>
                         <p>[Un homme et une femme discutent. Une bulle de dialogue contenant un point d’interrogation pointe vers l’homme.]</p>
                         <p>Votre organisation aura sa propre façon de faire les choses. Prenez une pause de ce cours pour voir comment le processus de gestion du cycle de vie du matériel fonctionne dans votre ministère. </p>

@@ -212,7 +212,7 @@
                         <p>Dans bien des cas, l’agent d’approvisionnement détient le pouvoir délégué en matière de transactions ou est l’autorité contractante et signe le contrat. </p>
                         <p>[La bulle de dialogue d’un homme contient un point d’interrogation.]</p>
                         <p>Vous vous demandez qui approuvera le contrat? L’activité suivante vous aidera à reconnaître les personnes ayant le pouvoir de signer. </p>
-                        <p>[Une boîte de texte de l’activité Dans la vrai vieApprobation du contrat apparaît.]</p>
+                        <p>[Une boîte de texte de l’activité Approbation du contrat apparaît.]</p>
                         <hr>
 
                         <h2>5. Attribution du contrat</h2>

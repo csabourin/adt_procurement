@@ -220,9 +220,9 @@ export default {
       "text": "Qu’est-ce qu’un plan de travail?",
       "options": {
         "1": "Une liste quotidienne des tâches à accomplir",
-        "2": "Les activités à réaliser au cours d’un exercice financier",
-        "3": "Les sommes d’argent à dépenser",
-        "4": "Un résumé de ce que vous avez accompli"
+        "2": "Un résumé de ce que vous avez accompli",
+        "3": "Les activités à réaliser au cours d’un exercice financier",
+        "4": "Les sommes d’argent à dépenser"
       },
       "feedback": {
         "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> Un plan de travail est une série d’activités à réaliser au cours d’un exercice financier. ",

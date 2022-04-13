@@ -134,8 +134,8 @@ export default {
       "options": {
         "1": "Veiller à ce que les dates de livraison soient respectées",
         "2": "Surveiller la qualité des travaux par rapport au plan de travail",
-        "3": "Répondre aux demandes d’accès à l’information",
-        "4": "Apporter des modifications de contrats au besoin"
+        "3": "Apporter des modifications de contrats au besoin",
+        "4": "Répondre aux demandes d’accès à l’information"
       },
       "feedback": {
         "right": "<span class='v-right' /><strong>Correct!</strong>",

@@ -22,7 +22,7 @@
                     <span v-if="$i18n.locale=='en'">
                       <h2>1. Introduction</h2>
                       <p>[Against a blue background, thin diagonal lines sway in waves. Text appears in a white box with rounded corners. “Module 1: Analyze Goods, Services, and Construction Needs. 1. Introduction.”] </p>
-                      <p>Narrator [N]: In this section, you will learn to analyze a work plan, identify goods, services and construction needs, and verify if goods, services and construction already exist within government.</p>
+                      <p>Narrator [N]: In this section, you will learn to analyze a work plan, identify goods, services and construction needs, and verify if&nbsp;goods, services and construction already exist within government.</p>
                       <p>[Three drawings appear one after the other. One depicts a magnifying glass over a document on a clipboard. Another depicts boxes, a bulldozer, and a man at a counter. The third depicts a checklist.]</p>
                       <p>This section should take you approximately 15 minutes to complete. </p>
                       <p>[An outline of a circle appears. A quarter of it is filled in white with the words “15 minutes” underneath.</p>

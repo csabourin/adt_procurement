@@ -170,7 +170,7 @@
 		</div>
 		
 		<div class="row">
-			<p>Make all checks payable to ABC Enterprise <br />
+			<p>Make all cheques payable to ABC Enterprise <br />
 			If you have any questions concerning this invoice, contact Bob at 123-456-7890 or Bob@ABCEnterprises.ca</p>
 		</div>
 		<br />
@@ -411,7 +411,7 @@
       "shipping": "SHIPPING & HANDLING",
       "total": "TOTAL",
       "576": "$576.30",
-      "checks": "Make all checks payable to",
+      "cheques": "Make all cheques payable to",
       "questions": "If you have any questions concerning this invoice, contact Bob at 555-456-7890 or Bob@ABCEnterprises.ca"
     },
     "fr":{
@@ -461,7 +461,7 @@
       "shipping": "FRAIS D'EXPÉDITION ET DE MANUTENTION",
       "total": "TOTAL",
       "576": "576,30 $",
-      "checks": "Libellez tous les chèques à l'ordre d'",
+      "cheques": "Libellez tous les chèques à l'ordre d'",
       "questions": "Si vous avez des questions concernant cette facture, communiquez avec Bob au 123-456-7890 ou à Bob@ABCEnterprises.ca"
     }
   }

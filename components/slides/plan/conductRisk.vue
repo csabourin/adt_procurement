@@ -146,7 +146,7 @@
           "right": "<span class='v-right' /><strong>Correct!</strong>",
           "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
         },
-        "conclusion": "<p>If your training budget is reduced, you may have one person attend the training and pass on their knowledge to their colleagues; you may find alternate means of training such as books or eLearning, and you may organize your own internal training sessions. While you could cancel all training, this should be considered only once all other options have been exhausted.</p><p>For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href:'https://adtfinance.netlify.app/en'>Using Public Funds Responsibly course</a> course. This link is also available in the Toolbox.</p>"
+        "conclusion": "<p>If your training budget is reduced, you may have one person attend the training and pass on their knowledge to their colleagues; you may find alternate means of training such as books or eLearning, and you may organize your own internal training sessions. While you could cancel all training, this should be considered only once all other options have been exhausted.</p><p>For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href:'https://adtfinance.netlify.app/en'>Using Public Funds Responsibly course</a>. This link is also available in the Toolbox.</p>"
       }
     },
     "fr": {

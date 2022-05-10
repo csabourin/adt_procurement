@@ -100,7 +100,7 @@
       <div class="reportSectionBar"><span>{{$t('report')}}</span></div>
       <microlearning :completion="$store.state.currentPlaying.reportPart1_player" path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ConductPeriodicVarianceReporting')" type="video" />
       <microlearning :completion="$store.state.currentPlaying.kmReport" path="reportKey" size="140" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" time="5" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-      <microlearning youAreHere :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="15" imagePath="R-Test.svg" :text="$t('Test')" type="exam" questionNum="5" />
+      <microlearning youAreHere :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="10" imagePath="R-Test.svg" :text="$t('Test')" type="exam" questionNum="5" />
     </div>
 
     <!-- Debugging section -->

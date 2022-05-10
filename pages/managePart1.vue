@@ -322,8 +322,8 @@
     <div class="bottomNav manageSection">
       <div class="manageSectionBar"><span>{{$t('manageSectionBar')}}</span></div>
       <microlearning youAreHere path="managePart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.manage_player" :text="$t('lifeCycle')" type="video" />
-      <microlearning path="manageKey"  imagePath="KeyMessS.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('KeyMessages')" type="video" />
-      <microlearning path="manageExam" size="140" time="15" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+      <microlearning path="manageKey"  imagePath="KeyMessS.svg" size="140" time="5" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('KeyMessages')" type="video" />
+      <microlearning path="manageExam" size="140" time="10" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
     </div>
   </div>
 </template>

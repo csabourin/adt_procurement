@@ -180,9 +180,9 @@
           "3": "Recours inapproprié à un fournisseur unique"
         },
         "feedback": {
-          "2": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-          "3": "<span class='v-right' /><strong>Correct!</strong>",
-          "4": "<span class='v-wrong' /><strong>Incorrect.</strong>"
+          "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
+          "2": "<span class='v-right' /><strong>Correct!</strong>",
+          "3": "<span class='v-wrong' /><strong>Incorrect.</strong>"
         },
         "conclusion": "Cette pratique inappropriée est un exemple de fractionnement de contrat."
       },

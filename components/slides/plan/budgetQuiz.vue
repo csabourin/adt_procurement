@@ -343,8 +343,8 @@ export default {
         "4": "Frais d’installation"
       },
        "feedback": {
-        "right": "<span class='v-right' /> <strong>Correct!</strong> Lorsque vous achetez un véhicule, vous devez tenir compte des frais d’entretien, tels que les vidanges d’huile, les coûts de réparation, comme une courroie de ventilateur cassée, et les frais d’entretien, comme l’achat d'essence. ",
-        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Lorsque vous achetez un véhicule, vous devez tenir compte des frais d’entretien, tels que les vidanges d’huile, les coûts de réparation, comme une courroie de ventilateur cassée, et les frais d’entretien, comme l’achat d'essence."
+        "right": "<span class='v-right' /> <strong>Correct!</strong> Lorsque vous achetez un véhicule, vous devez tenir compte des frais d’entretien, tels que les vidanges d’huile, les coûts de réparation, comme une courroie de ventilateur cassée, et les coûts d’exploitation, comme l’achat d'essence. ",
+        "wrong": "<span class='v-wrong' /> <strong>Incorrect.</strong> Lorsque vous achetez un véhicule, vous devez tenir compte des frais d’entretien, tels que les vidanges d’huile, les coûts de réparation, comme une courroie de ventilateur cassée, et les coûts d’exploitation, comme l’achat d'essence."
       }
     },
       "q2": {

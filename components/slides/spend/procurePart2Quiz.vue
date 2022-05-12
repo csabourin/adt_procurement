@@ -313,7 +313,7 @@
         },
         "feedback": {
           "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
-          "3": "<span class='v-right' /><strong>Correct!</strong>"
+          "2": "<span class='v-right' /><strong>Correct!</strong>"
         },
         "conclusion": "Seul l’administrateur général a le pouvoir de passer un contrat avec un ancien fonctionnaire recevant une pension."
       }

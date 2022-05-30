@@ -168,7 +168,7 @@
     <b-modal no-stacking id="purpose" @hide="resumePlay()" size="xl" okOnly>
       <template v-slot:modal-header="{ close }">
         <h3 class="h5">
-          <img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="32" height="32"> {{$t('activityLinks')}}
+          <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> {{$t('activityLinks')}}
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
@@ -178,17 +178,6 @@
       <div v-if="$i18n.locale=='fr'">
       <p>Pour une revue de la délégation des pouvoirs, voir les sections <strong> Engager et autoriser des dépenses</strong> et <strong>Exercer l’autorité financière</strong> du cours <a href="https://adtfinance.netlify.app/#/fr">Utiliser les fonds publics de manière responsable</a>. Ce lien est également disponible dans la boîte à outils.</p>
       </div>
-      <template v-slot:modal-ok>{{$t('close')}}</template>
-    </b-modal>
-    <b-modal no-stacking id="alignworkplan" @hide="resumePlay()" size="xl" okOnly>
-      <template v-slot:modal-header="{ close }">
-        <h3 class="h5">
-          <img src="~/assets/ReferenceIcon.svg" :alt="$t('referenceIcon')" width="32" height="32"> {{$t('activityLinks')}}
-        </h3>
-        <button type="button" aria-label="Close" class="close" @click="close()">×</button>
-      </template>
-      <p>{{$t('gotoLinks')}}</p>
-    <planLinks /><!-- {{ $t('gotIt') }} -->
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>
     <b-modal no-stacking id="checkBudget" @hide="resumePlay()" size="xl" okOnly>
@@ -216,7 +205,7 @@
     <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
       <template v-slot:modal-header="{ close }">
         <h3 class="h5">
-          <img src="~/assets/ActivityIcon.svg" :alt="$t('pencilIcon')" width="32" height="32">
+          <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32">
           {{$t('InRealLife')}}
         </h3>
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>

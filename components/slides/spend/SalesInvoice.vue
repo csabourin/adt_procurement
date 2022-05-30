@@ -30,7 +30,7 @@
 				Boss Number 1<br />
 				Important Department<br />
 				Parliament Hill<br />
-				Ottawa, ON<br />
+				Ottawa, <abbr title="Ontario">ON</abbr><br />
 				Phone: 123-456-7890<br />
 				</p>
 			</div>
@@ -39,7 +39,7 @@
 				Boss Number 1<br />
 				Important Department<br />
 				Parliament Hill<br />
-				Ottawa, ON<br />
+				Ottawa, <abbr title="Ontario">ON</abbr><br />
 				Phone: 123-456-7890<br />
 				</p>
 			</div>

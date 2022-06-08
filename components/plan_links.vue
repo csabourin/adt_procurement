@@ -4,14 +4,14 @@
       <div>
         <h4>Planification</h4>
         <ul class="list-unstyled">
-          <li><externalLink link="https://adtfinance.netlify.app/fr">La saine gestion des fonds publics</externalLink></li>
+          <li><externalLink link="https://catalogue.csps-efpc.gc.ca/product?catalog=COR250&cm_locale=fr">La saine gestion des fonds publics</externalLink></li>
         </ul>
       </div>
     </div>
     <div v-if="$i18n.locale=='en'">
       <h4>Plan</h4>
       <ul class="list-unstyled">
-        <li><externalLink link="https://adtfinance.netlify.app/en">Using Public Funds Responsibly course</externalLink></li>
+        <li><externalLink link="https://catalogue.csps-efpc.gc.ca/product?catalog=COR250&cm_locale=en">Using Public Funds Responsibly course</externalLink></li>
       </ul>
     </div>
   </span>

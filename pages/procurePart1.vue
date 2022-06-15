@@ -432,35 +432,44 @@
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
+            <p>{{$t('toolboxTitle')}}</p>
             <div v-if="$i18n.locale=='fr'">
               <div>
-                  <p>Voici une liste des ressources auxquelles on fait référence dans cette section.</p>
                   <ul class="list-unstyled">
-                    <li><externalLink link="https://www.canada.ca/fr/conseil-prive/organisation/greffier/appel-action-faveur-lutte-contre-racisme-equite-inclusion-fonction-publique-federale.html">Appel à l’action en faveur de la lutte contre le racisme, de l’équité et de l’inclusion dans la fonction publique fédérale</externalLink></li>
-                    <li><externalLink link="https://www.justice.gc.ca/fra/sjc-csj/dlc-rfc/ccdl-ccrf/index.html">Charte canadienne des droits et libertés</externalLink>
-                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32634&section=html">Directive sur l’obligation de prendre des mesures d’adaptation</externalLink>
-                    <li><externalLink link="https://laws-lois.justice.gc.ca/fra/lois/a-0.6/">Loi canadienne sur l’accessibilité</externalLink></li>
-                    <li><externalLink link="https://laws-lois.justice.gc.ca/fra/lois/h-6/">Loi canadienne sur les droits de la personne</externalLink></li>
-                    <li><externalLink link="https://laws-lois.justice.gc.ca/fra/const/page-1.html">Loi constitutionnelle</externalLink></li>
-                    <li><externalLink link="https://laws-lois.justice.gc.ca/fra/lois/e-5.401/page-1.html">Loi sur l’équité en matière d’emploi</externalLink></li>
-                    <li><externalLink link="https://www.csps-efpc.gc.ca/anti-racism-fra.aspx">Série d’apprentissage contre le racisme</externalLink></li>
-                    <li><externalLink link="https://www.canada.ca/fr/gouvernement/fonctionpublique/mieux-etre-inclusion-diversite-fonction-publique/diversite-equite-matiere-emploi/accessibilite-fonction-publique/strategie-accessibilite-fonction-publique-tdm.html">Stratégie sur l’accessibilité au sein de la fonction publique du Canada</externalLink></li>
+                    <li><externalLink link="https://achatsetventes.gc.ca/">Achatsetventes.ca</externalLink></li>
+                    <li><externalLink link="https://achatsetventes.gc.ca/applications/Application-sur-les-offres-a-commande-et-arrangements-en-matiere-d-approvisionnement-appli-OCAMA">Application sur les offres à commandes et arrangements en matière d’approvisionnement (Appli OCAMA)</externalLink>
+                    <li><externalLink link="https://www.gcpedia.gc.ca/wiki/Fiches_d%27information_sur_les_approvisionnements_-_DPPA">Fiches d'information sur les approvisionnements – GCpédia (Doit être connecté au RPV pour consulter ce lien.)</externalLink>
+                    <li><externalLink link="https://achatsetventes.gc.ca/politiques-et-lignes-directrices/guide-des-approvisionnements/section/1/55/10">Instruments préconcurrentiels d'achat</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=28230">Ligne directrice sur les ententes contractuelles</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32593">Politique sur la planification et la gestion des investissements</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14494">Politique sur les marchés</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=14494#appC">Politique sur les marchés, Appendice C – Directive sur les marchés</externalLink></li>
+                    <li><externalLink link="https://laws-lois.justice.gc.ca/fra/reglements/DORS-87-402/">Règlement sur les marchés de l’État (DORS/87-402)</externalLink></li>
+                      <ul>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/fra/reglements/DORS-87-402/page-2.html">Règlement sur les marchés de l’État (DORS/87-402) Partie 1</externalLink></li>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/fra/reglements/DORS-87-402/page-2.html#h-894217">Règlement sur les marchés de l’État (DORS/87-402) Partie 2</externalLink></li>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/fra/reglements/DORS-87-402/page-2.html#h-894235">Règlement sur les marchés de l’État (DORS/87-402) Partie 3</externalLink></li>
+                      </ul>
                   </ul>
                 </div>
               </div>
               <div v-if="$i18n.locale=='en'">
                 <div>
-                  <p>Here is a list of resources referred to in this section.</p>
                   <ul class="list-unstyled">
-                    <li><externalLink link="https://laws-lois.justice.gc.ca/eng/acts/A-0.6/">Accessible Canada Act</externalLink></li>
-                    <li><externalLink link="https://www.canada.ca/en/government/publicservice/wellness-inclusion-diversity-public-service/diversity-inclusion-public-service/accessibility-public-service/accessibility-strategy-public-service-toc.html">Accessibility Strategy for the Public Service of Canada  </externalLink>
-                    <li><externalLink link="https://www.csps-efpc.gc.ca/anti-racism-eng.aspx">Anti-Racism Learning Series</externalLink>
-                    <li><externalLink link="https://www.canada.ca/en/privy-council/corporate/clerk/call-to-action-anti-racism-equity-inclusion-federal-public-service.html">Call to action on anti-racism, equity, and inclusion in the Federal Public Service</externalLink></li>
-                    <li><externalLink link="https://laws-lois.justice.gc.ca/eng/acts/h-6/">Canadian Human Rights Act</externalLink></li>
-                    <li><externalLink link="https://laws-lois.justice.gc.ca/eng/Const/page-1.html">Constitution Act</externalLink></li>
-                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32634&section=html">Directive on Duty to Accommodate  </externalLink></li>
-                    <li><externalLink link="https://laws-lois.justice.gc.ca/eng/acts/e-5.401/page-1.html">Employment Equity Act </externalLink></li>
-                    <li><externalLink link="https://www.justice.gc.ca/eng/csj-sjc/rfc-dlc/ccrf-ccdl/">The Canadian Charter of Rights and Freedoms </externalLink></li>
+                    <li><externalLink link="https://buyandsell.gc.ca/">Buyandsell.gc.ca</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=14494">Contracting Policy</externalLink>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=14494#appC">Contracting Policy, Appendix C – Contracts Directive</externalLink>
+                    <li><externalLink link="https://laws-lois.justice.gc.ca/eng/regulations/SOR-87-402/">Government Contracts Regulations (SOR/87-402)</externalLink></li>
+                      <ul>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/eng/regulations/SOR-87-402/page-2.html#h-4">Government Contracts Regulations (SOR/87-402) – Part 1</externalLink></li>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/eng/regulations/SOR-87-402/page-2.html#h-905898">Government Contracts Regulations (SOR/87-402) – Part 2</externalLink></li>
+                        <li><externalLink link="https://laws-lois.justice.gc.ca/eng/regulations/SOR-87-402/page-2.html#h-905917">Government Contracts Regulations (SOR/87-402) – Part 3</externalLink></li>
+                      </ul>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28230">Guidelines on Contractual Arrangements</externalLink></li>
+                    <li><externalLink link="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32593">Policy on the Planning and Management of Investments</externalLink></li>
+                    <li><externalLink link="https://buyandsell.gc.ca/policy-and-guidelines/supply-manual/section/1/55/10">Pre-Competed Procurement Instruments</externalLink></li>
+                    <li><externalLink link="https://www.gcpedia.gc.ca/wiki/Procurement_Information_Nuggets_-_APPD">Procurement Information Nuggets – GCpedia (Must be connected to VPN to see this link.)</externalLink></li>
+                    <li><externalLink link="https://buyandsell.gc.ca/applications/standing-offers-and-supply-arrangements-application-SOSA-App">Standing Offers and Supply Arrangements Application (SOSA App)</externalLink></li>
                   </ul>
                 </div>
               </div>
@@ -778,6 +787,7 @@ button.accessibilityButton {
 <i18n>{
   "en":{
   "Introduction": "References: External Links",
+  "toolboxTitle": "For more information, feel free to consult the following links. These links are also available in the Toolbox.",
   "TakeTheQuiz":"Take the Quiz",
   "tryItTitle":"Activity: Try it!",
   "adjustwptitle":"Activity: Adjust the Work plan",
@@ -798,6 +808,7 @@ button.accessibilityButton {
   },
   "fr":{
   "Introduction": "Références : Liens externes",
+  "toolboxTitle": "Pour plus d’informations, n’hésitez pas à consulter les liens suivants. Ces liens sont également disponibles dans la boîte à outils.",
   "TakeTheQuiz":"Répondez au quiz",
   "completewptitle":"Activité : Compléter le plan de travail",
   "adjustwptitle":"Activité : Ajuster le plan de travail",

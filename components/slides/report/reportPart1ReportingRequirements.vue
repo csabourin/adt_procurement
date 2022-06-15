@@ -126,7 +126,7 @@
           "1": "<span class='v-wrong' /><strong>Incorrect.</strong>",
           "2": "<span class='v-right' /><strong>Correct!</strong>"
         },
-        "conclusion": "Les rapports sur la passation de contrats dans la fonction publique fédérale sont rendus publics lorsque la valeur du contrat dépasse 10&nbsp;000$."
+        "conclusion": "Les rapports sur la passation de contrats dans la fonction publique fédérale sont rendus publics lorsque la valeur du contrat dépasse&nbsp;10&nbsp;000&nbsp;$."
       }
     }
   }

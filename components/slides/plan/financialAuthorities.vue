@@ -101,7 +101,7 @@
       "feedback": {
         "1": "<span class='v-wrong' /><strong>Incorrect.</strong> A Designated Procurement Officer is the lowest position that can approve a $175,000 Competitive - Services transaction.",
         "2": "<span class='v-wrong' /><strong>Incorrect.</strong> A Designated Procurement Officer is the lowest position that can approve a $175,000 Competitive - Services transaction.",
-        "3": "<span class='v-right' /><strong>Correct.</strong> A Designated Procurement Officer is the lowest position that can approve a $175,000 Competitive - Services transaction.",
+        "3": "<span class='v-right' /><strong>Correct!</strong> A Designated Procurement Officer is the lowest position that can approve a $175,000 Competitive - Services transaction.",
         "4": "<span class='v-wrong' /><strong>Incorrect.</strong> A Designated Procurement Officer is the lowest position that can approve a $175,000 Competitive - Services transaction."
       }
     }

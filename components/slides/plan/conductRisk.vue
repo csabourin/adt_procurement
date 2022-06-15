@@ -146,7 +146,7 @@
           "right": "<span class='v-right' /><strong>Correct!</strong>",
           "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
         },
-        "conclusion": "<p>If your training budget is reduced, you may have one person attend the training and pass on their knowledge to their colleagues; you may find alternate means of training such as books or eLearning, and you may organize your own internal training sessions. While you could cancel all training, this should be considered only once all other options have been exhausted.</p><p>For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href:'https://adtfinance.netlify.app/en'>Using Public Funds Responsibly course</a>. This link is also available in the Toolbox.</p>"
+        "conclusion": "<p>If your training budget is reduced, you may have one person attend the training and pass on their knowledge to their colleagues; you may find alternate means of training such as books or eLearning, and you may organize your own internal training sessions. While you could cancel all training, this should be considered only once all other options have been exhausted.</p><p>For a review of work plans, see the <strong>Build a Work Plan</strong> module of the <a href='https://catalogue.csps-efpc.gc.ca/product?catalog=COR250&cm_locale=en' target='blank'>Using Public Funds Responsibly</a> course. This link is also available in the Toolbox.</p>"
       }
     },
     "fr": {
@@ -228,7 +228,7 @@
           "right": "<span class='v-right' /><strong>Correct!</strong>",
           "wrong": "<span class='v-wrong' /><strong>Incorrect.</strong>"
         },
-        "conclusion": "<p>Si votre budget de formation est réduit, vous pouvez demander à une personne de suivre la formation et de transmettre ses connaissances à ses collègues, vous pouvez trouver d’autres moyens de formation tels que des livres ou l’apprentissage en ligne, et vous pouvez organiser vos propres sessions de formation internes. Bien que vous pourriez annuler toutes les formations, il serait préférable d’éviter cette option jusqu’à ce que toutes les autres options aient été épuisées.</p><p>Pour une revue des plans de travail, voir la section <strong>Élaborer un plan de travail</strong> du cours <a href:'https://adtfinance.netlify.app/fr'> La saine gestion des fonds publics</a>. Ce lien est également disponible dans la boîte à outils.</p>"
+        "conclusion": "<p>Si votre budget de formation est réduit, vous pouvez demander à une personne de suivre la formation et de transmettre ses connaissances à ses collègues, vous pouvez trouver d’autres moyens de formation tels que des livres ou l’apprentissage en ligne, et vous pouvez organiser vos propres sessions de formation internes. Bien que vous pourriez annuler toutes les formations, il serait préférable d’éviter cette option jusqu’à ce que toutes les autres options aient été épuisées.</p><p>Pour une revue des plans de travail, voir la section <strong>Élaborer un plan de travail</strong> du cours <a href='https://catalogue.csps-efpc.gc.ca/product?catalog=COR250&cm_locale=fr' target='blank'>Utiliser les fonds publics de manière responsable</a>. Ce lien est également disponible dans la boîte à outils.</p>"
       }
     }
   }

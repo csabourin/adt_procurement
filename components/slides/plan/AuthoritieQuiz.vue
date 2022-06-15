@@ -352,7 +352,7 @@ export default {
         "2": "No"
       },
       "feedback": {
-        "1": "<span class='v-wrong' /> <strong>Incorrect</strong> You only have enough money to cover the cost of software licences for three employees.",
+        "1": "<span class='v-wrong' /> <strong>Incorrect.</strong> You only have enough money to cover the cost of software licences for three employees.",
         "2": "<span class='v-right' /> <strong>Correct!</strong> You only have enough money to cover the cost of software licences for three employees."
       }
     },

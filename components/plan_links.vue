@@ -4,7 +4,7 @@
       <div>
         <h4>Planification</h4>
         <ul class="list-unstyled">
-          <li><externalLink link="https://catalogue.csps-efpc.gc.ca/product?catalog=COR250&cm_locale=fr">La saine gestion des fonds publics</externalLink></li>
+          <li><externalLink link="https://catalogue.csps-efpc.gc.ca/product?catalog=COR250&cm_locale=fr">Utiliser les fonds publics de manière responsable (cours)</externalLink></li>
         </ul>
       </div>
     </div>

@@ -198,10 +198,10 @@ export default {
   },
   
   procurementInstruments:{
-    line1: "Passation de",
-    line2: "marchés",
-    name: "Instruments de passation de marchés communément utilisés",
-    download: "Télécharger le document sur les instruments de passation de marchés communément utilisés",
+    line1: "Instruments",
+    line2: "d'approv.",
+    name: "Instruments&nbsp;d'appro-visionnement&nbsp;les plus couramment utilisés",
+    download: "Télécharger le document sur les instruments d’approvisionnement les plus couramment utilisés",
     filename: "Instruments_de_passation_de_marches_communement_utilises.pdf",
     HTMLFilename: "SpendCommonlyUsedProcurementInstruments_FR.html"
   },

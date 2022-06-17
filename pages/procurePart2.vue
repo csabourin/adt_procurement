@@ -258,7 +258,7 @@
         <b-modal no-stacking id="procureLinks" @hide="resumePlay()" size="xl" okOnly>
             <template v-slot:modal-header="{ close }">
                 <h3 class="h5">
-                    <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32">  {{$t('Introduction')}}
+                    <img src="~/assets/InfoIcon.svg" :alt="$t('infoIcon')" width="32" height="32">  {{$t('Introduction')}}
                 </h3>
                 <button type="button" aria-label="Close" class="close" @click="close()">×</button>
             </template>
@@ -348,7 +348,7 @@
         <b-modal no-stacking id="reallife" @hide="resumePlay()" okOnly>
           <template v-slot:modal-header="{ close }">
             <h3 class="h5">
-              <img src="~/assets/infoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> 
+              <img src="~/assets/InfoIcon.svg" :alt="$t('infoIcon')" width="32" height="32"> 
                 {{$t('InRealLife')}}
             </h3>
             <button type="button" aria-label="Close" class="close" @click="close()">×</button>

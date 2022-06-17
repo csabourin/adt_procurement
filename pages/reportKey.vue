@@ -47,17 +47,11 @@
         </b-col>
       </b-row>
     </b-container>
-    <div class="bottomNav generalSection" v-if="chosenScenario == 'refresh'">
-      <div class="generalSectionBar"><span>{{$t('refreshShort')}}</span></div>
-      <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('plan')" class="plan" noGrey type="keyMessages" />
-      <microlearning path="spendKey" time="5" youAreHere size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('spend')" class="spend" noGrey type="keyMessages" />
-      <microlearning path="reportKey" time="5" size="140" :completion="$store.state.currentPlaying.kmReport" imagePath="KeyMessR.svg" :text="$t('report')" class="report" noGrey type="keyMessages" />
-    </div>
-    <div class="bottomNav reportSection" v-else>
+    <div class="bottomNav reportSection">
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
-      <microlearning path="reportPart1" imagePath="InitiateAuthSpending.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('ReportsTitle')" type="video" />
-      <microlearning time="5" youAreHere path="procureKey" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('KeyMessages')" type="keyMessages" />
-      <microlearning path="exam2" size="140" time="10" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+      <microlearning path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('ReportsTitle')" type="video" />
+      <microlearning time="5" youAreHere path="procureKey" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" type="keyMessages" />
+      <microlearning path="exam3" size="140" time="10" imagePath="R-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
     </div>
   </div>
 </template>

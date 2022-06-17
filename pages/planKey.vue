@@ -98,6 +98,13 @@
                   <download :texts="$t('delegofspending')" size=128 iconColor="planBackground" :fileSize="$i18n.locale == 'en' ? '120' : '120'" name="delegChart" />
                 </b-col>-->
               </b-row>
+              <b-row>
+                <windowPortal :open="openChart" @close="openChart = false">
+                  <delegAutorityEn v-if="$i18n.locale=='en'" />
+                  <delegAutorityFr v-if="$i18n.locale=='fr'" />
+                </windowPortal>
+                <p><b-button role="link" @click="openChart = true">{{$t('openChartButton')}}</b-button></p>
+              </b-row>
             </template>
           </keyMessagesFiles>
         </b-col>
@@ -119,19 +126,30 @@
 var seenKey
 import download from "~/components/fileDownload"
 import HTMLJobaidLink from "~/components/HTMLJobaidLink"
+import delegAutorityEn from "~/components/delegationChart/delegchart_en"
+import delegAutorityFr from "~/components/delegationChart/delegchart_fr"
 import hamburger from "~/components/hamburger"
 import microlearning from "~/components/microlearning"
 import externalLink from "~/components/externalLink"
+import windowPortal from "~/components/newWindow"
 import keyMessagesFiles from "~/components/keyMessagesFiles"
 export default {
   components: {
     hamburger,
     microlearning,
     download,
+    delegAutorityEn,
+    delegAutorityFr,
+    windowPortal,
     HTMLJobaidLink,
     externalLink,
     keyMessagesFiles
   },
+  data(){
+      return{
+        openChart: false
+      }
+    },
   computed:{
     chosenScenario: {
       set(scenario) {
@@ -155,10 +173,12 @@ export default {
   {
     "en":{
       "keyPlanQuote": " Great planning leads to great performance. ",
+      "openChartButton": "Open the delegation of spending and financial signing authorities chart",
       "planSectionBar": "PLAN"
     },
     "fr":{
       "keyPlanQuote": " Une bonne planification mène à une bonne performance. ",
+      "openChartButton": "Ouvrir le tableau de délégation de pouvoirs",
       "planSectionBar": "PLANIFICATION" 
     }
   }

@@ -410,6 +410,7 @@ export default {
     "tryAgain": "Try again",
     "scoreIs":"Your final score is",
     "unanswered":"Unanswered question(s)",
+    "planSectionBar": "PLAN",
     "Questions": {
       "q1": {
         "text": "<p>You are the manager of a team of laboratory technicians tasked with a new priority: analyzing 1,000 water samples. You currently do not have the space, equipment or extra employees required to carry out this new activity. You have been given a budget of $250,000 to set up the new laboratory.</p><p> What should you do next? </p>",
@@ -621,6 +622,7 @@ export default {
     "tryAgain": "Essayer de nouveau",
     "scoreIs":"Votre note finale est de",
     "unanswered":"Question(s) sans réponse",
+    "planSectionBar": "PLANIFICATION",
     "Questions": {
       "q1": {
         "text": "<p>Vous êtes le gestionnaire d’une équipe de techniciens de laboratoire qui doit gérer une nouvelle priorité : analyser 1000 échantillons d’eau. Actuellement, vous n’avez pas l’espace, l’équipement ou les employés supplémentaires requis pour réaliser cette nouvelle activité. On vous a attribué un budget de 250 000 $ pour mettre sur pied le nouveau laboratoire.</p><p>Que devez-vous faire ensuite?</p>",

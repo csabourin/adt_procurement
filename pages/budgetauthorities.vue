@@ -173,10 +173,10 @@
         <button type="button" aria-label="Close" class="close" @click="close()">×</button>
       </template>
       <div v-if="$i18n.locale=='en'">
-       <p>For a review of delegation of authorities, see the <strong>Initiate and Authorize Commitments</strong> and <strong>Exercise Financial Authority</strong> modules of the <a href="https://adtfinance.netlify.app/#/en">Using Public Funds Responsibly</a> course. This link is also available in the Toolbox.</p>
+       <p>For a review of delegation of authorities, see the <strong>Initiate and Authorize Commitments</strong> and <strong>Exercise Financial Authority</strong> modules of the <a href="https://catalogue.csps-efpc.gc.ca/product?catalog=COR250&cm_locale=en" target="blank">Using Public Funds Responsibly</a> course. This link is also available in the Toolbox.</p>
       </div>
       <div v-if="$i18n.locale=='fr'">
-      <p>Pour une revue de la délégation des pouvoirs, voir les sections <strong> Engager et autoriser des dépenses</strong> et <strong>Exercer l’autorité financière</strong> du cours <a href="https://adtfinance.netlify.app/#/fr">Utiliser les fonds publics de manière responsable</a>. Ce lien est également disponible dans la boîte à outils.</p>
+      <p>Pour une revue de la délégation des pouvoirs, voir les sections <strong> Engager et autoriser des dépenses</strong> et <strong>Exercer l’autorité financière</strong> du cours <a href="https://catalogue.csps-efpc.gc.ca/product?catalog=COR250&cm_locale=fr" target="blank">Utiliser les fonds publics de manière responsable</a>. Ce lien est également disponible dans la boîte à outils.</p>
       </div>
       <template v-slot:modal-ok>{{$t('close')}}</template>
     </b-modal>

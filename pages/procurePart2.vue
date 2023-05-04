@@ -382,8 +382,8 @@
       <microlearning youAreHere path="procurePart2"  imagePath="R-Contribute.svg" size="140" time="30" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('ExerciseFinancialAuthority')" type="video" />
       <microlearning path="procurePart3" size="140" time="30" :completion="$store.state.currentPlaying.spendPart3_player" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')" type="video" />
       <microlearning path="procureKey" time="5" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="KeyMessS.svg" :text="$t('KeyMessages')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-      <microlearning path="exam2" size="140" time="20" imagePath="S-Test.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
-    </div>
+      <TestTile time="20" path="exam2" imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" quizUrl="https://app.csps-efpc.gc.ca/d2l/lms/quizzing/user/quiz_summary.d2l?qi=4158&ou=7881
+" /></div>
   </div>
 </template>
 <script type="text/javascript">
@@ -396,6 +396,7 @@
   import ContractApproval from '~/components/slides/spend/procurePart2ContractApproval'
   import ContractAward from '~/components/slides/spend/procurePart2ContractAward'
   import ProcurePart2Quiz from '~/components/slides/spend/procurePart2Quiz'
+  import TestTile from '../components/testTile.vue'
 export default {
   data() {
     return {
@@ -411,8 +412,9 @@ export default {
     SolicitationDocs,
     ContractApproval,
     ContractAward,
-    ProcurePart2Quiz
-  },
+    ProcurePart2Quiz,
+    TestTile
+},
   computed:{
     thatPoint(){
       return this.$store.state.currentPlaying.spendPart2

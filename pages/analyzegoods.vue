@@ -223,8 +223,9 @@
     <microlearning path="forecastbudget" imagePath="CreateBud.svg" size="140" time="30" :completion="$store.state.currentPlaying.forecast_player" :text="$t('ForecastBudget')" type="video" />
     <microlearning size="140" path="budgetauthorities" time="20" :completion="$store.state.currentPlaying.createBudget_player" imagePath="ExerciseFinancialAuthority.svg" :text="$t('BudgetAuthorities')" type="video" />
     <microlearning path="planKey" time="5" size="140" :completion="$store.state.currentPlaying.kmPlan" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-    <microlearning size="140" path="exam1" time="25" :completion="parseInt($store.getters['plan/getScore'],10)" imagePath="P-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" />
-  </div>
+    <TestTile time="25" path="exam1" imagePath="P-Test.svg" :text="$t('TestPlan')" :completion="parseInt(planCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" quizUrl="https://app.csps-efpc.gc.ca/d2l/lms/quizzing/user/quiz_summary.d2l?qi=4157&ou=7881
+"/>
+</div>
 </div>
 </template>
 <script type="text/javascript">
@@ -235,6 +236,7 @@ import analyzeNeeds from '~/components/slides/plan/AnalyzeNeeds'
 import planQuiz from '~/components/slides/plan/planQuiz'
 import continuePopup from '~/components/continuePopup'
 import identifyExisting from '~/components/slides/plan/identifyExisting'
+import TestTile from '../components/testTile.vue'
 export default {
   data() {
     return {
@@ -248,8 +250,9 @@ export default {
     analyzeNeeds,
     identifyExisting,
     planQuiz,
-    continuePopup
-  },
+    continuePopup,
+    TestTile
+},
   methods: {
     resumePlay() {
       this.$refs.vp.resumePlay()

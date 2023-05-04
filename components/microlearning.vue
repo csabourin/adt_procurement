@@ -77,6 +77,7 @@ export default {
         }
       });
     },
+    //
     addMargin(){
       if (this.completion && this.type != "keyMessages") {
         this.$nextTick(function() {

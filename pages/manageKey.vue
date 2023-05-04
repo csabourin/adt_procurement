@@ -47,8 +47,9 @@
       <div class="manageSectionBar"><span>{{$t('manageSectionBar')}}</span></div>
       <microlearning path="managePart1" imagePath="manage1.svg" size="140" time="20" :completion="$store.state.currentPlaying.spendPart1_player" :text="$t('lifeCycle')" type="video" />
       <microlearning time="5" youAreHere path="procureKey" size="140" :completion="$store.state.currentPlaying.kmSpend" imagePath="manage2.svg" :text="$t('KeyMessages')" type="keyMessages" />
-      <microlearning path="manageExam" size="140" time="10" imagePath="managetest.svg" :text="$t('Test')" :completion="parseInt($store.getters['smanage/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
-    </div>
+      <TestTile time="10" path="manageExam" imagePath="managetest.svg" :text="$t('TestManage')" :completion="parseInt(manageCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" quizUrl="https://app.csps-efpc.gc.ca/d2l/lms/quizzing/user/quiz_summary.d2l?qi=4156&ou=7881
+"/>
+</div>
   </div>
 </template>
 <script type="text/javascript">
@@ -57,13 +58,15 @@ import download from "~/components/fileDownload"
 import HTMLJobaidLink from "~/components/HTMLJobaidLink"
 import microlearning from "~/components/microlearning"
 import keyMessagesFiles from "~/components/keyMessagesFiles"
+import TestTile from "../components/testTile.vue"
 export default {
   components: {
     microlearning,
     download,
     HTMLJobaidLink,
-    keyMessagesFiles
-  },
+    keyMessagesFiles,
+    TestTile
+},
   computed:{
     chosenScenario: {
       set(scenario) {

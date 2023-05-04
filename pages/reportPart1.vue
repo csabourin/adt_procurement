@@ -343,8 +343,8 @@
       <div class="reportSectionBar"><span>{{$t('reportSectionBar')}}</span></div>
       <microlearning youAreHere :completion="$store.state.currentPlaying.reportPart1_player" path="reportPart1" imagePath="R-Conduct.svg" size="140" time="20" :text="$t('ReportsTitle')" type="video" />
       <microlearning :completion="$store.state.currentPlaying.kmReport" path="reportKey" time="5" size="140" imagePath="KeyMessR.svg" :text="$t('KeyMessages')" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-      <microlearning :completion="parseInt($store.getters['report/getScore'],10)" path="exam3" size="140" time="10" imagePath="R-Test.svg" :text="$t('Test')" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
-    </div>
+      <TestTile imagePath="R-Test.svg" path="exam3" time="10" :text="$t('TestReport')" :completion="parseInt(reportCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" quizUrl="https://app.csps-efpc.gc.ca/d2l/lms/quizzing/user/quiz_summary.d2l?qi=4159&ou=7881
+" /></div>
   </div>
 </template>
 <script type="text/javascript">
@@ -355,6 +355,7 @@ import complaintMechanisms from '~/components/slides/report/reportPart1Complaint
 import reportingRequirements from '~/components/slides/report/reportPart1ReportingRequirements'
 import part1Quiz from '~/components/slides/report/reportPart1Quiz'
 import keyPeriods from '~/components/slides/report/keyPeriods'
+import TestTile from '../components/testTile.vue'
 export default {
   data() {
     return {
@@ -368,8 +369,9 @@ export default {
     complaintMechanisms,
     reportingRequirements,
     part1Quiz,
-    keyPeriods
-  },
+    keyPeriods,
+    TestTile
+},
   computed: {
     thatPoint() {
       return this.$store.state.currentPlaying.reportPart1

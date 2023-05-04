@@ -323,7 +323,8 @@
       <div class="manageSectionBar"><span>{{$t('manageSectionBar')}}</span></div>
       <microlearning youAreHere path="managePart1" imagePath="manage1.svg" size="140" time="20" :completion="$store.state.currentPlaying.manage_player" :text="$t('lifeCycle')" type="video" />
       <microlearning path="manageKey"  imagePath="manage2.svg" size="140" time="5" :completion="$store.state.currentPlaying.spendPart2_player" :text="$t('KeyMessages')" type="video" />
-      <microlearning path="manageExam" size="140" time="10" imagePath="managetest.svg" :text="$t('Test')" :completion="parseInt($store.getters['spend/getScore'],10)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="20" />
+      <TestTile time="10" path="manageExam" imagePath="managetest.svg" :text="$t('TestManage')" :completion="parseInt(manageCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" quizUrl="https://app.csps-efpc.gc.ca/d2l/lms/quizzing/user/quiz_summary.d2l?qi=4156&ou=7881
+"/>
     </div>
   </div>
 </template>
@@ -335,6 +336,7 @@ import acquisition from '~/components/slides/manage/managePart1Acquisition'
 import operationUseMaintenance from '~/components/slides/manage/managePart1OUM'
 import reallocationDivestment from '~/components/slides/manage/managePart1ReallocationDivestment'
 import manageQuiz from '~/components/slides/manage/managePart1Quiz'
+import TestTile from '../components/testTile.vue'
 export default {
   data() {
     return {
@@ -348,8 +350,9 @@ export default {
     acquisition,
     operationUseMaintenance,
     reallocationDivestment,
-    manageQuiz
-  },
+    manageQuiz,
+    TestTile
+},
   computed:{
     thatPoint(){
       return this.$store.state.currentPlaying.manage

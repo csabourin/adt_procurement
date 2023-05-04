@@ -80,7 +80,8 @@
           <microlearning time="30" path="forecastbudget" imagePath="CreateBud.svg" :text="$t('ForecastBudget')" :completion="$store.state.currentPlaying.forecast_player" type="video" />
           <microlearning time="20" path="budgetauthorities" imagePath="ExerciseFinancialAuthority.svg" :text="$t('BudgetAuthorities')" :completion="$store.state.currentPlaying.createBudget_player" type="video" />
           <microlearning path="planKey" time="5" imagePath="KeyMessP.svg" :text="$t('KeyMessagesPlan')"  :completion="$store.state.currentPlaying.kmPlan" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-          <microlearning time="25" path="exam1" imagePath="P-Test.svg" :text="$t('TestPlan')" :completion="parseInt(planCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" />
+          <TestTile time="25" path="exam1" imagePath="P-Test.svg" :text="$t('TestPlan')" :completion="parseInt(planCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" quizUrl="https://app.csps-efpc.gc.ca/d2l/lms/quizzing/user/quiz_summary.d2l?qi=4157&ou=7881
+" />
         </div>
         <hr class="planHr">
         <h2 class="sideTitle spendTitle">{{$t('spend')}}</h2>
@@ -89,7 +90,8 @@
           <microlearning imagePath="R-Contribute.svg" path="procurePart2" time="30" :text="$t('ExerciseFinancialAuthority')"  :completion="$store.state.currentPlaying.spendPart2_player" type="video" />
           <microlearning time="30" path="procurePart3" imagePath="MonitContFinances.svg" :text="$t('MonitorControlFinances')"  :completion="$store.state.currentPlaying.spendPart3_player" type="video" />
           <microlearning path="procureKey" time="5" imagePath="KeyMessS.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-          <microlearning time="20" path="exam2"  imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" />
+          <TestTile time="20" path="exam2" imagePath="S-Test.svg" :text="$t('TestSpend')" :completion="parseInt(spendCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="15" quizUrl="https://app.csps-efpc.gc.ca/d2l/lms/quizzing/user/quiz_summary.d2l?qi=4158&ou=7881
+" />
         </div>
 
         <hr class="manageProcurement">
@@ -97,7 +99,8 @@
         <div role="navigation" class="courseSection manageSection" :style="{ backgroundImage: `url(${manageBarUrl})` }" :aria-label="$t('manage') + ' - Navigation'">
           <microlearning imagePath="manage1.svg" path="managePart1" time="20" :text="$t('lifeCycle')"  :completion="$store.state.currentPlaying.managePart1_player" type="video" />
           <microlearning path="manageKey" time="5" imagePath="manage2.svg" :text="$t('KeyMessagesSpend')" :completion="$store.state.currentPlaying.kmSpend" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-          <microlearning time="10" path="manageExam"  imagePath="managetest.svg" :text="$t('TestManage')" :completion="parseInt(manageCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" />
+          <TestTile time="10" path="manageExam" imagePath="managetest.svg" :text="$t('TestManage')" :completion="parseInt(manageCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" quizUrl="https://app.csps-efpc.gc.ca/d2l/lms/quizzing/user/quiz_summary.d2l?qi=4156&ou=7881
+"/>
         </div>
 
         <hr class="spendHr">
@@ -105,7 +108,8 @@
         <div role="navigation" class="courseSection reportSection" :style="{ backgroundImage: `url(${reportbgBarUrl})` }" :aria-label="$t('report') + ' - Navigation'">
           <microlearning imagePath="R-Conduct.svg" path="reportPart1" time="20" :text="$t('ConductPeriodicVarianceReporting')" :completion="$store.state.currentPlaying.reportPart1_player" type="video" />
           <microlearning imagePath="KeyMessR.svg" path="reportKey" time="5" :text="$t('KeyMessagesReport')" :completion="$store.state.currentPlaying.kmReport" :highlighted="chosenScenario == 'refresh'" type="keyMessages" />
-          <microlearning imagePath="R-Test.svg" path="exam3" time="10" :text="$t('TestReport')" :completion="parseInt(reportCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" />
+          <TestTile imagePath="R-Test.svg" path="exam3" time="10" :text="$t('TestReport')" :completion="parseInt(reportCompleted)" :highlighted="chosenScenario == 'justExam'" type="exam" questionNum="5" quizUrl="https://app.csps-efpc.gc.ca/d2l/lms/quizzing/user/quiz_summary.d2l?qi=4159&ou=7881
+" />
         </div>
         <hr class="reportHr">
       </b-col>
@@ -124,6 +128,8 @@ import hamburger from "~/components/hamburger"
 import videoplayer from "~/components/interface/videoPlayer"
 import externalLink from "~/components/externalLink"
 import tip from "~/components/tip"
+import TestTile from "../components/testTile.vue"
+
   
 export default {
   data() {
@@ -139,8 +145,10 @@ export default {
     hamburger,
     videoplayer,
     externalLink,
-    tip
-  },
+    tip,
+    TestTile,
+    TestTile
+},
   computed:{
     thatPoint(){
       return parseInt(this.$store.state.currentPlaying.homepage)
